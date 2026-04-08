@@ -1,112 +1,39 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Svens Rezeptsammlung</title>
-<meta content="Rezepte, bereits gekocht und für gut befunden." name="description"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Svens persönliches Kochbuch</title>
+<meta name="description" content="Rezepte, bereits gekocht und für gut befunden."/>
 <link href="style.css" rel="stylesheet"/>
 <style>
-.lang-switch{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;justify-content:flex-start}
-.lang-btn{border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:.55rem .9rem;cursor:pointer;font:inherit;box-shadow:none}
+.lang-switch{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.lang-btn{border:1px solid #ccc;background:#fff;border-radius:999px;padding:.45rem .75rem;cursor:pointer;font:inherit}
 .lang-btn.active{background:#222;color:#fff;border-color:#222}
 [lang-variant]{display:none}
 html[data-lang="de"] [lang-variant="de"]{display:initial}
 html[data-lang="pl"] [lang-variant="pl"]{display:initial}
 html[data-lang="de"] li[lang-variant="de"], html[data-lang="pl"] li[lang-variant="pl"]{display:list-item}
-header .wrap{display:flex;flex-direction:column;align-items:flex-start;gap:.6rem}
-header h1{margin-bottom:0}
-header .subtitle{margin-top:0;color:#6b7280}
-.top-actions{display:flex;justify-content:flex-start;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:.25rem}
-.toc{padding:1.5rem 0 0}
-.toc h2{margin-bottom:1rem}
-.toc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem 2rem;align-items:start}
-.toc-grid>div{padding:.2rem 0;border-bottom:1px solid rgba(139,94,60,.12)}
-.toc-grid a{display:block;text-decoration:none;line-height:1.35}
-@media (max-width: 900px){.toc-grid{grid-template-columns:1fr}}
-
-
-.site-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:1.5rem;align-items:start}
-.category-sidebar{position:sticky;top:1rem;align-self:start;background:#fff;border:1px solid rgba(139,94,60,.15);border-radius:18px;padding:1rem;box-shadow:0 8px 24px rgba(0,0,0,.04)}
-.category-sidebar h2{margin:0 0 .9rem}
-.category-list{display:flex;flex-direction:column;gap:.55rem}
-.category-btn{width:100%;text-align:left;border:1px solid #e5d7cc;background:#fff;color:#5b341c;border-radius:999px;padding:.72rem .9rem;font:inherit;cursor:pointer;transition:.15s ease}
-.category-btn:hover{background:#f7efe9}
-.category-btn.active{background:#8b5e3c;color:#fff;border-color:#8b5e3c}
-.content-column{min-width:0}
-.toc-toolbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
-.toc-current-filter{font-size:.95rem;color:#6b7280}
-.recipe.hidden-by-filter,.toc-grid>div.hidden-by-filter{display:none !important}
-.toc-grid{grid-template-columns:1fr !important}
-.toc-grid>div{border:1px solid rgba(139,94,60,.12);border-radius:14px;padding:.7rem .85rem;background:#fff}
-.toc-grid a:hover{color:#8b5e3c}
-.mobile-category-toggle{display:none}
-@media (max-width: 980px){
-  .site-layout{grid-template-columns:1fr}
-  .category-sidebar{position:static}
-  .mobile-category-toggle{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:.55rem .9rem;cursor:pointer}
-}
-@media (max-width: 640px){
-  .wrap{padding:16px}
-  header h1{font-size:2.1rem;line-height:1.05}
-  .category-list{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
-  .category-btn{font-size:.95rem;padding:.68rem .8rem}
-  .toc-grid>div{padding:.65rem .75rem}
-}
 </style>
 </head>
 <body>
 <header>
 <div class="wrap">
-<h1><span lang-variant="de">Svens Rezeptsammlung</span><span lang-variant="pl">Zbiór przepisów Svena</span></h1>
-<div class="subtitle"><span lang-variant="de">Erprobte Lieblingsrezepte auf einen Blick</span><span lang-variant="pl">Sprawdzone ulubione przepisy w jednym miejscu</span></div>
-<div class="top-actions">
-<div aria-label="Sprachauswahl" class="lang-switch">
-<button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button>
-<button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button>
+<h1><span lang-variant="de">Svens persönliches Kochbuch</span><span lang-variant="pl">Osobista książka kucharska Svena</span></h1>
+<div class="subtitle"><span lang-variant="de">Rezepte – bereits gekocht und für gut befunden</span><span lang-variant="pl">Przepisy – już ugotowane i uznane za dobre</span></div>
+<div class="top-actions" style="display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap;">
+<a class="btn" download="" href="kochbuch.xml"><span lang-variant="de">Kochbuch als XML</span><span lang-variant="pl">Książka kucharska jako XML</span></a>
+<a class="btn" download="" href="kochbuch.pdf"><span lang-variant="de">Kochbuch als PDF</span><span lang-variant="pl">Książka kucharska jako PDF</span></a>
+<div class="lang-switch" aria-label="Sprachauswahl">
+<button type="button" class="lang-btn active" data-set-lang="de">🇩🇪 Deutsch</button>
+<button type="button" class="lang-btn" data-set-lang="pl">🇵🇱 Polski</button>
 </div>
 </div>
 </div>
 </header>
 <main class="wrap">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="site-layout"><aside class="category-sidebar"><h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2><p class="small"><span lang-variant="de">Nach Kategorie filtern und passende Rezepte direkt anzeigen.</span><span lang-variant="pl">Filtruj według kategorii i wyświetlaj od razu pasujące przepisy.</span></p><div class="category-list" id="categoryList"></div></aside><div class="content-column"><section class="toc">
-<h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2><div class="toc-toolbar"><button class="mobile-category-toggle" id="mobileCategoryToggle" type="button">Kategorien</button><div class="toc-current-filter" id="currentCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></div></div>
+<section class="toc">
+<h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2>
 <div class="toc-grid">
 <div><a href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a></div>
 <div><a href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a></div>
@@ -143,7 +70,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <div><a href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a></div>
 <div><a href="#rezept-34"><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></a></div>
 </div>
-</section><section class="recipe" id="rezept-1">
+</section>
+<section class="recipe" id="rezept-1">
 <div>
 <h2><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></h2>
 <div class="meta">
@@ -199,7 +127,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</span><span lang-variant="pl">Nie ma jeszcze stałej oceny liczbowej; należy jednak do dobrych, zapisanych przepisów.</span></p>
 </div>
 <div><img alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" src="images/rezeptbild_01.png"/></div>
-</section><section class="recipe" id="rezept-2">
+</section>
+<section class="recipe" id="rezept-2">
 <div>
 <h2><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></h2>
 <div class="meta">
@@ -254,7 +183,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fest gespeichert als gutes Rezept.</span><span lang-variant="pl">Fest gespeichert als gutes Rezept.</span></p>
 </div>
 <div><img alt="Italienischer Kalbshaxen-Braten" src="images/rezeptbild_02.png"/></div>
-</section><section class="recipe" id="rezept-3">
+</section>
+<section class="recipe" id="rezept-3">
 <div>
 <h2><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></h2>
 <div class="meta">
@@ -310,7 +240,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fest gespeichertes, gut befundenes Rezept.</span><span lang-variant="pl">Fest gespeichertes, gut befundenes Rezept.</span></p>
 </div>
 <div><img alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" src="images/rezeptbild_02_1.png"/></div>
-</section><section class="recipe" id="rezept-4">
+</section>
+<section class="recipe" id="rezept-4">
 <div>
 <h2><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></h2>
 <div class="meta">
@@ -360,7 +291,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fest gespeichert, sehr gut angekommen.</span><span lang-variant="pl">Na stałe zapisany, bardzo dobrze przyjęty.</span></p>
 </div>
 <div><img alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" src="images/rezeptbild_03.png"/></div>
-</section><section class="recipe" id="rezept-5">
+</section>
+<section class="recipe" id="rezept-5">
 <div>
 <h2><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></h2>
 <div class="meta">
@@ -414,7 +346,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fest gespeichert und fürs BBQ-Buch übernommen.</span><span lang-variant="pl">Fest gespeichert i fürs BBQ-Buch übernommen.</span></p>
 </div>
 <div><img alt="Smoked BBQ-Fajita-Pfanne" src="images/rezeptbild_04.png"/></div>
-</section><section class="recipe" id="rezept-6">
+</section>
+<section class="recipe" id="rezept-6">
 <div>
 <h2><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></h2>
 <div class="meta">
@@ -458,7 +391,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Als passende Vorspeise fest gespeichert.</span><span lang-variant="pl">Als passende Vorspeise fest gespeichert.</span></p>
 </div>
 <div><img alt="Bruschetta vom Ciabatta" src="images/rezeptbild_05.png"/></div>
-</section><section class="recipe" id="rezept-7">
+</section>
+<section class="recipe" id="rezept-7">
 <div>
 <h2><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></h2>
 <div class="meta">
@@ -509,7 +443,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
 <div><img alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" src="images/rezeptbild_06.png"/></div>
-</section><section class="recipe" id="rezept-8">
+</section>
+<section class="recipe" id="rezept-8">
 <div>
 <h2><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></h2>
 <div class="meta">
@@ -559,7 +494,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
 <div><img alt="Bauernomelette mit Tomaten-Mozzarella-Salat" src="images/rezeptbild_07.png"/></div>
-</section><section class="recipe" id="rezept-9">
+</section>
+<section class="recipe" id="rezept-9">
 <div>
 <h2><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></h2>
 <div class="meta">
@@ -607,7 +543,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
 <div><img alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" src="images/rezeptbild_08.png"/></div>
-</section><section class="recipe" id="rezept-10">
+</section>
+<section class="recipe" id="rezept-10">
 <div>
 <h2><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></h2>
 <div class="meta">
@@ -654,7 +591,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Fester Favorit.</span></p>
 </div>
 <div><img alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" src="images/rezeptbild_09.png"/></div>
-</section><section class="recipe" id="rezept-11">
+</section>
+<section class="recipe" id="rezept-11">
 <div>
 <h2><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></h2>
 <div class="meta">
@@ -703,7 +641,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Fester Favorit.</span></p>
 </div>
 <div><img alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" src="images/rezeptbild_10.png"/></div>
-</section><section class="recipe" id="rezept-12">
+</section>
+<section class="recipe" id="rezept-12">
 <div>
 <h2><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></h2>
 <div class="meta">
@@ -750,7 +689,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Fester Favorit.</span></p>
 </div>
 <div><img alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" src="images/rezeptbild_11.png"/></div>
-</section><section class="recipe" id="rezept-13">
+</section>
+<section class="recipe" id="rezept-13">
 <div>
 <h2><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></h2>
 <div class="meta">
@@ -799,7 +739,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Fest gespeichert, sehr beliebt.</span><span lang-variant="pl">Na stałe zapisane, bardzo lubiane.</span></p>
 </div>
 <div><img alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" src="images/rezeptbild_13.png"/></div>
-</section><section class="recipe" id="rezept-14">
+</section>
+<section class="recipe" id="rezept-14">
 <div>
 <h2><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></h2>
 <div class="meta">
@@ -845,7 +786,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
 <div><img alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" src="images/rezeptbild_12.png"/></div>
-</section><section class="recipe" id="rezept-15">
+</section>
+<section class="recipe" id="rezept-15">
 <div>
 <h2><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></h2>
 <div class="meta">
@@ -889,7 +831,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Sehr gut, einfach und schwiegermuttertauglich.</span><span lang-variant="pl">Bardzo dobre, proste i odpowiednie także dla tradycyjnych gustów.</span></p>
 </div>
 <div><img alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" src="images/rezeptbild_15.png"/></div>
-</section><section class="recipe" id="rezept-16">
+</section>
+<section class="recipe" id="rezept-16">
 <div>
 <h2><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></h2>
 <div class="meta">
@@ -935,7 +878,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Sehr cremig und sehr gut.</span><span lang-variant="pl">Bardzo kremowe i bardzo dobre.</span></p>
 </div>
 <div><img alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" src="images/rezeptbild_16.png"/></div>
-</section><section class="recipe" id="rezept-17">
+</section>
+<section class="recipe" id="rezept-17">
 <div>
 <h2><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></h2>
 <div class="meta">
@@ -987,7 +931,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Festessen, sehr gut.</span><span lang-variant="pl">Świąteczne danie, bardzo dobre.</span></p>
 </div>
 <div><img alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" src="images/rezeptbild_17.png"/></div>
-</section><section class="recipe" id="rezept-18">
+</section>
+<section class="recipe" id="rezept-18">
 <div>
 <h2><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></h2>
 <div class="meta">
@@ -1029,7 +974,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Klassiker, gut.</span><span lang-variant="pl">Klasyk, smaczny i sprawdzony.</span></p>
 </div>
 <div><img alt="Kartoffelsuppe mit Mettenden" src="images/rezeptbild_18.png"/></div>
-</section><section class="recipe" id="rezept-19">
+</section>
+<section class="recipe" id="rezept-19">
 <div>
 <h2><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></h2>
 <div class="meta">
@@ -1071,7 +1017,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Wichtige Grundzutat für traditionellen Żurek.</span><span lang-variant="pl">Ważna baza do tradycyjnego żurku.</span></p>
 </div>
 <div><img alt="Zakwas für Żurek selber machen" src="images/rezeptbild_19.png"/></div>
-</section><section class="recipe" id="rezept-20">
+</section>
+<section class="recipe" id="rezept-20">
 <div>
 <h2><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></h2>
 <div class="meta">
@@ -1120,7 +1067,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Klassiker, sehr beliebt.</span><span lang-variant="pl">Klasyk, bardzo lubiany.</span></p>
 </div>
 <div><img alt="Königsberger Klopse" src="images/rezeptbild_20.png"/></div>
-</section><section class="recipe" id="rezept-21">
+</section>
+<section class="recipe" id="rezept-21">
 <div>
 <h2><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></h2>
 <div class="meta">
@@ -1163,7 +1111,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Süßer Klassiker.</span><span lang-variant="pl">Słodki klasyk.</span></p>
 </div>
 <div><img alt="Danziger Porzeln" src="images/rezeptbild_21.png"/></div>
-</section><section class="recipe" id="rezept-22">
+</section>
+<section class="recipe" id="rezept-22">
 <div>
 <h2><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></h2>
 <div class="meta">
@@ -1209,7 +1158,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Sommerlich und traditionell.</span><span lang-variant="pl">Letni i tradycyjny.</span></p>
 </div>
 <div><img alt="Kalte Rote-Bete-Suppe" src="images/rezeptbild_22.png"/></div>
-</section><section class="recipe" id="rezept-23">
+</section>
+<section class="recipe" id="rezept-23">
 <div>
 <h2><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></h2>
 <div class="meta">
@@ -1255,7 +1205,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Klassisches polnisches Teiggericht.</span><span lang-variant="pl">Klasyczne polskie danie z ciasta.</span></p>
 </div>
 <div><img alt="Piroggen mit Sauerkraut-Pilz-Füllung" src="images/rezeptbild_23.png"/></div>
-</section><section class="recipe" id="rezept-24">
+</section>
+<section class="recipe" id="rezept-24">
 <div>
 <h2><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></h2>
 <div class="meta">
@@ -1302,7 +1253,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Hausmannskost mit viel Soße.</span><span lang-variant="pl">Domowe danie z dużą ilością sosu.</span></p>
 </div>
 <div><img alt="Klopse in Tomatensoße" src="images/rezeptbild_24.png"/></div>
-</section><section class="recipe" id="rezept-25">
+</section>
+<section class="recipe" id="rezept-25">
 <div>
 <h2><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></h2>
 <div class="meta">
@@ -1345,7 +1297,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Klassischer Heringssalat.</span><span lang-variant="pl">Klasyczna sałatka śledziowa.</span></p>
 </div>
 <div><img alt="Danziger Heringssalat" src="images/rezeptbild_25.png"/></div>
-</section><section class="recipe" id="rezept-26">
+</section>
+<section class="recipe" id="rezept-26">
 <div>
 <h2><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></h2>
 <div class="meta">
@@ -1391,7 +1344,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Typischer Klassiker aus der kaschubischen Küche.</span><span lang-variant="pl">Typowy klasyk kuchni kaszubskiej.</span></p>
 </div>
 <div><img alt="Hering nach kaschubischer Art" src="images/rezeptbild_26.png"/></div>
-</section><section class="recipe" id="rezept-27">
+</section>
+<section class="recipe" id="rezept-27">
 <div>
 <h2><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></h2>
 <div class="meta">
@@ -1433,7 +1387,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Kräftig und bodenständig.</span><span lang-variant="pl">Wyraziste i bardzo domowe.</span></p>
 </div>
 <div><img alt="Polnisches Beefsteak" src="images/rezeptbild_27.png"/></div>
-</section><section class="recipe" id="rezept-28">
+</section>
+<section class="recipe" id="rezept-28">
 <div>
 <h2><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></h2>
 <div class="meta">
@@ -1478,7 +1433,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Klassische Fleischpastete für besondere Tage.</span><span lang-variant="pl">Klasyczny pasztet mięsny na specjalne okazje.</span></p>
 </div>
 <div><img alt="Fleischpastete" src="images/rezeptbild_28.png"/></div>
-</section><section class="recipe" id="rezept-29">
+</section>
+<section class="recipe" id="rezept-29">
 <div>
 <h2><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></h2>
 <div class="meta">
@@ -1522,7 +1478,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Herzhaft mit feiner Süße.</span><span lang-variant="pl">Wytrawne danie z lekką owocową nutą.</span></p>
 </div>
 <div><img alt="Geflügelleber mit Äpfeln" src="images/rezeptbild_29.png"/></div>
-</section><section class="recipe" id="rezept-30">
+</section>
+<section class="recipe" id="rezept-30">
 <div>
 <h2><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></h2>
 <div class="meta">
@@ -1566,7 +1523,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Herzhaftes Traditionsgericht.</span><span lang-variant="pl">Treściwe danie tradycyjne.</span></p>
 </div>
 <div><img alt="Eisbein nach alt-polnischer Art" src="images/rezeptbild_30.png"/></div>
-</section><section class="recipe" id="rezept-31">
+</section>
+<section class="recipe" id="rezept-31">
 <div>
 <h2><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></h2>
 <div class="meta">
@@ -1612,7 +1570,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Kräftige, traditionelle Suppe.</span><span lang-variant="pl">Treściwa, tradycyjna zupa.</span></p>
 </div>
 <div><img alt="Danziger Suppe" src="images/rezeptbild_31.png"/></div>
-</section><section class="recipe" id="rezept-32">
+</section>
+<section class="recipe" id="rezept-32">
 <div>
 <h2><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></h2>
 <div class="meta">
@@ -1656,7 +1615,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Sättigende klassische Suppe.</span><span lang-variant="pl">Syta klasyczna zupa.</span></p>
 </div>
 <div><img alt="Erbsensuppe mit Kartoffeln" src="images/rezeptbild_32.png"/></div>
-</section><section class="recipe" id="rezept-33">
+</section>
+<section class="recipe" id="rezept-33">
 <div>
 <h2><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></h2>
 <div class="meta">
@@ -1699,7 +1659,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Klassische Grundsauce.</span><span lang-variant="pl">Klasyczny sos bazowy.</span></p>
 </div>
 <div><img alt="Alt-polnische Sauce" src="images/rezeptbild_33.png"/></div>
-</section><section class="recipe" id="rezept-34">
+</section>
+<section class="recipe" id="rezept-34">
 <div>
 <h2><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></h2>
 <div class="meta">
@@ -1746,7 +1707,8 @@ header .subtitle{margin-top:0;color:#6b7280}
 <p><span lang-variant="de">Traditioneller Oster-Żurek auf Basis von Rezept 19.</span><span lang-variant="pl">Tradycyjny żurek wielkanocny na bazie przepisu 19.</span></p>
 </div>
 <div><img alt="Oster-Żurek" src="images/rezeptbild_34.png"/></div>
-</section></div></div></main>
+</section>
+</main>
 <footer class="wrap">
 <span lang-variant="de">Stand: exportiert für Cloudflare Pages. XML und Bilder sind im Paket enthalten.</span>
 <span lang-variant="pl">Stan: wyeksportowano do Cloudflare Pages. XML i obrazy są zawarte w pakiecie.</span>
@@ -1754,7 +1716,7 @@ header .subtitle{margin-top:0;color:#6b7280}
 <script>
 (function(){
   const root=document.documentElement;
-  window.setLang = function setLang(lang){
+  function setLang(lang){
     root.setAttribute('data-lang', lang);
     document.querySelectorAll('.lang-btn').forEach(btn=>btn.classList.toggle('active', btn.dataset.setLang===lang));
     localStorage.setItem('kochbuch_lang', lang);
@@ -1971,138 +1933,5 @@ ${clone.outerHTML}
   document.querySelectorAll('section.recipe[id^="rezept-"]').forEach(addButtonsToRecipe);
 })();
 </script>
-<script>
-(function(){
-  const recipeSections = Array.from(document.querySelectorAll('section.recipe'));
-  const tocEntries = Array.from(document.querySelectorAll('.toc-grid > div'));
-  const categoryList = document.getElementById('categoryList');
-  const currentCategoryLabel = document.getElementById('currentCategoryLabel');
-  const mobileCategoryToggle = document.getElementById('mobileCategoryToggle');
-  const sidebar = document.querySelector('.category-sidebar');
-  const lang = () => document.documentElement.getAttribute('data-lang') || 'de';
-
-  function normalizeCategory(text){
-    return (text || '')
-      .replace(/\s+/g, ' ')
-      .trim()
-      .toLowerCase()
-      .replace(/[\/,]/g, '-')
-      .replace(/[^a-z0-9äöüßąćęłńóśźż -]/gi,'')
-      .replace(/\s*-\s*/g,'-')
-      .replace(/\s+/g,'-');
-  }
-
-  function getVariantText(el, targetLang){
-    if(!el) return '';
-    const direct = el.querySelector(`[lang-variant="${targetLang}"]`);
-    if(direct) return direct.textContent.trim();
-    return el.textContent.trim();
-  }
-
-  const categories = [];
-  const categoryMap = new Map();
-
-  recipeSections.forEach(section => {
-    const firstTag = section.querySelector('.meta .tag');
-    const de = getVariantText(firstTag, 'de');
-    const pl = getVariantText(firstTag, 'pl');
-    const key = normalizeCategory(de || pl);
-    section.dataset.categoryKey = key;
-    section.dataset.categoryDe = de;
-    section.dataset.categoryPl = pl;
-    if (!categoryMap.has(key)) {
-      const entry = { key, de, pl };
-      categoryMap.set(key, entry);
-      categories.push(entry);
-    }
-    const link = document.querySelector(`.toc-grid a[href="#${section.id}"]`);
-    if (link && link.parentElement) {
-      link.parentElement.dataset.categoryKey = key;
-    }
-  });
-
-  function buttonLabel(cat){
-    return lang() === 'pl' ? cat.pl : cat.de;
-  }
-
-  function currentAllLabel(){
-    return lang() === 'pl' ? 'Wszystkie przepisy' : 'Alle Rezepte';
-  }
-
-  function renderButtons(activeKey='all'){
-    categoryList.innerHTML = '';
-    const allBtn = document.createElement('button');
-    allBtn.type = 'button';
-    allBtn.className = 'category-btn' + (activeKey === 'all' ? ' active' : '');
-    allBtn.dataset.categoryKey = 'all';
-    allBtn.textContent = currentAllLabel();
-    categoryList.appendChild(allBtn);
-
-    categories.forEach(cat => {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'category-btn' + (activeKey === cat.key ? ' active' : '');
-      btn.dataset.categoryKey = cat.key;
-      btn.textContent = buttonLabel(cat);
-      categoryList.appendChild(btn);
-    });
-  }
-
-  function updateCurrentLabel(activeKey){
-    currentCategoryLabel.innerHTML = '';
-    const span = document.createElement('span');
-    span.setAttribute('lang-variant', lang());
-    if (activeKey === 'all') {
-      span.textContent = currentAllLabel();
-    } else {
-      const cat = categoryMap.get(activeKey);
-      span.textContent = buttonLabel(cat);
-    }
-    currentCategoryLabel.appendChild(span);
-  }
-
-  function applyFilter(activeKey='all'){
-    recipeSections.forEach(section => {
-      section.classList.toggle('hidden-by-filter', activeKey !== 'all' && section.dataset.categoryKey !== activeKey);
-    });
-    tocEntries.forEach(entry => {
-      entry.classList.toggle('hidden-by-filter', activeKey !== 'all' && entry.dataset.categoryKey !== activeKey);
-    });
-    renderButtons(activeKey);
-    updateCurrentLabel(activeKey);
-  }
-
-  categoryList.addEventListener('click', (e) => {
-    const btn = e.target.closest('.category-btn');
-    if(!btn) return;
-    const key = btn.dataset.categoryKey || 'all';
-    applyFilter(key);
-    if (window.innerWidth <= 980) {
-      sidebar.open = false;
-      window.scrollTo({top: document.querySelector('.toc').offsetTop - 10, behavior:'smooth'});
-    }
-  });
-
-  mobileCategoryToggle.addEventListener('click', () => {
-    sidebar.scrollIntoView({behavior:'smooth', block:'start'});
-  });
-
-  const originalSetLang = window.setLang;
-  if (typeof originalSetLang === 'function') {
-    window.setLang = function(nextLang){
-      originalSetLang(nextLang);
-      const active = document.querySelector('.category-btn.active');
-      applyFilter(active ? active.dataset.categoryKey : 'all');
-    };
-  } else {
-    const observer = new MutationObserver(() => {
-      const active = document.querySelector('.category-btn.active');
-      applyFilter(active ? active.dataset.categoryKey : 'all');
-    });
-    observer.observe(document.documentElement, {attributes:true, attributeFilter:['data-lang']});
-  }
-
-  applyFilter('all');
-})();
-</script></body>
+</body>
 </html>
