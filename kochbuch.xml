@@ -755,7 +755,7 @@
     <rating>Klassiker, gut.</rating>
   </recipe>
     <recipe id="19">
-    <name>Zakwas für Żurek selber machen</name>
+    <name>Säure für Żurek selber machen</name>
     <persons>Ansatz für mehrere Portionen Żurek</persons>
     <category>Grundlagen / Polnische Küche</category>
     <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen" />
@@ -790,6 +790,6 @@
       <item>Vor der Lagerung kann der Zakwas abgeseiht und in eine saubere Flasche gefüllt werden.</item>
       <item>Im Kühlschrank hält sich der fertige Zakwas einige Tage bis etwa zwei Wochen.</item>
     </tips>
-    <rating>Traditionelle Grundlage für Żurek, sehr empfehlenswert für den Blog und das Kochbuch.</rating>
+    <rating>Traditionelle Grundlage für Żurek.</rating>
   </recipe>
 </cookbook>
