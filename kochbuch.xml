@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht i do gut befunden)" version="2.0" languages="de,pl">
+<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.1" languages="de,pl">
   <meta>
     <language>de,pl</language>
     <recipeCount>33</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
   </meta>
   <recipe id="1">
-    <name>Spanische Kohlrouladen z Chorizo, Rotwein i Speck</name>
+    <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
     <persons>4 Personen</persons>
     <category>Feiertagsessen / Ofengerichte</category>
-    <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen z Chorizo, Rotwein i Speck" />
+    <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" />
     <ingredients>
       <item>1 Weißkohl</item>
-      <item>500 g Hackfleisch (gemischt lub Rind)</item>
+      <item>500 g Hackfleisch (gemischt oder Rind)</item>
       <item>1 altbackenes Brötchen</item>
       <item>1 Ei</item>
       <item>2 Zwiebeln</item>
@@ -25,34 +25,34 @@
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>Paprikapulver edelsüß</item>
-      <item>Majoran lub Thymian</item>
+      <item>Majoran oder Thymian</item>
       <item>Öl zum Anbraten</item>
-      <item>Dodatki: Kartoffelpüree</item>
-      <item>Dodatki: Baguette</item>
+      <item>Beilagen: Kartoffelpüree</item>
+      <item>Beilagen: Baguette</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kohlblätter in kochendem Salzwasser blanchieren, do sie weich sind. Dicke Blattrippen flach schneiden.</step>
-      <step nr="2">Brötchen in Wasser einweichen i gut ausdrücken.</step>
-      <step nr="3">Zwiebeln, Knoblauch i Chorizo klein schneiden i in einer Pfanne krótko anbraten.</step>
-      <step nr="4">Hackfleisch z dem eingeweichten Brötchen, Ei, der angebratenen Zwiebel-Chorizo-Mischung i den Gewürzen vermengen.</step>
-      <step nr="5">Die Kohlblätter z der Hackmasse füllen i zu Rouladen formen.</step>
-      <step nr="6">Jede Kohlroulade außen z Speck umwickeln.</step>
+      <step nr="1">Kohlblätter in kochendem Salzwasser blanchieren, bis sie weich sind. Dicke Blattrippen flach schneiden.</step>
+      <step nr="2">Brötchen in Wasser einweichen und gut ausdrücken.</step>
+      <step nr="3">Zwiebeln, Knoblauch und Chorizo klein schneiden und in einer Pfanne kurz anbraten.</step>
+      <step nr="4">Hackfleisch mit dem eingeweichten Brötchen, Ei, der angebratenen Zwiebel-Chorizo-Mischung und den Gewürzen vermengen.</step>
+      <step nr="5">Die Kohlblätter mit der Hackmasse füllen und zu Rouladen formen.</step>
+      <step nr="6">Jede Kohlroulade außen mit Speck umwickeln.</step>
       <step nr="7">Die Rouladen in einem Bräter von allen Seiten anbraten.</step>
-      <step nr="8">Tomatenmark krótko mitrösten, dann z Rotwein ablöschen i z Rinderfond auffüllen.</step>
-      <step nr="9">Rouladen in die Sauce legen i zugedeckt 2 do 2,5 godzin bei niedriger Hitze schmoren.</step>
-      <step nr="10">Am Ende den Deckel abnehmen i die Sauce zredukować lassen. Z Salz, Pfeffer i ggf. trochę Zucker abschmecken.</step>
+      <step nr="8">Tomatenmark kurz mitrösten, dann mit Rotwein ablöschen und mit Rinderfond auffüllen.</step>
+      <step nr="9">Rouladen in die Sauce legen und zugedeckt 2 bis 2,5 Stunden bei niedriger Hitze schmoren.</step>
+      <step nr="10">Am Ende den Deckel abnehmen und die Sauce einkochen lassen. Mit Salz, Pfeffer und ggf. etwas Zucker abschmecken.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: ok. 30 min</item>
-      <item>Schmorzeit: 2 do 2,5 godzin</item>
-      <item>Jeśli jesz około 18:30–19:00, najlepiej zacząć około 15:30–16:00</item>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Schmorzeit: 2 bis 2,5 Stunden</item>
+      <item>Bei Essen gegen 18:30–19:00 Uhr ideal ca. 15:30–16:00 Uhr starten</item>
     </timing>
     <tips>
       <item>Die dicke Blattrippe immer flach schneiden, dann lassen sich die Rouladen besser wickeln.</item>
-      <item>Die Sauce am Ende bez przykrycia zredukować, damit sie kräftiger wird.</item>
-      <item>Kartoffelpüree dazu frisch krótko vor dem Servieren machen.</item>
+      <item>Die Sauce am Ende offen einkochen, damit sie kräftiger wird.</item>
+      <item>Kartoffelpüree dazu frisch kurz vor dem Servieren machen.</item>
     </tips>
-    <rating>Nie ma jeszcze stałej oceny liczbowej; należy jednak do dobrych, zapisanych przepisów.</rating>
+    <rating>Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</rating>
     <translation lang="pl">
       <name>Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</name>
       <persons>4 osoby</persons>
@@ -108,13 +108,13 @@
     <category>Ofengerichte / Feiertagsessen</category>
     <image src="images/rezeptbild_02.png" alt="Italienischer Kalbshaxen-Braten" />
     <ingredients>
-      <item>1 Kalbshaxen-Braten ohne Knochen, ok. 800 g</item>
+      <item>1 Kalbshaxen-Braten ohne Knochen, ca. 800 g</item>
       <item>2 Zwiebeln</item>
       <item>2 Möhren</item>
       <item>2 Knoblauchzehen</item>
       <item>2 EL Tomatenmark</item>
-      <item>150 ml Weißwein lub Rotwein</item>
-      <item>400 ml Kalbsfond lub Rinderfond</item>
+      <item>150 ml Weißwein oder Rotwein</item>
+      <item>400 ml Kalbsfond oder Rinderfond</item>
       <item>2 EL Olivenöl</item>
       <item>1 TL Salz</item>
       <item>1/2 TL Pfeffer</item>
@@ -124,29 +124,29 @@
       <item>optional: 1 Stück Sellerie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kalbshaxen-Braten trocken tupfen i z Salz, Pfeffer i Kräutern würzen.</step>
-      <step nr="2">Zwiebeln, Möhren i Knoblauch grob würfeln.</step>
-      <step nr="3">Öl in einem Bräter erhitzen i den Braten rundherum kräftig anbraten.</step>
-      <step nr="4">Braten krótko herausnehmen, Gemüse im Bräter anrösten.</step>
-      <step nr="5">Tomatenmark zugeben i krótko mitrösten.</step>
-      <step nr="6">Z Wein ablöschen i leicht zredukować lassen.</step>
-      <step nr="7">Fond angießen, Rosmarin i Lorbeer zugeben.</step>
+      <step nr="1">Kalbshaxen-Braten trocken tupfen und mit Salz, Pfeffer und Kräutern würzen.</step>
+      <step nr="2">Zwiebeln, Möhren und Knoblauch grob würfeln.</step>
+      <step nr="3">Öl in einem Bräter erhitzen und den Braten rundherum kräftig anbraten.</step>
+      <step nr="4">Braten kurz herausnehmen, Gemüse im Bräter anrösten.</step>
+      <step nr="5">Tomatenmark zugeben und kurz mitrösten.</step>
+      <step nr="6">Mit Wein ablöschen und leicht einkochen lassen.</step>
+      <step nr="7">Fond angießen, Rosmarin und Lorbeer zugeben.</step>
       <step nr="8">Braten zurück in den Bräter legen.</step>
-      <step nr="9">Zugedeckt im Ofen bei ok. 160 °C Ober-/Unterhitze etwa 1 godzina 45 min schmoren.</step>
-      <step nr="10">Zwischendurch z trochę Bratensaft übergießen.</step>
-      <step nr="11">Braten herausnehmen, Sauce nach Wunsch pürieren lub rustikal lassen.</step>
-      <step nr="12">Sauce abschmecken i den Braten in Scheiben servieren.</step>
+      <step nr="9">Zugedeckt im Ofen bei ca. 160 °C Ober-/Unterhitze etwa 1 Stunde 45 Minuten schmoren.</step>
+      <step nr="10">Zwischendurch mit etwas Bratensaft übergießen.</step>
+      <step nr="11">Braten herausnehmen, Sauce nach Wunsch pürieren oder rustikal lassen.</step>
+      <step nr="12">Sauce abschmecken und den Braten in Scheiben servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 20–25 min</item>
-      <item>Schmorzeit: ok. 1 godzina 45 min</item>
-      <item>Gesamt: ok. 2 godzin 15 min</item>
-      <item>Jeśli jesz o 18:30, zacznij około 16:15</item>
+      <item>Vorbereitung: 20–25 Minuten</item>
+      <item>Schmorzeit: ca. 1 Stunde 45 Minuten</item>
+      <item>Gesamt: ca. 2 Stunden 15 Minuten</item>
+      <item>Bei Essen um 18:30 Uhr: Start ca. 16:15 Uhr</item>
     </timing>
     <tips>
       <item>Nicht zu heiß schmoren, sonst wird Kalbfleisch trocken.</item>
-      <item>Sauce am Ende 5–10 min bez przykrycia zredukować.</item>
-      <item>Sehr gut z Kartoffelpüree, Bandnudeln lub Baguette.</item>
+      <item>Sauce am Ende 5–10 Minuten offen einkochen.</item>
+      <item>Sehr gut mit Kartoffelpüree, Bandnudeln oder Baguette.</item>
     </tips>
     <rating>Fest gespeichert als gutes Rezept.</rating>
     <translation lang="pl">
@@ -198,10 +198,10 @@
     </translation>
   </recipe>
   <recipe id="3">
-    <name>Svens Muscheln in Weißwein-Tomaten-Butter-Sauce z Airfryer-Knoblauchbrot</name>
+    <name>Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</name>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Beilagen</category>
-    <image src="images/rezeptbild_02_1.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce z Airfryer-Knoblauchbrot" />
+    <image src="images/rezeptbild_02_1.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" />
     <ingredients>
       <item>1,5 kg Muscheln</item>
       <item>2 Frühlingszwiebeln</item>
@@ -210,39 +210,39 @@
       <item>1 EL Olivenöl</item>
       <item>150 ml Weißwein</item>
       <item>200 g stückige Tomaten</item>
-      <item>100 ml Sahne lub trochę zusätzlicher Muschelsud, optional</item>
+      <item>100 ml Sahne oder etwas zusätzlicher Muschelsud, optional</item>
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>1 kleine Prise Zucker</item>
-      <item>1/2 Baguette lub 1 mała Ciabatta</item>
-      <item>2 EL Butter do das Knoblauchbrot</item>
+      <item>1/2 Baguette oder 1 kleines Ciabatta</item>
+      <item>2 EL Butter für das Knoblauchbrot</item>
       <item>1 Knoblauchzehe fürs Brot</item>
       <item>optional: Petersilie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Muscheln gründlich waschen, geöffnete lub beschädigte Muscheln aussortieren.</step>
-      <step nr="2">Frühlingszwiebeln i Knoblauch fein schneiden.</step>
-      <step nr="3">Butter i Olivenöl in einem großen Topf erhitzen.</step>
-      <step nr="4">Frühlingszwiebeln i Knoblauch krótko anschwitzen.</step>
-      <step nr="5">Z Weißwein ablöschen.</step>
-      <step nr="6">Tomaten zugeben i alles krótko aufkochen.</step>
-      <step nr="7">Z Pfeffer i einer kleinen Prise Zucker abschmecken.</step>
-      <step nr="8">Muscheln in den Topf geben, Deckel aufsetzen i 5–8 min garen.</step>
+      <step nr="1">Muscheln gründlich waschen, geöffnete oder beschädigte Muscheln aussortieren.</step>
+      <step nr="2">Frühlingszwiebeln und Knoblauch fein schneiden.</step>
+      <step nr="3">Butter und Olivenöl in einem großen Topf erhitzen.</step>
+      <step nr="4">Frühlingszwiebeln und Knoblauch kurz anschwitzen.</step>
+      <step nr="5">Mit Weißwein ablöschen.</step>
+      <step nr="6">Tomaten zugeben und alles kurz aufkochen.</step>
+      <step nr="7">Mit Pfeffer und einer kleinen Prise Zucker abschmecken.</step>
+      <step nr="8">Muscheln in den Topf geben, Deckel aufsetzen und 5–8 Minuten garen.</step>
       <step nr="9">Topf zwischendurch einmal rütteln.</step>
       <step nr="10">Nur geöffnete Muscheln servieren, geschlossene aussortieren.</step>
-      <step nr="11">Do das Knoblauchbrot Baguette aufschneiden, z Butter bestreichen i z Knoblauch einreiben.</step>
-      <step nr="12">Im Airfryer bei ok. 180 °C 4–6 min knusprig backen.</step>
+      <step nr="11">Für das Knoblauchbrot Baguette aufschneiden, mit Butter bestreichen und mit Knoblauch einreiben.</step>
+      <step nr="12">Im Airfryer bei ca. 180 °C 4–6 Minuten knusprig backen.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 15 min</item>
-      <item>Garzeit: 10 min</item>
-      <item>Pieczywo równolegle: 5 min</item>
-      <item>Gesamt: ok. 25 min</item>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Garzeit: 10 Minuten</item>
+      <item>Brot parallel: 5 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
     </timing>
     <tips>
       <item>Muscheln erst ganz zum Schluss garen.</item>
       <item>Sauce vorher nicht zu stark reduzieren.</item>
-      <item>Pieczywo włóż do Airfryera dopiero tuż przed podaniem.</item>
+      <item>Brot erst kurz vor dem Servieren in den Airfryer geben.</item>
     </tips>
     <rating>Fest gespeichertes, gut befundenes Rezept.</rating>
     <translation lang="pl">
@@ -295,12 +295,12 @@
     </translation>
   </recipe>
   <recipe id="4">
-    <name>Hähnchen-Gyros z Ofenkartoffeln, Gurkensalat i Tsatsiki</name>
+    <name>Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Pfannengerichte</category>
-    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros z Ofenkartoffeln, Gurkensalat i Tsatsiki" />
+    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" />
     <ingredients>
-      <item>700 g Hähnchengeschnetzeltes lub Hähnchenfilet in Streifen</item>
+      <item>700 g Hähnchengeschnetzeltes oder Hähnchenfilet in Streifen</item>
       <item>2 EL Gyrosgewürz</item>
       <item>2 EL Öl</item>
       <item>1 große Zwiebel</item>
@@ -311,31 +311,31 @@
       <item>1 EL Zitronensaft</item>
       <item>Salz</item>
       <item>Pfeffer</item>
-      <item>trochę Öl do die Kartoffeln</item>
-      <item>optional: Paprikapulver do die Kartoffeln</item>
+      <item>etwas Öl für die Kartoffeln</item>
+      <item>optional: Paprikapulver für die Kartoffeln</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hähnchen z Öl, Gyrosgewürz i Zwiebelstreifen marinieren.</step>
-      <step nr="2">Kartoffeln in Spalten schneiden, würzen i z trochę Öl mischen.</step>
-      <step nr="3">Kartoffeln auf ein Blech geben i bei 200 °C ok. 35–40 min backen.</step>
-      <step nr="4">Gurke do den Salat in Scheiben schneiden lub hobeln.</step>
-      <step nr="5">Do Tsatsiki Gurke fein raspeln, ausdrücken i z Joghurt, Knoblauch, Salz, Pfeffer i Zitronensaft verrühren.</step>
+      <step nr="1">Hähnchen mit Öl, Gyrosgewürz und Zwiebelstreifen marinieren.</step>
+      <step nr="2">Kartoffeln in Spalten schneiden, würzen und mit etwas Öl mischen.</step>
+      <step nr="3">Kartoffeln auf ein Blech geben und bei 200 °C ca. 35–40 Minuten backen.</step>
+      <step nr="4">Gurke für den Salat in Scheiben schneiden oder hobeln.</step>
+      <step nr="5">Für Tsatsiki Gurke fein raspeln, ausdrücken und mit Joghurt, Knoblauch, Salz, Pfeffer und Zitronensaft verrühren.</step>
       <step nr="6">Hähnchen in einer großen Pfanne scharf anbraten.</step>
       <step nr="7">Gurkensalat frisch anmachen.</step>
       <step nr="8">Alles zusammen servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 20 min</item>
-      <item>Pieczone ziemniaki: 35–40 min</item>
-      <item>Gyros: 10–12 min</item>
-      <item>Gesamt: ok. 50–60 min</item>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Ofenkartoffeln: 35–40 Minuten</item>
+      <item>Gyros: 10–12 Minuten</item>
+      <item>Gesamt: ca. 50–60 Minuten</item>
     </timing>
     <tips>
       <item>Hähnchen lieber portionsweise anbraten.</item>
       <item>Tsatsiki früh anrühren, dann zieht es besser durch.</item>
-      <item>Als Sonntagsklassiker ideal do Essen zwischen 18:00 i 19:00 Uhr.</item>
+      <item>Als Sonntagsklassiker ideal für Essen zwischen 18:00 und 19:00 Uhr.</item>
     </tips>
-    <rating>Na stałe zapisany, bardzo dobrze przyjęty.</rating>
+    <rating>Fest gespeichert, sehr gut angekommen.</rating>
     <translation lang="pl">
       <name>Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</name>
       <persons>3–4 osoby</persons>
@@ -396,35 +396,35 @@
       <item>4 Bratwürste</item>
       <item>1 Becher Tzatziki</item>
       <item>1 Packung Fladenbrot</item>
-      <item>Salz i Pfeffer nach Bedarf</item>
+      <item>Salz und Pfeffer nach Bedarf</item>
     </ingredients>
     <preparation>
-      <step nr="1">Rindfleisch z BBQ-Rub würzen i krótko ziehen lassen.</step>
-      <step nr="2">Paprika, Zucchini i Zwiebeln in Streifen schneiden.</step>
+      <step nr="1">Rindfleisch mit BBQ-Rub würzen und kurz ziehen lassen.</step>
+      <step nr="2">Paprika, Zucchini und Zwiebeln in Streifen schneiden.</step>
       <step nr="3">Gusseisenpfanne stark erhitzen.</step>
-      <step nr="4">Fleisch scharf anbraten i wieder herausnehmen.</step>
+      <step nr="4">Fleisch scharf anbraten und wieder herausnehmen.</step>
       <step nr="5">Gemüse ebenfalls kräftig anrösten.</step>
       <step nr="6">Fleisch zurück in die Pfanne geben.</step>
-      <step nr="7">Patelnię wstaw do smokera o temperaturze ok. 120–130 °C na 45–60 min.</step>
+      <step nr="7">Pfanne bei ca. 120–130 °C für 45–60 Minuten in den Smoker stellen.</step>
       <step nr="8">Hickory-Pellets verwenden.</step>
       <step nr="9">Danach Pfanne wieder auf den Gaskocher setzen.</step>
-      <step nr="10">BBQ-Sauce zugeben i alles krótko zredukować lassen.</step>
-      <step nr="11">Z frischem Limettensaft abschließen.</step>
-      <step nr="12">Z Tzatziki, Fladenbrot i Bratwurst servieren.</step>
+      <step nr="10">BBQ-Sauce zugeben und alles kurz einköcheln lassen.</step>
+      <step nr="11">Mit frischem Limettensaft abschließen.</step>
+      <step nr="12">Mit Tzatziki, Fladenbrot und Bratwurst servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 20 min</item>
-      <item>Anbraten: 15 min</item>
-      <item>Smoken: 45–60 min</item>
-      <item>Finish: 10 min</item>
-      <item>Gesamt: ok. 1 godzina 30 min</item>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Anbraten: 15 Minuten</item>
+      <item>Smoken: 45–60 Minuten</item>
+      <item>Finish: 10 Minuten</item>
+      <item>Gesamt: ca. 1 Stunde 30 Minuten</item>
     </timing>
     <tips>
       <item>Pfanne nicht überfüllen.</item>
       <item>Limettensaft wirklich erst ganz am Ende zugeben.</item>
-      <item>Perfekt do den Pit Boss z Hickory-Pellets.</item>
+      <item>Perfekt für den Pit Boss mit Hickory-Pellets.</item>
     </tips>
-    <rating>Fest gespeichert i fürs BBQ-Buch übernommen.</rating>
+    <rating>Fest gespeichert und fürs BBQ-Buch übernommen.</rating>
     <translation lang="pl">
       <name>Wędzona patelnia BBQ fajita</name>
       <persons>4 osoby</persons>
@@ -474,7 +474,7 @@
   </recipe>
   <recipe id="6">
     <name>Bruschetta vom Ciabatta</name>
-    <persons>3–4 Personen als Vorspeise lub Beilage</persons>
+    <persons>3–4 Personen als Vorspeise oder Beilage</persons>
     <category>Beilagen / Grill / BBQ</category>
     <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta" />
     <ingredients>
@@ -485,25 +485,25 @@
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>optional: 1/2 rote Zwiebel</item>
-      <item>optional: frisches Basilikum lub Petersilie</item>
+      <item>optional: frisches Basilikum oder Petersilie</item>
     </ingredients>
     <preparation>
       <step nr="1">Ciabatta in Scheiben schneiden.</step>
-      <step nr="2">Z trochę Olivenöl bestreichen.</step>
-      <step nr="3">Podpiecz na grillu lub w piekarniku.</step>
-      <step nr="4">Die warmen Brotscheiben z frischem Knoblauch einreiben.</step>
+      <step nr="2">Mit etwas Olivenöl bestreichen.</step>
+      <step nr="3">Auf dem Grill oder im Ofen anrösten.</step>
+      <step nr="4">Die warmen Brotscheiben mit frischem Knoblauch einreiben.</step>
       <step nr="5">Tomaten klein würfeln.</step>
-      <step nr="6">Optional rote Zwiebel fein würfeln i z den Tomaten mischen.</step>
-      <step nr="7">Z Salz, Pfeffer i trochę Olivenöl abschmecken.</step>
-      <step nr="8">Nałóż na kromki tuż przed podaniem.</step>
+      <step nr="6">Optional rote Zwiebel fein würfeln und mit den Tomaten mischen.</step>
+      <step nr="7">Mit Salz, Pfeffer und etwas Olivenöl abschmecken.</step>
+      <step nr="8">Kurz vor dem Servieren auf die Brotscheiben geben.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10–15 min</item>
-      <item>Rösten: 5 min</item>
-      <item>Gesamt: ok. 15–20 min</item>
+      <item>Vorbereitung: 10–15 Minuten</item>
+      <item>Rösten: 5 Minuten</item>
+      <item>Gesamt: ca. 15–20 Minuten</item>
     </timing>
     <tips>
-      <item>Pieczywo posmaruj lub nałóż dodatki dopiero krótko przed jedzeniem.</item>
+      <item>Brot erst kurz vor dem Essen belegen.</item>
       <item>Die Tomatenmasse nicht zu wässrig werden lassen.</item>
       <item>Perfekt als Vorspeise zum Grillabend.</item>
     </tips>
@@ -546,10 +546,10 @@
     </translation>
   </recipe>
   <recipe id="7">
-    <name>Köfte z Tomaten-Zwiebel-Salat, Tzatziki i Fladenbrot</name>
+    <name>Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte</category>
-    <image src="images/rezeptbild_06.png" alt="Köfte z Tomaten-Zwiebel-Salat, Tzatziki i Fladenbrot" />
+    <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" />
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>1 kleine Zwiebel</item>
@@ -565,27 +565,27 @@
       <item>1/2 Gurke</item>
       <item>1 Knoblauchzehe</item>
       <item>1 Fladenbrot</item>
-      <item>trochę Petersilie</item>
+      <item>etwas Petersilie</item>
       <item>Öl zum Braten</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hackfleisch z geriebener Zwiebel, Ei, Paniermehl i Gewürzen vermengen.</step>
+      <step nr="1">Hackfleisch mit geriebener Zwiebel, Ei, Paniermehl und Gewürzen vermengen.</step>
       <step nr="2">Kleine längliche Köfte formen.</step>
-      <step nr="3">In trochę Öl rundherum anbraten lub grillen.</step>
-      <step nr="4">Tomaten i rote Zwiebel do den Salat schneiden.</step>
-      <step nr="5">Z trochę Salz, Pfeffer i Petersilie anmachen.</step>
-      <step nr="6">Do Tzatziki Gurke raspeln i z Joghurt i Knoblauch verrühren.</step>
-      <step nr="7">Fladenbrot erwärmen i alles zusammen servieren.</step>
+      <step nr="3">In etwas Öl rundherum anbraten oder grillen.</step>
+      <step nr="4">Tomaten und rote Zwiebel für den Salat schneiden.</step>
+      <step nr="5">Mit etwas Salz, Pfeffer und Petersilie anmachen.</step>
+      <step nr="6">Für Tzatziki Gurke raspeln und mit Joghurt und Knoblauch verrühren.</step>
+      <step nr="7">Fladenbrot erwärmen und alles zusammen servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 20 min</item>
-      <item>Braten: 10–12 min</item>
-      <item>Gesamt: ok. 35 min</item>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Braten: 10–12 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
     </timing>
     <tips>
-      <item>Hackmasse vorher 10 min ziehen lassen.</item>
-      <item>Fladenbrot krótko aufbacken, dann passt es besser dazu.</item>
-      <item>Auch gut do Gäste geeignet.</item>
+      <item>Hackmasse vorher 10 Minuten ziehen lassen.</item>
+      <item>Fladenbrot kurz aufbacken, dann passt es besser dazu.</item>
+      <item>Auch gut für Gäste geeignet.</item>
     </tips>
     <rating>Gut angekommen.</rating>
     <translation lang="pl">
@@ -633,45 +633,45 @@
     </translation>
   </recipe>
   <recipe id="8">
-    <name>Bauernomelette z Tomaten-Mozzarella-Salat</name>
+    <name>Bauernomelette mit Tomaten-Mozzarella-Salat</name>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Salate</category>
-    <image src="images/rezeptbild_07.png" alt="Bauernomelette z Tomaten-Mozzarella-Salat" />
+    <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat" />
     <ingredients>
       <item>6 Eier</item>
       <item>500 g Kartoffeln, gekocht</item>
       <item>1 Zwiebel</item>
-      <item>1 EL Öl lub Butter</item>
+      <item>1 EL Öl oder Butter</item>
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>3 Tomaten</item>
       <item>2 Kugeln Mozzarella</item>
-      <item>1 kleine Zwiebel lub rote Zwiebel</item>
+      <item>1 kleine Zwiebel oder rote Zwiebel</item>
       <item>2 Frühlingszwiebeln</item>
-      <item>trochę Petersilie</item>
+      <item>etwas Petersilie</item>
       <item>2 EL Olivenöl</item>
-      <item>1 EL heller Balsamico lub Zitronensaft</item>
+      <item>1 EL heller Balsamico oder Zitronensaft</item>
     </ingredients>
     <preparation>
       <step nr="1">Kartoffeln in Scheiben schneiden.</step>
-      <step nr="2">Zwiebel würfeln i in der Pfanne anbraten.</step>
-      <step nr="3">Kartoffeln zugeben i anrösten.</step>
-      <step nr="4">Eier verquirlen, würzen i darübergeben.</step>
-      <step nr="5">Stocken lassen i vorsichtig fertig garen.</step>
-      <step nr="6">Tomaten i Mozzarella schneiden.</step>
-      <step nr="7">Z Zwiebeln, Frühlingszwiebeln i Petersilie mischen.</step>
-      <step nr="8">Z Öl i trochę Säure anmachen.</step>
+      <step nr="2">Zwiebel würfeln und in der Pfanne anbraten.</step>
+      <step nr="3">Kartoffeln zugeben und anrösten.</step>
+      <step nr="4">Eier verquirlen, würzen und darübergeben.</step>
+      <step nr="5">Stocken lassen und vorsichtig fertig garen.</step>
+      <step nr="6">Tomaten und Mozzarella schneiden.</step>
+      <step nr="7">Mit Zwiebeln, Frühlingszwiebeln und Petersilie mischen.</step>
+      <step nr="8">Mit Öl und etwas Säure anmachen.</step>
       <step nr="9">Kein Feta verwenden.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 15 min</item>
-      <item>Garzeit: 15 min</item>
-      <item>Gesamt: ok. 30 min</item>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Garzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
     </timing>
     <tips>
       <item>Vorgekochte Kartoffeln verwenden, dann wird es besser.</item>
-      <item>Salat erst krótko vor dem Essen mischen.</item>
-      <item>Bardzo dobry i szybki obiad lub kolacja.</item>
+      <item>Salat erst kurz vor dem Essen mischen.</item>
+      <item>Sehr gutes schnelles Abendessen.</item>
     </tips>
     <rating>Gut angekommen.</rating>
     <translation lang="pl">
@@ -718,18 +718,18 @@
     </translation>
   </recipe>
   <recipe id="9">
-    <name>Chicken Masala z Naturjoghurt &amp; Protein-Wraps</name>
+    <name>Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</name>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte</category>
-    <image src="images/rezeptbild_08.png" alt="Chicken Masala z Naturjoghurt &amp; Protein-Wraps" />
+    <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" />
     <ingredients>
       <item>500 g Hähnchenbrust</item>
       <item>1 Zwiebel</item>
-      <item>1 TL Garam Masala lub Masala-Gewürz</item>
+      <item>1 TL Garam Masala oder Masala-Gewürz</item>
       <item>1 TL Paprikapulver</item>
       <item>150 g Naturjoghurt</item>
       <item>1 EL Tomatenmark</item>
-      <item>100 ml Wasser lub Brühe</item>
+      <item>100 ml Wasser oder Brühe</item>
       <item>1 EL Öl</item>
       <item>Salz</item>
       <item>Pfeffer</item>
@@ -738,23 +738,23 @@
     <preparation>
       <step nr="1">Hähnchen in Stücke schneiden.</step>
       <step nr="2">Zwiebel anbraten.</step>
-      <step nr="3">Hähnchen zugeben i krótko anrösten.</step>
-      <step nr="4">Gewürze i Tomatenmark einrühren.</step>
-      <step nr="5">Z trochę Wasser lub Brühe ablöschen.</step>
-      <step nr="6">Kurz zredukować lassen.</step>
+      <step nr="3">Hähnchen zugeben und kurz anrösten.</step>
+      <step nr="4">Gewürze und Tomatenmark einrühren.</step>
+      <step nr="5">Mit etwas Wasser oder Brühe ablöschen.</step>
+      <step nr="6">Kurz einkochen lassen.</step>
       <step nr="7">Naturjoghurt unterrühren.</step>
       <step nr="8">Nicht mehr stark kochen.</step>
-      <step nr="9">Z warmen Protein-Wraps servieren.</step>
+      <step nr="9">Mit warmen Protein-Wraps servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 min</item>
-      <item>Garzeit: 15 min</item>
-      <item>Gesamt: ok. 25 min</item>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Garzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
     </timing>
     <tips>
       <item>Joghurt erst bei reduzierter Hitze einrühren.</item>
-      <item>Wraps krótko erwärmen.</item>
-      <item>Bardzo praktyczne na co dzień.</item>
+      <item>Wraps kurz erwärmen.</item>
+      <item>Sehr alltagstauglich.</item>
     </tips>
     <rating>Gut angekommen.</rating>
     <translation lang="pl">
@@ -799,10 +799,10 @@
     </translation>
   </recipe>
   <recipe id="10">
-    <name>Svens Ofengericht z Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</name>
+    <name>Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht z Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" />
+    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" />
     <ingredients>
       <item>500–600 g Salsiccia</item>
       <item>800 g Kartoffeln</item>
@@ -817,24 +817,24 @@
       <item>optional: Knoblauch</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kartoffeln vorkochen i in Stücke schneiden.</step>
+      <step nr="1">Kartoffeln vorkochen und in Stücke schneiden.</step>
       <step nr="2">Gemüse schneiden.</step>
       <step nr="3">Salsiccia in Stücke teilen.</step>
-      <step nr="4">Włóż wszystko do naczynia żaroodpornego i dopraw.</step>
-      <step nr="5">Z trochę Öl vermengen.</step>
-      <step nr="6">Bei 190–200 °C ok. 35–40 min backen.</step>
-      <step nr="7">Zum Schluss Crème fraîche unterziehen lub klecksweise daraufgeben.</step>
-      <step nr="8">Kurz weitergaren i servieren.</step>
+      <step nr="4">Alles in eine Ofenform geben und würzen.</step>
+      <step nr="5">Mit etwas Öl vermengen.</step>
+      <step nr="6">Bei 190–200 °C ca. 35–40 Minuten backen.</step>
+      <step nr="7">Zum Schluss Crème fraîche unterziehen oder klecksweise daraufgeben.</step>
+      <step nr="8">Kurz weitergaren und servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 20 min</item>
-      <item>Ofenzeit: 35–40 min</item>
-      <item>Gesamt: ok. 60 min</item>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Ofenzeit: 35–40 Minuten</item>
+      <item>Gesamt: ca. 60 Minuten</item>
     </timing>
     <tips>
       <item>Vorgekochte Kartoffeln machen das Gericht deutlich besser.</item>
       <item>Crème fraîche erst gegen Ende zugeben.</item>
-      <item>Bardzo lubiane i odpowiednie także dla tradycyjnych gustów.</item>
+      <item>Sehr beliebt und schwiegermuttertauglich.</item>
     </tips>
     <rating>Fester Favorit.</rating>
     <translation lang="pl">
@@ -878,10 +878,10 @@
     </translation>
   </recipe>
   <recipe id="11">
-    <name>Svens Hackbällchen-Auflauf z Ajvar &amp; Kartoffeln – die Ofenbombe</name>
+    <name>Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf z Ajvar &amp; Kartoffeln – die Ofenbombe" />
+    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" />
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>800 g Kartoffeln</item>
@@ -894,28 +894,28 @@
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>Paprikapulver</item>
-      <item>Öl lub Butter do die Form</item>
+      <item>Öl oder Butter für die Form</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kartoffeln vorgaren i in Scheiben schneiden.</step>
-      <step nr="2">Hackfleisch z Ei, Paniermehl, Zwiebel i Gewürzen vermengen.</step>
+      <step nr="1">Kartoffeln vorgaren und in Scheiben schneiden.</step>
+      <step nr="2">Hackfleisch mit Ei, Paniermehl, Zwiebel und Gewürzen vermengen.</step>
       <step nr="3">Kleine Hackbällchen formen.</step>
-      <step nr="4">Hackbällchen krótko anbraten lub direkt roh verwenden, wenn sie im Ofen durchgaren sollen.</step>
-      <step nr="5">Ajvar z Sahne verrühren.</step>
-      <step nr="6">Kartoffeln i Hackbällchen in eine Auflaufform schichten.</step>
+      <step nr="4">Hackbällchen kurz anbraten oder direkt roh verwenden, wenn sie im Ofen durchgaren sollen.</step>
+      <step nr="5">Ajvar mit Sahne verrühren.</step>
+      <step nr="6">Kartoffeln und Hackbällchen in eine Auflaufform schichten.</step>
       <step nr="7">Ajvar-Sahne-Soße darübergeben.</step>
-      <step nr="8">Z Käse bestreuen.</step>
-      <step nr="9">Bei 190 °C ok. 30–35 min goldbraun backen.</step>
+      <step nr="8">Mit Käse bestreuen.</step>
+      <step nr="9">Bei 190 °C ca. 30–35 Minuten goldbraun backen.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 25 min</item>
-      <item>Ofenzeit: 30–35 min</item>
-      <item>Gesamt: ok. 60 min</item>
+      <item>Vorbereitung: 25 Minuten</item>
+      <item>Ofenzeit: 30–35 Minuten</item>
+      <item>Gesamt: ca. 60 Minuten</item>
     </timing>
     <tips>
       <item>Kartoffeln nicht roh verwenden, sonst dauert es zu lange.</item>
-      <item>Sos można doprawić dość intensywnie.</item>
-      <item>Przyjemnie kremowe, sycące i bardzo lubiane.</item>
+      <item>Die Soße ruhig kräftig würzen.</item>
+      <item>Schön cremig, deftig und sehr beliebt.</item>
     </tips>
     <rating>Fester Favorit.</rating>
     <translation lang="pl">
@@ -961,10 +961,10 @@
     </translation>
   </recipe>
   <recipe id="12">
-    <name>Svens Gemüse-Kartoffel-Pfanne z Ajvar-Teriyaki-Soße &amp; Cabanossi</name>
+    <name>Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte</category>
-    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne z Ajvar-Teriyaki-Soße &amp; Cabanossi" />
+    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" />
     <ingredients>
       <item>800 g Kartoffeln</item>
       <item>2 Paprika</item>
@@ -972,31 +972,31 @@
       <item>250–300 g Cabanossi</item>
       <item>2–3 EL Ajvar</item>
       <item>2 EL Teriyaki-Sauce</item>
-      <item>100 ml Sahne lub Kochsahne</item>
+      <item>100 ml Sahne oder Kochsahne</item>
       <item>1 EL Öl</item>
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>Paprikapulver</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kartoffeln vorkochen i in Scheiben lub Würfel schneiden.</step>
-      <step nr="2">Paprika i Zwiebeln anbraten.</step>
+      <step nr="1">Kartoffeln vorkochen und in Scheiben oder Würfel schneiden.</step>
+      <step nr="2">Paprika und Zwiebeln anbraten.</step>
       <step nr="3">Cabanossi in Scheiben zugeben.</step>
-      <step nr="4">Kartoffeln z in die Pfanne geben.</step>
-      <step nr="5">Ajvar, Teriyaki i Sahne verrühren.</step>
+      <step nr="4">Kartoffeln mit in die Pfanne geben.</step>
+      <step nr="5">Ajvar, Teriyaki und Sahne verrühren.</step>
       <step nr="6">Soße in die Pfanne geben.</step>
-      <step nr="7">Alles krótko zredukować lassen, do es cremig wird.</step>
-      <step nr="8">Abschmecken i servieren.</step>
+      <step nr="7">Alles kurz einkochen lassen, bis es cremig wird.</step>
+      <step nr="8">Abschmecken und servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 15–20 min</item>
-      <item>Pfannenzeit: 15 min</item>
-      <item>Gesamt: ok. 35 min</item>
+      <item>Vorbereitung: 15–20 Minuten</item>
+      <item>Pfannenzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
     </timing>
     <tips>
       <item>Kartoffeln vorgekocht verwenden.</item>
       <item>Teriyaki sparsam dosieren.</item>
-      <item>Wyraziste, kremowe i bardzo praktyczne na co dzień.</item>
+      <item>Herzhaft, cremig und sehr alltagstauglich.</item>
     </tips>
     <rating>Fester Favorit.</rating>
     <translation lang="pl">
@@ -1040,10 +1040,10 @@
     </translation>
   </recipe>
   <recipe id="13">
-    <name>Svens Butter-Chicken-Wok z Kokos &amp; Joghurt</name>
+    <name>Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte</category>
-    <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok z Kokos &amp; Joghurt" />
+    <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" />
     <ingredients>
       <item>600 g Hähnchen</item>
       <item>1 Dose stückige Tomaten</item>
@@ -1056,30 +1056,30 @@
       <item>1 EL Öl</item>
       <item>Salz</item>
       <item>Pfeffer</item>
-      <item>Pide lub Naan als Beilage</item>
+      <item>Pide oder Naan als Beilage</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hähnchen in Stücke schneiden i nur krótko anrösten.</step>
+      <step nr="1">Hähnchen in Stücke schneiden und nur kurz anrösten.</step>
       <step nr="2">Nicht komplett trocken braten.</step>
-      <step nr="3">Stückige Tomaten i Kokosmilch zugeben.</step>
+      <step nr="3">Stückige Tomaten und Kokosmilch zugeben.</step>
       <step nr="4">Gewürze einrühren.</step>
       <step nr="5">TK-Wokgemüse zugeben.</step>
-      <step nr="6">Alles 5–7 min sanft ziehen lassen.</step>
+      <step nr="6">Alles 5–7 Minuten sanft ziehen lassen.</step>
       <step nr="7">Naturjoghurt erst ganz am Ende unterziehen.</step>
       <step nr="8">Danach nicht mehr stark kochen.</step>
-      <step nr="9">Z Pide lub Naan servieren.</step>
+      <step nr="9">Mit Pide oder Naan servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 min</item>
-      <item>Garzeit: 15 min</item>
-      <item>Gesamt: ok. 25 min</item>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Garzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
     </timing>
     <tips>
       <item>Joghurt nie zu früh einrühren.</item>
       <item>Hähnchen nur anrösten, nicht austrocknen.</item>
-      <item>Bardzo dobre szybkie danie na wieczór.</item>
+      <item>Sehr gutes schnelles Abendgericht.</item>
     </tips>
-    <rating>Na stałe zapisane, bardzo lubiane.</rating>
+    <rating>Fest gespeichert, sehr beliebt.</rating>
     <translation lang="pl">
       <name>Wok Svena Butter Chicken z kokosem i jogurtem</name>
       <persons>3–4 osoby</persons>
@@ -1123,10 +1123,10 @@
     </translation>
   </recipe>
   <recipe id="14">
-    <name>Ofengemüse z Hähnchenschenkeln i lila Süßkartoffeln</name>
+    <name>Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_12.png" alt="Ofengemüse z Hähnchenschenkeln i lila Süßkartoffeln" />
+    <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" />
     <ingredients>
       <item>4 Hähnchenschenkel</item>
       <item>2 lila Süßkartoffeln</item>
@@ -1138,26 +1138,26 @@
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>Paprikapulver</item>
-      <item>optional: Knoblauch i Rosmarin</item>
+      <item>optional: Knoblauch und Rosmarin</item>
     </ingredients>
     <preparation>
-      <step nr="1">Gemüse i Süßkartoffeln in grobe Stücke schneiden.</step>
+      <step nr="1">Gemüse und Süßkartoffeln in grobe Stücke schneiden.</step>
       <step nr="2">Hähnchenschenkel würzen.</step>
-      <step nr="3">Ułóż wszystko na blasze lub w dużym naczyniu do zapiekania.</step>
-      <step nr="4">Z Öl i Gewürzen vermengen.</step>
-      <step nr="5">Bei 190–200 °C ok. 45–50 min garen.</step>
-      <step nr="6">Hähnchen am Ende prüfen, do die Haut schön gebräunt ist.</step>
+      <step nr="3">Alles auf ein Blech oder in eine große Ofenform geben.</step>
+      <step nr="4">Mit Öl und Gewürzen vermengen.</step>
+      <step nr="5">Bei 190–200 °C ca. 45–50 Minuten garen.</step>
+      <step nr="6">Hähnchen am Ende prüfen, bis die Haut schön gebräunt ist.</step>
       <step nr="7">Direkt heiß servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 15 min</item>
-      <item>Ofenzeit: 45–50 min</item>
-      <item>Gesamt: ok. 60–65 min</item>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Ofenzeit: 45–50 Minuten</item>
+      <item>Gesamt: ca. 60–65 Minuten</item>
     </timing>
     <tips>
       <item>Gemüse nicht zu klein schneiden.</item>
       <item>Hähnchen auf das Gemüse legen, dann zieht Geschmack ins Blech.</item>
-      <item>Bardzo proste danie na wieczór.</item>
+      <item>Sehr unkompliziert für abends.</item>
     </tips>
     <rating>Gut angekommen.</rating>
     <translation lang="pl">
@@ -1200,10 +1200,10 @@
     </translation>
   </recipe>
   <recipe id="15">
-    <name>Ofen-Hähnchenschenkel z Kartoffeln &amp; Zwiebeln – Sven-Style</name>
+    <name>Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</name>
     <persons>2–3 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel z Kartoffeln &amp; Zwiebeln – Sven-Style" />
+    <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" />
     <ingredients>
       <item>2 Hähnchenschenkel</item>
       <item>800 g Kartoffeln (mit Schale, in Spalten)</item>
@@ -1212,26 +1212,26 @@
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>Paprikapulver edelsüß</item>
-      <item>Majoran lub Thymian</item>
+      <item>Majoran oder Thymian</item>
     </ingredients>
     <preparation>
       <step nr="1">Ofen auf 200 °C Umluft vorheizen.</step>
-      <step nr="2">Hähnchenschenkel z Salz, Pfeffer i Paprika würzen.</step>
-      <step nr="3">Kartoffeln i Zwiebeln schneiden i in eine Auflaufform legen.</step>
-      <step nr="4">Öl darüber geben i alles mischen.</step>
+      <step nr="2">Hähnchenschenkel mit Salz, Pfeffer und Paprika würzen.</step>
+      <step nr="3">Kartoffeln und Zwiebeln schneiden und in eine Auflaufform legen.</step>
+      <step nr="4">Öl darüber geben und alles mischen.</step>
       <step nr="5">Hähnchenschenkel oben drauf legen.</step>
-      <step nr="6">45 min im Ofen garen.</step>
-      <step nr="7">Nach 30 min Kartoffeln wenden i Bratensaft über das Fleisch geben.</step>
+      <step nr="6">45 Minuten im Ofen garen.</step>
+      <step nr="7">Nach 30 Minuten Kartoffeln wenden und Bratensaft über das Fleisch geben.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 5 min</item>
-      <item>Piekarnik: 45 min</item>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Ofen: 45 Minuten</item>
     </timing>
     <tips>
-      <item>Z Petersilie bestreuen.</item>
+      <item>Mit Petersilie bestreuen.</item>
       <item>Etwas Zitronensaft am Ende gibt Frische.</item>
     </tips>
-    <rating>Bardzo dobre, proste i odpowiednie także dla tradycyjnych gustów.</rating>
+    <rating>Sehr gut, einfach, schwiegermuttertauglich.</rating>
     <translation lang="pl">
       <name>Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</name>
       <persons>2–3 osoby</persons>
@@ -1267,41 +1267,41 @@
     </translation>
   </recipe>
   <recipe id="16">
-    <name>Kartoffelauflauf z Schmand, Käse &amp; Speck</name>
+    <name>Kartoffelauflauf mit Schmand, Käse &amp; Speck</name>
     <persons>3 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf z Schmand, Käse &amp; Speck" />
+    <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" />
     <ingredients>
       <item>1,1–1,2 kg Kartoffeln</item>
       <item>2 Zwiebeln</item>
       <item>150 g Speckwürfel</item>
       <item>200 g Schmand</item>
-      <item>100 ml Sahne lub Milch</item>
+      <item>100 ml Sahne oder Milch</item>
       <item>150–200 g geriebener Käse (Gouda/Emmentaler)</item>
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>Muskat</item>
-      <item>Butter do die Form</item>
+      <item>Butter für die Form</item>
     </ingredients>
     <preparation>
       <step nr="1">Ofen auf 180 °C Umluft vorheizen.</step>
       <step nr="2">Kartoffeln in dünne Scheiben schneiden.</step>
       <step nr="3">Zwiebeln in Ringe schneiden.</step>
-      <step nr="4">Schmand, Sahne, Salz, Pfeffer i Muskat verrühren.</step>
-      <step nr="5">Kartoffeln schichten, dann Zwiebeln i Speck, wieder Kartoffeln.</step>
+      <step nr="4">Schmand, Sahne, Salz, Pfeffer und Muskat verrühren.</step>
+      <step nr="5">Kartoffeln schichten, dann Zwiebeln und Speck, wieder Kartoffeln.</step>
       <step nr="6">Schmandmischung darüber gießen.</step>
       <step nr="7">Käse oben drauf.</step>
-      <step nr="8">35–40 min backen.</step>
+      <step nr="8">35–40 Minuten backen.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 min</item>
-      <item>Piekarnik: 40 min</item>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Ofen: 40 Minuten</item>
     </timing>
     <tips>
       <item>Knoblauch in die Sahnemischung geben.</item>
       <item>Petersilie oben drauf.</item>
     </tips>
-    <rating>Bardzo kremowe i bardzo dobre.</rating>
+    <rating>Sehr cremig, sehr gut.</rating>
     <translation lang="pl">
       <name>Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</name>
       <persons>3 osoby</persons>
@@ -1348,7 +1348,7 @@
       <item>6 Rinderrouladen</item>
       <item>Salz, Pfeffer</item>
       <item>Senf</item>
-      <item>Speckstreifen lub Speckwürfel</item>
+      <item>Speckstreifen oder Speckwürfel</item>
       <item>Gewürzgurken in Streifen</item>
       <item>Zwiebeln in Streifen</item>
       <item>1 Möhre</item>
@@ -1357,29 +1357,29 @@
       <item>500–700 ml Rinderfond</item>
       <item>150 ml Rotwein</item>
       <item>1 EL Butter</item>
-      <item>Mehl lub Stärke zum Binden</item>
+      <item>Mehl oder Stärke zum Binden</item>
     </ingredients>
     <preparation>
-      <step nr="1">Rouladen salzen, pfeffern, z Senf bestreichen.</step>
-      <step nr="2">Speck, Gurke i Zwiebel drauf, einrollen, feststecken.</step>
+      <step nr="1">Rouladen salzen, pfeffern, mit Senf bestreichen.</step>
+      <step nr="2">Speck, Gurke und Zwiebel drauf, einrollen, feststecken.</step>
       <step nr="3">Rouladen scharf anbraten, herausnehmen.</step>
       <step nr="4">Zwiebel, Möhre, Sellerie anrösten.</step>
       <step nr="5">Tomatenmark mitrösten.</step>
-      <step nr="6">Z Rotwein ablöschen, zredukować lassen.</step>
+      <step nr="6">Mit Rotwein ablöschen, einkochen lassen.</step>
       <step nr="7">Rinderfond dazu.</step>
       <step nr="8">Rouladen wieder rein.</step>
-      <step nr="9">1,5–2 godzin schmoren.</step>
+      <step nr="9">1,5–2 Stunden schmoren.</step>
       <step nr="10">Soße sieben, andicken, Butter einrühren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 20 min</item>
-      <item>Schmoren: 2 godzin</item>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Schmoren: 2 Stunden</item>
     </timing>
     <tips>
-      <item>Ohne Sahne bleibt die Soße ehrlich i aromatisch.</item>
-      <item>Farbe kommt von Tomatenmark i Röstaromen.</item>
+      <item>Ohne Sahne bleibt die Soße ehrlich und aromatisch.</item>
+      <item>Farbe kommt von Tomatenmark und Röstaromen.</item>
     </tips>
-    <rating>Świąteczne danie, bardzo dobre.</rating>
+    <rating>Festessen, sehr gut.</rating>
     <translation lang="pl">
       <name>Rolady wołowe – jasny sos bez barwnika (przepis domowy)</name>
       <persons>3–4 osoby</persons>
@@ -1423,31 +1423,31 @@
     </translation>
   </recipe>
   <recipe id="18">
-    <name>Kartoffelsuppe z Mettenden</name>
+    <name>Kartoffelsuppe mit Mettenden</name>
     <persons>4–6 Personen</persons>
     <category>Suppen</category>
-    <image src="images/rezeptbild_18.png" alt="Kartoffelsuppe z Mettenden" />
+    <image src="images/rezeptbild_18.png" alt="Kartoffelsuppe mit Mettenden" />
     <ingredients>
       <item>800 g Kartoffeln</item>
       <item>2 Möhren</item>
       <item>1 Zwiebel</item>
-      <item>1 Lauch lub Sellerie</item>
+      <item>1 Lauch oder Sellerie</item>
       <item>1 l Gemüsebrühe</item>
-      <item>2–3 Mettenden lub Wiener Würstchen</item>
+      <item>2–3 Mettenden oder Wiener Würstchen</item>
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>Majoran</item>
     </ingredients>
     <preparation>
       <step nr="1">Gemüse schneiden.</step>
-      <step nr="2">In Brühe ok. 25 min kochen.</step>
+      <step nr="2">In Brühe ca. 25 Minuten kochen.</step>
       <step nr="3">Teilweise pürieren.</step>
       <step nr="4">Wurst dazugeben.</step>
-      <step nr="5">Z Salz, Pfeffer i Majoran abschmecken.</step>
+      <step nr="5">Mit Salz, Pfeffer und Majoran abschmecken.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 min</item>
-      <item>Kochen: 25 min</item>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Kochen: 25 Minuten</item>
     </timing>
     <tips>
       <item>Am nächsten Tag schmeckt die Suppe noch besser.</item>
@@ -1486,10 +1486,10 @@
     </translation>
   </recipe>
   <recipe id="19">
-    <name>Zakwas do Żurek selber machen</name>
-    <persons>Ansatz do mehrere Portionen Żurek</persons>
+    <name>Säure für Żurek selber machen</name>
+    <persons>Ansatz für mehrere Portionen Żurek</persons>
     <category>Grundlagen / Polnische Küche</category>
-    <image src="images/rezeptbild_19.png" alt="Zakwas do Żurek selber machen" />
+    <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen" />
     <ingredients>
       <item>500 ml abgekochtes, vollständig abgekühltes Wasser</item>
       <item>6 EL Roggenmehl Type 2000</item>
@@ -1498,30 +1498,30 @@
       <item>8–10 Pimentkörner</item>
     </ingredients>
     <preparation>
-      <step nr="1">Ein großes, sehr sauberes Glas lub Einmachgefäß vorbereiten.</step>
+      <step nr="1">Ein großes, sehr sauberes Glas oder Einmachgefäß vorbereiten.</step>
       <step nr="2">Das abgekühlte Wasser hineingeben.</step>
-      <step nr="3">Das Roggenmehl gründlich einrühren, do keine größeren Klümpchen mehr vorhanden sind.</step>
-      <step nr="4">Die Knoblauchzehen schälen, leicht andrücken i zusammen z Lorbeerblättern i Piment in das Glas geben.</step>
+      <step nr="3">Das Roggenmehl gründlich einrühren, bis keine größeren Klümpchen mehr vorhanden sind.</step>
+      <step nr="4">Die Knoblauchzehen schälen, leicht andrücken und zusammen mit Lorbeerblättern und Piment in das Glas geben.</step>
       <step nr="5">Alles noch einmal gut umrühren.</step>
-      <step nr="6">Das Glas z einem sauberen Tuch, Mulltuch lub Gaze abdecken i z einem Gummiband fixieren.</step>
+      <step nr="6">Das Glas mit einem sauberen Tuch, Mulltuch oder Gaze abdecken und mit einem Gummiband fixieren.</step>
       <step nr="7">Den Ansatz an einen warmen, schattigen Ort stellen.</step>
-      <step nr="8">Einmal täglich z einem sauberen Löffel umrühren.</step>
-      <step nr="9">Nach etwa 6 do 8 Tagen ist der Zakwas fertig i kann do Żurek verwendet werden.</step>
+      <step nr="8">Einmal täglich mit einem sauberen Löffel umrühren.</step>
+      <step nr="9">Nach etwa 6 bis 8 Tagen ist der Zakwas fertig und kann für Żurek verwendet werden.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: ok. 10 min</item>
+      <item>Vorbereitung: ca. 10 Minuten</item>
       <item>Reifezeit: 6–8 Tage</item>
       <item>Täglich einmal umrühren</item>
     </timing>
     <tips>
-      <item>Der Ansatz riecht fertig angenehm säuerlich i zeigt kleine Bläschen.</item>
-      <item>Das Glas i alle verwendeten Utensilien müssen wirklich sauber sein.</item>
+      <item>Der Ansatz riecht fertig angenehm säuerlich und zeigt kleine Bläschen.</item>
+      <item>Das Glas und alle verwendeten Utensilien müssen wirklich sauber sein.</item>
       <item>Der Ansatz darf nicht luftdicht verschlossen werden.</item>
-      <item>Falls sich Schimmel bildet lub der Geruch unangenehm faulig wird, den Ansatz entsorgen.</item>
-      <item>Vor der Lagerung kann der Zakwas abgeseiht i in eine saubere Flasche gefüllt werden.</item>
-      <item>Im Kühlschrank hält sich der fertige Zakwas einige Tage do etwa zwei Wochen.</item>
+      <item>Falls sich Schimmel bildet oder der Geruch unangenehm faulig wird, den Ansatz entsorgen.</item>
+      <item>Vor der Lagerung kann der Zakwas abgeseiht und in eine saubere Flasche gefüllt werden.</item>
+      <item>Im Kühlschrank hält sich der fertige Zakwas einige Tage bis etwa zwei Wochen.</item>
     </tips>
-    <rating>Traditionelle Grundlage do Żurek, sehr empfehlenswert do das Kochbuch.</rating>
+    <rating>Traditionelle Grundlage für Żurek.</rating>
     <translation lang="pl">
       <name>Zakwas na żurek</name>
       <persons>zakwas na kilka porcji żurku</persons>
@@ -1567,11 +1567,11 @@
     <image src="images/rezeptbild_20.png" alt="Königsberger Klopse" />
     <ingredients>
       <item>250 g Schweinehackfleisch</item>
-      <item>250 g Rinder- lub Kalbshackfleisch</item>
+      <item>250 g Rinder- oder Kalbshackfleisch</item>
       <item>2 Brötchen (in Milch eingeweicht)</item>
       <item>1 Ei</item>
       <item>Salz, Pfeffer</item>
-      <item>trochę geriebene Zitronenschale</item>
+      <item>etwas geriebene Zitronenschale</item>
       <item>2 Zwiebeln, fein gehackt</item>
       <item>2 EL Butter</item>
       <item>Sardellenfilets</item>
@@ -1581,15 +1581,15 @@
       <item>Kapern, Sahne, Zitronensaft</item>
     </ingredients>
     <preparation>
-      <step nr="1">Fleischmasse herstellen i Klopse formen.</step>
-      <step nr="2">Sud kochen i Klopse darin gar ziehen lassen.</step>
-      <step nr="3">Soße ansetzen, z Eigelb legieren i Klopse einlegen.</step>
+      <step nr="1">Fleischmasse herstellen und Klopse formen.</step>
+      <step nr="2">Sud kochen und Klopse darin gar ziehen lassen.</step>
+      <step nr="3">Soße ansetzen, mit Eigelb legieren und Klopse einlegen.</step>
     </preparation>
     <timing>
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Z Salzkartoffeln lub Püree servieren.</item>
+      <item>Mit Salzkartoffeln oder Püree servieren.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -1641,15 +1641,15 @@
       <item>Fett zum Ausbacken</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hefevorteig ansetzen, Teig schlagen do er Blasen wirft.</step>
+      <step nr="1">Hefevorteig ansetzen, Teig schlagen bis er Blasen wirft.</step>
       <step nr="2">Rosinen unterheben, Teig gehen lassen.</step>
-      <step nr="3">Teig portionieren i in Fett goldbraun ausbacken.</step>
+      <step nr="3">Teig portionieren und in Fett goldbraun ausbacken.</step>
     </preparation>
     <timing>
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Frisch i warm genießen.</item>
+      <item>Frisch und warm genießen.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -1696,14 +1696,14 @@
       <item>100 ml Rote-Bete-Saft</item>
     </ingredients>
     <preparation>
-      <step nr="1">Gemüse i Kräuter klein schneiden.</step>
-      <step nr="2">Z Milch, Joghurt i Saft verrühren, würzen.</step>
+      <step nr="1">Gemüse und Kräuter klein schneiden.</step>
+      <step nr="2">Mit Milch, Joghurt und Saft verrühren, würzen.</step>
     </preparation>
     <timing>
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Kalt stellen i z Ei garnieren.</item>
+      <item>Kalt stellen und mit Ei garnieren.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -1734,10 +1734,10 @@
     </translation>
   </recipe>
   <recipe id="23">
-    <name>Piroggen z Sauerkraut-Pilz-Füllung</name>
+    <name>Piroggen mit Sauerkraut-Pilz-Füllung</name>
     <persons>Personenzahl nicht angegeben</persons>
     <category>Hauptgerichte / Teiggerichte</category>
-    <image src="images/rezeptbild_23.png" alt="Piroggen z Sauerkraut-Pilz-Füllung" />
+    <image src="images/rezeptbild_23.png" alt="Piroggen mit Sauerkraut-Pilz-Füllung" />
     <ingredients>
       <item>500 g Mehl</item>
       <item>300 ml heißes Wasser</item>
@@ -1749,7 +1749,7 @@
       <item>Gewürze</item>
     </ingredients>
     <preparation>
-      <step nr="1">Teig kneten i ruhen lassen.</step>
+      <step nr="1">Teig kneten und ruhen lassen.</step>
       <step nr="2">Füllung schmoren, Teigkreise ausstechen.</step>
       <step nr="3">Füllen, verschließen, in Wasser garen.</step>
     </preparation>
@@ -1805,13 +1805,13 @@
     <preparation>
       <step nr="1">Fleischteig anrühren, Klopse formen.</step>
       <step nr="2">In Gewürzsud garen.</step>
-      <step nr="3">Tomatensoße einrühren i abschmecken.</step>
+      <step nr="3">Tomatensoße einrühren und abschmecken.</step>
     </preparation>
     <timing>
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Z Kartoffelpüree servieren.</item>
+      <item>Mit Kartoffelpüree servieren.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -1856,9 +1856,9 @@
       <item>Petersilie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hering wässern i würfeln.</step>
+      <step nr="1">Hering wässern und würfeln.</step>
       <step nr="2">Gemüse schneiden, Sahnesoße anrühren.</step>
-      <step nr="3">Alles mischen i kalt stellen.</step>
+      <step nr="3">Alles mischen und kalt stellen.</step>
     </preparation>
     <timing>
       <item>Zeit im Original nicht angegeben</item>
@@ -1912,13 +1912,13 @@
     <preparation>
       <step nr="1">Hering vorbereiten.</step>
       <step nr="2">Soße köcheln, abkühlen lassen.</step>
-      <step nr="3">Hering schichten, z Soße bedecken, 12 h kühlen.</step>
+      <step nr="3">Hering schichten, mit Soße bedecken, 12 h kühlen.</step>
     </preparation>
     <timing>
       <item>Kühlzeit: 12 godzin</item>
     </timing>
     <tips>
-      <item>Z dunklem Brot servieren.</item>
+      <item>Mit dunklem Brot servieren.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -2015,14 +2015,14 @@
     </ingredients>
     <preparation>
       <step nr="1">Fleisch &amp; Gemüse schmoren, Brötchen &amp; Leber zugeben.</step>
-      <step nr="2">Zweimal wolfen, z Ei &amp; Gewürzen mischen.</step>
+      <step nr="2">Zweimal wolfen, mit Ei &amp; Gewürzen mischen.</step>
       <step nr="3">In Form 50 min im Wasserbad backen.</step>
     </preparation>
     <timing>
       <item>Backzeit: 50 min im Wasserbad</item>
     </timing>
     <tips>
-      <item>Kalt lub warm genießen.</item>
+      <item>Kalt oder warm genießen.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -2054,10 +2054,10 @@
     </translation>
   </recipe>
   <recipe id="29">
-    <name>Geflügelleber z Äpfeln</name>
+    <name>Geflügelleber mit Äpfeln</name>
     <persons>Personenzahl nicht angegeben</persons>
     <category>Pfannengerichte</category>
-    <image src="images/rezeptbild_29.png" alt="Geflügelleber z Äpfeln" />
+    <image src="images/rezeptbild_29.png" alt="Geflügelleber mit Äpfeln" />
     <ingredients>
       <item>500 g Geflügelleber</item>
       <item>250 g Äpfel</item>
@@ -2073,7 +2073,7 @@
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Z Kartoffeln lub Reis servieren.</item>
+      <item>Mit Kartoffeln oder Reis servieren.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -2114,14 +2114,14 @@
     </ingredients>
     <preparation>
       <step nr="1">Eisbein würzen, 24 h kühlen, anbraten.</step>
-      <step nr="2">Z Wasser schmoren, Gemüse zufügen.</step>
-      <step nr="3">Tomatenkonzentrat krótko vor Ende einrühren.</step>
+      <step nr="2">Mit Wasser schmoren, Gemüse zufügen.</step>
+      <step nr="3">Tomatenkonzentrat kurz vor Ende einrühren.</step>
     </preparation>
     <timing>
       <item>Vorbereitungszeit: 24 godzin Kühlzeit</item>
     </timing>
     <tips>
-      <item>Z Senf i Brot servieren.</item>
+      <item>Mit Senf und Brot servieren.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -2164,13 +2164,13 @@
     </ingredients>
     <preparation>
       <step nr="1">Huhn kochen, Gemüse zufügen.</step>
-      <step nr="2">Fleisch entbeinen, Brühe z Nudeln, Milch, Erbsen, Bohnen &amp; Fleisch fertig kochen.</step>
+      <step nr="2">Fleisch entbeinen, Brühe mit Nudeln, Milch, Erbsen, Bohnen &amp; Fleisch fertig kochen.</step>
     </preparation>
     <timing>
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Z Dill abschmecken.</item>
+      <item>Mit Dill abschmecken.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -2199,10 +2199,10 @@
     </translation>
   </recipe>
   <recipe id="32">
-    <name>Erbsensuppe z Kartoffeln</name>
+    <name>Erbsensuppe mit Kartoffeln</name>
     <persons>Personenzahl nicht angegeben</persons>
     <category>Suppen</category>
-    <image src="images/rezeptbild_32.png" alt="Erbsensuppe z Kartoffeln" />
+    <image src="images/rezeptbild_32.png" alt="Erbsensuppe mit Kartoffeln" />
     <ingredients>
       <item>1,5 l Brühe</item>
       <item>Erbsen</item>
@@ -2221,7 +2221,7 @@
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Z Bauernbrot servieren.</item>
+      <item>Mit Bauernbrot servieren.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
@@ -2266,14 +2266,14 @@
       <item>Gewürze, Zitrone</item>
     </ingredients>
     <preparation>
-      <step nr="1">Fett + Mehl bräunen, z Brühe glatt rühren, 10 min kochen.</step>
+      <step nr="1">Fett + Mehl bräunen, mit Brühe glatt rühren, 10 min kochen.</step>
       <step nr="2">Tomaten, Meerrettich, Sahne zufügen, abschmecken.</step>
     </preparation>
     <timing>
       <item>Zeit im Original nicht angegeben</item>
     </timing>
     <tips>
-      <item>Zu Geflügel i Wildgeflügel reichen.</item>
+      <item>Zu Geflügel und Wildgeflügel reichen.</item>
     </tips>
     <rating>Aus Smaki Domu übernommen.</rating>
     <translation lang="pl">
