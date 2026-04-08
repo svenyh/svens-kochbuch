@@ -1,5 +1,4 @@
 from pathlib import Path
-
 js = r"""(function () {
   function injectStyles() {
     if (document.getElementById('recipe-share-pdf-styles')) return;
