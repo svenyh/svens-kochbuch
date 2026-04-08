@@ -4,111 +4,52 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Svens persönliches Kochbuch</title>
-<meta name="description" content="Rezepte, bereits gekocht i do gut befunden."/>
+<meta name="description" content="Rezepte, bereits gekocht und für gut befunden."/>
 <link href="style.css" rel="stylesheet"/>
 <style>
 .lang-switch{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
 .lang-btn{border:1px solid #ccc;background:#fff;border-radius:999px;padding:.45rem .75rem;cursor:pointer;font:inherit}
-.lang-btn.active{font-weight:700;border-color:#333}
+.lang-btn.active{background:#222;color:#fff;border-color:#222}
 [lang-variant]{display:none}
 html[data-lang="de"] [lang-variant="de"]{display:initial}
 html[data-lang="pl"] [lang-variant="pl"]{display:initial}
-html[data-lang="de"] .lang-block[lang-variant="de"]{display:block}
-html[data-lang="pl"] .lang-block[lang-variant="pl"]{display:block}
 html[data-lang="de"] li[lang-variant="de"], html[data-lang="pl"] li[lang-variant="pl"]{display:list-item}
-html[data-lang="de"] div[lang-variant="de"], html[data-lang="pl"] div[lang-variant="pl"]{display:block}
-html[data-lang="de"] p[lang-variant="de"], html[data-lang="pl"] p[lang-variant="pl"]{display:block}
-html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-variant="pl"]{display:inline}
-.lang-block{display:none}
 </style>
-</head><body>
-<header><div class="wrap">
+</head>
+<body>
+<header>
+<div class="wrap">
 <h1><span lang-variant="de">Svens persönliches Kochbuch</span><span lang-variant="pl">Osobista książka kucharska Svena</span></h1>
-<div class="subtitle"><span lang-variant="de">Rezepte – bereits gekocht i do gut befunden</span><span lang-variant="pl">Przepisy – już ugotowane i uznane za dobre</span></div>
+<div class="subtitle"><span lang-variant="de">Rezepte – bereits gekocht und für gut befunden</span><span lang-variant="pl">Przepisy – już ugotowane i uznane za dobre</span></div>
 <div class="top-actions" style="display:flex;justify-content:space-between;gap:1rem;align-items:center;flex-wrap:wrap;">
-<a class="btn" download="" href="kochbuch.xml"><span lang-variant="de">Kochbuch als XML</span><span lang-variant="pl">Pobierz książkę kucharską jako XML</span></a>
-<div class="lang-switch" aria-label="Sprachauswahl"><button type="button" class="lang-btn active" data-set-lang="de">🇩🇪 Deutsch</button><button type="button" class="lang-btn" data-set-lang="pl">🇵🇱 Polski</button></div>
-</div></div></header>
+<a class="btn" download="" href="kochbuch.xml"><span lang-variant="de">Kochbuch als XML</span><span lang-variant="pl">Książka kucharska jako XML</span></a>
+<div class="lang-switch" aria-label="Sprachauswahl">
+<button type="button" class="lang-btn active" data-set-lang="de">🇩🇪 Deutsch</button>
+<button type="button" class="lang-btn" data-set-lang="pl">🇵🇱 Polski</button>
+</div>
+</div>
+</div>
+</header>
 <main class="wrap">
-<section class="toc"><h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2><div class="toc-grid">
-<div lang-variant="de"><a href="#rezept-1">1. Spanische Kohlrouladen z Chorizo, Rotwein i Speck</a></div>
-<div lang-variant="pl"><a href="#rezept-1">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</a></div>
-<div lang-variant="de"><a href="#rezept-2">2. Italienischer Kalbshaxen-Braten</a></div>
-<div lang-variant="pl"><a href="#rezept-2">2. Włoska pieczeń z golonki cielęcej</a></div>
-<div lang-variant="de"><a href="#rezept-3">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce z Airfryer-Knoblauchbrot</a></div>
-<div lang-variant="pl"><a href="#rezept-3">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</a></div>
-<div lang-variant="de"><a href="#rezept-4">4. Hähnchen-Gyros z Ofenkartoffeln, Gurkensalat i Tsatsiki</a></div>
-<div lang-variant="pl"><a href="#rezept-4">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</a></div>
-<div lang-variant="de"><a href="#rezept-5">5. Smoked BBQ-Fajita-Pfanne</a></div>
-<div lang-variant="pl"><a href="#rezept-5">5. Wędzona patelnia BBQ fajita</a></div>
-<div lang-variant="de"><a href="#rezept-6">6. Bruschetta vom Ciabatta</a></div>
-<div lang-variant="pl"><a href="#rezept-6">6. Bruschetta z ciabatty</a></div>
-<div lang-variant="de"><a href="#rezept-7">7. Köfte z Tomaten-Zwiebel-Salat, Tzatziki i Fladenbrot</a></div>
-<div lang-variant="pl"><a href="#rezept-7">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</a></div>
-<div lang-variant="de"><a href="#rezept-8">8. Bauernomelette z Tomaten-Mozzarella-Salat</a></div>
-<div lang-variant="pl"><a href="#rezept-8">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</a></div>
-<div lang-variant="de"><a href="#rezept-9">9. Chicken Masala z Naturjoghurt &amp; Protein-Wraps</a></div>
-<div lang-variant="pl"><a href="#rezept-9">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</a></div>
-<div lang-variant="de"><a href="#rezept-10">10. Svens Ofengericht z Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</a></div>
-<div lang-variant="pl"><a href="#rezept-10">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</a></div>
-<div lang-variant="de"><a href="#rezept-11">11. Svens Hackbällchen-Auflauf z Ajvar &amp; Kartoffeln – die Ofenbombe</a></div>
-<div lang-variant="pl"><a href="#rezept-11">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</a></div>
-<div lang-variant="de"><a href="#rezept-12">12. Svens Gemüse-Kartoffel-Pfanne z Ajvar-Teriyaki-Soße &amp; Cabanossi</a></div>
-<div lang-variant="pl"><a href="#rezept-12">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</a></div>
-<div lang-variant="de"><a href="#rezept-13">13. Svens Butter-Chicken-Wok z Kokos &amp; Joghurt</a></div>
-<div lang-variant="pl"><a href="#rezept-13">13. Wok Svena Butter Chicken z kokosem i jogurtem</a></div>
-<div lang-variant="de"><a href="#rezept-14">14. Ofengemüse z Hähnchenschenkeln i lila Süßkartoffeln</a></div>
-<div lang-variant="pl"><a href="#rezept-14">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</a></div>
-<div lang-variant="de"><a href="#rezept-15">15. Ofen-Hähnchenschenkel z Kartoffeln &amp; Zwiebeln – Sven-Style</a></div>
-<div lang-variant="pl"><a href="#rezept-15">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</a></div>
-<div lang-variant="de"><a href="#rezept-16">16. Kartoffelauflauf z Schmand, Käse &amp; Speck</a></div>
-<div lang-variant="pl"><a href="#rezept-16">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</a></div>
-<div lang-variant="de"><a href="#rezept-17">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</a></div>
-<div lang-variant="pl"><a href="#rezept-17">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</a></div>
-<div lang-variant="de"><a href="#rezept-18">18. Kartoffelsuppe z Mettenden</a></div>
-<div lang-variant="pl"><a href="#rezept-18">18. Zupa ziemniaczana z kiełbasą Mettenden</a></div>
-<div lang-variant="de"><a href="#rezept-19">19. Zakwas do Żurek selber machen</a></div>
-<div lang-variant="pl"><a href="#rezept-19">19. Zakwas na żurek</a></div>
-<div lang-variant="de"><a href="#rezept-20">20. Königsberger Klopse</a></div>
-<div lang-variant="pl"><a href="#rezept-20">20. Klopsy po królewiecku</a></div>
-<div lang-variant="de"><a href="#rezept-21">21. Danziger Porzeln</a></div>
-<div lang-variant="pl"><a href="#rezept-21">21. Gdańskie porzeln</a></div>
-<div lang-variant="de"><a href="#rezept-22">22. Kalte Rote-Bete-Suppe</a></div>
-<div lang-variant="pl"><a href="#rezept-22">22. Chłodnik z czerwonych buraków</a></div>
-<div lang-variant="de"><a href="#rezept-23">23. Piroggen z Sauerkraut-Pilz-Füllung</a></div>
-<div lang-variant="pl"><a href="#rezept-23">23. Pierogi z kapustą kiszoną i grzybami</a></div>
-<div lang-variant="de"><a href="#rezept-24">24. Klopse in Tomatensoße</a></div>
-<div lang-variant="pl"><a href="#rezept-24">24. Kluski w sosie pomidorowym</a></div>
-<div lang-variant="de"><a href="#rezept-25">25. Danziger Heringssalat</a></div>
-<div lang-variant="pl"><a href="#rezept-25">25. Gdańska sałatka śledziowa</a></div>
-<div lang-variant="de"><a href="#rezept-26">26. Hering nach kaschubischer Art</a></div>
-<div lang-variant="pl"><a href="#rezept-26">26. Śledź po kaszubsku</a></div>
-<div lang-variant="de"><a href="#rezept-27">27. Polnisches Beefsteak</a></div>
-<div lang-variant="pl"><a href="#rezept-27">27. Polski befsztyk</a></div>
-<div lang-variant="de"><a href="#rezept-28">28. Fleischpastete</a></div>
-<div lang-variant="pl"><a href="#rezept-28">28. Pasztet mięsny</a></div>
-<div lang-variant="de"><a href="#rezept-29">29. Geflügelleber z Äpfeln</a></div>
-<div lang-variant="pl"><a href="#rezept-29">29. Wątróbka drobiowa z jabłkami</a></div>
-<div lang-variant="de"><a href="#rezept-30">30. Eisbein nach alt-polnischer Art</a></div>
-<div lang-variant="pl"><a href="#rezept-30">30. Golonka po staropolsku</a></div>
-<div lang-variant="de"><a href="#rezept-31">31. Danziger Suppe</a></div>
-<div lang-variant="pl"><a href="#rezept-31">31. Zupa gdańska</a></div>
-<div lang-variant="de"><a href="#rezept-32">32. Erbsensuppe z Kartoffeln</a></div>
-<div lang-variant="pl"><a href="#rezept-32">32. Grochówka z ziemniakami</a></div>
-<div lang-variant="de"><a href="#rezept-33">33. Alt-polnische Sauce</a></div>
-<div lang-variant="pl"><a href="#rezept-33">33. Sos staropolski</a></div>
-</div></section>
+<section class="toc">
+<h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2>
+<div class="toc-grid">
+<div><a href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a></div><div><a href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a></div><div><a href="#rezept-3"><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></a></div><div><a href="#rezept-4"><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></a></div><div><a href="#rezept-5"><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></a></div><div><a href="#rezept-6"><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></a></div><div><a href="#rezept-7"><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></a></div><div><a href="#rezept-8"><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></a></div><div><a href="#rezept-9"><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></a></div><div><a href="#rezept-10"><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></a></div><div><a href="#rezept-11"><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></a></div><div><a href="#rezept-12"><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></a></div><div><a href="#rezept-13"><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></a></div><div><a href="#rezept-14"><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></a></div><div><a href="#rezept-15"><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></a></div><div><a href="#rezept-16"><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></a></div><div><a href="#rezept-17"><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></a></div><div><a href="#rezept-18"><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></a></div><div><a href="#rezept-19"><span lang-variant="de">19. Säure für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></a></div><div><a href="#rezept-20"><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></a></div><div><a href="#rezept-21"><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></a></div><div><a href="#rezept-22"><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></a></div><div><a href="#rezept-23"><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></a></div><div><a href="#rezept-24"><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Kluski w sosie pomidorowym</span></a></div><div><a href="#rezept-25"><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></a></div><div><a href="#rezept-26"><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></a></div><div><a href="#rezept-27"><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></a></div><div><a href="#rezept-28"><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></a></div><div><a href="#rezept-29"><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></a></div><div><a href="#rezept-30"><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></a></div><div><a href="#rezept-31"><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></a></div><div><a href="#rezept-32"><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></a></div><div><a href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a></div>
+</div>
+</section>
 <section class="recipe" id="rezept-1">
 <div>
-<h2><span lang-variant="de">1. Spanische Kohlrouladen z Chorizo, Rotwein i Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></h2>
+<h2><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Feiertagsessen / Ofengerichte</span><span lang-variant="pl">Dania świąteczne / dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1 Weißkohl</li><li lang-variant="pl">1 biała kapusta</li>
-<li lang-variant="de">500 g Hackfleisch (gemischt lub Rind)</li><li lang-variant="pl">500 g mięsa mielonego (mieszanego lub wołowego)</li>
+<li lang-variant="de">500 g Hackfleisch (gemischt oder Rind)</li><li lang-variant="pl">500 g mięsa mielonego (mieszanego lub wołowego)</li>
 <li lang-variant="de">1 altbackenes Brötchen</li><li lang-variant="pl">1 czerstwa bułka</li>
 <li lang-variant="de">1 Ei</li><li lang-variant="pl">1 jajko</li>
 <li lang-variant="de">2 Zwiebeln</li><li lang-variant="pl">2 cebule</li>
@@ -121,53 +62,64 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Paprikapulver edelsüß</li><li lang-variant="pl">słodka papryka w proszku</li>
-<li lang-variant="de">Majoran lub Thymian</li><li lang-variant="pl">majeranek lub tymianek</li>
+<li lang-variant="de">Majoran oder Thymian</li><li lang-variant="pl">majeranek lub tymianek</li>
 <li lang-variant="de">Öl zum Anbraten</li><li lang-variant="pl">olej do smażenia</li>
-<li lang-variant="de">Dodatki: Kartoffelpüree</li><li lang-variant="pl">Dodatki: puree ziemniaczane</li>
-<li lang-variant="de">Dodatki: Baguette</li><li lang-variant="pl">Dodatki: bagietka</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: ok. 30 min</li><li lang-variant="pl">przygotowanie: ok. 30 min</li>
-<li lang-variant="de">Schmorzeit: 2 do 2,5 godzin</li><li lang-variant="pl">czas duszenia: 2 do 2,5 godzin</li>
-<li lang-variant="de">Jeśli jesz około 18:30–19:00, najlepiej zacząć około 15:30–16:00</li><li lang-variant="pl">Jeśli jesz około 18:30–19:00, najlepiej zacząć około 15:30–16:00</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">Beilagen: Kartoffelpüree</li><li lang-variant="pl">Dodatki: puree ziemniaczane</li>
+<li lang-variant="de">Beilagen: Baguette</li><li lang-variant="pl">Dodatki: bagietka</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: ca. 30 Minuten</li><li lang-variant="pl">przygotowanie: ok. 30 min</li>
+<li lang-variant="de">Schmorzeit: 2 bis 2,5 Stunden</li><li lang-variant="pl">czas duszenia: 2 do 2,5 godzin</li>
+<li lang-variant="de">Bei Essen gegen 18:30–19:00 Uhr ideal ca. 15:30–16:00 Uhr starten</li><li lang-variant="pl">Jeśli jesz około 18:30–19:00, najlepiej zacząć około 15:30–16:00</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Die dicke Blattrippe immer flach schneiden, dann lassen sich die Rouladen besser wickeln.</li><li lang-variant="pl">Gruby nerw liścia zawsze lekko spłaszcz, wtedy roladki lepiej się zawijają.</li>
-<li lang-variant="de">Die Sauce am Ende bez przykrycia zredukować, damit sie kräftiger wird.</li><li lang-variant="pl">Na końcu gotuj sos bez przykrycia, aby nabrał intensywniejszego smaku.</li>
-<li lang-variant="de">Kartoffelpüree dazu frisch krótko vor dem Servieren machen.</li><li lang-variant="pl">puree ziemniaczane dazu frisch krótko vor dem Servieren machen.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Kohlblätter in kochendem Salzwasser blanchieren, do sie weich sind. Dicke Blattrippen flach schneiden.</li><li lang-variant="pl">Liście kapusty blanszować w osolonej wrzącej wodzie, aż zmiękną. Grube nerwy liści spłaszczyć nożem.</li>
-<li lang-variant="de">Brötchen in Wasser einweichen i gut ausdrücken.</li><li lang-variant="pl">Bułkę namoczyć w wodzie i dobrze odcisnąć.</li>
-<li lang-variant="de">Zwiebeln, Knoblauch i Chorizo klein schneiden i in einer Pfanne krótko anbraten.</li><li lang-variant="pl">Cebulę, czosnek i chorizo drobno pokroić i krótko podsmażyć na patelni.</li>
-<li lang-variant="de">Hackfleisch z dem eingeweichten Brötchen, Ei, der angebratenen Zwiebel-Chorizo-Mischung i den Gewürzen vermengen.</li><li lang-variant="pl">Mięso mielone wymieszać z namoczoną bułką, jajkiem, podsmażoną mieszanką cebuli z chorizo i przyprawami.</li>
-<li lang-variant="de">Die Kohlblätter z der Hackmasse füllen i zu Rouladen formen.</li><li lang-variant="pl">Nadziać liście kapusty farszem mięsnym i uformować gołąbki.</li>
-<li lang-variant="de">Jede Kohlroulade außen z Speck umwickeln.</li><li lang-variant="pl">Każdy gołąbek owinąć z zewnątrz boczkiem.</li>
+<li lang-variant="de">Die Sauce am Ende offen einkochen, damit sie kräftiger wird.</li><li lang-variant="pl">Na końcu gotuj sos bez przykrycia, aby nabrał intensywniejszego smaku.</li>
+<li lang-variant="de">Kartoffelpüree dazu frisch kurz vor dem Servieren machen.</li><li lang-variant="pl">puree ziemniaczane dazu frisch krótko vor dem Servieren machen.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Kohlblätter in kochendem Salzwasser blanchieren, bis sie weich sind. Dicke Blattrippen flach schneiden.</li><li lang-variant="pl">Liście kapusty blanszować w osolonej wrzącej wodzie, aż zmiękną. Grube nerwy liści spłaszczyć nożem.</li>
+<li lang-variant="de">Brötchen in Wasser einweichen und gut ausdrücken.</li><li lang-variant="pl">Bułkę namoczyć w wodzie i dobrze odcisnąć.</li>
+<li lang-variant="de">Zwiebeln, Knoblauch und Chorizo klein schneiden und in einer Pfanne kurz anbraten.</li><li lang-variant="pl">Cebulę, czosnek i chorizo drobno pokroić i krótko podsmażyć na patelni.</li>
+<li lang-variant="de">Hackfleisch mit dem eingeweichten Brötchen, Ei, der angebratenen Zwiebel-Chorizo-Mischung und den Gewürzen vermengen.</li><li lang-variant="pl">Mięso mielone wymieszać z namoczoną bułką, jajkiem, podsmażoną mieszanką cebuli z chorizo i przyprawami.</li>
+<li lang-variant="de">Die Kohlblätter mit der Hackmasse füllen und zu Rouladen formen.</li><li lang-variant="pl">Nadziać liście kapusty farszem mięsnym i uformować gołąbki.</li>
+<li lang-variant="de">Jede Kohlroulade außen mit Speck umwickeln.</li><li lang-variant="pl">Każdy gołąbek owinąć z zewnątrz boczkiem.</li>
 <li lang-variant="de">Die Rouladen in einem Bräter von allen Seiten anbraten.</li><li lang-variant="pl">Gołąbki obsmażyć ze wszystkich stron w brytfannie.</li>
-<li lang-variant="de">Tomatenmark krótko mitrösten, dann z Rotwein ablöschen i z Rinderfond auffüllen.</li><li lang-variant="pl">Krótko podsmażyć koncentrat pomidorowy, następnie zalać czerwonym winem i dodać bulionu wołowego.</li>
-<li lang-variant="de">Rouladen in die Sauce legen i zugedeckt 2 do 2,5 godzin bei niedriger Hitze schmoren.</li><li lang-variant="pl">Włożyć gołąbki do sosu i dusić pod przykryciem 2 do 2,5 godziny na małym ogniu.</li>
-<li lang-variant="de">Am Ende den Deckel abnehmen i die Sauce zredukować lassen. Z Salz, Pfeffer i ggf. trochę Zucker abschmecken.</li><li lang-variant="pl">Na koniec zdjąć pokrywkę i zredukować sos. Doprawić solą, pieprzem i w razie potrzeby odrobiną cukru.</li>
+<li lang-variant="de">Tomatenmark kurz mitrösten, dann mit Rotwein ablöschen und mit Rinderfond auffüllen.</li><li lang-variant="pl">Krótko podsmażyć koncentrat pomidorowy, następnie zalać czerwonym winem i dodać bulionu wołowego.</li>
+<li lang-variant="de">Rouladen in die Sauce legen und zugedeckt 2 bis 2,5 Stunden bei niedriger Hitze schmoren.</li><li lang-variant="pl">Włożyć gołąbki do sosu i dusić pod przykryciem 2 do 2,5 godziny na małym ogniu.</li>
+<li lang-variant="de">Am Ende den Deckel abnehmen und die Sauce einkochen lassen. Mit Salz, Pfeffer und ggf. etwas Zucker abschmecken.</li><li lang-variant="pl">Na koniec zdjąć pokrywkę i zredukować sos. Doprawić solą, pieprzem i w razie potrzeby odrobiną cukru.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</p><p lang-variant="pl">Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</p>
+<p><span lang-variant="de">Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</span><span lang-variant="pl">Nie ma jeszcze stałej oceny liczbowej; należy jednak do dobrych, zapisanych przepisów.</span></p>
 </div>
-<div><img alt="Spanische Kohlrouladen z Chorizo, Rotwein i Speck" src="images/rezeptbild_01.png"/></div>
-</section>
-<section class="recipe" id="rezept-2">
+<div>
+<img alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" src="images/rezeptbild_01.png"/>
+</div>
+</section><section class="recipe" id="rezept-2">
 <div>
 <h2><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / dania świąteczne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
-<li lang-variant="de">1 Kalbshaxen-Braten ohne Knochen, ok. 800 g</li><li lang-variant="pl">1 Kalbshaxen-Braten ohne Knochen, ok. 800 g</li>
+<li lang-variant="de">1 Kalbshaxen-Braten ohne Knochen, ca. 800 g</li><li lang-variant="pl">1 Kalbshaxen-Braten ohne Knochen, ok. 800 g</li>
 <li lang-variant="de">2 Zwiebeln</li><li lang-variant="pl">2 cebule</li>
 <li lang-variant="de">2 Möhren</li><li lang-variant="pl">2 marchewki</li>
 <li lang-variant="de">2 Knoblauchzehen</li><li lang-variant="pl">2 ząbki czosnku</li>
 <li lang-variant="de">2 EL Tomatenmark</li><li lang-variant="pl">2 EL koncentrat pomidorowy</li>
-<li lang-variant="de">150 ml Weißwein lub Rotwein</li><li lang-variant="pl">150 ml białego lub czerwonego wina</li>
-<li lang-variant="de">400 ml Kalbsfond lub Rinderfond</li><li lang-variant="pl">400 ml bulionu cielęcego lub wołowego</li>
+<li lang-variant="de">150 ml Weißwein oder Rotwein</li><li lang-variant="pl">150 ml białego lub czerwonego wina</li>
+<li lang-variant="de">400 ml Kalbsfond oder Rinderfond</li><li lang-variant="pl">400 ml bulionu cielęcego lub wołowego</li>
 <li lang-variant="de">2 EL Olivenöl</li><li lang-variant="pl">2 EL oliwa z oliwek</li>
 <li lang-variant="de">1 TL Salz</li><li lang-variant="pl">1 TL sól</li>
 <li lang-variant="de">1/2 TL Pfeffer</li><li lang-variant="pl">1/2 TL pieprz</li>
@@ -175,43 +127,54 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1 kleiner Rosmarinzweig</li><li lang-variant="pl">1 kleiner Rosmarinzweig</li>
 <li lang-variant="de">1 Lorbeerblatt</li><li lang-variant="pl">1 liść laurowy</li>
 <li lang-variant="de">optional: 1 Stück Sellerie</li><li lang-variant="pl">opcjonalnie: 1 Stück Sellerie</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 20–25 min</li><li lang-variant="pl">przygotowanie: 20–25 min</li>
-<li lang-variant="de">Schmorzeit: ok. 1 godzina 45 min</li><li lang-variant="pl">czas duszenia: ok. 1 godzina 45 min</li>
-<li lang-variant="de">Gesamt: ok. 2 godzin 15 min</li><li lang-variant="pl">łącznie: ok. 2 godzin 15 min</li>
-<li lang-variant="de">Jeśli jesz o 18:30, zacznij około 16:15</li><li lang-variant="pl">Jeśli jesz o 18:30, zacznij około 16:15</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 20–25 Minuten</li><li lang-variant="pl">przygotowanie: 20–25 min</li>
+<li lang-variant="de">Schmorzeit: ca. 1 Stunde 45 Minuten</li><li lang-variant="pl">czas duszenia: ok. 1 godzina 45 min</li>
+<li lang-variant="de">Gesamt: ca. 2 Stunden 15 Minuten</li><li lang-variant="pl">łącznie: ok. 2 godzin 15 min</li>
+<li lang-variant="de">Bei Essen um 18:30 Uhr: Start ca. 16:15 Uhr</li><li lang-variant="pl">Jeśli jesz o 18:30, zacznij około 16:15</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Nicht zu heiß schmoren, sonst wird Kalbfleisch trocken.</li><li lang-variant="pl">Nicht zu heiß dusić, sonst wird Kalbfleisch trocken.</li>
-<li lang-variant="de">Sauce am Ende 5–10 min bez przykrycia zredukować.</li><li lang-variant="pl">Sauce am Ende 5–10 min bez przykrycia eingotować.</li>
-<li lang-variant="de">Sehr gut z Kartoffelpüree, Bandnudeln lub Baguette.</li><li lang-variant="pl">Bardzo dobre z puree ziemniaczanym, szerokim makaronem lub bagietką.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Kalbshaxen-Braten trocken tupfen i z Salz, Pfeffer i Kräutern würzen.</li><li lang-variant="pl">Pieczeń cielęcą osuszyć i doprawić solą, pieprzem oraz ziołami.</li>
-<li lang-variant="de">Zwiebeln, Möhren i Knoblauch grob würfeln.</li><li lang-variant="pl">Cebulę, marchew i czosnek pokroić w grubą kostkę.</li>
-<li lang-variant="de">Öl in einem Bräter erhitzen i den Braten rundherum kräftig anbraten.</li><li lang-variant="pl">Rozgrzać olej w brytfannie i mocno obsmażyć mięso z każdej strony.</li>
-<li lang-variant="de">Braten krótko herausnehmen, Gemüse im Bräter anrösten.</li><li lang-variant="pl">Na chwilę wyjąć mięso i podsmażyć warzywa w brytfannie.</li>
-<li lang-variant="de">Tomatenmark zugeben i krótko mitrösten.</li><li lang-variant="pl">Dodać koncentrat pomidorowy i chwilę podsmażyć.</li>
-<li lang-variant="de">Z Wein ablöschen i leicht zredukować lassen.</li><li lang-variant="pl">Podlać winem i lekko zredukować.</li>
-<li lang-variant="de">Fond angießen, Rosmarin i Lorbeer zugeben.</li><li lang-variant="pl">Dolać bulion, dodać rozmaryn i liść laurowy.</li>
+<li lang-variant="de">Sauce am Ende 5–10 Minuten offen einkochen.</li><li lang-variant="pl">Sauce am Ende 5–10 min bez przykrycia eingotować.</li>
+<li lang-variant="de">Sehr gut mit Kartoffelpüree, Bandnudeln oder Baguette.</li><li lang-variant="pl">Bardzo dobre z puree ziemniaczanym, szerokim makaronem lub bagietką.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Kalbshaxen-Braten trocken tupfen und mit Salz, Pfeffer und Kräutern würzen.</li><li lang-variant="pl">Pieczeń cielęcą osuszyć i doprawić solą, pieprzem oraz ziołami.</li>
+<li lang-variant="de">Zwiebeln, Möhren und Knoblauch grob würfeln.</li><li lang-variant="pl">Cebulę, marchew i czosnek pokroić w grubą kostkę.</li>
+<li lang-variant="de">Öl in einem Bräter erhitzen und den Braten rundherum kräftig anbraten.</li><li lang-variant="pl">Rozgrzać olej w brytfannie i mocno obsmażyć mięso z każdej strony.</li>
+<li lang-variant="de">Braten kurz herausnehmen, Gemüse im Bräter anrösten.</li><li lang-variant="pl">Na chwilę wyjąć mięso i podsmażyć warzywa w brytfannie.</li>
+<li lang-variant="de">Tomatenmark zugeben und kurz mitrösten.</li><li lang-variant="pl">Dodać koncentrat pomidorowy i chwilę podsmażyć.</li>
+<li lang-variant="de">Mit Wein ablöschen und leicht einkochen lassen.</li><li lang-variant="pl">Podlać winem i lekko zredukować.</li>
+<li lang-variant="de">Fond angießen, Rosmarin und Lorbeer zugeben.</li><li lang-variant="pl">Dolać bulion, dodać rozmaryn i liść laurowy.</li>
 <li lang-variant="de">Braten zurück in den Bräter legen.</li><li lang-variant="pl">Włożyć pieczeń z powrotem do brytfanny.</li>
-<li lang-variant="de">Zugedeckt im Ofen bei ok. 160 °C Ober-/Unterhitze etwa 1 godzina 45 min schmoren.</li><li lang-variant="pl">Dusić pod przykryciem w piekarniku w temperaturze około 160 °C góra/dół przez około 1 godzinę i 45 minut.</li>
-<li lang-variant="de">Zwischendurch z trochę Bratensaft übergießen.</li><li lang-variant="pl">Od czasu do czasu polać sosem z pieczenia.</li>
-<li lang-variant="de">Braten herausnehmen, Sauce nach Wunsch pürieren lub rustikal lassen.</li><li lang-variant="pl">Wyjąć pieczeń, a sos zmiksować lub pozostawić rustykalny.</li>
-<li lang-variant="de">Sauce abschmecken i den Braten in Scheiben servieren.</li><li lang-variant="pl">Doprawić sos i podawać pieczeń w plastrach.</li>
+<li lang-variant="de">Zugedeckt im Ofen bei ca. 160 °C Ober-/Unterhitze etwa 1 Stunde 45 Minuten schmoren.</li><li lang-variant="pl">Dusić pod przykryciem w piekarniku w temperaturze około 160 °C góra/dół przez około 1 godzinę i 45 minut.</li>
+<li lang-variant="de">Zwischendurch mit etwas Bratensaft übergießen.</li><li lang-variant="pl">Od czasu do czasu polać sosem z pieczenia.</li>
+<li lang-variant="de">Braten herausnehmen, Sauce nach Wunsch pürieren oder rustikal lassen.</li><li lang-variant="pl">Wyjąć pieczeń, a sos zmiksować lub pozostawić rustykalny.</li>
+<li lang-variant="de">Sauce abschmecken und den Braten in Scheiben servieren.</li><li lang-variant="pl">Doprawić sos i podawać pieczeń w plastrach.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Fest gespeichert als gutes Rezept.</p><p lang-variant="pl">Fest gespeichert als gutes Rezept.</p>
+<p><span lang-variant="de">Fest gespeichert als gutes Rezept.</span><span lang-variant="pl">Fest gespeichert als gutes Rezept.</span></p>
 </div>
-<div><img alt="Italienischer Kalbshaxen-Braten" src="images/rezeptbild_02.png"/></div>
-</section>
-<section class="recipe" id="rezept-3">
 <div>
-<h2><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce z Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></h2>
+<img alt="Italienischer Kalbshaxen-Braten" src="images/rezeptbild_02.png"/>
+</div>
+</section><section class="recipe" id="rezept-3">
+<div>
+<h2><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte / Beilagen</span><span lang-variant="pl">Dania z patelni / dodatki</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1,5 kg Muscheln</li><li lang-variant="pl">1,5 kg Muscheln</li>
@@ -221,54 +184,65 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1 EL Olivenöl</li><li lang-variant="pl">1 EL oliwa z oliwek</li>
 <li lang-variant="de">150 ml Weißwein</li><li lang-variant="pl">150 ml białego wina</li>
 <li lang-variant="de">200 g stückige Tomaten</li><li lang-variant="pl">200 g stückige pomidory</li>
-<li lang-variant="de">100 ml Sahne lub trochę zusätzlicher Muschelsud, optional</li><li lang-variant="pl">100 ml śmietany lub opcjonalnie trochę dodatkowego wywaru z małży</li>
+<li lang-variant="de">100 ml Sahne oder etwas zusätzlicher Muschelsud, optional</li><li lang-variant="pl">100 ml śmietany lub opcjonalnie trochę dodatkowego wywaru z małży</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">1 kleine Prise Zucker</li><li lang-variant="pl">1 kleine Prise cukier</li>
-<li lang-variant="de">1/2 Baguette lub 1 mała Ciabatta</li><li lang-variant="pl">1/2 bagietki lub 1 mała ciabatta</li>
-<li lang-variant="de">2 EL Butter do das Knoblauchbrot</li><li lang-variant="pl">2 łyżki masła do pieczywa czosnkowego</li>
+<li lang-variant="de">1/2 Baguette oder 1 kleines Ciabatta</li><li lang-variant="pl">1/2 bagietki lub 1 mała ciabatta</li>
+<li lang-variant="de">2 EL Butter für das Knoblauchbrot</li><li lang-variant="pl">2 łyżki masła do pieczywa czosnkowego</li>
 <li lang-variant="de">1 Knoblauchzehe fürs Brot</li><li lang-variant="pl">1 ząbek czosnku do pieczywa</li>
 <li lang-variant="de">optional: Petersilie</li><li lang-variant="pl">opcjonalnie: pietruszka</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 15 min</li><li lang-variant="pl">przygotowanie: 15 min</li>
-<li lang-variant="de">Garzeit: 10 min</li><li lang-variant="pl">czas gotowania: 10 min</li>
-<li lang-variant="de">Pieczywo równolegle: 5 min</li><li lang-variant="pl">Pieczywo równolegle: 5 min</li>
-<li lang-variant="de">Gesamt: ok. 25 min</li><li lang-variant="pl">łącznie: ok. 25 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 15 Minuten</li><li lang-variant="pl">przygotowanie: 15 min</li>
+<li lang-variant="de">Garzeit: 10 Minuten</li><li lang-variant="pl">czas gotowania: 10 min</li>
+<li lang-variant="de">Brot parallel: 5 Minuten</li><li lang-variant="pl">Pieczywo równolegle: 5 min</li>
+<li lang-variant="de">Gesamt: ca. 25 Minuten</li><li lang-variant="pl">łącznie: ok. 25 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Muscheln erst ganz zum Schluss garen.</li><li lang-variant="pl">Muscheln erst ganz zum Schluss gotować / piec.</li>
 <li lang-variant="de">Sauce vorher nicht zu stark reduzieren.</li><li lang-variant="pl">Sauce vorher nicht zu stark reduzieren.</li>
-<li lang-variant="de">Pieczywo włóż do Airfryera dopiero tuż przed podaniem.</li><li lang-variant="pl">Pieczywo włóż do Airfryera dopiero tuż przed podaniem.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Muscheln gründlich waschen, geöffnete lub beschädigte Muscheln aussortieren.</li><li lang-variant="pl">Dokładnie umyć małże, odrzucić otwarte lub uszkodzone sztuki.</li>
-<li lang-variant="de">Frühlingszwiebeln i Knoblauch fein schneiden.</li><li lang-variant="pl">Dymkę i czosnek drobno posiekać.</li>
-<li lang-variant="de">Butter i Olivenöl in einem großen Topf erhitzen.</li><li lang-variant="pl">Rozgrzać masło i oliwę z oliwek w dużym garnku.</li>
-<li lang-variant="de">Frühlingszwiebeln i Knoblauch krótko anschwitzen.</li><li lang-variant="pl">Krótko zeszklić dymkę i czosnek.</li>
-<li lang-variant="de">Z Weißwein ablöschen.</li><li lang-variant="pl">Podlać białym winem.</li>
-<li lang-variant="de">Tomaten zugeben i alles krótko aufkochen.</li><li lang-variant="pl">Dodać pomidory i całość krótko zagotować.</li>
-<li lang-variant="de">Z Pfeffer i einer kleinen Prise Zucker abschmecken.</li><li lang-variant="pl">Doprawić pieprzem i małą szczyptą cukru.</li>
-<li lang-variant="de">Muscheln in den Topf geben, Deckel aufsetzen i 5–8 min garen.</li><li lang-variant="pl">Włożyć małże do garnka, przykryć i gotować 5–8 minut.</li>
+<li lang-variant="de">Brot erst kurz vor dem Servieren in den Airfryer geben.</li><li lang-variant="pl">Pieczywo włóż do Airfryera dopiero tuż przed podaniem.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Muscheln gründlich waschen, geöffnete oder beschädigte Muscheln aussortieren.</li><li lang-variant="pl">Dokładnie umyć małże, odrzucić otwarte lub uszkodzone sztuki.</li>
+<li lang-variant="de">Frühlingszwiebeln und Knoblauch fein schneiden.</li><li lang-variant="pl">Dymkę i czosnek drobno posiekać.</li>
+<li lang-variant="de">Butter und Olivenöl in einem großen Topf erhitzen.</li><li lang-variant="pl">Rozgrzać masło i oliwę z oliwek w dużym garnku.</li>
+<li lang-variant="de">Frühlingszwiebeln und Knoblauch kurz anschwitzen.</li><li lang-variant="pl">Krótko zeszklić dymkę i czosnek.</li>
+<li lang-variant="de">Mit Weißwein ablöschen.</li><li lang-variant="pl">Podlać białym winem.</li>
+<li lang-variant="de">Tomaten zugeben und alles kurz aufkochen.</li><li lang-variant="pl">Dodać pomidory i całość krótko zagotować.</li>
+<li lang-variant="de">Mit Pfeffer und einer kleinen Prise Zucker abschmecken.</li><li lang-variant="pl">Doprawić pieprzem i małą szczyptą cukru.</li>
+<li lang-variant="de">Muscheln in den Topf geben, Deckel aufsetzen und 5–8 Minuten garen.</li><li lang-variant="pl">Włożyć małże do garnka, przykryć i gotować 5–8 minut.</li>
 <li lang-variant="de">Topf zwischendurch einmal rütteln.</li><li lang-variant="pl">W trakcie raz potrząsnąć garnkiem.</li>
 <li lang-variant="de">Nur geöffnete Muscheln servieren, geschlossene aussortieren.</li><li lang-variant="pl">Podawać tylko otwarte małże, zamknięte odrzucić.</li>
-<li lang-variant="de">Do das Knoblauchbrot Baguette aufschneiden, z Butter bestreichen i z Knoblauch einreiben.</li><li lang-variant="pl">Aby przygotować pieczywo czosnkowe, przekroić bagietkę, posmarować masłem i natrzeć czosnkiem.</li>
-<li lang-variant="de">Im Airfryer bei ok. 180 °C 4–6 min knusprig backen.</li><li lang-variant="pl">Piec w airfryerze około 4–6 minut w 180 °C, aż będzie chrupiące.</li>
+<li lang-variant="de">Für das Knoblauchbrot Baguette aufschneiden, mit Butter bestreichen und mit Knoblauch einreiben.</li><li lang-variant="pl">Aby przygotować pieczywo czosnkowe, przekroić bagietkę, posmarować masłem i natrzeć czosnkiem.</li>
+<li lang-variant="de">Im Airfryer bei ca. 180 °C 4–6 Minuten knusprig backen.</li><li lang-variant="pl">Piec w airfryerze około 4–6 minut w 180 °C, aż będzie chrupiące.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Fest gespeichertes, gut befundenes Rezept.</p><p lang-variant="pl">Fest gespeichertes, gut befundenes Rezept.</p>
+<p><span lang-variant="de">Fest gespeichertes, gut befundenes Rezept.</span><span lang-variant="pl">Fest gespeichertes, gut befundenes Rezept.</span></p>
 </div>
-<div><img alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce z Airfryer-Knoblauchbrot" src="images/rezeptbild_02_1.png"/></div>
-</section>
-<section class="recipe" id="rezept-4">
 <div>
-<h2><span lang-variant="de">4. Hähnchen-Gyros z Ofenkartoffeln, Gurkensalat i Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></h2>
+<img alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" src="images/rezeptbild_02_1.png"/>
+</div>
+</section><section class="recipe" id="rezept-4">
+<div>
+<h2><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte / Pfannengerichte</span><span lang-variant="pl">Dania z piekarnika / dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
-<li lang-variant="de">700 g Hähnchengeschnetzeltes lub Hähnchenfilet in Streifen</li><li lang-variant="pl">700 g kawałków kurczaka lub filetu z kurczaka pokrojonego w paski</li>
+<li lang-variant="de">700 g Hähnchengeschnetzeltes oder Hähnchenfilet in Streifen</li><li lang-variant="pl">700 g kawałków kurczaka lub filetu z kurczaka pokrojonego w paski</li>
 <li lang-variant="de">2 EL Gyrosgewürz</li><li lang-variant="pl">2 EL Gyrosgewürz</li>
 <li lang-variant="de">2 EL Öl</li><li lang-variant="pl">2 EL olej</li>
 <li lang-variant="de">1 große Zwiebel</li><li lang-variant="pl">1 große cebula</li>
@@ -279,41 +253,52 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1 EL Zitronensaft</li><li lang-variant="pl">1 EL sok z cytryny</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
-<li lang-variant="de">trochę Öl do die Kartoffeln</li><li lang-variant="pl">trochę oleju do ziemniaków</li>
-<li lang-variant="de">optional: Paprikapulver do die Kartoffeln</li><li lang-variant="pl">opcjonalnie: papryka w proszku do ziemniaków</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 20 min</li><li lang-variant="pl">przygotowanie: 20 min</li>
-<li lang-variant="de">Pieczone ziemniaki: 35–40 min</li><li lang-variant="pl">Pieczone ziemniaki: 35–40 min</li>
-<li lang-variant="de">Gyros: 10–12 min</li><li lang-variant="pl">Gyros: 10–12 min</li>
-<li lang-variant="de">Gesamt: ok. 50–60 min</li><li lang-variant="pl">łącznie: ok. 50–60 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">etwas Öl für die Kartoffeln</li><li lang-variant="pl">trochę oleju do ziemniaków</li>
+<li lang-variant="de">optional: Paprikapulver für die Kartoffeln</li><li lang-variant="pl">opcjonalnie: papryka w proszku do ziemniaków</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 20 Minuten</li><li lang-variant="pl">przygotowanie: 20 min</li>
+<li lang-variant="de">Ofenkartoffeln: 35–40 Minuten</li><li lang-variant="pl">Pieczone ziemniaki: 35–40 min</li>
+<li lang-variant="de">Gyros: 10–12 Minuten</li><li lang-variant="pl">Gyros: 10–12 min</li>
+<li lang-variant="de">Gesamt: ca. 50–60 Minuten</li><li lang-variant="pl">łącznie: ok. 50–60 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Hähnchen lieber portionsweise anbraten.</li><li lang-variant="pl">kurczak lieber portionsweise obsmażyć.</li>
 <li lang-variant="de">Tsatsiki früh anrühren, dann zieht es besser durch.</li><li lang-variant="pl">Tsatsiki früh anrühren, dann zieht es besser durch.</li>
-<li lang-variant="de">Als Sonntagsklassiker ideal do Essen zwischen 18:00 i 19:00 Uhr.</li><li lang-variant="pl">Als Sonntagsklassiker ideal do Essen zwischen 18:00 i 19:00 Uhr.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Hähnchen z Öl, Gyrosgewürz i Zwiebelstreifen marinieren.</li><li lang-variant="pl">Zamarynować kurczaka w oleju, przyprawie gyros i paskach cebuli.</li>
-<li lang-variant="de">Kartoffeln in Spalten schneiden, würzen i z trochę Öl mischen.</li><li lang-variant="pl">Pokroić ziemniaki w łódeczki, doprawić i wymieszać z odrobiną oleju.</li>
-<li lang-variant="de">Kartoffeln auf ein Blech geben i bei 200 °C ok. 35–40 min backen.</li><li lang-variant="pl">Wyłożyć ziemniaki na blachę i piec około 35–40 minut w 200 °C.</li>
-<li lang-variant="de">Gurke do den Salat in Scheiben schneiden lub hobeln.</li><li lang-variant="pl">Pokroić ogórek do sałatki w plasterki lub zetrzeć na mandolinie.</li>
-<li lang-variant="de">Do Tsatsiki Gurke fein raspeln, ausdrücken i z Joghurt, Knoblauch, Salz, Pfeffer i Zitronensaft verrühren.</li><li lang-variant="pl">Do tzatziki drobno zetrzeć ogórek, odcisnąć i wymieszać z jogurtem, czosnkiem, solą, pieprzem oraz sokiem z cytryny.</li>
+<li lang-variant="de">Als Sonntagsklassiker ideal für Essen zwischen 18:00 und 19:00 Uhr.</li><li lang-variant="pl">Als Sonntagsklassiker ideal do Essen zwischen 18:00 i 19:00 Uhr.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Hähnchen mit Öl, Gyrosgewürz und Zwiebelstreifen marinieren.</li><li lang-variant="pl">Zamarynować kurczaka w oleju, przyprawie gyros i paskach cebuli.</li>
+<li lang-variant="de">Kartoffeln in Spalten schneiden, würzen und mit etwas Öl mischen.</li><li lang-variant="pl">Pokroić ziemniaki w łódeczki, doprawić i wymieszać z odrobiną oleju.</li>
+<li lang-variant="de">Kartoffeln auf ein Blech geben und bei 200 °C ca. 35–40 Minuten backen.</li><li lang-variant="pl">Wyłożyć ziemniaki na blachę i piec około 35–40 minut w 200 °C.</li>
+<li lang-variant="de">Gurke für den Salat in Scheiben schneiden oder hobeln.</li><li lang-variant="pl">Pokroić ogórek do sałatki w plasterki lub zetrzeć na mandolinie.</li>
+<li lang-variant="de">Für Tsatsiki Gurke fein raspeln, ausdrücken und mit Joghurt, Knoblauch, Salz, Pfeffer und Zitronensaft verrühren.</li><li lang-variant="pl">Do tzatziki drobno zetrzeć ogórek, odcisnąć i wymieszać z jogurtem, czosnkiem, solą, pieprzem oraz sokiem z cytryny.</li>
 <li lang-variant="de">Hähnchen in einer großen Pfanne scharf anbraten.</li><li lang-variant="pl">Mocno obsmażyć kurczaka na dużej patelni.</li>
 <li lang-variant="de">Gurkensalat frisch anmachen.</li><li lang-variant="pl">Przygotować świeżą sałatkę z ogórka.</li>
 <li lang-variant="de">Alles zusammen servieren.</li><li lang-variant="pl">Podawać wszystko razem.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Na stałe zapisany, bardzo dobrze przyjęty.</p><p lang-variant="pl">Na stałe zapisany, bardzo dobrze przyjęty.</p>
+<p><span lang-variant="de">Fest gespeichert, sehr gut angekommen.</span><span lang-variant="pl">Na stałe zapisany, bardzo dobrze przyjęty.</span></p>
 </div>
-<div><img alt="Hähnchen-Gyros z Ofenkartoffeln, Gurkensalat i Tsatsiki" src="images/rezeptbild_03.png"/></div>
-</section>
-<section class="recipe" id="rezept-5">
+<div>
+<img alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" src="images/rezeptbild_03.png"/>
+</div>
+</section><section class="recipe" id="rezept-5">
 <div>
 <h2><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Grill / BBQ</span><span lang-variant="pl">Grill / BBQ</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">700 g Rindfleisch in Streifen</li><li lang-variant="pl">700 g wołowina in Streifen</li>
@@ -327,45 +312,56 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">4 Bratwürste</li><li lang-variant="pl">4 kiełbaski</li>
 <li lang-variant="de">1 Becher Tzatziki</li><li lang-variant="pl">1 Becher Tzatziki</li>
 <li lang-variant="de">1 Packung Fladenbrot</li><li lang-variant="pl">1 Packung chleb pita</li>
-<li lang-variant="de">Salz i Pfeffer nach Bedarf</li><li lang-variant="pl">sól i pieprz do smaku</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 20 min</li><li lang-variant="pl">przygotowanie: 20 min</li>
-<li lang-variant="de">Anbraten: 15 min</li><li lang-variant="pl">obsmażanie: 15 min</li>
-<li lang-variant="de">Smoken: 45–60 min</li><li lang-variant="pl">wędzenie: 45–60 min</li>
-<li lang-variant="de">Finish: 10 min</li><li lang-variant="pl">wykończenie: 10 min</li>
-<li lang-variant="de">Gesamt: ok. 1 godzina 30 min</li><li lang-variant="pl">łącznie: ok. 1 godzina 30 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">Salz und Pfeffer nach Bedarf</li><li lang-variant="pl">sól i pieprz do smaku</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 20 Minuten</li><li lang-variant="pl">przygotowanie: 20 min</li>
+<li lang-variant="de">Anbraten: 15 Minuten</li><li lang-variant="pl">obsmażanie: 15 min</li>
+<li lang-variant="de">Smoken: 45–60 Minuten</li><li lang-variant="pl">wędzenie: 45–60 min</li>
+<li lang-variant="de">Finish: 10 Minuten</li><li lang-variant="pl">wykończenie: 10 min</li>
+<li lang-variant="de">Gesamt: ca. 1 Stunde 30 Minuten</li><li lang-variant="pl">łącznie: ok. 1 godzina 30 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Pfanne nicht überfüllen.</li><li lang-variant="pl">Pfanne nicht überfüllen.</li>
 <li lang-variant="de">Limettensaft wirklich erst ganz am Ende zugeben.</li><li lang-variant="pl">limonkansaft wirklich erst ganz am Ende dodać.</li>
-<li lang-variant="de">Perfekt do den Pit Boss z Hickory-Pellets.</li><li lang-variant="pl">Perfekt do den Pit Boss z Hickory-Pellets.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Rindfleisch z BBQ-Rub würzen i krótko ziehen lassen.</li><li lang-variant="pl">wołowina z przyprawa BBQ würzen i krótko ziehen lassen.</li>
-<li lang-variant="de">Paprika, Zucchini i Zwiebeln in Streifen schneiden.</li><li lang-variant="pl">Paprykę, cukinię i cebulę pokrój w paski.</li>
+<li lang-variant="de">Perfekt für den Pit Boss mit Hickory-Pellets.</li><li lang-variant="pl">Perfekt do den Pit Boss z Hickory-Pellets.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Rindfleisch mit BBQ-Rub würzen und kurz ziehen lassen.</li><li lang-variant="pl">wołowina z przyprawa BBQ würzen i krótko ziehen lassen.</li>
+<li lang-variant="de">Paprika, Zucchini und Zwiebeln in Streifen schneiden.</li><li lang-variant="pl">Paprykę, cukinię i cebulę pokrój w paski.</li>
 <li lang-variant="de">Gusseisenpfanne stark erhitzen.</li><li lang-variant="pl">Gusseisenpfanne stark erhitzen.</li>
-<li lang-variant="de">Fleisch scharf anbraten i wieder herausnehmen.</li><li lang-variant="pl">Mięso mocno obsmaż i ponownie wyjmij z patelni.</li>
+<li lang-variant="de">Fleisch scharf anbraten und wieder herausnehmen.</li><li lang-variant="pl">Mięso mocno obsmaż i ponownie wyjmij z patelni.</li>
 <li lang-variant="de">Gemüse ebenfalls kräftig anrösten.</li><li lang-variant="pl">Gemüse ebenfalls kräftig anrösten.</li>
 <li lang-variant="de">Fleisch zurück in die Pfanne geben.</li><li lang-variant="pl">Fleisch zurück in die Pfanne geben.</li>
-<li lang-variant="de">Patelnię wstaw do smokera o temperaturze ok. 120–130 °C na 45–60 min.</li><li lang-variant="pl">Patelnię wstaw do smokera o temperaturze ok. 120–130 °C na 45–60 min.</li>
+<li lang-variant="de">Pfanne bei ca. 120–130 °C für 45–60 Minuten in den Smoker stellen.</li><li lang-variant="pl">Patelnię wstaw do smokera o temperaturze ok. 120–130 °C na 45–60 min.</li>
 <li lang-variant="de">Hickory-Pellets verwenden.</li><li lang-variant="pl">Hickory-Pellets verwenden.</li>
 <li lang-variant="de">Danach Pfanne wieder auf den Gaskocher setzen.</li><li lang-variant="pl">Danach Pfanne wieder auf den Gaskocher setzen.</li>
-<li lang-variant="de">BBQ-Sauce zugeben i alles krótko zredukować lassen.</li><li lang-variant="pl">sos BBQ dodać i alles krótko zredukować lassen.</li>
-<li lang-variant="de">Z frischem Limettensaft abschließen.</li><li lang-variant="pl">Na końcu skrop świeżym sokiem z limonki.</li>
-<li lang-variant="de">Z Tzatziki, Fladenbrot i Bratwurst servieren.</li><li lang-variant="pl">Z Tzatziki, chleb pita i Bratwurst podawać.</li>
+<li lang-variant="de">BBQ-Sauce zugeben und alles kurz einköcheln lassen.</li><li lang-variant="pl">sos BBQ dodać i alles krótko zredukować lassen.</li>
+<li lang-variant="de">Mit frischem Limettensaft abschließen.</li><li lang-variant="pl">Na końcu skrop świeżym sokiem z limonki.</li>
+<li lang-variant="de">Mit Tzatziki, Fladenbrot und Bratwurst servieren.</li><li lang-variant="pl">Z Tzatziki, chleb pita i Bratwurst podawać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Fest gespeichert i fürs BBQ-Buch übernommen.</p><p lang-variant="pl">Fest gespeichert i fürs BBQ-Buch übernommen.</p>
+<p><span lang-variant="de">Fest gespeichert und fürs BBQ-Buch übernommen.</span><span lang-variant="pl">Fest gespeichert i fürs BBQ-Buch übernommen.</span></p>
 </div>
-<div><img alt="Smoked BBQ-Fajita-Pfanne" src="images/rezeptbild_04.png"/></div>
-</section>
-<section class="recipe" id="rezept-6">
+<div>
+<img alt="Smoked BBQ-Fajita-Pfanne" src="images/rezeptbild_04.png"/>
+</div>
+</section><section class="recipe" id="rezept-6">
 <div>
 <h2><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Beilagen / Grill / BBQ</span><span lang-variant="pl">Dodatki / grill / BBQ</span></span>
-<span class="tag"><span lang-variant="de">3–4 Personen als Vorspeise lub Beilage</span><span lang-variant="pl">3–4 osoby jako przystawka lub dodatek</span></span>
-</div><div class="grid-2"><div>
+<span class="tag"><span lang-variant="de">3–4 Personen als Vorspeise oder Beilage</span><span lang-variant="pl">3–4 osoby jako przystawka lub dodatek</span></span>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1 Ciabatta</li><li lang-variant="pl">1 Ciabatta</li>
@@ -375,39 +371,50 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">optional: 1/2 rote Zwiebel</li><li lang-variant="pl">opcjonalnie: 1/2 rote cebula</li>
-<li lang-variant="de">optional: frisches Basilikum lub Petersilie</li><li lang-variant="pl">opcjonalnie: frisches bazylia lub pietruszka</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 10–15 min</li><li lang-variant="pl">przygotowanie: 10–15 min</li>
-<li lang-variant="de">Rösten: 5 min</li><li lang-variant="pl">Rösten: 5 min</li>
-<li lang-variant="de">Gesamt: ok. 15–20 min</li><li lang-variant="pl">łącznie: ok. 15–20 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Pieczywo posmaruj lub nałóż dodatki dopiero krótko przed jedzeniem.</li><li lang-variant="pl">Pieczywo posmaruj lub nałóż dodatki dopiero krótko przed jedzeniem.</li>
+<li lang-variant="de">optional: frisches Basilikum oder Petersilie</li><li lang-variant="pl">opcjonalnie: frisches bazylia lub pietruszka</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 10–15 Minuten</li><li lang-variant="pl">przygotowanie: 10–15 min</li>
+<li lang-variant="de">Rösten: 5 Minuten</li><li lang-variant="pl">Rösten: 5 min</li>
+<li lang-variant="de">Gesamt: ca. 15–20 Minuten</li><li lang-variant="pl">łącznie: ok. 15–20 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Brot erst kurz vor dem Essen belegen.</li><li lang-variant="pl">Pieczywo posmaruj lub nałóż dodatki dopiero krótko przed jedzeniem.</li>
 <li lang-variant="de">Die Tomatenmasse nicht zu wässrig werden lassen.</li><li lang-variant="pl">Nie dopuść, aby masa pomidorowa stała się zbyt wodnista.</li>
 <li lang-variant="de">Perfekt als Vorspeise zum Grillabend.</li><li lang-variant="pl">Perfekt als Vorspeise zum Grillabend.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Ciabatta in Scheiben schneiden.</li><li lang-variant="pl">Ciabatta in Scheiben pokroić.</li>
-<li lang-variant="de">Z trochę Olivenöl bestreichen.</li><li lang-variant="pl">Z trochę oliwa z oliwek bestreichen.</li>
-<li lang-variant="de">Podpiecz na grillu lub w piekarniku.</li><li lang-variant="pl">Podpiecz na grillu lub w piekarniku.</li>
-<li lang-variant="de">Die warmen Brotscheiben z frischem Knoblauch einreiben.</li><li lang-variant="pl">Ciepłe kromki pieczywa natrzyj świeżym czosnkiem.</li>
+<li lang-variant="de">Mit etwas Olivenöl bestreichen.</li><li lang-variant="pl">Z trochę oliwa z oliwek bestreichen.</li>
+<li lang-variant="de">Auf dem Grill oder im Ofen anrösten.</li><li lang-variant="pl">Podpiecz na grillu lub w piekarniku.</li>
+<li lang-variant="de">Die warmen Brotscheiben mit frischem Knoblauch einreiben.</li><li lang-variant="pl">Ciepłe kromki pieczywa natrzyj świeżym czosnkiem.</li>
 <li lang-variant="de">Tomaten klein würfeln.</li><li lang-variant="pl">pomidory klein pokroić w kostkę.</li>
-<li lang-variant="de">Optional rote Zwiebel fein würfeln i z den Tomaten mischen.</li><li lang-variant="pl">Optional rote cebula fein pokroić w kostkę i z den pomidory wymieszać.</li>
-<li lang-variant="de">Z Salz, Pfeffer i trochę Olivenöl abschmecken.</li><li lang-variant="pl">Z sól, pieprz i trochę oliwa z oliwek doprawić.</li>
-<li lang-variant="de">Nałóż na kromki tuż przed podaniem.</li><li lang-variant="pl">Nałóż na kromki tuż przed podaniem.</li>
+<li lang-variant="de">Optional rote Zwiebel fein würfeln und mit den Tomaten mischen.</li><li lang-variant="pl">Optional rote cebula fein pokroić w kostkę i z den pomidory wymieszać.</li>
+<li lang-variant="de">Mit Salz, Pfeffer und etwas Olivenöl abschmecken.</li><li lang-variant="pl">Z sól, pieprz i trochę oliwa z oliwek doprawić.</li>
+<li lang-variant="de">Kurz vor dem Servieren auf die Brotscheiben geben.</li><li lang-variant="pl">Nałóż na kromki tuż przed podaniem.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Als passende Vorspeise fest gespeichert.</p><p lang-variant="pl">Als passende Vorspeise fest gespeichert.</p>
+<p><span lang-variant="de">Als passende Vorspeise fest gespeichert.</span><span lang-variant="pl">Als passende Vorspeise fest gespeichert.</span></p>
 </div>
-<div><img alt="Bruschetta vom Ciabatta" src="images/rezeptbild_05.png"/></div>
-</section>
-<section class="recipe" id="rezept-7">
 <div>
-<h2><span lang-variant="de">7. Köfte z Tomaten-Zwiebel-Salat, Tzatziki i Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></h2>
+<img alt="Bruschetta vom Ciabatta" src="images/rezeptbild_05.png"/>
+</div>
+</section><section class="recipe" id="rezept-7">
+<div>
+<h2><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">600 g Hackfleisch</li><li lang-variant="pl">600 g mięso mielone</li>
@@ -424,133 +431,166 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1/2 Gurke</li><li lang-variant="pl">1/2 ogórek</li>
 <li lang-variant="de">1 Knoblauchzehe</li><li lang-variant="pl">1 ząbek czosnku</li>
 <li lang-variant="de">1 Fladenbrot</li><li lang-variant="pl">1 chleb pita</li>
-<li lang-variant="de">trochę Petersilie</li><li lang-variant="pl">trochę pietruszka</li>
+<li lang-variant="de">etwas Petersilie</li><li lang-variant="pl">trochę pietruszka</li>
 <li lang-variant="de">Öl zum Braten</li><li lang-variant="pl">olej do smażenia</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 20 min</li><li lang-variant="pl">przygotowanie: 20 min</li>
-<li lang-variant="de">Braten: 10–12 min</li><li lang-variant="pl">Braten: 10–12 min</li>
-<li lang-variant="de">Gesamt: ok. 35 min</li><li lang-variant="pl">łącznie: ok. 35 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Hackmasse vorher 10 min ziehen lassen.</li><li lang-variant="pl">Hackmasse vorher 10 min ziehen lassen.</li>
-<li lang-variant="de">Fladenbrot krótko aufbacken, dann passt es besser dazu.</li><li lang-variant="pl">chleb pita krótko aufpiec, dann passt es besser dazu.</li>
-<li lang-variant="de">Auch gut do Gäste geeignet.</li><li lang-variant="pl">Auch gut do Gäste geeignet.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Hackfleisch z geriebener Zwiebel, Ei, Paniermehl i Gewürzen vermengen.</li><li lang-variant="pl">mięso mielone z geriebener cebula, jajko, bułka tarta i Gewürzen vermengen.</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 20 Minuten</li><li lang-variant="pl">przygotowanie: 20 min</li>
+<li lang-variant="de">Braten: 10–12 Minuten</li><li lang-variant="pl">Braten: 10–12 min</li>
+<li lang-variant="de">Gesamt: ca. 35 Minuten</li><li lang-variant="pl">łącznie: ok. 35 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Hackmasse vorher 10 Minuten ziehen lassen.</li><li lang-variant="pl">Hackmasse vorher 10 min ziehen lassen.</li>
+<li lang-variant="de">Fladenbrot kurz aufbacken, dann passt es besser dazu.</li><li lang-variant="pl">chleb pita krótko aufpiec, dann passt es besser dazu.</li>
+<li lang-variant="de">Auch gut für Gäste geeignet.</li><li lang-variant="pl">Auch gut do Gäste geeignet.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Hackfleisch mit geriebener Zwiebel, Ei, Paniermehl und Gewürzen vermengen.</li><li lang-variant="pl">mięso mielone z geriebener cebula, jajko, bułka tarta i Gewürzen vermengen.</li>
 <li lang-variant="de">Kleine längliche Köfte formen.</li><li lang-variant="pl">Kleine längliche Köfte formen.</li>
-<li lang-variant="de">In trochę Öl rundherum anbraten lub grillen.</li><li lang-variant="pl">In trochę olej rundherum obsmażyć lub grillen.</li>
-<li lang-variant="de">Tomaten i rote Zwiebel do den Salat schneiden.</li><li lang-variant="pl">pomidory i rote cebula do den Salat pokroić.</li>
-<li lang-variant="de">Z trochę Salz, Pfeffer i Petersilie anmachen.</li><li lang-variant="pl">Z trochę sól, pieprz i pietruszka anmachen.</li>
-<li lang-variant="de">Do Tzatziki Gurke raspeln i z Joghurt i Knoblauch verrühren.</li><li lang-variant="pl">Do Tzatziki ogórek raspeln i z jogurt i czosnek wymieszać.</li>
-<li lang-variant="de">Fladenbrot erwärmen i alles zusammen servieren.</li><li lang-variant="pl">chleb pita erwärmen i alles zusammen podawać.</li>
+<li lang-variant="de">In etwas Öl rundherum anbraten oder grillen.</li><li lang-variant="pl">In trochę olej rundherum obsmażyć lub grillen.</li>
+<li lang-variant="de">Tomaten und rote Zwiebel für den Salat schneiden.</li><li lang-variant="pl">pomidory i rote cebula do den Salat pokroić.</li>
+<li lang-variant="de">Mit etwas Salz, Pfeffer und Petersilie anmachen.</li><li lang-variant="pl">Z trochę sól, pieprz i pietruszka anmachen.</li>
+<li lang-variant="de">Für Tzatziki Gurke raspeln und mit Joghurt und Knoblauch verrühren.</li><li lang-variant="pl">Do Tzatziki ogórek raspeln i z jogurt i czosnek wymieszać.</li>
+<li lang-variant="de">Fladenbrot erwärmen und alles zusammen servieren.</li><li lang-variant="pl">chleb pita erwärmen i alles zusammen podawać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Gut angekommen.</p><p lang-variant="pl">Gut angekommen.</p>
+<p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
-<div><img alt="Köfte z Tomaten-Zwiebel-Salat, Tzatziki i Fladenbrot" src="images/rezeptbild_06.png"/></div>
-</section>
-<section class="recipe" id="rezept-8">
 <div>
-<h2><span lang-variant="de">8. Bauernomelette z Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></h2>
+<img alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" src="images/rezeptbild_06.png"/>
+</div>
+</section><section class="recipe" id="rezept-8">
+<div>
+<h2><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte / Salate</span><span lang-variant="pl">Dania z patelni / sałatki</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">6 Eier</li><li lang-variant="pl">6 jajkoer</li>
 <li lang-variant="de">500 g Kartoffeln, gekocht</li><li lang-variant="pl">500 g ziemniaki, gekocht</li>
 <li lang-variant="de">1 Zwiebel</li><li lang-variant="pl">1 cebula</li>
-<li lang-variant="de">1 EL Öl lub Butter</li><li lang-variant="pl">1 EL olej lub masło</li>
+<li lang-variant="de">1 EL Öl oder Butter</li><li lang-variant="pl">1 EL olej lub masło</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">3 Tomaten</li><li lang-variant="pl">3 pomidory</li>
 <li lang-variant="de">2 Kugeln Mozzarella</li><li lang-variant="pl">2 Kugeln mozzarella</li>
-<li lang-variant="de">1 kleine Zwiebel lub rote Zwiebel</li><li lang-variant="pl">1 kleine cebula lub rote cebula</li>
+<li lang-variant="de">1 kleine Zwiebel oder rote Zwiebel</li><li lang-variant="pl">1 kleine cebula lub rote cebula</li>
 <li lang-variant="de">2 Frühlingszwiebeln</li><li lang-variant="pl">2 dymka</li>
-<li lang-variant="de">trochę Petersilie</li><li lang-variant="pl">trochę pietruszka</li>
+<li lang-variant="de">etwas Petersilie</li><li lang-variant="pl">trochę pietruszka</li>
 <li lang-variant="de">2 EL Olivenöl</li><li lang-variant="pl">2 EL oliwa z oliwek</li>
-<li lang-variant="de">1 EL heller Balsamico lub Zitronensaft</li><li lang-variant="pl">1 EL jasny ocet balsamiczny lub sok z cytryny</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 15 min</li><li lang-variant="pl">przygotowanie: 15 min</li>
-<li lang-variant="de">Garzeit: 15 min</li><li lang-variant="pl">czas gotowania: 15 min</li>
-<li lang-variant="de">Gesamt: ok. 30 min</li><li lang-variant="pl">łącznie: ok. 30 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">1 EL heller Balsamico oder Zitronensaft</li><li lang-variant="pl">1 EL jasny ocet balsamiczny lub sok z cytryny</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 15 Minuten</li><li lang-variant="pl">przygotowanie: 15 min</li>
+<li lang-variant="de">Garzeit: 15 Minuten</li><li lang-variant="pl">czas gotowania: 15 min</li>
+<li lang-variant="de">Gesamt: ca. 30 Minuten</li><li lang-variant="pl">łącznie: ok. 30 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Vorgekochte Kartoffeln verwenden, dann wird es besser.</li><li lang-variant="pl">Vorgekochte ziemniaki verwenden, dann wird es besser.</li>
-<li lang-variant="de">Salat erst krótko vor dem Essen mischen.</li><li lang-variant="pl">Salat erst krótko vor dem Essen wymieszać.</li>
-<li lang-variant="de">Bardzo dobry i szybki obiad lub kolacja.</li><li lang-variant="pl">Bardzo dobry i szybki obiad lub kolacja.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+<li lang-variant="de">Salat erst kurz vor dem Essen mischen.</li><li lang-variant="pl">Salat erst krótko vor dem Essen wymieszać.</li>
+<li lang-variant="de">Sehr gutes schnelles Abendessen.</li><li lang-variant="pl">Bardzo dobry i szybki obiad lub kolacja.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Kartoffeln in Scheiben schneiden.</li><li lang-variant="pl">ziemniaki in Scheiben pokroić.</li>
-<li lang-variant="de">Zwiebel würfeln i in der Pfanne anbraten.</li><li lang-variant="pl">cebula pokroić w kostkę i in der Pfanne obsmażyć.</li>
-<li lang-variant="de">Kartoffeln zugeben i anrösten.</li><li lang-variant="pl">ziemniaki dodać i anrösten.</li>
-<li lang-variant="de">Eier verquirlen, würzen i darübergeben.</li><li lang-variant="pl">jajkoer verquirlen, würzen i darübergeben.</li>
-<li lang-variant="de">Stocken lassen i vorsichtig fertig garen.</li><li lang-variant="pl">Stocken lassen i vorsichtig fertig gotować / piec.</li>
-<li lang-variant="de">Tomaten i Mozzarella schneiden.</li><li lang-variant="pl">pomidory i mozzarella pokroić.</li>
-<li lang-variant="de">Z Zwiebeln, Frühlingszwiebeln i Petersilie mischen.</li><li lang-variant="pl">Z cebule, dymka i pietruszka wymieszać.</li>
-<li lang-variant="de">Z Öl i trochę Säure anmachen.</li><li lang-variant="pl">Z olej i trochę Säure anmachen.</li>
+<li lang-variant="de">Zwiebel würfeln und in der Pfanne anbraten.</li><li lang-variant="pl">cebula pokroić w kostkę i in der Pfanne obsmażyć.</li>
+<li lang-variant="de">Kartoffeln zugeben und anrösten.</li><li lang-variant="pl">ziemniaki dodać i anrösten.</li>
+<li lang-variant="de">Eier verquirlen, würzen und darübergeben.</li><li lang-variant="pl">jajkoer verquirlen, würzen i darübergeben.</li>
+<li lang-variant="de">Stocken lassen und vorsichtig fertig garen.</li><li lang-variant="pl">Stocken lassen i vorsichtig fertig gotować / piec.</li>
+<li lang-variant="de">Tomaten und Mozzarella schneiden.</li><li lang-variant="pl">pomidory i mozzarella pokroić.</li>
+<li lang-variant="de">Mit Zwiebeln, Frühlingszwiebeln und Petersilie mischen.</li><li lang-variant="pl">Z cebule, dymka i pietruszka wymieszać.</li>
+<li lang-variant="de">Mit Öl und etwas Säure anmachen.</li><li lang-variant="pl">Z olej i trochę Säure anmachen.</li>
 <li lang-variant="de">Kein Feta verwenden.</li><li lang-variant="pl">Kein Feta verwenden.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Gut angekommen.</p><p lang-variant="pl">Gut angekommen.</p>
+<p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
-<div><img alt="Bauernomelette z Tomaten-Mozzarella-Salat" src="images/rezeptbild_07.png"/></div>
-</section>
-<section class="recipe" id="rezept-9">
 <div>
-<h2><span lang-variant="de">9. Chicken Masala z Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></h2>
+<img alt="Bauernomelette mit Tomaten-Mozzarella-Salat" src="images/rezeptbild_07.png"/>
+</div>
+</section><section class="recipe" id="rezept-9">
+<div>
+<h2><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">500 g Hähnchenbrust</li><li lang-variant="pl">500 g pierś z kurczaka</li>
 <li lang-variant="de">1 Zwiebel</li><li lang-variant="pl">1 cebula</li>
-<li lang-variant="de">1 TL Garam Masala lub Masala-Gewürz</li><li lang-variant="pl">1 TL garam masala lub Masala-Gewürz</li>
+<li lang-variant="de">1 TL Garam Masala oder Masala-Gewürz</li><li lang-variant="pl">1 TL garam masala lub Masala-Gewürz</li>
 <li lang-variant="de">1 TL Paprikapulver</li><li lang-variant="pl">1 TL papryka w proszku</li>
 <li lang-variant="de">150 g Naturjoghurt</li><li lang-variant="pl">150 g jogurt naturalny</li>
 <li lang-variant="de">1 EL Tomatenmark</li><li lang-variant="pl">1 EL koncentrat pomidorowy</li>
-<li lang-variant="de">100 ml Wasser lub Brühe</li><li lang-variant="pl">100 ml woda lub bulion</li>
+<li lang-variant="de">100 ml Wasser oder Brühe</li><li lang-variant="pl">100 ml woda lub bulion</li>
 <li lang-variant="de">1 EL Öl</li><li lang-variant="pl">1 EL olej</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">4 Protein-Wraps</li><li lang-variant="pl">4 proteinowe wrapy</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 10 min</li><li lang-variant="pl">przygotowanie: 10 min</li>
-<li lang-variant="de">Garzeit: 15 min</li><li lang-variant="pl">czas gotowania: 15 min</li>
-<li lang-variant="de">Gesamt: ok. 25 min</li><li lang-variant="pl">łącznie: ok. 25 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 10 Minuten</li><li lang-variant="pl">przygotowanie: 10 min</li>
+<li lang-variant="de">Garzeit: 15 Minuten</li><li lang-variant="pl">czas gotowania: 15 min</li>
+<li lang-variant="de">Gesamt: ca. 25 Minuten</li><li lang-variant="pl">łącznie: ok. 25 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Joghurt erst bei reduzierter Hitze einrühren.</li><li lang-variant="pl">jogurt erst bei reduzierter Hitze wmieszać.</li>
-<li lang-variant="de">Wraps krótko erwärmen.</li><li lang-variant="pl">Wraps krótko erwärmen.</li>
-<li lang-variant="de">Bardzo praktyczne na co dzień.</li><li lang-variant="pl">Bardzo praktyczne na co dzień.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+<li lang-variant="de">Wraps kurz erwärmen.</li><li lang-variant="pl">Wraps krótko erwärmen.</li>
+<li lang-variant="de">Sehr alltagstauglich.</li><li lang-variant="pl">Bardzo praktyczne na co dzień.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Hähnchen in Stücke schneiden.</li><li lang-variant="pl">kurczak in Stücke pokroić.</li>
 <li lang-variant="de">Zwiebel anbraten.</li><li lang-variant="pl">cebula obsmażyć.</li>
-<li lang-variant="de">Hähnchen zugeben i krótko anrösten.</li><li lang-variant="pl">kurczak dodać i krótko anrösten.</li>
-<li lang-variant="de">Gewürze i Tomatenmark einrühren.</li><li lang-variant="pl">przyprawy i koncentrat pomidorowy wmieszać.</li>
-<li lang-variant="de">Z trochę Wasser lub Brühe ablöschen.</li><li lang-variant="pl">Z trochę woda lub bulion ablöschen.</li>
-<li lang-variant="de">Kurz zredukować lassen.</li><li lang-variant="pl">Kurz eingotować lassen.</li>
+<li lang-variant="de">Hähnchen zugeben und kurz anrösten.</li><li lang-variant="pl">kurczak dodać i krótko anrösten.</li>
+<li lang-variant="de">Gewürze und Tomatenmark einrühren.</li><li lang-variant="pl">przyprawy i koncentrat pomidorowy wmieszać.</li>
+<li lang-variant="de">Mit etwas Wasser oder Brühe ablöschen.</li><li lang-variant="pl">Z trochę woda lub bulion ablöschen.</li>
+<li lang-variant="de">Kurz einkochen lassen.</li><li lang-variant="pl">Kurz eingotować lassen.</li>
 <li lang-variant="de">Naturjoghurt unterrühren.</li><li lang-variant="pl">jogurt naturalny unterrühren.</li>
 <li lang-variant="de">Nicht mehr stark kochen.</li><li lang-variant="pl">Nicht mehr stark gotować.</li>
-<li lang-variant="de">Z warmen Protein-Wraps servieren.</li><li lang-variant="pl">Z warmen proteinowe wrapy podawać.</li>
+<li lang-variant="de">Mit warmen Protein-Wraps servieren.</li><li lang-variant="pl">Z warmen proteinowe wrapy podawać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Gut angekommen.</p><p lang-variant="pl">Gut angekommen.</p>
+<p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
-<div><img alt="Chicken Masala z Naturjoghurt &amp; Protein-Wraps" src="images/rezeptbild_08.png"/></div>
-</section>
-<section class="recipe" id="rezept-10">
 <div>
-<h2><span lang-variant="de">10. Svens Ofengericht z Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></h2>
+<img alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" src="images/rezeptbild_08.png"/>
+</div>
+</section><section class="recipe" id="rezept-10">
+<div>
+<h2><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">500–600 g Salsiccia</li><li lang-variant="pl">500–600 g salsiccia</li>
@@ -564,38 +604,49 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Paprikapulver</li><li lang-variant="pl">papryka w proszku</li>
 <li lang-variant="de">optional: Knoblauch</li><li lang-variant="pl">opcjonalnie: czosnek</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 20 min</li><li lang-variant="pl">przygotowanie: 20 min</li>
-<li lang-variant="de">Ofenzeit: 35–40 min</li><li lang-variant="pl">czas pieczenia: 35–40 min</li>
-<li lang-variant="de">Gesamt: ok. 60 min</li><li lang-variant="pl">łącznie: ok. 60 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 20 Minuten</li><li lang-variant="pl">przygotowanie: 20 min</li>
+<li lang-variant="de">Ofenzeit: 35–40 Minuten</li><li lang-variant="pl">czas pieczenia: 35–40 min</li>
+<li lang-variant="de">Gesamt: ca. 60 Minuten</li><li lang-variant="pl">łącznie: ok. 60 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Vorgekochte Kartoffeln machen das Gericht deutlich besser.</li><li lang-variant="pl">Vorgekochte ziemniaki machen das Gericht deutlich besser.</li>
 <li lang-variant="de">Crème fraîche erst gegen Ende zugeben.</li><li lang-variant="pl">crème fraîche erst gegen Ende dodać.</li>
-<li lang-variant="de">Bardzo lubiane i odpowiednie także dla tradycyjnych gustów.</li><li lang-variant="pl">Bardzo lubiane i odpowiednie także dla tradycyjnych gustów.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Kartoffeln vorkochen i in Stücke schneiden.</li><li lang-variant="pl">ziemniaki vorgotować i in Stücke pokroić.</li>
+<li lang-variant="de">Sehr beliebt und schwiegermuttertauglich.</li><li lang-variant="pl">Bardzo lubiane i odpowiednie także dla tradycyjnych gustów.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Kartoffeln vorkochen und in Stücke schneiden.</li><li lang-variant="pl">ziemniaki vorgotować i in Stücke pokroić.</li>
 <li lang-variant="de">Gemüse schneiden.</li><li lang-variant="pl">Gemüse pokroić.</li>
 <li lang-variant="de">Salsiccia in Stücke teilen.</li><li lang-variant="pl">salsiccia in Stücke teilen.</li>
-<li lang-variant="de">Włóż wszystko do naczynia żaroodpornego i dopraw.</li><li lang-variant="pl">Włóż wszystko do naczynia żaroodpornego i dopraw.</li>
-<li lang-variant="de">Z trochę Öl vermengen.</li><li lang-variant="pl">Z trochę olej vermengen.</li>
-<li lang-variant="de">Bei 190–200 °C ok. 35–40 min backen.</li><li lang-variant="pl">Bei 190–200 °C ok. 35–40 min piec.</li>
-<li lang-variant="de">Zum Schluss Crème fraîche unterziehen lub klecksweise daraufgeben.</li><li lang-variant="pl">Zum Schluss crème fraîche unterziehen lub klecksweise daraufgeben.</li>
-<li lang-variant="de">Kurz weitergaren i servieren.</li><li lang-variant="pl">Kurz weitergotować / piec i podawać.</li>
+<li lang-variant="de">Alles in eine Ofenform geben und würzen.</li><li lang-variant="pl">Włóż wszystko do naczynia żaroodpornego i dopraw.</li>
+<li lang-variant="de">Mit etwas Öl vermengen.</li><li lang-variant="pl">Z trochę olej vermengen.</li>
+<li lang-variant="de">Bei 190–200 °C ca. 35–40 Minuten backen.</li><li lang-variant="pl">Bei 190–200 °C ok. 35–40 min piec.</li>
+<li lang-variant="de">Zum Schluss Crème fraîche unterziehen oder klecksweise daraufgeben.</li><li lang-variant="pl">Zum Schluss crème fraîche unterziehen lub klecksweise daraufgeben.</li>
+<li lang-variant="de">Kurz weitergaren und servieren.</li><li lang-variant="pl">Kurz weitergotować / piec i podawać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Fester Favorit.</p><p lang-variant="pl">Fester Favorit.</p>
+<p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Fester Favorit.</span></p>
 </div>
-<div><img alt="Svens Ofengericht z Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" src="images/rezeptbild_09.png"/></div>
-</section>
-<section class="recipe" id="rezept-11">
 <div>
-<h2><span lang-variant="de">11. Svens Hackbällchen-Auflauf z Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></h2>
+<img alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" src="images/rezeptbild_09.png"/>
+</div>
+</section><section class="recipe" id="rezept-11">
+<div>
+<h2><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">600 g Hackfleisch</li><li lang-variant="pl">600 g mięso mielone</li>
@@ -609,40 +660,51 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Paprikapulver</li><li lang-variant="pl">papryka w proszku</li>
-<li lang-variant="de">Öl lub Butter do die Form</li><li lang-variant="pl">olej lub masło do die Form</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 25 min</li><li lang-variant="pl">przygotowanie: 25 min</li>
-<li lang-variant="de">Ofenzeit: 30–35 min</li><li lang-variant="pl">czas pieczenia: 30–35 min</li>
-<li lang-variant="de">Gesamt: ok. 60 min</li><li lang-variant="pl">łącznie: ok. 60 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">Öl oder Butter für die Form</li><li lang-variant="pl">olej lub masło do die Form</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 25 Minuten</li><li lang-variant="pl">przygotowanie: 25 min</li>
+<li lang-variant="de">Ofenzeit: 30–35 Minuten</li><li lang-variant="pl">czas pieczenia: 30–35 min</li>
+<li lang-variant="de">Gesamt: ca. 60 Minuten</li><li lang-variant="pl">łącznie: ok. 60 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Kartoffeln nicht roh verwenden, sonst dauert es zu lange.</li><li lang-variant="pl">ziemniaki nicht roh verwenden, sonst dauert es zu lange.</li>
-<li lang-variant="de">Sos można doprawić dość intensywnie.</li><li lang-variant="pl">Sos można doprawić dość intensywnie.</li>
-<li lang-variant="de">Przyjemnie kremowe, sycące i bardzo lubiane.</li><li lang-variant="pl">Przyjemnie kremowe, sycące i bardzo lubiane.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Kartoffeln vorgaren i in Scheiben schneiden.</li><li lang-variant="pl">ziemniaki vorgotować / piec i in Scheiben pokroić.</li>
-<li lang-variant="de">Hackfleisch z Ei, Paniermehl, Zwiebel i Gewürzen vermengen.</li><li lang-variant="pl">mięso mielone z jajko, bułka tarta, cebula i Gewürzen vermengen.</li>
+<li lang-variant="de">Die Soße ruhig kräftig würzen.</li><li lang-variant="pl">Sos można doprawić dość intensywnie.</li>
+<li lang-variant="de">Schön cremig, deftig und sehr beliebt.</li><li lang-variant="pl">Przyjemnie kremowe, sycące i bardzo lubiane.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Kartoffeln vorgaren und in Scheiben schneiden.</li><li lang-variant="pl">ziemniaki vorgotować / piec i in Scheiben pokroić.</li>
+<li lang-variant="de">Hackfleisch mit Ei, Paniermehl, Zwiebel und Gewürzen vermengen.</li><li lang-variant="pl">mięso mielone z jajko, bułka tarta, cebula i Gewürzen vermengen.</li>
 <li lang-variant="de">Kleine Hackbällchen formen.</li><li lang-variant="pl">Kleine Hackbällchen formen.</li>
-<li lang-variant="de">Hackbällchen krótko anbraten lub direkt roh verwenden, wenn sie im Ofen durchgaren sollen.</li><li lang-variant="pl">Klopsiki krótko obsmaż lub użyj ich na surowo, jeśli mają się dopiec w piekarniku.</li>
-<li lang-variant="de">Ajvar z Sahne verrühren.</li><li lang-variant="pl">Ajvar z śmietana wymieszać.</li>
-<li lang-variant="de">Kartoffeln i Hackbällchen in eine Auflaufform schichten.</li><li lang-variant="pl">ziemniaki i Hackbällchen in eine Auflaufform schichten.</li>
+<li lang-variant="de">Hackbällchen kurz anbraten oder direkt roh verwenden, wenn sie im Ofen durchgaren sollen.</li><li lang-variant="pl">Klopsiki krótko obsmaż lub użyj ich na surowo, jeśli mają się dopiec w piekarniku.</li>
+<li lang-variant="de">Ajvar mit Sahne verrühren.</li><li lang-variant="pl">Ajvar z śmietana wymieszać.</li>
+<li lang-variant="de">Kartoffeln und Hackbällchen in eine Auflaufform schichten.</li><li lang-variant="pl">ziemniaki i Hackbällchen in eine Auflaufform schichten.</li>
 <li lang-variant="de">Ajvar-Sahne-Soße darübergeben.</li><li lang-variant="pl">Ajvar-śmietana-Soße darübergeben.</li>
-<li lang-variant="de">Z Käse bestreuen.</li><li lang-variant="pl">Z ser bestreuen.</li>
-<li lang-variant="de">Bei 190 °C ok. 30–35 min goldbraun backen.</li><li lang-variant="pl">Bei 190 °C ok. 30–35 min goldbraun piec.</li>
+<li lang-variant="de">Mit Käse bestreuen.</li><li lang-variant="pl">Z ser bestreuen.</li>
+<li lang-variant="de">Bei 190 °C ca. 30–35 Minuten goldbraun backen.</li><li lang-variant="pl">Bei 190 °C ok. 30–35 min goldbraun piec.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Fester Favorit.</p><p lang-variant="pl">Fester Favorit.</p>
+<p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Fester Favorit.</span></p>
 </div>
-<div><img alt="Svens Hackbällchen-Auflauf z Ajvar &amp; Kartoffeln – die Ofenbombe" src="images/rezeptbild_10.png"/></div>
-</section>
-<section class="recipe" id="rezept-12">
 <div>
-<h2><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne z Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></h2>
+<img alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" src="images/rezeptbild_10.png"/>
+</div>
+</section><section class="recipe" id="rezept-12">
+<div>
+<h2><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">800 g Kartoffeln</li><li lang-variant="pl">800 g ziemniaki</li>
@@ -651,43 +713,54 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">250–300 g Cabanossi</li><li lang-variant="pl">250–300 g kabanos</li>
 <li lang-variant="de">2–3 EL Ajvar</li><li lang-variant="pl">2–3 EL Ajvar</li>
 <li lang-variant="de">2 EL Teriyaki-Sauce</li><li lang-variant="pl">2 EL sos teriyaki</li>
-<li lang-variant="de">100 ml Sahne lub Kochsahne</li><li lang-variant="pl">100 ml śmietana lub Kochsahne</li>
+<li lang-variant="de">100 ml Sahne oder Kochsahne</li><li lang-variant="pl">100 ml śmietana lub Kochsahne</li>
 <li lang-variant="de">1 EL Öl</li><li lang-variant="pl">1 EL olej</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Paprikapulver</li><li lang-variant="pl">papryka w proszku</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 15–20 min</li><li lang-variant="pl">przygotowanie: 15–20 min</li>
-<li lang-variant="de">Pfannenzeit: 15 min</li><li lang-variant="pl">czas na patelni: 15 min</li>
-<li lang-variant="de">Gesamt: ok. 35 min</li><li lang-variant="pl">łącznie: ok. 35 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 15–20 Minuten</li><li lang-variant="pl">przygotowanie: 15–20 min</li>
+<li lang-variant="de">Pfannenzeit: 15 Minuten</li><li lang-variant="pl">czas na patelni: 15 min</li>
+<li lang-variant="de">Gesamt: ca. 35 Minuten</li><li lang-variant="pl">łącznie: ok. 35 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Kartoffeln vorgekocht verwenden.</li><li lang-variant="pl">ziemniaki vorgekocht verwenden.</li>
 <li lang-variant="de">Teriyaki sparsam dosieren.</li><li lang-variant="pl">Teriyaki sparsam dosieren.</li>
-<li lang-variant="de">Wyraziste, kremowe i bardzo praktyczne na co dzień.</li><li lang-variant="pl">Wyraziste, kremowe i bardzo praktyczne na co dzień.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Kartoffeln vorkochen i in Scheiben lub Würfel schneiden.</li><li lang-variant="pl">ziemniaki vorgotować i in Scheiben lub Würfel pokroić.</li>
-<li lang-variant="de">Paprika i Zwiebeln anbraten.</li><li lang-variant="pl">papryka i cebule obsmażyć.</li>
+<li lang-variant="de">Herzhaft, cremig und sehr alltagstauglich.</li><li lang-variant="pl">Wyraziste, kremowe i bardzo praktyczne na co dzień.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Kartoffeln vorkochen und in Scheiben oder Würfel schneiden.</li><li lang-variant="pl">ziemniaki vorgotować i in Scheiben lub Würfel pokroić.</li>
+<li lang-variant="de">Paprika und Zwiebeln anbraten.</li><li lang-variant="pl">papryka i cebule obsmażyć.</li>
 <li lang-variant="de">Cabanossi in Scheiben zugeben.</li><li lang-variant="pl">kabanos in Scheiben dodać.</li>
-<li lang-variant="de">Kartoffeln z in die Pfanne geben.</li><li lang-variant="pl">ziemniaki z in die Pfanne geben.</li>
-<li lang-variant="de">Ajvar, Teriyaki i Sahne verrühren.</li><li lang-variant="pl">Ajvar, Teriyaki i śmietana wymieszać.</li>
+<li lang-variant="de">Kartoffeln mit in die Pfanne geben.</li><li lang-variant="pl">ziemniaki z in die Pfanne geben.</li>
+<li lang-variant="de">Ajvar, Teriyaki und Sahne verrühren.</li><li lang-variant="pl">Ajvar, Teriyaki i śmietana wymieszać.</li>
 <li lang-variant="de">Soße in die Pfanne geben.</li><li lang-variant="pl">Soße in die Pfanne geben.</li>
-<li lang-variant="de">Alles krótko zredukować lassen, do es cremig wird.</li><li lang-variant="pl">Alles krótko eingotować lassen, do es cremig wird.</li>
-<li lang-variant="de">Abschmecken i servieren.</li><li lang-variant="pl">Abschmecken i podawać.</li>
+<li lang-variant="de">Alles kurz einkochen lassen, bis es cremig wird.</li><li lang-variant="pl">Alles krótko eingotować lassen, do es cremig wird.</li>
+<li lang-variant="de">Abschmecken und servieren.</li><li lang-variant="pl">Abschmecken i podawać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Fester Favorit.</p><p lang-variant="pl">Fester Favorit.</p>
+<p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Fester Favorit.</span></p>
 </div>
-<div><img alt="Svens Gemüse-Kartoffel-Pfanne z Ajvar-Teriyaki-Soße &amp; Cabanossi" src="images/rezeptbild_11.png"/></div>
-</section>
-<section class="recipe" id="rezept-13">
 <div>
-<h2><span lang-variant="de">13. Svens Butter-Chicken-Wok z Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></h2>
+<img alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" src="images/rezeptbild_11.png"/>
+</div>
+</section><section class="recipe" id="rezept-13">
+<div>
+<h2><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">600 g Hähnchen</li><li lang-variant="pl">600 g kurczak</li>
@@ -701,40 +774,51 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1 EL Öl</li><li lang-variant="pl">1 EL olej</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
-<li lang-variant="de">Pide lub Naan als Beilage</li><li lang-variant="pl">Pide lub Naan als Beilage</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 10 min</li><li lang-variant="pl">przygotowanie: 10 min</li>
-<li lang-variant="de">Garzeit: 15 min</li><li lang-variant="pl">czas gotowania: 15 min</li>
-<li lang-variant="de">Gesamt: ok. 25 min</li><li lang-variant="pl">łącznie: ok. 25 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">Pide oder Naan als Beilage</li><li lang-variant="pl">Pide lub Naan als Beilage</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 10 Minuten</li><li lang-variant="pl">przygotowanie: 10 min</li>
+<li lang-variant="de">Garzeit: 15 Minuten</li><li lang-variant="pl">czas gotowania: 15 min</li>
+<li lang-variant="de">Gesamt: ca. 25 Minuten</li><li lang-variant="pl">łącznie: ok. 25 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Joghurt nie zu früh einrühren.</li><li lang-variant="pl">jogurt nie zu früh wmieszać.</li>
 <li lang-variant="de">Hähnchen nur anrösten, nicht austrocknen.</li><li lang-variant="pl">kurczak nur anrösten, nicht austrocknen.</li>
-<li lang-variant="de">Bardzo dobre szybkie danie na wieczór.</li><li lang-variant="pl">Bardzo dobre szybkie danie na wieczór.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Hähnchen in Stücke schneiden i nur krótko anrösten.</li><li lang-variant="pl">kurczak in Stücke pokroić i nur krótko anrösten.</li>
+<li lang-variant="de">Sehr gutes schnelles Abendgericht.</li><li lang-variant="pl">Bardzo dobre szybkie danie na wieczór.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Hähnchen in Stücke schneiden und nur kurz anrösten.</li><li lang-variant="pl">kurczak in Stücke pokroić i nur krótko anrösten.</li>
 <li lang-variant="de">Nicht komplett trocken braten.</li><li lang-variant="pl">Nicht komplett trocken braten.</li>
-<li lang-variant="de">Stückige Tomaten i Kokosmilch zugeben.</li><li lang-variant="pl">Stückige pomidory i mleko kokosowe dodać.</li>
+<li lang-variant="de">Stückige Tomaten und Kokosmilch zugeben.</li><li lang-variant="pl">Stückige pomidory i mleko kokosowe dodać.</li>
 <li lang-variant="de">Gewürze einrühren.</li><li lang-variant="pl">przyprawy wmieszać.</li>
 <li lang-variant="de">TK-Wokgemüse zugeben.</li><li lang-variant="pl">mrożone warzywa do woka dodać.</li>
-<li lang-variant="de">Alles 5–7 min sanft ziehen lassen.</li><li lang-variant="pl">Alles 5–7 min sanft ziehen lassen.</li>
+<li lang-variant="de">Alles 5–7 Minuten sanft ziehen lassen.</li><li lang-variant="pl">Alles 5–7 min sanft ziehen lassen.</li>
 <li lang-variant="de">Naturjoghurt erst ganz am Ende unterziehen.</li><li lang-variant="pl">jogurt naturalny erst ganz am Ende unterziehen.</li>
 <li lang-variant="de">Danach nicht mehr stark kochen.</li><li lang-variant="pl">Danach nicht mehr stark gotować.</li>
-<li lang-variant="de">Z Pide lub Naan servieren.</li><li lang-variant="pl">Z Pide lub Naan podawać.</li>
+<li lang-variant="de">Mit Pide oder Naan servieren.</li><li lang-variant="pl">Z Pide lub Naan podawać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Na stałe zapisane, bardzo lubiane.</p><p lang-variant="pl">Na stałe zapisane, bardzo lubiane.</p>
+<p><span lang-variant="de">Fest gespeichert, sehr beliebt.</span><span lang-variant="pl">Na stałe zapisane, bardzo lubiane.</span></p>
 </div>
-<div><img alt="Svens Butter-Chicken-Wok z Kokos &amp; Joghurt" src="images/rezeptbild_13.png"/></div>
-</section>
-<section class="recipe" id="rezept-14">
 <div>
-<h2><span lang-variant="de">14. Ofengemüse z Hähnchenschenkeln i lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></h2>
+<img alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" src="images/rezeptbild_13.png"/>
+</div>
+</section><section class="recipe" id="rezept-14">
+<div>
+<h2><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">4 Hähnchenschenkel</li><li lang-variant="pl">4 kurczakschenkel</li>
@@ -747,38 +831,49 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Paprikapulver</li><li lang-variant="pl">papryka w proszku</li>
-<li lang-variant="de">optional: Knoblauch i Rosmarin</li><li lang-variant="pl">opcjonalnie: czosnek i Rosmarin</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 15 min</li><li lang-variant="pl">przygotowanie: 15 min</li>
-<li lang-variant="de">Ofenzeit: 45–50 min</li><li lang-variant="pl">czas pieczenia: 45–50 min</li>
-<li lang-variant="de">Gesamt: ok. 60–65 min</li><li lang-variant="pl">łącznie: ok. 60–65 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">optional: Knoblauch und Rosmarin</li><li lang-variant="pl">opcjonalnie: czosnek i Rosmarin</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 15 Minuten</li><li lang-variant="pl">przygotowanie: 15 min</li>
+<li lang-variant="de">Ofenzeit: 45–50 Minuten</li><li lang-variant="pl">czas pieczenia: 45–50 min</li>
+<li lang-variant="de">Gesamt: ca. 60–65 Minuten</li><li lang-variant="pl">łącznie: ok. 60–65 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Gemüse nicht zu klein schneiden.</li><li lang-variant="pl">Gemüse nicht zu klein pokroić.</li>
 <li lang-variant="de">Hähnchen auf das Gemüse legen, dann zieht Geschmack ins Blech.</li><li lang-variant="pl">kurczak auf das Gemüse legen, dann zieht Geschmack ins Blech.</li>
-<li lang-variant="de">Bardzo proste danie na wieczór.</li><li lang-variant="pl">Bardzo proste danie na wieczór.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Gemüse i Süßkartoffeln in grobe Stücke schneiden.</li><li lang-variant="pl">Gemüse i Süßkartoffeln in grobe Stücke pokroić.</li>
+<li lang-variant="de">Sehr unkompliziert für abends.</li><li lang-variant="pl">Bardzo proste danie na wieczór.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Gemüse und Süßkartoffeln in grobe Stücke schneiden.</li><li lang-variant="pl">Gemüse i Süßkartoffeln in grobe Stücke pokroić.</li>
 <li lang-variant="de">Hähnchenschenkel würzen.</li><li lang-variant="pl">kurczakschenkel würzen.</li>
-<li lang-variant="de">Ułóż wszystko na blasze lub w dużym naczyniu do zapiekania.</li><li lang-variant="pl">Ułóż wszystko na blasze lub w dużym naczyniu do zapiekania.</li>
-<li lang-variant="de">Z Öl i Gewürzen vermengen.</li><li lang-variant="pl">Z olej i Gewürzen vermengen.</li>
-<li lang-variant="de">Bei 190–200 °C ok. 45–50 min garen.</li><li lang-variant="pl">Bei 190–200 °C ok. 45–50 min gotować / piec.</li>
-<li lang-variant="de">Hähnchen am Ende prüfen, do die Haut schön gebräunt ist.</li><li lang-variant="pl">kurczak am Ende prüfen, do die Haut schön gebräunt ist.</li>
+<li lang-variant="de">Alles auf ein Blech oder in eine große Ofenform geben.</li><li lang-variant="pl">Ułóż wszystko na blasze lub w dużym naczyniu do zapiekania.</li>
+<li lang-variant="de">Mit Öl und Gewürzen vermengen.</li><li lang-variant="pl">Z olej i Gewürzen vermengen.</li>
+<li lang-variant="de">Bei 190–200 °C ca. 45–50 Minuten garen.</li><li lang-variant="pl">Bei 190–200 °C ok. 45–50 min gotować / piec.</li>
+<li lang-variant="de">Hähnchen am Ende prüfen, bis die Haut schön gebräunt ist.</li><li lang-variant="pl">kurczak am Ende prüfen, do die Haut schön gebräunt ist.</li>
 <li lang-variant="de">Direkt heiß servieren.</li><li lang-variant="pl">Direkt heiß podawać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Gut angekommen.</p><p lang-variant="pl">Gut angekommen.</p>
+<p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Gut angekommen.</span></p>
 </div>
-<div><img alt="Ofengemüse z Hähnchenschenkeln i lila Süßkartoffeln" src="images/rezeptbild_12.png"/></div>
-</section>
-<section class="recipe" id="rezept-15">
 <div>
-<h2><span lang-variant="de">15. Ofen-Hähnchenschenkel z Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></h2>
+<img alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" src="images/rezeptbild_12.png"/>
+</div>
+</section><section class="recipe" id="rezept-15">
+<div>
+<h2><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">2 Hähnchenschenkel</li><li lang-variant="pl">2 kurczakschenkel</li>
@@ -788,84 +883,106 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Paprikapulver edelsüß</li><li lang-variant="pl">słodka papryka w proszku</li>
-<li lang-variant="de">Majoran lub Thymian</li><li lang-variant="pl">majeranek lub tymianek</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 5 min</li><li lang-variant="pl">przygotowanie: 5 min</li>
-<li lang-variant="de">Piekarnik: 45 min</li><li lang-variant="pl">Piekarnik: 45 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z Petersilie bestreuen.</li><li lang-variant="pl">Z pietruszka bestreuen.</li>
+<li lang-variant="de">Majoran oder Thymian</li><li lang-variant="pl">majeranek lub tymianek</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 5 Minuten</li><li lang-variant="pl">przygotowanie: 5 min</li>
+<li lang-variant="de">Ofen: 45 Minuten</li><li lang-variant="pl">Piekarnik: 45 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit Petersilie bestreuen.</li><li lang-variant="pl">Z pietruszka bestreuen.</li>
 <li lang-variant="de">Etwas Zitronensaft am Ende gibt Frische.</li><li lang-variant="pl">Etwas sok z cytryny am Ende gibt Frische.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Ofen auf 200 °C Umluft vorheizen.</li><li lang-variant="pl">Rozgrzej piekarnik do 200 °C z termoobiegiem.</li>
-<li lang-variant="de">Hähnchenschenkel z Salz, Pfeffer i Paprika würzen.</li><li lang-variant="pl">kurczakschenkel z sól, pieprz i papryka würzen.</li>
-<li lang-variant="de">Kartoffeln i Zwiebeln schneiden i in eine Auflaufform legen.</li><li lang-variant="pl">ziemniaki i cebule pokroić i in eine Auflaufform legen.</li>
-<li lang-variant="de">Öl darüber geben i alles mischen.</li><li lang-variant="pl">olej darüber geben i alles wymieszać.</li>
+<li lang-variant="de">Hähnchenschenkel mit Salz, Pfeffer und Paprika würzen.</li><li lang-variant="pl">kurczakschenkel z sól, pieprz i papryka würzen.</li>
+<li lang-variant="de">Kartoffeln und Zwiebeln schneiden und in eine Auflaufform legen.</li><li lang-variant="pl">ziemniaki i cebule pokroić i in eine Auflaufform legen.</li>
+<li lang-variant="de">Öl darüber geben und alles mischen.</li><li lang-variant="pl">olej darüber geben i alles wymieszać.</li>
 <li lang-variant="de">Hähnchenschenkel oben drauf legen.</li><li lang-variant="pl">kurczakschenkel oben drauf legen.</li>
-<li lang-variant="de">45 min im Ofen garen.</li><li lang-variant="pl">Piecz 45 minut w piekarniku.</li>
-<li lang-variant="de">Nach 30 min Kartoffeln wenden i Bratensaft über das Fleisch geben.</li><li lang-variant="pl">Nach 30 min ziemniaki wenden i Bratensaft über das Fleisch geben.</li>
+<li lang-variant="de">45 Minuten im Ofen garen.</li><li lang-variant="pl">Piecz 45 minut w piekarniku.</li>
+<li lang-variant="de">Nach 30 Minuten Kartoffeln wenden und Bratensaft über das Fleisch geben.</li><li lang-variant="pl">Nach 30 min ziemniaki wenden i Bratensaft über das Fleisch geben.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Bardzo dobre, proste i odpowiednie także dla tradycyjnych gustów.</p><p lang-variant="pl">Bardzo dobre, proste i odpowiednie także dla tradycyjnych gustów.</p>
+<p><span lang-variant="de">Sehr gut, einfach, schwiegermuttertauglich.</span><span lang-variant="pl">Bardzo dobre, proste i odpowiednie także dla tradycyjnych gustów.</span></p>
 </div>
-<div><img alt="Ofen-Hähnchenschenkel z Kartoffeln &amp; Zwiebeln – Sven-Style" src="images/rezeptbild_15.png"/></div>
-</section>
-<section class="recipe" id="rezept-16">
 <div>
-<h2><span lang-variant="de">16. Kartoffelauflauf z Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></h2>
+<img alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" src="images/rezeptbild_15.png"/>
+</div>
+</section><section class="recipe" id="rezept-16">
+<div>
+<h2><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">3 Personen</span><span lang-variant="pl">3 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1,1–1,2 kg Kartoffeln</li><li lang-variant="pl">1,1–1,2 kg ziemniaki</li>
 <li lang-variant="de">2 Zwiebeln</li><li lang-variant="pl">2 cebule</li>
 <li lang-variant="de">150 g Speckwürfel</li><li lang-variant="pl">150 g kostka boczku</li>
 <li lang-variant="de">200 g Schmand</li><li lang-variant="pl">200 g śmietana kwaśna</li>
-<li lang-variant="de">100 ml Sahne lub Milch</li><li lang-variant="pl">100 ml śmietana lub mleko</li>
+<li lang-variant="de">100 ml Sahne oder Milch</li><li lang-variant="pl">100 ml śmietana lub mleko</li>
 <li lang-variant="de">150–200 g geriebener Käse (Gouda/Emmentaler)</li><li lang-variant="pl">150–200 g starty ser (Gouda/Emmentaler)</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Muskat</li><li lang-variant="pl">gałka muszkatołowa</li>
-<li lang-variant="de">Butter do die Form</li><li lang-variant="pl">masło do die Form</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 10 min</li><li lang-variant="pl">przygotowanie: 10 min</li>
-<li lang-variant="de">Piekarnik: 40 min</li><li lang-variant="pl">Piekarnik: 40 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+<li lang-variant="de">Butter für die Form</li><li lang-variant="pl">masło do die Form</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 10 Minuten</li><li lang-variant="pl">przygotowanie: 10 min</li>
+<li lang-variant="de">Ofen: 40 Minuten</li><li lang-variant="pl">Piekarnik: 40 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Knoblauch in die Sahnemischung geben.</li><li lang-variant="pl">czosnek in die Sahnemischung geben.</li>
 <li lang-variant="de">Petersilie oben drauf.</li><li lang-variant="pl">pietruszka oben drauf.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Ofen auf 180 °C Umluft vorheizen.</li><li lang-variant="pl">Rozgrzej piekarnik do 180 °C z termoobiegiem.</li>
 <li lang-variant="de">Kartoffeln in dünne Scheiben schneiden.</li><li lang-variant="pl">ziemniaki in dünne Scheiben pokroić.</li>
 <li lang-variant="de">Zwiebeln in Ringe schneiden.</li><li lang-variant="pl">cebule in Ringe pokroić.</li>
-<li lang-variant="de">Schmand, Sahne, Salz, Pfeffer i Muskat verrühren.</li><li lang-variant="pl">śmietana kwaśna, śmietana, sól, pieprz i gałka muszkatołowa wymieszać.</li>
-<li lang-variant="de">Kartoffeln schichten, dann Zwiebeln i Speck, wieder Kartoffeln.</li><li lang-variant="pl">ziemniaki schichten, dann cebule i boczek, wieder ziemniaki.</li>
+<li lang-variant="de">Schmand, Sahne, Salz, Pfeffer und Muskat verrühren.</li><li lang-variant="pl">śmietana kwaśna, śmietana, sól, pieprz i gałka muszkatołowa wymieszać.</li>
+<li lang-variant="de">Kartoffeln schichten, dann Zwiebeln und Speck, wieder Kartoffeln.</li><li lang-variant="pl">ziemniaki schichten, dann cebule i boczek, wieder ziemniaki.</li>
 <li lang-variant="de">Schmandmischung darüber gießen.</li><li lang-variant="pl">śmietana kwaśnamischung darüber gießen.</li>
 <li lang-variant="de">Käse oben drauf.</li><li lang-variant="pl">ser oben drauf.</li>
-<li lang-variant="de">35–40 min backen.</li><li lang-variant="pl">35–40 min piec.</li>
+<li lang-variant="de">35–40 Minuten backen.</li><li lang-variant="pl">35–40 min piec.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Bardzo kremowe i bardzo dobre.</p><p lang-variant="pl">Bardzo kremowe i bardzo dobre.</p>
+<p><span lang-variant="de">Sehr cremig, sehr gut.</span><span lang-variant="pl">Bardzo kremowe i bardzo dobre.</span></p>
 </div>
-<div><img alt="Kartoffelauflauf z Schmand, Käse &amp; Speck" src="images/rezeptbild_16.png"/></div>
-</section>
-<section class="recipe" id="rezept-17">
+<div>
+<img alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" src="images/rezeptbild_16.png"/>
+</div>
+</section><section class="recipe" id="rezept-17">
 <div>
 <h2><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Feiertagsessen / Ofengerichte</span><span lang-variant="pl">Dania świąteczne / dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">6 Rinderrouladen</li><li lang-variant="pl">6 rolady wołowe</li>
 <li lang-variant="de">Salz, Pfeffer</li><li lang-variant="pl">sól, pieprz</li>
 <li lang-variant="de">Senf</li><li lang-variant="pl">musztarda</li>
-<li lang-variant="de">Speckstreifen lub Speckwürfel</li><li lang-variant="pl">boczekstreifen lub kostka boczku</li>
+<li lang-variant="de">Speckstreifen oder Speckwürfel</li><li lang-variant="pl">boczekstreifen lub kostka boczku</li>
 <li lang-variant="de">Gewürzgurken in Streifen</li><li lang-variant="pl">ogórki konserwowe in Streifen</li>
 <li lang-variant="de">Zwiebeln in Streifen</li><li lang-variant="pl">cebule in Streifen</li>
 <li lang-variant="de">1 Möhre</li><li lang-variant="pl">1 marchew</li>
@@ -874,76 +991,98 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">500–700 ml Rinderfond</li><li lang-variant="pl">500–700 ml bulionu wołowego</li>
 <li lang-variant="de">150 ml Rotwein</li><li lang-variant="pl">150 ml czerwonego wina</li>
 <li lang-variant="de">1 EL Butter</li><li lang-variant="pl">1 EL masło</li>
-<li lang-variant="de">Mehl lub Stärke zum Binden</li><li lang-variant="pl">mąka lub skrobia do zagęszczenia</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 20 min</li><li lang-variant="pl">przygotowanie: 20 min</li>
-<li lang-variant="de">Schmoren: 2 godzin</li><li lang-variant="pl">Schmoren: 2 godzin</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Ohne Sahne bleibt die Soße ehrlich i aromatisch.</li><li lang-variant="pl">Ohne śmietana bleibt die Soße ehrlich i aromatisch.</li>
-<li lang-variant="de">Farbe kommt von Tomatenmark i Röstaromen.</li><li lang-variant="pl">Farbe kommt von koncentrat pomidorowy i Röstaromen.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Rouladen salzen, pfeffern, z Senf bestreichen.</li><li lang-variant="pl">Rouladen salzen, pfeffern, z musztarda bestreichen.</li>
-<li lang-variant="de">Speck, Gurke i Zwiebel drauf, einrollen, feststecken.</li><li lang-variant="pl">boczek, ogórek i cebula drauf, einrollen, feststecken.</li>
+<li lang-variant="de">Mehl oder Stärke zum Binden</li><li lang-variant="pl">mąka lub skrobia do zagęszczenia</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 20 Minuten</li><li lang-variant="pl">przygotowanie: 20 min</li>
+<li lang-variant="de">Schmoren: 2 Stunden</li><li lang-variant="pl">Schmoren: 2 godzin</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Ohne Sahne bleibt die Soße ehrlich und aromatisch.</li><li lang-variant="pl">Ohne śmietana bleibt die Soße ehrlich i aromatisch.</li>
+<li lang-variant="de">Farbe kommt von Tomatenmark und Röstaromen.</li><li lang-variant="pl">Farbe kommt von koncentrat pomidorowy i Röstaromen.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Rouladen salzen, pfeffern, mit Senf bestreichen.</li><li lang-variant="pl">Rouladen salzen, pfeffern, z musztarda bestreichen.</li>
+<li lang-variant="de">Speck, Gurke und Zwiebel drauf, einrollen, feststecken.</li><li lang-variant="pl">boczek, ogórek i cebula drauf, einrollen, feststecken.</li>
 <li lang-variant="de">Rouladen scharf anbraten, herausnehmen.</li><li lang-variant="pl">Rolady mocno obsmaż, a następnie wyjmij.</li>
 <li lang-variant="de">Zwiebel, Möhre, Sellerie anrösten.</li><li lang-variant="pl">cebula, marchew, Sellerie anrösten.</li>
 <li lang-variant="de">Tomatenmark mitrösten.</li><li lang-variant="pl">koncentrat pomidorowy mitrösten.</li>
-<li lang-variant="de">Z Rotwein ablöschen, zredukować lassen.</li><li lang-variant="pl">Z czerwonego wina ablöschen, eingotować lassen.</li>
+<li lang-variant="de">Mit Rotwein ablöschen, einkochen lassen.</li><li lang-variant="pl">Z czerwonego wina ablöschen, eingotować lassen.</li>
 <li lang-variant="de">Rinderfond dazu.</li><li lang-variant="pl">bulionu wołowego dazu.</li>
 <li lang-variant="de">Rouladen wieder rein.</li><li lang-variant="pl">Rouladen wieder rein.</li>
-<li lang-variant="de">1,5–2 godzin schmoren.</li><li lang-variant="pl">1,5–2 godzin dusić.</li>
+<li lang-variant="de">1,5–2 Stunden schmoren.</li><li lang-variant="pl">1,5–2 godzin dusić.</li>
 <li lang-variant="de">Soße sieben, andicken, Butter einrühren.</li><li lang-variant="pl">Soße sieben, andicken, masło wmieszać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Świąteczne danie, bardzo dobre.</p><p lang-variant="pl">Świąteczne danie, bardzo dobre.</p>
+<p><span lang-variant="de">Festessen, sehr gut.</span><span lang-variant="pl">Świąteczne danie, bardzo dobre.</span></p>
 </div>
-<div><img alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" src="images/rezeptbild_17.png"/></div>
-</section>
-<section class="recipe" id="rezept-18">
 <div>
-<h2><span lang-variant="de">18. Kartoffelsuppe z Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></h2>
+<img alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" src="images/rezeptbild_17.png"/>
+</div>
+</section><section class="recipe" id="rezept-18">
+<div>
+<h2><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span></span>
 <span class="tag"><span lang-variant="de">4–6 Personen</span><span lang-variant="pl">4–6 osób</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">800 g Kartoffeln</li><li lang-variant="pl">800 g ziemniaki</li>
 <li lang-variant="de">2 Möhren</li><li lang-variant="pl">2 marchewki</li>
 <li lang-variant="de">1 Zwiebel</li><li lang-variant="pl">1 cebula</li>
-<li lang-variant="de">1 Lauch lub Sellerie</li><li lang-variant="pl">1 por lub Sellerie</li>
+<li lang-variant="de">1 Lauch oder Sellerie</li><li lang-variant="pl">1 por lub Sellerie</li>
 <li lang-variant="de">1 l Gemüsebrühe</li><li lang-variant="pl">1 l bulion warzywny</li>
-<li lang-variant="de">2–3 Mettenden lub Wiener Würstchen</li><li lang-variant="pl">2–3 kiełbasa Mettenden lub parówki</li>
+<li lang-variant="de">2–3 Mettenden oder Wiener Würstchen</li><li lang-variant="pl">2–3 kiełbasa Mettenden lub parówki</li>
 <li lang-variant="de">Salz</li><li lang-variant="pl">sól</li>
 <li lang-variant="de">Pfeffer</li><li lang-variant="pl">pieprz</li>
 <li lang-variant="de">Majoran</li><li lang-variant="pl">majeranek</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: 10 min</li><li lang-variant="pl">przygotowanie: 10 min</li>
-<li lang-variant="de">Kochen: 25 min</li><li lang-variant="pl">Kochen: 25 min</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: 10 Minuten</li><li lang-variant="pl">przygotowanie: 10 min</li>
+<li lang-variant="de">Kochen: 25 Minuten</li><li lang-variant="pl">Kochen: 25 min</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Am nächsten Tag schmeckt die Suppe noch besser.</li><li lang-variant="pl">Am nächsten Tag schmeckt die Suppe noch besser.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Gemüse schneiden.</li><li lang-variant="pl">Gemüse pokroić.</li>
-<li lang-variant="de">In Brühe ok. 25 min kochen.</li><li lang-variant="pl">In bulion ok. 25 min gotować.</li>
+<li lang-variant="de">In Brühe ca. 25 Minuten kochen.</li><li lang-variant="pl">In bulion ok. 25 min gotować.</li>
 <li lang-variant="de">Teilweise pürieren.</li><li lang-variant="pl">Teilweise pürieren.</li>
 <li lang-variant="de">Wurst dazugeben.</li><li lang-variant="pl">kiełbasa dadodać.</li>
-<li lang-variant="de">Z Salz, Pfeffer i Majoran abschmecken.</li><li lang-variant="pl">Z sól, pieprz i majeranek doprawić.</li>
+<li lang-variant="de">Mit Salz, Pfeffer und Majoran abschmecken.</li><li lang-variant="pl">Z sól, pieprz i majeranek doprawić.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Klassiker, gut.</p><p lang-variant="pl">Klassiker, gut.</p>
+<p><span lang-variant="de">Klassiker, gut.</span><span lang-variant="pl">Klassiker, gut.</span></p>
 </div>
-<div><img alt="Kartoffelsuppe z Mettenden" src="images/rezeptbild_18.png"/></div>
-</section>
-<section class="recipe" id="rezept-19">
 <div>
-<h2><span lang-variant="de">19. Zakwas do Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></h2>
+<img alt="Kartoffelsuppe mit Mettenden" src="images/rezeptbild_18.png"/>
+</div>
+</section><section class="recipe" id="rezept-19">
+<div>
+<h2><span lang-variant="de">19. Säure für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Grundlagen / Polnische Küche</span><span lang-variant="pl">Podstawy / kuchnia polska</span></span>
-<span class="tag"><span lang-variant="de">Ansatz do mehrere Portionen Żurek</span><span lang-variant="pl">zakwas na kilka porcji żurku</span></span>
-</div><div class="grid-2"><div>
+<span class="tag"><span lang-variant="de">Ansatz für mehrere Portionen Żurek</span><span lang-variant="pl">zakwas na kilka porcji żurku</span></span>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">500 ml abgekochtes, vollständig abgekühltes Wasser</li><li lang-variant="pl">500 ml przegotowanej, całkowicie ostudzonej wody</li>
@@ -951,50 +1090,61 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">4–5 Knoblauchzehen</li><li lang-variant="pl">4–5 ząbków czosnku</li>
 <li lang-variant="de">4 Lorbeerblätter</li><li lang-variant="pl">4 liście laurowe</li>
 <li lang-variant="de">8–10 Pimentkörner</li><li lang-variant="pl">8–10 ziaren ziela angielskiego</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
-<li lang-variant="de">Vorbereitung: ok. 10 min</li><li lang-variant="pl">Przygotowanie: około 10 minut</li>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
+<li lang-variant="de">Vorbereitung: ca. 10 Minuten</li><li lang-variant="pl">Przygotowanie: około 10 minut</li>
 <li lang-variant="de">Reifezeit: 6–8 Tage</li><li lang-variant="pl">Czas fermentacji: 6–8 dni</li>
 <li lang-variant="de">Täglich einmal umrühren</li><li lang-variant="pl">Raz dziennie wymieszać</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Der Ansatz riecht fertig angenehm säuerlich i zeigt kleine Bläschen.</li><li lang-variant="pl">Gotowy zakwas pachnie przyjemnie kwaśno i ma drobne bąbelki.</li>
-<li lang-variant="de">Das Glas i alle verwendeten Utensilien müssen wirklich sauber sein.</li><li lang-variant="pl">Słoik i wszystkie używane przybory muszą być naprawdę czyste.</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Der Ansatz riecht fertig angenehm säuerlich und zeigt kleine Bläschen.</li><li lang-variant="pl">Gotowy zakwas pachnie przyjemnie kwaśno i ma drobne bąbelki.</li>
+<li lang-variant="de">Das Glas und alle verwendeten Utensilien müssen wirklich sauber sein.</li><li lang-variant="pl">Słoik i wszystkie używane przybory muszą być naprawdę czyste.</li>
 <li lang-variant="de">Der Ansatz darf nicht luftdicht verschlossen werden.</li><li lang-variant="pl">Zakwasu nie wolno zamykać szczelnie.</li>
-<li lang-variant="de">Falls sich Schimmel bildet lub der Geruch unangenehm faulig wird, den Ansatz entsorgen.</li><li lang-variant="pl">Jeśli pojawi się pleśń albo nieprzyjemny zapach, zakwas trzeba wyrzucić.</li>
-<li lang-variant="de">Vor der Lagerung kann der Zakwas abgeseiht i in eine saubere Flasche gefüllt werden.</li><li lang-variant="pl">Przed przechowywaniem można go przecedzić i przelać do czystej butelki.</li>
-<li lang-variant="de">Im Kühlschrank hält sich der fertige Zakwas einige Tage do etwa zwei Wochen.</li><li lang-variant="pl">W lodówce gotowy zakwas wytrzyma kilka dni, maksymalnie około dwóch tygodni.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Ein großes, sehr sauberes Glas lub Einmachgefäß vorbereiten.</li><li lang-variant="pl">Przygotować duży, bardzo czysty słoik lub naczynie.</li>
+<li lang-variant="de">Falls sich Schimmel bildet oder der Geruch unangenehm faulig wird, den Ansatz entsorgen.</li><li lang-variant="pl">Jeśli pojawi się pleśń albo nieprzyjemny zapach, zakwas trzeba wyrzucić.</li>
+<li lang-variant="de">Vor der Lagerung kann der Zakwas abgeseiht und in eine saubere Flasche gefüllt werden.</li><li lang-variant="pl">Przed przechowywaniem można go przecedzić i przelać do czystej butelki.</li>
+<li lang-variant="de">Im Kühlschrank hält sich der fertige Zakwas einige Tage bis etwa zwei Wochen.</li><li lang-variant="pl">W lodówce gotowy zakwas wytrzyma kilka dni, maksymalnie około dwóch tygodni.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Ein großes, sehr sauberes Glas oder Einmachgefäß vorbereiten.</li><li lang-variant="pl">Przygotować duży, bardzo czysty słoik lub naczynie.</li>
 <li lang-variant="de">Das abgekühlte Wasser hineingeben.</li><li lang-variant="pl">Wlać do niego ostudzoną wodę.</li>
-<li lang-variant="de">Das Roggenmehl gründlich einrühren, do keine größeren Klümpchen mehr vorhanden sind.</li><li lang-variant="pl">Wsypać mąkę żytnią i dokładnie wymieszać, aż nie będzie większych grudek.</li>
-<li lang-variant="de">Die Knoblauchzehen schälen, leicht andrücken i zusammen z Lorbeerblättern i Piment in das Glas geben.</li><li lang-variant="pl">Obrać czosnek, lekko go zgnieść i dodać do słoika razem z liśćmi laurowymi oraz zielem angielskim.</li>
+<li lang-variant="de">Das Roggenmehl gründlich einrühren, bis keine größeren Klümpchen mehr vorhanden sind.</li><li lang-variant="pl">Wsypać mąkę żytnią i dokładnie wymieszać, aż nie będzie większych grudek.</li>
+<li lang-variant="de">Die Knoblauchzehen schälen, leicht andrücken und zusammen mit Lorbeerblättern und Piment in das Glas geben.</li><li lang-variant="pl">Obrać czosnek, lekko go zgnieść i dodać do słoika razem z liśćmi laurowymi oraz zielem angielskim.</li>
 <li lang-variant="de">Alles noch einmal gut umrühren.</li><li lang-variant="pl">Jeszcze raz dobrze wszystko wymieszać.</li>
-<li lang-variant="de">Das Glas z einem sauberen Tuch, Mulltuch lub Gaze abdecken i z einem Gummiband fixieren.</li><li lang-variant="pl">Przykryć słoik czystą ściereczką, gazą lub muślinem i zabezpieczyć gumką.</li>
+<li lang-variant="de">Das Glas mit einem sauberen Tuch, Mulltuch oder Gaze abdecken und mit einem Gummiband fixieren.</li><li lang-variant="pl">Przykryć słoik czystą ściereczką, gazą lub muślinem i zabezpieczyć gumką.</li>
 <li lang-variant="de">Den Ansatz an einen warmen, schattigen Ort stellen.</li><li lang-variant="pl">Odstawić zakwas w ciepłe, zacienione miejsce.</li>
-<li lang-variant="de">Einmal täglich z einem sauberen Löffel umrühren.</li><li lang-variant="pl">Raz dziennie mieszać czystą łyżką.</li>
-<li lang-variant="de">Nach etwa 6 do 8 Tagen ist der Zakwas fertig i kann do Żurek verwendet werden.</li><li lang-variant="pl">Po około 6–8 dniach zakwas jest gotowy i można go użyć do żurku.</li>
+<li lang-variant="de">Einmal täglich mit einem sauberen Löffel umrühren.</li><li lang-variant="pl">Raz dziennie mieszać czystą łyżką.</li>
+<li lang-variant="de">Nach etwa 6 bis 8 Tagen ist der Zakwas fertig und kann für Żurek verwendet werden.</li><li lang-variant="pl">Po około 6–8 dniach zakwas jest gotowy i można go użyć do żurku.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Traditionelle Grundlage do Żurek, sehr empfehlenswert do das Kochbuch.</p><p lang-variant="pl">Tradycyjna baza do żurku, bardzo polecana do tego kucharskiego zbioru.</p>
+<p><span lang-variant="de">Traditionelle Grundlage für Żurek.</span><span lang-variant="pl">Tradycyjna baza do żurku, bardzo polecana do tego kucharskiego zbioru.</span></p>
 </div>
-<div><img alt="Zakwas do Żurek selber machen" src="images/rezeptbild_19.png"/></div>
-</section>
-<section class="recipe" id="rezept-20">
+<div>
+<img alt="Zakwas für Żurek selber machen" src="images/rezeptbild_19.png"/>
+</div>
+</section><section class="recipe" id="rezept-20">
 <div>
 <h2><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte / Klassiker</span><span lang-variant="pl">Dania z patelni / klasyki</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">250 g Schweinehackfleisch</li><li lang-variant="pl">250 g Schweinehackfleisch</li>
-<li lang-variant="de">250 g Rinder- lub Kalbshackfleisch</li><li lang-variant="pl">250 g Rinder- lub Kalbshackfleisch</li>
+<li lang-variant="de">250 g Rinder- oder Kalbshackfleisch</li><li lang-variant="pl">250 g Rinder- lub Kalbshackfleisch</li>
 <li lang-variant="de">2 Brötchen (in Milch eingeweicht)</li><li lang-variant="pl">2 bułki (in mleko eingeweicht)</li>
 <li lang-variant="de">1 Ei</li><li lang-variant="pl">1 jajko</li>
 <li lang-variant="de">Salz, Pfeffer</li><li lang-variant="pl">sól, pieprz</li>
-<li lang-variant="de">trochę geriebene Zitronenschale</li><li lang-variant="pl">trochę geriebene Zitronenschale</li>
+<li lang-variant="de">etwas geriebene Zitronenschale</li><li lang-variant="pl">trochę geriebene Zitronenschale</li>
 <li lang-variant="de">2 Zwiebeln, fein gehackt</li><li lang-variant="pl">2 cebule, drobno posiekane</li>
 <li lang-variant="de">2 EL Butter</li><li lang-variant="pl">2 EL masło</li>
 <li lang-variant="de">Sardellenfilets</li><li lang-variant="pl">Sardellenfilets</li>
@@ -1002,29 +1152,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1 Markknochen</li><li lang-variant="pl">1 kość szpikowa</li>
 <li lang-variant="de">1 Bouillonwürfel</li><li lang-variant="pl">1 kostka rosołowa</li>
 <li lang-variant="de">Kapern, Sahne, Zitronensaft</li><li lang-variant="pl">kapary, śmietana, sok z cytryny</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z Salzkartoffeln lub Püree servieren.</li><li lang-variant="pl">Z sólkartoffeln lub Püree podawać.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Fleischmasse herstellen i Klopse formen.</li><li lang-variant="pl">Fleischmasse herstellen i Klopse formen.</li>
-<li lang-variant="de">Sud kochen i Klopse darin gar ziehen lassen.</li><li lang-variant="pl">Sud gotować i Klopse darin gar ziehen lassen.</li>
-<li lang-variant="de">Soße ansetzen, z Eigelb legieren i Klopse einlegen.</li><li lang-variant="pl">Soße ansetzen, z jajkogelb legieren i Klopse einlegen.</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit Salzkartoffeln oder Püree servieren.</li><li lang-variant="pl">Z sólkartoffeln lub Püree podawać.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Fleischmasse herstellen und Klopse formen.</li><li lang-variant="pl">Fleischmasse herstellen i Klopse formen.</li>
+<li lang-variant="de">Sud kochen und Klopse darin gar ziehen lassen.</li><li lang-variant="pl">Sud gotować i Klopse darin gar ziehen lassen.</li>
+<li lang-variant="de">Soße ansetzen, mit Eigelb legieren und Klopse einlegen.</li><li lang-variant="pl">Soße ansetzen, z jajkogelb legieren i Klopse einlegen.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Königsberger Klopse" src="images/rezeptbild_20.png"/></div>
-</section>
-<section class="recipe" id="rezept-21">
+<div>
+<img alt="Königsberger Klopse" src="images/rezeptbild_20.png"/>
+</div>
+</section><section class="recipe" id="rezept-21">
 <div>
 <h2><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Gebäck / Süßes</span><span lang-variant="pl">Wypieki / słodkie</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">30 g Hefe</li><li lang-variant="pl">30 g drożdże</li>
@@ -1035,29 +1196,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1 TL Zucker</li><li lang-variant="pl">1 TL cukier</li>
 <li lang-variant="de">100 g Rosinen</li><li lang-variant="pl">100 g rodzynki</li>
 <li lang-variant="de">Fett zum Ausbacken</li><li lang-variant="pl">tłuszcz zum Auspiec</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Frisch i warm genießen.</li><li lang-variant="pl">Najlepiej smakują świeże i ciepłe.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Hefevorteig ansetzen, Teig schlagen do er Blasen wirft.</li><li lang-variant="pl">Hefevorteig ansetzen, Teig schlagen do er Blasen wirft.</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Frisch und warm genießen.</li><li lang-variant="pl">Najlepiej smakują świeże i ciepłe.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Hefevorteig ansetzen, Teig schlagen bis er Blasen wirft.</li><li lang-variant="pl">Hefevorteig ansetzen, Teig schlagen do er Blasen wirft.</li>
 <li lang-variant="de">Rosinen unterheben, Teig gehen lassen.</li><li lang-variant="pl">rodzynki unterheben, Teig gehen lassen.</li>
-<li lang-variant="de">Teig portionieren i in Fett goldbraun ausbacken.</li><li lang-variant="pl">Teig portionieren i in tłuszcz goldbraun auspiec.</li>
+<li lang-variant="de">Teig portionieren und in Fett goldbraun ausbacken.</li><li lang-variant="pl">Teig portionieren i in tłuszcz goldbraun auspiec.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Danziger Porzeln" src="images/rezeptbild_21.png"/></div>
-</section>
-<section class="recipe" id="rezept-22">
+<div>
+<img alt="Danziger Porzeln" src="images/rezeptbild_21.png"/>
+</div>
+</section><section class="recipe" id="rezept-22">
 <div>
 <h2><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1 Bund Rote Bete</li><li lang-variant="pl">1 Bund buraki</li>
@@ -1068,28 +1240,39 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">1 l Milch</li><li lang-variant="pl">1 l mleko</li>
 <li lang-variant="de">500 ml Sahnejoghurt</li><li lang-variant="pl">500 ml Sahnejoghurt</li>
 <li lang-variant="de">100 ml Rote-Bete-Saft</li><li lang-variant="pl">100 ml Rote-Bete-Saft</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Kalt stellen i z Ei garnieren.</li><li lang-variant="pl">Kalt stellen i z jajko garnieren.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Gemüse i Kräuter klein schneiden.</li><li lang-variant="pl">Gemüse i Kräuter klein pokroić.</li>
-<li lang-variant="de">Z Milch, Joghurt i Saft verrühren, würzen.</li><li lang-variant="pl">Z mleko, jogurt i Saft wymieszać, würzen.</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Kalt stellen und mit Ei garnieren.</li><li lang-variant="pl">Kalt stellen i z jajko garnieren.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Gemüse und Kräuter klein schneiden.</li><li lang-variant="pl">Gemüse i Kräuter klein pokroić.</li>
+<li lang-variant="de">Mit Milch, Joghurt und Saft verrühren, würzen.</li><li lang-variant="pl">Z mleko, jogurt i Saft wymieszać, würzen.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Kalte Rote-Bete-Suppe" src="images/rezeptbild_22.png"/></div>
-</section>
-<section class="recipe" id="rezept-23">
 <div>
-<h2><span lang-variant="de">23. Piroggen z Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></h2>
+<img alt="Kalte Rote-Bete-Suppe" src="images/rezeptbild_22.png"/>
+</div>
+</section><section class="recipe" id="rezept-23">
+<div>
+<h2><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Hauptgerichte / Teiggerichte</span><span lang-variant="pl">Dania główne / dania z ciasta</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">500 g Mehl</li><li lang-variant="pl">500 g mąka</li>
@@ -1100,29 +1283,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Zwiebeln</li><li lang-variant="pl">cebule</li>
 <li lang-variant="de">Öl</li><li lang-variant="pl">olej</li>
 <li lang-variant="de">Gewürze</li><li lang-variant="pl">przyprawy</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Eignen sich zum Einfrieren.</li><li lang-variant="pl">jajkognen sich zum jajkonfrieren.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Teig kneten i ruhen lassen.</li><li lang-variant="pl">Teig kneten i ruhen lassen.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Teig kneten und ruhen lassen.</li><li lang-variant="pl">Teig kneten i ruhen lassen.</li>
 <li lang-variant="de">Füllung schmoren, Teigkreise ausstechen.</li><li lang-variant="pl">Füllung dusić, Teigkreise ausstechen.</li>
 <li lang-variant="de">Füllen, verschließen, in Wasser garen.</li><li lang-variant="pl">Füllen, verschließen, in woda gotować / piec.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Piroggen z Sauerkraut-Pilz-Füllung" src="images/rezeptbild_23.png"/></div>
-</section>
-<section class="recipe" id="rezept-24">
+<div>
+<img alt="Piroggen mit Sauerkraut-Pilz-Füllung" src="images/rezeptbild_23.png"/>
+</div>
+</section><section class="recipe" id="rezept-24">
 <div>
 <h2><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Kluski w sosie pomidorowym</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">500 g Hackfleisch</li><li lang-variant="pl">500 g mięso mielone</li>
@@ -1132,29 +1326,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Karotte</li><li lang-variant="pl">Karotte</li>
 <li lang-variant="de">Tomatenmark</li><li lang-variant="pl">koncentrat pomidorowy</li>
 <li lang-variant="de">Gewürze</li><li lang-variant="pl">przyprawy</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z Kartoffelpüree servieren.</li><li lang-variant="pl">Z puree ziemniaczane podawać.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit Kartoffelpüree servieren.</li><li lang-variant="pl">Z puree ziemniaczane podawać.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Fleischteig anrühren, Klopse formen.</li><li lang-variant="pl">Fleischteig anrühren, Klopse formen.</li>
 <li lang-variant="de">In Gewürzsud garen.</li><li lang-variant="pl">In Gewürzsud gotować / piec.</li>
-<li lang-variant="de">Tomatensoße einrühren i abschmecken.</li><li lang-variant="pl">pomidorysoße wmieszać i doprawić.</li>
+<li lang-variant="de">Tomatensoße einrühren und abschmecken.</li><li lang-variant="pl">pomidorysoße wmieszać i doprawić.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Klopse in Tomatensoße" src="images/rezeptbild_24.png"/></div>
-</section>
-<section class="recipe" id="rezept-25">
+<div>
+<img alt="Klopse in Tomatensoße" src="images/rezeptbild_24.png"/>
+</div>
+</section><section class="recipe" id="rezept-25">
 <div>
 <h2><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Salate / Kalte Küche</span><span lang-variant="pl">Sałatki / zimna kuchnia</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">4 Salzheringe</li><li lang-variant="pl">4 sólheringe</li>
@@ -1164,29 +1369,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Zwiebel</li><li lang-variant="pl">cebula</li>
 <li lang-variant="de">Eier</li><li lang-variant="pl">jajkoer</li>
 <li lang-variant="de">Petersilie</li><li lang-variant="pl">pietruszka</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Über Nacht durchziehen lassen.</li><li lang-variant="pl">Odstawić na noc, aby smaki się przegryzły.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Hering wässern i würfeln.</li><li lang-variant="pl">Hering wässern i pokroić w kostkę.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Hering wässern und würfeln.</li><li lang-variant="pl">Hering wässern i pokroić w kostkę.</li>
 <li lang-variant="de">Gemüse schneiden, Sahnesoße anrühren.</li><li lang-variant="pl">Gemüse pokroić, Sahnesoße anrühren.</li>
-<li lang-variant="de">Alles mischen i kalt stellen.</li><li lang-variant="pl">Wszystko wymieszaj i schłódź.</li>
+<li lang-variant="de">Alles mischen und kalt stellen.</li><li lang-variant="pl">Wszystko wymieszaj i schłódź.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Danziger Heringssalat" src="images/rezeptbild_25.png"/></div>
-</section>
-<section class="recipe" id="rezept-26">
+<div>
+<img alt="Danziger Heringssalat" src="images/rezeptbild_25.png"/>
+</div>
+</section><section class="recipe" id="rezept-26">
 <div>
 <h2><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Fischgerichte / Kalte Küche</span><span lang-variant="pl">Dania rybne / zimna kuchnia</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">Salzheringe</li><li lang-variant="pl">sólheringe</li>
@@ -1197,29 +1413,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Honig</li><li lang-variant="pl">Honig</li>
 <li lang-variant="de">Essig</li><li lang-variant="pl">Essig</li>
 <li lang-variant="de">Lorbeer, Piment, Majoran</li><li lang-variant="pl">Lorbeer, ziele angielskie, majeranek</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Kühlzeit: 12 godzin</li><li lang-variant="pl">czas chłodzenia: 12 godzin</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z dunklem Brot servieren.</li><li lang-variant="pl">Podawać z ciemnym pieczywem.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit dunklem Brot servieren.</li><li lang-variant="pl">Podawać z ciemnym pieczywem.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Hering vorbereiten.</li><li lang-variant="pl">Hering vorbereiten.</li>
 <li lang-variant="de">Soße köcheln, abkühlen lassen.</li><li lang-variant="pl">Soße köcheln, abschłodzić lassen.</li>
-<li lang-variant="de">Hering schichten, z Soße bedecken, 12 h kühlen.</li><li lang-variant="pl">Hering schichten, z Soße bedecken, 12 h schłodzić.</li>
+<li lang-variant="de">Hering schichten, mit Soße bedecken, 12 h kühlen.</li><li lang-variant="pl">Hering schichten, z Soße bedecken, 12 h schłodzić.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Hering nach kaschubischer Art" src="images/rezeptbild_26.png"/></div>
-</section>
-<section class="recipe" id="rezept-27">
+<div>
+<img alt="Hering nach kaschubischer Art" src="images/rezeptbild_26.png"/>
+</div>
+</section><section class="recipe" id="rezept-27">
 <div>
 <h2><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">400 g Rindfleisch</li><li lang-variant="pl">400 g wołowina</li>
@@ -1228,28 +1455,39 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">4 Eier</li><li lang-variant="pl">4 jajkoer</li>
 <li lang-variant="de">100 g Käse</li><li lang-variant="pl">100 g ser</li>
 <li lang-variant="de">Salz, Pfeffer</li><li lang-variant="pl">sól, pieprz</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
 <li lang-variant="de">Heiß aus dem Ofen servieren.</li><li lang-variant="pl">Podawaj gorące prosto z piekarnika.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Fleischmasse anrühren, Steaks formen, braten.</li><li lang-variant="pl">Fleischmasse anrühren, Steaks formen, braten.</li>
 <li lang-variant="de">Eier braten, auflegen, Käse überbacken.</li><li lang-variant="pl">jajkoer braten, auflegen, ser überpiec.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Polnisches Beefsteak" src="images/rezeptbild_27.png"/></div>
-</section>
-<section class="recipe" id="rezept-28">
+<div>
+<img alt="Polnisches Beefsteak" src="images/rezeptbild_27.png"/>
+</div>
+</section><section class="recipe" id="rezept-28">
 <div>
 <h2><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">Schweine-, Kalbfleisch, Speck</li><li lang-variant="pl">Schweine-, Kalbfleisch, boczek</li>
@@ -1260,29 +1498,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Sellerie</li><li lang-variant="pl">Sellerie</li>
 <li lang-variant="de">Eier</li><li lang-variant="pl">jajkoer</li>
 <li lang-variant="de">Gewürze</li><li lang-variant="pl">przyprawy</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Backzeit: 50 min im Wasserbad</li><li lang-variant="pl">czas pieczenia: 50 min im Wasserbad</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Kalt lub warm genießen.</li><li lang-variant="pl">Można jeść na zimno lub na ciepło.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Kalt oder warm genießen.</li><li lang-variant="pl">Można jeść na zimno lub na ciepło.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Fleisch &amp; Gemüse schmoren, Brötchen &amp; Leber zugeben.</li><li lang-variant="pl">Fleisch &amp; Gemüse dusić, bułki &amp; Leber dodać.</li>
-<li lang-variant="de">Zweimal wolfen, z Ei &amp; Gewürzen mischen.</li><li lang-variant="pl">Zweimal wolfen, z jajko &amp; Gewürzen wymieszać.</li>
+<li lang-variant="de">Zweimal wolfen, mit Ei &amp; Gewürzen mischen.</li><li lang-variant="pl">Zweimal wolfen, z jajko &amp; Gewürzen wymieszać.</li>
 <li lang-variant="de">In Form 50 min im Wasserbad backen.</li><li lang-variant="pl">In Form 50 min im Wasserbad piec.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Fleischpastete" src="images/rezeptbild_28.png"/></div>
-</section>
-<section class="recipe" id="rezept-29">
 <div>
-<h2><span lang-variant="de">29. Geflügelleber z Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></h2>
+<img alt="Fleischpastete" src="images/rezeptbild_28.png"/>
+</div>
+</section><section class="recipe" id="rezept-29">
+<div>
+<h2><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">500 g Geflügelleber</li><li lang-variant="pl">500 g wątróbka drobiowa</li>
@@ -1290,28 +1539,39 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">100 g Zwiebel</li><li lang-variant="pl">100 g cebula</li>
 <li lang-variant="de">Weißwein</li><li lang-variant="pl">białego wina</li>
 <li lang-variant="de">Gewürze</li><li lang-variant="pl">przyprawy</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z Kartoffeln lub Reis servieren.</li><li lang-variant="pl">Z ziemniaki lub Reis podawać.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit Kartoffeln oder Reis servieren.</li><li lang-variant="pl">Z ziemniaki lub Reis podawać.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Leber in Milch einweichen, häuten.</li><li lang-variant="pl">Leber in mleko einweichen, häuten.</li>
 <li lang-variant="de">Zwiebel anbraten, Äpfel &amp; Wein zugeben, Leber mitschmoren.</li><li lang-variant="pl">cebula obsmażyć, jabłka &amp; Wein dodać, Leber mitdusić.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Geflügelleber z Äpfeln" src="images/rezeptbild_29.png"/></div>
-</section>
-<section class="recipe" id="rezept-30">
+<div>
+<img alt="Geflügelleber mit Äpfeln" src="images/rezeptbild_29.png"/>
+</div>
+</section><section class="recipe" id="rezept-30">
 <div>
 <h2><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Feiertagsessen / Ofengerichte</span><span lang-variant="pl">Dania świąteczne / dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1,2 kg Eisbein</li><li lang-variant="pl">1,2 kg jajkosbein</li>
@@ -1319,29 +1579,40 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Wurzelgemüse</li><li lang-variant="pl">włoszczyzna</li>
 <li lang-variant="de">Tomatenkonzentrat</li><li lang-variant="pl">pomidorykonzentrat</li>
 <li lang-variant="de">Salz, Pfeffer, Knoblauch</li><li lang-variant="pl">sól, pieprz, czosnek</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Vorbereitungszeit: 24 godzin Kühlzeit</li><li lang-variant="pl">przygotowanieszeit: 24 godzin czas chłodzenia</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z Senf i Brot servieren.</li><li lang-variant="pl">Podawaj z musztardą i pieczywem.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit Senf und Brot servieren.</li><li lang-variant="pl">Podawaj z musztardą i pieczywem.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Eisbein würzen, 24 h kühlen, anbraten.</li><li lang-variant="pl">jajkosbein würzen, 24 h schłodzić, obsmażyć.</li>
-<li lang-variant="de">Z Wasser schmoren, Gemüse zufügen.</li><li lang-variant="pl">Z woda dusić, Gemüse zufügen.</li>
-<li lang-variant="de">Tomatenkonzentrat krótko vor Ende einrühren.</li><li lang-variant="pl">pomidorykonzentrat krótko vor Ende wmieszać.</li>
+<li lang-variant="de">Mit Wasser schmoren, Gemüse zufügen.</li><li lang-variant="pl">Z woda dusić, Gemüse zufügen.</li>
+<li lang-variant="de">Tomatenkonzentrat kurz vor Ende einrühren.</li><li lang-variant="pl">pomidorykonzentrat krótko vor Ende wmieszać.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Eisbein nach alt-polnischer Art" src="images/rezeptbild_30.png"/></div>
-</section>
-<section class="recipe" id="rezept-31">
+<div>
+<img alt="Eisbein nach alt-polnischer Art" src="images/rezeptbild_30.png"/>
+</div>
+</section><section class="recipe" id="rezept-31">
 <div>
 <h2><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1,5 l Wasser</li><li lang-variant="pl">1,5 l woda</li>
@@ -1350,28 +1621,39 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">250 ml Milch</li><li lang-variant="pl">250 ml mleko</li>
 <li lang-variant="de">Nudeln, Erbsen, Bohnen</li><li lang-variant="pl">makaron, groch, fasola</li>
 <li lang-variant="de">Gewürze</li><li lang-variant="pl">przyprawy</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z Dill abschmecken.</li><li lang-variant="pl">Z koperek doprawić.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit Dill abschmecken.</li><li lang-variant="pl">Z koperek doprawić.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Huhn kochen, Gemüse zufügen.</li><li lang-variant="pl">Huhn gotować, Gemüse zufügen.</li>
-<li lang-variant="de">Fleisch entbeinen, Brühe z Nudeln, Milch, Erbsen, Bohnen &amp; Fleisch fertig kochen.</li><li lang-variant="pl">Fleisch entbeinen, bulion z makaron, mleko, groch, fasola &amp; Fleisch fertig gotować.</li>
+<li lang-variant="de">Fleisch entbeinen, Brühe mit Nudeln, Milch, Erbsen, Bohnen &amp; Fleisch fertig kochen.</li><li lang-variant="pl">Fleisch entbeinen, bulion z makaron, mleko, groch, fasola &amp; Fleisch fertig gotować.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Danziger Suppe" src="images/rezeptbild_31.png"/></div>
-</section>
-<section class="recipe" id="rezept-32">
 <div>
-<h2><span lang-variant="de">32. Erbsensuppe z Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></h2>
+<img alt="Danziger Suppe" src="images/rezeptbild_31.png"/>
+</div>
+</section><section class="recipe" id="rezept-32">
+<div>
+<h2><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">1,5 l Brühe</li><li lang-variant="pl">1,5 l bulion</li>
@@ -1382,28 +1664,39 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Zwiebel</li><li lang-variant="pl">cebula</li>
 <li lang-variant="de">Mehl</li><li lang-variant="pl">mąka</li>
 <li lang-variant="de">Gewürze</li><li lang-variant="pl">przyprawy</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Z Bauernbrot servieren.</li><li lang-variant="pl">Podawać z wiejskim chlebem.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Mit Bauernbrot servieren.</li><li lang-variant="pl">Podawać z wiejskim chlebem.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
 <li lang-variant="de">Erbsen in Brühe quellen, kochen.</li><li lang-variant="pl">groch in bulion quellen, gotować.</li>
 <li lang-variant="de">Kartoffeln zugeben, Speck-Zwiebel-Mehl-Roux einrühren, Wurst &amp; Gewürze zufügen.</li><li lang-variant="pl">ziemniaki dodać, boczek-cebula-mąka-Roux wmieszać, kiełbasa &amp; przyprawy zufügen.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Erbsensuppe z Kartoffeln" src="images/rezeptbild_32.png"/></div>
-</section>
-<section class="recipe" id="rezept-33">
+<div>
+<img alt="Erbsensuppe mit Kartoffeln" src="images/rezeptbild_32.png"/>
+</div>
+</section><section class="recipe" id="rezept-33">
 <div>
 <h2><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></h2>
 <div class="meta">
 <span class="tag"><span lang-variant="de">Saucen / Beilagen</span><span lang-variant="pl">Sosy / dodatki</span></span>
 <span class="tag"><span lang-variant="de">Personenzahl nicht angegeben</span><span lang-variant="pl">Nie podano liczby porcji</span></span>
-</div><div class="grid-2"><div>
+</div>
+<div class="grid-2">
+<div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
 <ul>
 <li lang-variant="de">350 ml Geflügelbrühe</li><li lang-variant="pl">350 ml bulion drobiowy</li>
@@ -1413,35 +1706,47 @@ html[data-lang="de"] span[lang-variant="de"], html[data-lang="pl"] span[lang-var
 <li lang-variant="de">Fett</li><li lang-variant="pl">tłuszcz</li>
 <li lang-variant="de">Mehl</li><li lang-variant="pl">mąka</li>
 <li lang-variant="de">Gewürze, Zitrone</li><li lang-variant="pl">przyprawy, cytryna</li>
-</ul></div><div>
-<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul>
+</ul>
+</div>
+<div>
+<h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3>
+<ul>
 <li lang-variant="de">Zeit im Original nicht angegeben</li><li lang-variant="pl">Czas w oryginale nie został podany</li>
-</ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul>
-<li lang-variant="de">Zu Geflügel i Wildgeflügel reichen.</li><li lang-variant="pl">Podawać do drobiu i dzikiego ptactwa.</li>
-</ul></div></div>
-<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol>
-<li lang-variant="de">Fett + Mehl bräunen, z Brühe glatt rühren, 10 min kochen.</li><li lang-variant="pl">tłuszcz + mąka bräunen, z bulion glatt rühren, 10 min gotować.</li>
+</ul>
+<h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3>
+<ul>
+<li lang-variant="de">Zu Geflügel und Wildgeflügel reichen.</li><li lang-variant="pl">Podawać do drobiu i dzikiego ptactwa.</li>
+</ul>
+</div>
+</div>
+<h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3>
+<ol>
+<li lang-variant="de">Fett + Mehl bräunen, mit Brühe glatt rühren, 10 min kochen.</li><li lang-variant="pl">tłuszcz + mąka bräunen, z bulion glatt rühren, 10 min gotować.</li>
 <li lang-variant="de">Tomaten, Meerrettich, Sahne zufügen, abschmecken.</li><li lang-variant="pl">pomidory, chrzan, śmietana zufügen, doprawić.</li>
 </ol>
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3>
-<p lang-variant="de">Aus Smaki Domu übernommen.</p><p lang-variant="pl">Aus Smaki Domu übernommen.</p>
+<p><span lang-variant="de">Aus Smaki Domu übernommen.</span><span lang-variant="pl">Aus Smaki Domu übernommen.</span></p>
 </div>
-<div><img alt="Alt-polnische Sauce" src="images/rezeptbild_33.png"/></div>
+<div>
+<img alt="Alt-polnische Sauce" src="images/rezeptbild_33.png"/>
+</div>
 </section>
 </main>
-<footer class="wrap"><span lang-variant="de">Stand: exportiert do Cloudflare Pages. XML i Bilder sind im Paket enthalten.</span><span lang-variant="pl">Stan: wyeksportowano dla Cloudflare Pages. XML i obrazy są częścią pakietu.</span></footer>
+<footer class="wrap">
+<span lang-variant="de">Stand: exportiert für Cloudflare Pages. XML und Bilder sind im Paket enthalten.</span>
+<span lang-variant="pl">Stan: wyeksportowano do Cloudflare Pages. XML i obrazy są zawarte w pakiecie.</span>
+</footer>
 <script>
 (function(){
   const root=document.documentElement;
-  const saved=localStorage.getItem('kochbuchLang');
-  const setLang=(lang)=>{
-    root.setAttribute('data-lang',lang);
-    document.querySelectorAll('[data-set-lang]').forEach(btn=>btn.classList.toggle('active', btn.getAttribute('data-set-lang')===lang));
-    localStorage.setItem('kochbuchLang', lang);
-  };
-  document.querySelectorAll('[data-set-lang]').forEach(btn=>btn.addEventListener('click', ()=>setLang(btn.getAttribute('data-set-lang'))));
-  setLang(saved==='pl'?'pl':'de');
+  function setLang(lang){
+    root.setAttribute('data-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(btn=>btn.classList.toggle('active', btn.dataset.setLang===lang));
+    localStorage.setItem('kochbuch_lang', lang);
+  }
+  document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLang(btn.dataset.setLang)));
+  setLang(localStorage.getItem('kochbuch_lang') || 'de');
 })();
 </script>
-</body></html>
-
+</body>
+</html>
