@@ -2,7 +2,7 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.1" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>33</recipeCount>
+    <recipeCount>34</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
   </meta>
   <recipe id="1">
@@ -1486,7 +1486,7 @@
     </translation>
   </recipe>
   <recipe id="19">
-    <name>Säure für Żurek selber machen</name>
+    <name>Zakwas für Żurek selber machen</name>
     <persons>Ansatz für mehrere Portionen Żurek</persons>
     <category>Grundlagen / Polnische Küche</category>
     <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen" />
@@ -1521,7 +1521,7 @@
       <item>Vor der Lagerung kann der Zakwas abgeseiht und in eine saubere Flasche gefüllt werden.</item>
       <item>Im Kühlschrank hält sich der fertige Zakwas einige Tage bis etwa zwei Wochen.</item>
     </tips>
-    <rating>Traditionelle Grundlage für Żurek.</rating>
+    <rating>Traditionelle Grundlage für Żurek. Passend als Basis für Rezept 34: Żurek wielkanocny.</rating>
     <translation lang="pl">
       <name>Zakwas na żurek</name>
       <persons>zakwas na kilka porcji żurku</persons>
@@ -2301,5 +2301,83 @@
       </tips>
       <rating>Aus Smaki Domu übernommen.</rating>
     </translation>
+  </recipe>
+<recipe id="34">
+    <name>Żurek wielkanocny</name>
+    <name_pl>Żurek wielkanocny</name_pl>
+    <persons>ca. 2 Liter Suppe</persons>
+    <persons_pl>około 2 litry zupy</persons_pl>
+    <category>Suppen / Polnische Küche</category>
+    <category_pl>Zupy / Kuchnia polska</category_pl>
+    <image src="images/rezeptbild_34.png" alt="Żurek wielkanocny" />
+    <ingredients>
+      <item>1 Liter Gemüsebrühe</item>
+      <item>500 ml Zakwas für Żurek</item>
+      <item>100 g geräucherte, luftgetrocknete Wurst</item>
+      <item>200 g weiße Wurst, roh oder vorgegart</item>
+      <item>200 g roher, geräucherter Speck</item>
+      <item>3 EL Schlagsahne / Sahne 30 %</item>
+      <item>1 TL Majoran oder mehr</item>
+      <item>1 Pimentkorn und 1 Lorbeerblatt</item>
+      <item>je 1/4 TL Knoblauch und Salz</item>
+      <item>zum Servieren: 4–6 Eier, Roggenbrot, Petersilie oder Oregano</item>
+    </ingredients>
+    <ingredients_pl>
+      <item>1 litr bulionu warzywnego</item>
+      <item>500 ml zakwasu żytniego do żurku</item>
+      <item>100 g kiełbasy zwykłej podsuszanej</item>
+      <item>200 g białej kiełbasy surowej lub parzonej</item>
+      <item>200 g boczku surowego wędzonego</item>
+      <item>3 łyżki śmietanki 30 %</item>
+      <item>1 łyżeczka majeranku lub więcej</item>
+      <item>1 ziarno ziela angielskiego i 1 liść laurowy</item>
+      <item>po 1/4 łyżeczki czosnku i soli</item>
+      <item>do podania: 4–6 jajek, pieczywo żytnie, natka pietruszki lub oregano</item>
+    </ingredients_pl>
+    <preparation>
+      <step nr="1">Bereite zuerst die Gemüsebrühe vor oder nutze bereits gekochte Brühe vom Vortag.</step>
+      <step nr="2">Schneide den Speck in kleine Würfel. Schneide die luftgetrocknete Wurst und die weiße Wurst in Scheiben. Wenn die weiße Wurst roh ist, kurz in der Brühe vorgaren.</step>
+      <step nr="3">Brate den Speck einige Minuten in einer Pfanne an. Gib beide Wurstsorten dazu und brate alles weitere 4–5 Minuten.</step>
+      <step nr="4">Erhitze die Brühe in einem Topf bis sie kocht und gib den Inhalt der Pfanne dazu. Koche alles etwa 5 Minuten.</step>
+      <step nr="5">Rühre den Zakwas auf und gieße ihn vollständig in die Suppe. Gib Piment, Lorbeer, Knoblauch, Salz und Majoran dazu.</step>
+      <step nr="6">Unter Rühren kurz aufkochen, bis der Żurek leicht eindickt.</step>
+      <step nr="7">Zum Schluss die Sahne einrühren. Wenn du saure Sahne nimmst, vorher mit etwas heißer Suppe angleichen.</step>
+      <step nr="8">Mit halbierten Eiern, Roggenbrot und etwas Petersilie oder Oregano servieren.</step>
+    </preparation>
+    <preparation_pl>
+      <step nr="1">Przygotuj wcześniej bulion warzywny albo użyj bulionu ugotowanego dzień wcześniej.</step>
+      <step nr="2">Pokrój boczek w drobną kostkę. Kiełbasę podsuszaną i białą pokrój w plasterki. Jeśli biała kiełbasa jest surowa, wcześniej ją krótko podgotuj.</step>
+      <step nr="3">Podsmażaj boczek kilka minut na patelni. Dodaj obie kiełbasy i smaż całość jeszcze około 4–5 minut.</step>
+      <step nr="4">Podgrzej bulion w garnku do zagotowania i przełóż do niego zawartość patelni. Gotuj całość około 5 minut.</step>
+      <step nr="5">Wymieszaj zakwas i wlej go w całości do zupy. Dodaj ziele angielskie, liść laurowy, czosnek, sól i majeranek.</step>
+      <step nr="6">Doprowadź do wrzenia, cały czas mieszając, aż żurek lekko zgęstnieje.</step>
+      <step nr="7">Na końcu dodaj śmietankę. Jeśli używasz kwaśnej śmietany, wcześniej zahartuj ją odrobiną gorącej zupy.</step>
+      <step nr="8">Podawaj z połówkami jajek, żytnim pieczywem oraz natką pietruszki albo oregano.</step>
+    </preparation_pl>
+    <timing>
+      <item>Vorbereitung: 30 Minuten</item>
+      <item>Kochzeit: 30 Minuten</item>
+      <item>Tipp: Brühe am Vortag kochen</item>
+    </timing>
+    <timing_pl>
+      <item>Czas przygotowania: 30 minut</item>
+      <item>Czas gotowania: 30 minut</item>
+      <item>Wskazówka: bulion ugotuj dzień wcześniej</item>
+    </timing_pl>
+    <tips>
+      <item>Rezept 19 ist die ideale Basis für diesen Żurek.</item>
+      <item>Wenn du rohe weiße Wurst verwendest, koche sie kurz vorher in der Brühe vor.</item>
+      <item>Majoran darf hier ruhig großzügig verwendet werden.</item>
+      <item>Zum Schluss mit Ei und Roggenbrot servieren.</item>
+    </tips>
+    <tips_pl>
+      <item>Przepis 19 to idealna baza do tego żurku.</item>
+      <item>Jeśli używasz surowej białej kiełbasy, wcześniej krótko ją podgotuj w bulionie.</item>
+      <item>Do żurku można dodać nawet więcej majeranku.</item>
+      <item>Na końcu podawaj z jajkiem i żytnim pieczywem.</item>
+    </tips_pl>
+    <rating>Traditioneller Oster-Żurek auf Basis von Rezept 19.</rating>
+    <rating_pl>Tradycyjny żurek wielkanocny oparty na przepisie 19.</rating_pl>
+    <source>Inhaltlich angelehnt an: https://aniagotuje.pl/przepis/zurek-wielkanocny</source>
   </recipe>
 </cookbook>
