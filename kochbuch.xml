@@ -1,0 +1,757 @@
+<?xml version='1.0' encoding='utf-8'?>
+<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="1.0">
+  <meta>
+    <language>de</language>
+    <recipeCount>18</recipeCount>
+    <notes>Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
+  </meta>
+  <recipe id="1">
+    <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
+    <persons>4 Personen</persons>
+    <category>Feiertagsessen / Ofengerichte</category>
+    <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" />
+    <ingredients>
+      <item>1 Weißkohl</item>
+      <item>500 g Hackfleisch (gemischt oder Rind)</item>
+      <item>1 altbackenes Brötchen</item>
+      <item>1 Ei</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Knoblauchzehen</item>
+      <item>100 g Chorizo</item>
+      <item>150 g Speck in Scheiben</item>
+      <item>2 EL Tomatenmark</item>
+      <item>200 ml Rotwein</item>
+      <item>400 ml Rinderfond</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver edelsüß</item>
+      <item>Majoran oder Thymian</item>
+      <item>Öl zum Anbraten</item>
+      <item>Beilagen: Kartoffelpüree</item>
+      <item>Beilagen: Baguette</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kohlblätter in kochendem Salzwasser blanchieren, bis sie weich sind. Dicke Blattrippen flach schneiden.</step>
+      <step nr="2">Brötchen in Wasser einweichen und gut ausdrücken.</step>
+      <step nr="3">Zwiebeln, Knoblauch und Chorizo klein schneiden und in einer Pfanne kurz anbraten.</step>
+      <step nr="4">Hackfleisch mit dem eingeweichten Brötchen, Ei, der angebratenen Zwiebel-Chorizo-Mischung und den Gewürzen vermengen.</step>
+      <step nr="5">Die Kohlblätter mit der Hackmasse füllen und zu Rouladen formen.</step>
+      <step nr="6">Jede Kohlroulade außen mit Speck umwickeln.</step>
+      <step nr="7">Die Rouladen in einem Bräter von allen Seiten anbraten.</step>
+      <step nr="8">Tomatenmark kurz mitrösten, dann mit Rotwein ablöschen und mit Rinderfond auffüllen.</step>
+      <step nr="9">Rouladen in die Sauce legen und zugedeckt 2 bis 2,5 Stunden bei niedriger Hitze schmoren.</step>
+      <step nr="10">Am Ende den Deckel abnehmen und die Sauce einkochen lassen. Mit Salz, Pfeffer und ggf. etwas Zucker abschmecken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Schmorzeit: 2 bis 2,5 Stunden</item>
+      <item>Bei Essen gegen 18:30–19:00 Uhr ideal ca. 15:30–16:00 Uhr starten</item>
+    </timing>
+    <tips>
+      <item>Die dicke Blattrippe immer flach schneiden, dann lassen sich die Rouladen besser wickeln.</item>
+      <item>Die Sauce am Ende offen einkochen, damit sie kräftiger wird.</item>
+      <item>Kartoffelpüree dazu frisch kurz vor dem Servieren machen.</item>
+    </tips>
+    <rating>Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</rating>
+  </recipe>
+  <recipe id="2">
+    <name>Italienischer Kalbshaxen-Braten</name>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte / Feiertagsessen</category>
+    <image src="images/rezeptbild_01.png" alt="Italienischer Kalbshaxen-Braten" />
+    <ingredients>
+      <item>1 Kalbshaxen-Braten ohne Knochen, ca. 800 g</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Möhren</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Tomatenmark</item>
+      <item>150 ml Weißwein oder Rotwein</item>
+      <item>400 ml Kalbsfond oder Rinderfond</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Salz</item>
+      <item>1/2 TL Pfeffer</item>
+      <item>1 TL italienische Kräuter</item>
+      <item>1 kleiner Rosmarinzweig</item>
+      <item>1 Lorbeerblatt</item>
+      <item>optional: 1 Stück Sellerie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kalbshaxen-Braten trocken tupfen und mit Salz, Pfeffer und Kräutern würzen.</step>
+      <step nr="2">Zwiebeln, Möhren und Knoblauch grob würfeln.</step>
+      <step nr="3">Öl in einem Bräter erhitzen und den Braten rundherum kräftig anbraten.</step>
+      <step nr="4">Braten kurz herausnehmen, Gemüse im Bräter anrösten.</step>
+      <step nr="5">Tomatenmark zugeben und kurz mitrösten.</step>
+      <step nr="6">Mit Wein ablöschen und leicht einkochen lassen.</step>
+      <step nr="7">Fond angießen, Rosmarin und Lorbeer zugeben.</step>
+      <step nr="8">Braten zurück in den Bräter legen.</step>
+      <step nr="9">Zugedeckt im Ofen bei ca. 160 °C Ober-/Unterhitze etwa 1 Stunde 45 Minuten schmoren.</step>
+      <step nr="10">Zwischendurch mit etwas Bratensaft übergießen.</step>
+      <step nr="11">Braten herausnehmen, Sauce nach Wunsch pürieren oder rustikal lassen.</step>
+      <step nr="12">Sauce abschmecken und den Braten in Scheiben servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 20–25 Minuten</item>
+      <item>Schmorzeit: ca. 1 Stunde 45 Minuten</item>
+      <item>Gesamt: ca. 2 Stunden 15 Minuten</item>
+      <item>Bei Essen um 18:30 Uhr: Start ca. 16:15 Uhr</item>
+    </timing>
+    <tips>
+      <item>Nicht zu heiß schmoren, sonst wird Kalbfleisch trocken.</item>
+      <item>Sauce am Ende 5–10 Minuten offen einkochen.</item>
+      <item>Sehr gut mit Kartoffelpüree, Bandnudeln oder Baguette.</item>
+    </tips>
+    <rating>Fest gespeichert als gutes Rezept.</rating>
+  </recipe>
+  <recipe id="3">
+    <name>Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</name>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte / Beilagen</category>
+    <image src="images/rezeptbild_02.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" />
+    <ingredients>
+      <item>1,5 kg Muscheln</item>
+      <item>2 Frühlingszwiebeln</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Butter</item>
+      <item>1 EL Olivenöl</item>
+      <item>150 ml Weißwein</item>
+      <item>200 g stückige Tomaten</item>
+      <item>100 ml Sahne oder etwas zusätzlicher Muschelsud, optional</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 kleine Prise Zucker</item>
+      <item>1/2 Baguette oder 1 kleines Ciabatta</item>
+      <item>2 EL Butter für das Knoblauchbrot</item>
+      <item>1 Knoblauchzehe fürs Brot</item>
+      <item>optional: Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Muscheln gründlich waschen, geöffnete oder beschädigte Muscheln aussortieren.</step>
+      <step nr="2">Frühlingszwiebeln und Knoblauch fein schneiden.</step>
+      <step nr="3">Butter und Olivenöl in einem großen Topf erhitzen.</step>
+      <step nr="4">Frühlingszwiebeln und Knoblauch kurz anschwitzen.</step>
+      <step nr="5">Mit Weißwein ablöschen.</step>
+      <step nr="6">Tomaten zugeben und alles kurz aufkochen.</step>
+      <step nr="7">Mit Pfeffer und einer kleinen Prise Zucker abschmecken.</step>
+      <step nr="8">Muscheln in den Topf geben, Deckel aufsetzen und 5–8 Minuten garen.</step>
+      <step nr="9">Topf zwischendurch einmal rütteln.</step>
+      <step nr="10">Nur geöffnete Muscheln servieren, geschlossene aussortieren.</step>
+      <step nr="11">Für das Knoblauchbrot Baguette aufschneiden, mit Butter bestreichen und mit Knoblauch einreiben.</step>
+      <step nr="12">Im Airfryer bei ca. 180 °C 4–6 Minuten knusprig backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Garzeit: 10 Minuten</item>
+      <item>Brot parallel: 5 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Muscheln erst ganz zum Schluss garen.</item>
+      <item>Sauce vorher nicht zu stark reduzieren.</item>
+      <item>Brot erst kurz vor dem Servieren in den Airfryer geben.</item>
+    </tips>
+    <rating>Fest gespeichertes, gut befundenes Rezept.</rating>
+  </recipe>
+  <recipe id="4">
+    <name>Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</name>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte / Pfannengerichte</category>
+    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" />
+    <ingredients>
+      <item>700 g Hähnchengeschnetzeltes oder Hähnchenfilet in Streifen</item>
+      <item>2 EL Gyrosgewürz</item>
+      <item>2 EL Öl</item>
+      <item>1 große Zwiebel</item>
+      <item>1,2 kg Kartoffeln</item>
+      <item>1 Gurke</item>
+      <item>250 g griechischer Joghurt</item>
+      <item>1/2–1 Knoblauchzehe</item>
+      <item>1 EL Zitronensaft</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Öl für die Kartoffeln</item>
+      <item>optional: Paprikapulver für die Kartoffeln</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen mit Öl, Gyrosgewürz und Zwiebelstreifen marinieren.</step>
+      <step nr="2">Kartoffeln in Spalten schneiden, würzen und mit etwas Öl mischen.</step>
+      <step nr="3">Kartoffeln auf ein Blech geben und bei 200 °C ca. 35–40 Minuten backen.</step>
+      <step nr="4">Gurke für den Salat in Scheiben schneiden oder hobeln.</step>
+      <step nr="5">Für Tsatsiki Gurke fein raspeln, ausdrücken und mit Joghurt, Knoblauch, Salz, Pfeffer und Zitronensaft verrühren.</step>
+      <step nr="6">Hähnchen in einer großen Pfanne scharf anbraten.</step>
+      <step nr="7">Gurkensalat frisch anmachen.</step>
+      <step nr="8">Alles zusammen servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Ofenkartoffeln: 35–40 Minuten</item>
+      <item>Gyros: 10–12 Minuten</item>
+      <item>Gesamt: ca. 50–60 Minuten</item>
+    </timing>
+    <tips>
+      <item>Hähnchen lieber portionsweise anbraten.</item>
+      <item>Tsatsiki früh anrühren, dann zieht es besser durch.</item>
+      <item>Als Sonntagsklassiker ideal für Essen zwischen 18:00 und 19:00 Uhr.</item>
+    </tips>
+    <rating>Fest gespeichert, sehr gut angekommen.</rating>
+  </recipe>
+  <recipe id="5">
+    <name>Smoked BBQ-Fajita-Pfanne</name>
+    <persons>4 Personen</persons>
+    <category>Grill / BBQ</category>
+    <image src="images/rezeptbild_04.png" alt="Smoked BBQ-Fajita-Pfanne" />
+    <ingredients>
+      <item>700 g Rindfleisch in Streifen</item>
+      <item>2 Paprika</item>
+      <item>1 Zucchini</item>
+      <item>2 Zwiebeln</item>
+      <item>2–3 EL BBQ-Rub</item>
+      <item>3–4 EL BBQ-Sauce</item>
+      <item>1 Limette</item>
+      <item>1 EL Öl</item>
+      <item>4 Bratwürste</item>
+      <item>1 Becher Tzatziki</item>
+      <item>1 Packung Fladenbrot</item>
+      <item>Salz und Pfeffer nach Bedarf</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Rindfleisch mit BBQ-Rub würzen und kurz ziehen lassen.</step>
+      <step nr="2">Paprika, Zucchini und Zwiebeln in Streifen schneiden.</step>
+      <step nr="3">Gusseisenpfanne stark erhitzen.</step>
+      <step nr="4">Fleisch scharf anbraten und wieder herausnehmen.</step>
+      <step nr="5">Gemüse ebenfalls kräftig anrösten.</step>
+      <step nr="6">Fleisch zurück in die Pfanne geben.</step>
+      <step nr="7">Pfanne bei ca. 120–130 °C für 45–60 Minuten in den Smoker stellen.</step>
+      <step nr="8">Hickory-Pellets verwenden.</step>
+      <step nr="9">Danach Pfanne wieder auf den Gaskocher setzen.</step>
+      <step nr="10">BBQ-Sauce zugeben und alles kurz einköcheln lassen.</step>
+      <step nr="11">Mit frischem Limettensaft abschließen.</step>
+      <step nr="12">Mit Tzatziki, Fladenbrot und Bratwurst servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Anbraten: 15 Minuten</item>
+      <item>Smoken: 45–60 Minuten</item>
+      <item>Finish: 10 Minuten</item>
+      <item>Gesamt: ca. 1 Stunde 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Pfanne nicht überfüllen.</item>
+      <item>Limettensaft wirklich erst ganz am Ende zugeben.</item>
+      <item>Perfekt für den Pit Boss mit Hickory-Pellets.</item>
+    </tips>
+    <rating>Fest gespeichert und fürs BBQ-Buch übernommen.</rating>
+  </recipe>
+  <recipe id="6">
+    <name>Bruschetta vom Ciabatta</name>
+    <persons>3–4 Personen als Vorspeise oder Beilage</persons>
+    <category>Beilagen / Grill / BBQ</category>
+    <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta" />
+    <ingredients>
+      <item>1 Ciabatta</item>
+      <item>3–4 Tomaten</item>
+      <item>1 Knoblauchzehe</item>
+      <item>2 EL Olivenöl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: 1/2 rote Zwiebel</item>
+      <item>optional: frisches Basilikum oder Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Ciabatta in Scheiben schneiden.</step>
+      <step nr="2">Mit etwas Olivenöl bestreichen.</step>
+      <step nr="3">Auf dem Grill oder im Ofen anrösten.</step>
+      <step nr="4">Die warmen Brotscheiben mit frischem Knoblauch einreiben.</step>
+      <step nr="5">Tomaten klein würfeln.</step>
+      <step nr="6">Optional rote Zwiebel fein würfeln und mit den Tomaten mischen.</step>
+      <step nr="7">Mit Salz, Pfeffer und etwas Olivenöl abschmecken.</step>
+      <step nr="8">Kurz vor dem Servieren auf die Brotscheiben geben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10–15 Minuten</item>
+      <item>Rösten: 5 Minuten</item>
+      <item>Gesamt: ca. 15–20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Brot erst kurz vor dem Essen belegen.</item>
+      <item>Die Tomatenmasse nicht zu wässrig werden lassen.</item>
+      <item>Perfekt als Vorspeise zum Grillabend.</item>
+    </tips>
+    <rating>Als passende Vorspeise fest gespeichert.</rating>
+  </recipe>
+  <recipe id="7">
+    <name>Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</name>
+    <persons>3–4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" />
+    <ingredients>
+      <item>600 g Hackfleisch</item>
+      <item>1 kleine Zwiebel</item>
+      <item>1 Ei</item>
+      <item>3 EL Paniermehl</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 TL Kreuzkümmel</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>3 Tomaten</item>
+      <item>1 rote Zwiebel</item>
+      <item>250 g Joghurt</item>
+      <item>1/2 Gurke</item>
+      <item>1 Knoblauchzehe</item>
+      <item>1 Fladenbrot</item>
+      <item>etwas Petersilie</item>
+      <item>Öl zum Braten</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hackfleisch mit geriebener Zwiebel, Ei, Paniermehl und Gewürzen vermengen.</step>
+      <step nr="2">Kleine längliche Köfte formen.</step>
+      <step nr="3">In etwas Öl rundherum anbraten oder grillen.</step>
+      <step nr="4">Tomaten und rote Zwiebel für den Salat schneiden.</step>
+      <step nr="5">Mit etwas Salz, Pfeffer und Petersilie anmachen.</step>
+      <step nr="6">Für Tzatziki Gurke raspeln und mit Joghurt und Knoblauch verrühren.</step>
+      <step nr="7">Fladenbrot erwärmen und alles zusammen servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Braten: 10–12 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Hackmasse vorher 10 Minuten ziehen lassen.</item>
+      <item>Fladenbrot kurz aufbacken, dann passt es besser dazu.</item>
+      <item>Auch gut für Gäste geeignet.</item>
+    </tips>
+    <rating>Gut angekommen.</rating>
+  </recipe>
+  <recipe id="8">
+    <name>Bauernomelette mit Tomaten-Mozzarella-Salat</name>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte / Salate</category>
+    <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat" />
+    <ingredients>
+      <item>6 Eier</item>
+      <item>500 g Kartoffeln, gekocht</item>
+      <item>1 Zwiebel</item>
+      <item>1 EL Öl oder Butter</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>3 Tomaten</item>
+      <item>2 Kugeln Mozzarella</item>
+      <item>1 kleine Zwiebel oder rote Zwiebel</item>
+      <item>2 Frühlingszwiebeln</item>
+      <item>etwas Petersilie</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 EL heller Balsamico oder Zitronensaft</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln in Scheiben schneiden.</step>
+      <step nr="2">Zwiebel würfeln und in der Pfanne anbraten.</step>
+      <step nr="3">Kartoffeln zugeben und anrösten.</step>
+      <step nr="4">Eier verquirlen, würzen und darübergeben.</step>
+      <step nr="5">Stocken lassen und vorsichtig fertig garen.</step>
+      <step nr="6">Tomaten und Mozzarella schneiden.</step>
+      <step nr="7">Mit Zwiebeln, Frühlingszwiebeln und Petersilie mischen.</step>
+      <step nr="8">Mit Öl und etwas Säure anmachen.</step>
+      <step nr="9">Kein Feta verwenden.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Garzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Vorgekochte Kartoffeln verwenden, dann wird es besser.</item>
+      <item>Salat erst kurz vor dem Essen mischen.</item>
+      <item>Sehr gutes schnelles Abendessen.</item>
+    </tips>
+    <rating>Gut angekommen.</rating>
+  </recipe>
+  <recipe id="9">
+    <name>Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</name>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte</category>
+    <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" />
+    <ingredients>
+      <item>500 g Hähnchenbrust</item>
+      <item>1 Zwiebel</item>
+      <item>1 TL Garam Masala oder Masala-Gewürz</item>
+      <item>1 TL Paprikapulver</item>
+      <item>150 g Naturjoghurt</item>
+      <item>1 EL Tomatenmark</item>
+      <item>100 ml Wasser oder Brühe</item>
+      <item>1 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>4 Protein-Wraps</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in Stücke schneiden.</step>
+      <step nr="2">Zwiebel anbraten.</step>
+      <step nr="3">Hähnchen zugeben und kurz anrösten.</step>
+      <step nr="4">Gewürze und Tomatenmark einrühren.</step>
+      <step nr="5">Mit etwas Wasser oder Brühe ablöschen.</step>
+      <step nr="6">Kurz einkochen lassen.</step>
+      <step nr="7">Naturjoghurt unterrühren.</step>
+      <step nr="8">Nicht mehr stark kochen.</step>
+      <step nr="9">Mit warmen Protein-Wraps servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Garzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Joghurt erst bei reduzierter Hitze einrühren.</item>
+      <item>Wraps kurz erwärmen.</item>
+      <item>Sehr alltagstauglich.</item>
+    </tips>
+    <rating>Gut angekommen.</rating>
+  </recipe>
+  <recipe id="10">
+    <name>Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</name>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" />
+    <ingredients>
+      <item>500–600 g Salsiccia</item>
+      <item>800 g Kartoffeln</item>
+      <item>2 Paprika</item>
+      <item>1 Zucchini</item>
+      <item>1 große Zwiebel</item>
+      <item>150 g Crème fraîche</item>
+      <item>2 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver</item>
+      <item>optional: Knoblauch</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln vorkochen und in Stücke schneiden.</step>
+      <step nr="2">Gemüse schneiden.</step>
+      <step nr="3">Salsiccia in Stücke teilen.</step>
+      <step nr="4">Alles in eine Ofenform geben und würzen.</step>
+      <step nr="5">Mit etwas Öl vermengen.</step>
+      <step nr="6">Bei 190–200 °C ca. 35–40 Minuten backen.</step>
+      <step nr="7">Zum Schluss Crème fraîche unterziehen oder klecksweise daraufgeben.</step>
+      <step nr="8">Kurz weitergaren und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Ofenzeit: 35–40 Minuten</item>
+      <item>Gesamt: ca. 60 Minuten</item>
+    </timing>
+    <tips>
+      <item>Vorgekochte Kartoffeln machen das Gericht deutlich besser.</item>
+      <item>Crème fraîche erst gegen Ende zugeben.</item>
+      <item>Sehr beliebt und schwiegermuttertauglich.</item>
+    </tips>
+    <rating>Fester Favorit.</rating>
+  </recipe>
+  <recipe id="11">
+    <name>Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</name>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" />
+    <ingredients>
+      <item>600 g Hackfleisch</item>
+      <item>800 g Kartoffeln</item>
+      <item>1 Ei</item>
+      <item>3 EL Paniermehl</item>
+      <item>1 kleine Zwiebel</item>
+      <item>3 EL Ajvar</item>
+      <item>200 ml Sahne</item>
+      <item>100 g geriebener Käse</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver</item>
+      <item>Öl oder Butter für die Form</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln vorgaren und in Scheiben schneiden.</step>
+      <step nr="2">Hackfleisch mit Ei, Paniermehl, Zwiebel und Gewürzen vermengen.</step>
+      <step nr="3">Kleine Hackbällchen formen.</step>
+      <step nr="4">Hackbällchen kurz anbraten oder direkt roh verwenden, wenn sie im Ofen durchgaren sollen.</step>
+      <step nr="5">Ajvar mit Sahne verrühren.</step>
+      <step nr="6">Kartoffeln und Hackbällchen in eine Auflaufform schichten.</step>
+      <step nr="7">Ajvar-Sahne-Soße darübergeben.</step>
+      <step nr="8">Mit Käse bestreuen.</step>
+      <step nr="9">Bei 190 °C ca. 30–35 Minuten goldbraun backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 25 Minuten</item>
+      <item>Ofenzeit: 30–35 Minuten</item>
+      <item>Gesamt: ca. 60 Minuten</item>
+    </timing>
+    <tips>
+      <item>Kartoffeln nicht roh verwenden, sonst dauert es zu lange.</item>
+      <item>Die Soße ruhig kräftig würzen.</item>
+      <item>Schön cremig, deftig und sehr beliebt.</item>
+    </tips>
+    <rating>Fester Favorit.</rating>
+  </recipe>
+  <recipe id="12">
+    <name>Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</name>
+    <persons>3–4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" />
+    <ingredients>
+      <item>800 g Kartoffeln</item>
+      <item>2 Paprika</item>
+      <item>2 Zwiebeln</item>
+      <item>250–300 g Cabanossi</item>
+      <item>2–3 EL Ajvar</item>
+      <item>2 EL Teriyaki-Sauce</item>
+      <item>100 ml Sahne oder Kochsahne</item>
+      <item>1 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln vorkochen und in Scheiben oder Würfel schneiden.</step>
+      <step nr="2">Paprika und Zwiebeln anbraten.</step>
+      <step nr="3">Cabanossi in Scheiben zugeben.</step>
+      <step nr="4">Kartoffeln mit in die Pfanne geben.</step>
+      <step nr="5">Ajvar, Teriyaki und Sahne verrühren.</step>
+      <step nr="6">Soße in die Pfanne geben.</step>
+      <step nr="7">Alles kurz einkochen lassen, bis es cremig wird.</step>
+      <step nr="8">Abschmecken und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15–20 Minuten</item>
+      <item>Pfannenzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Kartoffeln vorgekocht verwenden.</item>
+      <item>Teriyaki sparsam dosieren.</item>
+      <item>Herzhaft, cremig und sehr alltagstauglich.</item>
+    </tips>
+    <rating>Fester Favorit.</rating>
+  </recipe>
+  <recipe id="13">
+    <name>Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</name>
+    <persons>3–4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" />
+    <ingredients>
+      <item>600 g Hähnchen</item>
+      <item>1 Dose stückige Tomaten</item>
+      <item>1 Dose Kokosmilch</item>
+      <item>500 g TK-Wokgemüse</item>
+      <item>1 TL Garam Masala</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1/2 TL Kreuzkümmel</item>
+      <item>2–3 EL Naturjoghurt</item>
+      <item>1 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Pide oder Naan als Beilage</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in Stücke schneiden und nur kurz anrösten.</step>
+      <step nr="2">Nicht komplett trocken braten.</step>
+      <step nr="3">Stückige Tomaten und Kokosmilch zugeben.</step>
+      <step nr="4">Gewürze einrühren.</step>
+      <step nr="5">TK-Wokgemüse zugeben.</step>
+      <step nr="6">Alles 5–7 Minuten sanft ziehen lassen.</step>
+      <step nr="7">Naturjoghurt erst ganz am Ende unterziehen.</step>
+      <step nr="8">Danach nicht mehr stark kochen.</step>
+      <step nr="9">Mit Pide oder Naan servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Garzeit: 15 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Joghurt nie zu früh einrühren.</item>
+      <item>Hähnchen nur anrösten, nicht austrocknen.</item>
+      <item>Sehr gutes schnelles Abendgericht.</item>
+    </tips>
+    <rating>Fest gespeichert, sehr beliebt.</rating>
+  </recipe>
+  <recipe id="14">
+    <name>Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</name>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" />
+    <ingredients>
+      <item>4 Hähnchenschenkel</item>
+      <item>2 lila Süßkartoffeln</item>
+      <item>2 Paprika</item>
+      <item>2 Möhren</item>
+      <item>1 Zwiebel</item>
+      <item>1 Zucchini</item>
+      <item>2 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver</item>
+      <item>optional: Knoblauch und Rosmarin</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse und Süßkartoffeln in grobe Stücke schneiden.</step>
+      <step nr="2">Hähnchenschenkel würzen.</step>
+      <step nr="3">Alles auf ein Blech oder in eine große Ofenform geben.</step>
+      <step nr="4">Mit Öl und Gewürzen vermengen.</step>
+      <step nr="5">Bei 190–200 °C ca. 45–50 Minuten garen.</step>
+      <step nr="6">Hähnchen am Ende prüfen, bis die Haut schön gebräunt ist.</step>
+      <step nr="7">Direkt heiß servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Ofenzeit: 45–50 Minuten</item>
+      <item>Gesamt: ca. 60–65 Minuten</item>
+    </timing>
+    <tips>
+      <item>Gemüse nicht zu klein schneiden.</item>
+      <item>Hähnchen auf das Gemüse legen, dann zieht Geschmack ins Blech.</item>
+      <item>Sehr unkompliziert für abends.</item>
+    </tips>
+    <rating>Gut angekommen.</rating>
+  </recipe>
+  <recipe id="15">
+    <name>Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</name>
+    <persons>2–3 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" />
+    <ingredients>
+      <item>2 Hähnchenschenkel</item>
+      <item>800 g Kartoffeln (mit Schale, in Spalten)</item>
+      <item>2 große Zwiebeln</item>
+      <item>3 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver edelsüß</item>
+      <item>Majoran oder Thymian</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Ofen auf 200 °C Umluft vorheizen.</step>
+      <step nr="2">Hähnchenschenkel mit Salz, Pfeffer und Paprika würzen.</step>
+      <step nr="3">Kartoffeln und Zwiebeln schneiden und in eine Auflaufform legen.</step>
+      <step nr="4">Öl darüber geben und alles mischen.</step>
+      <step nr="5">Hähnchenschenkel oben drauf legen.</step>
+      <step nr="6">45 Minuten im Ofen garen.</step>
+      <step nr="7">Nach 30 Minuten Kartoffeln wenden und Bratensaft über das Fleisch geben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Ofen: 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Petersilie bestreuen.</item>
+      <item>Etwas Zitronensaft am Ende gibt Frische.</item>
+    </tips>
+    <rating>Sehr gut, einfach, schwiegermuttertauglich.</rating>
+  </recipe>
+  <recipe id="16">
+    <name>Kartoffelauflauf mit Schmand, Käse &amp; Speck</name>
+    <persons>3 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" />
+    <ingredients>
+      <item>1,1–1,2 kg Kartoffeln</item>
+      <item>2 Zwiebeln</item>
+      <item>150 g Speckwürfel</item>
+      <item>200 g Schmand</item>
+      <item>100 ml Sahne oder Milch</item>
+      <item>150–200 g geriebener Käse (Gouda/Emmentaler)</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Muskat</item>
+      <item>Butter für die Form</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Ofen auf 180 °C Umluft vorheizen.</step>
+      <step nr="2">Kartoffeln in dünne Scheiben schneiden.</step>
+      <step nr="3">Zwiebeln in Ringe schneiden.</step>
+      <step nr="4">Schmand, Sahne, Salz, Pfeffer und Muskat verrühren.</step>
+      <step nr="5">Kartoffeln schichten, dann Zwiebeln und Speck, wieder Kartoffeln.</step>
+      <step nr="6">Schmandmischung darüber gießen.</step>
+      <step nr="7">Käse oben drauf.</step>
+      <step nr="8">35–40 Minuten backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Ofen: 40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Knoblauch in die Sahnemischung geben.</item>
+      <item>Petersilie oben drauf.</item>
+    </tips>
+    <rating>Sehr cremig, sehr gut.</rating>
+  </recipe>
+  <recipe id="17">
+    <name>Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</name>
+    <persons>3–4 Personen</persons>
+    <category>Feiertagsessen / Ofengerichte</category>
+    <image src="images/rezeptbild_01.png" alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" />
+    <ingredients>
+      <item>6 Rinderrouladen</item>
+      <item>Salz, Pfeffer</item>
+      <item>Senf</item>
+      <item>Speckstreifen oder Speckwürfel</item>
+      <item>Gewürzgurken in Streifen</item>
+      <item>Zwiebeln in Streifen</item>
+      <item>1 Möhre</item>
+      <item>1 Stück Sellerie</item>
+      <item>1 EL Tomatenmark</item>
+      <item>500–700 ml Rinderfond</item>
+      <item>150 ml Rotwein</item>
+      <item>1 EL Butter</item>
+      <item>Mehl oder Stärke zum Binden</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Rouladen salzen, pfeffern, mit Senf bestreichen.</step>
+      <step nr="2">Speck, Gurke und Zwiebel drauf, einrollen, feststecken.</step>
+      <step nr="3">Rouladen scharf anbraten, herausnehmen.</step>
+      <step nr="4">Zwiebel, Möhre, Sellerie anrösten.</step>
+      <step nr="5">Tomatenmark mitrösten.</step>
+      <step nr="6">Mit Rotwein ablöschen, einkochen lassen.</step>
+      <step nr="7">Rinderfond dazu.</step>
+      <step nr="8">Rouladen wieder rein.</step>
+      <step nr="9">1,5–2 Stunden schmoren.</step>
+      <step nr="10">Soße sieben, andicken, Butter einrühren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Schmoren: 2 Stunden</item>
+    </timing>
+    <tips>
+      <item>Ohne Sahne bleibt die Soße ehrlich und aromatisch.</item>
+      <item>Farbe kommt von Tomatenmark und Röstaromen.</item>
+    </tips>
+    <rating>Festessen, sehr gut.</rating>
+  </recipe>
+  <recipe id="18">
+    <name>Kartoffelsuppe mit Mettenden</name>
+    <persons>4–6 Personen</persons>
+    <category>Suppen</category>
+    <image src="images/rezeptbild_17.png" alt="Kartoffelsuppe mit Mettenden" />
+    <ingredients>
+      <item>800 g Kartoffeln</item>
+      <item>2 Möhren</item>
+      <item>1 Zwiebel</item>
+      <item>1 Lauch oder Sellerie</item>
+      <item>1 l Gemüsebrühe</item>
+      <item>2–3 Mettenden oder Wiener Würstchen</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Majoran</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse schneiden.</step>
+      <step nr="2">In Brühe ca. 25 Minuten kochen.</step>
+      <step nr="3">Teilweise pürieren.</step>
+      <step nr="4">Wurst dazugeben.</step>
+      <step nr="5">Mit Salz, Pfeffer und Majoran abschmecken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Kochen: 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Am nächsten Tag schmeckt die Suppe noch besser.</item>
+    </tips>
+    <rating>Klassiker, gut.</rating>
+  </recipe>
+</cookbook>
