@@ -190,6 +190,6 @@ ${clone.outerHTML}
 })();
 """
 
-path = Path('/mnt/data/kochbuch_share_pdf_patch_v2.js')
+path = Path('/mnt/data/kochbuch_share_pdf_patch.js')
 path.write_text(js, encoding='utf-8')
 print(path)
