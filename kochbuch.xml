@@ -1,7 +1,7 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.2" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>51</recipeCount>
+    <recipeCount>76</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
   </meta>
   <recipe id="1">
@@ -3961,6 +3961,1758 @@
         <item>Nie dodawaj żadnych stałych składników.</item>
       </tips>
       <rating>9 / 10 – tropikalny, gładki i bardzo imprezowy.</rating>
+    </translation>
+  </recipe>
+
+
+  <recipe id="52">
+    <name>Senfeier mit Kartoffeln</name>
+    <persons>2–3 Personen</persons>
+    <category>Eiergerichte / Hausmannskost</category>
+    <image src="images/rezeptbild_52.png" alt="Senfeier mit Kartoffeln" />
+    <ingredients>
+      <item>6 Eier</item>
+      <item>500 ml Milch</item>
+      <item>2 EL Butter</item>
+      <item>2 EL Mehl</item>
+      <item>2–3 EL mittelscharfer Senf</item>
+      <item>1 TL Zucker</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: etwas Muskatnuss</item>
+      <item>optional: Petersilie</item>
+      <item>Beilage: Kartoffeln oder Brot</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Eier in kaltes Wasser legen, aufkochen und ab dem Kochpunkt 9–10 Minuten hart kochen.</step>
+      <step nr="2">Eier kalt abschrecken und pellen.</step>
+      <step nr="3">Butter in einem Topf schmelzen, Mehl einrühren und etwa 1 Minute anschwitzen.</step>
+      <step nr="4">Milch nach und nach unter Rühren zugeben, damit eine glatte Sauce entsteht.</step>
+      <step nr="5">Sauce kurz köcheln lassen, bis sie leicht eindickt.</step>
+      <step nr="6">Senf, Zucker, Salz, Pfeffer und optional Muskat einrühren und abschmecken.</step>
+      <step nr="7">Eier halbieren oder ganz in die Sauce geben.</step>
+      <step nr="8">Mit Petersilie bestreuen und mit Kartoffeln oder Brot servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Kochzeit Eier: 10 Minuten</item>
+      <item>Sauce: 10 Minuten</item>
+      <item>Gesamt: ca. 20–25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Für mehr Tiefe einen Teil des Senfs durch groben Senf ersetzen.</item>
+      <item>Ein kleiner Spritzer Essig bringt mehr Frische in die Sauce.</item>
+      <item>Klassisch passen Salzkartoffeln am besten dazu.</item>
+    </tips>
+    <rating>8,5 / 10 – klassisch, einfach und sehr angenehm.</rating>
+    <translation lang="pl">
+      <name>Jajka w sosie musztardowym z ziemniakami</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania jajeczne / kuchnia domowa</category>
+      <ingredients>
+        <item>6 jajek</item>
+        <item>500 ml mleka</item>
+        <item>2 EL masła</item>
+        <item>2 EL mąki</item>
+        <item>2–3 EL musztardy średnio ostrej</item>
+        <item>1 TL cukru</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: odrobina gałki muszkatołowej</item>
+        <item>opcjonalnie: pietruszka</item>
+        <item>Dodatek: ziemniaki lub pieczywo</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Jajka włożyć do zimnej wody, zagotować i od momentu wrzenia gotować 9–10 minut na twardo.</step>
+        <step nr="2">Przelać zimną wodą i obrać.</step>
+        <step nr="3">Masło rozpuścić w garnku, dodać mąkę i mieszać około 1 minutę.</step>
+        <step nr="4">Stopniowo dolewać mleko, cały czas mieszając, aby powstał gładki sos.</step>
+        <step nr="5">Krótko gotować na małym ogniu, aż sos lekko zgęstnieje.</step>
+        <step nr="6">Dodać musztardę, cukier, sól, pieprz i opcjonalnie gałkę muszkatołową.</step>
+        <step nr="7">Jajka przekroić lub zostawić w całości i włożyć do sosu.</step>
+        <step nr="8">Posypać pietruszką i podać z ziemniakami lub pieczywem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>gotowanie jajek: 10 min</item>
+        <item>sos: 10 min</item>
+        <item>łącznie: ok. 20–25 min</item>
+      </timing>
+      <tips>
+        <item>Część musztardy można zastąpić musztardą ziarnistą.</item>
+        <item>Odrobina octu doda sosowi świeżości.</item>
+        <item>Najlepiej smakują z klasycznymi ziemniakami z wody.</item>
+      </tips>
+      <rating>8,5 / 10 – klasyczne, proste i bardzo przyjemne.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="53">
+    <name>Koreanisches Bulgogi vom Grill</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Fleischgerichte</category>
+    <image src="images/rezeptbild_53.png" alt="Koreanisches Bulgogi vom Grill" />
+    <ingredients>
+      <item>700 g Rinderhüfte oder Entrecôte, sehr dünn geschnitten</item>
+      <item>4 EL Sojasauce</item>
+      <item>2 EL brauner Zucker</item>
+      <item>1 EL Sesamöl</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 kleines Stück Ingwer</item>
+      <item>1 kleine Zwiebel</item>
+      <item>1 EL Reisessig oder Apfelessig</item>
+      <item>1 TL Chiliflocken oder Gochugaru</item>
+      <item>1 TL Sesam</item>
+      <item>2 Frühlingszwiebeln</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Knoblauch, Ingwer und Zwiebel fein reiben oder sehr fein hacken.</step>
+      <step nr="2">Mit Sojasauce, Zucker, Sesamöl, Essig und Chili zu einer Marinade verrühren.</step>
+      <step nr="3">Fleisch mit der Marinade mischen und mindestens 30 Minuten ziehen lassen.</step>
+      <step nr="4">Grill oder Plancha stark vorheizen.</step>
+      <step nr="5">Das Fleisch portionsweise sehr kurz und heiß grillen.</step>
+      <step nr="6">Mit Sesam und Frühlingszwiebeln bestreuen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Marinieren: 30–60 Minuten</item>
+      <item>Grillzeit: 5–8 Minuten</item>
+      <item>Gesamt: ca. 50–80 Minuten</item>
+    </timing>
+    <tips>
+      <item>Fleisch wirklich dünn schneiden, dann wird es zart und schnell fertig.</item>
+      <item>Sehr gut mit Salatblättern, Reis oder Fladenbrot servieren.</item>
+      <item>Nicht zu viel Fleisch auf einmal grillen, sonst kocht es eher als zu rösten.</item>
+    </tips>
+    <rating>9 / 10 – würzig, schnell und sehr grilltauglich.</rating>
+    <translation lang="pl">
+      <name>Koreańskie bulgogi z grilla</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dania mięsne</category>
+      <ingredients>
+        <item>700 g bardzo cienko pokrojonej wołowiny</item>
+        <item>4 EL sosu sojowego</item>
+        <item>2 EL brązowego cukru</item>
+        <item>1 EL oleju sezamowego</item>
+        <item>2 ząbki czosnku</item>
+        <item>mały kawałek imbiru</item>
+        <item>1 mała cebula</item>
+        <item>1 EL octu ryżowego lub jabłkowego</item>
+        <item>1 TL płatków chili lub gochugaru</item>
+        <item>1 TL sezamu</item>
+        <item>2 dymki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Czosnek, imbir i cebulę drobno zetrzeć lub bardzo drobno posiekać.</step>
+        <step nr="2">Wymieszać z sosem sojowym, cukrem, olejem sezamowym, octem i chili.</step>
+        <step nr="3">Połączyć mięso z marynatą i odstawić na minimum 30 minut.</step>
+        <step nr="4">Mocno rozgrzać grill lub płytę.</step>
+        <step nr="5">Grillować mięso partiami bardzo krótko i na dużym ogniu.</step>
+        <step nr="6">Posypać sezamem i dymką, podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>marynowanie: 30–60 min</item>
+        <item>grillowanie: 5–8 min</item>
+        <item>łącznie: ok. 50–80 min</item>
+      </timing>
+      <tips>
+        <item>Mięso musi być bardzo cienko pokrojone.</item>
+        <item>Bardzo dobre z liśćmi sałaty, ryżem albo pieczywem.</item>
+        <item>Nie grilluj wszystkiego naraz.</item>
+      </tips>
+      <rating>9 / 10 – wyraziste, szybkie i świetne na grill.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="54">
+    <name>Spare Ribs mit Espresso-Rub</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Fleischgerichte</category>
+    <image src="images/rezeptbild_54.png" alt="Spare Ribs mit Espresso-Rub" />
+    <ingredients>
+      <item>2 Leitern Spare Ribs</item>
+      <item>2 TL Espresso- oder Kaffeepulver fein</item>
+      <item>2 EL Paprikapulver edelsüß</item>
+      <item>1 EL brauner Zucker</item>
+      <item>1 TL Salz</item>
+      <item>1 TL Pfeffer</item>
+      <item>1 TL Knoblauchpulver</item>
+      <item>1 TL Zwiebelpulver</item>
+      <item>1/2 TL Chili</item>
+      <item>2 EL Öl oder Senf als Binder</item>
+      <item>optional: BBQ-Sauce zum Finish</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Silberhaut von den Ribs entfernen.</step>
+      <step nr="2">Alle Gewürze zu einem Rub mischen.</step>
+      <step nr="3">Ribs leicht mit Öl oder Senf einreiben und mit dem Rub würzen.</step>
+      <step nr="4">Im Ofen oder Smoker bei niedriger Temperatur vorgaren, bis sie weich werden.</step>
+      <step nr="5">Zum Schluss auf dem Grill Farbe geben und optional mit BBQ-Sauce glasieren.</step>
+      <step nr="6">Kurz ruhen lassen und in Rippen schneiden.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 20 Minuten</item>
+      <item>Vorgaren: 2,5–3 Stunden</item>
+      <item>Grill-Finish: 10–15 Minuten</item>
+      <item>Gesamt: ca. 3–3,5 Stunden</item>
+    </timing>
+    <tips>
+      <item>Das Kaffeepulver nur fein dosieren – es soll Tiefe geben, nicht dominant sein.</item>
+      <item>Zum Ende aufpassen, damit Zucker und Sauce nicht verbrennen.</item>
+      <item>Ideal mit Coleslaw und Brot.</item>
+    </tips>
+    <rating>9 / 10 – tief, würzig und perfekt für BBQ-Fans.</rating>
+    <translation lang="pl">
+      <name>Żeberka z rubem espresso</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dania mięsne</category>
+      <ingredients>
+        <item>2 paski żeberek wieprzowych</item>
+        <item>2 TL drobno mielonego espresso lub kawy</item>
+        <item>2 EL słodkiej papryki</item>
+        <item>1 EL brązowego cukru</item>
+        <item>1 TL soli</item>
+        <item>1 TL pieprzu</item>
+        <item>1 TL czosnku w proszku</item>
+        <item>1 TL cebuli w proszku</item>
+        <item>1/2 TL chili</item>
+        <item>2 EL oleju lub musztardy</item>
+        <item>opcjonalnie: sos BBQ do wykończenia</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Usunąć błonę z żeberek.</step>
+        <step nr="2">Wymieszać wszystkie przyprawy.</step>
+        <step nr="3">Natrzeć żeberka olejem lub musztardą i obsypać rubem.</step>
+        <step nr="4">Wstępnie piec lub wędzić w niskiej temperaturze, aż zmiękną.</step>
+        <step nr="5">Na końcu zgrillować dla koloru i opcjonalnie posmarować sosem BBQ.</step>
+        <step nr="6">Krótko odstawić, potem pokroić.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 20 min</item>
+        <item>wstępne pieczenie: 2,5–3 godziny</item>
+        <item>grill finish: 10–15 min</item>
+        <item>łącznie: ok. 3–3,5 godziny</item>
+      </timing>
+      <tips>
+        <item>Kawę dawkuj delikatnie – ma dawać głębię, nie dominować.</item>
+        <item>Pod koniec uważaj, aby cukier i sos się nie przypaliły.</item>
+        <item>Świetne z colesławem i pieczywem.</item>
+      </tips>
+      <rating>9 / 10 – głębokie, wyraziste i idealne dla fanów BBQ.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="55">
+    <name>Gegrillter Halloumi mit Kräutern und Olivenöl</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_55.png" alt="Gegrillter Halloumi" />
+    <ingredients>
+      <item>250 g Halloumi</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Zitronensaft</item>
+      <item>1 kleine Knoblauchzehe</item>
+      <item>frische Kräuter nach Wahl</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Halloumi in Scheiben schneiden.</step>
+      <step nr="2">Olivenöl, Zitronensaft, Knoblauch und Kräuter verrühren.</step>
+      <step nr="3">Halloumi kurz damit bestreichen.</step>
+      <step nr="4">Auf dem heißen Grill von beiden Seiten kurz grillen, bis schöne Streifen entstehen.</step>
+      <step nr="5">Direkt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Grillzeit: 4–6 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu lange grillen, sonst wird Halloumi zäh.</item>
+      <item>Passt sehr gut zu Salat, Brot oder Gemüsespießen.</item>
+      <item>Salz ist meist nicht nötig.</item>
+    </tips>
+    <rating>8,5 / 10 – schnell, unkompliziert und richtig gut vom Grill.</rating>
+    <translation lang="pl">
+      <name>Grillowany halloumi z ziołami i oliwą</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>250 g halloumi</item>
+        <item>2 EL oliwy</item>
+        <item>1 TL soku z cytryny</item>
+        <item>1 mały ząbek czosnku</item>
+        <item>świeże zioła</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić halloumi w plastry.</step>
+        <step nr="2">Wymieszać oliwę, sok z cytryny, czosnek i zioła.</step>
+        <step nr="3">Lekko posmarować ser.</step>
+        <step nr="4">Grillować krótko z obu stron na mocno rozgrzanym grillu.</step>
+        <step nr="5">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>grillowanie: 4–6 min</item>
+        <item>łącznie: ok. 15 min</item>
+      </timing>
+      <tips>
+        <item>Nie grilluj za długo, bo ser stanie się gumowy.</item>
+        <item>Świetnie pasuje do sałatek, pieczywa i warzyw.</item>
+        <item>Sól zwykle nie jest potrzebna.</item>
+      </tips>
+      <rating>8,5 / 10 – szybkie, proste i bardzo dobre z grilla.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="56">
+    <name>Gemüsespieße vom Grill</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_56.png" alt="Gemüsespieße vom Grill" />
+    <ingredients>
+      <item>2 Paprika</item>
+      <item>1 Zucchini</item>
+      <item>250 g Champignons</item>
+      <item>1 rote Zwiebel</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 Knoblauchzehe</item>
+      <item>1 EL Zitronensaft</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: Kräuter</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse in grobe, gleichmäßige Stücke schneiden.</step>
+      <step nr="2">Olivenöl, Knoblauch, Zitronensaft, Salz und Pfeffer zu einer Marinade verrühren.</step>
+      <step nr="3">Gemüse damit mischen und auf Spieße stecken.</step>
+      <step nr="4">Auf dem Grill rundherum grillen, bis das Gemüse Farbe hat, aber noch Biss besitzt.</step>
+      <step nr="5">Zum Schluss optional mit frischen Kräutern bestreuen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Marinieren: 10–15 Minuten</item>
+      <item>Grillzeit: 10–12 Minuten</item>
+      <item>Gesamt: ca. 35–40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Champignons eher größer lassen, damit sie nicht austrocknen.</item>
+      <item>Holzspieße vorher wässern.</item>
+      <item>Sehr gute Beilage zu Fleisch, Halloumi oder Brot.</item>
+    </tips>
+    <rating>8,5 / 10 – bunte Standardbeilage, die immer passt.</rating>
+    <translation lang="pl">
+      <name>Warzywne szaszłyki z grilla</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>2 papryki</item>
+        <item>1 cukinia</item>
+        <item>250 g pieczarek</item>
+        <item>1 czerwona cebula</item>
+        <item>3 EL oliwy</item>
+        <item>1 ząbek czosnku</item>
+        <item>1 EL soku z cytryny</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: zioła</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić warzywa na większe, równe kawałki.</step>
+        <step nr="2">Wymieszać oliwę, czosnek, sok z cytryny, sól i pieprz.</step>
+        <step nr="3">Połączyć warzywa z marynatą i nabić na patyczki.</step>
+        <step nr="4">Grillować ze wszystkich stron, aż nabiorą koloru, ale zostaną jędrne.</step>
+        <step nr="5">Na końcu posypać ziołami.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>marynowanie: 10–15 min</item>
+        <item>grillowanie: 10–12 min</item>
+        <item>łącznie: ok. 35–40 min</item>
+      </timing>
+      <tips>
+        <item>Pieczarki zostaw nieco większe.</item>
+        <item>Drewniane patyczki wcześniej namocz.</item>
+        <item>Świetny dodatek do mięsa, halloumi i pieczywa.</item>
+      </tips>
+      <rating>8,5 / 10 – kolorowy klasyk, który zawsze pasuje.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="57">
+    <name>Gefüllte Portobello-Pilze vom Grill</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_57.png" alt="Gefüllte Portobello-Pilze" />
+    <ingredients>
+      <item>4 große Portobello-Pilze</item>
+      <item>150 g Frischkäse oder weicher Käse</item>
+      <item>2 kleine Tomaten</item>
+      <item>1 Knoblauchzehe</item>
+      <item>1 EL Olivenöl</item>
+      <item>frische Kräuter</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Pilze putzen und Stiele entfernen.</step>
+      <step nr="2">Tomaten klein würfeln und mit Käse, Knoblauch, Kräutern und Olivenöl mischen.</step>
+      <step nr="3">Mit Salz und Pfeffer abschmecken.</step>
+      <step nr="4">Pilze füllen und bei indirekter Hitze grillen, bis sie weich sind und die Füllung heiß ist.</step>
+      <step nr="5">Direkt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Grillzeit: 10–15 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu heiß grillen, damit die Füllung nicht austritt.</item>
+      <item>Auch gut als vegetarisches Hauptgericht mit Salat.</item>
+      <item>Mit etwas geriebenem Hartkäse wird es kräftiger.</item>
+    </tips>
+    <rating>8,5 / 10 – herzhaft und vom Grill überraschend stark.</rating>
+    <translation lang="pl">
+      <name>Faszerowane pieczarki portobello z grilla</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>4 duże pieczarki portobello</item>
+        <item>150 g serka kremowego lub miękkiego sera</item>
+        <item>2 małe pomidory</item>
+        <item>1 ząbek czosnku</item>
+        <item>1 EL oliwy</item>
+        <item>świeże zioła</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Oczyścić grzyby i usunąć trzonki.</step>
+        <step nr="2">Pomidory drobno pokroić i wymieszać z serem, czosnkiem, ziołami i oliwą.</step>
+        <step nr="3">Doprawić solą i pieprzem.</step>
+        <step nr="4">Napełnić grzyby farszem i grillować pośrednio, aż zmiękną.</step>
+        <step nr="5">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>grillowanie: 10–15 min</item>
+        <item>łącznie: ok. 30 min</item>
+      </timing>
+      <tips>
+        <item>Nie grilluj zbyt agresywnie.</item>
+        <item>Dobre też jako wegetariańskie danie główne z sałatką.</item>
+        <item>Z odrobiną twardego sera smak jest mocniejszy.</item>
+      </tips>
+      <rating>8,5 / 10 – sycące i zaskakująco dobre z grilla.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="58">
+    <name>Grüner Spargel vom Grill mit Zitronenbutter</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_58.png" alt="Grüner Spargel vom Grill mit Zitronenbutter" />
+    <ingredients>
+      <item>500 g grüner Spargel</item>
+      <item>2 EL Olivenöl</item>
+      <item>40 g Butter</item>
+      <item>1/2 Zitrone</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Spargel waschen und die holzigen Enden abschneiden.</step>
+      <step nr="2">Mit etwas Olivenöl, Salz und Pfeffer mischen.</step>
+      <step nr="3">Auf dem Grill kurz grillen, bis er leichte Röstaromen hat, aber noch Biss besitzt.</step>
+      <step nr="4">Butter schmelzen und mit Zitronensaft verrühren.</step>
+      <step nr="5">Spargel damit beträufeln und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Grillzeit: 6–8 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu weich grillen.</item>
+      <item>Sehr gut zu Steak, Halloumi oder Fischersatz.</item>
+      <item>Etwas Zitronenabrieb macht die Butter noch frischer.</item>
+    </tips>
+    <rating>8,5 / 10 – leicht, frisch und grillfreundlich.</rating>
+    <translation lang="pl">
+      <name>Zielone szparagi z grilla z masłem cytrynowym</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>500 g zielonych szparagów</item>
+        <item>2 EL oliwy</item>
+        <item>40 g masła</item>
+        <item>1/2 cytryny</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Umyć szparagi i odłamać twarde końcówki.</step>
+        <step nr="2">Wymieszać z oliwą, solą i pieprzem.</step>
+        <step nr="3">Krótko grillować, aż pojawi się lekki aromat pieczenia, ale warzywo nadal będzie jędrne.</step>
+        <step nr="4">Roztopić masło i wymieszać z sokiem z cytryny.</step>
+        <step nr="5">Polać szparagi i podać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>grillowanie: 6–8 min</item>
+        <item>łącznie: ok. 15 min</item>
+      </timing>
+      <tips>
+        <item>Nie grilluj zbyt długo.</item>
+        <item>Świetne do steka, halloumi lub jako lekki dodatek.</item>
+        <item>Skórka z cytryny dodatkowo odświeża smak.</item>
+      </tips>
+      <rating>8,5 / 10 – lekkie, świeże i bardzo dobre na grill.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="59">
+    <name>Süßkartoffel-Pommes vom Grill</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_59.png" alt="Süßkartoffel-Pommes vom Grill" />
+    <ingredients>
+      <item>2 große Süßkartoffeln</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Paprikapulver</item>
+      <item>Meersalz</item>
+      <item>Pfeffer</item>
+      <item>optional: etwas Speisestärke für mehr Kruste</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Süßkartoffeln schälen und in Pommes schneiden.</step>
+      <step nr="2">Mit Öl, Paprika, Salz, Pfeffer und optional etwas Stärke mischen.</step>
+      <step nr="3">In einer Grillschale oder auf einer Plancha garen und dabei mehrmals wenden.</step>
+      <step nr="4">Am Ende etwas mehr Farbe geben und direkt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Grillzeit: 15–20 Minuten</item>
+      <item>Gesamt: ca. 30–35 Minuten</item>
+    </timing>
+    <tips>
+      <item>In der Grillschale gelingen sie kontrollierter als direkt auf dem Rost.</item>
+      <item>Stärke hilft etwas bei der Oberfläche.</item>
+      <item>Sehr gut mit Aioli, Sour Cream oder BBQ-Dip.</item>
+    </tips>
+    <rating>8 / 10 – süß, würzig und als Beilage mal etwas anderes.</rating>
+    <translation lang="pl">
+      <name>Frytki z batatów z grilla</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>2 duże bataty</item>
+        <item>2 EL oliwy</item>
+        <item>1 TL słodkiej papryki</item>
+        <item>sól morska</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: trochę skrobi dla lepszej skórki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać bataty i pokroić na frytki.</step>
+        <step nr="2">Wymieszać z oliwą, papryką, solą, pieprzem i opcjonalnie skrobią.</step>
+        <step nr="3">Grillować w tacce lub na płycie, kilka razy obracając.</step>
+        <step nr="4">Na końcu mocniej zrumienić i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>grillowanie: 15–20 min</item>
+        <item>łącznie: ok. 30–35 min</item>
+      </timing>
+      <tips>
+        <item>Na tacce grillowej wychodzą pewniej niż bezpośrednio na ruszcie.</item>
+        <item>Skrobia lekko poprawia powierzchnię.</item>
+        <item>Bardzo dobre z aioli, sour cream albo dipem BBQ.</item>
+      </tips>
+      <rating>8 / 10 – słodkie, wyraziste i fajne jako coś innego.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="60">
+    <name>Melonen-Feta-Salat mit Minze</name>
+    <persons>3–4 Personen</persons>
+    <category>Beilagen / Salate</category>
+    <image src="images/rezeptbild_60.png" alt="Melonen-Feta-Salat mit Minze" />
+    <ingredients>
+      <item>600 g Wassermelone</item>
+      <item>150 g Feta</item>
+      <item>1 kleine Hand Minzblätter</item>
+      <item>1 Limette</item>
+      <item>2 EL Olivenöl</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Wassermelone in mundgerechte Würfel schneiden.</step>
+      <step nr="2">Feta darüberbröseln.</step>
+      <step nr="3">Minze grob zupfen.</step>
+      <step nr="4">Limettensaft und Olivenöl verrühren und über den Salat geben.</step>
+      <step nr="5">Mit Pfeffer abschließen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10–15 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Gut gekühlte Melone verwenden.</item>
+      <item>Erst kurz vor dem Servieren mischen.</item>
+      <item>Passt stark zu Grillfleisch, Halloumi und heißen Tagen.</item>
+    </tips>
+    <rating>8,5 / 10 – frisch, salzig-süß und ideal im Sommer.</rating>
+    <translation lang="pl">
+      <name>Sałatka z arbuza, fety i mięty</name>
+      <persons>3–4 osoby</persons>
+      <category>Dodatki / sałatki</category>
+      <ingredients>
+        <item>600 g arbuza</item>
+        <item>150 g fety</item>
+        <item>mała garść listków mięty</item>
+        <item>1 limonka</item>
+        <item>2 EL oliwy</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić arbuza w kostkę.</step>
+        <step nr="2">Pokruszyć na wierzch fetę.</step>
+        <step nr="3">Grubo porwać miętę.</step>
+        <step nr="4">Wymieszać sok z limonki i oliwę, a następnie polać sałatkę.</step>
+        <step nr="5">Doprawić pieprzem i podać od razu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10–15 min</item>
+        <item>łącznie: ok. 15 min</item>
+      </timing>
+      <tips>
+        <item>Użyj dobrze schłodzonego arbuza.</item>
+        <item>Wymieszaj dopiero tuż przed podaniem.</item>
+        <item>Świetnie pasuje do grillowanego mięsa, halloumi i gorących dni.</item>
+      </tips>
+      <rating>8,5 / 10 – świeża, słono-słodka i idealna latem.</rating>
+    </translation>
+  </recipe>
+
+
+  <recipe id="61">
+    <name>Shakshuka</name>
+    <persons>2–3 Personen</persons>
+    <category>Eiergerichte / Pfannengerichte</category>
+    <image src="images/rezeptbild_61.png" alt="Shakshuka" />
+    <ingredients>
+      <item>1 rote Paprika</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 Dose stückige Tomaten (400 g)</item>
+      <item>2 EL Tomatenmark</item>
+      <item>4 Eier</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1/2 TL Kreuzkümmel</item>
+      <item>1 Prise Chiliflocken, optional</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: 2 EL gehackte Petersilie</item>
+      <item>optional: Brot zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Paprika, Zwiebel und Knoblauch klein schneiden.</step>
+      <step nr="2">Olivenöl in einer großen Pfanne erhitzen und Zwiebel sowie Paprika 4–5 Minuten anbraten.</step>
+      <step nr="3">Knoblauch, Tomatenmark, Paprikapulver, Kreuzkümmel und optional Chiliflocken kurz mitrösten.</step>
+      <step nr="4">Stückige Tomaten zugeben, mit Salz und Pfeffer würzen und alles 10 Minuten leicht einkochen lassen.</step>
+      <step nr="5">Mit einem Löffel 4 kleine Mulden in die Soße drücken und die Eier hineinschlagen.</step>
+      <step nr="6">Pfanne abdecken und die Eier 5–7 Minuten stocken lassen, bis das Eiweiß fest ist.</step>
+      <step nr="7">Mit Petersilie bestreuen und direkt mit Brot servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Pfanne: 15–18 Minuten</item>
+      <item>Gesamt: ca. 25–30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Wer es würziger mag, gibt etwas Feta oder mehr Chili darüber.</item>
+      <item>Am besten mit frischem Brot servieren.</item>
+      <item>Die Soße lässt sich gut vorbereiten; Eier erst kurz vor dem Essen hineingeben.</item>
+    </tips>
+    <rating>9 / 10 – unkompliziert, würzig und ideal für den Alltag.</rating>
+    <translation lang="pl">
+      <name>Szakszuka</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania z jajek / dania z patelni</category>
+      <ingredients>
+        <item>1 czerwona papryka</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 puszka krojonych pomidorów (400 g)</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>4 jajka</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1/2 łyżeczki kminu rzymskiego</item>
+        <item>1 szczypta płatków chili, opcjonalnie</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: 2 łyżki posiekanej pietruszki</item>
+        <item>opcjonalnie: pieczywo do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Paprykę, cebulę i czosnek drobno pokroić.</step>
+        <step nr="2">Rozgrzać oliwę na dużej patelni i smażyć cebulę z papryką przez 4–5 minut.</step>
+        <step nr="3">Dodać czosnek, koncentrat pomidorowy, paprykę, kmin rzymski i opcjonalnie chili, a następnie krótko podsmażyć.</step>
+        <step nr="4">Dodać pomidory, doprawić solą i pieprzem i gotować około 10 minut, aż sos lekko zgęstnieje.</step>
+        <step nr="5">Łyżką zrobić w sosie 4 małe zagłębienia i wbić do nich jajka.</step>
+        <step nr="6">Przykryć patelnię i gotować 5–7 minut, aż białko się zetnie.</step>
+        <step nr="7">Posypać pietruszką i od razu podawać z pieczywem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>patelnia: 15–18 min</item>
+        <item>łącznie: ok. 25–30 min</item>
+      </timing>
+      <tips>
+        <item>Jeśli chcesz ostrzejszej wersji, dodaj więcej chili albo trochę fety.</item>
+        <item>Najlepiej smakuje ze świeżym pieczywem.</item>
+        <item>Sos można przygotować wcześniej, a jajka dodać tuż przed podaniem.</item>
+      </tips>
+      <rating>9 / 10 – proste, aromatyczne i bardzo dobre na co dzień.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="62">
+    <name>Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</name>
+    <persons>2–3 Personen</persons>
+    <category>Ofengerichte / Fleischgerichte</category>
+    <image src="images/rezeptbild_62.png" alt="Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln" />
+    <ingredients>
+      <item>2 große Hähnchenbrustfilets</item>
+      <item>150 g Frischkäse natur</item>
+      <item>1 kleine Knoblauchzehe, fein gerieben</item>
+      <item>1 EL gehackte Petersilie oder Schnittlauch</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1 EL Öl</item>
+      <item>800 g Kartoffeln</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Rosmarin oder italienische Kräuter</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: 50 g geriebener Käse zum Überbacken</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 200 °C Umluft vorheizen.</step>
+      <step nr="2">Kartoffeln waschen, in Spalten schneiden, mit Olivenöl, Rosmarin, Salz und Pfeffer mischen und auf ein Blech geben.</step>
+      <step nr="3">Hähnchenbrust seitlich tief einschneiden, sodass eine Tasche entsteht.</step>
+      <step nr="4">Frischkäse mit Knoblauch, Kräutern, etwas Salz und Pfeffer verrühren und in die Hähnchenbrüste füllen.</step>
+      <step nr="5">Hähnchen außen mit Öl und Paprikapulver einreiben und neben die Kartoffeln auf das Blech legen.</step>
+      <step nr="6">Alles 30–35 Minuten backen, bis die Kartoffeln goldbraun und das Hähnchen gar sind.</step>
+      <step nr="7">Optional in den letzten 5 Minuten etwas Käse über das Hähnchen geben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Backzeit: 30–35 Minuten</item>
+      <item>Gesamt: ca. 45–50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Dazu passt ein kleiner Salat oder Kräuterquark.</item>
+      <item>Wer mag, kann getrocknete Tomaten klein gehackt in die Frischkäsefüllung geben.</item>
+      <item>Hähnchen erst anschneiden, wenn es kurz geruht hat.</item>
+    </tips>
+    <rating>9 / 10 – alltagstauglich, saftig und sehr unkompliziert.</rating>
+    <translation lang="pl">
+      <name>Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania z piekarnika / dania mięsne</category>
+      <ingredients>
+        <item>2 duże filety z piersi kurczaka</item>
+        <item>150 g serka śmietankowego naturalnego</item>
+        <item>1 mały ząbek czosnku, drobno starty</item>
+        <item>1 łyżka posiekanej pietruszki lub szczypiorku</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1 łyżka oleju</item>
+        <item>800 g ziemniaków</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 łyżeczka rozmarynu lub ziół włoskich</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: 50 g tartego sera do zapieczenia</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Piekarnik nagrzać do 200 °C z termoobiegiem.</step>
+        <step nr="2">Ziemniaki umyć, pokroić w łódeczki, wymieszać z oliwą, rozmarynem, solą i pieprzem, a następnie wyłożyć na blachę.</step>
+        <step nr="3">W filetach z kurczaka naciąć z boku głęboką kieszeń.</step>
+        <step nr="4">Serek wymieszać z czosnkiem, ziołami, solą i pieprzem, a następnie napełnić nim filety.</step>
+        <step nr="5">Kurczaka z zewnątrz natrzeć olejem i papryką i ułożyć obok ziemniaków.</step>
+        <step nr="6">Piec 30–35 minut, aż ziemniaki będą rumiane, a kurczak upieczony.</step>
+        <step nr="7">Opcjonalnie w ostatnich 5 minutach posypać kurczaka serem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>pieczenie: 30–35 min</item>
+        <item>łącznie: ok. 45–50 min</item>
+      </timing>
+      <tips>
+        <item>Dobrze pasuje mała sałata albo twarożek z ziołami.</item>
+        <item>Do farszu można dodać drobno pokrojone suszone pomidory.</item>
+        <item>Po upieczeniu warto dać mięsu chwilę odpocząć przed krojeniem.</item>
+      </tips>
+      <rating>9 / 10 – proste, soczyste i bardzo wygodne na co dzień.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="63">
+    <name>Ratatouille mit Polenta</name>
+    <persons>3–4 Personen</persons>
+    <category>Pfannengerichte / Gemüsegerichte</category>
+    <image src="images/rezeptbild_63.png" alt="Ratatouille mit Polenta" />
+    <ingredients>
+      <item>1 Aubergine</item>
+      <item>1 Zucchini</item>
+      <item>2 Paprika</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 Dose stückige Tomaten (400 g)</item>
+      <item>1 EL Tomatenmark</item>
+      <item>250 g Polenta</item>
+      <item>750 ml Gemüsebrühe</item>
+      <item>30 g Butter</item>
+      <item>30 g geriebener Parmesan, optional</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 TL Kräuter der Provence</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Aubergine, Zucchini, Paprika, Zwiebel und Knoblauch in Stücke schneiden.</step>
+      <step nr="2">Olivenöl in einer großen Pfanne erhitzen und Zwiebel sowie Knoblauch kurz anschwitzen.</step>
+      <step nr="3">Aubergine, Paprika und Zucchini zugeben und 6–8 Minuten anbraten.</step>
+      <step nr="4">Tomatenmark, stückige Tomaten und Kräuter der Provence einrühren und alles 15 Minuten köcheln lassen.</step>
+      <step nr="5">Für die Polenta Brühe aufkochen, Polenta einrieseln lassen und unter Rühren 4–5 Minuten garen.</step>
+      <step nr="6">Butter und optional Parmesan unterrühren.</step>
+      <step nr="7">Ratatouille mit Salz und Pfeffer abschmecken und zusammen mit der Polenta servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Pfanne und Topf: 20 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Am nächsten Tag schmeckt Ratatouille fast noch besser.</item>
+      <item>Wer es kräftiger mag, gibt etwas Feta oder geriebenen Käse darüber.</item>
+      <item>Polenta direkt nach dem Kochen servieren, dann ist sie am cremigsten.</item>
+    </tips>
+    <rating>8,5 / 10 – sommerlich, sättigend und einfach gemacht.</rating>
+    <translation lang="pl">
+      <name>Ratatouille z polentą</name>
+      <persons>3–4 osoby</persons>
+      <category>Dania z patelni / dania warzywne</category>
+      <ingredients>
+        <item>1 bakłażan</item>
+        <item>1 cukinia</item>
+        <item>2 papryki</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 puszka krojonych pomidorów (400 g)</item>
+        <item>1 łyżka koncentratu pomidorowego</item>
+        <item>250 g polenty</item>
+        <item>750 ml bulionu warzywnego</item>
+        <item>30 g masła</item>
+        <item>30 g tartego parmezanu, opcjonalnie</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>1 łyżeczka ziół prowansalskich</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Bakłażana, cukinię, paprykę, cebulę i czosnek pokroić na kawałki.</step>
+        <step nr="2">Na dużej patelni rozgrzać oliwę i krótko zeszklić cebulę z czosnkiem.</step>
+        <step nr="3">Dodać bakłażana, paprykę i cukinię i smażyć 6–8 minut.</step>
+        <step nr="4">Wmieszać koncentrat pomidorowy, pomidory i zioła prowansalskie, a następnie dusić 15 minut.</step>
+        <step nr="5">Bulion zagotować, wsypać polentę cienkim strumieniem i gotować 4–5 minut, cały czas mieszając.</step>
+        <step nr="6">Dodać masło i opcjonalnie parmezan.</step>
+        <step nr="7">Doprawić ratatouille solą i pieprzem i podawać razem z polentą.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>patelnia i garnek: 20 min</item>
+        <item>łącznie: ok. 35 min</item>
+      </timing>
+      <tips>
+        <item>Następnego dnia ratatouille smakuje jeszcze lepiej.</item>
+        <item>Jeśli chcesz bardziej wyrazisty smak, dodaj fetę albo starty ser.</item>
+        <item>Polentę najlepiej podawać od razu po ugotowaniu, gdy jest najbardziej kremowa.</item>
+      </tips>
+      <rating>8,5 / 10 – letnie, sycące i bardzo proste.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="64">
+    <name>Marinierte Hähnchenspieße vom Grill</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Fleischgerichte</category>
+    <image src="images/rezeptbild_64.png" alt="Marinierte Hähnchenspieße vom Grill" />
+    <ingredients>
+      <item>700 g Hähnchenbrustfilet</item>
+      <item>2 Paprika</item>
+      <item>1 rote Zwiebel</item>
+      <item>3 EL Öl</item>
+      <item>2 EL Naturjoghurt</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1/2 TL Knoblauchpulver oder 1 kleine Knoblauchzehe</item>
+      <item>1 TL Zitronensaft</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Holz- oder Metallspieße</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in mundgerechte Stücke schneiden.</step>
+      <step nr="2">Öl, Joghurt, Paprikapulver, Knoblauch, Zitronensaft, Salz und Pfeffer zu einer Marinade verrühren.</step>
+      <step nr="3">Hähnchenstücke mindestens 30 Minuten in der Marinade ziehen lassen.</step>
+      <step nr="4">Paprika und Zwiebel in grobe Stücke schneiden.</step>
+      <step nr="5">Hähnchen, Paprika und Zwiebel abwechselnd auf Spieße stecken.</step>
+      <step nr="6">Spieße auf dem heißen Grill rundherum 10–12 Minuten grillen, bis das Fleisch gar ist.</step>
+      <step nr="7">Direkt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Marinieren: mindestens 30 Minuten</item>
+      <item>Grillzeit: 10–12 Minuten</item>
+      <item>Gesamt aktiv: ca. 30 Minuten plus Marinierzeit</item>
+    </timing>
+    <tips>
+      <item>Wer mag, kann zusätzlich Zucchini auf die Spieße stecken.</item>
+      <item>Holzspieße vorher in Wasser legen, damit sie nicht verbrennen.</item>
+      <item>Dazu passen Kräuterquark, Fladenbrot oder ein Salat.</item>
+    </tips>
+    <rating>9 / 10 – unkompliziert, saftig und perfekt für den Grillabend.</rating>
+    <translation lang="pl">
+      <name>Marynowane szaszłyki z kurczaka z grilla</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dania mięsne</category>
+      <ingredients>
+        <item>700 g filetu z piersi kurczaka</item>
+        <item>2 papryki</item>
+        <item>1 czerwona cebula</item>
+        <item>3 łyżki oleju</item>
+        <item>2 łyżki jogurtu naturalnego</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1/2 łyżeczki czosnku w proszku lub 1 mały ząbek czosnku</item>
+        <item>1 łyżeczka soku z cytryny</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>patyczki lub metalowe szpikulce</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Kurczaka pokroić na kawałki wielkości jednego kęsa.</step>
+        <step nr="2">Olej, jogurt, paprykę, czosnek, sok z cytryny, sól i pieprz wymieszać na marynatę.</step>
+        <step nr="3">Mięso marynować co najmniej 30 minut.</step>
+        <step nr="4">Paprykę i cebulę pokroić na większe kawałki.</step>
+        <step nr="5">Nabijać na szpikulce naprzemiennie kurczaka, paprykę i cebulę.</step>
+        <step nr="6">Grillować na mocno rozgrzanym grillu 10–12 minut, obracając ze wszystkich stron, aż mięso będzie gotowe.</step>
+        <step nr="7">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>marynowanie: co najmniej 30 min</item>
+        <item>grillowanie: 10–12 min</item>
+        <item>aktywnie: ok. 30 min plus marynowanie</item>
+      </timing>
+      <tips>
+        <item>Można dodać także cukinię.</item>
+        <item>Drewniane patyczki warto wcześniej namoczyć w wodzie.</item>
+        <item>Pasują do nich sos ziołowy, pieczywo lub sałatka.</item>
+      </tips>
+      <rating>9 / 10 – proste, soczyste i idealne na grill.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="65">
+    <name>Gegrillte Maiskolben mit Butter</name>
+    <persons>3–4 Personen</persons>
+    <category>Beilagen / Grill &amp; BBQ</category>
+    <image src="images/rezeptbild_65.png" alt="Gegrillte Maiskolben mit Butter" />
+    <ingredients>
+      <item>4 vorgegarte Maiskolben</item>
+      <item>50 g Butter</item>
+      <item>1 Prise Salz</item>
+      <item>1 Prise Pfeffer</item>
+      <item>optional: 1/2 TL Paprikapulver</item>
+      <item>optional: etwas gehackte Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Butter schmelzen und mit Salz, Pfeffer und optional Paprikapulver verrühren.</step>
+      <step nr="2">Maiskolben damit rundherum einpinseln.</step>
+      <step nr="3">Maiskolben auf den Grill legen und 8–10 Minuten grillen, dabei öfter wenden.</step>
+      <step nr="4">Zum Schluss nach Wunsch mit Petersilie bestreuen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Grillzeit: 8–10 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Kräuterbutter schmeckt es noch aromatischer.</item>
+      <item>Wer es würziger mag, gibt etwas Chili in die Butter.</item>
+      <item>Am besten heiß direkt vom Grill servieren.</item>
+    </tips>
+    <rating>8,5 / 10 – simpel, klassisch und immer beliebt.</rating>
+    <translation lang="pl">
+      <name>Grillowana kukurydza z masłem</name>
+      <persons>3–4 osoby</persons>
+      <category>Dodatki / Grill &amp; BBQ</category>
+      <ingredients>
+        <item>4 wstępnie ugotowane kolby kukurydzy</item>
+        <item>50 g masła</item>
+        <item>1 szczypta soli</item>
+        <item>1 szczypta pieprzu</item>
+        <item>opcjonalnie: 1/2 łyżeczki słodkiej papryki</item>
+        <item>opcjonalnie: trochę posiekanej pietruszki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Masło roztopić i wymieszać z solą, pieprzem i opcjonalnie papryką.</step>
+        <step nr="2">Posmarować dokładnie kolby kukurydzy.</step>
+        <step nr="3">Położyć kukurydzę na grillu i grillować 8–10 minut, często obracając.</step>
+        <step nr="4">Na koniec opcjonalnie posypać pietruszką i podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>grillowanie: 8–10 min</item>
+        <item>łącznie: ok. 15 min</item>
+      </timing>
+      <tips>
+        <item>Jeszcze lepiej smakuje z masłem ziołowym.</item>
+        <item>Dla ostrzejszej wersji można dodać odrobinę chili do masła.</item>
+        <item>Najlepiej podawać gorącą prosto z grilla.</item>
+      </tips>
+      <rating>8,5 / 10 – proste, klasyczne i zawsze dobrze się sprawdza.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="66">
+    <name>Halloumi vom Grill</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Vegetarisch</category>
+    <image src="images/rezeptbild_66.png" alt="Halloumi vom Grill" />
+    <ingredients>
+      <item>250 g Halloumi</item>
+      <item>1 EL Olivenöl</item>
+      <item>1 TL Zitronensaft</item>
+      <item>1 TL gehackte Kräuter, z. B. Oregano oder Petersilie</item>
+      <item>Pfeffer</item>
+      <item>optional: etwas Honig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Halloumi in dicke Scheiben schneiden.</step>
+      <step nr="2">Olivenöl, Zitronensaft und Kräuter verrühren.</step>
+      <step nr="3">Halloumi leicht damit bestreichen.</step>
+      <step nr="4">Auf den heißen Grill legen und pro Seite 2–3 Minuten grillen, bis schöne Grillstreifen entstehen.</step>
+      <step nr="5">Mit etwas Pfeffer und optional ganz wenig Honig servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Grillzeit: 4–6 Minuten</item>
+      <item>Gesamt: ca. 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Halloumi nicht zu dünn schneiden, sonst wird er trocken.</item>
+      <item>Passt sehr gut zu Salat, gegrilltem Gemüse oder Brot.</item>
+      <item>Am besten direkt nach dem Grillen essen.</item>
+    </tips>
+    <rating>8,5 / 10 – schnell, unkompliziert und ideal als vegetarische Grilloption.</rating>
+    <translation lang="pl">
+      <name>Halloumi z grilla</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / danie wegetariańskie</category>
+      <ingredients>
+        <item>250 g halloumi</item>
+        <item>1 łyżka oliwy z oliwek</item>
+        <item>1 łyżeczka soku z cytryny</item>
+        <item>1 łyżeczka posiekanych ziół, np. oregano lub pietruszki</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: odrobina miodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Halloumi pokroić na grubsze plastry.</step>
+        <step nr="2">Wymieszać oliwę, sok z cytryny i zioła.</step>
+        <step nr="3">Lekko posmarować serem przygotowaną mieszanką.</step>
+        <step nr="4">Położyć na mocno rozgrzanym grillu i grillować po 2–3 minuty z każdej strony, aż pojawią się wyraźne paski.</step>
+        <step nr="5">Podawać z pieprzem i opcjonalnie z odrobiną miodu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>grillowanie: 4–6 min</item>
+        <item>łącznie: ok. 10 min</item>
+      </timing>
+      <tips>
+        <item>Nie kroić sera zbyt cienko, żeby nie wysechł.</item>
+        <item>Świetnie pasuje do sałatek, grillowanych warzyw albo pieczywa.</item>
+        <item>Najlepiej jeść od razu po zdjęciu z grilla.</item>
+      </tips>
+      <rating>8,5 / 10 – szybka i bardzo wygodna opcja bez mięsa.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="67">
+    <name>Würzige Bratwürste vom Grill (klassisch und einfache Variante)</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Fleischgerichte</category>
+    <image src="images/rezeptbild_67.png" alt="Würzige Bratwürste vom Grill (klassisch und einfache Variante)" />
+    <ingredients>
+      <item>6 Bratwürste</item>
+      <item>1 EL Öl</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1/2 TL Senf</item>
+      <item>optional für die einfache Variante: 2 EL BBQ-Sauce</item>
+      <item>optional: 1 kleine Zwiebel in Ringen</item>
+      <item>optional: Baguette oder Brötchen zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Bratwürste mit einer Gabel mehrfach leicht einstechen.</step>
+      <step nr="2">Für die klassische Variante die Würste nur ganz dünn mit etwas Öl einreiben.</step>
+      <step nr="3">Für die würzige einfache Variante Öl, Paprikapulver und Senf verrühren und die Würste damit bestreichen.</step>
+      <step nr="4">Bratwürste auf den Grill legen und bei mittlerer Hitze 10–12 Minuten grillen, dabei regelmäßig wenden.</step>
+      <step nr="5">Wer die BBQ-Variante möchte, streicht in den letzten 2 Minuten etwas BBQ-Sauce darüber.</step>
+      <step nr="6">Mit Zwiebelringen und Brot servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Grillzeit: 10–12 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu heiß grillen, damit die Würste nicht aufplatzen.</item>
+      <item>Für eine klassische Runde reicht Senf und Brot völlig aus.</item>
+      <item>Die BBQ-Variante ist gut, wenn du etwas mehr Würze möchtest, ohne viel Aufwand.</item>
+    </tips>
+    <rating>8 / 10 – einfach, schnell und perfekt für entspanntes Grillen.</rating>
+    <translation lang="pl">
+      <name>Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dania mięsne</category>
+      <ingredients>
+        <item>6 kiełbasek na grilla</item>
+        <item>1 łyżka oleju</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1/2 łyżeczki musztardy</item>
+        <item>opcjonalnie do prostszej wariacji: 2 łyżki sosu BBQ</item>
+        <item>opcjonalnie: 1 mała cebula pokrojona w krążki</item>
+        <item>opcjonalnie: bagietka albo bułki do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Kiełbaski delikatnie ponakłuwać widelcem w kilku miejscach.</step>
+        <step nr="2">W wersji klasycznej tylko lekko posmarować je olejem.</step>
+        <step nr="3">Do prostej pikantnej wersji wymieszać olej, paprykę i musztardę, a następnie posmarować kiełbaski.</step>
+        <step nr="4">Grillować na średnim ogniu 10–12 minut, regularnie obracając.</step>
+        <step nr="5">Jeśli robisz wersję BBQ, w ostatnich 2 minutach posmarować kiełbaski sosem BBQ.</step>
+        <step nr="6">Podawać z cebulą i pieczywem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>grillowanie: 10–12 min</item>
+        <item>łącznie: ok. 15 min</item>
+      </timing>
+      <tips>
+        <item>Nie grilluj na zbyt mocnym ogniu, żeby kiełbaski nie popękały.</item>
+        <item>W klasycznej wersji wystarczy musztarda i pieczywo.</item>
+        <item>Wariacja z BBQ daje więcej smaku bez dodatkowej pracy.</item>
+      </tips>
+      <rating>8 / 10 – proste, szybkie i idealne na luźne spotkanie przy grillu.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="68">
+    <name>Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_68.png" alt="Gegrilltes Gemüse mit Zucchini, Paprika und Champignons" />
+    <ingredients>
+      <item>2 Zucchini</item>
+      <item>2 Paprika</item>
+      <item>250 g Champignons</item>
+      <item>1 rote Zwiebel</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 kleine Knoblauchzehe</item>
+      <item>1 EL Zitronensaft</item>
+      <item>1 TL italienische Kräuter</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zucchini in Scheiben, Paprika in Stücke, Champignons halbiert und Zwiebel in Spalten schneiden.</step>
+      <step nr="2">Olivenöl mit fein gehacktem Knoblauch, Zitronensaft, Kräutern, Salz und Pfeffer verrühren.</step>
+      <step nr="3">Gemüse mit der Marinade mischen und 10 Minuten ziehen lassen.</step>
+      <step nr="4">In einer Grillpfanne, Grillschale oder direkt auf dem Rost grillen.</step>
+      <step nr="5">Dabei 8–10 Minuten grillen und mehrmals wenden, bis das Gemüse weich und leicht gebräunt ist.</step>
+      <step nr="6">Heiß servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Marinieren: 10 Minuten</item>
+      <item>Grillzeit: 8–10 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>In einer Grillschale geht nichts durch den Rost verloren.</item>
+      <item>Passt zu Fleisch, Halloumi oder einfach mit Baguette.</item>
+      <item>Reste schmecken kalt auch gut im Salat.</item>
+    </tips>
+    <rating>8,5 / 10 – bunt, unkompliziert und ein Klassiker vom Sommergrill.</rating>
+    <translation lang="pl">
+      <name>Grillowane warzywa z cukinią, papryką i pieczarkami</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>2 cukinie</item>
+        <item>2 papryki</item>
+        <item>250 g pieczarek</item>
+        <item>1 czerwona cebula</item>
+        <item>3 łyżki oliwy z oliwek</item>
+        <item>1 mały ząbek czosnku</item>
+        <item>1 łyżka soku z cytryny</item>
+        <item>1 łyżeczka ziół włoskich</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Cukinię pokroić w plastry, paprykę w kawałki, pieczarki na połówki, a cebulę w cząstki.</step>
+        <step nr="2">Wymieszać oliwę z drobno posiekanym czosnkiem, sokiem z cytryny, ziołami, solą i pieprzem.</step>
+        <step nr="3">Warzywa wymieszać z marynatą i odstawić na 10 minut.</step>
+        <step nr="4">Grillować w tacce, na patelni grillowej albo bezpośrednio na ruszcie.</step>
+        <step nr="5">Grillować 8–10 minut, kilka razy obracając, aż warzywa będą miękkie i lekko przypieczone.</step>
+        <step nr="6">Podawać na gorąco.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>marynowanie: 10 min</item>
+        <item>grillowanie: 8–10 min</item>
+        <item>łącznie: ok. 30 min</item>
+      </timing>
+      <tips>
+        <item>W tacce grillowej nic nie wpadnie przez ruszt.</item>
+        <item>Pasuje do mięsa, halloumi albo po prostu do pieczywa.</item>
+        <item>Resztki dobrze smakują także na zimno w sałatce.</item>
+      </tips>
+      <rating>8,5 / 10 – kolorowe, proste i bardzo letnie.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="69">
+    <name>Grillkartoffeln in Alufolie mit Rosmarin</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_69.png" alt="Grillkartoffeln in Alufolie mit Rosmarin" />
+    <ingredients>
+      <item>800 g kleine Kartoffeln</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL gehackter Rosmarin</item>
+      <item>1/2 TL Paprikapulver</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Alufolie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln gründlich waschen und je nach Größe halbieren oder ganz lassen.</step>
+      <step nr="2">Mit Olivenöl, Rosmarin, Paprikapulver, Salz und Pfeffer mischen.</step>
+      <step nr="3">Kartoffeln in 2–3 Portionen auf Alufolie verteilen und zu festen Päckchen verschließen.</step>
+      <step nr="4">Die Päckchen auf den Grill legen und 25–35 Minuten grillen.</step>
+      <step nr="5">Zwischendurch einmal wenden.</step>
+      <step nr="6">Vorsichtig öffnen und direkt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Grillzeit: 25–35 Minuten</item>
+      <item>Gesamt: ca. 40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Vorwiegend festkochende Kartoffeln funktionieren am besten.</item>
+      <item>Wer mag, gibt am Ende noch etwas Kräuterbutter dazu.</item>
+      <item>Die Päckchen können auch im Ofen vorbereitet und auf dem Grill fertig gegart werden.</item>
+    </tips>
+    <rating>8,5 / 10 – einfache Grillbeilage, die immer passt.</rating>
+    <translation lang="pl">
+      <name>Ziemniaki z grilla w folii z rozmarynem</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>800 g małych ziemniaków</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 łyżeczka posiekanego rozmarynu</item>
+        <item>1/2 łyżeczki słodkiej papryki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>folia aluminiowa</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ziemniaki dokładnie umyć i w zależności od wielkości przekroić na pół albo zostawić w całości.</step>
+        <step nr="2">Wymieszać z oliwą, rozmarynem, papryką, solą i pieprzem.</step>
+        <step nr="3">Rozłożyć ziemniaki na 2–3 kawałkach folii i szczelnie zamknąć w paczuszki.</step>
+        <step nr="4">Położyć paczuszki na grillu i grillować 25–35 minut.</step>
+        <step nr="5">W połowie czasu raz obrócić.</step>
+        <step nr="6">Ostrożnie otworzyć i od razu podawać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>grillowanie: 25–35 min</item>
+        <item>łącznie: ok. 40 min</item>
+      </timing>
+      <tips>
+        <item>Najlepiej sprawdzają się ziemniaki typu sałatkowego lub uniwersalne.</item>
+        <item>Na koniec można dodać trochę masła ziołowego.</item>
+        <item>Paczuszki można wcześniej przygotować w piekarniku i dokończyć na grillu.</item>
+      </tips>
+      <rating>8,5 / 10 – prosty dodatek z grilla, który zawsze się sprawdza.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="70">
+    <name>Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Beilagen</category>
+    <image src="images/rezeptbild_70.png" alt="Gegrilltes Baguette oder Ciabatta mit Knoblauchöl" />
+    <ingredients>
+      <item>1 Baguette oder 1 Ciabatta</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 Knoblauchzehe</item>
+      <item>1 TL gehackte Petersilie oder Kräuter</item>
+      <item>1 Prise Salz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Baguette oder Ciabatta in Scheiben schneiden.</step>
+      <step nr="2">Knoblauch fein reiben oder pressen und mit Olivenöl, Kräutern und Salz verrühren.</step>
+      <step nr="3">Brotscheiben damit bestreichen.</step>
+      <step nr="4">Auf dem Grill von beiden Seiten 1–2 Minuten rösten, bis sie leicht knusprig sind.</step>
+      <step nr="5">Warm servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Grillzeit: 3–4 Minuten</item>
+      <item>Gesamt: ca. 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu lange grillen, sonst wird das Brot hart.</item>
+      <item>Passt zu Fleisch, Gemüse, Salaten oder einfach als Starter.</item>
+      <item>Auch mit etwas geriebenem Parmesan sehr lecker.</item>
+    </tips>
+    <rating>8 / 10 – einfach, schnell und immer ein guter Begleiter.</rating>
+    <translation lang="pl">
+      <name>Grillowana bagietka lub ciabatta z oliwą czosnkową</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / dodatki</category>
+      <ingredients>
+        <item>1 bagietka albo 1 ciabatta</item>
+        <item>3 łyżki oliwy z oliwek</item>
+        <item>1 ząbek czosnku</item>
+        <item>1 łyżeczka posiekanej pietruszki lub ziół</item>
+        <item>1 szczypta soli</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Bagietkę albo ciabattę pokroić na kromki.</step>
+        <step nr="2">Czosnek drobno zetrzeć albo przecisnąć i wymieszać z oliwą, ziołami oraz solą.</step>
+        <step nr="3">Posmarować pieczywo przygotowaną mieszanką.</step>
+        <step nr="4">Grillować po 1–2 minuty z każdej strony, aż lekko się zarumieni i będzie chrupiące.</step>
+        <step nr="5">Podawać na ciepło.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>grillowanie: 3–4 min</item>
+        <item>łącznie: ok. 10 min</item>
+      </timing>
+      <tips>
+        <item>Nie grillować zbyt długo, aby pieczywo nie stwardniało.</item>
+        <item>Pasuje do mięsa, warzyw, sałatek albo jako przystawka.</item>
+        <item>Smaczne również z odrobiną tartego parmezanu.</item>
+      </tips>
+      <rating>8 / 10 – proste, szybkie i zawsze się przydaje przy grillu.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="71">
+    <name>Gegrillte Früchte mit Ananas oder Pfirsich</name>
+    <persons>3–4 Personen</persons>
+    <category>Grill &amp; BBQ / Dessert</category>
+    <image src="images/rezeptbild_71.png" alt="Gegrillte Früchte mit Ananas oder Pfirsich" />
+    <ingredients>
+      <item>1/2 frische Ananas oder 4 Pfirsiche</item>
+      <item>1 EL brauner Zucker</item>
+      <item>1 EL Butter oder 1 EL Öl</item>
+      <item>1 TL Zitronensaft</item>
+      <item>optional: 1 Kugel Vanilleeis oder Joghurt zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Ananas in Scheiben oder Stücke schneiden, Pfirsiche halbieren und entsteinen.</step>
+      <step nr="2">Butter schmelzen und mit braunem Zucker sowie Zitronensaft verrühren.</step>
+      <step nr="3">Früchte leicht damit bestreichen.</step>
+      <step nr="4">Auf dem Grill pro Seite 2–3 Minuten grillen, bis leichte Röstspuren entstehen.</step>
+      <step nr="5">Warm servieren, nach Wunsch mit Vanilleeis oder Joghurt.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Grillzeit: 5–6 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Pfirsiche eher bei mittlerer Hitze grillen, damit sie nicht zerfallen.</item>
+      <item>Mit etwas Zimt wird es noch sommerlicher.</item>
+      <item>Auch als leichter Nachtisch nach dem Grillen sehr gut.</item>
+    </tips>
+    <rating>8,5 / 10 – einfacher Sommernachtisch mit wenig Aufwand.</rating>
+    <translation lang="pl">
+      <name>Grillowane owoce z ananasem lub brzoskwinią</name>
+      <persons>3–4 osoby</persons>
+      <category>Grill &amp; BBQ / deser</category>
+      <ingredients>
+        <item>1/2 świeżego ananasa albo 4 brzoskwinie</item>
+        <item>1 łyżka brązowego cukru</item>
+        <item>1 łyżka masła albo 1 łyżka oleju</item>
+        <item>1 łyżeczka soku z cytryny</item>
+        <item>opcjonalnie: 1 gałka lodów waniliowych albo jogurt do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ananasa pokroić w plastry lub kawałki, brzoskwinie przekroić na pół i usunąć pestki.</step>
+        <step nr="2">Masło roztopić i wymieszać z brązowym cukrem oraz sokiem z cytryny.</step>
+        <step nr="3">Lekko posmarować owoce przygotowaną mieszanką.</step>
+        <step nr="4">Grillować po 2–3 minuty z każdej strony, aż pojawią się lekkie ślady przypieczenia.</step>
+        <step nr="5">Podawać na ciepło, opcjonalnie z lodami waniliowymi albo jogurtem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>grillowanie: 5–6 min</item>
+        <item>łącznie: ok. 15 min</item>
+      </timing>
+      <tips>
+        <item>Brzoskwinie grillować raczej na średnim ogniu, żeby się nie rozpadły.</item>
+        <item>Odrobina cynamonu daje jeszcze bardziej letni smak.</item>
+        <item>To bardzo dobry lekki deser po grillowaniu.</item>
+      </tips>
+      <rating>8,5 / 10 – prosty letni deser bez dużego wysiłku.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="72">
+    <name>Klassische rote Sangria</name>
+    <persons>4 Gläser</persons>
+    <category>Cocktails / Sommergetränke</category>
+    <image src="images/rezeptbild_72.png" alt="Klassische rote Sangria" />
+    <ingredients>
+      <item>1 Flasche trockener Rotwein (0,75 l)</item>
+      <item>200 ml Orangenlimonade oder Fanta</item>
+      <item>1 Orange</item>
+      <item>1 Zitrone</item>
+      <item>1 Apfel</item>
+      <item>2 EL Zucker</item>
+      <item>100 ml Orangensaft</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Orange, Zitrone und Apfel in Scheiben oder Würfel schneiden.</step>
+      <step nr="2">Obst mit Zucker und Orangensaft in eine Karaffe geben und 10 Minuten ziehen lassen.</step>
+      <step nr="3">Rotwein und Orangenlimonade zugießen.</step>
+      <step nr="4">Gut umrühren und mindestens 30 Minuten kalt stellen.</step>
+      <step nr="5">Mit Eiswürfeln servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Ziehzeit / Kühlen: 30 Minuten</item>
+      <item>Gesamt: ca. 40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu süß machen, sonst wirkt die Sangria schnell schwer.</item>
+      <item>Für Gäste am besten schon 1–2 Stunden vorher vorbereiten.</item>
+      <item>Sehr gut mit viel Eis servieren.</item>
+    </tips>
+    <rating>8,5 / 10 – fruchtig, unkompliziert und perfekt für Sommerabende.</rating>
+    <translation lang="pl">
+      <name>Klasyczna czerwona sangria</name>
+      <persons>4 szklanki</persons>
+      <category>Koktajle / napoje letnie</category>
+      <ingredients>
+        <item>1 butelka wytrawnego czerwonego wina (0,75 l)</item>
+        <item>200 ml oranżady pomarańczowej albo Fanta</item>
+        <item>1 pomarańcza</item>
+        <item>1 cytryna</item>
+        <item>1 jabłko</item>
+        <item>2 łyżki cukru</item>
+        <item>100 ml soku pomarańczowego</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pomarańczę, cytrynę i jabłko pokroić w plasterki albo kostkę.</step>
+        <step nr="2">Włożyć owoce do dzbanka, dodać cukier i sok pomarańczowy, a następnie odstawić na 10 minut.</step>
+        <step nr="3">Wlać czerwone wino i oranżadę pomarańczową.</step>
+        <step nr="4">Dokładnie wymieszać i schłodzić przez co najmniej 30 minut.</step>
+        <step nr="5">Podawać z kostkami lodu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>chłodzenie: 30 min</item>
+        <item>łącznie: ok. 40 min</item>
+      </timing>
+      <tips>
+        <item>Nie przesadzaj z cukrem, żeby sangria nie była zbyt ciężka.</item>
+        <item>Na spotkanie ze znajomymi najlepiej przygotować ją 1–2 godziny wcześniej.</item>
+        <item>Najlepiej smakuje mocno schłodzona z dużą ilością lodu.</item>
+      </tips>
+      <rating>8,5 / 10 – owocowa, prosta i idealna na ciepłe wieczory.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="73">
+    <name>Weiße Sangria</name>
+    <persons>4 Gläser</persons>
+    <category>Cocktails / Sommergetränke</category>
+    <image src="images/rezeptbild_73.png" alt="Weiße Sangria" />
+    <ingredients>
+      <item>1 Flasche trockener Weißwein (0,75 l)</item>
+      <item>200 ml Zitronenlimonade</item>
+      <item>1 Pfirsich oder 2 Nektarinen</item>
+      <item>1/2 Apfel</item>
+      <item>1/2 Limette</item>
+      <item>100 ml Apfelsaft oder weißer Traubensaft</item>
+      <item>1 EL Zucker, optional</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Pfirsich, Apfel und Limette in Stücke oder Scheiben schneiden.</step>
+      <step nr="2">Alles in eine Karaffe geben und mit Apfelsaft mischen.</step>
+      <step nr="3">Weißwein und Zitronenlimonade zugießen.</step>
+      <step nr="4">Gut umrühren und mindestens 30 Minuten kalt stellen.</step>
+      <step nr="5">Mit Eis servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Kühlen: 30 Minuten</item>
+      <item>Gesamt: ca. 40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Sehr erfrischend mit Nektarine statt Pfirsich.</item>
+      <item>Nicht zu lange stehen lassen, damit die Limo noch frisch bleibt.</item>
+      <item>Ideal für Garten, Terrasse und warmes Wetter.</item>
+    </tips>
+    <rating>8,5 / 10 – leicht, sommerlich und sehr unkompliziert.</rating>
+    <translation lang="pl">
+      <name>Biała sangria</name>
+      <persons>4 szklanki</persons>
+      <category>Koktajle / napoje letnie</category>
+      <ingredients>
+        <item>1 butelka wytrawnego białego wina (0,75 l)</item>
+        <item>200 ml lemoniady cytrynowej</item>
+        <item>1 brzoskwinia albo 2 nektarynki</item>
+        <item>1/2 jabłka</item>
+        <item>1/2 limonki</item>
+        <item>100 ml soku jabłkowego albo białego soku winogronowego</item>
+        <item>1 łyżka cukru, opcjonalnie</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Brzoskwinię, jabłko i limonkę pokroić na kawałki albo plasterki.</step>
+        <step nr="2">Włożyć do dzbanka i wymieszać z sokiem jabłkowym.</step>
+        <step nr="3">Wlać białe wino i lemoniadę cytrynową.</step>
+        <step nr="4">Dobrze wymieszać i schłodzić przez co najmniej 30 minut.</step>
+        <step nr="5">Podawać z lodem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>chłodzenie: 30 min</item>
+        <item>łącznie: ok. 40 min</item>
+      </timing>
+      <tips>
+        <item>Bardzo dobrze smakuje także z nektarynką zamiast brzoskwini.</item>
+        <item>Nie zostawiaj jej zbyt długo, żeby lemoniada pozostała świeża.</item>
+        <item>Idealna na ogród, taras i upalne dni.</item>
+      </tips>
+      <rating>8,5 / 10 – lekka, letnia i bardzo łatwa do przygotowania.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="74">
+    <name>Aperol Spritz</name>
+    <persons>1 Glas</persons>
+    <category>Cocktails / Sommergetränke</category>
+    <image src="images/rezeptbild_74.png" alt="Aperol Spritz" />
+    <ingredients>
+      <item>3 Eiswürfel oder mehr</item>
+      <item>90 ml Prosecco</item>
+      <item>60 ml Aperol</item>
+      <item>30 ml Mineralwasser oder Soda</item>
+      <item>1 Orangenscheibe</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Ein großes Weinglas mit Eis füllen.</step>
+      <step nr="2">Prosecco eingießen.</step>
+      <step nr="3">Aperol zugeben.</step>
+      <step nr="4">Mit Mineralwasser oder Soda auffüllen.</step>
+      <step nr="5">Kurz umrühren und mit einer Orangenscheibe servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 2 Minuten</item>
+      <item>Gesamt: ca. 2 Minuten</item>
+    </timing>
+    <tips>
+      <item>Reihenfolge einhalten, dann bleibt der Drink frischer und schäumt schöner.</item>
+      <item>Für mehrere Gäste das Mischungsverhältnis einfach hochrechnen.</item>
+      <item>Gut gekühlte Zutaten verwenden.</item>
+    </tips>
+    <rating>8,5 / 10 – schnell gemacht und ein echter Sommerklassiker.</rating>
+    <translation lang="pl">
+      <name>Aperol Spritz</name>
+      <persons>1 kieliszek</persons>
+      <category>Koktajle / napoje letnie</category>
+      <ingredients>
+        <item>3 kostki lodu lub więcej</item>
+        <item>90 ml prosecco</item>
+        <item>60 ml Aperolu</item>
+        <item>30 ml wody gazowanej albo sody</item>
+        <item>1 plaster pomarańczy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Duży kieliszek do wina napełnić lodem.</step>
+        <step nr="2">Wlać prosecco.</step>
+        <step nr="3">Dodać Aperol.</step>
+        <step nr="4">Dopełnić wodą gazowaną albo sodą.</step>
+        <step nr="5">Krótko zamieszać i podać z plasterkiem pomarańczy.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 2 min</item>
+        <item>łącznie: ok. 2 min</item>
+      </timing>
+      <tips>
+        <item>Warto zachować kolejność składników, wtedy drink jest świeższy i ładniej się pieni.</item>
+        <item>Dla większej liczby gości wystarczy proporcjonalnie zwiększyć ilości.</item>
+        <item>Najlepiej używać dobrze schłodzonych składników.</item>
+      </tips>
+      <rating>8,5 / 10 – szybki i bardzo letni klasyk.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="75">
+    <name>Mojito</name>
+    <persons>1 Glas</persons>
+    <category>Cocktails / Sommergetränke</category>
+    <image src="images/rezeptbild_75.png" alt="Mojito" />
+    <ingredients>
+      <item>1 Limette</item>
+      <item>2 TL brauner Zucker</item>
+      <item>8–10 Minzblätter</item>
+      <item>50 ml weißer Rum</item>
+      <item>100 ml Mineralwasser mit Kohlensäure</item>
+      <item>Eiswürfel oder crushed ice</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Limette in Stücke schneiden und mit Zucker in ein Glas geben.</step>
+      <step nr="2">Minzblätter leicht andrücken und dazugeben.</step>
+      <step nr="3">Mit einem Stößel kurz zerdrücken, aber die Minze nicht zu fein zerreiben.</step>
+      <step nr="4">Rum und Eis dazugeben.</step>
+      <step nr="5">Mit Mineralwasser auffüllen und kurz umrühren.</step>
+      <step nr="6">Sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Gesamt: ca. 5 Minuten</item>
+    </timing>
+    <tips>
+      <item>Minze nur leicht andrücken, sonst wird sie bitter.</item>
+      <item>Mit crushed ice wirkt der Drink noch sommerlicher.</item>
+      <item>Für eine alkoholfreie Version einfach den Rum weglassen.</item>
+    </tips>
+    <rating>9 / 10 – frisch, leicht und ideal für warme Tage.</rating>
+    <translation lang="pl">
+      <name>Mojito</name>
+      <persons>1 szklanka</persons>
+      <category>Koktajle / napoje letnie</category>
+      <ingredients>
+        <item>1 limonka</item>
+        <item>2 łyżeczki brązowego cukru</item>
+        <item>8–10 listków mięty</item>
+        <item>50 ml białego rumu</item>
+        <item>100 ml wody gazowanej</item>
+        <item>kostki lodu albo kruszony lód</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Limonkę pokroić na kawałki i włożyć do szklanki razem z cukrem.</step>
+        <step nr="2">Dodać listki mięty i lekko je ugnieść.</step>
+        <step nr="3">Krótko rozgnieść całość tłuczkiem, ale nie rozcierać mięty zbyt mocno.</step>
+        <step nr="4">Dodać rum i lód.</step>
+        <step nr="5">Dopełnić wodą gazowaną i lekko zamieszać.</step>
+        <step nr="6">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>łącznie: ok. 5 min</item>
+      </timing>
+      <tips>
+        <item>Miętę należy tylko lekko ugnieść, inaczej może zrobić się gorzka.</item>
+        <item>Z kruszonym lodem drink jest jeszcze bardziej letni.</item>
+        <item>W wersji bezalkoholowej wystarczy pominąć rum.</item>
+      </tips>
+      <rating>9 / 10 – świeży, lekki i idealny na ciepłe dni.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="76">
+    <name>Gin Tonic (Basisrezept und einfache Variationen)</name>
+    <persons>1 Glas</persons>
+    <category>Cocktails / Sommergetränke</category>
+    <image src="images/rezeptbild_76.png" alt="Gin Tonic (Basisrezept und einfache Variationen)" />
+    <ingredients>
+      <item>50 ml Gin</item>
+      <item>150 ml Tonic Water</item>
+      <item>Eiswürfel</item>
+      <item>1 Scheibe Zitrone oder Limette</item>
+      <item>optional Variante 1: 3 Scheiben Gurke</item>
+      <item>optional Variante 2: 1 kleiner Zweig Rosmarin</item>
+      <item>optional Variante 3: 1 Scheibe Orange</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Ein großes Glas mit Eiswürfeln füllen.</step>
+      <step nr="2">Gin eingießen.</step>
+      <step nr="3">Tonic Water langsam darübergeben.</step>
+      <step nr="4">Kurz umrühren.</step>
+      <step nr="5">Mit Zitrone oder Limette garnieren.</step>
+      <step nr="6">Für Variationen zusätzlich Gurke, Rosmarin oder Orange ins Glas geben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 2 Minuten</item>
+      <item>Gesamt: ca. 2 Minuten</item>
+    </timing>
+    <tips>
+      <item>Tonic langsam eingießen, damit die Kohlensäure erhalten bleibt.</item>
+      <item>Mit Gurke schmeckt er frischer, mit Rosmarin etwas herber, mit Orange fruchtiger.</item>
+      <item>Immer gut gekühltes Tonic verwenden.</item>
+    </tips>
+    <rating>8,5 / 10 – einfach, wandelbar und perfekt für Gäste.</rating>
+    <translation lang="pl">
+      <name>Gin Tonic (wersja podstawowa i proste warianty)</name>
+      <persons>1 szklanka</persons>
+      <category>Koktajle / napoje letnie</category>
+      <ingredients>
+        <item>50 ml ginu</item>
+        <item>150 ml toniku</item>
+        <item>kostki lodu</item>
+        <item>1 plaster cytryny albo limonki</item>
+        <item>opcjonalnie wariant 1: 3 plasterki ogórka</item>
+        <item>opcjonalnie wariant 2: 1 mała gałązka rozmarynu</item>
+        <item>opcjonalnie wariant 3: 1 plaster pomarańczy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dużą szklankę napełnić lodem.</step>
+        <step nr="2">Wlać gin.</step>
+        <step nr="3">Powoli dolać tonik.</step>
+        <step nr="4">Krótko zamieszać.</step>
+        <step nr="5">Udekorować cytryną albo limonką.</step>
+        <step nr="6">W wersjach dodatkowo dodać ogórek, rozmaryn albo pomarańczę.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 2 min</item>
+        <item>łącznie: ok. 2 min</item>
+      </timing>
+      <tips>
+        <item>Tonik wlewaj powoli, aby nie stracić bąbelków.</item>
+        <item>Z ogórkiem drink jest świeższy, z rozmarynem bardziej ziołowy, a z pomarańczą bardziej owocowy.</item>
+        <item>Najlepiej używać dobrze schłodzonego toniku.</item>
+      </tips>
+      <rating>8,5 / 10 – prosty, elastyczny i bardzo dobry dla gości.</rating>
     </translation>
   </recipe>
 
