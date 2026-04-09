@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.2" languages="de,pl">
   <meta>
     <language>de,pl</language>
@@ -8,7 +9,7 @@
     <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" />
+    <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck"/>
     <ingredients>
       <item>1 Weißkohl</item>
       <item>500 g Hackfleisch (gemischt oder Rind)</item>
@@ -105,7 +106,7 @@
     <name>Italienischer Kalbshaxen-Braten</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_02.png" alt="Italienischer Kalbshaxen-Braten" />
+    <image src="images/rezeptbild_02.png" alt="Italienischer Kalbshaxen-Braten"/>
     <ingredients>
       <item>1 Kalbshaxen-Braten ohne Knochen, ca. 800 g</item>
       <item>2 Zwiebeln</item>
@@ -200,7 +201,7 @@
     <name>Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</name>
     <persons>2–3 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Pfannengerichte</category>
-    <image src="images/rezeptbild_02_1.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" />
+    <image src="images/rezeptbild_02_1.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot"/>
     <ingredients>
       <item>1,5 kg Muscheln</item>
       <item>2 Frühlingszwiebeln</item>
@@ -297,7 +298,7 @@
     <name>Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Ofengerichte</category>
-    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" />
+    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki"/>
     <ingredients>
       <item>700 g Hähnchengeschnetzeltes oder Hähnchenfilet in Streifen</item>
       <item>2 EL Gyrosgewürz</item>
@@ -382,7 +383,7 @@
     <name>Smoked BBQ-Fajita-Pfanne</name>
     <persons>4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_04.png" alt="Smoked BBQ-Fajita-Pfanne" />
+    <image src="images/rezeptbild_04.png" alt="Smoked BBQ-Fajita-Pfanne"/>
     <ingredients>
       <item>700 g Rindfleisch in Streifen</item>
       <item>2 Paprika</item>
@@ -475,7 +476,7 @@
     <name>Bruschetta vom Ciabatta</name>
     <persons>3–4 Personen als Vorspeise oder Beilage</persons>
     <category>Beilagen / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta" />
+    <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta"/>
     <ingredients>
       <item>1 Ciabatta</item>
       <item>3–4 Tomaten</item>
@@ -548,7 +549,7 @@
     <name>Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" />
+    <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot"/>
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>1 kleine Zwiebel</item>
@@ -635,7 +636,7 @@
     <name>Bauernomelette mit Tomaten-Mozzarella-Salat</name>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Eiergerichte</category>
-    <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat" />
+    <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat"/>
     <ingredients>
       <item>6 Eier</item>
       <item>500 g Kartoffeln, gekocht</item>
@@ -720,7 +721,7 @@
     <name>Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</name>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" />
+    <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps"/>
     <ingredients>
       <item>500 g Hähnchenbrust</item>
       <item>1 Zwiebel</item>
@@ -801,7 +802,7 @@
     <name>Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" />
+    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)"/>
     <ingredients>
       <item>500–600 g Salsiccia</item>
       <item>800 g Kartoffeln</item>
@@ -880,7 +881,7 @@
     <name>Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" />
+    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe"/>
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>800 g Kartoffeln</item>
@@ -963,7 +964,7 @@
     <name>Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" />
+    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi"/>
     <ingredients>
       <item>800 g Kartoffeln</item>
       <item>2 Paprika</item>
@@ -1042,7 +1043,7 @@
     <name>Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" />
+    <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt"/>
     <ingredients>
       <item>600 g Hähnchen</item>
       <item>1 Dose stückige Tomaten</item>
@@ -1125,7 +1126,7 @@
     <name>Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" />
+    <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln"/>
     <ingredients>
       <item>4 Hähnchenschenkel</item>
       <item>2 lila Süßkartoffeln</item>
@@ -1202,7 +1203,7 @@
     <name>Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</name>
     <persons>2–3 Personen</persons>
     <category>Ofengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" />
+    <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style"/>
     <ingredients>
       <item>2 Hähnchenschenkel</item>
       <item>800 g Kartoffeln (mit Schale, in Spalten)</item>
@@ -1275,7 +1276,7 @@
     <name>Kartoffelauflauf mit Schmand, Käse &amp; Speck</name>
     <persons>3 Personen</persons>
     <category>Ofengerichte / Beilagen</category>
-    <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" />
+    <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck"/>
     <ingredients>
       <item>1,1–1,2 kg Kartoffeln</item>
       <item>2 Zwiebeln</item>
@@ -1352,7 +1353,7 @@
     <name>Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</name>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_17.png" alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" />
+    <image src="images/rezeptbild_17.png" alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)"/>
     <ingredients>
       <item>6 Rinderrouladen</item>
       <item>Salz</item>
@@ -1441,7 +1442,7 @@
     <name>Kartoffelsuppe mit Mettenden</name>
     <persons>4–6 Personen</persons>
     <category>Suppen / Hausmannskost</category>
-    <image src="images/rezeptbild_18.png" alt="Kartoffelsuppe mit Mettenden" />
+    <image src="images/rezeptbild_18.png" alt="Kartoffelsuppe mit Mettenden"/>
     <ingredients>
       <item>800 g Kartoffeln</item>
       <item>2 Möhren</item>
@@ -1510,7 +1511,7 @@
     <name>Zakwas für Żurek selber machen</name>
     <persons>Ansatz für mehrere Portionen Żurek</persons>
     <category>Grundlagen / Polnische Küche</category>
-    <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen" />
+    <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen"/>
     <ingredients>
       <item>500 ml abgekochtes, vollständig abgekühltes Wasser</item>
       <item>6 EL Roggenmehl Type 2000</item>
@@ -1579,7 +1580,7 @@
     <name>Königsberger Klopse</name>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Hausmannskost</category>
-    <image src="images/rezeptbild_20.png" alt="Königsberger Klopse" />
+    <image src="images/rezeptbild_20.png" alt="Königsberger Klopse"/>
     <ingredients>
       <item>500 g Hackfleisch (gemischt)</item>
       <item>1 Zwiebel</item>
@@ -1662,7 +1663,7 @@
     <name>Danziger Porzeln</name>
     <persons>4 Personen</persons>
     <category>Gebäck &amp; Süßes / Polnische Küche</category>
-    <image src="images/rezeptbild_21.png" alt="Danziger Porzeln" />
+    <image src="images/rezeptbild_21.png" alt="Danziger Porzeln"/>
     <ingredients>
       <item>30 g Hefe</item>
       <item>500 g Mehl</item>
@@ -1733,7 +1734,7 @@
     <name>Kalte Rote-Bete-Suppe</name>
     <persons>4 Personen</persons>
     <category>Suppen / Kalte Suppen</category>
-    <image src="images/rezeptbild_22.png" alt="Kalte Rote-Bete-Suppe" />
+    <image src="images/rezeptbild_22.png" alt="Kalte Rote-Bete-Suppe"/>
     <ingredients>
       <item>1 Bund Rote Bete oder gekochte Rote Bete</item>
       <item>1 Salatgurke</item>
@@ -1810,7 +1811,7 @@
     <name>Piroggen mit Sauerkraut-Pilz-Füllung</name>
     <persons>4 Personen</persons>
     <category>Teiggerichte / Polnische Küche</category>
-    <image src="images/rezeptbild_23.png" alt="Piroggen mit Sauerkraut-Pilz-Füllung" />
+    <image src="images/rezeptbild_23.png" alt="Piroggen mit Sauerkraut-Pilz-Füllung"/>
     <ingredients>
       <item>500 g Mehl</item>
       <item>300 ml heißes Wasser</item>
@@ -1887,7 +1888,7 @@
     <name>Klopse in Tomatensoße</name>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Hausmannskost</category>
-    <image src="images/rezeptbild_24.png" alt="Klopse in Tomatensoße" />
+    <image src="images/rezeptbild_24.png" alt="Klopse in Tomatensoße"/>
     <ingredients>
       <item>500 g Hackfleisch</item>
       <item>1 Ei</item>
@@ -1966,7 +1967,7 @@
     <name>Danziger Heringssalat</name>
     <persons>4 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Salate</category>
-    <image src="images/rezeptbild_25.png" alt="Danziger Heringssalat" />
+    <image src="images/rezeptbild_25.png" alt="Danziger Heringssalat"/>
     <ingredients>
       <item>4 Matjesfilets oder eingelegte Heringsfilets</item>
       <item>2 Kartoffeln, gekocht</item>
@@ -2037,7 +2038,7 @@
     <name>Hering nach kaschubischer Art</name>
     <persons>4 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Polnische Küche</category>
-    <image src="images/rezeptbild_26.png" alt="Hering nach kaschubischer Art" />
+    <image src="images/rezeptbild_26.png" alt="Hering nach kaschubischer Art"/>
     <ingredients>
       <item>4 Heringsfilets</item>
       <item>2 Zwiebeln</item>
@@ -2114,7 +2115,7 @@
     <name>Polnisches Beefsteak</name>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_27.png" alt="Polnisches Beefsteak" />
+    <image src="images/rezeptbild_27.png" alt="Polnisches Beefsteak"/>
     <ingredients>
       <item>500 g Rinderhackfleisch</item>
       <item>1 Zwiebel</item>
@@ -2183,7 +2184,7 @@
     <name>Fleischpastete</name>
     <persons>6 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_28.png" alt="Fleischpastete" />
+    <image src="images/rezeptbild_28.png" alt="Fleischpastete"/>
     <ingredients>
       <item>700 g gemischtes Fleisch oder gegartes Fleisch für die Pastete</item>
       <item>1 Zwiebel</item>
@@ -2258,7 +2259,7 @@
     <name>Geflügelleber mit Äpfeln</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Geflügelgerichte</category>
-    <image src="images/rezeptbild_29.png" alt="Geflügelleber mit Äpfeln" />
+    <image src="images/rezeptbild_29.png" alt="Geflügelleber mit Äpfeln"/>
     <ingredients>
       <item>500 g Geflügelleber</item>
       <item>2 Äpfel</item>
@@ -2331,7 +2332,7 @@
     <name>Eisbein nach alt-polnischer Art</name>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_30.png" alt="Eisbein nach alt-polnischer Art" />
+    <image src="images/rezeptbild_30.png" alt="Eisbein nach alt-polnischer Art"/>
     <ingredients>
       <item>1,2 kg Eisbein</item>
       <item>1 EL Fett</item>
@@ -2404,7 +2405,7 @@
     <name>Danziger Suppe</name>
     <persons>4 Personen</persons>
     <category>Suppen / Polnische Küche</category>
-    <image src="images/rezeptbild_31.png" alt="Danziger Suppe" />
+    <image src="images/rezeptbild_31.png" alt="Danziger Suppe"/>
     <ingredients>
       <item>1,5 l Wasser</item>
       <item>300 g Huhn</item>
@@ -2481,7 +2482,7 @@
     <name>Erbsensuppe mit Kartoffeln</name>
     <persons>4 Personen</persons>
     <category>Suppen / Hausmannskost</category>
-    <image src="images/rezeptbild_32.png" alt="Erbsensuppe mit Kartoffeln" />
+    <image src="images/rezeptbild_32.png" alt="Erbsensuppe mit Kartoffeln"/>
     <ingredients>
       <item>300 g getrocknete Erbsen</item>
       <item>500 g Kartoffeln</item>
@@ -2554,7 +2555,7 @@
     <name>Alt-polnische Sauce</name>
     <persons>Für mehrere Portionen</persons>
     <category>Saucen / Polnische Küche</category>
-    <image src="images/rezeptbild_33.png" alt="Alt-polnische Sauce" />
+    <image src="images/rezeptbild_33.png" alt="Alt-polnische Sauce"/>
     <ingredients>
       <item>1 Zwiebel</item>
       <item>1 EL Butter oder Fett</item>
@@ -2625,7 +2626,7 @@
     <name>Oster-Żurek</name>
     <persons>ca. 2 Liter Suppe</persons>
     <category>Suppen / Polnische Küche</category>
-    <image src="images/rezeptbild_34.png" alt="Oster-Żurek" />
+    <image src="images/rezeptbild_34.png" alt="Oster-Żurek"/>
     <ingredients>
       <item>1 Liter Gemüsebrühe</item>
       <item>500 ml Zakwas für Żurek</item>
@@ -2704,7 +2705,7 @@
     <name>Ofen-Brisket mit Magic Dust</name>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_35.png" alt="Ofen-Brisket mit Magic Dust" />
+    <image src="images/rezeptbild_35.png" alt="Ofen-Brisket mit Magic Dust"/>
     <ingredients>
       <item>1,3 kg Rinderbrust (Brisket)</item>
       <item>2 EL mittelscharfer Senf</item>
@@ -2803,7 +2804,7 @@
     <name>Irish Beef Rollbraten aus dem Backofen</name>
     <persons>4 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_36.png" alt="Irish Beef Rollbraten aus dem Backofen" />
+    <image src="images/rezeptbild_36.png" alt="Irish Beef Rollbraten aus dem Backofen"/>
     <ingredients>
       <item>1,2 kg Irish Beef Rollbraten</item>
       <item>2 EL Öl</item>
@@ -2884,7 +2885,7 @@
     <name>Svens AirFryer-Iskender Kebab</name>
     <persons>4 Personen</persons>
     <category>Airfryer</category>
-    <image src="images/rezeptbild_37.png" alt="Svens AirFryer-Iskender Kebab" />
+    <image src="images/rezeptbild_37.png" alt="Svens AirFryer-Iskender Kebab"/>
     <ingredients>
       <item>1 kg Rinderhackfleisch (zweimal gewolft)</item>
       <item>2 EL Naturjoghurt (10 %)</item>
@@ -2967,7 +2968,7 @@
     <name>Klassischer Schmorbraten mit dunkler Sauce</name>
     <persons>6 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_38.png" alt="Klassischer Schmorbraten mit dunkler Sauce" />
+    <image src="images/rezeptbild_38.png" alt="Klassischer Schmorbraten mit dunkler Sauce"/>
     <ingredients>
       <item>1,8 kg Rinderbraten</item>
       <item>2 EL Butterschmalz</item>
@@ -3052,7 +3053,7 @@
     <name>Hähnchen-Kartoffel-Pfanne mit Gemüse</name>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_39.png" alt="Hähnchen-Kartoffel-Pfanne mit Gemüse" />
+    <image src="images/rezeptbild_39.png" alt="Hähnchen-Kartoffel-Pfanne mit Gemüse"/>
     <ingredients>
       <item>400–450 g Hähnchengeschnetzeltes</item>
       <item>600–700 g Kartoffeln</item>
@@ -3133,7 +3134,7 @@
     <name>Bratwurst mit Sauerkraut aus dem Ofen</name>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_40.png" alt="Bratwurst mit Sauerkraut aus dem Ofen" />
+    <image src="images/rezeptbild_40.png" alt="Bratwurst mit Sauerkraut aus dem Ofen"/>
     <ingredients>
       <item>4 Bratwürste</item>
       <item>400–500 g Sauerkraut</item>
@@ -3210,7 +3211,7 @@
     <name>Saftiger Chicken-Cheese-Burrito ohne Reis</name>
     <persons>4 Personen</persons>
     <category>Wraps &amp; Burritos</category>
-    <image src="images/rezeptbild_41.png" alt="Saftiger Chicken-Cheese-Burrito ohne Reis" />
+    <image src="images/rezeptbild_41.png" alt="Saftiger Chicken-Cheese-Burrito ohne Reis"/>
     <ingredients>
       <item>600–700 g Hähnchengeschnetzeltes</item>
       <item>2 Paprika</item>
@@ -3297,7 +3298,7 @@
     <name>Spaghetti mit Knoblauch und Sambal Oelek</name>
     <persons>1 Person</persons>
     <category>Nudelgerichte</category>
-    <image src="images/rezeptbild_42.png" alt="Spaghetti mit Knoblauch und Sambal Oelek" />
+    <image src="images/rezeptbild_42.png" alt="Spaghetti mit Knoblauch und Sambal Oelek"/>
     <ingredients>
       <item>150 g Spaghetti</item>
       <item>4–6 Knoblauchzehen</item>
@@ -3368,7 +3369,7 @@
     <name>Knoblauch-Kartoffel-Pfanne mit Chili und Ei</name>
     <persons>1 Person</persons>
     <category>Pfannengerichte</category>
-    <image src="images/rezeptbild_43.png" alt="Knoblauch-Kartoffel-Pfanne mit Chili und Ei" />
+    <image src="images/rezeptbild_43.png" alt="Knoblauch-Kartoffel-Pfanne mit Chili und Ei"/>
     <ingredients>
       <item>500 g Kartoffeln</item>
       <item>3–4 Knoblauchzehen</item>
@@ -3435,7 +3436,7 @@
     <name>Cremige Parmesan-Pasta ohne Sahne</name>
     <persons>1 Person</persons>
     <category>Nudelgerichte</category>
-    <image src="images/rezeptbild_44.png" alt="Cremige Parmesan-Pasta ohne Sahne" />
+    <image src="images/rezeptbild_44.png" alt="Cremige Parmesan-Pasta ohne Sahne"/>
     <ingredients>
       <item>120–150 g Pasta</item>
       <item>30–40 g Parmesan</item>
@@ -3500,7 +3501,7 @@
     <name>Cordon Bleu mit Nasi Goreng</name>
     <persons>1 Person</persons>
     <category>Airfryer / Pfannengerichte</category>
-    <image src="images/rezeptbild_45.png" alt="Cordon Bleu mit Nasi Goreng" />
+    <image src="images/rezeptbild_45.png" alt="Cordon Bleu mit Nasi Goreng"/>
     <ingredients>
       <item>1 Cordon Bleu</item>
       <item>150 g gekochter Reis</item>
@@ -3565,12 +3566,11 @@
       <rating>8/10</rating>
     </translation>
   </recipe>
-
   <recipe id="46">
     <name>Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</name>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / BBQ</category>
-    <image src="images/rezeptbild_46.png" alt="Smashed Burger mit Ofenkartoffeln und Sour-Cream-Dip" />
+    <image src="images/rezeptbild_46.png" alt="Smashed Burger mit Ofenkartoffeln und Sour-Cream-Dip"/>
     <ingredients>
       <item>500 g Rinderhack (ca. 20 % Fett)</item>
       <item>4 Burger-Brötchen</item>
@@ -3661,12 +3661,11 @@
       <rating>9,5 / 10 – szybki i bardzo smaczny klasyk.</rating>
     </translation>
   </recipe>
-
   <recipe id="47">
     <name>Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</name>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_47.png" alt="Erdbeer-Orangen-Sekt-Slush" />
+    <image src="images/rezeptbild_47.png" alt="Erdbeer-Orangen-Sekt-Slush"/>
     <ingredients>
       <item>250 ml Erdbeernektar</item>
       <item>150 ml Orangensaft</item>
@@ -3723,12 +3722,11 @@
       <rating>8,5 / 10 – letni, lekki i bardzo prosty.</rating>
     </translation>
   </recipe>
-
   <recipe id="48">
     <name>Ananas-Rum-Slush für den Ninja Slushi</name>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_48.png" alt="Ananas-Rum-Slush" />
+    <image src="images/rezeptbild_48.png" alt="Ananas-Rum-Slush"/>
     <ingredients>
       <item>300 ml Ananassaft</item>
       <item>100 ml stilles Wasser</item>
@@ -3781,12 +3779,11 @@
       <rating>8 / 10 – prosty tropikalny drink bez kokosa.</rating>
     </translation>
   </recipe>
-
   <recipe id="49">
     <name>Zitronen-Vodka-Slush für den Ninja Slushi</name>
     <persons>2 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_49.png" alt="Zitronen-Vodka-Slush" />
+    <image src="images/rezeptbild_49.png" alt="Zitronen-Vodka-Slush"/>
     <ingredients>
       <item>120 ml Zitronensaft</item>
       <item>220 ml stilles Wasser</item>
@@ -3839,12 +3836,11 @@
       <rating>8,5 / 10 – świeży, kwaśny i porządnie lodowy.</rating>
     </translation>
   </recipe>
-
   <recipe id="50">
     <name>Waldbeer-Sekt-Slush für den Ninja Slushi</name>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_50.png" alt="Waldbeer-Sekt-Slush" />
+    <image src="images/rezeptbild_50.png" alt="Waldbeer-Sekt-Slush"/>
     <ingredients>
       <item>250 ml Waldfrucht- oder Johannisbeernektar</item>
       <item>100 ml roter Traubensaft</item>
@@ -3901,12 +3897,11 @@
       <rating>8,5 / 10 – owocowy i idealny do ogrodu.</rating>
     </translation>
   </recipe>
-
   <recipe id="51">
     <name>Mango-Maracuja-Rum-Slush für den Ninja Slushi</name>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_51.png" alt="Mango-Maracuja-Rum-Slush" />
+    <image src="images/rezeptbild_51.png" alt="Mango-Maracuja-Rum-Slush"/>
     <ingredients>
       <item>250 ml Mangonektar</item>
       <item>150 ml Maracujasaft</item>
@@ -3963,13 +3958,11 @@
       <rating>9 / 10 – tropikalny, gładki i bardzo imprezowy.</rating>
     </translation>
   </recipe>
-
-
   <recipe id="52">
     <name>Senfeier mit Kartoffeln</name>
     <persons>2–3 Personen</persons>
     <category>Eiergerichte / Hausmannskost</category>
-    <image src="images/rezeptbild_52.png" alt="Senfeier mit Kartoffeln" />
+    <image src="images/rezeptbild_52.png" alt="Senfeier mit Kartoffeln"/>
     <ingredients>
       <item>6 Eier</item>
       <item>500 ml Milch</item>
@@ -4046,12 +4039,11 @@
       <rating>8,5 / 10 – klasyczne, proste i bardzo przyjemne.</rating>
     </translation>
   </recipe>
-
   <recipe id="53">
     <name>Koreanisches Bulgogi vom Grill</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_53.png" alt="Koreanisches Bulgogi vom Grill" />
+    <image src="images/rezeptbild_53.png" alt="Koreanisches Bulgogi vom Grill"/>
     <ingredients>
       <item>700 g Rinderhüfte oder Entrecôte, sehr dünn geschnitten</item>
       <item>4 EL Sojasauce</item>
@@ -4124,296 +4116,303 @@
       <rating>9 / 10 – wyraziste, szybkie i świetne na grill.</rating>
     </translation>
   </recipe>
-
   <recipe id="54">
     <name>Spare Ribs mit Espresso-Rub</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_54.png" alt="Spare Ribs mit Espresso-Rub" />
+    <image src="images/rezeptbild_54.png" alt="Spare Ribs mit Espresso-Rub"/>
     <ingredients>
-      <item>2 Leitern Spare Ribs</item>
-      <item>2 TL Espresso- oder Kaffeepulver fein</item>
+      <item>2 Leitern Spare Ribs (ca. 1,6–2 kg)</item>
+      <item>2 TL feines Espresso- oder Kaffeepulver</item>
       <item>2 EL Paprikapulver edelsüß</item>
       <item>1 EL brauner Zucker</item>
       <item>1 TL Salz</item>
-      <item>1 TL Pfeffer</item>
+      <item>1 TL schwarzer Pfeffer</item>
       <item>1 TL Knoblauchpulver</item>
       <item>1 TL Zwiebelpulver</item>
-      <item>1/2 TL Chili</item>
-      <item>2 EL Öl oder Senf als Binder</item>
-      <item>optional: BBQ-Sauce zum Finish</item>
+      <item>1/2 TL Chili oder Cayennepfeffer nach Geschmack</item>
+      <item>1 EL Öl</item>
+      <item>optional: 3–4 EL BBQ-Sauce für das Finish</item>
     </ingredients>
     <preparation>
-      <step nr="1">Silberhaut von den Ribs entfernen.</step>
-      <step nr="2">Alle Gewürze zu einem Rub mischen.</step>
-      <step nr="3">Ribs leicht mit Öl oder Senf einreiben und mit dem Rub würzen.</step>
-      <step nr="4">Im Ofen oder Smoker bei niedriger Temperatur vorgaren, bis sie weich werden.</step>
-      <step nr="5">Zum Schluss auf dem Grill Farbe geben und optional mit BBQ-Sauce glasieren.</step>
-      <step nr="6">Kurz ruhen lassen und in Rippen schneiden.</step>
+      <step nr="1">Die Silberhaut auf der Knochenseite der Ribs abziehen. Das macht die Ribs zarter und der Rub kann besser einziehen.</step>
+      <step nr="2">Espresso, Paprika, Zucker, Salz, Pfeffer, Knoblauchpulver, Zwiebelpulver und Chili mischen. Die Ribs leicht mit Öl einreiben und anschließend rundum mit dem Rub würzen.</step>
+      <step nr="3">Mindestens 2 Stunden, besser über Nacht, im Kühlschrank ziehen lassen.</step>
+      <step nr="4">Den Grill oder Smoker auf indirekte Hitze bei etwa 110–120 °C vorbereiten. Die Ribs mit der Knochenseite nach unten auflegen.</step>
+      <step nr="5">Die Ribs langsam 2,5 bis 3 Stunden garen, bis das Fleisch zart wird und sich leicht vom Knochen zurückzieht.</step>
+      <step nr="6">Wer mag, bestreicht die Ribs in den letzten 15 Minuten dünn mit BBQ-Sauce. Danach kurz über direkter Hitze oder mit höherer Temperatur karamellisieren lassen.</step>
+      <step nr="7">Vor dem Anschneiden 5–10 Minuten ruhen lassen und dann in einzelne Stücke schneiden.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 20 Minuten</item>
-      <item>Vorgaren: 2,5–3 Stunden</item>
-      <item>Grill-Finish: 10–15 Minuten</item>
-      <item>Gesamt: ca. 3–3,5 Stunden</item>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Marinieren: mindestens 2 Stunden, besser über Nacht</item>
+      <item>Grillzeit: ca. 2,5–3 Stunden</item>
+      <item>Gesamt aktiv: ca. 30 Minuten</item>
     </timing>
     <tips>
-      <item>Das Kaffeepulver nur fein dosieren – es soll Tiefe geben, nicht dominant sein.</item>
-      <item>Zum Ende aufpassen, damit Zucker und Sauce nicht verbrennen.</item>
-      <item>Ideal mit Coleslaw und Brot.</item>
+      <item>Kaffee sollte nur dezent eingesetzt werden – er sorgt für Tiefe, ohne vordergründig nach Kaffee zu schmecken.</item>
+      <item>Für deinen Pit Boss passen Hickory-Pellets besonders gut dazu.</item>
+      <item>Als Beilage passen Coleslaw, Maiskolben oder Baguette sehr gut.</item>
     </tips>
-    <rating>9 / 10 – tief, würzig und perfekt für BBQ-Fans.</rating>
+    <rating>9,5 / 10 – kräftig, rauchig und perfekt für einen langen Grillnachmittag.</rating>
     <translation lang="pl">
       <name>Żeberka z rubem espresso</name>
       <persons>3–4 osoby</persons>
       <category>Grill &amp; BBQ / dania mięsne</category>
       <ingredients>
-        <item>2 paski żeberek wieprzowych</item>
-        <item>2 TL drobno mielonego espresso lub kawy</item>
-        <item>2 EL słodkiej papryki</item>
-        <item>1 EL brązowego cukru</item>
-        <item>1 TL soli</item>
-        <item>1 TL pieprzu</item>
-        <item>1 TL czosnku w proszku</item>
-        <item>1 TL cebuli w proszku</item>
-        <item>1/2 TL chili</item>
-        <item>2 EL oleju lub musztardy</item>
-        <item>opcjonalnie: sos BBQ do wykończenia</item>
+        <item>2 paski żeberek wieprzowych (ok. 1,6–2 kg)</item>
+        <item>2 łyżeczki drobno mielonego espresso lub kawy</item>
+        <item>2 łyżki słodkiej papryki</item>
+        <item>1 łyżka brązowego cukru</item>
+        <item>1 łyżeczka soli</item>
+        <item>1 łyżeczka czarnego pieprzu</item>
+        <item>1 łyżeczka czosnku w proszku</item>
+        <item>1 łyżeczka cebuli w proszku</item>
+        <item>1/2 łyżeczki chili lub pieprzu cayenne do smaku</item>
+        <item>1 łyżka oleju</item>
+        <item>opcjonalnie: 3–4 łyżki sosu BBQ do wykończenia</item>
       </ingredients>
       <preparation>
-        <step nr="1">Usunąć błonę z żeberek.</step>
-        <step nr="2">Wymieszać wszystkie przyprawy.</step>
-        <step nr="3">Natrzeć żeberka olejem lub musztardą i obsypać rubem.</step>
-        <step nr="4">Wstępnie piec lub wędzić w niskiej temperaturze, aż zmiękną.</step>
-        <step nr="5">Na końcu zgrillować dla koloru i opcjonalnie posmarować sosem BBQ.</step>
-        <step nr="6">Krótko odstawić, potem pokroić.</step>
+        <step nr="1">Usunąć cienką błonę od strony kości. Dzięki temu żeberka będą delikatniejsze, a przyprawy lepiej wnikną w mięso.</step>
+        <step nr="2">Wymieszać espresso, paprykę, cukier, sól, pieprz, czosnek w proszku, cebulę w proszku i chili. Żeberka lekko natrzeć olejem, a następnie dokładnie obsypać mieszanką przypraw.</step>
+        <step nr="3">Odstawić do lodówki na co najmniej 2 godziny, a najlepiej na całą noc.</step>
+        <step nr="4">Przygotować grill lub smoker do grillowania pośredniego w temperaturze około 110–120 °C. Ułożyć żeberka stroną z kośćmi do dołu.</step>
+        <step nr="5">Grillować powoli przez 2,5 do 3 godzin, aż mięso będzie miękkie i zacznie lekko odchodzić od kości.</step>
+        <step nr="6">Jeśli chcesz, posmaruj żeberka cienką warstwą sosu BBQ w ostatnich 15 minutach. Następnie krótko skarmelizuj przy wyższej temperaturze.</step>
+        <step nr="7">Przed krojeniem odstawić na 5–10 minut, a potem podzielić na porcje.</step>
       </preparation>
       <timing>
-        <item>przygotowanie: 20 min</item>
-        <item>wstępne pieczenie: 2,5–3 godziny</item>
-        <item>grill finish: 10–15 min</item>
-        <item>łącznie: ok. 3–3,5 godziny</item>
+        <item>przygotowanie: 15 min</item>
+        <item>marynowanie: minimum 2 godziny, najlepiej całą noc</item>
+        <item>czas grillowania: ok. 2,5–3 godziny</item>
+        <item>aktywny czas pracy: ok. 30 min</item>
       </timing>
       <tips>
-        <item>Kawę dawkuj delikatnie – ma dawać głębię, nie dominować.</item>
-        <item>Pod koniec uważaj, aby cukier i sos się nie przypaliły.</item>
-        <item>Świetne z colesławem i pieczywem.</item>
+        <item>Kawy nie dawaj za dużo – ma dodać głębi smaku, ale nie dominować.</item>
+        <item>Do tego przepisu bardzo dobrze pasują pelletki hickory.</item>
+        <item>Świetnie pasuje coleslaw, kukurydza z grilla albo bagietka.</item>
       </tips>
-      <rating>9 / 10 – głębokie, wyraziste i idealne dla fanów BBQ.</rating>
+      <rating>9,5 / 10 – wyraziste, lekko dymne i idealne na dłuższe grillowanie.</rating>
     </translation>
   </recipe>
-
   <recipe id="55">
     <name>Gegrillter Halloumi mit Kräutern und Olivenöl</name>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_55.png" alt="Gegrillter Halloumi" />
+    <image src="images/rezeptbild_55.png" alt="Gegrillter Halloumi mit Kräutern und Olivenöl"/>
     <ingredients>
       <item>250 g Halloumi</item>
       <item>2 EL Olivenöl</item>
       <item>1 TL Zitronensaft</item>
-      <item>1 kleine Knoblauchzehe</item>
-      <item>frische Kräuter nach Wahl</item>
-      <item>Pfeffer</item>
+      <item>1 kleine Knoblauchzehe, fein gerieben</item>
+      <item>1 TL getrockneter Oregano oder Thymian</item>
+      <item>frisch gemahlener Pfeffer</item>
+      <item>optional: etwas Honig für eine milde süß-salzige Variante</item>
     </ingredients>
     <preparation>
-      <step nr="1">Halloumi in Scheiben schneiden.</step>
-      <step nr="2">Olivenöl, Zitronensaft, Knoblauch und Kräuter verrühren.</step>
-      <step nr="3">Halloumi kurz damit bestreichen.</step>
-      <step nr="4">Auf dem heißen Grill von beiden Seiten kurz grillen, bis schöne Streifen entstehen.</step>
-      <step nr="5">Direkt servieren.</step>
+      <step nr="1">Halloumi in etwa 1 bis 1,5 cm dicke Scheiben schneiden und trocken tupfen.</step>
+      <step nr="2">Olivenöl, Zitronensaft, Knoblauch, Kräuter und etwas Pfeffer verrühren.</step>
+      <step nr="3">Die Halloumi-Scheiben damit leicht einpinseln und kurz ziehen lassen – 10 bis 15 Minuten reichen völlig aus.</step>
+      <step nr="4">Den Grill gut vorheizen. Halloumi bei mittlerer bis höherer Hitze pro Seite 2–3 Minuten grillen, bis schöne Grillstreifen entstehen.</step>
+      <step nr="5">Direkt servieren und nach Wunsch mit einem Hauch Honig oder extra Kräutern verfeinern.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 10 Minuten</item>
+      <item>Kurze Marinierzeit: 10–15 Minuten</item>
       <item>Grillzeit: 4–6 Minuten</item>
-      <item>Gesamt: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 20 Minuten</item>
     </timing>
     <tips>
-      <item>Nicht zu lange grillen, sonst wird Halloumi zäh.</item>
-      <item>Passt sehr gut zu Salat, Brot oder Gemüsespießen.</item>
-      <item>Salz ist meist nicht nötig.</item>
+      <item>Halloumi immer heiß servieren – dann ist er außen knusprig und innen weich.</item>
+      <item>Sehr gut mit Tomaten, Rucola oder gegrilltem Gemüse kombinierbar.</item>
+      <item>Nicht zu lange grillen, sonst wird er trocken und zäh.</item>
     </tips>
-    <rating>8,5 / 10 – schnell, unkompliziert und richtig gut vom Grill.</rating>
+    <rating>8,8 / 10 – simpel, schnell und eine starke vegetarische Grillbeilage.</rating>
     <translation lang="pl">
       <name>Grillowany halloumi z ziołami i oliwą</name>
       <persons>2–3 osoby</persons>
       <category>Grill &amp; BBQ / dodatki</category>
       <ingredients>
         <item>250 g halloumi</item>
-        <item>2 EL oliwy</item>
-        <item>1 TL soku z cytryny</item>
-        <item>1 mały ząbek czosnku</item>
-        <item>świeże zioła</item>
-        <item>pieprz</item>
+        <item>2 łyżki oliwy</item>
+        <item>1 łyżeczka soku z cytryny</item>
+        <item>1 mały ząbek czosnku, drobno starty</item>
+        <item>1 łyżeczka suszonego oregano lub tymianku</item>
+        <item>świeżo mielony pieprz</item>
+        <item>opcjonalnie: odrobina miodu do wersji lekko słodko-słonej</item>
       </ingredients>
       <preparation>
-        <step nr="1">Pokroić halloumi w plastry.</step>
-        <step nr="2">Wymieszać oliwę, sok z cytryny, czosnek i zioła.</step>
-        <step nr="3">Lekko posmarować ser.</step>
-        <step nr="4">Grillować krótko z obu stron na mocno rozgrzanym grillu.</step>
-        <step nr="5">Podawać od razu.</step>
+        <step nr="1">Pokroić halloumi na plastry o grubości około 1 do 1,5 cm i osuszyć papierowym ręcznikiem.</step>
+        <step nr="2">Wymieszać oliwę, sok z cytryny, czosnek, zioła i odrobinę pieprzu.</step>
+        <step nr="3">Lekko posmarować tą marynatą plastry halloumi i odstawić na 10–15 minut.</step>
+        <step nr="4">Dobrze rozgrzać grill. Grillować halloumi na średnim lub dość mocnym ogniu po 2–3 minuty z każdej strony, aż pojawią się wyraźne paski.</step>
+        <step nr="5">Podawać od razu, opcjonalnie skropione odrobiną miodu lub posypane dodatkowymi ziołami.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10 min</item>
-        <item>grillowanie: 4–6 min</item>
-        <item>łącznie: ok. 15 min</item>
+        <item>krótkie marynowanie: 10–15 min</item>
+        <item>czas grillowania: 4–6 min</item>
+        <item>łącznie: ok. 20 min</item>
       </timing>
       <tips>
-        <item>Nie grilluj za długo, bo ser stanie się gumowy.</item>
-        <item>Świetnie pasuje do sałatek, pieczywa i warzyw.</item>
-        <item>Sól zwykle nie jest potrzebna.</item>
+        <item>Halloumi najlepiej smakuje podany od razu po zdjęciu z grilla – wtedy jest chrupiący z zewnątrz i miękki w środku.</item>
+        <item>Świetnie pasuje do pomidorów, rukoli albo grillowanych warzyw.</item>
+        <item>Nie grilluj go zbyt długo, bo stanie się suchy i gumowaty.</item>
       </tips>
-      <rating>8,5 / 10 – szybkie, proste i bardzo dobre z grilla.</rating>
+      <rating>8,8 / 10 – prosty, szybki i bardzo dobry wegetariański dodatek z grilla.</rating>
     </translation>
   </recipe>
-
   <recipe id="56">
     <name>Gemüsespieße vom Grill</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_56.png" alt="Gemüsespieße vom Grill" />
+    <image src="images/rezeptbild_56.png" alt="Gemüsespieße vom Grill"/>
     <ingredients>
       <item>2 Paprika</item>
-      <item>1 Zucchini</item>
+      <item>1 große Zucchini</item>
       <item>250 g Champignons</item>
       <item>1 rote Zwiebel</item>
       <item>3 EL Olivenöl</item>
       <item>1 Knoblauchzehe</item>
       <item>1 EL Zitronensaft</item>
+      <item>1 TL Paprikapulver</item>
       <item>Salz</item>
       <item>Pfeffer</item>
-      <item>optional: Kräuter</item>
+      <item>Holz- oder Metallspieße</item>
     </ingredients>
     <preparation>
-      <step nr="1">Gemüse in grobe, gleichmäßige Stücke schneiden.</step>
-      <step nr="2">Olivenöl, Knoblauch, Zitronensaft, Salz und Pfeffer zu einer Marinade verrühren.</step>
-      <step nr="3">Gemüse damit mischen und auf Spieße stecken.</step>
-      <step nr="4">Auf dem Grill rundherum grillen, bis das Gemüse Farbe hat, aber noch Biss besitzt.</step>
-      <step nr="5">Zum Schluss optional mit frischen Kräutern bestreuen.</step>
+      <step nr="1">Wenn Holzspieße verwendet werden, diese zuerst mindestens 20 Minuten in Wasser einweichen.</step>
+      <step nr="2">Paprika, Zucchini und Zwiebel in grobe, möglichst gleich große Stücke schneiden. Champignons nur putzen und größere halbieren.</step>
+      <step nr="3">Olivenöl mit fein gehacktem Knoblauch, Zitronensaft, Paprikapulver, Salz und Pfeffer verrühren.</step>
+      <step nr="4">Das Gemüse mit der Marinade mischen und 15–20 Minuten ziehen lassen.</step>
+      <step nr="5">Das Gemüse bunt gemischt auf die Spieße stecken.</step>
+      <step nr="6">Die Spieße bei mittlerer Hitze rundherum 8–12 Minuten grillen, dabei immer wieder wenden, bis das Gemüse weich ist und leichte Röstaromen hat.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 15 Minuten</item>
-      <item>Marinieren: 10–15 Minuten</item>
-      <item>Grillzeit: 10–12 Minuten</item>
-      <item>Gesamt: ca. 35–40 Minuten</item>
+      <item>Marinieren: 15–20 Minuten</item>
+      <item>Grillzeit: 8–12 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
     </timing>
     <tips>
-      <item>Champignons eher größer lassen, damit sie nicht austrocknen.</item>
-      <item>Holzspieße vorher wässern.</item>
-      <item>Sehr gute Beilage zu Fleisch, Halloumi oder Brot.</item>
+      <item>Zucchini nicht zu dünn schneiden, sonst wird sie zu weich und rutscht schnell vom Spieß.</item>
+      <item>Die Marinade passt auch sehr gut für Grillgemüse aus der Schale oder Pfanne.</item>
+      <item>Wer mag, kann noch Halloumiwürfel oder kleine Cherrytomaten ergänzen.</item>
     </tips>
-    <rating>8,5 / 10 – bunte Standardbeilage, die immer passt.</rating>
+    <rating>8,7 / 10 – unkompliziert, bunt und immer passend zum Grillabend.</rating>
     <translation lang="pl">
       <name>Warzywne szaszłyki z grilla</name>
       <persons>3–4 osoby</persons>
       <category>Grill &amp; BBQ / dodatki</category>
       <ingredients>
         <item>2 papryki</item>
-        <item>1 cukinia</item>
+        <item>1 duża cukinia</item>
         <item>250 g pieczarek</item>
         <item>1 czerwona cebula</item>
-        <item>3 EL oliwy</item>
+        <item>3 łyżki oliwy</item>
         <item>1 ząbek czosnku</item>
-        <item>1 EL soku z cytryny</item>
+        <item>1 łyżka soku z cytryny</item>
+        <item>1 łyżeczka papryki</item>
         <item>sól</item>
         <item>pieprz</item>
-        <item>opcjonalnie: zioła</item>
+        <item>patyczki lub metalowe szpikulce</item>
       </ingredients>
       <preparation>
-        <step nr="1">Pokroić warzywa na większe, równe kawałki.</step>
-        <step nr="2">Wymieszać oliwę, czosnek, sok z cytryny, sól i pieprz.</step>
-        <step nr="3">Połączyć warzywa z marynatą i nabić na patyczki.</step>
-        <step nr="4">Grillować ze wszystkich stron, aż nabiorą koloru, ale zostaną jędrne.</step>
-        <step nr="5">Na końcu posypać ziołami.</step>
+        <step nr="1">Jeśli używasz drewnianych patyczków, namocz je wcześniej przez co najmniej 20 minut w wodzie.</step>
+        <step nr="2">Paprykę, cukinię i cebulę pokroić na większe, możliwie równe kawałki. Pieczarki tylko oczyścić, a większe przekroić na pół.</step>
+        <step nr="3">Wymieszać oliwę z drobno posiekanym czosnkiem, sokiem z cytryny, papryką, solą i pieprzem.</step>
+        <step nr="4">Połączyć warzywa z marynatą i odstawić na 15–20 minut.</step>
+        <step nr="5">Nabić warzywa na szaszłyki, mieszając kolory i rodzaje warzyw.</step>
+        <step nr="6">Grillować na średnim ogniu przez 8–12 minut, regularnie obracając, aż warzywa zmiękną i lekko się przyrumienią.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 15 min</item>
-        <item>marynowanie: 10–15 min</item>
-        <item>grillowanie: 10–12 min</item>
-        <item>łącznie: ok. 35–40 min</item>
+        <item>marynowanie: 15–20 min</item>
+        <item>czas grillowania: 8–12 min</item>
+        <item>łącznie: ok. 35 min</item>
       </timing>
       <tips>
-        <item>Pieczarki zostaw nieco większe.</item>
-        <item>Drewniane patyczki wcześniej namocz.</item>
-        <item>Świetny dodatek do mięsa, halloumi i pieczywa.</item>
+        <item>Nie kroj cukinii zbyt cienko, bo szybko zrobi się zbyt miękka i może spadać ze szpikulca.</item>
+        <item>Ta marynata świetnie nadaje się także do warzyw grillowanych w misce lub na tacke.</item>
+        <item>Jeśli chcesz, możesz dodać kostki halloumi albo małe pomidorki koktajlowe.</item>
       </tips>
-      <rating>8,5 / 10 – kolorowy klasyk, który zawsze pasuje.</rating>
+      <rating>8,7 / 10 – proste, kolorowe i zawsze pasujące do grilla.</rating>
     </translation>
   </recipe>
-
   <recipe id="57">
     <name>Gefüllte Portobello-Pilze vom Grill</name>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_57.png" alt="Gefüllte Portobello-Pilze" />
+    <image src="images/rezeptbild_57.png" alt="Gefüllte Portobello-Pilze vom Grill"/>
     <ingredients>
       <item>4 große Portobello-Pilze</item>
-      <item>150 g Frischkäse oder weicher Käse</item>
+      <item>150 g Frischkäse</item>
       <item>2 kleine Tomaten</item>
-      <item>1 Knoblauchzehe</item>
+      <item>1 kleine Knoblauchzehe</item>
       <item>1 EL Olivenöl</item>
-      <item>frische Kräuter</item>
+      <item>1 EL gehackte Petersilie oder Kräuter</item>
+      <item>30 g geriebener Käse oder Parmesan optional</item>
       <item>Salz</item>
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Pilze putzen und Stiele entfernen.</step>
-      <step nr="2">Tomaten klein würfeln und mit Käse, Knoblauch, Kräutern und Olivenöl mischen.</step>
-      <step nr="3">Mit Salz und Pfeffer abschmecken.</step>
-      <step nr="4">Pilze füllen und bei indirekter Hitze grillen, bis sie weich sind und die Füllung heiß ist.</step>
-      <step nr="5">Direkt servieren.</step>
+      <step nr="1">Die Pilze vorsichtig putzen, die Stiele entfernen und die Unterseite leicht säubern.</step>
+      <step nr="2">Tomaten klein würfeln und mit Frischkäse, Knoblauch, Kräutern, Salz, Pfeffer und etwas Olivenöl verrühren.</step>
+      <step nr="3">Die Portobellos mit der Füllung großzügig befüllen. Wer mag, streut etwas geriebenen Käse darüber.</step>
+      <step nr="4">Die Pilze bei indirekter bis mittlerer Hitze 10–15 Minuten grillen, bis sie weich sind und die Füllung heiß und leicht gebräunt ist.</step>
+      <step nr="5">Direkt servieren – als Beilage oder zusammen mit Baguette auch als leichte Hauptmahlzeit.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 15 Minuten</item>
       <item>Grillzeit: 10–15 Minuten</item>
-      <item>Gesamt: ca. 30 Minuten</item>
+      <item>Gesamt: ca. 25–30 Minuten</item>
     </timing>
     <tips>
-      <item>Nicht zu heiß grillen, damit die Füllung nicht austritt.</item>
-      <item>Auch gut als vegetarisches Hauptgericht mit Salat.</item>
-      <item>Mit etwas geriebenem Hartkäse wird es kräftiger.</item>
+      <item>Portobellos verlieren beim Grillen Flüssigkeit – deshalb nicht zu stark salzen.</item>
+      <item>Mit etwas Parmesan obendrauf wird die Füllung noch herzhafter.</item>
+      <item>Auch im Ofen bei etwa 190 °C sehr gut umsetzbar.</item>
     </tips>
-    <rating>8,5 / 10 – herzhaft und vom Grill überraschend stark.</rating>
+    <rating>8,9 / 10 – saftig, würzig und eine richtig gute vegetarische Grillidee.</rating>
     <translation lang="pl">
       <name>Faszerowane pieczarki portobello z grilla</name>
       <persons>2–3 osoby</persons>
       <category>Grill &amp; BBQ / dodatki</category>
       <ingredients>
-        <item>4 duże pieczarki portobello</item>
-        <item>150 g serka kremowego lub miękkiego sera</item>
+        <item>4 duże grzyby portobello</item>
+        <item>150 g serka śmietankowego</item>
         <item>2 małe pomidory</item>
-        <item>1 ząbek czosnku</item>
-        <item>1 EL oliwy</item>
-        <item>świeże zioła</item>
+        <item>1 mały ząbek czosnku</item>
+        <item>1 łyżka oliwy</item>
+        <item>1 łyżka posiekanej pietruszki lub ziół</item>
+        <item>30 g startego sera lub parmezanu opcjonalnie</item>
         <item>sól</item>
         <item>pieprz</item>
       </ingredients>
       <preparation>
-        <step nr="1">Oczyścić grzyby i usunąć trzonki.</step>
-        <step nr="2">Pomidory drobno pokroić i wymieszać z serem, czosnkiem, ziołami i oliwą.</step>
-        <step nr="3">Doprawić solą i pieprzem.</step>
-        <step nr="4">Napełnić grzyby farszem i grillować pośrednio, aż zmiękną.</step>
-        <step nr="5">Podawać od razu.</step>
+        <step nr="1">Delikatnie oczyścić grzyby, usunąć trzonki i lekko oczyścić spód kapeluszy.</step>
+        <step nr="2">Pokroić pomidory w małą kostkę i wymieszać z serkiem śmietankowym, czosnkiem, ziołami, solą, pieprzem i odrobiną oliwy.</step>
+        <step nr="3">Napełnić portobello farszem. Jeśli chcesz, posypać wierzch tartym serem.</step>
+        <step nr="4">Grillować przy pośrednim lub średnim ogniu przez 10–15 minut, aż grzyby zmiękną, a farsz będzie gorący i lekko zarumieniony.</step>
+        <step nr="5">Podawać od razu – jako dodatek lub z bagietką jako lekkie danie główne.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 15 min</item>
-        <item>grillowanie: 10–15 min</item>
-        <item>łącznie: ok. 30 min</item>
+        <item>czas grillowania: 10–15 min</item>
+        <item>łącznie: ok. 25–30 min</item>
       </timing>
       <tips>
-        <item>Nie grilluj zbyt agresywnie.</item>
-        <item>Dobre też jako wegetariańskie danie główne z sałatką.</item>
-        <item>Z odrobiną twardego sera smak jest mocniejszy.</item>
+        <item>Portobello podczas grillowania puszczają trochę płynu, dlatego nie sol ich zbyt mocno na początku.</item>
+        <item>Z dodatkiem parmezanu farsz będzie jeszcze bardziej wyrazisty.</item>
+        <item>Przepis można też bardzo dobrze zrobić w piekarniku w około 190 °C.</item>
       </tips>
-      <rating>8,5 / 10 – sycące i zaskakująco dobre z grilla.</rating>
+      <rating>8,9 / 10 – soczyste, aromatyczne i naprawdę świetne wegetariańskie danie z grilla.</rating>
     </translation>
   </recipe>
-
   <recipe id="58">
     <name>Grüner Spargel vom Grill mit Zitronenbutter</name>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_58.png" alt="Grüner Spargel vom Grill mit Zitronenbutter" />
+    <image src="images/rezeptbild_58.png" alt="Grüner Spargel vom Grill mit Zitronenbutter"/>
     <ingredients>
       <item>500 g grüner Spargel</item>
       <item>2 EL Olivenöl</item>
@@ -4421,188 +4420,192 @@
       <item>1/2 Zitrone</item>
       <item>Salz</item>
       <item>Pfeffer</item>
+      <item>optional: etwas Knoblauch oder frisch geriebene Zitronenschale</item>
     </ingredients>
     <preparation>
-      <step nr="1">Spargel waschen und die holzigen Enden abschneiden.</step>
-      <step nr="2">Mit etwas Olivenöl, Salz und Pfeffer mischen.</step>
-      <step nr="3">Auf dem Grill kurz grillen, bis er leichte Röstaromen hat, aber noch Biss besitzt.</step>
-      <step nr="4">Butter schmelzen und mit Zitronensaft verrühren.</step>
-      <step nr="5">Spargel damit beträufeln und servieren.</step>
+      <step nr="1">Die holzigen Enden des Spargels abbrechen oder abschneiden.</step>
+      <step nr="2">Den Spargel mit Olivenöl, etwas Salz und Pfeffer vermengen.</step>
+      <step nr="3">Bei mittlerer bis höherer Hitze 5–8 Minuten grillen, dabei immer wieder wenden, bis er bissfest ist und leichte Grillspuren hat.</step>
+      <step nr="4">Parallel die Butter schmelzen und mit Zitronensaft sowie nach Wunsch etwas Zitronenschale verrühren.</step>
+      <step nr="5">Den heißen Spargel mit der Zitronenbutter beträufeln und sofort servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 10 Minuten</item>
-      <item>Grillzeit: 6–8 Minuten</item>
+      <item>Grillzeit: 5–8 Minuten</item>
       <item>Gesamt: ca. 15 Minuten</item>
     </timing>
     <tips>
-      <item>Nicht zu weich grillen.</item>
-      <item>Sehr gut zu Steak, Halloumi oder Fischersatz.</item>
-      <item>Etwas Zitronenabrieb macht die Butter noch frischer.</item>
+      <item>Nicht zu lange grillen – grüner Spargel soll noch Biss haben.</item>
+      <item>Passt hervorragend zu Fleisch, Halloumi oder einfach mit Brot.</item>
+      <item>Wer mag, ergänzt am Ende etwas geriebenen Parmesan.</item>
     </tips>
-    <rating>8,5 / 10 – leicht, frisch und grillfreundlich.</rating>
+    <rating>9,0 / 10 – schnell, frisch und perfekt für die Sommerküche.</rating>
     <translation lang="pl">
       <name>Zielone szparagi z grilla z masłem cytrynowym</name>
       <persons>2–3 osoby</persons>
       <category>Grill &amp; BBQ / dodatki</category>
       <ingredients>
         <item>500 g zielonych szparagów</item>
-        <item>2 EL oliwy</item>
+        <item>2 łyżki oliwy</item>
         <item>40 g masła</item>
         <item>1/2 cytryny</item>
         <item>sól</item>
         <item>pieprz</item>
+        <item>opcjonalnie: odrobina czosnku lub świeżo startej skórki z cytryny</item>
       </ingredients>
       <preparation>
-        <step nr="1">Umyć szparagi i odłamać twarde końcówki.</step>
-        <step nr="2">Wymieszać z oliwą, solą i pieprzem.</step>
-        <step nr="3">Krótko grillować, aż pojawi się lekki aromat pieczenia, ale warzywo nadal będzie jędrne.</step>
-        <step nr="4">Roztopić masło i wymieszać z sokiem z cytryny.</step>
-        <step nr="5">Polać szparagi i podać.</step>
+        <step nr="1">Odłamać lub odciąć zdrewniałe końcówki szparagów.</step>
+        <step nr="2">Wymieszać szparagi z oliwą, odrobiną soli i pieprzu.</step>
+        <step nr="3">Grillować na średnim lub dość mocnym ogniu przez 5–8 minut, regularnie obracając, aż będą al dente i lekko przypieczone.</step>
+        <step nr="4">W międzyczasie roztopić masło i wymieszać je z sokiem z cytryny, a opcjonalnie także ze skórką cytrynową.</step>
+        <step nr="5">Polać gorące szparagi masłem cytrynowym i od razu podawać.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10 min</item>
-        <item>grillowanie: 6–8 min</item>
+        <item>czas grillowania: 5–8 min</item>
         <item>łącznie: ok. 15 min</item>
       </timing>
       <tips>
-        <item>Nie grilluj zbyt długo.</item>
-        <item>Świetne do steka, halloumi lub jako lekki dodatek.</item>
-        <item>Skórka z cytryny dodatkowo odświeża smak.</item>
+        <item>Nie grilluj zbyt długo – zielone szparagi powinny pozostać lekko chrupiące.</item>
+        <item>Świetnie pasują do mięsa, halloumi albo po prostu z pieczywem.</item>
+        <item>Na koniec możesz dodać odrobinę startego parmezanu.</item>
       </tips>
-      <rating>8,5 / 10 – lekkie, świeże i bardzo dobre na grill.</rating>
+      <rating>9,0 / 10 – szybkie, świeże i idealne do letniego grillowania.</rating>
     </translation>
   </recipe>
-
   <recipe id="59">
     <name>Süßkartoffel-Pommes vom Grill</name>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_59.png" alt="Süßkartoffel-Pommes vom Grill" />
+    <image src="images/rezeptbild_59.png" alt="Süßkartoffel-Pommes vom Grill"/>
     <ingredients>
       <item>2 große Süßkartoffeln</item>
       <item>2 EL Olivenöl</item>
       <item>1 TL Paprikapulver</item>
+      <item>1/2 TL Knoblauchpulver optional</item>
       <item>Meersalz</item>
       <item>Pfeffer</item>
-      <item>optional: etwas Speisestärke für mehr Kruste</item>
     </ingredients>
     <preparation>
-      <step nr="1">Süßkartoffeln schälen und in Pommes schneiden.</step>
-      <step nr="2">Mit Öl, Paprika, Salz, Pfeffer und optional etwas Stärke mischen.</step>
-      <step nr="3">In einer Grillschale oder auf einer Plancha garen und dabei mehrmals wenden.</step>
-      <step nr="4">Am Ende etwas mehr Farbe geben und direkt servieren.</step>
+      <step nr="1">Die Süßkartoffeln schälen und in gleichmäßige Pommes schneiden.</step>
+      <step nr="2">Mit Olivenöl, Paprikapulver, optional Knoblauchpulver und etwas Pfeffer vermengen.</step>
+      <step nr="3">Die Pommes am besten in einer Grillschale oder auf einer Plancha verteilen, damit sie nicht durch den Rost fallen.</step>
+      <step nr="4">Bei mittlerer Hitze 20–25 Minuten grillen oder im indirekten Bereich garen. Zwischendurch mehrmals wenden.</step>
+      <step nr="5">Erst zum Schluss mit Meersalz würzen und sofort servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 15 Minuten</item>
-      <item>Grillzeit: 15–20 Minuten</item>
-      <item>Gesamt: ca. 30–35 Minuten</item>
+      <item>Vorbereitung: 10–15 Minuten</item>
+      <item>Grillzeit: 20–25 Minuten</item>
+      <item>Gesamt: ca. 35–40 Minuten</item>
     </timing>
     <tips>
-      <item>In der Grillschale gelingen sie kontrollierter als direkt auf dem Rost.</item>
-      <item>Stärke hilft etwas bei der Oberfläche.</item>
-      <item>Sehr gut mit Aioli, Sour Cream oder BBQ-Dip.</item>
+      <item>Süßkartoffeln werden auf dem Grill nicht ganz so knusprig wie im Airfryer oder Ofen, schmecken dafür aber schön rauchig.</item>
+      <item>In einer Grillschale gelingen sie deutlich entspannter.</item>
+      <item>Sehr gut mit Sour Cream, Aioli oder BBQ-Dip.</item>
     </tips>
-    <rating>8 / 10 – süß, würzig und als Beilage mal etwas anderes.</rating>
+    <rating>8,6 / 10 – unkompliziert, leicht süßlich und ideal als Grillbeilage.</rating>
     <translation lang="pl">
       <name>Frytki z batatów z grilla</name>
       <persons>2–3 osoby</persons>
       <category>Grill &amp; BBQ / dodatki</category>
       <ingredients>
         <item>2 duże bataty</item>
-        <item>2 EL oliwy</item>
-        <item>1 TL słodkiej papryki</item>
+        <item>2 łyżki oliwy</item>
+        <item>1 łyżeczka papryki</item>
+        <item>1/2 łyżeczki czosnku w proszku opcjonalnie</item>
         <item>sól morska</item>
         <item>pieprz</item>
-        <item>opcjonalnie: trochę skrobi dla lepszej skórki</item>
       </ingredients>
       <preparation>
-        <step nr="1">Obrać bataty i pokroić na frytki.</step>
-        <step nr="2">Wymieszać z oliwą, papryką, solą, pieprzem i opcjonalnie skrobią.</step>
-        <step nr="3">Grillować w tacce lub na płycie, kilka razy obracając.</step>
-        <step nr="4">Na końcu mocniej zrumienić i od razu podać.</step>
+        <step nr="1">Obrać bataty i pokroić je w równe słupki przypominające frytki.</step>
+        <step nr="2">Wymieszać z oliwą, papryką, opcjonalnie czosnkiem w proszku i odrobiną pieprzu.</step>
+        <step nr="3">Rozłożyć frytki najlepiej na tacce grillowej albo na planchy, żeby nie spadły przez ruszt.</step>
+        <step nr="4">Grillować na średnim ogniu przez 20–25 minut lub piec w strefie pośredniej. W międzyczasie kilka razy przewrócić.</step>
+        <step nr="5">Posolić solą morską dopiero na końcu i podawać od razu.</step>
       </preparation>
       <timing>
-        <item>przygotowanie: 15 min</item>
-        <item>grillowanie: 15–20 min</item>
-        <item>łącznie: ok. 30–35 min</item>
+        <item>przygotowanie: 10–15 min</item>
+        <item>czas grillowania: 20–25 min</item>
+        <item>łącznie: ok. 35–40 min</item>
       </timing>
       <tips>
-        <item>Na tacce grillowej wychodzą pewniej niż bezpośrednio na ruszcie.</item>
-        <item>Skrobia lekko poprawia powierzchnię.</item>
-        <item>Bardzo dobre z aioli, sour cream albo dipem BBQ.</item>
+        <item>Bataty z grilla nie będą aż tak chrupiące jak z Airfryera czy piekarnika, ale zyskają lekko dymny smak.</item>
+        <item>Na tacce grillowej wychodzą znacznie łatwiej i wygodniej.</item>
+        <item>Świetnie pasują z sour cream, aioli albo dipem BBQ.</item>
       </tips>
-      <rating>8 / 10 – słodkie, wyraziste i fajne jako coś innego.</rating>
+      <rating>8,6 / 10 – proste, lekko słodkie i bardzo dobre jako dodatek z grilla.</rating>
     </translation>
   </recipe>
-
   <recipe id="60">
     <name>Melonen-Feta-Salat mit Minze</name>
-    <persons>3–4 Personen</persons>
+    <persons>2–3 Personen</persons>
     <category>Beilagen / Salate</category>
-    <image src="images/rezeptbild_60.png" alt="Melonen-Feta-Salat mit Minze" />
+    <image src="images/rezeptbild_60.png" alt="Melonen-Feta-Salat mit Minze"/>
     <ingredients>
       <item>600 g Wassermelone</item>
       <item>150 g Feta</item>
-      <item>1 kleine Hand Minzblätter</item>
+      <item>1 kleine Hand frische Minzblätter</item>
       <item>1 Limette</item>
       <item>2 EL Olivenöl</item>
-      <item>Pfeffer</item>
+      <item>frisch gemahlener Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Wassermelone in mundgerechte Würfel schneiden.</step>
-      <step nr="2">Feta darüberbröseln.</step>
-      <step nr="3">Minze grob zupfen.</step>
-      <step nr="4">Limettensaft und Olivenöl verrühren und über den Salat geben.</step>
-      <step nr="5">Mit Pfeffer abschließen und sofort servieren.</step>
+      <step nr="1">Die Wassermelone in mundgerechte Würfel schneiden und eventuell vorhandene Kerne entfernen.</step>
+      <step nr="2">Den Feta grob zerbröseln oder in kleine Stücke schneiden.</step>
+      <step nr="3">Minzblätter grob hacken.</step>
+      <step nr="4">Aus Limettensaft und Olivenöl ein schnelles Dressing rühren.</step>
+      <step nr="5">Melone, Feta und Minze locker mischen, mit dem Dressing beträufeln und zum Schluss mit etwas Pfeffer verfeinern.</step>
+      <step nr="6">Gut gekühlt servieren – besonders an warmen Tagen schmeckt der Salat am besten.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 10–15 Minuten</item>
+      <item>Kühlzeit optional: 10 Minuten</item>
       <item>Gesamt: ca. 15 Minuten</item>
     </timing>
     <tips>
-      <item>Gut gekühlte Melone verwenden.</item>
-      <item>Erst kurz vor dem Servieren mischen.</item>
-      <item>Passt stark zu Grillfleisch, Halloumi und heißen Tagen.</item>
+      <item>Der Salat sollte frisch serviert werden, damit die Melone knackig bleibt.</item>
+      <item>Mit etwas Gurke oder roten Zwiebeln lässt er sich leicht erweitern.</item>
+      <item>Perfekt zu Grillfleisch, Halloumi oder einfach pur als Sommergericht.</item>
     </tips>
-    <rating>8,5 / 10 – frisch, salzig-süß und ideal im Sommer.</rating>
+    <rating>9,1 / 10 – frisch, sommerlich und ein starker Kontrast zu deftigen Grillgerichten.</rating>
     <translation lang="pl">
       <name>Sałatka z arbuza, fety i mięty</name>
-      <persons>3–4 osoby</persons>
+      <persons>2–3 osoby</persons>
       <category>Dodatki / sałatki</category>
       <ingredients>
         <item>600 g arbuza</item>
         <item>150 g fety</item>
-        <item>mała garść listków mięty</item>
+        <item>1 mała garść świeżej mięty</item>
         <item>1 limonka</item>
-        <item>2 EL oliwy</item>
-        <item>pieprz</item>
+        <item>2 łyżki oliwy</item>
+        <item>świeżo mielony pieprz</item>
       </ingredients>
       <preparation>
-        <step nr="1">Pokroić arbuza w kostkę.</step>
-        <step nr="2">Pokruszyć na wierzch fetę.</step>
-        <step nr="3">Grubo porwać miętę.</step>
-        <step nr="4">Wymieszać sok z limonki i oliwę, a następnie polać sałatkę.</step>
-        <step nr="5">Doprawić pieprzem i podać od razu.</step>
+        <step nr="1">Pokroić arbuza w kawałki na jeden kęs i usunąć ewentualne pestki.</step>
+        <step nr="2">Pokruszyć fetę albo pokroić ją na małe kawałki.</step>
+        <step nr="3">Grubo posiekać liście mięty.</step>
+        <step nr="4">Wymieszać szybki dressing z soku z limonki i oliwy.</step>
+        <step nr="5">Delikatnie połączyć arbuza, fetę i miętę, polać dressingiem i na końcu doprawić świeżo mielonym pieprzem.</step>
+        <step nr="6">Podawać dobrze schłodzone – szczególnie w ciepłe dni smakuje najlepiej.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10–15 min</item>
+        <item>opcjonalne chłodzenie: 10 min</item>
         <item>łącznie: ok. 15 min</item>
       </timing>
       <tips>
-        <item>Użyj dobrze schłodzonego arbuza.</item>
-        <item>Wymieszaj dopiero tuż przed podaniem.</item>
-        <item>Świetnie pasuje do grillowanego mięsa, halloumi i gorących dni.</item>
+        <item>Sałatkę najlepiej podawać od razu po przygotowaniu, żeby arbuz pozostał jędrny.</item>
+        <item>Można ją łatwo rozszerzyć o ogórka albo cienko pokrojoną czerwoną cebulę.</item>
+        <item>Idealnie pasuje do grillowanego mięsa, halloumi albo jako samodzielne letnie danie.</item>
       </tips>
-      <rating>8,5 / 10 – świeża, słono-słodka i idealna latem.</rating>
+      <rating>9,1 / 10 – świeża, letnia i świetnie przełamująca bardziej treściwe dania z grilla.</rating>
     </translation>
   </recipe>
-
-
   <recipe id="61">
     <name>Shakshuka</name>
     <persons>2–3 Personen</persons>
     <category>Eiergerichte / Pfannengerichte</category>
-    <image src="images/rezeptbild_61.png" alt="Shakshuka" />
+    <image src="images/rezeptbild_61.png" alt="Shakshuka"/>
     <ingredients>
       <item>1 rote Paprika</item>
       <item>1 Zwiebel</item>
@@ -4681,12 +4684,11 @@
       <rating>9 / 10 – proste, aromatyczne i bardzo dobre na co dzień.</rating>
     </translation>
   </recipe>
-
   <recipe id="62">
     <name>Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</name>
     <persons>2–3 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_62.png" alt="Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln" />
+    <image src="images/rezeptbild_62.png" alt="Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln"/>
     <ingredients>
       <item>2 große Hähnchenbrustfilets</item>
       <item>150 g Frischkäse natur</item>
@@ -4761,12 +4763,11 @@
       <rating>9 / 10 – proste, soczyste i bardzo wygodne na co dzień.</rating>
     </translation>
   </recipe>
-
   <recipe id="63">
     <name>Ratatouille mit Polenta</name>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Gemüsegerichte</category>
-    <image src="images/rezeptbild_63.png" alt="Ratatouille mit Polenta" />
+    <image src="images/rezeptbild_63.png" alt="Ratatouille mit Polenta"/>
     <ingredients>
       <item>1 Aubergine</item>
       <item>1 Zucchini</item>
@@ -4847,12 +4848,11 @@
       <rating>8,5 / 10 – letnie, sycące i bardzo proste.</rating>
     </translation>
   </recipe>
-
   <recipe id="64">
     <name>Marinierte Hähnchenspieße vom Grill</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_64.png" alt="Marinierte Hähnchenspieße vom Grill" />
+    <image src="images/rezeptbild_64.png" alt="Marinierte Hähnchenspieße vom Grill"/>
     <ingredients>
       <item>700 g Hähnchenbrustfilet</item>
       <item>2 Paprika</item>
@@ -4927,12 +4927,11 @@
       <rating>9 / 10 – proste, soczyste i idealne na grill.</rating>
     </translation>
   </recipe>
-
   <recipe id="65">
     <name>Gegrillte Maiskolben mit Butter</name>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_65.png" alt="Gegrillte Maiskolben mit Butter" />
+    <image src="images/rezeptbild_65.png" alt="Gegrillte Maiskolben mit Butter"/>
     <ingredients>
       <item>4 vorgegarte Maiskolben</item>
       <item>50 g Butter</item>
@@ -4989,12 +4988,11 @@
       <rating>8,5 / 10 – proste, klasyczne i zawsze dobrze się sprawdza.</rating>
     </translation>
   </recipe>
-
   <recipe id="66">
     <name>Halloumi vom Grill</name>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Vegetarisch</category>
-    <image src="images/rezeptbild_66.png" alt="Halloumi vom Grill" />
+    <image src="images/rezeptbild_66.png" alt="Halloumi vom Grill"/>
     <ingredients>
       <item>250 g Halloumi</item>
       <item>1 EL Olivenöl</item>
@@ -5053,12 +5051,11 @@
       <rating>8,5 / 10 – szybka i bardzo wygodna opcja bez mięsa.</rating>
     </translation>
   </recipe>
-
   <recipe id="67">
     <name>Würzige Bratwürste vom Grill (klassisch und einfache Variante)</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_67.png" alt="Würzige Bratwürste vom Grill (klassisch und einfache Variante)" />
+    <image src="images/rezeptbild_67.png" alt="Würzige Bratwürste vom Grill (klassisch und einfache Variante)"/>
     <ingredients>
       <item>6 Bratwürste</item>
       <item>1 EL Öl</item>
@@ -5121,12 +5118,11 @@
       <rating>8 / 10 – proste, szybkie i idealne na luźne spotkanie przy grillu.</rating>
     </translation>
   </recipe>
-
   <recipe id="68">
     <name>Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_68.png" alt="Gegrilltes Gemüse mit Zucchini, Paprika und Champignons" />
+    <image src="images/rezeptbild_68.png" alt="Gegrilltes Gemüse mit Zucchini, Paprika und Champignons"/>
     <ingredients>
       <item>2 Zucchini</item>
       <item>2 Paprika</item>
@@ -5197,12 +5193,11 @@
       <rating>8,5 / 10 – kolorowe, proste i bardzo letnie.</rating>
     </translation>
   </recipe>
-
   <recipe id="69">
     <name>Grillkartoffeln in Alufolie mit Rosmarin</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_69.png" alt="Grillkartoffeln in Alufolie mit Rosmarin" />
+    <image src="images/rezeptbild_69.png" alt="Grillkartoffeln in Alufolie mit Rosmarin"/>
     <ingredients>
       <item>800 g kleine Kartoffeln</item>
       <item>2 EL Olivenöl</item>
@@ -5265,12 +5260,11 @@
       <rating>8,5 / 10 – prosty dodatek z grilla, który zawsze się sprawdza.</rating>
     </translation>
   </recipe>
-
   <recipe id="70">
     <name>Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_70.png" alt="Gegrilltes Baguette oder Ciabatta mit Knoblauchöl" />
+    <image src="images/rezeptbild_70.png" alt="Gegrilltes Baguette oder Ciabatta mit Knoblauchöl"/>
     <ingredients>
       <item>1 Baguette oder 1 Ciabatta</item>
       <item>3 EL Olivenöl</item>
@@ -5327,12 +5321,11 @@
       <rating>8 / 10 – proste, szybkie i zawsze się przydaje przy grillu.</rating>
     </translation>
   </recipe>
-
   <recipe id="71">
     <name>Gegrillte Früchte mit Ananas oder Pfirsich</name>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Dessert</category>
-    <image src="images/rezeptbild_71.png" alt="Gegrillte Früchte mit Ananas oder Pfirsich" />
+    <image src="images/rezeptbild_71.png" alt="Gegrillte Früchte mit Ananas oder Pfirsich"/>
     <ingredients>
       <item>1/2 frische Ananas oder 4 Pfirsiche</item>
       <item>1 EL brauner Zucker</item>
@@ -5389,12 +5382,11 @@
       <rating>8,5 / 10 – prosty letni deser bez dużego wysiłku.</rating>
     </translation>
   </recipe>
-
   <recipe id="72">
     <name>Klassische rote Sangria</name>
     <persons>4 Gläser</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_72.png" alt="Klassische rote Sangria" />
+    <image src="images/rezeptbild_72.png" alt="Klassische rote Sangria"/>
     <ingredients>
       <item>1 Flasche trockener Rotwein (0,75 l)</item>
       <item>200 ml Orangenlimonade oder Fanta</item>
@@ -5457,12 +5449,11 @@
       <rating>8,5 / 10 – owocowa, prosta i idealna na ciepłe wieczory.</rating>
     </translation>
   </recipe>
-
   <recipe id="73">
     <name>Weiße Sangria</name>
     <persons>4 Gläser</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_73.png" alt="Weiße Sangria" />
+    <image src="images/rezeptbild_73.png" alt="Weiße Sangria"/>
     <ingredients>
       <item>1 Flasche trockener Weißwein (0,75 l)</item>
       <item>200 ml Zitronenlimonade</item>
@@ -5525,12 +5516,11 @@
       <rating>8,5 / 10 – lekka, letnia i bardzo łatwa do przygotowania.</rating>
     </translation>
   </recipe>
-
   <recipe id="74">
     <name>Aperol Spritz</name>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_74.png" alt="Aperol Spritz" />
+    <image src="images/rezeptbild_74.png" alt="Aperol Spritz"/>
     <ingredients>
       <item>3 Eiswürfel oder mehr</item>
       <item>90 ml Prosecco</item>
@@ -5585,12 +5575,11 @@
       <rating>8,5 / 10 – szybki i bardzo letni klasyk.</rating>
     </translation>
   </recipe>
-
   <recipe id="75">
     <name>Mojito</name>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_75.png" alt="Mojito" />
+    <image src="images/rezeptbild_75.png" alt="Mojito"/>
     <ingredients>
       <item>1 Limette</item>
       <item>2 TL brauner Zucker</item>
@@ -5649,12 +5638,11 @@
       <rating>9 / 10 – świeży, lekki i idealny na ciepłe dni.</rating>
     </translation>
   </recipe>
-
   <recipe id="76">
     <name>Gin Tonic (Basisrezept und einfache Variationen)</name>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_76.png" alt="Gin Tonic (Basisrezept und einfache Variationen)" />
+    <image src="images/rezeptbild_76.png" alt="Gin Tonic (Basisrezept und einfache Variationen)"/>
     <ingredients>
       <item>50 ml Gin</item>
       <item>150 ml Tonic Water</item>
@@ -5715,5 +5703,4 @@
       <rating>8,5 / 10 – prosty, elastyczny i bardzo dobry dla gości.</rating>
     </translation>
   </recipe>
-
 </cookbook>
