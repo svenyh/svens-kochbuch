@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.2" languages="de,pl">
+<?xml version='1.0' encoding='utf-8'?>
+<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.3" languages="de,pl">
   <meta>
     <language>de,pl</language>
     <recipeCount>81</recipeCount>
-    <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
+    <notes>Bilinguale Version Deutsch/Polnisch. Rezept 5 sprachrein korrigiert. Frontend für alle 81 Rezepte konsistent neu aufgebaut. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
   </meta>
   <recipe id="1">
     <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
@@ -430,46 +430,14 @@
       <persons>4 osoby</persons>
       <category>Grill &amp; BBQ / dania mięsne</category>
       <ingredients>
-        <item>700 g wołowiny w paskach</item>
-        <item>2 papryki</item>
-        <item>1 cukinia</item>
-        <item>2 cebule</item>
-        <item>2–3 EL przyprawa BBQ</item>
-        <item>3–4 EL sos BBQ</item>
-        <item>1 limonka</item>
-        <item>1 EL olej</item>
-        <item>4 kiełbaski</item>
-        <item>1 kubeczek tzatziki</item>
-        <item>1 kubeczek tzatziki</item>
-        <item>1 opakowanie chleba flatbread</item>
-      </ingredients>
+        <item>700 g wołowiny w paskach</item><item>2 papryki</item><item>1 cukinia</item><item>2 cebule</item><item>2–3 EL przyprawy BBQ</item><item>3–4 EL sosu BBQ</item><item>1 limonka</item><item>1 EL oleju</item><item>4 kiełbaski</item><item>1 kubeczek tzatziki</item><item>1 opakowanie chleba flatbread</item><item>sól i pieprz do smaku</item></ingredients>
       <preparation>
-        <step nr="1">Wołowinę dopraw przyprawą BBQ i odstaw na chwilę.</step>
-        <step nr="2">Paprykę, cukinię i cebulę pokrój w paski.</step>
-        <step nr="3">żeliwna patelnia stark erhitzen.</step>
-        <step nr="4">Mięso mocno obsmaż i ponownie wyjmij z patelni.</step>
-        <step nr="5">warzywa ebenfalls kräftig anrösten.</step>
-        <step nr="6">Włożyć mięso z powrotem na patelnię.</step>
-        <step nr="7">Patelnię wstaw do smokera o temperaturze ok. 120–130 °C na 45–60 min.</step>
-        <step nr="8">pellet Hickory verwenden.</step>
-        <step nr="9">Następnie ponownie postawić patelnię na palniku gazowym.</step>
-        <step nr="10">Dodać sos BBQ i krótko całość zredukować.</step>
-        <step nr="11">Na końcu skrop świeżym sokiem z limonki.</step>
-        <step nr="12">Z tzatziki, chleb flatbread i kiełbasa podawać.</step>
-      </preparation>
+        <step nr="1">Wołowinę dopraw przyprawą BBQ i odstaw na chwilę.</step><step nr="2">Paprykę, cukinię i cebulę pokrój w paski.</step><step nr="3">Mocno rozgrzej żeliwną patelnię.</step><step nr="4">Mięso krótko i mocno obsmaż, a następnie wyjmij z patelni.</step><step nr="5">Warzywa również mocno podsmaż.</step><step nr="6">Włóż mięso z powrotem na patelnię.</step><step nr="7">Wstaw patelnię do smokera o temperaturze około 120–130 °C na 45–60 minut.</step><step nr="8">Użyj pelletu Hickory.</step><step nr="9">Następnie ponownie postaw patelnię na palniku gazowym.</step><step nr="10">Dodaj sos BBQ i krótko wszystko zredukuj.</step><step nr="11">Na końcu skrop świeżym sokiem z limonki.</step><step nr="12">Podawaj z tzatziki, chlebem flatbread i kiełbaską.</step></preparation>
       <timing>
-        <item>przygotowanie: 20 min</item>
-        <item>obsmażanie: 15 min</item>
-        <item>wędzenie: 45–60 min</item>
-        <item>wykończenie: 10 min</item>
-        <item>łącznie: ok. 1 godzina 30 min</item>
-      </timing>
+        <item>przygotowanie: 20 min</item><item>obsmażanie: 15 min</item><item>wędzenie: 45–60 min</item><item>wykończenie: 10 min</item><item>łącznie: ok. 1 godzina 30 min</item></timing>
       <tips>
-        <item>Nie przepełniaj patelni.</item>
-        <item>Sok z limonki dodaj naprawdę dopiero na samym końcu.</item>
-        <item>Idealne do grilla Pit Boss z pelletami Hickory.</item>
-      </tips>
-      <rating>Na stałe zapisane i dodane do książki BBQ.</rating>
+        <item>Nie przepełniaj patelni.</item><item>Sok z limonki dodaj naprawdę dopiero na końcu.</item><item>To świetne danie do grilla Pit Boss z pelletem Hickory.</item></tips>
+      <rating>Na stałe zapisany i przejęty do książki BBQ.</rating>
     </translation>
   </recipe>
   <recipe id="6">
