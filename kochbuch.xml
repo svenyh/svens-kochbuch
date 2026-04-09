@@ -2,7 +2,7 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.2" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>76</recipeCount>
+    <recipeCount>81</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
   </meta>
   <recipe id="1">
@@ -5701,6 +5701,361 @@
         <item>Najlepiej używać dobrze schłodzonego toniku.</item>
       </tips>
       <rating>8,5 / 10 – prosty, elastyczny i bardzo dobry dla gości.</rating>
+    </translation>
+  </recipe>
+  <recipe id="77">
+    <name>Grüner Spargel vom Grill – Basic &amp; Upgrade</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
+    <image src="images/rezeptbild_77.png" alt="Grüner Spargel vom Grill"/>
+    <ingredients>
+      <item>500 g grüner Spargel</item>
+      <item>2 EL Olivenöl</item>
+      <item>1/2 Zitrone</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: 30 g Parmesan</item>
+      <item>optional: 4–6 Scheiben Bacon</item>
+      <item>optional: 1 kleine Knoblauchzehe</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Die holzigen Enden des Spargels abbrechen oder abschneiden. Grünen Spargel musst du in der Regel nicht schälen.</step>
+      <step nr="2">Den Spargel mit Olivenöl, etwas Salz und Pfeffer vermengen. Wer mag, reibt noch ganz wenig Knoblauch dazu.</step>
+      <step nr="3">Den Grill auf mittlere Hitze bringen und den Spargel direkt auf den Rost oder in eine Grillpfanne legen.</step>
+      <step nr="4">Den Spargel 5–8 Minuten grillen und dabei regelmäßig wenden, bis er leichte Grillspuren hat und noch bissfest ist.</step>
+      <step nr="5">Direkt nach dem Grillen mit Zitronensaft verfeinern. Für die Upgrade-Version etwas Parmesan darüberreiben oder den Spargel mit Bacon umwickeln und dann grillen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Grillzeit: 5–8 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu lange grillen – grüner Spargel soll noch etwas Biss haben.</item>
+      <item>Mit Parmesan, Bacon oder etwas Zitronenabrieb lässt sich das Rezept leicht aufwerten.</item>
+      <item>Perfekt als schnelle Beilage zu Fleisch, Halloumi oder Baguette.</item>
+    </tips>
+    <rating>9,2 / 10 – schnell, frisch und ideal für den Grillabend.</rating>
+    <translation lang="pl">
+      <name>Zielone szparagi z grilla – wersja basic i upgrade</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / szparagi i kuchnia sezonowa</category>
+      <ingredients>
+        <item>500 g zielonych szparagów</item>
+        <item>2 łyżki oliwy</item>
+        <item>1/2 cytryny</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: 30 g parmezanu</item>
+        <item>opcjonalnie: 4–6 plastrów boczku</item>
+        <item>opcjonalnie: 1 mały ząbek czosnku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Odłamać lub odciąć zdrewniałe końcówki szparagów. Zielonych szparagów zazwyczaj nie trzeba obierać.</step>
+        <step nr="2">Wymieszać szparagi z oliwą, odrobiną soli i pieprzu. Jeśli chcesz, dodaj też bardzo mało startego czosnku.</step>
+        <step nr="3">Rozgrzać grill do średniej temperatury i ułożyć szparagi bezpośrednio na ruszcie albo na patelni grillowej.</step>
+        <step nr="4">Grillować przez 5–8 minut, regularnie obracając, aż pojawią się lekkie ślady przypieczenia, a szparagi pozostaną lekko chrupiące.</step>
+        <step nr="5">Zaraz po grillowaniu skropić sokiem z cytryny. W wersji upgrade można dodać starty parmezan albo owinąć szparagi boczkiem przed grillowaniem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>czas grillowania: 5–8 min</item>
+        <item>łącznie: ok. 15 min</item>
+      </timing>
+      <tips>
+        <item>Nie grilluj zbyt długo – zielone szparagi powinny zachować lekki chrup.</item>
+        <item>Przepis łatwo podkręcić parmezanem, boczkiem albo odrobiną skórki cytrynowej.</item>
+        <item>Świetny szybki dodatek do mięsa, halloumi albo bagietki.</item>
+      </tips>
+      <rating>9,2 / 10 – szybkie, świeże i idealne na grillowy wieczór.</rating>
+    </translation>
+  </recipe>
+  <recipe id="78">
+    <name>Weißer Spargel in Butter-Zitronen-Folie</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
+    <image src="images/rezeptbild_78.png" alt="Weißer Spargel in Butter-Zitronen-Folie"/>
+    <ingredients>
+      <item>500–800 g weißer Spargel</item>
+      <item>40 g Butter</item>
+      <item>1 TL Zucker</item>
+      <item>1/2 Zitrone</item>
+      <item>Salz</item>
+      <item>optional: etwas frisch gehackte Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den weißen Spargel gründlich schälen und die Enden abschneiden. Das ist wichtig, damit er später nicht fasrig bleibt.</step>
+      <step nr="2">Ein großes Stück Alufolie vorbereiten und den Spargel mittig darauflegen.</step>
+      <step nr="3">Butter in kleinen Stücken darauf verteilen, mit Zucker, etwas Salz und Zitronensaft würzen.</step>
+      <step nr="4">Die Folie dicht verschließen, sodass ein gut geschlossenes Paket entsteht.</step>
+      <step nr="5">Das Paket bei indirekter Hitze 15–20 Minuten grillen, bis der Spargel weich, aber nicht zu weich ist.</step>
+      <step nr="6">Vorsichtig öffnen, eventuell mit etwas Petersilie bestreuen und direkt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10–15 Minuten</item>
+      <item>Grillzeit: 15–20 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Der Zucker rundet den Geschmack ab und nimmt leichte Bitterkeit.</item>
+      <item>Das Folienpaket kann entspannt parallel zu Fleisch oder Würstchen auf dem Grill laufen.</item>
+      <item>Auch im Ofen sehr gut machbar.</item>
+    </tips>
+    <rating>9,0 / 10 – saftig, aromatisch und sehr unkompliziert.</rating>
+    <translation lang="pl">
+      <name>Białe szparagi w folii z masłem i cytryną</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / szparagi i kuchnia sezonowa</category>
+      <ingredients>
+        <item>500–800 g białych szparagów</item>
+        <item>40 g masła</item>
+        <item>1 łyżeczka cukru</item>
+        <item>1/2 cytryny</item>
+        <item>sól</item>
+        <item>opcjonalnie: trochę świeżo posiekanej pietruszki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dokładnie obrać białe szparagi i odciąć końcówki. To ważne, żeby po przygotowaniu nie były włókniste.</step>
+        <step nr="2">Przygotować duży kawałek folii aluminiowej i ułożyć na środku szparagi.</step>
+        <step nr="3">Rozłożyć na nich kawałki masła, doprawić cukrem, odrobiną soli i sokiem z cytryny.</step>
+        <step nr="4">Szczelnie zamknąć folię, tak aby powstała dobrze domknięta paczuszka.</step>
+        <step nr="5">Grillować w strefie pośredniej przez 15–20 minut, aż szparagi będą miękkie, ale nie rozgotowane.</step>
+        <step nr="6">Ostrożnie otworzyć, opcjonalnie posypać pietruszką i od razu podawać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10–15 min</item>
+        <item>czas grillowania: 15–20 min</item>
+        <item>łącznie: ok. 30 min</item>
+      </timing>
+      <tips>
+        <item>Cukier delikatnie zaokrągla smak i niweluje lekką goryczkę.</item>
+        <item>Paczka z folii może spokojnie grillować się równolegle obok mięsa albo kiełbasek.</item>
+        <item>Przepis bardzo dobrze wychodzi także w piekarniku.</item>
+      </tips>
+      <rating>9,0 / 10 – soczyste, aromatyczne i bardzo proste.</rating>
+    </translation>
+  </recipe>
+  <recipe id="79">
+    <name>Spargel vom Grill mit Parmesan und Zitrone</name>
+    <persons>2–3 Personen</persons>
+    <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
+    <image src="images/rezeptbild_79.png" alt="Spargel vom Grill mit Parmesan und Zitrone"/>
+    <ingredients>
+      <item>500 g grüner oder weißer Spargel</item>
+      <item>2 EL Olivenöl</item>
+      <item>30–40 g Parmesan</item>
+      <item>1/2 Zitrone</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: frische Kräuter</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Grünen Spargel nur an den Enden kürzen, weißen Spargel zusätzlich vollständig schälen.</step>
+      <step nr="2">Den Spargel mit Olivenöl, Salz und Pfeffer vermengen.</step>
+      <step nr="3">Bei mittlerer Hitze 6–10 Minuten grillen und dabei regelmäßig wenden.</step>
+      <step nr="4">Direkt nach dem Grillen mit Zitronensaft beträufeln und etwas Zitronenabrieb darübergeben, wenn du magst.</step>
+      <step nr="5">Zum Schluss frisch geriebenen Parmesan darüberstreuen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Grillzeit: 6–10 Minuten</item>
+      <item>Gesamt: ca. 20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Parmesan immer frisch reiben – das macht geschmacklich einen großen Unterschied.</item>
+      <item>Besonders gut als Vorspeise oder feine Grillbeilage.</item>
+      <item>Mit etwas Knoblauchöl wird es noch kräftiger.</item>
+    </tips>
+    <rating>9,3 / 10 – einfach, elegant und richtig stark im Geschmack.</rating>
+    <translation lang="pl">
+      <name>Szparagi z grilla z parmezanem i cytryną</name>
+      <persons>2–3 osoby</persons>
+      <category>Grill &amp; BBQ / szparagi i kuchnia sezonowa</category>
+      <ingredients>
+        <item>500 g zielonych lub białych szparagów</item>
+        <item>2 łyżki oliwy</item>
+        <item>30–40 g parmezanu</item>
+        <item>1/2 cytryny</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: świeże zioła</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Zielonym szparagom odciąć tylko końcówki, a białe dodatkowo dokładnie obrać.</step>
+        <step nr="2">Wymieszać szparagi z oliwą, solą i pieprzem.</step>
+        <step nr="3">Grillować na średnim ogniu przez 6–10 minut, regularnie obracając.</step>
+        <step nr="4">Zaraz po grillowaniu skropić sokiem z cytryny i opcjonalnie dodać trochę skórki z cytryny.</step>
+        <step nr="5">Na końcu posypać świeżo startym parmezanem i od razu podawać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>czas grillowania: 6–10 min</item>
+        <item>łącznie: ok. 20 min</item>
+      </timing>
+      <tips>
+        <item>Parmezan najlepiej ścierać świeżo – smak jest wtedy wyraźnie lepszy.</item>
+        <item>Bardzo dobry jako przystawka albo bardziej elegancki dodatek z grilla.</item>
+        <item>Z odrobiną oleju czosnkowego smak będzie jeszcze mocniejszy.</item>
+      </tips>
+      <rating>9,3 / 10 – proste, eleganckie i bardzo wyraziste w smaku.</rating>
+    </translation>
+  </recipe>
+  <recipe id="80">
+    <name>Grüner Spargel aus dem Airfryer</name>
+    <persons>2–3 Personen</persons>
+    <category>Airfryer / Spargel &amp; Saisonküche</category>
+    <image src="images/rezeptbild_80.png" alt="Grüner Spargel aus dem Airfryer"/>
+    <ingredients>
+      <item>500 g grüner Spargel</item>
+      <item>1–2 EL Olivenöl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1/2 Zitrone</item>
+      <item>optional: 20–30 g Parmesan</item>
+      <item>optional: 1 kleine Knoblauchzehe</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Die holzigen Enden des grünen Spargels abbrechen oder abschneiden. Grünen Spargel musst du nicht schälen.</step>
+      <step nr="2">Den Spargel mit Olivenöl, Salz und Pfeffer vermengen. Optional etwas fein geriebenen Knoblauch dazugeben.</step>
+      <step nr="3">Den Airfryer auf 180 °C vorheizen, wenn dein Gerät das unterstützt.</step>
+      <step nr="4">Den Spargel locker in den Korb legen – nicht zu eng, damit die heiße Luft gut zirkulieren kann.</step>
+      <step nr="5">Etwa 8–10 Minuten garen. Zwischendurch einmal kurz durchschütteln oder wenden.</step>
+      <step nr="6">Zum Schluss mit Zitronensaft verfeinern und nach Wunsch mit Parmesan servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Airfryer: 8–10 Minuten bei 180 °C</item>
+      <item>Gesamt: ca. 20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu voll packen – sonst wird der Spargel eher weich als schön geröstet.</item>
+      <item>Mit Parmesan oder etwas Zitronenabrieb wird er noch besser.</item>
+      <item>Perfekt als schnelle Beilage aus der Cosori.</item>
+    </tips>
+    <rating>9,1 / 10 – schnell, sauber und perfekt für den Alltag.</rating>
+    <translation lang="pl">
+      <name>Zielone szparagi z Airfryera</name>
+      <persons>2–3 osoby</persons>
+      <category>Airfryer / szparagi i kuchnia sezonowa</category>
+      <ingredients>
+        <item>500 g zielonych szparagów</item>
+        <item>1–2 łyżki oliwy</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>1/2 cytryny</item>
+        <item>opcjonalnie: 20–30 g parmezanu</item>
+        <item>opcjonalnie: 1 mały ząbek czosnku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Odłamać lub odciąć zdrewniałe końcówki zielonych szparagów. Zielonych szparagów nie trzeba obierać.</step>
+        <step nr="2">Wymieszać szparagi z oliwą, solą i pieprzem. Opcjonalnie dodać odrobinę drobno startego czosnku.</step>
+        <step nr="3">Rozgrzać Airfryera do 180 °C, jeśli urządzenie ma funkcję nagrzewania wstępnego.</step>
+        <step nr="4">Ułożyć szparagi luźno w koszu – nie za ciasno, aby gorące powietrze mogło dobrze krążyć.</step>
+        <step nr="5">Piec około 8–10 minut. W połowie czasu lekko potrząsnąć koszem albo obrócić szparagi.</step>
+        <step nr="6">Na końcu skropić sokiem z cytryny i opcjonalnie posypać parmezanem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 10 min</item>
+        <item>Airfryer: 8–10 min w 180 °C</item>
+        <item>łącznie: ok. 20 min</item>
+      </timing>
+      <tips>
+        <item>Nie układaj szparagów zbyt ciasno – inaczej będą bardziej miękkie niż lekko przypieczone.</item>
+        <item>Z parmezanem albo odrobiną skórki cytrynowej smakują jeszcze lepiej.</item>
+        <item>Świetny szybki dodatek z Cosori.</item>
+      </tips>
+      <rating>9,1 / 10 – szybkie, wygodne i idealne na co dzień.</rating>
+    </translation>
+  </recipe>
+  <recipe id="81">
+    <name>Afrikanischer Erdnusseintopf</name>
+    <persons>4 Personen</persons>
+    <category>Suppen / Eintöpfe</category>
+    <image src="images/rezeptbild_81.png" alt="Afrikanischer Erdnusseintopf"/>
+    <ingredients>
+      <item>1/2 Weißkohl</item>
+      <item>2 Möhren</item>
+      <item>1 Zwiebel</item>
+      <item>1 Paprikaschote</item>
+      <item>1 kleine Dose Kidneybohnen</item>
+      <item>1 Dose Mais</item>
+      <item>500 g passierte Tomaten</item>
+      <item>250 ml Gemüsebrühe</item>
+      <item>4 EL Erdnussbutter</item>
+      <item>1 EL Senf</item>
+      <item>1 EL Kreuzkümmel</item>
+      <item>1 TL Thymian</item>
+      <item>1/2 TL Paprikapulver</item>
+      <item>1–2 TL Cayennepfeffer nach Geschmack</item>
+      <item>etwas Öl zum Anbraten</item>
+      <item>Mangosaft nach Geschmack</item>
+      <item>Salz und Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Weißkohl, Möhren, Zwiebel und Paprika vorbereiten. Den Kohl in feine Streifen schneiden, die Möhren schälen und klein würfeln oder in halbe Scheiben schneiden. Zwiebel und Paprika ebenfalls klein schneiden.</step>
+      <step nr="2">Weißkohl und Möhren in wenig Wasser separat 5–8 Minuten vorkochen, damit sie später im Eintopf schön weich werden, aber noch Struktur behalten. Danach abgießen und beiseitestellen.</step>
+      <step nr="3">In einem großen Topf etwas Öl erhitzen und Zwiebel sowie Paprika 3–4 Minuten anschwitzen. Dann Kreuzkümmel, Cayennepfeffer und Senf dazugeben und ganz kurz mitrösten, damit die Gewürze ihr Aroma entfalten.</step>
+      <step nr="4">Passierte Tomaten und Gemüsebrühe angießen und alles etwa 5 Minuten offen köcheln lassen.</step>
+      <step nr="5">Nun Thymian, Paprikapulver und Erdnussbutter einrühren. Die Sauce so lange rühren, bis sich die Erdnussbutter vollständig gelöst hat und der Eintopf schön cremig wird.</step>
+      <step nr="6">Kidneybohnen und Mais abgießen und zusammen mit dem vorgegarten Kohl und den Möhren in den Topf geben. Alles weitere 10–15 Minuten sanft köcheln lassen. Dabei immer wieder umrühren, weil der Eintopf durch die Erdnussbutter leicht am Boden ansetzen kann.</step>
+      <step nr="7">Zum Schluss mit etwas Mangosaft, Salz, Pfeffer und nach Wunsch noch etwas Cayennepfeffer abschmecken. Der Mangosaft bringt eine fruchtige Süße hinein, die sehr gut mit der Erdnussnote harmoniert.</step>
+      <step nr="8">Heiß servieren. Dazu passen frisches Baguette, Fladenbrot oder – wenn gewünscht – auch Reis.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Kochzeit: ca. 25 Minuten</item>
+      <item>Gesamt: ca. 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Wenn du es milder magst, nimm zuerst nur 1 TL Cayennepfeffer und würze später nach.</item>
+      <item>Statt Mangosaft funktioniert auch etwas Orangensaft oder ein kleiner Spritzer Limette, aber Mango passt besonders gut zur Erdnussnote.</item>
+      <item>Der Eintopf schmeckt am nächsten Tag fast noch besser, weil die Gewürze dann stärker durchgezogen sind.</item>
+    </tips>
+    <rating>9,0 / 10 – würzig, cremig und mal etwas anderes als ein klassischer Gemüseeintopf.</rating>
+    <translation lang="pl">
+      <name>Afrykański gulasz z masłem orzechowym</name>
+      <persons>4 osoby</persons>
+      <category>Zupy / gulasze</category>
+      <ingredients>
+        <item>1/2 białej kapusty</item>
+        <item>2 marchewki</item>
+        <item>1 cebula</item>
+        <item>1 papryka</item>
+        <item>1 mała puszka czerwonej fasoli</item>
+        <item>1 puszka kukurydzy</item>
+        <item>500 g passaty pomidorowej</item>
+        <item>250 ml bulionu warzywnego</item>
+        <item>4 łyżki masła orzechowego</item>
+        <item>1 łyżka musztardy</item>
+        <item>1 łyżka kminu rzymskiego</item>
+        <item>1 łyżeczka tymianku</item>
+        <item>1/2 łyżeczki papryki</item>
+        <item>1–2 łyżeczki pieprzu cayenne do smaku</item>
+        <item>trochę oleju do smażenia</item>
+        <item>sok mango do smaku</item>
+        <item>sól i pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować kapustę, marchew, cebulę i paprykę. Kapustę pokroić w cienkie paski, marchew obrać i pokroić w kostkę albo półplasterki. Cebulę i paprykę również drobno pokroić.</step>
+        <step nr="2">Kapustę i marchew podgotować osobno przez 5–8 minut w niewielkiej ilości wody, aby później w gulaszu były miękkie, ale nadal miały strukturę. Następnie odcedzić i odstawić.</step>
+        <step nr="3">W dużym garnku rozgrzać trochę oleju i podsmażyć cebulę oraz paprykę przez 3–4 minuty. Następnie dodać kmin rzymski, pieprz cayenne i musztardę i krótko podsmażyć, aby przyprawy oddały aromat.</step>
+        <step nr="4">Wlać passatę pomidorową i bulion warzywny, a następnie gotować całość bez przykrycia około 5 minut.</step>
+        <step nr="5">Dodać tymianek, paprykę i masło orzechowe. Mieszać tak długo, aż masło orzechowe całkowicie się rozpuści i gulasz stanie się kremowy.</step>
+        <step nr="6">Odcedzić fasolę i kukurydzę, a potem dodać je razem z podgotowaną kapustą i marchewką do garnka. Całość delikatnie gotować jeszcze 10–15 minut. Co jakiś czas mieszać, ponieważ przez masło orzechowe gulasz łatwo przywiera do dna.</step>
+        <step nr="7">Na końcu doprawić odrobiną soku mango, solą, pieprzem i – jeśli trzeba – dodatkowym pieprzem cayenne. Sok mango dodaje owocowej słodyczy, która bardzo dobrze pasuje do nuty orzechowej.</step>
+        <step nr="8">Podawać gorące. Bardzo dobrze pasuje świeża bagietka, chlebek pita albo – jeśli chcesz – ryż.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 20 min</item>
+        <item>gotowanie: ok. 25 min</item>
+        <item>łącznie: ok. 45 min</item>
+      </timing>
+      <tips>
+        <item>Jeśli wolisz łagodniejszą wersję, zacznij od 1 łyżeczki pieprzu cayenne i dopraw później.</item>
+        <item>Zamiast soku mango możesz użyć odrobiny soku pomarańczowego albo kilku kropel limonki, ale mango szczególnie dobrze pasuje do nuty orzechowej.</item>
+        <item>Ten gulasz następnego dnia smakuje prawie jeszcze lepiej, bo przyprawy mają wtedy więcej czasu, żeby się przegryźć.</item>
+      </tips>
+      <rating>9,0 / 10 – aromatyczny, kremowy i przyjemnie inny niż klasyczny gulasz warzywny.</rating>
     </translation>
   </recipe>
 </cookbook>
