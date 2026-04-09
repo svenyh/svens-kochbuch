@@ -8,64 +8,124 @@
 <meta content="Rezepte, bereits gekocht und für gut befunden." name="description"/>
 <style>
 :root {
-  --bg:#f6f3ee; --panel:#fbf8f3; --line:#e7d7c8; --text:#3d2414; --muted:#7b6a5d; --accent:#966740;
+  --bg:#fcf7f1;
+  --panel:#ffffff;
+  --line:#ecdccf;
+  --text:#43220f;
+  --muted:#8b6f5c;
+  --accent:#c97a2b;
+  --accent-strong:#a95d16;
+  --pill:#f5e8da;
+  --header:#fffdfb;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
 .wrap{max-width:1180px;margin:0 auto;padding:24px}
-header{background:#fff;border-bottom:1px solid rgba(150,103,64,.12)}
+header{background:var(--header);border-bottom:1px solid rgba(150,103,64,.12)}
 header .wrap{display:flex;flex-direction:column;gap:.75rem;align-items:flex-start}
 h1,h2,h3{line-height:1.2}
 h1{margin:0;font-size:2.2rem}
 .subtitle{color:var(--muted)}
 .lang-switch{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;justify-content:flex-start}
 .lang-btn{border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:.55rem .9rem;cursor:pointer;font:inherit}
-.lang-btn.active{background:#222;color:#fff;border-color:#222}
+.lang-btn.active{background:var(--accent-strong);color:#fff;border-color:var(--accent-strong)}
 [lang-variant]{display:none}
 html[data-lang="de"] [lang-variant="de"]{display:initial}
 html[data-lang="pl"] [lang-variant="pl"]{display:initial}
 html[data-lang="de"] li[lang-variant="de"], html[data-lang="pl"] li[lang-variant="pl"]{display:list-item}
 
-.site-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:1.5rem;align-items:start}
-.category-sidebar{position:sticky;top:1rem;align-self:start;background:#fff;border:1px solid rgba(139,94,60,.15);border-radius:18px;padding:1rem;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+.site-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:1.5rem;align-items:start;min-width:0}
+.category-sidebar{position:sticky;top:1rem;align-self:start;max-height:calc(100vh - 2rem);overflow:auto;background:#fff;border:1px solid rgba(139,94,60,.15);border-radius:18px;padding:1rem;box-shadow:0 8px 24px rgba(0,0,0,.04);scrollbar-width:thin}
 .category-sidebar h2{margin:0 0 .9rem}
 .category-list{display:flex;flex-direction:column;gap:.55rem}
 .category-btn{width:100%;text-align:left;border:1px solid #e5d7cc;background:#fff;color:#5b341c;border-radius:999px;padding:.72rem .9rem;font:inherit;cursor:pointer;transition:.15s ease}
-.category-btn:hover{background:#f7efe9}
+.category-btn:hover{background:#fff2e4}
 .category-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 
-.content-column{min-width:0}
-.toc-toolbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.content-column{min-width:0;display:grid;gap:1.25rem}
+.toc-toolbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:.8rem;position:sticky;top:0;background:var(--bg);z-index:2;padding-bottom:.25rem}
 .toc-current-filter{font-size:.95rem;color:#6b7280}
-.toc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1rem;align-items:start}
+.toc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem .85rem;align-items:start;max-height:42vh;overflow:auto;padding-right:.25rem}
 .toc-grid>div{padding:0}
-.toc-grid a{display:block;text-decoration:none;color:inherit;line-height:1.35;padding:.85rem .95rem;border:1px solid rgba(139,94,60,.12);border-radius:14px;background:#fff}
-.toc-grid a:hover{color:var(--accent);background:#fcf8f5}
+.toc-grid a{display:block;text-decoration:none;color:inherit;line-height:1.3;padding:.7rem .8rem;border:1px solid rgba(139,94,60,.12);border-radius:14px;background:#fff;font-size:.98rem}
+.toc-grid a:hover{color:var(--accent-strong);background:#fff7ef}
 .recipe.hidden-by-filter,.toc-grid>div.hidden-by-filter{display:none !important}
 
-.recipe{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:1.25rem;background:var(--panel);border:1px solid rgba(150,103,64,.14);border-radius:22px;padding:1.25rem;margin:1.25rem 0}
+.recipe{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:1.25rem;align-items:start;background:var(--panel);border:1px solid rgba(150,103,64,.14);border-radius:22px;padding:1.25rem;margin:0;overflow:hidden;box-shadow:0 10px 28px rgba(95,56,24,.05)}
 .recipe img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid rgba(0,0,0,.08);background:#fff}
 .meta{display:flex;gap:.6rem;flex-wrap:wrap;margin:.5rem 0 1rem}
-.tag{display:inline-flex;align-items:center;padding:.35rem .7rem;border-radius:999px;background:#efe5db;color:#6f4425;font-size:.92rem}
+.tag{display:inline-flex;align-items:center;padding:.35rem .7rem;border-radius:999px;background:var(--pill);color:#7a4a23;font-size:.92rem}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
 ul,ol{padding-left:1.2rem}
 li{margin:.3rem 0}
 .mobile-category-toggle{display:none}
 
+.category-sidebar::-webkit-scrollbar{width:10px}
+.category-sidebar::-webkit-scrollbar-thumb{background:#d8c4b2;border-radius:999px}
+.category-sidebar::-webkit-scrollbar-track{background:transparent}
+.recipe > div{min-width:0}
+.recipe h2,.recipe h3,.recipe p,.recipe li{overflow-wrap:anywhere;word-break:normal}
+
+
 @media (max-width: 980px){
   .site-layout{grid-template-columns:1fr}
-  .category-sidebar{position:static}
+  .category-sidebar{position:static;max-height:none;overflow:visible}
   .mobile-category-toggle{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:.55rem .9rem;cursor:pointer}
   .recipe{grid-template-columns:1fr}
 }
 @media (max-width: 720px){
   .toc-grid,.grid-2{grid-template-columns:1fr}
+  .toc-grid{max-height:50vh}
 }
 @media (max-width: 640px){
   .wrap{padding:16px}
   h1{font-size:2rem}
   .category-list{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
   .category-btn{font-size:.92rem;padding:.68rem .8rem}
+}
+
+
+.toc-grid::-webkit-scrollbar{width:10px}
+.toc-grid::-webkit-scrollbar-thumb{background:#d8c4b2;border-radius:999px}
+.toc-grid::-webkit-scrollbar-track{background:transparent}
+.toc .toc-note{font-size:.92rem;color:var(--muted);margin:.1rem 0 .75rem}
+
+
+.search-box{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.8rem}
+.search-input{width:min(460px,100%);padding:.8rem .95rem;border:1px solid var(--line);border-radius:14px;background:#fff;font:inherit;color:var(--text)}
+.search-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(201,122,43,.14)}
+.toc-actions{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.small-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:.55rem .85rem;cursor:pointer;font:inherit;color:var(--text)}
+.small-btn:hover{background:#fff2e4}
+.site-footer{margin-top:2rem;padding:1.2rem 0 2rem;color:var(--muted);font-size:.95rem}
+.site-footer .footer-links{display:flex;gap:1rem;flex-wrap:wrap}
+.site-footer a{text-decoration:none;color:var(--accent-strong)}
+.site-footer a:hover{text-decoration:underline}
+.legal-wrap{max-width:900px;margin:0 auto;padding:24px}
+.legal-card{background:#fff;border:1px solid rgba(150,103,64,.14);border-radius:22px;padding:1.5rem;box-shadow:0 10px 28px rgba(95,56,24,.05)}
+.legal-card h1{font-size:2rem;margin-top:0}
+.legal-card h2{margin-top:1.4rem}
+
+
+.hero-panel{background:linear-gradient(180deg,#fffdfb 0%, #fff7ef 100%);border:1px solid rgba(150,103,64,.12);border-radius:24px;padding:1.25rem 1.3rem;box-shadow:0 10px 28px rgba(95,56,24,.04)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;align-items:start}
+.hero-grid h2{margin:.1rem 0 .4rem}
+.hero-grid p{margin:.2rem 0;color:var(--muted)}
+.quick-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}
+.stat-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:.85rem .9rem}
+.stat-card strong{display:block;font-size:1.15rem;color:var(--accent-strong)}
+.recipe-feed-header{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:.2rem}
+.recipe-feed-note{font-size:.94rem;color:var(--muted)}
+.recipe-feed{display:grid;gap:1.25rem}
+.hidden-recipe{display:none!important}
+.section-card{background:#fff;border:1px solid rgba(150,103,64,.12);border-radius:22px;padding:1rem 1rem 1.1rem;box-shadow:0 10px 28px rgba(95,56,24,.04)}
+.jump-links{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.7rem}
+.jump-links a{display:inline-flex;padding:.5rem .8rem;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--text);background:#fff}
+.jump-links a:hover{background:#fff2e4}
+@media (max-width: 980px){
+  .hero-grid{grid-template-columns:1fr}
+  .quick-stats{grid-template-columns:1fr}
+  .toc-grid{max-height:38vh}
 }
 </style>
 </head>
@@ -81,28 +141,14 @@ li{margin:.3rem 0}
 </div>
 </header>
 <main class="wrap">
-<div class="site-layout">
+<section class="hero-panel"><div class="hero-grid"><div><h2><span lang-variant="de">Willkommen in Svens Kochbuch</span><span lang-variant="pl">Witamy w kucharskiej kolekcji Svena</span></h2><p><span lang-variant="de">Die Startseite ist jetzt kompakter: erst suchen oder filtern, dann gezielt ins Rezept springen.</span><span lang-variant="pl">Strona główna jest teraz bardziej kompaktowa: najpierw wyszukiwanie lub filtr, potem szybki skok do przepisu.</span></p><div class="jump-links"><a href="#categoryList"><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></a><a href="#recipeSearch"><span lang-variant="de">Suche</span><span lang-variant="pl">Szukaj</span></a><a href="#recipeFeed"><span lang-variant="de">Rezeptkarten</span><span lang-variant="pl">Karty przepisów</span></a></div></div><div class="quick-stats"><div class="stat-card"><strong>81</strong><span><span lang-variant="de">Rezepte</span><span lang-variant="pl">Przepisy</span></span></div><div class="stat-card"><strong>DE + PL</strong><span><span lang-variant="de">Zweisprachig</span><span lang-variant="pl">Dwujęzycznie</span></span></div><div class="stat-card"><strong>Airfryer / Grill / Ofen</strong><span><span lang-variant="de">Fokus</span><span lang-variant="pl">Fokus</span></span></div></div></div></section><div class="site-layout">
 <aside class="category-sidebar" id="categorySidebar">
 <h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2>
 <p class="small"><span lang-variant="de">Nach Kategorie filtern und passende Rezepte direkt anzeigen.</span><span lang-variant="pl">Filtruj według kategorii i wyświetlaj od razu pasujące przepisy.</span></p>
 <div class="category-list" id="categoryList"><button class="category-btn active" data-category="all" type="button"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></button><button class="category-btn" data-category="ofengerichte" type="button"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></button><button class="category-btn" data-category="pfannengerichte" type="button"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></button><button class="category-btn" data-category="grill-bbq" type="button"><span lang-variant="de">Grill &amp; BBQ</span><span lang-variant="pl">Grill &amp; BBQ</span></button><button class="category-btn" data-category="suppen" type="button"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span></button><button class="category-btn" data-category="grundlagen" type="button"><span lang-variant="de">Grundlagen</span><span lang-variant="pl">Podstawy</span></button><button class="category-btn" data-category="gebaeck-suesses" type="button"><span lang-variant="de">Gebäck &amp; Süßes</span><span lang-variant="pl">Wypieki i słodkie</span></button><button class="category-btn" data-category="teiggerichte" type="button"><span lang-variant="de">Teiggerichte</span><span lang-variant="pl">Dania z ciasta</span></button><button class="category-btn" data-category="fisch-meeresfruechte" type="button"><span lang-variant="de">Fisch &amp; Meeresfrüchte</span><span lang-variant="pl">Ryby i owoce morza</span></button><button class="category-btn" data-category="saucen-polnische-kueche" type="button"><span lang-variant="de">Saucen Polnische Kueche</span><span lang-variant="pl">Saucen Polnische Kueche</span></button><button class="category-btn" data-category="airfryer" type="button"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span></button><button class="category-btn" data-category="wraps-und-burritos" type="button"><span lang-variant="de">Wraps Und Burritos</span><span lang-variant="pl">Wraps Und Burritos</span></button><button class="category-btn" data-category="nudelgerichte" type="button"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Nudelgerichte</span></button><button class="category-btn" data-category="cocktails" type="button"><span lang-variant="de">Cocktails</span><span lang-variant="pl">Koktajle</span></button><button class="category-btn" data-category="beilagen" type="button"><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span></button></div>
 </aside>
 <div class="content-column">
-<section class="toc">
-<h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2>
-<div class="toc-toolbar">
-<button class="mobile-category-toggle" id="mobileCategoryToggle" type="button"><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></button>
-<div class="toc-current-filter" id="currentCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></div>
-</div>
-<div class="toc-grid"><div data-category="ofengerichte"><a href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a></div><div data-category="ofengerichte"><a href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a></div><div data-category="pfannengerichte"><a href="#rezept-3"><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></a></div><div data-category="ofengerichte"><a href="#rezept-4"><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></a></div><div data-category="grill-bbq"><a href="#rezept-5"><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></a></div><div data-category="grill-bbq"><a href="#rezept-6"><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></a></div><div data-category="pfannengerichte"><a href="#rezept-7"><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></a></div><div data-category="pfannengerichte"><a href="#rezept-8"><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></a></div><div data-category="pfannengerichte"><a href="#rezept-9"><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></a></div><div data-category="ofengerichte"><a href="#rezept-10"><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></a></div><div data-category="ofengerichte"><a href="#rezept-11"><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></a></div><div data-category="pfannengerichte"><a href="#rezept-12"><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></a></div><div data-category="pfannengerichte"><a href="#rezept-13"><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></a></div><div data-category="ofengerichte"><a href="#rezept-14"><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></a></div><div data-category="ofengerichte"><a href="#rezept-15"><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></a></div><div data-category="ofengerichte"><a href="#rezept-16"><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></a></div><div data-category="ofengerichte"><a href="#rezept-17"><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></a></div><div data-category="suppen"><a href="#rezept-18"><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></a></div><div data-category="grundlagen"><a href="#rezept-19"><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></a></div><div data-category="pfannengerichte"><a href="#rezept-20"><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></a></div><div data-category="gebaeck-suesses"><a href="#rezept-21"><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></a></div><div data-category="suppen"><a href="#rezept-22"><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></a></div><div data-category="teiggerichte"><a href="#rezept-23"><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></a></div><div data-category="pfannengerichte"><a href="#rezept-24"><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></a></div><div data-category="fisch-meeresfruechte"><a href="#rezept-25"><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></a></div><div data-category="fisch-meeresfruechte"><a href="#rezept-26"><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></a></div><div data-category="pfannengerichte"><a href="#rezept-27"><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></a></div><div data-category="ofengerichte"><a href="#rezept-28"><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></a></div><div data-category="pfannengerichte"><a href="#rezept-29"><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></a></div><div data-category="ofengerichte"><a href="#rezept-30"><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></a></div><div data-category="suppen"><a href="#rezept-31"><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></a></div><div data-category="suppen"><a href="#rezept-32"><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></a></div><div data-category="saucen-polnische-kueche"><a href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a></div><div data-category="suppen"><a href="#rezept-34"><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></a></div><div data-category="ofengerichte"><a href="#rezept-35"><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></a></div><div data-category="ofengerichte"><a href="#rezept-36"><span lang-variant="de">36. Irish Beef Rollbraten aus dem Backofen</span><span lang-variant="pl">36. Irlandzka pieczeń wołowa z piekarnika</span></a></div><div data-category="airfryer"><a href="#rezept-37"><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></a></div><div data-category="ofengerichte"><a href="#rezept-38"><span lang-variant="de">38. Klassischer Schmorbraten mit dunkler Sauce</span><span lang-variant="pl">38. Klasyczna pieczeń duszona z ciemnym sosem</span></a></div><div data-category="ofengerichte"><a href="#rezept-39"><span lang-variant="de">39. Hähnchen-Kartoffel-Pfanne mit Gemüse</span><span lang-variant="pl">39. Zapiekanka z kurczakiem, ziemniakami i warzywami</span></a></div><div data-category="ofengerichte"><a href="#rezept-40"><span lang-variant="de">40. Bratwurst mit Sauerkraut aus dem Ofen</span><span lang-variant="pl">40. Biała kiełbasa pieczona z kapustą kiszoną</span></a></div><div data-category="wraps-und-burritos"><a href="#rezept-41"><span lang-variant="de">41. Saftiger Chicken-Cheese-Burrito ohne Reis</span><span lang-variant="pl">41. Soczysty burrito z kurczakiem i serem bez ryżu</span></a></div><div data-category="nudelgerichte"><a href="#rezept-42"><span lang-variant="de">42. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">42. Spaghetti z czosnkiem i sambal oelek</span></a></div><div data-category="pfannengerichte"><a href="#rezept-43"><span lang-variant="de">43. Knoblauch-Kartoffel-Pfanne mit Chili und Ei</span><span lang-variant="pl">43. Patelnia ziemniaczana z czosnkiem, chili i jajkiem</span></a></div><div data-category="nudelgerichte"><a href="#rezept-44"><span lang-variant="de">44. Cremige Parmesan-Pasta ohne Sahne</span><span lang-variant="pl">44. Kremowy makaron z parmezanem bez śmietany</span></a></div><div data-category="pfannengerichte"><a href="#rezept-45"><span lang-variant="de">45. Cordon Bleu mit Nasi Goreng</span><span lang-variant="pl">45. Cordon Bleu z nasi goreng</span></a></div>
-<div data-category="pfannengerichte"><a href="#rezept-46"><span lang-variant="de">46. Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</span><span lang-variant="pl">46. Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</span></a></div>
-<div data-category="cocktails"><a href="#rezept-47"><span lang-variant="de">47. Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">47. Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</span></a></div>
-<div data-category="cocktails"><a href="#rezept-48"><span lang-variant="de">48. Ananas-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">48. Ananasowy slush z rumem do Ninja Slushi</span></a></div>
-<div data-category="cocktails"><a href="#rezept-49"><span lang-variant="de">49. Zitronen-Vodka-Slush für den Ninja Slushi</span><span lang-variant="pl">49. Cytrynowy slush z wódką do Ninja Slushi</span></a></div>
-<div data-category="cocktails"><a href="#rezept-50"><span lang-variant="de">50. Waldbeer-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">50. Leśny slush z różowym sektem do Ninja Slushi</span></a></div>
-<div data-category="cocktails"><a href="#rezept-51"><span lang-variant="de">51. Mango-Maracuja-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">51. Mango-marakuja slush z rumem do Ninja Slushi</span></a></div><div data-category="eiergerichte"><a href="#rezept-52"><span lang-variant="de">52. Senfeier mit Kartoffeln</span><span lang-variant="pl">52. Jajka w sosie musztardowym z ziemniakami</span></a></div><div data-category="grill-bbq"><a href="#rezept-53"><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></a></div><div data-category="grill-bbq"><a href="#rezept-54"><span lang-variant="de">54. Spare Ribs mit Espresso-Rub</span><span lang-variant="pl">54. Żeberka z rubem espresso</span></a></div><div data-category="grill-bbq"><a href="#rezept-55"><span lang-variant="de">55. Gegrillter Halloumi mit Kräutern und Olivenöl</span><span lang-variant="pl">55. Grillowany halloumi z ziołami i oliwą</span></a></div><div data-category="grill-bbq"><a href="#rezept-56"><span lang-variant="de">56. Gemüsespieße vom Grill</span><span lang-variant="pl">56. Warzywne szaszłyki z grilla</span></a></div><div data-category="grill-bbq"><a href="#rezept-57"><span lang-variant="de">57. Gefüllte Portobello-Pilze vom Grill</span><span lang-variant="pl">57. Faszerowane pieczarki portobello z grilla</span></a></div><div data-category="grill-bbq"><a href="#rezept-58"><span lang-variant="de">58. Grüner Spargel vom Grill mit Zitronenbutter</span><span lang-variant="pl">58. Zielone szparagi z grilla z masłem cytrynowym</span></a></div><div data-category="grill-bbq"><a href="#rezept-59"><span lang-variant="de">59. Süßkartoffel-Pommes vom Grill</span><span lang-variant="pl">59. Frytki z batatów z grilla</span></a></div><div data-category="beilagen"><a href="#rezept-60"><span lang-variant="de">60. Melonen-Feta-Salat mit Minze</span><span lang-variant="pl">60. Sałatka z arbuza, fety i mięty</span></a></div><div data-category="eiergerichte"><a href="#rezept-61"><span lang-variant="de">61. Shakshuka</span><span lang-variant="pl">61. Szakszuka</span></a></div><div data-category="ofengerichte"><a href="#rezept-62"><span lang-variant="de">62. Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</span><span lang-variant="pl">62. Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</span></a></div><div data-category="pfannengerichte"><a href="#rezept-63"><span lang-variant="de">63. Ratatouille mit Polenta</span><span lang-variant="pl">63. Ratatouille z polentą</span></a></div><div data-category="grill-bbq"><a href="#rezept-64"><span lang-variant="de">64. Marinierte Hähnchenspieße vom Grill</span><span lang-variant="pl">64. Marynowane szaszłyki z kurczaka z grilla</span></a></div><div data-category="beilagen"><a href="#rezept-65"><span lang-variant="de">65. Gegrillte Maiskolben mit Butter</span><span lang-variant="pl">65. Grillowana kukurydza z masłem</span></a></div><div data-category="grill-bbq"><a href="#rezept-66"><span lang-variant="de">66. Halloumi vom Grill</span><span lang-variant="pl">66. Halloumi z grilla</span></a></div><div data-category="grill-bbq"><a href="#rezept-67"><span lang-variant="de">67. Würzige Bratwürste vom Grill (klassisch und einfache Variante)</span><span lang-variant="pl">67. Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</span></a></div><div data-category="grill-bbq"><a href="#rezept-68"><span lang-variant="de">68. Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</span><span lang-variant="pl">68. Grillowane warzywa z cukinią, papryką i pieczarkami</span></a></div><div data-category="grill-bbq"><a href="#rezept-69"><span lang-variant="de">69. Grillkartoffeln in Alufolie mit Rosmarin</span><span lang-variant="pl">69. Ziemniaki z grilla w folii z rozmarynem</span></a></div><div data-category="grill-bbq"><a href="#rezept-70"><span lang-variant="de">70. Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</span><span lang-variant="pl">70. Grillowana bagietka lub ciabatta z oliwą czosnkową</span></a></div><div data-category="grill-bbq"><a href="#rezept-71"><span lang-variant="de">71. Gegrillte Früchte mit Ananas oder Pfirsich</span><span lang-variant="pl">71. Grillowane owoce z ananasem lub brzoskwinią</span></a></div><div data-category="cocktails"><a href="#rezept-72"><span lang-variant="de">72. Klassische rote Sangria</span><span lang-variant="pl">72. Klasyczna czerwona sangria</span></a></div><div data-category="cocktails"><a href="#rezept-73"><span lang-variant="de">73. Weiße Sangria</span><span lang-variant="pl">73. Biała sangria</span></a></div><div data-category="cocktails"><a href="#rezept-74"><span lang-variant="de">74. Aperol Spritz</span><span lang-variant="pl">74. Aperol Spritz</span></a></div><div data-category="cocktails"><a href="#rezept-75"><span lang-variant="de">75. Mojito</span><span lang-variant="pl">75. Mojito</span></a></div><div data-category="cocktails"><a href="#rezept-76"><span lang-variant="de">76. Gin Tonic (Basisrezept und einfache Variationen)</span><span lang-variant="pl">76. Gin Tonic (wersja podstawowa i proste warianty)</span></a></div><div data-category="grill-bbq"><a href="#rezept-77"><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></a></div><div data-category="grill-bbq"><a href="#rezept-78"><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></a></div><div data-category="grill-bbq"><a href="#rezept-79"><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></a></div><div data-category="airfryer"><a href="#rezept-80"><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></a></div><div data-category="suppen"><a href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a></div></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-1">
+<div class="recipe-feed-header"><h2 id="recipeFeed"><span lang-variant="de">Rezeptkarten</span><span lang-variant="pl">Karty przepisów</span></h2><div class="recipe-feed-note"><span lang-variant="de">Zur besseren Übersicht werden anfangs nur 8 Karten gezeigt.</span><span lang-variant="pl">Dla lepszej przejrzystości początkowo widocznych jest tylko 8 kart.</span></div></div><div class="recipe-feed" id="recipeFeedList"><section class="recipe" data-category="ofengerichte" data-title="1. spanische kohlrouladen mit chorizo, rotwein und speck 1. hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem" id="rezept-1">
 <div>
 <h2><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></h2>
 <div class="meta">
@@ -127,8 +173,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</span><span lang-variant="pl">Nie ma jeszcze stałej oceny liczbowej; należy jednak do dobrych, zapisanych przepisów.</span></p>
 </div>
 <div><img alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" loading="lazy" src="images/rezeptbild_01.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-2">
+</section><section class="recipe" data-category="ofengerichte" data-title="2. italienischer kalbshaxen-braten 2. włoska pieczeń z golonki cielęcej" id="rezept-2">
 <div>
 <h2><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></h2>
 <div class="meta">
@@ -153,8 +198,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fest gespeichert als gutes Rezept.</span><span lang-variant="pl">Na stałe zapisany jako dobry przepis.</span></p>
 </div>
 <div><img alt="Italienischer Kalbshaxen-Braten" loading="lazy" src="images/rezeptbild_02.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-3">
+</section><section class="recipe" data-category="pfannengerichte" data-title="3. svens muscheln in weißwein-tomaten-butter-sauce mit airfryer-knoblauchbrot 3. małże svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z airfryera" id="rezept-3">
 <div>
 <h2><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></h2>
 <div class="meta">
@@ -179,8 +223,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fest gespeichertes, gut befundenes Rezept.</span><span lang-variant="pl">Na stałe zapisany, sprawdzony i dobry przepis.</span></p>
 </div>
 <div><img alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" loading="lazy" src="images/rezeptbild_02_1.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-4">
+</section><section class="recipe" data-category="ofengerichte" data-title="4. hähnchen-gyros mit ofenkartoffeln, gurkensalat und tsatsiki 4. kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki" id="rezept-4">
 <div>
 <h2><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></h2>
 <div class="meta">
@@ -205,8 +248,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fest gespeichert, sehr gut angekommen.</span><span lang-variant="pl">Na stałe zapisany, bardzo dobrze przyjęty.</span></p>
 </div>
 <div><img alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" loading="lazy" src="images/rezeptbild_03.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-5">
+</section><section class="recipe" data-category="grill-bbq" data-title="5. smoked bbq-fajita-pfanne 5. wędzona patelnia bbq fajita" id="rezept-5">
 <div>
 <h2><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></h2>
 <div class="meta">
@@ -231,8 +273,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fest gespeichert und fürs BBQ-Buch übernommen.</span><span lang-variant="pl">Na stałe zapisane i dodane do książki BBQ.</span></p>
 </div>
 <div><img alt="Smoked BBQ-Fajita-Pfanne" loading="lazy" src="images/rezeptbild_04.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-6">
+</section><section class="recipe" data-category="grill-bbq" data-title="6. bruschetta vom ciabatta 6. bruschetta z ciabatty" id="rezept-6">
 <div>
 <h2><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></h2>
 <div class="meta">
@@ -257,8 +298,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Als passende Vorspeise fest gespeichert.</span><span lang-variant="pl">Na stałe zapisane jako pasująca przystawka.</span></p>
 </div>
 <div><img alt="Bruschetta vom Ciabatta" loading="lazy" src="images/rezeptbild_05.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-7">
+</section><section class="recipe" data-category="pfannengerichte" data-title="7. köfte mit tomaten-zwiebel-salat, tzatziki und fladenbrot 7. köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita" id="rezept-7">
 <div>
 <h2><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></h2>
 <div class="meta">
@@ -283,8 +323,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Danie bardzo smakowało.</span></p>
 </div>
 <div><img alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" loading="lazy" src="images/rezeptbild_06.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-8">
+</section><section class="recipe" data-category="pfannengerichte" data-title="8. bauernomelette mit tomaten-mozzarella-salat 8. omelet wiejski z sałatką pomidorowo-mozzarellową" id="rezept-8">
 <div>
 <h2><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></h2>
 <div class="meta">
@@ -309,8 +348,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Danie bardzo smakowało.</span></p>
 </div>
 <div><img alt="Bauernomelette mit Tomaten-Mozzarella-Salat" loading="lazy" src="images/rezeptbild_07.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-9">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="9. chicken masala mit naturjoghurt &amp; protein-wraps 9. chicken masala z jogurtem naturalnym i proteinowymi wrapami" id="rezept-9">
 <div>
 <h2><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></h2>
 <div class="meta">
@@ -335,8 +373,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Danie bardzo smakowało.</span></p>
 </div>
 <div><img alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" loading="lazy" src="images/rezeptbild_08.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-10">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="10. svens ofengericht mit salsiccia, gemüse &amp; kartoffeln (cremige sonntagsversion) 10. danie piekarnikowe svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)" id="rezept-10">
 <div>
 <h2><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></h2>
 <div class="meta">
@@ -361,8 +398,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Stały faworyt.</span></p>
 </div>
 <div><img alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" loading="lazy" src="images/rezeptbild_09.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-11">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="11. svens hackbällchen-auflauf mit ajvar &amp; kartoffeln – die ofenbombe 11. zapiekanka svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba" id="rezept-11">
 <div>
 <h2><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></h2>
 <div class="meta">
@@ -387,8 +423,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Stały faworyt.</span></p>
 </div>
 <div><img alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" loading="lazy" src="images/rezeptbild_10.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-12">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="12. svens gemüse-kartoffel-pfanne mit ajvar-teriyaki-soße &amp; cabanossi 12. patelnia svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem" id="rezept-12">
 <div>
 <h2><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></h2>
 <div class="meta">
@@ -413,8 +448,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fester Favorit.</span><span lang-variant="pl">Stały faworyt.</span></p>
 </div>
 <div><img alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" loading="lazy" src="images/rezeptbild_11.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-13">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="13. svens butter-chicken-wok mit kokos &amp; joghurt 13. wok svena butter chicken z kokosem i jogurtem" id="rezept-13">
 <div>
 <h2><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></h2>
 <div class="meta">
@@ -439,8 +473,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Fest gespeichert, sehr beliebt.</span><span lang-variant="pl">Na stałe zapisane, bardzo lubiane.</span></p>
 </div>
 <div><img alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" loading="lazy" src="images/rezeptbild_13.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-14">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="14. ofengemüse mit hähnchenschenkeln und lila süßkartoffeln 14. warzywa z piekarnika z udkami kurczaka i fioletowymi batatami" id="rezept-14">
 <div>
 <h2><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></h2>
 <div class="meta">
@@ -465,8 +498,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Gut angekommen.</span><span lang-variant="pl">Danie bardzo smakowało.</span></p>
 </div>
 <div><img alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" loading="lazy" src="images/rezeptbild_12.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-15">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="15. ofen-hähnchenschenkel mit kartoffeln &amp; zwiebeln – sven-style 15. udka kurczaka z ziemniakami i cebulą z piekarnika – styl svena" id="rezept-15">
 <div>
 <h2><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></h2>
 <div class="meta">
@@ -491,8 +523,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Sehr gut, einfach und schwiegermuttertauglich.</span><span lang-variant="pl">Bardzo dobre, proste i odpowiednie także dla tradycyjnych gustów.</span></p>
 </div>
 <div><img alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" loading="lazy" src="images/rezeptbild_15.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-16">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="16. kartoffelauflauf mit schmand, käse &amp; speck 16. zapiekanka ziemniaczana ze śmietaną, serem i boczkiem" id="rezept-16">
 <div>
 <h2><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></h2>
 <div class="meta">
@@ -517,8 +548,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Sehr cremig und sehr gut.</span><span lang-variant="pl">Bardzo kremowe i bardzo dobre.</span></p>
 </div>
 <div><img alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" loading="lazy" src="images/rezeptbild_16.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-17">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="17. rinderrouladen – helle soße ohne dunkelmacher (hausrezept) 17. rolady wołowe – jasny sos bez barwnika (przepis domowy)" id="rezept-17">
 <div>
 <h2><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></h2>
 <div class="meta">
@@ -543,8 +573,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Festessen, sehr gut.</span><span lang-variant="pl">Świąteczne danie, bardzo dobre.</span></p>
 </div>
 <div><img alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" loading="lazy" src="images/rezeptbild_17.png"/></div>
-</section>
-<section class="recipe" data-category="suppen" id="rezept-18">
+</section><section class="recipe hidden-recipe" data-category="suppen" data-title="18. kartoffelsuppe mit mettenden 18. zupa ziemniaczana z kiełbasą mettenden" id="rezept-18">
 <div>
 <h2><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></h2>
 <div class="meta">
@@ -569,8 +598,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Klassiker, gut.</span><span lang-variant="pl">Klasyk, smaczny i sprawdzony.</span></p>
 </div>
 <div><img alt="Kartoffelsuppe mit Mettenden" loading="lazy" src="images/rezeptbild_18.png"/></div>
-</section>
-<section class="recipe" data-category="grundlagen" id="rezept-19">
+</section><section class="recipe hidden-recipe" data-category="grundlagen" data-title="19. zakwas für żurek selber machen 19. zakwas na żurek" id="rezept-19">
 <div>
 <h2><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></h2>
 <div class="meta">
@@ -595,8 +623,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Wichtige Grundzutat für traditionellen Żurek.</span><span lang-variant="pl">Ważna baza do tradycyjnego żurku.</span></p>
 </div>
 <div><img alt="Zakwas für Żurek selber machen" loading="lazy" src="images/rezeptbild_19.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-20">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="20. königsberger klopse 20. klopsy po królewiecku" id="rezept-20">
 <div>
 <h2><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></h2>
 <div class="meta">
@@ -621,8 +648,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Klassiker, sehr beliebt.</span><span lang-variant="pl">Klasyk, bardzo lubiany.</span></p>
 </div>
 <div><img alt="Königsberger Klopse" loading="lazy" src="images/rezeptbild_20.png"/></div>
-</section>
-<section class="recipe" data-category="gebaeck-suesses" id="rezept-21">
+</section><section class="recipe hidden-recipe" data-category="gebaeck-suesses" data-title="21. danziger porzeln 21. gdańskie porzeln" id="rezept-21">
 <div>
 <h2><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></h2>
 <div class="meta">
@@ -647,8 +673,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Süßer Klassiker.</span><span lang-variant="pl">Słodki klasyk.</span></p>
 </div>
 <div><img alt="Danziger Porzeln" loading="lazy" src="images/rezeptbild_21.png"/></div>
-</section>
-<section class="recipe" data-category="suppen" id="rezept-22">
+</section><section class="recipe hidden-recipe" data-category="suppen" data-title="22. kalte rote-bete-suppe 22. chłodnik z czerwonych buraków" id="rezept-22">
 <div>
 <h2><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></h2>
 <div class="meta">
@@ -673,8 +698,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Sommerlich und traditionell.</span><span lang-variant="pl">Letni i tradycyjny.</span></p>
 </div>
 <div><img alt="Kalte Rote-Bete-Suppe" loading="lazy" src="images/rezeptbild_22.png"/></div>
-</section>
-<section class="recipe" data-category="teiggerichte" id="rezept-23">
+</section><section class="recipe hidden-recipe" data-category="teiggerichte" data-title="23. piroggen mit sauerkraut-pilz-füllung 23. pierogi z kapustą kiszoną i grzybami" id="rezept-23">
 <div>
 <h2><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></h2>
 <div class="meta">
@@ -699,8 +723,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Klassisches polnisches Teiggericht.</span><span lang-variant="pl">Klasyczne polskie danie z ciasta.</span></p>
 </div>
 <div><img alt="Piroggen mit Sauerkraut-Pilz-Füllung" loading="lazy" src="images/rezeptbild_23.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-24">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="24. klopse in tomatensoße 24. klopsy w sosie pomidorowym" id="rezept-24">
 <div>
 <h2><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></h2>
 <div class="meta">
@@ -725,8 +748,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Hausmannskost mit viel Soße.</span><span lang-variant="pl">Domowe danie z dużą ilością sosu.</span></p>
 </div>
 <div><img alt="Klopse in Tomatensoße" loading="lazy" src="images/rezeptbild_24.png"/></div>
-</section>
-<section class="recipe" data-category="fisch-meeresfruechte" id="rezept-25">
+</section><section class="recipe hidden-recipe" data-category="fisch-meeresfruechte" data-title="25. danziger heringssalat 25. gdańska sałatka śledziowa" id="rezept-25">
 <div>
 <h2><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></h2>
 <div class="meta">
@@ -751,8 +773,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Klassischer Heringssalat.</span><span lang-variant="pl">Klasyczna sałatka śledziowa.</span></p>
 </div>
 <div><img alt="Danziger Heringssalat" loading="lazy" src="images/rezeptbild_25.png"/></div>
-</section>
-<section class="recipe" data-category="fisch-meeresfruechte" id="rezept-26">
+</section><section class="recipe hidden-recipe" data-category="fisch-meeresfruechte" data-title="26. hering nach kaschubischer art 26. śledź po kaszubsku" id="rezept-26">
 <div>
 <h2><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></h2>
 <div class="meta">
@@ -777,8 +798,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Typischer Klassiker aus der kaschubischen Küche.</span><span lang-variant="pl">Typowy klasyk kuchni kaszubskiej.</span></p>
 </div>
 <div><img alt="Hering nach kaschubischer Art" loading="lazy" src="images/rezeptbild_26.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-27">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="27. polnisches beefsteak 27. polski befsztyk" id="rezept-27">
 <div>
 <h2><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></h2>
 <div class="meta">
@@ -803,8 +823,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Kräftig und bodenständig.</span><span lang-variant="pl">Wyraziste i bardzo domowe.</span></p>
 </div>
 <div><img alt="Polnisches Beefsteak" loading="lazy" src="images/rezeptbild_27.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-28">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="28. fleischpastete 28. pasztet mięsny" id="rezept-28">
 <div>
 <h2><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></h2>
 <div class="meta">
@@ -829,8 +848,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Klassische Fleischpastete für besondere Tage.</span><span lang-variant="pl">Klasyczny pasztet mięsny na specjalne okazje.</span></p>
 </div>
 <div><img alt="Fleischpastete" loading="lazy" src="images/rezeptbild_28.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-29">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="29. geflügelleber mit äpfeln 29. wątróbka drobiowa z jabłkami" id="rezept-29">
 <div>
 <h2><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></h2>
 <div class="meta">
@@ -855,8 +873,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Herzhaft mit feiner Süße.</span><span lang-variant="pl">Wytrawne danie z lekką owocową nutą.</span></p>
 </div>
 <div><img alt="Geflügelleber mit Äpfeln" loading="lazy" src="images/rezeptbild_29.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-30">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="30. eisbein nach alt-polnischer art 30. golonka po staropolsku" id="rezept-30">
 <div>
 <h2><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></h2>
 <div class="meta">
@@ -881,8 +898,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Herzhaftes Traditionsgericht.</span><span lang-variant="pl">Treściwe danie tradycyjne.</span></p>
 </div>
 <div><img alt="Eisbein nach alt-polnischer Art" loading="lazy" src="images/rezeptbild_30.png"/></div>
-</section>
-<section class="recipe" data-category="suppen" id="rezept-31">
+</section><section class="recipe hidden-recipe" data-category="suppen" data-title="31. danziger suppe 31. zupa gdańska" id="rezept-31">
 <div>
 <h2><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></h2>
 <div class="meta">
@@ -907,8 +923,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Kräftige, traditionelle Suppe.</span><span lang-variant="pl">Treściwa, tradycyjna zupa.</span></p>
 </div>
 <div><img alt="Danziger Suppe" loading="lazy" src="images/rezeptbild_31.png"/></div>
-</section>
-<section class="recipe" data-category="suppen" id="rezept-32">
+</section><section class="recipe hidden-recipe" data-category="suppen" data-title="32. erbsensuppe mit kartoffeln 32. grochówka z ziemniakami" id="rezept-32">
 <div>
 <h2><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></h2>
 <div class="meta">
@@ -933,8 +948,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Sättigende klassische Suppe.</span><span lang-variant="pl">Syta klasyczna zupa.</span></p>
 </div>
 <div><img alt="Erbsensuppe mit Kartoffeln" loading="lazy" src="images/rezeptbild_32.png"/></div>
-</section>
-<section class="recipe" data-category="saucen-polnische-kueche" id="rezept-33">
+</section><section class="recipe hidden-recipe" data-category="saucen-polnische-kueche" data-title="33. alt-polnische sauce 33. sos staropolski" id="rezept-33">
 <div>
 <h2><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></h2>
 <div class="meta">
@@ -959,8 +973,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Klassische Grundsauce.</span><span lang-variant="pl">Klasyczny sos bazowy.</span></p>
 </div>
 <div><img alt="Alt-polnische Sauce" loading="lazy" src="images/rezeptbild_33.png"/></div>
-</section>
-<section class="recipe" data-category="suppen" id="rezept-34">
+</section><section class="recipe hidden-recipe" data-category="suppen" data-title="34. oster-żurek 34. żurek wielkanocny" id="rezept-34">
 <div>
 <h2><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></h2>
 <div class="meta">
@@ -985,8 +998,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Traditioneller Oster-Żurek auf Basis von Rezept 19.</span><span lang-variant="pl">Tradycyjny żurek wielkanocny na bazie przepisu 19.</span></p>
 </div>
 <div><img alt="Oster-Żurek" loading="lazy" src="images/rezeptbild_34.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-35">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="35. ofen-brisket mit magic dust 35. pieczony brisket z przyprawą magic dust" id="rezept-35">
 <div>
 <h2><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></h2>
 <div class="meta">
@@ -1011,8 +1023,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">10/10</span><span lang-variant="pl">10/10</span></p>
 </div>
 <div><img alt="Ofen-Brisket mit Magic Dust" loading="lazy" src="images/rezeptbild_35.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-36">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="36. irish beef rollbraten aus dem backofen 36. irlandzka pieczeń wołowa z piekarnika" id="rezept-36">
 <div>
 <h2><span lang-variant="de">36. Irish Beef Rollbraten aus dem Backofen</span><span lang-variant="pl">36. Irlandzka pieczeń wołowa z piekarnika</span></h2>
 <div class="meta">
@@ -1037,8 +1048,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9/10</span><span lang-variant="pl">9/10</span></p>
 </div>
 <div><img alt="Irish Beef Rollbraten aus dem Backofen" loading="lazy" src="images/rezeptbild_36.png"/></div>
-</section>
-<section class="recipe" data-category="airfryer" id="rezept-37">
+</section><section class="recipe hidden-recipe" data-category="airfryer" data-title="37. svens airfryer-iskender kebab 37. kebab iskender z airfryera (wersja svena)" id="rezept-37">
 <div>
 <h2><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></h2>
 <div class="meta">
@@ -1063,8 +1073,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">10/10</span><span lang-variant="pl">10/10</span></p>
 </div>
 <div><img alt="Svens AirFryer-Iskender Kebab" loading="lazy" src="images/rezeptbild_37.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-38">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="38. klassischer schmorbraten mit dunkler sauce 38. klasyczna pieczeń duszona z ciemnym sosem" id="rezept-38">
 <div>
 <h2><span lang-variant="de">38. Klassischer Schmorbraten mit dunkler Sauce</span><span lang-variant="pl">38. Klasyczna pieczeń duszona z ciemnym sosem</span></h2>
 <div class="meta">
@@ -1089,8 +1098,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">Sehr gut</span><span lang-variant="pl">Bardzo dobre</span></p>
 </div>
 <div><img alt="Klassischer Schmorbraten mit dunkler Sauce" loading="lazy" src="images/rezeptbild_38.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-39">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="39. hähnchen-kartoffel-pfanne mit gemüse 39. zapiekanka z kurczakiem, ziemniakami i warzywami" id="rezept-39">
 <div>
 <h2><span lang-variant="de">39. Hähnchen-Kartoffel-Pfanne mit Gemüse</span><span lang-variant="pl">39. Zapiekanka z kurczakiem, ziemniakami i warzywami</span></h2>
 <div class="meta">
@@ -1115,8 +1123,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">sehr gut</span><span lang-variant="pl">bardzo dobre</span></p>
 </div>
 <div><img alt="Hähnchen-Kartoffel-Pfanne mit Gemüse" loading="lazy" src="images/rezeptbild_39.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-40">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="40. bratwurst mit sauerkraut aus dem ofen 40. biała kiełbasa pieczona z kapustą kiszoną" id="rezept-40">
 <div>
 <h2><span lang-variant="de">40. Bratwurst mit Sauerkraut aus dem Ofen</span><span lang-variant="pl">40. Biała kiełbasa pieczona z kapustą kiszoną</span></h2>
 <div class="meta">
@@ -1141,8 +1148,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">sehr gut</span><span lang-variant="pl">bardzo dobre</span></p>
 </div>
 <div><img alt="Bratwurst mit Sauerkraut aus dem Ofen" loading="lazy" src="images/rezeptbild_40.png"/></div>
-</section>
-<section class="recipe" data-category="wraps-und-burritos" id="rezept-41">
+</section><section class="recipe hidden-recipe" data-category="wraps-und-burritos" data-title="41. saftiger chicken-cheese-burrito ohne reis 41. soczysty burrito z kurczakiem i serem bez ryżu" id="rezept-41">
 <div>
 <h2><span lang-variant="de">41. Saftiger Chicken-Cheese-Burrito ohne Reis</span><span lang-variant="pl">41. Soczysty burrito z kurczakiem i serem bez ryżu</span></h2>
 <div class="meta">
@@ -1167,8 +1173,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">sehr gut</span><span lang-variant="pl">bardzo dobre</span></p>
 </div>
 <div><img alt="Saftiger Chicken-Cheese-Burrito ohne Reis" loading="lazy" src="images/rezeptbild_41.png"/></div>
-</section>
-<section class="recipe" data-category="nudelgerichte" id="rezept-42">
+</section><section class="recipe hidden-recipe" data-category="nudelgerichte" data-title="42. spaghetti mit knoblauch und sambal oelek 42. spaghetti z czosnkiem i sambal oelek" id="rezept-42">
 <div>
 <h2><span lang-variant="de">42. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">42. Spaghetti z czosnkiem i sambal oelek</span></h2>
 <div class="meta">
@@ -1193,8 +1198,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9/10</span><span lang-variant="pl">9/10</span></p>
 </div>
 <div><img alt="Spaghetti mit Knoblauch und Sambal Oelek" loading="lazy" src="images/rezeptbild_42.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-43">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="43. knoblauch-kartoffel-pfanne mit chili und ei 43. patelnia ziemniaczana z czosnkiem, chili i jajkiem" id="rezept-43">
 <div>
 <h2><span lang-variant="de">43. Knoblauch-Kartoffel-Pfanne mit Chili und Ei</span><span lang-variant="pl">43. Patelnia ziemniaczana z czosnkiem, chili i jajkiem</span></h2>
 <div class="meta">
@@ -1219,8 +1223,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8/10</span><span lang-variant="pl">8/10</span></p>
 </div>
 <div><img alt="Knoblauch-Kartoffel-Pfanne mit Chili und Ei" loading="lazy" src="images/rezeptbild_43.png"/></div>
-</section>
-<section class="recipe" data-category="nudelgerichte" id="rezept-44">
+</section><section class="recipe hidden-recipe" data-category="nudelgerichte" data-title="44. cremige parmesan-pasta ohne sahne 44. kremowy makaron z parmezanem bez śmietany" id="rezept-44">
 <div>
 <h2><span lang-variant="de">44. Cremige Parmesan-Pasta ohne Sahne</span><span lang-variant="pl">44. Kremowy makaron z parmezanem bez śmietany</span></h2>
 <div class="meta">
@@ -1245,8 +1248,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8/10</span><span lang-variant="pl">8/10</span></p>
 </div>
 <div><img alt="Cremige Parmesan-Pasta ohne Sahne" loading="lazy" src="images/rezeptbild_44.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-45">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="45. cordon bleu mit nasi goreng 45. cordon bleu z nasi goreng" id="rezept-45">
 <div>
 <h2><span lang-variant="de">45. Cordon Bleu mit Nasi Goreng</span><span lang-variant="pl">45. Cordon Bleu z nasi goreng</span></h2>
 <div class="meta">
@@ -1271,8 +1273,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8/10</span><span lang-variant="pl">8/10</span></p>
 </div>
 <div><img alt="Cordon Bleu mit Nasi Goreng" loading="lazy" src="images/rezeptbild_45.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-46">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="46. smashed burger mit ofenkartoffeln &amp; sour-cream-dip 46. burger smashed z pieczonymi ziemniakami i dipem śmietanowym" id="rezept-46">
 <div>
 <h2><span lang-variant="de">46. Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</span><span lang-variant="pl">46. Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</span></h2>
 <div class="meta">
@@ -1297,8 +1298,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9,5 / 10 – schneller Klassiker, extrem lecker.</span><span lang-variant="pl">9,5 / 10 – szybki klasyk i bardzo smaczny.</span></p>
 </div>
 <div><img alt="Smashed Burger mit Ofenkartoffeln und Sour-Cream-Dip" loading="lazy" src="images/rezeptbild_46.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-47">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="47. erdbeer-orangen-sekt-slush für den ninja slushi 47. truskawkowo-pomarańczowy slush z sektu do ninja slushi" id="rezept-47">
 <div>
 <h2><span lang-variant="de">47. Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">47. Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</span></h2>
 <div class="meta">
@@ -1323,8 +1323,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – sommerlich und leicht.</span><span lang-variant="pl">8,5 / 10 – lekki i letni.</span></p>
 </div>
 <div><img alt="Erdbeer-Orangen-Sekt-Slush" loading="lazy" src="images/rezeptbild_47.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-48">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="48. ananas-rum-slush für den ninja slushi 48. ananasowy slush z rumem do ninja slushi" id="rezept-48">
 <div>
 <h2><span lang-variant="de">48. Ananas-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">48. Ananasowy slush z rumem do Ninja Slushi</span></h2>
 <div class="meta">
@@ -1349,8 +1348,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8 / 10 – tropisch und einfach.</span><span lang-variant="pl">8 / 10 – tropikalny i prosty.</span></p>
 </div>
 <div><img alt="Ananas-Rum-Slush" loading="lazy" src="images/rezeptbild_48.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-49">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="49. zitronen-vodka-slush für den ninja slushi 49. cytrynowy slush z wódką do ninja slushi" id="rezept-49">
 <div>
 <h2><span lang-variant="de">49. Zitronen-Vodka-Slush für den Ninja Slushi</span><span lang-variant="pl">49. Cytrynowy slush z wódką do Ninja Slushi</span></h2>
 <div class="meta">
@@ -1375,8 +1373,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – frisch und sauer.</span><span lang-variant="pl">8,5 / 10 – świeży i kwaśny.</span></p>
 </div>
 <div><img alt="Zitronen-Vodka-Slush" loading="lazy" src="images/rezeptbild_49.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-50">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="50. waldbeer-sekt-slush für den ninja slushi 50. leśny slush z różowym sektem do ninja slushi" id="rezept-50">
 <div>
 <h2><span lang-variant="de">50. Waldbeer-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">50. Leśny slush z różowym sektem do Ninja Slushi</span></h2>
 <div class="meta">
@@ -1401,8 +1398,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – beerig und ideal für draußen.</span><span lang-variant="pl">8,5 / 10 – owocowy i idealny do ogrodu.</span></p>
 </div>
 <div><img alt="Waldbeer-Sekt-Slush" loading="lazy" src="images/rezeptbild_50.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-51">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="51. mango-maracuja-rum-slush für den ninja slushi 51. mango-marakuja slush z rumem do ninja slushi" id="rezept-51">
 <div>
 <h2><span lang-variant="de">51. Mango-Maracuja-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">51. Mango-marakuja slush z rumem do Ninja Slushi</span></h2>
 <div class="meta">
@@ -1427,8 +1423,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9 / 10 – tropisch und partytauglich.</span><span lang-variant="pl">9 / 10 – tropikalny i imprezowy.</span></p>
 </div>
 <div><img alt="Mango-Maracuja-Rum-Slush" loading="lazy" src="images/rezeptbild_51.png"/></div>
-</section>
-<section class="recipe" data-category="eiergerichte" id="rezept-52">
+</section><section class="recipe hidden-recipe" data-category="eiergerichte" data-title="52. senfeier mit kartoffeln 52. jajka w sosie musztardowym z ziemniakami" id="rezept-52">
 <div>
 <h2><span lang-variant="de">52. Senfeier mit Kartoffeln</span><span lang-variant="pl">52. Jajka w sosie musztardowym z ziemniakami</span></h2>
 <div class="meta"><span class="tag"><span lang-variant="de">Eiergerichte / Hausmannskost</span><span lang-variant="pl">Dania jajeczne / kuchnia domowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div>
@@ -1438,9 +1433,7 @@ li{margin:.3rem 0}
 <h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">8,5 / 10 – klassisch und einfach gut.</span><span lang-variant="pl">8,5 / 10 – klasyczne i po prostu dobre.</span></p>
 </div>
 <div><img alt="Senfeier mit Kartoffeln" loading="lazy" src="images/rezeptbild_52.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-53"><div><h2><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></span><span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">700 g dünn geschnittenes Rindfleisch</span><span lang-variant="pl">700 g cienko krojonej wołowiny</span></li><li><span lang-variant="de">Sojasauce, Zucker, Sesamöl</span><span lang-variant="pl">sos sojowy, cukier, olej sezamowy</span></li><li><span lang-variant="de">Knoblauch, Ingwer, Zwiebel</span><span lang-variant="pl">czosnek, imbir, cebula</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Gesamt: ca. 50–80 Minuten</span><span lang-variant="pl">łącznie: ok. 50–80 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Sehr heiß und portionsweise grillen.</span><span lang-variant="pl">Grillować bardzo gorąco i partiami.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Marinade mischen und Fleisch einlegen.</span><span lang-variant="pl">Wymieszać marynatę i zamarynować mięso.</span></li><li><span lang-variant="de">Sehr kurz und heiß grillen.</span><span lang-variant="pl">Krótko grillować na dużym ogniu.</span></li><li><span lang-variant="de">Mit Sesam und Frühlingszwiebeln servieren.</span><span lang-variant="pl">Podać z sezamem i dymką.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9 / 10 – schnell und sehr stark.</span><span lang-variant="pl">9 / 10 – szybkie i bardzo dobre.</span></p></div><div><img alt="Koreanisches Bulgogi vom Grill" loading="lazy" src="images/rezeptbild_53.png"/></div></section>
-<section class="recipe" data-category="grill-bbq" id="rezept-54">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="53. koreanisches bulgogi vom grill 53. koreańskie bulgogi z grilla" id="rezept-53"><div><h2><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></span><span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">700 g dünn geschnittenes Rindfleisch</span><span lang-variant="pl">700 g cienko krojonej wołowiny</span></li><li><span lang-variant="de">Sojasauce, Zucker, Sesamöl</span><span lang-variant="pl">sos sojowy, cukier, olej sezamowy</span></li><li><span lang-variant="de">Knoblauch, Ingwer, Zwiebel</span><span lang-variant="pl">czosnek, imbir, cebula</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Gesamt: ca. 50–80 Minuten</span><span lang-variant="pl">łącznie: ok. 50–80 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Sehr heiß und portionsweise grillen.</span><span lang-variant="pl">Grillować bardzo gorąco i partiami.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Marinade mischen und Fleisch einlegen.</span><span lang-variant="pl">Wymieszać marynatę i zamarynować mięso.</span></li><li><span lang-variant="de">Sehr kurz und heiß grillen.</span><span lang-variant="pl">Krótko grillować na dużym ogniu.</span></li><li><span lang-variant="de">Mit Sesam und Frühlingszwiebeln servieren.</span><span lang-variant="pl">Podać z sezamem i dymką.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9 / 10 – schnell und sehr stark.</span><span lang-variant="pl">9 / 10 – szybkie i bardzo dobre.</span></p></div><div><img alt="Koreanisches Bulgogi vom Grill" loading="lazy" src="images/rezeptbild_53.png"/></div></section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="54. spare ribs mit espresso-rub 54. żeberka z rubem espresso" id="rezept-54">
 <div>
 <h2><span lang-variant="de">54. Spare Ribs mit Espresso-Rub</span><span lang-variant="pl">54. Żeberka z rubem espresso</span></h2>
 <div class="meta">
@@ -1465,8 +1458,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9,5 / 10 – kräftig, rauchig und perfekt für einen langen Grillnachmittag.</span><span lang-variant="pl">9,5 / 10 – wyraziste, lekko dymne i idealne na dłuższe grillowanie.</span></p>
 </div>
 <div><img alt="Spare Ribs mit Espresso-Rub" loading="lazy" src="images/rezeptbild_54.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-55">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="55. gegrillter halloumi mit kräutern und olivenöl 55. grillowany halloumi z ziołami i oliwą" id="rezept-55">
 <div>
 <h2><span lang-variant="de">55. Gegrillter Halloumi mit Kräutern und Olivenöl</span><span lang-variant="pl">55. Grillowany halloumi z ziołami i oliwą</span></h2>
 <div class="meta">
@@ -1491,8 +1483,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,8 / 10 – simpel, schnell und eine starke vegetarische Grillbeilage.</span><span lang-variant="pl">8,8 / 10 – prosty, szybki i bardzo dobry wegetariański dodatek z grilla.</span></p>
 </div>
 <div><img alt="Gegrillter Halloumi mit Kräutern und Olivenöl" loading="lazy" src="images/rezeptbild_55.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-56">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="56. gemüsespieße vom grill 56. warzywne szaszłyki z grilla" id="rezept-56">
 <div>
 <h2><span lang-variant="de">56. Gemüsespieße vom Grill</span><span lang-variant="pl">56. Warzywne szaszłyki z grilla</span></h2>
 <div class="meta">
@@ -1517,8 +1508,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,7 / 10 – unkompliziert, bunt und immer passend zum Grillabend.</span><span lang-variant="pl">8,7 / 10 – proste, kolorowe i zawsze pasujące do grilla.</span></p>
 </div>
 <div><img alt="Gemüsespieße vom Grill" loading="lazy" src="images/rezeptbild_56.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-57">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="57. gefüllte portobello-pilze vom grill 57. faszerowane pieczarki portobello z grilla" id="rezept-57">
 <div>
 <h2><span lang-variant="de">57. Gefüllte Portobello-Pilze vom Grill</span><span lang-variant="pl">57. Faszerowane pieczarki portobello z grilla</span></h2>
 <div class="meta">
@@ -1543,8 +1533,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,9 / 10 – saftig, würzig und eine richtig gute vegetarische Grillidee.</span><span lang-variant="pl">8,9 / 10 – soczyste, aromatyczne i naprawdę świetne wegetariańskie danie z grilla.</span></p>
 </div>
 <div><img alt="Gefüllte Portobello-Pilze vom Grill" loading="lazy" src="images/rezeptbild_57.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-58">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="58. grüner spargel vom grill mit zitronenbutter 58. zielone szparagi z grilla z masłem cytrynowym" id="rezept-58">
 <div>
 <h2><span lang-variant="de">58. Grüner Spargel vom Grill mit Zitronenbutter</span><span lang-variant="pl">58. Zielone szparagi z grilla z masłem cytrynowym</span></h2>
 <div class="meta">
@@ -1569,8 +1558,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9,0 / 10 – schnell, frisch und perfekt für die Sommerküche.</span><span lang-variant="pl">9,0 / 10 – szybkie, świeże i idealne do letniego grillowania.</span></p>
 </div>
 <div><img alt="Grüner Spargel vom Grill mit Zitronenbutter" loading="lazy" src="images/rezeptbild_58.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-59">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="59. süßkartoffel-pommes vom grill 59. frytki z batatów z grilla" id="rezept-59">
 <div>
 <h2><span lang-variant="de">59. Süßkartoffel-Pommes vom Grill</span><span lang-variant="pl">59. Frytki z batatów z grilla</span></h2>
 <div class="meta">
@@ -1595,8 +1583,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,6 / 10 – unkompliziert, leicht süßlich und ideal als Grillbeilage.</span><span lang-variant="pl">8,6 / 10 – proste, lekko słodkie i bardzo dobre jako dodatek z grilla.</span></p>
 </div>
 <div><img alt="Süßkartoffel-Pommes vom Grill" loading="lazy" src="images/rezeptbild_59.png"/></div>
-</section>
-<section class="recipe" data-category="beilagen" id="rezept-60">
+</section><section class="recipe hidden-recipe" data-category="beilagen" data-title="60. melonen-feta-salat mit minze 60. sałatka z arbuza, fety i mięty" id="rezept-60">
 <div>
 <h2><span lang-variant="de">60. Melonen-Feta-Salat mit Minze</span><span lang-variant="pl">60. Sałatka z arbuza, fety i mięty</span></h2>
 <div class="meta">
@@ -1621,10 +1608,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9,1 / 10 – frisch, sommerlich und ein starker Kontrast zu deftigen Grillgerichten.</span><span lang-variant="pl">9,1 / 10 – świeża, letnia i świetnie przełamująca bardziej treściwe dania z grilla.</span></p>
 </div>
 <div><img alt="Melonen-Feta-Salat mit Minze" loading="lazy" src="images/rezeptbild_60.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-77"><div><h2><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500 g grüner Spargel</span><span lang-variant="pl">500 g zielonych szparagów</span></li><li><span lang-variant="de">2 EL Olivenöl</span><span lang-variant="pl">2 łyżki oliwy</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: 30 g Parmesan</span><span lang-variant="pl">opcjonalnie: 30 g parmezanu</span></li><li><span lang-variant="de">optional: 4–6 Scheiben Bacon</span><span lang-variant="pl">opcjonalnie: 4–6 plastrów boczku</span></li><li><span lang-variant="de">optional: 1 kleine Knoblauchzehe</span><span lang-variant="pl">opcjonalnie: 1 mały ząbek czosnku</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10 Minuten</span><span lang-variant="pl">przygotowanie: 10 min</span></li><li><span lang-variant="de">Grillzeit: 5–8 Minuten</span><span lang-variant="pl">czas grillowania: 5–8 min</span></li><li><span lang-variant="de">Gesamt: ca. 15 Minuten</span><span lang-variant="pl">łącznie: ok. 15 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Nicht zu lange grillen – grüner Spargel soll noch etwas Biss haben.</span><span lang-variant="pl">Nie grilluj zbyt długo – zielone szparagi powinny zachować lekki chrup.</span></li><li><span lang-variant="de">Mit Parmesan, Bacon oder etwas Zitronenabrieb lässt sich das Rezept leicht aufwerten.</span><span lang-variant="pl">Przepis łatwo podkręcić parmezanem, boczkiem albo odrobiną skórki cytrynowej.</span></li><li><span lang-variant="de">Perfekt als schnelle Beilage zu Fleisch, Halloumi oder Baguette.</span><span lang-variant="pl">Świetny szybki dodatek do mięsa, halloumi albo bagietki.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Die holzigen Enden des Spargels abbrechen oder abschneiden. Grünen Spargel musst du in der Regel nicht schälen.</span><span lang-variant="pl">Odłamać lub odciąć zdrewniałe końcówki szparagów. Zielonych szparagów zazwyczaj nie trzeba obierać.</span></li><li><span lang-variant="de">Den Spargel mit Olivenöl, etwas Salz und Pfeffer vermengen. Wer mag, reibt noch ganz wenig Knoblauch dazu.</span><span lang-variant="pl">Wymieszać szparagi z oliwą, odrobiną soli i pieprzu. Jeśli chcesz, dodaj też bardzo mało startego czosnku.</span></li><li><span lang-variant="de">Den Grill auf mittlere Hitze bringen und den Spargel direkt auf den Rost oder in eine Grillpfanne legen.</span><span lang-variant="pl">Rozgrzać grill do średniej temperatury i ułożyć szparagi bezpośrednio na ruszcie albo na patelni grillowej.</span></li><li><span lang-variant="de">Den Spargel 5–8 Minuten grillen und dabei regelmäßig wenden, bis er leichte Grillspuren hat und noch bissfest ist.</span><span lang-variant="pl">Grillować przez 5–8 minut, regularnie obracając, aż pojawią się lekkie ślady przypieczenia, a szparagi pozostaną lekko chrupiące.</span></li><li><span lang-variant="de">Direkt nach dem Grillen mit Zitronensaft verfeinern. Für die Upgrade-Version etwas Parmesan darüberreiben oder den Spargel mit Bacon umwickeln und dann grillen.</span><span lang-variant="pl">Zaraz po grillowaniu skropić sokiem z cytryny. W wersji upgrade można dodać starty parmezan albo owinąć szparagi boczkiem przed grillowaniem.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,2 / 10 – schnell, frisch und ideal für den Grillabend.</span><span lang-variant="pl">9,2 / 10 – szybkie, świeże i idealne na grillowy wieczór.</span></p></div><div><img alt="Grüner Spargel vom Grill" loading="lazy" src="images/rezeptbild_77.png"/></div></section><section class="recipe" data-category="grill-bbq" id="rezept-78"><div><h2><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500–800 g weißer Spargel</span><span lang-variant="pl">500–800 g białych szparagów</span></li><li><span lang-variant="de">40 g Butter</span><span lang-variant="pl">40 g masła</span></li><li><span lang-variant="de">1 TL Zucker</span><span lang-variant="pl">1 łyżeczka cukru</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">optional: etwas frisch gehackte Petersilie</span><span lang-variant="pl">opcjonalnie: trochę świeżo posiekanej pietruszki</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10–15 Minuten</span><span lang-variant="pl">przygotowanie: 10–15 min</span></li><li><span lang-variant="de">Grillzeit: 15–20 Minuten</span><span lang-variant="pl">czas grillowania: 15–20 min</span></li><li><span lang-variant="de">Gesamt: ca. 30 Minuten</span><span lang-variant="pl">łącznie: ok. 30 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Der Zucker rundet den Geschmack ab und nimmt leichte Bitterkeit.</span><span lang-variant="pl">Cukier delikatnie zaokrągla smak i niweluje lekką goryczkę.</span></li><li><span lang-variant="de">Das Folienpaket kann entspannt parallel zu Fleisch oder Würstchen auf dem Grill laufen.</span><span lang-variant="pl">Paczka z folii może spokojnie grillować się równolegle obok mięsa albo kiełbasek.</span></li><li><span lang-variant="de">Auch im Ofen sehr gut machbar.</span><span lang-variant="pl">Przepis bardzo dobrze wychodzi także w piekarniku.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Den weißen Spargel gründlich schälen und die Enden abschneiden. Das ist wichtig, damit er später nicht fasrig bleibt.</span><span lang-variant="pl">Dokładnie obrać białe szparagi i odciąć końcówki. To ważne, żeby po przygotowaniu nie były włókniste.</span></li><li><span lang-variant="de">Ein großes Stück Alufolie vorbereiten und den Spargel mittig darauflegen.</span><span lang-variant="pl">Przygotować duży kawałek folii aluminiowej i ułożyć na środku szparagi.</span></li><li><span lang-variant="de">Butter in kleinen Stücken darauf verteilen, mit Zucker, etwas Salz und Zitronensaft würzen.</span><span lang-variant="pl">Rozłożyć na nich kawałki masła, doprawić cukrem, odrobiną soli i sokiem z cytryny.</span></li><li><span lang-variant="de">Die Folie dicht verschließen, sodass ein gut geschlossenes Paket entsteht.</span><span lang-variant="pl">Szczelnie zamknąć folię, tak aby powstała dobrze domknięta paczuszka.</span></li><li><span lang-variant="de">Das Paket bei indirekter Hitze 15–20 Minuten grillen, bis der Spargel weich, aber nicht zu weich ist.</span><span lang-variant="pl">Grillować w strefie pośredniej przez 15–20 minut, aż szparagi będą miękkie, ale nie rozgotowane.</span></li><li><span lang-variant="de">Vorsichtig öffnen, eventuell mit etwas Petersilie bestreuen und direkt servieren.</span><span lang-variant="pl">Ostrożnie otworzyć, opcjonalnie posypać pietruszką i od razu podawać.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,0 / 10 – saftig, aromatisch und sehr unkompliziert.</span><span lang-variant="pl">9,0 / 10 – soczyste, aromatyczne i bardzo proste.</span></p></div><div><img alt="Weißer Spargel in Butter-Zitronen-Folie" loading="lazy" src="images/rezeptbild_78.png"/></div></section><section class="recipe" data-category="grill-bbq" id="rezept-79"><div><h2><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500 g grüner oder weißer Spargel</span><span lang-variant="pl">500 g zielonych lub białych szparagów</span></li><li><span lang-variant="de">2 EL Olivenöl</span><span lang-variant="pl">2 łyżki oliwy</span></li><li><span lang-variant="de">30–40 g Parmesan</span><span lang-variant="pl">30–40 g parmezanu</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: frische Kräuter</span><span lang-variant="pl">opcjonalnie: świeże zioła</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10 Minuten</span><span lang-variant="pl">przygotowanie: 10 min</span></li><li><span lang-variant="de">Grillzeit: 6–10 Minuten</span><span lang-variant="pl">czas grillowania: 6–10 min</span></li><li><span lang-variant="de">Gesamt: ca. 20 Minuten</span><span lang-variant="pl">łącznie: ok. 20 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Parmesan immer frisch reiben – das macht geschmacklich einen großen Unterschied.</span><span lang-variant="pl">Parmezan najlepiej ścierać świeżo – smak jest wtedy wyraźnie lepszy.</span></li><li><span lang-variant="de">Besonders gut als Vorspeise oder feine Grillbeilage.</span><span lang-variant="pl">Bardzo dobry jako przystawka albo bardziej elegancki dodatek z grilla.</span></li><li><span lang-variant="de">Mit etwas Knoblauchöl wird es noch kräftiger.</span><span lang-variant="pl">Z odrobiną oleju czosnkowego smak będzie jeszcze mocniejszy.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Grünen Spargel nur an den Enden kürzen, weißen Spargel zusätzlich vollständig schälen.</span><span lang-variant="pl">Zielonym szparagom odciąć tylko końcówki, a białe dodatkowo dokładnie obrać.</span></li><li><span lang-variant="de">Den Spargel mit Olivenöl, Salz und Pfeffer vermengen.</span><span lang-variant="pl">Wymieszać szparagi z oliwą, solą i pieprzem.</span></li><li><span lang-variant="de">Bei mittlerer Hitze 6–10 Minuten grillen und dabei regelmäßig wenden.</span><span lang-variant="pl">Grillować na średnim ogniu przez 6–10 minut, regularnie obracając.</span></li><li><span lang-variant="de">Direkt nach dem Grillen mit Zitronensaft beträufeln und etwas Zitronenabrieb darübergeben, wenn du magst.</span><span lang-variant="pl">Zaraz po grillowaniu skropić sokiem z cytryny i opcjonalnie dodać trochę skórki z cytryny.</span></li><li><span lang-variant="de">Zum Schluss frisch geriebenen Parmesan darüberstreuen und sofort servieren.</span><span lang-variant="pl">Na końcu posypać świeżo startym parmezanem i od razu podawać.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,3 / 10 – einfach, elegant und richtig stark im Geschmack.</span><span lang-variant="pl">9,3 / 10 – proste, eleganckie i bardzo wyraziste w smaku.</span></p></div><div><img alt="Spargel vom Grill mit Parmesan und Zitrone" loading="lazy" src="images/rezeptbild_79.png"/></div></section><section class="recipe" data-category="airfryer" id="rezept-80"><div><h2><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Airfryer / Spargel &amp; Saisonküche</span><span lang-variant="pl">Airfryer / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500 g grüner Spargel</span><span lang-variant="pl">500 g zielonych szparagów</span></li><li><span lang-variant="de">1–2 EL Olivenöl</span><span lang-variant="pl">1–2 łyżki oliwy</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">optional: 20–30 g Parmesan</span><span lang-variant="pl">opcjonalnie: 20–30 g parmezanu</span></li><li><span lang-variant="de">optional: 1 kleine Knoblauchzehe</span><span lang-variant="pl">opcjonalnie: 1 mały ząbek czosnku</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10 Minuten</span><span lang-variant="pl">przygotowanie: 10 min</span></li><li><span lang-variant="de">Airfryer: 8–10 Minuten bei 180 °C</span><span lang-variant="pl">Airfryer: 8–10 min w 180 °C</span></li><li><span lang-variant="de">Gesamt: ca. 20 Minuten</span><span lang-variant="pl">łącznie: ok. 20 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Nicht zu voll packen – sonst wird der Spargel eher weich als schön geröstet.</span><span lang-variant="pl">Nie układaj szparagów zbyt ciasno – inaczej będą bardziej miękkie niż lekko przypieczone.</span></li><li><span lang-variant="de">Mit Parmesan oder etwas Zitronenabrieb wird er noch besser.</span><span lang-variant="pl">Z parmezanem albo odrobiną skórki cytrynowej smakują jeszcze lepiej.</span></li><li><span lang-variant="de">Perfekt als schnelle Beilage aus der Cosori.</span><span lang-variant="pl">Świetny szybki dodatek z Cosori.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Die holzigen Enden des grünen Spargels abbrechen oder abschneiden. Grünen Spargel musst du nicht schälen.</span><span lang-variant="pl">Odłamać lub odciąć zdrewniałe końcówki zielonych szparagów. Zielonych szparagów nie trzeba obierać.</span></li><li><span lang-variant="de">Den Spargel mit Olivenöl, Salz und Pfeffer vermengen. Optional etwas fein geriebenen Knoblauch dazugeben.</span><span lang-variant="pl">Wymieszać szparagi z oliwą, solą i pieprzem. Opcjonalnie dodać odrobinę drobno startego czosnku.</span></li><li><span lang-variant="de">Den Airfryer auf 180 °C vorheizen, wenn dein Gerät das unterstützt.</span><span lang-variant="pl">Rozgrzać Airfryera do 180 °C, jeśli urządzenie ma funkcję nagrzewania wstępnego.</span></li><li><span lang-variant="de">Den Spargel locker in den Korb legen – nicht zu eng, damit die heiße Luft gut zirkulieren kann.</span><span lang-variant="pl">Ułożyć szparagi luźno w koszu – nie za ciasno, aby gorące powietrze mogło dobrze krążyć.</span></li><li><span lang-variant="de">Etwa 8–10 Minuten garen. Zwischendurch einmal kurz durchschütteln oder wenden.</span><span lang-variant="pl">Piec około 8–10 minut. W połowie czasu lekko potrząsnąć koszem albo obrócić szparagi.</span></li><li><span lang-variant="de">Zum Schluss mit Zitronensaft verfeinern und nach Wunsch mit Parmesan servieren.</span><span lang-variant="pl">Na końcu skropić sokiem z cytryny i opcjonalnie posypać parmezanem.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,1 / 10 – schnell, sauber und perfekt für den Alltag.</span><span lang-variant="pl">9,1 / 10 – szybkie, wygodne i idealne na co dzień.</span></p></div><div><img alt="Grüner Spargel aus dem Airfryer" loading="lazy" src="images/rezeptbild_80.png"/></div></section><section class="recipe" data-category="suppen" id="rezept-81"><div><h2><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Suppen / Eintöpfe</span><span lang-variant="pl">Zupy / gulasze</span></span><span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">1/2 Weißkohl</span><span lang-variant="pl">1/2 białej kapusty</span></li><li><span lang-variant="de">2 Möhren</span><span lang-variant="pl">2 marchewki</span></li><li><span lang-variant="de">1 Zwiebel</span><span lang-variant="pl">1 cebula</span></li><li><span lang-variant="de">1 Paprikaschote</span><span lang-variant="pl">1 papryka</span></li><li><span lang-variant="de">1 kleine Dose Kidneybohnen</span><span lang-variant="pl">1 mała puszka czerwonej fasoli</span></li><li><span lang-variant="de">1 Dose Mais</span><span lang-variant="pl">1 puszka kukurydzy</span></li><li><span lang-variant="de">500 g passierte Tomaten</span><span lang-variant="pl">500 g passaty pomidorowej</span></li><li><span lang-variant="de">250 ml Gemüsebrühe</span><span lang-variant="pl">250 ml bulionu warzywnego</span></li><li><span lang-variant="de">4 EL Erdnussbutter</span><span lang-variant="pl">4 łyżki masła orzechowego</span></li><li><span lang-variant="de">1 EL Senf</span><span lang-variant="pl">1 łyżka musztardy</span></li><li><span lang-variant="de">1 EL Kreuzkümmel</span><span lang-variant="pl">1 łyżka kminu rzymskiego</span></li><li><span lang-variant="de">1 TL Thymian</span><span lang-variant="pl">1 łyżeczka tymianku</span></li><li><span lang-variant="de">1/2 TL Paprikapulver</span><span lang-variant="pl">1/2 łyżeczki papryki</span></li><li><span lang-variant="de">1–2 TL Cayennepfeffer nach Geschmack</span><span lang-variant="pl">1–2 łyżeczki pieprzu cayenne do smaku</span></li><li><span lang-variant="de">etwas Öl zum Anbraten</span><span lang-variant="pl">trochę oleju do smażenia</span></li><li><span lang-variant="de">Mangosaft nach Geschmack</span><span lang-variant="pl">sok mango do smaku</span></li><li><span lang-variant="de">Salz und Pfeffer</span><span lang-variant="pl">sól i pieprz</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 20 Minuten</span><span lang-variant="pl">przygotowanie: ok. 20 min</span></li><li><span lang-variant="de">Kochzeit: ca. 25 Minuten</span><span lang-variant="pl">gotowanie: ok. 25 min</span></li><li><span lang-variant="de">Gesamt: ca. 45 Minuten</span><span lang-variant="pl">łącznie: ok. 45 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Wenn du es milder magst, nimm zuerst nur 1 TL Cayennepfeffer und würze später nach.</span><span lang-variant="pl">Jeśli wolisz łagodniejszą wersję, zacznij od 1 łyżeczki pieprzu cayenne i dopraw później.</span></li><li><span lang-variant="de">Statt Mangosaft funktioniert auch etwas Orangensaft oder ein kleiner Spritzer Limette, aber Mango passt besonders gut zur Erdnussnote.</span><span lang-variant="pl">Zamiast soku mango możesz użyć odrobiny soku pomarańczowego albo kilku kropel limonki, ale mango szczególnie dobrze pasuje do nuty orzechowej.</span></li><li><span lang-variant="de">Der Eintopf schmeckt am nächsten Tag fast noch besser, weil die Gewürze dann stärker durchgezogen sind.</span><span lang-variant="pl">Ten gulasz następnego dnia smakuje prawie jeszcze lepiej, bo przyprawy mają wtedy więcej czasu, żeby się przegryźć.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Weißkohl, Möhren, Zwiebel und Paprika vorbereiten. Den Kohl in feine Streifen schneiden, die Möhren schälen und klein würfeln oder in halbe Scheiben schneiden. Zwiebel und Paprika ebenfalls klein schneiden.</span><span lang-variant="pl">Przygotować kapustę, marchew, cebulę i paprykę. Kapustę pokroić w cienkie paski, marchew obrać i pokroić w kostkę albo półplasterki. Cebulę i paprykę również drobno pokroić.</span></li><li><span lang-variant="de">Weißkohl und Möhren in wenig Wasser separat 5–8 Minuten vorkochen, damit sie später im Eintopf schön weich werden, aber noch Struktur behalten. Danach abgießen und beiseitestellen.</span><span lang-variant="pl">Kapustę i marchew podgotować osobno przez 5–8 minut w niewielkiej ilości wody, aby później w gulaszu były miękkie, ale nadal miały strukturę. Następnie odcedzić i odstawić.</span></li><li><span lang-variant="de">In einem großen Topf etwas Öl erhitzen und Zwiebel sowie Paprika 3–4 Minuten anschwitzen. Dann Kreuzkümmel, Cayennepfeffer und Senf dazugeben und ganz kurz mitrösten, damit die Gewürze ihr Aroma entfalten.</span><span lang-variant="pl">W dużym garnku rozgrzać trochę oleju i podsmażyć cebulę oraz paprykę przez 3–4 minuty. Następnie dodać kmin rzymski, pieprz cayenne i musztardę i krótko podsmażyć, aby przyprawy oddały aromat.</span></li><li><span lang-variant="de">Passierte Tomaten und Gemüsebrühe angießen und alles etwa 5 Minuten offen köcheln lassen.</span><span lang-variant="pl">Wlać passatę pomidorową i bulion warzywny, a następnie gotować całość bez przykrycia około 5 minut.</span></li><li><span lang-variant="de">Nun Thymian, Paprikapulver und Erdnussbutter einrühren. Die Sauce so lange rühren, bis sich die Erdnussbutter vollständig gelöst hat und der Eintopf schön cremig wird.</span><span lang-variant="pl">Dodać tymianek, paprykę i masło orzechowe. Mieszać tak długo, aż masło orzechowe całkowicie się rozpuści i gulasz stanie się kremowy.</span></li><li><span lang-variant="de">Kidneybohnen und Mais abgießen und zusammen mit dem vorgegarten Kohl und den Möhren in den Topf geben. Alles weitere 10–15 Minuten sanft köcheln lassen. Dabei immer wieder umrühren, weil der Eintopf durch die Erdnussbutter leicht am Boden ansetzen kann.</span><span lang-variant="pl">Odcedzić fasolę i kukurydzę, a potem dodać je razem z podgotowaną kapustą i marchewką do garnka. Całość delikatnie gotować jeszcze 10–15 minut. Co jakiś czas mieszać, ponieważ przez masło orzechowe gulasz łatwo przywiera do dna.</span></li><li><span lang-variant="de">Zum Schluss mit etwas Mangosaft, Salz, Pfeffer und nach Wunsch noch etwas Cayennepfeffer abschmecken. Der Mangosaft bringt eine fruchtige Süße hinein, die sehr gut mit der Erdnussnote harmoniert.</span><span lang-variant="pl">Na końcu doprawić odrobiną soku mango, solą, pieprzem i – jeśli trzeba – dodatkowym pieprzem cayenne. Sok mango dodaje owocowej słodyczy, która bardzo dobrze pasuje do nuty orzechowej.</span></li><li><span lang-variant="de">Heiß servieren. Dazu passen frisches Baguette, Fladenbrot oder – wenn gewünscht – auch Reis.</span><span lang-variant="pl">Podawać gorące. Bardzo dobrze pasuje świeża bagietka, chlebek pita albo – jeśli chcesz – ryż.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,0 / 10 – würzig, cremig und mal etwas anderes als ein klassischer Gemüseeintopf.</span><span lang-variant="pl">9,0 / 10 – aromatyczny, kremowy i przyjemnie inny niż klasyczny gulasz warzywny.</span></p></div><div><img alt="Afrikanischer Erdnusseintopf" loading="lazy" src="images/rezeptbild_81.png"/></div></section></div>
-</div>
-<section class="recipe" data-category="eiergerichte" id="rezept-61">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="77. grüner spargel vom grill – basic &amp; upgrade 77. zielone szparagi z grilla – wersja basic i upgrade" id="rezept-77"><div><h2><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500 g grüner Spargel</span><span lang-variant="pl">500 g zielonych szparagów</span></li><li><span lang-variant="de">2 EL Olivenöl</span><span lang-variant="pl">2 łyżki oliwy</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: 30 g Parmesan</span><span lang-variant="pl">opcjonalnie: 30 g parmezanu</span></li><li><span lang-variant="de">optional: 4–6 Scheiben Bacon</span><span lang-variant="pl">opcjonalnie: 4–6 plastrów boczku</span></li><li><span lang-variant="de">optional: 1 kleine Knoblauchzehe</span><span lang-variant="pl">opcjonalnie: 1 mały ząbek czosnku</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10 Minuten</span><span lang-variant="pl">przygotowanie: 10 min</span></li><li><span lang-variant="de">Grillzeit: 5–8 Minuten</span><span lang-variant="pl">czas grillowania: 5–8 min</span></li><li><span lang-variant="de">Gesamt: ca. 15 Minuten</span><span lang-variant="pl">łącznie: ok. 15 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Nicht zu lange grillen – grüner Spargel soll noch etwas Biss haben.</span><span lang-variant="pl">Nie grilluj zbyt długo – zielone szparagi powinny zachować lekki chrup.</span></li><li><span lang-variant="de">Mit Parmesan, Bacon oder etwas Zitronenabrieb lässt sich das Rezept leicht aufwerten.</span><span lang-variant="pl">Przepis łatwo podkręcić parmezanem, boczkiem albo odrobiną skórki cytrynowej.</span></li><li><span lang-variant="de">Perfekt als schnelle Beilage zu Fleisch, Halloumi oder Baguette.</span><span lang-variant="pl">Świetny szybki dodatek do mięsa, halloumi albo bagietki.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Die holzigen Enden des Spargels abbrechen oder abschneiden. Grünen Spargel musst du in der Regel nicht schälen.</span><span lang-variant="pl">Odłamać lub odciąć zdrewniałe końcówki szparagów. Zielonych szparagów zazwyczaj nie trzeba obierać.</span></li><li><span lang-variant="de">Den Spargel mit Olivenöl, etwas Salz und Pfeffer vermengen. Wer mag, reibt noch ganz wenig Knoblauch dazu.</span><span lang-variant="pl">Wymieszać szparagi z oliwą, odrobiną soli i pieprzu. Jeśli chcesz, dodaj też bardzo mało startego czosnku.</span></li><li><span lang-variant="de">Den Grill auf mittlere Hitze bringen und den Spargel direkt auf den Rost oder in eine Grillpfanne legen.</span><span lang-variant="pl">Rozgrzać grill do średniej temperatury i ułożyć szparagi bezpośrednio na ruszcie albo na patelni grillowej.</span></li><li><span lang-variant="de">Den Spargel 5–8 Minuten grillen und dabei regelmäßig wenden, bis er leichte Grillspuren hat und noch bissfest ist.</span><span lang-variant="pl">Grillować przez 5–8 minut, regularnie obracając, aż pojawią się lekkie ślady przypieczenia, a szparagi pozostaną lekko chrupiące.</span></li><li><span lang-variant="de">Direkt nach dem Grillen mit Zitronensaft verfeinern. Für die Upgrade-Version etwas Parmesan darüberreiben oder den Spargel mit Bacon umwickeln und dann grillen.</span><span lang-variant="pl">Zaraz po grillowaniu skropić sokiem z cytryny. W wersji upgrade można dodać starty parmezan albo owinąć szparagi boczkiem przed grillowaniem.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,2 / 10 – schnell, frisch und ideal für den Grillabend.</span><span lang-variant="pl">9,2 / 10 – szybkie, świeże i idealne na grillowy wieczór.</span></p></div><div><img alt="Grüner Spargel vom Grill" loading="lazy" src="images/rezeptbild_77.png"/></div></section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="78. weißer spargel in butter-zitronen-folie 78. białe szparagi w folii z masłem i cytryną" id="rezept-78"><div><h2><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500–800 g weißer Spargel</span><span lang-variant="pl">500–800 g białych szparagów</span></li><li><span lang-variant="de">40 g Butter</span><span lang-variant="pl">40 g masła</span></li><li><span lang-variant="de">1 TL Zucker</span><span lang-variant="pl">1 łyżeczka cukru</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">optional: etwas frisch gehackte Petersilie</span><span lang-variant="pl">opcjonalnie: trochę świeżo posiekanej pietruszki</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10–15 Minuten</span><span lang-variant="pl">przygotowanie: 10–15 min</span></li><li><span lang-variant="de">Grillzeit: 15–20 Minuten</span><span lang-variant="pl">czas grillowania: 15–20 min</span></li><li><span lang-variant="de">Gesamt: ca. 30 Minuten</span><span lang-variant="pl">łącznie: ok. 30 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Der Zucker rundet den Geschmack ab und nimmt leichte Bitterkeit.</span><span lang-variant="pl">Cukier delikatnie zaokrągla smak i niweluje lekką goryczkę.</span></li><li><span lang-variant="de">Das Folienpaket kann entspannt parallel zu Fleisch oder Würstchen auf dem Grill laufen.</span><span lang-variant="pl">Paczka z folii może spokojnie grillować się równolegle obok mięsa albo kiełbasek.</span></li><li><span lang-variant="de">Auch im Ofen sehr gut machbar.</span><span lang-variant="pl">Przepis bardzo dobrze wychodzi także w piekarniku.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Den weißen Spargel gründlich schälen und die Enden abschneiden. Das ist wichtig, damit er später nicht fasrig bleibt.</span><span lang-variant="pl">Dokładnie obrać białe szparagi i odciąć końcówki. To ważne, żeby po przygotowaniu nie były włókniste.</span></li><li><span lang-variant="de">Ein großes Stück Alufolie vorbereiten und den Spargel mittig darauflegen.</span><span lang-variant="pl">Przygotować duży kawałek folii aluminiowej i ułożyć na środku szparagi.</span></li><li><span lang-variant="de">Butter in kleinen Stücken darauf verteilen, mit Zucker, etwas Salz und Zitronensaft würzen.</span><span lang-variant="pl">Rozłożyć na nich kawałki masła, doprawić cukrem, odrobiną soli i sokiem z cytryny.</span></li><li><span lang-variant="de">Die Folie dicht verschließen, sodass ein gut geschlossenes Paket entsteht.</span><span lang-variant="pl">Szczelnie zamknąć folię, tak aby powstała dobrze domknięta paczuszka.</span></li><li><span lang-variant="de">Das Paket bei indirekter Hitze 15–20 Minuten grillen, bis der Spargel weich, aber nicht zu weich ist.</span><span lang-variant="pl">Grillować w strefie pośredniej przez 15–20 minut, aż szparagi będą miękkie, ale nie rozgotowane.</span></li><li><span lang-variant="de">Vorsichtig öffnen, eventuell mit etwas Petersilie bestreuen und direkt servieren.</span><span lang-variant="pl">Ostrożnie otworzyć, opcjonalnie posypać pietruszką i od razu podawać.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,0 / 10 – saftig, aromatisch und sehr unkompliziert.</span><span lang-variant="pl">9,0 / 10 – soczyste, aromatyczne i bardzo proste.</span></p></div><div><img alt="Weißer Spargel in Butter-Zitronen-Folie" loading="lazy" src="images/rezeptbild_78.png"/></div></section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="79. spargel vom grill mit parmesan und zitrone 79. szparagi z grilla z parmezanem i cytryną" id="rezept-79"><div><h2><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500 g grüner oder weißer Spargel</span><span lang-variant="pl">500 g zielonych lub białych szparagów</span></li><li><span lang-variant="de">2 EL Olivenöl</span><span lang-variant="pl">2 łyżki oliwy</span></li><li><span lang-variant="de">30–40 g Parmesan</span><span lang-variant="pl">30–40 g parmezanu</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: frische Kräuter</span><span lang-variant="pl">opcjonalnie: świeże zioła</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10 Minuten</span><span lang-variant="pl">przygotowanie: 10 min</span></li><li><span lang-variant="de">Grillzeit: 6–10 Minuten</span><span lang-variant="pl">czas grillowania: 6–10 min</span></li><li><span lang-variant="de">Gesamt: ca. 20 Minuten</span><span lang-variant="pl">łącznie: ok. 20 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Parmesan immer frisch reiben – das macht geschmacklich einen großen Unterschied.</span><span lang-variant="pl">Parmezan najlepiej ścierać świeżo – smak jest wtedy wyraźnie lepszy.</span></li><li><span lang-variant="de">Besonders gut als Vorspeise oder feine Grillbeilage.</span><span lang-variant="pl">Bardzo dobry jako przystawka albo bardziej elegancki dodatek z grilla.</span></li><li><span lang-variant="de">Mit etwas Knoblauchöl wird es noch kräftiger.</span><span lang-variant="pl">Z odrobiną oleju czosnkowego smak będzie jeszcze mocniejszy.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Grünen Spargel nur an den Enden kürzen, weißen Spargel zusätzlich vollständig schälen.</span><span lang-variant="pl">Zielonym szparagom odciąć tylko końcówki, a białe dodatkowo dokładnie obrać.</span></li><li><span lang-variant="de">Den Spargel mit Olivenöl, Salz und Pfeffer vermengen.</span><span lang-variant="pl">Wymieszać szparagi z oliwą, solą i pieprzem.</span></li><li><span lang-variant="de">Bei mittlerer Hitze 6–10 Minuten grillen und dabei regelmäßig wenden.</span><span lang-variant="pl">Grillować na średnim ogniu przez 6–10 minut, regularnie obracając.</span></li><li><span lang-variant="de">Direkt nach dem Grillen mit Zitronensaft beträufeln und etwas Zitronenabrieb darübergeben, wenn du magst.</span><span lang-variant="pl">Zaraz po grillowaniu skropić sokiem z cytryny i opcjonalnie dodać trochę skórki z cytryny.</span></li><li><span lang-variant="de">Zum Schluss frisch geriebenen Parmesan darüberstreuen und sofort servieren.</span><span lang-variant="pl">Na końcu posypać świeżo startym parmezanem i od razu podawać.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,3 / 10 – einfach, elegant und richtig stark im Geschmack.</span><span lang-variant="pl">9,3 / 10 – proste, eleganckie i bardzo wyraziste w smaku.</span></p></div><div><img alt="Spargel vom Grill mit Parmesan und Zitrone" loading="lazy" src="images/rezeptbild_79.png"/></div></section><section class="recipe hidden-recipe" data-category="airfryer" data-title="80. grüner spargel aus dem airfryer 80. zielone szparagi z airfryera" id="rezept-80"><div><h2><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Airfryer / Spargel &amp; Saisonküche</span><span lang-variant="pl">Airfryer / szparagi i kuchnia sezonowa</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">500 g grüner Spargel</span><span lang-variant="pl">500 g zielonych szparagów</span></li><li><span lang-variant="de">1–2 EL Olivenöl</span><span lang-variant="pl">1–2 łyżki oliwy</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">optional: 20–30 g Parmesan</span><span lang-variant="pl">opcjonalnie: 20–30 g parmezanu</span></li><li><span lang-variant="de">optional: 1 kleine Knoblauchzehe</span><span lang-variant="pl">opcjonalnie: 1 mały ząbek czosnku</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: 10 Minuten</span><span lang-variant="pl">przygotowanie: 10 min</span></li><li><span lang-variant="de">Airfryer: 8–10 Minuten bei 180 °C</span><span lang-variant="pl">Airfryer: 8–10 min w 180 °C</span></li><li><span lang-variant="de">Gesamt: ca. 20 Minuten</span><span lang-variant="pl">łącznie: ok. 20 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Nicht zu voll packen – sonst wird der Spargel eher weich als schön geröstet.</span><span lang-variant="pl">Nie układaj szparagów zbyt ciasno – inaczej będą bardziej miękkie niż lekko przypieczone.</span></li><li><span lang-variant="de">Mit Parmesan oder etwas Zitronenabrieb wird er noch besser.</span><span lang-variant="pl">Z parmezanem albo odrobiną skórki cytrynowej smakują jeszcze lepiej.</span></li><li><span lang-variant="de">Perfekt als schnelle Beilage aus der Cosori.</span><span lang-variant="pl">Świetny szybki dodatek z Cosori.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Die holzigen Enden des grünen Spargels abbrechen oder abschneiden. Grünen Spargel musst du nicht schälen.</span><span lang-variant="pl">Odłamać lub odciąć zdrewniałe końcówki zielonych szparagów. Zielonych szparagów nie trzeba obierać.</span></li><li><span lang-variant="de">Den Spargel mit Olivenöl, Salz und Pfeffer vermengen. Optional etwas fein geriebenen Knoblauch dazugeben.</span><span lang-variant="pl">Wymieszać szparagi z oliwą, solą i pieprzem. Opcjonalnie dodać odrobinę drobno startego czosnku.</span></li><li><span lang-variant="de">Den Airfryer auf 180 °C vorheizen, wenn dein Gerät das unterstützt.</span><span lang-variant="pl">Rozgrzać Airfryera do 180 °C, jeśli urządzenie ma funkcję nagrzewania wstępnego.</span></li><li><span lang-variant="de">Den Spargel locker in den Korb legen – nicht zu eng, damit die heiße Luft gut zirkulieren kann.</span><span lang-variant="pl">Ułożyć szparagi luźno w koszu – nie za ciasno, aby gorące powietrze mogło dobrze krążyć.</span></li><li><span lang-variant="de">Etwa 8–10 Minuten garen. Zwischendurch einmal kurz durchschütteln oder wenden.</span><span lang-variant="pl">Piec około 8–10 minut. W połowie czasu lekko potrząsnąć koszem albo obrócić szparagi.</span></li><li><span lang-variant="de">Zum Schluss mit Zitronensaft verfeinern und nach Wunsch mit Parmesan servieren.</span><span lang-variant="pl">Na końcu skropić sokiem z cytryny i opcjonalnie posypać parmezanem.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,1 / 10 – schnell, sauber und perfekt für den Alltag.</span><span lang-variant="pl">9,1 / 10 – szybkie, wygodne i idealne na co dzień.</span></p></div><div><img alt="Grüner Spargel aus dem Airfryer" loading="lazy" src="images/rezeptbild_80.png"/></div></section><section class="recipe hidden-recipe" data-category="suppen" data-title="81. afrikanischer erdnusseintopf 81. afrykański gulasz z masłem orzechowym" id="rezept-81"><div><h2><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Suppen / Eintöpfe</span><span lang-variant="pl">Zupy / gulasze</span></span><span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">1/2 Weißkohl</span><span lang-variant="pl">1/2 białej kapusty</span></li><li><span lang-variant="de">2 Möhren</span><span lang-variant="pl">2 marchewki</span></li><li><span lang-variant="de">1 Zwiebel</span><span lang-variant="pl">1 cebula</span></li><li><span lang-variant="de">1 Paprikaschote</span><span lang-variant="pl">1 papryka</span></li><li><span lang-variant="de">1 kleine Dose Kidneybohnen</span><span lang-variant="pl">1 mała puszka czerwonej fasoli</span></li><li><span lang-variant="de">1 Dose Mais</span><span lang-variant="pl">1 puszka kukurydzy</span></li><li><span lang-variant="de">500 g passierte Tomaten</span><span lang-variant="pl">500 g passaty pomidorowej</span></li><li><span lang-variant="de">250 ml Gemüsebrühe</span><span lang-variant="pl">250 ml bulionu warzywnego</span></li><li><span lang-variant="de">4 EL Erdnussbutter</span><span lang-variant="pl">4 łyżki masła orzechowego</span></li><li><span lang-variant="de">1 EL Senf</span><span lang-variant="pl">1 łyżka musztardy</span></li><li><span lang-variant="de">1 EL Kreuzkümmel</span><span lang-variant="pl">1 łyżka kminu rzymskiego</span></li><li><span lang-variant="de">1 TL Thymian</span><span lang-variant="pl">1 łyżeczka tymianku</span></li><li><span lang-variant="de">1/2 TL Paprikapulver</span><span lang-variant="pl">1/2 łyżeczki papryki</span></li><li><span lang-variant="de">1–2 TL Cayennepfeffer nach Geschmack</span><span lang-variant="pl">1–2 łyżeczki pieprzu cayenne do smaku</span></li><li><span lang-variant="de">etwas Öl zum Anbraten</span><span lang-variant="pl">trochę oleju do smażenia</span></li><li><span lang-variant="de">Mangosaft nach Geschmack</span><span lang-variant="pl">sok mango do smaku</span></li><li><span lang-variant="de">Salz und Pfeffer</span><span lang-variant="pl">sól i pieprz</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 20 Minuten</span><span lang-variant="pl">przygotowanie: ok. 20 min</span></li><li><span lang-variant="de">Kochzeit: ca. 25 Minuten</span><span lang-variant="pl">gotowanie: ok. 25 min</span></li><li><span lang-variant="de">Gesamt: ca. 45 Minuten</span><span lang-variant="pl">łącznie: ok. 45 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Wenn du es milder magst, nimm zuerst nur 1 TL Cayennepfeffer und würze später nach.</span><span lang-variant="pl">Jeśli wolisz łagodniejszą wersję, zacznij od 1 łyżeczki pieprzu cayenne i dopraw później.</span></li><li><span lang-variant="de">Statt Mangosaft funktioniert auch etwas Orangensaft oder ein kleiner Spritzer Limette, aber Mango passt besonders gut zur Erdnussnote.</span><span lang-variant="pl">Zamiast soku mango możesz użyć odrobiny soku pomarańczowego albo kilku kropel limonki, ale mango szczególnie dobrze pasuje do nuty orzechowej.</span></li><li><span lang-variant="de">Der Eintopf schmeckt am nächsten Tag fast noch besser, weil die Gewürze dann stärker durchgezogen sind.</span><span lang-variant="pl">Ten gulasz następnego dnia smakuje prawie jeszcze lepiej, bo przyprawy mają wtedy więcej czasu, żeby się przegryźć.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Weißkohl, Möhren, Zwiebel und Paprika vorbereiten. Den Kohl in feine Streifen schneiden, die Möhren schälen und klein würfeln oder in halbe Scheiben schneiden. Zwiebel und Paprika ebenfalls klein schneiden.</span><span lang-variant="pl">Przygotować kapustę, marchew, cebulę i paprykę. Kapustę pokroić w cienkie paski, marchew obrać i pokroić w kostkę albo półplasterki. Cebulę i paprykę również drobno pokroić.</span></li><li><span lang-variant="de">Weißkohl und Möhren in wenig Wasser separat 5–8 Minuten vorkochen, damit sie später im Eintopf schön weich werden, aber noch Struktur behalten. Danach abgießen und beiseitestellen.</span><span lang-variant="pl">Kapustę i marchew podgotować osobno przez 5–8 minut w niewielkiej ilości wody, aby później w gulaszu były miękkie, ale nadal miały strukturę. Następnie odcedzić i odstawić.</span></li><li><span lang-variant="de">In einem großen Topf etwas Öl erhitzen und Zwiebel sowie Paprika 3–4 Minuten anschwitzen. Dann Kreuzkümmel, Cayennepfeffer und Senf dazugeben und ganz kurz mitrösten, damit die Gewürze ihr Aroma entfalten.</span><span lang-variant="pl">W dużym garnku rozgrzać trochę oleju i podsmażyć cebulę oraz paprykę przez 3–4 minuty. Następnie dodać kmin rzymski, pieprz cayenne i musztardę i krótko podsmażyć, aby przyprawy oddały aromat.</span></li><li><span lang-variant="de">Passierte Tomaten und Gemüsebrühe angießen und alles etwa 5 Minuten offen köcheln lassen.</span><span lang-variant="pl">Wlać passatę pomidorową i bulion warzywny, a następnie gotować całość bez przykrycia około 5 minut.</span></li><li><span lang-variant="de">Nun Thymian, Paprikapulver und Erdnussbutter einrühren. Die Sauce so lange rühren, bis sich die Erdnussbutter vollständig gelöst hat und der Eintopf schön cremig wird.</span><span lang-variant="pl">Dodać tymianek, paprykę i masło orzechowe. Mieszać tak długo, aż masło orzechowe całkowicie się rozpuści i gulasz stanie się kremowy.</span></li><li><span lang-variant="de">Kidneybohnen und Mais abgießen und zusammen mit dem vorgegarten Kohl und den Möhren in den Topf geben. Alles weitere 10–15 Minuten sanft köcheln lassen. Dabei immer wieder umrühren, weil der Eintopf durch die Erdnussbutter leicht am Boden ansetzen kann.</span><span lang-variant="pl">Odcedzić fasolę i kukurydzę, a potem dodać je razem z podgotowaną kapustą i marchewką do garnka. Całość delikatnie gotować jeszcze 10–15 minut. Co jakiś czas mieszać, ponieważ przez masło orzechowe gulasz łatwo przywiera do dna.</span></li><li><span lang-variant="de">Zum Schluss mit etwas Mangosaft, Salz, Pfeffer und nach Wunsch noch etwas Cayennepfeffer abschmecken. Der Mangosaft bringt eine fruchtige Süße hinein, die sehr gut mit der Erdnussnote harmoniert.</span><span lang-variant="pl">Na końcu doprawić odrobiną soku mango, solą, pieprzem i – jeśli trzeba – dodatkowym pieprzem cayenne. Sok mango dodaje owocowej słodyczy, która bardzo dobrze pasuje do nuty orzechowej.</span></li><li><span lang-variant="de">Heiß servieren. Dazu passen frisches Baguette, Fladenbrot oder – wenn gewünscht – auch Reis.</span><span lang-variant="pl">Podawać gorące. Bardzo dobrze pasuje świeża bagietka, chlebek pita albo – jeśli chcesz – ryż.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9,0 / 10 – würzig, cremig und mal etwas anderes als ein klassischer Gemüseeintopf.</span><span lang-variant="pl">9,0 / 10 – aromatyczny, kremowy i przyjemnie inny niż klasyczny gulasz warzywny.</span></p></div><div><img alt="Afrikanischer Erdnusseintopf" loading="lazy" src="images/rezeptbild_81.png"/></div></section><section class="recipe hidden-recipe" data-category="eiergerichte" data-title="61. shakshuka 61. szakszuka" id="rezept-61">
 <div>
 <h2><span lang-variant="de">61. Shakshuka</span><span lang-variant="pl">61. Szakszuka</span></h2>
 <div class="meta">
@@ -1649,8 +1633,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9 / 10 – unkompliziert, würzig und ideal für den Alltag.</span><span lang-variant="pl">9 / 10 – proste, aromatyczne i bardzo dobre na co dzień.</span></p>
 </div>
 <div><img alt="Shakshuka" loading="lazy" src="images/rezeptbild_61.png"/></div>
-</section>
-<section class="recipe" data-category="ofengerichte" id="rezept-62">
+</section><section class="recipe hidden-recipe" data-category="ofengerichte" data-title="62. gefüllte hähnchenbrust mit frischkäse und ofenkartoffeln 62. pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami" id="rezept-62">
 <div>
 <h2><span lang-variant="de">62. Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</span><span lang-variant="pl">62. Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</span></h2>
 <div class="meta">
@@ -1675,8 +1658,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9 / 10 – alltagstauglich, saftig und sehr unkompliziert.</span><span lang-variant="pl">9 / 10 – proste, soczyste i bardzo wygodne na co dzień.</span></p>
 </div>
 <div><img alt="Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln" loading="lazy" src="images/rezeptbild_62.png"/></div>
-</section>
-<section class="recipe" data-category="pfannengerichte" id="rezept-63">
+</section><section class="recipe hidden-recipe" data-category="pfannengerichte" data-title="63. ratatouille mit polenta 63. ratatouille z polentą" id="rezept-63">
 <div>
 <h2><span lang-variant="de">63. Ratatouille mit Polenta</span><span lang-variant="pl">63. Ratatouille z polentą</span></h2>
 <div class="meta">
@@ -1701,8 +1683,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – sommerlich, sättigend und einfach gemacht.</span><span lang-variant="pl">8,5 / 10 – letnie, sycące i bardzo proste.</span></p>
 </div>
 <div><img alt="Ratatouille mit Polenta" loading="lazy" src="images/rezeptbild_63.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-64">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="64. marinierte hähnchenspieße vom grill 64. marynowane szaszłyki z kurczaka z grilla" id="rezept-64">
 <div>
 <h2><span lang-variant="de">64. Marinierte Hähnchenspieße vom Grill</span><span lang-variant="pl">64. Marynowane szaszłyki z kurczaka z grilla</span></h2>
 <div class="meta">
@@ -1727,8 +1708,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9 / 10 – unkompliziert, saftig und perfekt für den Grillabend.</span><span lang-variant="pl">9 / 10 – proste, soczyste i idealne na grill.</span></p>
 </div>
 <div><img alt="Marinierte Hähnchenspieße vom Grill" loading="lazy" src="images/rezeptbild_64.png"/></div>
-</section>
-<section class="recipe" data-category="beilagen" id="rezept-65">
+</section><section class="recipe hidden-recipe" data-category="beilagen" data-title="65. gegrillte maiskolben mit butter 65. grillowana kukurydza z masłem" id="rezept-65">
 <div>
 <h2><span lang-variant="de">65. Gegrillte Maiskolben mit Butter</span><span lang-variant="pl">65. Grillowana kukurydza z masłem</span></h2>
 <div class="meta">
@@ -1753,8 +1733,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – simpel, klassisch und immer beliebt.</span><span lang-variant="pl">8,5 / 10 – proste, klasyczne i zawsze dobrze się sprawdza.</span></p>
 </div>
 <div><img alt="Gegrillte Maiskolben mit Butter" loading="lazy" src="images/rezeptbild_65.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-66">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="66. halloumi vom grill 66. halloumi z grilla" id="rezept-66">
 <div>
 <h2><span lang-variant="de">66. Halloumi vom Grill</span><span lang-variant="pl">66. Halloumi z grilla</span></h2>
 <div class="meta">
@@ -1779,8 +1758,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – schnell, unkompliziert und ideal als vegetarische Grilloption.</span><span lang-variant="pl">8,5 / 10 – szybka i bardzo wygodna opcja bez mięsa.</span></p>
 </div>
 <div><img alt="Halloumi vom Grill" loading="lazy" src="images/rezeptbild_66.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-67">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="67. würzige bratwürste vom grill (klassisch und einfache variante) 67. pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)" id="rezept-67">
 <div>
 <h2><span lang-variant="de">67. Würzige Bratwürste vom Grill (klassisch und einfache Variante)</span><span lang-variant="pl">67. Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</span></h2>
 <div class="meta">
@@ -1805,8 +1783,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8 / 10 – einfach, schnell und perfekt für entspanntes Grillen.</span><span lang-variant="pl">8 / 10 – proste, szybkie i idealne na luźne spotkanie przy grillu.</span></p>
 </div>
 <div><img alt="Würzige Bratwürste vom Grill (klassisch und einfache Variante)" loading="lazy" src="images/rezeptbild_67.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-68">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="68. gegrilltes gemüse mit zucchini, paprika und champignons 68. grillowane warzywa z cukinią, papryką i pieczarkami" id="rezept-68">
 <div>
 <h2><span lang-variant="de">68. Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</span><span lang-variant="pl">68. Grillowane warzywa z cukinią, papryką i pieczarkami</span></h2>
 <div class="meta">
@@ -1831,8 +1808,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – bunt, unkompliziert und ein Klassiker vom Sommergrill.</span><span lang-variant="pl">8,5 / 10 – kolorowe, proste i bardzo letnie.</span></p>
 </div>
 <div><img alt="Gegrilltes Gemüse mit Zucchini, Paprika und Champignons" loading="lazy" src="images/rezeptbild_68.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-69">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="69. grillkartoffeln in alufolie mit rosmarin 69. ziemniaki z grilla w folii z rozmarynem" id="rezept-69">
 <div>
 <h2><span lang-variant="de">69. Grillkartoffeln in Alufolie mit Rosmarin</span><span lang-variant="pl">69. Ziemniaki z grilla w folii z rozmarynem</span></h2>
 <div class="meta">
@@ -1857,8 +1833,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – einfache Grillbeilage, die immer passt.</span><span lang-variant="pl">8,5 / 10 – prosty dodatek z grilla, który zawsze się sprawdza.</span></p>
 </div>
 <div><img alt="Grillkartoffeln in Alufolie mit Rosmarin" loading="lazy" src="images/rezeptbild_69.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-70">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="70. gegrilltes baguette oder ciabatta mit knoblauchöl 70. grillowana bagietka lub ciabatta z oliwą czosnkową" id="rezept-70">
 <div>
 <h2><span lang-variant="de">70. Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</span><span lang-variant="pl">70. Grillowana bagietka lub ciabatta z oliwą czosnkową</span></h2>
 <div class="meta">
@@ -1883,8 +1858,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8 / 10 – einfach, schnell und immer ein guter Begleiter.</span><span lang-variant="pl">8 / 10 – proste, szybkie i zawsze się przydaje przy grillu.</span></p>
 </div>
 <div><img alt="Gegrilltes Baguette oder Ciabatta mit Knoblauchöl" loading="lazy" src="images/rezeptbild_70.png"/></div>
-</section>
-<section class="recipe" data-category="grill-bbq" id="rezept-71">
+</section><section class="recipe hidden-recipe" data-category="grill-bbq" data-title="71. gegrillte früchte mit ananas oder pfirsich 71. grillowane owoce z ananasem lub brzoskwinią" id="rezept-71">
 <div>
 <h2><span lang-variant="de">71. Gegrillte Früchte mit Ananas oder Pfirsich</span><span lang-variant="pl">71. Grillowane owoce z ananasem lub brzoskwinią</span></h2>
 <div class="meta">
@@ -1909,8 +1883,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – einfacher Sommernachtisch mit wenig Aufwand.</span><span lang-variant="pl">8,5 / 10 – prosty letni deser bez dużego wysiłku.</span></p>
 </div>
 <div><img alt="Gegrillte Früchte mit Ananas oder Pfirsich" loading="lazy" src="images/rezeptbild_71.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-72">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="72. klassische rote sangria 72. klasyczna czerwona sangria" id="rezept-72">
 <div>
 <h2><span lang-variant="de">72. Klassische rote Sangria</span><span lang-variant="pl">72. Klasyczna czerwona sangria</span></h2>
 <div class="meta">
@@ -1935,8 +1908,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – fruchtig, unkompliziert und perfekt für Sommerabende.</span><span lang-variant="pl">8,5 / 10 – owocowa, prosta i idealna na ciepłe wieczory.</span></p>
 </div>
 <div><img alt="Klassische rote Sangria" loading="lazy" src="images/rezeptbild_72.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-73">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="73. weiße sangria 73. biała sangria" id="rezept-73">
 <div>
 <h2><span lang-variant="de">73. Weiße Sangria</span><span lang-variant="pl">73. Biała sangria</span></h2>
 <div class="meta">
@@ -1961,8 +1933,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – leicht, sommerlich und sehr unkompliziert.</span><span lang-variant="pl">8,5 / 10 – lekka, letnia i bardzo łatwa do przygotowania.</span></p>
 </div>
 <div><img alt="Weiße Sangria" loading="lazy" src="images/rezeptbild_73.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-74">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="74. aperol spritz 74. aperol spritz" id="rezept-74">
 <div>
 <h2><span lang-variant="de">74. Aperol Spritz</span><span lang-variant="pl">74. Aperol Spritz</span></h2>
 <div class="meta">
@@ -1987,8 +1958,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – schnell gemacht und ein echter Sommerklassiker.</span><span lang-variant="pl">8,5 / 10 – szybki i bardzo letni klasyk.</span></p>
 </div>
 <div><img alt="Aperol Spritz" loading="lazy" src="images/rezeptbild_74.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-75">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="75. mojito 75. mojito" id="rezept-75">
 <div>
 <h2><span lang-variant="de">75. Mojito</span><span lang-variant="pl">75. Mojito</span></h2>
 <div class="meta">
@@ -2013,8 +1983,7 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">9 / 10 – frisch, leicht und ideal für warme Tage.</span><span lang-variant="pl">9 / 10 – świeży, lekki i idealny na ciepłe dni.</span></p>
 </div>
 <div><img alt="Mojito" loading="lazy" src="images/rezeptbild_75.png"/></div>
-</section>
-<section class="recipe" data-category="cocktails" id="rezept-76">
+</section><section class="recipe hidden-recipe" data-category="cocktails" data-title="76. gin tonic (basisrezept und einfache variationen) 76. gin tonic (wersja podstawowa i proste warianty)" id="rezept-76">
 <div>
 <h2><span lang-variant="de">76. Gin Tonic (Basisrezept und einfache Variationen)</span><span lang-variant="pl">76. Gin Tonic (wersja podstawowa i proste warianty)</span></h2>
 <div class="meta">
@@ -2039,57 +2008,175 @@ li{margin:.3rem 0}
 <p><span lang-variant="de">8,5 / 10 – einfach, wandelbar und perfekt für Gäste.</span><span lang-variant="pl">8,5 / 10 – prosty, elastyczny i bardzo dobry dla gości.</span></p>
 </div>
 <div><img alt="Gin Tonic (Basisrezept und einfache Variationen)" loading="lazy" src="images/rezeptbild_76.png"/></div>
-</section>
-</main>
+</section></div><div class="toc-actions"><button class="small-btn" id="toggleRecipes" type="button"><span lang-variant="de">Mehr Karten anzeigen</span><span lang-variant="pl">Pokaż więcej kart</span></button></div><div class="section-card"><section class="toc">
+<h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2><div class="toc-note"><span lang-variant="de">Das Verzeichnis ist scrollbar. Noch schneller geht es über die Kategorien links.</span><span lang-variant="pl">Spis treści można przewijać. Jeszcze szybciej znajdziesz przepisy przez kategorie po lewej.</span></div>
+<div class="search-box"><input aria-label="Rezept suchen" class="search-input" id="recipeSearch" placeholder="Rezept suchen…" type="search"/></div><div class="toc-toolbar">
+<button class="mobile-category-toggle" id="mobileCategoryToggle" type="button"><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></button>
+<div class="toc-current-filter" id="currentCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></div>
+<div class="toc-actions"><button class="small-btn" id="toggleTocItems" type="button"><span lang-variant="de">Mehr anzeigen</span><span lang-variant="pl">Pokaż więcej</span></button></div></div>
+<div class="toc-grid"><div data-category="ofengerichte" data-title="1. spanische kohlrouladen mit chorizo, rotwein und speck 1. hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem"><a href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a></div><div data-category="ofengerichte" data-title="2. italienischer kalbshaxen-braten 2. włoska pieczeń z golonki cielęcej"><a href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a></div><div data-category="pfannengerichte" data-title="3. svens muscheln in weißwein-tomaten-butter-sauce mit airfryer-knoblauchbrot 3. małże svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z airfryera"><a href="#rezept-3"><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></a></div><div data-category="ofengerichte" data-title="4. hähnchen-gyros mit ofenkartoffeln, gurkensalat und tsatsiki 4. kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki"><a href="#rezept-4"><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></a></div><div data-category="grill-bbq" data-title="5. smoked bbq-fajita-pfanne 5. wędzona patelnia bbq fajita"><a href="#rezept-5"><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></a></div><div data-category="grill-bbq" data-title="6. bruschetta vom ciabatta 6. bruschetta z ciabatty"><a href="#rezept-6"><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></a></div><div data-category="pfannengerichte" data-title="7. köfte mit tomaten-zwiebel-salat, tzatziki und fladenbrot 7. köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita"><a href="#rezept-7"><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></a></div><div data-category="pfannengerichte" data-title="8. bauernomelette mit tomaten-mozzarella-salat 8. omelet wiejski z sałatką pomidorowo-mozzarellową"><a href="#rezept-8"><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></a></div><div data-category="pfannengerichte" data-title="9. chicken masala mit naturjoghurt &amp; protein-wraps 9. chicken masala z jogurtem naturalnym i proteinowymi wrapami"><a href="#rezept-9"><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></a></div><div data-category="ofengerichte" data-title="10. svens ofengericht mit salsiccia, gemüse &amp; kartoffeln (cremige sonntagsversion) 10. danie piekarnikowe svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)"><a href="#rezept-10"><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></a></div><div data-category="ofengerichte" data-title="11. svens hackbällchen-auflauf mit ajvar &amp; kartoffeln – die ofenbombe 11. zapiekanka svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba"><a href="#rezept-11"><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></a></div><div data-category="pfannengerichte" data-title="12. svens gemüse-kartoffel-pfanne mit ajvar-teriyaki-soße &amp; cabanossi 12. patelnia svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem"><a href="#rezept-12"><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></a></div><div data-category="pfannengerichte" data-title="13. svens butter-chicken-wok mit kokos &amp; joghurt 13. wok svena butter chicken z kokosem i jogurtem"><a href="#rezept-13"><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></a></div><div data-category="ofengerichte" data-title="14. ofengemüse mit hähnchenschenkeln und lila süßkartoffeln 14. warzywa z piekarnika z udkami kurczaka i fioletowymi batatami"><a href="#rezept-14"><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></a></div><div data-category="ofengerichte" data-title="15. ofen-hähnchenschenkel mit kartoffeln &amp; zwiebeln – sven-style 15. udka kurczaka z ziemniakami i cebulą z piekarnika – styl svena"><a href="#rezept-15"><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></a></div><div data-category="ofengerichte" data-title="16. kartoffelauflauf mit schmand, käse &amp; speck 16. zapiekanka ziemniaczana ze śmietaną, serem i boczkiem"><a href="#rezept-16"><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></a></div><div data-category="ofengerichte" data-title="17. rinderrouladen – helle soße ohne dunkelmacher (hausrezept) 17. rolady wołowe – jasny sos bez barwnika (przepis domowy)"><a href="#rezept-17"><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></a></div><div data-category="suppen" data-title="18. kartoffelsuppe mit mettenden 18. zupa ziemniaczana z kiełbasą mettenden"><a href="#rezept-18"><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></a></div><div data-category="grundlagen" data-title="19. zakwas für żurek selber machen 19. zakwas na żurek"><a href="#rezept-19"><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></a></div><div data-category="pfannengerichte" data-title="20. königsberger klopse 20. klopsy po królewiecku"><a href="#rezept-20"><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></a></div><div data-category="gebaeck-suesses" data-title="21. danziger porzeln 21. gdańskie porzeln"><a href="#rezept-21"><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></a></div><div data-category="suppen" data-title="22. kalte rote-bete-suppe 22. chłodnik z czerwonych buraków"><a href="#rezept-22"><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></a></div><div data-category="teiggerichte" data-title="23. piroggen mit sauerkraut-pilz-füllung 23. pierogi z kapustą kiszoną i grzybami"><a href="#rezept-23"><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></a></div><div data-category="pfannengerichte" data-title="24. klopse in tomatensoße 24. klopsy w sosie pomidorowym"><a href="#rezept-24"><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></a></div><div data-category="fisch-meeresfruechte" data-title="25. danziger heringssalat 25. gdańska sałatka śledziowa"><a href="#rezept-25"><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></a></div><div data-category="fisch-meeresfruechte" data-title="26. hering nach kaschubischer art 26. śledź po kaszubsku"><a href="#rezept-26"><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></a></div><div data-category="pfannengerichte" data-title="27. polnisches beefsteak 27. polski befsztyk"><a href="#rezept-27"><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></a></div><div data-category="ofengerichte" data-title="28. fleischpastete 28. pasztet mięsny"><a href="#rezept-28"><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></a></div><div data-category="pfannengerichte" data-title="29. geflügelleber mit äpfeln 29. wątróbka drobiowa z jabłkami"><a href="#rezept-29"><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></a></div><div data-category="ofengerichte" data-title="30. eisbein nach alt-polnischer art 30. golonka po staropolsku"><a href="#rezept-30"><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></a></div><div data-category="suppen" data-title="31. danziger suppe 31. zupa gdańska"><a href="#rezept-31"><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></a></div><div data-category="suppen" data-title="32. erbsensuppe mit kartoffeln 32. grochówka z ziemniakami"><a href="#rezept-32"><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></a></div><div data-category="saucen-polnische-kueche" data-title="33. alt-polnische sauce 33. sos staropolski"><a href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a></div><div data-category="suppen" data-title="34. oster-żurek 34. żurek wielkanocny"><a href="#rezept-34"><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></a></div><div data-category="ofengerichte" data-title="35. ofen-brisket mit magic dust 35. pieczony brisket z przyprawą magic dust"><a href="#rezept-35"><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></a></div><div data-category="ofengerichte" data-title="36. irish beef rollbraten aus dem backofen 36. irlandzka pieczeń wołowa z piekarnika"><a href="#rezept-36"><span lang-variant="de">36. Irish Beef Rollbraten aus dem Backofen</span><span lang-variant="pl">36. Irlandzka pieczeń wołowa z piekarnika</span></a></div><div data-category="airfryer" data-title="37. svens airfryer-iskender kebab 37. kebab iskender z airfryera (wersja svena)"><a href="#rezept-37"><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></a></div><div data-category="ofengerichte" data-title="38. klassischer schmorbraten mit dunkler sauce 38. klasyczna pieczeń duszona z ciemnym sosem"><a href="#rezept-38"><span lang-variant="de">38. Klassischer Schmorbraten mit dunkler Sauce</span><span lang-variant="pl">38. Klasyczna pieczeń duszona z ciemnym sosem</span></a></div><div data-category="ofengerichte" data-title="39. hähnchen-kartoffel-pfanne mit gemüse 39. zapiekanka z kurczakiem, ziemniakami i warzywami"><a href="#rezept-39"><span lang-variant="de">39. Hähnchen-Kartoffel-Pfanne mit Gemüse</span><span lang-variant="pl">39. Zapiekanka z kurczakiem, ziemniakami i warzywami</span></a></div><div data-category="ofengerichte" data-title="40. bratwurst mit sauerkraut aus dem ofen 40. biała kiełbasa pieczona z kapustą kiszoną"><a href="#rezept-40"><span lang-variant="de">40. Bratwurst mit Sauerkraut aus dem Ofen</span><span lang-variant="pl">40. Biała kiełbasa pieczona z kapustą kiszoną</span></a></div><div data-category="wraps-und-burritos" data-title="41. saftiger chicken-cheese-burrito ohne reis 41. soczysty burrito z kurczakiem i serem bez ryżu"><a href="#rezept-41"><span lang-variant="de">41. Saftiger Chicken-Cheese-Burrito ohne Reis</span><span lang-variant="pl">41. Soczysty burrito z kurczakiem i serem bez ryżu</span></a></div><div data-category="nudelgerichte" data-title="42. spaghetti mit knoblauch und sambal oelek 42. spaghetti z czosnkiem i sambal oelek"><a href="#rezept-42"><span lang-variant="de">42. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">42. Spaghetti z czosnkiem i sambal oelek</span></a></div><div data-category="pfannengerichte" data-title="43. knoblauch-kartoffel-pfanne mit chili und ei 43. patelnia ziemniaczana z czosnkiem, chili i jajkiem"><a href="#rezept-43"><span lang-variant="de">43. Knoblauch-Kartoffel-Pfanne mit Chili und Ei</span><span lang-variant="pl">43. Patelnia ziemniaczana z czosnkiem, chili i jajkiem</span></a></div><div data-category="nudelgerichte" data-title="44. cremige parmesan-pasta ohne sahne 44. kremowy makaron z parmezanem bez śmietany"><a href="#rezept-44"><span lang-variant="de">44. Cremige Parmesan-Pasta ohne Sahne</span><span lang-variant="pl">44. Kremowy makaron z parmezanem bez śmietany</span></a></div><div data-category="pfannengerichte" data-title="45. cordon bleu mit nasi goreng 45. cordon bleu z nasi goreng"><a href="#rezept-45"><span lang-variant="de">45. Cordon Bleu mit Nasi Goreng</span><span lang-variant="pl">45. Cordon Bleu z nasi goreng</span></a></div>
+<div data-category="pfannengerichte" data-title="46. smashed burger mit ofenkartoffeln &amp; sour-cream-dip 46. burger smashed z pieczonymi ziemniakami i dipem śmietanowym"><a href="#rezept-46"><span lang-variant="de">46. Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</span><span lang-variant="pl">46. Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</span></a></div>
+<div data-category="cocktails" data-title="47. erdbeer-orangen-sekt-slush für den ninja slushi 47. truskawkowo-pomarańczowy slush z sektu do ninja slushi"><a href="#rezept-47"><span lang-variant="de">47. Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">47. Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</span></a></div>
+<div data-category="cocktails" data-title="48. ananas-rum-slush für den ninja slushi 48. ananasowy slush z rumem do ninja slushi"><a href="#rezept-48"><span lang-variant="de">48. Ananas-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">48. Ananasowy slush z rumem do Ninja Slushi</span></a></div>
+<div data-category="cocktails" data-title="49. zitronen-vodka-slush für den ninja slushi 49. cytrynowy slush z wódką do ninja slushi"><a href="#rezept-49"><span lang-variant="de">49. Zitronen-Vodka-Slush für den Ninja Slushi</span><span lang-variant="pl">49. Cytrynowy slush z wódką do Ninja Slushi</span></a></div>
+<div data-category="cocktails" data-title="50. waldbeer-sekt-slush für den ninja slushi 50. leśny slush z różowym sektem do ninja slushi"><a href="#rezept-50"><span lang-variant="de">50. Waldbeer-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">50. Leśny slush z różowym sektem do Ninja Slushi</span></a></div>
+<div data-category="cocktails" data-title="51. mango-maracuja-rum-slush für den ninja slushi 51. mango-marakuja slush z rumem do ninja slushi"><a href="#rezept-51"><span lang-variant="de">51. Mango-Maracuja-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">51. Mango-marakuja slush z rumem do Ninja Slushi</span></a></div><div data-category="eiergerichte" data-title="52. senfeier mit kartoffeln 52. jajka w sosie musztardowym z ziemniakami"><a href="#rezept-52"><span lang-variant="de">52. Senfeier mit Kartoffeln</span><span lang-variant="pl">52. Jajka w sosie musztardowym z ziemniakami</span></a></div><div data-category="grill-bbq" data-title="53. koreanisches bulgogi vom grill 53. koreańskie bulgogi z grilla"><a href="#rezept-53"><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></a></div><div data-category="grill-bbq" data-title="54. spare ribs mit espresso-rub 54. żeberka z rubem espresso"><a href="#rezept-54"><span lang-variant="de">54. Spare Ribs mit Espresso-Rub</span><span lang-variant="pl">54. Żeberka z rubem espresso</span></a></div><div data-category="grill-bbq" data-title="55. gegrillter halloumi mit kräutern und olivenöl 55. grillowany halloumi z ziołami i oliwą"><a href="#rezept-55"><span lang-variant="de">55. Gegrillter Halloumi mit Kräutern und Olivenöl</span><span lang-variant="pl">55. Grillowany halloumi z ziołami i oliwą</span></a></div><div data-category="grill-bbq" data-title="56. gemüsespieße vom grill 56. warzywne szaszłyki z grilla"><a href="#rezept-56"><span lang-variant="de">56. Gemüsespieße vom Grill</span><span lang-variant="pl">56. Warzywne szaszłyki z grilla</span></a></div><div data-category="grill-bbq" data-title="57. gefüllte portobello-pilze vom grill 57. faszerowane pieczarki portobello z grilla"><a href="#rezept-57"><span lang-variant="de">57. Gefüllte Portobello-Pilze vom Grill</span><span lang-variant="pl">57. Faszerowane pieczarki portobello z grilla</span></a></div><div data-category="grill-bbq" data-title="58. grüner spargel vom grill mit zitronenbutter 58. zielone szparagi z grilla z masłem cytrynowym"><a href="#rezept-58"><span lang-variant="de">58. Grüner Spargel vom Grill mit Zitronenbutter</span><span lang-variant="pl">58. Zielone szparagi z grilla z masłem cytrynowym</span></a></div><div data-category="grill-bbq" data-title="59. süßkartoffel-pommes vom grill 59. frytki z batatów z grilla"><a href="#rezept-59"><span lang-variant="de">59. Süßkartoffel-Pommes vom Grill</span><span lang-variant="pl">59. Frytki z batatów z grilla</span></a></div><div data-category="beilagen" data-title="60. melonen-feta-salat mit minze 60. sałatka z arbuza, fety i mięty"><a href="#rezept-60"><span lang-variant="de">60. Melonen-Feta-Salat mit Minze</span><span lang-variant="pl">60. Sałatka z arbuza, fety i mięty</span></a></div><div data-category="eiergerichte" data-title="61. shakshuka 61. szakszuka"><a href="#rezept-61"><span lang-variant="de">61. Shakshuka</span><span lang-variant="pl">61. Szakszuka</span></a></div><div data-category="ofengerichte" data-title="62. gefüllte hähnchenbrust mit frischkäse und ofenkartoffeln 62. pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami"><a href="#rezept-62"><span lang-variant="de">62. Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</span><span lang-variant="pl">62. Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</span></a></div><div data-category="pfannengerichte" data-title="63. ratatouille mit polenta 63. ratatouille z polentą"><a href="#rezept-63"><span lang-variant="de">63. Ratatouille mit Polenta</span><span lang-variant="pl">63. Ratatouille z polentą</span></a></div><div data-category="grill-bbq" data-title="64. marinierte hähnchenspieße vom grill 64. marynowane szaszłyki z kurczaka z grilla"><a href="#rezept-64"><span lang-variant="de">64. Marinierte Hähnchenspieße vom Grill</span><span lang-variant="pl">64. Marynowane szaszłyki z kurczaka z grilla</span></a></div><div data-category="beilagen" data-title="65. gegrillte maiskolben mit butter 65. grillowana kukurydza z masłem"><a href="#rezept-65"><span lang-variant="de">65. Gegrillte Maiskolben mit Butter</span><span lang-variant="pl">65. Grillowana kukurydza z masłem</span></a></div><div data-category="grill-bbq" data-title="66. halloumi vom grill 66. halloumi z grilla"><a href="#rezept-66"><span lang-variant="de">66. Halloumi vom Grill</span><span lang-variant="pl">66. Halloumi z grilla</span></a></div><div data-category="grill-bbq" data-title="67. würzige bratwürste vom grill (klassisch und einfache variante) 67. pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)"><a href="#rezept-67"><span lang-variant="de">67. Würzige Bratwürste vom Grill (klassisch und einfache Variante)</span><span lang-variant="pl">67. Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</span></a></div><div data-category="grill-bbq" data-title="68. gegrilltes gemüse mit zucchini, paprika und champignons 68. grillowane warzywa z cukinią, papryką i pieczarkami"><a href="#rezept-68"><span lang-variant="de">68. Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</span><span lang-variant="pl">68. Grillowane warzywa z cukinią, papryką i pieczarkami</span></a></div><div data-category="grill-bbq" data-title="69. grillkartoffeln in alufolie mit rosmarin 69. ziemniaki z grilla w folii z rozmarynem"><a href="#rezept-69"><span lang-variant="de">69. Grillkartoffeln in Alufolie mit Rosmarin</span><span lang-variant="pl">69. Ziemniaki z grilla w folii z rozmarynem</span></a></div><div data-category="grill-bbq" data-title="70. gegrilltes baguette oder ciabatta mit knoblauchöl 70. grillowana bagietka lub ciabatta z oliwą czosnkową"><a href="#rezept-70"><span lang-variant="de">70. Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</span><span lang-variant="pl">70. Grillowana bagietka lub ciabatta z oliwą czosnkową</span></a></div><div data-category="grill-bbq" data-title="71. gegrillte früchte mit ananas oder pfirsich 71. grillowane owoce z ananasem lub brzoskwinią"><a href="#rezept-71"><span lang-variant="de">71. Gegrillte Früchte mit Ananas oder Pfirsich</span><span lang-variant="pl">71. Grillowane owoce z ananasem lub brzoskwinią</span></a></div><div data-category="cocktails" data-title="72. klassische rote sangria 72. klasyczna czerwona sangria"><a href="#rezept-72"><span lang-variant="de">72. Klassische rote Sangria</span><span lang-variant="pl">72. Klasyczna czerwona sangria</span></a></div><div data-category="cocktails" data-title="73. weiße sangria 73. biała sangria"><a href="#rezept-73"><span lang-variant="de">73. Weiße Sangria</span><span lang-variant="pl">73. Biała sangria</span></a></div><div data-category="cocktails" data-title="74. aperol spritz 74. aperol spritz"><a href="#rezept-74"><span lang-variant="de">74. Aperol Spritz</span><span lang-variant="pl">74. Aperol Spritz</span></a></div><div data-category="cocktails" data-title="75. mojito 75. mojito"><a href="#rezept-75"><span lang-variant="de">75. Mojito</span><span lang-variant="pl">75. Mojito</span></a></div><div data-category="cocktails" data-title="76. gin tonic (basisrezept und einfache variationen) 76. gin tonic (wersja podstawowa i proste warianty)"><a href="#rezept-76"><span lang-variant="de">76. Gin Tonic (Basisrezept und einfache Variationen)</span><span lang-variant="pl">76. Gin Tonic (wersja podstawowa i proste warianty)</span></a></div><div data-category="grill-bbq" data-title="77. grüner spargel vom grill – basic &amp; upgrade 77. zielone szparagi z grilla – wersja basic i upgrade"><a href="#rezept-77"><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></a></div><div data-category="grill-bbq" data-title="78. weißer spargel in butter-zitronen-folie 78. białe szparagi w folii z masłem i cytryną"><a href="#rezept-78"><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></a></div><div data-category="grill-bbq" data-title="79. spargel vom grill mit parmesan und zitrone 79. szparagi z grilla z parmezanem i cytryną"><a href="#rezept-79"><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></a></div><div data-category="airfryer" data-title="80. grüner spargel aus dem airfryer 80. zielone szparagi z airfryera"><a href="#rezept-80"><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></a></div><div data-category="suppen" data-title="81. afrikanischer erdnusseintopf 81. afrykański gulasz z masłem orzechowym"><a href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a></div></div>
+</section></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<footer class="site-footer"><div class="wrap"><div class="footer-links"><a href="impressum.html"><span lang-variant="de">Impressum</span><span lang-variant="pl">Impressum</span></a><a href="datenschutz.html"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Polityka prywatności</span></a></div></div></footer></main>
+
 <script>
-(function() {
-  const htmlEl = document.documentElement;
-  const langButtons = document.querySelectorAll('.lang-btn');
-  const categoryButtons = document.querySelectorAll('.category-btn');
-  const recipes = document.querySelectorAll('.recipe');
-  const tocItems = document.querySelectorAll('.toc-grid > div');
-  const currentCategoryLabel = document.getElementById('currentCategoryLabel');
-  const mobileToggle = document.getElementById('mobileCategoryToggle');
-  const categorySidebar = document.getElementById('categorySidebar');
-  const categoryLabels = {};
-  categoryLabels["all"]={de:'Alle Rezepte',pl:'Wszystkie przepisy'};categoryLabels["ofengerichte"]={de:'Ofengerichte',pl:'Dania z piekarnika'};categoryLabels["pfannengerichte"]={de:'Pfannengerichte',pl:'Dania z patelni'};categoryLabels["grill-bbq"]={de:'Grill & BBQ',pl:'Grill & BBQ'};categoryLabels["suppen"]={de:'Suppen',pl:'Zupy'};categoryLabels["fisch-meeresfruechte"]={de:'Fisch & Meeresfrüchte',pl:'Ryby i owoce morza'};categoryLabels["beilagen"]={de:'Beilagen & Salate',pl:'Dodatki i sałatki'};categoryLabels["grundlagen"]={de:'Grundlagen',pl:'Podstawy'};categoryLabels["teiggerichte"]={de:'Teiggerichte',pl:'Dania z ciasta'};categoryLabels["gebaeck-suesses"]={de:'Gebäck & Süßes',pl:'Wypieki i słodkie'};categoryLabels["fleischgerichte"]={de:'Fleischgerichte',pl:'Dania mięsne'};categoryLabels["haehnchengerichte"]={de:'Hähnchengerichte',pl:'Dania z kurczaka'};categoryLabels["eiergerichte"]={de:'Eiergerichte',pl:'Dania jajeczne'};categoryLabels["sonstiges"]={de:'Sonstiges',pl:'Inne'};categoryLabels["saucen-polnische-kueche"]={de:'Saucen Polnische Kueche',pl:'Saucen Polnische Kueche'};categoryLabels["airfryer"]={de:'Airfryer',pl:'Airfryer'};categoryLabels["cocktails"]={de:'Cocktails',pl:'Koktajle'};categoryLabels["wraps-und-burritos"]={de:'Wraps Und Burritos',pl:'Wraps Und Burritos'};categoryLabels["nudelgerichte"]={de:'Nudelgerichte',pl:'Nudelgerichte'};
-
-  function setLang(lang) {
-    htmlEl.setAttribute('data-lang', lang);
-    langButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.setLang === lang));
-    const activeBtn = document.querySelector('.category-btn.active');
-    const cat = activeBtn ? activeBtn.dataset.category : 'all';
-    updateCategoryLabel(cat);
-  }
-
-  function updateCategoryLabel(category) {
-    const lang = htmlEl.getAttribute('data-lang') || 'de';
-    const labels = categoryLabels[category] || categoryLabels['all'];
-    currentCategoryLabel.textContent = labels[lang] || labels.de;
-  }
-
-  function filterBy(category) {
-    categoryButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.category === category));
-    recipes.forEach(el => {
-      const match = category === 'all' || el.dataset.category === category;
-      el.classList.toggle('hidden-by-filter', !match);
+(function(){
+  document.querySelectorAll('[data-set-lang]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-set-lang');
+      document.documentElement.setAttribute('data-lang', lang);
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
     });
-    tocItems.forEach(el => {
-      const match = category === 'all' || el.dataset.category === category;
-      el.classList.toggle('hidden-by-filter', !match);
+  });
+
+  const tocGrid = document.querySelector('.toc-grid');
+  const tocItems = tocGrid ? Array.from(tocGrid.children) : [];
+  const search = document.getElementById('recipeSearch');
+  const toggleBtn = document.getElementById('toggleTocItems');
+  const recipeToggle = document.getElementById('toggleRecipes');
+  const recipeCards = Array.from(document.querySelectorAll('#recipeFeedList .recipe'));
+  const INITIAL_TOC = 16;
+  const INITIAL_RECIPES = 8;
+  let expandedToc = false;
+  let expandedRecipes = false;
+
+  function text(el){ return (el?.dataset?.title || '').toLowerCase(); }
+
+  function applyToc(){
+    const query = (search?.value || '').trim().toLowerCase();
+    let visibleCount = 0;
+    tocItems.forEach((item) => {
+      const matches = !query || text(item).includes(query);
+      item.classList.toggle('hidden-by-filter', !matches);
+      if (matches) {
+        visibleCount += 1;
+        item.style.display = (!expandedToc && !query && visibleCount > INITIAL_TOC) ? 'none' : '';
+      } else {
+        item.style.display = 'none';
+      }
     });
-    updateCategoryLabel(category);
+    if (toggleBtn) {
+      toggleBtn.style.display = query ? 'none' : '';
+      const spans = toggleBtn.querySelectorAll('span');
+      if (spans[0]) spans[0].textContent = expandedToc ? 'Weniger anzeigen' : 'Mehr anzeigen';
+      if (spans[1]) spans[1].textContent = expandedToc ? 'Pokaż mniej' : 'Pokaż więcej';
+    }
   }
 
-  langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.setLang)));
-  categoryButtons.forEach(btn => btn.addEventListener('click', () => filterBy(btn.dataset.category)));
-  if (mobileToggle) {
-    mobileToggle.addEventListener('click', () => categorySidebar.scrollIntoView({behavior:'smooth', block:'start'}));
+  function applyRecipes(){
+    const query = (search?.value || '').trim().toLowerCase();
+    let visibleCount = 0;
+    recipeCards.forEach((card) => {
+      const matches = !query || text(card).includes(query);
+      if (!matches) {
+        card.classList.add('hidden-recipe');
+      } else {
+        visibleCount += 1;
+        if (!expandedRecipes && !query && visibleCount > INITIAL_RECIPES) card.classList.add('hidden-recipe');
+        else card.classList.remove('hidden-recipe');
+      }
+    });
+    if (recipeToggle) {
+      recipeToggle.style.display = query ? 'none' : '';
+      const spans = recipeToggle.querySelectorAll('span');
+      if (spans[0]) spans[0].textContent = expandedRecipes ? 'Weniger Karten anzeigen' : 'Mehr Karten anzeigen';
+      if (spans[1]) spans[1].textContent = expandedRecipes ? 'Pokaż mniej kart' : 'Pokaż więcej kart';
+    }
   }
 
-  setLang('de');
-  filterBy('all');
+  if (search) {
+    search.addEventListener('input', function(){
+      expandedToc = false;
+      expandedRecipes = false;
+      applyToc();
+      applyRecipes();
+    });
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function(){
+      expandedToc = !expandedToc;
+      applyToc();
+    });
+  }
+
+  if (recipeToggle) {
+    recipeToggle.addEventListener('click', function(){
+      expandedRecipes = !expandedRecipes;
+      applyRecipes();
+    });
+  }
+
+  applyToc();
+  applyRecipes();
 })();
-</script>
-</body>
+</script></body>
 </html>
