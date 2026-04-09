@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Datenschutzerklärung – Svens Rezeptsammlung</title>
+<style><style>
+:root {
+  --bg:#fcf7f1;
+  --panel:#ffffff;
+  --line:#ecdccf;
+  --text:#43220f;
+  --muted:#8b6f5c;
+  --accent:#c97a2b;
+  --accent-strong:#a95d16;
+  --pill:#f5e8da;
+  --header:#fffdfb;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:24px}
+header{background:var(--header);border-bottom:1px solid rgba(150,103,64,.12)}
+header .wrap{display:flex;flex-direction:column;gap:.75rem;align-items:flex-start}
+h1,h2,h3{line-height:1.2}
+h1{margin:0;font-size:2.2rem}
+.subtitle{color:var(--muted)}
+.lang-switch{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;justify-content:flex-start}
+.lang-btn{border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:.55rem .9rem;cursor:pointer;font:inherit}
+.lang-btn.active{background:var(--accent-strong);color:#fff;border-color:var(--accent-strong)}
+[lang-variant]{display:none}
+html[data-lang="de"] [lang-variant="de"]{display:initial}
+html[data-lang="pl"] [lang-variant="pl"]{display:initial}
+html[data-lang="de"] li[lang-variant="de"], html[data-lang="pl"] li[lang-variant="pl"]{display:list-item}
+
+.site-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:1.5rem;align-items:start;min-width:0}
+.category-sidebar{position:sticky;top:1rem;align-self:start;max-height:calc(100vh - 2rem);overflow:auto;background:#fff;border:1px solid rgba(139,94,60,.15);border-radius:18px;padding:1rem;box-shadow:0 8px 24px rgba(0,0,0,.04);scrollbar-width:thin}
+.category-sidebar h2{margin:0 0 .9rem}
+.category-list{display:flex;flex-direction:column;gap:.55rem}
+.category-btn{width:100%;text-align:left;border:1px solid #e5d7cc;background:#fff;color:#5b341c;border-radius:999px;padding:.72rem .9rem;font:inherit;cursor:pointer;transition:.15s ease}
+.category-btn:hover{background:#fff2e4}
+.category-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+.content-column{min-width:0;display:block}
+.toc-toolbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:.8rem;position:sticky;top:0;background:var(--bg);z-index:2;padding-bottom:.25rem}
+.toc-current-filter{font-size:.95rem;color:#6b7280}
+.toc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem .85rem;align-items:start;max-height:calc(100vh - 14rem);overflow:auto;padding-right:.25rem}
+.toc-grid>div{padding:0}
+.toc-grid a{display:block;text-decoration:none;color:inherit;line-height:1.3;padding:.7rem .8rem;border:1px solid rgba(139,94,60,.12);border-radius:14px;background:#fff;font-size:.98rem}
+.toc-grid a:hover{color:var(--accent-strong);background:#fff7ef}
+.recipe.hidden-by-filter,.toc-grid>div.hidden-by-filter{display:none !important}
+
+.recipe{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:1.25rem;align-items:start;background:var(--panel);border:1px solid rgba(150,103,64,.14);border-radius:22px;padding:1.25rem;margin:1.25rem 0;overflow:hidden;box-shadow:0 10px 28px rgba(95,56,24,.05)}
+.recipe img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid rgba(0,0,0,.08);background:#fff}
+.meta{display:flex;gap:.6rem;flex-wrap:wrap;margin:.5rem 0 1rem}
+.tag{display:inline-flex;align-items:center;padding:.35rem .7rem;border-radius:999px;background:var(--pill);color:#7a4a23;font-size:.92rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+ul,ol{padding-left:1.2rem}
+li{margin:.3rem 0}
+.mobile-category-toggle{display:none}
+
+.category-sidebar::-webkit-scrollbar{width:10px}
+.category-sidebar::-webkit-scrollbar-thumb{background:#d8c4b2;border-radius:999px}
+.category-sidebar::-webkit-scrollbar-track{background:transparent}
+.recipe > div{min-width:0}
+.recipe h2,.recipe h3,.recipe p,.recipe li{overflow-wrap:anywhere;word-break:normal}
+
+
+@media (max-width: 980px){
+  .site-layout{grid-template-columns:1fr}
+  .category-sidebar{position:static;max-height:none;overflow:visible}
+  .mobile-category-toggle{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d1d5db;background:#fff;border-radius:999px;padding:.55rem .9rem;cursor:pointer}
+  .recipe{grid-template-columns:1fr}
+}
+@media (max-width: 720px){
+  .toc-grid,.grid-2{grid-template-columns:1fr}
+  .toc-grid{max-height:50vh}
+}
+@media (max-width: 640px){
+  .wrap{padding:16px}
+  h1{font-size:2rem}
+  .category-list{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
+  .category-btn{font-size:.92rem;padding:.68rem .8rem}
+}
+
+
+.toc-grid::-webkit-scrollbar{width:10px}
+.toc-grid::-webkit-scrollbar-thumb{background:#d8c4b2;border-radius:999px}
+.toc-grid::-webkit-scrollbar-track{background:transparent}
+.toc .toc-note{font-size:.92rem;color:var(--muted);margin:.1rem 0 .75rem}
+
+
+.search-box{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.8rem}
+.search-input{width:min(460px,100%);padding:.8rem .95rem;border:1px solid var(--line);border-radius:14px;background:#fff;font:inherit;color:var(--text)}
+.search-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(201,122,43,.14)}
+.toc-actions{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.small-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:.55rem .85rem;cursor:pointer;font:inherit;color:var(--text)}
+.small-btn:hover{background:#fff2e4}
+.site-footer{margin-top:2rem;padding:1.2rem 0 2rem;color:var(--muted);font-size:.95rem}
+.site-footer .footer-links{display:flex;gap:1rem;flex-wrap:wrap}
+.site-footer a{text-decoration:none;color:var(--accent-strong)}
+.site-footer a:hover{text-decoration:underline}
+.legal-wrap{max-width:900px;margin:0 auto;padding:24px}
+.legal-card{background:#fff;border:1px solid rgba(150,103,64,.14);border-radius:22px;padding:1.5rem;box-shadow:0 10px 28px rgba(95,56,24,.05)}
+.legal-card h1{font-size:2rem;margin-top:0}
+.legal-card h2{margin-top:1.4rem}
+</style></style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1><span lang-variant="de">Svens Rezeptsammlung</span><span lang-variant="pl">Zbiór przepisów Svena</span></h1>
+    <div class="subtitle"><span lang-variant="de">Erprobte Lieblingsrezepte auf einen Blick</span><span lang-variant="pl">Sprawdzone ulubione przepisy w jednym miejscu</span></div>
+    <div class="lang-switch" aria-label="Sprachauswahl">
+      <button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button>
+      <button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button>
+    </div>
+  </div>
+</header>
+<main class="legal-wrap">
+  <div class="legal-card">
+    
+<h1><span lang-variant="de">Datenschutzerklärung</span><span lang-variant="pl">Polityka prywatności</span></h1>
+<p>
+  <span lang-variant="de">Diese Website ist ein statischer Rezeptblog. Beim Aufruf der Website werden technisch notwendige Verbindungsdaten verarbeitet, damit die Seite ausgeliefert werden kann.</span>
+  <span lang-variant="pl">Ta strona jest statycznym blogiem z przepisami. Przy wejściu na stronę przetwarzane są technicznie niezbędne dane połączenia, aby można było wyświetlić witrynę.</span>
+</p>
+<h2><span lang-variant="de">Verantwortlicher</span><span lang-variant="pl">Administrator danych</span></h2>
+<p>
+  <span lang-variant="de">Sven Nicolaus, Waidmannsweg 12, 31556 Wölpinghausen, Deutschland, E-Mail: sven.nicolaus78@gmail.com</span>
+  <span lang-variant="pl">Sven Nicolaus, Waidmannsweg 12, 31556 Wölpinghausen, Niemcy, e-mail: sven.nicolaus78@gmail.com</span>
+</p>
+<h2><span lang-variant="de">Hosting</span><span lang-variant="pl">Hosting</span></h2>
+<p>
+  <span lang-variant="de">Die Website wird über Cloudflare Pages ausgeliefert. Dabei können technisch notwendige Daten wie IP-Adresse, Zeitstempel, aufgerufene URL, Referrer sowie Browser- und Systeminformationen verarbeitet werden, um die Website sicher und performant bereitzustellen.</span>
+  <span lang-variant="pl">Strona jest udostępniana przez Cloudflare Pages. W tym celu mogą być przetwarzane technicznie niezbędne dane, takie jak adres IP, znacznik czasu, wywołany adres URL, referrer oraz informacje o przeglądarce i systemie, aby bezpiecznie i sprawnie dostarczyć stronę.</span>
+</p>
+<h2><span lang-variant="de">Rechtsgrundlage</span><span lang-variant="pl">Podstawa prawna</span></h2>
+<p>
+  <span lang-variant="de">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO, da ein berechtigtes Interesse an der sicheren und zuverlässigen Bereitstellung der Website besteht.</span>
+  <span lang-variant="pl">Przetwarzanie odbywa się na podstawie art. 6 ust. 1 lit. f RODO, ponieważ istnieje uzasadniony interes w bezpiecznym i niezawodnym udostępnianiu strony.</span>
+</p>
+<h2><span lang-variant="de">Cookies und technische Informationen</span><span lang-variant="pl">Cookies i informacje techniczne</span></h2>
+<p>
+  <span lang-variant="de">Auf dieser Website werden keine eigenen Tracking- oder Marketing-Tools eingesetzt. Der Hosting-Anbieter kann technisch notwendige Cookies oder vergleichbare Technologien verwenden, um Sicherheit und Auslieferung der Website zu gewährleisten.</span>
+  <span lang-variant="pl">Na tej stronie nie są używane własne narzędzia trackingowe ani marketingowe. Dostawca hostingu może jednak stosować technicznie niezbędne cookies lub podobne technologie w celu zapewnienia bezpieczeństwa i prawidłowego działania strony.</span>
+</p>
+<h2><span lang-variant="de">Deine Rechte</span><span lang-variant="pl">Twoje prawa</span></h2>
+<p>
+  <span lang-variant="de">Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Beschwerde bei einer Datenschutzaufsichtsbehörde.</span>
+  <span lang-variant="pl">Masz prawo do dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz do złożenia skargi do organu nadzorczego ds. ochrony danych.</span>
+</p>
+<p>
+  <span lang-variant="de">Diese Datenschutzerklärung ist als pragmatische Vorlage für deine aktuelle statische Website gedacht. Wenn später Kontaktformulare, Analyse-Tools, eingebettete Inhalte oder Newsletter hinzukommen, muss sie erweitert werden.</span>
+  <span lang-variant="pl">Ta polityka prywatności jest praktycznym szablonem dla obecnej statycznej strony. Jeśli później dodasz formularz kontaktowy, narzędzia analityczne, osadzone treści lub newsletter, dokument trzeba będzie rozszerzyć.</span>
+</p>
+
+  </div>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html"><span lang-variant="de">Zur Startseite</span><span lang-variant="pl">Powrót do strony głównej</span></a>
+      <a href="impressum.html"><span lang-variant="de">Impressum</span><span lang-variant="pl">Impressum</span></a>
+      <a href="datenschutz.html"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Polityka prywatności</span></a>
+    </div>
+  </footer>
+</main>
+<script>
+document.querySelectorAll('[data-set-lang]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const lang = btn.getAttribute('data-set-lang');
+    document.documentElement.setAttribute('data-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
