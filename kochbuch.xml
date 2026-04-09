@@ -1,7 +1,7 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.2" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>45</recipeCount>
+    <recipeCount>51</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
   </meta>
   <recipe id="1">
@@ -3565,4 +3565,403 @@
       <rating>8/10</rating>
     </translation>
   </recipe>
+
+  <recipe id="46">
+    <name>Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</name>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte / BBQ</category>
+    <image src="images/rezeptbild_46.png" alt="Smashed Burger mit Ofenkartoffeln und Sour-Cream-Dip" />
+    <ingredients>
+      <item>500 g Rinderhack (ca. 20 % Fett)</item>
+      <item>4 Burger-Brötchen</item>
+      <item>4 Scheiben Cheddar</item>
+      <item>1 große Tomate</item>
+      <item>4–6 Blätter Salat</item>
+      <item>4–6 Scheiben Gewürzgurken</item>
+      <item>1 rote Zwiebel</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>700 g Kartoffeln</item>
+      <item>2–3 EL Olivenöl</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1/2 TL Knoblauchpulver</item>
+      <item>200 g Schmand oder Sour Cream</item>
+      <item>1 TL Zitronensaft</item>
+      <item>optional: frische Kräuter</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln waschen, in Spalten schneiden und mit Öl sowie Gewürzen mischen.</step>
+      <step nr="2">Auf ein Backblech geben und bei 200 °C Umluft ca. 30–35 Minuten backen.</step>
+      <step nr="3">Hackfleisch in 4 Kugeln formen und nicht vorher würzen.</step>
+      <step nr="4">Pfanne oder Grillplatte stark erhitzen.</step>
+      <step nr="5">Hackkugeln in die Pfanne legen und direkt platt drücken (smashen).</step>
+      <step nr="6">Mit Salz und Pfeffer würzen und 2–3 Minuten kräftig braten.</step>
+      <step nr="7">Wenden, Käse darauf legen und kurz schmelzen lassen.</step>
+      <step nr="8">Burger-Brötchen halbieren und kurz anrösten.</step>
+      <step nr="9">Burger mit Salat, Tomate, Zwiebel und Gurken belegen.</step>
+      <step nr="10">Schmand mit Zitronensaft und Gewürzen zu einem Dip verrühren und zusammen mit den Ofenkartoffeln servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Ofen: 30–35 Minuten</item>
+      <item>Pfanne: 10 Minuten</item>
+      <item>Gesamt: ca. 40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Hackfleisch erst beim Braten würzen, damit eine bessere Kruste entsteht.</item>
+      <item>Pfanne richtig heiß werden lassen.</item>
+      <item>Kartoffeln mit Abstand auf dem Blech verteilen, damit sie knusprig werden.</item>
+    </tips>
+    <rating>9,5 / 10 – schneller Klassiker, extrem lecker.</rating>
+    <translation lang="pl">
+      <name>Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania z patelni / BBQ</category>
+      <ingredients>
+        <item>500 g mielonej wołowiny (ok. 20% tłuszczu)</item>
+        <item>4 bułki do burgerów</item>
+        <item>4 plastry sera cheddar</item>
+        <item>1 duży pomidor</item>
+        <item>4–6 liści sałaty</item>
+        <item>4–6 plasterków ogórków konserwowych</item>
+        <item>1 czerwona cebula</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>700 g ziemniaków</item>
+        <item>2–3 łyżki oliwy</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1/2 łyżeczki czosnku w proszku</item>
+        <item>200 g śmietany lub sour cream</item>
+        <item>1 łyżeczka soku z cytryny</item>
+        <item>opcjonalnie: świeże zioła</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ziemniaki umyć, pokroić w łódeczki i wymieszać z oliwą oraz przyprawami.</step>
+        <step nr="2">Piec w piekarniku w 200 °C około 30–35 minut.</step>
+        <step nr="3">Mięso podzielić na 4 kulki i nie przyprawiać wcześniej.</step>
+        <step nr="4">Mocno rozgrzać patelnię lub grill.</step>
+        <step nr="5">Kulki mięsa położyć na patelni i spłaszczyć.</step>
+        <step nr="6">Doprawić solą i pieprzem, smażyć 2–3 minuty.</step>
+        <step nr="7">Odwrócić, położyć ser i roztopić.</step>
+        <step nr="8">Bułki przekroić i lekko podpiec.</step>
+        <step nr="9">Złożyć burgera z dodatkami.</step>
+        <step nr="10">Przygotować dip ze śmietany i soku z cytryny, podawać z pieczonymi ziemniakami.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 15 min</item>
+        <item>pieczenie: 30–35 min</item>
+        <item>smażenie: 10 min</item>
+        <item>łącznie: ok. 40 min</item>
+      </timing>
+      <tips>
+        <item>Nie przyprawiaj mięsa wcześniej, aby uzyskać lepszą skórkę.</item>
+        <item>Patelnia musi być bardzo gorąca.</item>
+        <item>Ziemniaki rozłóż luźno na blasze.</item>
+      </tips>
+      <rating>9,5 / 10 – szybki i bardzo smaczny klasyk.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="47">
+    <name>Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</name>
+    <persons>2–3 Gläser</persons>
+    <category>Cocktails / Ninja Slushi</category>
+    <image src="images/rezeptbild_47.png" alt="Erdbeer-Orangen-Sekt-Slush" />
+    <ingredients>
+      <item>250 ml Erdbeernektar</item>
+      <item>150 ml Orangensaft</item>
+      <item>100 ml stilles Wasser</item>
+      <item>100 ml trockener Sekt</item>
+      <item>optional: 1–2 TL Zuckersirup</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alle Zutaten gut vorkühlen.</step>
+      <step nr="2">Erdbeernektar, Orangensaft und Wasser verrühren.</step>
+      <step nr="3">Die Mischung in den Ninja Slushi füllen und bis zur gewünschten Konsistenz laufen lassen.</step>
+      <step nr="4">Zum Schluss den trockenen Sekt kurz unterrühren oder direkt ins Glas geben.</step>
+      <step nr="5">Optional mit etwas Zuckersirup fein abschmecken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Maschine: ca. 15–30 Minuten</item>
+      <item>Gesamt: ca. 20–35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Für den Ninja Slushi nur flüssige Zutaten verwenden.</item>
+      <item>Kein Eis und keine Fruchtstücke einfüllen.</item>
+      <item>Wenn der Drink spritziger bleiben soll, den Sekt erst nach dem Zapfen zugeben.</item>
+    </tips>
+    <rating>8,5 / 10 – sommerlich, leicht und unkompliziert.</rating>
+    <translation lang="pl">
+      <name>Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</name>
+      <persons>2–3 szklanki</persons>
+      <category>Koktajle / Ninja Slushi</category>
+      <ingredients>
+        <item>250 ml nektaru truskawkowego</item>
+        <item>150 ml soku pomarańczowego</item>
+        <item>100 ml niegazowanej wody</item>
+        <item>100 ml wytrawnego sektu</item>
+        <item>opcjonalnie: 1–2 łyżeczki syropu cukrowego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dobrze schłodzić wszystkie składniki.</step>
+        <step nr="2">Wymieszać nektar truskawkowy, sok pomarańczowy i wodę.</step>
+        <step nr="3">Wlać mieszankę do Ninja Slushi i uruchomić urządzenie do uzyskania odpowiedniej konsystencji.</step>
+        <step nr="4">Na końcu krótko wmieszać sekt albo dolać go dopiero do szklanek.</step>
+        <step nr="5">Opcjonalnie doprawić odrobiną syropu cukrowego.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>praca urządzenia: ok. 15–30 min</item>
+        <item>łącznie: ok. 20–35 min</item>
+      </timing>
+      <tips>
+        <item>Do Ninja Slushi używaj tylko płynnych składników.</item>
+        <item>Nie dodawaj lodu ani kawałków owoców.</item>
+        <item>Jeśli drink ma pozostać bardziej musujący, dodaj sekt dopiero po nalaniu.</item>
+      </tips>
+      <rating>8,5 / 10 – letni, lekki i bardzo prosty.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="48">
+    <name>Ananas-Rum-Slush für den Ninja Slushi</name>
+    <persons>2–3 Gläser</persons>
+    <category>Cocktails / Ninja Slushi</category>
+    <image src="images/rezeptbild_48.png" alt="Ananas-Rum-Slush" />
+    <ingredients>
+      <item>300 ml Ananassaft</item>
+      <item>100 ml stilles Wasser</item>
+      <item>4 cl weißer Rum</item>
+      <item>optional: 1 TL Zuckersirup</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alle Zutaten gut kalt stellen.</step>
+      <step nr="2">Ananassaft, Wasser und weißen Rum verrühren.</step>
+      <step nr="3">In den Ninja Slushi füllen und bis zur gewünschten Slush-Konsistenz laufen lassen.</step>
+      <step nr="4">Probieren und bei Bedarf mit wenig Zuckersirup abrunden.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 3–5 Minuten</item>
+      <item>Maschine: ca. 15–30 Minuten</item>
+      <item>Gesamt: ca. 20–35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Kein Eis und keine Ananasstücke in den Automaten geben.</item>
+      <item>Mit etwas mehr Wasser wird der Drink leichter.</item>
+      <item>Für eine stärkere Cocktailnote den Rum erst nach dem Zapfen leicht nachgießen.</item>
+    </tips>
+    <rating>8 / 10 – einfache Piña-Idee ohne Kokos.</rating>
+    <translation lang="pl">
+      <name>Ananasowy slush z rumem do Ninja Slushi</name>
+      <persons>2–3 szklanki</persons>
+      <category>Koktajle / Ninja Slushi</category>
+      <ingredients>
+        <item>300 ml soku ananasowego</item>
+        <item>100 ml niegazowanej wody</item>
+        <item>4 cl białego rumu</item>
+        <item>opcjonalnie: 1 łyżeczka syropu cukrowego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dobrze schłodzić wszystkie składniki.</step>
+        <step nr="2">Wymieszać sok ananasowy, wodę i biały rum.</step>
+        <step nr="3">Wlać do Ninja Slushi i uruchomić urządzenie do uzyskania konsystencji slushu.</step>
+        <step nr="4">Spróbować i w razie potrzeby dodać trochę syropu cukrowego.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 3–5 min</item>
+        <item>praca urządzenia: ok. 15–30 min</item>
+        <item>łącznie: ok. 20–35 min</item>
+      </timing>
+      <tips>
+        <item>Nie dodawaj lodu ani kawałków ananasa do urządzenia.</item>
+        <item>Odrobina większej ilości wody da lżejszy efekt.</item>
+        <item>Jeśli chcesz mocniejszy smak koktajlu, rum dolej lekko dopiero po nalaniu.</item>
+      </tips>
+      <rating>8 / 10 – prosty tropikalny drink bez kokosa.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="49">
+    <name>Zitronen-Vodka-Slush für den Ninja Slushi</name>
+    <persons>2 Gläser</persons>
+    <category>Cocktails / Ninja Slushi</category>
+    <image src="images/rezeptbild_49.png" alt="Zitronen-Vodka-Slush" />
+    <ingredients>
+      <item>120 ml Zitronensaft</item>
+      <item>220 ml stilles Wasser</item>
+      <item>30 ml Zuckersirup</item>
+      <item>4 cl Wodka</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zitronensaft, Wasser, Zuckersirup und Wodka kalt verrühren.</step>
+      <step nr="2">Die Mischung in den Ninja Slushi geben.</step>
+      <step nr="3">Bis zur gewünschten Konsistenz laufen lassen.</step>
+      <step nr="4">Direkt zapfen und sehr kalt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Maschine: ca. 15–30 Minuten</item>
+      <item>Gesamt: ca. 20–35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit zusätzlichem Zuckersirup wird der Drink runder und etwas milder.</item>
+      <item>Sehr gut als saure, klare Sommer-Variante.</item>
+      <item>Nur flüssige Zutaten einfüllen.</item>
+    </tips>
+    <rating>8,5 / 10 – frisch, sauer und eiskalt stark.</rating>
+    <translation lang="pl">
+      <name>Cytrynowy slush z wódką do Ninja Slushi</name>
+      <persons>2 szklanki</persons>
+      <category>Koktajle / Ninja Slushi</category>
+      <ingredients>
+        <item>120 ml soku z cytryny</item>
+        <item>220 ml niegazowanej wody</item>
+        <item>30 ml syropu cukrowego</item>
+        <item>4 cl wódki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wymieszać na zimno sok z cytryny, wodę, syrop cukrowy i wódkę.</step>
+        <step nr="2">Wlać mieszankę do Ninja Slushi.</step>
+        <step nr="3">Uruchomić urządzenie do uzyskania odpowiedniej konsystencji.</step>
+        <step nr="4">Nalać od razu i podawać bardzo mocno schłodzone.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>praca urządzenia: ok. 15–30 min</item>
+        <item>łącznie: ok. 20–35 min</item>
+      </timing>
+      <tips>
+        <item>Dodatkowy syrop cukrowy łagodzi kwaśny smak.</item>
+        <item>To bardzo świeża, kwaśna wersja na lato.</item>
+        <item>Do urządzenia wlewaj wyłącznie płynne składniki.</item>
+      </tips>
+      <rating>8,5 / 10 – świeży, kwaśny i porządnie lodowy.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="50">
+    <name>Waldbeer-Sekt-Slush für den Ninja Slushi</name>
+    <persons>2–3 Gläser</persons>
+    <category>Cocktails / Ninja Slushi</category>
+    <image src="images/rezeptbild_50.png" alt="Waldbeer-Sekt-Slush" />
+    <ingredients>
+      <item>250 ml Waldfrucht- oder Johannisbeernektar</item>
+      <item>100 ml roter Traubensaft</item>
+      <item>100 ml stilles Wasser</item>
+      <item>100 ml Rosé-Sekt</item>
+      <item>optional: 1 TL Zuckersirup</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alle Zutaten gut kühlen.</step>
+      <step nr="2">Nektar, Traubensaft und Wasser verrühren.</step>
+      <step nr="3">In den Ninja Slushi geben und bis zur gewünschten Konsistenz laufen lassen.</step>
+      <step nr="4">Rosé-Sekt kurz vor dem Servieren einrühren oder direkt ins Glas geben.</step>
+      <step nr="5">Optional mit wenig Zuckersirup abrunden.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Maschine: ca. 15–30 Minuten</item>
+      <item>Gesamt: ca. 20–35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Johannisbeernektar wird der Drink kräftiger, mit Waldfrucht etwas runder.</item>
+      <item>Rosé-Sekt lieber zum Schluss zugeben.</item>
+      <item>Keine Stückchen oder Eis einfüllen.</item>
+    </tips>
+    <rating>8,5 / 10 – beerig und ideal für draußen.</rating>
+    <translation lang="pl">
+      <name>Leśny slush z różowym sektem do Ninja Slushi</name>
+      <persons>2–3 szklanki</persons>
+      <category>Koktajle / Ninja Slushi</category>
+      <ingredients>
+        <item>250 ml nektaru z owoców leśnych albo czarnej porzeczki</item>
+        <item>100 ml czerwonego soku winogronowego</item>
+        <item>100 ml niegazowanej wody</item>
+        <item>100 ml różowego sektu</item>
+        <item>opcjonalnie: 1 łyżeczka syropu cukrowego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dobrze schłodzić wszystkie składniki.</step>
+        <step nr="2">Wymieszać nektar, sok winogronowy i wodę.</step>
+        <step nr="3">Wlać do Ninja Slushi i uruchomić urządzenie do uzyskania właściwej konsystencji.</step>
+        <step nr="4">Różowy sekt dodać krótko przed podaniem albo dolać go dopiero do szklanek.</step>
+        <step nr="5">Opcjonalnie doprawić odrobiną syropu cukrowego.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>praca urządzenia: ok. 15–30 min</item>
+        <item>łącznie: ok. 20–35 min</item>
+      </timing>
+      <tips>
+        <item>Z nektarem porzeczkowym drink jest mocniejszy, z leśnym bardziej łagodny.</item>
+        <item>Różowy sekt najlepiej dodać na końcu.</item>
+        <item>Nie wlewaj lodu ani kawałków owoców.</item>
+      </tips>
+      <rating>8,5 / 10 – owocowy i idealny do ogrodu.</rating>
+    </translation>
+  </recipe>
+
+  <recipe id="51">
+    <name>Mango-Maracuja-Rum-Slush für den Ninja Slushi</name>
+    <persons>2–3 Gläser</persons>
+    <category>Cocktails / Ninja Slushi</category>
+    <image src="images/rezeptbild_51.png" alt="Mango-Maracuja-Rum-Slush" />
+    <ingredients>
+      <item>250 ml Mangonektar</item>
+      <item>150 ml Maracujasaft</item>
+      <item>4 cl weißer Rum</item>
+      <item>50 ml stilles Wasser</item>
+      <item>optional: 1 TL Zuckersirup</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alle Zutaten kalt stellen.</step>
+      <step nr="2">Mangonektar, Maracujasaft, Rum und Wasser verrühren.</step>
+      <step nr="3">In den Ninja Slushi füllen und bis zur gewünschten Konsistenz laufen lassen.</step>
+      <step nr="4">Direkt zapfen und sofort servieren.</step>
+      <step nr="5">Optional mit wenig Zuckersirup nach Geschmack fein justieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Maschine: ca. 15–30 Minuten</item>
+      <item>Gesamt: ca. 20–35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Kombination aus Nektar und Saft ergibt eine schöne tropische Basis.</item>
+      <item>Mit etwas mehr Wasser wird der Drink leichter und weniger süß.</item>
+      <item>Keine festen Zutaten einfüllen.</item>
+    </tips>
+    <rating>9 / 10 – tropisch, weich und sehr partytauglich.</rating>
+    <translation lang="pl">
+      <name>Mango-marakuja slush z rumem do Ninja Slushi</name>
+      <persons>2–3 szklanki</persons>
+      <category>Koktajle / Ninja Slushi</category>
+      <ingredients>
+        <item>250 ml nektaru mango</item>
+        <item>150 ml soku marakuja</item>
+        <item>4 cl białego rumu</item>
+        <item>50 ml niegazowanej wody</item>
+        <item>opcjonalnie: 1 łyżeczka syropu cukrowego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić wszystkie składniki.</step>
+        <step nr="2">Wymieszać nektar mango, sok marakuja, rum i wodę.</step>
+        <step nr="3">Wlać do Ninja Slushi i uruchomić urządzenie do uzyskania odpowiedniej konsystencji.</step>
+        <step nr="4">Nalać i podawać od razu.</step>
+        <step nr="5">Opcjonalnie doprawić odrobiną syropu cukrowego według smaku.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: 5 min</item>
+        <item>praca urządzenia: ok. 15–30 min</item>
+        <item>łącznie: ok. 20–35 min</item>
+      </timing>
+      <tips>
+        <item>Połączenie nektaru i soku daje bardzo dobrą tropikalną bazę.</item>
+        <item>Odrobina większej ilości wody sprawi, że drink będzie lżejszy i mniej słodki.</item>
+        <item>Nie dodawaj żadnych stałych składników.</item>
+      </tips>
+      <rating>9 / 10 – tropikalny, gładki i bardzo imprezowy.</rating>
+    </translation>
+  </recipe>
+
 </cookbook>
