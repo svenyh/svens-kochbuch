@@ -1,8 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.2" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>34</recipeCount>
+    <recipeCount>45</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch.</notes>
   </meta>
   <recipe id="1">
@@ -97,7 +96,7 @@
       <tips>
         <item>Gruby nerw liścia zawsze lekko spłaszcz, wtedy roladki lepiej się zawijają.</item>
         <item>Na końcu gotuj sos bez przykrycia, aby nabrał intensywniejszego smaku.</item>
-        <item>puree ziemniaczane dazu frisch krótko vor dem Servieren machen.</item>
+        <item>Puree ziemniaczane najlepiej przygotować świeżo tuż przed podaniem.</item>
       </tips>
       <rating>Nie ma jeszcze stałej oceny liczbowej; należy jednak do dobrych, zapisanych przepisów.</rating>
     </translation>
@@ -194,7 +193,7 @@
         <item>Na końcu gotuj sos 5–10 minut bez przykrycia.</item>
         <item>Bardzo dobre z puree ziemniaczanym, szerokim makaronem lub bagietką.</item>
       </tips>
-      <rating>Fest gespeichert als gutes Rezept.</rating>
+      <rating>Na stałe zapisany jako dobry przepis.</rating>
     </translation>
   </recipe>
   <recipe id="3">
@@ -291,7 +290,7 @@
         <item>Nie redukuj sosu zbyt mocno przed dodaniem małży.</item>
         <item>Pieczywo włóż do Airfryera dopiero tuż przed podaniem.</item>
       </tips>
-      <rating>Fest gespeichertes, gut befundenes Rezept.</rating>
+      <rating>Na stałe zapisany, sprawdzony i dobry przepis.</rating>
     </translation>
   </recipe>
   <recipe id="4">
@@ -374,7 +373,7 @@
       <tips>
         <item>Kurczaka najlepiej smażyć partiami.</item>
         <item>Tzatziki najlepiej przygotować wcześniej, wtedy smak lepiej się połączy.</item>
-        <item>Als Sonntagsklassiker ideal do Essen zwischen 18:00 i 19:00 Uhr.</item>
+        <item>Jako niedzielny klasyk idealnie pasuje na posiłek między 18:00 a 19:00.</item>
       </tips>
       <rating>Na stałe zapisany, bardzo dobrze przyjęty.</rating>
     </translation>
@@ -466,10 +465,10 @@
       </timing>
       <tips>
         <item>Nie przepełniaj patelni.</item>
-        <item>limonkansaft wirklich dopiero na samym końcu dodać.</item>
-        <item>Perfekt do den Pit Boss z pellet Hickory.</item>
+        <item>Sok z limonki dodaj naprawdę dopiero na samym końcu.</item>
+        <item>Idealne do grilla Pit Boss z pelletami Hickory.</item>
       </tips>
-      <rating>Fest gespeichert i fürs BBQ-Buch übernommen.</rating>
+      <rating>Na stałe zapisane i dodane do książki BBQ.</rating>
     </translation>
   </recipe>
   <recipe id="6">
@@ -524,12 +523,12 @@
       </ingredients>
       <preparation>
         <step nr="1">Pokroić ciabattę na kromki.</step>
-        <step nr="2">Z trochę oliwa z oliwek bestreichen.</step>
+        <step nr="2">Posmarować odrobiną oliwy z oliwek.</step>
         <step nr="3">Podpiecz na grillu lub w piekarniku.</step>
         <step nr="4">Ciepłe kromki pieczywa natrzyj świeżym czosnkiem.</step>
         <step nr="5">Pomidory pokroić w drobną kostkę.</step>
-        <step nr="6">Optional czerwona cebula fein pokroić w kostkę i z den pomidory wymieszać.</step>
-        <step nr="7">Z sól, pieprz i trochę oliwa z oliwek doprawić.</step>
+        <step nr="6">Opcjonalnie drobno pokroić czerwoną cebulę i wymieszać ją z pomidorami.</step>
+        <step nr="7">Doprawić solą, pieprzem i odrobiną oliwy z oliwek.</step>
         <step nr="8">Nałóż na kromki tuż przed podaniem.</step>
       </preparation>
       <timing>
@@ -540,9 +539,9 @@
       <tips>
         <item>Pieczywo posmaruj lub nałóż dodatki dopiero krótko przed jedzeniem.</item>
         <item>Nie dopuść, aby masa pomidorowa stała się zbyt wodnista.</item>
-        <item>Perfekt als Vorspeise zum Grillabend.</item>
+        <item>Idealne jako przystawka do grillowego wieczoru.</item>
       </tips>
-      <rating>Als passende Vorspeise fest gespeichert.</rating>
+      <rating>Na stałe zapisane jako pasująca przystawka.</rating>
     </translation>
   </recipe>
   <recipe id="7">
@@ -613,11 +612,11 @@
       <preparation>
         <step nr="1">Wymieszać mięso mielone ze startą cebulą, jajkiem, bułką tartą i przyprawami.</step>
         <step nr="2">Kleine längliche Köfte formen.</step>
-        <step nr="3">In trochę olej rundherum obsmażyć lub grillen.</step>
-        <step nr="4">pomidory i czerwona cebula do den Salat pokroić.</step>
-        <step nr="5">Z trochę sól, pieprz i pietruszka anmachen.</step>
-        <step nr="6">Do tzatziki ogórek raspeln i z jogurt i czosnek wymieszać.</step>
-        <step nr="7">chleb flatbread erwärmen i alles zusammen podawać.</step>
+        <step nr="3">Obsmażyć ze wszystkich stron na odrobinie oleju albo zgrillować.</step>
+        <step nr="4">Pokroić pomidory i czerwoną cebulę do sałatki.</step>
+        <step nr="5">Doprawić odrobiną soli, pieprzu i pietruszki.</step>
+        <step nr="6">Na tzatziki zetrzeć ogórek i wymieszać go z jogurtem oraz czosnkiem.</step>
+        <step nr="7">Podgrzać chleb flatbread i podawać wszystko razem.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 20 min</item>
@@ -626,10 +625,10 @@
       </timing>
       <tips>
         <item>Masę mięsną odstaw na 10 minut.</item>
-        <item>chleb flatbread krótko aufpiec, dann passt es besser dazu.</item>
-        <item>Auch gut do Gäste geeignet.</item>
+        <item>Chleb flatbread warto krótko podpiec, wtedy lepiej pasuje do dania.</item>
+        <item>Również dobrze sprawdza się dla gości.</item>
       </tips>
-      <rating>Gut angekommen.</rating>
+      <rating>Danie bardzo smakowało.</rating>
     </translation>
   </recipe>
   <recipe id="8">
@@ -696,13 +695,13 @@
       <preparation>
         <step nr="1">Pokroić ziemniaki w plasterki.</step>
         <step nr="2">Cebulę pokroić w kostkę i obsmażyć na patelni.</step>
-        <step nr="3">ziemniaki dodać i anrösten.</step>
-        <step nr="4">jajkoer verquirlen, würzen i darübergeben.</step>
+        <step nr="3">Dodać ziemniaki i je zrumienić.</step>
+        <step nr="4">Roztrzepać jajka, doprawić i wylać je na patelnię.</step>
         <step nr="5">Pozostawić do ścięcia i ostrożnie dosmażyć.</step>
-        <step nr="6">pomidory i mozzarella pokroić.</step>
-        <step nr="7">Z cebule, dymka i pietruszka wymieszać.</step>
-        <step nr="8">Z olej i trochę Säure anmachen.</step>
-        <step nr="9">Kein Feta verwenden.</step>
+        <step nr="6">Pokroić pomidory i mozzarellę.</step>
+        <step nr="7">Wymieszać z cebulą, dymką i pietruszką.</step>
+        <step nr="8">Skropić oliwą i dodać odrobinę kwasu, na przykład soku z cytryny lub jasnego octu.</step>
+        <step nr="9">Nie używać fety.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 15 min</item>
@@ -711,10 +710,10 @@
       </timing>
       <tips>
         <item>Najlepiej użyć wcześniej ugotowanych ziemniaków.</item>
-        <item>Salat erst krótko vor dem Essen wymieszać.</item>
+        <item>Sałatkę wymieszać dopiero krótko przed jedzeniem.</item>
         <item>Bardzo dobry i szybki obiad lub kolacja.</item>
       </tips>
-      <rating>Gut angekommen.</rating>
+      <rating>Danie bardzo smakowało.</rating>
     </translation>
   </recipe>
   <recipe id="9">
@@ -776,14 +775,14 @@
       </ingredients>
       <preparation>
         <step nr="1">Pokroić kurczaka na kawałki.</step>
-        <step nr="2">cebula obsmażyć.</step>
-        <step nr="3">kurczak dodać i krótko anrösten.</step>
-        <step nr="4">przyprawy i koncentrat pomidorowy wmieszać.</step>
-        <step nr="5">Z trochę woda lub bulion ablöschen.</step>
+        <step nr="2">Obsmażyć cebulę.</step>
+        <step nr="3">Dodać kurczaka i krótko go obsmażyć.</step>
+        <step nr="4">Wmieszać przyprawy i koncentrat pomidorowy.</step>
+        <step nr="5">Podlać odrobiną wody lub bulionu.</step>
         <step nr="6">Krótko zredukować.</step>
-        <step nr="7">jogurt naturalny unterrühren.</step>
-        <step nr="8">Nicht mehr stark gotować.</step>
-        <step nr="9">Z warmen proteinowe wrapy podawać.</step>
+        <step nr="7">Wmieszać jogurt naturalny.</step>
+        <step nr="8">Nie gotować już mocno.</step>
+        <step nr="9">Podawać z ciepłymi proteinowymi wrapami.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10 min</item>
@@ -792,10 +791,10 @@
       </timing>
       <tips>
         <item>Jogurt wmieszaj dopiero przy zmniejszonym ogniu.</item>
-        <item>Wraps krótko erwärmen.</item>
+        <item>Krótko podgrzać wrapy.</item>
         <item>Bardzo praktyczne na co dzień.</item>
       </tips>
-      <rating>Gut angekommen.</rating>
+      <rating>Danie bardzo smakowało.</rating>
     </translation>
   </recipe>
   <recipe id="10">
@@ -856,13 +855,13 @@
       </ingredients>
       <preparation>
         <step nr="1">Ugotować wcześniej ziemniaki i pokroić je na kawałki.</step>
-        <step nr="2">warzywa pokroić.</step>
-        <step nr="3">salsiccia in kawałeke teilen.</step>
+        <step nr="2">Pokroić warzywa.</step>
+        <step nr="3">Podzielić salsiccię na kawałki.</step>
         <step nr="4">Włóż wszystko do naczynia żaroodpornego i dopraw.</step>
-        <step nr="5">Z trochę olej vermengen.</step>
+        <step nr="5">Wymieszać z odrobiną oleju.</step>
         <step nr="6">Bei 190–200 °C ok. 35–40 min piec.</step>
-        <step nr="7">Zum Schluss crème fraîche wmieszać lub klecksweise daraufgeben.</step>
-        <step nr="8">Kurz weitergotować lub piec i podawać.</step>
+        <step nr="7">Na końcu wmieszać crème fraîche albo nałożyć ją małymi porcjami na wierzch.</step>
+        <step nr="8">Krótko jeszcze podpiec i podawać.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 20 min</item>
@@ -874,7 +873,7 @@
         <item>Crème fraîche dodać dopiero pod koniec.</item>
         <item>Bardzo lubiane i odpowiednie także dla tradycyjnych gustów.</item>
       </tips>
-      <rating>Fester Favorit.</rating>
+      <rating>Stały faworyt.</rating>
     </translation>
   </recipe>
   <recipe id="11">
@@ -938,13 +937,13 @@
       </ingredients>
       <preparation>
         <step nr="1">Podgotować ziemniaki i pokroić je w plasterki.</step>
-        <step nr="2">mięso mielone z jajko, bułka tarta, cebula i Gewürzen vermengen.</step>
-        <step nr="3">Kleine Hackbällchen formen.</step>
+        <step nr="2">Wymieszać mięso mielone z jajkiem, bułką tartą, cebulą i przyprawami.</step>
+        <step nr="3">Uformować małe klopsiki.</step>
         <step nr="4">Klopsiki krótko obsmaż lub użyj ich na surowo, jeśli mają się dopiec w piekarniku.</step>
-        <step nr="5">ajvar z śmietana wymieszać.</step>
-        <step nr="6">ziemniaki i Hackbällchen in eine Auflaufform schichten.</step>
-        <step nr="7">ajvar-śmietana-Soße darübergeben.</step>
-        <step nr="8">Z ser bestreuen.</step>
+        <step nr="5">Wymieszać ajvar ze śmietaną.</step>
+        <step nr="6">Ułożyć ziemniaki i klopsiki warstwami w naczyniu do zapiekania.</step>
+        <step nr="7">Polać całość sosem ajvarowo-śmietanowym.</step>
+        <step nr="8">Posypać serem.</step>
         <step nr="9">Bei 190 °C ok. 30–35 min goldbraun piec.</step>
       </preparation>
       <timing>
@@ -957,7 +956,7 @@
         <item>Sos można doprawić dość intensywnie.</item>
         <item>Przyjemnie kremowe, sycące i bardzo lubiane.</item>
       </tips>
-      <rating>Fester Favorit.</rating>
+      <rating>Stały faworyt.</rating>
     </translation>
   </recipe>
   <recipe id="12">
@@ -1018,13 +1017,13 @@
       </ingredients>
       <preparation>
         <step nr="1">Ugotować wcześniej ziemniaki i pokroić je w plasterki albo kostkę.</step>
-        <step nr="2">papryka i cebule obsmażyć.</step>
-        <step nr="3">kabanos in Scheiben dodać.</step>
+        <step nr="2">Obsmażyć paprykę i cebulę.</step>
+        <step nr="3">Dodać kabanosy pokrojone w plasterki.</step>
         <step nr="4">Dodać ziemniaki na patelnię.</step>
-        <step nr="5">ajvar, teriyaki i śmietana wymieszać.</step>
+        <step nr="5">Wymieszać ajvar, sos teriyaki i śmietanę.</step>
         <step nr="6">Wlać sos na patelnię.</step>
         <step nr="7">Krótko gotować, aż całość stanie się kremowa.</step>
-        <step nr="8">Abschmecken i podawać.</step>
+        <step nr="8">Doprawić do smaku i podawać.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 15–20 min</item>
@@ -1033,10 +1032,10 @@
       </timing>
       <tips>
         <item>Używać wcześniej ugotowanych ziemniaków.</item>
-        <item>teriyaki sparsam dosieren.</item>
+        <item>Sos teriyaki dozować oszczędnie.</item>
         <item>Wyraziste, kremowe i bardzo praktyczne na co dzień.</item>
       </tips>
-      <rating>Fester Favorit.</rating>
+      <rating>Stały faworyt.</rating>
     </translation>
   </recipe>
   <recipe id="13">
@@ -1100,14 +1099,14 @@
       </ingredients>
       <preparation>
         <step nr="1">Pokroić kurczaka na kawałki i tylko krótko obsmażyć.</step>
-        <step nr="2">Nicht komplett trocken braten.</step>
-        <step nr="3">kawałekige pomidory i mleko kokosowe dodać.</step>
-        <step nr="4">przyprawy wmieszać.</step>
-        <step nr="5">mrożone warzywa do woka dodać.</step>
+        <step nr="2">Nie smażyć całkiem na sucho.</step>
+        <step nr="3">Dodać krojone pomidory i mleko kokosowe.</step>
+        <step nr="4">Wmieszać przyprawy.</step>
+        <step nr="5">Dodać mrożone warzywa do woka.</step>
         <step nr="6">Pozostawić na 5–7 minut na małym ogniu.</step>
-        <step nr="7">jogurt naturalny dopiero na samym końcu wmieszać.</step>
-        <step nr="8">Danach nie mehr stark gotować.</step>
-        <step nr="9">Z pide lub naan podawać.</step>
+        <step nr="7">Jogurt naturalny wmieszać dopiero na samym końcu.</step>
+        <step nr="8">Potem nie gotować już mocno.</step>
+        <step nr="9">Podawać z pide albo naanem.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10 min</item>
@@ -1116,7 +1115,7 @@
       </timing>
       <tips>
         <item>Jogurt wmieszaj nie za wcześnie.</item>
-        <item>kurczak nur anrösten, nie austrocknen.</item>
+        <item>Kurczaka tylko lekko obsmażyć, nie przesuszyć.</item>
         <item>Bardzo dobre szybkie danie na wieczór.</item>
       </tips>
       <rating>Na stałe zapisane, bardzo lubiane.</rating>
@@ -1179,12 +1178,12 @@
       </ingredients>
       <preparation>
         <step nr="1">Pokroić warzywa i bataty na większe kawałki.</step>
-        <step nr="2">udka z kurczaka würzen.</step>
+        <step nr="2">Doprawić udka z kurczaka.</step>
         <step nr="3">Ułóż wszystko na blasze lub w dużym naczyniu do zapiekania.</step>
-        <step nr="4">Z olej i Gewürzen vermengen.</step>
-        <step nr="5">Bei 190–200 °C ok. 45–50 min gotować lub piec.</step>
+        <step nr="4">Wymieszać z olejem i przyprawami.</step>
+        <step nr="5">Piec w 190–200 °C przez około 45–50 minut.</step>
         <step nr="6">Na końcu sprawdzić, czy kurczak jest dobrze upieczony, a skórka ładnie zrumieniona.</step>
-        <step nr="7">Direkt heiß podawać.</step>
+        <step nr="7">Podawać od razu na gorąco.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 15 min</item>
@@ -1196,7 +1195,7 @@
         <item>Połóż kurczaka na warzywach, wtedy smak i sok z pieczenia przejdą na blachę.</item>
         <item>Bardzo proste danie na wieczór.</item>
       </tips>
-      <rating>Gut angekommen.</rating>
+      <rating>Danie bardzo smakowało.</rating>
     </translation>
   </recipe>
   <recipe id="15">
@@ -2699,6 +2698,871 @@
         <item>Podany z żytnim pieczywem żurek smakuje najbardziej tradycyjnie.</item>
       </tips>
       <rating>Tradycyjny żurek wielkanocny na bazie przepisu 19.</rating>
+    </translation>
+  </recipe>
+  <recipe id="35">
+    <name>Ofen-Brisket mit Magic Dust</name>
+    <persons>2 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_35.png" alt="Ofen-Brisket mit Magic Dust" />
+    <ingredients>
+      <item>1,3 kg Rinderbrust (Brisket)</item>
+      <item>2 EL mittelscharfer Senf</item>
+      <item>Magic Dust Gewürzmischung</item>
+      <item>500 g gelbe Bohnen</item>
+      <item>2 EL Olivenöl</item>
+      <item>1–2 Knoblauchzehen</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional Zitronensaft</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Brisket auspacken und gründlich trocken tupfen.</step>
+      <step nr="2">Das Fleisch rundum mit mittelscharfem Senf einreiben.</step>
+      <step nr="3">Großzügig mit Magic Dust würzen und die Gewürzmischung gut andrücken.</step>
+      <step nr="4">Das Brisket fest in Frischhaltefolie einwickeln und über Nacht im Kühlschrank marinieren.</step>
+      <step nr="5">Am nächsten Tag den Ofen auf ca. 100 °C vorheizen und das Brisket in den Ofen geben.</step>
+      <step nr="6">Das Fleisch langsam garen, bis nach etwa 3 Stunden eine Kerntemperatur von ca. 75 °C erreicht ist.</step>
+      <step nr="7">Das Brisket dann fest in Butcher Paper einwickeln.</step>
+      <step nr="8">Weitergaren und die Ofentemperatur bei Bedarf auf ca. 120–140 °C erhöhen, um die Plateauphase zu überwinden.</step>
+      <step nr="9">Das Fleisch bei 92 °C Kerntemperatur aus dem Ofen nehmen.</step>
+      <step nr="10">Im Butcher Paper lassen, zusätzlich in ein Handtuch wickeln und 45–60 Minuten ruhen lassen.</step>
+      <step nr="11">Danach das Brisket gegen die Faser in Scheiben schneiden.</step>
+      <step nr="12">Für die Bohnen reichlich Wasser aufkochen und die gelben Bohnen bissfest garen.</step>
+      <step nr="13">Knoblauch fein hacken oder in dünne Scheiben schneiden.</step>
+      <step nr="14">Die Bohnen abgießen und in einer Pfanne mit Olivenöl und Knoblauch kurz anbraten.</step>
+      <step nr="15">Mit Salz, Pfeffer und optional etwas Zitronensaft abschmecken und zum Brisket servieren.</step>
+    </preparation>
+    <timing>
+      <item>Freitag: vorbereiten und marinieren</item>
+      <item>Samstag 12:30 Uhr: Start im Ofen</item>
+      <item>Ca. 15:30–16:00 Uhr: bei etwa 75 °C Kerntemperatur in Butcher Paper einwickeln</item>
+      <item>Ca. 21:15 Uhr: fertig bei 92 °C Kerntemperatur</item>
+      <item>Gesamtzeit: ca. 8 Stunden 45 Minuten plus 45–60 Minuten Ruhezeit</item>
+    </timing>
+    <tips>
+      <item>Die Plateauphase kann mehrere Stunden dauern und ist bei Brisket normal.</item>
+      <item>Eine spätere Temperaturerhöhung hilft, die Zieltemperatur sicher zu erreichen.</item>
+      <item>Geduld ist bei Brisket entscheidend.</item>
+      <item>Die Ruhezeit ist Pflicht, damit das Fleisch saftig bleibt.</item>
+      <item>Immer gegen die Faser schneiden, damit die Scheiben zart bleiben.</item>
+      <item>Optional etwas Fleischsaft oder eine passende Sauce dazu servieren.</item>
+    </tips>
+    <rating>10/10</rating>
+    <translation lang="pl">
+      <name>Pieczony brisket z przyprawą Magic Dust</name>
+      <persons>2 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <ingredients>
+        <item>1,3 kg mostka wołowego (brisket)</item>
+        <item>2 łyżki średnio ostrej musztardy</item>
+        <item>mieszanka przypraw Magic Dust</item>
+        <item>500 g żółtej fasolki szparagowej</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1–2 ząbki czosnku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie sok z cytryny</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wyjąć brisket z opakowania i dokładnie osuszyć ręcznikiem papierowym.</step>
+        <step nr="2">Natrzeć mięso ze wszystkich stron średnio ostrą musztardą.</step>
+        <step nr="3">Obficie doprawić przyprawą Magic Dust i dobrze docisnąć przyprawy do powierzchni mięsa.</step>
+        <step nr="4">Szczelnie owinąć brisket folią spożywczą i wstawić na noc do lodówki.</step>
+        <step nr="5">Następnego dnia rozgrzać piekarnik do około 100 °C i wstawić mięso do pieczenia.</step>
+        <step nr="6">Piec powoli, aż po około 3 godzinach temperatura wewnętrzna osiągnie około 75 °C.</step>
+        <step nr="7">Następnie szczelnie owinąć brisket w butcher paper.</step>
+        <step nr="8">Piec dalej i w razie potrzeby zwiększyć temperaturę piekarnika do około 120–140 °C, aby przejść przez fazę plateau.</step>
+        <step nr="9">Wyjąć mięso z piekarnika przy temperaturze wewnętrznej 92 °C.</step>
+        <step nr="10">Pozostawić w butcher paper, dodatkowo owinąć ręcznikiem i odstawić na 45–60 minut do odpoczynku.</step>
+        <step nr="11">Następnie pokroić brisket w plastry w poprzek włókien.</step>
+        <step nr="12">Na fasolkę zagotować wodę i ugotować żółtą fasolkę szparagową al dente.</step>
+        <step nr="13">Drobno posiekać czosnek lub pokroić go w cienkie plasterki.</step>
+        <step nr="14">Odcedzić fasolkę i krótko podsmażyć ją na oliwie z oliwek z czosnkiem.</step>
+        <step nr="15">Doprawić solą, pieprzem i opcjonalnie sokiem z cytryny, a następnie podać z brisketem.</step>
+      </preparation>
+      <timing>
+        <item>Piątek: przygotowanie i marynowanie</item>
+        <item>Sobota 12:30: start pieczenia</item>
+        <item>Około 15:30–16:00: zawinąć w butcher paper przy temperaturze wewnętrznej około 75 °C</item>
+        <item>Około 21:15: gotowe przy 92 °C temperatury wewnętrznej</item>
+        <item>Łączny czas: około 8 godzin 45 minut plus 45–60 minut odpoczynku</item>
+      </timing>
+      <tips>
+        <item>Faza plateau może trwać kilka godzin i jest normalna przy briskecie.</item>
+        <item>Podniesienie temperatury pod koniec pieczenia pomaga osiągnąć temperaturę docelową.</item>
+        <item>Cierpliwość jest kluczowa przy przygotowaniu brisketu.</item>
+        <item>Odpoczynek po pieczeniu jest obowiązkowy, jeśli mięso ma pozostać soczyste.</item>
+        <item>Zawsze kroić w poprzek włókien, aby mięso było delikatne.</item>
+        <item>Opcjonalnie można podać z sosem lub zebranym sokiem z mięsa.</item>
+      </tips>
+      <rating>10/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="36">
+    <name>Irish Beef Rollbraten aus dem Backofen</name>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_36.png" alt="Irish Beef Rollbraten aus dem Backofen" />
+    <ingredients>
+      <item>1,2 kg Irish Beef Rollbraten</item>
+      <item>2 EL Öl</item>
+      <item>2 TL Salz</item>
+      <item>1 TL Pfeffer</item>
+      <item>2 TL mittelscharfer Senf (optional)</item>
+      <item>1 TL Paprikapulver edelsüß (optional)</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Möhren</item>
+      <item>500 ml Rinderbrühe</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 160 °C Ober-/Unterhitze oder 140 °C Umluft vorheizen.</step>
+      <step nr="2">Den Rollbraten trocken tupfen und mit Salz, Pfeffer sowie optional Senf und Paprikapulver einreiben.</step>
+      <step nr="3">Öl in einem Bräter erhitzen und den Braten rundherum kräftig anbraten.</step>
+      <step nr="4">Zwiebeln und Möhren grob schneiden und mit in den Bräter geben.</step>
+      <step nr="5">Mit Rinderbrühe aufgießen und den Bräter mit Deckel schließen.</step>
+      <step nr="6">Den Braten im Ofen garen, bis die gewünschte Kerntemperatur erreicht ist.</step>
+      <step nr="7">Für ein saftiges Ergebnis den Braten bei 60 bis 65 °C Kerntemperatur aus dem Ofen nehmen.</step>
+      <step nr="8">Vor dem Anschneiden 10 bis 15 Minuten ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: 15 Minuten</item>
+      <item>Anbraten: 10 Minuten</item>
+      <item>Ofenzeit: ca. 2 bis 2,5 Stunden</item>
+      <item>Ruhezeit: 10 bis 15 Minuten</item>
+      <item>Gesamtzeit: ca. 2 Stunden 35 Minuten bis 3 Stunden 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Kerntemperatur rosa: 58 bis 62 °C.</item>
+      <item>Kerntemperatur durch, aber saftig: 65 bis 70 °C.</item>
+      <item>Über 75 °C wird der Braten schnell trockener und fester.</item>
+      <item>Den Bratensaft kannst du zum Schluss zu einer einfachen Soße verarbeiten.</item>
+    </tips>
+    <rating>9/10</rating>
+    <translation lang="pl">
+      <name>Irlandzka pieczeń wołowa z piekarnika</name>
+      <persons>4 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <ingredients>
+        <item>1,2 kg irlandzkiej pieczeni wołowej</item>
+        <item>2 łyżki oleju</item>
+        <item>2 łyżeczki soli</item>
+        <item>1 łyżeczka pieprzu</item>
+        <item>2 łyżeczki średnio ostrej musztardy (opcjonalnie)</item>
+        <item>1 łyżeczka słodkiej papryki w proszku (opcjonalnie)</item>
+        <item>2 cebule</item>
+        <item>2 marchewki</item>
+        <item>500 ml bulionu wołowego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozgrzać piekarnik do 160 °C góra/dół lub 140 °C z termoobiegiem.</step>
+        <step nr="2">Osuszyć pieczeń i natrzeć ją solą, pieprzem oraz opcjonalnie musztardą i papryką.</step>
+        <step nr="3">Rozgrzać olej w brytfannie i mocno obsmażyć mięso z każdej strony.</step>
+        <step nr="4">Grubo pokroić cebulę i marchewki, następnie dodać je do brytfanny.</step>
+        <step nr="5">Wlać bulion wołowy i przykryć brytfannę pokrywką.</step>
+        <step nr="6">Piec mięso w piekarniku, aż osiągnie pożądaną temperaturę wewnętrzną.</step>
+        <step nr="7">Aby pieczeń była soczysta, wyjąć ją przy temperaturze wewnętrznej 60–65 °C.</step>
+        <step nr="8">Przed krojeniem odstawić mięso na 10–15 minut do odpoczynku.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Obsmażanie: 10 minut</item>
+        <item>Pieczenie: ok. 2 do 2,5 godziny</item>
+        <item>Odpoczynek: 10 do 15 minut</item>
+        <item>Łączny czas: ok. 2 godziny 35 minut do 3 godzin 10 minut</item>
+      </timing>
+      <tips>
+        <item>Temperatura wewnętrzna dla mięsa różowego: 58–62 °C.</item>
+        <item>Temperatura wewnętrzna dla mięsa dobrze wypieczonego, ale soczystego: 65–70 °C.</item>
+        <item>Powyżej 75 °C pieczeń szybko staje się suchsza i twardsza.</item>
+        <item>Sos z pieczenia można na końcu przerobić na prosty sos do podania.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="37">
+    <name>Svens AirFryer-Iskender Kebab</name>
+    <persons>4 Personen</persons>
+    <category>Airfryer</category>
+    <image src="images/rezeptbild_37.png" alt="Svens AirFryer-Iskender Kebab" />
+    <ingredients>
+      <item>1 kg Rinderhackfleisch (zweimal gewolft)</item>
+      <item>2 EL Naturjoghurt (10 %)</item>
+      <item>2 pürierte Zwiebeln</item>
+      <item>2 EL Ajvar</item>
+      <item>3 EL Dönergewürz</item>
+      <item>1 TL Vegeta</item>
+      <item>Pfeffer</item>
+      <item>50 ml Olivenöl</item>
+      <item>2 EL Petersilie (gehackt)</item>
+      <item>Fladenbrot</item>
+      <item>Tomatensauce</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alle Zutaten für das Fleisch gründlich verkneten.</step>
+      <step nr="2">Die Masse zwischen Backpapier flach drücken, etwa 1–1,5 cm dick.</step>
+      <step nr="3">Die Fleischplatte 10–15 Minuten anfrieren.</step>
+      <step nr="4">Im AirFryer bei 200 °C ca. 20 Minuten garen und nach 10 Minuten wenden.</step>
+      <step nr="5">Das Fleisch 5 Minuten ruhen lassen und dann in Streifen schneiden.</step>
+      <step nr="6">Fladenbrot bei 180 °C 6–8 Minuten im Ofen rösten.</step>
+      <step nr="7">Mit Tomatensauce und Joghurt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: ca. 45 Minuten</item>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Anfrieren: 10–15 Minuten</item>
+      <item>AirFryer: ca. 20 Minuten</item>
+      <item>Ruhezeit: 5 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nach dem Garen kurz ruhen lassen, dann bleibt das Fleisch saftiger.</item>
+      <item>Für extra Geschmack das Fleisch kurz in der Pfanne nachbräunen.</item>
+      <item>Fladenbrot mit etwas Butter beträufeln, dann schmeckt es besonders original.</item>
+      <item>Reste lassen sich gut im AirFryer oder in der Pfanne aufwärmen.</item>
+    </tips>
+    <rating>10/10</rating>
+    <translation lang="pl">
+      <name>Kebab Iskender z AirFryera (wersja Svena)</name>
+      <persons>4 osoby</persons>
+      <category>Airfryer</category>
+      <ingredients>
+        <item>1 kg mielonej wołowiny (dwukrotnie mielonej)</item>
+        <item>2 łyżki jogurtu naturalnego (10%)</item>
+        <item>2 zmiksowane cebule</item>
+        <item>2 łyżki ajvaru</item>
+        <item>3 łyżki przyprawy do kebaba</item>
+        <item>1 łyżeczka Vegety</item>
+        <item>pieprz</item>
+        <item>50 ml oliwy z oliwek</item>
+        <item>2 łyżki natki pietruszki</item>
+        <item>chleb pita lub fladenbrot</item>
+        <item>sos pomidorowy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dokładnie wymieszać wszystkie składniki na mięso.</step>
+        <step nr="2">Rozłożyć masę między papierem do pieczenia na grubość około 1–1,5 cm.</step>
+        <step nr="3">Wstawić mięso na 10–15 minut do lekkiego schłodzenia lub podmrożenia.</step>
+        <step nr="4">Piec w AirFryerze w 200 °C przez około 20 minut, obracając po 10 minutach.</step>
+        <step nr="5">Odstawić mięso na 5 minut, a następnie pokroić je w paski.</step>
+        <step nr="6">Podpiec pieczywo w piekarniku w 180 °C przez 6–8 minut.</step>
+        <step nr="7">Podawać z sosem pomidorowym i jogurtem.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: ok. 45 minut</item>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Schłodzenie: 10–15 minut</item>
+        <item>AirFryer: ok. 20 minut</item>
+        <item>Odpoczynek: 5 minut</item>
+      </timing>
+      <tips>
+        <item>Po upieczeniu dać mięsu chwilę odpocząć, aby było bardziej soczyste.</item>
+        <item>Dla mocniejszego smaku można krótko podsmażyć mięso na patelni.</item>
+        <item>Pieczywo skropione odrobiną masła smakuje najbardziej tradycyjnie.</item>
+        <item>Resztki można dobrze odgrzać w AirFryerze albo na patelni.</item>
+      </tips>
+      <rating>10/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="38">
+    <name>Klassischer Schmorbraten mit dunkler Sauce</name>
+    <persons>6 Personen</persons>
+    <category>Ofengerichte / Feiertagsessen</category>
+    <image src="images/rezeptbild_38.png" alt="Klassischer Schmorbraten mit dunkler Sauce" />
+    <ingredients>
+      <item>1,8 kg Rinderbraten</item>
+      <item>2 EL Butterschmalz</item>
+      <item>2 große Zwiebeln</item>
+      <item>2 Möhren</item>
+      <item>1/4 Knollensellerie</item>
+      <item>2 EL Tomatenmark</item>
+      <item>500 ml Rotwein</item>
+      <item>700 bis 1000 ml Rinderfond</item>
+      <item>2 Lorbeerblätter</item>
+      <item>1 TL Pfefferkörner</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Braten trocken tupfen, salzen und pfeffern.</step>
+      <step nr="2">Im Bräter in Butterschmalz rundherum kräftig anbraten.</step>
+      <step nr="3">Fleisch kurz herausnehmen. Zwiebeln, Möhren und Sellerie anrösten.</step>
+      <step nr="4">Tomatenmark zugeben und kurz mitrösten.</step>
+      <step nr="5">Mit Rotwein ablöschen und etwas einkochen lassen.</step>
+      <step nr="6">Braten wieder einlegen, mit Fond auffüllen, Lorbeer und Pfefferkörner zugeben.</step>
+      <step nr="7">Mit Deckel bei 160 bis 170 °C etwa 2,5 bis 3 Stunden schmoren, bis das Fleisch weich ist.</step>
+      <step nr="8">Braten herausnehmen, Sauce pürieren oder durch ein Sieb passieren und nach Wunsch einkochen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 25 Minuten</item>
+      <item>Anbraten: ca. 15 Minuten</item>
+      <item>Schmorzeit: ca. 2,5 bis 3 Stunden</item>
+      <item>Gesamt: ca. 3 bis 3,5 Stunden</item>
+    </timing>
+    <tips>
+      <item>Je besser das Gemüse angeröstet wird, desto kräftiger wird die Sauce.</item>
+      <item>Rotwein und Tomatenmark sorgen für Tiefe und Farbe.</item>
+      <item>Den Braten nach dem Schmoren kurz ruhen lassen, bevor er aufgeschnitten wird.</item>
+      <item>Dazu passen Kartoffelstampf, Rotkohl oder Semmelknödel.</item>
+    </tips>
+    <rating>Sehr gut</rating>
+    <translation lang="pl">
+      <name>Klasyczna pieczeń duszona z ciemnym sosem</name>
+      <persons>6 osób</persons>
+      <category>Dania z piekarnika / dania świąteczne</category>
+      <ingredients>
+        <item>1,8 kg pieczeni wołowej</item>
+        <item>2 łyżki smalcu klarowanego</item>
+        <item>2 duże cebule</item>
+        <item>2 marchewki</item>
+        <item>1/4 selera korzeniowego</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>500 ml czerwonego wina</item>
+        <item>700 do 1000 ml bulionu wołowego</item>
+        <item>2 liście laurowe</item>
+        <item>1 łyżeczka ziaren pieprzu</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Osuszyć mięso, doprawić solą i pieprzem.</step>
+        <step nr="2">Mocno obsmażyć pieczeń ze wszystkich stron w brytfannie na smalcu klarowanym.</step>
+        <step nr="3">Na chwilę wyjąć mięso, a następnie podsmażyć cebulę, marchew i seler.</step>
+        <step nr="4">Dodać koncentrat pomidorowy i krótko go podsmażyć.</step>
+        <step nr="5">Podlać czerwonym winem i lekko zredukować.</step>
+        <step nr="6">Włożyć pieczeń z powrotem, dolać bulion, dodać liście laurowe i ziarna pieprzu.</step>
+        <step nr="7">Dusić pod przykryciem w 160–170 °C przez około 2,5 do 3 godzin, aż mięso będzie miękkie.</step>
+        <step nr="8">Wyjąć mięso, a sos zmiksować lub przetrzeć przez sito i w razie potrzeby jeszcze zredukować.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 25 minut</item>
+        <item>Obsmażanie: ok. 15 minut</item>
+        <item>Duszenie: ok. 2,5 do 3 godzin</item>
+        <item>Łączny czas: ok. 3 do 3,5 godziny</item>
+      </timing>
+      <tips>
+        <item>Im lepiej zrumienią się warzywa, tym mocniejszy będzie sos.</item>
+        <item>Czerwone wino i koncentrat pomidorowy dają głębię smaku i kolor.</item>
+        <item>Po duszeniu warto dać mięsu chwilę odpocząć przed krojeniem.</item>
+        <item>Do tego dania pasują puree ziemniaczane, modra kapusta albo knedle.</item>
+      </tips>
+      <rating>Bardzo dobre</rating>
+    </translation>
+  </recipe>
+  <recipe id="39">
+    <name>Hähnchen-Kartoffel-Pfanne mit Gemüse</name>
+    <persons>2 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_39.png" alt="Hähnchen-Kartoffel-Pfanne mit Gemüse" />
+    <ingredients>
+      <item>400–450 g Hähnchengeschnetzeltes</item>
+      <item>600–700 g Kartoffeln</item>
+      <item>1–2 Zwiebeln</item>
+      <item>1 Paprika</item>
+      <item>1 kleine Zucchini</item>
+      <item>150–200 g Champignons</item>
+      <item>1,5–2 EL Öl</item>
+      <item>1 TL Paprikapulver</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional Knoblauchpulver</item>
+      <item>150 g Joghurt als Dip</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 200 °C Umluft vorheizen.</step>
+      <step nr="2">Kartoffeln in mundgerechte Würfel schneiden. Zwiebeln in Spalten schneiden. Paprika, Zucchini und Champignons grob zerkleinern.</step>
+      <step nr="3">Hähnchengeschnetzeltes bei Bedarf etwas kleiner schneiden.</step>
+      <step nr="4">Alles in einer großen Schüssel mit Öl, Paprikapulver, Salz, Pfeffer und optional etwas Knoblauchpulver vermengen.</step>
+      <step nr="5">Die Mischung in eine Auflaufform geben und zunächst 25 Minuten abgedeckt garen.</step>
+      <step nr="6">Abdeckung entfernen, alles einmal wenden und weitere 15–20 Minuten backen, bis die Kartoffeln weich und das Hähnchen gar sind.</step>
+      <step nr="7">Optional am Ende 3–5 Minuten Grillfunktion nutzen, damit mehr Röstaromen entstehen.</step>
+      <step nr="8">Mit Joghurt-Dip servieren.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: 45 Minuten</item>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Ofenzeit: 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Kartoffeln etwas kleiner schneiden als das Fleisch, damit alles gleichzeitig gar wird.</item>
+      <item>Zucchini eher etwas größer schneiden, damit sie nicht zu weich wird.</item>
+      <item>Der Joghurt-Dip passt gut mit Salz, Pfeffer und etwas Zitronensaft.</item>
+    </tips>
+    <rating>sehr gut</rating>
+    <translation lang="pl">
+      <name>Zapiekanka z kurczakiem, ziemniakami i warzywami</name>
+      <persons>2 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <ingredients>
+        <item>400–450 g krojonego filetu z kurczaka</item>
+        <item>600–700 g ziemniaków</item>
+        <item>1–2 cebule</item>
+        <item>1 papryka</item>
+        <item>1 mała cukinia</item>
+        <item>150–200 g pieczarek</item>
+        <item>1,5–2 łyżki oleju</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie czosnek granulowany</item>
+        <item>150 g jogurtu jako dip</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozgrzej piekarnik do 200 °C z termoobiegiem.</step>
+        <step nr="2">Pokrój ziemniaki w kostkę. Cebulę pokrój w piórka. Paprykę, cukinię i pieczarki pokrój na większe kawałki.</step>
+        <step nr="3">W razie potrzeby pokrój kurczaka na mniejsze kawałki.</step>
+        <step nr="4">Wymieszaj wszystko w dużej misce z olejem, papryką, solą, pieprzem i opcjonalnie z odrobiną czosnku granulowanego.</step>
+        <step nr="5">Przełóż całość do naczynia żaroodpornego i piecz pod przykryciem przez 25 minut.</step>
+        <step nr="6">Zdejmij przykrycie, delikatnie przemieszaj i piecz jeszcze 15–20 minut, aż ziemniaki będą miękkie, a kurczak gotowy.</step>
+        <step nr="7">Opcjonalnie na końcu włącz funkcję grilla na 3–5 minut dla lepszego zrumienienia.</step>
+        <step nr="8">Podawaj z dipem jogurtowym.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: 45 minut</item>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Pieczenie: 35 minut</item>
+      </timing>
+      <tips>
+        <item>Ziemniaki pokrój trochę drobniej niż mięso, aby wszystko upiekło się równomiernie.</item>
+        <item>Cukinię pokrój większą, aby nie zrobiła się zbyt miękka.</item>
+        <item>Do dipu jogurtowego pasują sól, pieprz i odrobina soku z cytryny.</item>
+      </tips>
+      <rating>bardzo dobre</rating>
+    </translation>
+  </recipe>
+  <recipe id="40">
+    <name>Bratwurst mit Sauerkraut aus dem Ofen</name>
+    <persons>2 Personen</persons>
+    <category>Ofengerichte</category>
+    <image src="images/rezeptbild_40.png" alt="Bratwurst mit Sauerkraut aus dem Ofen" />
+    <ingredients>
+      <item>4 Bratwürste</item>
+      <item>400–500 g Sauerkraut</item>
+      <item>1 rote oder weiße Zwiebel</item>
+      <item>1 EL Öl</item>
+      <item>eine kleine Prise Knoblauchpulver</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional 1 TL Senf</item>
+      <item>optional 1 Prise Zucker</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 190 °C Umluft vorheizen.</step>
+      <step nr="2">Das Sauerkraut mitsamt Saft in eine Auflaufform geben.</step>
+      <step nr="3">Zwiebel in Streifen schneiden und mit Öl, etwas Knoblauchpulver, Salz und Pfeffer unter das Sauerkraut mischen.</step>
+      <step nr="4">Optional Senf oder eine kleine Prise Zucker einarbeiten.</step>
+      <step nr="5">Die Bratwürste roh auf das Sauerkraut legen und nicht einstechen.</step>
+      <step nr="6">Die Form auf mittlerer Schiene 25 Minuten backen.</step>
+      <step nr="7">Die Würste vorsichtig wenden und weitere 10–15 Minuten backen, bis sie goldbraun sind.</step>
+      <step nr="8">Optional zum Schluss 3–5 Minuten die Grillfunktion nutzen.</step>
+      <step nr="9">Vor dem Servieren 2–3 Minuten ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: 40 Minuten</item>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Ofenzeit: 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Sauerkraut im Ofen immer mit Saft verwenden, damit es nicht austrocknet.</item>
+      <item>Feine Rostbratwürste lieber bei 190 °C statt bei 200 °C backen, damit sie nicht platzen.</item>
+      <item>Dazu passen Senf, Brot oder Kartoffelpüree.</item>
+    </tips>
+    <rating>sehr gut</rating>
+    <translation lang="pl">
+      <name>Biała kiełbasa pieczona z kapustą kiszoną</name>
+      <persons>2 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <ingredients>
+        <item>4 kiełbasy do pieczenia</item>
+        <item>400–500 g kapusty kiszonej</item>
+        <item>1 czerwona lub biała cebula</item>
+        <item>1 łyżka oleju</item>
+        <item>szczypta czosnku granulowanego</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie 1 łyżeczka musztardy</item>
+        <item>opcjonalnie 1 szczypta cukru</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozgrzej piekarnik do 190 °C z termoobiegiem.</step>
+        <step nr="2">Przełóż kapustę kiszoną razem z sokiem do naczynia żaroodpornego.</step>
+        <step nr="3">Pokrój cebulę w piórka i wymieszaj z kapustą, olejem, odrobiną czosnku granulowanego, solą i pieprzem.</step>
+        <step nr="4">Opcjonalnie dodaj musztardę lub szczyptę cukru.</step>
+        <step nr="5">Ułóż surowe kiełbasy na kapuście i nie nakłuwaj ich.</step>
+        <step nr="6">Piecz na środkowym poziomie przez 25 minut.</step>
+        <step nr="7">Delikatnie obróć kiełbasy i piecz jeszcze 10–15 minut, aż będą złociste.</step>
+        <step nr="8">Opcjonalnie na końcu włącz grill na 3–5 minut.</step>
+        <step nr="9">Po upieczeniu odstaw na 2–3 minuty przed podaniem.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: 40 minut</item>
+        <item>Przygotowanie: 5 minut</item>
+        <item>Pieczenie: 35 minut</item>
+      </timing>
+      <tips>
+        <item>Kapustę do pieczenia zawsze zostaw z sokiem, aby nie wyschła.</item>
+        <item>Cieńsze kiełbasy lepiej piec w 190 °C niż w 200 °C, żeby nie popękały.</item>
+        <item>Do dania pasują musztarda, chleb albo puree ziemniaczane.</item>
+      </tips>
+      <rating>bardzo dobre</rating>
+    </translation>
+  </recipe>
+  <recipe id="41">
+    <name>Saftiger Chicken-Cheese-Burrito ohne Reis</name>
+    <persons>4 Personen</persons>
+    <category>Wraps &amp; Burritos</category>
+    <image src="images/rezeptbild_41.png" alt="Saftiger Chicken-Cheese-Burrito ohne Reis" />
+    <ingredients>
+      <item>600–700 g Hähnchengeschnetzeltes</item>
+      <item>2 Paprika</item>
+      <item>2 Zwiebeln</item>
+      <item>1 große Zucchini</item>
+      <item>2 Dosen Bohnen</item>
+      <item>200–250 g Reibekäse</item>
+      <item>2–3 EL Joghurt oder Sour Cream</item>
+      <item>4 große Weizentortillas</item>
+      <item>1–2 EL Öl</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 TL Kreuzkümmel</item>
+      <item>½ TL Chili</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebeln schälen und in Streifen schneiden. Paprika und Zucchini in kleine Stücke schneiden. Bohnen abspülen und abtropfen lassen.</step>
+      <step nr="2">Öl in einer großen Pfanne erhitzen und das Hähnchengeschnetzelte kräftig anbraten.</step>
+      <step nr="3">Zwiebeln, Paprika und Zucchini dazugeben und 3–4 Minuten mitbraten.</step>
+      <step nr="4">Bohnen, Paprikapulver, Kreuzkümmel, Chili, Salz und Pfeffer einrühren.</step>
+      <step nr="5">Die Hitze reduzieren und den Reibekäse zusammen mit Joghurt oder Sour Cream unter die Füllung rühren, bis alles cremig und saftig ist.</step>
+      <step nr="6">Tortillas kurz erwärmen, damit sie weich und biegsam werden.</step>
+      <step nr="7">Pro Tortilla etwas Füllung mittig als länglichen Streifen platzieren.</step>
+      <step nr="8">Die Seiten links und rechts einklappen, dann von unten nach oben straff aufrollen.</step>
+      <step nr="9">Optional die Burritos in einer trockenen Pfanne 2–3 Minuten pro Seite anrösten.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: 25 Minuten</item>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Pfannenzeit: 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu viel Füllung in die Tortilla geben, sonst lassen sich die Burritos schwer rollen.</item>
+      <item>Große Tortillas mit 25–30 cm Durchmesser sind ideal.</item>
+      <item>Die Füllung soll cremig, aber nicht flüssig sein.</item>
+    </tips>
+    <rating>sehr gut</rating>
+    <translation lang="pl">
+      <name>Soczysty burrito z kurczakiem i serem bez ryżu</name>
+      <persons>4 osoby</persons>
+      <category>Wrapy i burrito</category>
+      <ingredients>
+        <item>600–700 g krojonego filetu z kurczaka</item>
+        <item>2 papryki</item>
+        <item>2 cebule</item>
+        <item>1 duża cukinia</item>
+        <item>2 puszki fasoli</item>
+        <item>200–250 g tartego sera</item>
+        <item>2–3 łyżki jogurtu lub kwaśnej śmietany</item>
+        <item>4 duże tortille pszenne</item>
+        <item>1–2 łyżki oleju</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1 łyżeczka kminu rzymskiego</item>
+        <item>½ łyżeczki chili</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obierz cebule i pokrój w piórka. Paprykę i cukinię pokrój w drobną kostkę. Fasolę opłucz i odsącz.</step>
+        <step nr="2">Rozgrzej olej na dużej patelni i mocno obsmaż kawałki kurczaka.</step>
+        <step nr="3">Dodaj cebulę, paprykę i cukinię, a następnie smaż przez 3–4 minuty.</step>
+        <step nr="4">Dodaj fasolę, słodką paprykę, kmin rzymski, chili, sól i pieprz.</step>
+        <step nr="5">Zmniejsz ogień i wmieszaj tarty ser oraz jogurt lub kwaśną śmietanę, aż farsz stanie się kremowy i soczysty.</step>
+        <step nr="6">Krótko podgrzej tortille, aby były miękkie i elastyczne.</step>
+        <step nr="7">Na każdej tortilli ułóż porcję farszu na środku w formie podłużnego paska.</step>
+        <step nr="8">Złóż boki do środka, a następnie zawiń tortillę od dołu ku górze, dość ciasno.</step>
+        <step nr="9">Opcjonalnie podsmaż burrito na suchej patelni po 2–3 minuty z każdej strony.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: 25 minut</item>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Smażenie: 15 minut</item>
+      </timing>
+      <tips>
+        <item>Nie nakładaj zbyt dużo farszu, żeby burrito dało się łatwo zwinąć.</item>
+        <item>Najlepsze są duże tortille o średnicy 25–30 cm.</item>
+        <item>Farsz powinien być kremowy, ale nie wodnisty.</item>
+      </tips>
+      <rating>bardzo dobre</rating>
+    </translation>
+  </recipe>
+  <recipe id="42">
+    <name>Spaghetti mit Knoblauch und Sambal Oelek</name>
+    <persons>1 Person</persons>
+    <category>Nudelgerichte</category>
+    <image src="images/rezeptbild_42.png" alt="Spaghetti mit Knoblauch und Sambal Oelek" />
+    <ingredients>
+      <item>150 g Spaghetti</item>
+      <item>4–6 Knoblauchzehen</item>
+      <item>4–5 EL Olivenöl</item>
+      <item>1/2 bis 1 TL Sambal Oelek</item>
+      <item>2–4 EL Nudelwasser</item>
+      <item>20–30 g Parmesan, optional</item>
+      <item>1 Eigelb, optional</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Spaghetti in reichlich Salzwasser al dente kochen und etwas Nudelwasser aufheben.</step>
+      <step nr="2">Knoblauch fein hacken.</step>
+      <step nr="3">Olivenöl auf niedriger Hitze erwärmen und den Knoblauch darin glasig ziehen lassen, ohne ihn zu bräunen.</step>
+      <step nr="4">Sambal Oelek einrühren.</step>
+      <step nr="5">2–4 EL Nudelwasser zugeben und die Sauce leicht emulgieren lassen.</step>
+      <step nr="6">Die abgegossenen Spaghetti in die Pfanne geben und gut durchschwenken.</step>
+      <step nr="7">Optional Parmesan und Eigelb bei sehr niedriger Hitze unterrühren, damit die Sauce noch cremiger wird.</step>
+      <step nr="8">Sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: 15–20 Minuten</item>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Kochzeit: 10–12 Minuten</item>
+    </timing>
+    <tips>
+      <item>Knoblauch nur sanft erhitzen, sonst wird er bitter.</item>
+      <item>Mit mehr Nudelwasser wird die Sauce lockerer und glänzender.</item>
+      <item>Parmesan und Eigelb nur bei niedriger Hitze einrühren, damit nichts stockt.</item>
+    </tips>
+    <rating>9/10</rating>
+    <translation lang="pl">
+      <name>Spaghetti z czosnkiem i sambal oelek</name>
+      <persons>1 osoba</persons>
+      <category>Dania z makaronem</category>
+      <ingredients>
+        <item>150 g spaghetti</item>
+        <item>4–6 ząbków czosnku</item>
+        <item>4–5 łyżek oliwy z oliwek</item>
+        <item>1/2 do 1 łyżeczki sambal oelek</item>
+        <item>2–4 łyżki wody z gotowania makaronu</item>
+        <item>20–30 g parmezanu, opcjonalnie</item>
+        <item>1 żółtko, opcjonalnie</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ugotować spaghetti al dente w osolonej wodzie i zachować trochę wody z gotowania.</step>
+        <step nr="2">Drobno posiekać czosnek.</step>
+        <step nr="3">Na małym ogniu lekko podgrzać oliwę i zeszklić w niej czosnek, nie dopuszczając do zrumienienia.</step>
+        <step nr="4">Dodać sambal oelek i wymieszać.</step>
+        <step nr="5">Wlać 2–4 łyżki wody z makaronu i lekko zemulgować sos.</step>
+        <step nr="6">Dodać odcedzone spaghetti do patelni i dokładnie wymieszać.</step>
+        <step nr="7">Opcjonalnie wmieszać parmezan i żółtko na bardzo małym ogniu, aby sos był bardziej kremowy.</step>
+        <step nr="8">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: 15–20 minut</item>
+        <item>Przygotowanie: 5 minut</item>
+        <item>Gotowanie: 10–12 minut</item>
+      </timing>
+      <tips>
+        <item>Czosnek podgrzewaj delikatnie, bo zbyt mocno zbrązowiony stanie się gorzki.</item>
+        <item>Większa ilość wody z makaronu sprawi, że sos będzie bardziej jedwabisty.</item>
+        <item>Parmezan i żółtko dodawaj tylko na małym ogniu, aby się nie ścięły.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="43">
+    <name>Knoblauch-Kartoffel-Pfanne mit Chili und Ei</name>
+    <persons>1 Person</persons>
+    <category>Pfannengerichte</category>
+    <image src="images/rezeptbild_43.png" alt="Knoblauch-Kartoffel-Pfanne mit Chili und Ei" />
+    <ingredients>
+      <item>500 g Kartoffeln</item>
+      <item>3–4 Knoblauchzehen</item>
+      <item>Chili oder Sambal Oelek nach Geschmack</item>
+      <item>2 Eier</item>
+      <item>Öl oder Butterschmalz</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln in Salzwasser vorkochen, abkühlen lassen und in Scheiben oder Würfel schneiden.</step>
+      <step nr="2">Öl oder Butterschmalz in einer Pfanne erhitzen und die Kartoffeln goldbraun anbraten.</step>
+      <step nr="3">Knoblauch fein hacken und zusammen mit Chili oder Sambal Oelek zugeben.</step>
+      <step nr="4">Alles kurz weiterbraten, bis der Knoblauch duftet.</step>
+      <step nr="5">Die Eier über die Kartoffeln geben und bei mittlerer Hitze stocken lassen.</step>
+      <step nr="6">Mit Salz und Pfeffer abschmecken und direkt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: 25–30 Minuten</item>
+      <item>Vorbereitung: 10 Minuten</item>
+      <item>Pfannenzeit: 15–20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Vorgekochte Kartoffeln braten deutlich besser an.</item>
+      <item>Knoblauch erst später zugeben, damit er nicht verbrennt.</item>
+      <item>Die Eier können als Spiegelei oder leicht verrührt darübergegeben werden.</item>
+    </tips>
+    <rating>8/10</rating>
+    <translation lang="pl">
+      <name>Patelnia ziemniaczana z czosnkiem, chili i jajkiem</name>
+      <persons>1 osoba</persons>
+      <category>Dania z patelni</category>
+      <ingredients>
+        <item>500 g ziemniaków</item>
+        <item>3–4 ząbki czosnku</item>
+        <item>chili lub sambal oelek do smaku</item>
+        <item>2 jajka</item>
+        <item>olej lub smalec klarowany</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Podgotować ziemniaki w osolonej wodzie, ostudzić i pokroić w plasterki albo kostkę.</step>
+        <step nr="2">Rozgrzać na patelni olej lub smalec klarowany i obsmażyć ziemniaki na złoty kolor.</step>
+        <step nr="3">Drobno posiekać czosnek i dodać go razem z chili lub sambal oelek.</step>
+        <step nr="4">Smażyć jeszcze chwilę, aż czosnek zacznie pachnieć.</step>
+        <step nr="5">Wbić jajka na ziemniaki i pozostawić na średnim ogniu do ścięcia.</step>
+        <step nr="6">Doprawić solą i pieprzem, a następnie od razu podawać.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: 25–30 minut</item>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Smażenie: 15–20 minut</item>
+      </timing>
+      <tips>
+        <item>Podgotowane ziemniaki dużo lepiej się przyrumieniają.</item>
+        <item>Czosnek dodaj później, żeby się nie przypalił.</item>
+        <item>Jajka można podać jako sadzone albo lekko rozmieszane na patelni.</item>
+      </tips>
+      <rating>8/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="44">
+    <name>Cremige Parmesan-Pasta ohne Sahne</name>
+    <persons>1 Person</persons>
+    <category>Nudelgerichte</category>
+    <image src="images/rezeptbild_44.png" alt="Cremige Parmesan-Pasta ohne Sahne" />
+    <ingredients>
+      <item>120–150 g Pasta</item>
+      <item>30–40 g Parmesan</item>
+      <item>1 EL Butter</item>
+      <item>etwas Nudelwasser</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Pasta in reichlich Salzwasser al dente kochen.</step>
+      <step nr="2">Etwas Nudelwasser aufheben.</step>
+      <step nr="3">Butter in einer Pfanne schmelzen und 2–3 EL Nudelwasser zugeben.</step>
+      <step nr="4">Die Pasta in die Pfanne geben und kurz durchschwenken.</step>
+      <step nr="5">Den fein geriebenen Parmesan nach und nach unterrühren, bis eine cremige Sauce entsteht.</step>
+      <step nr="6">Mit Pfeffer abschmecken und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: ca. 15 Minuten</item>
+      <item>Vorbereitung: 5 Minuten</item>
+      <item>Kochzeit: 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Der Parmesan sollte fein gerieben sein, damit die Sauce glatt wird.</item>
+      <item>Mit Nudelwasser lässt sich die Konsistenz steuern.</item>
+      <item>Nicht zu heiß arbeiten, sonst klumpt der Käse.</item>
+    </tips>
+    <rating>8/10</rating>
+    <translation lang="pl">
+      <name>Kremowy makaron z parmezanem bez śmietany</name>
+      <persons>1 osoba</persons>
+      <category>Dania z makaronem</category>
+      <ingredients>
+        <item>120–150 g makaronu</item>
+        <item>30–40 g parmezanu</item>
+        <item>1 łyżka masła</item>
+        <item>trochę wody z gotowania makaronu</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ugotować makaron al dente w osolonej wodzie.</step>
+        <step nr="2">Zachować trochę wody z gotowania.</step>
+        <step nr="3">Roztopić masło na patelni i dodać 2–3 łyżki wody z makaronu.</step>
+        <step nr="4">Dodać makaron na patelnię i krótko wymieszać.</step>
+        <step nr="5">Stopniowo dodawać drobno starty parmezan, aż powstanie kremowy sos.</step>
+        <step nr="6">Doprawić pieprzem i od razu podawać.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: ok. 15 minut</item>
+        <item>Przygotowanie: 5 minut</item>
+        <item>Gotowanie: 10 minut</item>
+      </timing>
+      <tips>
+        <item>Parmezan powinien być drobno starty, wtedy sos będzie gładki.</item>
+        <item>Konsystencję sosu reguluje się wodą z makaronu.</item>
+        <item>Nie podgrzewaj zbyt mocno, bo ser zacznie się zbrylać.</item>
+      </tips>
+      <rating>8/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="45">
+    <name>Cordon Bleu mit Nasi Goreng</name>
+    <persons>1 Person</persons>
+    <category>Airfryer / Pfannengerichte</category>
+    <image src="images/rezeptbild_45.png" alt="Cordon Bleu mit Nasi Goreng" />
+    <ingredients>
+      <item>1 Cordon Bleu</item>
+      <item>150 g gekochter Reis</item>
+      <item>1 Ei</item>
+      <item>Gemüse nach Wahl</item>
+      <item>Sweet Chili Sauce</item>
+      <item>etwas Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Cordon Bleu nach Packungsangabe im Airfryer garen, bis es goldbraun und knusprig ist.</step>
+      <step nr="2">Währenddessen etwas Öl in einer Pfanne erhitzen.</step>
+      <step nr="3">Gekochten Reis mit Ei und Gemüse in die Pfanne geben und kräftig anbraten.</step>
+      <step nr="4">Mit Salz und Pfeffer würzen und alles gut vermengen.</step>
+      <step nr="5">Das fertige Cordon Bleu zusammen mit dem Nasi Goreng anrichten.</step>
+      <step nr="6">Mit Sweet Chili Sauce servieren.</step>
+    </preparation>
+    <timing>
+      <item>Gesamtzeit: ca. 25 Minuten</item>
+      <item>Airfryer: ca. 12–15 Minuten</item>
+      <item>Pfanne: ca. 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Am besten eignet sich bereits gekochter, abgekühlter Reis.</item>
+      <item>Das Gemüse kann je nach Vorrat variiert werden.</item>
+      <item>Sweet Chili Sauce erst beim Servieren dazugeben, damit alles knusprig bleibt.</item>
+    </tips>
+    <rating>8/10</rating>
+    <translation lang="pl">
+      <name>Cordon Bleu z nasi goreng</name>
+      <persons>1 osoba</persons>
+      <category>Airfryer / dania z patelni</category>
+      <ingredients>
+        <item>1 cordon bleu</item>
+        <item>150 g ugotowanego ryżu</item>
+        <item>1 jajko</item>
+        <item>warzywa według uznania</item>
+        <item>sos sweet chili</item>
+        <item>odrobina oleju</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować cordon bleu w AirFryerze zgodnie z instrukcją na opakowaniu, aż będzie złociste i chrupiące.</step>
+        <step nr="2">W międzyczasie rozgrzać odrobinę oleju na patelni.</step>
+        <step nr="3">Dodać ugotowany ryż, jajko i warzywa, a następnie wszystko mocno podsmażyć.</step>
+        <step nr="4">Doprawić solą i pieprzem oraz dokładnie wymieszać.</step>
+        <step nr="5">Podawać gotowe cordon bleu razem z nasi goreng.</step>
+        <step nr="6">Na końcu dodać sos sweet chili.</step>
+      </preparation>
+      <timing>
+        <item>Łączny czas: ok. 25 minut</item>
+        <item>AirFryer: ok. 12–15 minut</item>
+        <item>Patelnia: ok. 10 minut</item>
+      </timing>
+      <tips>
+        <item>Najlepiej sprawdza się wcześniej ugotowany i schłodzony ryż.</item>
+        <item>Warzywa można dobrać do tego, co akurat jest w domu.</item>
+        <item>Sos sweet chili najlepiej dodać dopiero przy podaniu, aby panierka pozostała chrupiąca.</item>
+      </tips>
+      <rating>8/10</rating>
     </translation>
   </recipe>
 </cookbook>
