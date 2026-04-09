@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html data-lang="de" lang="de">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Svens Rezeptsammlung</title>
-<meta name="description" content="Rezepte, bereits gekocht und für gut befunden."/>
+<meta content="Rezepte, bereits gekocht und für gut befunden." name="description"/>
 <style>
 :root{--bg:#fcf7f1;--panel:#ffffff;--line:#ecdccf;--text:#43220f;--muted:#8b6f5c;--accent:#c97a2b;--accent-strong:#a95d16;--pill:#f5e8da;--header:#fffdfb;--shadow:0 10px 28px rgba(95,56,24,.05)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}img{max-width:100%}
@@ -53,17 +54,17 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <header><div class="wrap"><h1><span lang-variant="de">Svens Rezeptsammlung</span><span lang-variant="pl">Zbiór przepisów Svena</span></h1><div class="subtitle"><span lang-variant="de">Erprobte Lieblingsrezepte auf einen Blick</span><span lang-variant="pl">Sprawdzone ulubione przepisy w jednym miejscu</span></div><div aria-label="Sprachauswahl" class="lang-switch"><button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button><button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button></div></div></header>
 <main class="wrap">
 <section class="hero-panel"><div class="hero-grid"><div><h2><span lang-variant="de">Willkommen in Svens Kochbuch</span><span lang-variant="pl">Witamy w książce kucharskiej Svena</span></h2><p><span lang-variant="de">Lieblingsrezepte auf einen Blick – schnell finden, filtern und direkt nachkochen.</span><span lang-variant="pl">Ulubione przepisy w jednym miejscu – szybko znajdź, filtruj i gotuj od razu.</span></p><div class="jump-links"><a href="#categoryList"><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></a><a href="#recipeSearch"><span lang-variant="de">Suche</span><span lang-variant="pl">Szukaj</span></a><a href="#recipeFeed"><span lang-variant="de">Rezeptkarten</span><span lang-variant="pl">Karty przepisów</span></a><a href="#toc"><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></a></div></div></div></section>
-<section class="top-search-bar" aria-labelledby="topSearchHeading"><div class="top-search-row"><div class="top-search-copy"><strong id="topSearchHeading"><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></strong><span><span lang-variant="de">Suche nach Rezeptnamen und springe direkt zum passenden Eintrag.</span><span lang-variant="pl">Wyszukaj nazwę przepisu i przejdź od razu do właściwego wpisu.</span></span></div><div class="search-box"><input aria-label="Rezept suchen" class="search-input" id="recipeSearch" placeholder="Rezept suchen…" type="search"/></div></div></section>
+<section aria-labelledby="topSearchHeading" class="top-search-bar"><div class="top-search-row"><div class="top-search-copy"><strong id="topSearchHeading"><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></strong><span><span lang-variant="de">Suche nach Rezeptnamen und springe direkt zum passenden Eintrag.</span><span lang-variant="pl">Wyszukaj nazwę przepisu i przejdź od razu do właściwego wpisu.</span></span></div><div class="search-box"><input aria-label="Rezept suchen" class="search-input" id="recipeSearch" placeholder="Rezept suchen…" type="search"/></div></div></section>
 <div class="mobile-toolbar"><button class="small-btn" id="toggleCategories" type="button"><span lang-variant="de">Kategorien anzeigen</span><span lang-variant="pl">Pokaż kategorie</span></button><button class="small-btn" id="jumpToToc" type="button"><span lang-variant="de">Zum Inhaltsverzeichnis</span><span lang-variant="pl">Do spisu treści</span></button></div><div class="site-layout">
-<aside class="category-sidebar" id="categorySidebar"><h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2><p class="category-sidebar-intro"><span lang-variant="de">Alle Rezepte übersichtlich nach Themen sortiert – vom Ofengericht bis zum Airfryer.</span><span lang-variant="pl">Wszystkie przepisy uporządkowane tematycznie – od dań z piekarnika po Airfryera.</span></p><p class="small"><span lang-variant="de">Wähle eine Kategorie und lass dir passende Rezepte anzeigen.</span><span lang-variant="pl">Wybierz kategorię i wyświetl pasujące przepisy.</span></p><div class="category-list" id="categoryList"><button class="category-btn active" data-category="all" type="button"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span><span class="count">81</span></button>
+<aside class="category-sidebar" id="categorySidebar"><h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2><p class="category-sidebar-intro"><span lang-variant="de">Alle Rezepte übersichtlich nach Themen sortiert – vom Ofengericht bis zum Airfryer.</span><span lang-variant="pl">Wszystkie przepisy uporządkowane tematycznie – od dań z piekarnika po Airfryera.</span></p><p class="small"><span lang-variant="de">Wähle eine Kategorie und lass dir passende Rezepte anzeigen.</span><span lang-variant="pl">Wybierz kategorię i wyświetl pasujące przepisy.</span></p><div class="category-list" id="categoryList"><button class="category-btn active" data-category="all" type="button"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span><span class="count">87</span></button>
 <button class="category-btn" data-category="ofengerichte" type="button"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span><span class="count">16</span></button>
 <button class="category-btn" data-category="pfannengerichte" type="button"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span><span class="count">13</span></button>
 <button class="category-btn" data-category="grill-bbq" type="button"><span lang-variant="de">Grill &amp; BBQ</span><span lang-variant="pl">Grill &amp; BBQ</span><span class="count">18</span></button>
 <button class="category-btn" data-category="airfryer" type="button"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span><span class="count">3</span></button>
-<button class="category-btn" data-category="beilagen" type="button"><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span><span class="count">3</span></button>
+<button class="category-btn" data-category="beilagen" type="button"><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span><span class="count">6</span></button>
 <button class="category-btn" data-category="suppen" type="button"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span><span class="count">6</span></button>
 <button class="category-btn" data-category="eiergerichte" type="button"><span lang-variant="de">Eiergerichte</span><span lang-variant="pl">Dania z jajek</span><span class="count">2</span></button>
-<button class="category-btn" data-category="fisch-meeresfruchte" type="button"><span lang-variant="de">Fisch &amp; Meeresfrüchte</span><span lang-variant="pl">Ryby i owoce morza</span><span class="count">3</span></button>
+<button class="category-btn" data-category="fisch-meeresfruchte" type="button"><span lang-variant="de">Fisch &amp; Meeresfrüchte</span><span lang-variant="pl">Ryby i owoce morza</span><span class="count">6</span></button>
 <button class="category-btn" data-category="nudelgerichte" type="button"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Dania makaronowe</span><span class="count">2</span></button>
 <button class="category-btn" data-category="wraps-burritos" type="button"><span lang-variant="de">Wraps &amp; Burritos</span><span lang-variant="pl">Wrapy i burrito</span><span class="count">1</span></button>
 <button class="category-btn" data-category="grundlagen" type="button"><span lang-variant="de">Grundlagen</span><span lang-variant="pl">Podstawy</span><span class="count">1</span></button>
@@ -80,25 +81,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / dania świąteczne</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -125,25 +124,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / dania świąteczne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -170,25 +167,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Fisch &amp; Meeresfrüchte / Pfannengerichte</span><span lang-variant="pl">Ryby i owoce morza / dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -215,25 +210,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Ofengerichte</span><span lang-variant="pl">Dania z patelni / dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -260,25 +253,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -305,25 +296,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Beilagen / Grill &amp; BBQ</span><span lang-variant="pl">Dodatki / grill &amp; BBQ</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen als Vorspeise oder Beilage</span><span lang-variant="pl">3–4 osoby jako przystawka lub dodatek</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -350,25 +339,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z patelni / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -395,25 +382,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Eiergerichte</span><span lang-variant="pl">Dania z patelni / dania jajeczne</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -440,25 +425,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Hähnchengerichte</span><span lang-variant="pl">Dania z patelni / dania z kurczaka</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -485,25 +468,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z piekarnika / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -530,25 +511,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z piekarnika / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -575,25 +554,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z patelni / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -620,25 +597,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Hähnchengerichte</span><span lang-variant="pl">Dania z patelni / dania z kurczaka</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -665,25 +640,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Hähnchengerichte</span><span lang-variant="pl">Dania z piekarnika / dania z kurczaka</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -710,25 +683,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Hähnchengerichte</span><span lang-variant="pl">Dania z piekarnika / dania z kurczaka</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -755,25 +726,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Beilagen</span><span lang-variant="pl">Dania z piekarnika / dodatki</span></span>
 <span class="tag"><span lang-variant="de">3 Personen</span><span lang-variant="pl">3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -800,25 +769,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / dania świąteczne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -845,25 +812,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Suppen / Hausmannskost</span><span lang-variant="pl">Zupy / kuchnia domowa</span></span>
 <span class="tag"><span lang-variant="de">4–6 Personen</span><span lang-variant="pl">4–6 osób</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -890,25 +855,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grundlagen / Polnische Küche</span><span lang-variant="pl">Podstawy / kuchnia polska</span></span>
 <span class="tag"><span lang-variant="de">Ansatz für mehrere Portionen Żurek</span><span lang-variant="pl">Porcja bazowa na kilka garnków żurku</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -935,25 +898,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Hausmannskost</span><span lang-variant="pl">Dania z patelni / kuchnia domowa</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -980,25 +941,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Gebäck &amp; Süßes / Polnische Küche</span><span lang-variant="pl">Wypieki i słodkie / kuchnia polska</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1025,25 +984,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Suppen / Kalte Suppen</span><span lang-variant="pl">Zupy / chłodniki</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1070,25 +1027,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Teiggerichte / Polnische Küche</span><span lang-variant="pl">Dania z ciasta / kuchnia polska</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1115,25 +1070,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Hausmannskost</span><span lang-variant="pl">Dania z patelni / kuchnia domowa</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1160,25 +1113,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Fisch &amp; Meeresfrüchte / Salate</span><span lang-variant="pl">Ryby i owoce morza / sałatki</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1205,25 +1156,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Fisch &amp; Meeresfrüchte / Polnische Küche</span><span lang-variant="pl">Ryby i owoce morza / kuchnia polska</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1250,25 +1199,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z patelni / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1295,25 +1242,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z piekarnika / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">6 Personen</span><span lang-variant="pl">6 osób</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1340,25 +1285,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Geflügelgerichte</span><span lang-variant="pl">Dania z patelni / dania drobiowe</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1385,25 +1328,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / dania świąteczne</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1430,25 +1371,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Suppen / Polnische Küche</span><span lang-variant="pl">Zupy / kuchnia polska</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1475,25 +1414,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Suppen / Hausmannskost</span><span lang-variant="pl">Zupy / kuchnia domowa</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1520,25 +1457,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Saucen / Polnische Küche</span><span lang-variant="pl">Sosy / kuchnia polska</span></span>
 <span class="tag"><span lang-variant="de">Für mehrere Portionen</span><span lang-variant="pl">Na kilka porcji</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1565,25 +1500,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Suppen / Polnische Küche</span><span lang-variant="pl">Zupy / kuchnia polska</span></span>
 <span class="tag"><span lang-variant="de">ca. 2 Liter Suppe</span><span lang-variant="pl">około 2 litry zupy</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1610,25 +1543,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">2 Personen</span><span lang-variant="pl">2 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1655,25 +1586,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1700,25 +1629,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1745,25 +1672,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / dania świąteczne</span></span>
 <span class="tag"><span lang-variant="de">6 Personen</span><span lang-variant="pl">6 osób</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1790,25 +1715,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">2 Personen</span><span lang-variant="pl">2 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1835,25 +1758,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></span>
 <span class="tag"><span lang-variant="de">2 Personen</span><span lang-variant="pl">2 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1880,25 +1801,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Wraps &amp; Burritos</span><span lang-variant="pl">Wrapy i burrito</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1925,25 +1844,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Dania z makaronem</span></span>
 <span class="tag"><span lang-variant="de">1 Person</span><span lang-variant="pl">1 osoba</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -1970,25 +1887,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">1 Person</span><span lang-variant="pl">1 osoba</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2015,25 +1930,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Dania z makaronem</span></span>
 <span class="tag"><span lang-variant="de">1 Person</span><span lang-variant="pl">1 osoba</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2060,25 +1973,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Airfryer / Pfannengerichte</span><span lang-variant="pl">Airfryer / dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">1 Person</span><span lang-variant="pl">1 osoba</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2105,25 +2016,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / BBQ</span><span lang-variant="pl">Dania z patelni / BBQ</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2150,25 +2059,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Ninja Slushi</span><span lang-variant="pl">Koktajle / Ninja Slushi</span></span>
 <span class="tag"><span lang-variant="de">2–3 Gläser</span><span lang-variant="pl">2–3 szklanki</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2195,25 +2102,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Ninja Slushi</span><span lang-variant="pl">Koktajle / Ninja Slushi</span></span>
 <span class="tag"><span lang-variant="de">2–3 Gläser</span><span lang-variant="pl">2–3 szklanki</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2240,25 +2145,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Ninja Slushi</span><span lang-variant="pl">Koktajle / Ninja Slushi</span></span>
 <span class="tag"><span lang-variant="de">2 Gläser</span><span lang-variant="pl">2 szklanki</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2285,25 +2188,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Ninja Slushi</span><span lang-variant="pl">Koktajle / Ninja Slushi</span></span>
 <span class="tag"><span lang-variant="de">2–3 Gläser</span><span lang-variant="pl">2–3 szklanki</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2330,25 +2231,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Ninja Slushi</span><span lang-variant="pl">Koktajle / Ninja Slushi</span></span>
 <span class="tag"><span lang-variant="de">2–3 Gläser</span><span lang-variant="pl">2–3 szklanki</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2375,25 +2274,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Eiergerichte / Hausmannskost</span><span lang-variant="pl">Dania jajeczne / kuchnia domowa</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2420,25 +2317,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2465,25 +2360,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2510,25 +2403,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2555,25 +2446,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2600,25 +2489,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2645,25 +2532,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2690,25 +2575,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2735,25 +2618,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Beilagen / Salate</span><span lang-variant="pl">Dodatki / sałatki</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2780,25 +2661,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Eiergerichte / Pfannengerichte</span><span lang-variant="pl">Dania z jajek / dania z patelni</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2825,25 +2704,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Ofengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z piekarnika / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2870,25 +2747,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Pfannengerichte / Gemüsegerichte</span><span lang-variant="pl">Dania z patelni / dania warzywne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2915,25 +2790,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -2960,25 +2833,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Beilagen / Grill &amp; BBQ</span><span lang-variant="pl">Dodatki / Grill &amp; BBQ</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3005,25 +2876,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Vegetarisch</span><span lang-variant="pl">Grill &amp; BBQ / danie wegetariańskie</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3050,25 +2919,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3095,25 +2962,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3140,25 +3005,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3185,25 +3048,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Beilagen</span><span lang-variant="pl">Grill &amp; BBQ / dodatki</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3230,25 +3091,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Dessert</span><span lang-variant="pl">Grill &amp; BBQ / deser</span></span>
 <span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3275,25 +3134,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Sommergetränke</span><span lang-variant="pl">Koktajle / napoje letnie</span></span>
 <span class="tag"><span lang-variant="de">4 Gläser</span><span lang-variant="pl">4 szklanki</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3320,25 +3177,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Sommergetränke</span><span lang-variant="pl">Koktajle / napoje letnie</span></span>
 <span class="tag"><span lang-variant="de">4 Gläser</span><span lang-variant="pl">4 szklanki</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3365,25 +3220,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Sommergetränke</span><span lang-variant="pl">Koktajle / napoje letnie</span></span>
 <span class="tag"><span lang-variant="de">1 Glas</span><span lang-variant="pl">1 kieliszek</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3410,25 +3263,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Sommergetränke</span><span lang-variant="pl">Koktajle / napoje letnie</span></span>
 <span class="tag"><span lang-variant="de">1 Glas</span><span lang-variant="pl">1 szklanka</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3455,25 +3306,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Cocktails / Sommergetränke</span><span lang-variant="pl">Koktajle / napoje letnie</span></span>
 <span class="tag"><span lang-variant="de">1 Glas</span><span lang-variant="pl">1 szklanka</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3500,25 +3349,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3545,25 +3392,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3590,25 +3435,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Grill &amp; BBQ / Spargel &amp; Saisonküche</span><span lang-variant="pl">Grill &amp; BBQ / szparagi i kuchnia sezonowa</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3635,25 +3478,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Airfryer / Spargel &amp; Saisonküche</span><span lang-variant="pl">Airfryer / szparagi i kuchnia sezonowa</span></span>
 <span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3680,25 +3521,23 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <span class="tag"><span lang-variant="de">Suppen / Eintöpfe</span><span lang-variant="pl">Zupy / gulasze</span></span>
 <span class="tag"><span lang-variant="de">4 Personen</span><span lang-variant="pl">4 osoby</span></span>
 </div>
-
 <div class="recipe-actions">
 <button class="recipe-action-btn wa-share-btn" type="button">
-<span class="icon" aria-hidden="true">🟢</span>
+<span aria-hidden="true" class="icon">🟢</span>
 <span lang-variant="de">Mit WhatsApp teilen</span>
 <span lang-variant="pl">Udostępnij przez WhatsApp</span>
 </button>
 <button class="recipe-action-btn print-recipe-btn" type="button">
-<span class="icon" aria-hidden="true">🖨️</span>
+<span aria-hidden="true" class="icon">🖨️</span>
 <span lang-variant="de">Rezept drucken</span>
 <span lang-variant="pl">Drukuj przepis</span>
 </button>
 <button class="recipe-action-btn copy-link-btn" type="button">
-<span class="icon" aria-hidden="true">🔗</span>
+<span aria-hidden="true" class="icon">🔗</span>
 <span lang-variant="de">Link kopieren</span>
 <span lang-variant="pl">Kopiuj link</span>
 </button>
 </div>
-
 <div class="grid-2">
 <div>
 <h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3>
@@ -3717,7 +3556,7 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <p><span lang-variant="de">9,0 / 10 – würzig, cremig und mal etwas anderes als ein klassischer Gemüseeintopf.</span><span lang-variant="pl">9,0 / 10 – aromatyczny, kremowy i przyjemnie inny niż klasyczny gulasz warzywny.</span></p>
 </div>
 <div class="recipe-image"><img alt="Afrikanischer Erdnusseintopf" loading="lazy" src="images/rezeptbild_81.png"/></div>
-</section></div>
+</section><section class="recipe" data-category="fisch-meeresfruchte" data-title="82. garnelen in weißwein-tomaten-feta-sauce aus dem ofen krewetki zapiekane w sosie pomidorowo-winno-fetowym fisch &amp; meeresfrüchte / ofengerichte ryby i owoce morza / dania z piekarnika" id="rezept-82"><div><h2><span lang-variant="de">82. Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen</span><span lang-variant="pl">82. Krewetki zapiekane w sosie pomidorowo-winno-fetowym</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Fisch &amp; Meeresfrüchte / Ofengerichte</span><span lang-variant="pl">Ryby i owoce morza / dania z piekarnika</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="recipe-actions"><button class="recipe-action-btn wa-share-btn" type="button"><span aria-hidden="true" class="icon">🟢</span><span lang-variant="de">Mit WhatsApp teilen</span><span lang-variant="pl">Udostępnij przez WhatsApp</span></button><button class="recipe-action-btn print-recipe-btn" type="button"><span aria-hidden="true" class="icon">🖨️</span><span lang-variant="de">Rezept drucken</span><span lang-variant="pl">Drukuj przepis</span></button><button class="recipe-action-btn copy-link-btn" type="button"><span aria-hidden="true" class="icon">🔗</span><span lang-variant="de">Link kopieren</span><span lang-variant="pl">Kopiuj link</span></button></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">400 g Garnelen, roh und geschält</span><span lang-variant="pl">400 g krewetek, surowych i obranych</span></li><li><span lang-variant="de">1 kleine Zwiebel</span><span lang-variant="pl">1 mała cebula</span></li><li><span lang-variant="de">2 Knoblauchzehen</span><span lang-variant="pl">2 ząbki czosnku</span></li><li><span lang-variant="de">2 EL Olivenöl</span><span lang-variant="pl">2 łyżki oliwy z oliwek</span></li><li><span lang-variant="de">100 ml Weißwein</span><span lang-variant="pl">100 ml białego wina</span></li><li><span lang-variant="de">300 ml passierte Tomaten</span><span lang-variant="pl">300 ml passaty pomidorowej</span></li><li><span lang-variant="de">150 g Feta</span><span lang-variant="pl">150 g sera feta</span></li><li><span lang-variant="de">1 TL Oregano</span><span lang-variant="pl">1 łyżeczka oregano</span></li><li><span lang-variant="de">1 Prise Chili oder Chiliflocken, optional</span><span lang-variant="pl">1 szczypta chili lub płatków chili, opcjonalnie</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: etwas Petersilie zum Servieren</span><span lang-variant="pl">opcjonalnie: trochę pietruszki do podania</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 10 Minuten</span><span lang-variant="pl">przygotowanie: ok. 10 min</span></li><li><span lang-variant="de">Backzeit: 15–20 Minuten</span><span lang-variant="pl">pieczenie: 15–20 min</span></li><li><span lang-variant="de">Gesamt: ca. 30 Minuten</span><span lang-variant="pl">łącznie: ok. 30 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Nicht zu lange backen, sonst werden die Garnelen trocken.</span><span lang-variant="pl">Nie piec zbyt długo, bo krewetki zrobią się suche.</span></li><li><span lang-variant="de">Sehr gut mit Baguette, Ciabatta oder Reis.</span><span lang-variant="pl">Bardzo dobrze pasuje bagietka, ciabatta albo ryż.</span></li><li><span lang-variant="de">Wenn die Sauce kräftiger sein soll, den Weißwein vor dem Tomatenzuguss etwas stärker reduzieren.</span><span lang-variant="pl">Jeśli sos ma być bardziej intensywny, odparuj wino trochę mocniej przed dodaniem pomidorów.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Backofen auf 180 °C Ober-/Unterhitze vorheizen.</span><span lang-variant="pl">Piekarnik nagrzać do 180 °C, góra/dół.</span></li><li><span lang-variant="de">Zwiebel und Knoblauch fein schneiden.</span><span lang-variant="pl">Cebulę i czosnek drobno posiekać.</span></li><li><span lang-variant="de">Olivenöl in einer Pfanne erhitzen und Zwiebel sowie Knoblauch kurz glasig anschwitzen.</span><span lang-variant="pl">Rozgrzać oliwę na patelni i krótko zeszklić cebulę oraz czosnek.</span></li><li><span lang-variant="de">Mit Weißwein ablöschen und 1 bis 2 Minuten einkochen lassen.</span><span lang-variant="pl">Podlać białym winem i gotować 1 do 2 minut, aż lekko odparuje.</span></li><li><span lang-variant="de">Passierte Tomaten, Oregano und nach Wunsch etwas Chili zugeben und die Sauce mit Salz und Pfeffer abschmecken.</span><span lang-variant="pl">Dodać passatę pomidorową, oregano i opcjonalnie trochę chili, a następnie doprawić sos solą oraz pieprzem.</span></li><li><span lang-variant="de">Garnelen in eine kleine Auflaufform legen und die Sauce darübergeben.</span><span lang-variant="pl">Ułożyć krewetki w małym naczyniu do zapiekania i zalać sosem.</span></li><li><span lang-variant="de">Feta darüberkrümeln.</span><span lang-variant="pl">Na wierzchu pokruszyć fetę.</span></li><li><span lang-variant="de">Im Ofen etwa 15 bis 20 Minuten backen, bis die Garnelen gar und der Feta leicht gebräunt sind.</span><span lang-variant="pl">Piec około 15 do 20 minut, aż krewetki będą gotowe, a feta lekko się zrumieni.</span></li><li><span lang-variant="de">Nach Wunsch mit etwas Petersilie bestreuen und direkt servieren.</span><span lang-variant="pl">W razie potrzeby posypać pietruszką i od razu podawać.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9/10 – schnell, würzig und ideal, wenn etwas Ofengericht mit Garnelen gewünscht ist.</span><span lang-variant="pl">9/10 – szybkie, aromatyczne i idealne, gdy masz ochotę na pieczone krewetki.</span></p></div><div class="recipe-image"><img alt="Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen" loading="lazy" src="images/rezeptbild_82.png"/></div></section><section class="recipe" data-category="fisch-meeresfruchte" data-title="83. knoblauch-chili-garnelen aus der pfanne krewetki z patelni z czosnkiem i chili fisch &amp; meeresfrüchte / pfannengerichte ryby i owoce morza / dania z patelni" id="rezept-83"><div><h2><span lang-variant="de">83. Knoblauch-Chili-Garnelen aus der Pfanne</span><span lang-variant="pl">83. Krewetki z patelni z czosnkiem i chili</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Fisch &amp; Meeresfrüchte / Pfannengerichte</span><span lang-variant="pl">Ryby i owoce morza / dania z patelni</span></span><span class="tag"><span lang-variant="de">2 Personen</span><span lang-variant="pl">2 osoby</span></span></div><div class="recipe-actions"><button class="recipe-action-btn wa-share-btn" type="button"><span aria-hidden="true" class="icon">🟢</span><span lang-variant="de">Mit WhatsApp teilen</span><span lang-variant="pl">Udostępnij przez WhatsApp</span></button><button class="recipe-action-btn print-recipe-btn" type="button"><span aria-hidden="true" class="icon">🖨️</span><span lang-variant="de">Rezept drucken</span><span lang-variant="pl">Drukuj przepis</span></button><button class="recipe-action-btn copy-link-btn" type="button"><span aria-hidden="true" class="icon">🔗</span><span lang-variant="de">Link kopieren</span><span lang-variant="pl">Kopiuj link</span></button></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">400 g Garnelen, roh und geschält</span><span lang-variant="pl">400 g krewetek, surowych i obranych</span></li><li><span lang-variant="de">3 Knoblauchzehen</span><span lang-variant="pl">3 ząbki czosnku</span></li><li><span lang-variant="de">1 kleine rote Chili oder Chiliflocken nach Geschmack</span><span lang-variant="pl">1 mała czerwona chili lub płatki chili do smaku</span></li><li><span lang-variant="de">1 EL Olivenöl</span><span lang-variant="pl">1 łyżka oliwy z oliwek</span></li><li><span lang-variant="de">1 EL Butter</span><span lang-variant="pl">1 łyżka masła</span></li><li><span lang-variant="de">1/2 Zitrone</span><span lang-variant="pl">1/2 cytryny</span></li><li><span lang-variant="de">2 EL gehackte Petersilie</span><span lang-variant="pl">2 łyżki posiekanej pietruszki</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: etwas Baguette zum Servieren</span><span lang-variant="pl">opcjonalnie: trochę bagietki do podania</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 10 Minuten</span><span lang-variant="pl">przygotowanie: ok. 10 min</span></li><li><span lang-variant="de">Bratzeit: ca. 6 Minuten</span><span lang-variant="pl">smażenie: ok. 6 min</span></li><li><span lang-variant="de">Gesamt: ca. 15 Minuten</span><span lang-variant="pl">łącznie: ok. 15 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Die Pfanne gut vorheizen, damit die Garnelen schnell Farbe bekommen.</span><span lang-variant="pl">Dobrze rozgrzej patelnię, aby krewetki szybko nabrały koloru.</span></li><li><span lang-variant="de">Erst ganz am Ende salzen, dann verlieren die Garnelen weniger Saft.</span><span lang-variant="pl">Sól dodaj dopiero pod koniec, wtedy krewetki stracą mniej soku.</span></li><li><span lang-variant="de">Auch als Vorspeise für zwei oder als kleines Hauptgericht mit Brot sehr gut.</span><span lang-variant="pl">Świetne także jako przystawka dla dwóch osób albo małe danie główne z pieczywem.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Knoblauch fein hacken und Chili in kleine Ringe schneiden.</span><span lang-variant="pl">Drobno posiekać czosnek, a chili pokroić w cienkie plasterki.</span></li><li><span lang-variant="de">Olivenöl und Butter in einer großen Pfanne erhitzen.</span><span lang-variant="pl">Rozgrzać oliwę i masło na dużej patelni.</span></li><li><span lang-variant="de">Knoblauch und Chili kurz anschwitzen, ohne sie dunkel werden zu lassen.</span><span lang-variant="pl">Krótko podsmażyć czosnek oraz chili, ale nie dopuścić do zbrązowienia.</span></li><li><span lang-variant="de">Garnelen zugeben und bei starker Hitze 2 bis 3 Minuten pro Seite braten.</span><span lang-variant="pl">Dodać krewetki i smażyć na dużym ogniu po 2 do 3 minut z każdej strony.</span></li><li><span lang-variant="de">Mit Salz und Pfeffer würzen.</span><span lang-variant="pl">Doprawić solą i pieprzem.</span></li><li><span lang-variant="de">Zum Schluss Zitronensaft und Petersilie unterheben.</span><span lang-variant="pl">Na końcu dodać sok z cytryny oraz pietruszkę.</span></li><li><span lang-variant="de">Direkt heiß servieren, am besten mit Brot zum Auftunken.</span><span lang-variant="pl">Podawać od razu na gorąco, najlepiej z pieczywem do maczania.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">8,8/10 – einfach, schnell und immer gut, wenn es unkompliziert sein soll.</span><span lang-variant="pl">8,8/10 – proste, szybkie i zawsze dobre, gdy ma być bez komplikacji.</span></p></div><div class="recipe-image"><img alt="Knoblauch-Chili-Garnelen aus der Pfanne" loading="lazy" src="images/rezeptbild_83.png"/></div></section><section class="recipe" data-category="fisch-meeresfruchte" data-title="84. garnelen in cremiger paprika-sahne-sauce krewetki w kremowym sosie paprykowo-śmietanowym fisch &amp; meeresfrüchte / pfannengerichte ryby i owoce morza / dania z patelni" id="rezept-84"><div><h2><span lang-variant="de">84. Garnelen in cremiger Paprika-Sahne-Sauce</span><span lang-variant="pl">84. Krewetki w kremowym sosie paprykowo-śmietanowym</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Fisch &amp; Meeresfrüchte / Pfannengerichte</span><span lang-variant="pl">Ryby i owoce morza / dania z patelni</span></span><span class="tag"><span lang-variant="de">2–3 Personen</span><span lang-variant="pl">2–3 osoby</span></span></div><div class="recipe-actions"><button class="recipe-action-btn wa-share-btn" type="button"><span aria-hidden="true" class="icon">🟢</span><span lang-variant="de">Mit WhatsApp teilen</span><span lang-variant="pl">Udostępnij przez WhatsApp</span></button><button class="recipe-action-btn print-recipe-btn" type="button"><span aria-hidden="true" class="icon">🖨️</span><span lang-variant="de">Rezept drucken</span><span lang-variant="pl">Drukuj przepis</span></button><button class="recipe-action-btn copy-link-btn" type="button"><span aria-hidden="true" class="icon">🔗</span><span lang-variant="de">Link kopieren</span><span lang-variant="pl">Kopiuj link</span></button></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">400 g Garnelen, roh und geschält</span><span lang-variant="pl">400 g krewetek, surowych i obranych</span></li><li><span lang-variant="de">1 rote Paprika</span><span lang-variant="pl">1 czerwona papryka</span></li><li><span lang-variant="de">1 kleine Zwiebel</span><span lang-variant="pl">1 mała cebula</span></li><li><span lang-variant="de">2 Knoblauchzehen</span><span lang-variant="pl">2 ząbki czosnku</span></li><li><span lang-variant="de">1 EL Olivenöl</span><span lang-variant="pl">1 łyżka oliwy z oliwek</span></li><li><span lang-variant="de">50 ml Weißwein</span><span lang-variant="pl">50 ml białego wina</span></li><li><span lang-variant="de">200 ml Sahne</span><span lang-variant="pl">200 ml śmietanki</span></li><li><span lang-variant="de">1 TL Paprikapulver edelsüß</span><span lang-variant="pl">1 łyżeczka słodkiej papryki w proszku</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: etwas Zitronensaft</span><span lang-variant="pl">opcjonalnie: trochę soku z cytryny</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 15 Minuten</span><span lang-variant="pl">przygotowanie: ok. 15 min</span></li><li><span lang-variant="de">Pfanne: ca. 15 Minuten</span><span lang-variant="pl">patelnia: ok. 15 min</span></li><li><span lang-variant="de">Gesamt: ca. 30 Minuten</span><span lang-variant="pl">łącznie: ok. 30 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Die Garnelen erst zum Schluss in die Sauce geben.</span><span lang-variant="pl">Krewetki dodawaj do sosu dopiero na końcu.</span></li><li><span lang-variant="de">Dazu passen Reis, Bandnudeln oder Baguette.</span><span lang-variant="pl">Pasuje do tego ryż, szeroki makaron albo bagietka.</span></li><li><span lang-variant="de">Für mehr Farbe kann noch etwas frische Petersilie darübergegeben werden.</span><span lang-variant="pl">Dla lepszego wyglądu można dodać na wierzch trochę świeżej pietruszki.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Paprika klein würfeln, Zwiebel und Knoblauch fein schneiden.</span><span lang-variant="pl">Paprykę pokroić w małą kostkę, cebulę i czosnek drobno posiekać.</span></li><li><span lang-variant="de">Olivenöl in einer Pfanne erhitzen und Zwiebel, Knoblauch sowie Paprika 4 bis 5 Minuten anschwitzen.</span><span lang-variant="pl">Rozgrzać oliwę na patelni i dusić cebulę, czosnek oraz paprykę przez 4 do 5 minut.</span></li><li><span lang-variant="de">Mit Weißwein ablöschen und kurz einkochen lassen.</span><span lang-variant="pl">Podlać białym winem i chwilę odparować.</span></li><li><span lang-variant="de">Sahne und Paprikapulver zugeben und die Sauce leicht cremig einkochen.</span><span lang-variant="pl">Dodać śmietankę oraz słodką paprykę i gotować, aż sos lekko zgęstnieje.</span></li><li><span lang-variant="de">Mit Salz und Pfeffer abschmecken.</span><span lang-variant="pl">Doprawić solą i pieprzem.</span></li><li><span lang-variant="de">Garnelen in die Sauce geben und je nach Größe 4 bis 5 Minuten gar ziehen lassen.</span><span lang-variant="pl">Włożyć krewetki do sosu i gotować 4 do 5 minut, aż będą gotowe.</span></li><li><span lang-variant="de">Nach Wunsch mit ein paar Tropfen Zitronensaft abrunden und servieren.</span><span lang-variant="pl">Opcjonalnie dodać kilka kropel soku z cytryny i podawać.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">8,9/10 – cremig, alltagstauglich und ein schönes Garnelengericht für abends.</span><span lang-variant="pl">8,9/10 – kremowe, codzienne i bardzo przyjemne danie z krewetkami na wieczór.</span></p></div><div class="recipe-image"><img alt="Garnelen in cremiger Paprika-Sahne-Sauce" loading="lazy" src="images/rezeptbild_84.png"/></div></section><section class="recipe" data-category="beilagen" data-title="85. klassischer kartoffelstampf klasyczne tłuczone ziemniaki beilagen / kartoffeln dodatki / ziemniaki" id="rezept-85"><div><h2><span lang-variant="de">85. Klassischer Kartoffelstampf</span><span lang-variant="pl">85. Klasyczne tłuczone ziemniaki</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Beilagen / Kartoffeln</span><span lang-variant="pl">Dodatki / ziemniaki</span></span><span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span></div><div class="recipe-actions"><button class="recipe-action-btn wa-share-btn" type="button"><span aria-hidden="true" class="icon">🟢</span><span lang-variant="de">Mit WhatsApp teilen</span><span lang-variant="pl">Udostępnij przez WhatsApp</span></button><button class="recipe-action-btn print-recipe-btn" type="button"><span aria-hidden="true" class="icon">🖨️</span><span lang-variant="de">Rezept drucken</span><span lang-variant="pl">Drukuj przepis</span></button><button class="recipe-action-btn copy-link-btn" type="button"><span aria-hidden="true" class="icon">🔗</span><span lang-variant="de">Link kopieren</span><span lang-variant="pl">Kopiuj link</span></button></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">1 kg mehligkochende Kartoffeln</span><span lang-variant="pl">1 kg mączystych ziemniaków</span></li><li><span lang-variant="de">50 g Butter</span><span lang-variant="pl">50 g masła</span></li><li><span lang-variant="de">120–150 ml warme Milch</span><span lang-variant="pl">120–150 ml ciepłego mleka</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">frisch geriebene Muskatnuss nach Geschmack</span><span lang-variant="pl">świeżo starta gałka muszkatołowa do smaku</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 10 Minuten</span><span lang-variant="pl">przygotowanie: ok. 10 min</span></li><li><span lang-variant="de">Kochzeit: ca. 20 Minuten</span><span lang-variant="pl">gotowanie: ok. 20 min</span></li><li><span lang-variant="de">Gesamt: ca. 30 Minuten</span><span lang-variant="pl">łącznie: ok. 30 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Nicht pürieren, sondern wirklich stampfen, damit die rustikale Konsistenz bleibt.</span><span lang-variant="pl">Nie miksować, tylko tłuc, aby zachować rustykalną konsystencję.</span></li><li><span lang-variant="de">Warme Milch verwenden, dann wird der Stampf besonders locker.</span><span lang-variant="pl">Użyj ciepłego mleka, wtedy puree będzie bardziej puszyste.</span></li><li><span lang-variant="de">Passt zu Braten, Kohlrouladen und Schmorgerichten.</span><span lang-variant="pl">Pasuje do pieczeni, gołąbków i dań duszonych.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Kartoffeln schälen, in Stücke schneiden und in Salzwasser weich kochen.</span><span lang-variant="pl">Ziemniaki obrać, pokroić na kawałki i ugotować w osolonej wodzie do miękkości.</span></li><li><span lang-variant="de">Kartoffeln abgießen und kurz ausdampfen lassen.</span><span lang-variant="pl">Odcedzić ziemniaki i chwilę odparować.</span></li><li><span lang-variant="de">Butter zugeben und die Kartoffeln grob stampfen.</span><span lang-variant="pl">Dodać masło i zgrubnie utłuc ziemniaki.</span></li><li><span lang-variant="de">Nach und nach die warme Milch einarbeiten, bis die gewünschte Konsistenz erreicht ist.</span><span lang-variant="pl">Stopniowo dolewać ciepłe mleko, aż do uzyskania odpowiedniej konsystencji.</span></li><li><span lang-variant="de">Mit Salz und etwas Muskat abschmecken und sofort servieren.</span><span lang-variant="pl">Doprawić solą oraz odrobiną gałki muszkatołowej i od razu podawać.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9/10 – einfacher Klassiker, der immer funktioniert.</span><span lang-variant="pl">9/10 – prosty klasyk, który zawsze się sprawdza.</span></p></div><div class="recipe-image"><img alt="Klassischer Kartoffelstampf" loading="lazy" src="images/rezeptbild_85.png"/></div></section><section class="recipe" data-category="beilagen" data-title="86. kartoffelstampf mit dill tłuczone ziemniaki z koperkiem beilagen / kartoffeln dodatki / ziemniaki" id="rezept-86"><div><h2><span lang-variant="de">86. Kartoffelstampf mit Dill</span><span lang-variant="pl">86. Tłuczone ziemniaki z koperkiem</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Beilagen / Kartoffeln</span><span lang-variant="pl">Dodatki / ziemniaki</span></span><span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span></div><div class="recipe-actions"><button class="recipe-action-btn wa-share-btn" type="button"><span aria-hidden="true" class="icon">🟢</span><span lang-variant="de">Mit WhatsApp teilen</span><span lang-variant="pl">Udostępnij przez WhatsApp</span></button><button class="recipe-action-btn print-recipe-btn" type="button"><span aria-hidden="true" class="icon">🖨️</span><span lang-variant="de">Rezept drucken</span><span lang-variant="pl">Drukuj przepis</span></button><button class="recipe-action-btn copy-link-btn" type="button"><span aria-hidden="true" class="icon">🔗</span><span lang-variant="de">Link kopieren</span><span lang-variant="pl">Kopiuj link</span></button></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">1 kg mehligkochende Kartoffeln</span><span lang-variant="pl">1 kg mączystych ziemniaków</span></li><li><span lang-variant="de">50 g Butter</span><span lang-variant="pl">50 g masła</span></li><li><span lang-variant="de">120–150 ml warme Milch</span><span lang-variant="pl">120–150 ml ciepłego mleka</span></li><li><span lang-variant="de">2–3 EL frischer Dill, fein gehackt</span><span lang-variant="pl">2–3 łyżki świeżego koperku, drobno posiekanego</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 10 Minuten</span><span lang-variant="pl">przygotowanie: ok. 10 min</span></li><li><span lang-variant="de">Kochzeit: ca. 20 Minuten</span><span lang-variant="pl">gotowanie: ok. 20 min</span></li><li><span lang-variant="de">Gesamt: ca. 30 Minuten</span><span lang-variant="pl">łącznie: ok. 30 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Dill erst am Ende zugeben, damit er frisch bleibt.</span><span lang-variant="pl">Koperek dodaj dopiero na końcu, wtedy zachowa świeży smak.</span></li><li><span lang-variant="de">Passt besonders gut zu Garnelen, Lachs oder hellen Saucengerichten.</span><span lang-variant="pl">Bardzo dobrze pasuje do krewetek, łososia albo delikatnych sosów.</span></li><li><span lang-variant="de">Wer es noch cremiger mag, nimmt 1 EL mehr Butter.</span><span lang-variant="pl">Jeśli ma być bardziej kremowe, można dodać jeszcze 1 łyżkę masła.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Kartoffeln schälen, in Stücke schneiden und in Salzwasser weich kochen.</span><span lang-variant="pl">Ziemniaki obrać, pokroić na kawałki i ugotować w osolonej wodzie do miękkości.</span></li><li><span lang-variant="de">Abgießen und kurz ausdampfen lassen.</span><span lang-variant="pl">Odcedzić i chwilę odparować.</span></li><li><span lang-variant="de">Butter zugeben und die Kartoffeln grob stampfen.</span><span lang-variant="pl">Dodać masło i zgrubnie utłuc ziemniaki.</span></li><li><span lang-variant="de">Mit warmer Milch cremig rühren.</span><span lang-variant="pl">Dodać ciepłe mleko i wymieszać na kremową masę.</span></li><li><span lang-variant="de">Zum Schluss Dill unterheben und mit Salz sowie etwas Pfeffer abschmecken.</span><span lang-variant="pl">Na końcu wmieszać koperek oraz doprawić solą i odrobiną pieprzu.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">8,8/10 – frisch, einfach und eine schöne Variante vom klassischen Stampf.</span><span lang-variant="pl">8,8/10 – świeża, prosta i bardzo przyjemna wersja klasycznego tłuczka.</span></p></div><div class="recipe-image"><img alt="Kartoffelstampf mit Dill" loading="lazy" src="images/rezeptbild_86.png"/></div></section><section class="recipe" data-category="beilagen" data-title="87. kartoffel-pastinaken-stampf tłuczone ziemniaki z pasternakiem beilagen / kartoffeln dodatki / ziemniaki" id="rezept-87"><div><h2><span lang-variant="de">87. Kartoffel-Pastinaken-Stampf</span><span lang-variant="pl">87. Tłuczone ziemniaki z pasternakiem</span></h2><div class="meta"><span class="tag"><span lang-variant="de">Beilagen / Kartoffeln</span><span lang-variant="pl">Dodatki / ziemniaki</span></span><span class="tag"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span></div><div class="recipe-actions"><button class="recipe-action-btn wa-share-btn" type="button"><span aria-hidden="true" class="icon">🟢</span><span lang-variant="de">Mit WhatsApp teilen</span><span lang-variant="pl">Udostępnij przez WhatsApp</span></button><button class="recipe-action-btn print-recipe-btn" type="button"><span aria-hidden="true" class="icon">🖨️</span><span lang-variant="de">Rezept drucken</span><span lang-variant="pl">Drukuj przepis</span></button><button class="recipe-action-btn copy-link-btn" type="button"><span aria-hidden="true" class="icon">🔗</span><span lang-variant="de">Link kopieren</span><span lang-variant="pl">Kopiuj link</span></button></div><div class="grid-2"><div><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">700 g mehligkochende Kartoffeln</span><span lang-variant="pl">700 g mączystych ziemniaków</span></li><li><span lang-variant="de">300 g Pastinaken</span><span lang-variant="pl">300 g pasternaku</span></li><li><span lang-variant="de">50 g Butter</span><span lang-variant="pl">50 g masła</span></li><li><span lang-variant="de">120–150 ml warme Milch</span><span lang-variant="pl">120–150 ml ciepłego mleka</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">etwas Muskatnuss nach Geschmack</span><span lang-variant="pl">trochę gałki muszkatołowej do smaku</span></li></ul></div><div><h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 12 Minuten</span><span lang-variant="pl">przygotowanie: ok. 12 min</span></li><li><span lang-variant="de">Kochzeit: ca. 20 Minuten</span><span lang-variant="pl">gotowanie: ok. 20 min</span></li><li><span lang-variant="de">Gesamt: ca. 32 Minuten</span><span lang-variant="pl">łącznie: ok. 32 min</span></li></ul><h3><span lang-variant="de">Tipps</span><span lang-variant="pl">Wskazówki</span></h3><ul><li><span lang-variant="de">Pastinake bringt eine leichte Süße und macht den Stampf feiner.</span><span lang-variant="pl">Pasternak daje lekką słodycz i sprawia, że tłuczek jest bardziej delikatny.</span></li><li><span lang-variant="de">Sehr gut zu Braten, Hähnchen oder Ofengemüse.</span><span lang-variant="pl">Bardzo dobrze pasuje do pieczeni, kurczaka albo warzyw z piekarnika.</span></li><li><span lang-variant="de">Falls der Stampf zu fest ist, noch etwas warme Milch zugeben.</span><span lang-variant="pl">Jeśli masa jest zbyt gęsta, dodaj trochę więcej ciepłego mleka.</span></li></ul></div></div><h3><span lang-variant="de">Zubereitung</span><span lang-variant="pl">Przygotowanie</span></h3><ol><li><span lang-variant="de">Kartoffeln und Pastinaken schälen und in gleich große Stücke schneiden.</span><span lang-variant="pl">Ziemniaki i pasternak obrać oraz pokroić na równe kawałki.</span></li><li><span lang-variant="de">Beides in Salzwasser weich kochen.</span><span lang-variant="pl">Ugotować razem w osolonej wodzie do miękkości.</span></li><li><span lang-variant="de">Abgießen und kurz ausdampfen lassen.</span><span lang-variant="pl">Odcedzić i chwilę odparować.</span></li><li><span lang-variant="de">Butter zugeben und alles grob stampfen.</span><span lang-variant="pl">Dodać masło i zgrubnie utłuc całość.</span></li><li><span lang-variant="de">Mit warmer Milch glattziehen und mit Salz, Pfeffer sowie etwas Muskat abschmecken.</span><span lang-variant="pl">Dolać ciepłe mleko i doprawić solą, pieprzem oraz odrobiną gałki muszkatołowej.</span></li><li><span lang-variant="de">Heiß servieren.</span><span lang-variant="pl">Podawać na gorąco.</span></li></ol><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">9/10 – etwas feiner als klassischer Stampf und sehr gut für Ofengerichte.</span><span lang-variant="pl">9/10 – delikatniejszy niż klasyczny tłuczek i bardzo dobry do dań z piekarnika.</span></p></div><div class="recipe-image"><img alt="Kartoffel-Pastinaken-Stampf" loading="lazy" src="images/rezeptbild_87.png"/></div></section></div>
 <div class="toc-actions"><button class="small-btn" id="toggleRecipes" type="button"><span lang-variant="de">Mehr Karten anzeigen</span><span lang-variant="pl">Pokaż więcej kart</span></button></div>
 <div class="section-card" id="tocSection"><section class="toc" id="toc"><h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2><p class="small"><span lang-variant="de">Alle Rezepte im Überblick. Die Suche findest du oben direkt unter dem Einstieg.</span><span lang-variant="pl">Pełny przegląd wszystkich przepisów. Wyszukiwarka znajduje się u góry, tuż pod wstępem.</span></p><div class="filter-status"><span class="filter-pill"><span lang-variant="de">Aktiver Filter:</span><span lang-variant="pl">Aktywny filtr:</span><strong id="currentCategoryLabelInline">Alle Rezepte</strong></span><button class="small-btn" id="resetFilters" type="button"><span lang-variant="de">Filter zurücksetzen</span><span lang-variant="pl">Resetuj filtry</span></button></div><div class="toc-toolbar"><div class="toc-current-filter" id="currentCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></div><div class="toc-actions"><button class="small-btn" id="toggleTocItems" type="button"><span lang-variant="de">Mehr anzeigen</span><span lang-variant="pl">Pokaż więcej</span></button></div></div><div class="empty-state" id="emptyState"><span lang-variant="de">Keine Treffer für diese Suche oder Kategorie.</span><span lang-variant="pl">Brak wyników dla tego wyszukiwania lub kategorii.</span></div><div class="toc-grid"><div data-category="ofengerichte" data-title="1. spanische kohlrouladen mit chorizo, rotwein und speck hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem ofengerichte / feiertagsessen dania z piekarnika / dania świąteczne"><a href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a></div>
 <div data-category="ofengerichte" data-title="2. italienischer kalbshaxen-braten włoska pieczeń z golonki cielęcej ofengerichte / feiertagsessen dania z piekarnika / dania świąteczne"><a href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a></div>
@@ -3799,7 +3638,7 @@ h1,h2,h3{line-height:1.2}h1{margin:0;font-size:2.2rem}h2{margin:.2rem 0 .8rem}h3
 <div data-category="grill-bbq" data-title="78. weißer spargel in butter-zitronen-folie białe szparagi w folii z masłem i cytryną grill &amp; bbq / spargel &amp; saisonküche grill &amp; bbq / szparagi i kuchnia sezonowa"><a href="#rezept-78"><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></a></div>
 <div data-category="grill-bbq" data-title="79. spargel vom grill mit parmesan und zitrone szparagi z grilla z parmezanem i cytryną grill &amp; bbq / spargel &amp; saisonküche grill &amp; bbq / szparagi i kuchnia sezonowa"><a href="#rezept-79"><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></a></div>
 <div data-category="airfryer" data-title="80. grüner spargel aus dem airfryer zielone szparagi z airfryera airfryer / spargel &amp; saisonküche airfryer / szparagi i kuchnia sezonowa"><a href="#rezept-80"><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></a></div>
-<div data-category="suppen" data-title="81. afrikanischer erdnusseintopf afrykański gulasz z masłem orzechowym suppen / eintöpfe zupy / gulasze"><a href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a></div></div></section></div>
+<div data-category="suppen" data-title="81. afrikanischer erdnusseintopf afrykański gulasz z masłem orzechowym suppen / eintöpfe zupy / gulasze"><a href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a></div><div data-category="fisch-meeresfruchte" data-title="82. garnelen in weißwein-tomaten-feta-sauce aus dem ofen krewetki zapiekane w sosie pomidorowo-winno-fetowym fisch &amp; meeresfrüchte / ofengerichte ryby i owoce morza / dania z piekarnika"><a href="#rezept-82"><span lang-variant="de">82. Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen</span><span lang-variant="pl">82. Krewetki zapiekane w sosie pomidorowo-winno-fetowym</span></a></div><div data-category="fisch-meeresfruchte" data-title="83. knoblauch-chili-garnelen aus der pfanne krewetki z patelni z czosnkiem i chili fisch &amp; meeresfrüchte / pfannengerichte ryby i owoce morza / dania z patelni"><a href="#rezept-83"><span lang-variant="de">83. Knoblauch-Chili-Garnelen aus der Pfanne</span><span lang-variant="pl">83. Krewetki z patelni z czosnkiem i chili</span></a></div><div data-category="fisch-meeresfruchte" data-title="84. garnelen in cremiger paprika-sahne-sauce krewetki w kremowym sosie paprykowo-śmietanowym fisch &amp; meeresfrüchte / pfannengerichte ryby i owoce morza / dania z patelni"><a href="#rezept-84"><span lang-variant="de">84. Garnelen in cremiger Paprika-Sahne-Sauce</span><span lang-variant="pl">84. Krewetki w kremowym sosie paprykowo-śmietanowym</span></a></div><div data-category="beilagen" data-title="85. klassischer kartoffelstampf klasyczne tłuczone ziemniaki beilagen / kartoffeln dodatki / ziemniaki"><a href="#rezept-85"><span lang-variant="de">85. Klassischer Kartoffelstampf</span><span lang-variant="pl">85. Klasyczne tłuczone ziemniaki</span></a></div><div data-category="beilagen" data-title="86. kartoffelstampf mit dill tłuczone ziemniaki z koperkiem beilagen / kartoffeln dodatki / ziemniaki"><a href="#rezept-86"><span lang-variant="de">86. Kartoffelstampf mit Dill</span><span lang-variant="pl">86. Tłuczone ziemniaki z koperkiem</span></a></div><div data-category="beilagen" data-title="87. kartoffel-pastinaken-stampf tłuczone ziemniaki z pasternakiem beilagen / kartoffeln dodatki / ziemniaki"><a href="#rezept-87"><span lang-variant="de">87. Kartoffel-Pastinaken-Stampf</span><span lang-variant="pl">87. Tłuczone ziemniaki z pasternakiem</span></a></div></div></section></div>
 </div></div>
 <footer class="site-footer"><div class="wrap"><div class="footer-links"><a href="impressum.html"><span lang-variant="de">Impressum</span><span lang-variant="pl">Impressum</span></a><a href="datenschutz.html"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Polityka prywatności</span></a></div></div></footer>
 </main>
