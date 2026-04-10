@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
-<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="3.0" languages="de,pl">
+<?xml version='1.0' encoding='UTF-8'?>
+<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="3.5" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>90</recipeCount>
+    <recipeCount>105</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch. Ergänzt um neue Garnelen- und Stampfrezepte.</notes>
   </meta>
   <recipe id="1">
@@ -11,7 +11,7 @@
     <intro lang="pl">To właśnie taki duszony przepis, który od razu robi wrażenie. Chorizo daje wyrazistość, czerwone wino głębię, a na końcu powstaje danie, które jest jednocześnie konkretne, wyjątkowe i bardzo przyjemne.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" />
+    <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck"/>
     <ingredients>
       <item>1 Weißkohl</item>
       <item>500 g Hackfleisch (gemischt oder Rind)</item>
@@ -110,7 +110,7 @@
     <intro lang="pl">Italienischer Kalbshaxen-Braten to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_02.png" alt="Italienischer Kalbshaxen-Braten" />
+    <image src="images/rezeptbild_02.png" alt="Italienischer Kalbshaxen-Braten"/>
     <ingredients>
       <item>1 Kalbshaxen-Braten ohne Knochen, ca. 800 g</item>
       <item>2 Zwiebeln</item>
@@ -207,7 +207,7 @@
     <intro lang="pl">Jeśli chcę zrobić coś, co bez wielkiego wysiłku robi wrażenie, te małże są u mnie bardzo wysoko. Sos jest aromatyczny, lekko kremowy i wręcz prosi się o to, żeby na końcu wyczyścić go dobrym pieczywem.</intro>
     <persons>2–3 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Pfannengerichte</category>
-    <image src="images/rezeptbild_02_1.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" />
+    <image src="images/rezeptbild_02_1.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot"/>
     <ingredients>
       <item>1,5 kg Muscheln</item>
       <item>2 Frühlingszwiebeln</item>
@@ -306,7 +306,7 @@
     <intro lang="pl">To danie już dawno stało się u nas prawdziwym klasykiem. Aromatyczny kurczak, chrupiące ziemniaki i coś świeżego z ogórkiem oraz tzatziki – właśnie ta kombinacja sprawia, że tak dobrze sprawdza się na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Ofengerichte</category>
-    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" />
+    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki"/>
     <ingredients>
       <item>700 g Hähnchengeschnetzeltes oder Hähnchenfilet in Streifen</item>
       <item>2 EL Gyrosgewürz</item>
@@ -393,7 +393,7 @@
     <intro lang="pl">Tutaj łączy się dokładnie ten rodzaj smaku BBQ, którego nie robi się codziennie w domu. Najpierw mocne smażenie, potem dym i na końcu wykończenie – właśnie to sprawia, że ta patelnia jest tak dobra.</intro>
     <persons>4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_04.png" alt="Smoked BBQ-Fajita-Pfanne" />
+    <image src="images/rezeptbild_04.png" alt="Smoked BBQ-Fajita-Pfanne"/>
     <ingredients>
       <item>700 g Rindfleisch in Streifen</item>
       <item>2 Paprika</item>
@@ -488,7 +488,7 @@
     <intro lang="pl">Bruschetta vom Ciabatta to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen als Vorspeise oder Beilage</persons>
     <category>Beilagen / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta" />
+    <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta"/>
     <ingredients>
       <item>1 Ciabatta</item>
       <item>3–4 Tomaten</item>
@@ -563,7 +563,7 @@
     <intro lang="pl">Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" />
+    <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot"/>
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>1 kleine Zwiebel</item>
@@ -652,7 +652,7 @@
     <intro lang="pl">Bauernomelette mit Tomaten-Mozzarella-Salat należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Eiergerichte</category>
-    <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat" />
+    <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat"/>
     <ingredients>
       <item>6 Eier</item>
       <item>500 g Kartoffeln, gekocht</item>
@@ -739,7 +739,7 @@
     <intro lang="pl">Chicken Masala mit Naturjoghurt &amp; Protein-Wraps należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" />
+    <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps"/>
     <ingredients>
       <item>500 g Hähnchenbrust</item>
       <item>1 Zwiebel</item>
@@ -822,7 +822,7 @@
     <intro lang="pl">To jedno z tych dań, które robi się raz, a potem chce się do niego wracać. Salsiccia daje dużo smaku, warzywa z piekarnika robią się miękkie i aromatyczne, a kremowe wykończenie łączy wszystko w całość.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" />
+    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)"/>
     <ingredients>
       <item>500–600 g Salsiccia</item>
       <item>800 g Kartoffeln</item>
@@ -903,7 +903,7 @@
     <intro lang="pl">Kiedy ma być konkretnie, kremowo i naprawdę sycąco, ta zapiekanka jest u mnie bardzo wysoko. Soczyste klopsiki, wyrazisty sos ajvarowo-śmietanowy i ładna pieczona warstwa na wierzchu – więcej właściwie nie trzeba dodawać.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" />
+    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe"/>
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>800 g Kartoffeln</item>
@@ -988,7 +988,7 @@
     <intro lang="pl">Ta patelnia to typowy obiad po pracy, ale z naprawdę mocnym smakiem. Ziemniaki sycą, cabanossi daje wyrazistość, a sos sprawia, że całość smakuje nie tylko szybko, ale też bardzo spójnie.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" />
+    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi"/>
     <ingredients>
       <item>800 g Kartoffeln</item>
       <item>2 Paprika</item>
@@ -1069,7 +1069,7 @@
     <intro lang="pl">Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" />
+    <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt"/>
     <ingredients>
       <item>600 g Hähnchen</item>
       <item>1 Dose stückige Tomaten</item>
@@ -1154,7 +1154,7 @@
     <intro lang="pl">Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" />
+    <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln"/>
     <ingredients>
       <item>4 Hähnchenschenkel</item>
       <item>2 lila Süßkartoffeln</item>
@@ -1233,7 +1233,7 @@
     <intro lang="pl">Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>2–3 Personen</persons>
     <category>Ofengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" />
+    <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style"/>
     <ingredients>
       <item>2 Hähnchenschenkel</item>
       <item>800 g Kartoffeln (mit Schale, in Spalten)</item>
@@ -1308,7 +1308,7 @@
     <intro lang="pl">Kartoffelauflauf mit Schmand, Käse &amp; Speck to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>3 Personen</persons>
     <category>Ofengerichte / Beilagen</category>
-    <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" />
+    <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck"/>
     <ingredients>
       <item>1,1–1,2 kg Kartoffeln</item>
       <item>2 Zwiebeln</item>
@@ -1387,7 +1387,7 @@
     <intro lang="pl">Rolady wołowe to dla mnie prawdziwy niedzielny obiad. Ten przepis pozostaje klasyczny, ale jasny sos nadaje całości własny charakter i właśnie dlatego jest tak ciekawy.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_17.png" alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" />
+    <image src="images/rezeptbild_17.png" alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)"/>
     <ingredients>
       <item>6 Rinderrouladen</item>
       <item>Salz</item>
@@ -1478,7 +1478,7 @@
     <intro lang="pl">Kartoffelsuppe mit Mettenden to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4–6 Personen</persons>
     <category>Suppen / Hausmannskost</category>
-    <image src="images/rezeptbild_18.png" alt="Kartoffelsuppe mit Mettenden" />
+    <image src="images/rezeptbild_18.png" alt="Kartoffelsuppe mit Mettenden"/>
     <ingredients>
       <item>800 g Kartoffeln</item>
       <item>2 Möhren</item>
@@ -1549,7 +1549,7 @@
     <intro lang="pl">Zakwas für Żurek selber machen to dla mnie taki podstawowy element, do którego na co dzień chętnie się wraca. Nieskomplikowany, ale na tyle ważny, że dopiero dzięki niemu cały talerz staje się naprawdę spójny i smaczny.</intro>
     <persons>Ansatz für mehrere Portionen Żurek</persons>
     <category>Grundlagen / Polnische Küche</category>
-    <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen" />
+    <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen"/>
     <ingredients>
       <item>500 ml abgekochtes, vollständig abgekühltes Wasser</item>
       <item>6 EL Roggenmehl Type 2000</item>
@@ -1620,7 +1620,7 @@
     <intro lang="pl">Königsberger Klopse to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Hausmannskost</category>
-    <image src="images/rezeptbild_20.png" alt="Königsberger Klopse" />
+    <image src="images/rezeptbild_20.png" alt="Königsberger Klopse"/>
     <ingredients>
       <item>500 g Hackfleisch (gemischt)</item>
       <item>1 Zwiebel</item>
@@ -1705,7 +1705,7 @@
     <intro lang="pl">Danziger Porzeln należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Gebäck &amp; Süßes / Polnische Küche</category>
-    <image src="images/rezeptbild_21.png" alt="Danziger Porzeln" />
+    <image src="images/rezeptbild_21.png" alt="Danziger Porzeln"/>
     <ingredients>
       <item>30 g Hefe</item>
       <item>500 g Mehl</item>
@@ -1778,7 +1778,7 @@
     <intro lang="pl">Kalte Rote-Bete-Suppe to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Kalte Suppen</category>
-    <image src="images/rezeptbild_22.png" alt="Kalte Rote-Bete-Suppe" />
+    <image src="images/rezeptbild_22.png" alt="Kalte Rote-Bete-Suppe"/>
     <ingredients>
       <item>1 Bund Rote Bete oder gekochte Rote Bete</item>
       <item>1 Salatgurke</item>
@@ -1857,7 +1857,7 @@
     <intro lang="pl">Piroggen mit Sauerkraut-Pilz-Füllung należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Teiggerichte / Polnische Küche</category>
-    <image src="images/rezeptbild_23.png" alt="Piroggen mit Sauerkraut-Pilz-Füllung" />
+    <image src="images/rezeptbild_23.png" alt="Piroggen mit Sauerkraut-Pilz-Füllung"/>
     <ingredients>
       <item>500 g Mehl</item>
       <item>300 ml heißes Wasser</item>
@@ -1936,7 +1936,7 @@
     <intro lang="pl">Klopse in Tomatensoße to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Hausmannskost</category>
-    <image src="images/rezeptbild_24.png" alt="Klopse in Tomatensoße" />
+    <image src="images/rezeptbild_24.png" alt="Klopse in Tomatensoße"/>
     <ingredients>
       <item>500 g Hackfleisch</item>
       <item>1 Ei</item>
@@ -2017,7 +2017,7 @@
     <intro lang="pl">Danziger Heringssalat to dla mnie taki przepis, który przy niewielkim wysiłku od razu wydaje się czymś wyjątkowym. Świeże aromaty, dobre doprawienie i odpowiednia lekkość sprawiają, że działa tak dobrze.</intro>
     <persons>4 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Salate</category>
-    <image src="images/rezeptbild_25.png" alt="Danziger Heringssalat" />
+    <image src="images/rezeptbild_25.png" alt="Danziger Heringssalat"/>
     <ingredients>
       <item>4 Matjesfilets oder eingelegte Heringsfilets</item>
       <item>2 Kartoffeln, gekocht</item>
@@ -2090,7 +2090,7 @@
     <intro lang="pl">Hering nach kaschubischer Art to dla mnie taki przepis, który przy niewielkim wysiłku od razu wydaje się czymś wyjątkowym. Świeże aromaty, dobre doprawienie i odpowiednia lekkość sprawiają, że działa tak dobrze.</intro>
     <persons>4 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Polnische Küche</category>
-    <image src="images/rezeptbild_26.png" alt="Hering nach kaschubischer Art" />
+    <image src="images/rezeptbild_26.png" alt="Hering nach kaschubischer Art"/>
     <ingredients>
       <item>4 Heringsfilets</item>
       <item>2 Zwiebeln</item>
@@ -2169,7 +2169,7 @@
     <intro lang="pl">Polnisches Beefsteak należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_27.png" alt="Polnisches Beefsteak" />
+    <image src="images/rezeptbild_27.png" alt="Polnisches Beefsteak"/>
     <ingredients>
       <item>500 g Rinderhackfleisch</item>
       <item>1 Zwiebel</item>
@@ -2240,7 +2240,7 @@
     <intro lang="pl">Fleischpastete to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>6 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_28.png" alt="Fleischpastete" />
+    <image src="images/rezeptbild_28.png" alt="Fleischpastete"/>
     <ingredients>
       <item>700 g gemischtes Fleisch oder gegartes Fleisch für die Pastete</item>
       <item>1 Zwiebel</item>
@@ -2317,7 +2317,7 @@
     <intro lang="pl">Geflügelleber mit Äpfeln należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Geflügelgerichte</category>
-    <image src="images/rezeptbild_29.png" alt="Geflügelleber mit Äpfeln" />
+    <image src="images/rezeptbild_29.png" alt="Geflügelleber mit Äpfeln"/>
     <ingredients>
       <item>500 g Geflügelleber</item>
       <item>2 Äpfel</item>
@@ -2392,7 +2392,7 @@
     <intro lang="pl">Eisbein nach alt-polnischer Art to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_30.png" alt="Eisbein nach alt-polnischer Art" />
+    <image src="images/rezeptbild_30.png" alt="Eisbein nach alt-polnischer Art"/>
     <ingredients>
       <item>1,2 kg Eisbein</item>
       <item>1 EL Fett</item>
@@ -2467,7 +2467,7 @@
     <intro lang="pl">Danziger Suppe to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Polnische Küche</category>
-    <image src="images/rezeptbild_31.png" alt="Danziger Suppe" />
+    <image src="images/rezeptbild_31.png" alt="Danziger Suppe"/>
     <ingredients>
       <item>1,5 l Wasser</item>
       <item>300 g Huhn</item>
@@ -2546,7 +2546,7 @@
     <intro lang="pl">Erbsensuppe mit Kartoffeln to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Hausmannskost</category>
-    <image src="images/rezeptbild_32.png" alt="Erbsensuppe mit Kartoffeln" />
+    <image src="images/rezeptbild_32.png" alt="Erbsensuppe mit Kartoffeln"/>
     <ingredients>
       <item>300 g getrocknete Erbsen</item>
       <item>500 g Kartoffeln</item>
@@ -2621,7 +2621,7 @@
     <intro lang="pl">Alt-polnische Sauce to dla mnie taki podstawowy element, do którego na co dzień chętnie się wraca. Nieskomplikowany, ale na tyle ważny, że dopiero dzięki niemu cały talerz staje się naprawdę spójny i smaczny.</intro>
     <persons>Für mehrere Portionen</persons>
     <category>Saucen / Polnische Küche</category>
-    <image src="images/rezeptbild_33.png" alt="Alt-polnische Sauce" />
+    <image src="images/rezeptbild_33.png" alt="Alt-polnische Sauce"/>
     <ingredients>
       <item>1 Zwiebel</item>
       <item>1 EL Butter oder Fett</item>
@@ -2694,7 +2694,7 @@
     <intro lang="pl">Oster-Żurek to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>ca. 2 Liter Suppe</persons>
     <category>Suppen / Polnische Küche</category>
-    <image src="images/rezeptbild_34.png" alt="Oster-Żurek" />
+    <image src="images/rezeptbild_34.png" alt="Oster-Żurek"/>
     <ingredients>
       <item>1 Liter Gemüsebrühe</item>
       <item>500 ml Zakwas für Żurek</item>
@@ -2775,7 +2775,7 @@
     <intro lang="pl">Ten brisket pokazuje, że nawet bez smokera można osiągnąć świetny efekt low and slow. Wymaga cierpliwości, ale właśnie dzięki temu mięso wychodzi na końcu tak delikatne, soczyste i intensywne w smaku.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_35.png" alt="Ofen-Brisket mit Magic Dust" />
+    <image src="images/rezeptbild_35.png" alt="Ofen-Brisket mit Magic Dust"/>
     <ingredients>
       <item>1,3 kg Rinderbrust (Brisket)</item>
       <item>2 EL mittelscharfer Senf</item>
@@ -2876,7 +2876,7 @@
     <intro lang="pl">Klasyczna pieczeń z piekarnika wcale nie musi być skomplikowana, jeśli mięso, temperatura i czas są dobrze dobrane. Właśnie to sprawia, że ten rolowany rostbef jest tak dobry: uczciwy smak, soczysty efekt i danie, na które naprawdę czeka się z przyjemnością.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_36.png" alt="Irish Beef Rollbraten aus dem Backofen" />
+    <image src="images/rezeptbild_36.png" alt="Irish Beef Rollbraten aus dem Backofen"/>
     <ingredients>
       <item>1,2 kg Irish Beef Rollbraten</item>
       <item>2 EL Öl</item>
@@ -2959,7 +2959,7 @@
     <intro lang="pl">To właśnie taki przepis, przy którym widać, jak wiele może dać AirFryer w codziennym gotowaniu. Aromatyczne mięso, dobry sos i ciepłe pieczywo – szybko gotowe, ale z prawdziwym efektem comfort food.</intro>
     <persons>4 Personen</persons>
     <category>Airfryer</category>
-    <image src="images/rezeptbild_37.png" alt="Svens AirFryer-Iskender Kebab" />
+    <image src="images/rezeptbild_37.png" alt="Svens AirFryer-Iskender Kebab"/>
     <ingredients>
       <item>1 kg Rinderhackfleisch (zweimal gewolft)</item>
       <item>2 EL Naturjoghurt (10 %)</item>
@@ -3044,7 +3044,7 @@
     <intro lang="pl">Klassischer Schmorbraten mit dunkler Sauce to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>6 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_38.png" alt="Klassischer Schmorbraten mit dunkler Sauce" />
+    <image src="images/rezeptbild_38.png" alt="Klassischer Schmorbraten mit dunkler Sauce"/>
     <ingredients>
       <item>1,8 kg Rinderbraten</item>
       <item>2 EL Butterschmalz</item>
@@ -3131,7 +3131,7 @@
     <intro lang="pl">To dokładnie taki codzienny przepis, który syci, ale wcale nie nudzi. Wszystko tu do siebie pasuje, nic nie jest niepotrzebnie skomplikowane, a na końcu na stole stoi uczciwe, dobre danie.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_39.png" alt="Hähnchen-Kartoffel-Pfanne mit Gemüse" />
+    <image src="images/rezeptbild_39.png" alt="Hähnchen-Kartoffel-Pfanne mit Gemüse"/>
     <ingredients>
       <item>400–450 g Hähnchengeschnetzeltes</item>
       <item>600–700 g Kartoffeln</item>
@@ -3214,7 +3214,7 @@
     <intro lang="pl">Czasem właśnie najbardziej swojska kuchnia jest najlepsza. W piekarniku wszystko ładnie się łączy, kapusta kiszona staje się pełniejsza w smaku, a kiełbasa dostaje dokładnie ten konkretny charakter, który lubi się w takich daniach.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
-    <image src="images/rezeptbild_40.png" alt="Bratwurst mit Sauerkraut aus dem Ofen" />
+    <image src="images/rezeptbild_40.png" alt="Bratwurst mit Sauerkraut aus dem Ofen"/>
     <ingredients>
       <item>4 Bratwürste</item>
       <item>400–500 g Sauerkraut</item>
@@ -3293,7 +3293,7 @@
     <intro lang="pl">Saftiger Chicken-Cheese-Burrito ohne Reis należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Wraps &amp; Burritos</category>
-    <image src="images/rezeptbild_41.png" alt="Saftiger Chicken-Cheese-Burrito ohne Reis" />
+    <image src="images/rezeptbild_41.png" alt="Saftiger Chicken-Cheese-Burrito ohne Reis"/>
     <ingredients>
       <item>600–700 g Hähnchengeschnetzeltes</item>
       <item>2 Paprika</item>
@@ -3382,7 +3382,7 @@
     <intro lang="pl">To danie jest najlepszym dowodem na to, że często wcale nie potrzeba wielu składników. Czosnek, trochę ostrości i dobra oliwa całkowicie wystarczą, kiedy chce się szybko postawić na stole coś z charakterem.</intro>
     <persons>1 Person</persons>
     <category>Nudelgerichte</category>
-    <image src="images/rezeptbild_42.png" alt="Spaghetti mit Knoblauch und Sambal Oelek" />
+    <image src="images/rezeptbild_42.png" alt="Spaghetti mit Knoblauch und Sambal Oelek"/>
     <ingredients>
       <item>150 g Spaghetti</item>
       <item>4–6 Knoblauchzehen</item>
@@ -3455,7 +3455,7 @@
     <intro lang="pl">Knoblauch-Kartoffel-Pfanne mit Chili und Ei należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>1 Person</persons>
     <category>Pfannengerichte</category>
-    <image src="images/rezeptbild_43.png" alt="Knoblauch-Kartoffel-Pfanne mit Chili und Ei" />
+    <image src="images/rezeptbild_43.png" alt="Knoblauch-Kartoffel-Pfanne mit Chili und Ei"/>
     <ingredients>
       <item>500 g Kartoffeln</item>
       <item>3–4 Knoblauchzehen</item>
@@ -3524,7 +3524,7 @@
     <intro lang="pl">Cremige Parmesan-Pasta ohne Sahne jest dla mnie świetnym przykładem na to, jak dobra może być prosta kuchnia. Robi się szybko, ma wyraźny smak i sprawdza się idealnie wtedy, gdy bez większego wysiłku ma pojawić się na stole coś konkretnego.</intro>
     <persons>1 Person</persons>
     <category>Nudelgerichte</category>
-    <image src="images/rezeptbild_44.png" alt="Cremige Parmesan-Pasta ohne Sahne" />
+    <image src="images/rezeptbild_44.png" alt="Cremige Parmesan-Pasta ohne Sahne"/>
     <ingredients>
       <item>120–150 g Pasta</item>
       <item>30–40 g Parmesan</item>
@@ -3591,7 +3591,7 @@
     <intro lang="pl">Cordon Bleu mit Nasi Goreng pokazuje dla mnie, jak praktyczny i skuteczny potrafi być Airfryer na co dzień. Szybko, bez komplikacji, a mimo to z efektem, który naprawdę dobrze wygląda i smakuje.</intro>
     <persons>1 Person</persons>
     <category>Airfryer / Pfannengerichte</category>
-    <image src="images/rezeptbild_45.png" alt="Cordon Bleu mit Nasi Goreng" />
+    <image src="images/rezeptbild_45.png" alt="Cordon Bleu mit Nasi Goreng"/>
     <ingredients>
       <item>1 Cordon Bleu</item>
       <item>150 g gekochter Reis</item>
@@ -3662,7 +3662,7 @@
     <intro lang="pl">Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / BBQ</category>
-    <image src="images/rezeptbild_46.png" alt="Smashed Burger mit Ofenkartoffeln und Sour-Cream-Dip" />
+    <image src="images/rezeptbild_46.png" alt="Smashed Burger mit Ofenkartoffeln und Sour-Cream-Dip"/>
     <ingredients>
       <item>500 g Rinderhack (ca. 20 % Fett)</item>
       <item>4 Burger-Brötchen</item>
@@ -3759,7 +3759,7 @@
     <intro lang="pl">Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_47.png" alt="Erdbeer-Orangen-Sekt-Slush" />
+    <image src="images/rezeptbild_47.png" alt="Erdbeer-Orangen-Sekt-Slush"/>
     <ingredients>
       <item>250 ml Erdbeernektar</item>
       <item>150 ml Orangensaft</item>
@@ -3822,7 +3822,7 @@
     <intro lang="pl">Ananas-Rum-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_48.png" alt="Ananas-Rum-Slush" />
+    <image src="images/rezeptbild_48.png" alt="Ananas-Rum-Slush"/>
     <ingredients>
       <item>300 ml Ananassaft</item>
       <item>100 ml stilles Wasser</item>
@@ -3881,7 +3881,7 @@
     <intro lang="pl">Zitronen-Vodka-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_49.png" alt="Zitronen-Vodka-Slush" />
+    <image src="images/rezeptbild_49.png" alt="Zitronen-Vodka-Slush"/>
     <ingredients>
       <item>120 ml Zitronensaft</item>
       <item>220 ml stilles Wasser</item>
@@ -3940,7 +3940,7 @@
     <intro lang="pl">Waldbeer-Sekt-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_50.png" alt="Waldbeer-Sekt-Slush" />
+    <image src="images/rezeptbild_50.png" alt="Waldbeer-Sekt-Slush"/>
     <ingredients>
       <item>250 ml Waldfrucht- oder Johannisbeernektar</item>
       <item>100 ml roter Traubensaft</item>
@@ -4003,7 +4003,7 @@
     <intro lang="pl">Mango-Maracuja-Rum-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
-    <image src="images/rezeptbild_51.png" alt="Mango-Maracuja-Rum-Slush" />
+    <image src="images/rezeptbild_51.png" alt="Mango-Maracuja-Rum-Slush"/>
     <ingredients>
       <item>250 ml Mangonektar</item>
       <item>150 ml Maracujasaft</item>
@@ -4066,7 +4066,7 @@
     <intro lang="pl">Senfeier mit Kartoffeln to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>2–3 Personen</persons>
     <category>Eiergerichte / Hausmannskost</category>
-    <image src="images/rezeptbild_52.png" alt="Senfeier mit Kartoffeln" />
+    <image src="images/rezeptbild_52.png" alt="Senfeier mit Kartoffeln"/>
     <ingredients>
       <item>6 Eier</item>
       <item>500 ml Milch</item>
@@ -4149,7 +4149,7 @@
     <intro lang="pl">Koreanisches Bulgogi vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_53.png" alt="Koreanisches Bulgogi vom Grill" />
+    <image src="images/rezeptbild_53.png" alt="Koreanisches Bulgogi vom Grill"/>
     <ingredients>
       <item>700 g Rinderhüfte oder Entrecôte, sehr dünn geschnitten</item>
       <item>4 EL Sojasauce</item>
@@ -4228,7 +4228,7 @@
     <intro lang="pl">Spare Ribs mit Espresso-Rub to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_54.png" alt="Spare Ribs mit Espresso-Rub" />
+    <image src="images/rezeptbild_54.png" alt="Spare Ribs mit Espresso-Rub"/>
     <ingredients>
       <item>2 Leitern Spare Ribs (ca. 1,6–2 kg)</item>
       <item>2 TL feines Espresso- oder Kaffeepulver</item>
@@ -4309,7 +4309,7 @@
     <intro lang="pl">Gegrillter Halloumi mit Kräutern und Olivenöl to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_55.png" alt="Gegrillter Halloumi mit Kräutern und Olivenöl" />
+    <image src="images/rezeptbild_55.png" alt="Gegrillter Halloumi mit Kräutern und Olivenöl"/>
     <ingredients>
       <item>250 g Halloumi</item>
       <item>2 EL Olivenöl</item>
@@ -4378,7 +4378,7 @@
     <intro lang="pl">Gemüsespieße vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_56.png" alt="Gemüsespieße vom Grill" />
+    <image src="images/rezeptbild_56.png" alt="Gemüsespieße vom Grill"/>
     <ingredients>
       <item>2 Paprika</item>
       <item>1 große Zucchini</item>
@@ -4457,7 +4457,7 @@
     <intro lang="pl">Gefüllte Portobello-Pilze vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_57.png" alt="Gefüllte Portobello-Pilze vom Grill" />
+    <image src="images/rezeptbild_57.png" alt="Gefüllte Portobello-Pilze vom Grill"/>
     <ingredients>
       <item>4 große Portobello-Pilze</item>
       <item>150 g Frischkäse</item>
@@ -4528,7 +4528,7 @@
     <intro lang="pl">Grüner Spargel vom Grill mit Zitronenbutter to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_58.png" alt="Grüner Spargel vom Grill mit Zitronenbutter" />
+    <image src="images/rezeptbild_58.png" alt="Grüner Spargel vom Grill mit Zitronenbutter"/>
     <ingredients>
       <item>500 g grüner Spargel</item>
       <item>2 EL Olivenöl</item>
@@ -4595,7 +4595,7 @@
     <intro lang="pl">Süßkartoffel-Pommes vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_59.png" alt="Süßkartoffel-Pommes vom Grill" />
+    <image src="images/rezeptbild_59.png" alt="Süßkartoffel-Pommes vom Grill"/>
     <ingredients>
       <item>2 große Süßkartoffeln</item>
       <item>2 EL Olivenöl</item>
@@ -4660,7 +4660,7 @@
     <intro lang="pl">Melonen-Feta-Salat mit Minze to dla mnie taki podstawowy element, do którego na co dzień chętnie się wraca. Nieskomplikowany, ale na tyle ważny, że dopiero dzięki niemu cały talerz staje się naprawdę spójny i smaczny.</intro>
     <persons>2–3 Personen</persons>
     <category>Beilagen / Salate</category>
-    <image src="images/rezeptbild_60.png" alt="Melonen-Feta-Salat mit Minze" />
+    <image src="images/rezeptbild_60.png" alt="Melonen-Feta-Salat mit Minze"/>
     <ingredients>
       <item>600 g Wassermelone</item>
       <item>150 g Feta</item>
@@ -4727,7 +4727,7 @@
     <intro lang="pl">Szakszuka to dla mnie jedno z tych dań, które przy niewielkim wysiłku smakują jak coś znacznie bardziej wyjątkowego. Wyrazisty sos pomidorowy, jajka i kawałek pieczywa – właśnie tak wygląda dla mnie prosta, ale naprawdę dobra kuchnia comfort.</intro>
     <persons>2–3 Personen</persons>
     <category>Eiergerichte / Pfannengerichte</category>
-    <image src="images/rezeptbild_61.png" alt="Shakshuka" />
+    <image src="images/rezeptbild_61.png" alt="Shakshuka"/>
     <ingredients>
       <item>1 rote Paprika</item>
       <item>1 Zwiebel</item>
@@ -4812,7 +4812,7 @@
     <intro lang="pl">Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>2–3 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_62.png" alt="Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln" />
+    <image src="images/rezeptbild_62.png" alt="Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln"/>
     <ingredients>
       <item>2 große Hähnchenbrustfilets</item>
       <item>150 g Frischkäse natur</item>
@@ -4893,7 +4893,7 @@
     <intro lang="pl">Ratatouille mit Polenta należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Gemüsegerichte</category>
-    <image src="images/rezeptbild_63.png" alt="Ratatouille mit Polenta" />
+    <image src="images/rezeptbild_63.png" alt="Ratatouille mit Polenta"/>
     <ingredients>
       <item>1 Aubergine</item>
       <item>1 Zucchini</item>
@@ -4980,7 +4980,7 @@
     <intro lang="pl">Marinierte Hähnchenspieße vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_64.png" alt="Marinierte Hähnchenspieße vom Grill" />
+    <image src="images/rezeptbild_64.png" alt="Marinierte Hähnchenspieße vom Grill"/>
     <ingredients>
       <item>700 g Hähnchenbrustfilet</item>
       <item>2 Paprika</item>
@@ -5061,7 +5061,7 @@
     <intro lang="pl">Gegrillte Maiskolben mit Butter to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_65.png" alt="Gegrillte Maiskolben mit Butter" />
+    <image src="images/rezeptbild_65.png" alt="Gegrillte Maiskolben mit Butter"/>
     <ingredients>
       <item>4 vorgegarte Maiskolben</item>
       <item>50 g Butter</item>
@@ -5124,7 +5124,7 @@
     <intro lang="pl">Halloumi vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Vegetarisch</category>
-    <image src="images/rezeptbild_66.png" alt="Halloumi vom Grill" />
+    <image src="images/rezeptbild_66.png" alt="Halloumi vom Grill"/>
     <ingredients>
       <item>250 g Halloumi</item>
       <item>1 EL Olivenöl</item>
@@ -5189,7 +5189,7 @@
     <intro lang="pl">Würzige Bratwürste vom Grill (klassisch und einfache Variante) to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_67.png" alt="Würzige Bratwürste vom Grill (klassisch und einfache Variante)" />
+    <image src="images/rezeptbild_67.png" alt="Würzige Bratwürste vom Grill (klassisch und einfache Variante)"/>
     <ingredients>
       <item>6 Bratwürste</item>
       <item>1 EL Öl</item>
@@ -5258,7 +5258,7 @@
     <intro lang="pl">Gegrilltes Gemüse mit Zucchini, Paprika und Champignons to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_68.png" alt="Gegrilltes Gemüse mit Zucchini, Paprika und Champignons" />
+    <image src="images/rezeptbild_68.png" alt="Gegrilltes Gemüse mit Zucchini, Paprika und Champignons"/>
     <ingredients>
       <item>2 Zucchini</item>
       <item>2 Paprika</item>
@@ -5335,7 +5335,7 @@
     <intro lang="pl">Grillkartoffeln in Alufolie mit Rosmarin to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_69.png" alt="Grillkartoffeln in Alufolie mit Rosmarin" />
+    <image src="images/rezeptbild_69.png" alt="Grillkartoffeln in Alufolie mit Rosmarin"/>
     <ingredients>
       <item>800 g kleine Kartoffeln</item>
       <item>2 EL Olivenöl</item>
@@ -5404,7 +5404,7 @@
     <intro lang="pl">Gegrilltes Baguette oder Ciabatta mit Knoblauchöl to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
-    <image src="images/rezeptbild_70.png" alt="Gegrilltes Baguette oder Ciabatta mit Knoblauchöl" />
+    <image src="images/rezeptbild_70.png" alt="Gegrilltes Baguette oder Ciabatta mit Knoblauchöl"/>
     <ingredients>
       <item>1 Baguette oder 1 Ciabatta</item>
       <item>3 EL Olivenöl</item>
@@ -5467,7 +5467,7 @@
     <intro lang="pl">Gegrillte Früchte mit Ananas oder Pfirsich to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Dessert</category>
-    <image src="images/rezeptbild_71.png" alt="Gegrillte Früchte mit Ananas oder Pfirsich" />
+    <image src="images/rezeptbild_71.png" alt="Gegrillte Früchte mit Ananas oder Pfirsich"/>
     <ingredients>
       <item>1/2 frische Ananas oder 4 Pfirsiche</item>
       <item>1 EL brauner Zucker</item>
@@ -5530,7 +5530,7 @@
     <intro lang="pl">Klassische rote Sangria należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>4 Gläser</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_72.png" alt="Klassische rote Sangria" />
+    <image src="images/rezeptbild_72.png" alt="Klassische rote Sangria"/>
     <ingredients>
       <item>1 Flasche trockener Rotwein (0,75 l)</item>
       <item>200 ml Orangenlimonade oder Fanta</item>
@@ -5599,7 +5599,7 @@
     <intro lang="pl">Weiße Sangria należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>4 Gläser</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_73.png" alt="Weiße Sangria" />
+    <image src="images/rezeptbild_73.png" alt="Weiße Sangria"/>
     <ingredients>
       <item>1 Flasche trockener Weißwein (0,75 l)</item>
       <item>200 ml Zitronenlimonade</item>
@@ -5668,7 +5668,7 @@
     <intro lang="pl">Aperol Spritz należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_74.png" alt="Aperol Spritz" />
+    <image src="images/rezeptbild_74.png" alt="Aperol Spritz"/>
     <ingredients>
       <item>3 Eiswürfel oder mehr</item>
       <item>90 ml Prosecco</item>
@@ -5729,7 +5729,7 @@
     <intro lang="pl">Mojito należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_75.png" alt="Mojito" />
+    <image src="images/rezeptbild_75.png" alt="Mojito"/>
     <ingredients>
       <item>1 Limette</item>
       <item>2 TL brauner Zucker</item>
@@ -5794,7 +5794,7 @@
     <intro lang="pl">Gin Tonic (Basisrezept und einfache Variationen) należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
-    <image src="images/rezeptbild_76.png" alt="Gin Tonic (Basisrezept und einfache Variationen)" />
+    <image src="images/rezeptbild_76.png" alt="Gin Tonic (Basisrezept und einfache Variationen)"/>
     <ingredients>
       <item>50 ml Gin</item>
       <item>150 ml Tonic Water</item>
@@ -5861,7 +5861,7 @@
     <intro lang="pl">Grüner Spargel vom Grill – Basic &amp; Upgrade to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
-    <image src="images/rezeptbild_77.png" alt="Grüner Spargel vom Grill" />
+    <image src="images/rezeptbild_77.png" alt="Grüner Spargel vom Grill"/>
     <ingredients>
       <item>500 g grüner Spargel</item>
       <item>2 EL Olivenöl</item>
@@ -5930,7 +5930,7 @@
     <intro lang="pl">Weißer Spargel in Butter-Zitronen-Folie to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
-    <image src="images/rezeptbild_78.png" alt="Weißer Spargel in Butter-Zitronen-Folie" />
+    <image src="images/rezeptbild_78.png" alt="Weißer Spargel in Butter-Zitronen-Folie"/>
     <ingredients>
       <item>500–800 g weißer Spargel</item>
       <item>40 g Butter</item>
@@ -5997,7 +5997,7 @@
     <intro lang="pl">Spargel vom Grill mit Parmesan und Zitrone to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
-    <image src="images/rezeptbild_79.png" alt="Spargel vom Grill mit Parmesan und Zitrone" />
+    <image src="images/rezeptbild_79.png" alt="Spargel vom Grill mit Parmesan und Zitrone"/>
     <ingredients>
       <item>500 g grüner oder weißer Spargel</item>
       <item>2 EL Olivenöl</item>
@@ -6064,7 +6064,7 @@
     <intro lang="pl">Grüner Spargel aus dem Airfryer pokazuje dla mnie, jak praktyczny i skuteczny potrafi być Airfryer na co dzień. Szybko, bez komplikacji, a mimo to z efektem, który naprawdę dobrze wygląda i smakuje.</intro>
     <persons>2–3 Personen</persons>
     <category>Airfryer / Spargel &amp; Saisonküche</category>
-    <image src="images/rezeptbild_80.png" alt="Grüner Spargel aus dem Airfryer" />
+    <image src="images/rezeptbild_80.png" alt="Grüner Spargel aus dem Airfryer"/>
     <ingredients>
       <item>500 g grüner Spargel</item>
       <item>1–2 EL Olivenöl</item>
@@ -6133,7 +6133,7 @@
     <intro lang="pl">To danie od razu się wyróżnia, bo jest inne niż wiele codziennych przepisów – i właśnie to czyni je tak ciekawym. Orzechy dają kremowość, przyprawy głębię, a na końcu powstaje coś sycącego i pełnego charakteru.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Eintöpfe</category>
-    <image src="images/rezeptbild_81.png" alt="Afrikanischer Erdnusseintopf" />
+    <image src="images/rezeptbild_81.png" alt="Afrikanischer Erdnusseintopf"/>
     <ingredients>
       <item>1/2 Weißkohl</item>
       <item>2 Möhren</item>
@@ -6226,7 +6226,7 @@
     <intro lang="pl">Te krewetki z piekarnika mają dokładnie to połączenie, które lubię w takich daniach: białe wino, pomidor i feta dają razem dużo smaku, ale bez niepotrzebnej ciężkości. Idealne z pieczywem do maczania w sosie.</intro>
     <persons>2–3 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Ofengerichte</category>
-    <image src="images/rezeptbild_82.png" alt="Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen" />
+    <image src="images/rezeptbild_82.png" alt="Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen"/>
     <ingredients>
       <item>400 g Garnelen, roh und geschält</item>
       <item>1 kleine Zwiebel</item>
@@ -6311,7 +6311,7 @@
     <intro lang="pl">To dokładnie taki przepis na krewetki, który robi się szybko, a mimo to od razu smakuje jak coś wyjątkowego. Czosnek, chili i dobra patelnia całkowicie tu wystarczą, jeśli baza jest odpowiednia.</intro>
     <persons>2 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Pfannengerichte</category>
-    <image src="images/rezeptbild_83.png" alt="Knoblauch-Chili-Garnelen aus der Pfanne" />
+    <image src="images/rezeptbild_83.png" alt="Knoblauch-Chili-Garnelen aus der Pfanne"/>
     <ingredients>
       <item>400 g Garnelen, roh und geschält</item>
       <item>3 Knoblauchzehen</item>
@@ -6388,7 +6388,7 @@
     <intro lang="pl">Tutaj wszystko idzie bardziej w kremową i przytulną stronę. Sos od razu wnosi do dania ciepło i pełnię smaku, i właśnie to sprawia, że te krewetki tak dobrze pasują na spokojny wieczór.</intro>
     <persons>2–3 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Pfannengerichte</category>
-    <image src="images/rezeptbild_84.png" alt="Garnelen in cremiger Paprika-Sahne-Sauce" />
+    <image src="images/rezeptbild_84.png" alt="Garnelen in cremiger Paprika-Sahne-Sauce"/>
     <ingredients>
       <item>400 g Garnelen, roh und geschält</item>
       <item>1 rote Paprika</item>
@@ -6467,7 +6467,7 @@
     <intro lang="pl">Dobre purée ziemniaczane to dużo więcej niż tylko dodatek. Jeśli jest lekkie, ciepłe i kremowe, to dopiero wtedy wiele dań staje się naprawdę pełnym posiłkiem.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Kartoffeln</category>
-    <image src="images/rezeptbild_85.png" alt="Klassischer Kartoffelstampf" />
+    <image src="images/rezeptbild_85.png" alt="Klassischer Kartoffelstampf"/>
     <ingredients>
       <item>1 kg mehligkochende Kartoffeln</item>
       <item>50 g Butter</item>
@@ -6530,7 +6530,7 @@
     <intro lang="pl">Ta wersja jest trochę świeższa niż klasyczne purée i właśnie dlatego jest tak praktyczna. Koper wnosi lekkość, ale danie nie traci swojego swojskiego charakteru.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Kartoffeln</category>
-    <image src="images/rezeptbild_86.png" alt="Kartoffelstampf mit Dill" />
+    <image src="images/rezeptbild_86.png" alt="Kartoffelstampf mit Dill"/>
     <ingredients>
       <item>1 kg mehligkochende Kartoffeln</item>
       <item>50 g Butter</item>
@@ -6595,7 +6595,7 @@
     <intro lang="pl">Purée ziemniaczano-pasternakowe jest delikatniejszą i bardziej aromatyczną siostrą klasycznego purée. Lekka słodycz pasternaku sprawia, że szczególnie dobrze pasuje do mocniejszych dań z piekarnika i duszonych potraw.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Kartoffeln</category>
-    <image src="images/rezeptbild_87.png" alt="Kartoffel-Pastinaken-Stampf" />
+    <image src="images/rezeptbild_87.png" alt="Kartoffel-Pastinaken-Stampf"/>
     <ingredients>
       <item>700 g mehligkochende Kartoffeln</item>
       <item>300 g Pastinaken</item>
@@ -6664,7 +6664,7 @@
     <intro lang="pl">Taki bazowy miks przypraw po prostu dobrze mieć pod ręką. Miesza się go szybko, jest uniwersalny i idealny wtedy, gdy mięso albo warzywa mają od razu smakować grillem bez wielkiego wysiłku.</intro>
     <persons>Vorrat</persons>
     <category>Grundlagen / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_88.png" alt="Svens BBQ Rub (Basisgewürz)" />
+    <image src="images/rezeptbild_88.png" alt="Svens BBQ Rub (Basisgewürz)"/>
     <ingredients>
       <item>4 EL Paprikapulver edelsüß</item>
       <item>2 EL brauner Zucker</item>
@@ -6729,7 +6729,7 @@
     <intro lang="pl">To danie jest najlepszym dowodem na to, że często wcale nie potrzeba wielu składników. Czosnek, trochę ostrości i dobra oliwa całkowicie wystarczą, kiedy chce się szybko postawić na stole coś z charakterem.</intro>
     <persons>2 Personen</persons>
     <category>Nudelgerichte / Schnell &amp; einfach</category>
-    <image src="images/rezeptbild_89.png" alt="Spaghetti mit Knoblauch und Sambal Oelek" />
+    <image src="images/rezeptbild_89.png" alt="Spaghetti mit Knoblauch und Sambal Oelek"/>
     <ingredients>
       <item>200 g Spaghetti</item>
       <item>3 Knoblauchzehen</item>
@@ -6800,7 +6800,7 @@
     <intro lang="pl">Ta pinsa jest dla mnie idealnym połączeniem szybkiego przygotowania i czegoś naprawdę wyjątkowego. Burrata daje kremowość, peperoni lekką ostrość, a salami dokładnie tę wytrawną głębię, która sprawia, że taki wieczór smakuje świetnie bez komplikacji.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte / Snacks</category>
-    <image src="images/rezeptbild_90.png" alt="Pinsa mit Burrata, Peperoni und Salami" />
+    <image src="images/rezeptbild_90.png" alt="Pinsa mit Burrata, Peperoni und Salami"/>
     <ingredients>
       <item>2 Pinsa-Böden, vorgebacken</item>
       <item>150 ml passierte Tomaten</item>
@@ -6869,6 +6869,1087 @@
         <item>To bardzo dobry szybki obiad albo kolacja dla gości.</item>
       </tips>
       <rating>9 / 10 – chrupiąca, kremowa i bardzo aromatyczna.</rating>
+    </translation>
+  </recipe>
+  <recipe id="91">
+    <name>Wildschweingulasch klassisch geschmort</name>
+    <intro lang="de">Das ist genau die Art von Gericht, die Zeit braucht und gerade deshalb so gut wird. Wenn das Wildschweingulasch langsam schmort, entwickeln Sauce, Gewürze und Fleisch genau diese tiefe, kräftige Note, die man bei einem besonderen Schmorgericht haben will.</intro>
+    <intro lang="pl">To właśnie taki przepis, który potrzebuje czasu i właśnie dlatego wychodzi tak dobrze. Kiedy gulasz z dzika dusi się powoli, sos, przyprawy i mięso tworzą tę głęboką, intensywną nutę, której oczekuje się od wyjątkowego dania duszonego.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte / Feiertagsessen</category>
+    <image src="images/rezeptbild_89.png" alt="Wildschweingulasch klassisch geschmort"/>
+    <ingredients>
+      <item>1 kg Wildschweingulasch</item>
+      <item>2 große Zwiebeln</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Tomatenmark</item>
+      <item>300 ml trockener Rotwein</item>
+      <item>500 ml Wild- oder Rinderfond</item>
+      <item>2 Lorbeerblätter</item>
+      <item>6 Wacholderbeeren</item>
+      <item>1 TL Paprikapulver</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>2 EL Öl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Fleisch trocken tupfen und portionsweise kräftig anbraten.</step>
+      <step nr="2">Zwiebeln und Knoblauch zugeben und kurz mitrösten.</step>
+      <step nr="3">Tomatenmark einrühren und leicht anrösten.</step>
+      <step nr="4">Mit Rotwein ablöschen und etwas einkochen lassen.</step>
+      <step nr="5">Fond und Gewürze zugeben.</step>
+      <step nr="6">Zugedeckt 2 bis 2,5 Stunden sanft schmoren, bis das Fleisch weich ist.</step>
+      <step nr="7">Zum Schluss mit Salz und Pfeffer abschmecken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Schmorzeit: ca. 2–2,5 Stunden</item>
+      <item>Gesamt: ca. 2 Stunden 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Am nächsten Tag schmeckt das Gulasch oft noch besser.</item>
+      <item>Dazu passen Kartoffeln, Klöße oder Rotkohl.</item>
+      <item>Wenn die Sauce kräftiger sein soll, offen noch etwas einkochen lassen.</item>
+    </tips>
+    <rating>9 / 10 – kräftig, aromatisch und perfekt für kühle Tage oder besondere Anlässe.</rating>
+    <translation lang="pl">
+      <name>Klasyczny gulasz z dzika duszony powoli</name>
+      <persons>4 osoby</persons>
+      <category>Dania z piekarnika / Danie świąteczne</category>
+      <ingredients>
+        <item>1 kg mięsa z dzika na gulasz</item>
+        <item>2 duże cebule</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>300 ml czerwonego wytrawnego wina</item>
+        <item>500 ml bulionu z dziczyzny lub wołowego</item>
+        <item>2 liście laurowe</item>
+        <item>6 ziaren jałowca</item>
+        <item>1 łyżeczka papryki w proszku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>2 łyżki oleju</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Osuszyć mięso i obsmażyć partiami na mocnym ogniu.</step>
+        <step nr="2">Dodać cebulę i czosnek, chwilę podsmażyć.</step>
+        <step nr="3">Wmieszać koncentrat pomidorowy i lekko go zrumienić.</step>
+        <step nr="4">Wlać czerwone wino i chwilę zredukować.</step>
+        <step nr="5">Dodać bulion oraz przyprawy.</step>
+        <step nr="6">Dusić pod przykryciem 2 do 2,5 godziny, aż mięso będzie miękkie.</step>
+        <step nr="7">Na końcu doprawić solą i pieprzem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 20 min</item>
+        <item>duszenie: ok. 2–2,5 godz.</item>
+        <item>łącznie: ok. 2 godz. 45 min</item>
+      </timing>
+      <tips>
+        <item>Następnego dnia gulasz często smakuje jeszcze lepiej.</item>
+        <item>Pasują do niego ziemniaki, kluski albo czerwona kapusta.</item>
+        <item>Jeśli sos ma być mocniejszy, można go na końcu trochę odparować bez przykrycia.</item>
+      </tips>
+      <rating>9 / 10 – intensywny, aromatyczny i idealny na chłodne dni albo specjalne okazje.</rating>
+    </translation>
+  </recipe>
+  <recipe id="92">
+    <name>Wildschweinkeule aus dem Ofen</name>
+    <intro lang="de">Eine Wildschweinkeule ist für mich genau die Art von Braten, die etwas Besonderes bleibt, ohne übertrieben kompliziert zu sein. Wenn sie langsam gart, wird das Fleisch schön zart und die Sauce bekommt genau diese kräftige, festliche Tiefe.</intro>
+    <intro lang="pl">Udziec z dzika to dla mnie dokładnie taki rodzaj pieczeni, który pozostaje czymś wyjątkowym, ale bez przesadnej komplikacji. Kiedy piecze się powoli, mięso robi się delikatne, a sos dostaje tę głębię, która pasuje do świątecznego dania.</intro>
+    <persons>4–6 Personen</persons>
+    <category>Ofengerichte / Feiertagsessen</category>
+    <image src="images/rezeptbild_90.png" alt="Wildschweinkeule aus dem Ofen"/>
+    <ingredients>
+      <item>1,5 kg Wildschweinkeule</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Möhren</item>
+      <item>150 g Knollensellerie</item>
+      <item>2 EL Öl</item>
+      <item>400 ml Rotwein</item>
+      <item>400 ml Fond</item>
+      <item>2 Zweige Rosmarin</item>
+      <item>2 Lorbeerblätter</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Wildschweinkeule salzen, pfeffern und rundherum anbraten.</step>
+      <step nr="2">Gemüse grob schneiden und kurz mitrösten.</step>
+      <step nr="3">Mit Rotwein und Fond ablöschen.</step>
+      <step nr="4">Rosmarin und Lorbeer zugeben.</step>
+      <step nr="5">Im vorgeheizten Ofen bei 160 °C etwa 2,5 bis 3 Stunden garen.</step>
+      <step nr="6">Zwischendurch mit dem Bratensaft übergießen.</step>
+      <step nr="7">Vor dem Anschneiden kurz ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 25 Minuten</item>
+      <item>Ofenzeit: ca. 2,5–3 Stunden</item>
+      <item>Gesamt: ca. 3 Stunden 20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Sauce vor dem Servieren durch ein Sieb passieren, wenn sie feiner werden soll.</item>
+      <item>Dazu passen Klöße, Kartoffeln oder Rotkohl besonders gut.</item>
+      <item>Wichtig ist eine kurze Ruhezeit vor dem Anschneiden.</item>
+    </tips>
+    <rating>9 / 10 – festlich, kräftig und wunderbar zart, wenn man ihm Zeit gibt.</rating>
+    <translation lang="pl">
+      <name>Udziec z dzika z piekarnika</name>
+      <persons>4–6 osób</persons>
+      <category>Dania z piekarnika / Danie świąteczne</category>
+      <ingredients>
+        <item>1,5 kg udźca z dzika</item>
+        <item>2 cebule</item>
+        <item>2 marchewki</item>
+        <item>150 g selera korzeniowego</item>
+        <item>2 łyżki oleju</item>
+        <item>400 ml czerwonego wina</item>
+        <item>400 ml bulionu</item>
+        <item>2 gałązki rozmarynu</item>
+        <item>2 liście laurowe</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doprawić udziec solą i pieprzem, a następnie obsmażyć ze wszystkich stron.</step>
+        <step nr="2">Pokroić warzywa i krótko je podsmażyć.</step>
+        <step nr="3">Zalać winem i bulionem.</step>
+        <step nr="4">Dodać rozmaryn i liście laurowe.</step>
+        <step nr="5">Piec w nagrzanym piekarniku w 160 °C przez około 2,5 do 3 godzin.</step>
+        <step nr="6">W trakcie polewać mięso powstałym sosem.</step>
+        <step nr="7">Przed krojeniem dać mięsu chwilę odpocząć.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 25 min</item>
+        <item>pieczenie: ok. 2,5–3 godz.</item>
+        <item>łącznie: ok. 3 godz. 20 min</item>
+      </timing>
+      <tips>
+        <item>Jeśli sos ma być delikatniejszy, można go przecedzić przed podaniem.</item>
+        <item>Świetnie pasują kluski, ziemniaki albo czerwona kapusta.</item>
+        <item>Ważny jest krótki odpoczynek mięsa przed krojeniem.</item>
+      </tips>
+      <rating>9 / 10 – świąteczne, wyraziste i cudownie delikatne, jeśli da mu się czas.</rating>
+    </translation>
+  </recipe>
+  <recipe id="93">
+    <name>Gefülltes Ofenbaguette mit Chorizo</name>
+    <intro lang="de">Das ist genau die Art von Ofensnack, die auf dem Tisch schneller weg ist, als man denkt. Die Chorizo bringt Würze, der Käse verbindet alles und am Ende hast du ein unkompliziertes Rezept, das perfekt für Besuch, Grillabend oder einfach einen gemütlichen Abend ist.</intro>
+    <intro lang="pl">To dokładnie taki pieczony snack, który znika ze stołu szybciej, niż się wydaje. Chorizo daje wyrazistość, ser wszystko łączy, a na końcu masz prosty przepis idealny na gości, grill albo po prostu spokojny wieczór.</intro>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte / Snacks</category>
+    <image src="images/rezeptbild_91.png" alt="Gefülltes Ofenbaguette mit Chorizo"/>
+    <ingredients>
+      <item>2 kleine Baguettes</item>
+      <item>120 g Chorizo</item>
+      <item>1 rote Paprika</item>
+      <item>2 Frühlingszwiebeln</item>
+      <item>120 g geriebener Käse</item>
+      <item>2 EL Crème fraîche</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 180 °C Ober-/Unterhitze vorheizen.</step>
+      <step nr="2">Baguettes längs aufschneiden.</step>
+      <step nr="3">Chorizo, Paprika und Frühlingszwiebeln klein schneiden.</step>
+      <step nr="4">Mit Crème fraîche und Käse vermengen, mit Pfeffer würzen.</step>
+      <step nr="5">Die Masse auf die Baguettes verteilen.</step>
+      <step nr="6">Etwa 15 bis 18 Minuten backen, bis der Käse geschmolzen und das Baguette knusprig ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Backzeit: ca. 15–18 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Am besten frisch aus dem Ofen servieren.</item>
+      <item>Wer es schärfer mag, gibt etwas Chili dazu.</item>
+      <item>Auch als Party-Snack sehr gut geeignet.</item>
+    </tips>
+    <rating>8,5 / 10 – würzig, knusprig und genau richtig für entspannte Abende.</rating>
+    <translation lang="pl">
+      <name>Zapiekana bagietka z chorizo</name>
+      <persons>3–4 osoby</persons>
+      <category>Dania z piekarnika / Przekąski</category>
+      <ingredients>
+        <item>2 małe bagietki</item>
+        <item>120 g chorizo</item>
+        <item>1 czerwona papryka</item>
+        <item>2 cebulki dymki</item>
+        <item>120 g startego sera</item>
+        <item>2 łyżki crème fraîche</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozgrzać piekarnik do 180 °C góra-dół.</step>
+        <step nr="2">Przekroić bagietki wzdłuż.</step>
+        <step nr="3">Drobno pokroić chorizo, paprykę i dymkę.</step>
+        <step nr="4">Wymieszać z crème fraîche i serem, doprawić pieprzem.</step>
+        <step nr="5">Rozłożyć farsz na bagietkach.</step>
+        <step nr="6">Piec około 15 do 18 minut, aż ser się roztopi, a bagietka będzie chrupiąca.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 10 min</item>
+        <item>pieczenie: ok. 15–18 min</item>
+        <item>łącznie: ok. 30 min</item>
+      </timing>
+      <tips>
+        <item>Najlepiej podawać od razu po wyjęciu z piekarnika.</item>
+        <item>Jeśli ma być ostrzej, można dodać trochę chili.</item>
+        <item>Świetnie sprawdza się także jako przekąska na imprezę.</item>
+      </tips>
+      <rating>8,5 / 10 – wyrazista, chrupiąca i idealna na spokojny wieczór.</rating>
+    </translation>
+  </recipe>
+  <recipe id="94">
+    <name>Ogórki w zalewie gyros</name>
+    <intro lang="de">Solche eingelegten Gurken sind für mich genau die Art von Rezept, die eine Sammlung erst komplett macht. Sie sind würzig, leicht süß-säuerlich und bringen auf den Tisch genau diese besondere Beilagen-Idee, die man nicht überall findet.</intro>
+    <intro lang="pl">Takie ogórki w zalewie to dla mnie dokładnie taki przepis, który domyka całą kolekcję. Są wyraziste, lekko słodko-kwaśne i wnoszą na stół ten rodzaj dodatku, którego nie spotyka się wszędzie.</intro>
+    <persons>Vorrat</persons>
+    <category>Beilagen / Vorrat</category>
+    <image src="images/rezeptbild_92.png" alt="Ogórki w zalewie gyros"/>
+    <ingredients>
+      <item>2 kg Gurken</item>
+      <item>30 g Gyros-Gewürz</item>
+      <item>2 große Möhren</item>
+      <item>2–3 Knoblauchzehen</item>
+      <item>2–3 Zwiebeln</item>
+      <item>3 Paprika</item>
+      <item>1 Glas Essig (ca. 250 ml, 10 %)</item>
+      <item>1/2 Glas Öl</item>
+      <item>2 EL Salz</item>
+      <item>2 Gläser Zucker</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gurken waschen und in dickere Scheiben schneiden.</step>
+      <step nr="2">Mit Salz vermengen und kurz ziehen lassen.</step>
+      <step nr="3">Zwiebeln in Halbringe schneiden, Möhren und Paprika klein schneiden, Knoblauch hacken.</step>
+      <step nr="4">Alles zu den Gurken geben.</step>
+      <step nr="5">Essig, Öl und Gyros-Gewürz verrühren.</step>
+      <step nr="6">Zucker zugeben und gut mischen.</step>
+      <step nr="7">Die Marinade über das Gemüse geben und alles gründlich vermengen.</step>
+      <step nr="8">In saubere Gläser füllen und kühl lagern.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Ziehzeit: mindestens 24 Stunden</item>
+      <item>Gesamt: ab 24 Stunden</item>
+    </timing>
+    <tips>
+      <item>Nach einem Tag schmecken sie deutlich runder.</item>
+      <item>Gut geeignet als Beilage zu Fleisch, Brotzeit oder Grillgerichten.</item>
+      <item>Saubere Gläser verwenden, damit alles lange hält.</item>
+    </tips>
+    <rating>9 / 10 – besonders, würzig und als Vorrat richtig stark.</rating>
+    <translation lang="pl">
+      <name>Ogórki w zalewie gyros</name>
+      <persons>Zapas</persons>
+      <category>Dodatki / Zapas</category>
+      <ingredients>
+        <item>2 kg ogórków</item>
+        <item>30 g przyprawy gyros</item>
+        <item>2 duże marchewki</item>
+        <item>2–3 ząbki czosnku</item>
+        <item>2–3 cebule</item>
+        <item>3 papryki</item>
+        <item>1 szklanka octu 10% (ok. 250 ml)</item>
+        <item>1/2 szklanki oleju</item>
+        <item>2 łyżki soli</item>
+        <item>2 szklanki cukru</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Umyć ogórki i pokroić w grubsze plastry.</step>
+        <step nr="2">Wymieszać z solą i odstawić na chwilę.</step>
+        <step nr="3">Pokroić cebulę, marchewkę, paprykę i posiekać czosnek.</step>
+        <step nr="4">Dodać wszystko do ogórków.</step>
+        <step nr="5">Wymieszać ocet, olej i przyprawę gyros.</step>
+        <step nr="6">Dodać cukier i dobrze połączyć.</step>
+        <step nr="7">Zalać warzywa marynatą i dokładnie wymieszać.</step>
+        <step nr="8">Przełożyć do czystych słoików i przechowywać w chłodzie.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 30 min</item>
+        <item>czas przejścia smakiem: minimum 24 godz.</item>
+        <item>łącznie: od 24 godz.</item>
+      </timing>
+      <tips>
+        <item>Po jednym dniu smak jest wyraźnie pełniejszy.</item>
+        <item>Świetne jako dodatek do mięsa, kanapek albo grilla.</item>
+        <item>Używaj czystych słoików, żeby ogórki długo się trzymały.</item>
+      </tips>
+      <rating>9 / 10 – wyjątkowe, aromatyczne i bardzo mocne jako zapas.</rating>
+    </translation>
+  </recipe>
+  <recipe id="95">
+    <name>Feierabend-Pfanne mit Hähnchen &amp; Gemüse</name>
+    <intro lang="de">Das ist genau so ein Gericht, das man nach einem langen Arbeitstag braucht. Alles kommt in eine Pfanne, wird kurz angebraten und am Ende hast du ein warmes, ehrliches Essen ohne großen Aufwand. Schnell, unkompliziert und trotzdem richtig gut.</intro>
+    <intro lang="pl">To właśnie takie danie, którego potrzebuje się po długim dniu pracy. Wszystko trafia na jedną patelnię, krótko się smaży i na końcu masz ciepły, uczciwy posiłek bez wielkiego wysiłku. Szybko, prosto i naprawdę dobrze.</intro>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte / Schnell &amp; einfach</category>
+    <image src="images/rezeptbild_93.png" alt="Feierabend-Pfanne mit Hähnchen &amp; Gemüse"/>
+    <ingredients>
+      <item>500 g Hähnchenbrust oder Hähnchenschenkel ohne Knochen</item>
+      <item>600 g festkochende Kartoffeln, vorgekocht oder vom Vortag</item>
+      <item>1 rote Paprika</item>
+      <item>1 Zucchini</item>
+      <item>1 große Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Öl</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1/2 TL geräuchertes Paprikapulver</item>
+      <item>Salz, Pfeffer</item>
+      <item>optional: etwas Crème fraîche oder Kräuter zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln in Würfel schneiden, Gemüse in mundgerechte Stücke teilen und das Hähnchen in Streifen schneiden.</step>
+      <step nr="2">Öl in einer großen Pfanne erhitzen und das Hähnchen kräftig anbraten.</step>
+      <step nr="3">Zwiebel und Knoblauch zugeben und kurz mitschwitzen.</step>
+      <step nr="4">Kartoffeln, Paprika und Zucchini in die Pfanne geben und alles zusammen goldbraun braten.</step>
+      <step nr="5">Mit Paprika, Salz und Pfeffer würzen und noch einige Minuten fertig garen.</step>
+      <step nr="6">Nach Wunsch mit etwas Crème fraîche oder frischen Kräutern servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 20 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit vorgekochten Kartoffeln geht es deutlich schneller.</item>
+      <item>Passt auch gut mit Brokkoli oder Möhren.</item>
+      <item>Für mehr Würze am Ende etwas Ajvar unterrühren.</item>
+    </tips>
+    <rating>8,8 / 10 – genau das Richtige für einen unkomplizierten Feierabend.</rating>
+    <translation lang="pl">
+      <name>Patelnia po pracy z kurczakiem i warzywami</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania z patelni / Szybko i prosto</category>
+      <ingredients>
+        <item>500 g filetu z kurczaka lub mięsa z udek bez kości</item>
+        <item>600 g ugotowanych ziemniaków</item>
+        <item>1 czerwona papryka</item>
+        <item>1 cukinia</item>
+        <item>1 duża cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 łyżki oleju</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1/2 łyżeczki wędzonej papryki</item>
+        <item>sól, pieprz</item>
+        <item>opcjonalnie: odrobina crème fraîche lub ziół do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić ziemniaki w kostkę, warzywa na kawałki, a kurczaka w paski.</step>
+        <step nr="2">Rozgrzać olej na dużej patelni i mocno obsmażyć kurczaka.</step>
+        <step nr="3">Dodać cebulę i czosnek, chwilę smażyć razem.</step>
+        <step nr="4">Dodać ziemniaki, paprykę i cukinię i smażyć do lekkiego zrumienienia.</step>
+        <step nr="5">Doprawić papryką, solą i pieprzem i smażyć jeszcze kilka minut.</step>
+        <step nr="6">W razie potrzeby podać z odrobiną crème fraîche albo świeżymi ziołami.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 15 min</item>
+        <item>smażenie: ok. 20 min</item>
+        <item>łącznie: ok. 35 min</item>
+      </timing>
+      <tips>
+        <item>Z ugotowanymi wcześniej ziemniakami jest dużo szybciej.</item>
+        <item>Dobrze działa też z brokułem albo marchewką.</item>
+        <item>Dla mocniejszego smaku można na końcu dodać trochę ajvaru.</item>
+      </tips>
+      <rating>8,8 / 10 – genau das Richtige für einen unkomplizierten Feierabend.</rating>
+    </translation>
+  </recipe>
+  <recipe id="96">
+    <name>Kartoffel-Speck-Auflauf (deftig &amp; cremig)</name>
+    <intro lang="de">Wenn es richtig herzhaft sein soll, bist du hier genau richtig. Die Kartoffeln werden weich, der Speck bringt Würze und oben entsteht eine schöne, goldene Kruste. Das ist kein leichtes Gericht – aber genau deshalb so gut.</intro>
+    <intro lang="pl">Jeśli ma być naprawdę konkretnie, to tutaj jesteś w dobrym miejscu. Ziemniaki robią się miękkie, boczek daje wyrazistość, a na wierzchu powstaje piękna, złota warstwa. To nie jest lekkie danie – i właśnie dlatego tak dobrze smakuje.</intro>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte / Hausmannskost</category>
+    <image src="images/rezeptbild_94.png" alt="Kartoffel-Speck-Auflauf (deftig &amp; cremig)"/>
+    <ingredients>
+      <item>1,2 kg Kartoffeln</item>
+      <item>150 g Speckwürfel</item>
+      <item>2 Zwiebeln</item>
+      <item>200 g Schmand</item>
+      <item>150 ml Sahne</item>
+      <item>150–200 g geriebener Käse</item>
+      <item>Salz, Pfeffer, Muskat</item>
+      <item>Butter für die Form</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln schälen und in dünne Scheiben schneiden.</step>
+      <step nr="2">Zwiebeln würfeln und mit dem Speck kurz anbraten.</step>
+      <step nr="3">Schmand und Sahne verrühren und mit Salz, Pfeffer und Muskat würzen.</step>
+      <step nr="4">Kartoffeln, Speck und Zwiebeln in eine gebutterte Auflaufform schichten.</step>
+      <step nr="5">Die Schmand-Sahne-Mischung darübergeben und mit Käse bestreuen.</step>
+      <step nr="6">Im Ofen bei 180 °C ca. 45–55 Minuten backen, bis die Kartoffeln weich sind und die Oberfläche goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 45–55 Minuten</item>
+      <item>Gesamt: ca. 70 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Lauch oder Frühlingszwiebeln bekommt der Auflauf noch mehr Tiefe.</item>
+      <item>Wenn der Auflauf zu dunkel wird, locker mit Alufolie abdecken.</item>
+      <item>Passt gut zu grünem Salat.</item>
+    </tips>
+    <rating>9 / 10 – deftig, cremig und genau deshalb so gut.</rating>
+    <translation lang="pl">
+      <name>Zapiekanka ziemniaczana z boczkiem (konkretna i kremowa)</name>
+      <persons>3–4 osoby</persons>
+      <category>Dania z piekarnika / Kuchnia domowa</category>
+      <ingredients>
+        <item>1,2 kg ziemniaków</item>
+        <item>150 g boczku w kostce</item>
+        <item>2 cebule</item>
+        <item>200 g śmietany typu Schmand</item>
+        <item>150 ml śmietanki</item>
+        <item>150–200 g startego sera</item>
+        <item>sól, pieprz, gałka muszkatołowa</item>
+        <item>masło do formy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać ziemniaki i pokroić w cienkie plastry.</step>
+        <step nr="2">Pokroić cebulę i krótko podsmażyć z boczkiem.</step>
+        <step nr="3">Wymieszać śmietanę ze śmietanką i doprawić solą, pieprzem i gałką.</step>
+        <step nr="4">Układać ziemniaki, boczek i cebulę warstwami w natłuszczonej formie.</step>
+        <step nr="5">Zalać mieszanką śmietanową i posypać serem.</step>
+        <step nr="6">Piec w 180 °C przez ok. 45–55 minut, aż ziemniaki będą miękkie, a góra złocista.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 20 min</item>
+        <item>pieczenie: ok. 45–55 min</item>
+        <item>łącznie: ok. 70 min</item>
+      </timing>
+      <tips>
+        <item>Z porem albo dymką zapiekanka dostaje więcej głębi.</item>
+        <item>Jeśli zbyt mocno się rumieni, przykryć luźno folią.</item>
+        <item>Dobrze pasuje do zielonej sałaty.</item>
+      </tips>
+      <rating>9 / 10 – deftig, cremig und genau deshalb so gut.</rating>
+    </translation>
+  </recipe>
+  <recipe id="97">
+    <name>BBQ-Hähnchen aus dem Ofen</name>
+    <intro lang="de">Auch ohne Grill bekommst du hier richtiges BBQ-Feeling hin. Die Marinade zieht ins Fleisch, im Ofen entwickelt sich eine schöne Würze und am Ende hast du ein saftiges Hähnchen mit ordentlich Geschmack.</intro>
+    <intro lang="pl">Nawet bez grilla da się tu osiągnąć prawdziwy klimat BBQ. Marynata przechodzi w mięso, w piekarniku rozwija się ładna przyprawowa głębia, a na końcu masz soczystego kurczaka z porządnym smakiem.</intro>
+    <persons>2–4 Personen</persons>
+    <category>Ofengerichte / Grill &amp; BBQ</category>
+    <image src="images/rezeptbild_95.png" alt="BBQ-Hähnchen aus dem Ofen"/>
+    <ingredients>
+      <item>800 g Hähnchenschenkel oder Hähnchenoberkeulen</item>
+      <item>3 EL BBQ-Sauce</item>
+      <item>2 EL Öl</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 TL BBQ-Rub oder Grillgewürz</item>
+      <item>Salz, Pfeffer</item>
+      <item>optional: 1 TL Honig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen trocken tupfen und mit Öl, BBQ-Sauce, Paprika, Rub, Salz und Pfeffer marinieren.</step>
+      <step nr="2">Mindestens 30 Minuten ziehen lassen.</step>
+      <step nr="3">Das Hähnchen auf ein Blech oder in eine Ofenform legen.</step>
+      <step nr="4">Bei 200 °C ca. 35–45 Minuten backen, bis es gar und schön gebräunt ist.</step>
+      <step nr="5">Für mehr Glanz kurz vor Ende noch einmal mit etwas BBQ-Sauce bestreichen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Marinieren: mindestens 30 Minuten</item>
+      <item>Backzeit: ca. 35–45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Ofenkartoffeln oder Coleslaw servieren.</item>
+      <item>Für mehr BBQ-Charakter etwas geräuchertes Paprikapulver nutzen.</item>
+      <item>Auch gut für Sandwiches am nächsten Tag.</item>
+    </tips>
+    <rating>8,7 / 10 – BBQ-Gefühl ohne Grill, aber mit viel Geschmack.</rating>
+    <translation lang="pl">
+      <name>Kurczak BBQ z piekarnika</name>
+      <persons>2–4 osoby</persons>
+      <category>Dania z piekarnika / Grill &amp; BBQ</category>
+      <ingredients>
+        <item>800 g udek lub pałek z kurczaka</item>
+        <item>3 łyżki sosu BBQ</item>
+        <item>2 łyżki oleju</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1 łyżeczka rubu BBQ lub przyprawy grillowej</item>
+        <item>sól, pieprz</item>
+        <item>opcjonalnie: 1 łyżeczka miodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Osuszyć kurczaka i wymieszać z olejem, sosem BBQ, papryką, rubem, solą i pieprzem.</step>
+        <step nr="2">Odstawić na co najmniej 30 minut.</step>
+        <step nr="3">Ułożyć mięso na blasze lub w naczyniu do pieczenia.</step>
+        <step nr="4">Piec w 200 °C przez ok. 35–45 minut, aż będzie gotowe i ładnie przyrumienione.</step>
+        <step nr="5">Pod koniec można jeszcze raz posmarować odrobiną sosu BBQ.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 10 min</item>
+        <item>marynowanie: co najmniej 30 min</item>
+        <item>pieczenie: ok. 35–45 min</item>
+      </timing>
+      <tips>
+        <item>Podawać z ziemniakami z piekarnika albo colesławem.</item>
+        <item>Dla mocniejszego efektu dodać wędzoną paprykę.</item>
+        <item>Świetne także następnego dnia do kanapek.</item>
+      </tips>
+      <rating>8,7 / 10 – BBQ-Gefühl ohne Grill, aber mit viel Geschmack.</rating>
+    </translation>
+  </recipe>
+  <recipe id="98">
+    <name>Schnelle Hackpfanne mit Ajvar</name>
+    <intro lang="de">Ein Gericht, das du immer machen kannst, wenn es unkompliziert bleiben soll. Das Hackfleisch wird angebraten, Ajvar sorgt für Würze und in wenigen Minuten steht ein richtig solides Essen auf dem Tisch.</intro>
+    <intro lang="pl">To danie można zrobić zawsze wtedy, gdy ma być bez komplikacji. Mięso mielone się smaży, ajvar daje wyrazistość i po kilku minutach na stole stoi naprawdę solidny posiłek.</intro>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte / Schnell &amp; einfach</category>
+    <image src="images/rezeptbild_96.png" alt="Schnelle Hackpfanne mit Ajvar"/>
+    <ingredients>
+      <item>500 g Hackfleisch</item>
+      <item>1 Zwiebel</item>
+      <item>1 Paprika</item>
+      <item>2–3 EL Ajvar</item>
+      <item>100 ml Sahne oder Kochsahne</item>
+      <item>1 EL Öl</item>
+      <item>Salz, Pfeffer</item>
+      <item>optional: Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebel würfeln, Paprika klein schneiden.</step>
+      <step nr="2">Öl in einer Pfanne erhitzen und das Hackfleisch krümelig anbraten.</step>
+      <step nr="3">Zwiebel und Paprika zugeben und einige Minuten mitbraten.</step>
+      <step nr="4">Ajvar und Sahne einrühren und kurz einköcheln lassen.</step>
+      <step nr="5">Mit Salz und Pfeffer abschmecken und nach Wunsch mit Petersilie servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Schmeckt gut mit Reis, Brot oder Kartoffeln.</item>
+      <item>Mit etwas Käse darüber wird es noch herzhafter.</item>
+      <item>Für mehr Schärfe scharfen Ajvar nehmen.</item>
+    </tips>
+    <rating>8,8 / 10 – schnell, würzig und immer eine gute Idee.</rating>
+    <translation lang="pl">
+      <name>Szybka patelnia z mielonym mięsem i ajvarem</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania z patelni / Szybko i prosto</category>
+      <ingredients>
+        <item>500 g mięsa mielonego</item>
+        <item>1 cebula</item>
+        <item>1 papryka</item>
+        <item>2–3 łyżki ajvaru</item>
+        <item>100 ml śmietanki</item>
+        <item>1 łyżka oleju</item>
+        <item>sól, pieprz</item>
+        <item>opcjonalnie: pietruszka</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić cebulę w kostkę i drobno posiekać paprykę.</step>
+        <step nr="2">Rozgrzać olej i usmażyć mięso mielone na sypko.</step>
+        <step nr="3">Dodać cebulę i paprykę i smażyć jeszcze kilka minut.</step>
+        <step nr="4">Wmieszać ajvar i śmietankę, krótko zredukować.</step>
+        <step nr="5">Doprawić solą i pieprzem i ewentualnie posypać pietruszką.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 10 min</item>
+        <item>smażenie: ok. 15 min</item>
+        <item>łącznie: ok. 25 min</item>
+      </timing>
+      <tips>
+        <item>Dobrze smakuje z ryżem, pieczywem albo ziemniakami.</item>
+        <item>Z dodatkiem sera robi się jeszcze bardziej konkretne.</item>
+        <item>Dla większej ostrości użyć pikantnego ajvaru.</item>
+      </tips>
+      <rating>8,8 / 10 – schnell, würzig und immer eine gute Idee.</rating>
+    </translation>
+  </recipe>
+  <recipe id="99">
+    <name>Ofenkartoffeln Deluxe mit Toppings</name>
+    <intro lang="de">Hier wird aus einer einfachen Beilage ein komplettes Gericht. Knusprige Kartoffeln, dazu verschiedene Toppings – von cremig bis würzig. Perfekt, wenn jeder sich sein Essen selbst zusammenstellen will.</intro>
+    <intro lang="pl">Tutaj z prostego dodatku robi się pełne danie. Chrupiące ziemniaki, do tego różne dodatki – od kremowych po bardziej wyraziste. Idealne, gdy każdy chce złożyć sobie talerz po swojemu.</intro>
+    <persons>3–4 Personen</persons>
+    <category>Ofengerichte / Beilagen</category>
+    <image src="images/rezeptbild_97.png" alt="Ofenkartoffeln Deluxe mit Toppings"/>
+    <ingredients>
+      <item>4 große Ofenkartoffeln</item>
+      <item>150 g Kräuterquark oder Sour Cream</item>
+      <item>100 g geriebener Käse</item>
+      <item>4 Frühlingszwiebeln</item>
+      <item>6 Scheiben Bacon oder Speckwürfel</item>
+      <item>optional: Mais, Jalapeños, rote Zwiebeln</item>
+      <item>Öl</item>
+      <item>Salz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln waschen, mit Öl einreiben und salzen.</step>
+      <step nr="2">Bei 200 °C je nach Größe 50–60 Minuten backen.</step>
+      <step nr="3">Inzwischen Toppings vorbereiten: Bacon knusprig braten, Frühlingszwiebeln schneiden, Käse bereitstellen.</step>
+      <step nr="4">Kartoffeln einschneiden und etwas aufdrücken.</step>
+      <step nr="5">Mit Quark, Käse und den gewünschten Toppings füllen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 50–60 Minuten</item>
+      <item>Gesamt: ca. 70 Minuten</item>
+    </timing>
+    <tips>
+      <item>Ideal als Baukasten-Essen für mehrere Leute.</item>
+      <item>Auch mit Chili con Carne als Topping stark.</item>
+      <item>Für vegetarische Variante Bacon einfach weglassen.</item>
+    </tips>
+    <rating>8,9 / 10 – einfach, gesellig und überraschend vielseitig.</rating>
+    <translation lang="pl">
+      <name>Pieczone ziemniaki deluxe z dodatkami</name>
+      <persons>3–4 osoby</persons>
+      <category>Dania z piekarnika / Dodatki</category>
+      <ingredients>
+        <item>4 duże ziemniaki do pieczenia</item>
+        <item>150 g twarożku z ziołami lub sour cream</item>
+        <item>100 g startego sera</item>
+        <item>4 dymki</item>
+        <item>6 plastrów boczku lub boczek w kostce</item>
+        <item>opcjonalnie: kukurydza, jalapeño, czerwona cebula</item>
+        <item>olej</item>
+        <item>sól</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Umyć ziemniaki, natrzeć olejem i posolić.</step>
+        <step nr="2">Piec w 200 °C przez 50–60 minut, zależnie od wielkości.</step>
+        <step nr="3">W międzyczasie przygotować dodatki: podsmażyć boczek, pokroić dymkę, przygotować ser.</step>
+        <step nr="4">Naciąć ziemniaki i lekko je otworzyć.</step>
+        <step nr="5">Wypełnić twarożkiem, serem i wybranymi dodatkami, od razu podawać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 15 min</item>
+        <item>pieczenie: ok. 50–60 min</item>
+        <item>łącznie: ok. 70 min</item>
+      </timing>
+      <tips>
+        <item>Świetne jako danie do składania dla kilku osób.</item>
+        <item>Mocna wersja także z chili con carne na wierzchu.</item>
+        <item>W wersji wegetariańskiej po prostu pominąć boczek.</item>
+      </tips>
+      <rating>8,9 / 10 – einfach, gesellig und überraschend vielseitig.</rating>
+    </translation>
+  </recipe>
+  <recipe id="100">
+    <name>AirFryer Hähnchen (knusprig &amp; saftig)</name>
+    <intro lang="de">Der AirFryer zeigt hier, was er kann. Außen schön knusprig, innen saftig – und das ohne großen Aufwand. Ideal für Tage, an denen es schnell gehen muss, aber trotzdem gut werden soll.</intro>
+    <intro lang="pl">Tutaj AirFryer pokazuje, co potrafi. Z zewnątrz przyjemnie chrupiący, w środku soczysty – i to bez wielkiego wysiłku. Idealny na dni, gdy ma być szybko, ale nadal dobrze.</intro>
+    <persons>2–3 Personen</persons>
+    <category>Airfryer / Schnell &amp; einfach</category>
+    <image src="images/rezeptbild_98.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)"/>
+    <ingredients>
+      <item>600–700 g Hähnchenschenkel ohne Knochen oder Hähnchenbrust</item>
+      <item>2 EL Öl</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 TL Knoblauchpulver</item>
+      <item>Salz, Pfeffer</item>
+      <item>optional: etwas BBQ-Rub</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen trocken tupfen und mit Öl sowie Gewürzen vermengen.</step>
+      <step nr="2">Den AirFryer auf 190 °C vorheizen.</step>
+      <step nr="3">Das Fleisch im Korb verteilen, ohne es zu stark zu stapeln.</step>
+      <step nr="4">Je nach Dicke 16–22 Minuten garen und einmal wenden oder schütteln.</step>
+      <step nr="5">Kurz ruhen lassen und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 16–22 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Schenkelstücken wird es besonders saftig.</item>
+      <item>Zu Pommes, Salat oder Wraps sehr gut.</item>
+      <item>Nicht zu voll in den Korb legen.</item>
+    </tips>
+    <rating>8,7 / 10 – schnell, knusprig und alltagstauglich.</rating>
+    <translation lang="pl">
+      <name>Kurczak z AirFryera (chrupiący i soczysty)</name>
+      <persons>2–3 osoby</persons>
+      <category>Airfryer / Szybko i prosto</category>
+      <ingredients>
+        <item>600–700 g mięsa z kurczaka</item>
+        <item>2 łyżki oleju</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>1 łyżeczka czosnku granulowanego</item>
+        <item>sól, pieprz</item>
+        <item>opcjonalnie: trochę rubu BBQ</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Osuszyć kurczaka i wymieszać z olejem oraz przyprawami.</step>
+        <step nr="2">Rozgrzać AirFryer do 190 °C.</step>
+        <step nr="3">Rozłożyć mięso w koszu bez zbyt ciasnego układania.</step>
+        <step nr="4">Piec 16–22 minuty, zależnie od grubości, raz obracając lub potrząsając.</step>
+        <step nr="5">Krótko odstawić i podawać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 10 min</item>
+        <item>pieczenie: ok. 16–22 min</item>
+        <item>łącznie: ok. 30 min</item>
+      </timing>
+      <tips>
+        <item>Z mięsa z udek wychodzi szczególnie soczyste.</item>
+        <item>Dobrze pasuje do frytek, sałaty albo wrapów.</item>
+        <item>Nie przepełniać kosza.</item>
+      </tips>
+      <rating>8,7 / 10 – schnell, knusprig und alltagstauglich.</rating>
+    </translation>
+  </recipe>
+  <recipe id="101">
+    <name>Gemüsepfanne „Resteküche“</name>
+    <intro lang="de">Ein Gericht, das aus dem entsteht, was gerade da ist. Unterschiedliches Gemüse wird angebraten, gewürzt und ergibt zusammen etwas, das überraschend gut funktioniert. Perfekt, um Reste sinnvoll zu verwerten.</intro>
+    <intro lang="pl">To danie powstaje z tego, co akurat jest pod ręką. Różne warzywa się smaży, doprawia i razem dają coś, co zaskakująco dobrze działa. Idealne, żeby sensownie wykorzystać resztki.</intro>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte / Resteküche</category>
+    <image src="images/rezeptbild_99.png" alt="Gemüsepfanne „Resteküche“"/>
+    <ingredients>
+      <item>ca. 700 g gemischtes Gemüse nach Vorrat, z. B. Paprika, Zucchini, Möhre, Champignons, Zwiebel</item>
+      <item>2 EL Öl</item>
+      <item>1 Knoblauchzehe</item>
+      <item>Salz, Pfeffer</item>
+      <item>1 TL Paprikapulver oder italienische Kräuter</item>
+      <item>optional: etwas Feta, Käse oder Reis vom Vortag</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse je nach Sorte in ähnliche Größen schneiden.</step>
+      <step nr="2">Öl in einer großen Pfanne erhitzen und zuerst die festeren Sorten anbraten.</step>
+      <step nr="3">Weicheres Gemüse und Knoblauch zugeben.</step>
+      <step nr="4">Mit Salz, Pfeffer und Gewürzen abschmecken und alles bissfest garen.</step>
+      <step nr="5">Nach Wunsch mit Feta, Käse oder Reis ergänzen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Ideal zum Aufbrauchen von Gemüse-Resten.</item>
+      <item>Mit Ei, Reis oder Kartoffeln wird es noch sättigender.</item>
+      <item>Je nach Vorrat immer etwas anders – genau das macht es praktisch.</item>
+    </tips>
+    <rating>8,5 / 10 – simpel, sinnvoll und besser als sein Ruf.</rating>
+    <translation lang="pl">
+      <name>Patelnia warzywna „z resztek”</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania z patelni / Kuchnia z resztek</category>
+      <ingredients>
+        <item>ok. 700 g mieszanych warzyw, np. papryka, cukinia, marchew, pieczarki, cebula</item>
+        <item>2 łyżki oleju</item>
+        <item>1 ząbek czosnku</item>
+        <item>sól, pieprz</item>
+        <item>1 łyżeczka papryki lub ziół włoskich</item>
+        <item>opcjonalnie: feta, ser albo ugotowany wcześniej ryż</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić warzywa na podobnej wielkości kawałki.</step>
+        <step nr="2">Rozgrzać olej na dużej patelni i najpierw smażyć twardsze warzywa.</step>
+        <step nr="3">Dodać miększe warzywa i czosnek.</step>
+        <step nr="4">Doprawić solą, pieprzem i przyprawami i smażyć do odpowiedniej miękkości.</step>
+        <step nr="5">W razie potrzeby dodać fetę, ser albo ryż.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 15 min</item>
+        <item>smażenie: ok. 15 min</item>
+        <item>łącznie: ok. 30 min</item>
+      </timing>
+      <tips>
+        <item>Idealne do wykorzystania resztek warzyw.</item>
+        <item>Z jajkiem, ryżem albo ziemniakami syci jeszcze bardziej.</item>
+        <item>Za każdym razem może smakować trochę inaczej – i to jest w tym praktyczne.</item>
+      </tips>
+      <rating>8,5 / 10 – simpel, sinnvoll und besser als sein Ruf.</rating>
+    </translation>
+  </recipe>
+  <recipe id="102">
+    <name>Knusprige Bratkartoffeln mit Zwiebeln</name>
+    <intro lang="de">Bratkartoffeln können richtig gut sein – wenn man ihnen Zeit gibt. Schön knusprig gebraten, mit Zwiebeln verfeinert und genau so, wie man sie sich wünscht. Einfach, aber mit großem Unterschied.</intro>
+    <intro lang="pl">Smażone ziemniaki potrafią być naprawdę świetne – jeśli da się im czas. Dobrze zrumienione, doprawione cebulą i dokładnie takie, jak powinny być. Proste, ale z ogromną różnicą w efekcie.</intro>
+    <persons>2–3 Personen</persons>
+    <category>Pfannengerichte / Beilagen</category>
+    <image src="images/rezeptbild_100.png" alt="Knusprige Bratkartoffeln mit Zwiebeln"/>
+    <ingredients>
+      <item>800 g festkochende Kartoffeln, am besten gekocht vom Vortag</item>
+      <item>2 große Zwiebeln</item>
+      <item>2–3 EL Öl oder Butterschmalz</item>
+      <item>Salz, Pfeffer</item>
+      <item>optional: etwas Speck</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln in Scheiben schneiden.</step>
+      <step nr="2">Zwiebeln in halbe Ringe schneiden.</step>
+      <step nr="3">Öl oder Butterschmalz in einer großen Pfanne erhitzen und die Kartoffeln ohne ständiges Wenden goldbraun braten.</step>
+      <step nr="4">Zwiebeln in den letzten Minuten zugeben und mitbraten.</step>
+      <step nr="5">Mit Salz und Pfeffer abschmecken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Bratzeit: ca. 20–25 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Kartoffeln vom Vortag werden sie am besten.</item>
+      <item>Geduld ist hier wichtiger als hohe Hitze.</item>
+      <item>Mit Spiegelei oder saurer Gurke sehr gut.</item>
+    </tips>
+    <rating>9 / 10 – simpel, aber genau richtig gemacht ein Unterschied wie Tag und Nacht.</rating>
+    <translation lang="pl">
+      <name>Chrupiące ziemniaki smażone z cebulą</name>
+      <persons>2–3 osoby</persons>
+      <category>Dania z patelni / Dodatki</category>
+      <ingredients>
+        <item>800 g ugotowanych ziemniaków, najlepiej z poprzedniego dnia</item>
+        <item>2 duże cebule</item>
+        <item>2–3 łyżki oleju lub klarowanego masła</item>
+        <item>sól, pieprz</item>
+        <item>opcjonalnie: trochę boczku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić ziemniaki w plastry.</step>
+        <step nr="2">Cebulę pokroić w półplasterki.</step>
+        <step nr="3">Rozgrzać tłuszcz na dużej patelni i smażyć ziemniaki na złoto, nie mieszając ich co chwilę.</step>
+        <step nr="4">Pod koniec dodać cebulę i smażyć razem.</step>
+        <step nr="5">Doprawić solą i pieprzem.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 10 min</item>
+        <item>smażenie: ok. 20–25 min</item>
+        <item>łącznie: ok. 35 min</item>
+      </timing>
+      <tips>
+        <item>Najlepsze wychodzą z ziemniaków z dnia poprzedniego.</item>
+        <item>Tutaj cierpliwość jest ważniejsza niż zbyt mocny ogień.</item>
+        <item>Świetne z jajkiem sadzonym albo kiszonym ogórkiem.</item>
+      </tips>
+      <rating>9 / 10 – simpel, aber genau richtig gemacht ein Unterschied wie Tag und Nacht.</rating>
+    </translation>
+  </recipe>
+  <recipe id="103">
+    <name>Wrap-Abend (DIY-Style)</name>
+    <intro lang="de">Perfekt für einen entspannten Abend mit mehreren Leuten. Jeder baut sich seinen Wrap selbst – mit Fleisch, Gemüse und Saucen nach Geschmack. Locker, flexibel und genau richtig für gesellige Runden.</intro>
+    <intro lang="pl">Idealne na spokojny wieczór w większym gronie. Każdy składa sobie wrap po swojemu – z mięsem, warzywami i sosami według własnego gustu. Luźno, elastycznie i dokładnie tak, jak trzeba na towarzyskie spotkania.</intro>
+    <persons>4 Personen</persons>
+    <category>Wraps &amp; Burritos / Gesellig</category>
+    <image src="images/rezeptbild_101.png" alt="Wrap-Abend (DIY-Style)"/>
+    <ingredients>
+      <item>8 große Wraps</item>
+      <item>500 g Hähnchen oder Hackfleisch</item>
+      <item>1 Eisbergsalat</item>
+      <item>2 Tomaten</item>
+      <item>1 Gurke</item>
+      <item>1 rote Zwiebel</item>
+      <item>Mais nach Wunsch</item>
+      <item>2–3 Saucen, z. B. Tzatziki, Aioli, Salsa</item>
+      <item>Öl</item>
+      <item>Gewürze nach Geschmack</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Fleisch anbraten und passend würzen.</step>
+      <step nr="2">Gemüse und Salat vorbereiten und in Schalen bereitstellen.</step>
+      <step nr="3">Wraps kurz erwärmen.</step>
+      <step nr="4">Alles auf den Tisch stellen, damit jeder seinen Wrap selbst füllen kann.</step>
+      <step nr="5">Nach Wunsch rollen oder falten und direkt essen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Ideal für Gäste oder Familienabende.</item>
+      <item>Mit mehreren Saucen wird es deutlich spannender.</item>
+      <item>Auch mit vegetarischer Füllung gut machbar.</item>
+    </tips>
+    <rating>8,8 / 10 – locker, praktisch und genau richtig für mehrere Leute.</rating>
+    <translation lang="pl">
+      <name>Wieczór z wrapami (DIY)</name>
+      <persons>4 osoby</persons>
+      <category>Wrapy i burrito / Na wspólny wieczór</category>
+      <ingredients>
+        <item>8 dużych wrapów</item>
+        <item>500 g kurczaka lub mięsa mielonego</item>
+        <item>1 sałata lodowa</item>
+        <item>2 pomidory</item>
+        <item>1 ogórek</item>
+        <item>1 czerwona cebula</item>
+        <item>kukurydza według uznania</item>
+        <item>2–3 sosy, np. tzatziki, aioli, salsa</item>
+        <item>olej</item>
+        <item>przyprawy do smaku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Usmażyć mięso i odpowiednio doprawić.</step>
+        <step nr="2">Przygotować warzywa i sałatę i przełożyć do miseczek.</step>
+        <step nr="3">Krótko podgrzać wrapy.</step>
+        <step nr="4">Ustawić wszystko na stole, aby każdy mógł sam złożyć swojego wrapa.</step>
+        <step nr="5">Zawijać lub składać według uznania i od razu jeść.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 20 min</item>
+        <item>smażenie: ok. 15 min</item>
+        <item>łącznie: ok. 35 min</item>
+      </timing>
+      <tips>
+        <item>Świetne dla gości albo na rodzinny wieczór.</item>
+        <item>Z kilkoma sosami robi się dużo ciekawsze.</item>
+        <item>Dobrze działa też z wersją wegetariańską.</item>
+      </tips>
+      <rating>8,8 / 10 – locker, praktisch und genau richtig für mehrere Leute.</rating>
+    </translation>
+  </recipe>
+  <recipe id="104">
+    <name>Sommerlicher Tomatensalat</name>
+    <intro lang="de">Ein einfacher Salat, der von guten Zutaten lebt. Reife Tomaten, etwas Zwiebel und ein passendes Dressing – mehr braucht es nicht. Perfekt als frische Beilage zu deftigen Gerichten oder vom Grill.</intro>
+    <intro lang="pl">To prosta sałatka, która żyje dobrymi składnikami. Dojrzałe pomidory, trochę cebuli i odpowiedni dressing – więcej naprawdę nie potrzeba. Idealna jako świeży dodatek do konkretniejszych dań albo z grilla.</intro>
+    <persons>2–4 Personen</persons>
+    <category>Beilagen / Salate</category>
+    <image src="images/rezeptbild_102.png" alt="Sommerlicher Tomatensalat"/>
+    <ingredients>
+      <item>500–700 g reife Tomaten</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 EL heller Essig oder Balsamico</item>
+      <item>Salz, Pfeffer</item>
+      <item>optional: frische Kräuter wie Basilikum oder Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Tomaten in Scheiben oder Stücke schneiden.</step>
+      <step nr="2">Zwiebel fein schneiden oder in dünne Ringe teilen.</step>
+      <step nr="3">Öl und Essig verrühren und mit Salz und Pfeffer abschmecken.</step>
+      <step nr="4">Tomaten und Zwiebel mit dem Dressing vermengen.</step>
+      <step nr="5">Nach Wunsch mit frischen Kräutern servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Ziehzeit: optional 10 Minuten</item>
+      <item>Gesamt: ca. 10–20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit etwas Burrata oder Feta lässt sich der Salat aufwerten.</item>
+      <item>Am besten mit wirklich reifen Tomaten machen.</item>
+      <item>Passt ideal zu Grillgerichten und Ofenkartoffeln.</item>
+    </tips>
+    <rating>8,6 / 10 – simpel, frisch und genau deshalb so gut.</rating>
+    <translation lang="pl">
+      <name>Letnia sałatka pomidorowa</name>
+      <persons>2–4 osoby</persons>
+      <category>Dodatki / Sałatki</category>
+      <ingredients>
+        <item>500–700 g dojrzałych pomidorów</item>
+        <item>1 mała czerwona cebula</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 łyżka jasnego octu lub balsamico</item>
+        <item>sól, pieprz</item>
+        <item>opcjonalnie: świeże zioła, np. bazylia albo pietruszka</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić pomidory w plastry albo kawałki.</step>
+        <step nr="2">Cebulę drobno posiekać lub pokroić w cienkie piórka.</step>
+        <step nr="3">Wymieszać oliwę z octem i doprawić solą oraz pieprzem.</step>
+        <step nr="4">Połączyć pomidory i cebulę z dressingiem.</step>
+        <step nr="5">W razie potrzeby podać ze świeżymi ziołami.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 10 min</item>
+        <item>odpoczynek: opcjonalnie 10 min</item>
+        <item>łącznie: ok. 10–20 min</item>
+      </timing>
+      <tips>
+        <item>Z dodatkiem burraty albo fety sałatka robi się jeszcze ciekawsza.</item>
+        <item>Najlepiej użyć naprawdę dojrzałych pomidorów.</item>
+        <item>Świetnie pasuje do dań z grilla i ziemniaków z piekarnika.</item>
+      </tips>
+      <rating>8,6 / 10 – simpel, frisch und genau deshalb so gut.</rating>
+    </translation>
+  </recipe>
+  <recipe id="105">
+    <name>Ajvarsuppe mit Pide</name>
+    <intro lang="de">Diese Suppe ist genau die richtige Mischung aus würzig, cremig und unkompliziert. Der Ajvar bringt sofort Tiefe und Wärme rein, und zusammen mit weichem Pide wird daraus ein richtig gemütliches Essen.</intro>
+    <intro lang="pl">Ta zupa to idealne połączenie wyrazistości, kremowości i prostoty. Ajvar od razu daje głębię i ciepło, a z miękką pide całość zamienia się w naprawdę przyjemny, sycący posiłek.</intro>
+    <persons>3–4 Personen</persons>
+    <category>Suppen / Feierabendküche</category>
+    <image src="images/rezeptbild_105.png" alt="Ajvarsuppe mit Pide"/>
+    <ingredients>
+      <item>2 EL Öl</item>
+      <item>1 große Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 rote Paprika</item>
+      <item>2 EL Tomatenmark</item>
+      <item>3–4 EL Ajvar (mild oder pikant)</item>
+      <item>700 ml Gemüsebrühe</item>
+      <item>200 ml Sahne oder Kochsahne</item>
+      <item>100 g Frischkäse oder Schmand</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: Chiliflocken</item>
+      <item>frische Petersilie oder Schnittlauch</item>
+      <item>2 Pide-Brote oder Pide-Stücke zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebel, Knoblauch und Paprika fein würfeln.</step>
+      <step nr="2">Öl in einem Topf erhitzen und Zwiebel sowie Paprika 4–5 Minuten weich anschwitzen.</step>
+      <step nr="3">Knoblauch kurz mit anschwitzen, dann Tomatenmark und Ajvar einrühren.</step>
+      <step nr="4">Mit Gemüsebrühe ablöschen und alles 10 Minuten leicht köcheln lassen.</step>
+      <step nr="5">Sahne und Frischkäse einrühren, dann die Suppe fein pürieren oder nach Wunsch leicht stückig lassen.</step>
+      <step nr="6">Mit Paprikapulver, Salz, Pfeffer und optional etwas Chili abschmecken.</step>
+      <step nr="7">Pide kurz im Ofen oder in der Pfanne erwärmen und die Suppe mit Kräutern servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Kochzeit: ca. 15 Minuten</item>
+      <item>Gesamtzeit: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit pikantem Ajvar wird die Suppe kräftiger und würziger.</item>
+      <item>Für mehr Sättigung passen kleine Hähnchenstücke oder Kichererbsen gut dazu.</item>
+      <item>Pide vor dem Servieren leicht anrösten – dann nimmt es die Suppe besonders gut auf.</item>
+    </tips>
+    <rating>8,5/10 – würzig, cremig und perfekt für einen schnellen, gemütlichen Abend.</rating>
+    <translation lang="pl">
+      <name>Zupa ajvarowa z pide</name>
+      <persons>3–4 osoby</persons>
+      <category>Zupy / kuchnia po pracy</category>
+      <ingredients>
+        <item>2 EL oleju</item>
+        <item>1 duża cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>1 czerwona papryka</item>
+        <item>2 EL koncentratu pomidorowego</item>
+        <item>3–4 EL ajvaru (łagodnego lub ostrego)</item>
+        <item>700 ml bulionu warzywnego</item>
+        <item>200 ml śmietanki</item>
+        <item>100 g serka śmietankowego lub śmietany</item>
+        <item>1 TL słodkiej papryki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>opcjonalnie: płatki chili</item>
+        <item>świeża pietruszka lub szczypiorek</item>
+        <item>2 chleby pide lub kawałki pide do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Cebulę, czosnek i paprykę drobno pokroić.</step>
+        <step nr="2">W garnku rozgrzać olej i podsmażyć cebulę oraz paprykę przez 4–5 minut, aż zmiękną.</step>
+        <step nr="3">Krótko dodać czosnek, następnie wmieszać koncentrat pomidorowy i ajvar.</step>
+        <step nr="4">Wlać bulion warzywny i gotować całość lekko przez około 10 minut.</step>
+        <step nr="5">Dodać śmietankę i serek, potem zmiksować zupę na gładko albo zostawić lekko z kawałkami.</step>
+        <step nr="6">Doprawić papryką, solą, pieprzem i opcjonalnie odrobiną chili.</step>
+        <step nr="7">Pide krótko podgrzać w piekarniku lub na patelni i podawać zupę z ziołami.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Gotowanie: ok. 15 minut</item>
+        <item>Łącznie: ok. 25 minut</item>
+      </timing>
+      <tips>
+        <item>Ostry ajvar nada zupie bardziej wyrazisty smak.</item>
+        <item>Dla większej sytości dobrze pasują małe kawałki kurczaka albo ciecierzyca.</item>
+        <item>Przed podaniem warto lekko podpiec pide – wtedy najlepiej chłonie zupę.</item>
+      </tips>
+      <rating>8,5/10 – wyrazista, kremowa i idealna na szybki, przyjemny wieczór.</rating>
     </translation>
   </recipe>
 </cookbook>
