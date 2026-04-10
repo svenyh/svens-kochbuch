@@ -306,7 +306,7 @@
     <intro lang="pl">To danie już dawno stało się u nas prawdziwym klasykiem. Aromatyczny kurczak, chrupiące ziemniaki i coś świeżego z ogórkiem oraz tzatziki – właśnie ta kombinacja sprawia, że tak dobrze sprawdza się na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Ofengerichte</category>
-    <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki"/>
+    <image src="images/rezeptbild_04.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki"/>
     <ingredients>
       <item>700 g Hähnchengeschnetzeltes oder Hähnchenfilet in Streifen</item>
       <item>2 EL Gyrosgewürz</item>
@@ -393,7 +393,7 @@
     <intro lang="pl">Tutaj łączy się dokładnie ten rodzaj smaku BBQ, którego nie robi się codziennie w domu. Najpierw mocne smażenie, potem dym i na końcu wykończenie – właśnie to sprawia, że ta patelnia jest tak dobra.</intro>
     <persons>4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
-    <image src="images/rezeptbild_04.png" alt="Smoked BBQ-Fajita-Pfanne"/>
+    <image src="images/rezeptbild_05.png" alt="Smoked BBQ-Fajita-Pfanne"/>
     <ingredients>
       <item>700 g Rindfleisch in Streifen</item>
       <item>2 Paprika</item>
@@ -488,7 +488,7 @@
     <intro lang="pl">Bruschetta vom Ciabatta to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen als Vorspeise oder Beilage</persons>
     <category>Beilagen / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta"/>
+    <image src="images/rezeptbild_06.png" alt="Bruschetta vom Ciabatta"/>
     <ingredients>
       <item>1 Ciabatta</item>
       <item>3–4 Tomaten</item>
@@ -563,7 +563,7 @@
     <intro lang="pl">Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot"/>
+    <image src="images/rezeptbild_07.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot"/>
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>1 kleine Zwiebel</item>
@@ -652,7 +652,7 @@
     <intro lang="pl">Bauernomelette mit Tomaten-Mozzarella-Salat należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Eiergerichte</category>
-    <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat"/>
+    <image src="images/rezeptbild_08.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat"/>
     <ingredients>
       <item>6 Eier</item>
       <item>500 g Kartoffeln, gekocht</item>
@@ -739,7 +739,7 @@
     <intro lang="pl">Chicken Masala mit Naturjoghurt &amp; Protein-Wraps należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps"/>
+    <image src="images/rezeptbild_09.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps"/>
     <ingredients>
       <item>500 g Hähnchenbrust</item>
       <item>1 Zwiebel</item>
@@ -822,7 +822,7 @@
     <intro lang="pl">To jedno z tych dań, które robi się raz, a potem chce się do niego wracać. Salsiccia daje dużo smaku, warzywa z piekarnika robią się miękkie i aromatyczne, a kremowe wykończenie łączy wszystko w całość.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)"/>
+    <image src="images/rezeptbild_10.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)"/>
     <ingredients>
       <item>500–600 g Salsiccia</item>
       <item>800 g Kartoffeln</item>
@@ -903,7 +903,7 @@
     <intro lang="pl">Kiedy ma być konkretnie, kremowo i naprawdę sycąco, ta zapiekanka jest u mnie bardzo wysoko. Soczyste klopsiki, wyrazisty sos ajvarowo-śmietanowy i ładna pieczona warstwa na wierzchu – więcej właściwie nie trzeba dodawać.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe"/>
+    <image src="images/rezeptbild_11.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe"/>
     <ingredients>
       <item>600 g Hackfleisch</item>
       <item>800 g Kartoffeln</item>
@@ -988,7 +988,7 @@
     <intro lang="pl">Ta patelnia to typowy obiad po pracy, ale z naprawdę mocnym smakiem. Ziemniaki sycą, cabanossi daje wyrazistość, a sos sprawia, że całość smakuje nie tylko szybko, ale też bardzo spójnie.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
-    <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi"/>
+    <image src="images/rezeptbild_12.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi"/>
     <ingredients>
       <item>800 g Kartoffeln</item>
       <item>2 Paprika</item>
@@ -1154,7 +1154,7 @@
     <intro lang="pl">Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Hähnchengerichte</category>
-    <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln"/>
+    <image src="images/rezeptbild_14.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln"/>
     <ingredients>
       <item>4 Hähnchenschenkel</item>
       <item>2 lila Süßkartoffeln</item>
