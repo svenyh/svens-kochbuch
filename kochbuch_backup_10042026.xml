@@ -1,14 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
-<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="3.0" languages="de,pl">
+<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="2.4" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>90</recipeCount>
+    <recipeCount>87</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch. Ergänzt um neue Garnelen- und Stampfrezepte.</notes>
   </meta>
   <recipe id="1">
     <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
-    <intro lang="de">Das ist genau die Art von Schmorgericht, die sofort Eindruck macht. Die Chorizo bringt Würze rein, der Rotwein Tiefe und am Ende entsteht ein Teller, der gleichzeitig deftig, besonders und richtig gemütlich wirkt.</intro>
-    <intro lang="pl">To właśnie taki duszony przepis, który od razu robi wrażenie. Chorizo daje wyrazistość, czerwone wino głębię, a na końcu powstaje danie, które jest jednocześnie konkretne, wyjątkowe i bardzo przyjemne.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
     <image src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" />
@@ -106,8 +103,6 @@
   </recipe>
   <recipe id="2">
     <name>Italienischer Kalbshaxen-Braten</name>
-    <intro lang="de">Italienischer Kalbshaxen-Braten ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Italienischer Kalbshaxen-Braten to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
     <image src="images/rezeptbild_02.png" alt="Italienischer Kalbshaxen-Braten" />
@@ -203,8 +198,6 @@
   </recipe>
   <recipe id="3">
     <name>Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</name>
-    <intro lang="de">Wenn ich etwas machen will, das ohne großen Aufwand besonders wirkt, sind diese Muscheln ganz weit vorne. Die Sauce ist aromatisch, leicht cremig und genau dafür gemacht, am Ende mit gutem Brot komplett aufgenommen zu werden.</intro>
-    <intro lang="pl">Jeśli chcę zrobić coś, co bez wielkiego wysiłku robi wrażenie, te małże są u mnie bardzo wysoko. Sos jest aromatyczny, lekko kremowy i wręcz prosi się o to, żeby na końcu wyczyścić go dobrym pieczywem.</intro>
     <persons>2–3 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Pfannengerichte</category>
     <image src="images/rezeptbild_02_1.png" alt="Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot" />
@@ -302,8 +295,6 @@
   </recipe>
   <recipe id="4">
     <name>Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</name>
-    <intro lang="de">Das ist bei uns längst ein richtiger Klassiker geworden. Würziges Hähnchen, knusprige Kartoffeln und etwas Frisches mit Gurke und Tsatsiki – genau diese Mischung macht das Gericht so alltagstauglich und trotzdem besonders gut.</intro>
-    <intro lang="pl">To danie już dawno stało się u nas prawdziwym klasykiem. Aromatyczny kurczak, chrupiące ziemniaki i coś świeżego z ogórkiem oraz tzatziki – właśnie ta kombinacja sprawia, że tak dobrze sprawdza się na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Ofengerichte</category>
     <image src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" />
@@ -389,8 +380,6 @@
   </recipe>
   <recipe id="5">
     <name>Smoked BBQ-Fajita-Pfanne</name>
-    <intro lang="de">Hier kommt genau die Art von BBQ-Geschmack zusammen, die man zu Hause nicht jeden Tag hinbekommt. Erst kräftig anbraten, dann Rauch und am Ende noch das Finish – genau das macht diese Pfanne so stark.</intro>
-    <intro lang="pl">Tutaj łączy się dokładnie ten rodzaj smaku BBQ, którego nie robi się codziennie w domu. Najpierw mocne smażenie, potem dym i na końcu wykończenie – właśnie to sprawia, że ta patelnia jest tak dobra.</intro>
     <persons>4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
     <image src="images/rezeptbild_04.png" alt="Smoked BBQ-Fajita-Pfanne" />
@@ -484,8 +473,6 @@
   </recipe>
   <recipe id="6">
     <name>Bruschetta vom Ciabatta</name>
-    <intro lang="de">Bruschetta vom Ciabatta ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Bruschetta vom Ciabatta to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen als Vorspeise oder Beilage</persons>
     <category>Beilagen / Grill &amp; BBQ</category>
     <image src="images/rezeptbild_05.png" alt="Bruschetta vom Ciabatta" />
@@ -559,8 +546,6 @@
   </recipe>
   <recipe id="7">
     <name>Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</name>
-    <intro lang="de">Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
     <image src="images/rezeptbild_06.png" alt="Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot" />
@@ -648,8 +633,6 @@
   </recipe>
   <recipe id="8">
     <name>Bauernomelette mit Tomaten-Mozzarella-Salat</name>
-    <intro lang="de">Bauernomelette mit Tomaten-Mozzarella-Salat gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Bauernomelette mit Tomaten-Mozzarella-Salat należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Eiergerichte</category>
     <image src="images/rezeptbild_07.png" alt="Bauernomelette mit Tomaten-Mozzarella-Salat" />
@@ -735,8 +718,6 @@
   </recipe>
   <recipe id="9">
     <name>Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</name>
-    <intro lang="de">Chicken Masala mit Naturjoghurt &amp; Protein-Wraps gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Chicken Masala mit Naturjoghurt &amp; Protein-Wraps należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Hähnchengerichte</category>
     <image src="images/rezeptbild_08.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" />
@@ -818,8 +799,6 @@
   </recipe>
   <recipe id="10">
     <name>Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</name>
-    <intro lang="de">Das ist eines dieser Gerichte, die man einmal macht und dann immer wieder will. Die Salsiccia gibt richtig Geschmack, das Ofengemüse wird weich und aromatisch und am Ende macht die cremige Komponente alles noch runder.</intro>
-    <intro lang="pl">To jedno z tych dań, które robi się raz, a potem chce się do niego wracać. Salsiccia daje dużo smaku, warzywa z piekarnika robią się miękkie i aromatyczne, a kremowe wykończenie łączy wszystko w całość.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
     <image src="images/rezeptbild_09.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" />
@@ -899,8 +878,6 @@
   </recipe>
   <recipe id="11">
     <name>Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</name>
-    <intro lang="de">Wenn es deftig, cremig und richtig befriedigend sein soll, ist dieser Auflauf ganz weit vorne. Saftige Hackbällchen, würzige Ajvar-Sahne-Soße und eine schöne Ofenkruste – viel mehr muss man dazu eigentlich nicht sagen.</intro>
-    <intro lang="pl">Kiedy ma być konkretnie, kremowo i naprawdę sycąco, ta zapiekanka jest u mnie bardzo wysoko. Soczyste klopsiki, wyrazisty sos ajvarowo-śmietanowy i ładna pieczona warstwa na wierzchu – więcej właściwie nie trzeba dodawać.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
     <image src="images/rezeptbild_10.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" />
@@ -984,8 +961,6 @@
   </recipe>
   <recipe id="12">
     <name>Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</name>
-    <intro lang="de">Diese Pfanne ist typisches Feierabendessen mit richtig viel Geschmack. Die Kartoffeln machen satt, die Cabanossi bringt Würze und die Soße sorgt dafür, dass das Ganze nicht nur schnell, sondern auch wirklich rund schmeckt.</intro>
-    <intro lang="pl">Ta patelnia to typowy obiad po pracy, ale z naprawdę mocnym smakiem. Ziemniaki sycą, cabanossi daje wyrazistość, a sos sprawia, że całość smakuje nie tylko szybko, ale też bardzo spójnie.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
     <image src="images/rezeptbild_11.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" />
@@ -1065,8 +1040,6 @@
   </recipe>
   <recipe id="13">
     <name>Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</name>
-    <intro lang="de">Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Hähnchengerichte</category>
     <image src="images/rezeptbild_13.png" alt="Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt" />
@@ -1150,8 +1123,6 @@
   </recipe>
   <recipe id="14">
     <name>Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</name>
-    <intro lang="de">Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Hähnchengerichte</category>
     <image src="images/rezeptbild_12.png" alt="Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln" />
@@ -1229,8 +1200,6 @@
   </recipe>
   <recipe id="15">
     <name>Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</name>
-    <intro lang="de">Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>2–3 Personen</persons>
     <category>Ofengerichte / Hähnchengerichte</category>
     <image src="images/rezeptbild_15.png" alt="Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style" />
@@ -1304,8 +1273,6 @@
   </recipe>
   <recipe id="16">
     <name>Kartoffelauflauf mit Schmand, Käse &amp; Speck</name>
-    <intro lang="de">Kartoffelauflauf mit Schmand, Käse &amp; Speck ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Kartoffelauflauf mit Schmand, Käse &amp; Speck to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>3 Personen</persons>
     <category>Ofengerichte / Beilagen</category>
     <image src="images/rezeptbild_16.png" alt="Kartoffelauflauf mit Schmand, Käse &amp; Speck" />
@@ -1383,8 +1350,6 @@
   </recipe>
   <recipe id="17">
     <name>Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</name>
-    <intro lang="de">Rinderrouladen sind für mich echtes Sonntagsessen. Dieses Rezept bleibt klassisch, aber die helle Soße gibt dem Ganzen einen eigenen Charakter und macht es genau deshalb besonders spannend.</intro>
-    <intro lang="pl">Rolady wołowe to dla mnie prawdziwy niedzielny obiad. Ten przepis pozostaje klasyczny, ale jasny sos nadaje całości własny charakter i właśnie dlatego jest tak ciekawy.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
     <image src="images/rezeptbild_17.png" alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" />
@@ -1474,8 +1439,6 @@
   </recipe>
   <recipe id="18">
     <name>Kartoffelsuppe mit Mettenden</name>
-    <intro lang="de">Kartoffelsuppe mit Mettenden ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Kartoffelsuppe mit Mettenden to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4–6 Personen</persons>
     <category>Suppen / Hausmannskost</category>
     <image src="images/rezeptbild_18.png" alt="Kartoffelsuppe mit Mettenden" />
@@ -1545,8 +1508,6 @@
   </recipe>
   <recipe id="19">
     <name>Zakwas für Żurek selber machen</name>
-    <intro lang="de">Zakwas für Żurek selber machen ist für mich so eine Basis, die man im Alltag immer wieder gern nutzt. Nicht kompliziert, aber genau wichtig genug, damit ein ganzer Teller am Ende stimmig und richtig gut wirkt.</intro>
-    <intro lang="pl">Zakwas für Żurek selber machen to dla mnie taki podstawowy element, do którego na co dzień chętnie się wraca. Nieskomplikowany, ale na tyle ważny, że dopiero dzięki niemu cały talerz staje się naprawdę spójny i smaczny.</intro>
     <persons>Ansatz für mehrere Portionen Żurek</persons>
     <category>Grundlagen / Polnische Küche</category>
     <image src="images/rezeptbild_19.png" alt="Zakwas für Żurek selber machen" />
@@ -1616,8 +1577,6 @@
   </recipe>
   <recipe id="20">
     <name>Königsberger Klopse</name>
-    <intro lang="de">Königsberger Klopse ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Königsberger Klopse to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Hausmannskost</category>
     <image src="images/rezeptbild_20.png" alt="Königsberger Klopse" />
@@ -1701,8 +1660,6 @@
   </recipe>
   <recipe id="21">
     <name>Danziger Porzeln</name>
-    <intro lang="de">Danziger Porzeln gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Danziger Porzeln należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Gebäck &amp; Süßes / Polnische Küche</category>
     <image src="images/rezeptbild_21.png" alt="Danziger Porzeln" />
@@ -1774,8 +1731,6 @@
   </recipe>
   <recipe id="22">
     <name>Kalte Rote-Bete-Suppe</name>
-    <intro lang="de">Kalte Rote-Bete-Suppe ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Kalte Rote-Bete-Suppe to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Kalte Suppen</category>
     <image src="images/rezeptbild_22.png" alt="Kalte Rote-Bete-Suppe" />
@@ -1853,8 +1808,6 @@
   </recipe>
   <recipe id="23">
     <name>Piroggen mit Sauerkraut-Pilz-Füllung</name>
-    <intro lang="de">Piroggen mit Sauerkraut-Pilz-Füllung gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Piroggen mit Sauerkraut-Pilz-Füllung należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Teiggerichte / Polnische Küche</category>
     <image src="images/rezeptbild_23.png" alt="Piroggen mit Sauerkraut-Pilz-Füllung" />
@@ -1932,8 +1885,6 @@
   </recipe>
   <recipe id="24">
     <name>Klopse in Tomatensoße</name>
-    <intro lang="de">Klopse in Tomatensoße ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Klopse in Tomatensoße to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Hausmannskost</category>
     <image src="images/rezeptbild_24.png" alt="Klopse in Tomatensoße" />
@@ -2013,8 +1964,6 @@
   </recipe>
   <recipe id="25">
     <name>Danziger Heringssalat</name>
-    <intro lang="de">Danziger Heringssalat ist für mich die Art von Gericht, die mit relativ wenig Aufwand schnell besonders wirkt. Frische Aromen, gute Würze und genau das richtige Maß an Leichtigkeit machen es so stark.</intro>
-    <intro lang="pl">Danziger Heringssalat to dla mnie taki przepis, który przy niewielkim wysiłku od razu wydaje się czymś wyjątkowym. Świeże aromaty, dobre doprawienie i odpowiednia lekkość sprawiają, że działa tak dobrze.</intro>
     <persons>4 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Salate</category>
     <image src="images/rezeptbild_25.png" alt="Danziger Heringssalat" />
@@ -2086,8 +2035,6 @@
   </recipe>
   <recipe id="26">
     <name>Hering nach kaschubischer Art</name>
-    <intro lang="de">Hering nach kaschubischer Art ist für mich die Art von Gericht, die mit relativ wenig Aufwand schnell besonders wirkt. Frische Aromen, gute Würze und genau das richtige Maß an Leichtigkeit machen es so stark.</intro>
-    <intro lang="pl">Hering nach kaschubischer Art to dla mnie taki przepis, który przy niewielkim wysiłku od razu wydaje się czymś wyjątkowym. Świeże aromaty, dobre doprawienie i odpowiednia lekkość sprawiają, że działa tak dobrze.</intro>
     <persons>4 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Polnische Küche</category>
     <image src="images/rezeptbild_26.png" alt="Hering nach kaschubischer Art" />
@@ -2165,8 +2112,6 @@
   </recipe>
   <recipe id="27">
     <name>Polnisches Beefsteak</name>
-    <intro lang="de">Polnisches Beefsteak gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Polnisches Beefsteak należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Fleischgerichte</category>
     <image src="images/rezeptbild_27.png" alt="Polnisches Beefsteak" />
@@ -2236,8 +2181,6 @@
   </recipe>
   <recipe id="28">
     <name>Fleischpastete</name>
-    <intro lang="de">Fleischpastete ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Fleischpastete to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>6 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
     <image src="images/rezeptbild_28.png" alt="Fleischpastete" />
@@ -2313,8 +2256,6 @@
   </recipe>
   <recipe id="29">
     <name>Geflügelleber mit Äpfeln</name>
-    <intro lang="de">Geflügelleber mit Äpfeln gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Geflügelleber mit Äpfeln należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Geflügelgerichte</category>
     <image src="images/rezeptbild_29.png" alt="Geflügelleber mit Äpfeln" />
@@ -2388,8 +2329,6 @@
   </recipe>
   <recipe id="30">
     <name>Eisbein nach alt-polnischer Art</name>
-    <intro lang="de">Eisbein nach alt-polnischer Art ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Eisbein nach alt-polnischer Art to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
     <image src="images/rezeptbild_30.png" alt="Eisbein nach alt-polnischer Art" />
@@ -2463,8 +2402,6 @@
   </recipe>
   <recipe id="31">
     <name>Danziger Suppe</name>
-    <intro lang="de">Danziger Suppe ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Danziger Suppe to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Polnische Küche</category>
     <image src="images/rezeptbild_31.png" alt="Danziger Suppe" />
@@ -2542,8 +2479,6 @@
   </recipe>
   <recipe id="32">
     <name>Erbsensuppe mit Kartoffeln</name>
-    <intro lang="de">Erbsensuppe mit Kartoffeln ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Erbsensuppe mit Kartoffeln to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Hausmannskost</category>
     <image src="images/rezeptbild_32.png" alt="Erbsensuppe mit Kartoffeln" />
@@ -2617,8 +2552,6 @@
   </recipe>
   <recipe id="33">
     <name>Alt-polnische Sauce</name>
-    <intro lang="de">Alt-polnische Sauce ist für mich so eine Basis, die man im Alltag immer wieder gern nutzt. Nicht kompliziert, aber genau wichtig genug, damit ein ganzer Teller am Ende stimmig und richtig gut wirkt.</intro>
-    <intro lang="pl">Alt-polnische Sauce to dla mnie taki podstawowy element, do którego na co dzień chętnie się wraca. Nieskomplikowany, ale na tyle ważny, że dopiero dzięki niemu cały talerz staje się naprawdę spójny i smaczny.</intro>
     <persons>Für mehrere Portionen</persons>
     <category>Saucen / Polnische Küche</category>
     <image src="images/rezeptbild_33.png" alt="Alt-polnische Sauce" />
@@ -2690,8 +2623,6 @@
   </recipe>
   <recipe id="34">
     <name>Oster-Żurek</name>
-    <intro lang="de">Oster-Żurek ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Oster-Żurek to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>ca. 2 Liter Suppe</persons>
     <category>Suppen / Polnische Küche</category>
     <image src="images/rezeptbild_34.png" alt="Oster-Żurek" />
@@ -2771,8 +2702,6 @@
   </recipe>
   <recipe id="35">
     <name>Ofen-Brisket mit Magic Dust</name>
-    <intro lang="de">Dieses Brisket zeigt, dass man auch ohne Smoker richtig starke Low-and-slow-Ergebnisse hinbekommen kann. Es braucht Geduld, aber genau dadurch wird das Fleisch am Ende so zart, saftig und intensiv im Geschmack.</intro>
-    <intro lang="pl">Ten brisket pokazuje, że nawet bez smokera można osiągnąć świetny efekt low and slow. Wymaga cierpliwości, ale właśnie dzięki temu mięso wychodzi na końcu tak delikatne, soczyste i intensywne w smaku.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
     <image src="images/rezeptbild_35.png" alt="Ofen-Brisket mit Magic Dust" />
@@ -2872,8 +2801,6 @@
   </recipe>
   <recipe id="36">
     <name>Irish Beef Rollbraten aus dem Backofen</name>
-    <intro lang="de">Ein klassischer Ofenbraten muss gar nicht kompliziert sein, wenn Fleisch, Temperatur und Garzeit stimmen. Genau das macht diesen Rollbraten so stark: ehrlicher Geschmack, saftiges Ergebnis und ein Gericht, auf das man sich richtig freut.</intro>
-    <intro lang="pl">Klasyczna pieczeń z piekarnika wcale nie musi być skomplikowana, jeśli mięso, temperatura i czas są dobrze dobrane. Właśnie to sprawia, że ten rolowany rostbef jest tak dobry: uczciwy smak, soczysty efekt i danie, na które naprawdę czeka się z przyjemnością.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte</category>
     <image src="images/rezeptbild_36.png" alt="Irish Beef Rollbraten aus dem Backofen" />
@@ -2955,8 +2882,6 @@
   </recipe>
   <recipe id="37">
     <name>Svens AirFryer-Iskender Kebab</name>
-    <intro lang="de">Das ist genau die Art von Gericht, bei der man merkt, wie viel der AirFryer im Alltag kann. Würziges Fleisch, gute Sauce und warmes Brot – schnell gemacht, aber mit dem Gefühl von richtigem Komfortessen.</intro>
-    <intro lang="pl">To właśnie taki przepis, przy którym widać, jak wiele może dać AirFryer w codziennym gotowaniu. Aromatyczne mięso, dobry sos i ciepłe pieczywo – szybko gotowe, ale z prawdziwym efektem comfort food.</intro>
     <persons>4 Personen</persons>
     <category>Airfryer</category>
     <image src="images/rezeptbild_37.png" alt="Svens AirFryer-Iskender Kebab" />
@@ -3040,8 +2965,6 @@
   </recipe>
   <recipe id="38">
     <name>Klassischer Schmorbraten mit dunkler Sauce</name>
-    <intro lang="de">Klassischer Schmorbraten mit dunkler Sauce ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Klassischer Schmorbraten mit dunkler Sauce to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>6 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
     <image src="images/rezeptbild_38.png" alt="Klassischer Schmorbraten mit dunkler Sauce" />
@@ -3127,8 +3050,6 @@
   </recipe>
   <recipe id="39">
     <name>Hähnchen-Kartoffel-Pfanne mit Gemüse</name>
-    <intro lang="de">Das ist genau die Art von Alltagsgericht, die satt macht, ohne langweilig zu sein. Alles passt zusammen, nichts ist unnötig kompliziert und am Ende steht ein ehrlicher Teller auf dem Tisch.</intro>
-    <intro lang="pl">To dokładnie taki codzienny przepis, który syci, ale wcale nie nudzi. Wszystko tu do siebie pasuje, nic nie jest niepotrzebnie skomplikowane, a na końcu na stole stoi uczciwe, dobre danie.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
     <image src="images/rezeptbild_39.png" alt="Hähnchen-Kartoffel-Pfanne mit Gemüse" />
@@ -3210,8 +3131,6 @@
   </recipe>
   <recipe id="40">
     <name>Bratwurst mit Sauerkraut aus dem Ofen</name>
-    <intro lang="de">Manchmal ist gerade die bodenständige Küche die beste. Im Ofen zieht alles schön zusammen, das Sauerkraut wird runder und die Bratwurst bekommt genau diese herzhafte Art, die man an solchen Gerichten mag.</intro>
-    <intro lang="pl">Czasem właśnie najbardziej swojska kuchnia jest najlepsza. W piekarniku wszystko ładnie się łączy, kapusta kiszona staje się pełniejsza w smaku, a kiełbasa dostaje dokładnie ten konkretny charakter, który lubi się w takich daniach.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte</category>
     <image src="images/rezeptbild_40.png" alt="Bratwurst mit Sauerkraut aus dem Ofen" />
@@ -3289,8 +3208,6 @@
   </recipe>
   <recipe id="41">
     <name>Saftiger Chicken-Cheese-Burrito ohne Reis</name>
-    <intro lang="de">Saftiger Chicken-Cheese-Burrito ohne Reis gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Saftiger Chicken-Cheese-Burrito ohne Reis należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Wraps &amp; Burritos</category>
     <image src="images/rezeptbild_41.png" alt="Saftiger Chicken-Cheese-Burrito ohne Reis" />
@@ -3378,8 +3295,6 @@
   </recipe>
   <recipe id="42">
     <name>Spaghetti mit Knoblauch und Sambal Oelek</name>
-    <intro lang="de">Dieses Gericht ist der beste Beweis dafür, dass es oft gar nicht viele Zutaten braucht. Knoblauch, etwas Schärfe und gutes Öl reichen hier völlig aus, wenn man schnell etwas mit Charakter auf den Teller bringen will.</intro>
-    <intro lang="pl">To danie jest najlepszym dowodem na to, że często wcale nie potrzeba wielu składników. Czosnek, trochę ostrości i dobra oliwa całkowicie wystarczą, kiedy chce się szybko postawić na stole coś z charakterem.</intro>
     <persons>1 Person</persons>
     <category>Nudelgerichte</category>
     <image src="images/rezeptbild_42.png" alt="Spaghetti mit Knoblauch und Sambal Oelek" />
@@ -3451,8 +3366,6 @@
   </recipe>
   <recipe id="43">
     <name>Knoblauch-Kartoffel-Pfanne mit Chili und Ei</name>
-    <intro lang="de">Knoblauch-Kartoffel-Pfanne mit Chili und Ei gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Knoblauch-Kartoffel-Pfanne mit Chili und Ei należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>1 Person</persons>
     <category>Pfannengerichte</category>
     <image src="images/rezeptbild_43.png" alt="Knoblauch-Kartoffel-Pfanne mit Chili und Ei" />
@@ -3520,8 +3433,6 @@
   </recipe>
   <recipe id="44">
     <name>Cremige Parmesan-Pasta ohne Sahne</name>
-    <intro lang="de">Cremige Parmesan-Pasta ohne Sahne ist für mich ein perfektes Beispiel dafür, wie gut einfache Küche sein kann. Schnell gemacht, klar im Geschmack und genau das Richtige, wenn ohne großen Aufwand etwas Richtiges auf den Tisch soll.</intro>
-    <intro lang="pl">Cremige Parmesan-Pasta ohne Sahne jest dla mnie świetnym przykładem na to, jak dobra może być prosta kuchnia. Robi się szybko, ma wyraźny smak i sprawdza się idealnie wtedy, gdy bez większego wysiłku ma pojawić się na stole coś konkretnego.</intro>
     <persons>1 Person</persons>
     <category>Nudelgerichte</category>
     <image src="images/rezeptbild_44.png" alt="Cremige Parmesan-Pasta ohne Sahne" />
@@ -3587,8 +3498,6 @@
   </recipe>
   <recipe id="45">
     <name>Cordon Bleu mit Nasi Goreng</name>
-    <intro lang="de">Cordon Bleu mit Nasi Goreng zeigt für mich, wie praktisch und stark der Airfryer im Alltag sein kann. Schnell, unkompliziert und trotzdem mit einem Ergebnis, das sich wirklich sehen und schmecken lassen kann.</intro>
-    <intro lang="pl">Cordon Bleu mit Nasi Goreng pokazuje dla mnie, jak praktyczny i skuteczny potrafi być Airfryer na co dzień. Szybko, bez komplikacji, a mimo to z efektem, który naprawdę dobrze wygląda i smakuje.</intro>
     <persons>1 Person</persons>
     <category>Airfryer / Pfannengerichte</category>
     <image src="images/rezeptbild_45.png" alt="Cordon Bleu mit Nasi Goreng" />
@@ -3658,8 +3567,6 @@
   </recipe>
   <recipe id="46">
     <name>Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</name>
-    <intro lang="de">Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / BBQ</category>
     <image src="images/rezeptbild_46.png" alt="Smashed Burger mit Ofenkartoffeln und Sour-Cream-Dip" />
@@ -3755,8 +3662,6 @@
   </recipe>
   <recipe id="47">
     <name>Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</name>
-    <intro lang="de">Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
     <image src="images/rezeptbild_47.png" alt="Erdbeer-Orangen-Sekt-Slush" />
@@ -3818,8 +3723,6 @@
   </recipe>
   <recipe id="48">
     <name>Ananas-Rum-Slush für den Ninja Slushi</name>
-    <intro lang="de">Ananas-Rum-Slush für den Ninja Slushi gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Ananas-Rum-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
     <image src="images/rezeptbild_48.png" alt="Ananas-Rum-Slush" />
@@ -3877,8 +3780,6 @@
   </recipe>
   <recipe id="49">
     <name>Zitronen-Vodka-Slush für den Ninja Slushi</name>
-    <intro lang="de">Zitronen-Vodka-Slush für den Ninja Slushi gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Zitronen-Vodka-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
     <image src="images/rezeptbild_49.png" alt="Zitronen-Vodka-Slush" />
@@ -3936,8 +3837,6 @@
   </recipe>
   <recipe id="50">
     <name>Waldbeer-Sekt-Slush für den Ninja Slushi</name>
-    <intro lang="de">Waldbeer-Sekt-Slush für den Ninja Slushi gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Waldbeer-Sekt-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
     <image src="images/rezeptbild_50.png" alt="Waldbeer-Sekt-Slush" />
@@ -3999,8 +3898,6 @@
   </recipe>
   <recipe id="51">
     <name>Mango-Maracuja-Rum-Slush für den Ninja Slushi</name>
-    <intro lang="de">Mango-Maracuja-Rum-Slush für den Ninja Slushi gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Mango-Maracuja-Rum-Slush für den Ninja Slushi należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>2–3 Gläser</persons>
     <category>Cocktails / Ninja Slushi</category>
     <image src="images/rezeptbild_51.png" alt="Mango-Maracuja-Rum-Slush" />
@@ -4062,8 +3959,6 @@
   </recipe>
   <recipe id="52">
     <name>Senfeier mit Kartoffeln</name>
-    <intro lang="de">Senfeier mit Kartoffeln ist für mich typisches Wohlfühlessen. Gerade solche Suppen und kräftigen Töpfe zeigen, wie viel Wärme und Geschmack in etwas stecken kann, das auf den ersten Blick ganz bodenständig wirkt.</intro>
-    <intro lang="pl">Senfeier mit Kartoffeln to dla mnie typowe jedzenie na poprawę nastroju. Właśnie takie zupy i treściwe garnki pokazują, ile ciepła i smaku może kryć się w czymś, co na pierwszy rzut oka wydaje się bardzo proste.</intro>
     <persons>2–3 Personen</persons>
     <category>Eiergerichte / Hausmannskost</category>
     <image src="images/rezeptbild_52.png" alt="Senfeier mit Kartoffeln" />
@@ -4145,8 +4040,6 @@
   </recipe>
   <recipe id="53">
     <name>Koreanisches Bulgogi vom Grill</name>
-    <intro lang="de">Koreanisches Bulgogi vom Grill ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Koreanisches Bulgogi vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
     <image src="images/rezeptbild_53.png" alt="Koreanisches Bulgogi vom Grill" />
@@ -4224,8 +4117,6 @@
   </recipe>
   <recipe id="54">
     <name>Spare Ribs mit Espresso-Rub</name>
-    <intro lang="de">Spare Ribs mit Espresso-Rub ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Spare Ribs mit Espresso-Rub to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
     <image src="images/rezeptbild_54.png" alt="Spare Ribs mit Espresso-Rub" />
@@ -4305,8 +4196,6 @@
   </recipe>
   <recipe id="55">
     <name>Gegrillter Halloumi mit Kräutern und Olivenöl</name>
-    <intro lang="de">Gegrillter Halloumi mit Kräutern und Olivenöl ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Gegrillter Halloumi mit Kräutern und Olivenöl to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_55.png" alt="Gegrillter Halloumi mit Kräutern und Olivenöl" />
@@ -4374,8 +4263,6 @@
   </recipe>
   <recipe id="56">
     <name>Gemüsespieße vom Grill</name>
-    <intro lang="de">Gemüsespieße vom Grill ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Gemüsespieße vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_56.png" alt="Gemüsespieße vom Grill" />
@@ -4453,8 +4340,6 @@
   </recipe>
   <recipe id="57">
     <name>Gefüllte Portobello-Pilze vom Grill</name>
-    <intro lang="de">Gefüllte Portobello-Pilze vom Grill ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Gefüllte Portobello-Pilze vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_57.png" alt="Gefüllte Portobello-Pilze vom Grill" />
@@ -4524,8 +4409,6 @@
   </recipe>
   <recipe id="58">
     <name>Grüner Spargel vom Grill mit Zitronenbutter</name>
-    <intro lang="de">Grüner Spargel vom Grill mit Zitronenbutter ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Grüner Spargel vom Grill mit Zitronenbutter to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_58.png" alt="Grüner Spargel vom Grill mit Zitronenbutter" />
@@ -4591,8 +4474,6 @@
   </recipe>
   <recipe id="59">
     <name>Süßkartoffel-Pommes vom Grill</name>
-    <intro lang="de">Süßkartoffel-Pommes vom Grill ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Süßkartoffel-Pommes vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_59.png" alt="Süßkartoffel-Pommes vom Grill" />
@@ -4656,8 +4537,6 @@
   </recipe>
   <recipe id="60">
     <name>Melonen-Feta-Salat mit Minze</name>
-    <intro lang="de">Melonen-Feta-Salat mit Minze ist für mich so eine Basis, die man im Alltag immer wieder gern nutzt. Nicht kompliziert, aber genau wichtig genug, damit ein ganzer Teller am Ende stimmig und richtig gut wirkt.</intro>
-    <intro lang="pl">Melonen-Feta-Salat mit Minze to dla mnie taki podstawowy element, do którego na co dzień chętnie się wraca. Nieskomplikowany, ale na tyle ważny, że dopiero dzięki niemu cały talerz staje się naprawdę spójny i smaczny.</intro>
     <persons>2–3 Personen</persons>
     <category>Beilagen / Salate</category>
     <image src="images/rezeptbild_60.png" alt="Melonen-Feta-Salat mit Minze" />
@@ -4723,8 +4602,6 @@
   </recipe>
   <recipe id="61">
     <name>Shakshuka</name>
-    <intro lang="de">Shakshuka ist für mich eines dieser Gerichte, die mit wenig Aufwand sofort nach viel mehr schmecken. Die würzige Tomatensauce, die Eier und etwas Brot dazu – genau so sieht für mich unkomplizierte, aber richtig gute Wohlfühlküche aus.</intro>
-    <intro lang="pl">Szakszuka to dla mnie jedno z tych dań, które przy niewielkim wysiłku smakują jak coś znacznie bardziej wyjątkowego. Wyrazisty sos pomidorowy, jajka i kawałek pieczywa – właśnie tak wygląda dla mnie prosta, ale naprawdę dobra kuchnia comfort.</intro>
     <persons>2–3 Personen</persons>
     <category>Eiergerichte / Pfannengerichte</category>
     <image src="images/rezeptbild_61.png" alt="Shakshuka" />
@@ -4808,8 +4685,6 @@
   </recipe>
   <recipe id="62">
     <name>Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</name>
-    <intro lang="de">Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln ist genau die Art von Gericht, die im Ofen oder beim ruhigen Garen besonders stark wird. Alles kann in Ruhe Geschmack ziehen, und genau das macht das Ergebnis so rund und verlässlich gut.</intro>
-    <intro lang="pl">Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln to dokładnie taki przepis, który szczególnie zyskuje w piekarniku albo podczas spokojnego duszenia. Wszystko ma czas, żeby przejść smakiem, i właśnie to sprawia, że efekt końcowy jest tak pełny i niezawodnie dobry.</intro>
     <persons>2–3 Personen</persons>
     <category>Ofengerichte / Fleischgerichte</category>
     <image src="images/rezeptbild_62.png" alt="Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln" />
@@ -4889,8 +4764,6 @@
   </recipe>
   <recipe id="63">
     <name>Ratatouille mit Polenta</name>
-    <intro lang="de">Ratatouille mit Polenta gehört für mich zu den Rezepten, die einfach zuverlässig gut funktionieren. Es ist unkompliziert, bringt viel Geschmack mit und passt genau zu der Art von Küche, die im Alltag am meisten Freude macht.</intro>
-    <intro lang="pl">Ratatouille mit Polenta należy dla mnie do tych przepisów, które po prostu niezawodnie się udają. Jest prosty, ma dużo smaku i dokładnie pasuje do takiej kuchni, która daje najwięcej przyjemności na co dzień.</intro>
     <persons>3–4 Personen</persons>
     <category>Pfannengerichte / Gemüsegerichte</category>
     <image src="images/rezeptbild_63.png" alt="Ratatouille mit Polenta" />
@@ -4976,8 +4849,6 @@
   </recipe>
   <recipe id="64">
     <name>Marinierte Hähnchenspieße vom Grill</name>
-    <intro lang="de">Marinierte Hähnchenspieße vom Grill ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Marinierte Hähnchenspieße vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
     <image src="images/rezeptbild_64.png" alt="Marinierte Hähnchenspieße vom Grill" />
@@ -5057,8 +4928,6 @@
   </recipe>
   <recipe id="65">
     <name>Gegrillte Maiskolben mit Butter</name>
-    <intro lang="de">Gegrillte Maiskolben mit Butter ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Gegrillte Maiskolben mit Butter to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Grill &amp; BBQ</category>
     <image src="images/rezeptbild_65.png" alt="Gegrillte Maiskolben mit Butter" />
@@ -5120,8 +4989,6 @@
   </recipe>
   <recipe id="66">
     <name>Halloumi vom Grill</name>
-    <intro lang="de">Halloumi vom Grill ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Halloumi vom Grill to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Vegetarisch</category>
     <image src="images/rezeptbild_66.png" alt="Halloumi vom Grill" />
@@ -5185,8 +5052,6 @@
   </recipe>
   <recipe id="67">
     <name>Würzige Bratwürste vom Grill (klassisch und einfache Variante)</name>
-    <intro lang="de">Würzige Bratwürste vom Grill (klassisch und einfache Variante) ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Würzige Bratwürste vom Grill (klassisch und einfache Variante) to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Fleischgerichte</category>
     <image src="images/rezeptbild_67.png" alt="Würzige Bratwürste vom Grill (klassisch und einfache Variante)" />
@@ -5254,8 +5119,6 @@
   </recipe>
   <recipe id="68">
     <name>Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</name>
-    <intro lang="de">Gegrilltes Gemüse mit Zucchini, Paprika und Champignons ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Gegrilltes Gemüse mit Zucchini, Paprika und Champignons to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_68.png" alt="Gegrilltes Gemüse mit Zucchini, Paprika und Champignons" />
@@ -5331,8 +5194,6 @@
   </recipe>
   <recipe id="69">
     <name>Grillkartoffeln in Alufolie mit Rosmarin</name>
-    <intro lang="de">Grillkartoffeln in Alufolie mit Rosmarin ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Grillkartoffeln in Alufolie mit Rosmarin to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_69.png" alt="Grillkartoffeln in Alufolie mit Rosmarin" />
@@ -5400,8 +5261,6 @@
   </recipe>
   <recipe id="70">
     <name>Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</name>
-    <intro lang="de">Gegrilltes Baguette oder Ciabatta mit Knoblauchöl ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Gegrilltes Baguette oder Ciabatta mit Knoblauchöl to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <image src="images/rezeptbild_70.png" alt="Gegrilltes Baguette oder Ciabatta mit Knoblauchöl" />
@@ -5463,8 +5322,6 @@
   </recipe>
   <recipe id="71">
     <name>Gegrillte Früchte mit Ananas oder Pfirsich</name>
-    <intro lang="de">Gegrillte Früchte mit Ananas oder Pfirsich ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Gegrillte Früchte mit Ananas oder Pfirsich to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>3–4 Personen</persons>
     <category>Grill &amp; BBQ / Dessert</category>
     <image src="images/rezeptbild_71.png" alt="Gegrillte Früchte mit Ananas oder Pfirsich" />
@@ -5526,8 +5383,6 @@
   </recipe>
   <recipe id="72">
     <name>Klassische rote Sangria</name>
-    <intro lang="de">Klassische rote Sangria gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Klassische rote Sangria należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>4 Gläser</persons>
     <category>Cocktails / Sommergetränke</category>
     <image src="images/rezeptbild_72.png" alt="Klassische rote Sangria" />
@@ -5595,8 +5450,6 @@
   </recipe>
   <recipe id="73">
     <name>Weiße Sangria</name>
-    <intro lang="de">Weiße Sangria gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Weiße Sangria należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>4 Gläser</persons>
     <category>Cocktails / Sommergetränke</category>
     <image src="images/rezeptbild_73.png" alt="Weiße Sangria" />
@@ -5664,8 +5517,6 @@
   </recipe>
   <recipe id="74">
     <name>Aperol Spritz</name>
-    <intro lang="de">Aperol Spritz gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Aperol Spritz należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
     <image src="images/rezeptbild_74.png" alt="Aperol Spritz" />
@@ -5725,8 +5576,6 @@
   </recipe>
   <recipe id="75">
     <name>Mojito</name>
-    <intro lang="de">Mojito gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Mojito należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
     <image src="images/rezeptbild_75.png" alt="Mojito" />
@@ -5790,8 +5639,6 @@
   </recipe>
   <recipe id="76">
     <name>Gin Tonic (Basisrezept und einfache Variationen)</name>
-    <intro lang="de">Gin Tonic (Basisrezept und einfache Variationen) gehört für mich zu den Rezepten, die ohne großen Aufwand sofort Stimmung machen. Gut gekühlt, klar im Geschmack und genau richtig, wenn etwas Lockeres und Sommerliches ins Glas soll.</intro>
-    <intro lang="pl">Gin Tonic (Basisrezept und einfache Variationen) należy dla mnie do tych przepisów, które bez większego wysiłku od razu budują klimat. Dobrze schłodzony, wyraźny w smaku i idealny wtedy, gdy w szklance ma pojawić się coś lekkiego i letniego.</intro>
     <persons>1 Glas</persons>
     <category>Cocktails / Sommergetränke</category>
     <image src="images/rezeptbild_76.png" alt="Gin Tonic (Basisrezept und einfache Variationen)" />
@@ -5857,8 +5704,6 @@
   </recipe>
   <recipe id="77">
     <name>Grüner Spargel vom Grill – Basic &amp; Upgrade</name>
-    <intro lang="de">Grüner Spargel vom Grill – Basic &amp; Upgrade ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Grüner Spargel vom Grill – Basic &amp; Upgrade to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
     <image src="images/rezeptbild_77.png" alt="Grüner Spargel vom Grill" />
@@ -5926,8 +5771,6 @@
   </recipe>
   <recipe id="78">
     <name>Weißer Spargel in Butter-Zitronen-Folie</name>
-    <intro lang="de">Weißer Spargel in Butter-Zitronen-Folie ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Weißer Spargel in Butter-Zitronen-Folie to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
     <image src="images/rezeptbild_78.png" alt="Weißer Spargel in Butter-Zitronen-Folie" />
@@ -5993,8 +5836,6 @@
   </recipe>
   <recipe id="79">
     <name>Spargel vom Grill mit Parmesan und Zitrone</name>
-    <intro lang="de">Spargel vom Grill mit Parmesan und Zitrone ist für mich genau die Art von Grillrezept, die draußen sofort gut funktioniert. Nicht unnötig kompliziert, dafür mit viel Aroma und genau diesem direkten Geschmack, den man vom Rost erwartet.</intro>
-    <intro lang="pl">Spargel vom Grill mit Parmesan und Zitrone to dla mnie dokładnie taki grillowy przepis, który na zewnątrz sprawdza się od razu. Bez zbędnych komplikacji, za to z dużą ilością aromatu i tym bezpośrednim smakiem, którego oczekuje się od rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Spargel &amp; Saisonküche</category>
     <image src="images/rezeptbild_79.png" alt="Spargel vom Grill mit Parmesan und Zitrone" />
@@ -6060,8 +5901,6 @@
   </recipe>
   <recipe id="80">
     <name>Grüner Spargel aus dem Airfryer</name>
-    <intro lang="de">Grüner Spargel aus dem Airfryer zeigt für mich, wie praktisch und stark der Airfryer im Alltag sein kann. Schnell, unkompliziert und trotzdem mit einem Ergebnis, das sich wirklich sehen und schmecken lassen kann.</intro>
-    <intro lang="pl">Grüner Spargel aus dem Airfryer pokazuje dla mnie, jak praktyczny i skuteczny potrafi być Airfryer na co dzień. Szybko, bez komplikacji, a mimo to z efektem, który naprawdę dobrze wygląda i smakuje.</intro>
     <persons>2–3 Personen</persons>
     <category>Airfryer / Spargel &amp; Saisonküche</category>
     <image src="images/rezeptbild_80.png" alt="Grüner Spargel aus dem Airfryer" />
@@ -6129,8 +5968,6 @@
   </recipe>
   <recipe id="81">
     <name>Afrikanischer Erdnusseintopf</name>
-    <intro lang="de">Dieses Gericht fällt sofort auf, weil es anders ist als viele Alltagsrezepte – und genau das macht es so spannend. Die Erdnuss bringt Cremigkeit, die Gewürze Tiefe und am Ende entsteht etwas Sättigendes mit richtig viel Charakter.</intro>
-    <intro lang="pl">To danie od razu się wyróżnia, bo jest inne niż wiele codziennych przepisów – i właśnie to czyni je tak ciekawym. Orzechy dają kremowość, przyprawy głębię, a na końcu powstaje coś sycącego i pełnego charakteru.</intro>
     <persons>4 Personen</persons>
     <category>Suppen / Eintöpfe</category>
     <image src="images/rezeptbild_81.png" alt="Afrikanischer Erdnusseintopf" />
@@ -6222,8 +6059,6 @@
   </recipe>
   <recipe id="82">
     <name>Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen</name>
-    <intro lang="de">Diese Garnelen aus dem Ofen haben genau die Mischung, die ich an solchen Gerichten mag: Weißwein, Tomate und Feta bringen zusammen viel Aroma, ohne das Ganze unnötig schwer zu machen. Perfekt mit etwas Brot zum Auftunken.</intro>
-    <intro lang="pl">Te krewetki z piekarnika mają dokładnie to połączenie, które lubię w takich daniach: białe wino, pomidor i feta dają razem dużo smaku, ale bez niepotrzebnej ciężkości. Idealne z pieczywem do maczania w sosie.</intro>
     <persons>2–3 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Ofengerichte</category>
     <image src="images/rezeptbild_82.png" alt="Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen" />
@@ -6307,8 +6142,6 @@
   </recipe>
   <recipe id="83">
     <name>Knoblauch-Chili-Garnelen aus der Pfanne</name>
-    <intro lang="de">Das ist genau die Art von Garnelengericht, die schnell fertig ist und trotzdem sofort nach etwas Besonderem schmeckt. Knoblauch, Chili und Pfannenhitze reichen hier völlig aus, wenn die Basis stimmt.</intro>
-    <intro lang="pl">To dokładnie taki przepis na krewetki, który robi się szybko, a mimo to od razu smakuje jak coś wyjątkowego. Czosnek, chili i dobra patelnia całkowicie tu wystarczą, jeśli baza jest odpowiednia.</intro>
     <persons>2 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Pfannengerichte</category>
     <image src="images/rezeptbild_83.png" alt="Knoblauch-Chili-Garnelen aus der Pfanne" />
@@ -6384,8 +6217,6 @@
   </recipe>
   <recipe id="84">
     <name>Garnelen in cremiger Paprika-Sahne-Sauce</name>
-    <intro lang="de">Hier geht es etwas cremiger und gemütlicher zu. Die Sauce bringt sofort Wärme und Rundheit ins Gericht, und genau das macht diese Garnelen so angenehm für einen entspannten Abend.</intro>
-    <intro lang="pl">Tutaj wszystko idzie bardziej w kremową i przytulną stronę. Sos od razu wnosi do dania ciepło i pełnię smaku, i właśnie to sprawia, że te krewetki tak dobrze pasują na spokojny wieczór.</intro>
     <persons>2–3 Personen</persons>
     <category>Fisch &amp; Meeresfrüchte / Pfannengerichte</category>
     <image src="images/rezeptbild_84.png" alt="Garnelen in cremiger Paprika-Sahne-Sauce" />
@@ -6463,8 +6294,6 @@
   </recipe>
   <recipe id="85">
     <name>Klassischer Kartoffelstampf</name>
-    <intro lang="de">Ein guter Kartoffelstampf ist viel mehr als nur eine Beilage. Wenn er schön locker, warm und cremig ist, macht er aus vielen Gerichten erst ein richtig rundes Essen.</intro>
-    <intro lang="pl">Dobre purée ziemniaczane to dużo więcej niż tylko dodatek. Jeśli jest lekkie, ciepłe i kremowe, to dopiero wtedy wiele dań staje się naprawdę pełnym posiłkiem.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Kartoffeln</category>
     <image src="images/rezeptbild_85.png" alt="Klassischer Kartoffelstampf" />
@@ -6526,8 +6355,6 @@
   </recipe>
   <recipe id="86">
     <name>Kartoffelstampf mit Dill</name>
-    <intro lang="de">Diese Variante ist etwas frischer als der klassische Stampf und genau deshalb so praktisch. Der Dill bringt Leichtigkeit rein, ohne dass das Gericht seinen bodenständigen Charakter verliert.</intro>
-    <intro lang="pl">Ta wersja jest trochę świeższa niż klasyczne purée i właśnie dlatego jest tak praktyczna. Koper wnosi lekkość, ale danie nie traci swojego swojskiego charakteru.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Kartoffeln</category>
     <image src="images/rezeptbild_86.png" alt="Kartoffelstampf mit Dill" />
@@ -6591,8 +6418,6 @@
   </recipe>
   <recipe id="87">
     <name>Kartoffel-Pastinaken-Stampf</name>
-    <intro lang="de">Der Pastinaken-Stampf ist die feinere, aromatischere Schwester vom klassischen Kartoffelstampf. Die leichte Süße der Pastinake macht ihn besonders passend zu kräftigen Ofen- und Schmorgerichten.</intro>
-    <intro lang="pl">Purée ziemniaczano-pasternakowe jest delikatniejszą i bardziej aromatyczną siostrą klasycznego purée. Lekka słodycz pasternaku sprawia, że szczególnie dobrze pasuje do mocniejszych dań z piekarnika i duszonych potraw.</intro>
     <persons>3–4 Personen</persons>
     <category>Beilagen / Kartoffeln</category>
     <image src="images/rezeptbild_87.png" alt="Kartoffel-Pastinaken-Stampf" />
@@ -6656,219 +6481,6 @@
         <item>Jeśli masa jest zbyt gęsta, dodaj trochę więcej ciepłego mleka.</item>
       </tips>
       <rating>9/10 – delikatniejszy niż klasyczny tłuczek i bardzo dobry do dań z piekarnika.</rating>
-    </translation>
-  </recipe>
-  <recipe id="88">
-    <name>Svens BBQ Rub (Basisgewürz)</name>
-    <intro lang="de">So eine Gewürzbasis hat man einfach gern im Haus. Schnell gemischt, vielseitig einsetzbar und genau richtig, wenn Fleisch oder Gemüse ohne großen Aufwand sofort nach Grillen schmecken sollen.</intro>
-    <intro lang="pl">Taki bazowy miks przypraw po prostu dobrze mieć pod ręką. Miesza się go szybko, jest uniwersalny i idealny wtedy, gdy mięso albo warzywa mają od razu smakować grillem bez wielkiego wysiłku.</intro>
-    <persons>Vorrat</persons>
-    <category>Grundlagen / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_88.png" alt="Svens BBQ Rub (Basisgewürz)" />
-    <ingredients>
-      <item>4 EL Paprikapulver edelsüß</item>
-      <item>2 EL brauner Zucker</item>
-      <item>1 EL Salz</item>
-      <item>1 EL Pfeffer</item>
-      <item>1 TL Knoblauchpulver</item>
-      <item>1 TL Zwiebelpulver</item>
-      <item>1 TL geräuchertes Paprikapulver</item>
-      <item>1/2 TL Cayennepfeffer, optional</item>
-    </ingredients>
-    <preparation>
-      <step nr="1">Alle Zutaten in eine Schüssel geben.</step>
-      <step nr="2">Gründlich vermischen, bis keine Klümpchen mehr zu sehen sind.</step>
-      <step nr="3">In ein Schraubglas oder eine Gewürzdose füllen.</step>
-      <step nr="4">Vor der Verwendung Fleisch oder Gemüse leicht einölen und mit dem Rub einreiben.</step>
-    </preparation>
-    <timing>
-      <item>Vorbereitung: ca. 5 Minuten</item>
-      <item>Gesamt: ca. 5 Minuten</item>
-    </timing>
-    <tips>
-      <item>Ideal für Schwein, Hähnchen, Rind oder Ofenkartoffeln.</item>
-      <item>Für eine mildere Version den Cayennepfeffer weglassen.</item>
-      <item>Trocken und dunkel gelagert hält die Mischung mehrere Wochen.</item>
-    </tips>
-    <rating>9 / 10 – einfach, vielseitig und als Grundmischung immer praktisch.</rating>
-    <translation lang="pl">
-      <name>BBQ Rub Svena (mieszanka bazowa)</name>
-      <persons>Zapas</persons>
-      <category>Podstawy / Grill &amp; BBQ</category>
-      <ingredients>
-        <item>4 łyżki słodkiej papryki</item>
-        <item>2 łyżki brązowego cukru</item>
-        <item>1 łyżka soli</item>
-        <item>1 łyżka pieprzu</item>
-        <item>1 łyżeczka czosnku granulowanego</item>
-        <item>1 łyżeczka cebuli granulowanej</item>
-        <item>1 łyżeczka wędzonej papryki</item>
-        <item>1/2 łyżeczki pieprzu cayenne, opcjonalnie</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Wsypać wszystkie składniki do miski.</step>
-        <step nr="2">Dokładnie wymieszać, aż mieszanka będzie jednolita.</step>
-        <step nr="3">Przesypać do słoiczka lub pojemnika na przyprawy.</step>
-        <step nr="4">Przed użyciem delikatnie posmarować mięso lub warzywa olejem i natrzeć mieszanką.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 5 min</item>
-        <item>łącznie: ok. 5 min</item>
-      </timing>
-      <tips>
-        <item>Świetnie pasuje do wieprzowiny, kurczaka, wołowiny i ziemniaków z piekarnika.</item>
-        <item>Jeśli ma być łagodniej, pomiń cayenne.</item>
-        <item>Przechowywany w suchym i ciemnym miejscu wytrzyma kilka tygodni.</item>
-      </tips>
-      <rating>9 / 10 – prosty, uniwersalny i bardzo praktyczny jako baza.</rating>
-    </translation>
-  </recipe>
-  <recipe id="89">
-    <name>Spaghetti mit Knoblauch und Sambal Oelek</name>
-    <intro lang="de">Dieses Gericht ist der beste Beweis dafür, dass es oft gar nicht viele Zutaten braucht. Knoblauch, etwas Schärfe und gutes Öl reichen hier völlig aus, wenn man schnell etwas mit Charakter auf den Teller bringen will.</intro>
-    <intro lang="pl">To danie jest najlepszym dowodem na to, że często wcale nie potrzeba wielu składników. Czosnek, trochę ostrości i dobra oliwa całkowicie wystarczą, kiedy chce się szybko postawić na stole coś z charakterem.</intro>
-    <persons>2 Personen</persons>
-    <category>Nudelgerichte / Schnell &amp; einfach</category>
-    <image src="images/rezeptbild_89.png" alt="Spaghetti mit Knoblauch und Sambal Oelek" />
-    <ingredients>
-      <item>200 g Spaghetti</item>
-      <item>3 Knoblauchzehen</item>
-      <item>2–3 EL Olivenöl</item>
-      <item>1 TL Sambal Oelek</item>
-      <item>1 kleine Kelle Nudelwasser</item>
-      <item>Salz</item>
-      <item>optional: frisch geriebener Parmesan</item>
-      <item>optional: Petersilie</item>
-    </ingredients>
-    <preparation>
-      <step nr="1">Spaghetti in reichlich Salzwasser al dente kochen.</step>
-      <step nr="2">Knoblauch fein schneiden.</step>
-      <step nr="3">Olivenöl in einer Pfanne erwärmen und den Knoblauch bei milder Hitze kurz anschwitzen.</step>
-      <step nr="4">Sambal Oelek einrühren und 1 kleine Kelle Nudelwasser zugeben.</step>
-      <step nr="5">Spaghetti abgießen, direkt in die Pfanne geben und alles gut vermengen.</step>
-      <step nr="6">Nach Wunsch mit Parmesan und etwas Petersilie servieren.</step>
-    </preparation>
-    <timing>
-      <item>Vorbereitung: ca. 5 Minuten</item>
-      <item>Kochzeit: ca. 10 Minuten</item>
-      <item>Gesamt: ca. 15 Minuten</item>
-    </timing>
-    <tips>
-      <item>Knoblauch nicht zu dunkel werden lassen, sonst wird er bitter.</item>
-      <item>Mit Parmesan wird das Gericht runder und etwas milder.</item>
-      <item>Wer es schärfer mag, nimmt einfach etwas mehr Sambal Oelek.</item>
-    </tips>
-    <rating>8,5 / 10 – schnell, unkompliziert und genau richtig für einen einfachen Feierabend.</rating>
-    <translation lang="pl">
-      <name>Spaghetti z czosnkiem i sambalem oelek</name>
-      <persons>2 osoby</persons>
-      <category>Dania makaronowe / Szybko i prosto</category>
-      <ingredients>
-        <item>200 g spaghetti</item>
-        <item>3 ząbki czosnku</item>
-        <item>2–3 łyżki oliwy z oliwek</item>
-        <item>1 łyżeczka sambalu oelek</item>
-        <item>1 mała chochelka wody z makaronu</item>
-        <item>sól</item>
-        <item>opcjonalnie: świeżo starty parmezan</item>
-        <item>opcjonalnie: pietruszka</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Ugotować spaghetti al dente w osolonej wodzie.</step>
-        <step nr="2">Drobno posiekać czosnek.</step>
-        <step nr="3">Rozgrzać oliwę na patelni i krótko zeszklić czosnek na małym ogniu.</step>
-        <step nr="4">Dodać sambal oelek i małą chochelkę wody z makaronu.</step>
-        <step nr="5">Odcedzony makaron przełożyć bezpośrednio na patelnię i dobrze wymieszać.</step>
-        <step nr="6">Podawać z parmezanem i ewentualnie pietruszką.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 5 min</item>
-        <item>gotowanie: ok. 10 min</item>
-        <item>łącznie: ok. 15 min</item>
-      </timing>
-      <tips>
-        <item>Nie rumienić czosnku zbyt mocno, bo stanie się gorzki.</item>
-        <item>Parmezan łagodzi ostrość i zaokrągla smak.</item>
-        <item>Jeśli ma być ostrzej, dodaj więcej sambalu.</item>
-      </tips>
-      <rating>8,5 / 10 – szybkie, proste i bardzo dobre na zwykły wieczór.</rating>
-    </translation>
-  </recipe>
-  <recipe id="90">
-    <name>Pinsa mit Burrata, Peperoni und Salami</name>
-    <intro lang="de">Diese Pinsa ist für mich die perfekte Mischung aus schnell gemacht und trotzdem besonders. Burrata bringt Cremigkeit, Peperoni etwas Schärfe und die Salami genau die herzhafte Tiefe, die so einen Abend unkompliziert richtig gut macht.</intro>
-    <intro lang="pl">Ta pinsa jest dla mnie idealnym połączeniem szybkiego przygotowania i czegoś naprawdę wyjątkowego. Burrata daje kremowość, peperoni lekką ostrość, a salami dokładnie tę wytrawną głębię, która sprawia, że taki wieczór smakuje świetnie bez komplikacji.</intro>
-    <persons>2 Personen</persons>
-    <category>Ofengerichte / Snacks</category>
-    <image src="images/rezeptbild_90.png" alt="Pinsa mit Burrata, Peperoni und Salami" />
-    <ingredients>
-      <item>2 Pinsa-Böden, vorgebacken</item>
-      <item>150 ml passierte Tomaten</item>
-      <item>80–100 g Salami in Scheiben</item>
-      <item>1 Paprika, in Streifen</item>
-      <item>1 kleine rote Zwiebel, in feinen Ringen</item>
-      <item>1 Kugel Burrata</item>
-      <item>1 EL Olivenöl</item>
-      <item>Salz</item>
-      <item>Pfeffer</item>
-      <item>Oregano oder italienische Kräuter</item>
-      <item>optional: etwas Chiliöl</item>
-    </ingredients>
-    <preparation>
-      <step nr="1">Backofen auf 220 °C Ober-/Unterhitze vorheizen.</step>
-      <step nr="2">Pinsa-Böden mit passierten Tomaten bestreichen und mit Salz, Pfeffer sowie Kräutern würzen.</step>
-      <step nr="3">Salami, Paprika und Zwiebelringe darauf verteilen.</step>
-      <step nr="4">Die Pinsa 10–12 Minuten backen, bis der Rand knusprig ist.</step>
-      <step nr="5">Erst nach dem Backen die Burrata daraufsetzen und leicht aufreißen.</step>
-      <step nr="6">Mit Olivenöl und nach Wunsch etwas Chiliöl servieren.</step>
-    </preparation>
-    <timing>
-      <item>Vorbereitung: ca. 10 Minuten</item>
-      <item>Backzeit: ca. 10–12 Minuten</item>
-      <item>Gesamt: ca. 20 Minuten</item>
-    </timing>
-    <tips>
-      <item>Burrata immer erst nach dem Backen zugeben, damit sie cremig bleibt.</item>
-      <item>Mit etwas Rucola wird die Pinsa noch frischer.</item>
-      <item>Sehr gut als schnelles Abendessen oder für Gäste geeignet.</item>
-    </tips>
-    <rating>9 / 10 – knusprig, cremig und richtig aromatisch.</rating>
-    <translation lang="pl">
-      <name>Pinsa z burratą, papryką i salami</name>
-      <persons>2 osoby</persons>
-      <category>Dania z piekarnika / Przekąski</category>
-      <ingredients>
-        <item>2 gotowe spody pinsy</item>
-        <item>150 ml passaty pomidorowej</item>
-        <item>80–100 g salami w plasterkach</item>
-        <item>1 papryka pokrojona w paski</item>
-        <item>1 mała czerwona cebula pokrojona w cienkie piórka</item>
-        <item>1 kulka burraty</item>
-        <item>1 łyżka oliwy z oliwek</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>oregano lub zioła włoskie</item>
-        <item>opcjonalnie: trochę oliwy chili</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Rozgrzać piekarnik do 220 °C, góra-dół.</step>
-        <step nr="2">Posmarować spody passsą pomidorową i doprawić solą, pieprzem oraz ziołami.</step>
-        <step nr="3">Rozłożyć salami, paprykę i cebulę.</step>
-        <step nr="4">Piec 10–12 minut, aż brzegi będą chrupiące.</step>
-        <step nr="5">Dopiero po upieczeniu położyć burratę na gorącej pinsie i lekko ją rozchylić.</step>
-        <step nr="6">Skropić oliwą, a w razie potrzeby także oliwą chili.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 10 min</item>
-        <item>pieczenie: ok. 10–12 min</item>
-        <item>łącznie: ok. 20 min</item>
-      </timing>
-      <tips>
-        <item>Burratę zawsze dodawaj po pieczeniu, wtedy zostaje kremowa.</item>
-        <item>Odrobina rukoli daje jeszcze świeższy efekt.</item>
-        <item>To bardzo dobry szybki obiad albo kolacja dla gości.</item>
-      </tips>
-      <rating>9 / 10 – chrupiąca, kremowa i bardzo aromatyczna.</rating>
     </translation>
   </recipe>
 </cookbook>
