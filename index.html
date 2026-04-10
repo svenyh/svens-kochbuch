@@ -6,117 +6,302 @@
 <title>Svens Kochbuch</title>
 <meta name="description" content="Svens Kochbuch – einfache, ehrliche Lieblingsrezepte auf Deutsch und Polnisch.">
 <style>
-:root{
-  --bg:#f9f3ec;--panel:#fffaf6;--panel-soft:#fff7f1;--panel-warm:#fff4eb;--line:#e2cdbb;--text:#342116;--muted:#796759;
-  --accent:#9f5c2d;--accent-dark:#7e4420;--accent-2:#c79063;--chip:#f3e5d8;--shadow:0 14px 28px rgba(63,36,15,.06);--radius:22px;
-}
+:root{--bg:#f9f3ec;--panel:#fffaf6;--panel-soft:#fff7f1;--panel-warm:#fff4eb;--line:#e2cdbb;--text:#342116;--muted:#796759;--accent:#9f5c2d;--accent-dark:#7e4420;--chip:#f3e5d8;--shadow:0 14px 28px rgba(63,36,15,.06);--radius:22px;}
 *{box-sizing:border-box}img{max-width:100%;display:block}html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:
-  radial-gradient(circle at top left, rgba(199,144,99,.10), transparent 22%),
-  radial-gradient(circle at top right, rgba(159,92,45,.07), transparent 20%),
-  linear-gradient(180deg,#fcf8f3 0%, #f9f3ec 100%);color:var(--text);line-height:1.6}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#fcf8f3 0%, #f9f3ec 100%);color:var(--text);line-height:1.6}
 button,input{font:inherit}
 [lang-variant]{display:none}html[data-lang="de"] [lang-variant="de"]{display:initial}html[data-lang="pl"] [lang-variant="pl"]{display:initial}
 .wrap{max-width:1240px;margin:0 auto;padding:24px}
 .site-header{background:linear-gradient(180deg, rgba(255,250,244,.96) 0%, rgba(255,244,231,.96) 100%);border-bottom:1px solid rgba(132,70,26,.10)}
 .header-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
 .brand-block h1,.hero-card h2,.section-head h2{font-family:Georgia,"Times New Roman",serif;font-weight:700}
-.brand-block h1{margin:.1rem 0 .35rem;font-size:2.35rem;line-height:1.1;letter-spacing:-0.025em;color:#442616}
-.brand-block p{margin:0;color:var(--muted);max-width:720px}
-.lang-switch{display:flex;gap:.6rem;flex-wrap:wrap} .lang-btn{border:1px solid var(--line);background:#fffbf8;border-radius:999px;padding:.6rem .95rem;cursor:pointer;transition:.14s}
-.lang-btn:hover{background:#fff2e7;transform:translateY(-1px)} .lang-btn.active{background:#84502c;border-color:#84502c;color:#fff;box-shadow:0 10px 18px rgba(132,80,44,.18)}
+.brand-block h1{margin:.1rem 0 .35rem;font-size:2.35rem;line-height:1.1;color:#442616} .brand-block p{margin:0;color:var(--muted);max-width:720px}
+.lang-switch{display:flex;gap:.6rem;flex-wrap:wrap} .lang-btn,.ghost-btn,.load-more-btn,.category-chip,.cta-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.62rem .9rem;border-radius:999px;background:#fffbf8;border:1px solid #dec7b4;color:var(--text);text-decoration:none;cursor:pointer;transition:.14s} .lang-btn.active,.category-chip.active{background:#84502c;border-color:#84502c;color:#fff}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.25rem;margin-top:1.1rem}
-.hero-card,.search-shell,.highlights-card,.category-shell,.toc-shell,.recipe-card,.mini-card,.quick-jump-shell,.theme-shell{background:var(--panel);border:1px solid rgba(132,70,26,.12);border-radius:var(--radius);box-shadow:0 12px 26px rgba(63,36,15,.055)}
-.hero-card,.highlights-card,.category-shell,.toc-shell,.quick-jump-shell,.theme-shell{background:linear-gradient(180deg,#fffdfa 0%, #fff6ef 100%)}
-.hero-card{padding:1.4rem 1.5rem;position:relative;overflow:hidden}
-.hero-card::after{content:"";position:absolute;inset:auto -60px -80px auto;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle, rgba(184,109,42,.10) 0%, rgba(184,109,42,0) 70%);pointer-events:none}
-.hero-card h2{margin:.2rem 0 .55rem;font-size:1.75rem;color:#4f2d1b;letter-spacing:-0.025em} .hero-card p,.section-head p,.recipe-card-intro,.modal-intro,.mini-card p{line-height:1.65}
-.hero-card p{margin:0 0 1rem;color:var(--muted)}
-.cta-row,.category-chips,.quick-jump-list{display:flex;gap:.7rem;flex-wrap:wrap}
-.cta-chip,.quick-jump-link,.ghost-btn,.load-more-btn,.lang-btn,.category-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.62rem .9rem;border-radius:999px;background:#fffbf8;border:1px solid #dec7b4;color:var(--text);text-decoration:none;cursor:pointer;transition:.14s}
-.cta-chip:hover,.quick-jump-link:hover,.ghost-btn:hover,.load-more-btn:hover,.category-chip:hover{background:#fff2e7;transform:translateY(-1px);box-shadow:0 10px 20px rgba(67,41,19,.07)}
+.hero-card,.search-shell,.highlights-card,.category-shell,.toc-shell,.recipe-card,.mini-card{background:var(--panel);border:1px solid rgba(132,70,26,.12);border-radius:var(--radius);box-shadow:0 12px 26px rgba(63,36,15,.055)}
+.hero-card{padding:1.4rem 1.5rem} .hero-card h2{margin:.2rem 0 .55rem;font-size:1.75rem} .hero-card p{margin:0 0 1rem;color:var(--muted)}
+.cta-row,.category-chips{display:flex;gap:.7rem;flex-wrap:wrap}
 .search-shell{padding:1rem 1.1rem;position:sticky;top:0;z-index:20;background:rgba(255,248,241,.96);backdrop-filter:blur(10px)}
-.search-top{display:flex;justify-content:space-between;gap:1rem;align-items:end;flex-wrap:wrap} .search-top strong{display:block;font-size:1.02rem} .search-top span{color:var(--muted);font-size:.95rem}
-.search-controls{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;width:min(100%,560px)} .search-input{flex:1 1 280px;border:1px solid #e0c7b1;background:#fffaf5;border-radius:14px;padding:.82rem .95rem;color:var(--text)}
-.search-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(184,109,42,.14)} .search-input::placeholder{color:#9a8574}
-.clear-btn.hidden{display:none} .search-meta{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.75rem} .meta-chip{display:inline-flex;align-items:center;padding:.48rem .8rem;border-radius:999px;background:var(--chip);color:var(--accent-dark);font-weight:600}
+.search-top{display:flex;justify-content:space-between;gap:1rem;align-items:end;flex-wrap:wrap} .search-controls{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;width:min(100%,560px)} .search-input{flex:1 1 280px;border:1px solid #e0c7b1;background:#fffaf5;border-radius:14px;padding:.82rem .95rem;color:var(--text)} .clear-btn.hidden{display:none} .search-meta{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.75rem} .meta-chip{display:inline-flex;align-items:center;padding:.48rem .8rem;border-radius:999px;background:var(--chip);color:var(--accent-dark);font-weight:600}
 .v21-lead{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.85rem;margin-top:.9rem} .v21-lead-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:.85rem .9rem}
-.v21-lead-card strong{display:block;margin-bottom:.25rem;font-size:.96rem} .v21-lead-card span{color:var(--muted);font-size:.9rem}
-.smart-suggestions-box{margin-top:1rem;padding:1rem 1.1rem;background:#fff9f3;border:1px solid var(--line);border-radius:20px}
-.smart-suggestions-head{display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;margin-bottom:.8rem}
-.smart-suggestions-grid,.theme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem}
-.smart-suggestion-card,.theme-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#fffdf9;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.15s}
-.smart-suggestion-card:hover,.theme-card:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(63,36,15,.08);background:#fff8f0}
-.smart-suggestion-card img,.theme-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.smart-suggestion-body,.theme-card-body{padding:.85rem .9rem .95rem}
-.smart-suggestion-tag,.theme-card-tag{display:inline-flex;align-items:center;padding:.34rem .62rem;border-radius:999px;background:#f3e5d8;color:#7e4420;font-size:.82rem;margin-bottom:.5rem}
-.smart-suggestion-body h3,.theme-card h3{margin:0 0 .45rem;font-size:1.02rem;line-height:1.35}
-.smart-suggestion-body p,.theme-card p{margin:0;color:var(--muted);font-size:.92rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.highlights-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem} .highlights-card,.category-shell,.toc-shell,.theme-shell,.quick-jump-shell{padding:1rem 1.1rem}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:.85rem} .section-head h2{margin:0;font-size:1.32rem;letter-spacing:-0.015em}
-.mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem} .mini-card{overflow:hidden;background:var(--panel-soft);position:relative} .mini-card img{aspect-ratio:4/3;object-fit:cover;filter:saturate(1.04) contrast(1.01) brightness(1.01)}
-.mini-card::after,.recipe-card::after{content:"";position:absolute;inset:auto 0 0 0;height:2px;background:linear-gradient(90deg, rgba(201,139,82,.0), rgba(201,139,82,.65), rgba(201,139,82,0));opacity:.45}
-.mini-card-body{padding:.8rem .85rem} .eyebrow{font-size:.76rem;color:#91725b;margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.05em} .mini-card h3{margin:.1rem 0 .55rem;font-size:1.02rem;line-height:1.35}
-.category-chip.active{background:#84502c;border-color:#84502c;color:#fff}
-.category-chip small{display:inline-flex;min-width:1.5rem;height:1.5rem;align-items:center;justify-content:center;border-radius:999px;background:rgba(255,255,255,.22);font-size:.78rem}
-.quick-jump-shell,.category-shell,.toc-shell,.theme-shell{position:relative;overflow:hidden}
-.quick-jump-shell::after,.category-shell::after,.toc-shell::after,.theme-shell::after{content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle, rgba(217,160,102,.10), rgba(217,160,102,0) 70%);pointer-events:none}
+.v21-lead-card strong{display:block;margin-bottom:.25rem} .v21-lead-card span{color:var(--muted);font-size:.9rem}
+.highlights-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem} .highlights-card,.category-shell,.toc-shell{padding:1rem 1.1rem}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:.85rem} .section-head h2{margin:0;font-size:1.32rem}
+.mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem} .mini-card{overflow:hidden;background:var(--panel-soft)} .mini-card img{aspect-ratio:4/3;object-fit:cover} .mini-card-body{padding:.8rem .85rem} .eyebrow{font-size:.76rem;color:#91725b;margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.05em}
 .toc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;max-height:360px;overflow:auto;padding-right:.2rem} .toc-link{display:block;padding:.72rem .78rem;background:#fffaf5;border:1px solid #e0c7b1;border-radius:14px;text-decoration:none;color:var(--text);line-height:1.35}
-.toc-link:hover{background:#fff1e3}
-.recipe-section{margin-top:1.2rem} .recipe-section.focused{scroll-margin-top:18px} .recipe-section.focused .section-head{background:#fff6ec;border:1px solid rgba(132,70,26,.12);border-radius:16px;padding:.8rem .95rem}
-.recipe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem} .recipe-card{overflow:hidden;transition:.18s;position:relative}
-.recipe-card:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(63,36,15,.08);border-color:rgba(150,103,64,.18)} .recipe-card.hidden{display:none} .recipe-card-link{display:block;width:100%;height:100%;border:0;padding:0;background:none;text-align:left;cursor:pointer}
-.recipe-card img{aspect-ratio:4/3;object-fit:cover;filter:saturate(1.04) contrast(1.01) brightness(1.01)} .recipe-card-body{padding:1rem;display:flex;flex-direction:column;min-height:240px;gap:.15rem} .recipe-card-meta{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.65rem}
-.pill{display:inline-flex;align-items:center;padding:.38rem .72rem;border-radius:999px;background:#f5e8db;color:#8b4c1f;font-size:.88rem} .pill.soft{background:#faf2e9;color:#826957}
-.recipe-card h3{margin:0 0 .45rem;font-size:1.08rem;line-height:1.35} .recipe-card-intro{margin:0 0 .85rem;color:var(--muted);font-size:.94rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.recipe-card-footer{display:flex;justify-content:space-between;gap:.75rem;align-items:center;color:var(--muted);font-size:.9rem;margin-top:auto} .recipe-card-footer .more{color:var(--accent-dark);font-weight:600;display:inline-flex;align-items:center;gap:.28rem} .recipe-card-footer .more::after{content:"→";font-size:.92em}
+.recipe-section{margin-top:1.2rem} .recipe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem} .recipe-card.hidden{display:none} .recipe-card-link{display:block;width:100%;height:100%;border:0;padding:0;background:none;text-align:left;cursor:pointer} .recipe-card img{aspect-ratio:4/3;object-fit:cover} .recipe-card-body{padding:1rem;display:flex;flex-direction:column;min-height:240px} .recipe-card-meta{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.65rem} .pill{display:inline-flex;align-items:center;padding:.38rem .72rem;border-radius:999px;background:#f5e8db;color:#8b4c1f;font-size:.88rem} .pill.soft{background:#faf2e9;color:#826957} .recipe-card-intro{margin:0 0 .85rem;color:var(--muted);font-size:.94rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden} .recipe-card-footer{display:flex;justify-content:space-between;gap:.75rem;align-items:center;color:var(--muted);font-size:.9rem;margin-top:auto}
 .results-empty{display:none;padding:1rem 1.1rem;border:1px dashed var(--line);border-radius:18px;background:var(--panel-soft);color:var(--muted);margin-top:1rem} .results-empty.show{display:block}
 .controls-row{display:flex;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1rem} .progress-note{color:var(--muted);font-size:.94rem}
-.category-explore-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
-.category-tile{display:flex;flex-direction:column;justify-content:space-between;min-height:120px;padding:1rem;border-radius:18px;background:linear-gradient(180deg,#fffdf9 0%, #fff5ea 100%);border:1px solid var(--line);text-decoration:none;color:inherit;transition:.15s}
-.category-tile:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(63,36,15,.07)} .category-tile strong{font-size:1rem;line-height:1.35} .category-tile span{color:var(--muted);font-size:.9rem}
-.site-footer{padding:2rem 0 2.5rem;color:var(--muted)} .footer-links{display:flex;gap:1rem;flex-wrap:wrap} .footer-links a{color:#8a4a1b;text-decoration:none;font-weight:600} .footer-links a:hover{text-decoration:underline}
+.site-footer{padding:2rem 0 2.5rem;color:var(--muted)} .footer-links{display:flex;gap:1rem;flex-wrap:wrap} .footer-links a{color:#8a4a1b;text-decoration:none;font-weight:600}
 .modal{position:fixed;inset:0;background:rgba(29,19,10,.6);display:none;align-items:center;justify-content:center;padding:1rem;z-index:50} .modal.open{display:flex}
-.modal-dialog{width:min(1080px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:24px;border:1px solid rgba(150,103,64,.15);box-shadow:0 26px 56px rgba(25,14,6,.20)}
-.modal-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:linear-gradient(180deg,#fffaf5 0%, #fff2e7 100%);border-bottom:1px solid var(--line);padding:1rem 1.15rem;z-index:2} .modal-title{font-size:1.15rem;font-weight:700} .modal-body{padding:1.15rem}
-.modal-recipe-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:1.25rem;align-items:start} .modal-hero-image{width:100%;border-radius:20px;border:1px solid var(--line);filter:saturate(1.04) contrast(1.01) brightness(1.01)}
-.modal-intro{margin:.25rem 0 .9rem;color:var(--muted);font-size:1rem} .modal-meta{display:flex;gap:.6rem;flex-wrap:wrap;margin:.6rem 0 1rem} .modal-actions{display:flex;gap:.6rem;flex-wrap:wrap}
-.modal-columns{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.25rem} .modal-columns section,.steps-block,.rating-block{background:#fff7ef;border:1px solid var(--line);border-radius:20px;padding:1rem}
-.modal-body h2{margin:.1rem 0 .2rem;font-size:1.7rem;line-height:1.25} .modal-body h3{margin:.1rem 0 .6rem;font-size:1.05rem;color:var(--accent-dark)} .modal-body ul,.modal-body ol{padding-left:1.2rem;margin:0} .modal-body li{margin:.38rem 0}
-.steps-block,.rating-block{margin-top:1.2rem} .no-scroll{overflow:hidden}
-@media (max-width:980px){.theme-grid,.category-explore-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.modal-dialog{width:min(1080px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:24px;border:1px solid rgba(150,103,64,.15);box-shadow:0 26px 56px rgba(25,14,6,.20)} .modal-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:linear-gradient(180deg,#fffaf5 0%, #fff2e7 100%);border-bottom:1px solid var(--line);padding:1rem 1.15rem;z-index:2} .modal-title{font-size:1.15rem;font-weight:700} .modal-body{padding:1.15rem} .modal-recipe-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:1.25rem;align-items:start} .modal-hero-image{width:100%;border-radius:20px;border:1px solid var(--line)} .modal-meta{display:flex;gap:.6rem;flex-wrap:wrap;margin:.6rem 0 1rem} .modal-actions{display:flex;gap:.6rem;flex-wrap:wrap} .modal-columns{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.25rem} .modal-columns section,.steps-block,.rating-block{background:#fff7ef;border:1px solid var(--line);border-radius:20px;padding:1rem}
 @media (max-width:1100px){.recipe-grid,.toc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:820px){.hero-grid,.highlights-wrap,.modal-recipe-grid,.modal-columns,.v21-lead{grid-template-columns:1fr} .search-shell{position:static} .section-head{align-items:flex-start} .category-chips{gap:.55rem} .category-chip{padding:.56rem .78rem}}
-@media (max-width:640px){.wrap{padding:16px} .brand-block h1{font-size:2rem} .mini-grid,.recipe-grid,.toc-grid,.theme-grid,.category-explore-grid,.smart-suggestions-grid{grid-template-columns:1fr} .modal-head,.modal-body{padding:.9rem} .hero-card h2{font-size:1.55rem} .recipe-card h3{font-size:1.02rem} .mini-card h3{font-size:1rem}}
+@media (max-width:820px){.hero-grid,.highlights-wrap,.modal-recipe-grid,.modal-columns,.v21-lead{grid-template-columns:1fr} .search-shell{position:static}}
+@media (max-width:640px){.wrap{padding:16px} .brand-block h1{font-size:2rem} .mini-grid,.recipe-grid,.toc-grid{grid-template-columns:1fr}}
+
+/* V31 mobile polish */
+html, body {
+  -webkit-text-size-adjust: 100%;
+}
+
+.cta-row a,
+.category-chip,
+.lang-btn,
+.ghost-btn,
+.load-more-btn {
+  min-height: 44px;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 18px;
+  }
+
+  .hero-grid,
+  .highlights-wrap,
+  .modal-recipe-grid,
+  .modal-columns,
+  .v21-lead {
+    grid-template-columns: 1fr !important;
+  }
+
+  .search-shell {
+    position: static !important;
+    width: 100%;
+  }
+
+  .search-controls {
+    width: 100% !important;
+  }
+
+  .search-input {
+    min-width: 0;
+  }
+
+  .mini-grid,
+  .recipe-grid,
+  .toc-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .wrap {
+    padding: 14px;
+  }
+
+  .brand-block h1 {
+    font-size: 1.85rem !important;
+    line-height: 1.1;
+  }
+
+  .hero-card,
+  .search-shell,
+  .highlights-card,
+  .category-shell,
+  .toc-shell,
+  .recipe-card,
+  .mini-card {
+    border-radius: 18px;
+  }
+
+  .hero-card {
+    padding: 1rem 1rem 1.1rem;
+  }
+
+  .hero-card h2 {
+    font-size: 1.45rem !important;
+    margin-bottom: .45rem;
+  }
+
+  .hero-card p {
+    font-size: .97rem;
+  }
+
+  .cta-row,
+  .category-chips {
+    gap: .55rem;
+  }
+
+  .cta-row a {
+    flex: 1 1 calc(50% - .55rem);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .v21-lead {
+    gap: .6rem;
+  }
+
+  .v21-lead-card {
+    padding: .8rem .85rem;
+    border-radius: 16px;
+  }
+
+  .search-shell {
+    padding: .9rem;
+  }
+
+  .search-top {
+    align-items: stretch;
+  }
+
+  .search-top > div:first-child {
+    width: 100%;
+  }
+
+  .search-controls {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .search-input {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .meta-chip {
+    font-size: .88rem;
+  }
+
+  .mini-grid,
+  .recipe-grid,
+  .toc-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .mini-card-body,
+  .recipe-card-body {
+    padding: .9rem;
+  }
+
+  .recipe-card-body {
+    min-height: unset;
+  }
+
+  .recipe-card h3,
+  .mini-card h3 {
+    font-size: 1rem;
+  }
+
+  .recipe-card-intro {
+    -webkit-line-clamp: 4;
+    font-size: .93rem;
+  }
+
+  .recipe-card-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    font-size: .88rem;
+  }
+
+  .section-head {
+    align-items: flex-start;
+    gap: .45rem;
+  }
+
+  .section-head h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-head p {
+    font-size: .94rem;
+  }
+
+  .toc-link {
+    padding: .78rem .82rem;
+    font-size: .95rem;
+  }
+
+  .modal {
+    padding: .5rem;
+  }
+
+  .modal-dialog {
+    width: 100%;
+    max-height: 94vh;
+    border-radius: 18px;
+  }
+
+  .modal-head {
+    padding: .85rem .95rem;
+  }
+
+  .modal-body {
+    padding: .95rem;
+  }
+
+  .modal-body h2 {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .modal-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+  }
+
+  .modal-actions .ghost-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal-columns section,
+  .steps-block,
+  .rating-block {
+    border-radius: 16px;
+    padding: .9rem;
+  }
+
+  .controls-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .load-more-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: .45rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .cta-row a {
+    flex: 1 1 100%;
+  }
+
+  .recipe-card-meta {
+    gap: .4rem;
+  }
+
+  .pill,
+  .pill.soft {
+    font-size: .8rem;
+    padding: .32rem .6rem;
+  }
+
+  .search-meta {
+    gap: .45rem;
+  }
+
+  .meta-chip {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 </style>
 </head>
 <body>
-<header class="site-header"><div class="wrap"><div class="header-inner"><div class="brand-block"><h1><span lang-variant="de">Svens Kochbuch</span><span lang-variant="pl">Książka kucharska Svena</span></h1><p><span lang-variant="de">Einfache, ehrliche Lieblingsrezepte – gesammelt, gekocht und für gut befunden.</span><span lang-variant="pl">Proste i sprawdzone ulubione przepisy – ugotowane i warte zachowania.</span></p></div><div class="lang-switch"><button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button><button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button></div></div>
-<div class="hero-grid">
-<section class="hero-card">
-  <h2><span lang-variant="de">Was soll heute auf den Tisch?</span><span lang-variant="pl">Co dziś na obiad?</span></h2>
-  <p><span lang-variant="de">Hier findest du schnell etwas, das du heute kochen kannst – egal ob nach Feierabend oder für ein entspanntes Wochenende.</span><span lang-variant="pl">Znajdziesz tu szybko coś do ugotowania – niezależnie od tego, czy po pracy, czy na spokojny weekend.</span></p>
-  <div class="cta-row">
-    <a class="cta-chip" href="#favorites"><span lang-variant="de">⭐ Favoriten</span><span lang-variant="pl">⭐ Ulubione</span></a>
-    <a class="cta-chip" href="#newest"><span lang-variant="de">🆕 Neu</span><span lang-variant="pl">🆕 Nowe</span></a>
-    <a class="cta-chip" href="#allRecipes"><span lang-variant="de">📚 Alle Rezepte</span><span lang-variant="pl">📚 Wszystkie przepisy</span></a>
-  </div>
-  <div class="v21-lead">
-    <div class="v21-lead-card"><strong><span lang-variant="de">Schnell etwas finden</span><span lang-variant="pl">Znajdź coś szybko</span></strong><span><span lang-variant="de">Perfekt für den Feierabend.</span><span lang-variant="pl">Idealne po pracy.</span></span></div>
-    <div class="v21-lead-card"><strong><span lang-variant="de">Inspiration holen</span><span lang-variant="pl">Znajdź inspirację</span></strong><span><span lang-variant="de">Für Wochenende oder Gäste.</span><span lang-variant="pl">Na weekend lub gości.</span></span></div>
-    <div class="v21-lead-card"><strong><span lang-variant="de">Einfach loslegen</span><span lang-variant="pl">Po prostu zacznij</span></strong><span><span lang-variant="de">Ohne langes Suchen.</span><span lang-variant="pl">Bez długiego szukania.</span></span></div>
-  </div>
-  <div class="smart-suggestions-box" id="smartSuggestionsBox">
-    <div class="smart-suggestions-head"><strong><span lang-variant="de">Heute für dich</span><span lang-variant="pl">Dziś dla Ciebie</span></strong><button class="ghost-btn" id="smartSuggestionsBtn" type="button"><span lang-variant="de">Neu vorschlagen</span><span lang-variant="pl">Pokaż nowe</span></button></div>
-    <div class="smart-suggestions-grid" id="smartSuggestionsGrid"></div>
-  </div>
-</section>
-<aside class="search-shell"><div class="search-top"><div><strong><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></strong><span><span lang-variant="de">Suche nach Namen und filtere nach Kategorie.</span><span lang-variant="pl">Szukaj po nazwie i filtruj po kategorii.</span></span></div><div class="search-controls"><input class="search-input" id="recipeSearch" type="search" placeholder="Rezept suchen…" aria-label="Rezept suchen"><button class="clear-btn hidden" id="clearSearch" type="button">✕</button></div></div><div class="search-meta"><span class="meta-chip" id="resultCount"></span><span class="meta-chip" id="activeCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></span></div></aside>
-</div></div></header>
-
-<main class="wrap">
-<section class="highlights-wrap">
-  <div class="highlights-card" id="favorites"><div class="section-head"><div><h2><span lang-variant="de">Svens Favoriten</span><span lang-variant="pl">Ulubione przepisy Svena</span></h2><p><span lang-variant="de">Eine kleine Auswahl an Rezepten, die besonders gut angekommen sind.</span><span lang-variant="pl">Mały wybór przepisów, które szczególnie dobrze się sprawdziły.</span></p></div></div><div class="mini-grid">
+<header class="site-header"><div class="wrap"><div class="header-inner"><div class="brand-block"><h1><span lang-variant="de">Svens Kochbuch</span><span lang-variant="pl">Książka kucharska Svena</span></h1><p><span lang-variant="de">Einfache, ehrliche Lieblingsrezepte – gesammelt, gekocht und für gut befunden.</span><span lang-variant="pl">Proste i sprawdzone ulubione przepisy – ugotowane i warte zachowania.</span></p></div><div class="lang-switch"><button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button><button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button></div></div><div class="hero-grid"><section class="hero-card"><h2><span lang-variant="de">Was soll heute auf den Tisch?</span><span lang-variant="pl">Co dziś na obiad?</span></h2><p><span lang-variant="de">Hier findest du schnell etwas, das du heute kochen kannst – egal ob nach Feierabend oder für ein entspanntes Wochenende.</span><span lang-variant="pl">Znajdziesz tu szybko coś do ugotowania – niezależnie od tego, czy po pracy, czy na spokojny weekend.</span></p><div class="cta-row"><a class="cta-chip" href="#favorites"><span lang-variant="de">⭐ Favoriten</span><span lang-variant="pl">⭐ Ulubione</span></a><a class="cta-chip" href="#newest"><span lang-variant="de">🆕 Neu</span><span lang-variant="pl">🆕 Nowe</span></a><a class="cta-chip" href="#allRecipes"><span lang-variant="de">📚 Alle Rezepte</span><span lang-variant="pl">📚 Wszystkie przepisy</span></a></div><div class="v21-lead"><div class="v21-lead-card"><strong><span lang-variant="de">Schnell etwas finden</span><span lang-variant="pl">Znajdź coś szybko</span></strong><span><span lang-variant="de">Perfekt für den Feierabend.</span><span lang-variant="pl">Idealne po pracy.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Inspiration holen</span><span lang-variant="pl">Znajdź inspirację</span></strong><span><span lang-variant="de">Für Wochenende oder Gäste.</span><span lang-variant="pl">Na weekend lub gości.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Einfach loslegen</span><span lang-variant="pl">Po prostu zacznij</span></strong><span><span lang-variant="de">Ohne langes Suchen.</span><span lang-variant="pl">Bez długiego szukania.</span></span></div></div></section><aside class="search-shell"><div class="search-top"><div><strong><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></strong><span><span lang-variant="de">Suche nach Namen und filtere direkt nach Kategorie.</span><span lang-variant="pl">Szukaj po nazwie i filtruj po kategorii.</span></span></div><div class="search-controls"><input class="search-input" id="recipeSearch" type="search" placeholder="Rezept suchen…" aria-label="Rezept suchen"><button class="clear-btn hidden" id="clearSearch" type="button">✕</button></div></div><div class="search-meta"><span class="meta-chip" id="resultCount"></span><span class="meta-chip" id="activeCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></span></div></aside></div></div></header>
+<main class="wrap"><section class="highlights-wrap"><div class="highlights-card" id="favorites"><div class="section-head"><div><h2><span lang-variant="de">Svens Favoriten</span><span lang-variant="pl">Ulubione przepisy Svena</span></h2></div></div><div class="mini-grid">
     <article class="mini-card" data-open-recipe="4">
       <img src="images/rezeptbild_03.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" loading="lazy">
       <div class="mini-card-body">
@@ -216,10 +401,29 @@ button,input{font:inherit}
         <button class="ghost-btn" type="button" data-open-recipe="90"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
     </article>
-    </div></div>
-  <div class="highlights-card" id="newest"><div class="section-head"><div><h2><span lang-variant="de">Neu hinzugefügt</span><span lang-variant="pl">Ostatnio dodane</span></h2><p><span lang-variant="de">Die neuesten Rezepte direkt zum Anklicken.</span><span lang-variant="pl">Najnowsze przepisy od razu do otwarcia.</span></p></div></div><div class="mini-grid">
+    
+    <article class="mini-card" data-open-recipe="105">
+      <img src="images/rezeptbild_105.png" alt="Ajvarsuppe mit Pide" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Suppen / Feierabendküche</span><span lang-variant="pl">Zupy / kuchnia po pracy</span></div>
+        <h3><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></h3>
+        <p><span lang-variant="de">Diese Suppe ist genau die richtige Mischung aus würzig, cremig und unkompliziert. Der Ajvar bringt sofort Tiefe und Wärme rein, und zusammen mit weichem Pide wird daraus ein richtig gemütliches Essen.</span><span lang-variant="pl">Ta zupa to idealne połączenie wyrazistości, kremowości i prostoty. Ajvar od razu daje głębię i ciepło, a z miękką pide całość zamienia się w naprawdę przyjemny, sycący posiłek.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="105"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article>
+    </div></div><div class="highlights-card" id="newest"><div class="section-head"><div><h2><span lang-variant="de">Neu hinzugefügt</span><span lang-variant="pl">Ostatnio dodane</span></h2></div></div><div class="mini-grid">
+    <article class="mini-card" data-open-recipe="105">
+      <img src="images/rezeptbild_105.png" alt="Ajvarsuppe mit Pide" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Suppen / Feierabendküche</span><span lang-variant="pl">Zupy / kuchnia po pracy</span></div>
+        <h3><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></h3>
+        <p><span lang-variant="de">Diese Suppe ist genau die richtige Mischung aus würzig, cremig und unkompliziert. Der Ajvar bringt sofort Tiefe und Wärme rein, und zusammen mit weichem Pide wird daraus ein richtig gemütliches Essen.</span><span lang-variant="pl">Ta zupa to idealne połączenie wyrazistości, kremowości i prostoty. Ajvar od razu daje głębię i ciepło, a z miękką pide całość zamienia się w naprawdę przyjemny, sycący posiłek.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="105"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article>
+    
     <article class="mini-card" data-open-recipe="104">
-      <img src="images/rezeptbild_104.png" alt="Sommerlicher Tomatensalat" loading="lazy">
+      <img src="images/rezeptbild_102.png" alt="Sommerlicher Tomatensalat" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Beilagen / Salate</span><span lang-variant="pl">Dodatki / Sałatki</span></div>
         <h3><span lang-variant="de">104. Sommerlicher Tomatensalat</span><span lang-variant="pl">104. Letnia sałatka pomidorowa</span></h3>
@@ -229,7 +433,7 @@ button,input{font:inherit}
     </article>
     
     <article class="mini-card" data-open-recipe="103">
-      <img src="images/rezeptbild_103.png" alt="Wrap-Abend (DIY-Style)" loading="lazy">
+      <img src="images/rezeptbild_101.png" alt="Wrap-Abend (DIY-Style)" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Wraps &amp; Burritos / Gesellig</span><span lang-variant="pl">Wrapy i burrito / Na wspólny wieczór</span></div>
         <h3><span lang-variant="de">103. Wrap-Abend (DIY-Style)</span><span lang-variant="pl">103. Wieczór z wrapami (DIY)</span></h3>
@@ -239,7 +443,7 @@ button,input{font:inherit}
     </article>
     
     <article class="mini-card" data-open-recipe="102">
-      <img src="images/rezeptbild_102.png" alt="Knusprige Bratkartoffeln mit Zwiebeln" loading="lazy">
+      <img src="images/rezeptbild_100.png" alt="Knusprige Bratkartoffeln mit Zwiebeln" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Beilagen</span><span lang-variant="pl">Dania z patelni / Dodatki</span></div>
         <h3><span lang-variant="de">102. Knusprige Bratkartoffeln mit Zwiebeln</span><span lang-variant="pl">102. Chrupiące ziemniaki smażone z cebulą</span></h3>
@@ -249,7 +453,7 @@ button,input{font:inherit}
     </article>
     
     <article class="mini-card" data-open-recipe="101">
-      <img src="images/rezeptbild_101.png" alt="Gemüsepfanne „Resteküche“" loading="lazy">
+      <img src="images/rezeptbild_99.png" alt="Gemüsepfanne „Resteküche“" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Resteküche</span><span lang-variant="pl">Dania z patelni / Kuchnia z resztek</span></div>
         <h3><span lang-variant="de">101. Gemüsepfanne „Resteküche“</span><span lang-variant="pl">101. Patelnia warzywna „z resztek”</span></h3>
@@ -259,7 +463,7 @@ button,input{font:inherit}
     </article>
     
     <article class="mini-card" data-open-recipe="100">
-      <img src="images/rezeptbild_100.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)" loading="lazy">
+      <img src="images/rezeptbild_98.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Airfryer / Schnell &amp; einfach</span><span lang-variant="pl">Airfryer / Szybko i prosto</span></div>
         <h3><span lang-variant="de">100. AirFryer Hähnchen (knusprig &amp; saftig)</span><span lang-variant="pl">100. Kurczak z AirFryera (chrupiący i soczysty)</span></h3>
@@ -269,7 +473,7 @@ button,input{font:inherit}
     </article>
     
     <article class="mini-card" data-open-recipe="99">
-      <img src="images/rezeptbild_99.png" alt="Ofenkartoffeln Deluxe mit Toppings" loading="lazy">
+      <img src="images/rezeptbild_97.png" alt="Ofenkartoffeln Deluxe mit Toppings" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Ofengerichte / Beilagen</span><span lang-variant="pl">Dania z piekarnika / Dodatki</span></div>
         <h3><span lang-variant="de">99. Ofenkartoffeln Deluxe mit Toppings</span><span lang-variant="pl">99. Pieczone ziemniaki deluxe z dodatkami</span></h3>
@@ -279,7 +483,7 @@ button,input{font:inherit}
     </article>
     
     <article class="mini-card" data-open-recipe="98">
-      <img src="images/rezeptbild_98.png" alt="Schnelle Hackpfanne mit Ajvar" loading="lazy">
+      <img src="images/rezeptbild_96.png" alt="Schnelle Hackpfanne mit Ajvar" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Schnell &amp; einfach</span><span lang-variant="pl">Dania z patelni / Szybko i prosto</span></div>
         <h3><span lang-variant="de">98. Schnelle Hackpfanne mit Ajvar</span><span lang-variant="pl">98. Szybka patelnia z mielonym mięsem i ajvarem</span></h3>
@@ -287,43 +491,7 @@ button,input{font:inherit}
         <button class="ghost-btn" type="button" data-open-recipe="98"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
     </article>
-    
-    <article class="mini-card" data-open-recipe="97">
-      <img src="images/rezeptbild_97.png" alt="BBQ-Hähnchen aus dem Ofen" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Ofengerichte / Grill &amp; BBQ</span><span lang-variant="pl">Dania z piekarnika / Grill &amp; BBQ</span></div>
-        <h3><span lang-variant="de">97. BBQ-Hähnchen aus dem Ofen</span><span lang-variant="pl">97. Kurczak BBQ z piekarnika</span></h3>
-        <p><span lang-variant="de">Auch ohne Grill bekommst du hier richtiges BBQ-Feeling hin. Die Marinade zieht ins Fleisch, im Ofen entwickelt sich eine schöne Würze und am Ende hast du ein saftiges Hähnchen mit ordentlich Geschmack.</span><span lang-variant="pl">Nawet bez grilla da się tu osiągnąć prawdziwy klimat BBQ. Marynata przechodzi w mięso, w piekarniku rozwija się ładna przyprawowa głębia, a na końcu masz soczystego kurczaka z porządnym smakiem.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="97"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-      </div>
-    </article>
-    </div></div>
-</section>
-
-<section class="quick-jump-shell"><div class="section-head"><div><h2><span lang-variant="de">Schnellzugriff</span><span lang-variant="pl">Szybki dostęp</span></h2><p><span lang-variant="de">Direkt zu den wichtigsten Bereichen springen.</span><span lang-variant="pl">Przejdź od razu do najważniejszych sekcji.</span></p></div></div><div class="quick-jump-list"><a class="quick-jump-link" href="#favorites"><span lang-variant="de">Favoriten</span><span lang-variant="pl">Ulubione</span></a><a class="quick-jump-link" href="#newest"><span lang-variant="de">Neu</span><span lang-variant="pl">Nowe</span></a><a class="quick-jump-link" href="#tocGrid"><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></a><a class="quick-jump-link" href="#allRecipes"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></a></div></section>
-
-<section class="theme-shell" id="themeQuick"><div class="section-head"><div><h2><span lang-variant="de">⚡ Schnell &amp; einfach</span><span lang-variant="pl">⚡ Szybko i prosto</span></h2><p><span lang-variant="de">Rezepte für Feierabend, Pfanne und wenig Aufwand.</span><span lang-variant="pl">Przepisy idealne po pracy, z patelni i bez dużego wysiłku.</span></p></div></div><div class="theme-grid" id="themeQuickGrid"></div></section>
-<section class="theme-shell" id="themeHearty"><div class="section-head"><div><h2><span lang-variant="de">🍖 Deftig &amp; Ofen</span><span lang-variant="pl">🍖 Konkretnie &amp; z piekarnika</span></h2><p><span lang-variant="de">Aufläufe, Schmorgerichte und alles, was satt und zufrieden macht.</span><span lang-variant="pl">Zapiekanki, dania duszone i wszystko, co naprawdę syci.</span></p></div></div><div class="theme-grid" id="themeHeartyGrid"></div></section>
-<section class="theme-shell" id="themeLight"><div class="section-head"><div><h2><span lang-variant="de">🌿 Frisch &amp; leicht</span><span lang-variant="pl">🌿 Lekko &amp; świeżo</span></h2><p><span lang-variant="de">Salate, Gemüse und Gerichte mit etwas mehr Leichtigkeit.</span><span lang-variant="pl">Sałatki, warzywa i dania o lżejszym charakterze.</span></p></div></div><div class="theme-grid" id="themeLightGrid"></div></section>
-<section class="theme-shell" id="themeBbq"><div class="section-head"><div><h2><span lang-variant="de">🔥 Grill &amp; BBQ</span><span lang-variant="pl">🔥 Grill &amp; BBQ</span></h2><p><span lang-variant="de">Alles für Grillabend, Smoker und herzhafte Outdoor-Ideen.</span><span lang-variant="pl">Wszystko na grill, smoker i konkretne dania na zewnątrz.</span></p></div></div><div class="theme-grid" id="themeBbqGrid"></div></section>
-
-<section class="theme-shell" id="categoryExplore">
-  <div class="section-head"><div><h2><span lang-variant="de">📚 Kategorien entdecken</span><span lang-variant="pl">📚 Odkrywaj kategorie</span></h2><p><span lang-variant="de">Die wichtigsten Bereiche direkt zum Anklicken.</span><span lang-variant="pl">Najważniejsze obszary od razu do kliknięcia.</span></p></div></div>
-  <div class="category-explore-grid">
-    <a class="category-tile" href="#allRecipes" data-v27-category="ofengerichte"><strong><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></strong><span><span lang-variant="de">Aufläufe, Braten und Ofenklassiker.</span><span lang-variant="pl">Zapiekanki, pieczenie i klasyki z piekarnika.</span></span></a>
-    <a class="category-tile" href="#allRecipes" data-v27-category="pfannengerichte"><strong><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span></strong><span><span lang-variant="de">Schnelle Ideen für den Alltag.</span><span lang-variant="pl">Szybkie pomysły na co dzień.</span></span></a>
-    <a class="category-tile" href="#allRecipes" data-v27-category="grill-und-bbq"><strong><span lang-variant="de">Grill &amp; BBQ</span><span lang-variant="pl">Grill &amp; BBQ</span></strong><span><span lang-variant="de">Für Grillabend und Smoker.</span><span lang-variant="pl">Na grillowy wieczór i do smokera.</span></span></a>
-    <a class="category-tile" href="#allRecipes" data-v27-category="airfryer"><strong><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span></strong><span><span lang-variant="de">Schnell, praktisch und alltagstauglich.</span><span lang-variant="pl">Szybko, praktycznie i na co dzień.</span></span></a>
-    <a class="category-tile" href="#allRecipes" data-v27-category="fisch-und-meeresfruechte"><strong><span lang-variant="de">Meeresfrüchte</span><span lang-variant="pl">Owoce morza</span></strong><span><span lang-variant="de">Muscheln, Garnelen und mehr.</span><span lang-variant="pl">Małże, krewetki i więcej.</span></span></a>
-    <a class="category-tile" href="#allRecipes" data-v27-category="suppen"><strong><span lang-variant="de">Suppen &amp; Eintöpfe</span><span lang-variant="pl">Zupy i gulasze</span></strong><span><span lang-variant="de">Wärmend und sättigend.</span><span lang-variant="pl">Rozgrzewające i sycące.</span></span></a>
-    <a class="category-tile" href="#allRecipes" data-v27-category="beilagen"><strong><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span></strong><span><span lang-variant="de">Kartoffeln, Salate und Ergänzungen.</span><span lang-variant="pl">Ziemniaki, sałatki i dodatki.</span></span></a>
-    <a class="category-tile" href="#allRecipes" data-v27-category="all"><strong><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></strong><span><span lang-variant="de">Kompletter Überblick über dein Kochbuch.</span><span lang-variant="pl">Pełny przegląd całej książki kucharskiej.</span></span></a>
-  </div>
-</section>
-
-<section class="category-shell"><div class="section-head"><div><h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2><p><span lang-variant="de">Die wichtigsten Gruppen zuerst, damit du schneller beim passenden Rezept landest.</span><span lang-variant="pl">Najważniejsze grupy najpierw, aby szybciej trafić do odpowiedniego przepisu.</span></p></div></div><div class="category-chips"><button class="category-chip active" data-category="all" type="button"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span><small>104</small></button><button class="category-chip" data-category="ofengerichte" type="button"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span><small>23</small></button><button class="category-chip" data-category="pfannengerichte" type="button"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span><small>17</small></button><button class="category-chip" data-category="grill-und-bbq" type="button"><span lang-variant="de">Grill &amp; BBQ</span><span lang-variant="pl">Grill &amp; BBQ</span><small>18</small></button><button class="category-chip" data-category="fisch-und-meeresfruechte" type="button"><span lang-variant="de">Fisch &amp; Meeresfrüchte</span><span lang-variant="pl">Ryby i owoce morza</span><small>6</small></button><button class="category-chip" data-category="airfryer" type="button"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span><small>4</small></button><button class="category-chip" data-category="beilagen" type="button"><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span><small>8</small></button><button class="category-chip" data-category="grundlagen" type="button"><span lang-variant="de">Grundlagen</span><span lang-variant="pl">Podstawy</span><small>2</small></button><button class="category-chip" data-category="nudelgerichte" type="button"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Dania makaronowe</span><small>3</small></button><button class="category-chip" data-category="suppen" type="button"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span><small>6</small></button><button class="category-chip" data-category="cocktails" type="button"><span lang-variant="de">Cocktails</span><span lang-variant="pl">Koktajle</span><small>10</small></button><button class="category-chip" data-category="wraps-und-burritos" type="button"><span lang-variant="de">Wraps &amp; Burritos</span><span lang-variant="pl">Wrapy i burrito</span><small>2</small></button><button class="category-chip" data-category="eiergerichte" type="button"><span lang-variant="de">Eiergerichte</span><span lang-variant="pl">Dania z jajek</span><small>2</small></button></div></section>
-<section class="toc-shell"><div class="section-head"><div><h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2><p><span lang-variant="de">Direkt zum Rezept springen oder vorher suchen.</span><span lang-variant="pl">Przeskocz od razu do przepisu albo najpierw wyszukaj.</span></p></div></div><div class="toc-grid" id="tocGrid"><a class="toc-link" data-category="ofengerichte" href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-3"><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-4"><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-5"><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></a><a class="toc-link" data-category="beilagen" href="#rezept-6"><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-7"><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-8"><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-9"><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-10"><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-11"><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-12"><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-13"><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-14"><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-15"><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-16"><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-17"><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></a><a class="toc-link" data-category="suppen" href="#rezept-18"><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-19"><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-20"><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></a><a class="toc-link" data-category="gebaeck-und-suesses" href="#rezept-21"><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></a><a class="toc-link" data-category="suppen" href="#rezept-22"><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></a><a class="toc-link" data-category="teiggerichte" href="#rezept-23"><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-24"><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-25"><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-26"><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-27"><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-28"><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-29"><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-30"><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></a><a class="toc-link" data-category="suppen" href="#rezept-31"><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></a><a class="toc-link" data-category="suppen" href="#rezept-32"><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></a><a class="toc-link" data-category="saucen" href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a><a class="toc-link" data-category="suppen" href="#rezept-34"><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-35"><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-36"><span lang-variant="de">36. Irish Beef Rollbraten aus dem Backofen</span><span lang-variant="pl">36. Irlandzka pieczeń wołowa z piekarnika</span></a><a class="toc-link" data-category="airfryer" href="#rezept-37"><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-38"><span lang-variant="de">38. Klassischer Schmorbraten mit dunkler Sauce</span><span lang-variant="pl">38. Klasyczna pieczeń duszona z ciemnym sosem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-39"><span lang-variant="de">39. Hähnchen-Kartoffel-Pfanne mit Gemüse</span><span lang-variant="pl">39. Zapiekanka z kurczakiem, ziemniakami i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-40"><span lang-variant="de">40. Bratwurst mit Sauerkraut aus dem Ofen</span><span lang-variant="pl">40. Biała kiełbasa pieczona z kapustą kiszoną</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-41"><span lang-variant="de">41. Saftiger Chicken-Cheese-Burrito ohne Reis</span><span lang-variant="pl">41. Soczysty burrito z kurczakiem i serem bez ryżu</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-42"><span lang-variant="de">42. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">42. Spaghetti z czosnkiem i sambal oelek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-43"><span lang-variant="de">43. Knoblauch-Kartoffel-Pfanne mit Chili und Ei</span><span lang-variant="pl">43. Patelnia ziemniaczana z czosnkiem, chili i jajkiem</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-44"><span lang-variant="de">44. Cremige Parmesan-Pasta ohne Sahne</span><span lang-variant="pl">44. Kremowy makaron z parmezanem bez śmietany</span></a><a class="toc-link" data-category="airfryer" href="#rezept-45"><span lang-variant="de">45. Cordon Bleu mit Nasi Goreng</span><span lang-variant="pl">45. Cordon Bleu z nasi goreng</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-46"><span lang-variant="de">46. Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</span><span lang-variant="pl">46. Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</span></a><a class="toc-link" data-category="cocktails" href="#rezept-47"><span lang-variant="de">47. Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">47. Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-48"><span lang-variant="de">48. Ananas-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">48. Ananasowy slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-49"><span lang-variant="de">49. Zitronen-Vodka-Slush für den Ninja Slushi</span><span lang-variant="pl">49. Cytrynowy slush z wódką do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-50"><span lang-variant="de">50. Waldbeer-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">50. Leśny slush z różowym sektem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-51"><span lang-variant="de">51. Mango-Maracuja-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">51. Mango-marakuja slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-52"><span lang-variant="de">52. Senfeier mit Kartoffeln</span><span lang-variant="pl">52. Jajka w sosie musztardowym z ziemniakami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-53"><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-54"><span lang-variant="de">54. Spare Ribs mit Espresso-Rub</span><span lang-variant="pl">54. Żeberka z rubem espresso</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-55"><span lang-variant="de">55. Gegrillter Halloumi mit Kräutern und Olivenöl</span><span lang-variant="pl">55. Grillowany halloumi z ziołami i oliwą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-56"><span lang-variant="de">56. Gemüsespieße vom Grill</span><span lang-variant="pl">56. Warzywne szaszłyki z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-57"><span lang-variant="de">57. Gefüllte Portobello-Pilze vom Grill</span><span lang-variant="pl">57. Faszerowane pieczarki portobello z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-58"><span lang-variant="de">58. Grüner Spargel vom Grill mit Zitronenbutter</span><span lang-variant="pl">58. Zielone szparagi z grilla z masłem cytrynowym</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-59"><span lang-variant="de">59. Süßkartoffel-Pommes vom Grill</span><span lang-variant="pl">59. Frytki z batatów z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-60"><span lang-variant="de">60. Melonen-Feta-Salat mit Minze</span><span lang-variant="pl">60. Sałatka z arbuza, fety i mięty</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-61"><span lang-variant="de">61. Shakshuka</span><span lang-variant="pl">61. Szakszuka</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-62"><span lang-variant="de">62. Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</span><span lang-variant="pl">62. Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-63"><span lang-variant="de">63. Ratatouille mit Polenta</span><span lang-variant="pl">63. Ratatouille z polentą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-64"><span lang-variant="de">64. Marinierte Hähnchenspieße vom Grill</span><span lang-variant="pl">64. Marynowane szaszłyki z kurczaka z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-65"><span lang-variant="de">65. Gegrillte Maiskolben mit Butter</span><span lang-variant="pl">65. Grillowana kukurydza z masłem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-66"><span lang-variant="de">66. Halloumi vom Grill</span><span lang-variant="pl">66. Halloumi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-67"><span lang-variant="de">67. Würzige Bratwürste vom Grill (klassisch und einfache Variante)</span><span lang-variant="pl">67. Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-68"><span lang-variant="de">68. Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</span><span lang-variant="pl">68. Grillowane warzywa z cukinią, papryką i pieczarkami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-69"><span lang-variant="de">69. Grillkartoffeln in Alufolie mit Rosmarin</span><span lang-variant="pl">69. Ziemniaki z grilla w folii z rozmarynem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-70"><span lang-variant="de">70. Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</span><span lang-variant="pl">70. Grillowana bagietka lub ciabatta z oliwą czosnkową</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-71"><span lang-variant="de">71. Gegrillte Früchte mit Ananas oder Pfirsich</span><span lang-variant="pl">71. Grillowane owoce z ananasem lub brzoskwinią</span></a><a class="toc-link" data-category="cocktails" href="#rezept-72"><span lang-variant="de">72. Klassische rote Sangria</span><span lang-variant="pl">72. Klasyczna czerwona sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-73"><span lang-variant="de">73. Weiße Sangria</span><span lang-variant="pl">73. Biała sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-74"><span lang-variant="de">74. Aperol Spritz</span><span lang-variant="pl">74. Aperol Spritz</span></a><a class="toc-link" data-category="cocktails" href="#rezept-75"><span lang-variant="de">75. Mojito</span><span lang-variant="pl">75. Mojito</span></a><a class="toc-link" data-category="cocktails" href="#rezept-76"><span lang-variant="de">76. Gin Tonic (Basisrezept und einfache Variationen)</span><span lang-variant="pl">76. Gin Tonic (wersja podstawowa i proste warianty)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-77"><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-78"><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-79"><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></a><a class="toc-link" data-category="airfryer" href="#rezept-80"><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></a><a class="toc-link" data-category="suppen" href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-82"><span lang-variant="de">82. Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen</span><span lang-variant="pl">82. Krewetki zapiekane w sosie pomidorowo-winno-fetowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-83"><span lang-variant="de">83. Knoblauch-Chili-Garnelen aus der Pfanne</span><span lang-variant="pl">83. Krewetki z patelni z czosnkiem i chili</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-84"><span lang-variant="de">84. Garnelen in cremiger Paprika-Sahne-Sauce</span><span lang-variant="pl">84. Krewetki w kremowym sosie paprykowo-śmietanowym</span></a><a class="toc-link" data-category="beilagen" href="#rezept-85"><span lang-variant="de">85. Klassischer Kartoffelstampf</span><span lang-variant="pl">85. Klasyczne tłuczone ziemniaki</span></a><a class="toc-link" data-category="beilagen" href="#rezept-86"><span lang-variant="de">86. Kartoffelstampf mit Dill</span><span lang-variant="pl">86. Tłuczone ziemniaki z koperkiem</span></a><a class="toc-link" data-category="beilagen" href="#rezept-87"><span lang-variant="de">87. Kartoffel-Pastinaken-Stampf</span><span lang-variant="pl">87. Tłuczone ziemniaki z pasternakiem</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-88"><span lang-variant="de">88. Svens BBQ Rub (Basisgewürz)</span><span lang-variant="pl">88. BBQ Rub Svena (mieszanka bazowa)</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-89"><span lang-variant="de">89. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">89. Spaghetti z czosnkiem i sambalem oelek</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-90"><span lang-variant="de">90. Pinsa mit Burrata, Peperoni und Salami</span><span lang-variant="pl">90. Pinsa z burratą, papryką i salami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-91"><span lang-variant="de">91. Wildschweingulasch klassisch geschmort</span><span lang-variant="pl">91. Klasyczny gulasz z dzika duszony powoli</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-92"><span lang-variant="de">92. Wildschweinkeule aus dem Ofen</span><span lang-variant="pl">92. Udziec z dzika z piekarnika</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-93"><span lang-variant="de">93. Gefülltes Ofenbaguette mit Chorizo</span><span lang-variant="pl">93. Zapiekana bagietka z chorizo</span></a><a class="toc-link" data-category="beilagen" href="#rezept-94"><span lang-variant="de">94. Ogórki w zalewie gyros</span><span lang-variant="pl">94. Ogórki w zalewie gyros</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-95"><span lang-variant="de">95. Feierabend-Pfanne mit Hähnchen &amp; Gemüse</span><span lang-variant="pl">95. Patelnia po pracy z kurczakiem i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-96"><span lang-variant="de">96. Kartoffel-Speck-Auflauf (deftig &amp; cremig)</span><span lang-variant="pl">96. Zapiekanka ziemniaczana z boczkiem (konkretna i kremowa)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-97"><span lang-variant="de">97. BBQ-Hähnchen aus dem Ofen</span><span lang-variant="pl">97. Kurczak BBQ z piekarnika</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-98"><span lang-variant="de">98. Schnelle Hackpfanne mit Ajvar</span><span lang-variant="pl">98. Szybka patelnia z mielonym mięsem i ajvarem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-99"><span lang-variant="de">99. Ofenkartoffeln Deluxe mit Toppings</span><span lang-variant="pl">99. Pieczone ziemniaki deluxe z dodatkami</span></a><a class="toc-link" data-category="airfryer" href="#rezept-100"><span lang-variant="de">100. AirFryer Hähnchen (knusprig &amp; saftig)</span><span lang-variant="pl">100. Kurczak z AirFryera (chrupiący i soczysty)</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-101"><span lang-variant="de">101. Gemüsepfanne „Resteküche“</span><span lang-variant="pl">101. Patelnia warzywna „z resztek”</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-102"><span lang-variant="de">102. Knusprige Bratkartoffeln mit Zwiebeln</span><span lang-variant="pl">102. Chrupiące ziemniaki smażone z cebulą</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-103"><span lang-variant="de">103. Wrap-Abend (DIY-Style)</span><span lang-variant="pl">103. Wieczór z wrapami (DIY)</span></a><a class="toc-link" data-category="beilagen" href="#rezept-104"><span lang-variant="de">104. Sommerlicher Tomatensalat</span><span lang-variant="pl">104. Letnia sałatka pomidorowa</span></a></div></section>
-<section class="recipe-section" id="allRecipes"><div class="section-head"><div><h2><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></h2><p><span lang-variant="de">Kompaktere Karten für schnelleres Stöbern. Die vollständigen Inhalte öffnen sich erst im Rezeptdialog.</span><span lang-variant="pl">Bardziej zwarte karty do szybszego przeglądania. Pełna treść otwiera się dopiero w oknie przepisu.</span></p></div></div><div class="recipe-grid" id="recipeGrid">
+    </div></div></section><section class="category-shell"><div class="section-head"><div><h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2></div></div><div class="category-chips"><button class="category-chip active" data-category="all" type="button"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span><small>105</small></button><button class="category-chip" data-category="ofengerichte" type="button"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span><small>23</small></button><button class="category-chip" data-category="pfannengerichte" type="button"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span><small>17</small></button><button class="category-chip" data-category="grill-und-bbq" type="button"><span lang-variant="de">Grill &amp; BBQ</span><span lang-variant="pl">Grill &amp; BBQ</span><small>18</small></button><button class="category-chip" data-category="fisch-und-meeresfruechte" type="button"><span lang-variant="de">Fisch &amp; Meeresfrüchte</span><span lang-variant="pl">Ryby i owoce morza</span><small>6</small></button><button class="category-chip" data-category="airfryer" type="button"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span><small>4</small></button><button class="category-chip" data-category="beilagen" type="button"><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span><small>8</small></button><button class="category-chip" data-category="grundlagen" type="button"><span lang-variant="de">Grundlagen</span><span lang-variant="pl">Podstawy</span><small>2</small></button><button class="category-chip" data-category="nudelgerichte" type="button"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Dania makaronowe</span><small>3</small></button><button class="category-chip" data-category="suppen" type="button"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span><small>7</small></button><button class="category-chip" data-category="cocktails" type="button"><span lang-variant="de">Cocktails</span><span lang-variant="pl">Koktajle</span><small>10</small></button><button class="category-chip" data-category="wraps-und-burritos" type="button"><span lang-variant="de">Wraps &amp; Burritos</span><span lang-variant="pl">Wrapy i burrito</span><small>2</small></button><button class="category-chip" data-category="eiergerichte" type="button"><span lang-variant="de">Eiergerichte</span><span lang-variant="pl">Dania z jajek</span><small>2</small></button></div></section><section class="toc-shell"><div class="section-head"><div><h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2></div></div><div class="toc-grid" id="tocGrid"><a class="toc-link" data-category="ofengerichte" href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-3"><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-4"><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-5"><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></a><a class="toc-link" data-category="beilagen" href="#rezept-6"><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-7"><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-8"><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-9"><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-10"><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-11"><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-12"><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-13"><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-14"><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-15"><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-16"><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-17"><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></a><a class="toc-link" data-category="suppen" href="#rezept-18"><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-19"><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-20"><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></a><a class="toc-link" data-category="gebaeck-und-suesses" href="#rezept-21"><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></a><a class="toc-link" data-category="suppen" href="#rezept-22"><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></a><a class="toc-link" data-category="teiggerichte" href="#rezept-23"><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-24"><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-25"><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-26"><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-27"><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-28"><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-29"><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-30"><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></a><a class="toc-link" data-category="suppen" href="#rezept-31"><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></a><a class="toc-link" data-category="suppen" href="#rezept-32"><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></a><a class="toc-link" data-category="saucen" href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a><a class="toc-link" data-category="suppen" href="#rezept-34"><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-35"><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-36"><span lang-variant="de">36. Irish Beef Rollbraten aus dem Backofen</span><span lang-variant="pl">36. Irlandzka pieczeń wołowa z piekarnika</span></a><a class="toc-link" data-category="airfryer" href="#rezept-37"><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-38"><span lang-variant="de">38. Klassischer Schmorbraten mit dunkler Sauce</span><span lang-variant="pl">38. Klasyczna pieczeń duszona z ciemnym sosem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-39"><span lang-variant="de">39. Hähnchen-Kartoffel-Pfanne mit Gemüse</span><span lang-variant="pl">39. Zapiekanka z kurczakiem, ziemniakami i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-40"><span lang-variant="de">40. Bratwurst mit Sauerkraut aus dem Ofen</span><span lang-variant="pl">40. Biała kiełbasa pieczona z kapustą kiszoną</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-41"><span lang-variant="de">41. Saftiger Chicken-Cheese-Burrito ohne Reis</span><span lang-variant="pl">41. Soczysty burrito z kurczakiem i serem bez ryżu</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-42"><span lang-variant="de">42. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">42. Spaghetti z czosnkiem i sambal oelek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-43"><span lang-variant="de">43. Knoblauch-Kartoffel-Pfanne mit Chili und Ei</span><span lang-variant="pl">43. Patelnia ziemniaczana z czosnkiem, chili i jajkiem</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-44"><span lang-variant="de">44. Cremige Parmesan-Pasta ohne Sahne</span><span lang-variant="pl">44. Kremowy makaron z parmezanem bez śmietany</span></a><a class="toc-link" data-category="airfryer" href="#rezept-45"><span lang-variant="de">45. Cordon Bleu mit Nasi Goreng</span><span lang-variant="pl">45. Cordon Bleu z nasi goreng</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-46"><span lang-variant="de">46. Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</span><span lang-variant="pl">46. Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</span></a><a class="toc-link" data-category="cocktails" href="#rezept-47"><span lang-variant="de">47. Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">47. Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-48"><span lang-variant="de">48. Ananas-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">48. Ananasowy slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-49"><span lang-variant="de">49. Zitronen-Vodka-Slush für den Ninja Slushi</span><span lang-variant="pl">49. Cytrynowy slush z wódką do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-50"><span lang-variant="de">50. Waldbeer-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">50. Leśny slush z różowym sektem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-51"><span lang-variant="de">51. Mango-Maracuja-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">51. Mango-marakuja slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-52"><span lang-variant="de">52. Senfeier mit Kartoffeln</span><span lang-variant="pl">52. Jajka w sosie musztardowym z ziemniakami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-53"><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-54"><span lang-variant="de">54. Spare Ribs mit Espresso-Rub</span><span lang-variant="pl">54. Żeberka z rubem espresso</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-55"><span lang-variant="de">55. Gegrillter Halloumi mit Kräutern und Olivenöl</span><span lang-variant="pl">55. Grillowany halloumi z ziołami i oliwą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-56"><span lang-variant="de">56. Gemüsespieße vom Grill</span><span lang-variant="pl">56. Warzywne szaszłyki z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-57"><span lang-variant="de">57. Gefüllte Portobello-Pilze vom Grill</span><span lang-variant="pl">57. Faszerowane pieczarki portobello z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-58"><span lang-variant="de">58. Grüner Spargel vom Grill mit Zitronenbutter</span><span lang-variant="pl">58. Zielone szparagi z grilla z masłem cytrynowym</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-59"><span lang-variant="de">59. Süßkartoffel-Pommes vom Grill</span><span lang-variant="pl">59. Frytki z batatów z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-60"><span lang-variant="de">60. Melonen-Feta-Salat mit Minze</span><span lang-variant="pl">60. Sałatka z arbuza, fety i mięty</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-61"><span lang-variant="de">61. Shakshuka</span><span lang-variant="pl">61. Szakszuka</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-62"><span lang-variant="de">62. Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</span><span lang-variant="pl">62. Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-63"><span lang-variant="de">63. Ratatouille mit Polenta</span><span lang-variant="pl">63. Ratatouille z polentą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-64"><span lang-variant="de">64. Marinierte Hähnchenspieße vom Grill</span><span lang-variant="pl">64. Marynowane szaszłyki z kurczaka z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-65"><span lang-variant="de">65. Gegrillte Maiskolben mit Butter</span><span lang-variant="pl">65. Grillowana kukurydza z masłem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-66"><span lang-variant="de">66. Halloumi vom Grill</span><span lang-variant="pl">66. Halloumi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-67"><span lang-variant="de">67. Würzige Bratwürste vom Grill (klassisch und einfache Variante)</span><span lang-variant="pl">67. Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-68"><span lang-variant="de">68. Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</span><span lang-variant="pl">68. Grillowane warzywa z cukinią, papryką i pieczarkami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-69"><span lang-variant="de">69. Grillkartoffeln in Alufolie mit Rosmarin</span><span lang-variant="pl">69. Ziemniaki z grilla w folii z rozmarynem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-70"><span lang-variant="de">70. Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</span><span lang-variant="pl">70. Grillowana bagietka lub ciabatta z oliwą czosnkową</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-71"><span lang-variant="de">71. Gegrillte Früchte mit Ananas oder Pfirsich</span><span lang-variant="pl">71. Grillowane owoce z ananasem lub brzoskwinią</span></a><a class="toc-link" data-category="cocktails" href="#rezept-72"><span lang-variant="de">72. Klassische rote Sangria</span><span lang-variant="pl">72. Klasyczna czerwona sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-73"><span lang-variant="de">73. Weiße Sangria</span><span lang-variant="pl">73. Biała sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-74"><span lang-variant="de">74. Aperol Spritz</span><span lang-variant="pl">74. Aperol Spritz</span></a><a class="toc-link" data-category="cocktails" href="#rezept-75"><span lang-variant="de">75. Mojito</span><span lang-variant="pl">75. Mojito</span></a><a class="toc-link" data-category="cocktails" href="#rezept-76"><span lang-variant="de">76. Gin Tonic (Basisrezept und einfache Variationen)</span><span lang-variant="pl">76. Gin Tonic (wersja podstawowa i proste warianty)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-77"><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-78"><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-79"><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></a><a class="toc-link" data-category="airfryer" href="#rezept-80"><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></a><a class="toc-link" data-category="suppen" href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-82"><span lang-variant="de">82. Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen</span><span lang-variant="pl">82. Krewetki zapiekane w sosie pomidorowo-winno-fetowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-83"><span lang-variant="de">83. Knoblauch-Chili-Garnelen aus der Pfanne</span><span lang-variant="pl">83. Krewetki z patelni z czosnkiem i chili</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-84"><span lang-variant="de">84. Garnelen in cremiger Paprika-Sahne-Sauce</span><span lang-variant="pl">84. Krewetki w kremowym sosie paprykowo-śmietanowym</span></a><a class="toc-link" data-category="beilagen" href="#rezept-85"><span lang-variant="de">85. Klassischer Kartoffelstampf</span><span lang-variant="pl">85. Klasyczne tłuczone ziemniaki</span></a><a class="toc-link" data-category="beilagen" href="#rezept-86"><span lang-variant="de">86. Kartoffelstampf mit Dill</span><span lang-variant="pl">86. Tłuczone ziemniaki z koperkiem</span></a><a class="toc-link" data-category="beilagen" href="#rezept-87"><span lang-variant="de">87. Kartoffel-Pastinaken-Stampf</span><span lang-variant="pl">87. Tłuczone ziemniaki z pasternakiem</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-88"><span lang-variant="de">88. Svens BBQ Rub (Basisgewürz)</span><span lang-variant="pl">88. BBQ Rub Svena (mieszanka bazowa)</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-89"><span lang-variant="de">89. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">89. Spaghetti z czosnkiem i sambalem oelek</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-90"><span lang-variant="de">90. Pinsa mit Burrata, Peperoni und Salami</span><span lang-variant="pl">90. Pinsa z burratą, papryką i salami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-91"><span lang-variant="de">91. Wildschweingulasch klassisch geschmort</span><span lang-variant="pl">91. Klasyczny gulasz z dzika duszony powoli</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-92"><span lang-variant="de">92. Wildschweinkeule aus dem Ofen</span><span lang-variant="pl">92. Udziec z dzika z piekarnika</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-93"><span lang-variant="de">93. Gefülltes Ofenbaguette mit Chorizo</span><span lang-variant="pl">93. Zapiekana bagietka z chorizo</span></a><a class="toc-link" data-category="beilagen" href="#rezept-94"><span lang-variant="de">94. Ogórki w zalewie gyros</span><span lang-variant="pl">94. Ogórki w zalewie gyros</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-95"><span lang-variant="de">95. Feierabend-Pfanne mit Hähnchen &amp; Gemüse</span><span lang-variant="pl">95. Patelnia po pracy z kurczakiem i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-96"><span lang-variant="de">96. Kartoffel-Speck-Auflauf (deftig &amp; cremig)</span><span lang-variant="pl">96. Zapiekanka ziemniaczana z boczkiem (konkretna i kremowa)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-97"><span lang-variant="de">97. BBQ-Hähnchen aus dem Ofen</span><span lang-variant="pl">97. Kurczak BBQ z piekarnika</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-98"><span lang-variant="de">98. Schnelle Hackpfanne mit Ajvar</span><span lang-variant="pl">98. Szybka patelnia z mielonym mięsem i ajvarem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-99"><span lang-variant="de">99. Ofenkartoffeln Deluxe mit Toppings</span><span lang-variant="pl">99. Pieczone ziemniaki deluxe z dodatkami</span></a><a class="toc-link" data-category="airfryer" href="#rezept-100"><span lang-variant="de">100. AirFryer Hähnchen (knusprig &amp; saftig)</span><span lang-variant="pl">100. Kurczak z AirFryera (chrupiący i soczysty)</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-101"><span lang-variant="de">101. Gemüsepfanne „Resteküche“</span><span lang-variant="pl">101. Patelnia warzywna „z resztek”</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-102"><span lang-variant="de">102. Knusprige Bratkartoffeln mit Zwiebeln</span><span lang-variant="pl">102. Chrupiące ziemniaki smażone z cebulą</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-103"><span lang-variant="de">103. Wrap-Abend (DIY-Style)</span><span lang-variant="pl">103. Wieczór z wrapami (DIY)</span></a><a class="toc-link" data-category="beilagen" href="#rezept-104"><span lang-variant="de">104. Sommerlicher Tomatensalat</span><span lang-variant="pl">104. Letnia sałatka pomidorowa</span></a><a class="toc-link" data-category="suppen" href="#rezept-105"><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></a></div></section><section class="recipe-section" id="allRecipes"><div class="section-head"><div><h2><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></h2></div></div><div class="recipe-grid" id="recipeGrid">
     <article class="recipe-card" id="rezept-1" data-id="1" data-category="ofengerichte" data-title-de="1. spanische kohlrouladen mit chorizo, rotwein und speck" data-title-pl="1. hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem">
       <button class="recipe-card-link" type="button" data-open-recipe="1">
         <img src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" loading="lazy">
@@ -4376,7 +4544,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-91" data-id="91" data-category="ofengerichte" data-title-de="91. wildschweingulasch klassisch geschmort" data-title-pl="91. klasyczny gulasz z dzika duszony powoli">
       <button class="recipe-card-link" type="button" data-open-recipe="91">
-        <img src="images/rezeptbild_91.png" alt="Wildschweingulasch klassisch geschmort" loading="lazy">
+        <img src="images/rezeptbild_89.png" alt="Wildschweingulasch klassisch geschmort" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / Danie świąteczne</span></span>
@@ -4392,7 +4560,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-91">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_91.png" alt="Wildschweingulasch klassisch geschmort"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_89.png" alt="Wildschweingulasch klassisch geschmort"></div>
           <div>
             <h2><span lang-variant="de">91. Wildschweingulasch klassisch geschmort</span><span lang-variant="pl">91. Klasyczny gulasz z dzika duszony powoli</span></h2>
             <p class="modal-intro"><span lang-variant="de">Das ist genau die Art von Gericht, die Zeit braucht und gerade deshalb so gut wird. Wenn das Wildschweingulasch langsam schmort, entwickeln Sauce, Gewürze und Fleisch genau diese tiefe, kräftige Note, die man bei einem besonderen Schmorgericht haben will.</span><span lang-variant="pl">To właśnie taki przepis, który potrzebuje czasu i właśnie dlatego wychodzi tak dobrze. Kiedy gulasz z dzika dusi się powoli, sos, przyprawy i mięso tworzą tę głęboką, intensywną nutę, której oczekuje się od wyjątkowego dania duszonego.</span></p>
@@ -4421,7 +4589,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-92" data-id="92" data-category="ofengerichte" data-title-de="92. wildschweinkeule aus dem ofen" data-title-pl="92. udziec z dzika z piekarnika">
       <button class="recipe-card-link" type="button" data-open-recipe="92">
-        <img src="images/rezeptbild_92.png" alt="Wildschweinkeule aus dem Ofen" loading="lazy">
+        <img src="images/rezeptbild_90.png" alt="Wildschweinkeule aus dem Ofen" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / Danie świąteczne</span></span>
@@ -4437,7 +4605,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-92">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_92.png" alt="Wildschweinkeule aus dem Ofen"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_90.png" alt="Wildschweinkeule aus dem Ofen"></div>
           <div>
             <h2><span lang-variant="de">92. Wildschweinkeule aus dem Ofen</span><span lang-variant="pl">92. Udziec z dzika z piekarnika</span></h2>
             <p class="modal-intro"><span lang-variant="de">Eine Wildschweinkeule ist für mich genau die Art von Braten, die etwas Besonderes bleibt, ohne übertrieben kompliziert zu sein. Wenn sie langsam gart, wird das Fleisch schön zart und die Sauce bekommt genau diese kräftige, festliche Tiefe.</span><span lang-variant="pl">Udziec z dzika to dla mnie dokładnie taki rodzaj pieczeni, który pozostaje czymś wyjątkowym, ale bez przesadnej komplikacji. Kiedy piecze się powoli, mięso robi się delikatne, a sos dostaje tę głębię, która pasuje do świątecznego dania.</span></p>
@@ -4466,7 +4634,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-93" data-id="93" data-category="ofengerichte" data-title-de="93. gefülltes ofenbaguette mit chorizo" data-title-pl="93. zapiekana bagietka z chorizo">
       <button class="recipe-card-link" type="button" data-open-recipe="93">
-        <img src="images/rezeptbild_94.png" alt="Gefülltes Ofenbaguette mit Chorizo" loading="lazy">
+        <img src="images/rezeptbild_91.png" alt="Gefülltes Ofenbaguette mit Chorizo" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Ofengerichte / Snacks</span><span lang-variant="pl">Dania z piekarnika / Przekąski</span></span>
@@ -4482,7 +4650,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-93">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_94.png" alt="Gefülltes Ofenbaguette mit Chorizo"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_91.png" alt="Gefülltes Ofenbaguette mit Chorizo"></div>
           <div>
             <h2><span lang-variant="de">93. Gefülltes Ofenbaguette mit Chorizo</span><span lang-variant="pl">93. Zapiekana bagietka z chorizo</span></h2>
             <p class="modal-intro"><span lang-variant="de">Das ist genau die Art von Ofensnack, die auf dem Tisch schneller weg ist, als man denkt. Die Chorizo bringt Würze, der Käse verbindet alles und am Ende hast du ein unkompliziertes Rezept, das perfekt für Besuch, Grillabend oder einfach einen gemütlichen Abend ist.</span><span lang-variant="pl">To dokładnie taki pieczony snack, który znika ze stołu szybciej, niż się wydaje. Chorizo daje wyrazistość, ser wszystko łączy, a na końcu masz prosty przepis idealny na gości, grill albo po prostu spokojny wieczór.</span></p>
@@ -4511,7 +4679,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-94" data-id="94" data-category="beilagen" data-title-de="94. ogórki w zalewie gyros" data-title-pl="94. ogórki w zalewie gyros">
       <button class="recipe-card-link" type="button" data-open-recipe="94">
-        <img src="images/rezeptbild_95.png" alt="Ogórki w zalewie gyros" loading="lazy">
+        <img src="images/rezeptbild_92.png" alt="Ogórki w zalewie gyros" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Beilagen / Vorrat</span><span lang-variant="pl">Dodatki / Zapas</span></span>
@@ -4527,7 +4695,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-94">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_95.png" alt="Ogórki w zalewie gyros"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_92.png" alt="Ogórki w zalewie gyros"></div>
           <div>
             <h2><span lang-variant="de">94. Ogórki w zalewie gyros</span><span lang-variant="pl">94. Ogórki w zalewie gyros</span></h2>
             <p class="modal-intro"><span lang-variant="de">Solche eingelegten Gurken sind für mich genau die Art von Rezept, die eine Sammlung erst komplett macht. Sie sind würzig, leicht süß-säuerlich und bringen auf den Tisch genau diese besondere Beilagen-Idee, die man nicht überall findet.</span><span lang-variant="pl">Takie ogórki w zalewie to dla mnie dokładnie taki przepis, który domyka całą kolekcję. Są wyraziste, lekko słodko-kwaśne i wnoszą na stół ten rodzaj dodatku, którego nie spotyka się wszędzie.</span></p>
@@ -4556,7 +4724,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-95" data-id="95" data-category="pfannengerichte" data-title-de="95. feierabend-pfanne mit hähnchen &amp; gemüse" data-title-pl="95. patelnia po pracy z kurczakiem i warzywami">
       <button class="recipe-card-link" type="button" data-open-recipe="95">
-        <img src="images/rezeptbild_95.png" alt="Feierabend-Pfanne mit Hähnchen &amp; Gemüse" loading="lazy">
+        <img src="images/rezeptbild_93.png" alt="Feierabend-Pfanne mit Hähnchen &amp; Gemüse" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Pfannengerichte / Schnell &amp; einfach</span><span lang-variant="pl">Dania z patelni / Szybko i prosto</span></span>
@@ -4572,7 +4740,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-95">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_95.png" alt="Feierabend-Pfanne mit Hähnchen &amp; Gemüse"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_93.png" alt="Feierabend-Pfanne mit Hähnchen &amp; Gemüse"></div>
           <div>
             <h2><span lang-variant="de">95. Feierabend-Pfanne mit Hähnchen &amp; Gemüse</span><span lang-variant="pl">95. Patelnia po pracy z kurczakiem i warzywami</span></h2>
             <p class="modal-intro"><span lang-variant="de">Das ist genau so ein Gericht, das man nach einem langen Arbeitstag braucht. Alles kommt in eine Pfanne, wird kurz angebraten und am Ende hast du ein warmes, ehrliches Essen ohne großen Aufwand. Schnell, unkompliziert und trotzdem richtig gut.</span><span lang-variant="pl">To właśnie takie danie, którego potrzebuje się po długim dniu pracy. Wszystko trafia na jedną patelnię, krótko się smaży i na końcu masz ciepły, uczciwy posiłek bez wielkiego wysiłku. Szybko, prosto i naprawdę dobrze.</span></p>
@@ -4601,7 +4769,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-96" data-id="96" data-category="ofengerichte" data-title-de="96. kartoffel-speck-auflauf (deftig &amp; cremig)" data-title-pl="96. zapiekanka ziemniaczana z boczkiem (konkretna i kremowa)">
       <button class="recipe-card-link" type="button" data-open-recipe="96">
-        <img src="images/rezeptbild_96.png" alt="Kartoffel-Speck-Auflauf (deftig &amp; cremig)" loading="lazy">
+        <img src="images/rezeptbild_94.png" alt="Kartoffel-Speck-Auflauf (deftig &amp; cremig)" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Ofengerichte / Hausmannskost</span><span lang-variant="pl">Dania z piekarnika / Kuchnia domowa</span></span>
@@ -4617,7 +4785,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-96">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_96.png" alt="Kartoffel-Speck-Auflauf (deftig &amp; cremig)"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_94.png" alt="Kartoffel-Speck-Auflauf (deftig &amp; cremig)"></div>
           <div>
             <h2><span lang-variant="de">96. Kartoffel-Speck-Auflauf (deftig &amp; cremig)</span><span lang-variant="pl">96. Zapiekanka ziemniaczana z boczkiem (konkretna i kremowa)</span></h2>
             <p class="modal-intro"><span lang-variant="de">Wenn es richtig herzhaft sein soll, bist du hier genau richtig. Die Kartoffeln werden weich, der Speck bringt Würze und oben entsteht eine schöne, goldene Kruste. Das ist kein leichtes Gericht – aber genau deshalb so gut.</span><span lang-variant="pl">Jeśli ma być naprawdę konkretnie, to tutaj jesteś w dobrym miejscu. Ziemniaki robią się miękkie, boczek daje wyrazistość, a na wierzchu powstaje piękna, złota warstwa. To nie jest lekkie danie – i właśnie dlatego tak dobrze smakuje.</span></p>
@@ -4646,7 +4814,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-97" data-id="97" data-category="ofengerichte" data-title-de="97. bbq-hähnchen aus dem ofen" data-title-pl="97. kurczak bbq z piekarnika">
       <button class="recipe-card-link" type="button" data-open-recipe="97">
-        <img src="images/rezeptbild_97.png" alt="BBQ-Hähnchen aus dem Ofen" loading="lazy">
+        <img src="images/rezeptbild_95.png" alt="BBQ-Hähnchen aus dem Ofen" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Ofengerichte / Grill &amp; BBQ</span><span lang-variant="pl">Dania z piekarnika / Grill &amp; BBQ</span></span>
@@ -4662,7 +4830,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-97">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_97.png" alt="BBQ-Hähnchen aus dem Ofen"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_95.png" alt="BBQ-Hähnchen aus dem Ofen"></div>
           <div>
             <h2><span lang-variant="de">97. BBQ-Hähnchen aus dem Ofen</span><span lang-variant="pl">97. Kurczak BBQ z piekarnika</span></h2>
             <p class="modal-intro"><span lang-variant="de">Auch ohne Grill bekommst du hier richtiges BBQ-Feeling hin. Die Marinade zieht ins Fleisch, im Ofen entwickelt sich eine schöne Würze und am Ende hast du ein saftiges Hähnchen mit ordentlich Geschmack.</span><span lang-variant="pl">Nawet bez grilla da się tu osiągnąć prawdziwy klimat BBQ. Marynata przechodzi w mięso, w piekarniku rozwija się ładna przyprawowa głębia, a na końcu masz soczystego kurczaka z porządnym smakiem.</span></p>
@@ -4691,7 +4859,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-98" data-id="98" data-category="pfannengerichte" data-title-de="98. schnelle hackpfanne mit ajvar" data-title-pl="98. szybka patelnia z mielonym mięsem i ajvarem">
       <button class="recipe-card-link" type="button" data-open-recipe="98">
-        <img src="images/rezeptbild_98.png" alt="Schnelle Hackpfanne mit Ajvar" loading="lazy">
+        <img src="images/rezeptbild_96.png" alt="Schnelle Hackpfanne mit Ajvar" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Pfannengerichte / Schnell &amp; einfach</span><span lang-variant="pl">Dania z patelni / Szybko i prosto</span></span>
@@ -4707,7 +4875,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-98">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_98.png" alt="Schnelle Hackpfanne mit Ajvar"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_96.png" alt="Schnelle Hackpfanne mit Ajvar"></div>
           <div>
             <h2><span lang-variant="de">98. Schnelle Hackpfanne mit Ajvar</span><span lang-variant="pl">98. Szybka patelnia z mielonym mięsem i ajvarem</span></h2>
             <p class="modal-intro"><span lang-variant="de">Ein Gericht, das du immer machen kannst, wenn es unkompliziert bleiben soll. Das Hackfleisch wird angebraten, Ajvar sorgt für Würze und in wenigen Minuten steht ein richtig solides Essen auf dem Tisch.</span><span lang-variant="pl">To danie można zrobić zawsze wtedy, gdy ma być bez komplikacji. Mięso mielone się smaży, ajvar daje wyrazistość i po kilku minutach na stole stoi naprawdę solidny posiłek.</span></p>
@@ -4736,7 +4904,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-99" data-id="99" data-category="ofengerichte" data-title-de="99. ofenkartoffeln deluxe mit toppings" data-title-pl="99. pieczone ziemniaki deluxe z dodatkami">
       <button class="recipe-card-link" type="button" data-open-recipe="99">
-        <img src="images/rezeptbild_99.png" alt="Ofenkartoffeln Deluxe mit Toppings" loading="lazy">
+        <img src="images/rezeptbild_97.png" alt="Ofenkartoffeln Deluxe mit Toppings" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Ofengerichte / Beilagen</span><span lang-variant="pl">Dania z piekarnika / Dodatki</span></span>
@@ -4752,7 +4920,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-99">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_99.png" alt="Ofenkartoffeln Deluxe mit Toppings"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_97.png" alt="Ofenkartoffeln Deluxe mit Toppings"></div>
           <div>
             <h2><span lang-variant="de">99. Ofenkartoffeln Deluxe mit Toppings</span><span lang-variant="pl">99. Pieczone ziemniaki deluxe z dodatkami</span></h2>
             <p class="modal-intro"><span lang-variant="de">Hier wird aus einer einfachen Beilage ein komplettes Gericht. Knusprige Kartoffeln, dazu verschiedene Toppings – von cremig bis würzig. Perfekt, wenn jeder sich sein Essen selbst zusammenstellen will.</span><span lang-variant="pl">Tutaj z prostego dodatku robi się pełne danie. Chrupiące ziemniaki, do tego różne dodatki – od kremowych po bardziej wyraziste. Idealne, gdy każdy chce złożyć sobie talerz po swojemu.</span></p>
@@ -4781,7 +4949,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-100" data-id="100" data-category="airfryer" data-title-de="100. airfryer hähnchen (knusprig &amp; saftig)" data-title-pl="100. kurczak z airfryera (chrupiący i soczysty)">
       <button class="recipe-card-link" type="button" data-open-recipe="100">
-        <img src="images/rezeptbild_100.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)" loading="lazy">
+        <img src="images/rezeptbild_98.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Airfryer / Schnell &amp; einfach</span><span lang-variant="pl">Airfryer / Szybko i prosto</span></span>
@@ -4797,7 +4965,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-100">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_100.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_98.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)"></div>
           <div>
             <h2><span lang-variant="de">100. AirFryer Hähnchen (knusprig &amp; saftig)</span><span lang-variant="pl">100. Kurczak z AirFryera (chrupiący i soczysty)</span></h2>
             <p class="modal-intro"><span lang-variant="de">Der AirFryer zeigt hier, was er kann. Außen schön knusprig, innen saftig – und das ohne großen Aufwand. Ideal für Tage, an denen es schnell gehen muss, aber trotzdem gut werden soll.</span><span lang-variant="pl">Tutaj AirFryer pokazuje, co potrafi. Z zewnątrz przyjemnie chrupiący, w środku soczysty – i to bez wielkiego wysiłku. Idealny na dni, gdy ma być szybko, ale nadal dobrze.</span></p>
@@ -4826,7 +4994,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-101" data-id="101" data-category="pfannengerichte" data-title-de="101. gemüsepfanne „resteküche“" data-title-pl="101. patelnia warzywna „z resztek”">
       <button class="recipe-card-link" type="button" data-open-recipe="101">
-        <img src="images/rezeptbild_101.png" alt="Gemüsepfanne „Resteküche“" loading="lazy">
+        <img src="images/rezeptbild_99.png" alt="Gemüsepfanne „Resteküche“" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Pfannengerichte / Resteküche</span><span lang-variant="pl">Dania z patelni / Kuchnia z resztek</span></span>
@@ -4842,7 +5010,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-101">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_101.png" alt="Gemüsepfanne „Resteküche“"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_99.png" alt="Gemüsepfanne „Resteküche“"></div>
           <div>
             <h2><span lang-variant="de">101. Gemüsepfanne „Resteküche“</span><span lang-variant="pl">101. Patelnia warzywna „z resztek”</span></h2>
             <p class="modal-intro"><span lang-variant="de">Ein Gericht, das aus dem entsteht, was gerade da ist. Unterschiedliches Gemüse wird angebraten, gewürzt und ergibt zusammen etwas, das überraschend gut funktioniert. Perfekt, um Reste sinnvoll zu verwerten.</span><span lang-variant="pl">To danie powstaje z tego, co akurat jest pod ręką. Różne warzywa się smaży, doprawia i razem dają coś, co zaskakująco dobrze działa. Idealne, żeby sensownie wykorzystać resztki.</span></p>
@@ -4871,7 +5039,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-102" data-id="102" data-category="pfannengerichte" data-title-de="102. knusprige bratkartoffeln mit zwiebeln" data-title-pl="102. chrupiące ziemniaki smażone z cebulą">
       <button class="recipe-card-link" type="button" data-open-recipe="102">
-        <img src="images/rezeptbild_102.png" alt="Knusprige Bratkartoffeln mit Zwiebeln" loading="lazy">
+        <img src="images/rezeptbild_100.png" alt="Knusprige Bratkartoffeln mit Zwiebeln" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Pfannengerichte / Beilagen</span><span lang-variant="pl">Dania z patelni / Dodatki</span></span>
@@ -4887,7 +5055,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-102">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_102.png" alt="Knusprige Bratkartoffeln mit Zwiebeln"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_100.png" alt="Knusprige Bratkartoffeln mit Zwiebeln"></div>
           <div>
             <h2><span lang-variant="de">102. Knusprige Bratkartoffeln mit Zwiebeln</span><span lang-variant="pl">102. Chrupiące ziemniaki smażone z cebulą</span></h2>
             <p class="modal-intro"><span lang-variant="de">Bratkartoffeln können richtig gut sein – wenn man ihnen Zeit gibt. Schön knusprig gebraten, mit Zwiebeln verfeinert und genau so, wie man sie sich wünscht. Einfach, aber mit großem Unterschied.</span><span lang-variant="pl">Smażone ziemniaki potrafią być naprawdę świetne – jeśli da się im czas. Dobrze zrumienione, doprawione cebulą i dokładnie takie, jak powinny być. Proste, ale z ogromną różnicą w efekcie.</span></p>
@@ -4916,7 +5084,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-103" data-id="103" data-category="wraps-und-burritos" data-title-de="103. wrap-abend (diy-style)" data-title-pl="103. wieczór z wrapami (diy)">
       <button class="recipe-card-link" type="button" data-open-recipe="103">
-        <img src="images/rezeptbild_103.png" alt="Wrap-Abend (DIY-Style)" loading="lazy">
+        <img src="images/rezeptbild_101.png" alt="Wrap-Abend (DIY-Style)" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Wraps &amp; Burritos / Gesellig</span><span lang-variant="pl">Wrapy i burrito / Na wspólny wieczór</span></span>
@@ -4932,7 +5100,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-103">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_103.png" alt="Wrap-Abend (DIY-Style)"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_101.png" alt="Wrap-Abend (DIY-Style)"></div>
           <div>
             <h2><span lang-variant="de">103. Wrap-Abend (DIY-Style)</span><span lang-variant="pl">103. Wieczór z wrapami (DIY)</span></h2>
             <p class="modal-intro"><span lang-variant="de">Perfekt für einen entspannten Abend mit mehreren Leuten. Jeder baut sich seinen Wrap selbst – mit Fleisch, Gemüse und Saucen nach Geschmack. Locker, flexibel und genau richtig für gesellige Runden.</span><span lang-variant="pl">Idealne na spokojny wieczór w większym gronie. Każdy składa sobie wrap po swojemu – z mięsem, warzywami i sosami według własnego gustu. Luźno, elastycznie i dokładnie tak, jak trzeba na towarzyskie spotkania.</span></p>
@@ -4961,7 +5129,7 @@ button,input{font:inherit}
     
     <article class="recipe-card" id="rezept-104" data-id="104" data-category="beilagen" data-title-de="104. sommerlicher tomatensalat" data-title-pl="104. letnia sałatka pomidorowa">
       <button class="recipe-card-link" type="button" data-open-recipe="104">
-        <img src="images/rezeptbild_104.png" alt="Sommerlicher Tomatensalat" loading="lazy">
+        <img src="images/rezeptbild_102.png" alt="Sommerlicher Tomatensalat" loading="lazy">
         <div class="recipe-card-body">
           <div class="recipe-card-meta">
             <span class="pill"><span lang-variant="de">Beilagen / Salate</span><span lang-variant="pl">Dodatki / Sałatki</span></span>
@@ -4977,7 +5145,7 @@ button,input{font:inherit}
       </button>
       <template id="modal-template-104">
         <div class="modal-recipe-grid">
-          <div><img class="modal-hero-image" src="images/rezeptbild_104.png" alt="Sommerlicher Tomatensalat"></div>
+          <div><img class="modal-hero-image" src="images/rezeptbild_102.png" alt="Sommerlicher Tomatensalat"></div>
           <div>
             <h2><span lang-variant="de">104. Sommerlicher Tomatensalat</span><span lang-variant="pl">104. Letnia sałatka pomidorowa</span></h2>
             <p class="modal-intro"><span lang-variant="de">Ein einfacher Salat, der von guten Zutaten lebt. Reife Tomaten, etwas Zwiebel und ein passendes Dressing – mehr braucht es nicht. Perfekt als frische Beilage zu deftigen Gerichten oder vom Grill.</span><span lang-variant="pl">To prosta sałatka, która żyje dobrymi składnikami. Dojrzałe pomidory, trochę cebuli i odpowiedni dressing – więcej naprawdę nie potrzeba. Idealna jako świeży dodatek do konkretniejszych dań albo z grilla.</span></p>
@@ -5003,596 +5171,108 @@ button,input{font:inherit}
         <section class="rating-block"><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">8,6 / 10 – simpel, frisch und genau deshalb so gut.</span><span lang-variant="pl">8,6 / 10 – simpel, frisch und genau deshalb so gut.</span></p></section>
       </template>
     </article>
-    </div><div class="results-empty" id="emptyState"><span lang-variant="de">Dazu wurde aktuell kein passendes Rezept gefunden.</span><span lang-variant="pl">Nie znaleziono pasującego przepisu.</span></div><div class="controls-row"><button class="load-more-btn" id="loadMoreRecipes" type="button"><span lang-variant="de">Mehr Rezepte laden</span><span lang-variant="pl">Załaduj więcej przepisów</span></button><div class="progress-note" id="progressNote"></div></div></section>
-<footer class="site-footer"><div class="footer-links"><a href="impressum.html"><span lang-variant="de">Impressum</span><span lang-variant="pl">Impressum</span></a><a href="datenschutz.html"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Polityka prywatności</span></a></div></footer>
-</main>
-
+    
+    <article class="recipe-card" id="rezept-105" data-id="105" data-category="suppen" data-title-de="105. ajvarsuppe mit pide" data-title-pl="105. zupa ajvarowa z pide">
+      <button class="recipe-card-link" type="button" data-open-recipe="105">
+        <img src="images/rezeptbild_105.png" alt="Ajvarsuppe mit Pide" loading="lazy">
+        <div class="recipe-card-body">
+          <div class="recipe-card-meta">
+            <span class="pill"><span lang-variant="de">Suppen / Feierabendküche</span><span lang-variant="pl">Zupy / kuchnia po pracy</span></span>
+            <span class="pill soft"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
+          </div>
+          <h3><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></h3>
+          <p class="recipe-card-intro"><span lang-variant="de">Diese Suppe ist genau die richtige Mischung aus würzig, cremig und unkompliziert. Der Ajvar bringt sofort Tiefe und Wärme rein, und zusammen mit weichem Pide wird daraus ein richtig gemütliches Essen.</span><span lang-variant="pl">Ta zupa to idealne połączenie wyrazistości, kremowości i prostoty. Ajvar od razu daje głębię i ciepło, a z miękką pide całość zamienia się w naprawdę przyjemny, sycący posiłek.</span></p>
+          <div class="recipe-card-footer">
+            <span><span lang-variant="de">Vorbereitung: ca. 10 Minuten</span><span lang-variant="pl">Przygotowanie: ok. 10 minut</span></span>
+            <span class="more"><span lang-variant="de">Zum Rezept</span><span lang-variant="pl">Do przepisu</span></span>
+          </div>
+        </div>
+      </button>
+      <template id="modal-template-105">
+        <div class="modal-recipe-grid">
+          <div><img class="modal-hero-image" src="images/rezeptbild_105.png" alt="Ajvarsuppe mit Pide"></div>
+          <div>
+            <h2><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></h2>
+            <p class="modal-intro"><span lang-variant="de">Diese Suppe ist genau die richtige Mischung aus würzig, cremig und unkompliziert. Der Ajvar bringt sofort Tiefe und Wärme rein, und zusammen mit weichem Pide wird daraus ein richtig gemütliches Essen.</span><span lang-variant="pl">Ta zupa to idealne połączenie wyrazistości, kremowości i prostoty. Ajvar od razu daje głębię i ciepło, a z miękką pide całość zamienia się w naprawdę przyjemny, sycący posiłek.</span></p>
+            <div class="modal-meta">
+              <span class="pill"><span lang-variant="de">Suppen / Feierabendküche</span><span lang-variant="pl">Zupy / kuchnia po pracy</span></span>
+              <span class="pill soft"><span lang-variant="de">3–4 Personen</span><span lang-variant="pl">3–4 osoby</span></span>
+            </div>
+            <div class="modal-actions">
+              <button class="ghost-btn wa-btn" type="button" data-recipe-id="105"><span lang-variant="de">Mit WhatsApp teilen</span><span lang-variant="pl">Udostępnij przez WhatsApp</span></button>
+              <button class="ghost-btn copy-btn" type="button" data-recipe-id="105"><span lang-variant="de">Link kopieren</span><span lang-variant="pl">Kopiuj link</span></button>
+              <button class="ghost-btn print-btn" type="button" data-recipe-id="105"><span lang-variant="de">Rezept drucken</span><span lang-variant="pl">Drukuj przepis</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-columns">
+          <section><h3><span lang-variant="de">Zutaten</span><span lang-variant="pl">Składniki</span></h3><ul><li><span lang-variant="de">2 EL Öl</span><span lang-variant="pl">2 EL oleju</span></li><li><span lang-variant="de">1 große Zwiebel</span><span lang-variant="pl">1 duża cebula</span></li><li><span lang-variant="de">2 Knoblauchzehen</span><span lang-variant="pl">2 ząbki czosnku</span></li><li><span lang-variant="de">1 rote Paprika</span><span lang-variant="pl">1 czerwona papryka</span></li><li><span lang-variant="de">2 EL Tomatenmark</span><span lang-variant="pl">2 EL koncentratu pomidorowego</span></li><li><span lang-variant="de">3–4 EL Ajvar (mild oder pikant)</span><span lang-variant="pl">3–4 EL ajvaru (łagodnego lub ostrego)</span></li><li><span lang-variant="de">700 ml Gemüsebrühe</span><span lang-variant="pl">700 ml bulionu warzywnego</span></li><li><span lang-variant="de">200 ml Sahne oder Kochsahne</span><span lang-variant="pl">200 ml śmietanki</span></li><li><span lang-variant="de">100 g Frischkäse oder Schmand</span><span lang-variant="pl">100 g serka śmietankowego lub śmietany</span></li><li><span lang-variant="de">1 TL Paprikapulver edelsüß</span><span lang-variant="pl">1 TL słodkiej papryki</span></li><li><span lang-variant="de">Salz</span><span lang-variant="pl">sól</span></li><li><span lang-variant="de">Pfeffer</span><span lang-variant="pl">pieprz</span></li><li><span lang-variant="de">optional: Chiliflocken</span><span lang-variant="pl">opcjonalnie: płatki chili</span></li><li><span lang-variant="de">frische Petersilie oder Schnittlauch</span><span lang-variant="pl">świeża pietruszka lub szczypiorek</span></li><li><span lang-variant="de">2 Pide-Brote oder Pide-Stücke zum Servieren</span><span lang-variant="pl">2 chleby pide lub kawałki pide do podania</span></li></ul></section>
+          <section>
+            <h3><span lang-variant="de">Zeitplan / Timing</span><span lang-variant="pl">Czas / plan</span></h3><ul><li><span lang-variant="de">Vorbereitung: ca. 10 Minuten</span><span lang-variant="pl">Przygotowanie: ok. 10 minut</span></li><li><span lang-variant="de">Kochzeit: ca. 15 Minuten</span><span lang-variant="pl">Gotowanie: ok. 15 minut</span></li><li><span lang-variant="de">Gesamtzeit: ca. 25 Minuten</span><span lang-variant="pl">Łącznie: ok. 25 minut</span></li></ul>
+            <h3><span lang-variant="de">Tipps / Varianten</span><span lang-variant="pl">Wskazówki / warianty</span></h3><ul><li><span lang-variant="de">Mit pikantem Ajvar wird die Suppe kräftiger und würziger.</span><span lang-variant="pl">Ostry ajvar nada zupie bardziej wyrazisty smak.</span></li><li><span lang-variant="de">Für mehr Sättigung passen kleine Hähnchenstücke oder Kichererbsen gut dazu.</span><span lang-variant="pl">Dla większej sytości dobrze pasują małe kawałki kurczaka albo ciecierzyca.</span></li><li><span lang-variant="de">Pide vor dem Servieren leicht anrösten – dann nimmt es die Suppe besonders gut auf.</span><span lang-variant="pl">Przed podaniem warto lekko podpiec pide – wtedy najlepiej chłonie zupę.</span></li></ul>
+          </section>
+        </div>
+        <section class="steps-block"><h3><span lang-variant="de">Zubereitung Schritt für Schritt</span><span lang-variant="pl">Przygotowanie krok po kroku</span></h3><ol><li><span lang-variant="de">Zwiebel, Knoblauch und Paprika fein würfeln.</span><span lang-variant="pl">Cebulę, czosnek i paprykę drobno pokroić.</span></li><li><span lang-variant="de">Öl in einem Topf erhitzen und Zwiebel sowie Paprika 4–5 Minuten weich anschwitzen.</span><span lang-variant="pl">W garnku rozgrzać olej i podsmażyć cebulę oraz paprykę przez 4–5 minut, aż zmiękną.</span></li><li><span lang-variant="de">Knoblauch kurz mit anschwitzen, dann Tomatenmark und Ajvar einrühren.</span><span lang-variant="pl">Krótko dodać czosnek, następnie wmieszać koncentrat pomidorowy i ajvar.</span></li><li><span lang-variant="de">Mit Gemüsebrühe ablöschen und alles 10 Minuten leicht köcheln lassen.</span><span lang-variant="pl">Wlać bulion warzywny i gotować całość lekko przez około 10 minut.</span></li><li><span lang-variant="de">Sahne und Frischkäse einrühren, dann die Suppe fein pürieren oder nach Wunsch leicht stückig lassen.</span><span lang-variant="pl">Dodać śmietankę i serek, potem zmiksować zupę na gładko albo zostawić lekko z kawałkami.</span></li><li><span lang-variant="de">Mit Paprikapulver, Salz, Pfeffer und optional etwas Chili abschmecken.</span><span lang-variant="pl">Doprawić papryką, solą, pieprzem i opcjonalnie odrobiną chili.</span></li><li><span lang-variant="de">Pide kurz im Ofen oder in der Pfanne erwärmen und die Suppe mit Kräutern servieren.</span><span lang-variant="pl">Pide krótko podgrzać w piekarniku lub na patelni i podawać zupę z ziołami.</span></li></ol></section>
+        <section class="rating-block"><h3><span lang-variant="de">Bewertung</span><span lang-variant="pl">Ocena</span></h3><p><span lang-variant="de">8,5/10 – würzig, cremig und perfekt für einen schnellen, gemütlichen Abend.</span><span lang-variant="pl">8,5/10 – wyrazista, kremowa i idealna na szybki, przyjemny wieczór.</span></p></section>
+      </template>
+    </article>
+    </div><div class="results-empty" id="emptyState"><span lang-variant="de">Dazu wurde aktuell kein passendes Rezept gefunden.</span><span lang-variant="pl">Nie znaleziono pasującego przepisu.</span></div><div class="controls-row"><button class="load-more-btn" id="loadMoreRecipes" type="button"><span lang-variant="de">Mehr Rezepte laden</span><span lang-variant="pl">Załaduj więcej przepisów</span></button><div class="progress-note" id="progressNote"></div></div></section><footer class="site-footer"><div class="footer-links"><a href="impressum.html"><span lang-variant="de">Impressum</span><span lang-variant="pl">Impressum</span></a><a href="datenschutz.html"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Polityka prywatności</span></a></div></footer></main>
 <div class="modal" id="recipeModal" aria-hidden="true"><div class="modal-dialog"><div class="modal-head"><div class="modal-title" id="modalTitle"><span lang-variant="de">Rezept</span><span lang-variant="pl">Przepis</span></div><button class="ghost-btn" id="closeModal" type="button"><span lang-variant="de">Schließen</span><span lang-variant="pl">Zamknij</span></button></div><div class="modal-body" id="modalBody"></div></div></div>
-
 <script>
 (function(){
-  const labels = {"all": {"de": "Alle Rezepte", "pl": "Wszystkie przepisy"}, "ofengerichte": {"de": "Ofengerichte", "pl": "Dania z piekarnika"}, "pfannengerichte": {"de": "Pfannengerichte", "pl": "Dania z patelni"}, "grill-und-bbq": {"de": "Grill & BBQ", "pl": "Grill & BBQ"}, "fisch-und-meeresfruechte": {"de": "Fisch & Meeresfrüchte", "pl": "Ryby i owoce morza"}, "beilagen": {"de": "Beilagen", "pl": "Dodatki"}, "grundlagen": {"de": "Grundlagen", "pl": "Podstawy"}, "nudelgerichte": {"de": "Nudelgerichte", "pl": "Dania makaronowe"}, "airfryer": {"de": "Airfryer", "pl": "Airfryer"}, "cocktails": {"de": "Cocktails", "pl": "Koktajle"}, "suppen": {"de": "Suppen", "pl": "Zupy"}, "wraps-und-burritos": {"de": "Wraps & Burritos", "pl": "Wrapy i burrito"}, "eiergerichte": {"de": "Eiergerichte", "pl": "Dania z jajek"}};
-  const html = document.documentElement;
-  const langButtons = Array.from(document.querySelectorAll('[data-set-lang]'));
-  const searchInput = document.getElementById('recipeSearch');
-  const clearBtn = document.getElementById('clearSearch');
-  const resultCount = document.getElementById('resultCount');
-  const activeCategoryLabel = document.getElementById('activeCategoryLabel');
-  const categoryButtons = Array.from(document.querySelectorAll('.category-chip'));
-  const cards = Array.from(document.querySelectorAll('.recipe-card'));
-  const tocLinks = Array.from(document.querySelectorAll('.toc-link'));
-  const emptyState = document.getElementById('emptyState');
-  const loadMoreBtn = document.getElementById('loadMoreRecipes');
-  const progressNote = document.getElementById('progressNote');
-  const modal = document.getElementById('recipeModal');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalBody = document.getElementById('modalBody');
-  const closeModalBtn = document.getElementById('closeModal');
-  const themeQuickGrid = document.getElementById('themeQuickGrid');
-  const themeHeartyGrid = document.getElementById('themeHeartyGrid');
-  const themeLightGrid = document.getElementById('themeLightGrid');
-  const themeBbqGrid = document.getElementById('themeBbqGrid');
-  const smartSuggestionsBtn = document.getElementById('smartSuggestionsBtn');
-  const smartSuggestionsGrid = document.getElementById('smartSuggestionsGrid');
-  let currentCategory = 'all';
-  let currentLimit = 12;
-  const batchSize = 12;
+  const labels={"all": {"de": "Alle Rezepte", "pl": "Wszystkie przepisy"}, "ofengerichte": {"de": "Ofengerichte", "pl": "Dania z piekarnika"}, "pfannengerichte": {"de": "Pfannengerichte", "pl": "Dania z patelni"}, "grill-und-bbq": {"de": "Grill & BBQ", "pl": "Grill & BBQ"}, "fisch-und-meeresfruechte": {"de": "Fisch & Meeresfrüchte", "pl": "Ryby i owoce morza"}, "beilagen": {"de": "Beilagen", "pl": "Dodatki"}, "grundlagen": {"de": "Grundlagen", "pl": "Podstawy"}, "nudelgerichte": {"de": "Nudelgerichte", "pl": "Dania makaronowe"}, "airfryer": {"de": "Airfryer", "pl": "Airfryer"}, "cocktails": {"de": "Cocktails", "pl": "Koktajle"}, "suppen": {"de": "Suppen", "pl": "Zupy"}, "wraps-und-burritos": {"de": "Wraps & Burritos", "pl": "Wrapy i burrito"}, "eiergerichte": {"de": "Eiergerichte", "pl": "Dania z jajek"}};
+  const html=document.documentElement;
+  const langButtons=Array.from(document.querySelectorAll('[data-set-lang]'));
+  const searchInput=document.getElementById('recipeSearch');
+  const clearBtn=document.getElementById('clearSearch');
+  const resultCount=document.getElementById('resultCount');
+  const activeCategoryLabel=document.getElementById('activeCategoryLabel');
+  const categoryButtons=Array.from(document.querySelectorAll('.category-chip'));
+  const cards=Array.from(document.querySelectorAll('.recipe-card'));
+  const tocLinks=Array.from(document.querySelectorAll('.toc-link'));
+  const emptyState=document.getElementById('emptyState');
+  const loadMoreBtn=document.getElementById('loadMoreRecipes');
+  const progressNote=document.getElementById('progressNote');
+  const modal=document.getElementById('recipeModal');
+  const modalTitle=document.getElementById('modalTitle');
+  const modalBody=document.getElementById('modalBody');
+  const closeModalBtn=document.getElementById('closeModal');
+  let currentCategory='all';
+  let currentLimit=12;
+  const batchSize=12;
 
-  function activeLang(){ return html.getAttribute('data-lang') || 'de'; }
-  function normalize(v){ return (v||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ß/g,'ss').replace(/ł/g,'l').replace(/\s+/g,' ').trim(); }
-
-  function setLang(lang){
-    const safe = lang === 'pl' ? 'pl' : 'de';
-    html.setAttribute('data-lang', safe);
-    html.setAttribute('lang', safe);
-    langButtons.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-set-lang') === safe));
-    searchInput.placeholder = safe === 'pl' ? 'Szukaj przepisu…' : 'Rezept suchen…';
-    render();
-  }
-
-  function updateCategoryLabel(){
-    const label = labels[currentCategory] || labels.all;
-    activeCategoryLabel.textContent = activeLang() === 'pl' ? (label.pl || label.de) : label.de;
-  }
-
+  function activeLang(){return html.getAttribute('data-lang')||'de';}
+  function normalize(v){return (v||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ß/g,'ss').replace(/ł/g,'l').replace(/\s+/g,' ').trim();}
+  function setLang(lang){const safe=lang==='pl'?'pl':'de';html.setAttribute('data-lang',safe);html.setAttribute('lang',safe);langButtons.forEach(btn=>btn.classList.toggle('active',btn.getAttribute('data-set-lang')===safe));searchInput.placeholder=safe==='pl'?'Szukaj przepisu…':'Rezept suchen…';render();}
+  function updateCategoryLabel(){const label=labels[currentCategory]||labels.all;activeCategoryLabel.textContent=activeLang()==='pl'?(label.pl||label.de):label.de;}
   function render(){
-    const lang = activeLang();
-    const query = normalize(searchInput.value);
-    let matched = 0, shown = 0;
-    cards.forEach(card => {
-      const categoryOk = currentCategory === 'all' || (card.getAttribute('data-category') || '') === currentCategory;
-      const title = normalize(card.getAttribute(lang === 'pl' ? 'data-title-pl' : 'data-title-de') || '');
-      const queryOk = !query || title.includes(query);
-      const visible = categoryOk && queryOk;
-      if (visible) {
-        matched += 1;
-        const show = shown < currentLimit;
-        card.classList.toggle('hidden', !show);
-        if (show) shown += 1;
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-    tocLinks.forEach(link => {
-      const categoryOk = currentCategory === 'all' || (link.getAttribute('data-category') || '') === currentCategory;
-      const queryOk = !query || normalize(link.textContent).includes(query);
-      link.style.display = (categoryOk && queryOk) ? '' : 'none';
-    });
-    resultCount.textContent = query ? (lang === 'pl' ? `${matched} wyników` : `${matched} Treffer`) : (lang === 'pl' ? `${matched} przepisów` : `${matched} Rezepte`);
-    progressNote.textContent = matched ? (lang === 'pl' ? `Widoczne: ${Math.min(shown, matched)} z ${matched}` : `Sichtbar: ${Math.min(shown, matched)} von ${matched}`) : '';
-    loadMoreBtn.style.display = matched > shown ? 'inline-flex' : 'none';
-    emptyState.classList.toggle('show', matched === 0);
-    clearBtn.classList.toggle('hidden', !query);
+    const lang=activeLang(); const query=normalize(searchInput.value); let matched=0, shown=0;
+    cards.forEach(card=>{const categoryOk=currentCategory==='all'||(card.getAttribute('data-category')||'')===currentCategory; const title=normalize(card.getAttribute(lang==='pl'?'data-title-pl':'data-title-de')||''); const queryOk=!query||title.includes(query); const visible=categoryOk&&queryOk; if(visible){matched+=1; const show=shown<currentLimit; card.classList.toggle('hidden',!show); if(show) shown+=1;} else {card.classList.add('hidden');} });
+    tocLinks.forEach(link=>{const categoryOk=currentCategory==='all'||(link.getAttribute('data-category')||'')===currentCategory; const queryOk=!query||normalize(link.textContent).includes(query); link.style.display=(categoryOk&&queryOk)?'':'none';});
+    resultCount.textContent=query?(lang==='pl'?`${matched} wyników`:`${matched} Treffer`):(lang==='pl'?`${matched} przepisów`:`${matched} Rezepte`);
+    progressNote.textContent=matched?(lang==='pl'?`Widoczne: ${Math.min(shown,matched)} z ${matched}`:`Sichtbar: ${Math.min(shown,matched)} von ${matched}`):'';
+    loadMoreBtn.style.display=matched>shown?'inline-flex':'none';
+    emptyState.classList.toggle('show',matched===0);
+    clearBtn.classList.toggle('hidden',!query);
     updateCategoryLabel();
   }
-
-  function openRecipe(id){
-    const tpl = document.getElementById(`modal-template-${id}`);
-    if (!tpl) return;
-    modalBody.innerHTML = tpl.innerHTML;
-    const heading = modalBody.querySelector('h2');
-    modalTitle.textContent = heading ? heading.textContent.trim() : (activeLang() === 'pl' ? 'Przepis' : 'Rezept');
-    modalBody.querySelectorAll('.wa-btn').forEach(btn => btn.addEventListener('click', () => {
-      const url = new URL(window.location.href); url.hash = `rezept-${id}`;
-      const text = `${modalTitle.textContent} – ${url.toString()}`;
-      window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
-    }));
-    modalBody.querySelectorAll('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
-      const url = new URL(window.location.href); url.hash = `rezept-${id}`;
-      try { await navigator.clipboard.writeText(url.toString()); } catch(e) {}
-    }));
-    modalBody.querySelectorAll('.print-btn').forEach(btn => btn.addEventListener('click', () => window.print()));
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('no-scroll');
+  function openRecipe(id){const tpl=document.getElementById(`modal-template-${id}`); if(!tpl) return; modalBody.innerHTML=tpl.innerHTML; const heading=modalBody.querySelector('h2'); modalTitle.textContent=heading?heading.textContent.trim():(activeLang()==='pl'?'Przepis':'Rezept'); modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('no-scroll');
+    modalBody.querySelectorAll('.wa-btn').forEach(btn=>btn.addEventListener('click',()=>{const url=new URL(window.location.href);url.hash=`rezept-${id}`; const text=`${modalTitle.textContent} – ${url.toString()}`; window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank');}));
+    modalBody.querySelectorAll('.copy-btn').forEach(btn=>btn.addEventListener('click',async()=>{const url=new URL(window.location.href); url.hash=`rezept-${id}`; try{await navigator.clipboard.writeText(url.toString());}catch(e){} }));
+    modalBody.querySelectorAll('.print-btn').forEach(btn=>btn.addEventListener('click',()=>window.print()));
   }
-
-  function closeModal(){
-    modal.classList.remove('open');
-    modal.setAttribute('aria-hidden', 'true');
-    modalBody.innerHTML = '';
-    document.body.classList.remove('no-scroll');
-  }
-
-  function isExcluded(card){
-    const cat = normalize(card.querySelector('.pill')?.textContent || '');
-    const title = normalize(card.getAttribute('data-title-de') || '');
-    return cat.includes('cocktail') || cat.includes('getrank') || cat.includes('ninja slushi') || cat.includes('grundlagen') || cat.includes('saucen') || title.includes('cocktail') || title.includes('spritz') || title.includes('mojito') || title.includes('sangria') || title.includes('slush') || title.includes('dip') || title.includes('rub') || title.includes('sauce') || title.includes('tsatsiki');
-  }
-
-  function classify(card){
-    const title = normalize((card.getAttribute('data-title-de') || '') + ' ' + (card.querySelector('.recipe-card-intro')?.textContent || ''));
-    const cat = normalize(card.querySelector('.pill')?.textContent || '');
-    if (cat.includes('grill') || cat.includes('bbq') || title.includes('grill') || title.includes('bbq') || title.includes('smoker')) return 'bbq';
-    if (title.includes('salat') || title.includes('gemuse') || title.includes('leicht') || title.includes('frisch') || cat.includes('fisch') || cat.includes('meeresfruchte')) return 'light';
-    if (title.includes('auflauf') || title.includes('schmor') || title.includes('braten') || title.includes('gulasch') || title.includes('ofen') || title.includes('kartoffel') || cat.includes('ofengerichte')) return 'hearty';
-    return 'quick';
-  }
-
-  function takeRandomUnique(pool, count){
-    const copy = [...pool];
-    const result = [];
-    while (copy.length && result.length < count) {
-      const idx = Math.floor(Math.random() * copy.length);
-      result.push(copy.splice(idx,1)[0]);
-    }
-    return result;
-  }
-
-  function buildCard(card, tagDe, tagPl, cls){
-    if (!card) return '';
-    const recipeId = card.getAttribute('data-id');
-    const img = card.querySelector('img')?.getAttribute('src') || '';
-    const alt = card.querySelector('img')?.getAttribute('alt') || '';
-    const title = card.querySelector('h3')?.innerHTML || '';
-    const intro = card.querySelector('.recipe-card-intro')?.innerHTML || '';
-    return `<a href="#rezept-${recipeId}" class="${cls}" data-open-recipe="${recipeId}">
-      <img src="${img}" alt="${alt}" loading="lazy">
-      <div class="${cls === 'theme-card' ? 'theme-card-body' : 'smart-suggestion-body'}">
-        <div class="${cls === 'theme-card' ? 'theme-card-tag' : 'smart-suggestion-tag'}"><span lang-variant="de">${tagDe}</span><span lang-variant="pl">${tagPl}</span></div>
-        <h3>${title}</h3><p>${intro}</p>
-      </div>
-    </a>`;
-  }
-
-  function renderSmartSuggestions(){
-    if (!smartSuggestionsGrid) return;
-    const eligible = cards.filter(card => !isExcluded(card));
-    const quick = eligible.filter(card => classify(card) === 'quick');
-    const hearty = eligible.filter(card => classify(card) === 'hearty');
-    const light = eligible.filter(card => classify(card) === 'light');
-    const picks = [
-      takeRandomUnique(quick.length ? quick : eligible, 1)[0],
-      takeRandomUnique(hearty.length ? hearty : eligible, 1)[0],
-      takeRandomUnique(light.length ? light : eligible, 1)[0],
-    ].filter(Boolean);
-    const used = new Set();
-    const unique = [];
-    for (const c of picks) { if (c && !used.has(c.getAttribute('data-id'))) { used.add(c.getAttribute('data-id')); unique.push(c); } }
-    while (unique.length < 3) {
-      const extra = takeRandomUnique(eligible.filter(c => !used.has(c.getAttribute('data-id'))), 1)[0];
-      if (!extra) break; used.add(extra.getAttribute('data-id')); unique.push(extra);
-    }
-    const tags = [
-      ['⚡ Schnell & einfach','⚡ Szybko i prosto'],
-      ['🍖 Deftig & sättigend','🍖 Konkretnie i sycąco'],
-      ['🌿 Leicht & frisch','🌿 Lekko i świeżo']
-    ];
-    smartSuggestionsGrid.innerHTML = unique.map((c,i) => buildCard(c, tags[i][0], tags[i][1], 'smart-suggestion-card')).join('');
-  }
-
-  function renderThemeSections(){
-    const eligible = cards.filter(card => !isExcluded(card));
-    const quick = eligible.filter(card => classify(card) === 'quick');
-    const hearty = eligible.filter(card => classify(card) === 'hearty');
-    const light = eligible.filter(card => classify(card) === 'light');
-    const bbq = eligible.filter(card => classify(card) === 'bbq');
-    if (themeQuickGrid) themeQuickGrid.innerHTML = takeRandomUnique(quick.length ? quick : eligible, 3).map(c => buildCard(c, '⚡ Schnell & einfach', '⚡ Szybko i prosto', 'theme-card')).join('');
-    if (themeHeartyGrid) themeHeartyGrid.innerHTML = takeRandomUnique(hearty.length ? hearty : eligible, 3).map(c => buildCard(c, '🍖 Deftig & Ofen', '🍖 Konkretnie & piekarnik', 'theme-card')).join('');
-    if (themeLightGrid) themeLightGrid.innerHTML = takeRandomUnique(light.length ? light : eligible, 3).map(c => buildCard(c, '🌿 Frisch & leicht', '🌿 Lekko & świeżo', 'theme-card')).join('');
-    if (themeBbqGrid) themeBbqGrid.innerHTML = takeRandomUnique(bbq.length ? bbq : eligible, 3).map(c => buildCard(c, '🔥 Grill & BBQ', '🔥 Grill & BBQ', 'theme-card')).join('');
-  }
-
-  langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.getAttribute('data-set-lang'))));
-  searchInput.addEventListener('input', () => { currentLimit = batchSize; render(); });
-  clearBtn.addEventListener('click', () => { searchInput.value = ''; searchInput.focus(); currentLimit = batchSize; render(); });
-  categoryButtons.forEach(btn => btn.addEventListener('click', () => {
-    categoryButtons.forEach(x => x.classList.remove('active'));
-    btn.classList.add('active');
-    currentCategory = btn.getAttribute('data-category') || 'all';
-    currentLimit = batchSize;
-    render();
-  }));
-  loadMoreBtn.addEventListener('click', () => { currentLimit += batchSize; render(); });
-  document.querySelectorAll('[data-v27-category]').forEach(tile => tile.addEventListener('click', (e) => {
-    e.preventDefault();
-    const wanted = tile.getAttribute('data-v27-category') || 'all';
-    const target = categoryButtons.find(btn => (btn.getAttribute('data-category') || '') === wanted);
-    if (target) target.click();
-    const allRecipes = document.getElementById('allRecipes');
-    if (allRecipes) {
-      allRecipes.classList.add('focused');
-      allRecipes.scrollIntoView({behavior:'smooth', block:'start'});
-      setTimeout(() => allRecipes.classList.remove('focused'), 1800);
-    }
-  }));
-  document.addEventListener('click', (e) => {
-    const trigger = e.target.closest('[data-open-recipe]');
-    if (trigger) {
-      e.preventDefault();
-      openRecipe(trigger.getAttribute('data-open-recipe'));
-      return;
-    }
-    if (e.target === modal) closeModal();
-  });
-  closeModalBtn.addEventListener('click', closeModal);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
-
+  function closeModal(){modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); modalBody.innerHTML=''; document.body.classList.remove('no-scroll');}
+  langButtons.forEach(btn=>btn.addEventListener('click',()=>setLang(btn.getAttribute('data-set-lang'))));
+  searchInput.addEventListener('input',()=>{currentLimit=batchSize; render();});
+  clearBtn.addEventListener('click',()=>{searchInput.value=''; searchInput.focus(); currentLimit=batchSize; render();});
+  categoryButtons.forEach(btn=>btn.addEventListener('click',()=>{categoryButtons.forEach(x=>x.classList.remove('active')); btn.classList.add('active'); currentCategory=btn.getAttribute('data-category')||'all'; currentLimit=batchSize; render();}));
+  loadMoreBtn.addEventListener('click',()=>{currentLimit+=batchSize; render();});
+  document.addEventListener('click',(e)=>{const trigger=e.target.closest('[data-open-recipe]'); if(trigger){e.preventDefault(); openRecipe(trigger.getAttribute('data-open-recipe')); return;} if(e.target===modal) closeModal();});
+  closeModalBtn.addEventListener('click',closeModal);
+  document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&modal.classList.contains('open')) closeModal();});
   setLang('de');
-  renderThemeSections();
-  renderSmartSuggestions();
-  if (window.location.hash && /^#rezept-\d+$/.test(window.location.hash)) {
-    openRecipe(window.location.hash.replace('#rezept-',''));
-  }
+  if(window.location.hash&&/^#rezept-\d+$/.test(window.location.hash)) openRecipe(window.location.hash.replace('#rezept-',''));
 })();
 </script>
-
-<script>
-(function () {
-  function onReady(fn) {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', fn);
-    } else {
-      fn();
-    }
-  }
-
-  function hasClass(el, name) {
-    return (' ' + el.className + ' ').indexOf(' ' + name + ' ') > -1;
-  }
-
-  function addClass(el, name) {
-    if (!hasClass(el, name)) el.className += (el.className ? ' ' : '') + name;
-  }
-
-  function removeClass(el, name) {
-    el.className = (' ' + el.className + ' ').replace(' ' + name + ' ', ' ').trim();
-  }
-
-  function getClosestWithAttr(el, attr) {
-    while (el && el !== document) {
-      if (el.getAttribute && el.getAttribute(attr) !== null) return el;
-      el = el.parentNode;
-    }
-    return null;
-  }
-
-  function normalizeText(v) {
-    return String(v || '').toLowerCase().replace(/\s+/g, ' ').trim();
-  }
-
-  onReady(function () {
-    var html = document.documentElement;
-    var cards = Array.prototype.slice.call(document.querySelectorAll('.recipe-card'));
-    var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc-link'));
-    var categoryButtons = Array.prototype.slice.call(document.querySelectorAll('.category-chip'));
-    var langButtons = Array.prototype.slice.call(document.querySelectorAll('[data-set-lang]'));
-
-    var searchInput = document.getElementById('recipeSearch');
-    var clearBtn = document.getElementById('clearSearch');
-    var resultCount = document.getElementById('resultCount');
-    var activeCategoryLabel = document.getElementById('activeCategoryLabel');
-    var progressNote = document.getElementById('progressNote');
-    var loadMoreBtn = document.getElementById('loadMoreRecipes');
-    var emptyState = document.getElementById('emptyState');
-    var allRecipes = document.getElementById('allRecipes');
-
-    var modal = document.getElementById('recipeModal');
-    var modalTitle = document.getElementById('modalTitle');
-    var modalBody = document.getElementById('modalBody');
-    var closeModalBtn = document.getElementById('closeModal');
-
-    var smartGrid = document.getElementById('smartSuggestionsGrid');
-    var smartBtn = document.getElementById('smartSuggestionsBtn');
-    var themeQuickGrid = document.getElementById('themeQuickGrid');
-    var themeHeartyGrid = document.getElementById('themeHeartyGrid');
-    var themeLightGrid = document.getElementById('themeLightGrid');
-    var themeBbqGrid = document.getElementById('themeBbqGrid');
-
-    var currentCategory = 'all';
-    var currentLimit = 12;
-    var batchSize = 12;
-
-    function activeLang() {
-      return html.getAttribute('data-lang') || 'de';
-    }
-
-    function setLang(lang) {
-      var safe = lang === 'pl' ? 'pl' : 'de';
-      html.setAttribute('data-lang', safe);
-      html.setAttribute('lang', safe);
-      for (var i = 0; i < langButtons.length; i++) {
-        if (langButtons[i].getAttribute('data-set-lang') === safe) addClass(langButtons[i], 'active');
-        else removeClass(langButtons[i], 'active');
-      }
-      if (searchInput) searchInput.placeholder = safe === 'pl' ? 'Szukaj przepisu…' : 'Rezept suchen…';
-      render();
-    }
-
-    function updateCategoryLabel() {
-      if (!activeCategoryLabel) return;
-      var activeBtn = null;
-      for (var i = 0; i < categoryButtons.length; i++) {
-        if (hasClass(categoryButtons[i], 'active')) { activeBtn = categoryButtons[i]; break; }
-      }
-      if (!activeBtn) return;
-      var de = activeBtn.querySelector('[lang-variant="de"]');
-      var pl = activeBtn.querySelector('[lang-variant="pl"]');
-      activeCategoryLabel.textContent = activeLang() === 'pl'
-        ? (pl ? pl.textContent.trim() : activeBtn.textContent.trim())
-        : (de ? de.textContent.trim() : activeBtn.textContent.trim());
-    }
-
-    function render() {
-      var query = normalizeText(searchInput ? searchInput.value : '');
-      var titleAttr = activeLang() === 'pl' ? 'data-title-pl' : 'data-title-de';
-      var matched = 0;
-      var shown = 0;
-
-      for (var i = 0; i < cards.length; i++) {
-        var card = cards[i];
-        var categoryOk = currentCategory === 'all' || (card.getAttribute('data-category') || '') === currentCategory;
-        var title = normalizeText(card.getAttribute(titleAttr) || '');
-        var queryOk = !query || title.indexOf(query) !== -1;
-        var visible = categoryOk && queryOk;
-
-        if (visible) {
-          matched += 1;
-          if (shown < currentLimit) {
-            removeClass(card, 'hidden');
-            shown += 1;
-          } else {
-            addClass(card, 'hidden');
-          }
-        } else {
-          addClass(card, 'hidden');
-        }
-      }
-
-      for (var j = 0; j < tocLinks.length; j++) {
-        var link = tocLinks[j];
-        var catOk = currentCategory === 'all' || (link.getAttribute('data-category') || '') === currentCategory;
-        var qOk = !query || normalizeText(link.textContent).indexOf(query) !== -1;
-        link.style.display = (catOk && qOk) ? '' : 'none';
-      }
-
-      if (resultCount) {
-        resultCount.textContent = query
-          ? (activeLang() === 'pl' ? matched + ' wyników' : matched + ' Treffer')
-          : (activeLang() === 'pl' ? matched + ' przepisów' : matched + ' Rezepte');
-      }
-      if (progressNote) {
-        progressNote.textContent = matched
-          ? (activeLang() === 'pl'
-            ? 'Widoczne: ' + Math.min(shown, matched) + ' z ' + matched
-            : 'Sichtbar: ' + Math.min(shown, matched) + ' von ' + matched)
-          : '';
-      }
-      if (loadMoreBtn) loadMoreBtn.style.display = matched > shown ? 'inline-flex' : 'none';
-      if (emptyState) {
-        if (matched === 0) addClass(emptyState, 'show');
-        else removeClass(emptyState, 'show');
-      }
-      if (clearBtn) {
-        if (query) removeClass(clearBtn, 'hidden');
-        else addClass(clearBtn, 'hidden');
-      }
-      updateCategoryLabel();
-    }
-
-    function openRecipe(id) {
-      var tpl = document.getElementById('modal-template-' + id);
-      if (!tpl || !modal || !modalBody) return;
-      modalBody.innerHTML = tpl.innerHTML;
-      var heading = modalBody.querySelector('h2');
-      if (modalTitle) modalTitle.textContent = heading ? heading.textContent.trim() : (activeLang() === 'pl' ? 'Przepis' : 'Rezept');
-      addClass(modal, 'open');
-      modal.setAttribute('aria-hidden', 'false');
-      addClass(document.body, 'no-scroll');
-
-      var waBtns = modalBody.querySelectorAll('.wa-btn');
-      for (var i = 0; i < waBtns.length; i++) {
-        waBtns[i].onclick = (function (rid) {
-          return function () {
-            var url = String(window.location.href).split('#')[0] + '#rezept-' + rid;
-            var text = (modalTitle ? modalTitle.textContent : 'Rezept') + ' – ' + url;
-            window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
-          };
-        })(id);
-      }
-
-      var copyBtns = modalBody.querySelectorAll('.copy-btn');
-      for (var j = 0; j < copyBtns.length; j++) {
-        copyBtns[j].onclick = (function (rid) {
-          return function () {
-            var url = String(window.location.href).split('#')[0] + '#rezept-' + rid;
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              navigator.clipboard.writeText(url);
-            }
-          };
-        })(id);
-      }
-
-      var printBtns = modalBody.querySelectorAll('.print-btn');
-      for (var k = 0; k < printBtns.length; k++) {
-        printBtns[k].onclick = function () { window.print(); };
-      }
-    }
-
-    function closeModal() {
-      if (!modal || !modalBody) return;
-      removeClass(modal, 'open');
-      modal.setAttribute('aria-hidden', 'true');
-      modalBody.innerHTML = '';
-      removeClass(document.body, 'no-scroll');
-    }
-
-    function isExcluded(card) {
-      var pill = card.querySelector('.pill');
-      var cat = normalizeText(pill ? pill.textContent : '');
-      var title = normalizeText(card.getAttribute('data-title-de') || '');
-      return cat.indexOf('cocktail') !== -1 ||
-             cat.indexOf('getränk') !== -1 ||
-             cat.indexOf('grundlagen') !== -1 ||
-             cat.indexOf('saucen') !== -1 ||
-             title.indexOf('cocktail') !== -1 ||
-             title.indexOf('spritz') !== -1 ||
-             title.indexOf('mojito') !== -1 ||
-             title.indexOf('sangria') !== -1 ||
-             title.indexOf('slush') !== -1 ||
-             title.indexOf('dip') !== -1 ||
-             title.indexOf('rub') !== -1 ||
-             title.indexOf('tsatsiki') !== -1;
-    }
-
-    function classify(card) {
-      var pill = card.querySelector('.pill');
-      var cat = normalizeText(pill ? pill.textContent : '');
-      var introEl = card.querySelector('.recipe-card-intro');
-      var text = normalizeText((card.getAttribute('data-title-de') || '') + ' ' + (introEl ? introEl.textContent : ''));
-      if (cat.indexOf('grill') !== -1 || cat.indexOf('bbq') !== -1 || text.indexOf('grill') !== -1 || text.indexOf('bbq') !== -1 || text.indexOf('smoker') !== -1) return 'bbq';
-      if (text.indexOf('salat') !== -1 || text.indexOf('gemüse') !== -1 || text.indexOf('leicht') !== -1 || text.indexOf('frisch') !== -1 || cat.indexOf('meeresfrüchte') !== -1 || cat.indexOf('fisch') !== -1) return 'light';
-      if (text.indexOf('auflauf') !== -1 || text.indexOf('schmor') !== -1 || text.indexOf('braten') !== -1 || text.indexOf('gulasch') !== -1 || text.indexOf('ofen') !== -1 || text.indexOf('kartoffel') !== -1 || cat.indexOf('ofengerichte') !== -1) return 'hearty';
-      return 'quick';
-    }
-
-    function pickUnique(pool, count) {
-      var copy = pool.slice();
-      var out = [];
-      while (copy.length && out.length < count) {
-        var idx = Math.floor(Math.random() * copy.length);
-        out.push(copy.splice(idx, 1)[0]);
-      }
-      return out;
-    }
-
-    function buildPromoCard(card, tagDe, tagPl, cls) {
-      if (!card) return '';
-      var id = card.getAttribute('data-id');
-      var img = card.querySelector('img');
-      var title = card.querySelector('h3');
-      var intro = card.querySelector('.recipe-card-intro');
-      return '<a href="#rezept-' + id + '" class="' + cls + '" data-open-recipe="' + id + '">' +
-        '<img src="' + (img ? img.getAttribute('src') : '') + '" alt="' + (img ? img.getAttribute('alt') : '') + '" loading="lazy">' +
-        '<div class="' + (cls === 'theme-card' ? 'theme-card-body' : 'smart-suggestion-body') + '">' +
-        '<div class="' + (cls === 'theme-card' ? 'theme-card-tag' : 'smart-suggestion-tag') + '">' +
-        '<span lang-variant="de">' + tagDe + '</span><span lang-variant="pl">' + tagPl + '</span></div>' +
-        '<h3>' + (title ? title.innerHTML : '') + '</h3><p>' + (intro ? intro.innerHTML : '') + '</p></div></a>';
-    }
-
-    function renderPromos() {
-      var eligible = [];
-      for (var i = 0; i < cards.length; i++) if (!isExcluded(cards[i])) eligible.push(cards[i]);
-      var quick = [], hearty = [], light = [], bbq = [];
-      for (var j = 0; j < eligible.length; j++) {
-        var kind = classify(eligible[j]);
-        if (kind === 'quick') quick.push(eligible[j]);
-        else if (kind === 'hearty') hearty.push(eligible[j]);
-        else if (kind === 'light') light.push(eligible[j]);
-        else if (kind === 'bbq') bbq.push(eligible[j]);
-      }
-
-      if (smartGrid) {
-        var s1 = pickUnique(quick.length ? quick : eligible, 1);
-        var s2 = pickUnique(hearty.length ? hearty : eligible, 1);
-        var s3 = pickUnique(light.length ? light : eligible, 1);
-        var picked = [];
-        var ids = {};
-        [s1[0], s2[0], s3[0]].forEach(function (c) {
-          if (c && !ids[c.getAttribute('data-id')]) { ids[c.getAttribute('data-id')] = true; picked.push(c); }
-        });
-        while (picked.length < 3) {
-          var extra = pickUnique(eligible.filter(function(c){ return !ids[c.getAttribute('data-id')]; }), 1)[0];
-          if (!extra) break;
-          ids[extra.getAttribute('data-id')] = true;
-          picked.push(extra);
-        }
-        smartGrid.innerHTML =
-          buildPromoCard(picked[0], '⚡ Schnell & einfach', '⚡ Szybko i prosto', 'smart-suggestion-card') +
-          buildPromoCard(picked[1], '🍖 Deftig & sättigend', '🍖 Konkretnie i sycąco', 'smart-suggestion-card') +
-          buildPromoCard(picked[2], '🌿 Leicht & frisch', '🌿 Lekko i świeżo', 'smart-suggestion-card');
-      }
-
-      if (themeQuickGrid) themeQuickGrid.innerHTML = pickUnique(quick.length ? quick : eligible, 3).map(function(c){ return buildPromoCard(c, '⚡ Schnell & einfach', '⚡ Szybko i prosto', 'theme-card'); }).join('');
-      if (themeHeartyGrid) themeHeartyGrid.innerHTML = pickUnique(hearty.length ? hearty : eligible, 3).map(function(c){ return buildPromoCard(c, '🍖 Deftig & Ofen', '🍖 Konkretnie & piekarnik', 'theme-card'); }).join('');
-      if (themeLightGrid) themeLightGrid.innerHTML = pickUnique(light.length ? light : eligible, 3).map(function(c){ return buildPromoCard(c, '🌿 Frisch & leicht', '🌿 Lekko & świeżo', 'theme-card'); }).join('');
-      if (themeBbqGrid) themeBbqGrid.innerHTML = pickUnique(bbq.length ? bbq : eligible, 3).map(function(c){ return buildPromoCard(c, '🔥 Grill & BBQ', '🔥 Grill & BBQ', 'theme-card'); }).join('');
-    }
-
-    for (var i = 0; i < langButtons.length; i++) {
-      langButtons[i].onclick = (function (btn) { return function () { setLang(btn.getAttribute('data-set-lang')); }; })(langButtons[i]);
-    }
-    if (searchInput) searchInput.oninput = function () { currentLimit = batchSize; render(); };
-    if (clearBtn) clearBtn.onclick = function () { if (searchInput) searchInput.value = ''; currentLimit = batchSize; render(); if (searchInput) searchInput.focus(); };
-    for (var j = 0; j < categoryButtons.length; j++) {
-      categoryButtons[j].onclick = (function (btn) {
-        return function () {
-          for (var k = 0; k < categoryButtons.length; k++) removeClass(categoryButtons[k], 'active');
-          addClass(btn, 'active');
-          currentCategory = btn.getAttribute('data-category') || 'all';
-          currentLimit = batchSize;
-          render();
-        };
-      })(categoryButtons[j]);
-    }
-    if (loadMoreBtn) loadMoreBtn.onclick = function () { currentLimit += batchSize; render(); };
-
-    var tiles = document.querySelectorAll('[data-v27-category]');
-    for (var t = 0; t < tiles.length; t++) {
-      tiles[t].onclick = (function (tile) {
-        return function (e) {
-          if (e && e.preventDefault) e.preventDefault();
-          var wanted = tile.getAttribute('data-v27-category') || 'all';
-          for (var k = 0; k < categoryButtons.length; k++) {
-            if ((categoryButtons[k].getAttribute('data-category') || '') === wanted) {
-              categoryButtons[k].onclick();
-              break;
-            }
-          }
-          if (allRecipes && allRecipes.scrollIntoView) {
-            addClass(allRecipes, 'focused');
-            allRecipes.scrollIntoView({behavior:'smooth', block:'start'});
-            setTimeout(function(){ removeClass(allRecipes, 'focused'); }, 1800);
-          }
-          return false;
-        };
-      })(tiles[t]);
-    }
-
-    document.onclick = function (e) {
-      e = e || window.event;
-      var target = e.target || e.srcElement;
-      var trigger = getClosestWithAttr(target, 'data-open-recipe');
-      if (trigger) {
-        if (e.preventDefault) e.preventDefault();
-        openRecipe(trigger.getAttribute('data-open-recipe'));
-        return false;
-      }
-      if (target === modal) closeModal();
-    };
-    if (closeModalBtn) closeModalBtn.onclick = closeModal;
-    document.onkeydown = function (e) { e = e || window.event; if (e.key === 'Escape' || e.keyCode === 27) if (modal && hasClass(modal, 'open')) closeModal(); };
-    if (smartBtn) smartBtn.onclick = renderPromos;
-
-    setLang('de');
-    renderPromos();
-
-    if (window.location.hash && /^#rezept-\d+$/.test(window.location.hash)) {
-      openRecipe(window.location.hash.replace('#rezept-',''));
-    }
-  });
-})();
-</script>
-
 </body>
 </html>
