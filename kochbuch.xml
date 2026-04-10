@@ -6877,7 +6877,7 @@
     <intro lang="pl">To właśnie taki przepis, który potrzebuje czasu i właśnie dlatego wychodzi tak dobrze. Kiedy gulasz z dzika dusi się powoli, sos, przyprawy i mięso tworzą tę głęboką, intensywną nutę, której oczekuje się od wyjątkowego dania duszonego.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_89.png" alt="Wildschweingulasch klassisch geschmort"/>
+    <image src="images/rezeptbild_91.png" alt="Wildschweingulasch klassisch geschmort"/>
     <ingredients>
       <item>1 kg Wildschweingulasch</item>
       <item>2 große Zwiebeln</item>
@@ -6958,7 +6958,7 @@
     <intro lang="pl">Udziec z dzika to dla mnie dokładnie taki rodzaj pieczeni, który pozostaje czymś wyjątkowym, ale bez przesadnej komplikacji. Kiedy piecze się powoli, mięso robi się delikatne, a sos dostaje tę głębię, która pasuje do świątecznego dania.</intro>
     <persons>4–6 Personen</persons>
     <category>Ofengerichte / Feiertagsessen</category>
-    <image src="images/rezeptbild_90.png" alt="Wildschweinkeule aus dem Ofen"/>
+    <image src="images/rezeptbild_92.png" alt="Wildschweinkeule aus dem Ofen"/>
     <ingredients>
       <item>1,5 kg Wildschweinkeule</item>
       <item>2 Zwiebeln</item>
@@ -7037,7 +7037,7 @@
     <intro lang="pl">To dokładnie taki pieczony snack, który znika ze stołu szybciej, niż się wydaje. Chorizo daje wyrazistość, ser wszystko łączy, a na końcu masz prosty przepis idealny na gości, grill albo po prostu spokojny wieczór.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Snacks</category>
-    <image src="images/rezeptbild_91.png" alt="Gefülltes Ofenbaguette mit Chorizo"/>
+    <image src="images/rezeptbild_93.png" alt="Gefülltes Ofenbaguette mit Chorizo"/>
     <ingredients>
       <item>2 kleine Baguettes</item>
       <item>120 g Chorizo</item>
@@ -7108,7 +7108,7 @@
     <intro lang="pl">Takie ogórki w zalewie to dla mnie dokładnie taki przepis, który domyka całą kolekcję. Są wyraziste, lekko słodko-kwaśne i wnoszą na stół ten rodzaj dodatku, którego nie spotyka się wszędzie.</intro>
     <persons>Vorrat</persons>
     <category>Beilagen / Vorrat</category>
-    <image src="images/rezeptbild_92.png" alt="Ogórki w zalewie gyros"/>
+    <image src="images/rezeptbild_94.png" alt="Ogórki w zalewie gyros"/>
     <ingredients>
       <item>2 kg Gurken</item>
       <item>30 g Gyros-Gewürz</item>
@@ -7187,7 +7187,7 @@
     <intro lang="pl">To właśnie takie danie, którego potrzebuje się po długim dniu pracy. Wszystko trafia na jedną patelnię, krótko się smaży i na końcu masz ciepły, uczciwy posiłek bez wielkiego wysiłku. Szybko, prosto i naprawdę dobrze.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Schnell &amp; einfach</category>
-    <image src="images/rezeptbild_93.png" alt="Feierabend-Pfanne mit Hähnchen &amp; Gemüse"/>
+    <image src="images/rezeptbild_95.png" alt="Feierabend-Pfanne mit Hähnchen &amp; Gemüse"/>
     <ingredients>
       <item>500 g Hähnchenbrust oder Hähnchenschenkel ohne Knochen</item>
       <item>600 g festkochende Kartoffeln, vorgekocht oder vom Vortag</item>
@@ -7264,7 +7264,7 @@
     <intro lang="pl">Jeśli ma być naprawdę konkretnie, to tutaj jesteś w dobrym miejscu. Ziemniaki robią się miękkie, boczek daje wyrazistość, a na wierzchu powstaje piękna, złota warstwa. To nie jest lekkie danie – i właśnie dlatego tak dobrze smakuje.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Hausmannskost</category>
-    <image src="images/rezeptbild_94.png" alt="Kartoffel-Speck-Auflauf (deftig &amp; cremig)"/>
+    <image src="images/rezeptbild_96.png" alt="Kartoffel-Speck-Auflauf (deftig &amp; cremig)"/>
     <ingredients>
       <item>1,2 kg Kartoffeln</item>
       <item>150 g Speckwürfel</item>
@@ -7335,7 +7335,7 @@
     <intro lang="pl">Nawet bez grilla da się tu osiągnąć prawdziwy klimat BBQ. Marynata przechodzi w mięso, w piekarniku rozwija się ładna przyprawowa głębia, a na końcu masz soczystego kurczaka z porządnym smakiem.</intro>
     <persons>2–4 Personen</persons>
     <category>Ofengerichte / Grill &amp; BBQ</category>
-    <image src="images/rezeptbild_95.png" alt="BBQ-Hähnchen aus dem Ofen"/>
+    <image src="images/rezeptbild_97.png" alt="BBQ-Hähnchen aus dem Ofen"/>
     <ingredients>
       <item>800 g Hähnchenschenkel oder Hähnchenoberkeulen</item>
       <item>3 EL BBQ-Sauce</item>
@@ -7402,7 +7402,7 @@
     <intro lang="pl">To danie można zrobić zawsze wtedy, gdy ma być bez komplikacji. Mięso mielone się smaży, ajvar daje wyrazistość i po kilku minutach na stole stoi naprawdę solidny posiłek.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Schnell &amp; einfach</category>
-    <image src="images/rezeptbild_96.png" alt="Schnelle Hackpfanne mit Ajvar"/>
+    <image src="images/rezeptbild_98.png" alt="Schnelle Hackpfanne mit Ajvar"/>
     <ingredients>
       <item>500 g Hackfleisch</item>
       <item>1 Zwiebel</item>
@@ -7471,7 +7471,7 @@
     <intro lang="pl">Tutaj z prostego dodatku robi się pełne danie. Chrupiące ziemniaki, do tego różne dodatki – od kremowych po bardziej wyraziste. Idealne, gdy każdy chce złożyć sobie talerz po swojemu.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Beilagen</category>
-    <image src="images/rezeptbild_97.png" alt="Ofenkartoffeln Deluxe mit Toppings"/>
+    <image src="images/rezeptbild_99.png" alt="Ofenkartoffeln Deluxe mit Toppings"/>
     <ingredients>
       <item>4 große Ofenkartoffeln</item>
       <item>150 g Kräuterquark oder Sour Cream</item>
@@ -7540,7 +7540,7 @@
     <intro lang="pl">Tutaj AirFryer pokazuje, co potrafi. Z zewnątrz przyjemnie chrupiący, w środku soczysty – i to bez wielkiego wysiłku. Idealny na dni, gdy ma być szybko, ale nadal dobrze.</intro>
     <persons>2–3 Personen</persons>
     <category>Airfryer / Schnell &amp; einfach</category>
-    <image src="images/rezeptbild_98.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)"/>
+    <image src="images/rezeptbild_100.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)"/>
     <ingredients>
       <item>600–700 g Hähnchenschenkel ohne Knochen oder Hähnchenbrust</item>
       <item>2 EL Öl</item>
@@ -7605,7 +7605,7 @@
     <intro lang="pl">To danie powstaje z tego, co akurat jest pod ręką. Różne warzywa się smaży, doprawia i razem dają coś, co zaskakująco dobrze działa. Idealne, żeby sensownie wykorzystać resztki.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Resteküche</category>
-    <image src="images/rezeptbild_99.png" alt="Gemüsepfanne „Resteküche“"/>
+    <image src="images/rezeptbild_101.png" alt="Gemüsepfanne „Resteküche“"/>
     <ingredients>
       <item>ca. 700 g gemischtes Gemüse nach Vorrat, z. B. Paprika, Zucchini, Möhre, Champignons, Zwiebel</item>
       <item>2 EL Öl</item>
@@ -7670,7 +7670,7 @@
     <intro lang="pl">Smażone ziemniaki potrafią być naprawdę świetne – jeśli da się im czas. Dobrze zrumienione, doprawione cebulą i dokładnie takie, jak powinny być. Proste, ale z ogromną różnicą w efekcie.</intro>
     <persons>2–3 Personen</persons>
     <category>Pfannengerichte / Beilagen</category>
-    <image src="images/rezeptbild_100.png" alt="Knusprige Bratkartoffeln mit Zwiebeln"/>
+    <image src="images/rezeptbild_102.png" alt="Knusprige Bratkartoffeln mit Zwiebeln"/>
     <ingredients>
       <item>800 g festkochende Kartoffeln, am besten gekocht vom Vortag</item>
       <item>2 große Zwiebeln</item>
@@ -7733,7 +7733,7 @@
     <intro lang="pl">Idealne na spokojny wieczór w większym gronie. Każdy składa sobie wrap po swojemu – z mięsem, warzywami i sosami według własnego gustu. Luźno, elastycznie i dokładnie tak, jak trzeba na towarzyskie spotkania.</intro>
     <persons>4 Personen</persons>
     <category>Wraps &amp; Burritos / Gesellig</category>
-    <image src="images/rezeptbild_101.png" alt="Wrap-Abend (DIY-Style)"/>
+    <image src="images/rezeptbild_103.png" alt="Wrap-Abend (DIY-Style)"/>
     <ingredients>
       <item>8 große Wraps</item>
       <item>500 g Hähnchen oder Hackfleisch</item>
@@ -7806,7 +7806,7 @@
     <intro lang="pl">To prosta sałatka, która żyje dobrymi składnikami. Dojrzałe pomidory, trochę cebuli i odpowiedni dressing – więcej naprawdę nie potrzeba. Idealna jako świeży dodatek do konkretniejszych dań albo z grilla.</intro>
     <persons>2–4 Personen</persons>
     <category>Beilagen / Salate</category>
-    <image src="images/rezeptbild_102.png" alt="Sommerlicher Tomatensalat"/>
+    <image src="images/rezeptbild_104.png" alt="Sommerlicher Tomatensalat"/>
     <ingredients>
       <item>500–700 g reife Tomaten</item>
       <item>1 kleine rote Zwiebel</item>
