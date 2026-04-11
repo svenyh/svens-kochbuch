@@ -1191,10 +1191,80 @@ html[data-lang="pl"] .ghost-btn [lang-variant="pl"]{
   }
 }
 
+
+/* V46 modal language hardening */
+.modal-title [lang-variant],
+.modal-body h2 [lang-variant],
+.modal-body h3 [lang-variant],
+.modal-body p [lang-variant],
+.modal-body li [lang-variant],
+.modal-body .pill [lang-variant]{
+  display:none !important;
+}
+html[data-lang="de"] .modal-title [lang-variant="de"],
+html[data-lang="de"] .modal-body h2 [lang-variant="de"],
+html[data-lang="de"] .modal-body h3 [lang-variant="de"],
+html[data-lang="de"] .modal-body p [lang-variant="de"],
+html[data-lang="de"] .modal-body li [lang-variant="de"],
+html[data-lang="de"] .modal-body .pill [lang-variant="de"]{
+  display:inline !important;
+}
+html[data-lang="pl"] .modal-title [lang-variant="pl"],
+html[data-lang="pl"] .modal-body h2 [lang-variant="pl"],
+html[data-lang="pl"] .modal-body h3 [lang-variant="pl"],
+html[data-lang="pl"] .modal-body p [lang-variant="pl"],
+html[data-lang="pl"] .modal-body li [lang-variant="pl"],
+html[data-lang="pl"] .modal-body .pill [lang-variant="pl"]{
+  display:inline !important;
+}
+
+
+/* V47 finder click fix */
+.finder-link-card{
+  text-decoration:none;
+  color:inherit;
+  transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease, background .14s ease;
+  cursor:pointer;
+}
+.finder-link-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 26px rgba(63,36,15,.08);
+  border-color:rgba(150,103,64,.2);
+  background:#fff9f4;
+}
+.finder-link-card:active{
+  transform:translateY(0);
+}
+
+
+/* Fixes for 'Rezepte direkt finden' */
+.meta-chip-button{
+  border:0;
+  cursor:pointer;
+}
+.meta-chip-button:hover{
+  filter:brightness(.98);
+}
+.search-meta{
+  align-items:center;
+}
+
 </style>
 </head>
 <body>
-<header class="site-header"><div class="wrap"><div class="header-inner"><div class="brand-block"><h1><span lang-variant="de">Svens Kochbuch</span><span lang-variant="pl">Książka kucharska Svena</span></h1><p><span lang-variant="de">Einfache, ehrliche Lieblingsrezepte – gesammelt, gekocht und für gut befunden.</span><span lang-variant="pl">Proste i sprawdzone ulubione przepisy – ugotowane i warte zachowania.</span></p></div><div class="lang-switch"><button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button><button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button></div></div><div class="hero-grid"><section class="hero-card"><h2><span lang-variant="de">Was soll heute auf den Tisch?</span><span lang-variant="pl">Co dziś na obiad?</span></h2><p><span lang-variant="de">Hier findest du schnell etwas, das du heute kochen kannst – egal ob nach Feierabend oder für ein entspanntes Wochenende.</span><span lang-variant="pl">Znajdziesz tu szybko coś do ugotowania – niezależnie od tego, czy po pracy, czy na spokojny weekend.</span></p><div class="cta-row"><a class="cta-chip" href="#favorites"><span lang-variant="de">⭐ Favoriten</span><span lang-variant="pl">⭐ Ulubione</span></a><a class="cta-chip" href="#newest"><span lang-variant="de">🆕 Neu</span><span lang-variant="pl">🆕 Nowe</span></a><a class="cta-chip" href="#allRecipes"><span lang-variant="de">📚 Alle Rezepte</span><span lang-variant="pl">📚 Wszystkie przepisy</span></a></div><div class="v21-lead"><div class="v21-lead-card"><strong><span lang-variant="de">Schnell etwas finden</span><span lang-variant="pl">Znajdź coś szybko</span></strong><span><span lang-variant="de">Perfekt für den Feierabend.</span><span lang-variant="pl">Idealne po pracy.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Inspiration holen</span><span lang-variant="pl">Znajdź inspirację</span></strong><span><span lang-variant="de">Für Wochenende oder Gäste.</span><span lang-variant="pl">Na weekend lub gości.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Einfach loslegen</span><span lang-variant="pl">Po prostu zacznij</span></strong><span><span lang-variant="de">Ohne langes Suchen.</span><span lang-variant="pl">Bez długiego szukania.</span></span></div></div></section><aside class="search-shell"><div class="search-top"><div><strong><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></strong><span><span lang-variant="de">Suche nach Namen und filtere direkt nach Kategorie.</span><span lang-variant="pl">Szukaj po nazwie i filtruj po kategorii.</span></span></div><div class="search-controls"><input class="search-input" id="recipeSearch" type="search" placeholder="Rezept suchen…" aria-label="Rezept suchen"><button class="clear-btn hidden" id="clearSearch" type="button">✕</button></div></div><div class="search-meta"><span class="meta-chip" id="resultCount"></span><span class="meta-chip" id="activeCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></span></div></aside></div></div></header>
+<header class="site-header"><div class="wrap"><div class="header-inner"><div class="brand-block"><h1><span lang-variant="de">Svens Kochbuch</span><span lang-variant="pl">Książka kucharska Svena</span></h1><p><span lang-variant="de">Einfache, ehrliche Lieblingsrezepte – gesammelt, gekocht und für gut befunden.</span><span lang-variant="pl">Proste i sprawdzone ulubione przepisy – ugotowane i warte zachowania.</span></p></div><div class="lang-switch"><button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button><button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button></div></div><div class="hero-grid"><section class="hero-card"><h2><span lang-variant="de">Was soll heute auf den Tisch?</span><span lang-variant="pl">Co dziś na obiad?</span></h2><p><span lang-variant="de">Hier findest du schnell etwas, das du heute kochen kannst – egal ob nach Feierabend oder für ein entspanntes Wochenende.</span><span lang-variant="pl">Znajdziesz tu szybko coś do ugotowania – niezależnie od tego, czy po pracy, czy na spokojny weekend.</span></p><div class="cta-row"><a class="cta-chip" href="#favorites"><span lang-variant="de">⭐ Favoriten</span><span lang-variant="pl">⭐ Ulubione</span></a><a class="cta-chip" href="#newest"><span lang-variant="de">🆕 Neu</span><span lang-variant="pl">🆕 Nowe</span></a><a class="cta-chip" href="#allRecipes"><span lang-variant="de">📚 Alle Rezepte</span><span lang-variant="pl">📚 Wszystkie przepisy</span></a></div><div class="v21-lead"><div class="v21-lead-card"><strong><span lang-variant="de">Schnell etwas finden</span><span lang-variant="pl">Znajdź coś szybko</span></strong><span><span lang-variant="de">Perfekt für den Feierabend.</span><span lang-variant="pl">Idealne po pracy.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Inspiration holen</span><span lang-variant="pl">Znajdź inspirację</span></strong><span><span lang-variant="de">Für Wochenende oder Gäste.</span><span lang-variant="pl">Na weekend lub gości.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Einfach loslegen</span><span lang-variant="pl">Po prostu zacznij</span></strong><span><span lang-variant="de">Ohne langes Suchen.</span><span lang-variant="pl">Bez długiego szukania.</span></span></div></div></section><aside class="search-shell"><div class="search-top"><div><strong><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></strong><span><span lang-variant="de">Suche nach Namen und filtere direkt nach Kategorie.</span><span lang-variant="pl">Szukaj po nazwie i filtruj po kategorii.</span></span></div><div class="search-controls"><input class="search-input" id="recipeSearch" type="search" placeholder="Rezept suchen…" aria-label="Rezept suchen"><button class="clear-btn hidden" id="clearSearch" type="button">✕</button></div></div>
+<div class="search-meta">
+  <span class="meta-chip" id="resultCount">130 Rezepte</span>
+  <button class="meta-chip meta-chip-button" id="showAllRecipesChip" type="button">
+    <span lang-variant="de">Alle Rezepte anzeigen</span>
+    <span lang-variant="pl">Pokaż wszystkie przepisy</span>
+  </button>
+  <span class="meta-chip" id="activeCategoryLabel">
+    <span lang-variant="de">Aktiv: Alle Kategorien</span>
+    <span lang-variant="pl">Aktywne: Wszystkie kategorie</span>
+  </span>
+</div>
+</aside></div></div></header>
 <main class="wrap">
 <section class="highlights-wrap">
   <div class="highlights-card" id="trends">
@@ -1378,18 +1448,9 @@ html[data-lang="pl"] .ghost-btn [lang-variant="pl"]{
     </div>
   </div>
   <div class="finder-grid">
-    <div class="finder-card">
-      <strong><span lang-variant="de">1. Themenwelt wählen</span><span lang-variant="pl">1. Wybierz temat</span></strong>
-      <p><span lang-variant="de">Starte über Klassiker, Salate, BBQ oder Feierabendküche.</span><span lang-variant="pl">Zacznij od klasyków, sałatek, BBQ albo kuchni po pracy.</span></p>
-    </div>
-    <div class="finder-card">
-      <strong><span lang-variant="de">2. Namen durchsuchen</span><span lang-variant="pl">2. Wyszukaj po nazwie</span></strong>
-      <p><span lang-variant="de">Mit der Suche oben findest du ein bestimmtes Gericht sofort.</span><span lang-variant="pl">Dzięki wyszukiwarce u góry znajdziesz konkretne danie od razu.</span></p>
-    </div>
-    <div class="finder-card">
-      <strong><span lang-variant="de">3. Alles durchstöbern</span><span lang-variant="pl">3. Przeglądaj wszystko</span></strong>
-      <p><span lang-variant="de">Im Inhaltsverzeichnis und bei allen Rezepten bekommst du den kompletten Überblick.</span><span lang-variant="pl">W spisie treści i w pełnej liście masz pełny przegląd całości.</span></p>
-    </div>
+    <a class="finder-card finder-link-card" href="#categoryExplore"><strong><span lang-variant="de">1. Themenwelt wählen</span><span lang-variant="pl">1. Wybierz temat</span></strong><p><span lang-variant="de">Starte über Klassiker, Salate, BBQ oder Feierabendküche.</span><span lang-variant="pl">Zacznij od klasyków, sałatek, BBQ albo kuchni po pracy.</span></p></a>
+    <a class="finder-card finder-link-card" href="#recipeSearch"><strong><span lang-variant="de">2. Namen durchsuchen</span><span lang-variant="pl">2. Wyszukaj po nazwie</span></strong><p><span lang-variant="de">Mit der Suche oben findest du ein bestimmtes Gericht sofort.</span><span lang-variant="pl">Dzięki wyszukiwarce u góry znajdziesz konkretne danie od razu.</span></p></a>
+    <a class="finder-card finder-link-card" href="#tocGrid"><strong><span lang-variant="de">3. Alles durchstöbern</span><span lang-variant="pl">3. Przeglądaj wszystko</span></strong><p><span lang-variant="de">Im Inhaltsverzeichnis und bei allen Rezepten bekommst du den kompletten Überblick.</span><span lang-variant="pl">W spisie treści i w pełnej liście masz pełny przegląd całości.</span></p></a>
   </div>
 </section>
 
@@ -6158,7 +6219,11 @@ html[data-lang="pl"] .ghost-btn [lang-variant="pl"]{
   function activeLang(){return html.getAttribute('data-lang')||'de';}
   function normalize(v){return (v||'').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ß/g,'ss').replace(/ł/g,'l').replace(/\s+/g,' ').trim();}
   function setLang(lang){const safe=lang==='pl'?'pl':'de';html.setAttribute('data-lang',safe);html.setAttribute('lang',safe);langButtons.forEach(btn=>btn.classList.toggle('active',btn.getAttribute('data-set-lang')===safe));searchInput.placeholder=safe==='pl'?'Szukaj przepisu…':'Rezept suchen…';render();}
-  function updateCategoryLabel(){const label=labels[currentCategory]||labels.all;activeCategoryLabel.textContent=activeLang()==='pl'?(label.pl||label.de):label.de;}
+  function updateCategoryLabel(){const label=labels[currentCategory]||labels.all;if(activeLang()==='pl'){
+      activeCategoryLabel.innerHTML='<span lang-variant="de">Aktywne: </span><span lang-variant="pl">Aktywne: </span>'+ (label.pl||label.de);
+    }else{
+      activeCategoryLabel.innerHTML='<span lang-variant="de">Aktiv: </span><span lang-variant="pl">Aktiv: </span>'+ label.de;
+    }}
   function render(){
     const lang=activeLang(); const query=normalize(searchInput.value); let matched=0, shown=0;
     cards.forEach(card=>{const categoryOk=currentCategory==='all'||(card.getAttribute('data-category')||'')===currentCategory; const title=normalize(card.getAttribute(lang==='pl'?'data-title-pl':'data-title-de')||''); const queryOk=!query||title.includes(query); const visible=categoryOk&&queryOk; if(visible){matched+=1; const show=shown<currentLimit; card.classList.toggle('hidden',!show); if(show) shown+=1;} else {card.classList.add('hidden');} });
@@ -6170,7 +6235,18 @@ html[data-lang="pl"] .ghost-btn [lang-variant="pl"]{
     clearBtn.classList.toggle('hidden',!query);
     updateCategoryLabel();
   }
-  function openRecipe(id){const tpl=document.getElementById(`modal-template-${id}`); if(!tpl) return; modalBody.innerHTML=tpl.innerHTML; const heading=modalBody.querySelector('h2'); modalTitle.textContent=heading?heading.textContent.trim():(activeLang()==='pl'?'Przepis':'Rezept'); modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('no-scroll');
+  function openRecipe(id){const tpl=document.getElementById(`modal-template-${id}`); if(!tpl) return; modalBody.innerHTML=tpl.innerHTML; const heading=modalBody.querySelector('h2');
+      let resolvedTitle=activeLang()==='pl'?'Przepis':'Rezept';
+      if(heading){
+        const lang=activeLang();
+        const preferred=heading.querySelector('[lang-variant="'+lang+'"]');
+        if(preferred&&preferred.textContent&&preferred.textContent.trim()){
+          resolvedTitle=preferred.textContent.trim();
+        }else if(heading.textContent&&heading.textContent.trim()){
+          resolvedTitle=heading.textContent.trim();
+        }
+      }
+      modalTitle.textContent=resolvedTitle; modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('no-scroll');
     modalBody.querySelectorAll('.wa-btn').forEach(btn=>btn.addEventListener('click',()=>{const url=new URL(window.location.href);url.hash=`rezept-${id}`; const text=`${modalTitle.textContent} – ${url.toString()}`; window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank');}));
     modalBody.querySelectorAll('.copy-btn').forEach(btn=>btn.addEventListener('click',async()=>{const url=new URL(window.location.href); url.hash=`rezept-${id}`; try{await navigator.clipboard.writeText(url.toString());}catch(e){} }));
     modalBody.querySelectorAll('.print-btn').forEach(btn=>btn.addEventListener('click',()=>window.print()));
@@ -6188,5 +6264,78 @@ html[data-lang="pl"] .ghost-btn [lang-variant="pl"]{
   if(window.location.hash&&/^#rezept-\d+$/.test(window.location.hash)) openRecipe(window.location.hash.replace('#rezept-',''));
 })();
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function bindMiniCards(scope) {
+    var cards = document.querySelectorAll(scope + ' .mini-card');
+    for (var i = 0; i < cards.length; i++) {
+      (function(card){
+        var rid = card.getAttribute('data-open-recipe');
+        if (!rid) return;
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function (e) {
+          var t = e.target;
+          if (t && (t.tagName === 'BUTTON' || t.closest && t.closest('button'))) return;
+          var btn = document.querySelector('[data-open-recipe="' + rid + '"]');
+          if (typeof openRecipe === 'function') {
+            openRecipe(rid);
+          } else {
+            var trigger = card.querySelector('button[data-open-recipe]') || card;
+            if (trigger) trigger.click();
+          }
+        });
+        var btn = card.querySelector('button[data-open-recipe]');
+        if (btn) {
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (typeof openRecipe === 'function') {
+              openRecipe(rid);
+            }
+          });
+        }
+      })(cards[i]);
+    }
+  }
+
+  bindMiniCards('#trends');
+  bindMiniCards('#favorites');
+  bindMiniCards('#newest');
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var finderSearch = document.querySelector('.finder-link-card[href="#recipeSearch"]');
+  if (finderSearch) {
+    finderSearch.addEventListener('click', function () {
+      setTimeout(function () {
+        var el = document.getElementById('recipeSearch');
+        if (el) el.focus();
+      }, 250);
+    });
+  }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var showAllBtn = document.getElementById('showAllRecipesChip');
+  if (showAllBtn) {
+    showAllBtn.addEventListener('click', function () {
+      var allBtn = document.querySelector('.category-chip[data-category="all"]');
+      if (allBtn) allBtn.click();
+      var section = document.getElementById('allRecipes');
+      if (section && section.scrollIntoView) {
+        section.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  }
+});
+</script>
+
 </body>
 </html>
