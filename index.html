@@ -6229,9 +6229,7 @@ html[data-lang="pl"] .modal-body .pill [lang-variant="pl"]{
       }else{
         activeCategoryLabel.innerHTML='<span lang-variant="de">Aktiv: '+label.de+'</span><span lang-variant="pl">Aktywne: Wszystkie kategorie</span>';
       }
-    }else{
-      activeCategoryLabel.innerHTML='<span lang-variant="de">Aktiv: </span><span lang-variant="pl">Aktiv: </span>'+ label.de;
-    }}
+    }
   function render(){
     const lang=activeLang(); const query=normalize(searchInput.value); let matched=0, shown=0;
     cards.forEach(card=>{const categoryOk=currentCategory==='all'||(card.getAttribute('data-category')||'')===currentCategory; const title=normalize(card.getAttribute(lang==='pl'?'data-title-pl':'data-title-de')||''); const queryOk=!query||title.includes(query); const visible=categoryOk&&queryOk; if(visible){matched+=1; const show=shown<currentLimit; card.classList.toggle('hidden',!show); if(show) shown+=1;} else {card.classList.add('hidden');} });
