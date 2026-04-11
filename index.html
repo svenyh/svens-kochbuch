@@ -1249,6 +1249,29 @@ html[data-lang="pl"] .modal-body .pill [lang-variant="pl"]{
   align-items:center;
 }
 
+
+/* V52 mobile interaction hardening */
+.mini-card,
+.recipe-card,
+.recipe-card-link,
+.toc-link,
+.finder-link-card,
+.category-mag-card {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.mini-card,
+.recipe-card-link,
+.toc-link,
+.finder-link-card,
+.category-mag-card,
+.ghost-btn,
+.cta-chip,
+.category-chip {
+  cursor: pointer;
+}
+
 </style>
 </head>
 <body>
@@ -6398,6 +6421,135 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.location.hash && window.location.hash.indexOf('#rezept-') === 0) {
     revealRecipeFromHash(window.location.hash.slice(1));
   }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function getOpenRecipeIdFromNode(node) {
+    if (!node) return null;
+    var direct = node.closest && node.closest('[data-open-recipe]');
+    if (direct) return direct.getAttribute('data-open-recipe');
+
+    var mini = node.closest && node.closest('.mini-card');
+    if (mini && mini.getAttribute('data-open-recipe')) return mini.getAttribute('data-open-recipe');
+
+    var recipeCard = node.closest && node.closest('.recipe-card');
+    if (recipeCard) {
+      var inner = recipeCard.querySelector('[data-open-recipe]');
+      if (inner) return inner.getAttribute('data-open-recipe');
+    }
+    return null;
+  }
+
+  function robustOpenRecipe(rid) {
+    if (!rid) return;
+    try {
+      if (typeof openRecipe === 'function') {
+        openRecipe(rid);
+        return;
+      }
+    } catch (e) {}
+
+    var trigger = document.querySelector('[data-open-recipe="' + rid + '"]');
+    if (trigger) {
+      trigger.click();
+    }
+  }
+
+  function handleRecipeTap(e) {
+    var rid = getOpenRecipeIdFromNode(e.target);
+    if (!rid) return;
+
+    // skip if user tapped a normal anchor that should navigate
+    var anchor = e.target.closest && e.target.closest('a[href]');
+    if (anchor && !anchor.classList.contains('toc-link')) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+    robustOpenRecipe(rid);
+  }
+
+  // Robust handlers for cards/buttons on touch devices
+  document.querySelectorAll('.mini-card, .recipe-card-link, .ghost-btn[data-open-recipe], .mini-card button[data-open-recipe]').forEach(function (el) {
+    el.addEventListener('click', handleRecipeTap, true);
+    el.addEventListener('touchend', handleRecipeTap, {passive:false, capture:true});
+  });
+
+  // Also make entire recipe-card tappable if inner button misses
+  document.querySelectorAll('.recipe-card').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      var rid = getOpenRecipeIdFromNode(card);
+      if (!rid) return;
+      if (e.target.closest && e.target.closest('button, a, input')) return;
+      e.preventDefault();
+      robustOpenRecipe(rid);
+    }, true);
+    card.addEventListener('touchend', function (e) {
+      var rid = getOpenRecipeIdFromNode(card);
+      if (!rid) return;
+      if (e.target.closest && e.target.closest('button, a, input')) return;
+      e.preventDefault();
+      robustOpenRecipe(rid);
+    }, {passive:false, capture:true});
+  });
+
+  // TOC links must reveal + open later recipes reliably on mobile too
+  function revealRecipeFromHashMobile(targetId) {
+    if (!targetId) return;
+    var card = document.getElementById(targetId);
+    if (!card) return;
+
+    card.classList.remove('hidden');
+
+    try {
+      if (typeof currentLimit !== 'undefined' && typeof batchSize !== 'undefined') {
+        while (card.classList.contains('hidden') && currentLimit < 1000) {
+          currentLimit += batchSize;
+          if (typeof render === 'function') render();
+        }
+      } else if (typeof render === 'function') {
+        render();
+        card.classList.remove('hidden');
+      }
+    } catch (e) {
+      card.classList.remove('hidden');
+    }
+
+    setTimeout(function () {
+      if (card.scrollIntoView) {
+        card.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+      var rid = card.getAttribute('data-id') || (card.querySelector('[data-open-recipe]') && card.querySelector('[data-open-recipe]').getAttribute('data-open-recipe'));
+      if (rid) robustOpenRecipe(rid);
+    }, 80);
+  }
+
+  document.querySelectorAll('.toc-link').forEach(function (link) {
+    function tocHandler(e) {
+      var href = link.getAttribute('href') || '';
+      if (href.indexOf('#rezept-') !== 0) return;
+      e.preventDefault();
+      e.stopPropagation();
+      revealRecipeFromHashMobile(href.slice(1));
+      try { history.replaceState(null, '', href); } catch (err) {}
+    }
+    link.addEventListener('click', tocHandler, true);
+    link.addEventListener('touchend', tocHandler, {passive:false, capture:true});
+  });
+
+  // Ensure top cards open even if only outer card is tapped
+  document.querySelectorAll('#trends .mini-card, #favorites .mini-card, #newest .mini-card').forEach(function (card) {
+    function topCardHandler(e) {
+      var rid = card.getAttribute('data-open-recipe');
+      if (!rid) return;
+      e.preventDefault();
+      e.stopPropagation();
+      robustOpenRecipe(rid);
+    }
+    card.addEventListener('touchend', topCardHandler, {passive:false, capture:true});
+  });
 });
 </script>
 
