@@ -297,12 +297,971 @@ html, body {
   }
 }
 
+
+/* V41 balanced top sections + consistent image sizing */
+.highlights-wrap{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1rem;
+  align-items:start;
+}
+
+.highlights-card{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.mini-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.9rem;
+}
+
+.recipe-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.mini-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  overflow:hidden;
+  background:var(--panel-soft);
+}
+
+.mini-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.mini-card-body{
+  padding:.8rem .85rem;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+.mini-card h3{
+  margin:.15rem 0 .45rem;
+  min-height:2.8em;
+  line-height:1.35;
+}
+
+.mini-card p{
+  color:var(--muted);
+  font-size:.94rem;
+  line-height:1.55;
+  margin:0 0 .75rem;
+  flex:1;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+.mini-card .ghost-btn{
+  align-self:flex-start;
+  margin-top:auto;
+}
+
+@media (max-width:1100px){
+  .highlights-wrap{
+    grid-template-columns:1fr;
+  }
+  .mini-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media (max-width:700px){
+  .mini-grid{
+    grid-template-columns:1fr;
+  }
+  .recipe-card img{
+    height:210px;
+  }
+  .mini-card img{
+    height:200px;
+  }
+}
+
+
+/* V42: stronger recipe cards + mobile polish */
+.recipe-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1.25rem;
+}
+
+.recipe-card{
+  overflow:hidden;
+  border-radius:24px;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.recipe-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 18px 34px rgba(63,36,15,.09);
+  border-color:rgba(150,103,64,.2);
+}
+
+.recipe-card img{
+  height:250px;
+}
+
+.recipe-card-body{
+  padding:1rem 1rem 1.05rem;
+  gap:.2rem;
+}
+
+.recipe-card h3{
+  margin:.1rem 0 .55rem;
+  font-size:1.08rem;
+  line-height:1.35;
+  min-height:2.8em;
+}
+
+.recipe-card-intro{
+  font-size:.95rem;
+  line-height:1.6;
+  -webkit-line-clamp:2;
+  min-height:3.2em;
+}
+
+.recipe-card-footer{
+  margin-top:auto;
+  padding-top:.25rem;
+}
+
+.recipe-card-footer .more{
+  font-weight:700;
+}
+
+.toc-grid{
+  max-height:430px;
+}
+
+.search-shell{
+  border-radius:20px;
+}
+
+.category-chip{
+  min-height:44px;
+}
+
+.search-input{
+  min-height:46px;
+}
+
+@media (max-width:1180px){
+  .recipe-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width:820px){
+  .recipe-grid{
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+  }
+
+  .recipe-card{
+    border-radius:20px;
+  }
+
+  .recipe-card img{
+    height:220px;
+  }
+
+  .recipe-card-body{
+    padding:.92rem;
+  }
+
+  .recipe-card h3{
+    font-size:1rem;
+    min-height:auto;
+  }
+
+  .recipe-card-intro{
+    -webkit-line-clamp:3;
+    min-height:auto;
+    font-size:.93rem;
+  }
+
+  .recipe-card-meta{
+    gap:.4rem;
+    margin-bottom:.55rem;
+  }
+
+  .pill,
+  .pill.soft{
+    font-size:.82rem;
+  }
+}
+
+@media (max-width:640px){
+  .wrap{
+    padding:14px;
+  }
+
+  .site-header .wrap{
+    padding-top:16px;
+  }
+
+  .brand-block h1{
+    font-size:1.9rem !important;
+  }
+
+  .brand-block p{
+    font-size:.96rem;
+  }
+
+  .hero-card,
+  .highlights-card,
+  .category-shell,
+  .toc-shell,
+  .recipe-card,
+  .mini-card,
+  .search-shell{
+    border-radius:18px;
+  }
+
+  .hero-card{
+    padding:1rem 1rem 1.05rem;
+  }
+
+  .hero-card h2{
+    font-size:1.45rem !important;
+  }
+
+  .cta-row{
+    gap:.5rem;
+  }
+
+  .cta-row .cta-chip{
+    flex:1 1 calc(50% - .5rem);
+    justify-content:center;
+    text-align:center;
+  }
+
+  .v21-lead{
+    gap:.55rem;
+  }
+
+  .v21-lead-card{
+    border-radius:14px;
+    padding:.75rem .8rem;
+  }
+
+  .search-shell{
+    padding:.9rem;
+    position:static !important;
+  }
+
+  .search-top{
+    align-items:stretch;
+  }
+
+  .search-controls{
+    width:100% !important;
+    flex-wrap:nowrap;
+  }
+
+  .search-input{
+    width:100%;
+    min-width:0;
+  }
+
+  .search-meta{
+    gap:.45rem;
+  }
+
+  .meta-chip{
+    font-size:.86rem;
+  }
+
+  .section-head{
+    gap:.35rem;
+    align-items:flex-start;
+  }
+
+  .section-head h2{
+    font-size:1.18rem;
+  }
+
+  .section-head p{
+    font-size:.93rem;
+  }
+
+  .mini-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .mini-card img{
+    height:210px;
+  }
+
+  .mini-card h3{
+    min-height:auto;
+  }
+
+  .recipe-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .recipe-card img{
+    height:230px;
+  }
+
+  .recipe-card-intro{
+    -webkit-line-clamp:3;
+  }
+
+  .toc-grid{
+    grid-template-columns:1fr !important;
+    max-height:none;
+  }
+
+  .toc-link{
+    padding:.78rem .82rem;
+    font-size:.95rem;
+  }
+
+  .controls-row{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .load-more-btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  .modal{
+    padding:.45rem;
+  }
+
+  .modal-dialog{
+    width:100%;
+    max-height:94vh;
+    border-radius:18px;
+  }
+
+  .modal-head{
+    padding:.85rem .95rem;
+  }
+
+  .modal-body{
+    padding:.95rem;
+  }
+
+  .modal-body h2{
+    font-size:1.35rem;
+    line-height:1.25;
+  }
+
+  .modal-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.5rem;
+  }
+
+  .modal-actions .ghost-btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  .modal-columns section,
+  .steps-block,
+  .rating-block{
+    border-radius:16px;
+    padding:.9rem;
+  }
+
+  .footer-links{
+    flex-direction:column;
+    gap:.45rem;
+  }
+}
+
+@media (max-width:420px){
+  .cta-row .cta-chip{
+    flex:1 1 100%;
+  }
+
+  .meta-chip{
+    width:100%;
+    justify-content:center;
+  }
+
+  .recipe-card img,
+  .mini-card img{
+    height:200px;
+  }
+}
+
+
+/* V43 magazine homepage */
+.magazine-hero-shell{
+  display:grid;
+  grid-template-columns:1.35fr .75fr;
+  gap:1rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+.magazine-feature-card,
+.magazine-side-card{
+  background:linear-gradient(180deg,#fffdfa 0%, #fff6ef 100%);
+  border:1px solid rgba(132,70,26,.12);
+  border-radius:24px;
+  box-shadow:0 12px 26px rgba(63,36,15,.055);
+}
+
+.magazine-feature-card{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  overflow:hidden;
+}
+
+.magazine-feature-media img{
+  width:100%;
+  height:100%;
+  min-height:360px;
+  object-fit:cover;
+  display:block;
+}
+
+.magazine-feature-body{
+  padding:1.15rem 1.15rem 1.2rem;
+  display:flex;
+  flex-direction:column;
+}
+
+.magazine-feature-body h2{
+  margin:.2rem 0 .55rem;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.7rem;
+  line-height:1.2;
+  color:#4f2d1b;
+}
+
+.magazine-feature-body p{
+  margin:0 0 .9rem;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.magazine-feature-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem;
+  margin-bottom:1rem;
+}
+
+.magazine-feature-actions{
+  display:flex;
+  gap:.65rem;
+  flex-wrap:wrap;
+  margin-top:auto;
+}
+
+.magazine-side-panel{
+  display:grid;
+  gap:1rem;
+}
+
+.magazine-side-card{
+  padding:1rem 1.05rem;
+}
+
+.magazine-side-card strong{
+  display:block;
+  margin-bottom:.35rem;
+  font-size:1rem;
+}
+
+.magazine-side-card p{
+  margin:0 0 .85rem;
+  color:var(--muted);
+  font-size:.94rem;
+  line-height:1.6;
+}
+
+.magazine-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem;
+}
+
+@media (max-width:1100px){
+  .magazine-hero-shell{
+    grid-template-columns:1fr;
+  }
+  .magazine-feature-card{
+    grid-template-columns:1fr;
+  }
+  .magazine-feature-media img{
+    min-height:280px;
+    height:280px;
+  }
+}
+
+@media (max-width:640px){
+  .magazine-hero-shell{
+    margin-top:.8rem;
+    gap:.8rem;
+  }
+  .magazine-feature-card,
+  .magazine-side-card{
+    border-radius:18px;
+  }
+  .magazine-feature-media img{
+    height:240px;
+    min-height:240px;
+  }
+  .magazine-feature-body{
+    padding:.95rem;
+  }
+  .magazine-feature-body h2{
+    font-size:1.4rem;
+  }
+  .magazine-feature-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .magazine-feature-actions .ghost-btn,
+  .magazine-feature-actions .cta-chip{
+    width:100%;
+    justify-content:center;
+  }
+}
+
+
+/* V44 full magazine upgrade */
+.site-header{
+  position:relative;
+}
+
+.wrap{
+  max-width:1280px;
+}
+
+.magazine-hero-shell,
+.highlights-wrap,
+.finder-grid,
+.category-magazine-grid{
+  align-items:stretch;
+}
+
+.highlights-wrap{
+  margin-top:1.1rem;
+}
+
+.highlights-card{
+  background:linear-gradient(180deg,#fffdfa 0%, #fff6ef 100%);
+}
+
+.finder-shell,
+.category-magazine-shell{
+  background:linear-gradient(180deg,#fffdfa 0%, #fff6ef 100%);
+  border:1px solid rgba(132,70,26,.12);
+  border-radius:24px;
+  box-shadow:0 12px 26px rgba(63,36,15,.055);
+  padding:1rem 1.1rem;
+  margin-top:1rem;
+}
+
+.finder-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.9rem;
+}
+
+.finder-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1rem;
+}
+
+.finder-card strong{
+  display:block;
+  margin-bottom:.35rem;
+}
+
+.finder-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.6;
+  font-size:.94rem;
+}
+
+.category-magazine-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:.9rem;
+}
+
+.category-mag-card{
+  display:flex;
+  flex-direction:column;
+  min-height:180px;
+  padding:1rem;
+  text-decoration:none;
+  color:inherit;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.category-mag-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 26px rgba(63,36,15,.08);
+  border-color:rgba(150,103,64,.2);
+}
+
+.category-mag-icon{
+  font-size:1.55rem;
+  margin-bottom:.55rem;
+}
+
+.category-mag-card strong{
+  display:block;
+  margin-bottom:.45rem;
+  font-size:1rem;
+  line-height:1.35;
+}
+
+.category-mag-card span{
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.55;
+}
+
+.recipe-section{
+  margin-top:1.25rem;
+}
+
+.recipe-grid{
+  gap:1.35rem;
+}
+
+.recipe-card{
+  background:linear-gradient(180deg,#fffdfa 0%, #fff8f2 100%);
+}
+
+.recipe-card img{
+  height:260px;
+}
+
+.recipe-card-body{
+  padding:1.02rem 1rem 1.08rem;
+}
+
+.recipe-card h3{
+  font-size:1.1rem;
+  line-height:1.35;
+}
+
+.recipe-card-intro{
+  font-size:.95rem;
+  line-height:1.62;
+  -webkit-line-clamp:2;
+}
+
+.toc-shell{
+  margin-top:1rem;
+}
+
+.toc-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.75rem;
+  max-height:460px;
+}
+
+.toc-link{
+  background:#fff;
+  transition:background .14s ease, transform .14s ease;
+}
+
+.toc-link:hover{
+  background:#fff1e3;
+  transform:translateY(-1px);
+}
+
+@media (max-width:1180px){
+  .category-magazine-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
+@media (max-width:980px){
+  .finder-grid{
+    grid-template-columns:1fr;
+  }
+
+  .category-magazine-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .recipe-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .toc-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width:700px){
+  .finder-shell,
+  .category-magazine-shell{
+    border-radius:18px;
+    padding:.95rem;
+    margin-top:.8rem;
+  }
+
+  .category-magazine-grid{
+    grid-template-columns:1fr;
+    gap:.75rem;
+  }
+
+  .category-mag-card{
+    min-height:auto;
+    border-radius:16px;
+    padding:.9rem;
+  }
+
+  .finder-card{
+    border-radius:16px;
+    padding:.9rem;
+  }
+
+  .recipe-grid{
+    grid-template-columns:1fr !important;
+    gap:1rem;
+  }
+
+  .recipe-card img{
+    height:225px;
+  }
+
+  .toc-grid{
+    grid-template-columns:1fr !important;
+    max-height:none;
+  }
+
+  .highlights-wrap{
+    margin-top:.85rem;
+  }
+}
+
+@media (max-width:420px){
+  .recipe-card img{
+    height:200px;
+  }
+
+  .category-mag-icon{
+    font-size:1.35rem;
+  }
+}
+
+
+/* Robust language visibility fix */
+[lang-variant]{
+  display:none !important;
+}
+html[data-lang="de"] [lang-variant="de"]{
+  display:inline !important;
+}
+html[data-lang="pl"] [lang-variant="pl"]{
+  display:inline !important;
+}
+
+/* Block-level helpers so mixed headings/cards don't collapse oddly */
+h1 [lang-variant],
+h2 [lang-variant],
+h3 [lang-variant],
+h4 [lang-variant],
+p [lang-variant],
+strong [lang-variant],
+span.pill [lang-variant],
+button [lang-variant],
+a [lang-variant]{
+  white-space:normal;
+}
+
+/* In headings and buttons, active language should behave naturally */
+h1 [lang-variant],
+h2 [lang-variant],
+h3 [lang-variant],
+h4 [lang-variant],
+button [lang-variant],
+a.cta-chip [lang-variant],
+.ghost-btn [lang-variant]{
+  display:none !important;
+}
+html[data-lang="de"] h1 [lang-variant="de"],
+html[data-lang="de"] h2 [lang-variant="de"],
+html[data-lang="de"] h3 [lang-variant="de"],
+html[data-lang="de"] h4 [lang-variant="de"],
+html[data-lang="de"] button [lang-variant="de"],
+html[data-lang="de"] a.cta-chip [lang-variant="de"],
+html[data-lang="de"] .ghost-btn [lang-variant="de"]{
+  display:inline !important;
+}
+html[data-lang="pl"] h1 [lang-variant="pl"],
+html[data-lang="pl"] h2 [lang-variant="pl"],
+html[data-lang="pl"] h3 [lang-variant="pl"],
+html[data-lang="pl"] h4 [lang-variant="pl"],
+html[data-lang="pl"] button [lang-variant="pl"],
+html[data-lang="pl"] a.cta-chip [lang-variant="pl"],
+html[data-lang="pl"] .ghost-btn [lang-variant="pl"]{
+  display:inline !important;
+}
+
+
+/* Modal readability + mobile title stability */
+.modal-head{
+  align-items:flex-start;
+}
+.modal-title{
+  flex:1;
+  line-height:1.35;
+  padding-right:.75rem;
+}
+.modal-head .ghost-btn{
+  flex:0 0 auto;
+}
+.modal-body h2{
+  word-break:break-word;
+}
+@media (max-width:640px){
+  .modal-head{
+    gap:.75rem;
+  }
+  .modal-title{
+    font-size:1.05rem;
+    line-height:1.3;
+    padding-right:.25rem;
+  }
+}
+
+
+/* Editorial strip */
+.editorial-strip{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1rem;
+  margin-top:1rem;
+}
+.editorial-card{
+  background:linear-gradient(180deg,#fffdfa 0%, #fff6ef 100%);
+  border:1px solid rgba(132,70,26,.12);
+  border-radius:22px;
+  box-shadow:0 12px 26px rgba(63,36,15,.055);
+  padding:1rem 1.05rem;
+}
+.editorial-card strong{
+  display:block;
+  margin-bottom:.35rem;
+}
+.editorial-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+}
+@media (max-width:800px){
+  .editorial-strip{
+    grid-template-columns:1fr;
+    gap:.8rem;
+  }
+  .editorial-card{
+    border-radius:18px;
+    padding:.9rem;
+  }
+}
+
 </style>
 </head>
 <body>
 <header class="site-header"><div class="wrap"><div class="header-inner"><div class="brand-block"><h1><span lang-variant="de">Svens Kochbuch</span><span lang-variant="pl">Książka kucharska Svena</span></h1><p><span lang-variant="de">Einfache, ehrliche Lieblingsrezepte – gesammelt, gekocht und für gut befunden.</span><span lang-variant="pl">Proste i sprawdzone ulubione przepisy – ugotowane i warte zachowania.</span></p></div><div class="lang-switch"><button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button><button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button></div></div><div class="hero-grid"><section class="hero-card"><h2><span lang-variant="de">Was soll heute auf den Tisch?</span><span lang-variant="pl">Co dziś na obiad?</span></h2><p><span lang-variant="de">Hier findest du schnell etwas, das du heute kochen kannst – egal ob nach Feierabend oder für ein entspanntes Wochenende.</span><span lang-variant="pl">Znajdziesz tu szybko coś do ugotowania – niezależnie od tego, czy po pracy, czy na spokojny weekend.</span></p><div class="cta-row"><a class="cta-chip" href="#favorites"><span lang-variant="de">⭐ Favoriten</span><span lang-variant="pl">⭐ Ulubione</span></a><a class="cta-chip" href="#newest"><span lang-variant="de">🆕 Neu</span><span lang-variant="pl">🆕 Nowe</span></a><a class="cta-chip" href="#allRecipes"><span lang-variant="de">📚 Alle Rezepte</span><span lang-variant="pl">📚 Wszystkie przepisy</span></a></div><div class="v21-lead"><div class="v21-lead-card"><strong><span lang-variant="de">Schnell etwas finden</span><span lang-variant="pl">Znajdź coś szybko</span></strong><span><span lang-variant="de">Perfekt für den Feierabend.</span><span lang-variant="pl">Idealne po pracy.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Inspiration holen</span><span lang-variant="pl">Znajdź inspirację</span></strong><span><span lang-variant="de">Für Wochenende oder Gäste.</span><span lang-variant="pl">Na weekend lub gości.</span></span></div><div class="v21-lead-card"><strong><span lang-variant="de">Einfach loslegen</span><span lang-variant="pl">Po prostu zacznij</span></strong><span><span lang-variant="de">Ohne langes Suchen.</span><span lang-variant="pl">Bez długiego szukania.</span></span></div></div></section><aside class="search-shell"><div class="search-top"><div><strong><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></strong><span><span lang-variant="de">Suche nach Namen und filtere direkt nach Kategorie.</span><span lang-variant="pl">Szukaj po nazwie i filtruj po kategorii.</span></span></div><div class="search-controls"><input class="search-input" id="recipeSearch" type="search" placeholder="Rezept suchen…" aria-label="Rezept suchen"><button class="clear-btn hidden" id="clearSearch" type="button">✕</button></div></div><div class="search-meta"><span class="meta-chip" id="resultCount"></span><span class="meta-chip" id="activeCategoryLabel"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></span></div></aside></div></div></header>
-<main class="wrap"><section class="highlights-wrap"><div class="highlights-card" id="favorites"><div class="section-head"><div><h2><span lang-variant="de">Svens Favoriten</span><span lang-variant="pl">Ulubione przepisy Svena</span></h2></div></div><div class="mini-grid">
-    <article class="mini-card" data-open-recipe="4">
+<main class="wrap">
+<section class="highlights-wrap">
+  <div class="highlights-card" id="trends">
+    <div class="section-head">
+      <div>
+        <h2><span lang-variant="de">Trends &amp; Klassiker</span><span lang-variant="pl">Trendy i klasyki</span></h2>
+        <p><span lang-variant="de">Eine ausgewählte Mischung aus zeitlosen Favoriten und beliebten Klassikern.</span><span lang-variant="pl">Wybrana mieszanka ponadczasowych ulubieńców i popularnych klasyków.</span></p>
+      </div>
+    </div>
+    <div class="mini-grid"><article class="mini-card" data-open-recipe="107">
+      <img src="images/rezeptbild_107.png" alt="Schnitzel Wiener Art" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Klassiker</span><span lang-variant="pl">Dania z patelni / klasyki</span></div>
+        <h3><span lang-variant="de">107. Schnitzel Wiener Art</span><span lang-variant="pl">107. Sznycel wiedeński</span></h3>
+        <p><span lang-variant="de">Ein gutes Schnitzel Wiener Art ist außen knusprig, innen saftig und genau deshalb ein echter Dauerklassiker. Mit der lockeren Panade und etwas Zitrone kommt sofort dieses typische Sonntagsgefühl auf den Teller.</span><span lang-variant="pl">Dobry sznycel wiedeński jest chrupiący z zewnątrz, soczysty w środku i właśnie dlatego pozostaje ponadczasową klasyką. Lekka panierka i cytryna od razu dają ten typowy niedzielny klimat.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="107"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article><article class="mini-card" data-open-recipe="108">
+      <img src="images/rezeptbild_108.png" alt="Kohlrouladen nach Omas Art" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Ofengerichte / Klassiker</span><span lang-variant="pl">Dania z piekarnika / klasyki</span></div>
+        <h3><span lang-variant="de">108. Kohlrouladen nach Omas Art</span><span lang-variant="pl">108. Gołąbki jak u babci</span></h3>
+        <p><span lang-variant="de">Kohlrouladen gehören genau zu den Gerichten, bei denen sofort dieses Gefühl von ehrlicher Hausmannskost aufkommt. Zarter Kohl, saftige Füllung und eine kräftige Sauce machen daraus einen echten Klassiker nach Omas Art.</span><span lang-variant="pl">Gołąbki to dokładnie takie danie, które od razu daje poczucie prawdziwej domowej kuchni. Delikatna kapusta, soczysty farsz i mocny sos tworzą klasykę w stylu babci.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="108"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article><article class="mini-card" data-open-recipe="110">
+      <img src="images/rezeptbild_110.png" alt="Königsberger Klopse klassisch" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Klassiker</span><span lang-variant="pl">Dania z patelni / klasyki</span></div>
+        <h3><span lang-variant="de">110. Königsberger Klopse klassisch</span><span lang-variant="pl">110. Kluski królewieckie klasyczne</span></h3>
+        <p><span lang-variant="de">Königsberger Klopse sind genau die Art von Klassiker, die gleichzeitig fein und bodenständig wirken. Die helle Kapernsauce macht das Gericht besonders und sorgt dafür, dass es sofort nach traditioneller Sonntagsküche schmeckt.</span><span lang-variant="pl">Kluski królewieckie to klasyk, który łączy elegancję z domowym charakterem. Jasny sos z kaparami nadaje całości wyjątkowy smak i od razu kojarzy się z tradycyjnym niedzielnym obiadem.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="110"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article><article class="mini-card" data-open-recipe="114">
+      <img src="images/rezeptbild_114.png" alt="Gulasch nach Omas Art" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Ofengerichte / Klassiker</span><span lang-variant="pl">Dania z piekarnika / klasyki</span></div>
+        <h3><span lang-variant="de">114. Gulasch nach Omas Art</span><span lang-variant="pl">114. Gulasz jak u babci</span></h3>
+        <p><span lang-variant="de">Ein gutes Gulasch nach Omas Art lebt vor allem von Zeit, Ruhe und einer kräftigen Sauce. Genau das macht dieses Gericht so stark: Es ist tief im Geschmack, schön deftig und immer ein Stück ehrliche Wohlfühlküche.</span><span lang-variant="pl">Dobry gulasz w stylu babci opiera się przede wszystkim na czasie, spokoju i mocnym sosie. Właśnie to czyni to danie tak dobrym – jest głębokie w smaku, konkretne i bardzo domowe.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="114"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article><article class="mini-card" data-open-recipe="115">
+      <img src="images/rezeptbild_115.png" alt="Klassischer Schweinebraten mit Kruste" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Ofengerichte / Klassiker</span><span lang-variant="pl">Dania z piekarnika / klasyki</span></div>
+        <h3><span lang-variant="de">115. Klassischer Schweinebraten mit Kruste</span><span lang-variant="pl">115. Klasyczna pieczeń wieprzowa z chrupiącą skórką</span></h3>
+        <p><span lang-variant="de">Ein klassischer Schweinebraten mit Kruste ist genau die Art von Sonntagsgericht, die sofort nach Familie und Feiertag schmeckt. Außen knusprig, innen saftig und mit kräftiger Sauce ist das ein echter Klassiker nach Omas Art.</span><span lang-variant="pl">Klasyczna pieczeń wieprzowa z chrupiącą skórką to dokładnie taki niedzielny obiad, który od razu kojarzy się z rodziną i świętami. Chrupiąca z zewnątrz, soczysta w środku i z mocnym sosem – prawdziwa klasyka.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="115"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article><article class="mini-card" data-open-recipe="121">
+      <img src="images/rezeptbild_121.png" alt="Griechischer Bauernsalat" loading="lazy">
+      <div class="mini-card-body">
+        <div class="eyebrow"><span lang-variant="de">Salate / Sommergerichte</span><span lang-variant="pl">Sałatki / dania letnie</span></div>
+        <h3><span lang-variant="de">121. Griechischer Bauernsalat</span><span lang-variant="pl">121. Grecka sałatka wiejska</span></h3>
+        <p><span lang-variant="de">Ein griechischer Bauernsalat lebt nicht von komplizierten Tricks, sondern von guten Zutaten. Tomaten, Gurke, Zwiebeln, Feta und Oliven ergeben zusammen genau diese frische, würzige Kombination, die immer passt.</span><span lang-variant="pl">Grecka sałatka wiejska nie potrzebuje żadnych sztuczek – liczą się dobre składniki. Pomidory, ogórek, cebula, feta i oliwki tworzą świeże i wyraziste połączenie, które zawsze pasuje.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="121"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+      </div>
+    </article></div>
+  </div>
+  <div class="highlights-card" id="favorites">
+    <div class="section-head">
+      <div>
+        <h2><span lang-variant="de">Svens Favoriten</span><span lang-variant="pl">Ulubione przepisy Svena</span></h2>
+        <p><span lang-variant="de">Eine kompakte Auswahl der bewährten Lieblingsgerichte.</span><span lang-variant="pl">Kompaktowy wybór sprawdzonych ulubionych dań.</span></p>
+      </div>
+    </div>
+    <div class="mini-grid"><article class="mini-card" data-open-recipe="4">
       <img src="images/rezeptbild_04.png" alt="Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Ofengerichte</span><span lang-variant="pl">Dania z patelni / dania z piekarnika</span></div>
@@ -310,9 +1269,7 @@ html, body {
         <p><span lang-variant="de">Das ist bei uns längst ein richtiger Klassiker geworden. Würziges Hähnchen, knusprige Kartoffeln und etwas Frisches mit Gurke und Tsatsiki – genau diese Mischung macht das Gericht so alltagstauglich und trotzdem besonders gut.</span><span lang-variant="pl">To danie już dawno stało się u nas prawdziwym klasykiem. Aromatyczny kurczak, chrupiące ziemniaki i coś świeżego z ogórkiem oraz tzatziki – właśnie ta kombinacja sprawia, że tak dobrze sprawdza się na co dzień.</span></p>
         <button class="ghost-btn" type="button" data-open-recipe="4"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="5">
+    </article><article class="mini-card" data-open-recipe="5">
       <img src="images/rezeptbild_05.png" alt="Smoked BBQ-Fajita-Pfanne" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Grill &amp; BBQ / Fleischgerichte</span><span lang-variant="pl">Grill &amp; BBQ / dania mięsne</span></div>
@@ -320,9 +1277,7 @@ html, body {
         <p><span lang-variant="de">Hier kommt genau die Art von BBQ-Geschmack zusammen, die man zu Hause nicht jeden Tag hinbekommt. Erst kräftig anbraten, dann Rauch und am Ende noch das Finish – genau das macht diese Pfanne so stark.</span><span lang-variant="pl">Tutaj łączy się dokładnie ten rodzaj smaku BBQ, którego nie robi się codziennie w domu. Najpierw mocne smażenie, potem dym i na końcu wykończenie – właśnie to sprawia, że ta patelnia jest tak dobra.</span></p>
         <button class="ghost-btn" type="button" data-open-recipe="5"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="10">
+    </article><article class="mini-card" data-open-recipe="10">
       <img src="images/rezeptbild_10.png" alt="Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Ofengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z piekarnika / dania mięsne</span></div>
@@ -330,9 +1285,7 @@ html, body {
         <p><span lang-variant="de">Das ist eines dieser Gerichte, die man einmal macht und dann immer wieder will. Die Salsiccia gibt richtig Geschmack, das Ofengemüse wird weich und aromatisch und am Ende macht die cremige Komponente alles noch runder.</span><span lang-variant="pl">To jedno z tych dań, które robi się raz, a potem chce się do niego wracać. Salsiccia daje dużo smaku, warzywa z piekarnika robią się miękkie i aromatyczne, a kremowe wykończenie łączy wszystko w całość.</span></p>
         <button class="ghost-btn" type="button" data-open-recipe="10"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="11">
+    </article><article class="mini-card" data-open-recipe="11">
       <img src="images/rezeptbild_11.png" alt="Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Ofengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z piekarnika / dania mięsne</span></div>
@@ -340,9 +1293,7 @@ html, body {
         <p><span lang-variant="de">Wenn es deftig, cremig und richtig befriedigend sein soll, ist dieser Auflauf ganz weit vorne. Saftige Hackbällchen, würzige Ajvar-Sahne-Soße und eine schöne Ofenkruste – viel mehr muss man dazu eigentlich nicht sagen.</span><span lang-variant="pl">Kiedy ma być konkretnie, kremowo i naprawdę sycąco, ta zapiekanka jest u mnie bardzo wysoko. Soczyste klopsiki, wyrazisty sos ajvarowo-śmietanowy i ładna pieczona warstwa na wierzchu – więcej właściwie nie trzeba dodawać.</span></p>
         <button class="ghost-btn" type="button" data-open-recipe="11"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="12">
+    </article><article class="mini-card" data-open-recipe="12">
       <img src="images/rezeptbild_12.png" alt="Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Fleischgerichte</span><span lang-variant="pl">Dania z patelni / dania mięsne</span></div>
@@ -350,9 +1301,7 @@ html, body {
         <p><span lang-variant="de">Diese Pfanne ist typisches Feierabendessen mit richtig viel Geschmack. Die Kartoffeln machen satt, die Cabanossi bringt Würze und die Soße sorgt dafür, dass das Ganze nicht nur schnell, sondern auch wirklich rund schmeckt.</span><span lang-variant="pl">Ta patelnia to typowy obiad po pracy, ale z naprawdę mocnym smakiem. Ziemniaki sycą, cabanossi daje wyrazistość, a sos sprawia, że całość smakuje nie tylko szybko, ale też bardzo spójnie.</span></p>
         <button class="ghost-btn" type="button" data-open-recipe="12"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="17">
+    </article><article class="mini-card" data-open-recipe="17">
       <img src="images/rezeptbild_17.png" alt="Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)" loading="lazy">
       <div class="mini-card-body">
         <div class="eyebrow"><span lang-variant="de">Ofengerichte / Feiertagsessen</span><span lang-variant="pl">Dania z piekarnika / dania świąteczne</span></div>
@@ -360,138 +1309,103 @@ html, body {
         <p><span lang-variant="de">Rinderrouladen sind für mich echtes Sonntagsessen. Dieses Rezept bleibt klassisch, aber die helle Soße gibt dem Ganzen einen eigenen Charakter und macht es genau deshalb besonders spannend.</span><span lang-variant="pl">Rolady wołowe to dla mnie prawdziwy niedzielny obiad. Ten przepis pozostaje klasyczny, ale jasny sos nadaje całości własny charakter i właśnie dlatego jest tak ciekawy.</span></p>
         <button class="ghost-btn" type="button" data-open-recipe="17"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="35">
-      <img src="images/rezeptbild_35.png" alt="Ofen-Brisket mit Magic Dust" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span></div>
-        <h3><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></h3>
-        <p><span lang-variant="de">Dieses Brisket zeigt, dass man auch ohne Smoker richtig starke Low-and-slow-Ergebnisse hinbekommen kann. Es braucht Geduld, aber genau dadurch wird das Fleisch am Ende so zart, saftig und intensiv im Geschmack.</span><span lang-variant="pl">Ten brisket pokazuje, że nawet bez smokera można osiągnąć świetny efekt low and slow. Wymaga cierpliwości, ale właśnie dzięki temu mięso wychodzi na końcu tak delikatne, soczyste i intensywne w smaku.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="35"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+    </article></div>
+  </div>
+  <div class="highlights-card" id="newest">
+    <div class="section-head">
+      <div>
+        <h2><span lang-variant="de">Neu hinzugefügt</span><span lang-variant="pl">Ostatnio dodane</span></h2>
+        <p><span lang-variant="de">Die neuesten Rezepte direkt auf einen Blick.</span><span lang-variant="pl">Najnowsze przepisy od razu w jednym miejscu.</span></p>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="37">
-      <img src="images/rezeptbild_37.png" alt="Svens AirFryer-Iskender Kebab" loading="lazy">
+    </div>
+    <div class="mini-grid"><article class="mini-card" data-open-recipe="130">
+      <img src="images/rezeptbild_130.png" alt="Bunter Blattsalat mit Hausdressing" loading="lazy">
       <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span></div>
-        <h3><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></h3>
-        <p><span lang-variant="de">Das ist genau die Art von Gericht, bei der man merkt, wie viel der AirFryer im Alltag kann. Würziges Fleisch, gute Sauce und warmes Brot – schnell gemacht, aber mit dem Gefühl von richtigem Komfortessen.</span><span lang-variant="pl">To właśnie taki przepis, przy którym widać, jak wiele może dać AirFryer w codziennym gotowaniu. Aromatyczne mięso, dobry sos i ciepłe pieczywo – szybko gotowe, ale z prawdziwym efektem comfort food.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="37"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+        <div class="eyebrow"><span lang-variant="de">Salate / Beilagen</span><span lang-variant="pl">Sałatki / dodatki</span></div>
+        <h3><span lang-variant="de">130. Bunter Blattsalat mit Hausdressing</span><span lang-variant="pl">130. Kolorowa sałata z domowym dressingiem</span></h3>
+        <p><span lang-variant="de">Ein bunter Blattsalat mit Hausdressing ist genau die Art von Salat, die man immer wieder brauchen kann. Er passt zu fast allem, sieht frisch aus und bringt Leichtigkeit auf den Teller.</span><span lang-variant="pl">Kolorowa sałata z domowym dressingiem to dokładnie taki dodatek, który zawsze się przydaje. Pasuje prawie do wszystkiego, wygląda świeżo i wnosi lekkość na talerz.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="130"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="81">
-      <img src="images/rezeptbild_81.png" alt="Afrikanischer Erdnusseintopf" loading="lazy">
+    </article><article class="mini-card" data-open-recipe="129">
+      <img src="images/rezeptbild_129.png" alt="Karottensalat klassisch" loading="lazy">
       <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Suppen / Eintöpfe</span><span lang-variant="pl">Zupy / gulasze</span></div>
-        <h3><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></h3>
-        <p><span lang-variant="de">Dieses Gericht fällt sofort auf, weil es anders ist als viele Alltagsrezepte – und genau das macht es so spannend. Die Erdnuss bringt Cremigkeit, die Gewürze Tiefe und am Ende entsteht etwas Sättigendes mit richtig viel Charakter.</span><span lang-variant="pl">To danie od razu się wyróżnia, bo jest inne niż wiele codziennych przepisów – i właśnie to czyni je tak ciekawym. Orzechy dają kremowość, przyprawy głębię, a na końcu powstaje coś sycącego i pełnego charakteru.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="81"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+        <div class="eyebrow"><span lang-variant="de">Salate / Beilagen</span><span lang-variant="pl">Sałatki / dodatki</span></div>
+        <h3><span lang-variant="de">129. Karottensalat klassisch</span><span lang-variant="pl">129. Klasyczna surówka z marchewki</span></h3>
+        <p><span lang-variant="de">Karottensalat ist einfach, günstig und oft genau das Richtige, wenn etwas Frisches auf den Tisch soll. Mit einem milden Dressing und etwas Apfel bekommt er eine schöne Balance aus Frische und Süße.</span><span lang-variant="pl">Surówka z marchewki jest prosta, tania i często właśnie tym, czego potrzeba, gdy na stole ma pojawić się coś świeżego. Delikatny dressing i odrobina jabłka dają dobrą równowagę.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="129"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="90">
-      <img src="images/rezeptbild_90.png" alt="Pinsa mit Burrata, Peperoni und Salami" loading="lazy">
+    </article><article class="mini-card" data-open-recipe="128">
+      <img src="images/rezeptbild_128.png" alt="Bohnensalat mit roten Zwiebeln" loading="lazy">
       <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Ofengerichte / Snacks</span><span lang-variant="pl">Dania z piekarnika / Przekąski</span></div>
-        <h3><span lang-variant="de">90. Pinsa mit Burrata, Peperoni und Salami</span><span lang-variant="pl">90. Pinsa z burratą, papryką i salami</span></h3>
-        <p><span lang-variant="de">Diese Pinsa ist für mich die perfekte Mischung aus schnell gemacht und trotzdem besonders. Burrata bringt Cremigkeit, Peperoni etwas Schärfe und die Salami genau die herzhafte Tiefe, die so einen Abend unkompliziert richtig gut macht.</span><span lang-variant="pl">Ta pinsa jest dla mnie idealnym połączeniem szybkiego przygotowania i czegoś naprawdę wyjątkowego. Burrata daje kremowość, peperoni lekką ostrość, a salami dokładnie tę wytrawną głębię, która sprawia, że taki wieczór smakuje świetnie bez komplikacji.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="90"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+        <div class="eyebrow"><span lang-variant="de">Salate / Beilagen</span><span lang-variant="pl">Sałatki / dodatki</span></div>
+        <h3><span lang-variant="de">128. Bohnensalat mit roten Zwiebeln</span><span lang-variant="pl">128. Sałatka z fasolki z czerwoną cebulą</span></h3>
+        <p><span lang-variant="de">Bohnensalat ist einer dieser unterschätzten Klassiker, die gerade zu Grillfleisch oder Bratwurst hervorragend passen. Mit roten Zwiebeln und einem klaren Dressing bleibt er einfach, aber sehr wirkungsvoll.</span><span lang-variant="pl">Sałatka z fasoli to jeden z tych niedocenianych klasyków, które świetnie pasują do grillowanego mięsa albo kiełbasy. Z czerwoną cebulą i prostym dressingiem jest nieskomplikowana, ale bardzo dobra.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="128"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="105">
-      <img src="images/rezeptbild_105.png" alt="Ajvarsuppe mit Pide" loading="lazy">
+    </article><article class="mini-card" data-open-recipe="127">
+      <img src="images/rezeptbild_127.png" alt="Wurstsalat klassisch" loading="lazy">
       <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Suppen / Feierabendküche</span><span lang-variant="pl">Zupy / kuchnia po pracy</span></div>
-        <h3><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></h3>
-        <p><span lang-variant="de">Diese Suppe ist genau die richtige Mischung aus würzig, cremig und unkompliziert. Der Ajvar bringt sofort Tiefe und Wärme rein, und zusammen mit weichem Pide wird daraus ein richtig gemütliches Essen.</span><span lang-variant="pl">Ta zupa to idealne połączenie wyrazistości, kremowości i prostoty. Ajvar od razu daje głębię i ciepło, a z miękką pide całość zamienia się w naprawdę przyjemny, sycący posiłek.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="105"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+        <div class="eyebrow"><span lang-variant="de">Salate / Klassiker</span><span lang-variant="pl">Sałatki / klasyki</span></div>
+        <h3><span lang-variant="de">127. Wurstsalat klassisch</span><span lang-variant="pl">127. Klasyczna sałatka z kiełbasy</span></h3>
+        <p><span lang-variant="de">Wurstsalat ist genau die Art von Brotzeitklassiker, die schnell gemacht ist und trotzdem richtig herzhaft schmeckt. Mit Zwiebeln, Gurken und einem kräftigen Dressing ist er einfach und direkt.</span><span lang-variant="pl">Sałatka z kiełbasy to typowy klasyk na szybką kolację lub przekąskę. Z cebulą, ogórkami i wyrazistym dressingiem jest prosta, ale bardzo konkretna.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="127"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    </div></div><div class="highlights-card" id="newest"><div class="section-head"><div><h2><span lang-variant="de">Neu hinzugefügt</span><span lang-variant="pl">Ostatnio dodane</span></h2></div></div><div class="mini-grid">
-    <article class="mini-card" data-open-recipe="105">
-      <img src="images/rezeptbild_105.png" alt="Ajvarsuppe mit Pide" loading="lazy">
+    </article><article class="mini-card" data-open-recipe="126">
+      <img src="images/rezeptbild_126.png" alt="Coleslaw cremig" loading="lazy">
       <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Suppen / Feierabendküche</span><span lang-variant="pl">Zupy / kuchnia po pracy</span></div>
-        <h3><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></h3>
-        <p><span lang-variant="de">Diese Suppe ist genau die richtige Mischung aus würzig, cremig und unkompliziert. Der Ajvar bringt sofort Tiefe und Wärme rein, und zusammen mit weichem Pide wird daraus ein richtig gemütliches Essen.</span><span lang-variant="pl">Ta zupa to idealne połączenie wyrazistości, kremowości i prostoty. Ajvar od razu daje głębię i ciepło, a z miękką pide całość zamienia się w naprawdę przyjemny, sycący posiłek.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="105"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+        <div class="eyebrow"><span lang-variant="de">Salate / BBQ</span><span lang-variant="pl">Sałatki / BBQ</span></div>
+        <h3><span lang-variant="de">126. Coleslaw cremig</span><span lang-variant="pl">126. Kremowy coleslaw</span></h3>
+        <p><span lang-variant="de">Coleslaw ist die cremigere und etwas rundere Variante vom Krautsalat. Gerade zu Burgern, BBQ oder Ofengerichten passt er hervorragend, weil er Frische und Cremigkeit zusammenbringt.</span><span lang-variant="pl">Coleslaw to bardziej kremowa i łagodniejsza wersja surówki z kapusty. Pasuje świetnie do burgerów, BBQ i dań z piekarnika, bo łączy świeżość z kremowością.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="126"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="104">
-      <img src="images/rezeptbild_104.png" alt="Sommerlicher Tomatensalat" loading="lazy">
+    </article><article class="mini-card" data-open-recipe="125">
+      <img src="images/rezeptbild_125.png" alt="Krautsalat klassisch" loading="lazy">
       <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Beilagen / Salate</span><span lang-variant="pl">Dodatki / Sałatki</span></div>
-        <h3><span lang-variant="de">104. Sommerlicher Tomatensalat</span><span lang-variant="pl">104. Letnia sałatka pomidorowa</span></h3>
-        <p><span lang-variant="de">Ein einfacher Salat, der von guten Zutaten lebt. Reife Tomaten, etwas Zwiebel und ein passendes Dressing – mehr braucht es nicht. Perfekt als frische Beilage zu deftigen Gerichten oder vom Grill.</span><span lang-variant="pl">To prosta sałatka, która żyje dobrymi składnikami. Dojrzałe pomidory, trochę cebuli i odpowiedni dressing – więcej naprawdę nie potrzeba. Idealna jako świeży dodatek do konkretniejszych dań albo z grilla.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="104"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
+        <div class="eyebrow"><span lang-variant="de">Salate / Klassiker</span><span lang-variant="pl">Sałatki / klasyki</span></div>
+        <h3><span lang-variant="de">125. Krautsalat klassisch</span><span lang-variant="pl">125. Klasyczna surówka z białej kapusty</span></h3>
+        <p><span lang-variant="de">Krautsalat ist genau der Salat, der zu Grillen, Currywurst oder Schnitzel immer irgendwie dazugehört. Mit Essig, Öl und etwas Zucker bleibt er knackig und bekommt genau diesen typischen Imbiss- und Grillcharakter.</span><span lang-variant="pl">Surówka z białej kapusty to dokładnie ta sałatka, która zawsze pasuje do grilla, currywursta albo sznycla. Z octem, olejem i odrobiną cukru pozostaje chrupiąca i ma typowy budkowo-grillowy charakter.</span></p>
+        <button class="ghost-btn" type="button" data-open-recipe="125"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
       </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="103">
-      <img src="images/rezeptbild_103.png" alt="Wrap-Abend (DIY-Style)" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Wraps &amp; Burritos / Gesellig</span><span lang-variant="pl">Wrapy i burrito / Na wspólny wieczór</span></div>
-        <h3><span lang-variant="de">103. Wrap-Abend (DIY-Style)</span><span lang-variant="pl">103. Wieczór z wrapami (DIY)</span></h3>
-        <p><span lang-variant="de">Perfekt für einen entspannten Abend mit mehreren Leuten. Jeder baut sich seinen Wrap selbst – mit Fleisch, Gemüse und Saucen nach Geschmack. Locker, flexibel und genau richtig für gesellige Runden.</span><span lang-variant="pl">Idealne na spokojny wieczór w większym gronie. Każdy składa sobie wrap po swojemu – z mięsem, warzywami i sosami według własnego gustu. Luźno, elastycznie i dokładnie tak, jak trzeba na towarzyskie spotkania.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="103"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-      </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="102">
-      <img src="images/rezeptbild_102.png" alt="Knusprige Bratkartoffeln mit Zwiebeln" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Beilagen</span><span lang-variant="pl">Dania z patelni / Dodatki</span></div>
-        <h3><span lang-variant="de">102. Knusprige Bratkartoffeln mit Zwiebeln</span><span lang-variant="pl">102. Chrupiące ziemniaki smażone z cebulą</span></h3>
-        <p><span lang-variant="de">Bratkartoffeln können richtig gut sein – wenn man ihnen Zeit gibt. Schön knusprig gebraten, mit Zwiebeln verfeinert und genau so, wie man sie sich wünscht. Einfach, aber mit großem Unterschied.</span><span lang-variant="pl">Smażone ziemniaki potrafią być naprawdę świetne – jeśli da się im czas. Dobrze zrumienione, doprawione cebulą i dokładnie takie, jak powinny być. Proste, ale z ogromną różnicą w efekcie.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="102"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-      </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="101">
-      <img src="images/rezeptbild_101.png" alt="Gemüsepfanne „Resteküche“" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Resteküche</span><span lang-variant="pl">Dania z patelni / Kuchnia z resztek</span></div>
-        <h3><span lang-variant="de">101. Gemüsepfanne „Resteküche“</span><span lang-variant="pl">101. Patelnia warzywna „z resztek”</span></h3>
-        <p><span lang-variant="de">Ein Gericht, das aus dem entsteht, was gerade da ist. Unterschiedliches Gemüse wird angebraten, gewürzt und ergibt zusammen etwas, das überraschend gut funktioniert. Perfekt, um Reste sinnvoll zu verwerten.</span><span lang-variant="pl">To danie powstaje z tego, co akurat jest pod ręką. Różne warzywa się smaży, doprawia i razem dają coś, co zaskakująco dobrze działa. Idealne, żeby sensownie wykorzystać resztki.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="101"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-      </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="100">
-      <img src="images/rezeptbild_100.png" alt="AirFryer Hähnchen (knusprig &amp; saftig)" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Airfryer / Schnell &amp; einfach</span><span lang-variant="pl">Airfryer / Szybko i prosto</span></div>
-        <h3><span lang-variant="de">100. AirFryer Hähnchen (knusprig &amp; saftig)</span><span lang-variant="pl">100. Kurczak z AirFryera (chrupiący i soczysty)</span></h3>
-        <p><span lang-variant="de">Der AirFryer zeigt hier, was er kann. Außen schön knusprig, innen saftig – und das ohne großen Aufwand. Ideal für Tage, an denen es schnell gehen muss, aber trotzdem gut werden soll.</span><span lang-variant="pl">Tutaj AirFryer pokazuje, co potrafi. Z zewnątrz przyjemnie chrupiący, w środku soczysty – i to bez wielkiego wysiłku. Idealny na dni, gdy ma być szybko, ale nadal dobrze.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="100"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-      </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="99">
-      <img src="images/rezeptbild_99.png" alt="Ofenkartoffeln Deluxe mit Toppings" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Ofengerichte / Beilagen</span><span lang-variant="pl">Dania z piekarnika / Dodatki</span></div>
-        <h3><span lang-variant="de">99. Ofenkartoffeln Deluxe mit Toppings</span><span lang-variant="pl">99. Pieczone ziemniaki deluxe z dodatkami</span></h3>
-        <p><span lang-variant="de">Hier wird aus einer einfachen Beilage ein komplettes Gericht. Knusprige Kartoffeln, dazu verschiedene Toppings – von cremig bis würzig. Perfekt, wenn jeder sich sein Essen selbst zusammenstellen will.</span><span lang-variant="pl">Tutaj z prostego dodatku robi się pełne danie. Chrupiące ziemniaki, do tego różne dodatki – od kremowych po bardziej wyraziste. Idealne, gdy każdy chce złożyć sobie talerz po swojemu.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="99"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-      </div>
-    </article>
-    
-    <article class="mini-card" data-open-recipe="98">
-      <img src="images/rezeptbild_98.png" alt="Schnelle Hackpfanne mit Ajvar" loading="lazy">
-      <div class="mini-card-body">
-        <div class="eyebrow"><span lang-variant="de">Pfannengerichte / Schnell &amp; einfach</span><span lang-variant="pl">Dania z patelni / Szybko i prosto</span></div>
-        <h3><span lang-variant="de">98. Schnelle Hackpfanne mit Ajvar</span><span lang-variant="pl">98. Szybka patelnia z mielonym mięsem i ajvarem</span></h3>
-        <p><span lang-variant="de">Ein Gericht, das du immer machen kannst, wenn es unkompliziert bleiben soll. Das Hackfleisch wird angebraten, Ajvar sorgt für Würze und in wenigen Minuten steht ein richtig solides Essen auf dem Tisch.</span><span lang-variant="pl">To danie można zrobić zawsze wtedy, gdy ma być bez komplikacji. Mięso mielone się smaży, ajvar daje wyrazistość i po kilku minutach na stole stoi naprawdę solidny posiłek.</span></p>
-        <button class="ghost-btn" type="button" data-open-recipe="98"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-      </div>
-    </article>
-    </div></div></section><section class="category-shell"><div class="section-head"><div><h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2></div></div><div class="category-chips"><button class="category-chip active" data-category="all" type="button"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span><small>130</small></button><button class="category-chip" data-category="ofengerichte" type="button"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span><small>26</small></button><button class="category-chip" data-category="pfannengerichte" type="button"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span><small>23</small></button><button class="category-chip" data-category="grill-und-bbq" type="button"><span lang-variant="de">Grill &amp; BBQ</span><span lang-variant="pl">Grill &amp; BBQ</span><small>18</small></button><button class="category-chip" data-category="fisch-und-meeresfruechte" type="button"><span lang-variant="de">Fisch &amp; Meeresfrüchte</span><span lang-variant="pl">Ryby i owoce morza</span><small>6</small></button><button class="category-chip" data-category="airfryer" type="button"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span><small>4</small></button><button class="category-chip" data-category="beilagen" type="button"><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span><small>8</small></button><button class="category-chip" data-category="grundlagen" type="button"><span lang-variant="de">Grundlagen</span><span lang-variant="pl">Podstawy</span><small>2</small></button><button class="category-chip" data-category="nudelgerichte" type="button"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Dania makaronowe</span><small>3</small></button><button class="category-chip" data-category="suppen" type="button"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span><small>8</small></button><button class="category-chip" data-category="cocktails" type="button"><span lang-variant="de">Cocktails</span><span lang-variant="pl">Koktajle</span><small>10</small></button><button class="category-chip" data-category="wraps-und-burritos" type="button"><span lang-variant="de">Wraps &amp; Burritos</span><span lang-variant="pl">Wrapy i burrito</span><small>2</small></button><button class="category-chip" data-category="eiergerichte" type="button"><span lang-variant="de">Eiergerichte</span><span lang-variant="pl">Dania z jajek</span><small>2</small></button></div></section><section class="toc-shell"><div class="section-head"><div><h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2></div></div><div class="toc-grid" id="tocGrid"><a class="toc-link" data-category="ofengerichte" href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-3"><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-4"><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-5"><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></a><a class="toc-link" data-category="beilagen" href="#rezept-6"><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-7"><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-8"><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-9"><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-10"><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-11"><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-12"><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-13"><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-14"><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-15"><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-16"><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-17"><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></a><a class="toc-link" data-category="suppen" href="#rezept-18"><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-19"><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-20"><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></a><a class="toc-link" data-category="gebaeck-und-suesses" href="#rezept-21"><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></a><a class="toc-link" data-category="suppen" href="#rezept-22"><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></a><a class="toc-link" data-category="teiggerichte" href="#rezept-23"><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-24"><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-25"><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-26"><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-27"><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-28"><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-29"><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-30"><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></a><a class="toc-link" data-category="suppen" href="#rezept-31"><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></a><a class="toc-link" data-category="suppen" href="#rezept-32"><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></a><a class="toc-link" data-category="saucen" href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a><a class="toc-link" data-category="suppen" href="#rezept-34"><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-35"><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-36"><span lang-variant="de">36. Irish Beef Rollbraten aus dem Backofen</span><span lang-variant="pl">36. Irlandzka pieczeń wołowa z piekarnika</span></a><a class="toc-link" data-category="airfryer" href="#rezept-37"><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-38"><span lang-variant="de">38. Klassischer Schmorbraten mit dunkler Sauce</span><span lang-variant="pl">38. Klasyczna pieczeń duszona z ciemnym sosem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-39"><span lang-variant="de">39. Hähnchen-Kartoffel-Pfanne mit Gemüse</span><span lang-variant="pl">39. Zapiekanka z kurczakiem, ziemniakami i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-40"><span lang-variant="de">40. Bratwurst mit Sauerkraut aus dem Ofen</span><span lang-variant="pl">40. Biała kiełbasa pieczona z kapustą kiszoną</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-41"><span lang-variant="de">41. Saftiger Chicken-Cheese-Burrito ohne Reis</span><span lang-variant="pl">41. Soczysty burrito z kurczakiem i serem bez ryżu</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-42"><span lang-variant="de">42. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">42. Spaghetti z czosnkiem i sambal oelek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-43"><span lang-variant="de">43. Knoblauch-Kartoffel-Pfanne mit Chili und Ei</span><span lang-variant="pl">43. Patelnia ziemniaczana z czosnkiem, chili i jajkiem</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-44"><span lang-variant="de">44. Cremige Parmesan-Pasta ohne Sahne</span><span lang-variant="pl">44. Kremowy makaron z parmezanem bez śmietany</span></a><a class="toc-link" data-category="airfryer" href="#rezept-45"><span lang-variant="de">45. Cordon Bleu mit Nasi Goreng</span><span lang-variant="pl">45. Cordon Bleu z nasi goreng</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-46"><span lang-variant="de">46. Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</span><span lang-variant="pl">46. Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</span></a><a class="toc-link" data-category="cocktails" href="#rezept-47"><span lang-variant="de">47. Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">47. Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-48"><span lang-variant="de">48. Ananas-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">48. Ananasowy slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-49"><span lang-variant="de">49. Zitronen-Vodka-Slush für den Ninja Slushi</span><span lang-variant="pl">49. Cytrynowy slush z wódką do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-50"><span lang-variant="de">50. Waldbeer-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">50. Leśny slush z różowym sektem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-51"><span lang-variant="de">51. Mango-Maracuja-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">51. Mango-marakuja slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-52"><span lang-variant="de">52. Senfeier mit Kartoffeln</span><span lang-variant="pl">52. Jajka w sosie musztardowym z ziemniakami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-53"><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-54"><span lang-variant="de">54. Spare Ribs mit Espresso-Rub</span><span lang-variant="pl">54. Żeberka z rubem espresso</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-55"><span lang-variant="de">55. Gegrillter Halloumi mit Kräutern und Olivenöl</span><span lang-variant="pl">55. Grillowany halloumi z ziołami i oliwą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-56"><span lang-variant="de">56. Gemüsespieße vom Grill</span><span lang-variant="pl">56. Warzywne szaszłyki z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-57"><span lang-variant="de">57. Gefüllte Portobello-Pilze vom Grill</span><span lang-variant="pl">57. Faszerowane pieczarki portobello z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-58"><span lang-variant="de">58. Grüner Spargel vom Grill mit Zitronenbutter</span><span lang-variant="pl">58. Zielone szparagi z grilla z masłem cytrynowym</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-59"><span lang-variant="de">59. Süßkartoffel-Pommes vom Grill</span><span lang-variant="pl">59. Frytki z batatów z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-60"><span lang-variant="de">60. Melonen-Feta-Salat mit Minze</span><span lang-variant="pl">60. Sałatka z arbuza, fety i mięty</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-61"><span lang-variant="de">61. Shakshuka</span><span lang-variant="pl">61. Szakszuka</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-62"><span lang-variant="de">62. Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</span><span lang-variant="pl">62. Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-63"><span lang-variant="de">63. Ratatouille mit Polenta</span><span lang-variant="pl">63. Ratatouille z polentą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-64"><span lang-variant="de">64. Marinierte Hähnchenspieße vom Grill</span><span lang-variant="pl">64. Marynowane szaszłyki z kurczaka z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-65"><span lang-variant="de">65. Gegrillte Maiskolben mit Butter</span><span lang-variant="pl">65. Grillowana kukurydza z masłem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-66"><span lang-variant="de">66. Halloumi vom Grill</span><span lang-variant="pl">66. Halloumi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-67"><span lang-variant="de">67. Würzige Bratwürste vom Grill (klassisch und einfache Variante)</span><span lang-variant="pl">67. Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-68"><span lang-variant="de">68. Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</span><span lang-variant="pl">68. Grillowane warzywa z cukinią, papryką i pieczarkami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-69"><span lang-variant="de">69. Grillkartoffeln in Alufolie mit Rosmarin</span><span lang-variant="pl">69. Ziemniaki z grilla w folii z rozmarynem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-70"><span lang-variant="de">70. Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</span><span lang-variant="pl">70. Grillowana bagietka lub ciabatta z oliwą czosnkową</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-71"><span lang-variant="de">71. Gegrillte Früchte mit Ananas oder Pfirsich</span><span lang-variant="pl">71. Grillowane owoce z ananasem lub brzoskwinią</span></a><a class="toc-link" data-category="cocktails" href="#rezept-72"><span lang-variant="de">72. Klassische rote Sangria</span><span lang-variant="pl">72. Klasyczna czerwona sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-73"><span lang-variant="de">73. Weiße Sangria</span><span lang-variant="pl">73. Biała sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-74"><span lang-variant="de">74. Aperol Spritz</span><span lang-variant="pl">74. Aperol Spritz</span></a><a class="toc-link" data-category="cocktails" href="#rezept-75"><span lang-variant="de">75. Mojito</span><span lang-variant="pl">75. Mojito</span></a><a class="toc-link" data-category="cocktails" href="#rezept-76"><span lang-variant="de">76. Gin Tonic (Basisrezept und einfache Variationen)</span><span lang-variant="pl">76. Gin Tonic (wersja podstawowa i proste warianty)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-77"><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-78"><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-79"><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></a><a class="toc-link" data-category="airfryer" href="#rezept-80"><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></a><a class="toc-link" data-category="suppen" href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-82"><span lang-variant="de">82. Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen</span><span lang-variant="pl">82. Krewetki zapiekane w sosie pomidorowo-winno-fetowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-83"><span lang-variant="de">83. Knoblauch-Chili-Garnelen aus der Pfanne</span><span lang-variant="pl">83. Krewetki z patelni z czosnkiem i chili</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-84"><span lang-variant="de">84. Garnelen in cremiger Paprika-Sahne-Sauce</span><span lang-variant="pl">84. Krewetki w kremowym sosie paprykowo-śmietanowym</span></a><a class="toc-link" data-category="beilagen" href="#rezept-85"><span lang-variant="de">85. Klassischer Kartoffelstampf</span><span lang-variant="pl">85. Klasyczne tłuczone ziemniaki</span></a><a class="toc-link" data-category="beilagen" href="#rezept-86"><span lang-variant="de">86. Kartoffelstampf mit Dill</span><span lang-variant="pl">86. Tłuczone ziemniaki z koperkiem</span></a><a class="toc-link" data-category="beilagen" href="#rezept-87"><span lang-variant="de">87. Kartoffel-Pastinaken-Stampf</span><span lang-variant="pl">87. Tłuczone ziemniaki z pasternakiem</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-88"><span lang-variant="de">88. Svens BBQ Rub (Basisgewürz)</span><span lang-variant="pl">88. BBQ Rub Svena (mieszanka bazowa)</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-89"><span lang-variant="de">89. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">89. Spaghetti z czosnkiem i sambalem oelek</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-90"><span lang-variant="de">90. Pinsa mit Burrata, Peperoni und Salami</span><span lang-variant="pl">90. Pinsa z burratą, papryką i salami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-91"><span lang-variant="de">91. Wildschweingulasch klassisch geschmort</span><span lang-variant="pl">91. Klasyczny gulasz z dzika duszony powoli</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-92"><span lang-variant="de">92. Wildschweinkeule aus dem Ofen</span><span lang-variant="pl">92. Udziec z dzika z piekarnika</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-93"><span lang-variant="de">93. Gefülltes Ofenbaguette mit Chorizo</span><span lang-variant="pl">93. Zapiekana bagietka z chorizo</span></a><a class="toc-link" data-category="beilagen" href="#rezept-94"><span lang-variant="de">94. Ogórki w zalewie gyros</span><span lang-variant="pl">94. Ogórki w zalewie gyros</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-95"><span lang-variant="de">95. Feierabend-Pfanne mit Hähnchen &amp; Gemüse</span><span lang-variant="pl">95. Patelnia po pracy z kurczakiem i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-96"><span lang-variant="de">96. Kartoffel-Speck-Auflauf (deftig &amp; cremig)</span><span lang-variant="pl">96. Zapiekanka ziemniaczana z boczkiem (konkretna i kremowa)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-97"><span lang-variant="de">97. BBQ-Hähnchen aus dem Ofen</span><span lang-variant="pl">97. Kurczak BBQ z piekarnika</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-98"><span lang-variant="de">98. Schnelle Hackpfanne mit Ajvar</span><span lang-variant="pl">98. Szybka patelnia z mielonym mięsem i ajvarem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-99"><span lang-variant="de">99. Ofenkartoffeln Deluxe mit Toppings</span><span lang-variant="pl">99. Pieczone ziemniaki deluxe z dodatkami</span></a><a class="toc-link" data-category="airfryer" href="#rezept-100"><span lang-variant="de">100. AirFryer Hähnchen (knusprig &amp; saftig)</span><span lang-variant="pl">100. Kurczak z AirFryera (chrupiący i soczysty)</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-101"><span lang-variant="de">101. Gemüsepfanne „Resteküche“</span><span lang-variant="pl">101. Patelnia warzywna „z resztek”</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-102"><span lang-variant="de">102. Knusprige Bratkartoffeln mit Zwiebeln</span><span lang-variant="pl">102. Chrupiące ziemniaki smażone z cebulą</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-103"><span lang-variant="de">103. Wrap-Abend (DIY-Style)</span><span lang-variant="pl">103. Wieczór z wrapami (DIY)</span></a><a class="toc-link" data-category="beilagen" href="#rezept-104"><span lang-variant="de">104. Sommerlicher Tomatensalat</span><span lang-variant="pl">104. Letnia sałatka pomidorowa</span></a><a class="toc-link" data-category="suppen" href="#rezept-105"><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></a></div></section><section class="recipe-section" id="allRecipes"><div class="section-head"><div><h2><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></h2></div></div><div class="recipe-grid" id="recipeGrid">
+    </article></div>
+  </div>
+</section>
+<section class="category-shell"><div class="section-head"><div><h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2></div></div><div class="category-chips"><button class="category-chip active" data-category="all" type="button"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span><small>130</small></button><button class="category-chip" data-category="ofengerichte" type="button"><span lang-variant="de">Ofengerichte</span><span lang-variant="pl">Dania z piekarnika</span><small>26</small></button><button class="category-chip" data-category="pfannengerichte" type="button"><span lang-variant="de">Pfannengerichte</span><span lang-variant="pl">Dania z patelni</span><small>23</small></button><button class="category-chip" data-category="grill-und-bbq" type="button"><span lang-variant="de">Grill &amp; BBQ</span><span lang-variant="pl">Grill &amp; BBQ</span><small>18</small></button><button class="category-chip" data-category="fisch-und-meeresfruechte" type="button"><span lang-variant="de">Fisch &amp; Meeresfrüchte</span><span lang-variant="pl">Ryby i owoce morza</span><small>6</small></button><button class="category-chip" data-category="airfryer" type="button"><span lang-variant="de">Airfryer</span><span lang-variant="pl">Airfryer</span><small>4</small></button><button class="category-chip" data-category="beilagen" type="button"><span lang-variant="de">Beilagen</span><span lang-variant="pl">Dodatki</span><small>8</small></button><button class="category-chip" data-category="grundlagen" type="button"><span lang-variant="de">Grundlagen</span><span lang-variant="pl">Podstawy</span><small>2</small></button><button class="category-chip" data-category="nudelgerichte" type="button"><span lang-variant="de">Nudelgerichte</span><span lang-variant="pl">Dania makaronowe</span><small>3</small></button><button class="category-chip" data-category="suppen" type="button"><span lang-variant="de">Suppen</span><span lang-variant="pl">Zupy</span><small>8</small></button><button class="category-chip" data-category="cocktails" type="button"><span lang-variant="de">Cocktails</span><span lang-variant="pl">Koktajle</span><small>10</small></button><button class="category-chip" data-category="wraps-und-burritos" type="button"><span lang-variant="de">Wraps &amp; Burritos</span><span lang-variant="pl">Wrapy i burrito</span><small>2</small></button><button class="category-chip" data-category="eiergerichte" type="button"><span lang-variant="de">Eiergerichte</span><span lang-variant="pl">Dania z jajek</span><small>2</small></button></div></section>
+<section class="finder-shell">
+  <div class="section-head">
+    <div>
+      <h2><span lang-variant="de">Schneller Rezeptfinder</span><span lang-variant="pl">Szybki finder przepisów</span></h2>
+      <p><span lang-variant="de">Erst Themen, dann Suche, dann die komplette Liste – so kommst du schneller zum passenden Rezept.</span><span lang-variant="pl">Najpierw tematy, potem wyszukiwanie, a na końcu pełna lista – tak szybciej trafisz do właściwego przepisu.</span></p>
+    </div>
+  </div>
+  <div class="finder-grid">
+    <div class="finder-card">
+      <strong><span lang-variant="de">1. Themenwelt wählen</span><span lang-variant="pl">1. Wybierz temat</span></strong>
+      <p><span lang-variant="de">Starte über Klassiker, Salate, BBQ oder Feierabendküche.</span><span lang-variant="pl">Zacznij od klasyków, sałatek, BBQ albo kuchni po pracy.</span></p>
+    </div>
+    <div class="finder-card">
+      <strong><span lang-variant="de">2. Namen durchsuchen</span><span lang-variant="pl">2. Wyszukaj po nazwie</span></strong>
+      <p><span lang-variant="de">Mit der Suche oben findest du ein bestimmtes Gericht sofort.</span><span lang-variant="pl">Dzięki wyszukiwarce u góry znajdziesz konkretne danie od razu.</span></p>
+    </div>
+    <div class="finder-card">
+      <strong><span lang-variant="de">3. Alles durchstöbern</span><span lang-variant="pl">3. Przeglądaj wszystko</span></strong>
+      <p><span lang-variant="de">Im Inhaltsverzeichnis und bei allen Rezepten bekommst du den kompletten Überblick.</span><span lang-variant="pl">W spisie treści i w pełnej liście masz pełny przegląd całości.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="toc-shell"><div class="section-head"><div><h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2></div></div><div class="toc-grid" id="tocGrid"><a class="toc-link" data-category="ofengerichte" href="#rezept-1"><span lang-variant="de">1. Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</span><span lang-variant="pl">1. Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-2"><span lang-variant="de">2. Italienischer Kalbshaxen-Braten</span><span lang-variant="pl">2. Włoska pieczeń z golonki cielęcej</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-3"><span lang-variant="de">3. Svens Muscheln in Weißwein-Tomaten-Butter-Sauce mit Airfryer-Knoblauchbrot</span><span lang-variant="pl">3. Małże Svena w sosie maślano-pomidorowym z białym winem z czosnkowym pieczywem z Airfryera</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-4"><span lang-variant="de">4. Hähnchen-Gyros mit Ofenkartoffeln, Gurkensalat und Tsatsiki</span><span lang-variant="pl">4. Kurczak gyros z pieczonymi ziemniakami, sałatką z ogórka i tzatziki</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-5"><span lang-variant="de">5. Smoked BBQ-Fajita-Pfanne</span><span lang-variant="pl">5. Wędzona patelnia BBQ fajita</span></a><a class="toc-link" data-category="beilagen" href="#rezept-6"><span lang-variant="de">6. Bruschetta vom Ciabatta</span><span lang-variant="pl">6. Bruschetta z ciabatty</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-7"><span lang-variant="de">7. Köfte mit Tomaten-Zwiebel-Salat, Tzatziki und Fladenbrot</span><span lang-variant="pl">7. Köfte z sałatką pomidorowo-cebulową, tzatziki i chlebem pita</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-8"><span lang-variant="de">8. Bauernomelette mit Tomaten-Mozzarella-Salat</span><span lang-variant="pl">8. Omelet wiejski z sałatką pomidorowo-mozzarellową</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-9"><span lang-variant="de">9. Chicken Masala mit Naturjoghurt &amp; Protein-Wraps</span><span lang-variant="pl">9. Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-10"><span lang-variant="de">10. Svens Ofengericht mit Salsiccia, Gemüse &amp; Kartoffeln (cremige Sonntagsversion)</span><span lang-variant="pl">10. Danie piekarnikowe Svena z salsiccią, warzywami i ziemniakami (kremowa wersja niedzielna)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-11"><span lang-variant="de">11. Svens Hackbällchen-Auflauf mit Ajvar &amp; Kartoffeln – die Ofenbombe</span><span lang-variant="pl">11. Zapiekanka Svena z pulpecikami, ajvarem i ziemniakami – piekarnikowa bomba</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-12"><span lang-variant="de">12. Svens Gemüse-Kartoffel-Pfanne mit Ajvar-Teriyaki-Soße &amp; Cabanossi</span><span lang-variant="pl">12. Patelnia Svena z warzywami, ziemniakami, sosem ajvar-teriyaki i kabanosem</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-13"><span lang-variant="de">13. Svens Butter-Chicken-Wok mit Kokos &amp; Joghurt</span><span lang-variant="pl">13. Wok Svena Butter Chicken z kokosem i jogurtem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-14"><span lang-variant="de">14. Ofengemüse mit Hähnchenschenkeln und lila Süßkartoffeln</span><span lang-variant="pl">14. Warzywa z piekarnika z udkami kurczaka i fioletowymi batatami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-15"><span lang-variant="de">15. Ofen-Hähnchenschenkel mit Kartoffeln &amp; Zwiebeln – Sven-Style</span><span lang-variant="pl">15. Udka kurczaka z ziemniakami i cebulą z piekarnika – styl Svena</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-16"><span lang-variant="de">16. Kartoffelauflauf mit Schmand, Käse &amp; Speck</span><span lang-variant="pl">16. Zapiekanka ziemniaczana ze śmietaną, serem i boczkiem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-17"><span lang-variant="de">17. Rinderrouladen – helle Soße ohne Dunkelmacher (Hausrezept)</span><span lang-variant="pl">17. Rolady wołowe – jasny sos bez barwnika (przepis domowy)</span></a><a class="toc-link" data-category="suppen" href="#rezept-18"><span lang-variant="de">18. Kartoffelsuppe mit Mettenden</span><span lang-variant="pl">18. Zupa ziemniaczana z kiełbasą Mettenden</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-19"><span lang-variant="de">19. Zakwas für Żurek selber machen</span><span lang-variant="pl">19. Zakwas na żurek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-20"><span lang-variant="de">20. Königsberger Klopse</span><span lang-variant="pl">20. Klopsy po królewiecku</span></a><a class="toc-link" data-category="gebaeck-und-suesses" href="#rezept-21"><span lang-variant="de">21. Danziger Porzeln</span><span lang-variant="pl">21. Gdańskie porzeln</span></a><a class="toc-link" data-category="suppen" href="#rezept-22"><span lang-variant="de">22. Kalte Rote-Bete-Suppe</span><span lang-variant="pl">22. Chłodnik z czerwonych buraków</span></a><a class="toc-link" data-category="teiggerichte" href="#rezept-23"><span lang-variant="de">23. Piroggen mit Sauerkraut-Pilz-Füllung</span><span lang-variant="pl">23. Pierogi z kapustą kiszoną i grzybami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-24"><span lang-variant="de">24. Klopse in Tomatensoße</span><span lang-variant="pl">24. Klopsy w sosie pomidorowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-25"><span lang-variant="de">25. Danziger Heringssalat</span><span lang-variant="pl">25. Gdańska sałatka śledziowa</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-26"><span lang-variant="de">26. Hering nach kaschubischer Art</span><span lang-variant="pl">26. Śledź po kaszubsku</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-27"><span lang-variant="de">27. Polnisches Beefsteak</span><span lang-variant="pl">27. Polski befsztyk</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-28"><span lang-variant="de">28. Fleischpastete</span><span lang-variant="pl">28. Pasztet mięsny</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-29"><span lang-variant="de">29. Geflügelleber mit Äpfeln</span><span lang-variant="pl">29. Wątróbka drobiowa z jabłkami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-30"><span lang-variant="de">30. Eisbein nach alt-polnischer Art</span><span lang-variant="pl">30. Golonka po staropolsku</span></a><a class="toc-link" data-category="suppen" href="#rezept-31"><span lang-variant="de">31. Danziger Suppe</span><span lang-variant="pl">31. Zupa gdańska</span></a><a class="toc-link" data-category="suppen" href="#rezept-32"><span lang-variant="de">32. Erbsensuppe mit Kartoffeln</span><span lang-variant="pl">32. Grochówka z ziemniakami</span></a><a class="toc-link" data-category="saucen" href="#rezept-33"><span lang-variant="de">33. Alt-polnische Sauce</span><span lang-variant="pl">33. Sos staropolski</span></a><a class="toc-link" data-category="suppen" href="#rezept-34"><span lang-variant="de">34. Oster-Żurek</span><span lang-variant="pl">34. Żurek wielkanocny</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-35"><span lang-variant="de">35. Ofen-Brisket mit Magic Dust</span><span lang-variant="pl">35. Pieczony brisket z przyprawą Magic Dust</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-36"><span lang-variant="de">36. Irish Beef Rollbraten aus dem Backofen</span><span lang-variant="pl">36. Irlandzka pieczeń wołowa z piekarnika</span></a><a class="toc-link" data-category="airfryer" href="#rezept-37"><span lang-variant="de">37. Svens AirFryer-Iskender Kebab</span><span lang-variant="pl">37. Kebab Iskender z AirFryera (wersja Svena)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-38"><span lang-variant="de">38. Klassischer Schmorbraten mit dunkler Sauce</span><span lang-variant="pl">38. Klasyczna pieczeń duszona z ciemnym sosem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-39"><span lang-variant="de">39. Hähnchen-Kartoffel-Pfanne mit Gemüse</span><span lang-variant="pl">39. Zapiekanka z kurczakiem, ziemniakami i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-40"><span lang-variant="de">40. Bratwurst mit Sauerkraut aus dem Ofen</span><span lang-variant="pl">40. Biała kiełbasa pieczona z kapustą kiszoną</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-41"><span lang-variant="de">41. Saftiger Chicken-Cheese-Burrito ohne Reis</span><span lang-variant="pl">41. Soczysty burrito z kurczakiem i serem bez ryżu</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-42"><span lang-variant="de">42. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">42. Spaghetti z czosnkiem i sambal oelek</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-43"><span lang-variant="de">43. Knoblauch-Kartoffel-Pfanne mit Chili und Ei</span><span lang-variant="pl">43. Patelnia ziemniaczana z czosnkiem, chili i jajkiem</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-44"><span lang-variant="de">44. Cremige Parmesan-Pasta ohne Sahne</span><span lang-variant="pl">44. Kremowy makaron z parmezanem bez śmietany</span></a><a class="toc-link" data-category="airfryer" href="#rezept-45"><span lang-variant="de">45. Cordon Bleu mit Nasi Goreng</span><span lang-variant="pl">45. Cordon Bleu z nasi goreng</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-46"><span lang-variant="de">46. Smashed Burger mit Ofenkartoffeln &amp; Sour-Cream-Dip</span><span lang-variant="pl">46. Burger smashed z pieczonymi ziemniakami i dipem śmietanowym</span></a><a class="toc-link" data-category="cocktails" href="#rezept-47"><span lang-variant="de">47. Erdbeer-Orangen-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">47. Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-48"><span lang-variant="de">48. Ananas-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">48. Ananasowy slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-49"><span lang-variant="de">49. Zitronen-Vodka-Slush für den Ninja Slushi</span><span lang-variant="pl">49. Cytrynowy slush z wódką do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-50"><span lang-variant="de">50. Waldbeer-Sekt-Slush für den Ninja Slushi</span><span lang-variant="pl">50. Leśny slush z różowym sektem do Ninja Slushi</span></a><a class="toc-link" data-category="cocktails" href="#rezept-51"><span lang-variant="de">51. Mango-Maracuja-Rum-Slush für den Ninja Slushi</span><span lang-variant="pl">51. Mango-marakuja slush z rumem do Ninja Slushi</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-52"><span lang-variant="de">52. Senfeier mit Kartoffeln</span><span lang-variant="pl">52. Jajka w sosie musztardowym z ziemniakami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-53"><span lang-variant="de">53. Koreanisches Bulgogi vom Grill</span><span lang-variant="pl">53. Koreańskie bulgogi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-54"><span lang-variant="de">54. Spare Ribs mit Espresso-Rub</span><span lang-variant="pl">54. Żeberka z rubem espresso</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-55"><span lang-variant="de">55. Gegrillter Halloumi mit Kräutern und Olivenöl</span><span lang-variant="pl">55. Grillowany halloumi z ziołami i oliwą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-56"><span lang-variant="de">56. Gemüsespieße vom Grill</span><span lang-variant="pl">56. Warzywne szaszłyki z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-57"><span lang-variant="de">57. Gefüllte Portobello-Pilze vom Grill</span><span lang-variant="pl">57. Faszerowane pieczarki portobello z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-58"><span lang-variant="de">58. Grüner Spargel vom Grill mit Zitronenbutter</span><span lang-variant="pl">58. Zielone szparagi z grilla z masłem cytrynowym</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-59"><span lang-variant="de">59. Süßkartoffel-Pommes vom Grill</span><span lang-variant="pl">59. Frytki z batatów z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-60"><span lang-variant="de">60. Melonen-Feta-Salat mit Minze</span><span lang-variant="pl">60. Sałatka z arbuza, fety i mięty</span></a><a class="toc-link" data-category="eiergerichte" href="#rezept-61"><span lang-variant="de">61. Shakshuka</span><span lang-variant="pl">61. Szakszuka</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-62"><span lang-variant="de">62. Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</span><span lang-variant="pl">62. Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-63"><span lang-variant="de">63. Ratatouille mit Polenta</span><span lang-variant="pl">63. Ratatouille z polentą</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-64"><span lang-variant="de">64. Marinierte Hähnchenspieße vom Grill</span><span lang-variant="pl">64. Marynowane szaszłyki z kurczaka z grilla</span></a><a class="toc-link" data-category="beilagen" href="#rezept-65"><span lang-variant="de">65. Gegrillte Maiskolben mit Butter</span><span lang-variant="pl">65. Grillowana kukurydza z masłem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-66"><span lang-variant="de">66. Halloumi vom Grill</span><span lang-variant="pl">66. Halloumi z grilla</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-67"><span lang-variant="de">67. Würzige Bratwürste vom Grill (klassisch und einfache Variante)</span><span lang-variant="pl">67. Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-68"><span lang-variant="de">68. Gegrilltes Gemüse mit Zucchini, Paprika und Champignons</span><span lang-variant="pl">68. Grillowane warzywa z cukinią, papryką i pieczarkami</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-69"><span lang-variant="de">69. Grillkartoffeln in Alufolie mit Rosmarin</span><span lang-variant="pl">69. Ziemniaki z grilla w folii z rozmarynem</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-70"><span lang-variant="de">70. Gegrilltes Baguette oder Ciabatta mit Knoblauchöl</span><span lang-variant="pl">70. Grillowana bagietka lub ciabatta z oliwą czosnkową</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-71"><span lang-variant="de">71. Gegrillte Früchte mit Ananas oder Pfirsich</span><span lang-variant="pl">71. Grillowane owoce z ananasem lub brzoskwinią</span></a><a class="toc-link" data-category="cocktails" href="#rezept-72"><span lang-variant="de">72. Klassische rote Sangria</span><span lang-variant="pl">72. Klasyczna czerwona sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-73"><span lang-variant="de">73. Weiße Sangria</span><span lang-variant="pl">73. Biała sangria</span></a><a class="toc-link" data-category="cocktails" href="#rezept-74"><span lang-variant="de">74. Aperol Spritz</span><span lang-variant="pl">74. Aperol Spritz</span></a><a class="toc-link" data-category="cocktails" href="#rezept-75"><span lang-variant="de">75. Mojito</span><span lang-variant="pl">75. Mojito</span></a><a class="toc-link" data-category="cocktails" href="#rezept-76"><span lang-variant="de">76. Gin Tonic (Basisrezept und einfache Variationen)</span><span lang-variant="pl">76. Gin Tonic (wersja podstawowa i proste warianty)</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-77"><span lang-variant="de">77. Grüner Spargel vom Grill – Basic &amp; Upgrade</span><span lang-variant="pl">77. Zielone szparagi z grilla – wersja basic i upgrade</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-78"><span lang-variant="de">78. Weißer Spargel in Butter-Zitronen-Folie</span><span lang-variant="pl">78. Białe szparagi w folii z masłem i cytryną</span></a><a class="toc-link" data-category="grill-und-bbq" href="#rezept-79"><span lang-variant="de">79. Spargel vom Grill mit Parmesan und Zitrone</span><span lang-variant="pl">79. Szparagi z grilla z parmezanem i cytryną</span></a><a class="toc-link" data-category="airfryer" href="#rezept-80"><span lang-variant="de">80. Grüner Spargel aus dem Airfryer</span><span lang-variant="pl">80. Zielone szparagi z Airfryera</span></a><a class="toc-link" data-category="suppen" href="#rezept-81"><span lang-variant="de">81. Afrikanischer Erdnusseintopf</span><span lang-variant="pl">81. Afrykański gulasz z masłem orzechowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-82"><span lang-variant="de">82. Garnelen in Weißwein-Tomaten-Feta-Sauce aus dem Ofen</span><span lang-variant="pl">82. Krewetki zapiekane w sosie pomidorowo-winno-fetowym</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-83"><span lang-variant="de">83. Knoblauch-Chili-Garnelen aus der Pfanne</span><span lang-variant="pl">83. Krewetki z patelni z czosnkiem i chili</span></a><a class="toc-link" data-category="fisch-und-meeresfruechte" href="#rezept-84"><span lang-variant="de">84. Garnelen in cremiger Paprika-Sahne-Sauce</span><span lang-variant="pl">84. Krewetki w kremowym sosie paprykowo-śmietanowym</span></a><a class="toc-link" data-category="beilagen" href="#rezept-85"><span lang-variant="de">85. Klassischer Kartoffelstampf</span><span lang-variant="pl">85. Klasyczne tłuczone ziemniaki</span></a><a class="toc-link" data-category="beilagen" href="#rezept-86"><span lang-variant="de">86. Kartoffelstampf mit Dill</span><span lang-variant="pl">86. Tłuczone ziemniaki z koperkiem</span></a><a class="toc-link" data-category="beilagen" href="#rezept-87"><span lang-variant="de">87. Kartoffel-Pastinaken-Stampf</span><span lang-variant="pl">87. Tłuczone ziemniaki z pasternakiem</span></a><a class="toc-link" data-category="grundlagen" href="#rezept-88"><span lang-variant="de">88. Svens BBQ Rub (Basisgewürz)</span><span lang-variant="pl">88. BBQ Rub Svena (mieszanka bazowa)</span></a><a class="toc-link" data-category="nudelgerichte" href="#rezept-89"><span lang-variant="de">89. Spaghetti mit Knoblauch und Sambal Oelek</span><span lang-variant="pl">89. Spaghetti z czosnkiem i sambalem oelek</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-90"><span lang-variant="de">90. Pinsa mit Burrata, Peperoni und Salami</span><span lang-variant="pl">90. Pinsa z burratą, papryką i salami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-91"><span lang-variant="de">91. Wildschweingulasch klassisch geschmort</span><span lang-variant="pl">91. Klasyczny gulasz z dzika duszony powoli</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-92"><span lang-variant="de">92. Wildschweinkeule aus dem Ofen</span><span lang-variant="pl">92. Udziec z dzika z piekarnika</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-93"><span lang-variant="de">93. Gefülltes Ofenbaguette mit Chorizo</span><span lang-variant="pl">93. Zapiekana bagietka z chorizo</span></a><a class="toc-link" data-category="beilagen" href="#rezept-94"><span lang-variant="de">94. Ogórki w zalewie gyros</span><span lang-variant="pl">94. Ogórki w zalewie gyros</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-95"><span lang-variant="de">95. Feierabend-Pfanne mit Hähnchen &amp; Gemüse</span><span lang-variant="pl">95. Patelnia po pracy z kurczakiem i warzywami</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-96"><span lang-variant="de">96. Kartoffel-Speck-Auflauf (deftig &amp; cremig)</span><span lang-variant="pl">96. Zapiekanka ziemniaczana z boczkiem (konkretna i kremowa)</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-97"><span lang-variant="de">97. BBQ-Hähnchen aus dem Ofen</span><span lang-variant="pl">97. Kurczak BBQ z piekarnika</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-98"><span lang-variant="de">98. Schnelle Hackpfanne mit Ajvar</span><span lang-variant="pl">98. Szybka patelnia z mielonym mięsem i ajvarem</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-99"><span lang-variant="de">99. Ofenkartoffeln Deluxe mit Toppings</span><span lang-variant="pl">99. Pieczone ziemniaki deluxe z dodatkami</span></a><a class="toc-link" data-category="airfryer" href="#rezept-100"><span lang-variant="de">100. AirFryer Hähnchen (knusprig &amp; saftig)</span><span lang-variant="pl">100. Kurczak z AirFryera (chrupiący i soczysty)</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-101"><span lang-variant="de">101. Gemüsepfanne „Resteküche“</span><span lang-variant="pl">101. Patelnia warzywna „z resztek”</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-102"><span lang-variant="de">102. Knusprige Bratkartoffeln mit Zwiebeln</span><span lang-variant="pl">102. Chrupiące ziemniaki smażone z cebulą</span></a><a class="toc-link" data-category="wraps-und-burritos" href="#rezept-103"><span lang-variant="de">103. Wrap-Abend (DIY-Style)</span><span lang-variant="pl">103. Wieczór z wrapami (DIY)</span></a><a class="toc-link" data-category="beilagen" href="#rezept-104"><span lang-variant="de">104. Sommerlicher Tomatensalat</span><span lang-variant="pl">104. Letnia sałatka pomidorowa</span></a><a class="toc-link" data-category="suppen" href="#rezept-105"><span lang-variant="de">105. Ajvarsuppe mit Pide</span><span lang-variant="pl">105. Zupa ajvarowa z pide</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-106"><span lang-variant="de">106. Currywurst mit Pommesbuden-Sauce</span><span lang-variant="pl">106. Currywurst z klasycznym sosem</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-107"><span lang-variant="de">107. Schnitzel Wiener Art</span><span lang-variant="pl">107. Sznycel wiedeński</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-108"><span lang-variant="de">108. Kohlrouladen nach Omas Art</span><span lang-variant="pl">108. Gołąbki jak u babci</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-109"><span lang-variant="de">109. Buletten nach Omas Art</span><span lang-variant="pl">109. Kotlety mielone jak u babci</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-110"><span lang-variant="de">110. Königsberger Klopse klassisch</span><span lang-variant="pl">110. Kluski królewieckie klasyczne</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-111"><span lang-variant="de">111. Senfeier klassisch</span><span lang-variant="pl">111. Jajka w sosie musztardowym klasyczne</span></a><a class="toc-link" data-category="suppen" href="#rezept-112"><span lang-variant="de">112. Erbsensuppe mit Würstchen</span><span lang-variant="pl">112. Grochówka z kiełbasą</span></a><a class="toc-link" data-category="pfannengerichte" href="#rezept-113"><span lang-variant="de">113. Jägerschnitzel mit Bratkartoffeln</span><span lang-variant="pl">113. Sznycel po myśliwsku z ziemniakami smażonymi</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-114"><span lang-variant="de">114. Gulasch nach Omas Art</span><span lang-variant="pl">114. Gulasz jak u babci</span></a><a class="toc-link" data-category="ofengerichte" href="#rezept-115"><span lang-variant="de">115. Klassischer Schweinebraten mit Kruste</span><span lang-variant="pl">115. Klasyczna pieczeń wieprzowa z chrupiącą skórką</span></a><a class="toc-link" data-category="salate" href="#rezept-116"><span lang-variant="de">116. Kartoffelsalat mit Mayonnaise klassisch</span><span lang-variant="pl">116. Klasyczna sałatka ziemniaczana z majonezem</span></a><a class="toc-link" data-category="salate" href="#rezept-117"><span lang-variant="de">117. Kartoffelsalat mit Essig und Brühe</span><span lang-variant="pl">117. Sałatka ziemniaczana z octem i bulionem</span></a><a class="toc-link" data-category="salate" href="#rezept-118"><span lang-variant="de">118. Nudelsalat klassisch mit Mayo</span><span lang-variant="pl">118. Klasyczna sałatka makaronowa z majonezem</span></a><a class="toc-link" data-category="salate" href="#rezept-119"><span lang-variant="de">119. Italienischer Nudelsalat mit Pesto</span><span lang-variant="pl">119. Włoska sałatka makaronowa z pesto</span></a><a class="toc-link" data-category="salate" href="#rezept-120"><span lang-variant="de">120. Nudelsalat mit Thunfisch und Mais</span><span lang-variant="pl">120. Sałatka makaronowa z tuńczykiem i kukurydzą</span></a><a class="toc-link" data-category="salate" href="#rezept-121"><span lang-variant="de">121. Griechischer Bauernsalat</span><span lang-variant="pl">121. Grecka sałatka wiejska</span></a><a class="toc-link" data-category="salate" href="#rezept-122"><span lang-variant="de">122. Grüner Salat mit Kräuterdressing</span><span lang-variant="pl">122. Zielona sałata z dressingiem ziołowym</span></a><a class="toc-link" data-category="salate" href="#rezept-123"><span lang-variant="de">123. Tomaten-Gurken-Salat klassisch</span><span lang-variant="pl">123. Klasyczna sałatka z pomidorów i ogórków</span></a><a class="toc-link" data-category="salate" href="#rezept-124"><span lang-variant="de">124. Gurkensalat mit Sahne und Dill</span><span lang-variant="pl">124. Mizeria ze śmietaną i koperkiem</span></a><a class="toc-link" data-category="salate" href="#rezept-125"><span lang-variant="de">125. Krautsalat klassisch</span><span lang-variant="pl">125. Klasyczna surówka z białej kapusty</span></a><a class="toc-link" data-category="salate" href="#rezept-126"><span lang-variant="de">126. Coleslaw cremig</span><span lang-variant="pl">126. Kremowy coleslaw</span></a><a class="toc-link" data-category="salate" href="#rezept-127"><span lang-variant="de">127. Wurstsalat klassisch</span><span lang-variant="pl">127. Klasyczna sałatka z kiełbasy</span></a><a class="toc-link" data-category="salate" href="#rezept-128"><span lang-variant="de">128. Bohnensalat mit roten Zwiebeln</span><span lang-variant="pl">128. Sałatka z fasolki z czerwoną cebulą</span></a><a class="toc-link" data-category="salate" href="#rezept-129"><span lang-variant="de">129. Karottensalat klassisch</span><span lang-variant="pl">129. Klasyczna surówka z marchewki</span></a><a class="toc-link" data-category="salate" href="#rezept-130"><span lang-variant="de">130. Bunter Blattsalat mit Hausdressing</span><span lang-variant="pl">130. Kolorowa sałata z domowym dressingiem</span></a></div></section>
+<section class="editorial-strip">
+  <div class="editorial-card">
+    <strong><span lang-variant="de">So nutzt du die Seite am besten</span><span lang-variant="pl">Jak najlepiej korzystać z tej strony</span></strong>
+    <p><span lang-variant="de">Oben entdeckst du Themen und Empfehlungen, in der Suche findest du gezielt einzelne Gerichte und unten kannst du alles in Ruhe als Kochbuch durchstöbern.</span><span lang-variant="pl">U góry odkrywasz tematy i polecenia, w wyszukiwarce znajdziesz konkretne dania, a niżej możesz spokojnie przeglądać całość jak książkę kucharską.</span></p>
+  </div>
+  <div class="editorial-card">
+    <strong><span lang-variant="de">Besonders stark jetzt</span><span lang-variant="pl">Szczególnie mocne teraz</span></strong>
+    <p><span lang-variant="de">Klassiker, Salate und Feierabendküche bilden inzwischen einen sehr runden Einstieg in dein Kochbuch.</span><span lang-variant="pl">Klasyki, sałatki i kuchnia po pracy tworzą teraz bardzo dobry punkt wejścia do Twojej książki kucharskiej.</span></p>
+  </div>
+</section>
+
+<section class="recipe-section" id="allRecipes"><div class="section-head"><div><h2><span lang-variant="de">Alle Rezepte auf einen Blick</span><span lang-variant="pl">Wszystkie przepisy w jednym miejscu</span></h2></div></div><div class="recipe-grid" id="recipeGrid">
     <article class="recipe-card" id="rezept-1" data-id="1" data-category="ofengerichte" data-title-de="1. spanische kohlrouladen mit chorizo, rotwein und speck" data-title-pl="1. hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem">
       <button class="recipe-card-link" type="button" data-open-recipe="1">
         <img src="images/rezeptbild_01.png" alt="Spanische Kohlrouladen mit Chorizo, Rotwein und Speck" loading="lazy">
