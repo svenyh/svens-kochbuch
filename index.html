@@ -17,7 +17,7 @@ button,input{font:inherit}
 .brand-block h1,.hero-card h2,.section-head h2{font-family:Georgia,"Times New Roman",serif;font-weight:700}
 .brand-block h1{margin:.1rem 0 .35rem;font-size:2.35rem;line-height:1.1;color:#442616} .brand-block p{margin:0;color:var(--muted);max-width:720px}
 .lang-switch{display:flex;gap:.6rem;flex-wrap:wrap} .lang-btn,.ghost-btn,.load-more-btn,.category-chip,.cta-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.62rem .9rem;border-radius:999px;background:#fffbf8;border:1px solid #dec7b4;color:var(--text);text-decoration:none;cursor:pointer;transition:.14s} .lang-btn.active,.category-chip.active{background:#84502c;border-color:#84502c;color:#fff}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.25rem;margin-top:1.1rem}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.25rem;margin-top:1.1rem;align-items:start}
 .hero-card,.search-shell,.highlights-card,.category-shell,.toc-shell,.recipe-card,.mini-card{background:var(--panel);border:1px solid rgba(132,70,26,.12);border-radius:var(--radius);box-shadow:0 12px 26px rgba(63,36,15,.055)}
 .hero-card{padding:1.4rem 1.5rem} .hero-card h2{margin:.2rem 0 .55rem;font-size:1.75rem} .hero-card p{margin:0 0 1rem;color:var(--muted)}
 .cta-row,.category-chips{display:flex;gap:.7rem;flex-wrap:wrap}
@@ -1157,40 +1157,6 @@ html[data-lang="pl"] .ghost-btn [lang-variant="pl"]{
 }
 
 
-/* Editorial strip */
-.editorial-strip{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:1rem;
-  margin-top:1rem;
-}
-.editorial-card{
-  background:linear-gradient(180deg,#fffdfa 0%, #fff6ef 100%);
-  border:1px solid rgba(132,70,26,.12);
-  border-radius:22px;
-  box-shadow:0 12px 26px rgba(63,36,15,.055);
-  padding:1rem 1.05rem;
-}
-.editorial-card strong{
-  display:block;
-  margin-bottom:.35rem;
-}
-.editorial-card p{
-  margin:0;
-  color:var(--muted);
-  line-height:1.65;
-}
-@media (max-width:800px){
-  .editorial-strip{
-    grid-template-columns:1fr;
-    gap:.8rem;
-  }
-  .editorial-card{
-    border-radius:18px;
-    padding:.9rem;
-  }
-}
-
 
 /* V46 modal language hardening */
 .modal-title [lang-variant],
@@ -1388,17 +1354,6 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
         <p><span lang-variant="de">Nutze Suche, Kategorien oder die neuesten Einträge und springe direkt ins Rezept.</span><span lang-variant="pl">Skorzystaj z wyszukiwarki, kategorii albo najnowszych wpisów i przejdź od razu do przepisu.</span></p>
       </article>
     </div>
-  </section>
-
-  <section class="editorial-strip">
-    <article class="editorial-card">
-      <strong><span lang-variant="de">Rezepte mit System</span><span lang-variant="pl">Przepisy z systemem</span></strong>
-      <p><span lang-variant="de">Neue Einträge werden direkt aus der XML übernommen. Es gibt keine feste Grenze mehr bei Rezeptkarten, Kategorien oder im Inhaltsverzeichnis.</span><span lang-variant="pl">Nowe wpisy są pobierane bezpośrednio z XML. Nie ma już stałej granicy dla kart przepisów, kategorii ani spisu treści.</span></p>
-    </article>
-    <article class="editorial-card">
-      <strong><span lang-variant="de">Mobile mitgedacht</span><span lang-variant="pl">Z myślą o mobile</span></strong>
-      <p><span lang-variant="de">Suche, Filter, Karten und Modal bleiben auch auf dem Handy nutzbar.</span><span lang-variant="pl">Wyszukiwarka, filtry, karty i okno modalne pozostają wygodne także na telefonie.</span></p>
-    </article>
   </section>
 
   <section class="highlights-wrap">
@@ -1731,16 +1686,26 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     `;
   }
 
+  function getSortedVisibleCategories(counts){
+    return CATEGORY_CONFIG
+      .filter(cat => counts[cat.slug])
+      .sort((a, b) => {
+        const labelA = state.activeLang === 'pl' ? a.pl : a.de;
+        const labelB = state.activeLang === 'pl' ? b.pl : b.de;
+        return labelA.localeCompare(labelB, state.activeLang === 'pl' ? 'pl' : 'de', { sensitivity: 'base' });
+      });
+  }
+
   function buildCategoryChips(){
     const counts = state.recipes.reduce((acc, recipe) => {
       acc[recipe.categorySlug] = (acc[recipe.categorySlug] || 0) + 1;
       return acc;
     }, {});
     const allCount = state.recipes.length;
+    const sortedCategories = getSortedVisibleCategories(counts);
     const items = [`<button class="category-chip ${state.activeCategory === 'all' ? 'active' : ''}" data-category="all" type="button">${textByLang('Alle (' + allCount + ')', 'Wszystkie (' + allCount + ')')}</button>`];
-    CATEGORY_CONFIG.forEach(cat => {
+    sortedCategories.forEach(cat => {
       const count = counts[cat.slug] || 0;
-      if (!count) return;
       items.push(`<button class="category-chip ${state.activeCategory === cat.slug ? 'active' : ''}" data-category="${cat.slug}" type="button">${cat.icon} ${textByLang(cat.de + ' (' + count + ')', cat.pl + ' (' + count + ')')}</button>`);
     });
     categoryChips.innerHTML = items.join('');
@@ -1751,8 +1716,8 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       acc[recipe.categorySlug] = (acc[recipe.categorySlug] || 0) + 1;
       return acc;
     }, {});
-    categoryJumpGrid.innerHTML = CATEGORY_CONFIG
-      .filter(cat => counts[cat.slug])
+    const sortedCategories = getSortedVisibleCategories(counts);
+    categoryJumpGrid.innerHTML = sortedCategories
       .map(cat => `
         <button class="category-mag-card category-jump-card" type="button" data-category="${cat.slug}">
           <div class="category-mag-icon">${cat.icon}</div>
@@ -1818,10 +1783,12 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
 
   function updateCategoryLabel(){
     if (state.activeCategory === 'all'){
-      activeCategoryLabelText.innerHTML = textByLang('Aktiv: Alle Kategorien', 'Aktywne: Wszystkie kategorie');
+      activeCategoryLabelText.style.display = 'none';
+      activeCategoryLabelText.innerHTML = '';
       return;
     }
     const label = CATEGORY_LABELS[state.activeCategory] || CATEGORY_LABELS['klassiker-hausmannskost'];
+    activeCategoryLabelText.style.display = '';
     activeCategoryLabelText.innerHTML = textByLang('Aktiv: ' + label.de, 'Aktywne: ' + label.pl);
   }
 
@@ -1831,7 +1798,10 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     recipeGrid.innerHTML = visible.map(createRecipeCard).join('');
     buildTOC(filtered);
 
-    resultCount.innerHTML = textByLang(filtered.length + ' Rezepte', filtered.length + ' przepisów');
+    const hasFilter = state.activeCategory !== 'all' || !!currentQuery();
+    resultCount.innerHTML = hasFilter
+      ? textByLang(filtered.length + ' von ' + state.recipes.length + ' Rezepten', filtered.length + ' z ' + state.recipes.length + ' przepisów')
+      : textByLang(state.recipes.length + ' Rezepte', state.recipes.length + ' przepisów');
     updateCategoryLabel();
 
     emptyState.classList.toggle('show', filtered.length === 0);
@@ -2113,6 +2083,8 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       if (!response.ok) throw new Error('XML konnte nicht geladen werden.');
       const xmlText = await response.text();
       state.recipes = parseRecipes(xmlText);
+      state.activeCategory = 'all';
+      state.currentLimit = INITIAL_VISIBLE;
       updateHero();
       buildCategoryChips();
       buildCategoryCards();
