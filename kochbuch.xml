@@ -41,20 +41,23 @@
       <step nr="6">Jede Kohlroulade außen mit Speck umwickeln.</step>
       <step nr="7">Die Rouladen in einem Bräter von allen Seiten anbraten.</step>
       <step nr="8">Tomatenmark kurz mitrösten, dann mit Rotwein ablöschen und mit Rinderfond auffüllen.</step>
-      <step nr="9">Rouladen in die Sauce legen und zugedeckt 2 bis 2,5 Stunden bei niedriger Hitze schmoren.</step>
-      <step nr="10">Am Ende den Deckel abnehmen und die Sauce einkochen lassen. Mit Salz, Pfeffer und ggf. etwas Zucker abschmecken.</step>
+      <step nr="9">Rouladen in die Sauce legen und zugedeckt im vorgeheizten Ofen bei 160 °C Ober-/Unterhitze etwa 2 bis 2,5 Stunden schmoren. Zwischendurch einmal wenden oder mit Sauce begießen.</step>
+      <step nr="10">Rouladen vor dem Servieren 10 Minuten in der Sauce ruhen lassen, damit sie sich besser schneiden und saftig bleiben.</step>
+      <step nr="11">Am Ende den Deckel abnehmen und die Sauce einkochen lassen. Mit Salz, Pfeffer und ggf. etwas Zucker abschmecken.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 30 Minuten</item>
-      <item>Schmorzeit: 2 bis 2,5 Stunden</item>
-      <item>Bei Essen gegen 18:30–19:00 Uhr ideal ca. 15:30–16:00 Uhr starten</item>
+      <item>Anbraten und Saucenansatz: ca. 20 Minuten</item>
+      <item>Schmorzeit im Ofen: ca. 2 bis 2,5 Stunden bei 160 °C Ober-/Unterhitze</item>
+      <item>Ruhezeit: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 3 Stunden</item>
     </timing>
     <tips>
       <item>Die dicke Blattrippe immer flach schneiden, dann lassen sich die Rouladen besser wickeln.</item>
-      <item>Die Sauce am Ende offen einkochen, damit sie kräftiger wird.</item>
-      <item>Kartoffelpüree dazu frisch kurz vor dem Servieren machen.</item>
+      <item>Die Sauce am Ende 10 Minuten offen einkochen, damit sie kräftiger und glänzender wird.</item>
+      <item>Kartoffelpüree oder Brot erst in der letzten halben Stunde vorbereiten, damit alles gleichzeitig fertig ist.</item>
     </tips>
-    <rating>Noch keine feste Zahl vergeben; gehört aber zu den guten, gespeicherten Rezepten.</rating>
+    <rating>9,5/10 – kräftig, rund und als Schmorgericht sehr stimmig.</rating>
     <translation lang="pl">
       <name>Hiszpańskie gołąbki z chorizo, czerwonym winem i boczkiem</name>
       <persons>4 osoby</persons>
@@ -500,26 +503,27 @@
       <item>optional: frisches Basilikum oder Petersilie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Ciabatta in Scheiben schneiden.</step>
-      <step nr="2">Mit etwas Olivenöl bestreichen.</step>
-      <step nr="3">Auf dem Grill oder im Ofen anrösten.</step>
-      <step nr="4">Die warmen Brotscheiben mit frischem Knoblauch einreiben.</step>
-      <step nr="5">Tomaten klein würfeln.</step>
-      <step nr="6">Optional rote Zwiebel fein würfeln und mit den Tomaten mischen.</step>
-      <step nr="7">Mit Salz, Pfeffer und etwas Olivenöl abschmecken.</step>
-      <step nr="8">Kurz vor dem Servieren auf die Brotscheiben geben.</step>
+      <step nr="1">Tomaten entkernen, klein würfeln und mit fein gehacktem Knoblauch, Olivenöl, Salz, Pfeffer und frischem Basilikum mischen.</step>
+      <step nr="2">Die Tomatenmischung 10 Minuten ziehen lassen, damit sie Saft und Aroma entwickelt.</step>
+      <step nr="3">Ciabatta in Scheiben schneiden und leicht mit Olivenöl bestreichen.</step>
+      <step nr="4">Den Grill auf mittlere direkte Hitze vorheizen; alternativ eine Grillpfanne stark erhitzen.</step>
+      <step nr="5">Die Brotscheiben pro Seite 1 bis 2 Minuten rösten, bis sie knusprig sind und deutliche Grillspuren haben.</step>
+      <step nr="6">Die warmen Scheiben direkt nach dem Grillen mit einer halbierten Knoblauchzehe einreiben.</step>
+      <step nr="7">Die Tomatenmischung erst kurz vor dem Servieren auf das Brot geben, damit die Scheiben knusprig bleiben.</step>
+      <step nr="8">Nach Wunsch mit etwas zusätzlichem Olivenöl oder Basilikum servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 10–15 Minuten</item>
-      <item>Rösten: 5 Minuten</item>
-      <item>Gesamt: ca. 15–20 Minuten</item>
+      <item>Ziehen lassen: ca. 10 Minuten</item>
+      <item>Rösten auf dem Grill: ca. 3–4 Minuten bei mittlerer direkter Hitze</item>
+      <item>Gesamt: ca. 20 Minuten</item>
     </timing>
     <tips>
-      <item>Brot erst kurz vor dem Essen belegen.</item>
-      <item>Die Tomatenmasse nicht zu wässrig werden lassen.</item>
-      <item>Perfekt als Vorspeise zum Grillabend.</item>
+      <item>Tomatenmasse nicht zu früh auf das Brot geben, sonst wird es weich.</item>
+      <item>Ciabatta oder Baguette nur kurz grillen, damit es außen knusprig und innen noch leicht weich bleibt.</item>
+      <item>Als Vorspeise ideal, während der Hauptgang noch auf dem Grill liegt.</item>
     </tips>
-    <rating>Als passende Vorspeise fest gespeichert.</rating>
+    <rating>8,8/10 – frisch, aromatisch und als Grillvorspeise sehr stimmig.</rating>
     <translation lang="pl">
       <name>Bruschetta z ciabatty</name>
       <persons>3–4 osoby jako przystawka lub dodatek</persons>
@@ -1412,21 +1416,24 @@
       <step nr="5">Tomatenmark zugeben und kurz mitrösten.</step>
       <step nr="6">Mit Rotwein ablöschen und leicht einkochen lassen.</step>
       <step nr="7">Rinderfond angießen und die Rouladen zurück in den Bräter legen.</step>
-      <step nr="8">Zugedeckt 1,5 bis 2 Stunden schmoren, bis das Fleisch weich ist.</step>
-      <step nr="9">Rouladen herausnehmen, die Soße nach Wunsch passieren oder rustikal lassen.</step>
-      <step nr="10">Mit etwas Mehl oder Stärke binden, Butter einrühren und abschmecken, dann die Rouladen wieder in die Soße geben.</step>
+      <step nr="8">Die Rouladen zurück in den Bräter legen und zugedeckt im vorgeheizten Ofen bei 160 °C Ober-/Unterhitze etwa 1,5 bis 2 Stunden schmoren.</step>
+      <step nr="9">Zwischendurch ein- bis zweimal prüfen und bei Bedarf etwas Brühe nachgießen, damit die helle Sauce nicht zu stark reduziert.</step>
+      <step nr="10">Rouladen herausnehmen, die Soße nach Wunsch passieren oder rustikal lassen.</step>
+      <step nr="11">Mit etwas Mehl oder Stärke binden, Butter einrühren und abschmecken, dann die Rouladen wieder in die Soße geben.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 25 Minuten</item>
-      <item>Schmorzeit: 1,5 bis 2 Stunden</item>
-      <item>Gesamt: ca. 2 bis 2,5 Stunden</item>
+      <item>Anbraten und Ansatz: ca. 20 Minuten</item>
+      <item>Schmorzeit im Ofen: 1,5 bis 2 Stunden bei 160 °C Ober-/Unterhitze</item>
+      <item>Ruhezeit: 10 Minuten</item>
+      <item>Gesamt: ca. 2,5 bis 3 Stunden</item>
     </timing>
     <tips>
       <item>Ohne Sahne bleibt die Soße ehrlich, kräftig und hausgemacht.</item>
       <item>Farbe und Tiefe kommen von Röstaromen und Tomatenmark, nicht von Dunkelmachern.</item>
-      <item>Am besten mit Kartoffeln, Rotkohl oder einem klassischen Gemüse servieren.</item>
+      <item>Nach dem Schmoren die Rouladen 10 Minuten ruhen lassen und die Sauce erst dann final abschmecken.</item>
     </tips>
-    <rating>Festessen, sehr gut.</rating>
+    <rating>9/10 – klassisch, saftig und mit der hellen Sauce eigenständig.</rating>
     <translation lang="pl">
       <name>Rolady wołowe – jasny sos bez barwnika (przepis domowy)</name>
       <persons>3–4 osoby</persons>
@@ -1491,23 +1498,27 @@
       <item>Majoran</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kartoffeln, Möhren, Zwiebel und Lauch oder Sellerie putzen und in Stücke schneiden.</step>
-      <step nr="2">Alles zusammen mit der Gemüsebrühe in einen Topf geben und etwa 25 Minuten kochen, bis das Gemüse weich ist.</step>
-      <step nr="3">Einen Teil der Suppe pürieren, damit sie schön sämig wird, den Rest stückig lassen.</step>
-      <step nr="4">Mettenden oder Würstchen in Scheiben schneiden und in die Suppe geben.</step>
-      <step nr="5">Noch ein paar Minuten ziehen lassen und mit Salz, Pfeffer und Majoran abschmecken.</step>
+      <step nr="1">Kartoffeln, Zwiebeln und Suppengemüse schälen und in grobe Würfel schneiden.</step>
+      <step nr="2">Etwas Öl oder Butter in einem großen Topf erhitzen und Zwiebeln sowie Gemüse 3 bis 4 Minuten anschwitzen.</step>
+      <step nr="3">Kartoffeln zugeben, kurz mitrösten und alles mit Brühe auffüllen.</step>
+      <step nr="4">Die Suppe 20 bis 25 Minuten sanft kochen, bis die Kartoffeln weich sind.</step>
+      <step nr="5">Mettenden in Stücke schneiden und in den letzten 8 bis 10 Minuten mitgaren, damit sie Aroma abgeben.</step>
+      <step nr="6">Einen Teil der Suppe pürieren oder mit dem Kartoffelstampfer leicht andrücken, damit sie sämig wird.</step>
+      <step nr="7">Mit Salz, Pfeffer und nach Wunsch Majoran abschmecken und noch 2 Minuten ziehen lassen.</step>
+      <step nr="8">Mit Petersilie oder frischem Brot servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Kochzeit: ca. 25 Minuten</item>
-      <item>Gesamt: ca. 40 Minuten</item>
+      <item>Kochzeit: ca. 25–30 Minuten</item>
+      <item>Nachziehen: 2–3 Minuten</item>
+      <item>Gesamt: ca. 45 Minuten</item>
     </timing>
     <tips>
       <item>Am nächsten Tag schmeckt die Suppe meist noch besser.</item>
       <item>Wer es rustikaler mag, püriert nur einen kleinen Teil der Suppe.</item>
-      <item>Mit frischem Brot serviert ist sie ein kompletter Klassiker.</item>
+      <item>Die Mettenden erst am Ende mitkochen, damit sie nicht trocken werden.</item>
     </tips>
-    <rating>Klassiker, gut.</rating>
+    <rating>8,8/10 – deftig, sämig und als Hausmannskost sehr zuverlässig.</rating>
     <translation lang="pl">
       <name>Zupa ziemniaczana z kiełbasą Mettenden</name>
       <persons>4–6 osób</persons>
@@ -2412,23 +2423,25 @@
       <step nr="2">Etwas Fett in einem Bräter erhitzen und das Eisbein rundherum anbraten.</step>
       <step nr="3">Suppengrün oder Wurzelgemüse grob schneiden und dazugeben.</step>
       <step nr="4">Mit etwas Wasser oder Brühe angießen.</step>
-      <step nr="5">Zugedeckt schmoren, bis das Fleisch weich wird.</step>
-      <step nr="6">Tomatenmark kurz vor Ende der Garzeit einrühren.</step>
-      <step nr="7">Zum Schluss offen weitergaren, damit Sauce und Oberfläche kräftiger werden.</step>
-      <step nr="8">Heiß servieren, zum Beispiel mit Brot oder Kartoffeln.</step>
+      <step nr="5">Zugedeckt im vorgeheizten Ofen bei 160 °C Ober-/Unterhitze etwa 2 bis 2,5 Stunden schmoren, bis das Fleisch weich ist.</step>
+      <step nr="6">Zwischendurch ein- bis zweimal mit Bratfond übergießen und prüfen, ob noch genug Flüssigkeit im Bräter ist.</step>
+      <step nr="7">Tomatenmark kurz vor Ende der Garzeit einrühren.</step>
+      <step nr="8">Zum Schluss offen weitergaren, damit Sauce und Oberfläche kräftiger werden.</step>
+      <step nr="9">Heiß servieren, zum Beispiel mit Brot oder Kartoffeln.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 20 Minuten plus Kühlzeit</item>
-      <item>Schmorzeit: ca. 2 Stunden</item>
-      <item>Gesamt: abhängig von der Kühlzeit</item>
+      <item>Anbraten und Ansatz: ca. 20 Minuten</item>
+      <item>Schmorzeit im Ofen: ca. 2 bis 2,5 Stunden bei 160 °C Ober-/Unterhitze</item>
+      <item>Ruhezeit: 10 Minuten</item>
+      <item>Gesamt: abhängig von der Kühlzeit, aktiv ca. 3 Stunden</item>
     </timing>
     <tips>
       <item>Die Kühlzeit vor dem Schmoren verbessert Geschmack und Würzung deutlich.</item>
       <item>Während des Garens gelegentlich mit Flüssigkeit übergießen, damit nichts austrocknet.</item>
-      <item>Mit Senf und Brot serviert bleibt das Gericht sehr klassisch.</item>
-      <item>Das Fleisch sollte weich sein, aber nicht zerfallen.</item>
+      <item>Vor dem Anschneiden kurz ruhen lassen, damit das Fleisch saftiger bleibt.</item>
     </tips>
-    <rating>Herzhaftes Traditionsgericht.</rating>
+    <rating>9/10 – kräftig, traditionell und mit langer Garzeit sehr stimmig.</rating>
     <translation lang="pl">
       <name>Golonka po staropolsku</name>
       <persons>4 osoby</persons>
@@ -3608,24 +3621,27 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Cordon Bleu nach Packungsangabe im Airfryer garen, bis es goldbraun und knusprig ist.</step>
+      <step nr="1">Cordon Bleu nach Packungsangabe oder vorbereitet bereitstellen und den Reis vom Vortag lockern.</step>
       <step nr="2">Währenddessen etwas Öl in einer Pfanne erhitzen.</step>
       <step nr="3">Gekochten Reis mit Ei und Gemüse in die Pfanne geben und kräftig anbraten.</step>
-      <step nr="4">Mit Salz und Pfeffer würzen und alles gut vermengen.</step>
-      <step nr="5">Das fertige Cordon Bleu zusammen mit dem Nasi Goreng anrichten.</step>
-      <step nr="6">Mit Sweet Chili Sauce servieren.</step>
+      <step nr="4">Den Airfryer auf 190 °C vorheizen und das Cordon Bleu je nach Größe 12 bis 15 Minuten garen, einmal wenden und zum Schluss kurz ruhen lassen.</step>
+      <step nr="5">Parallel Öl in einer Pfanne erhitzen, Zwiebel, Gemüse und den Reis anbraten und mit Sojasauce, etwas Knoblauch und Gewürzen abschmecken.</step>
+      <step nr="6">Ei oder zusätzliche Sauce erst ganz am Ende unter den Nasi Goreng heben, damit der Reis locker bleibt.</step>
+      <step nr="7">Mit Sweet Chili Sauce servieren.</step>
     </preparation>
     <timing>
-      <item>Gesamtzeit: ca. 25 Minuten</item>
-      <item>Airfryer: ca. 12–15 Minuten</item>
-      <item>Pfanne: ca. 10 Minuten</item>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Airfryer: 12–15 Minuten bei 190 °C</item>
+      <item>Pfanne für Nasi Goreng: ca. 10–12 Minuten</item>
+      <item>Ruhezeit Cordon Bleu: 2 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
     </timing>
     <tips>
       <item>Am besten eignet sich bereits gekochter, abgekühlter Reis.</item>
-      <item>Das Gemüse kann je nach Vorrat variiert werden.</item>
-      <item>Sweet Chili Sauce erst beim Servieren dazugeben, damit alles knusprig bleibt.</item>
+      <item>Das Cordon Bleu nicht zu eng in den Airfryer legen, damit es gleichmäßig bräunt.</item>
+      <item>Sweet Chili Sauce erst beim Servieren dazugeben, damit die Panade knusprig bleibt.</item>
     </tips>
-    <rating>8/10</rating>
+    <rating>8,5/10 – deftig, schnell und als Kombi überraschend stimmig.</rating>
     <translation lang="pl">
       <name>Cordon Bleu z nasi goreng</name>
       <persons>1 osoba</persons>
@@ -3789,7 +3805,7 @@
       <item>Kein Eis und keine Fruchtstücke einfüllen.</item>
       <item>Wenn der Drink spritziger bleiben soll, den Sekt erst nach dem Zapfen zugeben.</item>
     </tips>
-    <rating>8,5 / 10 – sommerlich, leicht und unkompliziert.</rating>
+    <rating>8,5/10 – fruchtig, spritzig und gut für warme Tage.</rating>
     <translation lang="pl">
       <name>Truskawkowo-pomarańczowy slush z sektu do Ninja Slushi</name>
       <persons>2–3 szklanki</persons>
@@ -4177,13 +4193,15 @@
       <step nr="2">Mit Sojasauce, Zucker, Sesamöl, Essig und Chili zu einer Marinade verrühren.</step>
       <step nr="3">Fleisch mit der Marinade mischen und mindestens 30 Minuten ziehen lassen.</step>
       <step nr="4">Grill oder Plancha stark vorheizen.</step>
-      <step nr="5">Das Fleisch portionsweise sehr kurz und heiß grillen.</step>
-      <step nr="6">Mit Sesam und Frühlingszwiebeln bestreuen und sofort servieren.</step>
+      <step nr="5">Den Grill stark vorheizen. Das Fleisch zunächst 1 bis 2 Minuten pro Seite über direkter hoher Hitze angrillen und dann bei mittlerer indirekter Hitze 3 bis 4 Minuten fertig ziehen lassen.</step>
+      <step nr="6">Vor dem Servieren 2 Minuten ruhen lassen, damit der Fleischsaft sich verteilt.</step>
+      <step nr="7">Mit Sesam und Frühlingszwiebeln bestreuen und sofort servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 15 Minuten</item>
       <item>Marinieren: 30–60 Minuten</item>
-      <item>Grillzeit: 5–8 Minuten</item>
+      <item>Grillen: 5–8 Minuten bei hoher direkter und mittlerer indirekter Hitze</item>
+      <item>Ruhezeit: 2 Minuten</item>
       <item>Gesamt: ca. 50–80 Minuten</item>
     </timing>
     <tips>
@@ -4191,7 +4209,7 @@
       <item>Sehr gut mit Salatblättern, Reis oder Fladenbrot servieren.</item>
       <item>Nicht zu viel Fleisch auf einmal grillen, sonst kocht es eher als zu rösten.</item>
     </tips>
-    <rating>9 / 10 – würzig, schnell und sehr grilltauglich.</rating>
+    <rating>9,2/10 – intensiv, saftig und mit Röstaromen sehr stark.</rating>
     <translation lang="pl">
       <name>Koreańskie bulgogi z grilla</name>
       <persons>3–4 osoby</persons>
@@ -4329,24 +4347,24 @@
       <item>optional: etwas Honig für eine milde süß-salzige Variante</item>
     </ingredients>
     <preparation>
-      <step nr="1">Halloumi in etwa 1 bis 1,5 cm dicke Scheiben schneiden und trocken tupfen.</step>
-      <step nr="2">Olivenöl, Zitronensaft, Knoblauch, Kräuter und etwas Pfeffer verrühren.</step>
-      <step nr="3">Die Halloumi-Scheiben damit leicht einpinseln und kurz ziehen lassen – 10 bis 15 Minuten reichen völlig aus.</step>
-      <step nr="4">Den Grill gut vorheizen. Halloumi bei mittlerer bis höherer Hitze pro Seite 2–3 Minuten grillen, bis schöne Grillstreifen entstehen.</step>
-      <step nr="5">Direkt servieren und nach Wunsch mit einem Hauch Honig oder extra Kräutern verfeinern.</step>
+      <step nr="1">Halloumi in dickere Scheiben schneiden und trocken tupfen.</step>
+      <step nr="2">Mit etwas Olivenöl, Kräutern und wenig Pfeffer bestreichen; Salz meist nicht nötig.</step>
+      <step nr="3">Den Grill auf mittlere direkte Hitze vorheizen oder eine Grillpfanne erhitzen.</step>
+      <step nr="4">Den Halloumi 2 bis 3 Minuten pro Seite grillen, bis deutliche Grillspuren entstehen.</step>
+      <step nr="5">Nur einmal wenden, damit die Scheiben stabil bleiben.</step>
+      <step nr="6">Direkt mit etwas Zitronensaft oder Kräuteröl servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 Minuten</item>
-      <item>Kurze Marinierzeit: 10–15 Minuten</item>
-      <item>Grillzeit: 4–6 Minuten</item>
-      <item>Gesamt: ca. 20 Minuten</item>
+      <item>Vorbereitung: ca. 5 Minuten</item>
+      <item>Grillzeit: ca. 4–6 Minuten bei mittlerer direkter Hitze</item>
+      <item>Gesamt: ca. 10 Minuten</item>
     </timing>
     <tips>
-      <item>Halloumi immer heiß servieren – dann ist er außen knusprig und innen weich.</item>
-      <item>Sehr gut mit Tomaten, Rucola oder gegrilltem Gemüse kombinierbar.</item>
-      <item>Nicht zu lange grillen, sonst wird er trocken und zäh.</item>
+      <item>Halloumi nicht zu dünn schneiden, sonst wird er trocken.</item>
+      <item>Erst nach dem Grillen mit Zitronensaft oder Kräutern ergänzen, damit er nicht verwässert.</item>
+      <item>Passt sehr gut zu Salat, Brot oder gegrilltem Gemüse.</item>
     </tips>
-    <rating>8,8 / 10 – simpel, schnell und eine starke vegetarische Grillbeilage.</rating>
+    <rating>8,6/10 – salzig, saftig und als Grillbeilage sehr dankbar.</rating>
     <translation lang="pl">
       <name>Grillowany halloumi z ziołami i oliwą</name>
       <persons>2–3 osoby</persons>
@@ -4402,25 +4420,26 @@
       <item>Holz- oder Metallspieße</item>
     </ingredients>
     <preparation>
-      <step nr="1">Wenn Holzspieße verwendet werden, diese zuerst mindestens 20 Minuten in Wasser einweichen.</step>
-      <step nr="2">Paprika, Zucchini und Zwiebel in grobe, möglichst gleich große Stücke schneiden. Champignons nur putzen und größere halbieren.</step>
-      <step nr="3">Olivenöl mit fein gehacktem Knoblauch, Zitronensaft, Paprikapulver, Salz und Pfeffer verrühren.</step>
-      <step nr="4">Das Gemüse mit der Marinade mischen und 15–20 Minuten ziehen lassen.</step>
-      <step nr="5">Das Gemüse bunt gemischt auf die Spieße stecken.</step>
-      <step nr="6">Die Spieße bei mittlerer Hitze rundherum 8–12 Minuten grillen, dabei immer wieder wenden, bis das Gemüse weich ist und leichte Röstaromen hat.</step>
+      <step nr="1">Gemüse in ähnlich große Stücke schneiden, damit alles gleichmäßig gart.</step>
+      <step nr="2">Aus Olivenöl, Salz, Pfeffer, Paprikapulver und Kräutern eine Marinade rühren.</step>
+      <step nr="3">Das Gemüse damit mischen und 10 bis 15 Minuten ziehen lassen.</step>
+      <step nr="4">Den Grill auf mittlere Hitze vorheizen und das Gemüse auf Spieße stecken oder in einer Grillschale verteilen.</step>
+      <step nr="5">Die Spieße 10 bis 14 Minuten grillen und dabei mehrfach wenden, bis das Gemüse weich und leicht gebräunt ist.</step>
+      <step nr="6">Zum Schluss nach Wunsch mit etwas Zitronensaft oder Kräuterbutter verfeinern.</step>
+      <step nr="7">Heiß als Beilage oder mit Dip und Brot servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 15 Minuten</item>
-      <item>Marinieren: 15–20 Minuten</item>
-      <item>Grillzeit: 8–12 Minuten</item>
-      <item>Gesamt: ca. 35 Minuten</item>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Marinieren: 10–15 Minuten</item>
+      <item>Grillzeit: ca. 10–14 Minuten bei mittlerer Hitze</item>
+      <item>Gesamt: ca. 30 Minuten</item>
     </timing>
     <tips>
-      <item>Zucchini nicht zu dünn schneiden, sonst wird sie zu weich und rutscht schnell vom Spieß.</item>
-      <item>Die Marinade passt auch sehr gut für Grillgemüse aus der Schale oder Pfanne.</item>
-      <item>Wer mag, kann noch Halloumiwürfel oder kleine Cherrytomaten ergänzen.</item>
+      <item>Paprika und Zwiebeln etwas größer schneiden als Zucchini, dann garen die Spieße gleichmäßiger.</item>
+      <item>Eine Grillschale ist praktisch, wenn kleinere Stücke verwendet werden.</item>
+      <item>Mit Kräuterquark oder Halloumi wird daraus auch ein eigenständiger Teller.</item>
     </tips>
-    <rating>8,7 / 10 – unkompliziert, bunt und immer passend zum Grillabend.</rating>
+    <rating>8,5/10 – bunt, sauber vom Grill und sehr alltagstauglich.</rating>
     <translation lang="pl">
       <name>Warzywne szaszłyki z grilla</name>
       <persons>3–4 osoby</persons>
@@ -4550,21 +4569,21 @@
     <preparation>
       <step nr="1">Die holzigen Enden des Spargels abbrechen oder abschneiden.</step>
       <step nr="2">Den Spargel mit Olivenöl, etwas Salz und Pfeffer vermengen.</step>
-      <step nr="3">Bei mittlerer bis höherer Hitze 5–8 Minuten grillen, dabei immer wieder wenden, bis er bissfest ist und leichte Grillspuren hat.</step>
+      <step nr="3">Den Grill auf mittlere bis mittelhohe direkte Hitze vorheizen und den Spargel 5 bis 8 Minuten grillen, dabei regelmäßig wenden.</step>
       <step nr="4">Parallel die Butter schmelzen und mit Zitronensaft sowie nach Wunsch etwas Zitronenschale verrühren.</step>
       <step nr="5">Den heißen Spargel mit der Zitronenbutter beträufeln und sofort servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 Minuten</item>
-      <item>Grillzeit: 5–8 Minuten</item>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Grillzeit: 5–8 Minuten bei mittlerer bis mittelhoher direkter Hitze</item>
       <item>Gesamt: ca. 15 Minuten</item>
     </timing>
     <tips>
-      <item>Nicht zu lange grillen – grüner Spargel soll noch Biss haben.</item>
-      <item>Passt hervorragend zu Fleisch, Halloumi oder einfach mit Brot.</item>
-      <item>Wer mag, ergänzt am Ende etwas geriebenen Parmesan.</item>
+      <item>Nicht zu lange grillen – grüner Spargel soll noch Biss behalten.</item>
+      <item>Die Zitronenbutter erst nach dem Grillen darübergeben, damit sie frisch schmeckt.</item>
+      <item>Ideal zu Fisch, Fleisch oder einfach mit etwas Baguette.</item>
     </tips>
-    <rating>9,0 / 10 – schnell, frisch und perfekt für die Sommerküche.</rating>
+    <rating>8,9/10 – frisch, klar und als Beilage sehr stimmig.</rating>
     <translation lang="pl">
       <name>Zielone szparagi z grilla z masłem cytrynowym</name>
       <persons>2–3 osoby</persons>
@@ -4614,23 +4633,25 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Die Süßkartoffeln schälen und in gleichmäßige Pommes schneiden.</step>
-      <step nr="2">Mit Olivenöl, Paprikapulver, optional Knoblauchpulver und etwas Pfeffer vermengen.</step>
-      <step nr="3">Die Pommes am besten in einer Grillschale oder auf einer Plancha verteilen, damit sie nicht durch den Rost fallen.</step>
-      <step nr="4">Bei mittlerer Hitze 20–25 Minuten grillen oder im indirekten Bereich garen. Zwischendurch mehrmals wenden.</step>
-      <step nr="5">Erst zum Schluss mit Meersalz würzen und sofort servieren.</step>
+      <step nr="1">Süßkartoffeln in gleichmäßige Stifte schneiden und gut trocken tupfen.</step>
+      <step nr="2">Mit Öl, Salz, Paprikapulver und nach Wunsch etwas Stärke mischen, damit sie außen besser anziehen.</step>
+      <step nr="3">Den Grill auf mittlere indirekte Hitze vorbereiten und eine Plancha, Grillschale oder Grillplatte vorheizen.</step>
+      <step nr="4">Die Süßkartoffelstifte darauf verteilen und 18 bis 25 Minuten garen, dabei mehrfach wenden.</step>
+      <step nr="5">Zum Schluss 2 bis 3 Minuten über etwas höherer Hitze nachrösten, damit mehr Farbe entsteht.</step>
+      <step nr="6">Mit Dip oder Kräuterquark sofort servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10–15 Minuten</item>
-      <item>Grillzeit: 20–25 Minuten</item>
-      <item>Gesamt: ca. 35–40 Minuten</item>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Grillen: ca. 18–25 Minuten bei mittlerer indirekter Hitze</item>
+      <item>Finish: 2–3 Minuten bei stärkerer Hitze</item>
+      <item>Gesamt: ca. 30 Minuten</item>
     </timing>
     <tips>
-      <item>Süßkartoffeln werden auf dem Grill nicht ganz so knusprig wie im Airfryer oder Ofen, schmecken dafür aber schön rauchig.</item>
-      <item>In einer Grillschale gelingen sie deutlich entspannter.</item>
-      <item>Sehr gut mit Sour Cream, Aioli oder BBQ-Dip.</item>
+      <item>Nicht zu dicht legen, sonst dämpfen die Pommes eher als dass sie rösten.</item>
+      <item>Auf Plancha oder Grillplatte gelingen sie deutlich besser als direkt auf dem Rost.</item>
+      <item>Am besten direkt heiß essen, dann sind sie außen am besten.</item>
     </tips>
-    <rating>8,6 / 10 – unkompliziert, leicht süßlich und ideal als Grillbeilage.</rating>
+    <rating>8,4/10 – süßlich, würzig und mit Dip am stärksten.</rating>
     <translation lang="pl">
       <name>Frytki z batatów z grilla</name>
       <persons>2–3 osoby</persons>
@@ -4772,7 +4793,7 @@
       <item>Am besten mit frischem Brot servieren.</item>
       <item>Die Soße lässt sich gut vorbereiten; Eier erst kurz vor dem Essen hineingeben.</item>
     </tips>
-    <rating>9 / 10 – unkompliziert, würzig und ideal für den Alltag.</rating>
+    <rating>8,8/10 – würzig, saftig und ideal mit gutem Brot.</rating>
     <translation lang="pl">
       <name>Szakszuka</name>
       <persons>2–3 osoby</persons>
@@ -4855,7 +4876,7 @@
       <item>Wer mag, kann getrocknete Tomaten klein gehackt in die Frischkäsefüllung geben.</item>
       <item>Hähnchen erst anschneiden, wenn es kurz geruht hat.</item>
     </tips>
-    <rating>9 / 10 – saftig, unkompliziert und sehr stimmig.</rating>
+    <rating>9/10 – saftig, rund und als Ofengericht sehr zuverlässig.</rating>
     <translation lang="pl">
       <name>Pierś z kurczaka faszerowana serkiem śmietankowym z pieczonymi ziemniakami</name>
       <persons>2–3 osoby</persons>
@@ -5009,21 +5030,22 @@
       <step nr="3">Hähnchenstücke mindestens 30 Minuten in der Marinade ziehen lassen.</step>
       <step nr="4">Paprika und Zwiebel in grobe Stücke schneiden.</step>
       <step nr="5">Hähnchen, Paprika und Zwiebel abwechselnd auf Spieße stecken.</step>
-      <step nr="6">Spieße auf dem heißen Grill rundherum 10–12 Minuten grillen, bis das Fleisch gar ist.</step>
+      <step nr="6">Den Grill auf mittlere direkte Hitze vorheizen und die Spieße 10 bis 12 Minuten grillen, dabei regelmäßig wenden, bis das Fleisch gar und leicht gebräunt ist.</step>
       <step nr="7">Direkt servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 15 Minuten</item>
       <item>Marinieren: mindestens 30 Minuten</item>
-      <item>Grillzeit: 10–12 Minuten</item>
+      <item>Grillzeit: 10–12 Minuten bei mittlerer direkter Hitze</item>
+      <item>Ruhezeit: 2 Minuten</item>
       <item>Gesamt aktiv: ca. 30 Minuten plus Marinierzeit</item>
     </timing>
     <tips>
       <item>Wer mag, kann zusätzlich Zucchini auf die Spieße stecken.</item>
       <item>Holzspieße vorher in Wasser legen, damit sie nicht verbrennen.</item>
-      <item>Dazu passen Kräuterquark, Fladenbrot oder ein Salat.</item>
+      <item>Die Spieße nach dem Grillen 2 Minuten ruhen lassen, damit das Hähnchen saftig bleibt.</item>
     </tips>
-    <rating>9 / 10 – unkompliziert, saftig und perfekt für den Grillabend.</rating>
+    <rating>9/10 – saftig, würzig und zuverlässig vom Grill.</rating>
     <translation lang="pl">
       <name>Marynowane szaszłyki z kurczaka z grilla</name>
       <persons>3–4 osoby</persons>
@@ -5080,23 +5102,24 @@
       <item>optional: etwas gehackte Petersilie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Maiskolben putzen und, wenn nötig, die äußeren Blätter entfernen.</step>
-      <step nr="2">Die Kolben mit etwas Öl oder weicher Butter einreiben.</step>
-      <step nr="3">Mit Salz würzen und nach Wunsch schon leicht pfeffern.</step>
-      <step nr="4">Bei mittlerer Grillhitze rundherum grillen, bis der Mais Farbe bekommt und weich ist.</step>
-      <step nr="5">Zum Schluss mit Butter bestreichen und frisch servieren.</step>
+      <step nr="1">Maiskolben putzen und leicht mit Butter oder Öl einreiben.</step>
+      <step nr="2">Den Grill auf mittlere indirekte Hitze vorheizen.</step>
+      <step nr="3">Die Kolben 12 bis 18 Minuten grillen und dabei regelmäßig drehen, bis sie rundum Farbe bekommen.</step>
+      <step nr="4">Zum Schluss kurz über direkter Hitze angrillen, wenn mehr Röstaroma gewünscht ist.</step>
+      <step nr="5">Mit Butter, Salz und nach Wunsch Paprikapulver oder Kräutern servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 5 Minuten</item>
-      <item>Grillen: 12–18 Minuten bei mittlerer Hitze</item>
-      <item>Direkt heiß servieren</item>
+      <item>Vorbereitung: ca. 5 Minuten</item>
+      <item>Grillzeit: ca. 12–18 Minuten bei mittlerer indirekter Hitze</item>
+      <item>Finish direkt: 1–2 Minuten optional</item>
+      <item>Gesamt: ca. 20 Minuten</item>
     </timing>
     <tips>
-      <item>Mit Kräuterbutter schmeckt es noch aromatischer.</item>
-      <item>Wer es würziger mag, gibt etwas Chili in die Butter.</item>
-      <item>Am besten heiß direkt vom Grill servieren.</item>
+      <item>Vorgekochter Mais ist schneller fertig als roher Maiskolben.</item>
+      <item>Nicht zu heiß beginnen, sonst verbrennt außen alles bevor der Mais heiß ist.</item>
+      <item>Mit Limette oder Chili-Butter wird es noch spannender.</item>
     </tips>
-    <rating>8,5 / 10 – simpel, klassisch und immer beliebt.</rating>
+    <rating>8,7/10 – saftig, süßlich und ein starker Grillklassiker.</rating>
     <translation lang="pl">
       <name>Grillowana kukurydza z masłem</name>
       <persons>3–4 osoby</persons>
@@ -5145,23 +5168,25 @@
       <item>optional: etwas Honig</item>
     </ingredients>
     <preparation>
-      <step nr="1">Halloumi in dicke Scheiben schneiden.</step>
-      <step nr="2">Olivenöl, Zitronensaft und Kräuter verrühren.</step>
-      <step nr="3">Halloumi leicht damit bestreichen.</step>
-      <step nr="4">Auf den heißen Grill legen und pro Seite 2–3 Minuten grillen, bis schöne Grillstreifen entstehen.</step>
-      <step nr="5">Mit etwas Pfeffer und optional ganz wenig Honig servieren.</step>
+      <step nr="1">Halloumi in dicke Scheiben schneiden und trocken tupfen.</step>
+      <step nr="2">Mit wenig Olivenöl bestreichen und nach Wunsch mit Oregano, Chili oder Zitronenabrieb würzen.</step>
+      <step nr="3">Den Grill oder eine Grillpfanne auf mittlere direkte Hitze vorheizen.</step>
+      <step nr="4">Den Halloumi 2 bis 3 Minuten pro Seite grillen, bis er deutlich gebräunt ist.</step>
+      <step nr="5">Nur vorsichtig wenden, damit die Scheiben nicht brechen.</step>
+      <step nr="6">Direkt nach dem Grillen mit etwas Zitronensaft oder Kräuteröl verfeinern.</step>
+      <step nr="7">Sofort mit Salat, Brot oder gegrilltem Gemüse servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 5 Minuten</item>
-      <item>Grillzeit: 4–6 Minuten</item>
+      <item>Grillzeit: 4–6 Minuten bei mittlerer direkter Hitze</item>
       <item>Gesamt: ca. 10 Minuten</item>
     </timing>
     <tips>
       <item>Halloumi nicht zu dünn schneiden, sonst wird er trocken.</item>
+      <item>Am besten direkt nach dem Grillen essen, dann ist er außen gebräunt und innen weich.</item>
       <item>Passt sehr gut zu Salat, gegrilltem Gemüse oder Brot.</item>
-      <item>Am besten direkt nach dem Grillen essen.</item>
     </tips>
-    <rating>8,5 / 10 – schnell, unkompliziert und ideal als vegetarische Grilloption.</rating>
+    <rating>8,5/10 – schnell, salzig und als vegetarische Grilloption sehr verlässlich.</rating>
     <translation lang="pl">
       <name>Halloumi z grilla</name>
       <persons>2–3 osoby</persons>
@@ -5211,24 +5236,23 @@
       <item>optional: Baguette oder Brötchen zum Servieren</item>
     </ingredients>
     <preparation>
-      <step nr="1">Bratwürste mit einer Gabel mehrfach leicht einstechen.</step>
-      <step nr="2">Für die klassische Variante die Würste nur ganz dünn mit etwas Öl einreiben.</step>
-      <step nr="3">Für die würzige einfache Variante Öl, Paprikapulver und Senf verrühren und die Würste damit bestreichen.</step>
-      <step nr="4">Bratwürste auf den Grill legen und bei mittlerer Hitze 10–12 Minuten grillen, dabei regelmäßig wenden.</step>
-      <step nr="5">Wer die BBQ-Variante möchte, streicht in den letzten 2 Minuten etwas BBQ-Sauce darüber.</step>
-      <step nr="6">Mit Zwiebelringen und Brot servieren.</step>
+      <step nr="1">Bratwürste 15 Minuten vor dem Grillen aus dem Kühlschrank nehmen.</step>
+      <step nr="2">Den Grill auf mittlere indirekte bis mittlere direkte Hitze vorbereiten.</step>
+      <step nr="3">Die Würste zunächst etwas ruhiger angrillen und regelmäßig wenden, damit sie gleichmäßig Farbe bekommen.</step>
+      <step nr="4">Zum Schluss kurz über direkter Hitze nachbräunen, wenn mehr Röstaroma gewünscht ist.</step>
+      <step nr="5">Mit Senf, Brot oder Kartoffelsalat servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 5 Minuten</item>
-      <item>Grillzeit: 10–12 Minuten</item>
-      <item>Gesamt: ca. 15 Minuten</item>
+      <item>Grillzeit: ca. 12–18 Minuten bei mittlerer Hitze</item>
+      <item>Gesamt: ca. 20 Minuten</item>
     </timing>
     <tips>
-      <item>Nicht zu heiß grillen, damit die Würste nicht aufplatzen.</item>
-      <item>Für eine klassische Runde reicht Senf und Brot völlig aus.</item>
-      <item>Die BBQ-Variante ist gut, wenn du etwas mehr Würze möchtest, ohne viel Aufwand.</item>
+      <item>Nicht von Anfang an zu heiß grillen, sonst platzen die Würste schnell auf.</item>
+      <item>Mit indirekter Hitze gelingt die Garung gleichmäßiger.</item>
+      <item>Erst nach dem Grillen einstechen oder anschneiden, damit sie saftig bleiben.</item>
     </tips>
-    <rating>8 / 10 – einfach, schnell und perfekt für entspanntes Grillen.</rating>
+    <rating>8,7/10 – bodenständig, saftig und genau richtig für den Grillabend.</rating>
     <translation lang="pl">
       <name>Pikantne kiełbaski z grilla (wersja klasyczna i prosta wariacja)</name>
       <persons>3–4 osoby</persons>
@@ -5286,14 +5310,14 @@
       <step nr="1">Zucchini in Scheiben, Paprika in Stücke, Champignons halbiert und Zwiebel in Spalten schneiden.</step>
       <step nr="2">Olivenöl mit fein gehacktem Knoblauch, Zitronensaft, Kräutern, Salz und Pfeffer verrühren.</step>
       <step nr="3">Gemüse mit der Marinade mischen und 10 Minuten ziehen lassen.</step>
-      <step nr="4">In einer Grillpfanne, Grillschale oder direkt auf dem Rost grillen.</step>
+      <step nr="4">In einer Grillpfanne, Grillschale oder auf einer Plancha bei mittlerer bis mittelhoher Hitze grillen.</step>
       <step nr="5">Dabei 8–10 Minuten grillen und mehrmals wenden, bis das Gemüse weich und leicht gebräunt ist.</step>
       <step nr="6">Heiß servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 15 Minuten</item>
       <item>Marinieren: 10 Minuten</item>
-      <item>Grillzeit: 8–10 Minuten</item>
+      <item>Grillzeit: 8–10 Minuten bei mittlerer bis mittelhoher Hitze</item>
       <item>Gesamt: ca. 30 Minuten</item>
     </timing>
     <tips>
@@ -5301,7 +5325,7 @@
       <item>Passt zu Fleisch, Halloumi oder einfach mit Baguette.</item>
       <item>Reste schmecken kalt auch gut im Salat.</item>
     </tips>
-    <rating>8,5 / 10 – bunt, unkompliziert und ein Klassiker vom Sommergrill.</rating>
+    <rating>8,5/10 – aromatisch, vielseitig und als Grillbeilage sehr stimmig.</rating>
     <translation lang="pl">
       <name>Grillowane warzywa z cukinią, papryką i pieczarkami</name>
       <persons>3–4 osoby</persons>
@@ -5357,24 +5381,24 @@
       <item>Alufolie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kartoffeln gründlich waschen und je nach Größe halbieren oder ganz lassen.</step>
-      <step nr="2">Mit Olivenöl, Rosmarin, Paprikapulver, Salz und Pfeffer mischen.</step>
-      <step nr="3">Kartoffeln in 2–3 Portionen auf Alufolie verteilen und zu festen Päckchen verschließen.</step>
-      <step nr="4">Die Päckchen auf den Grill legen und 25–35 Minuten grillen.</step>
-      <step nr="5">Zwischendurch einmal wenden.</step>
-      <step nr="6">Vorsichtig öffnen und direkt servieren.</step>
+      <step nr="1">Kartoffeln waschen, mehrmals einstechen und mit Öl, Salz und Rosmarin einreiben.</step>
+      <step nr="2">Einzeln oder paarweise fest in Alufolie wickeln.</step>
+      <step nr="3">Den Grill auf mittlere indirekte Hitze vorbereiten oder die Kartoffeln an den Rand der Glut legen.</step>
+      <step nr="4">Je nach Größe 25 bis 35 Minuten grillen und zwischendurch einmal wenden.</step>
+      <step nr="5">Zum Prüfen mit einem Messer einstechen – sie sollen weich sein.</step>
+      <step nr="6">Auspacken und mit Butter, Kräuterquark oder Sour Cream servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 Minuten</item>
-      <item>Grillzeit: 25–35 Minuten</item>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Grillzeit: ca. 25–35 Minuten bei mittlerer indirekter Hitze</item>
       <item>Gesamt: ca. 40 Minuten</item>
     </timing>
     <tips>
-      <item>Vorwiegend festkochende Kartoffeln funktionieren am besten.</item>
-      <item>Wer mag, gibt am Ende noch etwas Kräuterbutter dazu.</item>
-      <item>Die Päckchen können auch im Ofen vorbereitet und auf dem Grill fertig gegart werden.</item>
+      <item>Kleine bis mittlere Kartoffeln garen gleichmäßiger als sehr große Exemplare.</item>
+      <item>Die Folie nicht zu locker wickeln, damit die Kartoffeln gleichmäßig garen.</item>
+      <item>Sehr gut als Beilage zu Steak, Würstchen oder Schaschlik.</item>
     </tips>
-    <rating>8,5 / 10 – einfache Grillbeilage, die immer passt.</rating>
+    <rating>8,8/10 – einfach, aromatisch und vom Grill immer passend.</rating>
     <translation lang="pl">
       <name>Ziemniaki z grilla w folii z rozmarynem</name>
       <persons>3–4 osoby</persons>
@@ -5424,23 +5448,23 @@
       <item>1 Prise Salz</item>
     </ingredients>
     <preparation>
-      <step nr="1">Baguette oder Ciabatta in Scheiben schneiden.</step>
-      <step nr="2">Knoblauch fein reiben oder pressen und mit Olivenöl, Kräutern und Salz verrühren.</step>
-      <step nr="3">Brotscheiben damit bestreichen.</step>
-      <step nr="4">Auf dem Grill von beiden Seiten 1–2 Minuten rösten, bis sie leicht knusprig sind.</step>
-      <step nr="5">Warm servieren.</step>
+      <step nr="1">Baguette oder Ciabatta aufschneiden.</step>
+      <step nr="2">Olivenöl mit fein gehacktem Knoblauch verrühren und das Brot damit bestreichen.</step>
+      <step nr="3">Den Grill auf mittlere direkte Hitze vorheizen.</step>
+      <step nr="4">Die Brotscheiben 1 bis 2 Minuten pro Seite grillen, bis sie goldbraun und knusprig sind.</step>
+      <step nr="5">Nach Wunsch mit Kräutern, Meersalz oder etwas Butter servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 5 Minuten</item>
-      <item>Grillzeit: 3–4 Minuten</item>
+      <item>Vorbereitung: ca. 5 Minuten</item>
+      <item>Grillzeit: 2–4 Minuten bei mittlerer direkter Hitze</item>
       <item>Gesamt: ca. 10 Minuten</item>
     </timing>
     <tips>
-      <item>Nicht zu lange grillen, sonst wird das Brot hart.</item>
-      <item>Passt zu Fleisch, Gemüse, Salaten oder einfach als Starter.</item>
-      <item>Auch mit etwas geriebenem Parmesan sehr lecker.</item>
+      <item>Immer dabeibleiben – Brot färbt auf dem Grill sehr schnell.</item>
+      <item>Knoblauchöl sparsam verwenden, damit das Brot knusprig bleibt.</item>
+      <item>Passt zu Salaten, Dips, Suppen oder direkt vom Grill.</item>
     </tips>
-    <rating>8 / 10 – einfach, schnell und immer ein guter Begleiter.</rating>
+    <rating>8,7/10 – knusprig, aromatisch und sehr vielseitig.</rating>
     <translation lang="pl">
       <name>Grillowana bagietka lub ciabatta z oliwą czosnkową</name>
       <persons>3–4 osoby</persons>
@@ -5489,21 +5513,24 @@
     <preparation>
       <step nr="1">Ananas in Scheiben oder Stücke schneiden, Pfirsiche halbieren und entsteinen.</step>
       <step nr="2">Butter schmelzen und mit braunem Zucker sowie Zitronensaft verrühren.</step>
-      <step nr="3">Früchte leicht damit bestreichen.</step>
-      <step nr="4">Auf dem Grill pro Seite 2–3 Minuten grillen, bis leichte Röstspuren entstehen.</step>
-      <step nr="5">Warm servieren, nach Wunsch mit Vanilleeis oder Joghurt.</step>
+      <step nr="3">Die Früchte damit leicht bestreichen und den Grill auf mittlere Hitze vorheizen.</step>
+      <step nr="4">Ananas 2 bis 3 Minuten pro Seite grillen, bis Röstspuren entstehen.</step>
+      <step nr="5">Pfirsiche eher etwas ruhiger bei mittlerer Hitze grillen, damit sie weich werden, aber nicht zerfallen.</step>
+      <step nr="6">Nach Wunsch mit einem Hauch Zimt oder Vanille ergänzen.</step>
+      <step nr="7">Warm mit Vanilleeis, Joghurt oder pur servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 10 Minuten</item>
-      <item>Grillzeit: 5–6 Minuten</item>
+      <item>Grillzeit: 5–6 Minuten bei mittlerer Hitze</item>
+      <item>Servieren direkt: ideal warm</item>
       <item>Gesamt: ca. 15 Minuten</item>
     </timing>
     <tips>
       <item>Pfirsiche eher bei mittlerer Hitze grillen, damit sie nicht zerfallen.</item>
-      <item>Mit etwas Zimt wird es noch sommerlicher.</item>
-      <item>Auch als leichter Nachtisch nach dem Grillen sehr gut.</item>
+      <item>Sehr reife Früchte vorsichtiger wenden als festere Exemplare.</item>
+      <item>Mit etwas Vanilleeis wird daraus schnell ein vollwertiger Nachtisch.</item>
     </tips>
-    <rating>8,5 / 10 – einfacher Sommernachtisch mit wenig Aufwand.</rating>
+    <rating>8,4/10 – leicht, fruchtig und als warmer Grillnachtisch sehr angenehm.</rating>
     <translation lang="pl">
       <name>Grillowane owoce z ananasem lub brzoskwinią</name>
       <persons>3–4 osoby</persons>
@@ -5569,7 +5596,7 @@
       <item>Für Gäste am besten schon 1–2 Stunden vorher vorbereiten.</item>
       <item>Sehr gut mit viel Eis servieren.</item>
     </tips>
-    <rating>8,5 / 10 – fruchtig, unkompliziert und perfekt für Sommerabende.</rating>
+    <rating>8,3/10 – fruchtig, kühl und gut für Sommerabende.</rating>
     <translation lang="pl">
       <name>Klasyczna czerwona sangria</name>
       <persons>4 szklanki</persons>
@@ -5638,7 +5665,7 @@
       <item>Nicht zu lange stehen lassen, damit die Limo noch frisch bleibt.</item>
       <item>Ideal für Garten, Terrasse und warmes Wetter.</item>
     </tips>
-    <rating>8,5 / 10 – leicht, sommerlich und sehr unkompliziert.</rating>
+    <rating>8,3/10 – frisch, leicht und angenehm spritzig.</rating>
     <translation lang="pl">
       <name>Biała sangria</name>
       <persons>4 szklanki</persons>
@@ -5890,23 +5917,26 @@
       <item>optional: 1 kleine Knoblauchzehe</item>
     </ingredients>
     <preparation>
-      <step nr="1">Die holzigen Enden des Spargels abbrechen oder abschneiden. Grünen Spargel musst du in der Regel nicht schälen.</step>
-      <step nr="2">Den Spargel mit Olivenöl, etwas Salz und Pfeffer vermengen. Wer mag, reibt noch ganz wenig Knoblauch dazu.</step>
-      <step nr="3">Den Grill auf mittlere Hitze bringen und den Spargel direkt auf den Rost oder in eine Grillpfanne legen.</step>
-      <step nr="4">Den Spargel 5–8 Minuten grillen und dabei regelmäßig wenden, bis er leichte Grillspuren hat und noch bissfest ist.</step>
-      <step nr="5">Direkt nach dem Grillen mit Zitronensaft verfeinern. Für die Upgrade-Version etwas Parmesan darüberreiben oder den Spargel mit Bacon umwickeln und dann grillen.</step>
+      <step nr="1">Die holzigen Enden des Spargels abbrechen oder abschneiden; grüner Spargel muss meist nicht geschält werden.</step>
+      <step nr="2">Den Spargel mit Olivenöl, Salz, Pfeffer und nach Wunsch wenig Knoblauch vermengen.</step>
+      <step nr="3">Den Grill auf mittlere direkte Hitze bringen und den Spargel direkt auf den Rost oder in eine Grillpfanne legen.</step>
+      <step nr="4">Den Spargel 5 bis 8 Minuten grillen und dabei regelmäßig wenden, bis er leichte Grillspuren hat und noch bissfest ist.</step>
+      <step nr="5">Für die Basic-Version direkt nach dem Grillen nur mit Zitronensaft und etwas Salz servieren.</step>
+      <step nr="6">Für die Upgrade-Version Parmesan darüberreiben oder den Spargel mit Bacon umwickeln und dann 2 bis 3 Minuten länger grillen.</step>
+      <step nr="7">Heiß als Beilage oder mit Brot servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 10 Minuten</item>
-      <item>Grillzeit: 5–8 Minuten</item>
+      <item>Grillzeit basic: 5–8 Minuten bei mittlerer direkter Hitze</item>
+      <item>Upgrade mit Bacon: ca. 8–10 Minuten</item>
       <item>Gesamt: ca. 15 Minuten</item>
     </timing>
     <tips>
       <item>Nicht zu lange grillen – grüner Spargel soll noch etwas Biss haben.</item>
-      <item>Mit Parmesan, Bacon oder etwas Zitronenabrieb lässt sich das Rezept leicht aufwerten.</item>
+      <item>Parmesan immer erst nach dem Grillen ergänzen, Bacon dagegen vorher.</item>
       <item>Perfekt als schnelle Beilage zu Fleisch, Halloumi oder Baguette.</item>
     </tips>
-    <rating>9,2 / 10 – schnell, frisch und ideal für den Grillabend.</rating>
+    <rating>9/10 – schnell, frisch und sehr flexibel einsetzbar.</rating>
     <translation lang="pl">
       <name>Zielone szparagi z grilla – wersja basic i upgrade</name>
       <persons>2–3 osoby</persons>
@@ -5961,20 +5991,20 @@
       <step nr="2">Ein großes Stück Alufolie vorbereiten und den Spargel mittig darauflegen.</step>
       <step nr="3">Butter in kleinen Stücken darauf verteilen, mit Zucker, etwas Salz und Zitronensaft würzen.</step>
       <step nr="4">Die Folie dicht verschließen, sodass ein gut geschlossenes Paket entsteht.</step>
-      <step nr="5">Das Paket bei indirekter Hitze 15–20 Minuten grillen, bis der Spargel weich, aber nicht zu weich ist.</step>
+      <step nr="5">Das Paket bei mittlerer indirekter Hitze etwa 15 bis 20 Minuten grillen, bis der Spargel weich, aber noch formstabil ist.</step>
       <step nr="6">Vorsichtig öffnen, eventuell mit etwas Petersilie bestreuen und direkt servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: 10–15 Minuten</item>
-      <item>Grillzeit: 15–20 Minuten</item>
+      <item>Grillzeit in Folie: 15–20 Minuten bei mittlerer indirekter Hitze</item>
       <item>Gesamt: ca. 30 Minuten</item>
     </timing>
     <tips>
-      <item>Der Zucker rundet den Geschmack ab und nimmt leichte Bitterkeit.</item>
-      <item>Das Folienpaket kann entspannt parallel zu Fleisch oder Würstchen auf dem Grill laufen.</item>
-      <item>Auch im Ofen sehr gut machbar.</item>
+      <item>Die Folie gut verschließen, damit Butter und Dampf im Paket bleiben.</item>
+      <item>Je dicker der Spargel, desto eher Richtung 20 Minuten gehen.</item>
+      <item>Direkt aus dem Paket servieren, solange die Butter noch heiß ist.</item>
     </tips>
-    <rating>9,0 / 10 – saftig, aromatisch und sehr unkompliziert.</rating>
+    <rating>8,8/10 – fein, buttrig und sehr stimmig als Saisonbeilage.</rating>
     <translation lang="pl">
       <name>Białe szparagi w folii z masłem i cytryną</name>
       <persons>2–3 osoby</persons>
@@ -6033,15 +6063,15 @@
     </preparation>
     <timing>
       <item>Vorbereitung: 10 Minuten</item>
-      <item>Grillzeit: 6–10 Minuten</item>
+      <item>Grillzeit: 6–10 Minuten bei mittlerer direkter Hitze</item>
       <item>Gesamt: ca. 20 Minuten</item>
     </timing>
     <tips>
       <item>Parmesan immer frisch reiben – das macht geschmacklich einen großen Unterschied.</item>
-      <item>Besonders gut als Vorspeise oder feine Grillbeilage.</item>
-      <item>Mit etwas Knoblauchöl wird es noch kräftiger.</item>
+      <item>Weißen Spargel vollständig schälen, grünen nur an den Enden kürzen.</item>
+      <item>Zitrone und Parmesan erst nach dem Grillen ergänzen, damit alles frisch bleibt.</item>
     </tips>
-    <rating>9,3 / 10 – einfach, elegant und richtig stark im Geschmack.</rating>
+    <rating>9/10 – klar, würzig und mit wenig Aufwand sehr elegant.</rating>
     <translation lang="pl">
       <name>Szparagi z grilla z parmezanem i cytryną</name>
       <persons>2–3 osoby</persons>
@@ -6361,7 +6391,7 @@
       <item>Erst ganz am Ende salzen, dann verlieren die Garnelen weniger Saft.</item>
       <item>Auch als Vorspeise für zwei oder als kleines Hauptgericht mit Brot sehr gut.</item>
     </tips>
-    <rating>8,8/10 – einfach, schnell und immer gut, wenn es unkompliziert sein soll.</rating>
+    <rating>8,8/10 – direkt, würzig und mit Brot besonders gut.</rating>
     <translation lang="pl">
       <name>Krewetki z patelni z czosnkiem i chili</name>
       <persons>2 osoby</persons>
@@ -6694,14 +6724,16 @@
       <item>1/2 TL Cayennepfeffer, optional</item>
     </ingredients>
     <preparation>
-      <step nr="1">Alle Zutaten in eine Schüssel geben.</step>
-      <step nr="2">Gründlich vermischen, bis keine Klümpchen mehr zu sehen sind.</step>
-      <step nr="3">In ein Schraubglas oder eine Gewürzdose füllen.</step>
-      <step nr="4">Vor der Verwendung Fleisch oder Gemüse leicht einölen und mit dem Rub einreiben.</step>
+      <step nr="1">Alle trockenen Zutaten in eine Schüssel geben und gründlich vermischen, bis Farbe und Struktur gleichmäßig sind.</step>
+      <step nr="2">Mischung einmal durch ein feines Sieb geben oder Klümpchen mit den Fingern zerdrücken.</step>
+      <step nr="3">In ein trockenes Schraubglas oder eine Gewürzdose füllen und beschriften.</step>
+      <step nr="4">Vor der Verwendung Fleisch oder Gemüse leicht einölen und den Rub gleichmäßig einmassieren.</step>
+      <step nr="5">Für Ofen oder Grill den Rub idealerweise 20 bis 60 Minuten vor dem Garen auftragen.</step>
     </preparation>
     <timing>
       <item>Mischen: 5 Minuten</item>
       <item>Abfüllen: 2 Minuten</item>
+      <item>Vor dem Garen einziehen lassen: ideal 20–60 Minuten</item>
       <item>Trocken und luftdicht lagern</item>
     </timing>
     <tips>
@@ -6709,7 +6741,7 @@
       <item>Für eine mildere Version den Cayennepfeffer weglassen.</item>
       <item>Trocken und dunkel gelagert hält die Mischung mehrere Wochen.</item>
     </tips>
-    <rating>9 / 10 – einfach, vielseitig und als Grundmischung immer praktisch.</rating>
+    <rating>9/10 – vielseitig, ausgewogen und als Grundrub sehr nützlich.</rating>
     <translation lang="pl">
       <name>BBQ Rub Svena (mieszanka bazowa)</name>
       <persons>Zapas</persons>
@@ -6778,7 +6810,7 @@
       <item>Mit Parmesan wird das Gericht runder und etwas milder.</item>
       <item>Wer es schärfer mag, nimmt einfach etwas mehr Sambal Oelek.</item>
     </tips>
-    <rating>8,5 / 10 – schnell, unkompliziert und genau richtig für einen einfachen Feierabend.</rating>
+    <rating>8,4/10 – schnell, scharf und als Feierabendgericht sehr brauchbar.</rating>
     <translation lang="pl">
       <name>Spaghetti z czosnkiem i sambalem oelek</name>
       <persons>2 osoby</persons>
@@ -7241,7 +7273,7 @@
       <item>Passt auch gut mit Brokkoli oder Möhren.</item>
       <item>Für mehr Würze am Ende etwas Ajvar unterrühren.</item>
     </tips>
-    <rating>8,8 / 10 – genau das Richtige für einen unkomplizierten Feierabend.</rating>
+    <rating>8,8/10 – schnell, ausgewogen und alltagstauglich.</rating>
     <translation lang="pl">
       <name>Patelnia po pracy z kurczakiem i warzywami</name>
       <persons>2–3 osoby</persons>
@@ -7368,23 +7400,27 @@
       <item>optional: 1 TL Honig</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hähnchen trocken tupfen und mit Öl, BBQ-Sauce, Paprika, Rub, Salz und Pfeffer marinieren.</step>
-      <step nr="2">Mindestens 30 Minuten ziehen lassen.</step>
-      <step nr="3">Das Hähnchen auf ein Blech oder in eine Ofenform legen.</step>
-      <step nr="4">Bei 200 °C ca. 35–45 Minuten backen, bis es gar und schön gebräunt ist.</step>
-      <step nr="5">Für mehr Glanz kurz vor Ende noch einmal mit etwas BBQ-Sauce bestreichen.</step>
+      <step nr="1">Hähnchen trocken tupfen und mit Öl, BBQ-Sauce, Paprika, Rub, Salz und Pfeffer gründlich marinieren.</step>
+      <step nr="2">Mindestens 30 Minuten ziehen lassen, damit die Würzung ins Fleisch kommt.</step>
+      <step nr="3">Den Ofen auf 200 °C Ober-/Unterhitze vorheizen und das Hähnchen in eine Ofenform oder auf ein Blech legen.</step>
+      <step nr="4">Je nach Größe 35 bis 45 Minuten backen und nach etwa 20 Minuten einmal mit austretendem Saft oder etwas Sauce bestreichen.</step>
+      <step nr="5">Für mehr Glanz in den letzten 5 Minuten noch einmal dünn mit BBQ-Sauce bepinseln.</step>
+      <step nr="6">Vor dem Servieren 5 Minuten ruhen lassen, damit das Fleisch saftig bleibt.</step>
+      <step nr="7">Mit Coleslaw, Ofenkartoffeln oder Brot servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 10 Minuten</item>
       <item>Marinieren: mindestens 30 Minuten</item>
-      <item>Backzeit: ca. 35–45 Minuten</item>
+      <item>Backzeit: ca. 35–45 Minuten bei 200 °C Ober-/Unterhitze</item>
+      <item>Ruhezeit: 5 Minuten</item>
+      <item>Gesamt: ca. 55–60 Minuten inklusive Marinierzeit</item>
     </timing>
     <tips>
       <item>Mit Ofenkartoffeln oder Coleslaw servieren.</item>
       <item>Für mehr BBQ-Charakter etwas geräuchertes Paprikapulver nutzen.</item>
-      <item>Auch gut für Sandwiches am nächsten Tag.</item>
+      <item>Vor dem Servieren kurz ruhen lassen, damit der Fleischsaft im Hähnchen bleibt.</item>
     </tips>
-    <rating>8,7 / 10 – BBQ-Gefühl ohne Grill, aber mit viel Geschmack.</rating>
+    <rating>8,8/10 – saftig, würzig und als Ofen-BBQ sehr zuverlässig.</rating>
     <translation lang="pl">
       <name>Kurczak BBQ z piekarnika</name>
       <persons>2–4 osoby</persons>
@@ -7436,23 +7472,25 @@
       <item>optional: Petersilie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Zwiebel würfeln, Paprika klein schneiden.</step>
-      <step nr="2">Öl in einer Pfanne erhitzen und das Hackfleisch krümelig anbraten.</step>
-      <step nr="3">Zwiebel und Paprika zugeben und einige Minuten mitbraten.</step>
-      <step nr="4">Ajvar und Sahne einrühren und kurz einköcheln lassen.</step>
-      <step nr="5">Mit Salz und Pfeffer abschmecken und nach Wunsch mit Petersilie servieren.</step>
+      <step nr="1">Zwiebel würfeln und Paprika klein schneiden.</step>
+      <step nr="2">Öl in einer Pfanne erhitzen und das Hackfleisch krümelig sowie kräftig anbraten.</step>
+      <step nr="3">Zwiebel und Paprika zugeben und 4 bis 5 Minuten mitbraten, bis alles Farbe bekommt.</step>
+      <step nr="4">Ajvar und Sahne einrühren und 5 Minuten sanft einköcheln lassen.</step>
+      <step nr="5">Mit Salz, Pfeffer und nach Wunsch etwas Paprikapulver oder Chili abschmecken.</step>
+      <step nr="6">Zum Schluss Petersilie oder Frühlingszwiebeln darübergeben.</step>
+      <step nr="7">Mit Brot, Reis oder Kartoffeln servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 10 Minuten</item>
-      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Braten und Köcheln: ca. 15 Minuten</item>
       <item>Gesamt: ca. 25 Minuten</item>
     </timing>
     <tips>
       <item>Schmeckt gut mit Reis, Brot oder Kartoffeln.</item>
       <item>Mit etwas Käse darüber wird es noch herzhafter.</item>
-      <item>Für mehr Schärfe scharfen Ajvar nehmen.</item>
+      <item>Für eine kräftigere Sauce 2 bis 3 Minuten offen einkochen lassen.</item>
     </tips>
-    <rating>8,8 / 10 – schnell, würzig und immer eine gute Idee.</rating>
+    <rating>8,7/10 – würzig, schnell und für den Alltag sehr praktisch.</rating>
     <translation lang="pl">
       <name>Szybka patelnia z mielonym mięsem i ajvarem</name>
       <persons>2–3 osoby</persons>
@@ -7572,23 +7610,26 @@
       <item>optional: etwas BBQ-Rub</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hähnchen trocken tupfen und mit Öl sowie Gewürzen vermengen.</step>
+      <step nr="1">Hähnchen trocken tupfen und mit Öl sowie Gewürzen gleichmäßig vermengen.</step>
       <step nr="2">Den AirFryer auf 190 °C vorheizen.</step>
       <step nr="3">Das Fleisch im Korb verteilen, ohne es zu stark zu stapeln.</step>
-      <step nr="4">Je nach Dicke 16–22 Minuten garen und einmal wenden oder schütteln.</step>
-      <step nr="5">Kurz ruhen lassen und servieren.</step>
+      <step nr="4">Je nach Dicke 16 bis 22 Minuten garen und zur Halbzeit wenden oder schütteln.</step>
+      <step nr="5">Die Kerntemperatur bei größeren Stücken prüfen; das Fleisch soll vollständig gar sein.</step>
+      <step nr="6">Vor dem Servieren 2 bis 3 Minuten ruhen lassen.</step>
+      <step nr="7">Mit Dip, Salat, Pommes oder Wraps servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 10 Minuten</item>
-      <item>Garzeit: ca. 16–22 Minuten</item>
+      <item>Airfryer: ca. 16–22 Minuten bei 190 °C</item>
+      <item>Ruhezeit: 2–3 Minuten</item>
       <item>Gesamt: ca. 30 Minuten</item>
     </timing>
     <tips>
       <item>Mit Schenkelstücken wird es besonders saftig.</item>
-      <item>Zu Pommes, Salat oder Wraps sehr gut.</item>
-      <item>Nicht zu voll in den Korb legen.</item>
+      <item>Nicht zu voll in den Korb legen, sonst bräunt das Hähnchen schlechter.</item>
+      <item>Bei größeren Stücken lieber 2 Minuten länger garen und kurz kontrollieren.</item>
     </tips>
-    <rating>8,7 / 10 – schnell gemacht, knusprig und saftig.</rating>
+    <rating>8,8/10 – knusprig, saftig und sehr zuverlässig im Airfryer.</rating>
     <translation lang="pl">
       <name>Kurczak z AirFryera (chrupiący i soczysty)</name>
       <persons>2–3 osoby</persons>
@@ -7638,22 +7679,23 @@
     </ingredients>
     <preparation>
       <step nr="1">Gemüse je nach Sorte in ähnliche Größen schneiden.</step>
-      <step nr="2">Öl in einer großen Pfanne erhitzen und zuerst die festeren Sorten anbraten.</step>
-      <step nr="3">Weicheres Gemüse und Knoblauch zugeben.</step>
-      <step nr="4">Mit Salz, Pfeffer und Gewürzen abschmecken und alles bissfest garen.</step>
-      <step nr="5">Nach Wunsch mit Feta, Käse oder Reis ergänzen.</step>
+      <step nr="2">Öl in einer großen Pfanne erhitzen und zuerst die festeren Sorten wie Möhren, Kartoffeln oder Brokkoli anbraten.</step>
+      <step nr="3">Weicheres Gemüse und Knoblauch zugeben und alles zusammen weiterbraten.</step>
+      <step nr="4">Mit Salz, Pfeffer und passenden Gewürzen abschmecken und bissfest garen.</step>
+      <step nr="5">Nach Wunsch mit etwas Brühe, Ajvar oder Crème fraîche abrunden.</step>
+      <step nr="6">Mit Feta, Käse, Ei, Reis oder Brot ergänzen, wenn es sättigender werden soll.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Bratzeit: ca. 15 Minuten</item>
       <item>Gesamt: ca. 30 Minuten</item>
     </timing>
     <tips>
       <item>Ideal zum Aufbrauchen von Gemüse-Resten.</item>
+      <item>Festes Gemüse immer zuerst in die Pfanne geben, weiches erst später.</item>
       <item>Mit Ei, Reis oder Kartoffeln wird es noch sättigender.</item>
-      <item>Je nach Vorrat immer etwas anders – genau das macht es praktisch.</item>
     </tips>
-    <rating>8,5 / 10 – simpel, sinnvoll und besser als sein Ruf.</rating>
+    <rating>8,3/10 – praktisch, flexibel und deutlich besser als reine Resteverwertung.</rating>
     <translation lang="pl">
       <name>Patelnia warzywna „z resztek”</name>
       <persons>2–3 osoby</persons>
@@ -7769,23 +7811,25 @@
       <item>Gewürze nach Geschmack</item>
     </ingredients>
     <preparation>
-      <step nr="1">Fleisch anbraten und passend würzen.</step>
-      <step nr="2">Gemüse und Salat vorbereiten und in Schalen bereitstellen.</step>
-      <step nr="3">Wraps kurz erwärmen.</step>
-      <step nr="4">Alles auf den Tisch stellen, damit jeder seinen Wrap selbst füllen kann.</step>
-      <step nr="5">Nach Wunsch rollen oder falten und direkt essen.</step>
+      <step nr="1">Fleisch oder eine vegetarische Füllung vorbereiten, anbraten und passend würzen.</step>
+      <step nr="2">Gemüse, Salat, Käse und Saucen in kleine Schalen füllen und auf den Tisch stellen.</step>
+      <step nr="3">Wraps kurz in der Pfanne, Mikrowelle oder im Ofen erwärmen, damit sie weich und rollbar sind.</step>
+      <step nr="4">Jeder belegt seinen Wrap zuerst mit Sauce, dann mit warmem Inhalt und zuletzt mit frischen Zutaten.</step>
+      <step nr="5">Die Seiten einschlagen und den Wrap straff aufrollen oder falten.</step>
+      <step nr="6">Direkt servieren oder die fertigen Wraps kurz in der Pfanne anrösten.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
-      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Warme Füllung: ca. 15 Minuten</item>
+      <item>Wraps erwärmen: 1–2 Minuten</item>
       <item>Gesamt: ca. 35 Minuten</item>
     </timing>
     <tips>
       <item>Ideal für Gäste oder Familienabende.</item>
       <item>Mit mehreren Saucen wird es deutlich spannender.</item>
-      <item>Auch mit vegetarischer Füllung gut machbar.</item>
+      <item>Nicht zu voll füllen, sonst lassen sich die Wraps schlecht rollen.</item>
     </tips>
-    <rating>8,8 / 10 – locker, praktisch und genau richtig für mehrere Leute.</rating>
+    <rating>8,7/10 – gesellig, flexibel und in der Praxis sehr dankbar.</rating>
     <translation lang="pl">
       <name>Wieczór z wrapami (DIY)</name>
       <persons>4 osoby</persons>
@@ -8000,21 +8044,23 @@
     <preparation>
       <step nr="1">Zwiebel fein würfeln und in Butter glasig anschwitzen.</step>
       <step nr="2">Tomatenmark kurz mitrösten, dann passierte Tomaten, Curryketchup, Essig, Zucker und Worcestersauce einrühren.</step>
-      <step nr="3">Die Sauce 10–15 Minuten sanft einkochen lassen und mit Currypulver, Salz und Pfeffer abschmecken.</step>
-      <step nr="4">Bratwürste in einer Pfanne mit Öl rundherum kräftig anbraten.</step>
-      <step nr="5">Würste in Stücke schneiden, mit Sauce überziehen und mit Currypulver servieren.</step>
+      <step nr="3">Die Sauce 10 bis 15 Minuten sanft einkochen lassen und mit Currypulver, Salz und Pfeffer abschmecken.</step>
+      <step nr="4">Bratwürste in einer Pfanne mit etwas Öl bei mittlerer bis mittelhoher Hitze rundherum kräftig anbraten.</step>
+      <step nr="5">Würste kurz ruhen lassen, in Stücke schneiden und mit reichlich Sauce servieren.</step>
+      <step nr="6">Mit extra Currypulver und nach Wunsch scharfem Ketchup oder Pommes servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 10 Minuten</item>
-      <item>Kochzeit: ca. 20 Minuten</item>
+      <item>Sauce: ca. 15 Minuten sanft köcheln</item>
+      <item>Würste braten: ca. 8–10 Minuten</item>
       <item>Gesamtzeit: ca. 30 Minuten</item>
     </timing>
     <tips>
       <item>Mit etwas Apfelsaft wird die Sauce runder.</item>
       <item>Dazu passen klassische Pommes oder Brötchen.</item>
-      <item>Wer es schärfer mag, gibt etwas Chili dazu.</item>
+      <item>Die Sauce darf ruhig 5 Minuten länger einkochen, dann wird sie dichter und typischer.</item>
     </tips>
-    <rating>9/10 – genau die Art von Klassiker, die immer geht.</rating>
+    <rating>9/10 – würzig, rund und sehr nah am Budenklassiker.</rating>
     <translation lang="pl">
       <name>Currywurst z klasycznym sosem</name>
       <persons>2–3 osoby</persons>
@@ -8076,12 +8122,15 @@
       <step nr="1">Schnitzel zwischen Folie dünn klopfen und mit Salz und Pfeffer würzen.</step>
       <step nr="2">Mehl, verquirlte Eier und Semmelbrösel jeweils auf Teller geben.</step>
       <step nr="3">Schnitzel zuerst in Mehl, dann Ei und zuletzt in Bröseln wenden, ohne die Panade fest anzudrücken.</step>
-      <step nr="4">Butterschmalz in einer großen Pfanne erhitzen und die Schnitzel darin goldbraun ausbacken.</step>
-      <step nr="5">Auf Küchenpapier abtropfen lassen und mit Zitronenspalten servieren.</step>
+      <step nr="4">Butterschmalz in einer großen Pfanne auf mittlere bis mittelhohe Temperatur bringen.</step>
+      <step nr="5">Die Schnitzel darin 2 bis 3 Minuten pro Seite goldbraun ausbacken und die Pfanne leicht schwenken.</step>
+      <step nr="6">Auf Küchenpapier abtropfen lassen und 1 Minute ruhen lassen.</step>
+      <step nr="7">Mit Zitronenspalten und einer passenden Beilage servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Bratzeit: ca. 10 Minuten</item>
+      <item>Bratzeit: ca. 4–6 Minuten bei mittlerer bis mittelhoher Hitze</item>
+      <item>Ruhezeit: 1 Minute</item>
       <item>Gesamtzeit: ca. 25 Minuten</item>
     </timing>
     <tips>
@@ -8089,7 +8138,7 @@
       <item>Dazu passen Kartoffelsalat oder Bratkartoffeln.</item>
       <item>Die Panade nicht andrücken, damit sie luftig bleibt.</item>
     </tips>
-    <rating>9/10 – ein echter Klassiker, der immer Eindruck macht.</rating>
+    <rating>9/10 – klassisch, knusprig und zuverlässig gut.</rating>
     <translation lang="pl">
       <name>Sznycel wiedeński</name>
       <persons>4 osoby</persons>
@@ -8222,22 +8271,24 @@
     </ingredients>
     <preparation>
       <step nr="1">Brötchen einweichen und gut ausdrücken.</step>
-      <step nr="2">Hackfleisch mit Brötchen, fein gewürfelter Zwiebel, Ei, Senf und Gewürzen vermengen.</step>
-      <step nr="3">Mit feuchten Händen Buletten formen.</step>
-      <step nr="4">In einer Pfanne mit etwas Öl bei mittlerer Hitze rundherum braun braten.</step>
-      <step nr="5">Kurz ruhen lassen und warm oder kalt servieren.</step>
+      <step nr="2">Hackfleisch mit Brötchen, fein gewürfelter Zwiebel, Ei, Senf und Gewürzen gründlich vermengen.</step>
+      <step nr="3">Die Masse 10 Minuten ruhen lassen, damit sie bindet.</step>
+      <step nr="4">Mit feuchten Händen Buletten formen.</step>
+      <step nr="5">In einer Pfanne mit etwas Öl bei mittlerer Hitze 12 bis 15 Minuten rundherum braun braten.</step>
+      <step nr="6">Vor dem Servieren 2 Minuten ruhen lassen und warm oder kalt servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Bratzeit: ca. 15 Minuten</item>
-      <item>Gesamtzeit: ca. 30 Minuten</item>
+      <item>Masse ruhen lassen: 10 Minuten</item>
+      <item>Bratzeit: ca. 12–15 Minuten bei mittlerer Hitze</item>
+      <item>Gesamtzeit: ca. 35–40 Minuten</item>
     </timing>
     <tips>
       <item>Auch kalt auf Brot sehr gut.</item>
       <item>Ein wenig Majoran passt gut dazu.</item>
-      <item>Die Masse vor dem Formen kurz ziehen lassen.</item>
+      <item>Nicht zu heiß braten, damit die Buletten innen saftig bleiben.</item>
     </tips>
-    <rating>9/10 – einfach, saftig und ein echter Familienklassiker.</rating>
+    <rating>9/10 – saftig, bodenständig und sehr verlässlich.</rating>
     <translation lang="pl">
       <name>Kotlety mielone jak u babci</name>
       <persons>4 osoby</persons>
@@ -8296,14 +8347,16 @@
     </ingredients>
     <preparation>
       <step nr="1">Brötchen einweichen. Hackfleisch mit Brötchen, Ei, Zwiebel, Salz und Pfeffer vermengen und Klopse formen.</step>
-      <step nr="2">Brühe erhitzen und die Klopse darin etwa 10 Minuten gar ziehen lassen.</step>
+      <step nr="2">Brühe erhitzen, aber nicht sprudelnd kochen lassen, und die Klopse darin etwa 10 Minuten gar ziehen lassen.</step>
       <step nr="3">Für die Sauce Butter schmelzen, Mehl einrühren und mit etwas Kochbrühe aufgießen.</step>
       <step nr="4">Sahne und Kapern dazugeben und mit Zitronensaft, Salz und Pfeffer abschmecken.</step>
-      <step nr="5">Klopse in die Sauce geben und kurz ziehen lassen.</step>
+      <step nr="5">Die Klopse in die Sauce geben und 5 Minuten sanft ziehen lassen.</step>
+      <step nr="6">Mit Kartoffeln oder Püree servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
-      <item>Garzeit: ca. 20 Minuten</item>
+      <item>Klopse gar ziehen lassen: ca. 10 Minuten</item>
+      <item>Sauce und Fertigstellen: ca. 10 Minuten</item>
       <item>Gesamtzeit: ca. 40 Minuten</item>
     </timing>
     <tips>
@@ -8311,7 +8364,7 @@
       <item>Mit etwas Kapernwasser wird die Sauce aromatischer.</item>
       <item>Nicht stark kochen, damit die Klopse locker bleiben.</item>
     </tips>
-    <rating>8,5/10 – klassisch, fein und wunderbar hausgemacht.</rating>
+    <rating>8,8/10 – klassisch, cremig und sauber in der Sauce.</rating>
     <translation lang="pl">
       <name>Kluski królewieckie klasyczne</name>
       <persons>4 osoby</persons>
@@ -8369,15 +8422,17 @@
       <item>Kartoffeln als Beilage</item>
     </ingredients>
     <preparation>
-      <step nr="1">Eier je nach Größe 8–10 Minuten hart kochen, abschrecken und pellen.</step>
+      <step nr="1">Eier je nach Größe 8 bis 10 Minuten hart kochen, abschrecken und pellen.</step>
       <step nr="2">Butter schmelzen, Mehl einrühren und mit Milch unter Rühren aufgießen.</step>
-      <step nr="3">Die Sauce einige Minuten köcheln lassen, bis sie cremig ist.</step>
-      <step nr="4">Mit Senf, Zucker, Salz und Pfeffer abschmecken.</step>
-      <step nr="5">Eier halbieren oder ganz in der Sauce servieren.</step>
+      <step nr="3">Die Sauce 5 bis 8 Minuten bei kleiner Hitze köcheln lassen, bis sie cremig ist.</step>
+      <step nr="4">Mit Senf, Zucker, Salz, Pfeffer und nach Wunsch etwas Muskat abschmecken.</step>
+      <step nr="5">Eier halbieren oder ganz in die Sauce legen und 2 Minuten darin warm ziehen lassen.</step>
+      <step nr="6">Mit Salz- oder Pellkartoffeln servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 10 Minuten</item>
-      <item>Kochzeit: ca. 15 Minuten</item>
+      <item>Eier kochen: 8–10 Minuten</item>
+      <item>Sauce: ca. 8 Minuten bei kleiner Hitze</item>
       <item>Gesamtzeit: ca. 25 Minuten</item>
     </timing>
     <tips>
@@ -8385,7 +8440,7 @@
       <item>Dazu passen Salz- oder Pellkartoffeln.</item>
       <item>Senf erst zum Schluss einrühren, damit der Geschmack frisch bleibt.</item>
     </tips>
-    <rating>8,5/10 – einfach, ehrlich und genau so gut, wie man es kennt.</rating>
+    <rating>8,6/10 – schlicht, cremig und als Klassiker absolut brauchbar.</rating>
     <translation lang="pl">
       <name>Jajka w sosie musztardowym klasyczne</name>
       <persons>3–4 osoby</persons>
@@ -8442,15 +8497,17 @@
       <item>Majoran</item>
     </ingredients>
     <preparation>
-      <step nr="1">Gemüse klein schneiden und in Öl kurz anschwitzen.</step>
+      <step nr="1">Gemüse klein schneiden und in etwas Öl oder Speckfett kurz anschwitzen.</step>
       <step nr="2">Erbsen dazugeben, mit Brühe auffüllen und aufkochen.</step>
-      <step nr="3">Die Suppe 45–60 Minuten köcheln lassen, bis die Erbsen weich sind.</step>
-      <step nr="4">Nach Wunsch leicht pürieren oder stückig lassen.</step>
-      <step nr="5">Würstchen in Scheiben zufügen und kurz heiß ziehen lassen.</step>
+      <step nr="3">Die Suppe 45 bis 60 Minuten sanft köcheln lassen, bis die Erbsen weich sind.</step>
+      <step nr="4">Nach Wunsch einen Teil pürieren oder stückig lassen.</step>
+      <step nr="5">Würstchen in Scheiben oder Stücke schneiden und in den letzten 5 Minuten nur heiß ziehen lassen.</step>
+      <step nr="6">Mit Majoran, Salz und Pfeffer abschmecken und kurz ruhen lassen.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Kochzeit: ca. 60 Minuten</item>
+      <item>Kochzeit: ca. 45–60 Minuten</item>
+      <item>Würstchen am Ende: 5 Minuten</item>
       <item>Gesamtzeit: ca. 75 Minuten</item>
     </timing>
     <tips>
@@ -8458,7 +8515,7 @@
       <item>Majoran passt besonders gut.</item>
       <item>Am nächsten Tag schmeckt sie oft noch besser.</item>
     </tips>
-    <rating>9/10 – ein wärmender, ehrlicher Klassiker für kalte Tage.</rating>
+    <rating>8,9/10 – deftig, wärmend und sehr klassisch.</rating>
     <translation lang="pl">
       <name>Grochówka z kiełbasą</name>
       <persons>4–6 osób</persons>
@@ -8517,15 +8574,18 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Schnitzel würzen und in einer Pfanne goldbraun braten.</step>
-      <step nr="2">Kartoffeln in Scheiben schneiden und knusprig braten.</step>
+      <step nr="1">Schnitzel würzen und in einer Pfanne goldbraun braten; anschließend warm halten.</step>
+      <step nr="2">Vorgekochte Kartoffeln in Scheiben schneiden und in einer zweiten Pfanne knusprig braten.</step>
       <step nr="3">Für die Sauce Zwiebel und Champignons in Butter anschwitzen.</step>
-      <step nr="4">Mit Brühe und Sahne ablöschen, Senf einrühren und kurz einkochen lassen.</step>
-      <step nr="5">Schnitzel mit Sauce und Bratkartoffeln servieren.</step>
+      <step nr="4">Mit Brühe und Sahne ablöschen, Senf einrühren und 5 bis 8 Minuten einkochen lassen.</step>
+      <step nr="5">Mit Salz, Pfeffer und Petersilie abschmecken.</step>
+      <step nr="6">Schnitzel mit Sauce und Bratkartoffeln servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Brat-/Kochzeit: ca. 25 Minuten</item>
+      <item>Schnitzel braten: ca. 8 Minuten</item>
+      <item>Bratkartoffeln: ca. 15 Minuten</item>
+      <item>Sauce: ca. 8 Minuten</item>
       <item>Gesamtzeit: ca. 40 Minuten</item>
     </timing>
     <tips>
@@ -8533,7 +8593,7 @@
       <item>Vorgekochte Kartoffeln werden knuspriger.</item>
       <item>Die Sauce kann mit etwas Weißwein verfeinert werden.</item>
     </tips>
-    <rating>9/10 – deftig, cremig und ein echter Wirtshausklassiker.</rating>
+    <rating>9/10 – deftig, cremig und sehr stimmig als Klassiker.</rating>
     <translation lang="pl">
       <name>Sznycel po myśliwsku z ziemniakami smażonymi</name>
       <persons>4 osoby</persons>
@@ -8668,20 +8728,23 @@
       <step nr="1">Schwarte rautenförmig einschneiden und kräftig salzen.</step>
       <step nr="2">Gemüse grob schneiden und in eine Bratform geben. Braten daraufsetzen.</step>
       <step nr="3">Mit Kümmel und Pfeffer würzen und etwas Öl darübergeben.</step>
-      <step nr="4">Bei 180 °C etwa 90 Minuten braten, dabei immer wieder Brühe angießen.</step>
-      <step nr="5">Zum Schluss die Temperatur erhöhen oder Grill zuschalten, damit die Kruste aufpoppt.</step>
+      <step nr="4">Im vorgeheizten Ofen zunächst bei 180 °C Ober-/Unterhitze etwa 90 Minuten braten und dabei immer wieder Brühe angießen.</step>
+      <step nr="5">Zum Schluss die Temperatur auf 220 °C erhöhen oder den Grill 5 bis 10 Minuten zuschalten, damit die Kruste aufpoppt.</step>
+      <step nr="6">Den Braten vor dem Anschneiden 10 Minuten ruhen lassen und die Sauce separat abschmecken.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
-      <item>Bratzeit: ca. 90 Minuten</item>
-      <item>Gesamtzeit: ca. 110 Minuten</item>
+      <item>Braten: ca. 90 Minuten bei 180 °C Ober-/Unterhitze</item>
+      <item>Kruste finalisieren: 5–10 Minuten bei 220 °C oder Grillfunktion</item>
+      <item>Ruhezeit: 10 Minuten</item>
+      <item>Gesamtzeit: ca. 2 Stunden</item>
     </timing>
     <tips>
       <item>Dazu passen Klöße, Rotkohl oder Sauerkraut.</item>
       <item>Die Schwarte vorher gut trocken tupfen.</item>
-      <item>Für eine kräftige Sauce den Bratensatz gut lösen.</item>
+      <item>Für eine kräftige Sauce den Bratensatz gut lösen und erst nach der Ruhezeit final abschmecken.</item>
     </tips>
-    <rating>9/10 – klassischer Sonntagsbraten mit genau der richtigen Kruste.</rating>
+    <rating>9,2/10 – saftig, kräftig und mit guter Kruste sehr überzeugend.</rating>
     <translation lang="pl">
       <name>Klasyczna pieczeń wieprzowa z chrupiącą skórką</name>
       <persons>4–6 osób</persons>
@@ -9018,23 +9081,25 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Nudeln kochen und abkühlen lassen.</step>
-      <step nr="2">Thunfisch abtropfen lassen, Mais ebenfalls.</step>
-      <step nr="3">Paprika würfeln.</step>
-      <step nr="4">Mayonnaise, Joghurt und Senf verrühren.</step>
-      <step nr="5">Alles vermischen und abschmecken.</step>
+      <step nr="1">Nudeln in Salzwasser garen, abgießen und komplett abkühlen lassen.</step>
+      <step nr="2">Thunfisch und Mais gut abtropfen lassen, Paprika klein würfeln.</step>
+      <step nr="3">Mayonnaise, Joghurt, Senf, Salz und Pfeffer zu einem cremigen Dressing verrühren.</step>
+      <step nr="4">Alle Zutaten gründlich mischen und abschmecken.</step>
+      <step nr="5">Den Salat vor dem Servieren idealerweise 20 Minuten ziehen lassen.</step>
+      <step nr="6">Nach Wunsch mit Frühlingszwiebeln oder Petersilie ergänzen.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Gesamtzeit: ca. 25 Minuten</item>
-      <item>Ziehzeit optional: ca. 20 Minuten</item>
+      <item>Nudeln kochen und abkühlen: ca. 10 Minuten</item>
+      <item>Ziehzeit: ca. 20 Minuten</item>
+      <item>Gesamtzeit: ca. 35–40 Minuten</item>
     </timing>
     <tips>
-      <item>Mit Frühlingszwiebeln frischer.</item>
+      <item>Mit Frühlingszwiebeln wird der Salat frischer.</item>
       <item>Joghurt macht das Dressing leichter.</item>
-      <item>Gut für Grillabende oder Buffets.</item>
+      <item>Vor dem Servieren noch einmal abschmecken, weil Nudeln Dressing aufnehmen.</item>
     </tips>
-    <rating>8/10 – unkompliziert und immer schnell gemacht.</rating>
+    <rating>8,1/10 – cremig, praktisch und gut für Grillabend oder Buffet.</rating>
     <translation lang="pl">
       <name>Sałatka makaronowa z tuńczykiem i kukurydzą</name>
       <persons>4 osoby</persons>
@@ -9635,11 +9700,11 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Möhren raspeln, Apfel ebenfalls raspeln.</step>
-      <step nr="2">Zitronensaft, Öl und Honig verrühren.</step>
-      <step nr="3">Mit Möhren und Apfel mischen.</step>
-      <step nr="4">Mit Salz und Pfeffer abschmecken.</step>
-      <step nr="5">Kurz ziehen lassen.</step>
+      <step nr="1">Möhren schälen und grob raspeln, den Apfel erst kurz vor dem Mischen raspeln.</step>
+      <step nr="2">Zitronensaft, Öl, Honig, Salz und Pfeffer zu einem Dressing verrühren.</step>
+      <step nr="3">Alles gründlich vermischen und 10 Minuten ziehen lassen.</step>
+      <step nr="4">Vor dem Servieren noch einmal abschmecken.</step>
+      <step nr="5">Nach Wunsch mit Petersilie oder Nüssen ergänzen.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 10 Minuten</item>
@@ -9647,11 +9712,11 @@
       <item>Gesamtzeit: ca. 20 Minuten</item>
     </timing>
     <tips>
-      <item>Mit Walnüssen etwas besonderer.</item>
-      <item>Sehr gut als frische Beilage.</item>
-      <item>Apfel erst kurz vor dem Mischen raspeln.</item>
+      <item>Apfel erst kurz vor dem Mischen raspeln, damit er hell bleibt.</item>
+      <item>Mit Walnüssen wird der Salat etwas kräftiger.</item>
+      <item>Passt gut zu Frikadellen, Schnitzel oder einfach als frische Beilage.</item>
     </tips>
-    <rating>8/10 – leicht, frisch und unkompliziert.</rating>
+    <rating>8/10 – frisch, leicht und als Beilage sehr ordentlich.</rating>
     <translation lang="pl">
       <name>Klasyczna surówka z marchewki</name>
       <persons>3–4 osoby</persons>
@@ -10010,27 +10075,27 @@
     </ingredients>
     <preparation>
       <step nr="1">Rouladenfleisch in kleine Streifen schneiden.</step>
-      <step nr="2">Schinkenspeck und Zwiebeln in einer Pfanne anbraten.</step>
-      <step nr="3">Etwas Fett in einen großen Topf geben.</step>
-      <step nr="4">Fleisch und Zwiebel-Speck-Mischung schichtweise in den Topf geben.</step>
-      <step nr="5">Jede Schicht mit Salz und Pfeffer würzen und leicht mit Mehl bestäuben.</step>
-      <step nr="6">Auf kleiner Flamme etwa 3 Stunden langsam garen lassen.</step>
-      <step nr="7">Am nächsten Tag unter Rühren erneut aufkochen.</step>
-      <step nr="8">Pilze und Sahne dazugeben und kurz mit erhitzen.</step>
+      <step nr="2">Schinkenspeck und Zwiebeln in einer Pfanne anbraten, bis sie Farbe bekommen.</step>
+      <step nr="3">Fleisch und Zwiebel-Speck-Mischung schichtweise in einen ofenfesten Bräter oder schweren Topf geben.</step>
+      <step nr="4">Jede Schicht mit Salz und Pfeffer würzen und leicht mit Mehl bestäuben.</step>
+      <step nr="5">Zugedeckt entweder auf kleinster Herdstufe oder im vorgeheizten Ofen bei 150 °C Ober-/Unterhitze etwa 3 Stunden langsam garen.</step>
+      <step nr="6">Am nächsten Tag unter Rühren erneut aufkochen.</step>
+      <step nr="7">Pilze und Sahne dazugeben und 10 Minuten sanft mit erhitzen.</step>
+      <step nr="8">Mit Kartoffeln, Nudeln oder Brot servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
-      <item>Garzeit: ca. 3 Stunden</item>
+      <item>Langsames Garen: ca. 3 Stunden auf kleiner Flamme oder bei 150 °C Ober-/Unterhitze</item>
       <item>Ruhezeit: über Nacht</item>
+      <item>Am Folgetag fertigstellen: ca. 15 Minuten</item>
       <item>Gesamt: 2 Tage</item>
     </timing>
     <tips>
       <item>Am nächsten Tag schmeckt das Gericht deutlich intensiver.</item>
       <item>Frische Champignons können statt Dosenpilzen verwendet werden.</item>
-      <item>Passt perfekt zu Kartoffeln, Nudeln oder frischem Brot.</item>
-      <item>Das Mehl sorgt für eine natürliche Bindung der Sauce.</item>
+      <item>Im Ofen gart es ruhiger und gleichmäßiger als auf offener Flamme.</item>
     </tips>
-    <rating>9/10 – rustikal, deftig und ein echter Klassiker.</rating>
+    <rating>9/10 – rustikal, tief im Geschmack und ideal zum Vorbereiten.</rating>
   </recipe>
   <recipe id="137">
     <name>Schaumburger Hochzeitssuppe</name>
@@ -10241,7 +10306,7 @@
     <image src="images/rezeptbild_142.png" alt="Wildschweinbraten mit Grünkohl" />
     <ingredients>
       <item>1,2 kg Wildschweinbraten</item>
-      <item>1 Zwiebel</item>
+      <item>1 große Zwiebel</item>
       <item>2 EL Öl</item>
       <item>250 ml Rotwein</item>
       <item>500 ml Wild- oder Rinderfond</item>
@@ -10250,29 +10315,33 @@
       <item>2 EL Schmalz</item>
       <item>Salz</item>
       <item>Pfeffer</item>
-      <item>Wacholder und Lorbeer nach Geschmack</item>
+      <item>4–6 Wacholderbeeren, leicht angedrückt</item>
+      <item>2 Lorbeerblätter</item>
     </ingredients>
     <preparation>
-      <step nr="1">Wildschweinbraten trocken tupfen und mit Salz, Pfeffer und nach Wunsch etwas Wacholder würzen.</step>
-      <step nr="2">Im Bräter rundherum kräftig anbraten und danach kurz herausnehmen.</step>
-      <step nr="3">Zwiebeln und Wurzelgemüse im Bräter rösten, Tomatenmark zugeben und mit Rotwein oder Fond ablöschen.</step>
-      <step nr="4">Braten zurücklegen und alles zugedeckt im Ofen oder auf kleiner Flamme sanft schmoren, bis das Fleisch weich wird.</step>
-      <step nr="5">Grünkohl separat mit Zwiebeln und etwas Brühe langsam garen und klassisch abschmecken.</step>
-      <step nr="6">Braten aus dem Sud nehmen, kurz ruhen lassen und die Sauce nach Wunsch einkochen oder pürieren.</step>
-      <step nr="7">Mit Grünkohl und Kartoffelbeilage servieren.</step>
+      <step nr="1">Wildschweinbraten trocken tupfen und rundherum mit Salz, Pfeffer und den leicht angedrückten Wacholderbeeren würzen.</step>
+      <step nr="2">Öl in einem Bräter erhitzen und den Braten von allen Seiten kräftig anbraten. Danach kurz herausnehmen.</step>
+      <step nr="3">Die Zwiebel im Bräter anrösten, mit Rotwein ablöschen, kurz einkochen lassen und anschließend den Fond angießen.</step>
+      <step nr="4">Lorbeer zugeben, den Braten zurück in den Bräter legen und zugedeckt im vorgeheizten Ofen bei 160 °C Ober-/Unterhitze etwa 2 bis 2,5 Stunden schmoren. Zwischendurch ein- bis zweimal mit Bratfond begießen.</step>
+      <step nr="5">Für den Grünkohl Speck klein schneiden und mit Schmalz in einem großen Topf auslassen. Den Grünkohl zugeben und mit etwas Bratfond oder wenig Wasser langsam garen.</step>
+      <step nr="6">Den Grünkohl mit Salz, Pfeffer und nach Wunsch etwas zusätzlichem Wacholder oder Lorbeer abschmecken und etwa 45 bis 60 Minuten sanft ziehen lassen.</step>
+      <step nr="7">Den Braten aus dem Sud nehmen, vor dem Anschneiden 10 Minuten ruhen lassen und die Sauce bei Bedarf noch etwas offen einkochen.</step>
+      <step nr="8">Wildschweinbraten mit Grünkohl und einer passenden Kartoffelbeilage servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 25 Minuten</item>
-      <item>Schmorzeit: ca. 2 bis 2,5 Stunden</item>
+      <item>Anbraten und Ansatz: ca. 15 Minuten</item>
+      <item>Schmorzeit im Ofen: ca. 2 bis 2,5 Stunden bei 160 °C Ober-/Unterhitze</item>
       <item>Grünkohl parallel: ca. 45–60 Minuten</item>
+      <item>Ruhezeit Fleisch: ca. 10 Minuten</item>
       <item>Gesamt: ca. 3 Stunden</item>
     </timing>
     <tips>
-      <item>Wildschwein nicht zu heiß schmoren, dann bleibt es saftig und wird schön zart.</item>
-      <item>Grünkohl separat fertig machen, damit Fleisch und Beilage jeweils sauber den richtigen Garpunkt bekommen.</item>
+      <item>Wildschwein lieber moderat bei 160 °C schmoren als zu heiß garen, damit das Fleisch saftig und zart bleibt.</item>
+      <item>Wenn der Fond zu stark reduziert, zwischendurch einen kleinen Schluck Wasser oder Brühe nachgießen.</item>
       <item>Sehr stimmig mit Salzkartoffeln, Kartoffelstampf oder kleinen Klößen.</item>
     </tips>
-    <rating>9,5/10 – festlich, regional und sehr stimmungsvoll.</rating>
+    <rating>9,5/10 – kräftig, winterlich und sehr stimmig mit Grünkohl.</rating>
   </recipe>
   <recipe id="143">
     <name>Schaschlik vom Grill – klassische Schweine-Spieße</name>
@@ -10305,15 +10374,17 @@
     <timing>
       <item>Vorbereitung: ca. 25 Minuten</item>
       <item>Marinieren: mindestens 2 Stunden</item>
-      <item>Grillzeit: ca. 18–22 Minuten</item>
+      <item>Grillzeit: ca. 18–22 Minuten bei mittlerer direkter bis indirekter Hitze</item>
+      <item>Ruhezeit: 3 Minuten</item>
       <item>Gesamt ohne Marinade: ca. 45 Minuten</item>
     </timing>
     <tips>
       <item>Zu kleine Fleischstücke trocknen schnell aus – lieber etwas größer schneiden.</item>
       <item>Wenn du Holzspieße nutzt, vorher mindestens 30 Minuten wässern.</item>
       <item>Am besten mit ruhiger mittlerer Hitze arbeiten statt mit zu viel Vollgas.</item>
+      <item>Spieße nach dem Grillen 3 Minuten ruhen lassen, dann bleibt das Fleisch saftiger.</item>
     </tips>
-    <rating>9/10 – klassisch, saftig und perfekt für den Grill.</rating>
+    <rating>9/10 – saftig, würzig und sehr stimmig vom Grill.</rating>
   </recipe>
   <recipe id="144">
     <name>Schaschlik vom Grill – Hähnchen mit Paprika</name>
@@ -10346,15 +10417,17 @@
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
       <item>Marinieren: 1–2 Stunden</item>
-      <item>Grillzeit: ca. 15–18 Minuten</item>
+      <item>Grillzeit: ca. 15–18 Minuten bei mittlerer Hitze</item>
+      <item>Ruhezeit: 3 Minuten</item>
       <item>Gesamt ohne Marinade: ca. 35–40 Minuten</item>
     </timing>
     <tips>
       <item>Hähnchen nicht zu lange über direkter Hitze lassen, sonst wird es schnell trocken.</item>
       <item>Ein kleiner Spritzer Zitrone in der Marinade hebt die Frische deutlich.</item>
       <item>Sehr gut für Sommerabende, wenn es etwas leichter als Schweine-Schaschlik sein soll.</item>
+      <item>Hähnchen immer vollständig durchgaren und vor dem Servieren kurz ruhen lassen.</item>
     </tips>
-    <rating>8,5/10 – frisch, würzig und schön ausgewogen.</rating>
+    <rating>8,6/10 – saftig, frisch und gut ausbalanciert.</rating>
   </recipe>
   <recipe id="145">
     <name>Schaschlik vom Grill – Rind mit Knoblauch-Zwiebel-Marinade</name>
@@ -10387,15 +10460,17 @@
     <timing>
       <item>Vorbereitung: ca. 25 Minuten</item>
       <item>Marinieren: mindestens 2 Stunden</item>
-      <item>Grillzeit: ca. 12–16 Minuten</item>
+      <item>Grillzeit: ca. 12–16 Minuten bei mittlerer direkter bis indirekter Hitze</item>
+      <item>Ruhezeit: 3 Minuten</item>
       <item>Gesamt ohne Marinade: ca. 40 Minuten</item>
     </timing>
     <tips>
       <item>Für Rind lieber ein zarteres Stück nehmen, sonst wird der Spieß schnell fest.</item>
       <item>Knoblauch nicht zu dominant machen, damit der Fleischgeschmack bleibt.</item>
       <item>Sehr gut mit gegrillten Zwiebeln und rustikalem Brot.</item>
+      <item>Rind nicht unnötig lange grillen und vor dem Servieren kurz ruhen lassen.</item>
     </tips>
-    <rating>8,5/10 – kräftig und sehr grilltauglich.</rating>
+    <rating>8,7/10 – kräftig, aromatisch und mit Rind sehr eigenständig.</rating>
   </recipe>
   <recipe id="146">
     <name>Schaschlik mit Zwiebel-Essig-Marinade</name>
@@ -10425,15 +10500,17 @@
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
       <item>Marinieren: mindestens 4 Stunden, ideal über Nacht</item>
-      <item>Grill- oder Bratzeit: ca. 18–22 Minuten</item>
+      <item>Grill- oder Bratzeit: ca. 18–22 Minuten bei mittlerer Hitze</item>
+      <item>Ruhezeit: 3 Minuten</item>
       <item>Gesamt ohne Marinade: ca. 40 Minuten</item>
     </timing>
     <tips>
       <item>Diese Variante lebt stark von der Marinierzeit – nicht zu kurz ziehen lassen.</item>
       <item>Die Zwiebeln dürfen kräftig sein, das gehört hier zum Charakter.</item>
       <item>Passt sehr gut zu Paprikasalat, Brot und rustikalen Grillbeilagen.</item>
+      <item>Durch die Essig-Zwiebel-Marinade lieber mit mittlerer Hitze arbeiten, damit außen nichts verbrennt.</item>
     </tips>
-    <rating>8,5/10 – simpel und sehr ursprünglich im Geschmack.</rating>
+    <rating>8,6/10 – würzig, kernig und mit langer Marinade am besten.</rating>
   </recipe>
   <recipe id="147">
     <name>Barbecue-Schaschlik mit rauchiger Sauce</name>
@@ -10465,15 +10542,17 @@
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
       <item>Marinieren: 1–2 Stunden</item>
-      <item>Grillzeit: ca. 18 Minuten</item>
+      <item>Grillzeit: ca. 18 Minuten bei mittlerer Hitze</item>
+      <item>Ruhezeit: 3 Minuten</item>
       <item>Gesamt ohne Marinade: ca. 40 Minuten</item>
     </timing>
     <tips>
       <item>BBQ-Sauce immer erst gegen Ende auftragen, sonst karamellisiert sie zu stark.</item>
       <item>Mit geräucherter Paprika wird die Richtung noch runder.</item>
       <item>Sehr gut für Gäste, weil die Spieße optisch und geschmacklich sofort wirken.</item>
+      <item>BBQ-Sauce wirklich erst in den letzten Minuten auftragen, sonst wird sie zu dunkel.</item>
     </tips>
-    <rating>9/10 – rauchig, modern und richtig grillig.</rating>
+    <rating>9/10 – rauchig, glänzend und für Gäste sehr dankbar.</rating>
   </recipe>
   <recipe id="148">
     <name>Winter-Schaschlik aus dem Ofen</name>
@@ -10504,15 +10583,16 @@
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
       <item>Marinieren: optional 1–2 Stunden</item>
-      <item>Ofenzeit: ca. 30–40 Minuten</item>
+      <item>Ofenzeit: ca. 30–40 Minuten bei 190 °C Ober-/Unterhitze</item>
+      <item>Kurz gratinieren: 3–5 Minuten mit Oberhitze oder Grillfunktion</item>
       <item>Gesamt: ca. 55–60 Minuten</item>
     </timing>
     <tips>
       <item>Ein kleiner Schluck Brühe oder Sauce in der Form verhindert, dass das Fleisch austrocknet.</item>
       <item>Für Winterküche passt Majoran oder etwas Kümmel gut dazu.</item>
-      <item>Auch praktisch, wenn man mehrere Portionen auf einmal machen will.</item>
+      <item>Vor dem Servieren 3 bis 5 Minuten ruhen lassen, damit die Spieße saftiger bleiben.</item>
     </tips>
-    <rating>8,5/10 – winterlich, deftig und unkompliziert.</rating>
+    <rating>8,6/10 – deftig, saftig und als Ofenvariante sehr brauchbar.</rating>
   </recipe>
   <recipe id="149">
     <name>Schaschlik-Pfanne für drinnen</name>
@@ -10542,16 +10622,16 @@
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Brat- und Schmorzeit: ca. 15–20 Minuten</item>
+      <item>Braten und Schmoren: ca. 15–20 Minuten</item>
+      <item>Kurz ruhen lassen: 2 Minuten</item>
       <item>Gesamt: ca. 30–35 Minuten</item>
-      <item>Perfekt für den Feierabend</item>
     </timing>
     <tips>
       <item>Das Fleisch lieber portionsweise anbraten, damit es Farbe statt Kochsaft bekommt.</item>
       <item>Wenn du es deftiger willst, etwas Letscho oder Ajvar mit in die Sauce geben.</item>
       <item>Mit Brot ist das die einfachste und stimmigste Kombination.</item>
     </tips>
-    <rating>8/10 – schnell, deftig und unkompliziert.</rating>
+    <rating>8,2/10 – schnell, würzig und für drinnen sehr praktisch.</rating>
   </recipe>
   <recipe id="150">
     <name>Schaschlik-Topf mit Paprika und Zwiebeln</name>
@@ -10591,7 +10671,7 @@
       <item>Der Topf wird oft noch besser, wenn er ein paar Minuten ruhen darf.</item>
       <item>Sehr passend mit Kartoffeln, Brot oder einem Klecks Schmand.</item>
     </tips>
-    <rating>8,5/10 – deftig und sehr passend für Herbst und Winter.</rating>
+    <rating>8,5/10 – deftig, rund und gut vorzubereiten.</rating>
   </recipe>
   <recipe id="151">
     <name>Klassischer Schaschlik-Topf mit Paprikasauce</name>
@@ -10632,7 +10712,7 @@
       <item>Ein wenig Senf kann der Paprikasauce zusätzliche Tiefe geben.</item>
       <item>Am nächsten Tag oft fast noch besser als frisch gekocht.</item>
     </tips>
-    <rating>9/10 – klassisch, deftig und sehr beliebt.</rating>
+    <rating>8,9/10 – klassisch, kräftig und am nächsten Tag oft noch besser.</rating>
   </recipe>
   <recipe id="152">
     <name>Schaschlik-Spieße mit Paprikasauce und Letscho</name>
@@ -10664,14 +10744,16 @@
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
       <item>Marinieren: ca. 2–3 Stunden</item>
-      <item>Grillzeit: ca. 18–22 Minuten</item>
+      <item>Grillzeit: ca. 18–22 Minuten bei mittlerer Hitze</item>
       <item>Sauce parallel: ca. 10 Minuten</item>
+      <item>Ruhezeit: 3 Minuten</item>
+      <item>Gesamt ohne Marinade: ca. 45 Minuten</item>
     </timing>
     <tips>
       <item>Hier ist Letscho kein loses Extra, sondern Teil der warmen Beilage beziehungsweise Sauce.</item>
       <item>Paprikasauce und Letscho zusammen kurz einkochen lassen, dann wirkt das Rezept deutlich geschlossener.</item>
-      <item>Sehr gut für den Foodblog, weil die Farben und die Sauce auf dem Teller richtig gut funktionieren.</item>
+      <item>Die Spieße nach dem Grillen 3 Minuten ruhen lassen und erst dann mit Sauce servieren oder nappieren.</item>
     </tips>
-    <rating>8,5/10 – würzig, bunt und stimmig serviert.</rating>
+    <rating>8,7/10 – würzig, rund und mit Sauce deutlich geschlossener.</rating>
   </recipe>
 </cookbook>
