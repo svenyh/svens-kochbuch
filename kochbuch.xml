@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="4.6" languages="de,pl">
+<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="4.7" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>136</recipeCount>
+    <recipeCount>152</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch. Ergänzt um neue Garnelen- und Stampfrezepte.</notes>
   </meta>
   <recipe id="1">
@@ -8256,4 +8256,222 @@
     <item>Das Mehl sorgt für eine natürliche Bindung der Sauce.</item>
   </tips>
   <rating>9/10 – rustikal, deftig und ein echter Klassiker.</rating>
-</recipe></cookbook>
+</recipe><recipe id="137">
+  <name>Schaumburger Hochzeitssuppe</name>
+  <intro lang="de">Eine klassische Festtagssuppe mit kräftiger Brühe, Hühnerfleisch und feiner Einlage. Im Schaumburger Raum gehört sie zu den bekanntesten traditionellen Suppen für besondere Anlässe.</intro>
+  <persons>4 Personen</persons>
+  <category>Wölpinghausener Spezialitäten / Suppen</category>
+  <image src="images/rezeptbild_137.png" alt="Schaumburger Hochzeitssuppe"/>
+  <ingredients>
+    <item>1 Suppenhuhn</item>
+    <item>1 Bund Suppengemüse</item>
+    <item>2 l Wasser</item>
+    <item>Salz</item>
+    <item>Pfeffer</item>
+    <item>100 g Eierstich</item>
+    <item>150 g kleine Fleischklößchen</item>
+    <item>100 g Spargelstücke (optional)</item>
+    <item>frische Petersilie</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Suppenhuhn mit Suppengemüse, Wasser, Salz und Pfeffer in einen großen Topf geben und etwa 2 Stunden sanft kochen.</step>
+    <step nr="2">Das Huhn herausnehmen, etwas abkühlen lassen und das Fleisch klein zupfen.</step>
+    <step nr="3">Die Brühe durch ein Sieb gießen und zurück in den Topf geben.</step>
+    <step nr="4">Hühnerfleisch, Eierstich, Fleischklößchen und optional Spargelstücke in die Brühe geben.</step>
+    <step nr="5">Alles noch einige Minuten heiß ziehen lassen und vor dem Servieren mit Petersilie bestreuen.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 20 Minuten</item>
+    <item>Kochzeit: ca. 2 Stunden</item>
+    <item>Gesamtzeit: ca. 2 Stunden 20 Minuten</item>
+  </timing>
+  <tips>
+    <item>Die Suppe schmeckt besonders gut, wenn sie etwas durchziehen darf.</item>
+    <item>Eierstich und Fleischklößchen können vorbereitet werden.</item>
+    <item>Ideal als festlicher erster Gang.</item>
+  </tips>
+  <rating>9/10 – festlich, klassisch und regional sehr stimmig.</rating>
+</recipe>
+
+<recipe id="138">
+  <name>Schaumburger Zungenragout</name>
+  <intro lang="de">Ein deftiger regionaler Klassiker mit zarter Rinderzunge in cremiger Sauce. Traditionell, kräftig und typisch für die ältere Festtagsküche.</intro>
+  <persons>4 Personen</persons>
+  <category>Wölpinghausener Spezialitäten / Klassiker</category>
+  <image src="images/rezeptbild_138.png" alt="Schaumburger Zungenragout"/>
+  <ingredients>
+    <item>1 Rinderzunge</item>
+    <item>1 Zwiebel</item>
+    <item>2 EL Butter</item>
+    <item>2 EL Mehl</item>
+    <item>300 ml Kochbrühe von der Zunge</item>
+    <item>200 ml Sahne</item>
+    <item>2 EL Kapern</item>
+    <item>Salz</item>
+    <item>Pfeffer</item>
+    <item>etwas Zitronensaft</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Die Rinderzunge in Wasser weich kochen, herausnehmen, häuten und in Streifen schneiden.</step>
+    <step nr="2">Zwiebel fein würfeln und in Butter glasig anschwitzen.</step>
+    <step nr="3">Mehl einrühren, kurz anschwitzen und mit Kochbrühe glattrühren.</step>
+    <step nr="4">Sahne und Kapern zugeben und die Sauce einige Minuten sanft köcheln lassen.</step>
+    <step nr="5">Zungenstreifen einlegen und mit Salz, Pfeffer und etwas Zitronensaft abschmecken.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 20 Minuten</item>
+    <item>Kochzeit: ca. 2,5 Stunden</item>
+    <item>Gesamtzeit: ca. 3 Stunden</item>
+  </timing>
+  <tips>
+    <item>Dazu passen Salzkartoffeln oder Kartoffelpüree.</item>
+    <item>Die Sauce darf nicht stark kochen, damit das Fleisch zart bleibt.</item>
+    <item>Ein klassisches Sonntags- oder Festtagsgericht.</item>
+  </tips>
+  <rating>8,5/10 – traditionell, kräftig und sehr regional.</rating>
+</recipe>
+
+<recipe id="139">
+  <name>Schaumburger Dreierleipudding</name>
+  <intro lang="de">Ein traditionelles Schaumburger Dessert mit drei verschiedenen Schichten. Süß, klassisch und genau die Art von Nachspeise, die früher auf festlichen Tafeln Eindruck gemacht hat.</intro>
+  <persons>6 Personen</persons>
+  <category>Wölpinghausener Spezialitäten / Dessert</category>
+  <image src="images/rezeptbild_139.png" alt="Schaumburger Dreierleipudding"/>
+  <ingredients>
+    <item>1 l Milch</item>
+    <item>3 Päckchen Puddingpulver (Vanille, Schokolade und Sahne oder Mandel)</item>
+    <item>6 EL Zucker</item>
+    <item>etwas Butter für die Form</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Eine Form leicht einfetten.</step>
+    <step nr="2">Die erste Puddingsorte nach Packungsangabe kochen und in die Form geben.</step>
+    <step nr="3">Kurz anziehen lassen, dann die zweite Sorte kochen und vorsichtig darauf verteilen.</step>
+    <step nr="4">Zum Schluss die dritte Sorte kochen und als letzte Schicht einfüllen.</step>
+    <step nr="5">Komplett auskühlen lassen und mehrere Stunden kalt stellen.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 20 Minuten</item>
+    <item>Kühlzeit: ca. 3 Stunden</item>
+    <item>Gesamtzeit: ca. 3 Stunden 20 Minuten</item>
+  </timing>
+  <tips>
+    <item>Die Schichten jeweils leicht anziehen lassen, damit sie sauber bleiben.</item>
+    <item>Am besten gut gekühlt servieren.</item>
+    <item>Optisch besonders schön in einer Glasform.</item>
+  </tips>
+  <rating>8,5/10 – klassisch, süß und schön nostalgisch.</rating>
+</recipe>
+
+<recipe id="140">
+  <name>Bottermelksanballerse</name>
+  <intro lang="de">Eine rustikale süße Spezialität mit Buttermilch, wie man sie aus älteren norddeutschen und regionalen Rezepttraditionen kennt. Einfach, bodenständig und besonders charmant.</intro>
+  <persons>4 Personen</persons>
+  <category>Wölpinghausener Spezialitäten / Süßspeisen</category>
+  <image src="images/rezeptbild_140.png" alt="Bottermelksanballerse"/>
+  <ingredients>
+    <item>500 ml Buttermilch</item>
+    <item>250 g Mehl</item>
+    <item>2 EL Zucker</item>
+    <item>1 Prise Salz</item>
+    <item>1 Ei</item>
+    <item>etwas Butter oder Öl zum Ausbacken</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Buttermilch, Ei, Zucker und Salz verrühren.</step>
+    <step nr="2">Mehl nach und nach einarbeiten, bis ein glatter, etwas zäher Teig entsteht.</step>
+    <step nr="3">Butter oder Öl in einer Pfanne erhitzen.</step>
+    <step nr="4">Den Teig portionsweise hineingeben und bei mittlerer Hitze goldbraun ausbacken.</step>
+    <step nr="5">Warm servieren.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 10 Minuten</item>
+    <item>Backzeit: ca. 15 Minuten</item>
+    <item>Gesamtzeit: ca. 25 Minuten</item>
+  </timing>
+  <tips>
+    <item>Schmeckt pur oder mit Zucker und Zimt.</item>
+    <item>Am besten frisch und noch leicht warm servieren.</item>
+    <item>Rustikal und bewusst schlicht halten.</item>
+  </tips>
+  <rating>8/10 – einfach, regional und charmant bodenständig.</rating>
+</recipe>
+
+<recipe id="141">
+  <name>Grünkohl mit Bregenwurst, Kassler und Kartoffeln</name>
+  <intro lang="de">Ein deftiger Winterklassiker aus der Region mit geschmortem Grünkohl, Speck, Bregenwurst, Kassler und Kartoffeln. Genau die Art von Essen, die in der kalten Jahreszeit richtig passt.</intro>
+  <persons>4 Personen</persons>
+  <category>Wölpinghausener Spezialitäten / Winterküche</category>
+  <image src="images/rezeptbild_141.png" alt="Grünkohl mit Bregenwurst, Kassler und Kartoffeln"/>
+  <ingredients>
+    <item>1,5 kg Grünkohl</item>
+    <item>2 EL Schmalz</item>
+    <item>150 g Speckwürfel</item>
+    <item>4 Bregenwürste</item>
+    <item>500 g Kassler</item>
+    <item>800 g Kartoffeln</item>
+    <item>1 Zwiebel</item>
+    <item>Salz</item>
+    <item>Pfeffer</item>
+    <item>Senf nach Geschmack</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Zwiebel und Speck in Schmalz anbraten.</step>
+    <step nr="2">Grünkohl dazugeben und nach und nach zusammenfallen lassen.</step>
+    <step nr="3">Mit wenig Wasser oder Brühe angießen und sanft schmoren lassen.</step>
+    <step nr="4">Kassler und Bregenwurst auf oder in den Grünkohl legen und mitgaren.</step>
+    <step nr="5">Kartoffeln separat kochen.</step>
+    <step nr="6">Alles zusammen servieren und nach Wunsch Senf dazu reichen.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 20 Minuten</item>
+    <item>Garzeit: ca. 1,5 Stunden</item>
+    <item>Gesamtzeit: ca. 1 Stunde 50 Minuten</item>
+  </timing>
+  <tips>
+    <item>Der Grünkohl darf ruhig deftig und leicht speckig sein.</item>
+    <item>Am nächsten Tag schmeckt er oft noch besser.</item>
+    <item>Senf kann jeder am Tisch nach Geschmack dazu nehmen.</item>
+  </tips>
+  <rating>9,5/10 – regional, deftig und ein echter Winterklassiker.</rating>
+</recipe>
+
+<recipe id="142">
+  <name>Wildschweinbraten mit Grünkohl</name>
+  <intro lang="de">Ein festliches Wintergericht mit regionalem Charakter: zarter Wildschweinbraten und deftiger Grünkohl. Gerade zur Weihnachtszeit passt diese Kombination hervorragend.</intro>
+  <persons>4 Personen</persons>
+  <category>Wölpinghausener Spezialitäten / Festessen</category>
+  <image src="images/rezeptbild_142.png" alt="Wildschweinbraten mit Grünkohl"/>
+  <ingredients>
+    <item>1,2 kg Wildschweinbraten</item>
+    <item>1 Zwiebel</item>
+    <item>2 EL Öl</item>
+    <item>250 ml Rotwein</item>
+    <item>500 ml Wild- oder Rinderfond</item>
+    <item>1,5 kg Grünkohl</item>
+    <item>100 g Speck</item>
+    <item>2 EL Schmalz</item>
+    <item>Salz</item>
+    <item>Pfeffer</item>
+    <item>Wacholder und Lorbeer nach Geschmack</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Wildschweinbraten kräftig anbraten und mit Zwiebel kurz mitrösten.</step>
+    <step nr="2">Mit Rotwein und Fond ablöschen, würzen und zugedeckt schmoren lassen.</step>
+    <step nr="3">Für den Grünkohl Speck in Schmalz anbraten und den Kohl darin schmoren.</step>
+    <step nr="4">Braten weich schmoren, dann in Scheiben schneiden.</step>
+    <step nr="5">Mit Grünkohl zusammen servieren.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 25 Minuten</item>
+    <item>Schmorzeit: ca. 2 Stunden</item>
+    <item>Gesamtzeit: ca. 2 Stunden 25 Minuten</item>
+  </timing>
+  <tips>
+    <item>Ein kräftiger Bratenfond macht die Sauce runder.</item>
+    <item>Dazu passen Kartoffeln oder Klöße.</item>
+    <item>Sehr gut als weihnachtliches oder winterliches Festessen.</item>
+  </tips>
+  <rating>9,5/10 – festlich, regional und sehr stimmungsvoll.</rating>
+</recipe>
+<recipe id="143"><name>Schaschlik vom Grill – klassische Schweine-Spieße</name><intro lang="de">Saftige Schaschlik-Spieße mit Schweinenacken, Zwiebeln und Paprika. Klassisch mariniert und perfekt für den Grill.</intro><persons>4 Personen</persons><category>Grill / BBQ / Osteuropa</category><image src="images/rezeptbild_143.png" alt="Schaschlik vom Grill – klassische Schweine-Spieße"/><ingredients><item>1 kg Schweinenacken</item><item>3 Zwiebeln</item><item>3 Paprika</item><item>4 EL Öl</item><item>2 EL Essig</item><item>2 TL Paprikapulver</item><item>1 TL Pfeffer</item><item>2 TL Salz</item></ingredients><preparation><step nr="1">Fleisch in grobe Würfel schneiden.</step><step nr="2">Zwiebeln in grobe Stücke schneiden und mit Öl, Essig und Gewürzen mischen.</step><step nr="3">Fleisch mindestens 4 Stunden, besser über Nacht marinieren.</step><step nr="4">Paprika in Stücke schneiden.</step><step nr="5">Fleisch, Zwiebeln und Paprika abwechselnd auf Spieße stecken.</step><step nr="6">Auf dem Grill bei mittlerer Hitze rundum garen.</step></preparation><timing><item>Vorbereitung: ca. 20 Minuten</item><item>Marinieren: mindestens 4 Stunden</item><item>Grillzeit: ca. 20–25 Minuten</item></timing><tips><item>Mit Fladenbrot und Zwiebelsalat servieren.</item><item>Nicht zu heiß grillen, damit das Fleisch saftig bleibt.</item></tips><rating>9/10 – klassisch, saftig und perfekt für den Grill.</rating></recipe><recipe id="144"><name>Schaschlik vom Grill – Hähnchen mit Paprika</name><intro lang="de">Leichtere Schaschlik-Variante mit Hähnchenbrust, Paprika und einer würzigen Marinade.</intro><persons>4 Personen</persons><category>Grill / BBQ / Osteuropa</category><image src="images/rezeptbild_144.png" alt="Schaschlik vom Grill – Hähnchen mit Paprika"/><ingredients><item>800 g Hähnchenbrust</item><item>2 Paprika</item><item>2 Zwiebeln</item><item>4 EL Öl</item><item>2 EL Zitronensaft</item><item>2 Knoblauchzehen</item><item>1 TL Paprikapulver</item><item>Salz</item><item>Pfeffer</item></ingredients><preparation><step nr="1">Hähnchen in Würfel schneiden.</step><step nr="2">Öl, Zitronensaft, Knoblauch und Gewürze verrühren.</step><step nr="3">Fleisch mindestens 2 Stunden marinieren.</step><step nr="4">Paprika und Zwiebeln schneiden.</step><step nr="5">Alles auf Spieße stecken.</step><step nr="6">Auf dem Grill rundum goldbraun garen.</step></preparation><timing><item>Vorbereitung: ca. 15 Minuten</item><item>Marinieren: ca. 2 Stunden</item><item>Grillzeit: ca. 15–20 Minuten</item></timing><tips><item>Sehr gut mit Kräuterjoghurt.</item><item>Nicht zu lange grillen, damit das Hähnchen saftig bleibt.</item></tips><rating>8,5/10 – frisch, würzig und alltagstauglich.</rating></recipe><recipe id="145"><name>Schaschlik vom Grill – Rind mit Knoblauch-Zwiebel-Marinade</name><intro lang="de">Kräftige Schaschlik-Version mit Rindfleisch und einer rustikalen Marinade aus Zwiebel und Knoblauch.</intro><persons>4 Personen</persons><category>Grill / BBQ / Osteuropa</category><image src="images/rezeptbild_145.png" alt="Schaschlik vom Grill – Rind mit Knoblauch-Zwiebel-Marinade"/><ingredients><item>1 kg Rindfleisch aus der Hüfte</item><item>3 Zwiebeln</item><item>3 Knoblauchzehen</item><item>4 EL Öl</item><item>2 EL Essig</item><item>1 TL Paprikapulver</item><item>Salz</item><item>Pfeffer</item></ingredients><preparation><step nr="1">Rindfleisch in Würfel schneiden.</step><step nr="2">Zwiebeln und Knoblauch fein hacken und mit Öl, Essig und Gewürzen verrühren.</step><step nr="3">Fleisch über Nacht marinieren.</step><step nr="4">Auf Spieße stecken.</step><step nr="5">Bei mittlerer bis starker Hitze grillen und mehrfach wenden.</step></preparation><timing><item>Vorbereitung: ca. 15 Minuten</item><item>Marinieren: über Nacht</item><item>Grillzeit: ca. 18–22 Minuten</item></timing><tips><item>Mit Ajvar oder Knoblauchsauce servieren.</item><item>Rind braucht etwas längere Marinierzeit.</item></tips><rating>8,5/10 – kräftig und sehr grilltauglich.</rating></recipe><recipe id="146"><name>Schaschlik mit Zwiebel-Essig-Marinade</name><intro lang="de">Eine klassische, säuerlich-würzige Schaschlik-Variante mit viel Zwiebel und kräftigem Geschmack.</intro><persons>4 Personen</persons><category>Grill / Osteuropa / Klassiker</category><image src="images/rezeptbild_146.png" alt="Schaschlik mit Zwiebel-Essig-Marinade"/><ingredients><item>1 kg Schweinefleisch</item><item>4 Zwiebeln</item><item>3 EL Essig</item><item>4 EL Öl</item><item>2 TL Salz</item><item>1 TL Pfeffer</item></ingredients><preparation><step nr="1">Fleisch schneiden.</step><step nr="2">Zwiebeln in Ringe schneiden und mit Essig, Öl, Salz und Pfeffer mischen.</step><step nr="3">Fleisch darin mehrere Stunden marinieren.</step><step nr="4">Auf Spieße stecken und grillen.</step></preparation><timing><item>Vorbereitung: ca. 15 Minuten</item><item>Marinieren: 4–6 Stunden</item><item>Grillzeit: ca. 20 Minuten</item></timing><tips><item>Besonders gut mit Brot und Senf-Zwiebeln.</item><item>Die Zwiebel darf ruhig kräftig schmecken.</item></tips><rating>8,5/10 – simpel und sehr ursprünglich im Geschmack.</rating></recipe><recipe id="147"><name>Barbecue-Schaschlik mit rauchiger Sauce</name><intro lang="de">Die moderne BBQ-Version mit rauchiger Paprikanote und kräftiger Sauce – ideal für den Sommer.</intro><persons>4 Personen</persons><category>Grill / BBQ / Moderne Küche</category><image src="images/rezeptbild_147.png" alt="Barbecue-Schaschlik mit rauchiger Sauce"/><ingredients><item>1 kg Schweinenacken</item><item>2 Paprika</item><item>2 Zwiebeln</item><item>4 EL BBQ-Sauce</item><item>2 EL Öl</item><item>1 TL geräuchertes Paprikapulver</item><item>Salz</item><item>Pfeffer</item></ingredients><preparation><step nr="1">Fleisch und Gemüse schneiden.</step><step nr="2">BBQ-Sauce mit Öl und Gewürzen verrühren.</step><step nr="3">Fleisch mehrere Stunden marinieren.</step><step nr="4">Mit Gemüse auf Spieße stecken.</step><step nr="5">Grillen und zum Schluss leicht glasieren.</step></preparation><timing><item>Vorbereitung: ca. 20 Minuten</item><item>Marinieren: ca. 4 Stunden</item><item>Grillzeit: ca. 20–25 Minuten</item></timing><tips><item>Sehr gut mit Coleslaw und Ofenkartoffeln.</item><item>Die Sauce erst gegen Ende stärker auftragen.</item></tips><rating>9/10 – rauchig, modern und richtig grillig.</rating></recipe><recipe id="148"><name>Winter-Schaschlik aus dem Ofen</name><intro lang="de">Wenn draußen nicht gegrillt wird, bringt diese Ofen-Version trotzdem den typischen Schaschlik-Geschmack auf den Tisch.</intro><persons>4 Personen</persons><category>Ofengerichte / Winterküche / Osteuropa</category><image src="images/rezeptbild_148.png" alt="Winter-Schaschlik aus dem Ofen"/><ingredients><item>1 kg Schweinefleisch</item><item>3 Paprika</item><item>3 Zwiebeln</item><item>4 EL Öl</item><item>2 EL Tomatenmark</item><item>150 ml Brühe</item><item>Salz</item><item>Pfeffer</item><item>Paprikapulver</item></ingredients><preparation><step nr="1">Fleisch, Paprika und Zwiebeln schneiden.</step><step nr="2">Mit Öl, Tomatenmark und Gewürzen mischen.</step><step nr="3">Alles in eine Auflaufform geben und Brühe angießen.</step><step nr="4">Im Ofen bei 190 °C ca. 45 Minuten garen.</step></preparation><timing><item>Vorbereitung: ca. 20 Minuten</item><item>Backzeit: ca. 45 Minuten</item><item>Gesamtzeit: ca. 65 Minuten</item></timing><tips><item>Mit Reis oder Brot servieren.</item><item>Für mehr Sauce etwas mehr Brühe zugeben.</item></tips><rating>8,5/10 – winterlich, deftig und unkompliziert.</rating></recipe><recipe id="149"><name>Schaschlik-Pfanne für drinnen</name><intro lang="de">Eine schnelle Pfannen-Version mit dem typischen Geschmack von Schaschlik – perfekt für den Alltag.</intro><persons>4 Personen</persons><category>Pfannengerichte / Schnelle Küche / Osteuropa</category><image src="images/rezeptbild_149.png" alt="Schaschlik-Pfanne für drinnen"/><ingredients><item>800 g Schweinefleisch</item><item>2 Paprika</item><item>2 Zwiebeln</item><item>2 EL Öl</item><item>2 EL Ketchup</item><item>1 EL Senf</item><item>1 TL Paprikapulver</item><item>Salz</item><item>Pfeffer</item></ingredients><preparation><step nr="1">Fleisch in Streifen oder Würfel schneiden und anbraten.</step><step nr="2">Paprika und Zwiebeln dazugeben.</step><step nr="3">Mit Ketchup, Senf und Gewürzen abschmecken.</step><step nr="4">Kurz schmoren lassen und servieren.</step></preparation><timing><item>Vorbereitung: ca. 15 Minuten</item><item>Garzeit: ca. 20 Minuten</item><item>Gesamtzeit: ca. 35 Minuten</item></timing><tips><item>Passt gut zu Reis oder Kartoffelpüree.</item><item>Ideal, wenn es schnell gehen soll.</item></tips><rating>8/10 – schnell, deftig und sehr alltagstauglich.</rating></recipe><recipe id="150"><name>Schaschlik-Topf mit Paprika und Zwiebeln</name><intro lang="de">Ein herzhafter Topf mit viel Paprika, Zwiebeln und Fleisch – würzig, deftig und perfekt für kühlere Tage.</intro><persons>4 Personen</persons><category>Eintöpfe / Winterküche / Osteuropa</category><image src="images/rezeptbild_150.png" alt="Schaschlik-Topf mit Paprika und Zwiebeln"/><ingredients><item>1 kg Schweinefleisch</item><item>3 Paprika</item><item>3 Zwiebeln</item><item>2 EL Öl</item><item>2 EL Tomatenmark</item><item>300 ml Brühe</item><item>Salz</item><item>Pfeffer</item><item>Paprikapulver</item></ingredients><preparation><step nr="1">Fleisch anbraten.</step><step nr="2">Paprika und Zwiebeln dazugeben.</step><step nr="3">Tomatenmark einrühren und mit Brühe ablöschen.</step><step nr="4">Alles ca. 45 Minuten schmoren lassen.</step></preparation><timing><item>Vorbereitung: ca. 20 Minuten</item><item>Schmorzeit: ca. 45 Minuten</item><item>Gesamtzeit: ca. 65 Minuten</item></timing><tips><item>Mit Brot oder Kartoffeln servieren.</item><item>Schmeckt aufgewärmt besonders gut.</item></tips><rating>8,5/10 – deftig und sehr passend für Herbst und Winter.</rating></recipe><recipe id="151"><name>Klassischer Schaschlik-Topf mit Paprikasauce</name><intro lang="de">Ein alter Imbiss-Klassiker in Topf-Form: Fleisch, Paprika, Zwiebeln und eine kräftige Paprikasauce.</intro><persons>4 Personen</persons><category>Eintöpfe / Klassiker / Deftige Küche</category><image src="images/rezeptbild_151.png" alt="Klassischer Schaschlik-Topf mit Paprikasauce"/><ingredients><item>1 kg Schweinefleisch</item><item>3 Zwiebeln</item><item>3 Paprika</item><item>2 EL Öl</item><item>2 EL Tomatenmark</item><item>400 ml passierte Tomaten</item><item>1 TL Paprikapulver</item><item>Salz</item><item>Pfeffer</item></ingredients><preparation><step nr="1">Fleisch anbraten.</step><step nr="2">Zwiebeln und Paprika mit anrösten.</step><step nr="3">Tomatenmark einrühren und mit passierten Tomaten auffüllen.</step><step nr="4">Kräftig würzen und ca. 50 Minuten schmoren lassen.</step></preparation><timing><item>Vorbereitung: ca. 20 Minuten</item><item>Schmorzeit: ca. 50 Minuten</item><item>Gesamtzeit: ca. 70 Minuten</item></timing><tips><item>Passt hervorragend zu Pommes oder Brot.</item><item>Für mehr Tiefe etwas Brühe ergänzen.</item></tips><rating>9/10 – klassisch, deftig und sehr beliebt.</rating></recipe><recipe id="152"><name>Schaschlik-Spieße mit Paprikasauce und Letscho</name><intro lang="de">Schaschlik in einer besonders aromatischen Variante mit Paprikasauce und Letscho als passender Beilage.</intro><persons>4 Personen</persons><category>Grill / BBQ / Osteuropa</category><image src="images/rezeptbild_152.png" alt="Schaschlik-Spieße mit Paprikasauce und Letscho"/><ingredients><item>1 kg Schweinefleisch</item><item>2 Paprika</item><item>2 Zwiebeln</item><item>4 EL Öl</item><item>2 TL Paprikapulver</item><item>Salz</item><item>Pfeffer</item><item>250 g Letscho</item><item>200 ml Paprikasauce</item></ingredients><preparation><step nr="1">Fleisch marinieren.</step><step nr="2">Mit Paprika und Zwiebeln auf Spieße stecken.</step><step nr="3">Grillen oder in der Grillpfanne garen.</step><step nr="4">Mit Paprikasauce und Letscho servieren.</step></preparation><timing><item>Vorbereitung: ca. 20 Minuten</item><item>Marinieren: ca. 3 Stunden</item><item>Grillzeit: ca. 20 Minuten</item></timing><tips><item>Letscho gibt dem Gericht eine schöne osteuropäische Note.</item><item>Sehr gut auch mit Reis.</item></tips><rating>8,5/10 – würzig, bunt und sehr foodblog-tauglich.</rating></recipe></cookbook>
