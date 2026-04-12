@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="4.3" languages="de,pl">
+<cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="4.6" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>130</recipeCount>
+    <recipeCount>136</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Sprachrein bereinigt und inhaltlich auf Kochbuch-Niveau vereinheitlicht. Zutatenliste statt separater Einkaufsliste nach Nutzerwunsch. Ergänzt um neue Garnelen- und Stampfrezepte.</notes>
   </meta>
   <recipe id="1">
@@ -6172,7 +6172,7 @@
       <item>Wenn du es milder magst, nimm zuerst nur 1 TL Cayennepfeffer und würze später nach.</item>
       <item>Statt Mangosaft funktioniert auch etwas Orangensaft oder ein kleiner Spritzer Limette, aber Mango passt besonders gut zur Erdnussnote.</item>
       <item>Der Eintopf schmeckt am nächsten Tag fast noch besser, weil die Gewürze dann stärker durchgezogen sind.</item>
-    </tips>
+    <item>Das ist die vegetarische Grundversion. Wer es mit Fleisch mag, kann Hähnchenfleisch separat anbraten und später ganz normal mit in den Eintopf geben.</item></tips>
     <rating>9,0 / 10 – würzig, cremig und mal etwas anderes als ein klassischer Gemüseeintopf.</rating>
     <translation lang="pl">
       <name>Afrykański gulasz z masłem orzechowym</name>
@@ -7977,4 +7977,283 @@
 <recipe id="128"><name>Bohnensalat mit roten Zwiebeln</name><intro lang="de">Bohnensalat ist einer dieser unterschätzten Klassiker, die gerade zu Grillfleisch oder Bratwurst hervorragend passen. Mit roten Zwiebeln und einem klaren Dressing bleibt er einfach, aber sehr wirkungsvoll.</intro><intro lang="pl">Sałatka z fasoli to jeden z tych niedocenianych klasyków, które świetnie pasują do grillowanego mięsa albo kiełbasy. Z czerwoną cebulą i prostym dressingiem jest nieskomplikowana, ale bardzo dobra.</intro><persons>3–4 Personen</persons><category>Salate / Beilagen</category><image src="images/rezeptbild_128.png" alt="Bohnensalat mit roten Zwiebeln"/><ingredients><item>2 Dosen grüne Bohnen</item><item>1 rote Zwiebel</item><item>3 EL Essig</item><item>2 EL Öl</item><item>1 TL Zucker</item><item>Salz</item><item>Pfeffer</item><item>Bohnenkraut oder Petersilie</item></ingredients><preparation><step nr="1">Bohnen abtropfen lassen.</step><step nr="2">Zwiebel in feine Halbringe schneiden.</step><step nr="3">Essig, Öl, Zucker, Salz und Pfeffer verrühren.</step><step nr="4">Mit Bohnen und Zwiebel vermengen.</step><step nr="5">Mit Kräutern abschließen und ziehen lassen.</step></preparation><timing><item>Vorbereitung: ca. 10 Minuten</item><item>Ziehzeit: ca. 20 Minuten</item><item>Gesamtzeit: ca. 30 Minuten</item></timing><tips><item>Auch mit weißen Bohnen sehr gut.</item><item>Etwas Speck macht ihn herzhafter.</item><item>Vor dem Servieren gut kalt stellen.</item></tips><rating>8/10 – einfach, würzig und sehr passend zu Gegrilltem.</rating><translation lang="pl"><name>Sałatka z fasolki z czerwoną cebulą</name><persons>3–4 osoby</persons><category>Sałatki / dodatki</category><ingredients><item>2 puszki zielonej fasolki</item><item>1 czerwona cebula</item><item>3 EL octu</item><item>2 EL oleju</item><item>1 TL cukru</item><item>sól</item><item>pieprz</item><item>cząber lub pietruszka</item></ingredients><preparation><step nr="1">Odsączyć fasolkę.</step><step nr="2">Cebulę pokroić w cienkie półplasterki.</step><step nr="3">Wymieszać ocet, olej, cukier, sól i pieprz.</step><step nr="4">Połączyć z fasolką i cebulą.</step><step nr="5">Dodać zioła i odstawić.</step></preparation><timing><item>Przygotowanie: ok. 10 minut</item><item>Odstawienie: ok. 20 minut</item><item>Łącznie: ok. 30 minut</item></timing><tips><item>Dobra także z białą fasolą.</item><item>Boczek dodaje konkretu.</item><item>Najlepiej schłodzić przed podaniem.</item></tips><rating>8/10 – prosty i bardzo dobry do grilla.</rating></translation></recipe>
 <recipe id="129"><name>Karottensalat klassisch</name><intro lang="de">Karottensalat ist einfach, günstig und oft genau das Richtige, wenn etwas Frisches auf den Tisch soll. Mit einem milden Dressing und etwas Apfel bekommt er eine schöne Balance aus Frische und Süße.</intro><intro lang="pl">Surówka z marchewki jest prosta, tania i często właśnie tym, czego potrzeba, gdy na stole ma pojawić się coś świeżego. Delikatny dressing i odrobina jabłka dają dobrą równowagę.</intro><persons>3–4 Personen</persons><category>Salate / Beilagen</category><image src="images/rezeptbild_129.png" alt="Karottensalat klassisch"/><ingredients><item>5 Möhren</item><item>1 Apfel</item><item>2 EL Zitronensaft</item><item>2 EL Öl</item><item>1 TL Honig</item><item>Salz</item><item>Pfeffer</item></ingredients><preparation><step nr="1">Möhren raspeln, Apfel ebenfalls raspeln.</step><step nr="2">Zitronensaft, Öl und Honig verrühren.</step><step nr="3">Mit Möhren und Apfel mischen.</step><step nr="4">Mit Salz und Pfeffer abschmecken.</step><step nr="5">Kurz ziehen lassen.</step></preparation><timing><item>Vorbereitung: ca. 10 Minuten</item><item>Ziehzeit: ca. 10 Minuten</item><item>Gesamtzeit: ca. 20 Minuten</item></timing><tips><item>Mit Walnüssen etwas besonderer.</item><item>Sehr gut als frische Beilage.</item><item>Apfel erst kurz vor dem Mischen raspeln.</item></tips><rating>8/10 – leicht, frisch und unkompliziert.</rating><translation lang="pl"><name>Klasyczna surówka z marchewki</name><persons>3–4 osoby</persons><category>Sałatki / dodatki</category><ingredients><item>5 marchewek</item><item>1 jabłko</item><item>2 EL soku z cytryny</item><item>2 EL oleju</item><item>1 TL miodu</item><item>sól</item><item>pieprz</item></ingredients><preparation><step nr="1">Zetrzeć marchewkę i jabłko.</step><step nr="2">Wymieszać sok z cytryny, olej i miód.</step><step nr="3">Połączyć z marchewką i jabłkiem.</step><step nr="4">Doprawić solą i pieprzem.</step><step nr="5">Krótko odstawić.</step></preparation><timing><item>Przygotowanie: ok. 10 minut</item><item>Odstawienie: ok. 10 minut</item><item>Łącznie: ok. 20 minut</item></timing><tips><item>Z orzechami włoskimi jest ciekawsza.</item><item>Bardzo dobra jako świeży dodatek.</item><item>Jabłko ścierać tuż przed mieszaniem.</item></tips><rating>8/10 – lekka, świeża i bardzo prosta.</rating></translation></recipe>
 <recipe id="130"><name>Bunter Blattsalat mit Hausdressing</name><intro lang="de">Ein bunter Blattsalat mit Hausdressing ist genau die Art von Salat, die man immer wieder brauchen kann. Er passt zu fast allem, sieht frisch aus und bringt Leichtigkeit auf den Teller.</intro><intro lang="pl">Kolorowa sałata z domowym dressingiem to dokładnie taki dodatek, który zawsze się przydaje. Pasuje prawie do wszystkiego, wygląda świeżo i wnosi lekkość na talerz.</intro><persons>3–4 Personen</persons><category>Salate / Beilagen</category><image src="images/rezeptbild_130.png" alt="Bunter Blattsalat mit Hausdressing"/><ingredients><item>1 Salatmischung</item><item>1 Handvoll Kirschtomaten</item><item>1/2 Gurke</item><item>3 EL Öl</item><item>2 EL Essig</item><item>1 TL Senf</item><item>1 TL Honig</item><item>Salz</item><item>Pfeffer</item></ingredients><preparation><step nr="1">Salat waschen und trocken schleudern.</step><step nr="2">Tomaten halbieren und Gurke schneiden.</step><step nr="3">Öl, Essig, Senf, Honig, Salz und Pfeffer verrühren.</step><step nr="4">Kurz vor dem Servieren alles mischen.</step></preparation><timing><item>Vorbereitung: ca. 10 Minuten</item><item>Gesamtzeit: ca. 10 Minuten</item><item>Kein Warten nötig</item></timing><tips><item>Dressing immer erst kurz vorher zugeben.</item><item>Mit Croûtons oder Kernen aufwertbar.</item><item>Sehr flexibel kombinierbar.</item></tips><rating>8/10 – frisch, einfach und immer passend.</rating><translation lang="pl"><name>Kolorowa sałata z domowym dressingiem</name><persons>3–4 osoby</persons><category>Sałatki / dodatki</category><ingredients><item>1 mieszanka sałat</item><item>1 garść pomidorków koktajlowych</item><item>1/2 ogórka</item><item>3 EL oleju</item><item>2 EL octu</item><item>1 TL musztardy</item><item>1 TL miodu</item><item>sól</item><item>pieprz</item></ingredients><preparation><step nr="1">Umyć i osuszyć sałatę.</step><step nr="2">Przekroić pomidorki i pokroić ogórek.</step><step nr="3">Wymieszać olej, ocet, musztardę, miód, sól i pieprz.</step><step nr="4">Połączyć wszystko tuż przed podaniem.</step></preparation><timing><item>Przygotowanie: ok. 10 minut</item><item>Łącznie: ok. 10 minut</item><item>Bez czekania</item></timing><tips><item>Dressing dodawać na końcu.</item><item>Można wzbogacić grzankami lub ziarnami.</item><item>Bardzo uniwersalna baza.</item></tips><rating>8/10 – świeża, prosta i zawsze potrzebna.</rating></translation></recipe>
-</cookbook>
+<recipe id="131">
+    <name>Closed Cheeseburger Classic</name>
+    <intro lang="de">Ein einfacher viral-inspirierter Closed Cheeseburger aus fertigem Pizzateig. Gefüllt mit würzigem Rinderhack, Cheddar, Zwiebeln und Gewürzgurken, außen goldbraun mit Eigelb und Sesam gebacken.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte / Fingerfood / Fast Food aus dem Ofen</category>
+    <image src="images/rezeptbild_131.png" alt="Closed Cheeseburger Classic"/>
+    <ingredients>
+      <item>2 Rollen frischer Pizzateig aus dem Kühlregal</item>
+      <item>500 g Rinderhackfleisch</item>
+      <item>1 große Zwiebel</item>
+      <item>150 g Cheddar, gerieben oder in kleinen Stücken</item>
+      <item>4–5 Gewürzgurken, fein gewürfelt</item>
+      <item>2 EL Ketchup</item>
+      <item>1 EL Senf</item>
+      <item>1 EL Burgergurkenwasser oder 1 TL Gurkensud optional</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 Eigelb</item>
+      <item>1 EL Milch oder Sahne</item>
+      <item>1–2 EL Sesam</item>
+      <item>etwas Öl zum Anbraten</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebel fein würfeln und in etwas Öl glasig anbraten.</step>
+      <step nr="2">Hackfleisch dazugeben und krümelig anbraten, bis es gut gebräunt ist.</step>
+      <step nr="3">Mit Salz, Pfeffer und Paprikapulver würzen.</step>
+      <step nr="4">Ketchup, Senf und optional etwas Gurkensud unterrühren.</step>
+      <step nr="5">Die Füllung vom Herd nehmen und leicht abkühlen lassen.</step>
+      <step nr="6">Gewürzgurken und Cheddar unterheben oder beim Füllen separat einarbeiten.</step>
+      <step nr="7">Pizzateig in 8 gleich große Stücke schneiden.</step>
+      <step nr="8">Jeweils etwas Füllung in die Mitte geben, Teig darüber zusammenschlagen und die Ränder sehr gut verschließen.</step>
+      <step nr="9">Mit der Naht nach unten auf ein Backblech legen.</step>
+      <step nr="10">Eigelb mit Milch verrühren, die Teigtaschen damit bestreichen und mit Sesam bestreuen.</step>
+      <step nr="11">Im vorgeheizten Ofen bei 190 °C Ober-/Unterhitze etwa 20–25 Minuten goldbraun backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 20–25 Minuten</item>
+      <item>Gesamtzeit: ca. 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Füllung nicht zu feucht machen, sonst weicht der Teig durch.</item>
+      <item>Den Teig wirklich sauber verschließen, damit Käse und Sauce nicht auslaufen.</item>
+      <item>Dazu passen Pommes, Coleslaw oder ein einfacher Gurkensalat.</item>
+    </tips>
+    <rating>9/10 – saftig, deftig und perfekt als Ofen-Fingerfood.</rating>
+  </recipe>
+
+  <recipe id="132">
+    <name>Closed Bacon Cheeseburger</name>
+    <intro lang="de">Die herzhafte Variante mit knusprigem Bacon, würzigem Rinderhack und geschmolzenem Cheddar. Perfekt als deftiges Ofengericht oder Partyfood.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte / Partyfood / Fingerfood</category>
+    <image src="images/rezeptbild_132.png" alt="Closed Bacon Cheeseburger"/>
+    <ingredients>
+      <item>2 Rollen frischer Pizzateig</item>
+      <item>500 g Rinderhackfleisch</item>
+      <item>150 g Bacon</item>
+      <item>1 große Zwiebel</item>
+      <item>150 g Cheddar</item>
+      <item>2 EL Ketchup</item>
+      <item>1 TL Senf</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 Eigelb</item>
+      <item>1 EL Milch</item>
+      <item>1–2 EL Sesam</item>
+      <item>etwas Öl zum Anbraten</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Bacon in kleine Stücke schneiden und in einer Pfanne knusprig auslassen.</step>
+      <step nr="2">Bacon herausnehmen, Zwiebel im Baconfett oder mit wenig Öl anbraten.</step>
+      <step nr="3">Hackfleisch dazugeben und kräftig anbraten.</step>
+      <step nr="4">Mit Salz, Pfeffer und Paprikapulver würzen.</step>
+      <step nr="5">Ketchup und Senf unterrühren, Bacon wieder zugeben.</step>
+      <step nr="6">Die Füllung etwas abkühlen lassen.</step>
+      <step nr="7">Pizzateig in 8 Stücke schneiden.</step>
+      <step nr="8">Mit Hackmischung und Cheddar füllen.</step>
+      <step nr="9">Gut verschließen, mit der Naht nach unten aufs Blech legen.</step>
+      <step nr="10">Mit Eigelb-Milch-Mischung bestreichen, Sesam darüberstreuen.</step>
+      <step nr="11">Bei 190 °C Ober-/Unterhitze ca. 20–25 Minuten backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 20–25 Minuten</item>
+      <item>Gesamtzeit: ca. 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Wer mag, kann noch fein gehackte Gewürzgurken ergänzen.</item>
+      <item>Für extra Burger-Geschmack etwas Röstzwiebel in die Füllung geben.</item>
+      <item>Ideal für Gäste oder als Snack am Abend.</item>
+    </tips>
+    <rating>9/10 – besonders herzhaft und perfekt für Bacon-Fans.</rating>
+  </recipe>
+
+  <recipe id="133">
+    <name>Cheeseburger Roll aus Pizzateig</name>
+    <intro lang="de">Die große Party-Version: eine gefüllte Cheeseburger-Rolle aus Pizzateig, die nach dem Backen in Scheiben geschnitten wird. Ideal für Gäste, gemütliche Abende oder den Foodblog.</intro>
+    <persons>4–6 Personen</persons>
+    <category>Partyfood / Ofengerichte / Snack</category>
+    <image src="images/rezeptbild_133.png" alt="Cheeseburger Roll aus Pizzateig"/>
+    <ingredients>
+      <item>2 Rollen frischer Pizzateig</item>
+      <item>600 g Rinderhackfleisch</item>
+      <item>1 große Zwiebel</item>
+      <item>180 g Cheddar</item>
+      <item>5 Gewürzgurken, fein gehackt</item>
+      <item>3 EL Ketchup</item>
+      <item>1 EL Senf</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 Eigelb</item>
+      <item>1 EL Milch</item>
+      <item>1–2 EL Sesam</item>
+      <item>etwas Öl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebel fein würfeln und anbraten.</step>
+      <step nr="2">Hackfleisch dazugeben und kräftig krümelig anbraten.</step>
+      <step nr="3">Mit Salz, Pfeffer und Paprikapulver würzen.</step>
+      <step nr="4">Ketchup, Senf und Gewürzgurken unterrühren.</step>
+      <step nr="5">Die Masse kurz abkühlen lassen.</step>
+      <step nr="6">Die beiden Pizzateige zu einer größeren Fläche auslegen oder leicht überlappend zusammensetzen.</step>
+      <step nr="7">Die Füllung länglich auf der Mitte verteilen, dabei an den Rändern Platz lassen.</step>
+      <step nr="8">Cheddar darübergeben.</step>
+      <step nr="9">Den Teig zu einer Rolle schließen und die Enden gut andrücken.</step>
+      <step nr="10">Mit der Naht nach unten auf ein Backblech setzen.</step>
+      <step nr="11">Mit Eigelb-Milch-Mischung bestreichen und mit Sesam bestreuen.</step>
+      <step nr="12">Bei 190 °C Ober-/Unterhitze etwa 25–30 Minuten goldbraun backen.</step>
+      <step nr="13">Vor dem Anschneiden 5–10 Minuten ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 25–30 Minuten</item>
+      <item>Gesamtzeit: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Vor dem Schneiden kurz ruhen lassen, damit die Rolle stabil bleibt.</item>
+      <item>Dazu passt Burgersauce, Knoblauchdip oder ein Krautsalat.</item>
+      <item>Sehr gut für Partys, weil sich die Rolle in Scheiben servieren lässt.</item>
+    </tips>
+    <rating>9/10 – ideal für Gäste und super zum Teilen.</rating>
+  </recipe>
+
+  <recipe id="134">
+    <name>Closed Cheeseburger Gigi Style</name>
+    <intro lang="de">Die besondere Version mit cremiger Burgersauce, roten Zwiebeln und extra würzigem Käse. Etwas intensiver, saftiger und moderner im Geschmack.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte / Fingerfood / Burger-Special</category>
+    <image src="images/rezeptbild_134.png" alt="Closed Cheeseburger Gigi Style"/>
+    <ingredients>
+      <item>2 Rollen frischer Pizzateig</item>
+      <item>500 g Rinderhackfleisch</item>
+      <item>1 rote Zwiebel</item>
+      <item>100 g Cheddar</item>
+      <item>100 g Gouda oder Mozzarella gerieben</item>
+      <item>4 Gewürzgurken, fein gewürfelt</item>
+      <item>2 EL Mayonnaise</item>
+      <item>1 EL Ketchup</item>
+      <item>1 TL Senf</item>
+      <item>1 TL Gurkensud</item>
+      <item>1 TL Paprikapulver</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 Eigelb</item>
+      <item>1 EL Milch</item>
+      <item>1–2 EL Sesam</item>
+      <item>etwas Öl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Rote Zwiebel fein würfeln.</step>
+      <step nr="2">Hackfleisch in etwas Öl kräftig anbraten.</step>
+      <step nr="3">Zwiebel kurz mitbraten.</step>
+      <step nr="4">Mit Salz, Pfeffer und Paprikapulver würzen.</step>
+      <step nr="5">Für die Sauce Mayonnaise, Ketchup, Senf und Gurkensud verrühren.</step>
+      <step nr="6">Die Hackmasse leicht abkühlen lassen.</step>
+      <step nr="7">Pizzateig in 8 Stücke teilen.</step>
+      <step nr="8">Etwas Hackfleisch, etwas Sauce, Gewürzgurken und beide Käsesorten auf die Teigstücke geben.</step>
+      <step nr="9">Teig gut verschließen und mit der Naht nach unten aufs Blech legen.</step>
+      <step nr="10">Mit Eigelb-Milch-Mischung bestreichen und mit Sesam bestreuen.</step>
+      <step nr="11">Bei 190 °C Ober-/Unterhitze ca. 20–25 Minuten backen, bis die Oberfläche goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 20–25 Minuten</item>
+      <item>Gesamtzeit: ca. 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Sauce sparsam dosieren, damit die Füllung nicht zu feucht wird.</item>
+      <item>Gouda macht die Füllung runder, Mozzarella macht sie weicher und ziehender.</item>
+      <item>Diese Variante passt gut zu Wedges oder einem frischen Krautsalat.</item>
+    </tips>
+    <rating>9/10 – modern, würzig und besonders saftig.</rating>
+  </recipe>
+<recipe id="135">
+  <name>Onkel Michas scharfe Hühnerbrüste</name>
+  <intro lang="de">Ein einfaches, würziges Ofengericht mit marinierten Hühnerbrüsten, buntem Paprikamix und einer goldenen Käsekruste. Die Sojasaucen-Marinade sorgt für viel Geschmack, optional mit Chili für extra Schärfe.</intro>
+  <persons>2 Personen</persons>
+  <category>Ofengerichte / Hähnchen / Alltagsküche</category>
+  <image src="images/rezeptbild_135.png" alt="Onkel Michas scharfe Hühnerbrüste"/>
+  <ingredients>
+    <item>2 Hühnerbrüste</item>
+    <item>100 ml Sojasauce</item>
+    <item>2 Knoblauchzehen</item>
+    <item>3 Paprika (bunt gemischt)</item>
+    <item>150–200 g geriebener Käse</item>
+    <item>1 frische Chili oder 1/2–1 TL Chilipulver (optional)</item>
+    <item>Pfeffer</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Hühnerbrüste in eine Schüssel legen.</step>
+    <step nr="2">Sojasauce mit fein gehacktem Knoblauch vermischen und über das Fleisch geben.</step>
+    <step nr="3">Das Fleisch ca. 30 Minuten marinieren lassen.</step>
+    <step nr="4">Paprika in Streifen oder grobe Stücke schneiden.</step>
+    <step nr="5">Backofen auf 180 °C Umluft oder 200 °C Ober-/Unterhitze vorheizen.</step>
+    <step nr="6">Hühnerbrüste in eine Auflaufform legen.</step>
+    <step nr="7">Restliche Marinade mit in die Form geben.</step>
+    <step nr="8">Paprika rund um das Fleisch verteilen.</step>
+    <step nr="9">Optional Chili hinzufügen.</step>
+    <step nr="10">30 Minuten im Ofen garen.</step>
+    <step nr="11">Käse darüberstreuen.</step>
+    <step nr="12">Weitere 15 Minuten backen, bis der Käse goldbraun ist.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 10 Minuten</item>
+    <item>Marinieren: ca. 30 Minuten</item>
+    <item>Backzeit: ca. 45 Minuten</item>
+    <item>Gesamtzeit: ca. 55 Minuten + Marinierzeit</item>
+  </timing>
+  <tips>
+    <item>Für eine mildere Variante einfach die Chili weglassen.</item>
+    <item>Passt perfekt zu Reis, Baguette oder Ofenkartoffeln.</item>
+    <item>Für mehr Sauce kann etwas Sahne oder Crème fraîche ergänzt werden.</item>
+    <item>Mit Cheddar wird es kräftiger, mit Gouda milder.</item>
+  </tips>
+  <rating>9/10 – einfach, würzig und alltagstauglich.</rating>
+</recipe><recipe id="136">
+  <name>Rolfs Stratzi</name>
+  <intro lang="de">Ein klassisches, herzhaftes Schmorgericht mit Rouladenfleisch, Speck und Zwiebeln. Durch die lange Garzeit und das Aufkochen am nächsten Tag entsteht ein besonders intensiver Geschmack – echte Hausmannskost.</intro>
+  <persons>4 Personen</persons>
+  <category>Ofengerichte / Schmorgerichte / Hausmannskost</category>
+  <image src="images/rezeptbild_136.png" alt="Rolfs Stratzi"/>
+  <ingredients>
+    <item>Rouladenfleisch</item>
+    <item>Zwiebeln</item>
+    <item>Schinkenspeck, gewürfelt</item>
+    <item>Salz</item>
+    <item>Pfeffer</item>
+    <item>etwas Mehl</item>
+    <item>etwas Fett zum Anbraten</item>
+    <item>1 Dose Pilze</item>
+    <item>500 ml Sahne</item>
+  </ingredients>
+  <preparation>
+    <step nr="1">Rouladenfleisch in kleine Streifen schneiden.</step>
+    <step nr="2">Schinkenspeck und Zwiebeln in einer Pfanne anbraten.</step>
+    <step nr="3">Etwas Fett in einen großen Topf geben.</step>
+    <step nr="4">Fleisch und Zwiebel-Speck-Mischung schichtweise in den Topf geben.</step>
+    <step nr="5">Jede Schicht mit Salz und Pfeffer würzen und leicht mit Mehl bestäuben.</step>
+    <step nr="6">Auf kleiner Flamme etwa 3 Stunden langsam garen lassen.</step>
+    <step nr="7">Am nächsten Tag unter Rühren erneut aufkochen.</step>
+    <step nr="8">Pilze und Sahne dazugeben und kurz mit erhitzen.</step>
+  </preparation>
+  <timing>
+    <item>Vorbereitung: ca. 20 Minuten</item>
+    <item>Garzeit: ca. 3 Stunden</item>
+    <item>Ruhezeit: über Nacht</item>
+    <item>Gesamt: 2 Tage</item>
+  </timing>
+  <tips>
+    <item>Am nächsten Tag schmeckt das Gericht deutlich intensiver.</item>
+    <item>Frische Champignons können statt Dosenpilzen verwendet werden.</item>
+    <item>Passt perfekt zu Kartoffeln, Nudeln oder frischem Brot.</item>
+    <item>Das Mehl sorgt für eine natürliche Bindung der Sauce.</item>
+  </tips>
+  <rating>9/10 – rustikal, deftig und ein echter Klassiker.</rating>
+</recipe></cookbook>
