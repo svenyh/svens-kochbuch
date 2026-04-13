@@ -2,8 +2,8 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="5.0" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>179</recipeCount>
-    <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 DDR- und Ostalgie-Rezepte (Soljanka, Würzfleisch, DDR-Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 weitere polnisch inspirierte Rezepte (klassische Placki, Placki mit Pilzrahm, Pyra mit Speck und Kräuterquark, Babka mit Kassler, Zapiekanka mit Hähnchen und Paprika). Ergänzt um 12 Asia-Wok-Rezepte (Pad Thai, gebratene Asia-Nudeln, Rind mit Brokkoli, Chop Suey, Thai Red Curry, Erdnuss-Wok, Kokos-Wok, Udon-Wok, Garnelen-Wok, Tofu-Wok, Thai Basil Chicken, gebratener Reis).</notes>
+    <recipeCount>194</recipeCount>
+    <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 DDR- und Ostalgie-Rezepte (Soljanka, Würzfleisch, DDR-Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 weitere polnisch inspirierte Rezepte (klassische Placki, Placki mit Pilzrahm, Pyra mit Speck und Kräuterquark, Babka mit Kassler, Zapiekanka mit Hähnchen und Paprika). Ergänzt um 12 Asia-Wok-Rezepte (Pad Thai, gebratene Asia-Nudeln, Rind mit Brokkoli, Chop Suey, Thai Red Curry, Erdnuss-Wok, Kokos-Wok, Udon-Wok, Garnelen-Wok, Tofu-Wok, Thai Basil Chicken, gebratener Reis). Ergänzt um 15 italienisch inspirierte Rezepte (IDs 180–194).</notes>
   </meta>
   <recipe id="1">
     <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
@@ -12177,5 +12177,1227 @@
       <item>Mit etwas Chiliöl oder Limettensaft kann man das Gericht noch lebendiger machen.</item>
     </tips>
     <rating>8,8/10</rating>
+  </recipe>
+  <recipe id="180">
+    <name>Schnitzel Milanese mit Pasta und Tomatensauce</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta &amp; Fleischgerichte</category>
+    <image src="images/rezeptbild_180.jpg" />
+    <ingredients>
+      <item>4 Schweineschnitzel oder Kalbsschnitzel, je ca. 160 g</item>
+      <item>250 g Spaghetti</item>
+      <item>800 g passierte Tomaten</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 kleine Zwiebel</item>
+      <item>80 g Parmesan, fein gerieben</item>
+      <item>100 g Paniermehl</item>
+      <item>60 g Mehl</item>
+      <item>2 Eier</item>
+      <item>4 EL Olivenöl</item>
+      <item>150 ml Sonnenblumenöl zum Ausbacken</item>
+      <item>1 Kugel Mozzarella, optional</item>
+      <item>1 TL Zucker</item>
+      <item>1 TL Oregano</item>
+      <item>1 Handvoll Basilikum</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 EL Butter</item>
+    </ingredients>
+    <preparation>
+      <step>Zwiebel und Knoblauch fein würfeln. 2 EL Olivenöl in einem Topf erhitzen, Zwiebel und Knoblauch glasig anschwitzen, dann die passierten Tomaten zugeben.</step>
+      <step>Zucker, Oregano, Salz und Pfeffer einrühren und die Sauce 20 bis 25 Minuten bei kleiner Hitze sanft köcheln lassen. Zum Schluss einen Teil des Basilikums fein schneiden und unterrühren.</step>
+      <step>Spaghetti in reichlich Salzwasser bissfest kochen, abgießen und mit 1 EL Butter sowie 1 EL Olivenöl locker vermengen.</step>
+      <step>Die Schnitzel zwischen Frischhaltefolie vorsichtig flach klopfen. Mit Salz und Pfeffer würzen.</step>
+      <step>Mehl auf einen Teller geben. Eier in einem tiefen Teller verquirlen. Paniermehl mit 40 g Parmesan mischen.</step>
+      <step>Die Schnitzel zuerst im Mehl wenden, dann durch das Ei ziehen und anschließend gleichmäßig in der Parmesan-Panade wenden. Die Panade nur leicht andrücken.</step>
+      <step>Das Sonnenblumenöl in einer großen Pfanne erhitzen. Die Schnitzel bei mittlerer bis mittlerer hoher Hitze pro Seite 2 bis 3 Minuten goldbraun ausbacken.</step>
+      <step>Die Schnitzel kurz auf Küchenpapier ablegen. Wer die überbackene Variante möchte, verteilt etwas Tomatensauce und etwas Mozzarella auf den Schnitzeln und gratiniert sie 5 Minuten bei 220 °C Ober-/Unterhitze.</step>
+      <step>Die Spaghetti mit Tomatensauce anrichten, das Schnitzel daneben oder leicht aufgelegt servieren und mit dem restlichen Parmesan sowie frischem Basilikum abschließen.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 25 Minuten</step>
+      <step>Tomatensauce: ca. 25 Minuten</step>
+      <step>Pasta kochen: ca. 10 Minuten</step>
+      <step>Schnitzel panieren und braten: ca. 15 Minuten</step>
+      <step>Gesamt: ca. 45 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Die Panade wird besonders locker, wenn sie nach dem Wenden nicht fest angedrückt wird.</tip>
+      <tip>Für ein besonders saftiges Ergebnis die Schnitzel nicht zu dick lassen, aber auch nicht papierdünn klopfen.</tip>
+      <tip>Die Sauce darf ruhig etwas kräftiger abgeschmeckt sein, weil Pasta und Panade Würze aufnehmen.</tip>
+    </tips>
+    <rating>9,4/10 – sehr stimmig, knusprig und mit Pasta plus Tomatensauce ein echtes Wohlfühlgericht.</rating>
+    <translation lang="pl">
+      <name>Sznycel po mediolańsku z makaronem i sosem pomidorowym</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony i dania mięsne</category>
+      <ingredients>
+        <item>4 kotlety schabowe lub cielęce, po ok. 160 g</item>
+        <item>250 g spaghetti</item>
+        <item>800 g passaty pomidorowej</item>
+        <item>2 ząbki czosnku</item>
+        <item>1 mała cebula</item>
+        <item>80 g drobno startego parmezanu</item>
+        <item>100 g bułki tartej</item>
+        <item>60 g mąki</item>
+        <item>2 jajka</item>
+        <item>4 EL oliwy z oliwek</item>
+        <item>150 ml oleju słonecznikowego do smażenia</item>
+        <item>1 kula mozzarelli, opcjonalnie</item>
+        <item>1 TL cukru</item>
+        <item>1 TL oregano</item>
+        <item>1 garść bazylii</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>1 EL masła</item>
+      </ingredients>
+      <preparation>
+        <step>Cebulę i czosnek drobno posiekać. Rozgrzać 2 EL oliwy w garnku, zeszklić cebulę i czosnek, a następnie dodać passatę.</step>
+        <step>Dodać cukier, oregano, sól i pieprz, po czym gotować sos 20 do 25 minut na małym ogniu. Na końcu drobno posiekać część bazylii i wmieszać do sosu.</step>
+        <step>Ugotować spaghetti al dente w osolonej wodzie, odcedzić i wymieszać z 1 EL masła oraz 1 EL oliwy.</step>
+        <step>Mięso rozbić delikatnie między folią spożywczą. Doprawić solą i pieprzem.</step>
+        <step>Mąkę wsypać na talerz. Jajka roztrzepać w głębokim talerzu. Bułkę tartą wymieszać z 40 g parmezanu.</step>
+        <step>Kotlety obtoczyć najpierw w mące, potem w jajku, a na końcu dokładnie w panierce z bułki i parmezanu. Panierkę tylko lekko docisnąć.</step>
+        <step>Rozgrzać olej słonecznikowy na dużej patelni. Smażyć kotlety po 2 do 3 minuty z każdej strony na średnim lub średnio wyższym ogniu, aż będą złociste.</step>
+        <step>Krótko odsączyć kotlety na ręczniku papierowym. Jeśli chcesz wersję zapiekaną, nałóż trochę sosu pomidorowego i mozzarelli, a następnie zapiekaj 5 minut w 220 °C góra/dół.</step>
+        <step>Podawać spaghetti z sosem pomidorowym, obok lub częściowo na wierzchu ułożyć sznycel i posypać resztą parmezanu oraz świeżą bazylią.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 25 minut</step>
+        <step>Sos pomidorowy: ok. 25 minut</step>
+        <step>Gotowanie makaronu: ok. 10 minut</step>
+        <step>Panierowanie i smażenie sznycli: ok. 15 minut</step>
+        <step>Łącznie: ok. 45 minut</step>
+      </timing>
+      <tips>
+        <tip>Panierka będzie bardziej delikatna, jeśli po obtoczeniu nie będzie mocno dociskana.</tip>
+        <tip>Mięso nie powinno być ani za grube, ani zbyt cienko rozbite.</tip>
+        <tip>Sos może być wyraźniejszy w smaku, bo makaron i panierka łagodzą przyprawy.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="181">
+    <name>Lasagne al Forno</name>
+    <persons>6 Personen</persons>
+    <category>Italienisch inspirierte Küche / Ofengerichte</category>
+    <image src="images/rezeptbild_181.jpg" />
+    <ingredients>
+      <item>12 Lasagneplatten</item>
+      <item>600 g Rinderhackfleisch</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 Möhren</item>
+      <item>2 EL Olivenöl</item>
+      <item>2 EL Tomatenmark</item>
+      <item>800 g stückige Tomaten</item>
+      <item>200 ml Rinderfond oder Gemüsebrühe</item>
+      <item>1 TL Oregano</item>
+      <item>1 TL Zucker</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>60 g Butter</item>
+      <item>60 g Mehl</item>
+      <item>700 ml Milch</item>
+      <item>120 g Parmesan</item>
+      <item>150 g geriebener Mozzarella</item>
+      <item>Muskat</item>
+    </ingredients>
+    <preparation>
+      <step>Zwiebel, Knoblauch und Möhren fein würfeln. Olivenöl in einem großen Topf erhitzen und das Hackfleisch krümelig anbraten.</step>
+      <step>Zwiebel, Knoblauch und Möhren zugeben und 4 Minuten mitbraten. Tomatenmark einrühren und kurz rösten.</step>
+      <step>Stückige Tomaten und Fond angießen. Oregano, Zucker, Salz und Pfeffer zugeben und die Sauce 25 bis 30 Minuten sanft köcheln lassen.</step>
+      <step>Für die Béchamel Butter in einem Topf schmelzen, Mehl einrühren und kurz anschwitzen. Milch nach und nach unter Rühren angießen.</step>
+      <step>Die Sauce 5 bis 7 Minuten sanft köcheln lassen, bis sie cremig bindet. Mit Salz, Pfeffer und Muskat abschmecken. 40 g Parmesan einrühren.</step>
+      <step>Ofen auf 180 °C Ober-/Unterhitze vorheizen. Eine Auflaufform leicht einfetten.</step>
+      <step>Zuerst etwas Hacksauce in die Form geben, dann Lasagneplatten, Hacksauce und Béchamel schichten. So weitermachen, bis alles verbraucht ist.</step>
+      <step>Oben mit Béchamel abschließen und mit Mozzarella sowie restlichem Parmesan bestreuen.</step>
+      <step>Die Lasagne 35 bis 40 Minuten backen, bis sie goldbraun ist. Vor dem Anschneiden 10 Minuten ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 25 Minuten</step>
+      <step>Hackfleischsauce: ca. 30 Minuten</step>
+      <step>Béchamel: ca. 10 Minuten</step>
+      <step>Backzeit: ca. 35–40 Minuten</step>
+      <step>Ruhezeit: ca. 10 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Die Sauce darf nicht zu flüssig sein, sonst wird die Lasagne später instabil.</tip>
+      <tip>Vor dem Anschneiden immer ruhen lassen, damit die Schichten sauber stehen.</tip>
+      <tip>Am nächsten Tag aufgewärmt schmeckt Lasagne oft noch runder.</tip>
+    </tips>
+    <rating>9,5/10 – klassisch, saftig und sehr zuverlässig gut.</rating>
+    <translation lang="pl">
+      <name>Lasagne al Forno</name>
+      <persons>6 osób</persons>
+      <category>Kuchnia inspirowana Włochami / dania z piekarnika</category>
+      <ingredients>
+        <item>12 płatów lasagne</item>
+        <item>600 g mielonej wołowiny</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 marchewki</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>2 EL koncentratu pomidorowego</item>
+        <item>800 g krojonych pomidorów z puszki</item>
+        <item>200 ml bulionu wołowego albo warzywnego</item>
+        <item>1 TL oregano</item>
+        <item>1 TL cukru</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>60 g masła</item>
+        <item>60 g mąki</item>
+        <item>700 ml mleka</item>
+        <item>120 g parmezanu</item>
+        <item>150 g tartej mozzarelli</item>
+        <item>gałka muszkatołowa</item>
+      </ingredients>
+      <preparation>
+        <step>Cebulę, czosnek i marchewkę drobno pokroić. Rozgrzać oliwę w dużym garnku i podsmażyć mieloną wołowinę, aż będzie sypka.</step>
+        <step>Dodać cebulę, czosnek i marchewkę, smażyć razem 4 minuty. Wmieszać koncentrat pomidorowy i krótko podsmażyć.</step>
+        <step>Wlać pomidory i bulion. Dodać oregano, cukier, sól i pieprz, po czym gotować sos 25 do 30 minut na małym ogniu.</step>
+        <step>Na beszamel roztopić masło, wsypać mąkę i krótko podsmażyć. Stopniowo, cały czas mieszając, wlewać mleko.</step>
+        <step>Gotować sos 5 do 7 minut, aż zgęstnieje. Doprawić solą, pieprzem i gałką muszkatołową. Dodać 40 g parmezanu.</step>
+        <step>Rozgrzać piekarnik do 180 °C góra/dół. Formę do zapiekania lekko natłuścić.</step>
+        <step>Na dno wyłożyć trochę sosu mięsnego, następnie płaty lasagne, sos mięsny i beszamel. Powtarzać warstwy aż do wykorzystania składników.</step>
+        <step>Na wierzchu zakończyć beszamelem i posypać mozzarellą oraz resztą parmezanu.</step>
+        <step>Piec 35 do 40 minut, aż lasagne będzie złocista. Przed krojeniem odstawić na 10 minut.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 25 minut</step>
+        <step>Sos mięsny: ok. 30 minut</step>
+        <step>Beszamel: ok. 10 minut</step>
+        <step>Pieczenie: ok. 35–40 minut</step>
+        <step>Odpoczynek: ok. 10 minut</step>
+      </timing>
+      <tips>
+        <tip>Sos nie powinien być zbyt rzadki, inaczej lasagne będzie się rozpadać.</tip>
+        <tip>Przed krojeniem zawsze warto odczekać, żeby warstwy się ustabilizowały.</tip>
+        <tip>Następnego dnia po podgrzaniu lasagne często smakuje jeszcze lepiej.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="182">
+    <name>Spaghetti Bolognese</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta</category>
+    <image src="images/rezeptbild_182.jpg" />
+    <ingredients>
+      <item>400 g Spaghetti</item>
+      <item>500 g Rinderhackfleisch</item>
+      <item>1 Zwiebel</item>
+      <item>2 Möhren</item>
+      <item>1 Stange Sellerie</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Olivenöl</item>
+      <item>2 EL Tomatenmark</item>
+      <item>800 g stückige Tomaten</item>
+      <item>150 ml Rotwein oder 100 ml Brühe</item>
+      <item>1 TL Zucker</item>
+      <item>1 TL Oregano</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>50 g Parmesan</item>
+    </ingredients>
+    <preparation>
+      <step>Zwiebel, Möhren, Sellerie und Knoblauch sehr fein würfeln.</step>
+      <step>Olivenöl in einem Topf erhitzen und das Hackfleisch kräftig anbraten.</step>
+      <step>Gemüse zugeben und 5 Minuten mitbraten. Tomatenmark einrühren und kurz rösten.</step>
+      <step>Mit Rotwein oder Brühe ablöschen. Stückige Tomaten zugeben.</step>
+      <step>Mit Zucker, Oregano, Salz und Pfeffer würzen und 30 Minuten sanft köcheln lassen.</step>
+      <step>Spaghetti in Salzwasser bissfest kochen, abgießen und mit der Sauce servieren.</step>
+      <step>Mit Parmesan bestreuen.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 20 Minuten</step>
+      <step>Sauce: ca. 35 Minuten</step>
+      <step>Pasta kochen: ca. 10 Minuten</step>
+      <step>Gesamt: ca. 40 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Sellerie bringt mehr Tiefe in die Sauce, ohne aufdringlich zu sein.</tip>
+      <tip>Die Sauce sollte leicht einkochen, damit sie schön an den Nudeln haftet.</tip>
+      <tip>Ein kleiner Rest Milch oder Butter am Ende macht die Sauce weicher.</tip>
+    </tips>
+    <rating>9,1/10 – klassisch, ausgewogen und sehr alltagstauglich.</rating>
+    <translation lang="pl">
+      <name>Spaghetti Bolognese</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony</category>
+      <ingredients>
+        <item>400 g spaghetti</item>
+        <item>500 g mielonej wołowiny</item>
+        <item>1 cebula</item>
+        <item>2 marchewki</item>
+        <item>1 łodyga selera naciowego</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>2 EL koncentratu pomidorowego</item>
+        <item>800 g krojonych pomidorów z puszki</item>
+        <item>150 ml czerwonego wina albo 100 ml bulionu</item>
+        <item>1 TL cukru</item>
+        <item>1 TL oregano</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>50 g parmezanu</item>
+      </ingredients>
+      <preparation>
+        <step>Cebulę, marchew, seler i czosnek pokroić bardzo drobno.</step>
+        <step>Rozgrzać oliwę w garnku i mocno podsmażyć mięso mielone.</step>
+        <step>Dodać warzywa i smażyć razem 5 minut. Wmieszać koncentrat pomidorowy i krótko podsmażyć.</step>
+        <step>Podlać winem albo bulionem. Dodać krojone pomidory.</step>
+        <step>Doprawić cukrem, oregano, solą i pieprzem, po czym gotować 30 minut na małym ogniu.</step>
+        <step>Spaghetti ugotować al dente w osolonej wodzie, odcedzić i podawać z sosem.</step>
+        <step>Posypać parmezanem.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 20 minut</step>
+        <step>Sos: ok. 35 minut</step>
+        <step>Gotowanie makaronu: ok. 10 minut</step>
+        <step>Łącznie: ok. 40 minut</step>
+      </timing>
+      <tips>
+        <tip>Seler nadaje sosowi głębi, ale nie dominuje smaku.</tip>
+        <tip>Sos powinien lekko odparować, żeby dobrze oblepiał makaron.</tip>
+        <tip>Odrobina mleka albo masła na końcu łagodzi smak sosu.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="183">
+    <name>Spaghetti Carbonara</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta</category>
+    <image src="images/rezeptbild_183.jpg" />
+    <ingredients>
+      <item>400 g Spaghetti</item>
+      <item>180 g Pancetta oder Speckwürfel</item>
+      <item>4 Eigelb</item>
+      <item>1 ganzes Ei</item>
+      <item>90 g Parmesan oder Pecorino, fein gerieben</item>
+      <item>1 TL schwarzer Pfeffer, frisch gemahlen</item>
+      <item>Salz</item>
+    </ingredients>
+    <preparation>
+      <step>Spaghetti in reichlich Salzwasser bissfest kochen.</step>
+      <step>Pancetta oder Speck in einer großen Pfanne ohne zusätzliches Fett langsam knusprig auslassen.</step>
+      <step>Eigelb, Ei, geriebenen Käse und schwarzen Pfeffer in einer Schüssel gründlich verrühren.</step>
+      <step>Etwas Nudelwasser auffangen. Spaghetti abgießen und direkt in die Pfanne zum Speck geben.</step>
+      <step>Pfanne vom Herd nehmen. Eier-Käse-Mischung zugeben und zügig unterheben.</step>
+      <step>Nach Bedarf etwas heißes Nudelwasser einrühren, bis eine cremige Sauce entsteht.</step>
+      <step>Sofort servieren und mit etwas extra Käse sowie Pfeffer abschließen.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 10 Minuten</step>
+      <step>Pasta kochen: ca. 10 Minuten</step>
+      <step>Speck und Sauce: ca. 10 Minuten</step>
+      <step>Gesamt: ca. 20 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Die Pfanne muss vom Herd, bevor die Eiermasse hineinkommt, sonst stockt sie zu stark.</tip>
+      <tip>Mit Nudelwasser lässt sich die Sauce cremig und glänzend einstellen.</tip>
+      <tip>Sehr wenig Salz verwenden, weil Speck und Käse schon viel Würze mitbringen.</tip>
+    </tips>
+    <rating>9,0/10 – schlicht, cremig und mit wenigen Zutaten sehr stark.</rating>
+    <translation lang="pl">
+      <name>Spaghetti Carbonara</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony</category>
+      <ingredients>
+        <item>400 g spaghetti</item>
+        <item>180 g pancetty albo boczku</item>
+        <item>4 żółtka</item>
+        <item>1 całe jajko</item>
+        <item>90 g parmezanu albo pecorino, drobno startego</item>
+        <item>1 TL świeżo mielonego czarnego pieprzu</item>
+        <item>sól</item>
+      </ingredients>
+      <preparation>
+        <step>Ugotować spaghetti al dente w dużej ilości osolonej wody.</step>
+        <step>Pancettę albo boczek wytopić na dużej patelni bez dodatkowego tłuszczu, aż będzie chrupiący.</step>
+        <step>W misce dokładnie wymieszać żółtka, całe jajko, starty ser i czarny pieprz.</step>
+        <step>Zachować trochę wody z gotowania makaronu. Spaghetti odcedzić i od razu przełożyć na patelnię do boczku.</step>
+        <step>Zdjąć patelnię z ognia. Dodać masę jajeczno-serową i szybko wszystko wymieszać.</step>
+        <step>W razie potrzeby dodać trochę gorącej wody z makaronu, aż powstanie kremowy sos.</step>
+        <step>Od razu podawać, posypując dodatkowym serem i pieprzem.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 10 minut</step>
+        <step>Gotowanie makaronu: ok. 10 minut</step>
+        <step>Boczek i sos: ok. 10 minut</step>
+        <step>Łącznie: ok. 20 minut</step>
+      </timing>
+      <tips>
+        <tip>Patelnia musi być zdjęta z ognia przed dodaniem jajek, inaczej masa za mocno się zetnie.</tip>
+        <tip>Woda z makaronu pomaga uzyskać kremowy i błyszczący sos.</tip>
+        <tip>Użyj mało soli, bo boczek i ser są już wyraźnie słone.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="184">
+    <name>Penne all’Arrabbiata</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta</category>
+    <image src="images/rezeptbild_184.jpg" />
+    <ingredients>
+      <item>400 g Penne</item>
+      <item>800 g stückige Tomaten</item>
+      <item>4 Knoblauchzehen</item>
+      <item>1 kleine Zwiebel</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 bis 2 rote Chilis</item>
+      <item>1 TL Zucker</item>
+      <item>1 Handvoll Petersilie</item>
+      <item>40 g Parmesan, optional</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Zwiebel, Knoblauch und Chili fein hacken.</step>
+      <step>Olivenöl in einer großen Pfanne erhitzen. Zwiebel und Knoblauch glasig anschwitzen, Chili kurz mitbraten.</step>
+      <step>Tomaten zugeben und mit Zucker, Salz und Pfeffer würzen.</step>
+      <step>Die Sauce 20 Minuten offen einkochen lassen.</step>
+      <step>Währenddessen Penne in Salzwasser bissfest kochen.</step>
+      <step>Pasta abgießen und direkt in die Sauce geben. Gut vermengen.</step>
+      <step>Mit gehackter Petersilie und nach Wunsch Parmesan servieren.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 10 Minuten</step>
+      <step>Sauce: ca. 20 Minuten</step>
+      <step>Pasta kochen: ca. 10 Minuten</step>
+      <step>Gesamt: ca. 25 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Die Sauce soll deutlich pikant, aber nicht stumpf scharf schmecken.</tip>
+      <tip>Mit etwas Pastawasser kann die Bindung am Ende verbessert werden.</tip>
+      <tip>Petersilie bringt Frische und passt besser als zu viel Käse.</tip>
+    </tips>
+    <rating>8,8/10 – würzig, schnell und sehr angenehm unkompliziert.</rating>
+    <translation lang="pl">
+      <name>Penne all’Arrabbiata</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony</category>
+      <ingredients>
+        <item>400 g penne</item>
+        <item>800 g krojonych pomidorów z puszki</item>
+        <item>4 ząbki czosnku</item>
+        <item>1 mała cebula</item>
+        <item>3 EL oliwy z oliwek</item>
+        <item>1 do 2 czerwonych chili</item>
+        <item>1 TL cukru</item>
+        <item>1 garść pietruszki</item>
+        <item>40 g parmezanu, opcjonalnie</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Drobno posiekać cebulę, czosnek i chili.</step>
+        <step>Rozgrzać oliwę na dużej patelni. Zeszklić cebulę i czosnek, chili krótko podsmażyć.</step>
+        <step>Dodać pomidory oraz doprawić cukrem, solą i pieprzem.</step>
+        <step>Gotować sos bez przykrycia przez 20 minut, aż lekko się zredukuje.</step>
+        <step>W międzyczasie ugotować penne al dente w osolonej wodzie.</step>
+        <step>Odcedzić makaron i od razu wymieszać z sosem.</step>
+        <step>Podawać z posiekaną pietruszką i opcjonalnie z parmezanem.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 10 minut</step>
+        <step>Sos: ok. 20 minut</step>
+        <step>Gotowanie makaronu: ok. 10 minut</step>
+        <step>Łącznie: ok. 25 minut</step>
+      </timing>
+      <tips>
+        <tip>Sos powinien być wyraźnie pikantny, ale nie jedynie ostry.</tip>
+        <tip>Odrobina wody z makaronu pomaga połączyć sos z penne.</tip>
+        <tip>Pietruszka daje świeżość i pasuje tu lepiej niż zbyt duża ilość sera.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="185">
+    <name>Gnocchi in Tomatensauce mit Mozzarella</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta</category>
+    <image src="images/rezeptbild_185.jpg" />
+    <ingredients>
+      <item>800 g Gnocchi aus dem Kühlregal</item>
+      <item>700 g passierte Tomaten</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Zucker</item>
+      <item>1 TL italienische Kräuter</item>
+      <item>2 Kugeln Mozzarella</item>
+      <item>40 g Parmesan</item>
+      <item>1 Handvoll Basilikum</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Zwiebel und Knoblauch fein würfeln. In Olivenöl glasig anschwitzen.</step>
+      <step>Passierte Tomaten, Zucker und Kräuter zugeben. Mit Salz und Pfeffer würzen und 15 Minuten sanft köcheln lassen.</step>
+      <step>Gnocchi nach Packungsangabe kurz garen oder direkt in etwas Butter in der Pfanne anbraten, je nach gewünschter Textur.</step>
+      <step>Die Gnocchi in die Tomatensauce geben und gut vermengen.</step>
+      <step>Mozzarella in Stücke zupfen und zusammen mit Parmesan darübergeben.</step>
+      <step>Mit Deckel oder kurz im Ofen schmelzen lassen, bis der Mozzarella weich wird.</step>
+      <step>Mit frischem Basilikum servieren.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 10 Minuten</step>
+      <step>Tomatensauce: ca. 15 Minuten</step>
+      <step>Gnocchi: ca. 5 Minuten</step>
+      <step>Gesamt: ca. 25 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Leicht angebratene Gnocchi geben dem Gericht mehr Struktur.</tip>
+      <tip>Mozzarella nicht zu früh zugeben, sonst verliert er zu viel Flüssigkeit.</tip>
+      <tip>Mit etwas Chili bekommt die Tomatensauce mehr Tiefe.</tip>
+    </tips>
+    <rating>8,9/10 – sehr saftig, schnell und angenehm unkompliziert.</rating>
+    <translation lang="pl">
+      <name>Gnocchi w sosie pomidorowym z mozzarellą</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony</category>
+      <ingredients>
+        <item>800 g gnocchi z lodówki</item>
+        <item>700 g passaty pomidorowej</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>1 TL cukru</item>
+        <item>1 TL ziół włoskich</item>
+        <item>2 kule mozzarelli</item>
+        <item>40 g parmezanu</item>
+        <item>1 garść bazylii</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Cebulę i czosnek drobno pokroić. Zeszklić je na oliwie.</step>
+        <step>Dodać passatę, cukier i zioła. Doprawić solą i pieprzem, a następnie gotować 15 minut na małym ogniu.</step>
+        <step>Gnocchi przygotować zgodnie z instrukcją na opakowaniu albo krótko podsmażyć na maśle, jeśli chcesz bardziej rumianą wersję.</step>
+        <step>Dodać gnocchi do sosu pomidorowego i dokładnie wymieszać.</step>
+        <step>Porwać mozzarellę na kawałki i razem z parmezanem rozłożyć na wierzchu.</step>
+        <step>Pod przykryciem albo krótko w piekarniku roztopić ser, aż mozzarella zmięknie.</step>
+        <step>Podawać ze świeżą bazylią.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 10 minut</step>
+        <step>Sos pomidorowy: ok. 15 minut</step>
+        <step>Gnocchi: ok. 5 minut</step>
+        <step>Łącznie: ok. 25 minut</step>
+      </timing>
+      <tips>
+        <tip>Lekko podsmażone gnocchi mają lepszą strukturę i więcej charakteru.</tip>
+        <tip>Mozzarellę dodaj dopiero pod koniec, żeby nie puściła zbyt dużo płynu.</tip>
+        <tip>Odrobina chili pogłębia smak sosu pomidorowego.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="186">
+    <name>Tagliatelle mit Pilzrahmsauce</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta</category>
+    <image src="images/rezeptbild_186.jpg" />
+    <ingredients>
+      <item>350 g Tagliatelle</item>
+      <item>400 g Champignons oder braune Pilze</item>
+      <item>1 kleine Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Butter</item>
+      <item>200 ml Sahne</item>
+      <item>100 ml Gemüsebrühe</item>
+      <item>40 g Parmesan</item>
+      <item>1 EL gehackte Petersilie</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Pilze putzen und in Scheiben schneiden. Zwiebel und Knoblauch fein würfeln.</step>
+      <step>Tagliatelle in Salzwasser bissfest kochen.</step>
+      <step>Butter in einer großen Pfanne erhitzen. Pilze kräftig anbraten, bis sie Farbe bekommen.</step>
+      <step>Zwiebel und Knoblauch zugeben und 2 Minuten mitbraten.</step>
+      <step>Mit Brühe und Sahne ablöschen. Leicht einkochen lassen.</step>
+      <step>Parmesan und Petersilie einrühren und mit Salz sowie Pfeffer abschmecken.</step>
+      <step>Tagliatelle abgießen und direkt in der Sauce schwenken.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 15 Minuten</step>
+      <step>Pasta kochen: ca. 8 Minuten</step>
+      <step>Sauce: ca. 12 Minuten</step>
+      <step>Gesamt: ca. 25 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Pilze zuerst ohne Salz anbraten, damit sie besser rösten.</tip>
+      <tip>Braune Champignons geben mehr Aroma als weiße.</tip>
+      <tip>Die Sauce nur leicht einkochen, damit sie cremig bleibt.</tip>
+    </tips>
+    <rating>8,9/10 – cremig, aromatisch und angenehm bodenständig.</rating>
+    <translation lang="pl">
+      <name>Tagliatelle z kremowym sosem pieczarkowym</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony</category>
+      <ingredients>
+        <item>350 g tagliatelle</item>
+        <item>400 g pieczarek</item>
+        <item>1 mała cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 EL masła</item>
+        <item>200 ml śmietanki</item>
+        <item>100 ml bulionu warzywnego</item>
+        <item>40 g parmezanu</item>
+        <item>1 EL posiekanej pietruszki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Oczyścić pieczarki i pokroić je w plasterki. Cebulę i czosnek drobno posiekać.</step>
+        <step>Ugotować tagliatelle al dente w osolonej wodzie.</step>
+        <step>Rozgrzać masło na dużej patelni. Mocno podsmażyć pieczarki, aż nabiorą koloru.</step>
+        <step>Dodać cebulę i czosnek, smażyć jeszcze 2 minuty.</step>
+        <step>Wlać bulion i śmietankę. Lekko zredukować.</step>
+        <step>Wmieszać parmezan i pietruszkę, doprawić solą i pieprzem.</step>
+        <step>Odcedzić makaron i od razu wymieszać z sosem.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 15 minut</step>
+        <step>Gotowanie makaronu: ok. 8 minut</step>
+        <step>Sos: ok. 12 minut</step>
+        <step>Łącznie: ok. 25 minut</step>
+      </timing>
+      <tips>
+        <tip>Pieczarki smaż najpierw bez soli, wtedy lepiej się rumienią.</tip>
+        <tip>Brązowe pieczarki dają bardziej wyrazisty smak.</tip>
+        <tip>Sosu nie redukuj zbyt mocno, żeby pozostał kremowy.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="187">
+    <name>Pasta Pesto mit Hähnchen</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta</category>
+    <image src="images/rezeptbild_187.jpg" />
+    <ingredients>
+      <item>350 g Pasta nach Wahl</item>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>2 EL Olivenöl</item>
+      <item>80 g grünes Pesto</item>
+      <item>150 ml Sahne</item>
+      <item>40 g Parmesan</item>
+      <item>1 Handvoll Kirschtomaten</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Pasta in Salzwasser bissfest kochen.</step>
+      <step>Hähnchen in Streifen schneiden und mit Salz sowie Pfeffer würzen.</step>
+      <step>Olivenöl in einer Pfanne erhitzen und das Hähnchen goldbraun anbraten.</step>
+      <step>Kirschtomaten halbieren und kurz mit in die Pfanne geben.</step>
+      <step>Pesto und Sahne einrühren und kurz erwärmen, nicht stark kochen.</step>
+      <step>Parmesan zugeben und die Sauce abschmecken.</step>
+      <step>Pasta abgießen, mit der Sauce vermengen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 10 Minuten</step>
+      <step>Pasta kochen: ca. 10 Minuten</step>
+      <step>Hähnchen und Sauce: ca. 12 Minuten</step>
+      <step>Gesamt: ca. 25 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Pesto nur sanft erhitzen, damit das Aroma frisch bleibt.</tip>
+      <tip>Kirschtomaten geben dem Gericht etwas Leichtigkeit.</tip>
+      <tip>Mit etwas Zitronenabrieb wirkt die Sauce frischer.</tip>
+    </tips>
+    <rating>8,8/10 – schnell, cremig und sehr alltagstauglich.</rating>
+    <translation lang="pl">
+      <name>Makaron z pesto i kurczakiem</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony</category>
+      <ingredients>
+        <item>350 g dowolnego makaronu</item>
+        <item>500 g piersi z kurczaka</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>80 g zielonego pesto</item>
+        <item>150 ml śmietanki</item>
+        <item>40 g parmezanu</item>
+        <item>1 garść pomidorków koktajlowych</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Ugotować makaron al dente w osolonej wodzie.</step>
+        <step>Kurczaka pokroić w paski i doprawić solą oraz pieprzem.</step>
+        <step>Rozgrzać oliwę na patelni i podsmażyć kurczaka na złoto.</step>
+        <step>Przekrojone pomidorki koktajlowe krótko dodać na patelnię.</step>
+        <step>Wmieszać pesto i śmietankę, tylko lekko podgrzać, nie gotować mocno.</step>
+        <step>Dodać parmezan i doprawić sos do smaku.</step>
+        <step>Odcedzić makaron, połączyć z sosem i od razu podawać.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 10 minut</step>
+        <step>Gotowanie makaronu: ok. 10 minut</step>
+        <step>Kurczak i sos: ok. 12 minut</step>
+        <step>Łącznie: ok. 25 minut</step>
+      </timing>
+      <tips>
+        <tip>Pesto podgrzewaj delikatnie, żeby zachowało świeży aromat.</tip>
+        <tip>Pomidorki koktajlowe nadają daniu lekkości.</tip>
+        <tip>Odrobina skórki z cytryny odświeża cały sos.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="188">
+    <name>Hähnchen-Spinat-Pasta</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Pasta</category>
+    <image src="images/rezeptbild_188.jpg" />
+    <ingredients>
+      <item>350 g Penne oder Fusilli</item>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 kleine Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>250 g Blattspinat, frisch oder TK aufgetaut</item>
+      <item>200 ml Sahne</item>
+      <item>100 ml Brühe</item>
+      <item>40 g Parmesan</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Muskat</item>
+    </ingredients>
+    <preparation>
+      <step>Pasta in Salzwasser bissfest kochen.</step>
+      <step>Hähnchen in Streifen schneiden und in Olivenöl goldbraun anbraten. Herausnehmen.</step>
+      <step>Zwiebel und Knoblauch fein würfeln und in derselben Pfanne anschwitzen.</step>
+      <step>Spinat zugeben und zusammenfallen lassen oder bei TK-Spinat gut erhitzen.</step>
+      <step>Sahne und Brühe angießen, Parmesan einrühren und mit Salz, Pfeffer sowie etwas Muskat würzen.</step>
+      <step>Hähnchen zurück in die Sauce geben und 3 Minuten sanft ziehen lassen.</step>
+      <step>Pasta abgießen und mit der Sauce vermengen.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 15 Minuten</step>
+      <step>Pasta kochen: ca. 10 Minuten</step>
+      <step>Sauce und Hähnchen: ca. 15 Minuten</step>
+      <step>Gesamt: ca. 30 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Frischer Spinat bringt mehr Leichtigkeit, TK-Spinat macht das Gericht unkomplizierter.</tip>
+      <tip>Muskat nur sparsam einsetzen, damit er nicht dominiert.</tip>
+      <tip>Die Sauce sollte cremig sein, aber nicht zu dick.</tip>
+    </tips>
+    <rating>8,9/10 – cremig, ausgewogen und sehr alltagstauglich.</rating>
+    <translation lang="pl">
+      <name>Makaron z kurczakiem i szpinakiem</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / makarony</category>
+      <ingredients>
+        <item>350 g penne albo fusilli</item>
+        <item>500 g piersi z kurczaka</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>1 mała cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>250 g szpinaku liściastego, świeżego albo rozmrożonego</item>
+        <item>200 ml śmietanki</item>
+        <item>100 ml bulionu</item>
+        <item>40 g parmezanu</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>gałka muszkatołowa</item>
+      </ingredients>
+      <preparation>
+        <step>Ugotować makaron al dente w osolonej wodzie.</step>
+        <step>Kurczaka pokroić w paski i podsmażyć na oliwie na złoto. Wyjąć z patelni.</step>
+        <step>Drobno pokrojoną cebulę i czosnek zeszklić na tej samej patelni.</step>
+        <step>Dodać szpinak i pozwolić mu zmięknąć albo dobrze podgrzać, jeśli używasz mrożonego.</step>
+        <step>Wlać śmietankę i bulion, wmieszać parmezan i doprawić solą, pieprzem oraz odrobiną gałki muszkatołowej.</step>
+        <step>Włożyć kurczaka z powrotem do sosu i podgrzewać 3 minuty na małym ogniu.</step>
+        <step>Odcedzony makaron wymieszać z sosem.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 15 minut</step>
+        <step>Gotowanie makaronu: ok. 10 minut</step>
+        <step>Sos i kurczak: ok. 15 minut</step>
+        <step>Łącznie: ok. 30 minut</step>
+      </timing>
+      <tips>
+        <tip>Świeży szpinak daje lżejszy efekt, mrożony jest bardziej praktyczny.</tip>
+        <tip>Gałkę muszkatołową dodawaj oszczędnie, żeby nie zdominowała smaku.</tip>
+        <tip>Sos powinien być kremowy, ale nie zbyt gęsty.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="189">
+    <name>Cannelloni mit Hackfleisch</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Ofengerichte</category>
+    <image src="images/rezeptbild_189.jpg" />
+    <ingredients>
+      <item>12 Cannelloni</item>
+      <item>500 g Rinderhackfleisch</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>2 EL Olivenöl</item>
+      <item>2 EL Tomatenmark</item>
+      <item>500 g passierte Tomaten</item>
+      <item>150 ml Brühe</item>
+      <item>150 g Crème fraîche oder Schmand</item>
+      <item>100 g geriebener Käse</item>
+      <item>40 g Parmesan</item>
+      <item>1 TL Oregano</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Zwiebel und Knoblauch fein würfeln. Olivenöl erhitzen und das Hackfleisch krümelig anbraten.</step>
+      <step>Zwiebel und Knoblauch zugeben, kurz mitbraten, dann 1 EL Tomatenmark einrühren.</step>
+      <step>Mit 100 ml Brühe ablöschen und 5 Minuten einkochen lassen. Mit Salz, Pfeffer und Oregano würzen.</step>
+      <step>Die Hackmasse etwas abkühlen lassen und die Cannelloni damit füllen.</step>
+      <step>Für die Sauce passierte Tomaten mit restlichem Tomatenmark, restlicher Brühe und Crème fraîche verrühren und abschmecken.</step>
+      <step>Etwas Sauce in eine Auflaufform geben, Cannelloni hineinlegen und mit restlicher Sauce bedecken.</step>
+      <step>Mit Käse und Parmesan bestreuen.</step>
+      <step>Bei 180 °C Ober-/Unterhitze 35 bis 40 Minuten backen, bis die Cannelloni weich und oben goldbraun sind.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 25 Minuten</step>
+      <step>Füllung: ca. 15 Minuten</step>
+      <step>Backzeit: ca. 35–40 Minuten</step>
+      <step>Gesamt: ca. 1 Stunde</step>
+    </timing>
+    <tips>
+      <tip>Die Sauce muss die Cannelloni gut umschließen, damit sie weich garen.</tip>
+      <tip>Zum Füllen eignet sich ein kleiner Löffel oder ein Spritzbeutel.</tip>
+      <tip>Vor dem Servieren 5 Minuten ruhen lassen.</tip>
+    </tips>
+    <rating>9,0/10 – saftig, sättigend und sehr zuverlässig gut.</rating>
+    <translation lang="pl">
+      <name>Cannelloni z mięsem mielonym</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / dania z piekarnika</category>
+      <ingredients>
+        <item>12 cannelloni</item>
+        <item>500 g mielonej wołowiny</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>2 EL koncentratu pomidorowego</item>
+        <item>500 g passaty pomidorowej</item>
+        <item>150 ml bulionu</item>
+        <item>150 g crème fraîche albo kwaśnej śmietany</item>
+        <item>100 g tartego sera</item>
+        <item>40 g parmezanu</item>
+        <item>1 TL oregano</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Drobno pokroić cebulę i czosnek. Rozgrzać oliwę i podsmażyć mięso mielone, aż będzie sypkie.</step>
+        <step>Dodać cebulę i czosnek, krótko podsmażyć, następnie wmieszać 1 EL koncentratu pomidorowego.</step>
+        <step>Podlać 100 ml bulionu i odparować przez 5 minut. Doprawić solą, pieprzem i oregano.</step>
+        <step>Masę mięsną lekko przestudzić i napełnić nią cannelloni.</step>
+        <step>Na sos wymieszać passatę z pozostałym koncentratem, resztą bulionu i crème fraîche, doprawić do smaku.</step>
+        <step>Trochę sosu wylać do formy, ułożyć cannelloni i przykryć resztą sosu.</step>
+        <step>Posypać serem i parmezanem.</step>
+        <step>Piec 35 do 40 minut w 180 °C góra/dół, aż cannelloni będą miękkie, a wierzch złocisty.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 25 minut</step>
+        <step>Farsz: ok. 15 minut</step>
+        <step>Pieczenie: ok. 35–40 minut</step>
+        <step>Łącznie: ok. 1 godzina</step>
+      </timing>
+      <tips>
+        <tip>Sos powinien dobrze przykrywać cannelloni, żeby miękko się ugotowały.</tip>
+        <tip>Do nadziewania wygodny jest mały łyżeczkowy nabierak albo worek cukierniczy.</tip>
+        <tip>Przed podaniem warto odczekać 5 minut.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="190">
+    <name>Hackbällchen in Tomatensauce</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Fleischgerichte</category>
+    <image src="images/rezeptbild_190.jpg" />
+    <ingredients>
+      <item>500 g gemischtes Hackfleisch</item>
+      <item>1 kleines Brötchen oder 40 g Paniermehl</item>
+      <item>1 Ei</item>
+      <item>1 kleine Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>40 g Parmesan</item>
+      <item>2 EL gehackte Petersilie</item>
+      <item>2 EL Olivenöl</item>
+      <item>700 g passierte Tomaten</item>
+      <item>1 TL Zucker</item>
+      <item>1 TL Oregano</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Brötchen einweichen und ausdrücken oder Paniermehl bereitstellen. Zwiebel und Knoblauch fein würfeln.</step>
+      <step>Hackfleisch mit Ei, Brötchen oder Paniermehl, Parmesan, etwas Zwiebel, Petersilie, Salz und Pfeffer vermengen.</step>
+      <step>Kleine Hackbällchen formen.</step>
+      <step>Olivenöl in einer großen Pfanne erhitzen und die Hackbällchen rundherum anbraten. Herausnehmen.</step>
+      <step>Restliche Zwiebel und Knoblauch in derselben Pfanne anschwitzen.</step>
+      <step>Passierte Tomaten, Zucker, Oregano, Salz und Pfeffer zugeben und 10 Minuten köcheln lassen.</step>
+      <step>Hackbällchen zurück in die Sauce geben und weitere 10 Minuten sanft garen.</step>
+      <step>Mit Pasta, Brot oder Reis servieren.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 20 Minuten</step>
+      <step>Hackbällchen braten: ca. 10 Minuten</step>
+      <step>Sauce und Garziehen: ca. 20 Minuten</step>
+      <step>Gesamt: ca. 40 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Die Masse nicht zu fest kneten, sonst werden die Bällchen kompakt.</tip>
+      <tip>In der Sauce nur sanft ziehen lassen, damit sie saftig bleiben.</tip>
+      <tip>Mit frischem Basilikum oder extra Parmesan servieren.</tip>
+    </tips>
+    <rating>8,9/10 – saftig, würzig und sehr vielseitig einsetzbar.</rating>
+    <translation lang="pl">
+      <name>Pulpety w sosie pomidorowym</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / dania mięsne</category>
+      <ingredients>
+        <item>500 g mięsa mielonego mieszanego</item>
+        <item>1 mała bułka albo 40 g bułki tartej</item>
+        <item>1 jajko</item>
+        <item>1 mała cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>40 g parmezanu</item>
+        <item>2 EL posiekanej pietruszki</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>700 g passaty pomidorowej</item>
+        <item>1 TL cukru</item>
+        <item>1 TL oregano</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Bułkę namoczyć i odcisnąć albo przygotować bułkę tartą. Cebulę i czosnek drobno pokroić.</step>
+        <step>Wymieszać mięso z jajkiem, bułką albo bułką tartą, parmezanem, częścią cebuli, pietruszką, solą i pieprzem.</step>
+        <step>Uformować małe pulpety.</step>
+        <step>Rozgrzać oliwę na dużej patelni i obsmażyć pulpety ze wszystkich stron. Wyjąć je z patelni.</step>
+        <step>Na tej samej patelni zeszklić pozostałą cebulę i czosnek.</step>
+        <step>Dodać passatę, cukier, oregano, sól i pieprz, po czym gotować 10 minut.</step>
+        <step>Włożyć pulpety z powrotem do sosu i gotować jeszcze 10 minut na małym ogniu.</step>
+        <step>Podawać z makaronem, pieczywem albo ryżem.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 20 minut</step>
+        <step>Smażenie pulpetów: ok. 10 minut</step>
+        <step>Sos i dogotowanie: ok. 20 minut</step>
+        <step>Łącznie: ok. 40 minut</step>
+      </timing>
+      <tips>
+        <tip>Nie wyrabiaj masy zbyt długo, żeby pulpety nie były zbite.</tip>
+        <tip>W sosie powinny się tylko delikatnie dogotować, wtedy pozostaną soczyste.</tip>
+        <tip>Świeża bazylia albo dodatkowy parmezan dobrze pasują do podania.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="191">
+    <name>Parmigiana di Melanzane</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Ofengerichte</category>
+    <image src="images/rezeptbild_191.jpg" />
+    <ingredients>
+      <item>2 große Auberginen</item>
+      <item>700 g passierte Tomaten</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>3 EL Olivenöl</item>
+      <item>2 Kugeln Mozzarella</item>
+      <item>70 g Parmesan</item>
+      <item>1 TL Zucker</item>
+      <item>1 TL Oregano</item>
+      <item>1 Handvoll Basilikum</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Auberginen in Scheiben schneiden, leicht salzen und 20 Minuten ziehen lassen. Danach trocken tupfen.</step>
+      <step>Die Scheiben in wenig Olivenöl portionsweise goldbraun anbraten oder im Ofen rösten.</step>
+      <step>Zwiebel und Knoblauch fein würfeln. In etwas Olivenöl anschwitzen, passierte Tomaten zugeben und mit Zucker, Oregano, Salz und Pfeffer 15 Minuten köcheln lassen.</step>
+      <step>Mozzarella in Scheiben schneiden.</step>
+      <step>Ofen auf 180 °C Ober-/Unterhitze vorheizen.</step>
+      <step>Eine Auflaufform mit etwas Tomatensauce auslegen, dann Auberginen, Sauce, Mozzarella, Parmesan und Basilikum schichten.</step>
+      <step>So weitermachen, bis alles verbraucht ist. Oben mit Sauce, Käse und etwas Basilikum abschließen.</step>
+      <step>25 bis 30 Minuten backen. Vor dem Servieren 10 Minuten ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 25 Minuten</step>
+      <step>Auberginen ziehen lassen: ca. 20 Minuten</step>
+      <step>Sauce: ca. 15 Minuten</step>
+      <step>Backzeit: ca. 25–30 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Das Salzen nimmt den Auberginen überschüssige Feuchtigkeit und verbessert die Textur.</tip>
+      <tip>Nicht zu viel Mozzarella auf einmal verwenden, sonst wird das Gericht zu flüssig.</tip>
+      <tip>Lauwarm schmeckt Parmigiana oft sogar noch besser als direkt aus dem Ofen.</tip>
+    </tips>
+    <rating>9,0/10 – sehr aromatisch, saftig und ohne Fleisch erstaunlich voll.</rating>
+    <translation lang="pl">
+      <name>Parmigiana di Melanzane</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / dania z piekarnika</category>
+      <ingredients>
+        <item>2 duże bakłażany</item>
+        <item>700 g passaty pomidorowej</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>3 EL oliwy z oliwek</item>
+        <item>2 kule mozzarelli</item>
+        <item>70 g parmezanu</item>
+        <item>1 TL cukru</item>
+        <item>1 TL oregano</item>
+        <item>1 garść bazylii</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Bakłażany pokroić w plastry, lekko posolić i odstawić na 20 minut. Następnie osuszyć.</step>
+        <step>Plastry podsmażyć partiami na niewielkiej ilości oliwy albo upiec, aż się zezłocą.</step>
+        <step>Drobno pokroić cebulę i czosnek. Zeszklić je na oliwie, dodać passatę i gotować 15 minut z cukrem, oregano, solą i pieprzem.</step>
+        <step>Pokroić mozzarellę w plasterki.</step>
+        <step>Rozgrzać piekarnik do 180 °C góra/dół.</step>
+        <step>Na dno formy wyłożyć trochę sosu pomidorowego, następnie układać warstwami bakłażana, sos, mozzarellę, parmezan i bazylię.</step>
+        <step>Powtarzać warstwy aż do wykorzystania składników. Na wierzchu zakończyć sosem, serem i odrobiną bazylii.</step>
+        <step>Piec 25 do 30 minut. Przed podaniem odstawić na 10 minut.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 25 minut</step>
+        <step>Odstawienie bakłażana: ok. 20 minut</step>
+        <step>Sos: ok. 15 minut</step>
+        <step>Pieczenie: ok. 25–30 minut</step>
+      </timing>
+      <tips>
+        <tip>Solenie bakłażana usuwa nadmiar wilgoci i poprawia teksturę.</tip>
+        <tip>Nie dodawaj zbyt dużo mozzarelli naraz, żeby danie nie było zbyt wodniste.</tip>
+        <tip>Parmigiana smakuje bardzo dobrze także lekko przestudzona.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="192">
+    <name>Focaccia mit Rosmarin</name>
+    <persons>1 Blech</persons>
+    <category>Italienisch inspirierte Küche / Brot &amp; Beilagen</category>
+    <image src="images/rezeptbild_192.jpg" />
+    <ingredients>
+      <item>500 g Weizenmehl Type 550</item>
+      <item>7 g Trockenhefe</item>
+      <item>320 ml lauwarmes Wasser</item>
+      <item>2 TL Salz</item>
+      <item>1 TL Zucker</item>
+      <item>5 EL Olivenöl</item>
+      <item>2 Zweige Rosmarin</item>
+      <item>grobes Meersalz</item>
+    </ingredients>
+    <preparation>
+      <step>Mehl, Trockenhefe, Zucker und 2 TL Salz in einer Schüssel mischen. Wasser und 3 EL Olivenöl zugeben.</step>
+      <step>Alles zu einem weichen Teig verkneten und 8 bis 10 Minuten bearbeiten, bis der Teig elastisch ist.</step>
+      <step>Abgedeckt an einem warmen Ort 60 bis 75 Minuten gehen lassen.</step>
+      <step>Ein Blech oder eine Form mit Olivenöl einfetten. Den Teig hineingeben und vorsichtig in Form drücken.</step>
+      <step>Noch einmal 20 Minuten ruhen lassen.</step>
+      <step>Mit den Fingern typische Mulden in den Teig drücken. Mit restlichem Olivenöl bestreichen, Rosmarinnadeln und etwas Meersalz darauf verteilen.</step>
+      <step>Bei 220 °C Ober-/Unterhitze 20 bis 25 Minuten goldbraun backen.</step>
+      <step>Etwas abkühlen lassen und in Stücke schneiden.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 20 Minuten</step>
+      <step>Erste Gehzeit: ca. 60–75 Minuten</step>
+      <step>Zweite Ruhezeit: ca. 20 Minuten</step>
+      <step>Backzeit: ca. 20–25 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Der Teig darf weich sein, dadurch bleibt die Focaccia innen saftig.</tip>
+      <tip>Gutes Olivenöl macht hier geschmacklich einen deutlichen Unterschied.</tip>
+      <tip>Warm serviert ist die Focaccia besonders aromatisch.</tip>
+    </tips>
+    <rating>9,1/10 – einfach, duftig und als Beilage oder Snack sehr stark.</rating>
+    <translation lang="pl">
+      <name>Focaccia z rozmarynem</name>
+      <persons>1 blacha</persons>
+      <category>Kuchnia inspirowana Włochami / pieczywo i dodatki</category>
+      <ingredients>
+        <item>500 g mąki pszennej typ 550</item>
+        <item>7 g suchych drożdży</item>
+        <item>320 ml letniej wody</item>
+        <item>2 TL soli</item>
+        <item>1 TL cukru</item>
+        <item>5 EL oliwy z oliwek</item>
+        <item>2 gałązki rozmarynu</item>
+        <item>gruboziarnista sól morska</item>
+      </ingredients>
+      <preparation>
+        <step>W misce wymieszać mąkę, drożdże, cukier i 2 TL soli. Dodać wodę oraz 3 EL oliwy.</step>
+        <step>Zagnieść miękkie ciasto i wyrabiać je 8 do 10 minut, aż stanie się elastyczne.</step>
+        <step>Przykryć i odstawić w ciepłe miejsce na 60 do 75 minut.</step>
+        <step>Natłuścić blachę albo formę oliwą. Przełożyć ciasto i delikatnie rozciągnąć je do kształtu formy.</step>
+        <step>Odstawić jeszcze na 20 minut.</step>
+        <step>Palcami zrobić charakterystyczne wgłębienia. Posmarować resztą oliwy, posypać rozmarynem i grubą solą.</step>
+        <step>Piec 20 do 25 minut w 220 °C góra/dół, aż focaccia będzie złocista.</step>
+        <step>Lekko przestudzić i pokroić na kawałki.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 20 minut</step>
+        <step>Pierwsze wyrastanie: ok. 60–75 minut</step>
+        <step>Drugie wyrastanie: ok. 20 minut</step>
+        <step>Pieczenie: ok. 20–25 minut</step>
+      </timing>
+      <tips>
+        <tip>Ciasto powinno być miękkie, dzięki temu focaccia będzie wilgotna w środku.</tip>
+        <tip>Dobra oliwa ma tu naprawdę duże znaczenie dla smaku.</tip>
+        <tip>Najlepiej smakuje jeszcze lekko ciepła.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="193">
+    <name>Caprese</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Salate &amp; Vorspeisen</category>
+    <image src="images/rezeptbild_193.jpg" />
+    <ingredients>
+      <item>4 reife Tomaten</item>
+      <item>2 Kugeln Mozzarella</item>
+      <item>1 Handvoll Basilikum</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 EL heller Balsamico, optional</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Tomaten und Mozzarella in gleichmäßige Scheiben schneiden.</step>
+      <step>Abwechselnd auf einer Platte oder auf Tellern anrichten.</step>
+      <step>Basilikumblätter dazwischen oder darüber verteilen.</step>
+      <step>Mit Olivenöl beträufeln und nach Wunsch etwas Balsamico ergänzen.</step>
+      <step>Mit Salz und frisch gemahlenem Pfeffer abschmecken und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 10 Minuten</step>
+      <step>Anrichten: ca. 5 Minuten</step>
+      <step>Gesamt: ca. 15 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Reife, aromatische Tomaten sind hier wichtiger als jede zusätzliche Würzung.</tip>
+      <tip>Mozzarella kurz vorher aus dem Kühlschrank nehmen, damit er mehr Geschmack zeigt.</tip>
+      <tip>Nicht zu viel Balsamico verwenden, damit Tomate und Basilikum im Vordergrund bleiben.</tip>
+    </tips>
+    <rating>8,7/10 – schlicht, frisch und mit guten Zutaten sehr überzeugend.</rating>
+    <translation lang="pl">
+      <name>Caprese</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / sałatki i przystawki</category>
+      <ingredients>
+        <item>4 dojrzałe pomidory</item>
+        <item>2 kule mozzarelli</item>
+        <item>1 garść bazylii</item>
+        <item>3 EL oliwy z oliwek</item>
+        <item>1 EL jasnego balsamico, opcjonalnie</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Pokroić pomidory i mozzarellę w równe plastry.</step>
+        <step>Układać je naprzemiennie na półmisku albo na talerzach.</step>
+        <step>Pomiędzy lub na wierzchu rozłożyć liście bazylii.</step>
+        <step>Skropić oliwą i opcjonalnie dodać trochę balsamico.</step>
+        <step>Doprawić solą i świeżo mielonym pieprzem, podawać od razu.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 10 minut</step>
+        <step>Układanie: ok. 5 minut</step>
+        <step>Łącznie: ok. 15 minut</step>
+      </timing>
+      <tips>
+        <tip>Dojrzałe, aromatyczne pomidory są tu ważniejsze niż dodatkowe przyprawy.</tip>
+        <tip>Mozzarellę warto wyjąć chwilę wcześniej z lodówki, żeby miała pełniejszy smak.</tip>
+        <tip>Nie używaj zbyt dużo balsamico, żeby pomidory i bazylia pozostały na pierwszym planie.</tip>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="194">
+    <name>Risotto mit Hähnchen und Gemüse</name>
+    <persons>4 Personen</persons>
+    <category>Italienisch inspirierte Küche / Reisgerichte</category>
+    <image src="images/rezeptbild_194.jpg" />
+    <ingredients>
+      <item>300 g Risottoreis</item>
+      <item>450 g Hähnchenbrustfilet</item>
+      <item>1 kleine Zwiebel</item>
+      <item>1 Knoblauchzehe</item>
+      <item>1 Möhre</item>
+      <item>1 kleine Zucchini</item>
+      <item>100 g TK-Erbsen</item>
+      <item>2 EL Olivenöl</item>
+      <item>900 ml heiße Hühnerbrühe</item>
+      <item>80 ml Weißwein oder 50 ml Brühe extra</item>
+      <item>40 g Parmesan</item>
+      <item>20 g Butter</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step>Hähnchen in kleine Würfel schneiden. Zwiebel, Knoblauch, Möhre und Zucchini fein würfeln.</step>
+      <step>1 EL Olivenöl in einem Topf oder einer tiefen Pfanne erhitzen und das Hähnchen goldbraun anbraten. Leicht salzen und herausnehmen.</step>
+      <step>Restliches Olivenöl zugeben. Zwiebel und Knoblauch glasig anschwitzen, dann Möhre und Zucchini 2 Minuten mitbraten.</step>
+      <step>Risottoreis zugeben und 1 Minute mitrösten.</step>
+      <step>Mit Weißwein oder etwas Brühe ablöschen und fast vollständig aufnehmen lassen.</step>
+      <step>Nach und nach die heiße Brühe zugeben, immer nur eine Kelle, und dabei regelmäßig rühren.</step>
+      <step>Nach etwa 15 Minuten Erbsen und das angebratene Hähnchen zugeben.</step>
+      <step>Weitere Brühe einarbeiten, bis der Reis cremig, aber noch leicht bissfest ist. Das dauert insgesamt etwa 20 bis 25 Minuten.</step>
+      <step>Parmesan und Butter einrühren. Mit Salz und Pfeffer abschmecken und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <step>Vorbereitung: ca. 20 Minuten</step>
+      <step>Hähnchen anbraten: ca. 5 Minuten</step>
+      <step>Risotto kochen: ca. 25 Minuten</step>
+      <step>Gesamt: ca. 40 Minuten</step>
+    </timing>
+    <tips>
+      <tip>Die Brühe muss heiß sein, damit das Risotto gleichmäßig cremig bleibt.</tip>
+      <tip>Risotto soll weich fließend, aber nicht suppig sein.</tip>
+      <tip>Das Hähnchen erst später wieder zugeben, damit es saftig bleibt.</tip>
+    </tips>
+    <rating>9,0/10 – cremig, alltagstauglich und sehr angenehm ausgewogen.</rating>
+    <translation lang="pl">
+      <name>Risotto z kurczakiem i warzywami</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia inspirowana Włochami / dania z ryżu</category>
+      <ingredients>
+        <item>300 g ryżu do risotto</item>
+        <item>450 g piersi z kurczaka</item>
+        <item>1 mała cebula</item>
+        <item>1 ząbek czosnku</item>
+        <item>1 marchewka</item>
+        <item>1 mała cukinia</item>
+        <item>100 g groszku mrożonego</item>
+        <item>2 EL oliwy z oliwek</item>
+        <item>900 ml gorącego bulionu drobiowego</item>
+        <item>80 ml białego wina albo 50 ml dodatkowego bulionu</item>
+        <item>40 g parmezanu</item>
+        <item>20 g masła</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step>Kurczaka pokroić w małą kostkę. Cebulę, czosnek, marchewkę i cukinię drobno pokroić.</step>
+        <step>Rozgrzać 1 EL oliwy w garnku albo głębokiej patelni i obsmażyć kurczaka na złoto. Lekko posolić i wyjąć.</step>
+        <step>Dodać pozostałą oliwę. Zeszklić cebulę i czosnek, następnie smażyć marchewkę i cukinię 2 minuty.</step>
+        <step>Dodać ryż do risotto i smażyć go 1 minutę.</step>
+        <step>Podlać winem albo odrobiną bulionu i poczekać, aż płyn prawie całkowicie się wchłonie.</step>
+        <step>Stopniowo dolewać gorący bulion, po jednej chochelce, regularnie mieszając.</step>
+        <step>Po około 15 minutach dodać groszek i wcześniej obsmażonego kurczaka.</step>
+        <step>Dolewać kolejne porcje bulionu, aż ryż będzie kremowy, ale nadal lekko jędrny. Całość zajmuje około 20 do 25 minut.</step>
+        <step>Na końcu wmieszać parmezan i masło. Doprawić solą oraz pieprzem i od razu podawać.</step>
+      </preparation>
+      <timing>
+        <step>Przygotowanie: ok. 20 minut</step>
+        <step>Obsmażanie kurczaka: ok. 5 minut</step>
+        <step>Gotowanie risotto: ok. 25 minut</step>
+        <step>Łącznie: ok. 40 minut</step>
+      </timing>
+      <tips>
+        <tip>Bulion musi być gorący, wtedy risotto pozostaje równo kremowe.</tip>
+        <tip>Risotto powinno być kremowe i płynne, ale nie wodniste.</tip>
+        <tip>Kurczaka dodaj ponownie dopiero pod koniec, żeby pozostał soczysty.</tip>
+      </tips>
+    </translation>
   </recipe>
 </cookbook>
