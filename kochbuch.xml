@@ -2,8 +2,8 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="5.0" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>162</recipeCount>
-    <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 DDR- und Ostalgie-Rezepte (Soljanka, Würzfleisch, DDR-Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke).</notes>
+    <recipeCount>167</recipeCount>
+    <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 DDR- und Ostalgie-Rezepte (Soljanka, Würzfleisch, DDR-Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 polnisch inspirierte Kartoffel- und Wielkopolska-Rezepte (Pyra z bzikiem, zwei Babka-zemniaczana-Varianten, Szare Kluski, Kartoffel-Zapiekanka).</notes>
   </meta>
   <recipe id="1">
     <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
@@ -93,14 +93,11 @@
         <step nr="8">Krótko podsmażyć koncentrat pomidorowy, następnie zalać czerwonym winem i dodać bulionu wołowego.</step>
         <step nr="9">Włożyć gołąbki do sosu i dusić pod przykryciem 2 do 2,5 godziny na małym ogniu.</step>
         <step nr="10">Na koniec zdjąć pokrywkę i zredukować sos. Doprawić solą, pieprzem i w razie potrzeby odrobiną cukru.</step>
-        <step nr="11">Na końcu zdjąć pokrywkę i zredukować sos. Doprawić solą, pieprzem i w razie potrzeby odrobiną cukru.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 30 min</item>
         <item>czas duszenia: 2 do 2,5 godzin</item>
         <item>Jeśli jesz około 18:30–19:00, najlepiej zacząć około 15:30–16:00</item>
-        <item>czas odpoczynku: ok. 10 min</item>
-        <item>łącznie: ok. 3 godziny</item>
       </timing>
       <tips>
         <item>Gruby nerw liścia zawsze lekko spłaszcz, wtedy roladki lepiej się zawijają.</item>
@@ -555,7 +552,6 @@
         <item>przygotowanie: 10–15 min</item>
         <item>Rösten: 5 min</item>
         <item>łącznie: ok. 15–20 min</item>
-        <item>łącznie: ok. 20 min</item>
       </timing>
       <tips>
         <item>Pieczywo posmaruj lub nałóż dodatki dopiero krótko przed jedzeniem.</item>
@@ -1469,14 +1465,11 @@
         <step nr="8">Dusić pod przykryciem 1,5 do 2 godzin, aż mięso będzie miękkie.</step>
         <step nr="9">Wyjąć rolady, a sos przetrzeć lub zostawić bardziej rustykalny.</step>
         <step nr="10">Zagęścić mąką lub skrobią, wmieszać masło, doprawić i ponownie włożyć rolady do sosu.</step>
-        <step nr="11">W razie potrzeby zagęścić odrobiną mąki lub skrobi, wmieszać masło, doprawić i włożyć zrazy z powrotem do sosu.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 25 min</item>
         <item>duszenie: 1,5 do 2 godzin</item>
         <item>łącznie: ok. 2 do 2,5 godziny</item>
-        <item>czas odpoczynku: 10 min</item>
-        <item>łącznie: ok. 2,5 do 3 godzin</item>
       </timing>
       <tips>
         <item>Bez śmietany sos pozostaje bardziej wyrazisty i domowy.</item>
@@ -1547,15 +1540,11 @@
         <step nr="3">Część zupy zmiksować, aby była bardziej kremowa, a część zostawić w kawałkach.</step>
         <step nr="4">Pokroić kiełbasę lub parówki i dodać do zupy.</step>
         <step nr="5">Gotować jeszcze chwilę i doprawić solą, pieprzem oraz majerankiem.</step>
-        <step nr="6">Zmiksować część zupy albo lekko rozgnieść ją tłuczkiem do ziemniaków, żeby stała się bardziej kremowa.</step>
-        <step nr="7">Doprawić solą, pieprzem i według uznania majerankiem i zostawić jeszcze na 2 minuty.</step>
-        <step nr="8">Podawać z pietruszką albo świeżym chlebem.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 15 min</item>
         <item>gotowanie: ok. 25 min</item>
         <item>łącznie: ok. 40 min</item>
-        <item>łącznie: ok. 45 min</item>
       </timing>
       <tips>
         <item>Na drugi dzień zupa smakuje jeszcze lepiej.</item>
@@ -1633,7 +1622,6 @@
         <item>Zawsze używaj czystych naczyń i sztućców, aby zakwas się nie zepsuł.</item>
         <item>Nie zamykaj naczynia całkowicie szczelnie.</item>
         <item>Bazę do gotowego żurku znajdziesz w przepisie 34.</item>
-        <item>Bazę do właściwego żurku znajdziesz w przepisie 34.</item>
       </tips>
       <rating>Ważna baza do tradycyjnego żurku.</rating>
     </translation>
@@ -1872,7 +1860,6 @@
         <item>Najlepiej smakuje dobrze schłodzony.</item>
         <item>Gęstość można dopasować dodatkową ilością mleka.</item>
         <item>Podany z jajkiem jest najbardziej klasyczny.</item>
-        <item>Przed podaniem jeszcze raz doprawić, bo chłód trochę tłumi sól i kwasowość.</item>
       </tips>
       <rating>Letni i tradycyjny.</rating>
     </translation>
@@ -1953,7 +1940,6 @@
         <item>Farsz powinien być dobrze wystudzony przed lepieniem.</item>
         <item>Brzegi trzeba dokładnie zlepić, aby farsz nie wypłynął podczas gotowania.</item>
         <item>Pierogi bardzo dobrze nadają się do mrożenia.</item>
-        <item>Bardzo dobrze nadają się do zamrożenia.</item>
       </tips>
       <rating>Klasyczne polskie danie z ciasta.</rating>
     </translation>
@@ -2411,7 +2397,6 @@
         <item>Wątróbkę soli się dopiero na końcu, aby nie stwardniała.</item>
         <item>Jabłka mają być miękkie, ale nie rozgotowane.</item>
         <item>Pasują do niej ziemniaki albo świeże pieczywo.</item>
-        <item>Pasują do tego ziemniaki, chleb albo proste puree.</item>
       </tips>
       <rating>Wytrawne danie z lekką owocową nutą.</rating>
     </translation>
@@ -2480,14 +2465,11 @@
         <step nr="6">Pod koniec duszenia dodać koncentrat pomidorowy.</step>
         <step nr="7">Na końcu dusić chwilę bez przykrycia, aby sos i wierzch nabrały mocniejszego smaku.</step>
         <step nr="8">Podawać na gorąco, na przykład z pieczywem albo ziemniakami.</step>
-        <step nr="9">Podawać gorące, na przykład z chlebem albo ziemniakami.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 20 min plus czas chłodzenia</item>
         <item>duszenie: ok. 2 godziny</item>
         <item>łącznie: zależnie od czasu chłodzenia</item>
-        <item>czas odpoczynku: 10 min</item>
-        <item>łącznie: zależnie od czasu chłodzenia, aktywnie ok. 3 godziny</item>
       </timing>
       <tips>
         <item>Czas chłodzenia przed duszeniem wyraźnie poprawia smak.</item>
@@ -3681,14 +3663,11 @@
         <step nr="4">Doprawić solą i pieprzem oraz dokładnie wymieszać.</step>
         <step nr="5">Podawać gotowe cordon bleu razem z nasi goreng.</step>
         <step nr="6">Na końcu dodać sos sweet chili.</step>
-        <step nr="7">Podawać z sosem sweet chili.</step>
       </preparation>
       <timing>
         <item>Łączny czas: ok. 25 minut</item>
         <item>AirFryer: ok. 12–15 minut</item>
         <item>Patelnia: ok. 10 minut</item>
-        <item>odpoczynek cordon bleu: 2 min</item>
-        <item>łącznie: ok. 25 min</item>
       </timing>
       <tips>
         <item>Najlepiej sprawdza się wcześniej ugotowany i schłodzony ryż.</item>
@@ -4255,13 +4234,11 @@
         <step nr="4">Mocno rozgrzać grill lub płytę.</step>
         <step nr="5">Grillować mięso partiami bardzo krótko i na dużym ogniu.</step>
         <step nr="6">Posypać sezamem i dymką, podawać od razu.</step>
-        <step nr="7">Posypać sezamem i dymką i od razu podawać.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 15 min</item>
         <item>marynowanie: 30–60 min</item>
         <item>grillowanie: 5–8 min</item>
-        <item>łącznie: ok. 50–80 min</item>
         <item>łącznie: ok. 50–80 min</item>
       </timing>
       <tips>
@@ -4407,12 +4384,12 @@
         <step nr="3">Lekko posmarować tą marynatą plastry halloumi i odstawić na 10–15 minut.</step>
         <step nr="4">Dobrze rozgrzać grill. Grillować halloumi na średnim lub dość mocnym ogniu po 2–3 minuty z każdej strony, aż pojawią się wyraźne paski.</step>
         <step nr="5">Podawać od razu, opcjonalnie skropione odrobiną miodu lub posypane dodatkowymi ziołami.</step>
-        <step nr="6">Od razu podawać z odrobiną soku z cytryny albo oleju ziołowego.</step>
       </preparation>
       <timing>
-        <item>przygotowanie: ok. 5 min</item>
-        <item>czas grillowania: ok. 4–6 min przy średnim ogniu bezpośrednim</item>
-        <item>łącznie: ok. 10 min</item>
+        <item>przygotowanie: 10 min</item>
+        <item>krótkie marynowanie: 10–15 min</item>
+        <item>czas grillowania: 4–6 min</item>
+        <item>łącznie: ok. 20 min</item>
       </timing>
       <tips>
         <item>Halloumi najlepiej smakuje podany od razu po zdjęciu z grilla – wtedy jest chrupiący z zewnątrz i miękki w środku.</item>
@@ -4487,7 +4464,6 @@
         <step nr="4">Połączyć warzywa z marynatą i odstawić na 15–20 minut.</step>
         <step nr="5">Nabić warzywa na szaszłyki, mieszając kolory i rodzaje warzyw.</step>
         <step nr="6">Grillować na średnim ogniu przez 8–12 minut, regularnie obracając, aż warzywa zmiękną i lekko się przyrumienią.</step>
-        <step nr="7">Podawać na gorąco jako dodatek albo z dipem i pieczywem.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 15 min</item>
@@ -4694,13 +4670,11 @@
         <step nr="3">Rozłożyć frytki najlepiej na tacce grillowej albo na planchy, żeby nie spadły przez ruszt.</step>
         <step nr="4">Grillować na średnim ogniu przez 20–25 minut lub piec w strefie pośredniej. W międzyczasie kilka razy przewrócić.</step>
         <step nr="5">Posolić solą morską dopiero na końcu i podawać od razu.</step>
-        <step nr="6">Od razu podawać z dipem albo twarożkiem ziołowym.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10–15 min</item>
         <item>czas grillowania: 20–25 min</item>
         <item>łącznie: ok. 35–40 min</item>
-        <item>łącznie: ok. 30 min</item>
       </timing>
       <tips>
         <item>Bataty z grilla nie będą aż tak chrupiące jak z Airfryera czy piekarnika, ale zyskają lekko dymny smak.</item>
@@ -5103,7 +5077,6 @@
         <item>marynowanie: co najmniej 30 min</item>
         <item>grillowanie: 10–12 min</item>
         <item>aktywnie: ok. 30 min plus marynowanie</item>
-        <item>łącznie aktywnie: ok. 30 min plus czas marynowania</item>
       </timing>
       <tips>
         <item>Można dodać także cukinię.</item>
@@ -5170,7 +5143,6 @@
         <item>przygotowanie: 5 min</item>
         <item>grillowanie: 12–18 min na średnim ogniu</item>
         <item>Podawać od razu na gorąco</item>
-        <item>łącznie: ok. 20 min</item>
       </timing>
       <tips>
         <item>Jeszcze lepiej smakuje z masłem ziołowym.</item>
@@ -5233,8 +5205,6 @@
         <step nr="3">Lekko posmarować serem przygotowaną mieszanką.</step>
         <step nr="4">Położyć na mocno rozgrzanym grillu i grillować po 2–3 minuty z każdej strony, aż pojawią się wyraźne paski.</step>
         <step nr="5">Podawać z pieprzem i opcjonalnie z odrobiną miodu.</step>
-        <step nr="6">Zaraz po grillowaniu skropić sokiem z cytryny albo olejem ziołowym.</step>
-        <step nr="7">Od razu podawać z sałatką, pieczywem albo grillowanymi warzywami.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 5 min</item>
@@ -5297,11 +5267,12 @@
         <item>opcjonalnie: bagietka albo bułki do podania</item>
       </ingredients>
       <preparation>
-        <step nr="1">Wyjąć kiełbaski z lodówki 15 minut przed grillowaniem.</step>
-        <step nr="2">Przygotować grill na średni ogień pośredni albo średni bezpośredni.</step>
-        <step nr="3">Najpierw grillować kiełbaski spokojniej i regularnie je obracać, żeby równomiernie nabierały koloru.</step>
-        <step nr="4">Na końcu krótko przyrumienić nad bezpośrednim ogniem, jeśli chcesz więcej aromatu z rusztu.</step>
-        <step nr="5">Podawać z musztardą, pieczywem albo sałatką ziemniaczaną.</step>
+        <step nr="1">Kiełbaski delikatnie ponakłuwać widelcem w kilku miejscach.</step>
+        <step nr="2">W wersji klasycznej tylko lekko posmarować je olejem.</step>
+        <step nr="3">Do prostej pikantnej wersji wymieszać olej, paprykę i musztardę, a następnie posmarować kiełbaski.</step>
+        <step nr="4">Grillować na średnim ogniu 10–12 minut, regularnie obracając.</step>
+        <step nr="5">Jeśli robisz wersję BBQ, w ostatnich 2 minutach posmarować kiełbaski sosem BBQ.</step>
+        <step nr="6">Podawać z cebulą i pieczywem.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 5 min</item>
@@ -5577,13 +5548,10 @@
         <step nr="3">Lekko posmarować owoce przygotowaną mieszanką.</step>
         <step nr="4">Grillować po 2–3 minuty z każdej strony, aż pojawią się lekkie ślady przypieczenia.</step>
         <step nr="5">Podawać na ciepło, opcjonalnie z lodami waniliowymi albo jogurtem.</step>
-        <step nr="6">Według uznania dodać odrobinę cynamonu albo wanilii.</step>
-        <step nr="7">Podawać na ciepło z lodami waniliowymi, jogurtem albo bez dodatków.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10 min</item>
         <item>grillowanie: 5–6 min</item>
-        <item>łącznie: ok. 15 min</item>
         <item>łącznie: ok. 15 min</item>
       </timing>
       <tips>
@@ -5989,13 +5957,10 @@
         <step nr="3">Rozgrzać grill do średniej temperatury i ułożyć szparagi bezpośrednio na ruszcie albo na patelni grillowej.</step>
         <step nr="4">Grillować przez 5–8 minut, regularnie obracając, aż pojawią się lekkie ślady przypieczenia, a szparagi pozostaną lekko chrupiące.</step>
         <step nr="5">Zaraz po grillowaniu skropić sokiem z cytryny. W wersji upgrade można dodać starty parmezan albo owinąć szparagi boczkiem przed grillowaniem.</step>
-        <step nr="6">W wersji upgrade zetrzeć na wierzch parmezan albo owinąć szparagi boczkiem i grillować 2 do 3 minut dłużej.</step>
-        <step nr="7">Podawać na gorąco jako dodatek albo z pieczywem.</step>
       </preparation>
       <timing>
         <item>przygotowanie: 10 min</item>
         <item>czas grillowania: 5–8 min</item>
-        <item>łącznie: ok. 15 min</item>
         <item>łącznie: ok. 15 min</item>
       </timing>
       <tips>
@@ -6299,7 +6264,6 @@
         <item>Jeśli wolisz łagodniejszą wersję, zacznij od 1 łyżeczki pieprzu cayenne i dopraw później.</item>
         <item>Zamiast soku mango możesz użyć odrobiny soku pomarańczowego albo kilku kropel limonki, ale mango szczególnie dobrze pasuje do nuty orzechowej.</item>
         <item>Ten gulasz następnego dnia smakuje prawie jeszcze lepiej, bo przyprawy mają wtedy więcej czasu, żeby się przegryźć.</item>
-        <item>To jest podstawowa wersja wegetariańska. Kto woli mięso, może osobno obsmażyć kurczaka i później normalnie dodać go do gulaszu.</item>
       </tips>
       <rating>9,0 / 10 – aromatyczny, kremowy i przyjemnie inny niż klasyczny gulasz warzywny.</rating>
     </translation>
@@ -6797,12 +6761,10 @@
         <step nr="2">Dokładnie wymieszać, aż mieszanka będzie jednolita.</step>
         <step nr="3">Przesypać do słoiczka lub pojemnika na przyprawy.</step>
         <step nr="4">Przed użyciem delikatnie posmarować mięso lub warzywa olejem i natrzeć mieszanką.</step>
-        <step nr="5">Do piekarnika albo na grill najlepiej nanieść rub 20 do 60 minut przed obróbką.</step>
       </preparation>
       <timing>
         <item>mieszanie: 5 min</item>
         <item>przesypanie do pojemnika: 2 min</item>
-        <item>Przechowywać sucho i szczelnie zamknięte</item>
         <item>Przechowywać sucho i szczelnie zamknięte</item>
       </timing>
       <tips>
@@ -7030,12 +6992,10 @@
         <step nr="5">Dodać bulion oraz przyprawy.</step>
         <step nr="6">Dusić pod przykryciem 2 do 2,5 godziny, aż mięso będzie miękkie.</step>
         <step nr="7">Na końcu doprawić solą i pieprzem.</step>
-        <step nr="8">Na końcu doprawić solą i pieprzem, a w razie potrzeby jeszcze trochę zredukować sos bez przykrycia.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 20 min</item>
         <item>duszenie: ok. 2–2,5 godz.</item>
-        <item>łącznie: ok. 2 godz. 45 min</item>
         <item>łącznie: ok. 2 godz. 45 min</item>
       </timing>
       <tips>
@@ -7480,15 +7440,11 @@
         <step nr="3">Ułożyć mięso na blasze lub w naczyniu do pieczenia.</step>
         <step nr="4">Piec w 200 °C przez ok. 35–45 minut, aż będzie gotowe i ładnie przyrumienione.</step>
         <step nr="5">Pod koniec można jeszcze raz posmarować odrobiną sosu BBQ.</step>
-        <step nr="6">Przed podaniem odstawić na 5 minut, żeby mięso zostało soczyste.</step>
-        <step nr="7">Podawać z coleslawem, ziemniakami z piekarnika albo chlebem.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 10 min</item>
         <item>marynowanie: co najmniej 30 min</item>
         <item>pieczenie: ok. 35–45 min</item>
-        <item>czas odpoczynku: 5 min</item>
-        <item>łącznie: ok. 55–60 min razem z marynowaniem</item>
       </timing>
       <tips>
         <item>Podawać z ziemniakami z piekarnika albo colesławem.</item>
@@ -7555,8 +7511,6 @@
         <step nr="3">Dodać cebulę i paprykę i smażyć jeszcze kilka minut.</step>
         <step nr="4">Wmieszać ajvar i śmietankę, krótko zredukować.</step>
         <step nr="5">Doprawić solą i pieprzem i ewentualnie posypać pietruszką.</step>
-        <step nr="6">Na końcu dodać pietruszkę albo dymkę.</step>
-        <step nr="7">Podawać z pieczywem, ryżem albo ziemniakami.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 10 min</item>
@@ -7694,13 +7648,10 @@
         <step nr="3">Rozłożyć mięso w koszu bez zbyt ciasnego układania.</step>
         <step nr="4">Piec 16–22 minuty, zależnie od grubości, raz obracając lub potrząsając.</step>
         <step nr="5">Krótko odstawić i podawać.</step>
-        <step nr="6">Przed podaniem odstawić na 2–3 minuty.</step>
-        <step nr="7">Podawać z dipem, sałatą, frytkami albo wrapami.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 10 min</item>
         <item>pieczenie: ok. 16–22 min</item>
-        <item>łącznie: ok. 30 min</item>
         <item>łącznie: ok. 30 min</item>
       </timing>
       <tips>
@@ -7763,7 +7714,6 @@
         <step nr="3">Dodać miększe warzywa i czosnek.</step>
         <step nr="4">Doprawić solą, pieprzem i przyprawami i smażyć do odpowiedniej miękkości.</step>
         <step nr="5">W razie potrzeby dodać fetę, ser albo ryż.</step>
-        <step nr="6">Dodać fetę, ser, jajko, ryż albo chleb, jeśli danie ma być bardziej sycące.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 15 min</item>
@@ -7902,12 +7852,10 @@
         <step nr="3">Krótko podgrzać wrapy.</step>
         <step nr="4">Ustawić wszystko na stole, aby każdy mógł sam złożyć swojego wrapa.</step>
         <step nr="5">Zawijać lub składać według uznania i od razu jeść.</step>
-        <step nr="6">Podawać od razu albo krótko podsmażyć gotowe wrapy na patelni.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 20 min</item>
         <item>smażenie: ok. 15 min</item>
-        <item>łącznie: ok. 35 min</item>
         <item>łącznie: ok. 35 min</item>
       </timing>
       <tips>
@@ -8139,13 +8087,11 @@
         <step nr="3">Gotować sos 10–15 minut i doprawić curry, solą oraz pieprzem.</step>
         <step nr="4">Kiełbaski mocno obsmażyć na patelni.</step>
         <step nr="5">Pokroić je na kawałki, polać sosem i posypać curry.</step>
-        <step nr="6">Podawać z dodatkowym curry w proszku oraz według uznania z ostrym ketchupem albo frytkami.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 10 minut</item>
         <item>Gotowanie: ok. 20 minut</item>
         <item>Łącznie: ok. 30 minut</item>
-        <item>łącznie: ok. 30 min</item>
       </timing>
       <tips>
         <item>Odrobina soku jabłkowego zaokrągla smak sosu.</item>
@@ -8213,14 +8159,11 @@
         <step nr="3">Każdy kotlet obtoczyć w mące, jajku i bułce, bez mocnego dociskania panierki.</step>
         <step nr="4">Smażyć na rozgrzanym tłuszczu na złoty kolor z obu stron.</step>
         <step nr="5">Osączyć na ręczniku papierowym i podawać z cytryną.</step>
-        <step nr="6">Odsączyć na ręczniku papierowym i odstawić na 1 minutę.</step>
-        <step nr="7">Podawać z cząstkami cytryny i odpowiednim dodatkiem.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
         <item>Smażenie: ok. 10 minut</item>
         <item>Łącznie: ok. 25 minut</item>
-        <item>łącznie: ok. 25 min</item>
       </timing>
       <tips>
         <item>Podczas smażenia delikatnie poruszać patelnią, wtedy panierka lepiej się faluje.</item>
@@ -8294,14 +8237,11 @@
         <step nr="3">Nałożyć farsz na liście, zawinąć i spiąć.</step>
         <step nr="4">Obsmażyć gołąbki, dodać koncentrat i zalać bulionem.</step>
         <step nr="5">Dusić pod przykryciem 45–60 minut.</step>
-        <step nr="6">Dusić pod przykryciem na kuchence na małym ogniu albo w piekarniku w 160 °C góra/dół przez około 45–60 minut, aż kapusta będzie miękka.</step>
-        <step nr="7">Doprawić sos i w razie potrzeby lekko go zagęścić.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 25 minut</item>
         <item>Duszenie: ok. 60 minut</item>
         <item>Łącznie: ok. 85 minut</item>
-        <item>łącznie: ok. 85 min</item>
       </timing>
       <tips>
         <item>Najlepiej smakują z ziemniakami lub purée.</item>
@@ -8370,13 +8310,11 @@
         <step nr="3">Uformować kotlety.</step>
         <step nr="4">Smażyć na średnim ogniu na złoty kolor z obu stron.</step>
         <step nr="5">Krótko odstawić i podawać na ciepło lub zimno.</step>
-        <step nr="6">Przed podaniem odstawić na 2 minuty i podawać na ciepło albo na zimno.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
         <item>Smażenie: ok. 15 minut</item>
         <item>Łącznie: ok. 30 minut</item>
-        <item>łącznie: ok. 35–40 min</item>
       </timing>
       <tips>
         <item>Świetne także na zimno do chleba.</item>
@@ -8451,13 +8389,11 @@
         <step nr="3">Na sos zrobić jasną zasmażkę z masła i mąki, rozprowadzić bulionem.</step>
         <step nr="4">Dodać śmietankę i kapary, doprawić cytryną, solą i pieprzem.</step>
         <step nr="5">Włożyć klopsy do sosu i chwilę podgrzać.</step>
-        <step nr="6">Podawać z ziemniakami albo puree.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 20 minut</item>
         <item>Gotowanie: ok. 20 minut</item>
         <item>Łącznie: ok. 40 minut</item>
-        <item>łącznie: ok. 40 min</item>
       </timing>
       <tips>
         <item>Podawać najlepiej z ziemniakami.</item>
@@ -8526,13 +8462,11 @@
         <step nr="3">Gotować sos kilka minut, aż stanie się kremowy.</step>
         <step nr="4">Doprawić musztardą, cukrem, solą i pieprzem.</step>
         <step nr="5">Podawać jajka w sosie z ziemniakami.</step>
-        <step nr="6">Podawać z gotowanymi ziemniakami albo ziemniakami w mundurkach.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 10 minut</item>
         <item>Gotowanie: ok. 15 minut</item>
         <item>Łącznie: ok. 25 minut</item>
-        <item>łącznie: ok. 25 min</item>
       </timing>
       <tips>
         <item>Odrobina gałki muszkatołowej dobrze robi sosowi.</item>
@@ -8605,13 +8539,11 @@
         <step nr="3">Gotować 45–60 minut, aż groch zmięknie.</step>
         <step nr="4">Zmiksować częściowo lub zostawić bardziej treściwą.</step>
         <step nr="5">Dodać kiełbasę i chwilę podgrzać.</step>
-        <step nr="6">Doprawić majerankiem, solą i pieprzem i krótko odstawić.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
         <item>Gotowanie: ok. 60 minut</item>
         <item>Łącznie: ok. 75 minut</item>
-        <item>łącznie: ok. 75 min</item>
       </timing>
       <tips>
         <item>Ze słoniną albo boczkiem jest jeszcze bardziej konkretna.</item>
@@ -8685,14 +8617,11 @@
         <step nr="3">Na sos zeszklić cebulę i pieczarki.</step>
         <step nr="4">Dolać bulion, śmietankę i musztardę, chwilę gotować.</step>
         <step nr="5">Podawać z sosem i ziemniakami.</step>
-        <step nr="6">Podawać sznycle z sosem i smażonymi ziemniakami.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
         <item>Smażenie/gotowanie: ok. 25 minut</item>
         <item>Łącznie: ok. 40 minut</item>
-        <item>sos: ok. 8 min</item>
-        <item>łącznie: ok. 40 min</item>
       </timing>
       <tips>
         <item>Natka dobrze pasuje do sosu.</item>
@@ -8763,13 +8692,11 @@
         <step nr="3">Zalać winem i bulionem, doprawić.</step>
         <step nr="4">Dusić pod przykryciem 1,5–2 godziny.</step>
         <step nr="5">Na końcu doprawić i ewentualnie zredukować sos.</step>
-        <step nr="6">Doprawić sos i według uznania jeszcze trochę go zredukować bez przykrycia.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 20 minut</item>
         <item>Duszenie: ok. 2 godziny</item>
         <item>Łącznie: ok. 2 godziny 20 minut</item>
-        <item>łącznie: ok. 2 godz. 20 min</item>
       </timing>
       <tips>
         <item>Pasuje z kluskami, ziemniakami albo makaronem.</item>
@@ -8839,14 +8766,11 @@
         <step nr="3">Doprawić kminkiem i pieprzem, polać olejem.</step>
         <step nr="4">Piec około 90 minut w 180 °C, podlewając bulionem.</step>
         <step nr="5">Na końcu zwiększyć temperaturę lub włączyć grill, aby skórka stała się chrupiąca.</step>
-        <step nr="6">Przed krojeniem odstawić pieczeń na 10 minut i osobno doprawić sos.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 20 minut</item>
         <item>Pieczenie: ok. 90 minut</item>
         <item>Łącznie: ok. 110 minut</item>
-        <item>czas odpoczynku: 10 min</item>
-        <item>łącznie: ok. 2 godziny</item>
       </timing>
       <tips>
         <item>Pasuje z kluskami, modrą kapustą albo kiszoną kapustą.</item>
@@ -9197,13 +9121,11 @@
         <step nr="3">Pokroić paprykę.</step>
         <step nr="4">Wymieszać majonez, jogurt i musztardę.</step>
         <step nr="5">Połączyć wszystko i doprawić.</step>
-        <step nr="6">Według uznania dodać dymkę albo pietruszkę.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
         <item>Łącznie: ok. 25 minut</item>
         <item>Chłodzenie opcjonalnie: ok. 20 minut</item>
-        <item>łącznie: ok. 35–40 min</item>
       </timing>
       <tips>
         <item>Z dymką jest świeższa.</item>
@@ -9900,7 +9822,6 @@
   <recipe id="131">
     <name>Closed Cheeseburger Classic</name>
     <intro lang="de">Ein einfacher viral-inspirierter Closed Cheeseburger aus fertigem Pizzateig. Gefüllt mit würzigem Rinderhack, Cheddar, Zwiebeln und Gewürzgurken, außen goldbraun mit Eigelb und Sesam gebacken.</intro>
-    <intro lang="pl">Prosty, viralowy closed cheeseburger z gotowego ciasta do pizzy. W środku ma dobrze doprawioną wołowinę, cheddar, cebulę i ogórki konserwowe, a z wierzchu jest złocisty po upieczeniu z żółtkiem i sezamem.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Fingerfood / Fast Food aus dem Ofen</category>
     <image src="images/rezeptbild_131.png" alt="Closed Cheeseburger Classic" />
@@ -9945,57 +9866,10 @@
       <item>Dazu passen Pommes, Coleslaw oder ein einfacher Gurkensalat.</item>
     </tips>
     <rating>9/10 – saftig, deftig und perfekt als Ofen-Fingerfood.</rating>
-    <translation lang="pl">
-      <name>Closed Cheeseburger Classic</name>
-      <persons>4 osoby</persons>
-      <category>Dania z piekarnika / Finger food / Fast food z piekarnika</category>
-      <ingredients>
-        <item>2 rolki świeżego ciasta do pizzy z lodówki</item>
-        <item>500 g mielonej wołowiny</item>
-        <item>1 duża cebula</item>
-        <item>150 g cheddara, startego lub w małych kawałkach</item>
-        <item>4–5 ogórków konserwowych, drobno pokrojonych w kostkę</item>
-        <item>2 EL ketchup</item>
-        <item>1 EL musztardy</item>
-        <item>1 EL zalewy z ogórków konserwowych lub 1 TL zalewy, opcjonalnie</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 żółtko</item>
-        <item>1 EL mleka lub śmietany</item>
-        <item>1–2 EL sezamu</item>
-        <item>trochę oleju do smażenia</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Cebulę drobno pokroić w kostkę i zeszklić na niewielkiej ilości oleju.</step>
-        <step nr="2">Dodać mieloną wołowinę i smażyć, aż mięso się rozpadnie i dobrze się zrumieni.</step>
-        <step nr="3">Doprawić solą, pieprzem i słodką papryką.</step>
-        <step nr="4">Wmieszać ketchup, musztardę i opcjonalnie trochę zalewy z ogórków.</step>
-        <step nr="5">Nadzienie zdjąć z ognia i lekko przestudzić.</step>
-        <step nr="6">Dodać ogórki konserwowe i cheddar albo wkładać je osobno podczas nadziewania.</step>
-        <step nr="7">Ciasto do pizzy podzielić na 8 równych części.</step>
-        <step nr="8">Na środek każdej porcji nałożyć trochę farszu, złożyć ciasto i bardzo dobrze zlepić brzegi.</step>
-        <step nr="9">Ułożyć na blasze z łączeniem do dołu.</step>
-        <step nr="10">Wymieszać żółtko z mlekiem, posmarować wierzch i posypać sezamem.</step>
-        <step nr="11">Piec w nagrzanym piekarniku w 190 °C góra/dół przez około 20–25 minut, aż będą złocistobrązowe.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas pieczenia: ok. 20–25 min</item>
-        <item>łącznie: ok. 45 min</item>
-      </timing>
-      <tips>
-        <item>Nadzienie nie powinno być zbyt wilgotne, inaczej ciasto zmięknie.</item>
-        <item>Ciasto trzeba naprawdę dobrze zamknąć, żeby ser i sos nie wypłynęły.</item>
-        <item>Pasują do tego frytki, coleslaw albo prosta sałatka z ogórka.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="132">
     <name>Closed Bacon Cheeseburger</name>
     <intro lang="de">Die herzhafte Variante mit knusprigem Bacon, würzigem Rinderhack und geschmolzenem Cheddar. Perfekt als deftiges Ofengericht oder Partyfood.</intro>
-    <intro lang="pl">Bardziej treściwa wersja z chrupiącym boczkiem, doprawioną wołowiną i roztopionym cheddarem. Bardzo dobrze sprawdza się jako sycące danie z piekarnika albo imprezowa przekąska.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Partyfood / Fingerfood</category>
     <image src="images/rezeptbild_132.png" alt="Closed Bacon Cheeseburger" />
@@ -10039,56 +9913,10 @@
       <item>Ideal für Gäste oder als Snack am Abend.</item>
     </tips>
     <rating>9/10 – besonders herzhaft und perfekt für Bacon-Fans.</rating>
-    <translation lang="pl">
-      <name>Closed Bacon Cheeseburger</name>
-      <persons>4 osoby</persons>
-      <category>Dania z piekarnika / Jedzenie imprezowe / Finger food</category>
-      <ingredients>
-        <item>2 rolki świeżego ciasta do pizzy</item>
-        <item>500 g mielonej wołowiny</item>
-        <item>150 g boczku</item>
-        <item>1 duża cebula</item>
-        <item>150 g cheddara</item>
-        <item>2 EL ketchup</item>
-        <item>1 TL musztardy</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 TL papryki w proszku</item>
-        <item>1 żółtko</item>
-        <item>1 EL mleka</item>
-        <item>1–2 EL sezamu</item>
-        <item>trochę oleju do smażenia</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Boczek pokroić na małe kawałki i wytopić na chrupko na patelni.</step>
-        <step nr="2">Wyjąć boczek, a cebulę podsmażyć na tłuszczu z boczku lub na niewielkiej ilości oleju.</step>
-        <step nr="3">Dodać mieloną wołowinę i mocno obsmażyć.</step>
-        <step nr="4">Doprawić solą, pieprzem i papryką w proszku.</step>
-        <step nr="5">Wmieszać ketchup i musztardę, a następnie ponownie dodać boczek.</step>
-        <step nr="6">Farsz lekko przestudzić.</step>
-        <step nr="7">Ciasto do pizzy podzielić na 8 części.</step>
-        <step nr="8">Nadziać mieszanką mięsną i cheddarem.</step>
-        <step nr="9">Dobrze zlepić, ułożyć na blasze z łączeniem do dołu.</step>
-        <step nr="10">Posmarować mieszanką żółtka i mleka, posypać sezamem.</step>
-        <step nr="11">Piec w 190 °C góra/dół przez około 20–25 minut.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas pieczenia: ok. 20–25 min</item>
-        <item>łącznie: ok. 45 min</item>
-      </timing>
-      <tips>
-        <item>Kto chce, może dodać drobno posiekane ogórki konserwowe.</item>
-        <item>Dla jeszcze bardziej burgerowego smaku można dodać prażoną cebulkę.</item>
-        <item>Idealne dla gości albo jako wieczorna przekąska.</item>
-      </tips>
-      <rating>8,9/10</rating>
-    </translation>
   </recipe>
   <recipe id="133">
     <name>Cheeseburger Roll aus Pizzateig</name>
     <intro lang="de">Die große Party-Version: eine gefüllte Cheeseburger-Rolle aus Pizzateig, die nach dem Backen in Scheiben geschnitten wird. Ideal für Gäste, gemütliche Abende und alles, was unkompliziert satt und glücklich macht.</intro>
-    <intro lang="pl">Duża wersja imprezowa: rolowany cheeseburger z ciasta do pizzy, który po upieczeniu kroi się w plastry. Świetny dla gości, na leniwe wieczory i wszędzie tam, gdzie ma być prosto, sycąco i naprawdę smacznie.</intro>
     <persons>4–6 Personen</persons>
     <category>Partyfood / Ofengerichte / Snack</category>
     <image src="images/rezeptbild_133.png" alt="Cheeseburger Roll aus Pizzateig" />
@@ -10134,58 +9962,10 @@
       <item>Sehr gut für Partys, weil sich die Rolle in Scheiben servieren lässt.</item>
     </tips>
     <rating>9/10 – ideal für Gäste und super zum Teilen.</rating>
-    <translation lang="pl">
-      <name>Cheeseburger Roll z ciasta do pizzy</name>
-      <persons>4 osoby</persons>
-      <category>Jedzenie imprezowe / Dania z piekarnika / Przekąski</category>
-      <ingredients>
-        <item>2 rolki świeżego ciasta do pizzy</item>
-        <item>600 g mielonej wołowiny</item>
-        <item>1 duża cebula</item>
-        <item>180 g cheddara</item>
-        <item>5 ogórków konserwowych, drobno posiekanych</item>
-        <item>3 EL ketchup</item>
-        <item>1 EL musztardy</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 TL papryki w proszku</item>
-        <item>1 żółtko</item>
-        <item>1 EL mleka</item>
-        <item>1–2 EL sezamu</item>
-        <item>trochę oleju</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Cebulę drobno pokroić i podsmażyć.</step>
-        <step nr="2">Dodać mieloną wołowinę i mocno obsmażyć, aż mięso się rozpadnie.</step>
-        <step nr="3">Doprawić solą, pieprzem i papryką w proszku.</step>
-        <step nr="4">Wmieszać ketchup, musztardę i ogórki konserwowe.</step>
-        <step nr="5">Masę krótko przestudzić.</step>
-        <step nr="6">Obie rolki ciasta rozłożyć obok siebie albo lekko na siebie nałożyć, aby powstał większy prostokąt.</step>
-        <step nr="7">Nadzienie rozłożyć wzdłuż środka, zostawiając wolne brzegi.</step>
-        <step nr="8">Posypać cheddarem.</step>
-        <step nr="9">Zwinąć ciasto w roladę i dobrze skleić końce.</step>
-        <step nr="10">Ułożyć na blasze z łączeniem do dołu.</step>
-        <step nr="11">Posmarować mieszanką żółtka i mleka i posypać sezamem.</step>
-        <step nr="12">Piec w 190 °C góra/dół przez około 25–30 minut, aż rolada będzie złocista.</step>
-        <step nr="13">Przed krojeniem odstawić na 5–10 minut.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas pieczenia: ok. 25–30 min</item>
-        <item>łącznie: ok. 50 min</item>
-      </timing>
-      <tips>
-        <item>Przed krojeniem zostawić roladę na chwilę, żeby była stabilniejsza.</item>
-        <item>Pasuje do niej sos burgerowy, dip czosnkowy albo surówka z kapusty.</item>
-        <item>Bardzo dobre rozwiązanie na imprezę, bo rolada dobrze podaje się w plastrach.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="134">
     <name>Closed Cheeseburger Gigi Style</name>
     <intro lang="de">Die besondere Version mit cremiger Burgersauce, roten Zwiebeln und extra würzigem Käse. Etwas intensiver, saftiger und moderner im Geschmack.</intro>
-    <intro lang="pl">Bardziej wyjątkowa wersja z kremowym sosem burgerowym, czerwoną cebulą i dwoma serami. Smak jest intensywniejszy, bardziej soczysty i nowocześniejszy, ale całość nadal pozostaje bardzo prosta do zrobienia.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Fingerfood / Burger-Special</category>
     <image src="images/rezeptbild_134.png" alt="Closed Cheeseburger Gigi Style" />
@@ -10232,59 +10012,10 @@
       <item>Diese Variante passt gut zu Wedges oder einem frischen Krautsalat.</item>
     </tips>
     <rating>9/10 – modern, würzig und besonders saftig.</rating>
-    <translation lang="pl">
-      <name>Closed Cheeseburger Gigi Style</name>
-      <persons>4 osoby</persons>
-      <category>Dania z piekarnika / Finger food / Burger special</category>
-      <ingredients>
-        <item>2 rolki świeżego ciasta do pizzy</item>
-        <item>500 g mielonej wołowiny</item>
-        <item>1 czerwona cebula</item>
-        <item>100 g cheddara</item>
-        <item>100 g goudy lub startej mozzarelli</item>
-        <item>4 ogórki konserwowe, drobno pokrojone w kostkę</item>
-        <item>2 EL majonezu</item>
-        <item>1 EL ketchup</item>
-        <item>1 TL musztardy</item>
-        <item>1 TL zalewy z ogórków</item>
-        <item>1 TL papryki w proszku</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 żółtko</item>
-        <item>1 EL mleka</item>
-        <item>1–2 EL sezamu</item>
-        <item>trochę oleju</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Czerwoną cebulę drobno pokroić w kostkę.</step>
-        <step nr="2">Mieloną wołowinę mocno obsmażyć na niewielkiej ilości oleju.</step>
-        <step nr="3">Krótko podsmażyć razem cebulę.</step>
-        <step nr="4">Doprawić solą, pieprzem i papryką w proszku.</step>
-        <step nr="5">Na sos wymieszać majonez, ketchup, musztardę i zalewę z ogórków.</step>
-        <step nr="6">Masę mięsną lekko przestudzić.</step>
-        <step nr="7">Ciasto do pizzy podzielić na 8 części.</step>
-        <step nr="8">Na każdą część nałożyć trochę mięsa, trochę sosu, ogórki konserwowe i oba sery.</step>
-        <step nr="9">Dobrze zlepić ciasto i ułożyć na blasze z łączeniem do dołu.</step>
-        <step nr="10">Posmarować mieszanką żółtka i mleka i posypać sezamem.</step>
-        <step nr="11">Piec w 190 °C góra/dół przez 20–25 minut, aż wierzch będzie złocisty.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas pieczenia: ok. 20–25 min</item>
-        <item>łącznie: ok. 45 min</item>
-      </timing>
-      <tips>
-        <item>Sosu nie dawaj zbyt dużo, żeby nadzienie nie zrobiło się zbyt mokre.</item>
-        <item>Gouda daje pełniejszy smak, a mozzarella bardziej ciągnącą strukturę.</item>
-        <item>Ta wersja bardzo dobrze pasuje do wedgesów albo świeżej surówki z kapusty.</item>
-      </tips>
-      <rating>8,9/10</rating>
-    </translation>
   </recipe>
   <recipe id="135">
     <name>Onkel Michas scharfe Hühnerbrüste</name>
     <intro lang="de">Ein einfaches, würziges Ofengericht mit marinierten Hühnerbrüsten, buntem Paprikamix und einer goldenen Käsekruste. Die Sojasaucen-Marinade sorgt für viel Geschmack, optional mit Chili für extra Schärfe.</intro>
-    <intro lang="pl">Proste, wyraziste danie z piekarnika z marynowanymi piersiami z kurczaka, kolorową papryką i złotą warstwą sera. Marynata z sosem sojowym daje dużo smaku, a chili można dodać według własnej ostrości.</intro>
     <persons>2 Personen</persons>
     <category>Ofengerichte / Hähnchen / Alltagsküche</category>
     <image src="images/rezeptbild_135.png" alt="Onkel Michas scharfe Hühnerbrüste" />
@@ -10324,52 +10055,10 @@
       <item>Mit Cheddar wird es kräftiger, mit Gouda milder.</item>
     </tips>
     <rating>9/10 – einfach, würzig und sehr gelungen.</rating>
-    <translation lang="pl">
-      <name>Pikantne piersi z kurczaka wuja Michy</name>
-      <persons>2 osoby</persons>
-      <category>Dania z piekarnika / Kurczak / Kuchnia codzienna</category>
-      <ingredients>
-        <item>2 piersi z kurczaka</item>
-        <item>100 ml sosu sojowego</item>
-        <item>2 ząbki czosnku</item>
-        <item>3 papryki w różnych kolorach</item>
-        <item>150–200 g startego sera</item>
-        <item>1 świeża chili lub 1/2–1 TL chili w proszku, opcjonalnie</item>
-        <item>pieprz</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Piersi z kurczaka włożyć do miski.</step>
-        <step nr="2">Sos sojowy wymieszać z drobno posiekanym czosnkiem i zalać nim mięso.</step>
-        <step nr="3">Mięso marynować około 30 minut.</step>
-        <step nr="4">Paprykę pokroić w paski albo większe kawałki.</step>
-        <step nr="5">Piekarnik nagrzać do 180 °C termoobieg lub 200 °C góra/dół.</step>
-        <step nr="6">Piersi z kurczaka przełożyć do naczynia do zapiekania.</step>
-        <step nr="7">Wlać do formy resztę marynaty.</step>
-        <step nr="8">Paprykę rozłożyć wokół mięsa.</step>
-        <step nr="9">Opcjonalnie dodać chili.</step>
-        <step nr="10">Piec 30 minut w piekarniku.</step>
-        <step nr="11">Posypać serem.</step>
-        <step nr="12">Piec kolejne 15 minut, aż ser się ładnie zrumieni.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 10 min</item>
-        <item>marynowanie: ok. 30 min</item>
-        <item>czas pieczenia: ok. 45 min</item>
-        <item>łącznie: ok. 55 min plus czas marynowania</item>
-      </timing>
-      <tips>
-        <item>W łagodniejszej wersji po prostu pomiń chili.</item>
-        <item>Bardzo dobrze pasuje do ryżu, bagietki albo ziemniaków z piekarnika.</item>
-        <item>Jeśli chcesz więcej sosu, dodaj trochę śmietany albo crème fraîche.</item>
-        <item>Z cheddarem wyjdzie mocniej, z goudą łagodniej.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="136">
     <name>Rolfs Stratzi</name>
     <intro lang="de">Ein klassisches, herzhaftes Schmorgericht mit Rouladenfleisch, Speck und Zwiebeln. Durch die lange Garzeit und das Aufkochen am nächsten Tag entsteht ein besonders intensiver Geschmack – echte Hausmannskost.</intro>
-    <intro lang="pl">Klasyczne, treściwe danie duszone z mięsem na zrazy, boczkiem i cebulą. Długi czas przygotowania i ponowne podgrzanie następnego dnia dają tutaj naprawdę głęboki, domowy smak.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Schmorgerichte / Hausmannskost</category>
     <image src="images/rezeptbild_136.png" alt="Rolfs Stratzi" />
@@ -10407,50 +10096,10 @@
       <item>Im Ofen gart es ruhiger und gleichmäßiger als auf offener Flamme.</item>
     </tips>
     <rating>9/10 – rustikal, tief im Geschmack und ideal zum Vorbereiten.</rating>
-    <translation lang="pl">
-      <name>Stratzi Rolfa</name>
-      <persons>4 osoby</persons>
-      <category>Dania z piekarnika / Dania duszone / Kuchnia domowa</category>
-      <ingredients>
-        <item>mięso na zrazy</item>
-        <item>cebule</item>
-        <item>boczek wędzony w kostce</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>trochę mąki</item>
-        <item>trochę tłuszczu do obsmażenia</item>
-        <item>1 puszka pieczarek</item>
-        <item>500 ml śmietany</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mięso na zrazy pokroić w cienkie paski.</step>
-        <step nr="2">Boczek i cebulę podsmażyć na patelni, aż nabiorą koloru.</step>
-        <step nr="3">Mięso i mieszankę cebulowo-bekonową układać warstwami w żaroodpornej brytfannie albo ciężkim garnku.</step>
-        <step nr="4">Każdą warstwę doprawić solą i pieprzem oraz lekko oprószyć mąką.</step>
-        <step nr="5">Pod przykryciem dusić na najmniejszym ogniu albo w piekarniku nagrzanym do 150 °C góra/dół przez około 3 godziny.</step>
-        <step nr="6">Następnego dnia całość ponownie zagotować, mieszając.</step>
-        <step nr="7">Dodać pieczarki i śmietanę, a następnie podgrzewać łagodnie przez 10 minut.</step>
-        <step nr="8">Podawać z ziemniakami, makaronem albo chlebem.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>powolne duszenie: ok. 3 godziny na małym ogniu albo w 150 °C góra/dół</item>
-        <item>czas odpoczynku: przez noc</item>
-        <item>dokończenie następnego dnia: ok. 15 min</item>
-        <item>łącznie: 2 dni</item>
-      </timing>
-      <tips>
-        <item>Następnego dnia danie smakuje wyraźnie intensywniej.</item>
-        <item>Zamiast pieczarek z puszki można użyć świeżych pieczarek.</item>
-        <item>W piekarniku danie dochodzi spokojniej i równiej niż na otwartym ogniu.</item>
-      </tips>
-      <rating>9,0/10</rating>
-    </translation>
   </recipe>
   <recipe id="137">
     <name>Schaumburger Hochzeitssuppe</name>
     <intro lang="de">Diese Hochzeitssuppe ist eine echte regionale Festtagssuppe mit ruhiger Tiefe. Brühe, Einlage und Fleischkomponenten greifen sauber ineinander, sodass am Ende genau das entsteht, was man sich von so einem Klassiker wünscht: etwas Feierliches, Bodenständiges und sehr Warmes für den Tisch.</intro>
-    <intro lang="pl">Ta zupa weselna to prawdziwa regionalna zupa odświętna z dużą głębią. Bulion, wkładka i mięso dobrze się tu łączą, dzięki czemu powstaje dokładnie to, czego oczekuje się od takiego klasyka: coś świątecznego, swojskiego i bardzo kojącego.</intro>
     <persons>4 Personen</persons>
     <category>Wölpinghausener Spezialitäten / Suppen</category>
     <image src="images/rezeptbild_137.png" alt="Schaumburger Hochzeitssuppe" />
@@ -10490,52 +10139,10 @@
       <item>Sehr gut als Vorsuppe für Feiertage, Familienessen oder Wölpinghausener Spezialitätenabende.</item>
     </tips>
     <rating>9/10 – festlich, klassisch und regional sehr stimmig.</rating>
-    <translation lang="pl">
-      <name>Schaumburska zupa weselna</name>
-      <persons>6 osób</persons>
-      <category>Specjały z Wölpinghausen / Zupy</category>
-      <ingredients>
-        <item>1,5 l mocnego bulionu wołowego lub drobiowego</item>
-        <item>300 g mięsa rosołowego lub ugotowanej wołowiny</item>
-        <item>2 marchewki</item>
-        <item>1 kawałek selera</item>
-        <item>1 por</item>
-        <item>100 g kawałków szparagów, opcjonalnie</item>
-        <item>100 g lanych kostek jajecznych</item>
-        <item>8–10 małych kluseczek lub kluseczek ze szpikiem</item>
-        <item>100 g cienkiego makaronu do zupy</item>
-        <item>1 EL posiekanej pietruszki</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>opcjonalnie: trochę gałki muszkatołowej</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Bulion podgrzać w dużym garnku, a mięso w razie potrzeby pokroić na małe kawałki.</step>
-        <step nr="2">Marchew, seler i por oczyścić, drobno pokroić i gotować kilka minut w bulionie na małym ogniu.</step>
-        <step nr="3">Makaron ugotować osobno albo bezpośrednio w zupie do miękkości, w zależności od tego, jak klarowny ma pozostać bulion.</step>
-        <step nr="4">Lany wkład jajeczny pokroić w kostkę i wraz z kluseczkami dodać do gorącej, ale już nie mocno gotującej się zupy.</step>
-        <step nr="5">Dodać mięso oraz opcjonalnie szparagi i pozostawić wszystko jeszcze kilka minut do naciągnięcia.</step>
-        <step nr="6">Doprawić solą, pieprzem i odrobiną gałki muszkatołowej.</step>
-        <step nr="7">Przed podaniem posypać pietruszką i podawać gorącą w głębokich talerzach albo filiżankach.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas gotowania: ok. 30–40 min</item>
-        <item>łącznie: ok. 50–60 min</item>
-        <item>na uroczysty obiad dobrze dać jej jeszcze 30 minut spokojnego dojścia przed podaniem</item>
-      </timing>
-      <tips>
-        <item>Po dodaniu wkładki jajecznej i kluseczek zupy nie gotować już gwałtownie, żeby wszystko zachowało formę.</item>
-        <item>Jeśli chcesz bardzo klarowną zupę weselną, makaron ugotuj osobno i dodaj dopiero przy podaniu.</item>
-        <item>Bardzo dobra jako zupa na święta, rodzinny obiad albo wieczór ze specjałami z Wölpinghausen.</item>
-      </tips>
-      <rating>9,0/10</rating>
-    </translation>
   </recipe>
   <recipe id="138">
     <name>Schaumburger Zungenragout</name>
     <intro lang="de">Zungenragout ist kein lautes Rezept, aber genau darin liegt sein Reiz. Wenn es sauber gekocht und mit einer runden Sauce serviert wird, wirkt es klassisch, besonders und deutlich feiner, als viele zuerst erwarten.</intro>
-    <intro lang="pl">Ragout z języka nie jest głośnym przepisem, ale właśnie na tym polega jego siła. Jeśli jest dobrze ugotowane i podane z równym, gładkim sosem, potrafi być klasyczne, wyjątkowe i znacznie delikatniejsze, niż wielu się spodziewa.</intro>
     <persons>4 Personen</persons>
     <category>Wölpinghausener Spezialitäten / Klassiker</category>
     <image src="images/rezeptbild_138.png" alt="Schaumburger Zungenragout" />
@@ -10576,53 +10183,10 @@
       <item>Besonders stimmig mit Salzkartoffeln oder Kartoffelpüree.</item>
     </tips>
     <rating>8,5/10 – traditionell, kräftig und sehr regional.</rating>
-    <translation lang="pl">
-      <name>Schaumburskie ragout z języka</name>
-      <persons>4 osoby</persons>
-      <category>Specjały z Wölpinghausen / Klasyki</category>
-      <ingredients>
-        <item>800 g ugotowanego języka wołowego lub cielęcego</item>
-        <item>1 cebula</item>
-        <item>1 marchew</item>
-        <item>1 mały kawałek selera</item>
-        <item>2 EL masła</item>
-        <item>2 EL mąki</item>
-        <item>200 ml bulionu z gotowania albo bulionu wołowego</item>
-        <item>100 ml śmietany</item>
-        <item>1 EL soku z cytryny</item>
-        <item>1 EL kaparów, opcjonalnie</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>opcjonalnie: trochę sosu Worcestershire albo gałki muszkatołowej</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Język pokroić w małe plastry albo kostkę i w razie potrzeby oczyścić z resztek skóry.</step>
-        <step nr="2">Cebulę, marchew i seler drobno pokroić w kostkę i powoli zeszklić na maśle.</step>
-        <step nr="3">Posypać mąką i chwilę podsmażyć, nie rumieniąc jej.</step>
-        <step nr="4">Zalać bulionem lub fondem i mieszając zagotować na gładki sos.</step>
-        <step nr="5">Wmieszać śmietanę i gotować sos jeszcze kilka minut na małym ogniu.</step>
-        <step nr="6">Dodać język oraz opcjonalnie kapary i pozostawić wszystko do naciągnięcia na małym ogniu.</step>
-        <step nr="7">Doprawić sokiem z cytryny, solą, pieprzem i w razie potrzeby odrobiną Worcestershire.</step>
-        <step nr="8">Podawać z ziemniakami, ryżem albo maślanymi kluseczkami.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas gotowania i dochodzenia: ok. 20 min</item>
-        <item>łącznie: ok. 40 min</item>
-        <item>jako niedzielne danie bardzo dobrze łączy się z ziemniaczaną przystawką</item>
-      </timing>
-      <tips>
-        <item>Sos gotować tylko delikatnie, żeby język pozostał miękki.</item>
-        <item>Kapary dają świeżość i klasyczny charakter ragout, ale można je pominąć.</item>
-        <item>Szczególnie dobrze pasuje do gotowanych ziemniaków albo puree.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="139">
     <name>Schaumburger Dreierleipudding</name>
     <intro lang="de">Dreierleipudding lebt davon, dass mehrere einfache Komponenten zusammen etwas Besonderes ergeben. Genau das macht ihn so passend für traditionelle Rezeptseiten: bodenständig, süß, etwas nostalgisch und trotzdem richtig schön auf dem Tisch.</intro>
-    <intro lang="pl">Ten pudding żyje z tego, że z kilku prostych warstw powstaje coś wyjątkowego. Właśnie dlatego tak dobrze pasuje do tradycyjnej strony z przepisami: jest swojski, słodki, trochę nostalgiczny i bardzo ładnie prezentuje się na stole.</intro>
     <persons>6 Personen</persons>
     <category>Wölpinghausener Spezialitäten / Dessert</category>
     <image src="images/rezeptbild_139.png" alt="Schaumburger Dreierleipudding" />
@@ -10656,46 +10220,10 @@
       <item>Für den Foodblog ruhig in Gläsern schichten, dann kommt die Dreierlei-Idee besser rüber.</item>
     </tips>
     <rating>8,5/10 – klassisch, süß und schön nostalgisch.</rating>
-    <translation lang="pl">
-      <name>Schaumburski pudding trzech smaków</name>
-      <persons>6 osób</persons>
-      <category>Specjały z Wölpinghausen / Desery</category>
-      <ingredients>
-        <item>500 ml mleka</item>
-        <item>1 opakowanie proszku na budyń waniliowy</item>
-        <item>1 opakowanie proszku na budyń czekoladowy</item>
-        <item>2–3 EL cukru</item>
-        <item>200 ml śmietany</item>
-        <item>1 EL cukru do śmietany</item>
-        <item>opcjonalnie: trochę cynamonu</item>
-        <item>opcjonalnie: czerwona galaretka owocowa lub kompot do podania</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Ugotować budyń waniliowy i czekoladowy zgodnie z instrukcją na opakowaniu, używając mleka i cukru.</step>
-        <step nr="2">Przygotować formę albo kilka szklanek i najpierw wlać warstwę budyniu waniliowego.</step>
-        <step nr="3">Następnie dodać budyń czekoladowy i zostawić obie warstwy do lekkiego przestudzenia.</step>
-        <step nr="4">Śmietanę ubić z cukrem na sztywno i ułożyć jako trzecią warstwę albo jako czapkę na budyniu.</step>
-        <step nr="5">Schłodzić co najmniej 2 godziny, aby warstwy dobrze się związały.</step>
-        <step nr="6">Przed podaniem według uznania dodać trochę cynamonu albo kompot owocowy.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 15 min</item>
-        <item>czas gotowania: ok. 10 min</item>
-        <item>czas chłodzenia: co najmniej 2 godziny</item>
-        <item>najlepiej przygotować kilka godzin wcześniej albo dzień wcześniej</item>
-      </timing>
-      <tips>
-        <item>Drugą warstwę nakładać dopiero wtedy, gdy pierwsza lekko stężeje, wtedy deser zostanie czystszy.</item>
-        <item>Z czerwonymi owocami deser jest świeższy i wygląda znacznie ładniej.</item>
-        <item>Do prezentacji na stronie warto układać warstwy w szklankach, wtedy pomysł „trzy w jednym” jest lepiej widoczny.</item>
-      </tips>
-      <rating>8,7/10</rating>
-    </translation>
   </recipe>
   <recipe id="140">
     <name>Bottermelksanballerse</name>
     <intro lang="de">Bottermelksanballerse sind genau die Art regionaler Süßspeise, die man heute viel zu selten sieht. Sie wirken schlicht, haben aber eine angenehme Frische und passen perfekt in einen Wölpinghausen-Block mit echten Dorf- und Familienrezepten.</intro>
-    <intro lang="pl">Bottermelksanballerse to właśnie taki regionalny deser, który dziś widzi się za rzadko. Wygląda prosto, ale ma przyjemną świeżość i idealnie pasuje do bloku Wölpinghausen z prawdziwymi wiejskimi i rodzinnymi przepisami.</intro>
     <persons>4 Personen</persons>
     <category>Wölpinghausener Spezialitäten / Süßspeisen</category>
     <image src="images/rezeptbild_140.png" alt="Bottermelksanballerse" />
@@ -10729,46 +10257,10 @@
       <item>Ein schönes Rezept für die Kategorie Wölpinghausener Spezialitäten, weil es regionalen Charakter zeigt.</item>
     </tips>
     <rating>8/10 – einfach, regional und charmant bodenständig.</rating>
-    <translation lang="pl">
-      <name>Bottermelksanballerse</name>
-      <persons>4 osoby</persons>
-      <category>Specjały z Wölpinghausen / Słodkie dania</category>
-      <ingredients>
-        <item>500 ml maślanki</item>
-        <item>150 g mąki</item>
-        <item>2 jajka</item>
-        <item>40 g cukru</item>
-        <item>1 opakowanie cukru wanilinowego</item>
-        <item>1 szczypta soli</item>
-        <item>masło albo olej do smażenia</item>
-        <item>opcjonalnie: cynamon z cukrem do posypania</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mąkę, jajka, cukier, cukier wanilinowy i sól wymieszać na gładkie ciasto.</step>
-        <step nr="2">Stopniowo dodawać maślankę, aż powstanie kremowe, lekko płynne ciasto.</step>
-        <step nr="3">Rozgrzać patelnię z odrobiną masła albo oleju.</step>
-        <step nr="4">Nakładać porcje ciasta i smażyć małe placuszki albo grubsze racuszki.</step>
-        <step nr="5">Usmażyć z obu stron na złoto i krótko odsączyć na ręczniku papierowym.</step>
-        <step nr="6">Podawać na ciepło i według uznania posypać cynamonem z cukrem.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 10 min</item>
-        <item>czas smażenia: ok. 15–20 min</item>
-        <item>łącznie: ok. 30 min</item>
-        <item>najlepiej podawać świeże i jeszcze lekko ciepłe</item>
-      </timing>
-      <tips>
-        <item>Lepiej smażyć na średnim ogniu, żeby placuszki nie były zbyt ciemne z zewnątrz i surowe w środku.</item>
-        <item>Z musem jabłkowym albo czerwoną galaretką deser staje się jeszcze pełniejszy.</item>
-        <item>Bardzo dobry przepis do kategorii specjałów z Wölpinghausen, bo mocno pokazuje regionalny charakter.</item>
-      </tips>
-      <rating>8,7/10</rating>
-    </translation>
   </recipe>
   <recipe id="141">
     <name>Grünkohl mit Bregenwurst, Kassler und Kartoffeln</name>
     <intro lang="de">So muss ein echter Grünkohlteller aussehen: kräftig, deftig und ohne Schnickschnack. Bregenwurst, Kassler und Kartoffeln bringen genau die Mischung aus Würze, Sättigung und Wintergefühl, die dieses Gericht seit Jahren so beliebt macht.</intro>
-    <intro lang="pl">To bardzo mocne, północnoniemieckie połączenie, które dobrze pasuje też do bloku Wölpinghausen. Jarmuż, kassler i bregenwurst dają razem dokładnie ten sycący, zimowy talerz, którego oczekuje się od takiego klasyka.</intro>
     <persons>4 Personen</persons>
     <category>Wölpinghausener Spezialitäten / Winterküche</category>
     <image src="images/rezeptbild_141.png" alt="Grünkohl mit Bregenwurst, Kassler und Kartoffeln" />
@@ -10805,49 +10297,10 @@
       <item>Ein Schuss Haferflocken oder etwas Senf kann beim Abschmecken sehr gut funktionieren.</item>
     </tips>
     <rating>9,5/10 – regional, deftig und ein echter Winterklassiker.</rating>
-    <translation lang="pl">
-      <name>Jarmuż z bregenwurst, kasslerem i ziemniakami</name>
-      <persons>4 osoby</persons>
-      <category>Specjały z Wölpinghausen / Dania świąteczne</category>
-      <ingredients>
-        <item>1,5 kg jarmużu</item>
-        <item>2 EL smalcu</item>
-        <item>150 g boczku w kostce</item>
-        <item>4 kiełbasy bregenwurst</item>
-        <item>500 g kasslera</item>
-        <item>800 g ziemniaków</item>
-        <item>1 cebula</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>musztarda do smaku</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Jarmuż przebrać, umyć i grubo posiekać, jeśli używasz świeżego. Mrożony jarmuż przygotować bezpośrednio do gotowania.</step>
-        <step nr="2">Kostkę cebuli zeszklić na odrobinie smalcu albo oleju i dodać jarmuż.</step>
-        <step nr="3">Podlać niewielką ilością bulionu, doprawić i dusić jarmuż na małym ogniu, aż zmięknie.</step>
-        <step nr="4">Kassler pokroić na kawałki i po pewnym czasie dodać do jarmużu, żeby przeszedł smakiem.</step>
-        <step nr="5">Bregenwurst podgrzewać osobno w gorącej, ale nie gotującej się wodzie albo pod koniec dogotować bezpośrednio w jarmużu, jeśli jest dość płynu.</step>
-        <step nr="6">Ziemniaki obrać, ugotować i podawać jako gotowane albo lekko utłuczone, według uznania.</step>
-        <step nr="7">Jarmuż doprawić solą, pieprzem i odrobiną musztardy albo cukru i podawać wszystko razem.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas duszenia: ok. 45–60 min</item>
-        <item>ziemniaki równolegle: ok. 25 min</item>
-        <item>łącznie: ok. 1 godz. 15 min</item>
-      </timing>
-      <tips>
-        <item>Jarmuż zazwyczaj smakuje lepiej, kiedy dostanie trochę czasu i nie jest gotowany zbyt nerwowo.</item>
-        <item>Bregenwurst podgrzewać tylko delikatnie, żeby nie popękała.</item>
-        <item>Przy doprawianiu bardzo dobrze może zadziałać odrobina płatków owsianych albo trochę musztardy.</item>
-      </tips>
-      <rating>8,9/10</rating>
-    </translation>
   </recipe>
   <recipe id="142">
     <name>Wildschweinbraten mit Grünkohl</name>
     <intro lang="de">Wildschwein mit Grünkohl ist eine kräftige Kombination, die sofort nach Winter, Feiertag und gutem Sonntagsessen klingt. Das Wild bringt Tiefe, der Grünkohl Bodenständigkeit – zusammen ist das ein Gericht mit richtig Charakter.</intro>
-    <intro lang="pl">Dziczyzna z jarmużem to mocne połączenie, które od razu kojarzy się z zimą, świętem i porządnym niedzielnym obiadem. Dziczyzna daje głębię, a jarmuż swojskość – razem tworzą danie z prawdziwym charakterem.</intro>
     <persons>4 Personen</persons>
     <category>Wölpinghausener Spezialitäten / Festessen</category>
     <image src="images/rezeptbild_142.png" alt="Wildschweinbraten mit Grünkohl" />
@@ -10889,54 +10342,10 @@
       <item>Sehr stimmig mit Salzkartoffeln, Kartoffelstampf oder kleinen Klößen.</item>
     </tips>
     <rating>9,5/10 – kräftig, winterlich und sehr stimmig mit Grünkohl.</rating>
-    <translation lang="pl">
-      <name>Pieczeń z dzika z jarmużem</name>
-      <persons>4 osoby</persons>
-      <category>Specjały z Wölpinghausen / Dania świąteczne</category>
-      <ingredients>
-        <item>1,2 kg pieczeni z dzika</item>
-        <item>1 duża cebula</item>
-        <item>2 EL oleju</item>
-        <item>250 ml czerwonego wina</item>
-        <item>500 ml fondu z dziczyzny lub bulionu wołowego</item>
-        <item>1,5 kg jarmużu</item>
-        <item>100 g boczku</item>
-        <item>2 EL smalcu</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>4–6 jagód jałowca, lekko rozgniecionych</item>
-        <item>2 liście laurowe</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Pieczeń z dzika osuszyć i doprawić ze wszystkich stron solą, pieprzem i lekko rozgniecionymi jagodami jałowca.</step>
-        <step nr="2">W brytfannie rozgrzać olej i mocno obsmażyć mięso z każdej strony, a następnie na chwilę je wyjąć.</step>
-        <step nr="3">W tej samej brytfannie zrumienić cebulę, zalać czerwonym winem, krótko zredukować i wlać fond.</step>
-        <step nr="4">Dodać liście laurowe, włożyć mięso z powrotem i dusić pod przykryciem w nagrzanym piekarniku w 160 °C góra/dół przez około 2 do 2,5 godziny. W trakcie raz lub dwa razy polać mięso sosem.</step>
-        <step nr="5">Na jarmuż pokroić boczek i wytopić go w dużym garnku na smalcu. Dodać jarmuż i dusić go z odrobiną sosu z pieczeni albo niewielką ilością wody.</step>
-        <step nr="6">Doprawić jarmuż solą, pieprzem i w razie potrzeby dodatkowym jałowcem lub liściem laurowym i zostawić na małym ogniu przez 45–60 minut.</step>
-        <step nr="7">Mięso wyjąć z sosu, odstawić na 10 minut przed krojeniem, a sos w razie potrzeby jeszcze trochę zredukować.</step>
-        <step nr="8">Podawać pieczeń z dzika z jarmużem i odpowiednim ziemniaczanym dodatkiem.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 25 min</item>
-        <item>obsmażanie i przygotowanie bazy: ok. 15 min</item>
-        <item>czas duszenia w piekarniku: ok. 2 do 2,5 godziny w 160 °C góra/dół</item>
-        <item>jarmuż równolegle: ok. 45–60 min</item>
-        <item>czas odpoczynku mięsa: ok. 10 min</item>
-        <item>łącznie: ok. 3 godziny</item>
-      </timing>
-      <tips>
-        <item>Dzika lepiej dusić spokojnie w 160 °C niż zbyt gorąco, wtedy mięso zostaje soczyste i kruche.</item>
-        <item>Jeśli fond zbyt mocno się redukuje, w trakcie dolać mały chlust wody albo bulionu.</item>
-        <item>Bardzo dobrze pasuje do gotowanych ziemniaków, puree albo małych klusek.</item>
-      </tips>
-      <rating>9,5/10</rating>
-    </translation>
   </recipe>
   <recipe id="143">
     <name>Schaschlik vom Grill – klassische Schweine-Spieße</name>
     <intro lang="de">Klassisches Schaschlik vom Grill lebt nicht nur vom Fleisch, sondern von der Reihenfolge auf dem Spieß, der Würze und einer ruhigen, gleichmäßigen Hitze. Genau so bekommst du diese typisch deftige, leicht osteuropäische Richtung hin, die draußen am Grill am besten wirkt.</intro>
-    <intro lang="pl">Klasyczny szaszłyk z grilla żyje nie tylko mięsem, ale też kolejnością składników na patyku, doprawieniem i spokojnym, równym ogniem. Właśnie tak powstaje ten sycący, lekko wschodnioeuropejski charakter, który najlepiej działa na zewnątrz przy grillu.</intro>
     <persons>4 Personen</persons>
     <category>Grill / BBQ / Osteuropa</category>
     <image src="images/rezeptbild_143.png" alt="Schaschlik vom Grill – klassische Schweine-Spieße" />
@@ -10976,52 +10385,10 @@
       <item>Spieße nach dem Grillen 3 Minuten ruhen lassen, dann bleibt das Fleisch saftiger.</item>
     </tips>
     <rating>9/10 – saftig, würzig und sehr stimmig vom Grill.</rating>
-    <translation lang="pl">
-      <name>Szaszłyki z grilla – klasyczna wieprzowina</name>
-      <persons>4 osoby</persons>
-      <category>Grill / BBQ / Europa Wschodnia</category>
-      <ingredients>
-        <item>1 kg wieprzowiny z karkówki lub łopatki</item>
-        <item>3 papryki</item>
-        <item>3 duże cebule</item>
-        <item>4 EL oleju</item>
-        <item>2 TL słodkiej papryki w proszku</item>
-        <item>1 TL soli</item>
-        <item>1/2 TL pieprzu</item>
-        <item>1 TL musztardy, opcjonalnie</item>
-        <item>szaszłykowe patyczki lub metalowe szpikulce</item>
-        <item>opcjonalnie: trochę majeranku</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mięso pokroić w większą, równą kostkę.</step>
-        <step nr="2">Paprykę pokroić na większe kawałki, a cebulę na grube ćwiartki lub krążki.</step>
-        <step nr="3">Mięso wymieszać z olejem, papryką w proszku, solą, pieprzem i opcjonalnie musztardą lub majerankiem.</step>
-        <step nr="4">Marynować co najmniej 2 godziny.</step>
-        <step nr="5">Nadziewać na przemian mięso, cebulę i paprykę na szpikulce.</step>
-        <step nr="6">Grillować przy średniej bezpośredniej lub pośredniej temperaturze przez około 18–22 minuty, regularnie obracając.</step>
-        <step nr="7">Pod koniec sprawdzić stopień wysmażenia i w razie potrzeby dopiec chwilę pośrednio.</step>
-        <step nr="8">Po grillowaniu odstawić na 3 minuty i dopiero potem podawać.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 25 min</item>
-        <item>marynowanie: co najmniej 2 godziny</item>
-        <item>czas grillowania: ok. 18–22 min przy średnim ogniu bezpośrednim lub pośrednim</item>
-        <item>czas odpoczynku: 3 min</item>
-        <item>łącznie bez marynowania: ok. 45 min</item>
-      </timing>
-      <tips>
-        <item>Zbyt małe kawałki mięsa szybko wysychają – lepiej ciąć je trochę większe.</item>
-        <item>Jeśli używasz drewnianych patyczków, namocz je wcześniej przez co najmniej 30 minut.</item>
-        <item>Najlepiej pracować na spokojnym średnim ogniu zamiast na pełnym gazie.</item>
-        <item>Po grillowaniu zostawić szaszłyki na 3 minuty, wtedy mięso zostanie bardziej soczyste.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="144">
     <name>Schaschlik vom Grill – Hähnchen mit Paprika</name>
     <intro lang="de">Hähnchen-Schaschlik ist die etwas leichtere Variante, braucht aber genauso klare Würze und sauberes Timing. Wenn das Fleisch vorher kurz marinieren darf und die Paprika nur mitröstet statt verbrennt, wird das richtig stark.</intro>
-    <intro lang="pl">Szaszłyk z kurczaka to trochę lżejsza wersja, ale nadal potrzebuje wyraźnego doprawienia i czystego timingu. Jeśli mięso chwilę się zamarynuje, a papryka tylko się przypieka zamiast przypalać, wychodzi bardzo dobrze.</intro>
     <persons>4 Personen</persons>
     <category>Grill / BBQ / Osteuropa</category>
     <image src="images/rezeptbild_144.png" alt="Schaschlik vom Grill – Hähnchen mit Paprika" />
@@ -11061,52 +10428,10 @@
       <item>Hähnchen immer vollständig durchgaren und vor dem Servieren kurz ruhen lassen.</item>
     </tips>
     <rating>8,6/10 – saftig, frisch und gut ausbalanciert.</rating>
-    <translation lang="pl">
-      <name>Szaszłyki z grilla – kurczak z papryką</name>
-      <persons>4 osoby</persons>
-      <category>Grill / BBQ / Europa Wschodnia</category>
-      <ingredients>
-        <item>1 kg piersi z kurczaka lub udek bez kości</item>
-        <item>3 papryki</item>
-        <item>2–3 cebule</item>
-        <item>4 EL oleju</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>1/2 TL pieprzu</item>
-        <item>1 TL soli</item>
-        <item>1 mały chlust soku z cytryny, opcjonalnie</item>
-        <item>szaszłykowe patyczki lub metalowe szpikulce</item>
-        <item>opcjonalnie: trochę czosnku</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Kurczaka pokroić w większe, równe kawałki.</step>
-        <step nr="2">Paprykę pokroić na większe kawałki, cebulę na grube segmenty.</step>
-        <step nr="3">Mięso wymieszać z olejem, papryką, pieprzem, solą i opcjonalnie sokiem z cytryny lub czosnkiem.</step>
-        <step nr="4">Marynować 1–2 godziny.</step>
-        <step nr="5">Nadziewać na zmianę mięso, paprykę i cebulę.</step>
-        <step nr="6">Grillować przy średnim ogniu około 15–18 minut, regularnie obracając.</step>
-        <step nr="7">Pilnować, żeby kurczak całkowicie się dopiekł, ale nie przesuszył.</step>
-        <step nr="8">Po grillowaniu odstawić na 3 minuty i podawać.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>marynowanie: 1–2 godziny</item>
-        <item>czas grillowania: ok. 15–18 min przy średnim ogniu</item>
-        <item>czas odpoczynku: 3 min</item>
-        <item>łącznie bez marynowania: ok. 35–40 min</item>
-      </timing>
-      <tips>
-        <item>Kurczaka nie trzymaj zbyt długo nad bezpośrednim ogniem, bo szybko robi się suchy.</item>
-        <item>Mały chlust cytryny w marynacie wyraźnie podnosi świeżość.</item>
-        <item>Bardzo dobre na letnie wieczory, kiedy ma być trochę lżej niż przy wieprzowym szaszłyku.</item>
-        <item>Kurczaka zawsze dopiekaj do końca i daj mu chwilę odpocząć przed podaniem.</item>
-      </tips>
-      <rating>8,7/10</rating>
-    </translation>
   </recipe>
   <recipe id="145">
     <name>Schaschlik vom Grill – Rind mit Knoblauch-Zwiebel-Marinade</name>
     <intro lang="de">Rind auf dem Schaschlik-Spieß darf etwas markanter schmecken. Knoblauch und Zwiebel bringen hier die Richtung, aber wichtig ist vor allem, dass das Fleisch passend gewählt wird und nicht zu lang zu heiß auf dem Grill bleibt.</intro>
-    <intro lang="pl">Wołowina na szaszłyku może mieć trochę mocniejszy charakter. Czosnek i cebula nadają tu kierunek, ale najważniejsze jest odpowiednie mięso i to, żeby nie trzymać go zbyt długo na zbyt gorącym ruszcie.</intro>
     <persons>4 Personen</persons>
     <category>Grill / BBQ / Osteuropa</category>
     <image src="images/rezeptbild_145.png" alt="Schaschlik vom Grill – Rind mit Knoblauch-Zwiebel-Marinade" />
@@ -11146,52 +10471,10 @@
       <item>Rind nicht unnötig lange grillen und vor dem Servieren kurz ruhen lassen.</item>
     </tips>
     <rating>8,7/10 – kräftig, aromatisch und mit Rind sehr eigenständig.</rating>
-    <translation lang="pl">
-      <name>Szaszłyki z grilla – wołowina z marynatą czosnkowo-cebulową</name>
-      <persons>4 osoby</persons>
-      <category>Grill / BBQ / Europa Wschodnia</category>
-      <ingredients>
-        <item>1 kg wołowiny z udźca lub rostbefu</item>
-        <item>3 cebule</item>
-        <item>2 papryki</item>
-        <item>4 EL oleju</item>
-        <item>2 ząbki czosnku</item>
-        <item>1 TL soli</item>
-        <item>1/2 TL pieprzu</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>szpikulce</item>
-        <item>opcjonalnie: trochę majeranku</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Wołowinę pokroić w równe kawałki nadające się na szaszłyki.</step>
-        <step nr="2">Cebulę i paprykę przygotować na większe kawałki.</step>
-        <step nr="3">Mięso wymieszać z olejem, drobno posiekanym czosnkiem, solą, pieprzem i papryką w proszku.</step>
-        <step nr="4">Marynować co najmniej 2 godziny.</step>
-        <step nr="5">Nadziać mięso na przemian z cebulą i papryką.</step>
-        <step nr="6">Grillować przy średnim ogniu bezpośrednim lub pośrednim przez około 12–16 minut, obracając.</step>
-        <step nr="7">Pilnować stopnia wysmażenia i nie grillować niepotrzebnie za długo.</step>
-        <step nr="8">Po zdjęciu z grilla odstawić na 3 minuty i podawać.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 25 min</item>
-        <item>marynowanie: co najmniej 2 godziny</item>
-        <item>czas grillowania: ok. 12–16 min przy średnim ogniu bezpośrednim lub pośrednim</item>
-        <item>czas odpoczynku: 3 min</item>
-        <item>łącznie bez marynowania: ok. 40 min</item>
-      </timing>
-      <tips>
-        <item>Do wołowiny lepiej wybrać delikatniejszy kawałek, inaczej szaszłyk może szybko zrobić się twardy.</item>
-        <item>Czosnek nie powinien dominować, żeby smak mięsa nadal był wyraźny.</item>
-        <item>Bardzo dobrze pasuje do grillowanej cebuli i rustykalnego chleba.</item>
-        <item>Wołowiny nie grilluj niepotrzebnie długo i daj jej krótko odpocząć przed podaniem.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="146">
     <name>Schaschlik mit Zwiebel-Essig-Marinade</name>
     <intro lang="de">Die Zwiebel-Essig-Marinade bringt genau diese klassische, leicht herbe Note mit, die viele bei Schaschlik aus Osteuropa mögen. Das Rezept wirkt schlicht, funktioniert aber sehr gut, wenn man dem Fleisch genug Zeit in der Marinade gibt.</intro>
-    <intro lang="pl">Marynata cebulowo-octowa daje dokładnie tę klasyczną, lekko cierpką nutę, którą wiele osób kojarzy z szaszłykami ze wschodniej Europy. Przepis jest prosty, ale działa bardzo dobrze, jeśli mięso dostanie odpowiednio dużo czasu w marynacie.</intro>
     <persons>4 Personen</persons>
     <category>Grill / Osteuropa / Klassiker</category>
     <image src="images/rezeptbild_146.png" alt="Schaschlik mit Zwiebel-Essig-Marinade" />
@@ -11228,49 +10511,10 @@
       <item>Durch die Essig-Zwiebel-Marinade lieber mit mittlerer Hitze arbeiten, damit außen nichts verbrennt.</item>
     </tips>
     <rating>8,6/10 – würzig, kernig und mit langer Marinade am besten.</rating>
-    <translation lang="pl">
-      <name>Szaszłyk z marynatą cebulowo-octową</name>
-      <persons>4 osoby</persons>
-      <category>Grill / Europa Wschodnia / Klasyki</category>
-      <ingredients>
-        <item>1 kg wieprzowiny</item>
-        <item>4 duże cebule</item>
-        <item>3 EL neutralnego octu lub octu z białego wina</item>
-        <item>4 EL oleju</item>
-        <item>1 TL soli</item>
-        <item>1/2 TL pieprzu</item>
-        <item>szaszłyki lub metalowe szpikulce</item>
-        <item>opcjonalnie: trochę papryki</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Wieprzowinę pokroić w większą kostkę.</step>
-        <step nr="2">Cebulę pokroić w piórka albo cienkie półplasterki.</step>
-        <step nr="3">Mięso wymieszać z cebulą, octem, olejem, solą i pieprzem.</step>
-        <step nr="4">Marynować co najmniej 4 godziny, najlepiej przez noc.</step>
-        <step nr="5">Nadziać mięso na szpikulce; cebulę można częściowo nadziewać lub podsmażyć obok.</step>
-        <step nr="6">Grillować albo smażyć przez około 18–22 minuty przy średnim ogniu.</step>
-        <step nr="7">Po przygotowaniu odstawić na 3 minuty i podawać.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>marynowanie: co najmniej 4 godziny, najlepiej przez noc</item>
-        <item>czas grillowania lub smażenia: ok. 18–22 min przy średnim ogniu</item>
-        <item>czas odpoczynku: 3 min</item>
-        <item>łącznie bez marynowania: ok. 40 min</item>
-      </timing>
-      <tips>
-        <item>Ta wersja bardzo mocno żyje czasem marynowania – nie skracaj go zbyt mocno.</item>
-        <item>Cebula może być wyraźna, to właśnie buduje charakter tej wersji.</item>
-        <item>Bardzo dobrze pasuje do sałatki z papryki, chleba i rustykalnych dodatków z grilla.</item>
-        <item>Przy marynacie cebulowo-octowej lepiej pracować na średnim ogniu, żeby nic się nie przypaliło z zewnątrz.</item>
-      </tips>
-      <rating>8,7/10</rating>
-    </translation>
   </recipe>
   <recipe id="147">
     <name>Barbecue-Schaschlik mit rauchiger Sauce</name>
     <intro lang="de">Barbecue-Schaschlik ist die etwas modernere, kräftigere Richtung für alle, die Röstaromen und eine dunklere Sauce mögen. Trotzdem bleibt die Grundidee erhalten: Fleisch, Zwiebeln, Paprika und ein Spieß, der draußen einfach funktioniert.</intro>
-    <intro lang="pl">Barbecue-szaszłyk to nowocześniejszy, mocniejszy kierunek dla tych, którzy lubią aromaty z rusztu i ciemniejszy sos. Mimo to podstawowa idea zostaje ta sama: mięso, cebula, papryka i szpikulec, który po prostu działa przy grillu.</intro>
     <persons>4 Personen</persons>
     <category>Grill / BBQ / Moderne Küche</category>
     <image src="images/rezeptbild_147.png" alt="Barbecue-Schaschlik mit rauchiger Sauce" />
@@ -11309,51 +10553,10 @@
       <item>BBQ-Sauce wirklich erst in den letzten Minuten auftragen, sonst wird sie zu dunkel.</item>
     </tips>
     <rating>9/10 – rauchig, glänzend und für Gäste sehr dankbar.</rating>
-    <translation lang="pl">
-      <name>Barbecue-szaszłyk z dymnym sosem</name>
-      <persons>4 osoby</persons>
-      <category>Grill / BBQ / Nowoczesna kuchnia</category>
-      <ingredients>
-        <item>1 kg wieprzowiny albo kurczaka</item>
-        <item>2 papryki</item>
-        <item>2–3 cebule</item>
-        <item>3 EL oleju</item>
-        <item>150 ml sosu BBQ</item>
-        <item>1 TL wędzonej papryki, opcjonalnie</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>szpikulce</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mięso pokroić na kawałki, a paprykę i cebulę przygotować do nadziewania.</step>
-        <step nr="2">Mięso wymieszać z olejem, solą, pieprzem i opcjonalnie wędzoną papryką.</step>
-        <step nr="3">Marynować 1–2 godziny.</step>
-        <step nr="4">Nadziać mięso, paprykę i cebulę na zmianę.</step>
-        <step nr="5">Grillować przy średnim ogniu przez około 18 minut, regularnie obracając.</step>
-        <step nr="6">Sos BBQ nakładać dopiero w ostatnich minutach, żeby się nie przypalił.</step>
-        <step nr="7">Po grillowaniu krótko odstawić.</step>
-        <step nr="8">Podawać od razu na gorąco.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>marynowanie: 1–2 godziny</item>
-        <item>czas grillowania: ok. 18 min przy średnim ogniu</item>
-        <item>czas odpoczynku: 3 min</item>
-        <item>łącznie bez marynowania: ok. 40 min</item>
-      </timing>
-      <tips>
-        <item>Sos BBQ nakładaj dopiero pod koniec, bo zbyt wcześnie szybko się karmelizuje.</item>
-        <item>Z wędzoną papryką całość robi się jeszcze pełniejsza.</item>
-        <item>Bardzo dobre dla gości, bo te szaszłyki od razu robią efekt wizualny i smakowy.</item>
-        <item>Sos BBQ naprawdę dawaj dopiero w ostatnich minutach, inaczej będzie za ciemny.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="148">
     <name>Winter-Schaschlik aus dem Ofen</name>
     <intro lang="de">Winter-Schaschlik aus dem Ofen ist genau die Lösung, wenn draußen kein Grillwetter ist, du aber trotzdem diese herzhafte Spieß-Idee auf den Tisch bringen willst. Durch den Ofen wird alles etwas ruhiger, saftiger und sehr alltagstauglich.</intro>
-    <intro lang="pl">Zimowy szaszłyk z piekarnika to bardzo dobre rozwiązanie, kiedy pogoda nie sprzyja grillowi, ale nadal masz ochotę na ten treściwy, szaszłykowy charakter. Dzięki piekarnikowi wszystko wychodzi spokojniej, soczyściej i bardzo dobrze sprawdza się na co dzień.</intro>
     <persons>4 Personen</persons>
     <category>Ofengerichte / Winterküche / Osteuropa</category>
     <image src="images/rezeptbild_148.png" alt="Winter-Schaschlik aus dem Ofen" />
@@ -11390,49 +10593,10 @@
       <item>Vor dem Servieren 3 bis 5 Minuten ruhen lassen, damit die Spieße saftiger bleiben.</item>
     </tips>
     <rating>8,6/10 – deftig, saftig und als Ofenvariante sehr brauchbar.</rating>
-    <translation lang="pl">
-      <name>Zimowy szaszłyk z piekarnika</name>
-      <persons>4 osoby</persons>
-      <category>Dania z piekarnika / Kuchnia zimowa / Europa Wschodnia</category>
-      <ingredients>
-        <item>1 kg wieprzowiny</item>
-        <item>3 papryki</item>
-        <item>3 cebule</item>
-        <item>4 EL oleju</item>
-        <item>2 TL papryki w proszku</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>szpikulce</item>
-        <item>trochę bulionu lub sosu do formy, opcjonalnie</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Wieprzowinę, paprykę i cebulę przygotować jak do klasycznych szaszłyków.</step>
-        <step nr="2">Mięso doprawić olejem, papryką w proszku, solą i pieprzem.</step>
-        <step nr="3">Opcjonalnie marynować 1–2 godziny.</step>
-        <step nr="4">Nadziać wszystko na szpikulce i ułożyć w naczyniu do pieczenia albo na blasze.</step>
-        <step nr="5">Wlać odrobinę bulionu lub sosu do formy, jeśli chcesz więcej wilgoci.</step>
-        <step nr="6">Piec około 30–40 minut w 190 °C góra/dół.</step>
-        <step nr="7">Na koniec krótko dopiec 3–5 minut górną grzałką albo funkcją grilla.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>marynowanie: opcjonalnie 1–2 godziny</item>
-        <item>czas pieczenia w piekarniku: ok. 30–40 min w 190 °C góra/dół</item>
-        <item>krótkie dopieczenie: 3–5 min z górną grzałką lub funkcją grilla</item>
-        <item>łącznie: ok. 55–60 min</item>
-      </timing>
-      <tips>
-        <item>Mały chlust bulionu albo sosu w formie zapobiega wysychaniu mięsa.</item>
-        <item>Do zimowej wersji bardzo dobrze pasuje majeranek albo odrobina kminku.</item>
-        <item>Przed podaniem zostaw na 3 do 5 minut, wtedy szaszłyki będą bardziej soczyste.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="149">
     <name>Schaschlik-Pfanne für drinnen</name>
     <intro lang="de">Diese Schaschlik-Pfanne bringt den typischen Geschmack nach drinnen, ohne dass man Spieße oder Grill wirklich vermisst. Sie ist schnell gemacht, würzig und genau richtig für einen deftigen Feierabendteller.</intro>
-    <intro lang="pl">Ta patelnia szaszłykowa przenosi typowy smak do kuchni domowej, bez poczucia, że naprawdę brakuje szaszłyków albo grilla. Jest szybka, wyrazista i dokładnie taka, jakiej potrzeba na treściwy talerz po pracy.</intro>
     <persons>4 Personen</persons>
     <category>Pfannengerichte / Schnelle Küche / Osteuropa</category>
     <image src="images/rezeptbild_149.png" alt="Schaschlik-Pfanne für drinnen" />
@@ -11468,48 +10632,10 @@
       <item>Mit Brot ist das die einfachste und stimmigste Kombination.</item>
     </tips>
     <rating>8,2/10 – schnell, würzig und für drinnen sehr praktisch.</rating>
-    <translation lang="pl">
-      <name>Patelnia szaszłykowa do domu</name>
-      <persons>4 osoby</persons>
-      <category>Dania z patelni / Szybka kuchnia / Europa Wschodnia</category>
-      <ingredients>
-        <item>800 g wieprzowiny albo kurczaka</item>
-        <item>2 papryki</item>
-        <item>2 cebule</item>
-        <item>3 EL oleju</item>
-        <item>1 TL papryki w proszku</item>
-        <item>100 ml bulionu albo passaty, opcjonalnie</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>opcjonalnie: trochę leczo albo ajvaru</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mięso pokroić na mniejsze kawałki.</step>
-        <step nr="2">Paprykę i cebulę pokroić na kawałki.</step>
-        <step nr="3">Mięso mocno obsmażyć partiami na oleju, żeby złapało kolor.</step>
-        <step nr="4">Dodać cebulę i paprykę i smażyć krótko razem.</step>
-        <step nr="5">Doprawić papryką, solą i pieprzem.</step>
-        <step nr="6">W razie potrzeby dodać odrobinę bulionu, passaty, leczo albo ajvaru i krótko poddusić.</step>
-        <step nr="7">Odstawić na 2 minuty i podawać na gorąco.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 15 min</item>
-        <item>smażenie i krótkie duszenie: ok. 15–20 min</item>
-        <item>krótki odpoczynek: 2 min</item>
-        <item>łącznie: ok. 30–35 min</item>
-      </timing>
-      <tips>
-        <item>Mięso lepiej obsmażać partiami, żeby dostało kolor zamiast puścić sok.</item>
-        <item>Jeśli chcesz mocniejszy, bardziej treściwy smak, dodaj do sosu trochę leczo albo ajvaru.</item>
-        <item>Z chlebem to najprostsze i najbardziej spójne połączenie.</item>
-      </tips>
-      <rating>8,6/10</rating>
-    </translation>
   </recipe>
   <recipe id="150">
     <name>Schaschlik-Topf mit Paprika und Zwiebeln</name>
     <intro lang="de">Der Schaschlik-Topf ist die gemütlichere Variante vom Grillklassiker. Alles landet zusammen im Topf, zieht langsam durch und entwickelt genau diese runde, warme Paprika-Zwiebel-Note, die besonders an kühlen Tagen gut passt.</intro>
-    <intro lang="pl">Garnek szaszłykowy to bardziej przytulna wersja grillowego klasyka. Wszystko trafia razem do garnka, spokojnie się łączy i rozwija dokładnie tę ciepłą nutę papryki i cebuli, która szczególnie dobrze pasuje do chłodniejszych dni.</intro>
     <persons>4 Personen</persons>
     <category>Eintöpfe / Winterküche / Osteuropa</category>
     <image src="images/rezeptbild_150.png" alt="Schaschlik-Topf mit Paprika und Zwiebeln" />
@@ -11546,49 +10672,10 @@
       <item>Sehr passend mit Kartoffeln, Brot oder einem Klecks Schmand.</item>
     </tips>
     <rating>8,5/10 – deftig, rund und gut vorzubereiten.</rating>
-    <translation lang="pl">
-      <name>Garnek szaszłykowy z papryką i cebulą</name>
-      <persons>4 osoby</persons>
-      <category>Dania jednogarnkowe / Kuchnia zimowa / Europa Wschodnia</category>
-      <ingredients>
-        <item>1 kg wieprzowiny</item>
-        <item>3 papryki</item>
-        <item>3 cebule</item>
-        <item>3 EL oleju</item>
-        <item>2 TL papryki w proszku</item>
-        <item>200 ml bulionu albo passaty</item>
-        <item>1 EL koncentratu pomidorowego, opcjonalnie</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>opcjonalnie: trochę śmietany kwaśnej do podania</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mięso pokroić na większe kawałki i mocno obsmażyć w garnku.</step>
-        <step nr="2">Dodać cebulę i paprykę i chwilę podsmażyć.</step>
-        <step nr="3">Doprawić papryką w proszku, solą i pieprzem.</step>
-        <step nr="4">W razie potrzeby dodać koncentrat pomidorowy i krótko go podsmażyć.</step>
-        <step nr="5">Wlać bulion albo passatę.</step>
-        <step nr="6">Dusić całość około 35–45 minut na małym ogniu, aż mięso będzie miękkie.</step>
-        <step nr="7">Przed podaniem pozwolić potrawie chwilę odpocząć i podawać z ziemniakami, chlebem albo kleksem śmietany.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas duszenia: ok. 35–45 min</item>
-        <item>łącznie: ok. 60 min</item>
-        <item>bardzo dobre na jesień i zimę</item>
-      </timing>
-      <tips>
-        <item>Paprykę w proszku podsmażaj tylko krótko, żeby nie zrobiła się gorzka.</item>
-        <item>Garnek często smakuje jeszcze lepiej, jeśli postoi kilka minut po ugotowaniu.</item>
-        <item>Bardzo dobrze pasuje do ziemniaków, chleba albo kleksa śmietany.</item>
-      </tips>
-      <rating>8,7/10</rating>
-    </translation>
   </recipe>
   <recipe id="151">
     <name>Klassischer Schaschlik-Topf mit Paprikasauce</name>
     <intro lang="de">Ein klassischer Schaschlik-Topf mit Paprikasauce braucht keine komplizierte Technik, sondern nur genug Zeit, damit Fleisch, Zwiebeln und Sauce zusammenkommen. Genau dadurch wird das Gericht so verlässlich und beliebt.</intro>
-    <intro lang="pl">Klasyczny garnek szaszłykowy z sosem paprykowym nie potrzebuje skomplikowanej techniki, tylko trochę czasu, żeby mięso, cebula i sos naprawdę się połączyły. Właśnie dlatego to danie jest tak pewne i lubiane.</intro>
     <persons>4 Personen</persons>
     <category>Eintöpfe / Klassiker / Deftige Küche</category>
     <image src="images/rezeptbild_151.png" alt="Klassischer Schaschlik-Topf mit Paprikasauce" />
@@ -11626,50 +10713,10 @@
       <item>Am nächsten Tag oft fast noch besser als frisch gekocht.</item>
     </tips>
     <rating>8,9/10 – klassisch, kräftig und am nächsten Tag oft noch besser.</rating>
-    <translation lang="pl">
-      <name>Klasyczny garnek szaszłykowy z sosem paprykowym</name>
-      <persons>4 osoby</persons>
-      <category>Dania jednogarnkowe / Klasyki / Kuchnia treściwa</category>
-      <ingredients>
-        <item>1 kg wieprzowiny</item>
-        <item>3 cebule</item>
-        <item>2 papryki</item>
-        <item>3 EL oleju</item>
-        <item>2 TL papryki w proszku</item>
-        <item>200 ml bulionu</item>
-        <item>150 ml passaty albo sosu paprykowego</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>opcjonalnie: 1 TL musztardy</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Wieprzowinę pokroić w kawałki i mocno obsmażyć w garnku albo brytfannie.</step>
-        <step nr="2">Dodać cebulę i paprykę i krótko podsmażyć razem.</step>
-        <step nr="3">Doprawić papryką w proszku, solą i pieprzem.</step>
-        <step nr="4">Dodać bulion oraz passatę albo sos paprykowy.</step>
-        <step nr="5">Opcjonalnie wmieszać trochę musztardy dla większej głębi.</step>
-        <step nr="6">Dusić 35–45 minut na małym ogniu, aż mięso będzie miękkie.</step>
-        <step nr="7">W razie potrzeby doprawić lub lekko zredukować sos.</step>
-        <step nr="8">Podawać na gorąco z chlebem, ziemniakami albo ryżem.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas duszenia: ok. 35–45 min</item>
-        <item>łącznie: ok. 60 min</item>
-        <item>bardzo dobre także do wcześniejszego przygotowania</item>
-      </timing>
-      <tips>
-        <item>Jeśli sos wydaje się zbyt mocny, wyrównaj go małym chlustem śmietany albo bulionu.</item>
-        <item>Odrobina musztardy może dodać sosowi paprykowemu dodatkowej głębi.</item>
-        <item>Następnego dnia to danie często smakuje prawie jeszcze lepiej niż świeżo ugotowane.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="152">
     <name>Schaschlik-Spieße mit Paprikasauce und Letscho</name>
     <intro lang="de">Diese Variante verbindet den klassischen Schaschlik-Spieß mit Paprikasauce und Letscho deutlich vollständiger. Genau dadurch wirkt das Gericht nicht nur bunt, sondern auch fachlich runder: Die Spieße bringen Röstaroma, Paprikasauce sorgt für Bindung und das Letscho liefert die passende süß-würzige Gemüsebasis.</intro>
-    <intro lang="pl">Ta wersja łączy klasyczne szaszłyki z sosem paprykowym i leczo w znacznie pełniejszy sposób. Dzięki temu danie nie tylko wygląda kolorowo, ale też jest bardziej spójne: szaszłyki dają aromat z rusztu, sos paprykowy wiąże całość, a leczo wnosi słodko-wytrawną bazę warzywną.</intro>
     <persons>4 Personen</persons>
     <category>Grill / BBQ / Osteuropa</category>
     <image src="images/rezeptbild_152.png" alt="Schaschlik-Spieße mit Paprikasauce und Letscho" />
@@ -11708,51 +10755,10 @@
       <item>Die Spieße nach dem Grillen 3 Minuten ruhen lassen und erst dann mit Sauce servieren oder nappieren.</item>
     </tips>
     <rating>8,7/10 – würzig, rund und mit Sauce deutlich geschlossener.</rating>
-    <translation lang="pl">
-      <name>Szaszłyki z sosem paprykowym i leczo</name>
-      <persons>4 osoby</persons>
-      <category>Grill / BBQ / Europa Wschodnia</category>
-      <ingredients>
-        <item>1 kg wieprzowiny</item>
-        <item>2 papryki</item>
-        <item>2 cebule</item>
-        <item>4 EL oleju</item>
-        <item>2 TL papryki w proszku</item>
-        <item>1 TL soli</item>
-        <item>1/2 TL pieprzu</item>
-        <item>250 g leczo</item>
-        <item>150 ml sosu paprykowego</item>
-        <item>szpikulce</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mięso pokroić i zamarynować z olejem, papryką, solą i pieprzem.</step>
-        <step nr="2">Marynować około 2–3 godziny.</step>
-        <step nr="3">Paprykę i cebulę przygotować i nadziać razem z mięsem na szpikulce.</step>
-        <step nr="4">Grillować przy średnim ogniu około 18–22 minut, regularnie obracając.</step>
-        <step nr="5">Równolegle podgrzać sos paprykowy i leczo w małym garnku i krótko razem zredukować.</step>
-        <step nr="6">Po grillowaniu zostawić szaszłyki na 3 minuty.</step>
-        <step nr="7">Podawać szaszłyki z ciepłym sosem paprykowym i leczo albo polać nimi mięso przed podaniem.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>marynowanie: ok. 2–3 godziny</item>
-        <item>czas grillowania: ok. 18–22 min przy średnim ogniu</item>
-        <item>sos równolegle: ok. 10 min</item>
-        <item>czas odpoczynku: 3 min</item>
-        <item>łącznie bez marynowania: ok. 45 min</item>
-      </timing>
-      <tips>
-        <item>Tutaj leczo nie jest luźnym dodatkiem, tylko częścią ciepłej przystawki albo sosu.</item>
-        <item>Sos paprykowy i leczo warto krótko razem zredukować, wtedy danie jest wyraźnie bardziej zamknięte smakowo.</item>
-        <item>Po grillowaniu zostaw szaszłyki na 3 minuty i dopiero wtedy podawaj z sosem albo nimi polewaj.</item>
-      </tips>
-      <rating>8,7/10</rating>
-    </translation>
   </recipe>
   <recipe id="153">
     <name>Soljanka nach DDR-Art</name>
     <intro lang="de">Soljanka ist einer der bekanntesten DDR-Klassiker überhaupt – würzig, leicht säuerlich, kräftig und perfekt, wenn etwas Deftiges auf den Tisch soll. Das Rezept lebt von guter Brühe, Letscho, Gewürzgurken und einer runden Balance aus Schärfe, Säure und Tiefe.</intro>
-    <intro lang="pl">Soljanka to jeden z najbardziej znanych klasyków NRD – wyrazista, lekko kwaśna, treściwa i idealna wtedy, kiedy na stole ma stanąć coś naprawdę konkretnego. Ten przepis opiera się na dobrym bulionie, leczo, ogórkach konserwowych i dobrze wyważonej ostrości, kwasowości oraz głębi smaku.</intro>
     <persons>6 Personen</persons>
     <category>DDR &amp; Ostalgie / Suppen &amp; Eintöpfe</category>
     <image src="images/rezeptbild_153.png" alt="Soljanka nach DDR-Art" />
@@ -11803,63 +10809,10 @@
       <item>Wenn du es kräftiger magst, gib noch etwas rosenscharfes Paprikapulver oder Chili dazu.</item>
     </tips>
     <rating>9,2/10 – würzig, nostalgisch und als großer Topf richtig dankbar.</rating>
-    <translation lang="pl">
-      <name>Soljanka po DDR-owsku</name>
-      <persons>6 osób</persons>
-      <category>DDR i ostalgia / Zupy i dania jednogarnkowe</category>
-      <ingredients>
-        <item>500 g gulaszu wieprzowego albo karkówki w kostce</item>
-        <item>200 g jagdwurst albo kiełbasy parzonej</item>
-        <item>150 g szynki gotowanej albo kasslera</item>
-        <item>2 cebule</item>
-        <item>2 ząbki czosnku</item>
-        <item>2 EL oleju</item>
-        <item>3 EL koncentratu pomidorowego</item>
-        <item>400 g leczo</item>
-        <item>4 ogórki konserwowe</item>
-        <item>150 ml zalewy z ogórków</item>
-        <item>1,5 l mocnego bulionu mięsnego</item>
-        <item>2 liście laurowe</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>1/2 TL ostrej papryki w proszku</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 szczypta cukru</item>
-        <item>2 EL soku z cytryny, według potrzeby</item>
-        <item>do podania: kwaśna śmietana albo schmand</item>
-        <item>do podania: cząstki cytryny</item>
-        <item>do podania: świeża pietruszka</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Wieprzowinę osuszyć i mocno obsmażyć w dużym garnku albo brytfannie na gorącym oleju.</step>
-        <step nr="2">Cebulę i czosnek drobno posiekać, dodać do mięsa i podsmażyć 2–3 minuty.</step>
-        <step nr="3">Wmieszać koncentrat pomidorowy i krótko go podsmażyć, żeby zupa nabrała większej głębi.</step>
-        <step nr="4">Wlać bulion, dodać liście laurowe oraz oba rodzaje papryki i gotować na małym albo średnim ogniu 35–45 minut.</step>
-        <step nr="5">Jagdwurst i szynkę pokroić w paski albo kostkę, a ogórki w małą kostkę.</step>
-        <step nr="6">Kiedy mięso zacznie mięknąć, dodać leczo, jagdwurst, szynkę, ogórki konserwowe i zalewę z ogórków.</step>
-        <step nr="7">Gotować jeszcze 20–25 minut bez przykrycia albo pod uchylonym przykryciem, aż zupa stanie się lekko gęsta.</step>
-        <step nr="8">Doprawić solą, pieprzem, szczyptą cukru i w razie potrzeby sokiem z cytryny.</step>
-        <step nr="9">Przed podaniem odstawić na 5 minut i podawać z kwaśną śmietaną, pietruszką i cząstkami cytryny.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 25 min</item>
-        <item>obsmażanie i przygotowanie bazy: ok. 15 min</item>
-        <item>łączny czas gotowania: ok. 55–70 min</item>
-        <item>czas odpoczynku przed podaniem: ok. 5 min</item>
-        <item>łącznie: ok. 1 godz. 20 min</item>
-      </timing>
-      <tips>
-        <item>Następnego dnia soljanka często smakuje jeszcze lepiej, bo dobrze się przegryza.</item>
-        <item>Kwaśność można bardzo precyzyjnie regulować dodatkową zalewą z ogórków albo sokiem z cytryny.</item>
-        <item>Jeśli lubisz mocniejsze smaki, dodaj trochę ostrej papryki albo chili.</item>
-      </tips>
-      <rating>9,2/10</rating>
-    </translation>
   </recipe>
   <recipe id="154">
     <name>Würzfleisch nach DDR-Art</name>
     <intro lang="de">Würzfleisch ist ein echter DDR-Gaststättenklassiker: zartes Fleisch in cremig-würziger Sauce, mit Käse überbacken und heiß aus der Form serviert. Genau das Richtige als Vorspeise oder deftige Kleinigkeit mit Toast und Zitrone.</intro>
-    <intro lang="pl">Würzfleisch to prawdziwy klasyk dawnych lokali w NRD: delikatne mięso w kremowym, wyrazistym sosie, zapieczone z serem i podawane gorące prosto z foremki. Świetne jako przystawka albo treściwa mała porcja z tostami i cytryną.</intro>
     <persons>4 Personen</persons>
     <category>DDR &amp; Ostalgie / Klassiker &amp; Hausmannskost</category>
     <image src="images/rezeptbild_154.png" alt="Würzfleisch nach DDR-Art" />
@@ -11906,59 +10859,10 @@
       <item>Würzfleisch eignet sich sehr gut, wenn das Fleisch schon vorbereitet ist.</item>
     </tips>
     <rating>9,0/10 – klassisch, würzig und heiß überbacken genau richtig.</rating>
-    <translation lang="pl">
-      <name>Würzfleisch po DDR-owsku</name>
-      <persons>4 osoby</persons>
-      <category>DDR i ostalgia / Klasyki i kuchnia domowa</category>
-      <ingredients>
-        <item>500 g wieprzowiny z karkówki albo łopatki</item>
-        <item>1 cebula</item>
-        <item>1 liść laurowy</item>
-        <item>4 ziarenka pieprzu</item>
-        <item>1 EL masła</item>
-        <item>1 EL mąki</item>
-        <item>250 ml wywaru z gotowania mięsa</item>
-        <item>100 ml śmietany</item>
-        <item>1 TL soku z cytryny</item>
-        <item>1 TL sosu Worcestershire</item>
-        <item>1 szczypta gałki muszkatołowej</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>120 g startego sera</item>
-        <item>4 żaroodporne foremki</item>
-        <item>do podania: cząstki cytryny</item>
-        <item>do podania: dodatkowy sos Worcestershire</item>
-        <item>do podania: tost albo białe pieczywo</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Wieprzowinę pokroić w większą kostkę i ugotować z połówką cebuli, liściem laurowym i ziarnami pieprzu w lekko osolonej wodzie do miękkości.</step>
-        <step nr="2">Mięso wyjąć, lekko przestudzić i pokroić w małe kawałki. Wywar przecedzić i odmierzyć 250 ml.</step>
-        <step nr="3">W garnku rozpuścić masło, wsypać mąkę i krótko podsmażyć, nie rumieniąc.</step>
-        <step nr="4">Stopniowo wlewać wywar, cały czas mieszając, aż powstanie gładki sos.</step>
-        <step nr="5">Dodać śmietanę, sok z cytryny, Worcestershire i gałkę muszkatołową.</step>
-        <step nr="6">Gotować sos 5–8 minut, aż będzie kremowy. Doprawić solą i pieprzem.</step>
-        <step nr="7">Dodać mięso, zagotować i przełożyć do foremek.</step>
-        <step nr="8">Posypać tartym serem i zapiekać w 220 °C góra/dół albo pod grillem przez 8–12 minut, aż ser będzie złocisty.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>czas gotowania mięsa: ok. 50–60 min</item>
-        <item>sos i napełnianie foremek: ok. 15 min</item>
-        <item>zapiekanie: ok. 8–12 min w 220 °C góra/dół</item>
-        <item>łącznie: ok. 1 godz. 35 min</item>
-      </timing>
-      <tips>
-        <item>Sos powinien być kremowy, ale nie za gęsty. W razie potrzeby dodaj trochę wywaru.</item>
-        <item>Dla typowego charakteru koniecznie podawaj z cytryną i sosem Worcestershire.</item>
-        <item>Bardzo dobrze sprawdza się wtedy, kiedy mięso masz już ugotowane wcześniej.</item>
-      </tips>
-      <rating>9,0/10</rating>
-    </translation>
   </recipe>
   <recipe id="155">
     <name>DDR-Jägerschnitzel mit Tomatensoße und Spirelli</name>
     <intro lang="de">Das DDR-Jägerschnitzel ist nicht das westdeutsche Pilzschnitzel, sondern ein panierter Jagdwurstklassiker mit Tomatensoße und Nudeln. Genau diese Kombination macht das Gericht so unverwechselbar und sofort wiedererkennbar.</intro>
-    <intro lang="pl">DDR-jägerschnitzel nie ma nic wspólnego z zachodnioniemieckim sznyclem z sosem grzybowym, tylko jest klasykiem z panierowanej jagdwurst podawanej z sosem pomidorowym i makaronem. Właśnie ta kombinacja daje mu ten natychmiast rozpoznawalny charakter.</intro>
     <persons>4 Personen</persons>
     <category>DDR &amp; Ostalgie / Klassiker &amp; Hausmannskost</category>
     <image src="images/rezeptbild_155.png" alt="DDR-Jägerschnitzel mit Tomatensoße und Spirelli" />
@@ -12004,58 +10908,10 @@
       <item>Jägerschnitzel immer frisch aus der Pfanne servieren, damit die Panade knusprig bleibt.</item>
     </tips>
     <rating>9,1/10 – ein echter DDR-Klassiker mit hohem Wiedererkennungswert.</rating>
-    <translation lang="pl">
-      <name>DDR-Jägerschnitzel z sosem pomidorowym i spirelli</name>
-      <persons>4 osoby</persons>
-      <category>DDR i ostalgia / Klasyki i kuchnia domowa</category>
-      <ingredients>
-        <item>8 plastrów jagdwurst, każdy po ok. 1 cm grubości</item>
-        <item>2 jajka</item>
-        <item>4 EL mąki</item>
-        <item>100 g bułki tartej</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>olej do smażenia</item>
-        <item>400 g spirelli</item>
-        <item>1 cebula</item>
-        <item>1 EL masła</item>
-        <item>2 EL koncentratu pomidorowego</item>
-        <item>500 ml passaty pomidorowej</item>
-        <item>150 ml bulionu warzywnego</item>
-        <item>1 TL cukru</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>sól</item>
-        <item>pieprz</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Na sos drobno pokroić cebulę i zeszklić ją na maśle.</step>
-        <step nr="2">Wmieszać koncentrat pomidorowy i krótko podsmażyć, następnie wlać passatę i bulion.</step>
-        <step nr="3">Doprawić sosem cukrem, papryką, solą i pieprzem i gotować 15–20 minut.</step>
-        <step nr="4">W międzyczasie ugotować spirelli al dente w osolonej wodzie i odcedzić.</step>
-        <step nr="5">Plastry jagdwurst osuszyć, obtoczyć najpierw w mące, potem w roztrzepanym jajku, a na końcu w bułce tartej.</step>
-        <step nr="6">Na patelni rozgrzać odpowiednią ilość oleju i smażyć panierowane plastry z obu stron na złoto po 2–3 minuty z każdej strony.</step>
-        <step nr="7">Krótko odsączyć na ręczniku papierowym.</step>
-        <step nr="8">Podawać spirelli z sosem pomidorowym i świeżo usmażonym jägerschnitzlem.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>sos pomidorowy: ok. 20 min</item>
-        <item>makaron: ok. 8–10 min</item>
-        <item>smażenie jägerschnitzla: ok. 10–12 min</item>
-        <item>łącznie: ok. 40 min</item>
-      </timing>
-      <tips>
-        <item>Panierka wyjdzie równiejsza, jeśli dobrze osuszysz jagdwurst przed panierowaniem.</item>
-        <item>Sos pomidorowy może być spokojnie lekko słodko-wyrazisty – właśnie to bardzo dobrze do niego pasuje.</item>
-        <item>Jägerschnitzel zawsze podawaj świeżo z patelni, wtedy panierka jest chrupiąca.</item>
-      </tips>
-      <rating>9,1/10</rating>
-    </translation>
   </recipe>
   <recipe id="156">
     <name>Tote Oma mit Sauerkraut und Kartoffelpüree</name>
     <intro lang="de">Tote Oma ist eines dieser deftigen Ostgerichte, die polarisieren, aber genau deshalb so viel Charakter haben. Mit gebratener Blutwurst, mildem Sauerkraut und cremigem Kartoffelpüree ist das ein sehr bodenständiges Tellergericht.</intro>
-    <intro lang="pl">Tote Oma to jedno z tych treściwych dań ze wschodu, które dzielą ludzi, ale właśnie przez to mają tak wyrazisty charakter. Z podsmażaną kaszanką, łagodną kapustą kiszoną i kremowym puree ziemniaczanym daje bardzo swojski, konkretny talerz.</intro>
     <persons>4 Personen</persons>
     <category>DDR &amp; Ostalgie / Klassiker &amp; Hausmannskost</category>
     <image src="images/rezeptbild_156.png" alt="Tote Oma mit Sauerkraut und Kartoffelpüree" />
@@ -12097,54 +10953,10 @@
       <item>Kartoffelpüree mit warmer Milch statt kalter Milch anrühren, dann bleibt es cremiger.</item>
     </tips>
     <rating>8,7/10 – deftig, bodenständig und genau richtig für Fans klassischer Hausmannskost.</rating>
-    <translation lang="pl">
-      <name>Tote Oma z kapustą kiszoną i puree ziemniaczanym</name>
-      <persons>4 osoby</persons>
-      <category>DDR i ostalgia / Klasyki i kuchnia domowa</category>
-      <ingredients>
-        <item>600 g kaszanki</item>
-        <item>2 cebule</item>
-        <item>2 EL klarowanego masła</item>
-        <item>800 g mączystych ziemniaków</item>
-        <item>40 g masła</item>
-        <item>150 ml ciepłego mleka</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 szczypta gałki muszkatołowej</item>
-        <item>500 g kapusty kiszonej</item>
-        <item>1 EL smalcu albo masła</item>
-        <item>100 ml bulionu albo wody</item>
-        <item>1 liść laurowy</item>
-        <item>4 jagody jałowca</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Ziemniaki obrać, pokroić i ugotować do miękkości w osolonej wodzie.</step>
-        <step nr="2">Na kapustę rozgrzać smalec albo masło w garnku, dodać kapustę, liść laurowy, jałowiec i bulion i gotować łagodnie 20–25 minut.</step>
-        <step nr="3">Kaszankę obrać z osłonki i pokroić na większe kawałki. Cebulę drobno pokroić w kostkę.</step>
-        <step nr="4">Na dużej patelni rozgrzać klarowane masło i zeszklić cebulę na złoto.</step>
-        <step nr="5">Dodać kaszankę i smażyć na średnim ogniu, rozdrabniając ją łopatką na rustykalną masę przez 8–12 minut.</step>
-        <step nr="6">Ugotowane ziemniaki odcedzić, krótko odparować i utłuc z masłem oraz ciepłym mlekiem. Doprawić solą, pieprzem i gałką muszkatołową.</step>
-        <step nr="7">Finalnie doprawić kapustę kiszoną i podawać wszystko razem na gorąco.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>gotowanie ziemniaków: ok. 20–25 min</item>
-        <item>kapusta kiszona: ok. 20–25 min</item>
-        <item>smażenie kaszanki: ok. 8–12 min</item>
-        <item>łącznie: ok. 45 min</item>
-      </timing>
-      <tips>
-        <item>Kaszanki nie smaż zbyt mocno, bo zrobi się sucha i zbyt krucha.</item>
-        <item>Przy kapuście kiszonej lepiej dodać trochę bulionu niż za dużo płynu, żeby nie była wodnista.</item>
-        <item>Do puree używaj ciepłego mleka, wtedy pozostanie bardziej kremowe.</item>
-      </tips>
-      <rating>8,7/10</rating>
-    </translation>
   </recipe>
   <recipe id="157">
     <name>Karlsbader Schnitten</name>
     <intro lang="de">Karlsbader Schnitten gehören zu den typischen herzhaften DDR-Snacks, die schnell gemacht sind und direkt nach Imbiss, Abendbrot und Kindheitserinnerung schmecken. Überbacken, würzig und unkompliziert – genau darin liegt ihr Charme.</intro>
-    <intro lang="pl">Karlsbader Schnitten należą do typowych wytrawnych przekąsek NRD, które robi się szybko, a smakują od razu jak bar, kolacja i dzieciństwo. Zapiekane, wyraziste i nieskomplikowane – właśnie w tym tkwi ich urok.</intro>
     <persons>4 Personen</persons>
     <category>DDR &amp; Ostalgie / Snacks &amp; Imbiss</category>
     <image src="images/rezeptbild_157.png" alt="Karlsbader Schnitten" />
@@ -12182,50 +10994,10 @@
       <item>Am besten frisch aus dem Ofen servieren, dann sind sie außen leicht knusprig und innen saftig.</item>
     </tips>
     <rating>8,9/10 – schnell, würzig und als herzhafter Snack richtig dankbar.</rating>
-    <translation lang="pl">
-      <name>Karlsbader Schnitten</name>
-      <persons>4 osoby</persons>
-      <category>DDR i ostalgia / Przekąski i barowe klasyki</category>
-      <ingredients>
-        <item>8 kromek chleba tostowego albo mieszanego</item>
-        <item>200 g jagdwurst albo gotowanej szynki w drobnej kostce</item>
-        <item>150 g startego sera</item>
-        <item>2 jajka</item>
-        <item>100 ml mleka</item>
-        <item>2 EL ketchup</item>
-        <item>1 TL musztardy</item>
-        <item>1 mała cebula, drobno pokrojona w kostkę</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>trochę masła do blachy</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Piekarnik nagrzać do 200 °C góra/dół i lekko wysmarować masłem blachę albo formę.</step>
-        <step nr="2">Jajka wymieszać z mlekiem, ketchupem, musztardą, cebulą, papryką, solą i pieprzem.</step>
-        <step nr="3">Dodać jagdwurst albo szynkę oraz starty ser, aż powstanie smarowna, wyrazista masa.</step>
-        <step nr="4">Kromki chleba ułożyć na blasze i równomiernie rozsmarować na nich masę.</step>
-        <step nr="5">Piec na środkowej półce 12–15 minut, aż kanapki będą gorące, a wierzch złocisty.</step>
-        <step nr="6">Krótko odstawić na 2 minuty i podawać na ciepło.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 15 min</item>
-        <item>czas pieczenia: ok. 12–15 min w 200 °C góra/dół</item>
-        <item>krótka chwila po pieczeniu: ok. 2 min</item>
-        <item>łącznie: ok. 30 min</item>
-      </timing>
-      <tips>
-        <item>Odrobina większej ilości ketchupu daje bardziej soczystą masę, a większa ilość sera – mocniejszy smak.</item>
-        <item>Chleb mieszany daje bardziej rustykalny charakter niż tost.</item>
-        <item>Najlepiej podawać świeżo z piekarnika, wtedy są lekko chrupiące z zewnątrz i soczyste w środku.</item>
-      </tips>
-      <rating>8,9/10</rating>
-    </translation>
   </recipe>
   <recipe id="158">
     <name>Grilletta nach DDR-Art</name>
     <intro lang="de">Die Grilletta ist die DDR-Version des Burgers – schlicht, deftig und ohne unnötigen Schnickschnack. Gerade deshalb funktioniert sie so gut: saftige Hackfrikadelle, Brötchen, Zwiebeln, etwas Sauce und fertig.</intro>
-    <intro lang="pl">Grilletta to wersja burgera z NRD – prosta, konkretna i bez zbędnych dodatków. Właśnie dlatego tak dobrze działa: soczysty kotlet z mięsa mielonego, bułka, cebula, trochę sosu i gotowe.</intro>
     <persons>4 Personen</persons>
     <category>DDR &amp; Ostalgie / Snacks &amp; Imbiss</category>
     <image src="images/rezeptbild_158.png" alt="Grilletta nach DDR-Art" />
@@ -12265,52 +11037,10 @@
       <item>Mit Senf und Zwiebelringen kannst du die Würze noch etwas ostiger ziehen.</item>
     </tips>
     <rating>8,8/10 – schlicht, nostalgisch und als Imbissklassiker sofort verständlich.</rating>
-    <translation lang="pl">
-      <name>Grilletta po DDR-owsku</name>
-      <persons>4 osoby</persons>
-      <category>DDR i ostalgia / Przekąski i barowe klasyki</category>
-      <ingredients>
-        <item>600 g mieszanego mięsa mielonego</item>
-        <item>1 mała cebula, bardzo drobno pokrojona w kostkę</item>
-        <item>1 jajko</item>
-        <item>2 EL bułki tartej</item>
-        <item>1 TL musztardy</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>2 EL oleju</item>
-        <item>4 bułki burgerowe albo większe bułki</item>
-        <item>4 EL ketchup</item>
-        <item>1 średnia cebula pokrojona w krążki</item>
-        <item>4 ogórki konserwowe w plastrach</item>
-        <item>opcjonalnie: 4 liście sałaty</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Mięso mielone zagnieść z drobno pokrojoną cebulą, jajkiem, bułką tartą, musztardą, papryką, solą i pieprzem.</step>
-        <step nr="2">Uformować cztery płaskie kotlety, trochę większe niż bułki, bo podczas smażenia lekko się skurczą.</step>
-        <step nr="3">Na patelni rozgrzać olej i smażyć kotlety na średnim albo średnio mocnym ogniu po 4–5 minut z każdej strony, aż będą dobrze zrumienione i gotowe w środku.</step>
-        <step nr="4">Bułki przekroić i podpiec na suchej patelni albo krótko w piekarniku w 180 °C góra/dół przez 3–4 minuty.</step>
-        <step nr="5">Dolne połówki bułek posmarować ketchupem, położyć kotlety i dodać cebulę oraz plastry ogórków konserwowych.</step>
-        <step nr="6">Według uznania dołożyć trochę sałaty, przykryć górą bułki i od razu podawać.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>smażenie kotletów: ok. 10 min</item>
-        <item>podpiekanie bułek: ok. 3–4 min</item>
-        <item>łącznie: ok. 35 min</item>
-      </timing>
-      <tips>
-        <item>Kotlety formuj raczej płasko, żeby zachować typowy charakter grilletty.</item>
-        <item>Nie przesadzaj z dodatkami – prostota należy tutaj do całego pomysłu.</item>
-        <item>Musztarda i krążki cebuli jeszcze mocniej podbijają wschodni charakter.</item>
-      </tips>
-      <rating>8,8/10</rating>
-    </translation>
   </recipe>
   <recipe id="159">
     <name>Ketwurst nach DDR-Art</name>
     <intro lang="de">Ketwurst war in der DDR der Hotdog-Klassiker schlechthin: warmes Brötchen, Brühwurst und eine kräftige Ketchup-Sauce. Gerade die Einfachheit macht den typischen Imbisscharakter aus.</intro>
-    <intro lang="pl">Ketwurst był w NRD klasykiem wśród hot dogów: ciepła bułka, parówka i mocny ketchupowy sos. Właśnie ta prostota buduje cały typowy charakter barowej przekąski.</intro>
     <persons>4 Personen</persons>
     <category>DDR &amp; Ostalgie / Snacks &amp; Imbiss</category>
     <image src="images/rezeptbild_159.png" alt="Ketwurst nach DDR-Art" />
@@ -12346,48 +11076,10 @@
       <item>Das Brötchen nur kurz erwärmen, damit es weich bleibt und nicht austrocknet.</item>
     </tips>
     <rating>8,6/10 – schneller Ost-Imbiss mit hohem Nostalgiefaktor.</rating>
-    <translation lang="pl">
-      <name>Ketwurst po DDR-owsku</name>
-      <persons>4 osoby</persons>
-      <category>DDR i ostalgia / Przekąski i barowe klasyki</category>
-      <ingredients>
-        <item>4 długie bułki do hot doga albo do ketwurst</item>
-        <item>4 parówki albo bockwursty</item>
-        <item>250 ml ketchup</item>
-        <item>1 EL koncentratu pomidorowego</item>
-        <item>1 TL musztardy</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>1 mała szczypta cukru</item>
-        <item>2 EL wody</item>
-        <item>opcjonalnie: trochę relishu ogórkowego albo drobno pokrojonego ogórka konserwowego</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Ketchup wymieszać z koncentratem pomidorowym, musztardą, papryką, cukrem i wodą, a następnie podgrzewać łagodnie 3–4 minuty w małym garnku.</step>
-        <step nr="2">Parówki podgrzewać 8–10 minut w gorącej, ale już nie gotującej się wodzie.</step>
-        <step nr="3">Bułki krótko podgrzać w piekarniku w 120 °C góra/dół przez 4–5 minut albo w parze, żeby były miękkie i ciepłe.</step>
-        <step nr="4">Ciepłe bułki ostrożnie naciąć wzdłuż albo wydrążyć.</step>
-        <step nr="5">Włożyć po jednej gorącej parówce, wlać dużo ciepłego sosu i według uznania dodać trochę ogórka.</step>
-        <step nr="6">Podawać od razu, kiedy bułka i parówka są jeszcze naprawdę gorące.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 10 min</item>
-        <item>podgrzanie sosu: ok. 4 min</item>
-        <item>podgrzewanie parówek: ok. 8–10 min</item>
-        <item>podgrzewanie bułek: ok. 4–5 min w 120 °C góra/dół</item>
-        <item>łącznie: ok. 20 min</item>
-      </timing>
-      <tips>
-        <item>Parówek nie gotuj, tylko podgrzewaj, wtedy zostają soczyste.</item>
-        <item>Sos może być trochę gęstszy niż zwykły ketchup, inaczej zbyt szybko wypływa z bułki.</item>
-        <item>Bułkę podgrzewaj tylko krótko, żeby została miękka i nie wyschła.</item>
-      </tips>
-      <rating>8,6/10</rating>
-    </translation>
   </recipe>
   <recipe id="160">
     <name>Schmorkohl mit Hackfleisch</name>
     <intro lang="de">Schmorkohl ist ein echtes DDR-Alltagsgericht: einfach, günstig, sättigend und trotzdem richtig lecker, wenn Kohl, Zwiebeln und Hack langsam zusammen schmoren. Gerade diese schlichte Küchenlogik macht das Gericht so stark.</intro>
-    <intro lang="pl">Duszona kapusta to prawdziwe codzienne danie z NRD: proste, tanie, sycące, a przy tym naprawdę smaczne, jeśli kapusta, cebula i mięso mielone mają czas spokojnie się razem podusić. Właśnie ta prosta logika kuchni robi tu całą robotę.</intro>
     <persons>4 Personen</persons>
     <category>DDR &amp; Ostalgie / Klassiker &amp; Hausmannskost</category>
     <image src="images/rezeptbild_160.png" alt="Schmorkohl mit Hackfleisch" />
@@ -12426,51 +11118,10 @@
       <item>Schmorkohl schmeckt aufgewärmt oft sogar noch runder.</item>
     </tips>
     <rating>8,9/10 – schlicht, deftig und als Alltagsgericht sehr überzeugend.</rating>
-    <translation lang="pl">
-      <name>Duszona kapusta z mięsem mielonym</name>
-      <persons>4 osoby</persons>
-      <category>DDR i ostalgia / Klasyki i kuchnia domowa</category>
-      <ingredients>
-        <item>1 mała biała kapusta, ok. 1 kg</item>
-        <item>500 g mieszanego mięsa mielonego</item>
-        <item>2 cebule</item>
-        <item>2 EL oleju albo smalcu</item>
-        <item>2 EL koncentratu pomidorowego</item>
-        <item>200 ml bulionu warzywnego albo mięsnego</item>
-        <item>1 TL słodkiej papryki w proszku</item>
-        <item>1 szczypta kminku, opcjonalnie</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1 mała szczypta cukru</item>
-        <item>do podania: gotowane ziemniaki albo puree ziemniaczane</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Białą kapustę pokroić na ćwiartki, usunąć głąb i poszatkować w cienkie paski. Cebulę pokroić w kostkę.</step>
-        <step nr="2">Mięso mielone obsmażyć na gorącym oleju w dużym garnku albo brytfannie, aż będzie sypkie i dobrze zrumienione.</step>
-        <step nr="3">Dodać cebulę i zeszklić. Wmieszać koncentrat pomidorowy i krótko podsmażyć.</step>
-        <step nr="4">Stopniowo dodawać kapustę, cały czas mieszając, aż zacznie opadać. Zajmie to około 8–10 minut.</step>
-        <step nr="5">Wlać bulion, dodać paprykę i według uznania trochę kminku.</step>
-        <step nr="6">Dusić pod przykryciem 30–40 minut na małym albo średnim ogniu, od czasu do czasu mieszając.</step>
-        <step nr="7">Na końcu doprawić solą, pieprzem i małą szczyptą cukru i podawać z ziemniakami.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 20 min</item>
-        <item>obsmażanie i przygotowanie bazy: ok. 15 min</item>
-        <item>czas duszenia: ok. 30–40 min</item>
-        <item>łącznie: ok. 1 godzina</item>
-      </timing>
-      <tips>
-        <item>Jeśli kapusta jest bardzo duża, dodawaj ją partiami, wtedy opadnie równiej.</item>
-        <item>Odrobina kminku poprawia strawność, nie dominując smaku.</item>
-        <item>Po podgrzaniu następnego dnia kapusta często smakuje jeszcze pełniej.</item>
-      </tips>
-      <rating>8,9/10</rating>
-    </translation>
   </recipe>
   <recipe id="161">
     <name>Kalter Hund</name>
     <intro lang="de">Kalter Hund ist einer der bekanntesten süßen DDR-Klassiker überhaupt – kein Backen, viel Schokolade und dieser typische Keks-Schicht-Look, der sofort Erinnerungen weckt. Genau deshalb passt er perfekt in einen Ostalgie-Block.</intro>
-    <intro lang="pl">Kalter Hund to jeden z najbardziej znanych słodkich klasyków NRD – bez pieczenia, dużo czekolady i ten typowy przekrój z warstwami herbatników, który od razu budzi wspomnienia. Właśnie dlatego idealnie pasuje do bloku ostalgicznego.</intro>
     <persons>1 Kastenform, ca. 12 Stücke</persons>
     <category>DDR &amp; Ostalgie / Backen &amp; Süßes</category>
     <image src="images/rezeptbild_161.png" alt="Kalter Hund" />
@@ -12508,50 +11159,10 @@
       <item>Über Nacht gekühlt bekommt Kalter Hund die beste, feste Schnittstruktur.</item>
     </tips>
     <rating>9,3/10 – einfacher Nostalgie-Kuchen mit maximalem Wiedererkennungswert.</rating>
-    <translation lang="pl">
-      <name>Kalter Hund</name>
-      <persons>1 keksówka, ok. 12 kawałków</persons>
-      <category>DDR i ostalgia / Wypieki i słodkości</category>
-      <ingredients>
-        <item>250 g tłuszczu kokosowego</item>
-        <item>200 g gorzkiej czekolady</item>
-        <item>100 g mlecznej czekolady</item>
-        <item>2 jajka</item>
-        <item>120 g cukru pudru</item>
-        <item>2 EL kakao</item>
-        <item>1 opakowanie cukru wanilinowego</item>
-        <item>250 g herbatników maślanych</item>
-        <item>1 keksówka</item>
-        <item>papier do pieczenia do formy</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Formę keksową wyłożyć papierem do pieczenia.</step>
-        <step nr="2">Tłuszcz kokosowy razem z gorzką i mleczną czekoladą delikatnie rozpuścić w kąpieli wodnej.</step>
-        <step nr="3">Jajka wymieszać z cukrem pudrem, kakao i cukrem wanilinowym na gładką masę.</step>
-        <step nr="4">Powoli wmieszać roztopioną masę czekoladową do masy jajecznej, aż powstanie jednolity krem.</step>
-        <step nr="5">Na dno formy wlać trochę masy czekoladowej, a następnie ułożyć warstwę herbatników.</step>
-        <step nr="6">Na przemian układać masę czekoladową i herbatniki, aż wszystko się zużyje. Zakończyć warstwą czekoladową.</step>
-        <step nr="7">Kalter Hund schładzać co najmniej 6 godzin, a najlepiej przez noc.</step>
-        <step nr="8">Przed krojeniem odstawić na 10–15 minut w temperaturze pokojowej, a następnie pokroić w plastry.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 25 min</item>
-        <item>czas chłodzenia: co najmniej 6 godzin, najlepiej przez noc</item>
-        <item>czas odstania przed krojeniem: ok. 10–15 min</item>
-        <item>aktywnie łącznie: ok. 25 min</item>
-      </timing>
-      <tips>
-        <item>Masę czekoladową wmieszaj, kiedy nie jest już zbyt gorąca, żeby jajka się nie ścięły.</item>
-        <item>Najczyściej kroi się wtedy, kiedy nóż zanurzysz na chwilę w ciepłej wodzie.</item>
-        <item>Po całonocnym schłodzeniu ciasto ma najlepszą, zwartą strukturę do krojenia.</item>
-      </tips>
-      <rating>9,3/10</rating>
-    </translation>
   </recipe>
   <recipe id="162">
     <name>Eierschecke</name>
     <intro lang="de">Eierschecke ist ein echter ostdeutscher Backklassiker und passt perfekt als süßer Abschluss in den Ostalgie-Block. Der Reiz liegt im Zusammenspiel aus Boden, Quarkschicht und der typischen luftigen Eierdecke.</intro>
-    <intro lang="pl">Eierschecke to prawdziwy klasyk wschodnioniemieckiego pieczenia i świetnie domyka słodki blok ostalgiczny. Jego siła tkwi w połączeniu spodu, warstwy twarogowej i typowej lekkiej warstwy jajecznej.</intro>
     <persons>1 Blech oder 1 große Springform</persons>
     <category>DDR &amp; Ostalgie / Backen &amp; Süßes</category>
     <image src="images/rezeptbild_162.png" alt="Eierschecke" />
@@ -12597,52 +11208,444 @@
       <item>Am nächsten Tag schmeckt Eierschecke oft noch harmonischer.</item>
     </tips>
     <rating>9,1/10 – klassisch, saftig und mit schöner Schichtung sehr stimmig.</rating>
+  </recipe>
+  <recipe id="163">
+    <name>Pyra z bzikiem nach Wielkopolska-Art</name>
+    <intro lang="de">Dieses Gericht lebt von genau der Einfachheit, die richtig gut funktioniert: eine große Ofenkartoffel, cremiger Twaróg mit saurer Komponente, rote Zwiebel, Schnittlauch und etwas Butter. Als bodenständiges Kartoffelgericht aus der Wielkopolska passt es perfekt in deinen regionalen Block.</intro>
+    <intro lang="pl">To danie żyje prostotą, która naprawdę działa: duża pieczona pyra, kremowy twaróg ze śmietaną, czerwona cebula, szczypiorek i trochę masła. Jako klasyczne ziemniaczane danie z Wielkopolski świetnie pasuje do regionalnego działu.</intro>
+    <persons>4 Personen</persons>
+    <category>Polnische Regionalküche / Kartoffelgerichte</category>
+    <image src="images/rezeptbild_163.png" alt="Pyra z bzikiem nach Wielkopolska-Art" />
+    <ingredients>
+      <item>4 große mehligkochende Kartoffeln, je ca. 300–350 g</item>
+      <item>250 g Twaróg oder gut abgetropfter körniger Frischkäse</item>
+      <item>150 g Schmand oder saure Sahne</item>
+      <item>40 g weiche Butter</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>1/2 Bund Schnittlauch</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 kleine Prise Zucker, optional</item>
+      <item>1 EL Milch oder Sahne, falls die Creme etwas lockerer werden soll</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 200 °C Ober-/Unterhitze vorheizen. Die Kartoffeln gründlich waschen, trockenreiben und mehrfach mit einer Gabel einstechen.</step>
+      <step nr="2">Die Kartoffeln direkt auf dem Rost oder auf einem kleinen Blech 60 bis 75 Minuten backen, bis sie weich sind. Je nach Größe kann es auch etwas länger dauern.</step>
+      <step nr="3">Währenddessen für den Bzik Twaróg mit Schmand und weicher Butter in einer Schüssel verrühren. Die Creme darf rustikal bleiben und muss nicht völlig glatt sein.</step>
+      <step nr="4">Rote Zwiebel sehr fein würfeln und den Schnittlauch in feine Röllchen schneiden. Beides unter die Käsecreme heben.</step>
+      <step nr="5">Mit Salz, Pfeffer und nach Wunsch einer kleinen Prise Zucker abschmecken. Wenn die Masse zu fest ist, 1 Esslöffel Milch oder Sahne einrühren.</step>
+      <step nr="6">Die fertig gebackenen Kartoffeln längs einschneiden und innen mit einer Gabel leicht auflockern.</step>
+      <step nr="7">Jeweils etwas Butter in die heiße Kartoffel geben, dann großzügig mit Bzik füllen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 60–75 Minuten bei 200 °C Ober-/Unterhitze</item>
+      <item>Bzik anrühren: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 1 Stunde 20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Je größer die Kartoffeln sind, desto schöner lässt sich die Füllung später einarbeiten.</item>
+      <item>Die Kartoffeln erst direkt vor dem Servieren öffnen, damit sie innen heiß und locker bleiben.</item>
+      <item>Dazu passen Gewürzgurke, Radieschen oder ein kleiner grüner Salat sehr gut.</item>
+    </tips>
+    <rating>9,0/10 – einfach, regional und genau mit dieser schlichten Logik richtig stark.</rating>
     <translation lang="pl">
-      <name>Eierschecke</name>
-      <persons>1 blacha albo 1 duża tortownica</persons>
-      <category>DDR i ostalgia / Wypieki i słodkości</category>
+      <name>Pyra z bzikiem po wielkopolsku</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia regionalna polska / dania ziemniaczane</category>
       <ingredients>
-        <item>na spód: 250 g mąki</item>
-        <item>na spód: 125 g masła</item>
-        <item>na spód: 80 g cukru</item>
-        <item>na spód: 1 jajko</item>
-        <item>na spód: 1 TL proszku do pieczenia</item>
-        <item>na warstwę twarogową: 500 g chudego twarogu</item>
-        <item>na warstwę twarogową: 120 g cukru</item>
-        <item>na warstwę twarogową: 1 opakowanie cukru wanilinowego</item>
-        <item>na warstwę twarogową: 2 jajka</item>
-        <item>na warstwę twarogową: 80 g miękkiego masła</item>
-        <item>na warstwę twarogową: 1 opakowanie proszku na budyń waniliowy</item>
-        <item>na warstwę jajeczną: 3 jajka</item>
-        <item>na warstwę jajeczną: 80 g cukru</item>
-        <item>na warstwę jajeczną: 250 ml mleka</item>
-        <item>na warstwę jajeczną: 40 g masła</item>
+        <item>4 duże mączyste ziemniaki, po ok. 300–350 g</item>
+        <item>250 g twarogu półtłustego lub dobrze odsączonego serka ziarnistego</item>
+        <item>150 g śmietany lub kwaśnej śmietany</item>
+        <item>40 g miękkiego masła</item>
+        <item>1 mała czerwona cebula</item>
+        <item>1/2 pęczka szczypiorku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>1 mała szczypta cukru, opcjonalnie</item>
+        <item>1 EL mleka lub śmietanki, jeśli krem ma być luźniejszy</item>
       </ingredients>
       <preparation>
-        <step nr="1">Piekarnik nagrzać do 175 °C góra/dół i wysmarować formę albo wyłożyć ją papierem.</step>
-        <step nr="2">Na spód zagnieść gładkie ciasto z mąki, masła, cukru, jajka i proszku do pieczenia.</step>
-        <step nr="3">Wcisnąć ciasto do formy i zrobić lekki rant.</step>
-        <step nr="4">Na warstwę twarogową wymieszać twaróg, cukier, cukier wanilinowy, jajka, miękkie masło i proszek budyniowy na gładką masę.</step>
-        <step nr="5">Rozprowadzić masę twarogową na spodzie.</step>
-        <step nr="6">Piec najpierw 25 minut w nagrzanym piekarniku.</step>
-        <step nr="7">W międzyczasie oddzielić jajka do warstwy wierzchniej. Żółtka wymieszać z cukrem, mlekiem i roztopionym masłem.</step>
-        <step nr="8">Białka ubić na sztywno i delikatnie wmieszać do masy żółtkowej.</step>
-        <step nr="9">Po 25 minutach wyjąć formę z piekarnika, ostrożnie rozprowadzić warstwę jajeczną na masie twarogowej i piec kolejne 25–30 minut.</step>
-        <step nr="10">Pozostawić eierschecke do całkowitego ostygnięcia, dopiero wtedy kroić.</step>
+        <step nr="1">Rozgrzać piekarnik do 200 °C góra/dół. Ziemniaki dokładnie umyć, osuszyć i kilka razy nakłuć widelcem.</step>
+        <step nr="2">Piecz ziemniaki bezpośrednio na ruszcie albo na małej blasze przez 60 do 75 minut, aż będą miękkie. Przy większych sztukach może to potrwać trochę dłużej.</step>
+        <step nr="3">W międzyczasie przygotować bzik: twaróg wymieszać ze śmietaną i miękkim masłem. Masa może pozostać lekko rustykalna i nie musi być całkiem gładka.</step>
+        <step nr="4">Czerwoną cebulę drobno pokroić w kostkę, szczypiorek posiekać na cienkie krążki. Obydwa składniki wmieszać do kremu.</step>
+        <step nr="5">Doprawić solą, pieprzem i opcjonalnie małą szczyptą cukru. Jeśli masa jest zbyt gęsta, dodać 1 łyżkę mleka lub śmietanki.</step>
+        <step nr="6">Upieczone ziemniaki naciąć wzdłuż i widelcem lekko rozluźnić środek.</step>
+        <step nr="7">Do każdej gorącej pyry włożyć trochę masła, następnie hojnie nałożyć bzik i od razu podawać.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 15 min</item>
+        <item>pieczenie: ok. 60–75 min w 200 °C góra/dół</item>
+        <item>przygotowanie bziku: ok. 10 min</item>
+        <item>łącznie: ok. 1 godz. 20 min</item>
+      </timing>
+      <tips>
+        <item>Im większe ziemniaki, tym łatwiej później wypełnić je farszem.</item>
+        <item>Ziemniaki natnij dopiero tuż przed podaniem, wtedy w środku pozostaną gorące i puszyste.</item>
+        <item>Bardzo dobrze pasują do tego ogórek konserwowy, rzodkiewki albo mała zielona sałata.</item>
+      </tips>
+      <rating>9,0/10 – proste, regionalne i właśnie dzięki tej prostocie bardzo mocne.</rating>
+    </translation>
+  </recipe>
+  <recipe id="164">
+    <name>Babka ziemniaczana mit Speck, Schweinefleisch und Pilzen</name>
+    <intro lang="de">Diese herzhafte Babka ziemniaczana ist genau die Art Ofengericht, die außen schön gebräunt und innen saftig sein soll. Mit Speck, Schweinefleisch, Zwiebeln und Pilzen wird daraus ein kräftiges, regional inspiriertes Kartoffelgericht mit viel Charakter.</intro>
+    <intro lang="pl">Ta wytrawna babka ziemniaczana to dokładnie taki pieczony klasyk, który ma być ładnie przyrumieniony z zewnątrz i soczysty w środku. Boczek, wieprzowina, cebula i pieczarki nadają jej mocny, regionalny charakter.</intro>
+    <persons>6 Personen</persons>
+    <category>Polnische Regionalküche / Ofengerichte</category>
+    <image src="images/rezeptbild_164.png" alt="Babka ziemniaczana mit Speck, Schweinefleisch und Pilzen" />
+    <ingredients>
+      <item>1,5 kg mehligkochende Kartoffeln</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Eier</item>
+      <item>3 EL Mehl</item>
+      <item>150 g durchwachsener Speck</item>
+      <item>300 g Schweinenacken oder Schweineschulter in kleinen Würfeln</item>
+      <item>200 g Champignons oder braune Pilze</item>
+      <item>2 EL Öl</item>
+      <item>100 ml Sahne oder Schmand</item>
+      <item>1 TL Majoran</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Butter oder Öl für die Form</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 190 °C Ober-/Unterhitze vorheizen und eine Auflaufform oder Kastenform gut einfetten.</step>
+      <step nr="2">Speck klein würfeln und in einer Pfanne langsam auslassen. Schweinefleisch zugeben und kräftig anbraten.</step>
+      <step nr="3">Zwiebeln fein würfeln, Pilze klein schneiden und beides mit in die Pfanne geben. Alles 5 bis 6 Minuten weiterbraten, bis die Flüssigkeit der Pilze weitgehend verkocht ist. Leicht abkühlen lassen.</step>
+      <step nr="4">Kartoffeln schälen und fein reiben. Die Masse in einem Sieb oder Tuch leicht ausdrücken, damit sie nicht zu wässrig bleibt.</step>
+      <step nr="5">Geriebene Kartoffeln mit Eiern, Mehl, Sahne oder Schmand und Majoran verrühren. Mit Salz und Pfeffer kräftig abschmecken.</step>
+      <step nr="6">Die angebratene Speck-Fleisch-Pilz-Mischung unter die Kartoffelmasse heben.</step>
+      <step nr="7">Alles in die vorbereitete Form füllen und glattstreichen.</step>
+      <step nr="8">Die Babka im Ofen 70 bis 85 Minuten backen, bis sie oben kräftig gebräunt ist und sich die Mitte gesetzt hat.</step>
+      <step nr="9">Vor dem Anschneiden 10 bis 15 Minuten ruhen lassen, damit sie stabiler wird. Danach in Stücke schneiden und warm servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 35 Minuten</item>
+      <item>Anbraten der Einlage: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 70–85 Minuten bei 190 °C Ober-/Unterhitze</item>
+      <item>Ruhezeit: ca. 10–15 Minuten</item>
+      <item>Gesamt: ca. 2 Stunden</item>
+    </timing>
+    <tips>
+      <item>Die Kartoffelmasse nur leicht ausdrücken – zu trocken sollte sie nicht werden.</item>
+      <item>Wenn die Oberfläche zu schnell dunkel wird, die Form locker mit Backpapier oder Alufolie abdecken.</item>
+      <item>Dazu passen Schmand, Gurkensalat oder ein kleiner Krautsalat sehr gut.</item>
+    </tips>
+    <rating>9,1/10 – kräftig, saftig und als Kartoffelgericht mit Ofenkruste richtig überzeugend.</rating>
+    <translation lang="pl">
+      <name>Babka ziemniaczana z boczkiem, wieprzowiną i pieczarkami</name>
+      <persons>6 osób</persons>
+      <category>Kuchnia regionalna polska / dania z piekarnika</category>
+      <ingredients>
+        <item>1,5 kg mączystych ziemniaków</item>
+        <item>2 cebule</item>
+        <item>2 jajka</item>
+        <item>3 EL mąki</item>
+        <item>150 g boczku wędzonego</item>
+        <item>300 g karkówki lub łopatki wieprzowej w małej kostce</item>
+        <item>200 g pieczarek</item>
+        <item>2 EL oleju</item>
+        <item>100 ml śmietany lub 2–3 EL kwaśnej śmietany</item>
+        <item>1 TL majeranku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>trochę masła lub oleju do formy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozgrzać piekarnik do 190 °C góra/dół i dobrze natłuścić formę do zapiekania albo keksówkę.</step>
+        <step nr="2">Boczek pokroić w drobną kostkę i powoli wytopić na patelni. Dodać wieprzowinę i mocno obsmażyć.</step>
+        <step nr="3">Cebulę drobno pokroić, pieczarki posiekać i dodać wszystko na patelnię. Smażyć kolejne 5 do 6 minut, aż płyn z pieczarek w większości odparuje. Lekko przestudzić.</step>
+        <step nr="4">Ziemniaki obrać i drobno zetrzeć. Masę lekko odcisnąć na sicie albo w ściereczce, żeby nie była zbyt wodnista.</step>
+        <step nr="5">Starte ziemniaki wymieszać z jajkami, mąką, śmietaną i majerankiem. Wyraźnie doprawić solą oraz pieprzem.</step>
+        <step nr="6">Do masy ziemniaczanej dodać podsmażoną mieszankę boczku, mięsa i pieczarek.</step>
+        <step nr="7">Przełożyć wszystko do przygotowanej formy i wyrównać powierzchnię.</step>
+        <step nr="8">Piec 70 do 85 minut, aż babka będzie wyraźnie rumiana z wierzchu, a środek się zetnie.</step>
+        <step nr="9">Przed krojeniem odstawić na 10 do 15 minut, żeby lepiej się ustabilizowała. Następnie pokroić i podawać na ciepło.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 35 min</item>
+        <item>obsmażanie dodatków: ok. 15 min</item>
+        <item>pieczenie: ok. 70–85 min w 190 °C góra/dół</item>
+        <item>czas odpoczynku: ok. 10–15 min</item>
+        <item>łącznie: ok. 2 godz.</item>
+      </timing>
+      <tips>
+        <item>Masę ziemniaczaną odciskaj tylko lekko – nie powinna być zbyt sucha.</item>
+        <item>Jeśli wierzch za szybko się rumieni, przykryj formę luźno papierem do pieczenia albo folią.</item>
+        <item>Bardzo dobrze pasują do tego śmietana, sałatka z ogórka albo lekka surówka z kapusty.</item>
+      </tips>
+      <rating>9,1/10 – mocna, soczysta i z pieczoną skórką naprawdę przekonująca.</rating>
+    </translation>
+  </recipe>
+  <recipe id="165">
+    <name>Gemüse-Babka ziemniaczana aus dem Ofen</name>
+    <intro lang="de">Diese Gemüsebabka ist die leichtere, aber trotzdem sehr herzhafte Schwester der klassischen Fleischversion. Kartoffeln, Paprika, Zucchini, rote Zwiebel, Oliven und Pilze ergeben zusammen ein Ofengericht, das rustikal und gleichzeitig angenehm saftig bleibt.</intro>
+    <intro lang="pl">Ta warzywna babka jest lżejszą, ale wciąż bardzo konkretną siostrą klasycznej wersji mięsnej. Ziemniaki, papryka, cukinia, czerwona cebula, oliwki i pieczarki tworzą razem pieczone danie, które pozostaje rustykalne i przyjemnie soczyste.</intro>
+    <persons>6 Personen</persons>
+    <category>Polnische Regionalküche / Ofengerichte</category>
+    <image src="images/rezeptbild_165.png" alt="Gemüse-Babka ziemniaczana aus dem Ofen" />
+    <ingredients>
+      <item>1,4 kg mehligkochende Kartoffeln</item>
+      <item>1 rote Paprika</item>
+      <item>1 kleine Zucchini</item>
+      <item>1 rote Zwiebel</item>
+      <item>150 g Champignons</item>
+      <item>60 g grüne Oliven, grob gehackt</item>
+      <item>2 Eier</item>
+      <item>3 EL Mehl</item>
+      <item>100 ml Schmand oder Sahne</item>
+      <item>2 EL Öl</item>
+      <item>1 EL gehackte Petersilie</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1/2 TL Majoran</item>
+      <item>etwas Öl oder Butter für die Form</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 190 °C Ober-/Unterhitze vorheizen und eine Form gut einfetten.</step>
+      <step nr="2">Paprika, Zucchini, Zwiebel und Pilze klein würfeln. Alles in 2 Esslöffeln Öl 6 bis 8 Minuten anbraten, bis das Gemüse etwas zusammenfällt. Danach kurz abkühlen lassen.</step>
+      <step nr="3">Kartoffeln schälen und fein reiben. Die Masse leicht ausdrücken, damit überschüssige Flüssigkeit entfernt wird.</step>
+      <step nr="4">Geriebene Kartoffeln mit Eiern, Mehl, Schmand, Petersilie und Majoran verrühren.</step>
+      <step nr="5">Das angebratene Gemüse und die gehackten Oliven unterheben und alles mit Salz und Pfeffer kräftig abschmecken.</step>
+      <step nr="6">Die Masse in die Form geben und glattstreichen.</step>
+      <step nr="7">Im Ofen 65 bis 80 Minuten backen, bis die Oberfläche goldbraun ist und die Babka innen gestockt wirkt.</step>
+      <step nr="8">Vor dem Anschneiden 10 Minuten ruhen lassen und dann warm servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Gemüse anbraten: ca. 8 Minuten</item>
+      <item>Backzeit: ca. 65–80 Minuten bei 190 °C Ober-/Unterhitze</item>
+      <item>Ruhezeit: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 1 Stunde 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Zucchini geben Feuchtigkeit ab – deshalb das Gemüse kurz anbraten und die Kartoffeln leicht ausdrücken.</item>
+      <item>Mit einem Klecks Schmand oder Kräuterquark serviert wirkt das Gericht noch runder.</item>
+      <item>Auch am nächsten Tag in Scheiben angebraten sehr gut.</item>
+    </tips>
+    <rating>8,9/10 – rustikal, saftig und eine sehr gute vegetarische Kartoffelvariante.</rating>
+    <translation lang="pl">
+      <name>Warzywna babka ziemniaczana z piekarnika</name>
+      <persons>6 osób</persons>
+      <category>Kuchnia regionalna polska / dania z piekarnika</category>
+      <ingredients>
+        <item>1,4 kg mączystych ziemniaków</item>
+        <item>1 czerwona papryka</item>
+        <item>1 mała cukinia</item>
+        <item>1 czerwona cebula</item>
+        <item>150 g pieczarek</item>
+        <item>60 g zielonych oliwek, grubo posiekanych</item>
+        <item>2 jajka</item>
+        <item>3 EL mąki</item>
+        <item>100 ml śmietany lub 2–3 EL kwaśnej śmietany</item>
+        <item>2 EL oleju</item>
+        <item>1 EL posiekanej natki pietruszki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>1/2 TL majeranku</item>
+        <item>trochę oleju lub masła do formy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozgrzać piekarnik do 190 °C góra/dół i dobrze natłuścić formę.</step>
+        <step nr="2">Paprykę, cukinię, cebulę i pieczarki pokroić w drobną kostkę. Wszystko podsmażyć na 2 łyżkach oleju przez 6 do 8 minut, aż warzywa lekko zmiękną. Następnie chwilę przestudzić.</step>
+        <step nr="3">Ziemniaki obrać i drobno zetrzeć. Masę lekko odcisnąć, aby usunąć nadmiar płynu.</step>
+        <step nr="4">Starte ziemniaki wymieszać z jajkami, mąką, śmietaną, pietruszką i majerankiem.</step>
+        <step nr="5">Dodać podsmażone warzywa oraz posiekane oliwki, a całość mocno doprawić solą i pieprzem.</step>
+        <step nr="6">Przełożyć masę do formy i wyrównać powierzchnię.</step>
+        <step nr="7">Piec 65 do 80 minut, aż wierzch będzie złocisty, a środek sprawi wrażenie ściętego.</step>
+        <step nr="8">Przed krojeniem odstawić na 10 minut, a następnie podawać na ciepło.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 30 min</item>
-        <item>pierwszy etap pieczenia: ok. 25 min w 175 °C góra/dół</item>
-        <item>drugi etap pieczenia: ok. 25–30 min w 175 °C góra/dół</item>
-        <item>studzanie: co najmniej 1,5 godziny</item>
-        <item>łącznie: ok. 2 godz. 30 min</item>
+        <item>podsmażanie warzyw: ok. 8 min</item>
+        <item>pieczenie: ok. 65–80 min w 190 °C góra/dół</item>
+        <item>czas odpoczynku: ok. 10 min</item>
+        <item>łącznie: ok. 1 godz. 50 min</item>
       </timing>
       <tips>
-        <item>Warstwę jajeczną nakładaj dopiero po pierwszej fazie pieczenia, inaczej zbyt mocno połączy się z twarogiem.</item>
-        <item>Ciasto trzeba całkowicie wystudzić – na ciepło jest jeszcze zbyt miękkie do ładnego krojenia.</item>
-        <item>Następnego dnia eierschecke często smakuje jeszcze bardziej harmonijnie.</item>
+        <item>Cukinia oddaje sporo wilgoci – dlatego warto wcześniej podsmażyć warzywa i lekko odcisnąć ziemniaki.</item>
+        <item>Podana z kleksem śmietany albo twarożkiem z ziołami smakuje jeszcze pełniej.</item>
+        <item>Następnego dnia bardzo dobra także podsmażona w plastrach.</item>
       </tips>
-      <rating>9,1/10</rating>
+      <rating>8,9/10 – rustykalna, soczysta i bardzo udana wegetariańska wersja ziemniaczana.</rating>
+    </translation>
+  </recipe>
+  <recipe id="166">
+    <name>Szare Kluski mit Sauerkraut und Speck</name>
+    <intro lang="de">Szare Kluski sind ein typisches Kartoffelgericht aus der Wielkopolska und genau die Art bodenständiger Küche, die satt und zufrieden macht. Mit Sauerkraut, Speck und Zwiebeln wird daraus ein rustikales Tellergericht mit viel regionalem Charakter.</intro>
+    <intro lang="pl">Szare kluchy to klasyczne wielkopolskie danie ziemniaczane i dokładnie taka kuchnia, która syci i daje satysfakcję. Z kapustą kiszoną, boczkiem i cebulą powstaje rustykalny talerz z mocnym regionalnym charakterem.</intro>
+    <persons>4 Personen</persons>
+    <category>Polnische Regionalküche / Klassiker &amp; Hausmannskost</category>
+    <image src="images/rezeptbild_166.png" alt="Szare Kluski mit Sauerkraut und Speck" />
+    <ingredients>
+      <item>1 kg rohe mehligkochende Kartoffeln</item>
+      <item>150 g Kartoffelstärke</item>
+      <item>1 Ei, optional</item>
+      <item>1 TL Salz</item>
+      <item>400 g Sauerkraut</item>
+      <item>150 g Speckwürfel</item>
+      <item>2 Zwiebeln</item>
+      <item>1 EL Schmalz oder Öl</item>
+      <item>100 ml Brühe oder Wasser</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Für das Sauerkraut Zwiebeln fein würfeln. Speck in einer Pfanne oder einem Topf auslassen.</step>
+      <step nr="2">Die Hälfte der Zwiebeln zum Speck geben und goldgelb anschwitzen. Sauerkraut und Brühe zugeben und alles 20 bis 25 Minuten sanft schmoren lassen.</step>
+      <step nr="3">Kartoffeln schälen und sehr fein reiben. Die Masse in einem Tuch oder Sieb ausdrücken, die aufgefangene Flüssigkeit kurz stehen lassen und die abgesetzte Kartoffelstärke zusätzlich wieder zur Kartoffelmasse geben.</step>
+      <step nr="4">Mit der zusätzlichen Kartoffelstärke, Salz und nach Wunsch einem Ei zu einem formbaren, feuchten Teig vermengen.</step>
+      <step nr="5">Einen großen Topf mit Salzwasser zum leichten Sieden bringen, nicht sprudelnd kochen lassen.</step>
+      <step nr="6">Mit einem Löffel oder mit nassen Händen kleine Klöße oder unregelmäßige Nocken abstechen und ins Wasser geben.</step>
+      <step nr="7">Die Kluski je nach Größe 8 bis 12 Minuten gar ziehen lassen, bis sie an die Oberfläche steigen und durch sind.</step>
+      <step nr="8">Die restlichen Zwiebeln in etwas Schmalz oder im Speckfett goldbraun rösten.</step>
+      <step nr="9">Szare Kluski mit Sauerkraut, Speck und gerösteten Zwiebeln anrichten und mit etwas Pfeffer servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Sauerkraut schmoren: ca. 20–25 Minuten</item>
+      <item>Kluski garen: ca. 8–12 Minuten pro Portion</item>
+      <item>Gesamt: ca. 1 Stunde</item>
+    </timing>
+    <tips>
+      <item>Das Wasser für die Kluski darf nur sieden, nicht stark kochen, sonst zerfallen sie leichter.</item>
+      <item>Wenn die Kartoffelmasse zu weich ist, noch etwas Stärke ergänzen.</item>
+      <item>Geröstete Zwiebeln obenauf machen das Gericht deutlich runder.</item>
+    </tips>
+    <rating>9,0/10 – rustikal, sättigend und mit Sauerkraut sehr stimmig.</rating>
+    <translation lang="pl">
+      <name>Szare kluchy z kapustą kiszoną i boczkiem</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia regionalna polska / klasyka i domowa kuchnia</category>
+      <ingredients>
+        <item>1 kg surowych mączystych ziemniaków</item>
+        <item>150 g skrobi ziemniaczanej</item>
+        <item>1 jajko, opcjonalnie</item>
+        <item>1 TL soli</item>
+        <item>400 g kapusty kiszonej</item>
+        <item>150 g boczku w kostce</item>
+        <item>2 cebule</item>
+        <item>1 EL smalcu lub oleju</item>
+        <item>100 ml bulionu albo wody</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Do kapusty kiszonej drobno pokroić cebulę. Boczek wytopić na patelni albo w garnku.</step>
+        <step nr="2">Połowę cebuli dodać do boczku i zeszklić na złoto. Dodać kapustę oraz bulion i dusić całość 20 do 25 minut na małym ogniu.</step>
+        <step nr="3">Ziemniaki obrać i bardzo drobno zetrzeć. Masę odcisnąć w ściereczce albo na sicie, odstawiony płyn pozostawić na chwilę i osiadłą na dnie skrobię ponownie dodać do ziemniaków.</step>
+        <step nr="4">Wymieszać z dodatkową skrobią, solą i opcjonalnie jajkiem, aż powstanie wilgotne, ale formowalne ciasto.</step>
+        <step nr="5">W dużym garnku zagotować osoloną wodę i zmniejszyć ogień tak, aby tylko lekko mrugała, a nie mocno wrzała.</step>
+        <step nr="6">Łyżką albo mokrymi dłońmi odkrawać małe kluski lub nieregularne kopytka i wkładać do wody.</step>
+        <step nr="7">Gotować 8 do 12 minut, zależnie od wielkości, aż wypłyną na powierzchnię i będą ugotowane.</step>
+        <step nr="8">Pozostałą cebulę zrumienić na smalcu albo na tłuszczu z boczku.</step>
+        <step nr="9">Szare kluchy podawać z kapustą kiszoną, boczkiem i podsmażoną cebulą, z odrobiną pieprzu.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 30 min</item>
+        <item>duszenie kapusty: ok. 20–25 min</item>
+        <item>gotowanie klusek: ok. 8–12 min na porcję</item>
+        <item>łącznie: ok. 1 godz.</item>
+      </timing>
+      <tips>
+        <item>Woda do klusek ma tylko lekko mrugać, nie może mocno wrzeć, bo kluski łatwiej się rozpadną.</item>
+        <item>Jeśli masa ziemniaczana jest zbyt luźna, dodaj trochę więcej skrobi.</item>
+        <item>Podsmażona cebula na wierzchu wyraźnie domyka smak całego dania.</item>
+      </tips>
+      <rating>9,0/10 – rustykalne, sycące i bardzo spójne z kiszoną kapustą.</rating>
+    </translation>
+  </recipe>
+  <recipe id="167">
+    <name>Kartoffel-Zapiekanka mit Pilzen, Speck und Sahnesauce</name>
+    <intro lang="de">Diese Kartoffel-Zapiekanka ist von den überbackenen Kartoffelgerichten aus Poznań inspiriert, aber als eigenes, sauberes Ofenrezept ausgearbeitet. Gekochte Kartoffelscheiben, Pilze, Speck, Zwiebeln, Sahnesauce und Mozzarella ergeben zusammen ein sehr rundes Auflaufgericht.</intro>
+    <intro lang="pl">Ta zapiekanka ziemniaczana jest inspirowana poznańskimi daniami ziemniacznymi, ale została rozpisana jako własny, dopracowany przepis z piekarnika. Gotowane plastry ziemniaków, pieczarki, boczek, cebula, sos śmietanowy i mozzarella dają razem bardzo spójną całość.</intro>
+    <persons>4 Personen</persons>
+    <category>Polnische Regionalküche / Ofen &amp; Aufläufe</category>
+    <image src="images/rezeptbild_167.png" alt="Kartoffel-Zapiekanka mit Pilzen, Speck und Sahnesauce" />
+    <ingredients>
+      <item>1,2 kg festkochende Kartoffeln</item>
+      <item>150 g Speckwürfel</item>
+      <item>250 g Champignons oder braune Pilze</item>
+      <item>1 große Zwiebel</item>
+      <item>1 Knoblauchzehe</item>
+      <item>200 ml Sahne</item>
+      <item>100 ml Milch</item>
+      <item>1 TL Speisestärke, optional</item>
+      <item>120 g geriebener Mozzarella</item>
+      <item>1 EL Butter oder Öl für die Form</item>
+      <item>1 TL Thymian</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln in der Schale in Salzwasser knapp gar kochen. Danach abgießen, etwas abkühlen lassen, pellen und in Scheiben schneiden.</step>
+      <step nr="2">Backofen auf 200 °C Ober-/Unterhitze vorheizen und eine Auflaufform einfetten.</step>
+      <step nr="3">Speck in einer Pfanne auslassen. Zwiebel fein würfeln, Pilze in Scheiben schneiden und mit dem fein gehackten Knoblauch zum Speck geben.</step>
+      <step nr="4">Alles 6 bis 8 Minuten anbraten, bis die Pilze Farbe bekommen und überschüssige Flüssigkeit verdampft ist.</step>
+      <step nr="5">Sahne und Milch angießen, Thymian zugeben und die Sauce 3 bis 4 Minuten leicht einkochen lassen. Wenn du es sämiger magst, 1 Teelöffel Stärke in wenig kalter Milch lösen und einrühren.</step>
+      <step nr="6">Mit Salz und Pfeffer abschmecken.</step>
+      <step nr="7">Kartoffelscheiben in die Form schichten, die Pilz-Speck-Sauce darüber verteilen und mit Mozzarella bestreuen.</step>
+      <step nr="8">Im Ofen 20 bis 25 Minuten backen, bis alles heiß ist und der Käse goldgelb überbacken ist.</step>
+      <step nr="9">Vor dem Servieren 5 Minuten ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 25 Minuten</item>
+      <item>Kartoffeln vorkochen: ca. 20 Minuten</item>
+      <item>Sauce und Schichten: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 20–25 Minuten bei 200 °C Ober-/Unterhitze</item>
+      <item>Ruhezeit: ca. 5 Minuten</item>
+      <item>Gesamt: ca. 1 Stunde 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Festkochende Kartoffeln bleiben beim Schichten schöner in Form.</item>
+      <item>Die Pilze erst kräftig anbraten, damit die Sauce später nicht wässrig wird.</item>
+      <item>Mit einem kleinen grünen Salat oder Gurkensalat wirkt der Auflauf noch ausgewogener.</item>
+    </tips>
+    <rating>9,0/10 – cremig, deftig und als Kartoffelauflauf sehr stimmig aufgebaut.</rating>
+    <translation lang="pl">
+      <name>Zapiekanka ziemniaczana z pieczarkami, boczkiem i sosem śmietanowym</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia regionalna polska / zapiekanki</category>
+      <ingredients>
+        <item>1,2 kg ziemniaków sałatkowych</item>
+        <item>150 g boczku w kostce</item>
+        <item>250 g pieczarek</item>
+        <item>1 duża cebula</item>
+        <item>1 ząbek czosnku</item>
+        <item>200 ml śmietanki</item>
+        <item>100 ml mleka</item>
+        <item>1 TL skrobi, opcjonalnie</item>
+        <item>120 g tartej mozzarelli</item>
+        <item>1 EL masła lub oleju do formy</item>
+        <item>1 TL tymianku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ziemniaki ugotować w łupinach w osolonej wodzie na prawie miękko. Następnie odcedzić, lekko przestudzić, obrać i pokroić w plastry.</step>
+        <step nr="2">Rozgrzać piekarnik do 200 °C góra/dół i natłuścić formę do zapiekania.</step>
+        <step nr="3">Boczek wytopić na patelni. Cebulę drobno pokroić, pieczarki pokroić w plastry, a czosnek drobno posiekać i dodać wszystko do boczku.</step>
+        <step nr="4">Smażyć 6 do 8 minut, aż pieczarki się zrumienią i odparuje nadmiar płynu.</step>
+        <step nr="5">Wlać śmietankę i mleko, dodać tymianek i gotować sos 3 do 4 minut, aż lekko się zredukuje. Jeśli ma być gęstszy, rozprowadzić 1 łyżeczkę skrobi w odrobinie zimnego mleka i wmieszać.</step>
+        <step nr="6">Doprawić solą oraz pieprzem.</step>
+        <step nr="7">Plastry ziemniaków ułożyć warstwami w formie, rozprowadzić na nich sos z pieczarkami i boczkiem, a na wierzch posypać mozzarellą.</step>
+        <step nr="8">Piec 20 do 25 minut, aż całość będzie gorąca, a ser ładnie się zezłoci.</step>
+        <step nr="9">Przed podaniem odstawić na 5 minut.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 25 min</item>
+        <item>wstępne gotowanie ziemniaków: ok. 20 min</item>
+        <item>sos i układanie warstw: ok. 15 min</item>
+        <item>pieczenie: ok. 20–25 min w 200 °C góra/dół</item>
+        <item>czas odpoczynku: ok. 5 min</item>
+        <item>łącznie: ok. 1 godz. 10 min</item>
+      </timing>
+      <tips>
+        <item>Ziemniaki sałatkowe lepiej trzymają kształt podczas układania warstw.</item>
+        <item>Pieczarki najpierw dobrze zrumień, żeby sos później nie był wodnisty.</item>
+        <item>Z małą zieloną sałatą albo mizerią zapiekanka wypada jeszcze lepiej.</item>
+      </tips>
+      <rating>9,0/10 – kremowa, konkretna i bardzo dobrze zbudowana jako ziemniaczana zapiekanka.</rating>
     </translation>
   </recipe>
 </cookbook>
