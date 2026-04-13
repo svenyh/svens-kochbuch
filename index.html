@@ -1252,6 +1252,107 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
   max-width:72ch;
 }
 
+
+
+/* Recipe-only print mode */
+.print-recipe-only body > *{
+  display:none !important;
+}
+.print-recipe-only .modal{
+  display:flex !important;
+  position:static !important;
+  inset:auto !important;
+  background:#fff !important;
+  padding:0 !important;
+}
+.print-recipe-only .modal-dialog{
+  width:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  overflow:visible !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+.print-recipe-only .modal-head{
+  position:static !important;
+  background:#fff !important;
+  border-bottom:1px solid #ccc !important;
+  padding:0 0 12px 0 !important;
+  margin-bottom:16px !important;
+}
+.print-recipe-only .modal-head .ghost-btn{
+  display:none !important;
+}
+.print-recipe-only .modal-body{
+  padding:0 !important;
+}
+@media print{
+  html, body{
+    background:#fff !important;
+  }
+  body{
+    margin:0 !important;
+    padding:0 !important;
+    color:#000 !important;
+    font-size:11pt !important;
+    line-height:1.45 !important;
+  }
+  .print-recipe-only body > *{
+    display:none !important;
+  }
+  .print-recipe-only .modal{
+    display:flex !important;
+    position:static !important;
+    inset:auto !important;
+    background:#fff !important;
+    padding:0 !important;
+  }
+  .print-recipe-only .modal-dialog{
+    width:100% !important;
+    max-width:none !important;
+    max-height:none !important;
+    overflow:visible !important;
+    border:0 !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+  }
+  .print-recipe-only .modal-head{
+    position:static !important;
+    background:#fff !important;
+    border-bottom:1px solid #ccc !important;
+    padding:0 0 12px 0 !important;
+    margin-bottom:16px !important;
+  }
+  .print-recipe-only .modal-head .ghost-btn,
+  .print-recipe-only .modal-actions{
+    display:none !important;
+  }
+  .print-recipe-only .modal-body{
+    padding:0 !important;
+  }
+  .print-recipe-only .modal-recipe-grid,
+  .print-recipe-only .modal-columns{
+    display:block !important;
+  }
+  .print-recipe-only .modal-hero-image{
+    max-width:320px !important;
+    margin:0 0 16px 0 !important;
+    break-inside:avoid;
+  }
+  .print-recipe-only .steps-block,
+  .print-recipe-only .modal-columns section,
+  .print-recipe-only .rating-block{
+    background:#fff !important;
+    border:1px solid #ddd !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    padding:12px !important;
+    margin:0 0 16px 0 !important;
+    break-inside:avoid;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1848,6 +1949,10 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     const recipe = state.recipes.find(r => String(r.id) === String(id));
     if (!recipe) return;
     state.activeRecipeId = recipe.id;
+    const nextHash = '#rezept-' + recipe.id;
+    if (window.location.hash !== nextHash) {
+      history.replaceState(null, '', nextHash);
+    }
     const isPl = state.activeLang === 'pl';
     const ingredients = isPl ? recipe.ingredientsPl : recipe.ingredientsDe;
     const preparation = isPl ? recipe.preparationPl : recipe.preparationDe;
@@ -1910,6 +2015,10 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     modal.setAttribute('aria-hidden', 'true');
     modal.removeAttribute('data-current-recipe');
     document.body.classList.remove('no-scroll');
+    state.activeRecipeId = null;
+    if (window.location.hash.match(/^#rezept-\d+$/)) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
   }
 
   function scrollToRecipe(recipeId, openAfter = false){
@@ -1942,6 +2051,57 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       </button>
     `).join('');
     searchSuggest.hidden = false;
+  }
+
+
+  function showActionFeedback(button, message){
+    if (!button) return;
+    const original = button.getAttribute('data-original-label') || button.textContent;
+    if (!button.getAttribute('data-original-label')) {
+      button.setAttribute('data-original-label', original);
+    }
+    button.textContent = message;
+    window.setTimeout(() => {
+      button.textContent = button.getAttribute('data-original-label') || original;
+    }, 1600);
+  }
+
+  async function copyTextRobust(textToCopy){
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        return true;
+      } catch (error) {}
+    }
+    const ta = document.createElement('textarea');
+    ta.value = textToCopy;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    let ok = false;
+    try {
+      ok = document.execCommand('copy');
+    } catch (error) {
+      ok = false;
+    }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function printCurrentRecipe(){
+    if (!state.activeRecipeId || !modal.classList.contains('open')) {
+      window.print();
+      return;
+    }
+    document.documentElement.classList.add('print-recipe-only');
+    window.print();
+    window.setTimeout(() => {
+      document.documentElement.classList.remove('print-recipe-only');
+    }, 300);
   }
 
   function bindStaticEvents(){
@@ -1998,13 +2158,18 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
         const rid = copyBtn.getAttribute('data-recipe-id');
         const url = new URL(window.location.href);
         url.hash = 'rezept-' + rid;
-        navigator.clipboard.writeText(url.toString()).catch(() => null);
+        copyTextRobust(url.toString()).then(function(ok){
+          showActionFeedback(copyBtn, ok ? textByLang('Link kopiert', 'Link skopiowany') : textByLang('Link markieren & kopieren', 'Zaznacz i skopiuj link'));
+          if (!ok) {
+            window.prompt(textByLang('Diesen Link kopieren:', 'Skopiuj ten link:'), url.toString());
+          }
+        });
         return;
       }
 
       const printBtn = event.target.closest('.print-btn[data-recipe-id]');
       if (printBtn) {
-        window.print();
+        printCurrentRecipe();
         return;
       }
 
@@ -2073,6 +2238,10 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     window.addEventListener('hashchange', function(){
       const match = window.location.hash.match(/^#rezept-(\d+)$/);
       if (match) scrollToRecipe(match[1], true);
+    });
+
+    window.addEventListener('afterprint', function(){
+      document.documentElement.classList.remove('print-recipe-only');
     });
   }
 
