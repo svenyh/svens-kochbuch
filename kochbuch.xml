@@ -2,8 +2,8 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="5.0" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>167</recipeCount>
-    <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 DDR- und Ostalgie-Rezepte (Soljanka, Würzfleisch, DDR-Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 polnisch inspirierte Kartoffel- und Wielkopolska-Rezepte (Pyra z bzikiem, zwei Babka-zemniaczana-Varianten, Szare Kluski, Kartoffel-Zapiekanka).</notes>
+    <recipeCount>179</recipeCount>
+    <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 DDR- und Ostalgie-Rezepte (Soljanka, Würzfleisch, DDR-Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 weitere polnisch inspirierte Rezepte (klassische Placki, Placki mit Pilzrahm, Pyra mit Speck und Kräuterquark, Babka mit Kassler, Zapiekanka mit Hähnchen und Paprika). Ergänzt um 12 Asia-Wok-Rezepte (Pad Thai, gebratene Asia-Nudeln, Rind mit Brokkoli, Chop Suey, Thai Red Curry, Erdnuss-Wok, Kokos-Wok, Udon-Wok, Garnelen-Wok, Tofu-Wok, Thai Basil Chicken, gebratener Reis).</notes>
   </meta>
   <recipe id="1">
     <name>Spanische Kohlrouladen mit Chorizo, Rotwein und Speck</name>
@@ -11210,442 +11210,972 @@
     <rating>9,1/10 – klassisch, saftig und mit schöner Schichtung sehr stimmig.</rating>
   </recipe>
   <recipe id="163">
-    <name>Pyra z bzikiem nach Wielkopolska-Art</name>
-    <intro lang="de">Dieses Gericht lebt von genau der Einfachheit, die richtig gut funktioniert: eine große Ofenkartoffel, cremiger Twaróg mit saurer Komponente, rote Zwiebel, Schnittlauch und etwas Butter. Als bodenständiges Kartoffelgericht aus der Wielkopolska passt es perfekt in deinen regionalen Block.</intro>
-    <intro lang="pl">To danie żyje prostotą, która naprawdę działa: duża pieczona pyra, kremowy twaróg ze śmietaną, czerwona cebula, szczypiorek i trochę masła. Jako klasyczne ziemniaczane danie z Wielkopolski świetnie pasuje do regionalnego działu.</intro>
+    <name>Placki ziemniaczane klassisch</name>
+    <intro lang="de">Klassische Placki ziemniaczane gehören zu den stärksten Kartoffelgerichten überhaupt: außen goldbraun und knusprig, innen weich und saftig. Genau diese einfache Logik macht sie so gut – egal ob pur, mit Schmand oder mit etwas Zucker nach polnischer Art.</intro>
+    <intro lang="pl">Klasyczne placki ziemniaczane to jedno z najmocniejszych dań z ziemniaków: z zewnątrz złociste i chrupiące, w środku miękkie i soczyste. Właśnie ta prosta logika sprawia, że są tak dobre – same, ze śmietaną albo nawet z cukrem.</intro>
     <persons>4 Personen</persons>
     <category>Polnische Regionalküche / Kartoffelgerichte</category>
-    <image src="images/rezeptbild_163.png" alt="Pyra z bzikiem nach Wielkopolska-Art" />
+    <image src="images/rezeptbild_163.png" alt="Placki ziemniaczane klassisch" />
     <ingredients>
-      <item>4 große mehligkochende Kartoffeln, je ca. 300–350 g</item>
-      <item>250 g Twaróg oder gut abgetropfter körniger Frischkäse</item>
-      <item>150 g Schmand oder saure Sahne</item>
-      <item>40 g weiche Butter</item>
-      <item>1 kleine rote Zwiebel</item>
-      <item>1/2 Bund Schnittlauch</item>
-      <item>Salz</item>
+      <item>1,2 kg mehligkochende Kartoffeln</item>
+      <item>1 große Zwiebel</item>
+      <item>2 Eier</item>
+      <item>3 EL Mehl</item>
+      <item>1 TL Salz</item>
       <item>Pfeffer</item>
-      <item>1 kleine Prise Zucker, optional</item>
-      <item>1 EL Milch oder Sahne, falls die Creme etwas lockerer werden soll</item>
+      <item>Öl zum Ausbacken</item>
+      <item>Zum Servieren: Schmand oder saure Sahne</item>
     </ingredients>
     <preparation>
-      <step nr="1">Backofen auf 200 °C Ober-/Unterhitze vorheizen. Die Kartoffeln gründlich waschen, trockenreiben und mehrfach mit einer Gabel einstechen.</step>
-      <step nr="2">Die Kartoffeln direkt auf dem Rost oder auf einem kleinen Blech 60 bis 75 Minuten backen, bis sie weich sind. Je nach Größe kann es auch etwas länger dauern.</step>
-      <step nr="3">Währenddessen für den Bzik Twaróg mit Schmand und weicher Butter in einer Schüssel verrühren. Die Creme darf rustikal bleiben und muss nicht völlig glatt sein.</step>
-      <step nr="4">Rote Zwiebel sehr fein würfeln und den Schnittlauch in feine Röllchen schneiden. Beides unter die Käsecreme heben.</step>
-      <step nr="5">Mit Salz, Pfeffer und nach Wunsch einer kleinen Prise Zucker abschmecken. Wenn die Masse zu fest ist, 1 Esslöffel Milch oder Sahne einrühren.</step>
-      <step nr="6">Die fertig gebackenen Kartoffeln längs einschneiden und innen mit einer Gabel leicht auflockern.</step>
-      <step nr="7">Jeweils etwas Butter in die heiße Kartoffel geben, dann großzügig mit Bzik füllen und sofort servieren.</step>
+      <step nr="1">Kartoffeln schälen und zusammen mit der Zwiebel fein reiben oder in der Küchenmaschine fein raspeln.</step>
+      <step nr="2">Die Masse in ein Sieb geben und leicht ausdrücken. Den aufgefangenen Saft kurz stehen lassen, damit sich Stärke absetzt. Die abgesetzte Stärke zurück zur Kartoffelmasse geben.</step>
+      <step nr="3">Eier, Mehl, Salz und etwas Pfeffer einarbeiten. Die Masse soll feucht, aber nicht flüssig sein.</step>
+      <step nr="4">In einer großen Pfanne reichlich Öl erhitzen. Jeweils 1 bis 2 Esslöffel Kartoffelmasse hineingeben, flachdrücken und bei mittlerer bis mittlerer hoher Hitze ausbacken.</step>
+      <step nr="5">Die Placki pro Seite 3 bis 4 Minuten braten, bis sie goldbraun und knusprig sind.</step>
+      <step nr="6">Auf Küchenpapier kurz abtropfen lassen und direkt heiß servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Masse anrühren: ca. 10 Minuten</item>
+      <item>Ausbacken: ca. 20 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Kartoffelmasse portionsweise ausbacken und nicht zu dick in die Pfanne geben.</item>
+      <item>Wenn die Masse zu feucht ist, 1 Esslöffel Mehl ergänzen.</item>
+      <item>Am besten direkt aus der Pfanne servieren, dann sind die Placki am knusprigsten.</item>
+    </tips>
+    <rating>9,1/10 – schlicht, knusprig und als Kartoffelklassiker immer stark.</rating>
+    <translation lang="pl">
+      <name>Placki ziemniaczane klasyczne</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia regionalna polska / dania ziemniaczane</category>
+      <ingredients>
+        <item>1,2 kg mączystych ziemniaków</item>
+        <item>1 duża cebula</item>
+        <item>2 jajka</item>
+        <item>3 EL mąki</item>
+        <item>1 TL soli</item>
+        <item>pieprz</item>
+        <item>olej do smażenia</item>
+        <item>Do podania: śmietana albo kwaśna śmietana</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ziemniaki obrać i razem z cebulą drobno zetrzeć albo rozdrobnić w robocie kuchennym.</step>
+        <step nr="2">Masę przełożyć na sito i lekko odcisnąć. Zebrany płyn odstawić na chwilę, aby skrobia opadła na dno. Osiadłą skrobię dodać z powrotem do masy ziemniaczanej.</step>
+        <step nr="3">Dodać jajka, mąkę, sól i trochę pieprzu. Masa ma być wilgotna, ale nie rzadka.</step>
+        <step nr="4">Na dużej patelni rozgrzać sporą ilość oleju. Nakładać po 1 do 2 łyżek masy, spłaszczać i smażyć na średnim albo średnio wyższym ogniu.</step>
+        <step nr="5">Placki smażyć po 3 do 4 minuty z każdej strony, aż będą złociste i chrupiące.</step>
+        <step nr="6">Krótko odsączyć na ręczniku papierowym i od razu podawać na gorąco.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie: ok. 20 min</item>
+        <item>przygotowanie masy: ok. 10 min</item>
+        <item>smażenie: ok. 20 min</item>
+        <item>łącznie: ok. 50 min</item>
+      </timing>
+      <tips>
+        <item>Masę smaż partiami i nie rozkładaj jej zbyt grubo na patelni.</item>
+        <item>Jeśli masa jest zbyt mokra, dodaj 1 łyżkę mąki.</item>
+        <item>Najlepsze są podane od razu z patelni, kiedy są najbardziej chrupiące.</item>
+      </tips>
+      <rating>9,1/10 – proste, chrupiące i jako klasyk ziemniaczany zawsze mocne.</rating>
+    </translation>
+  </recipe>
+  <recipe id="164">
+    <name>Placki ziemniaczane mit Pilzrahm</name>
+    <intro lang="de">Wenn klassische Placki ziemniaczane auf einen cremigen Pilzrahm treffen, wird aus einem einfachen Kartoffelgericht ein richtig rundes Telleressen. Knusprige Reibekuchen und sämige Sauce ergänzen sich hier perfekt.</intro>
+    <intro lang="pl">Kiedy klasyczne placki ziemniaczane spotykają się z kremowym sosem pieczarkowym, z prostego dania ziemniaczanego robi się pełny obiad. Chrupiące placki i gęsty sos bardzo dobrze się tu uzupełniają.</intro>
+    <persons>4 Personen</persons>
+    <category>Polnische Regionalküche / Kartoffelgerichte</category>
+    <image src="images/rezeptbild_164.png" alt="Placki ziemniaczane mit Pilzrahm" />
+    <ingredients>
+      <item>1 Grundrezept Placki ziemniaczane klassisch</item>
+      <item>300 g Champignons oder braune Pilze</item>
+      <item>1 kleine Zwiebel</item>
+      <item>1 EL Butter</item>
+      <item>150 ml Sahne</item>
+      <item>100 ml Gemüse- oder Pilzfond</item>
+      <item>1 TL Mehl</item>
+      <item>1 TL gehackte Petersilie</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Placki ziemniaczane wie im Grundrezept vorbereiten und portionsweise ausbacken.</step>
+      <step nr="2">Für den Pilzrahm die Zwiebel fein würfeln und die Pilze in Scheiben schneiden.</step>
+      <step nr="3">Butter in einer Pfanne erhitzen, Zwiebeln glasig anschwitzen und anschließend die Pilze zugeben.</step>
+      <step nr="4">Die Pilze 5 bis 7 Minuten anbraten, bis sie Farbe bekommen und möglichst wenig Flüssigkeit in der Pfanne steht.</step>
+      <step nr="5">Mehl darüberstreuen, kurz unterrühren und mit Fond sowie Sahne ablöschen.</step>
+      <step nr="6">Die Sauce 3 bis 5 Minuten sanft köcheln lassen, bis sie cremig bindet.</step>
+      <step nr="7">Mit Salz, Pfeffer und Petersilie abschmecken und die knusprigen Placki direkt mit Pilzrahm servieren.</step>
+    </preparation>
+    <timing>
+      <item>Placki vorbereiten und braten: ca. 50 Minuten</item>
+      <item>Pilzrahm: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 1 Stunde 5 Minuten</item>
+    </timing>
+    <tips>
+      <item>Pilzrahm erst ganz zum Schluss auf die Placki geben, damit sie nicht weich werden.</item>
+      <item>Braune Champignons bringen etwas mehr Tiefe als weiße.</item>
+      <item>Mit etwas extra Petersilie wirkt die Sauce frischer.</item>
+    </tips>
+    <rating>9,2/10 – knusprig und cremig zugleich, sehr stimmige Kombination.</rating>
+    <translation lang="pl">
+      <name>Placki ziemniaczane z sosem pieczarkowym</name>
+      <persons>4 osoby</persons>
+      <category>Kuchnia regionalna polska / dania ziemniaczane</category>
+      <ingredients>
+        <item>1 podstawowy przepis na placki ziemniaczane klasyczne</item>
+        <item>300 g pieczarek</item>
+        <item>1 mała cebula</item>
+        <item>1 EL masła</item>
+        <item>150 ml śmietanki</item>
+        <item>100 ml bulionu warzywnego albo grzybowego</item>
+        <item>1 TL mąki</item>
+        <item>1 TL posiekanej pietruszki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować placki ziemniaczane według przepisu podstawowego i smażyć je partiami.</step>
+        <step nr="2">Do sosu pieczarkowego drobno pokroić cebulę, a pieczarki pokroić w plasterki.</step>
+        <step nr="3">Na patelni rozgrzać masło, zeszklić cebulę, a następnie dodać pieczarki.</step>
+        <step nr="4">Smażyć pieczarki 5 do 7 minut, aż lekko się zrumienią i większość płynu odparuje.</step>
+        <step nr="5">Oprószyć mąką, krótko wymieszać i zalać bulionem oraz śmietanką.</step>
+        <step nr="6">Gotować sos 3 do 5 minut na małym ogniu, aż stanie się kremowy.</step>
+        <step nr="7">Doprawić solą, pieprzem i pietruszką, a chrupiące placki od razu podawać z sosem pieczarkowym.</step>
+      </preparation>
+      <timing>
+        <item>przygotowanie i smażenie placków: ok. 50 min</item>
+        <item>sos pieczarkowy: ok. 15 min</item>
+        <item>łącznie: ok. 1 godz. 5 min</item>
+      </timing>
+      <tips>
+        <item>Sos nakładaj na placki dopiero tuż przed podaniem, żeby nie zmiękły.</item>
+        <item>Brązowe pieczarki dają trochę głębszy smak niż białe.</item>
+        <item>Odrobina dodatkowej pietruszki odświeża cały sos.</item>
+      </tips>
+      <rating>9,2/10 – jednocześnie chrupiące i kremowe, bardzo udane połączenie.</rating>
+    </translation>
+  </recipe>
+  <recipe id="165">
+    <name>Pyra mit Speck und Kräuterquark</name>
+    <intro lang="de">Diese Variante baut auf der einfachen Ofenkartoffel-Idee auf, geht aber herzhafter in Richtung Abendessen. Heiße Kartoffel, ausgelassener Speck und ein frischer Kräuterquark ergeben zusammen ein unkompliziertes, sehr stimmiges Gericht.</intro>
+    <intro lang="pl">Ta wersja opiera się na prostej idei pieczonej pyry, ale idzie bardziej w stronę konkretnej kolacji. Gorący ziemniak, chrupiący boczek i świeży twarożek z ziołami dają razem bardzo spójne, nieskomplikowane danie.</intro>
+    <persons>4 Personen</persons>
+    <category>Polnische Regionalküche / Kartoffelgerichte</category>
+    <image src="images/rezeptbild_165.png" alt="Pyra mit Speck und Kräuterquark" />
+    <ingredients>
+      <item>4 große mehligkochende Kartoffeln</item>
+      <item>150 g Speckwürfel</item>
+      <item>250 g Quark</item>
+      <item>100 g Schmand</item>
+      <item>1/2 Bund Schnittlauch</item>
+      <item>1 EL gehackte Petersilie</item>
+      <item>1 kleine Knoblauchzehe, optional</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>20 g Butter</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Backofen auf 200 °C Ober-/Unterhitze vorheizen. Die Kartoffeln waschen, trockenreiben, einstechen und 60 bis 75 Minuten backen, bis sie weich sind.</step>
+      <step nr="2">Für den Kräuterquark Quark und Schmand verrühren. Schnittlauch und Petersilie fein schneiden und unterheben.</step>
+      <step nr="3">Nach Wunsch eine kleine Menge fein geriebenen Knoblauch zugeben und mit Salz sowie Pfeffer abschmecken.</step>
+      <step nr="4">Speckwürfel in einer Pfanne langsam knusprig auslassen.</step>
+      <step nr="5">Die fertigen Kartoffeln längs einschneiden, mit etwas Butter füllen und das Innere leicht auflockern.</step>
+      <step nr="6">Kräuterquark daraufgeben, mit knusprigem Speck bestreuen und sofort servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
       <item>Backzeit: ca. 60–75 Minuten bei 200 °C Ober-/Unterhitze</item>
-      <item>Bzik anrühren: ca. 10 Minuten</item>
+      <item>Quark und Speck parallel: ca. 15 Minuten</item>
       <item>Gesamt: ca. 1 Stunde 20 Minuten</item>
     </timing>
     <tips>
-      <item>Je größer die Kartoffeln sind, desto schöner lässt sich die Füllung später einarbeiten.</item>
-      <item>Die Kartoffeln erst direkt vor dem Servieren öffnen, damit sie innen heiß und locker bleiben.</item>
-      <item>Dazu passen Gewürzgurke, Radieschen oder ein kleiner grüner Salat sehr gut.</item>
+      <item>Der Speck sollte erst kurz vor dem Servieren auf die Kartoffel, damit er knusprig bleibt.</item>
+      <item>Mit Radieschen oder Gewürzgurke wird das Gericht noch frischer.</item>
+      <item>Für eine mildere Version den Knoblauch einfach weglassen.</item>
     </tips>
-    <rating>9,0/10 – einfach, regional und genau mit dieser schlichten Logik richtig stark.</rating>
+    <rating>8,9/10 – schlicht, deftig und sehr alltagstauglich.</rating>
     <translation lang="pl">
-      <name>Pyra z bzikiem po wielkopolsku</name>
+      <name>Pyra z boczkiem i twarożkiem z ziołami</name>
       <persons>4 osoby</persons>
       <category>Kuchnia regionalna polska / dania ziemniaczane</category>
       <ingredients>
-        <item>4 duże mączyste ziemniaki, po ok. 300–350 g</item>
-        <item>250 g twarogu półtłustego lub dobrze odsączonego serka ziarnistego</item>
-        <item>150 g śmietany lub kwaśnej śmietany</item>
-        <item>40 g miękkiego masła</item>
-        <item>1 mała czerwona cebula</item>
+        <item>4 duże mączyste ziemniaki</item>
+        <item>150 g boczku w kostce</item>
+        <item>250 g twarogu albo gęstego serka</item>
+        <item>100 g śmietany</item>
         <item>1/2 pęczka szczypiorku</item>
+        <item>1 EL posiekanej pietruszki</item>
+        <item>1 mały ząbek czosnku, opcjonalnie</item>
         <item>sól</item>
         <item>pieprz</item>
-        <item>1 mała szczypta cukru, opcjonalnie</item>
-        <item>1 EL mleka lub śmietanki, jeśli krem ma być luźniejszy</item>
+        <item>20 g masła</item>
       </ingredients>
       <preparation>
-        <step nr="1">Rozgrzać piekarnik do 200 °C góra/dół. Ziemniaki dokładnie umyć, osuszyć i kilka razy nakłuć widelcem.</step>
-        <step nr="2">Piecz ziemniaki bezpośrednio na ruszcie albo na małej blasze przez 60 do 75 minut, aż będą miękkie. Przy większych sztukach może to potrwać trochę dłużej.</step>
-        <step nr="3">W międzyczasie przygotować bzik: twaróg wymieszać ze śmietaną i miękkim masłem. Masa może pozostać lekko rustykalna i nie musi być całkiem gładka.</step>
-        <step nr="4">Czerwoną cebulę drobno pokroić w kostkę, szczypiorek posiekać na cienkie krążki. Obydwa składniki wmieszać do kremu.</step>
-        <step nr="5">Doprawić solą, pieprzem i opcjonalnie małą szczyptą cukru. Jeśli masa jest zbyt gęsta, dodać 1 łyżkę mleka lub śmietanki.</step>
-        <step nr="6">Upieczone ziemniaki naciąć wzdłuż i widelcem lekko rozluźnić środek.</step>
-        <step nr="7">Do każdej gorącej pyry włożyć trochę masła, następnie hojnie nałożyć bzik i od razu podawać.</step>
+        <step nr="1">Rozgrzać piekarnik do 200 °C góra/dół. Ziemniaki umyć, osuszyć, ponakłuwać i piec 60 do 75 minut, aż będą miękkie.</step>
+        <step nr="2">Na twarożek wymieszać twaróg ze śmietaną. Szczypiorek i pietruszkę drobno posiekać i wmieszać.</step>
+        <step nr="3">Opcjonalnie dodać odrobinę drobno startego czosnku i doprawić solą oraz pieprzem.</step>
+        <step nr="4">Boczek powoli wytopić na patelni, aż stanie się chrupiący.</step>
+        <step nr="5">Upieczone ziemniaki naciąć wzdłuż, dodać trochę masła i lekko rozluźnić środek.</step>
+        <step nr="6">Nałożyć twarożek, posypać chrupiącym boczkiem i od razu podawać.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 15 min</item>
         <item>pieczenie: ok. 60–75 min w 200 °C góra/dół</item>
-        <item>przygotowanie bziku: ok. 10 min</item>
+        <item>twarożek i boczek równolegle: ok. 15 min</item>
         <item>łącznie: ok. 1 godz. 20 min</item>
       </timing>
       <tips>
-        <item>Im większe ziemniaki, tym łatwiej później wypełnić je farszem.</item>
-        <item>Ziemniaki natnij dopiero tuż przed podaniem, wtedy w środku pozostaną gorące i puszyste.</item>
-        <item>Bardzo dobrze pasują do tego ogórek konserwowy, rzodkiewki albo mała zielona sałata.</item>
+        <item>Boczek dodaj dopiero tuż przed podaniem, żeby pozostał chrupiący.</item>
+        <item>Z rzodkiewką albo ogórkiem konserwowym danie będzie jeszcze świeższe.</item>
+        <item>Dla łagodniejszej wersji po prostu pomiń czosnek.</item>
       </tips>
-      <rating>9,0/10 – proste, regionalne i właśnie dzięki tej prostocie bardzo mocne.</rating>
+      <rating>8,9/10 – proste, konkretne i bardzo dobre na co dzień.</rating>
     </translation>
   </recipe>
-  <recipe id="164">
-    <name>Babka ziemniaczana mit Speck, Schweinefleisch und Pilzen</name>
-    <intro lang="de">Diese herzhafte Babka ziemniaczana ist genau die Art Ofengericht, die außen schön gebräunt und innen saftig sein soll. Mit Speck, Schweinefleisch, Zwiebeln und Pilzen wird daraus ein kräftiges, regional inspiriertes Kartoffelgericht mit viel Charakter.</intro>
-    <intro lang="pl">Ta wytrawna babka ziemniaczana to dokładnie taki pieczony klasyk, który ma być ładnie przyrumieniony z zewnątrz i soczysty w środku. Boczek, wieprzowina, cebula i pieczarki nadają jej mocny, regionalny charakter.</intro>
+  <recipe id="166">
+    <name>Babka ziemniaczana mit Kassler und Zwiebeln</name>
+    <intro lang="de">Diese Variante ist etwas herzhafter und rauchiger als die klassische Babka, weil Kassler und Zwiebeln der Kartoffelmasse direkt mehr Würze geben. Genau dadurch wird sie zu einem sehr kräftigen Ofengericht mit guter Kruste und saftigem Kern.</intro>
+    <intro lang="pl">Ta wersja jest bardziej konkretna i lekko dymna niż klasyczna babka, bo kassler i cebula od razu dają masie ziemniaczanej więcej charakteru. Dzięki temu powstaje mocne danie z piekarnika z dobrą skórką i soczystym środkiem.</intro>
     <persons>6 Personen</persons>
     <category>Polnische Regionalküche / Ofengerichte</category>
-    <image src="images/rezeptbild_164.png" alt="Babka ziemniaczana mit Speck, Schweinefleisch und Pilzen" />
+    <image src="images/rezeptbild_166.png" alt="Babka ziemniaczana mit Kassler und Zwiebeln" />
     <ingredients>
       <item>1,5 kg mehligkochende Kartoffeln</item>
-      <item>2 Zwiebeln</item>
+      <item>300 g Kassler in kleinen Würfeln</item>
+      <item>2 große Zwiebeln</item>
       <item>2 Eier</item>
       <item>3 EL Mehl</item>
-      <item>150 g durchwachsener Speck</item>
-      <item>300 g Schweinenacken oder Schweineschulter in kleinen Würfeln</item>
-      <item>200 g Champignons oder braune Pilze</item>
+      <item>100 ml Schmand</item>
       <item>2 EL Öl</item>
-      <item>100 ml Sahne oder Schmand</item>
-      <item>1 TL Majoran</item>
+      <item>1/2 TL Majoran</item>
       <item>Salz</item>
       <item>Pfeffer</item>
       <item>etwas Butter oder Öl für die Form</item>
     </ingredients>
     <preparation>
-      <step nr="1">Backofen auf 190 °C Ober-/Unterhitze vorheizen und eine Auflaufform oder Kastenform gut einfetten.</step>
-      <step nr="2">Speck klein würfeln und in einer Pfanne langsam auslassen. Schweinefleisch zugeben und kräftig anbraten.</step>
-      <step nr="3">Zwiebeln fein würfeln, Pilze klein schneiden und beides mit in die Pfanne geben. Alles 5 bis 6 Minuten weiterbraten, bis die Flüssigkeit der Pilze weitgehend verkocht ist. Leicht abkühlen lassen.</step>
-      <step nr="4">Kartoffeln schälen und fein reiben. Die Masse in einem Sieb oder Tuch leicht ausdrücken, damit sie nicht zu wässrig bleibt.</step>
-      <step nr="5">Geriebene Kartoffeln mit Eiern, Mehl, Sahne oder Schmand und Majoran verrühren. Mit Salz und Pfeffer kräftig abschmecken.</step>
-      <step nr="6">Die angebratene Speck-Fleisch-Pilz-Mischung unter die Kartoffelmasse heben.</step>
-      <step nr="7">Alles in die vorbereitete Form füllen und glattstreichen.</step>
-      <step nr="8">Die Babka im Ofen 70 bis 85 Minuten backen, bis sie oben kräftig gebräunt ist und sich die Mitte gesetzt hat.</step>
-      <step nr="9">Vor dem Anschneiden 10 bis 15 Minuten ruhen lassen, damit sie stabiler wird. Danach in Stücke schneiden und warm servieren.</step>
+      <step nr="1">Backofen auf 190 °C Ober-/Unterhitze vorheizen und eine Form gut einfetten.</step>
+      <step nr="2">Zwiebeln fein würfeln und in etwas Öl 5 Minuten glasig bis leicht goldgelb anschwitzen. Kasslerwürfel kurz mitbraten, dann beiseitestellen.</step>
+      <step nr="3">Kartoffeln schälen und fein reiben. Die Masse leicht ausdrücken, damit sie nicht zu viel Flüssigkeit enthält.</step>
+      <step nr="4">Geriebene Kartoffeln mit Eiern, Mehl, Schmand und Majoran verrühren. Mit Pfeffer würzen und Salz nur vorsichtig zugeben, da das Kassler bereits Würze mitbringt.</step>
+      <step nr="5">Die Zwiebel-Kassler-Mischung unterheben und alles in die Form füllen.</step>
+      <step nr="6">Im Ofen 70 bis 85 Minuten backen, bis die Babka oben gut gebräunt ist.</step>
+      <step nr="7">Vor dem Anschneiden 10 Minuten ruhen lassen und warm servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: ca. 35 Minuten</item>
-      <item>Anbraten der Einlage: ca. 15 Minuten</item>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Zwiebeln und Kassler anbraten: ca. 8 Minuten</item>
       <item>Backzeit: ca. 70–85 Minuten bei 190 °C Ober-/Unterhitze</item>
-      <item>Ruhezeit: ca. 10–15 Minuten</item>
-      <item>Gesamt: ca. 2 Stunden</item>
+      <item>Ruhezeit: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 1 Stunde 55 Minuten</item>
     </timing>
     <tips>
-      <item>Die Kartoffelmasse nur leicht ausdrücken – zu trocken sollte sie nicht werden.</item>
-      <item>Wenn die Oberfläche zu schnell dunkel wird, die Form locker mit Backpapier oder Alufolie abdecken.</item>
-      <item>Dazu passen Schmand, Gurkensalat oder ein kleiner Krautsalat sehr gut.</item>
+      <item>Beim Salzen vorsichtig sein, weil Kassler oft schon kräftig genug ist.</item>
+      <item>Mit Schmand oder Gurkensalat serviert wird die Babka etwas frischer.</item>
+      <item>Die Form nicht zu flach wählen, damit die Babka innen schön saftig bleibt.</item>
     </tips>
-    <rating>9,1/10 – kräftig, saftig und als Kartoffelgericht mit Ofenkruste richtig überzeugend.</rating>
+    <rating>9,0/10 – rauchig, würzig und als Ofengericht sehr stimmig.</rating>
     <translation lang="pl">
-      <name>Babka ziemniaczana z boczkiem, wieprzowiną i pieczarkami</name>
+      <name>Babka ziemniaczana z kasslerem i cebulą</name>
       <persons>6 osób</persons>
       <category>Kuchnia regionalna polska / dania z piekarnika</category>
       <ingredients>
         <item>1,5 kg mączystych ziemniaków</item>
-        <item>2 cebule</item>
+        <item>300 g kasslera w małej kostce</item>
+        <item>2 duże cebule</item>
         <item>2 jajka</item>
         <item>3 EL mąki</item>
-        <item>150 g boczku wędzonego</item>
-        <item>300 g karkówki lub łopatki wieprzowej w małej kostce</item>
-        <item>200 g pieczarek</item>
+        <item>100 ml śmietany</item>
         <item>2 EL oleju</item>
-        <item>100 ml śmietany lub 2–3 EL kwaśnej śmietany</item>
-        <item>1 TL majeranku</item>
+        <item>1/2 TL majeranku</item>
         <item>sól</item>
         <item>pieprz</item>
         <item>trochę masła lub oleju do formy</item>
       </ingredients>
       <preparation>
-        <step nr="1">Rozgrzać piekarnik do 190 °C góra/dół i dobrze natłuścić formę do zapiekania albo keksówkę.</step>
-        <step nr="2">Boczek pokroić w drobną kostkę i powoli wytopić na patelni. Dodać wieprzowinę i mocno obsmażyć.</step>
-        <step nr="3">Cebulę drobno pokroić, pieczarki posiekać i dodać wszystko na patelnię. Smażyć kolejne 5 do 6 minut, aż płyn z pieczarek w większości odparuje. Lekko przestudzić.</step>
-        <step nr="4">Ziemniaki obrać i drobno zetrzeć. Masę lekko odcisnąć na sicie albo w ściereczce, żeby nie była zbyt wodnista.</step>
-        <step nr="5">Starte ziemniaki wymieszać z jajkami, mąką, śmietaną i majerankiem. Wyraźnie doprawić solą oraz pieprzem.</step>
-        <step nr="6">Do masy ziemniaczanej dodać podsmażoną mieszankę boczku, mięsa i pieczarek.</step>
-        <step nr="7">Przełożyć wszystko do przygotowanej formy i wyrównać powierzchnię.</step>
-        <step nr="8">Piec 70 do 85 minut, aż babka będzie wyraźnie rumiana z wierzchu, a środek się zetnie.</step>
-        <step nr="9">Przed krojeniem odstawić na 10 do 15 minut, żeby lepiej się ustabilizowała. Następnie pokroić i podawać na ciepło.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 35 min</item>
-        <item>obsmażanie dodatków: ok. 15 min</item>
-        <item>pieczenie: ok. 70–85 min w 190 °C góra/dół</item>
-        <item>czas odpoczynku: ok. 10–15 min</item>
-        <item>łącznie: ok. 2 godz.</item>
-      </timing>
-      <tips>
-        <item>Masę ziemniaczaną odciskaj tylko lekko – nie powinna być zbyt sucha.</item>
-        <item>Jeśli wierzch za szybko się rumieni, przykryj formę luźno papierem do pieczenia albo folią.</item>
-        <item>Bardzo dobrze pasują do tego śmietana, sałatka z ogórka albo lekka surówka z kapusty.</item>
-      </tips>
-      <rating>9,1/10 – mocna, soczysta i z pieczoną skórką naprawdę przekonująca.</rating>
-    </translation>
-  </recipe>
-  <recipe id="165">
-    <name>Gemüse-Babka ziemniaczana aus dem Ofen</name>
-    <intro lang="de">Diese Gemüsebabka ist die leichtere, aber trotzdem sehr herzhafte Schwester der klassischen Fleischversion. Kartoffeln, Paprika, Zucchini, rote Zwiebel, Oliven und Pilze ergeben zusammen ein Ofengericht, das rustikal und gleichzeitig angenehm saftig bleibt.</intro>
-    <intro lang="pl">Ta warzywna babka jest lżejszą, ale wciąż bardzo konkretną siostrą klasycznej wersji mięsnej. Ziemniaki, papryka, cukinia, czerwona cebula, oliwki i pieczarki tworzą razem pieczone danie, które pozostaje rustykalne i przyjemnie soczyste.</intro>
-    <persons>6 Personen</persons>
-    <category>Polnische Regionalküche / Ofengerichte</category>
-    <image src="images/rezeptbild_165.png" alt="Gemüse-Babka ziemniaczana aus dem Ofen" />
-    <ingredients>
-      <item>1,4 kg mehligkochende Kartoffeln</item>
-      <item>1 rote Paprika</item>
-      <item>1 kleine Zucchini</item>
-      <item>1 rote Zwiebel</item>
-      <item>150 g Champignons</item>
-      <item>60 g grüne Oliven, grob gehackt</item>
-      <item>2 Eier</item>
-      <item>3 EL Mehl</item>
-      <item>100 ml Schmand oder Sahne</item>
-      <item>2 EL Öl</item>
-      <item>1 EL gehackte Petersilie</item>
-      <item>Salz</item>
-      <item>Pfeffer</item>
-      <item>1/2 TL Majoran</item>
-      <item>etwas Öl oder Butter für die Form</item>
-    </ingredients>
-    <preparation>
-      <step nr="1">Backofen auf 190 °C Ober-/Unterhitze vorheizen und eine Form gut einfetten.</step>
-      <step nr="2">Paprika, Zucchini, Zwiebel und Pilze klein würfeln. Alles in 2 Esslöffeln Öl 6 bis 8 Minuten anbraten, bis das Gemüse etwas zusammenfällt. Danach kurz abkühlen lassen.</step>
-      <step nr="3">Kartoffeln schälen und fein reiben. Die Masse leicht ausdrücken, damit überschüssige Flüssigkeit entfernt wird.</step>
-      <step nr="4">Geriebene Kartoffeln mit Eiern, Mehl, Schmand, Petersilie und Majoran verrühren.</step>
-      <step nr="5">Das angebratene Gemüse und die gehackten Oliven unterheben und alles mit Salz und Pfeffer kräftig abschmecken.</step>
-      <step nr="6">Die Masse in die Form geben und glattstreichen.</step>
-      <step nr="7">Im Ofen 65 bis 80 Minuten backen, bis die Oberfläche goldbraun ist und die Babka innen gestockt wirkt.</step>
-      <step nr="8">Vor dem Anschneiden 10 Minuten ruhen lassen und dann warm servieren.</step>
-    </preparation>
-    <timing>
-      <item>Vorbereitung: ca. 30 Minuten</item>
-      <item>Gemüse anbraten: ca. 8 Minuten</item>
-      <item>Backzeit: ca. 65–80 Minuten bei 190 °C Ober-/Unterhitze</item>
-      <item>Ruhezeit: ca. 10 Minuten</item>
-      <item>Gesamt: ca. 1 Stunde 50 Minuten</item>
-    </timing>
-    <tips>
-      <item>Zucchini geben Feuchtigkeit ab – deshalb das Gemüse kurz anbraten und die Kartoffeln leicht ausdrücken.</item>
-      <item>Mit einem Klecks Schmand oder Kräuterquark serviert wirkt das Gericht noch runder.</item>
-      <item>Auch am nächsten Tag in Scheiben angebraten sehr gut.</item>
-    </tips>
-    <rating>8,9/10 – rustikal, saftig und eine sehr gute vegetarische Kartoffelvariante.</rating>
-    <translation lang="pl">
-      <name>Warzywna babka ziemniaczana z piekarnika</name>
-      <persons>6 osób</persons>
-      <category>Kuchnia regionalna polska / dania z piekarnika</category>
-      <ingredients>
-        <item>1,4 kg mączystych ziemniaków</item>
-        <item>1 czerwona papryka</item>
-        <item>1 mała cukinia</item>
-        <item>1 czerwona cebula</item>
-        <item>150 g pieczarek</item>
-        <item>60 g zielonych oliwek, grubo posiekanych</item>
-        <item>2 jajka</item>
-        <item>3 EL mąki</item>
-        <item>100 ml śmietany lub 2–3 EL kwaśnej śmietany</item>
-        <item>2 EL oleju</item>
-        <item>1 EL posiekanej natki pietruszki</item>
-        <item>sól</item>
-        <item>pieprz</item>
-        <item>1/2 TL majeranku</item>
-        <item>trochę oleju lub masła do formy</item>
-      </ingredients>
-      <preparation>
         <step nr="1">Rozgrzać piekarnik do 190 °C góra/dół i dobrze natłuścić formę.</step>
-        <step nr="2">Paprykę, cukinię, cebulę i pieczarki pokroić w drobną kostkę. Wszystko podsmażyć na 2 łyżkach oleju przez 6 do 8 minut, aż warzywa lekko zmiękną. Następnie chwilę przestudzić.</step>
-        <step nr="3">Ziemniaki obrać i drobno zetrzeć. Masę lekko odcisnąć, aby usunąć nadmiar płynu.</step>
-        <step nr="4">Starte ziemniaki wymieszać z jajkami, mąką, śmietaną, pietruszką i majerankiem.</step>
-        <step nr="5">Dodać podsmażone warzywa oraz posiekane oliwki, a całość mocno doprawić solą i pieprzem.</step>
-        <step nr="6">Przełożyć masę do formy i wyrównać powierzchnię.</step>
-        <step nr="7">Piec 65 do 80 minut, aż wierzch będzie złocisty, a środek sprawi wrażenie ściętego.</step>
-        <step nr="8">Przed krojeniem odstawić na 10 minut, a następnie podawać na ciepło.</step>
+        <step nr="2">Cebulę drobno pokroić i podsmażyć na niewielkiej ilości oleju przez około 5 minut, aż się zeszkli i lekko zezłoci. Dodać kassler i krótko razem podsmażyć, po czym odstawić.</step>
+        <step nr="3">Ziemniaki obrać i drobno zetrzeć. Masę lekko odcisnąć, żeby nie zawierała zbyt dużo płynu.</step>
+        <step nr="4">Starte ziemniaki wymieszać z jajkami, mąką, śmietaną i majerankiem. Doprawić pieprzem, a sól dodawać ostrożnie, bo kassler sam w sobie jest już dość wyrazisty.</step>
+        <step nr="5">Wmieszać cebulę z kasslerem i przełożyć wszystko do formy.</step>
+        <step nr="6">Piec 70 do 85 minut, aż babka będzie dobrze przyrumieniona na wierzchu.</step>
+        <step nr="7">Przed krojeniem odstawić na 10 minut i podawać na ciepło.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 30 min</item>
-        <item>podsmażanie warzyw: ok. 8 min</item>
-        <item>pieczenie: ok. 65–80 min w 190 °C góra/dół</item>
+        <item>podsmażanie cebuli i kasslera: ok. 8 min</item>
+        <item>pieczenie: ok. 70–85 min w 190 °C góra/dół</item>
         <item>czas odpoczynku: ok. 10 min</item>
-        <item>łącznie: ok. 1 godz. 50 min</item>
+        <item>łącznie: ok. 1 godz. 55 min</item>
       </timing>
       <tips>
-        <item>Cukinia oddaje sporo wilgoci – dlatego warto wcześniej podsmażyć warzywa i lekko odcisnąć ziemniaki.</item>
-        <item>Podana z kleksem śmietany albo twarożkiem z ziołami smakuje jeszcze pełniej.</item>
-        <item>Następnego dnia bardzo dobra także podsmażona w plastrach.</item>
+        <item>Z solą uważaj, bo kassler bywa już wystarczająco słony i wyrazisty.</item>
+        <item>Ze śmietaną albo sałatką z ogórka babka smakuje trochę świeżej.</item>
+        <item>Nie wybieraj zbyt płaskiej formy, wtedy środek pozostanie ładnie soczysty.</item>
       </tips>
-      <rating>8,9/10 – rustykalna, soczysta i bardzo udana wegetariańska wersja ziemniaczana.</rating>
-    </translation>
-  </recipe>
-  <recipe id="166">
-    <name>Szare Kluski mit Sauerkraut und Speck</name>
-    <intro lang="de">Szare Kluski sind ein typisches Kartoffelgericht aus der Wielkopolska und genau die Art bodenständiger Küche, die satt und zufrieden macht. Mit Sauerkraut, Speck und Zwiebeln wird daraus ein rustikales Tellergericht mit viel regionalem Charakter.</intro>
-    <intro lang="pl">Szare kluchy to klasyczne wielkopolskie danie ziemniaczane i dokładnie taka kuchnia, która syci i daje satysfakcję. Z kapustą kiszoną, boczkiem i cebulą powstaje rustykalny talerz z mocnym regionalnym charakterem.</intro>
-    <persons>4 Personen</persons>
-    <category>Polnische Regionalküche / Klassiker &amp; Hausmannskost</category>
-    <image src="images/rezeptbild_166.png" alt="Szare Kluski mit Sauerkraut und Speck" />
-    <ingredients>
-      <item>1 kg rohe mehligkochende Kartoffeln</item>
-      <item>150 g Kartoffelstärke</item>
-      <item>1 Ei, optional</item>
-      <item>1 TL Salz</item>
-      <item>400 g Sauerkraut</item>
-      <item>150 g Speckwürfel</item>
-      <item>2 Zwiebeln</item>
-      <item>1 EL Schmalz oder Öl</item>
-      <item>100 ml Brühe oder Wasser</item>
-      <item>Pfeffer</item>
-    </ingredients>
-    <preparation>
-      <step nr="1">Für das Sauerkraut Zwiebeln fein würfeln. Speck in einer Pfanne oder einem Topf auslassen.</step>
-      <step nr="2">Die Hälfte der Zwiebeln zum Speck geben und goldgelb anschwitzen. Sauerkraut und Brühe zugeben und alles 20 bis 25 Minuten sanft schmoren lassen.</step>
-      <step nr="3">Kartoffeln schälen und sehr fein reiben. Die Masse in einem Tuch oder Sieb ausdrücken, die aufgefangene Flüssigkeit kurz stehen lassen und die abgesetzte Kartoffelstärke zusätzlich wieder zur Kartoffelmasse geben.</step>
-      <step nr="4">Mit der zusätzlichen Kartoffelstärke, Salz und nach Wunsch einem Ei zu einem formbaren, feuchten Teig vermengen.</step>
-      <step nr="5">Einen großen Topf mit Salzwasser zum leichten Sieden bringen, nicht sprudelnd kochen lassen.</step>
-      <step nr="6">Mit einem Löffel oder mit nassen Händen kleine Klöße oder unregelmäßige Nocken abstechen und ins Wasser geben.</step>
-      <step nr="7">Die Kluski je nach Größe 8 bis 12 Minuten gar ziehen lassen, bis sie an die Oberfläche steigen und durch sind.</step>
-      <step nr="8">Die restlichen Zwiebeln in etwas Schmalz oder im Speckfett goldbraun rösten.</step>
-      <step nr="9">Szare Kluski mit Sauerkraut, Speck und gerösteten Zwiebeln anrichten und mit etwas Pfeffer servieren.</step>
-    </preparation>
-    <timing>
-      <item>Vorbereitung: ca. 30 Minuten</item>
-      <item>Sauerkraut schmoren: ca. 20–25 Minuten</item>
-      <item>Kluski garen: ca. 8–12 Minuten pro Portion</item>
-      <item>Gesamt: ca. 1 Stunde</item>
-    </timing>
-    <tips>
-      <item>Das Wasser für die Kluski darf nur sieden, nicht stark kochen, sonst zerfallen sie leichter.</item>
-      <item>Wenn die Kartoffelmasse zu weich ist, noch etwas Stärke ergänzen.</item>
-      <item>Geröstete Zwiebeln obenauf machen das Gericht deutlich runder.</item>
-    </tips>
-    <rating>9,0/10 – rustikal, sättigend und mit Sauerkraut sehr stimmig.</rating>
-    <translation lang="pl">
-      <name>Szare kluchy z kapustą kiszoną i boczkiem</name>
-      <persons>4 osoby</persons>
-      <category>Kuchnia regionalna polska / klasyka i domowa kuchnia</category>
-      <ingredients>
-        <item>1 kg surowych mączystych ziemniaków</item>
-        <item>150 g skrobi ziemniaczanej</item>
-        <item>1 jajko, opcjonalnie</item>
-        <item>1 TL soli</item>
-        <item>400 g kapusty kiszonej</item>
-        <item>150 g boczku w kostce</item>
-        <item>2 cebule</item>
-        <item>1 EL smalcu lub oleju</item>
-        <item>100 ml bulionu albo wody</item>
-        <item>pieprz</item>
-      </ingredients>
-      <preparation>
-        <step nr="1">Do kapusty kiszonej drobno pokroić cebulę. Boczek wytopić na patelni albo w garnku.</step>
-        <step nr="2">Połowę cebuli dodać do boczku i zeszklić na złoto. Dodać kapustę oraz bulion i dusić całość 20 do 25 minut na małym ogniu.</step>
-        <step nr="3">Ziemniaki obrać i bardzo drobno zetrzeć. Masę odcisnąć w ściereczce albo na sicie, odstawiony płyn pozostawić na chwilę i osiadłą na dnie skrobię ponownie dodać do ziemniaków.</step>
-        <step nr="4">Wymieszać z dodatkową skrobią, solą i opcjonalnie jajkiem, aż powstanie wilgotne, ale formowalne ciasto.</step>
-        <step nr="5">W dużym garnku zagotować osoloną wodę i zmniejszyć ogień tak, aby tylko lekko mrugała, a nie mocno wrzała.</step>
-        <step nr="6">Łyżką albo mokrymi dłońmi odkrawać małe kluski lub nieregularne kopytka i wkładać do wody.</step>
-        <step nr="7">Gotować 8 do 12 minut, zależnie od wielkości, aż wypłyną na powierzchnię i będą ugotowane.</step>
-        <step nr="8">Pozostałą cebulę zrumienić na smalcu albo na tłuszczu z boczku.</step>
-        <step nr="9">Szare kluchy podawać z kapustą kiszoną, boczkiem i podsmażoną cebulą, z odrobiną pieprzu.</step>
-      </preparation>
-      <timing>
-        <item>przygotowanie: ok. 30 min</item>
-        <item>duszenie kapusty: ok. 20–25 min</item>
-        <item>gotowanie klusek: ok. 8–12 min na porcję</item>
-        <item>łącznie: ok. 1 godz.</item>
-      </timing>
-      <tips>
-        <item>Woda do klusek ma tylko lekko mrugać, nie może mocno wrzeć, bo kluski łatwiej się rozpadną.</item>
-        <item>Jeśli masa ziemniaczana jest zbyt luźna, dodaj trochę więcej skrobi.</item>
-        <item>Podsmażona cebula na wierzchu wyraźnie domyka smak całego dania.</item>
-      </tips>
-      <rating>9,0/10 – rustykalne, sycące i bardzo spójne z kiszoną kapustą.</rating>
+      <rating>9,0/10 – dymna, wyrazista i bardzo spójna jako pieczone danie.</rating>
     </translation>
   </recipe>
   <recipe id="167">
-    <name>Kartoffel-Zapiekanka mit Pilzen, Speck und Sahnesauce</name>
-    <intro lang="de">Diese Kartoffel-Zapiekanka ist von den überbackenen Kartoffelgerichten aus Poznań inspiriert, aber als eigenes, sauberes Ofenrezept ausgearbeitet. Gekochte Kartoffelscheiben, Pilze, Speck, Zwiebeln, Sahnesauce und Mozzarella ergeben zusammen ein sehr rundes Auflaufgericht.</intro>
-    <intro lang="pl">Ta zapiekanka ziemniaczana jest inspirowana poznańskimi daniami ziemniacznymi, ale została rozpisana jako własny, dopracowany przepis z piekarnika. Gotowane plastry ziemniaków, pieczarki, boczek, cebula, sos śmietanowy i mozzarella dają razem bardzo spójną całość.</intro>
+    <name>Kartoffel-Zapiekanka mit Hähnchen und Paprika</name>
+    <intro lang="de">Diese Zapiekanka baut auf derselben Kartoffelidee auf, geht aber mit Hähnchen und Paprika etwas alltagstauglicher und familienfreundlicher in die Richtung Hauptgericht. Cremige Sauce, vorgegarte Kartoffeln und goldener Käse machen daraus einen sehr runden Auflauf.</intro>
+    <intro lang="pl">Ta zapiekanka opiera się na tej samej ziemniaczanej idei, ale dzięki kurczakowi i papryce idzie bardziej w stronę codziennego, rodzinnego dania głównego. Kremowy sos, podgotowane ziemniaki i złoty ser tworzą bardzo spójną całość.</intro>
     <persons>4 Personen</persons>
     <category>Polnische Regionalküche / Ofen &amp; Aufläufe</category>
-    <image src="images/rezeptbild_167.png" alt="Kartoffel-Zapiekanka mit Pilzen, Speck und Sahnesauce" />
+    <image src="images/rezeptbild_167.png" alt="Kartoffel-Zapiekanka mit Hähnchen und Paprika" />
     <ingredients>
       <item>1,2 kg festkochende Kartoffeln</item>
-      <item>150 g Speckwürfel</item>
-      <item>250 g Champignons oder braune Pilze</item>
-      <item>1 große Zwiebel</item>
-      <item>1 Knoblauchzehe</item>
+      <item>500 g Hähnchenbrust oder Hähnchenschenkel ohne Knochen</item>
+      <item>1 rote Paprika</item>
+      <item>1 gelbe Paprika</item>
+      <item>1 Zwiebel</item>
+      <item>1 EL Öl</item>
       <item>200 ml Sahne</item>
       <item>100 ml Milch</item>
-      <item>1 TL Speisestärke, optional</item>
-      <item>120 g geriebener Mozzarella</item>
-      <item>1 EL Butter oder Öl für die Form</item>
-      <item>1 TL Thymian</item>
+      <item>150 g geriebener Käse, z. B. Mozzarella oder Gouda</item>
+      <item>1 TL Paprikapulver edelsüß</item>
       <item>Salz</item>
       <item>Pfeffer</item>
+      <item>etwas Butter oder Öl für die Form</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kartoffeln in der Schale in Salzwasser knapp gar kochen. Danach abgießen, etwas abkühlen lassen, pellen und in Scheiben schneiden.</step>
+      <step nr="1">Kartoffeln in der Schale knapp gar kochen, abgießen, etwas abkühlen lassen, pellen und in Scheiben schneiden.</step>
       <step nr="2">Backofen auf 200 °C Ober-/Unterhitze vorheizen und eine Auflaufform einfetten.</step>
-      <step nr="3">Speck in einer Pfanne auslassen. Zwiebel fein würfeln, Pilze in Scheiben schneiden und mit dem fein gehackten Knoblauch zum Speck geben.</step>
-      <step nr="4">Alles 6 bis 8 Minuten anbraten, bis die Pilze Farbe bekommen und überschüssige Flüssigkeit verdampft ist.</step>
-      <step nr="5">Sahne und Milch angießen, Thymian zugeben und die Sauce 3 bis 4 Minuten leicht einkochen lassen. Wenn du es sämiger magst, 1 Teelöffel Stärke in wenig kalter Milch lösen und einrühren.</step>
-      <step nr="6">Mit Salz und Pfeffer abschmecken.</step>
-      <step nr="7">Kartoffelscheiben in die Form schichten, die Pilz-Speck-Sauce darüber verteilen und mit Mozzarella bestreuen.</step>
-      <step nr="8">Im Ofen 20 bis 25 Minuten backen, bis alles heiß ist und der Käse goldgelb überbacken ist.</step>
+      <step nr="3">Hähnchen in kleine Stücke schneiden. Paprika und Zwiebel würfeln.</step>
+      <step nr="4">Öl in einer Pfanne erhitzen, Hähnchen rundum anbraten und anschließend Zwiebel sowie Paprika zugeben.</step>
+      <step nr="5">Alles 5 bis 6 Minuten weiterbraten, dann mit Paprikapulver, Salz und Pfeffer würzen.</step>
+      <step nr="6">Sahne und Milch angießen und 2 bis 3 Minuten sanft erwärmen, damit sich alles verbindet.</step>
+      <step nr="7">Kartoffelscheiben in die Form schichten, die Hähnchen-Paprika-Mischung darübergeben und mit Käse bestreuen.</step>
+      <step nr="8">Im Ofen 22 bis 28 Minuten backen, bis der Käse goldgelb ist und alles heiß durchgezogen ist.</step>
       <step nr="9">Vor dem Servieren 5 Minuten ruhen lassen.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 25 Minuten</item>
       <item>Kartoffeln vorkochen: ca. 20 Minuten</item>
-      <item>Sauce und Schichten: ca. 15 Minuten</item>
-      <item>Backzeit: ca. 20–25 Minuten bei 200 °C Ober-/Unterhitze</item>
+      <item>Pfannenansatz: ca. 12 Minuten</item>
+      <item>Backzeit: ca. 22–28 Minuten bei 200 °C Ober-/Unterhitze</item>
       <item>Ruhezeit: ca. 5 Minuten</item>
       <item>Gesamt: ca. 1 Stunde 10 Minuten</item>
     </timing>
     <tips>
-      <item>Festkochende Kartoffeln bleiben beim Schichten schöner in Form.</item>
-      <item>Die Pilze erst kräftig anbraten, damit die Sauce später nicht wässrig wird.</item>
-      <item>Mit einem kleinen grünen Salat oder Gurkensalat wirkt der Auflauf noch ausgewogener.</item>
+      <item>Die Kartoffeln nur knapp gar kochen, damit sie beim Backen nicht zerfallen.</item>
+      <item>Mit Gouda wird der Auflauf kräftiger, mit Mozzarella etwas milder.</item>
+      <item>Ein kleiner Gurkensalat passt sehr gut als frische Beilage.</item>
     </tips>
-    <rating>9,0/10 – cremig, deftig und als Kartoffelauflauf sehr stimmig aufgebaut.</rating>
+    <rating>8,9/10 – alltagstauglich, cremig und sehr gut als Familienauflauf.</rating>
     <translation lang="pl">
-      <name>Zapiekanka ziemniaczana z pieczarkami, boczkiem i sosem śmietanowym</name>
+      <name>Zapiekanka ziemniaczana z kurczakiem i papryką</name>
       <persons>4 osoby</persons>
       <category>Kuchnia regionalna polska / zapiekanki</category>
       <ingredients>
         <item>1,2 kg ziemniaków sałatkowych</item>
-        <item>150 g boczku w kostce</item>
-        <item>250 g pieczarek</item>
-        <item>1 duża cebula</item>
-        <item>1 ząbek czosnku</item>
+        <item>500 g piersi z kurczaka albo mięsa z udek bez kości</item>
+        <item>1 czerwona papryka</item>
+        <item>1 żółta papryka</item>
+        <item>1 cebula</item>
+        <item>1 EL oleju</item>
         <item>200 ml śmietanki</item>
         <item>100 ml mleka</item>
-        <item>1 TL skrobi, opcjonalnie</item>
-        <item>120 g tartej mozzarelli</item>
-        <item>1 EL masła lub oleju do formy</item>
-        <item>1 TL tymianku</item>
+        <item>150 g tartego sera, np. mozzarella albo gouda</item>
+        <item>1 TL słodkiej papryki w proszku</item>
         <item>sól</item>
         <item>pieprz</item>
+        <item>trochę masła lub oleju do formy</item>
       </ingredients>
       <preparation>
-        <step nr="1">Ziemniaki ugotować w łupinach w osolonej wodzie na prawie miękko. Następnie odcedzić, lekko przestudzić, obrać i pokroić w plastry.</step>
+        <step nr="1">Ziemniaki ugotować w łupinach na prawie miękko, odcedzić, lekko przestudzić, obrać i pokroić w plastry.</step>
         <step nr="2">Rozgrzać piekarnik do 200 °C góra/dół i natłuścić formę do zapiekania.</step>
-        <step nr="3">Boczek wytopić na patelni. Cebulę drobno pokroić, pieczarki pokroić w plastry, a czosnek drobno posiekać i dodać wszystko do boczku.</step>
-        <step nr="4">Smażyć 6 do 8 minut, aż pieczarki się zrumienią i odparuje nadmiar płynu.</step>
-        <step nr="5">Wlać śmietankę i mleko, dodać tymianek i gotować sos 3 do 4 minut, aż lekko się zredukuje. Jeśli ma być gęstszy, rozprowadzić 1 łyżeczkę skrobi w odrobinie zimnego mleka i wmieszać.</step>
-        <step nr="6">Doprawić solą oraz pieprzem.</step>
-        <step nr="7">Plastry ziemniaków ułożyć warstwami w formie, rozprowadzić na nich sos z pieczarkami i boczkiem, a na wierzch posypać mozzarellą.</step>
-        <step nr="8">Piec 20 do 25 minut, aż całość będzie gorąca, a ser ładnie się zezłoci.</step>
+        <step nr="3">Kurczaka pokroić na małe kawałki. Paprykę i cebulę pokroić w kostkę.</step>
+        <step nr="4">Na patelni rozgrzać olej, obsmażyć kurczaka z każdej strony, a następnie dodać cebulę oraz paprykę.</step>
+        <step nr="5">Smażyć jeszcze 5 do 6 minut, po czym doprawić papryką w proszku, solą i pieprzem.</step>
+        <step nr="6">Wlać śmietankę i mleko, po czym podgrzewać 2 do 3 minut na małym ogniu, aż wszystko się połączy.</step>
+        <step nr="7">Plastry ziemniaków ułożyć w formie, na wierzch wyłożyć mieszankę z kurczakiem i papryką, a następnie posypać serem.</step>
+        <step nr="8">Piec 22 do 28 minut, aż ser będzie złocisty, a całość dobrze gorąca.</step>
         <step nr="9">Przed podaniem odstawić na 5 minut.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 25 min</item>
         <item>wstępne gotowanie ziemniaków: ok. 20 min</item>
-        <item>sos i układanie warstw: ok. 15 min</item>
-        <item>pieczenie: ok. 20–25 min w 200 °C góra/dół</item>
+        <item>przygotowanie na patelni: ok. 12 min</item>
+        <item>pieczenie: ok. 22–28 min w 200 °C góra/dół</item>
         <item>czas odpoczynku: ok. 5 min</item>
         <item>łącznie: ok. 1 godz. 10 min</item>
       </timing>
       <tips>
-        <item>Ziemniaki sałatkowe lepiej trzymają kształt podczas układania warstw.</item>
-        <item>Pieczarki najpierw dobrze zrumień, żeby sos później nie był wodnisty.</item>
-        <item>Z małą zieloną sałatą albo mizerią zapiekanka wypada jeszcze lepiej.</item>
+        <item>Ziemniaki gotuj tylko prawie do miękkości, żeby podczas pieczenia się nie rozpadły.</item>
+        <item>Z goudą zapiekanka będzie wyraźniejsza, z mozzarellą łagodniejsza.</item>
+        <item>Świeża mizeria albo sałatka z ogórka bardzo dobrze pasuje jako dodatek.</item>
       </tips>
-      <rating>9,0/10 – kremowa, konkretna i bardzo dobrze zbudowana jako ziemniaczana zapiekanka.</rating>
+      <rating>8,9/10 – codzienna, kremowa i bardzo dobra jako rodzinna zapiekanka.</rating>
     </translation>
+  </recipe>
+  <recipe id="168">
+    <name>Pad Thai mit Hähnchen</name>
+    <intro lang="de">Pad Thai mit Hähnchen ist ein sehr rundes Wokgericht mit Reisbandnudeln, Ei, Gemüse, Limette und einer süß-salzig-säuerlichen Sauce. Gerade die Mischung aus Frische, Röstaromen und Erdnüssen macht dieses Gericht so charakteristisch.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_168.png" alt="Pad Thai mit Hähnchen" />
+    <ingredients>
+      <item>300 g Reisbandnudeln</item>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>2 EL Öl</item>
+      <item>2 Eier</item>
+      <item>2 Möhren</item>
+      <item>1 rote Paprika</item>
+      <item>4 Frühlingszwiebeln</item>
+      <item>150 g Mungobohnensprossen</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>60 g geröstete Erdnüsse</item>
+      <item>1 Limette</item>
+      <item>1 Bund Koriander, optional</item>
+      <item>Für die Sauce: 5 EL Sojasauce</item>
+      <item>Für die Sauce: 3 EL Fischsauce</item>
+      <item>Für die Sauce: 3 EL Tamarindenpaste</item>
+      <item>Für die Sauce: 2 EL brauner Zucker</item>
+      <item>Für die Sauce: 1 EL Reisessig</item>
+      <item>Für die Sauce: 1 TL Chiliflocken oder 1 kleine rote Chili</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Reisbandnudeln nach Packungsangabe einweichen oder kurz garen, dann abgießen und beiseitestellen.</step>
+      <step nr="2">Hähnchenbrust in feine Streifen schneiden. Möhren schälen und in feine Stifte schneiden. Paprika in dünne Streifen schneiden. Frühlingszwiebeln in Ringe schneiden. Knoblauch und Ingwer fein hacken.</step>
+      <step nr="3">Für die Sauce Sojasauce, Fischsauce, Tamarindenpaste, braunen Zucker, Reisessig und Chili verrühren.</step>
+      <step nr="4">Einen Wok oder eine große Pfanne stark erhitzen. 1 EL Öl hineingeben und das Hähnchen 3 bis 4 Minuten scharf anbraten. Herausnehmen.</step>
+      <step nr="5">Restliches Öl in den Wok geben. Eier hineinschlagen und kurz stocken lassen, dann grob verrühren.</step>
+      <step nr="6">Knoblauch, Ingwer, Möhren und Paprika zugeben und 2 Minuten bei hoher Hitze braten.</step>
+      <step nr="7">Nudeln, Hähnchen und Sauce in den Wok geben. Alles gut durchschwenken, bis die Nudeln die Sauce aufgenommen haben.</step>
+      <step nr="8">Frühlingszwiebeln und Sprossen unterheben und nur kurz mitziehen lassen.</step>
+      <step nr="9">Mit gehackten Erdnüssen, Limettensaft und optional Koriander servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Nudeln vorbereiten: ca. 10 Minuten</item>
+      <item>Wok-Zubereitung: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Pfanne oder der Wok muss richtig heiß sein, damit die Nudeln nicht matschig werden.</item>
+      <item>Tamarindenpaste gibt den typischen Pad-Thai-Geschmack.</item>
+      <item>Erdnüsse erst am Ende darübergeben, damit sie knackig bleiben.</item>
+    </tips>
+    <rating>9,2/10</rating>
+  </recipe>
+  <recipe id="169">
+    <name>Gebratene Asia-Nudeln mit Hähnchen</name>
+    <intro lang="de">Gebratene Asia-Nudeln mit Hähnchen sind ein unkomplizierter Alltagsklassiker aus dem Wok. Mit Mie-Nudeln, viel Gemüse und einer würzigen Soja-Sesam-Sauce entsteht ein schnelles, sättigendes Gericht mit klarem Wok-Charakter.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_169.png" alt="Gebratene Asia-Nudeln mit Hähnchen" />
+    <ingredients>
+      <item>300 g Mie-Nudeln</item>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>1 rote Paprika</item>
+      <item>1 gelbe Paprika</item>
+      <item>200 g Weißkohl</item>
+      <item>1 große Möhre</item>
+      <item>4 Frühlingszwiebeln</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>3 EL Öl</item>
+      <item>1 EL Sesam</item>
+      <item>Für die Sauce: 5 EL Sojasauce</item>
+      <item>Für die Sauce: 2 EL Austernsauce</item>
+      <item>Für die Sauce: 1 EL Sesamöl</item>
+      <item>Für die Sauce: 1 EL Honig</item>
+      <item>Für die Sauce: 1 EL Reisessig</item>
+      <item>Für die Sauce: 1 TL Sambal Oelek oder Chilipaste</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Mie-Nudeln nach Packungsangabe garen, abgießen und mit kaltem Wasser abschrecken.</step>
+      <step nr="2">Hähnchen in dünne Streifen schneiden. Paprika in feine Streifen, Weißkohl in feine Streifen und die Möhre in Julienne schneiden. Frühlingszwiebeln in Ringe schneiden.</step>
+      <step nr="3">Sauce aus Sojasauce, Austernsauce, Sesamöl, Honig, Reisessig und Sambal Oelek verrühren.</step>
+      <step nr="4">Wok stark erhitzen. 2 EL Öl hineingeben und das Hähnchen 4 Minuten scharf anbraten. Herausnehmen.</step>
+      <step nr="5">Restliches Öl in den Wok geben. Knoblauch, Ingwer, Möhre, Paprika und Weißkohl 3 bis 4 Minuten unter Rühren braten.</step>
+      <step nr="6">Hähnchen und Nudeln zurück in den Wok geben. Sauce angießen und alles gut durchmischen.</step>
+      <step nr="7">Frühlingszwiebeln unterheben und noch 1 Minute weiterbraten.</step>
+      <step nr="8">Vor dem Servieren mit Sesam bestreuen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Nudeln kochen: ca. 5 Minuten</item>
+      <item>Wok-Zubereitung: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Nudeln nach dem Kochen nicht zu lange stehen lassen, sonst kleben sie.</item>
+      <item>Weißkohl bringt Biss und macht das Gericht alltagstauglich.</item>
+      <item>Wer es würziger mag, gibt am Ende noch etwas Chiliöl dazu.</item>
+    </tips>
+    <rating>8,9/10</rating>
+  </recipe>
+  <recipe id="170">
+    <name>Rindfleisch mit Brokkoli aus dem Wok</name>
+    <intro lang="de">Rindfleisch mit Brokkoli ist ein klassisches Wokgericht mit kräftiger Sauce und sehr klarer Struktur. Zart angebratenes Rind, bissfester Brokkoli und eine glänzende Soja-Austern-Sauce ergeben zusammen ein sehr rundes Tellergericht.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_170.png" alt="Rindfleisch mit Brokkoli aus dem Wok" />
+    <ingredients>
+      <item>600 g Rinderhüfte oder Rinderfiletspitzen</item>
+      <item>500 g Brokkoli</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>3 EL Öl</item>
+      <item>150 ml Rinderfond oder Brühe</item>
+      <item>1 TL Speisestärke</item>
+      <item>2 EL Wasser</item>
+      <item>Für die Marinade: 3 EL Sojasauce</item>
+      <item>Für die Marinade: 1 EL Reiswein oder trockener Sherry</item>
+      <item>Für die Marinade: 1 TL Speisestärke</item>
+      <item>Für die Marinade: 1 TL brauner Zucker</item>
+      <item>Für die Sauce: 4 EL Sojasauce</item>
+      <item>Für die Sauce: 2 EL Austernsauce</item>
+      <item>Für die Sauce: 1 TL Sesamöl</item>
+      <item>Für die Sauce: 1 TL Zucker</item>
+      <item>Für die Sauce: etwas schwarzer Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Rindfleisch in dünne Streifen schneiden. Mit Sojasauce, Reiswein, Stärke und Zucker vermengen und 15 Minuten marinieren.</step>
+      <step nr="2">Brokkoli in kleine Röschen teilen und 2 Minuten in kochendem Wasser blanchieren, dann abgießen.</step>
+      <step nr="3">Zwiebel in Streifen schneiden. Knoblauch und Ingwer fein hacken.</step>
+      <step nr="4">Zutaten für die Sauce verrühren. Stärke mit Wasser glatt rühren.</step>
+      <step nr="5">Wok sehr stark erhitzen. 2 EL Öl hineingeben und das Rindfleisch in 2 Portionen jeweils sehr kurz und scharf anbraten. Herausnehmen.</step>
+      <step nr="6">Restliches Öl in den Wok geben. Zwiebel, Knoblauch und Ingwer kurz anbraten.</step>
+      <step nr="7">Brokkoli zugeben und 2 Minuten mitbraten.</step>
+      <step nr="8">Sauce und Fond angießen, kurz aufkochen lassen.</step>
+      <step nr="9">Rindfleisch zurück in den Wok geben. Stärke-Wasser-Mischung einrühren und alles 1 bis 2 Minuten binden lassen.</step>
+      <step nr="10">Sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Marinieren: ca. 15 Minuten</item>
+      <item>Wok-Zubereitung: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Rindfleisch nur sehr kurz braten, damit es zart bleibt.</item>
+      <item>Brokkoli vorher kurz blanchieren, dann bleibt er grün und bissfest.</item>
+      <item>Dazu passt Jasminreis sehr gut.</item>
+    </tips>
+    <rating>9,1/10</rating>
+  </recipe>
+  <recipe id="171">
+    <name>Chop Suey mit Hähnchen und Gemüse</name>
+    <intro lang="de">Chop Suey mit Hähnchen und Gemüse ist ein schnelles, gemüsereiches Wokgericht mit leichter, klar gebundener Sauce. Es lebt von frischem Gemüse, kurzen Garzeiten und einer saftigen, aber nicht schweren Gesamtwirkung.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_171.png" alt="Chop Suey mit Hähnchen und Gemüse" />
+    <ingredients>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>1 rote Paprika</item>
+      <item>1 grüne Paprika</item>
+      <item>200 g Champignons</item>
+      <item>200 g Mungobohnensprossen</item>
+      <item>2 Möhren</item>
+      <item>1 kleine Zucchini</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>3 EL Öl</item>
+      <item>Für die Sauce: 250 ml Hühnerbrühe</item>
+      <item>Für die Sauce: 4 EL Sojasauce</item>
+      <item>Für die Sauce: 2 EL Austernsauce</item>
+      <item>Für die Sauce: 1 EL Reisessig</item>
+      <item>Für die Sauce: 1 TL Zucker</item>
+      <item>Für die Sauce: 1 EL Speisestärke</item>
+      <item>Für die Sauce: 2 EL kaltes Wasser</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in feine Streifen schneiden. Paprika, Möhren, Zucchini und Zwiebel ebenfalls in Streifen schneiden. Champignons in Scheiben schneiden.</step>
+      <step nr="2">Für die Sauce Brühe, Sojasauce, Austernsauce, Reisessig und Zucker verrühren. Stärke mit Wasser glatt rühren.</step>
+      <step nr="3">Wok stark erhitzen. 2 EL Öl hineingeben und das Hähnchen 4 Minuten scharf anbraten. Herausnehmen.</step>
+      <step nr="4">Restliches Öl in den Wok geben. Zwiebel, Knoblauch und Ingwer kurz anbraten.</step>
+      <step nr="5">Möhren, Paprika, Zucchini und Champignons 3 bis 4 Minuten unter Rühren braten.</step>
+      <step nr="6">Hähnchen zurück in den Wok geben. Sauce angießen und kurz aufkochen.</step>
+      <step nr="7">Stärke-Mischung einrühren und die Sauce leicht binden.</step>
+      <step nr="8">Sprossen zuletzt unterheben und nur noch 1 Minute mitziehen lassen.</step>
+      <step nr="9">Heiß servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Wok-Zubereitung: ca. 12 Minuten</item>
+      <item>Gesamt: ca. 32 Minuten</item>
+    </timing>
+    <tips>
+      <item>Sprossen immer erst ganz am Ende dazugeben.</item>
+      <item>Das Gemüse soll noch Biss behalten und nicht weich gekocht werden.</item>
+      <item>Mit etwas Limettensaft am Ende wird das Gericht frischer.</item>
+    </tips>
+    <rating>8,8/10</rating>
+  </recipe>
+  <recipe id="172">
+    <name>Thai Red Curry Wok mit Hähnchen</name>
+    <intro lang="de">Thai Red Curry Wok mit Hähnchen verbindet Wokgemüse mit einer cremig-scharfen Kokossauce. Die rote Currypaste, Limette und frisches Basilikum sorgen für einen deutlich thailändischen Charakter und eine sehr runde Würzung.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_172.png" alt="Thai Red Curry Wok mit Hähnchen" />
+    <ingredients>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>1 rote Paprika</item>
+      <item>1 Zucchini</item>
+      <item>150 g Zuckerschoten</item>
+      <item>1 kleine Aubergine</item>
+      <item>1 Zwiebel</item>
+      <item>2 EL Öl</item>
+      <item>400 ml Kokosmilch</item>
+      <item>2 bis 3 EL rote Currypaste</item>
+      <item>1 EL Fischsauce</item>
+      <item>1 TL brauner Zucker</item>
+      <item>1 Limette</item>
+      <item>1 Handvoll Thai-Basilikum oder normales Basilikum</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in Streifen schneiden. Paprika, Zucchini und Aubergine in mundgerechte Stücke schneiden. Zwiebel in Streifen schneiden.</step>
+      <step nr="2">Wok erhitzen und Öl hineingeben. Currypaste darin 30 Sekunden anrösten, bis sie duftet.</step>
+      <step nr="3">Hähnchen zugeben und 2 bis 3 Minuten anbraten.</step>
+      <step nr="4">Zwiebel, Aubergine, Paprika und Zucchini zugeben und 3 Minuten weiterbraten.</step>
+      <step nr="5">Kokosmilch angießen und alles gut verrühren.</step>
+      <step nr="6">Fischsauce und Zucker einrühren.</step>
+      <step nr="7">Zuckerschoten zugeben und das Curry 6 bis 8 Minuten sanft köcheln lassen.</step>
+      <step nr="8">Mit Limettensaft abschmecken und Basilikum unterheben.</step>
+      <step nr="9">Sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Wok- und Curry-Zubereitung: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Currypaste zuerst im Öl anrösten, dann wird das Aroma voller.</item>
+      <item>Mit mehr Kokosmilch wird das Curry milder, mit mehr Currypaste schärfer.</item>
+      <item>Dazu passt Jasminreis am besten.</item>
+    </tips>
+    <rating>9,3/10</rating>
+  </recipe>
+  <recipe id="173">
+    <name>Erdnuss-Wok mit Hähnchen</name>
+    <intro lang="de">Erdnuss-Wok mit Hähnchen ist ein cremiges, würziges Wokgericht mit klarer Erdnussnote und frischer Limette. Die Sauce wird durch Kokosmilch und Erdnussmus sehr rund, ohne schwer zu wirken.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_173.png" alt="Erdnuss-Wok mit Hähnchen" />
+    <ingredients>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>1 rote Paprika</item>
+      <item>1 gelbe Paprika</item>
+      <item>2 Möhren</item>
+      <item>150 g Brokkoli</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>3 EL Öl</item>
+      <item>Für die Sauce: 3 EL Erdnussmus</item>
+      <item>Für die Sauce: 250 ml Kokosmilch</item>
+      <item>Für die Sauce: 3 EL Sojasauce</item>
+      <item>Für die Sauce: 1 EL Limettensaft</item>
+      <item>Für die Sauce: 1 EL Honig</item>
+      <item>Für die Sauce: 1 TL rote Currypaste oder Chili</item>
+      <item>Für die Sauce: 2 EL Wasser, falls nötig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in Streifen schneiden. Paprika und Zwiebel in Streifen schneiden. Möhren in feine Stifte schneiden. Brokkoli in kleine Röschen teilen.</step>
+      <step nr="2">Für die Sauce Erdnussmus, Kokosmilch, Sojasauce, Limettensaft, Honig und Currypaste glatt verrühren.</step>
+      <step nr="3">Wok stark erhitzen. 2 EL Öl hineingeben und das Hähnchen 4 Minuten scharf anbraten. Herausnehmen.</step>
+      <step nr="4">Restliches Öl in den Wok geben. Zwiebel, Knoblauch, Ingwer, Möhren und Brokkoli 3 Minuten anbraten.</step>
+      <step nr="5">Paprika zugeben und kurz weiterbraten.</step>
+      <step nr="6">Hähnchen zurück in den Wok geben. Sauce angießen und 4 bis 5 Minuten bei mittlerer Hitze köcheln lassen.</step>
+      <step nr="7">Falls die Sauce zu dick wird, 1 bis 2 EL Wasser zugeben.</step>
+      <step nr="8">Heiß servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Wok-Zubereitung: ca. 12 Minuten</item>
+      <item>Gesamt: ca. 32 Minuten</item>
+    </timing>
+    <tips>
+      <item>Erdnussmus ohne Zuckerzusatz ist ideal.</item>
+      <item>Limettensaft balanciert die cremige Sauce schön aus.</item>
+      <item>Mit gehackten Erdnüssen obenauf wird das Gericht noch besser.</item>
+    </tips>
+    <rating>9,0/10</rating>
+  </recipe>
+  <recipe id="174">
+    <name>Kokos-Hähnchen-Wok mit Gemüse</name>
+    <intro lang="de">Kokos-Hähnchen-Wok mit Gemüse ist ein mild-cremiges Wokgericht mit klarer Kokosnote und frischem Gemüse. Durch die leichte Currynote bleibt das Gericht aromatisch, aber sehr alltagstauglich und familiär.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_174.png" alt="Kokos-Hähnchen-Wok mit Gemüse" />
+    <ingredients>
+      <item>500 g Hähnchenbrustfilet</item>
+      <item>1 kleine Zucchini</item>
+      <item>1 rote Paprika</item>
+      <item>1 Möhre</item>
+      <item>150 g Zuckerschoten</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>2 EL Öl</item>
+      <item>400 ml Kokosmilch</item>
+      <item>2 EL Sojasauce</item>
+      <item>1 EL Limettensaft</item>
+      <item>1 TL gelbe Currypaste oder Currypulver</item>
+      <item>1 TL Honig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in dünne Streifen schneiden. Gemüse putzen und in feine, gleichmäßige Stücke schneiden.</step>
+      <step nr="2">Kokosmilch, Sojasauce, Limettensaft, Currypaste und Honig verrühren.</step>
+      <step nr="3">Wok erhitzen und Öl hineingeben. Hähnchen 4 Minuten anbraten und herausnehmen.</step>
+      <step nr="4">Zwiebel, Knoblauch, Ingwer und Möhre in den Wok geben und 2 Minuten braten.</step>
+      <step nr="5">Zucchini, Paprika und Zuckerschoten zugeben und 3 Minuten weiterbraten.</step>
+      <step nr="6">Hähnchen zurück in den Wok geben. Kokossauce angießen.</step>
+      <step nr="7">Alles 5 Minuten sanft köcheln lassen, bis das Hähnchen gar ist und die Sauce leicht bindet.</step>
+      <step nr="8">Abschmecken und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Wok-Zubereitung: ca. 12 Minuten</item>
+      <item>Gesamt: ca. 32 Minuten</item>
+    </timing>
+    <tips>
+      <item>Zucchini nicht zu früh zugeben, sonst wird sie zu weich.</item>
+      <item>Ein wenig frischer Koriander passt hier sehr gut.</item>
+      <item>Das Gericht ist eher mild-cremig und dadurch gut familientauglich.</item>
+    </tips>
+    <rating>8,8/10</rating>
+  </recipe>
+  <recipe id="175">
+    <name>Udon-Wok mit Gemüse und Sesam</name>
+    <intro lang="de">Udon-Wok mit Gemüse und Sesam ist ein weicher, sämiger Nudel-Wok mit viel Gemüse und einer würzigen Soja-Teriyaki-Sauce. Die dicken Udon-Nudeln geben dem Gericht eine ganz andere Textur als klassische Mie- oder Reisnudeln.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_175.png" alt="Udon-Wok mit Gemüse und Sesam" />
+    <ingredients>
+      <item>400 g Udon-Nudeln</item>
+      <item>200 g Champignons</item>
+      <item>1 rote Paprika</item>
+      <item>1 Pak Choi</item>
+      <item>2 Möhren</item>
+      <item>4 Frühlingszwiebeln</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>3 EL Öl</item>
+      <item>2 EL Sesam</item>
+      <item>Für die Sauce: 4 EL Sojasauce</item>
+      <item>Für die Sauce: 2 EL Teriyaki-Sauce</item>
+      <item>Für die Sauce: 1 EL Reisessig</item>
+      <item>Für die Sauce: 1 EL Sesamöl</item>
+      <item>Für die Sauce: 1 TL Honig</item>
+      <item>Für die Sauce: 1 TL Chiliöl, optional</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Udon-Nudeln nach Packungsangabe garen oder lösen, dann abgießen.</step>
+      <step nr="2">Champignons in Scheiben, Paprika in Streifen, Pak Choi in Stücke, Möhren in feine Stifte und Frühlingszwiebeln in Ringe schneiden.</step>
+      <step nr="3">Sauce aus Sojasauce, Teriyaki-Sauce, Reisessig, Sesamöl, Honig und optional Chiliöl verrühren.</step>
+      <step nr="4">Wok stark erhitzen. Öl hineingeben und Knoblauch sowie Ingwer kurz anbraten.</step>
+      <step nr="5">Möhren, Champignons und Paprika 3 Minuten unter Rühren braten.</step>
+      <step nr="6">Pak Choi und Frühlingszwiebeln zugeben.</step>
+      <step nr="7">Udon-Nudeln in den Wok geben, Sauce angießen und alles gut vermengen.</step>
+      <step nr="8">2 Minuten weiterbraten, bis alles heiß ist.</step>
+      <step nr="9">Mit Sesam bestreuen und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Nudeln kochen: ca. 5 Minuten</item>
+      <item>Wok-Zubereitung: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Udon-Nudeln nur vorsichtig mischen, damit sie nicht reißen.</item>
+      <item>Sesam vor dem Servieren kurz ohne Fett anrösten, dann wird er aromatischer.</item>
+      <item>Für mehr Eiweiß passen gebratene Tofuwürfel sehr gut dazu.</item>
+    </tips>
+    <rating>8,9/10</rating>
+  </recipe>
+  <recipe id="176">
+    <name>Garnelen-Wok mit Pak Choi und Knoblauch</name>
+    <intro lang="de">Garnelen-Wok mit Pak Choi und Knoblauch ist ein schnelles, aromatisches Wokgericht mit klarer Frische und kräftigem Knoblaucharoma. Die Garnelen werden nur kurz gegart und bleiben dadurch saftig und zart.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_176.png" alt="Garnelen-Wok mit Pak Choi und Knoblauch" />
+    <ingredients>
+      <item>500 g Garnelen, geschält und entdarmt</item>
+      <item>2 Pak Choi</item>
+      <item>1 rote Paprika</item>
+      <item>150 g Zuckerschoten</item>
+      <item>4 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 15 g</item>
+      <item>3 EL Öl</item>
+      <item>1 Limette</item>
+      <item>2 EL gehackter Koriander, optional</item>
+      <item>Für die Sauce: 4 EL Sojasauce</item>
+      <item>Für die Sauce: 1 EL Fischsauce</item>
+      <item>Für die Sauce: 1 EL Honig</item>
+      <item>Für die Sauce: 1 EL Limettensaft</item>
+      <item>Für die Sauce: 1 TL Chiliflocken oder 1 kleine rote Chili</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Garnelen trocken tupfen. Pak Choi in grobe Stücke schneiden. Paprika in Streifen schneiden. Zuckerschoten putzen.</step>
+      <step nr="2">Knoblauch in dünne Scheiben schneiden, Ingwer fein hacken.</step>
+      <step nr="3">Sauce aus Sojasauce, Fischsauce, Honig, Limettensaft und Chili verrühren.</step>
+      <step nr="4">Wok stark erhitzen. Öl hineingeben und die Garnelen 1 bis 2 Minuten pro Seite scharf braten. Herausnehmen.</step>
+      <step nr="5">Knoblauch und Ingwer kurz im Wok anbraten.</step>
+      <step nr="6">Paprika und Zuckerschoten 2 Minuten braten.</step>
+      <step nr="7">Pak Choi zugeben und kurz zusammenfallen lassen.</step>
+      <step nr="8">Garnelen zurück in den Wok geben, Sauce angießen und alles 1 Minute durchschwenken.</step>
+      <step nr="9">Mit Limettenspalten und optional Koriander servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Wok-Zubereitung: ca. 8 Minuten</item>
+      <item>Gesamt: ca. 23 Minuten</item>
+    </timing>
+    <tips>
+      <item>Garnelen nur kurz garen, sonst werden sie trocken.</item>
+      <item>Viel Knoblauch passt hier ausdrücklich gut.</item>
+      <item>Mit Jasminreis oder Reisnudeln servieren.</item>
+    </tips>
+    <rating>9,0/10</rating>
+  </recipe>
+  <recipe id="177">
+    <name>Gemüse-Tofu-Wok mit Sesam</name>
+    <intro lang="de">Gemüse-Tofu-Wok mit Sesam ist ein frisches, pflanzliches Wokgericht mit knusprigem Tofu und einer leicht süßlich-scharfen Soja-Sesam-Sauce. Durch Brokkoli, Paprika und Zuckerschoten bekommt das Gericht viel Farbe und Biss.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_177.png" alt="Gemüse-Tofu-Wok mit Sesam" />
+    <ingredients>
+      <item>400 g fester Naturtofu</item>
+      <item>1 Brokkoli</item>
+      <item>1 rote Paprika</item>
+      <item>1 gelbe Paprika</item>
+      <item>2 Möhren</item>
+      <item>150 g Zuckerschoten</item>
+      <item>4 Frühlingszwiebeln</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 20 g</item>
+      <item>4 EL Öl</item>
+      <item>2 EL Sesam</item>
+      <item>1 EL Speisestärke</item>
+      <item>Für die Sauce: 4 EL Sojasauce</item>
+      <item>Für die Sauce: 2 EL Ahornsirup oder Honig</item>
+      <item>Für die Sauce: 1 EL Reisessig</item>
+      <item>Für die Sauce: 1 TL Sesamöl</item>
+      <item>Für die Sauce: 1 TL Chili oder Sambal Oelek</item>
+      <item>Für die Sauce: 80 ml Wasser</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Tofu gut ausdrücken und in Würfel schneiden. Mit Stärke bestäuben.</step>
+      <step nr="2">Brokkoli in kleine Röschen teilen. Paprika und Möhren in feine Stücke schneiden. Frühlingszwiebeln in Ringe schneiden.</step>
+      <step nr="3">Sauce aus Sojasauce, Ahornsirup, Reisessig, Sesamöl, Chili und Wasser verrühren.</step>
+      <step nr="4">Wok erhitzen. 2 EL Öl hineingeben und den Tofu rundherum knusprig anbraten. Herausnehmen.</step>
+      <step nr="5">Restliches Öl in den Wok geben. Knoblauch und Ingwer kurz anbraten.</step>
+      <step nr="6">Brokkoli, Möhren und Paprika 4 Minuten bei hoher Hitze braten.</step>
+      <step nr="7">Zuckerschoten und Frühlingszwiebeln zugeben.</step>
+      <step nr="8">Tofu zurück in den Wok geben, Sauce angießen und kurz glasierend einkochen lassen.</step>
+      <step nr="9">Mit Sesam bestreuen und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Tofu anbraten: ca. 8 Minuten</item>
+      <item>Gemüse und Sauce: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 38 Minuten</item>
+    </timing>
+    <tips>
+      <item>Tofu vorher gut ausdrücken, damit er knuspriger wird.</item>
+      <item>Stärke sorgt für eine bessere Oberfläche.</item>
+      <item>Mit Cashews statt Sesam bekommt das Gericht eine andere Richtung.</item>
+    </tips>
+    <rating>8,7/10</rating>
+  </recipe>
+  <recipe id="178">
+    <name>Thai Basil Chicken (Pad Krapao Style)</name>
+    <intro lang="de">Thai Basil Chicken im Pad-Krapao-Stil ist ein schnelles, intensives Wokgericht mit Hackfleisch, Chili, Knoblauch und Basilikum. Es lebt von hoher Hitze, klarer Würze und einer leicht salzig-scharfen Sauce mit deutlicher Tiefe.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_178.png" alt="Thai Basil Chicken (Pad Krapao Style)" />
+    <ingredients>
+      <item>600 g Hähnchenhackfleisch oder sehr fein gehackte Hähnchenbrust</item>
+      <item>1 rote Paprika</item>
+      <item>1 Zwiebel</item>
+      <item>4 Knoblauchzehen</item>
+      <item>2 rote Chilis</item>
+      <item>2 EL Öl</item>
+      <item>1 Bund Thai-Basilikum oder Basilikum</item>
+      <item>1 Limette</item>
+      <item>Für die Sauce: 4 EL Sojasauce</item>
+      <item>Für die Sauce: 2 EL Fischsauce</item>
+      <item>Für die Sauce: 1 EL Austernsauce</item>
+      <item>Für die Sauce: 1 TL brauner Zucker</item>
+      <item>Für die Sauce: 3 EL Wasser</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Paprika und Zwiebel klein würfeln. Knoblauch und Chili fein hacken.</step>
+      <step nr="2">Sauce aus Sojasauce, Fischsauce, Austernsauce, Zucker und Wasser verrühren.</step>
+      <step nr="3">Wok stark erhitzen. Öl hineingeben und Knoblauch sowie Chili kurz anbraten.</step>
+      <step nr="4">Hähnchenhack zugeben und krümelig, aber kräftig anbraten.</step>
+      <step nr="5">Zwiebel und Paprika zugeben und 3 Minuten weiterbraten.</step>
+      <step nr="6">Sauce angießen und alles bei hoher Hitze kurz einkochen lassen.</step>
+      <step nr="7">Basilikum grob zupfen und kurz unterheben.</step>
+      <step nr="8">Mit etwas Limettensaft servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Wok-Zubereitung: ca. 10 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Dieses Gericht darf ruhig etwas schärfer sein.</item>
+      <item>Thai-Basilikum bringt das typischere Aroma, normales Basilikum geht aber auch.</item>
+      <item>Mit Spiegelei und Reis serviert wird es besonders stimmig.</item>
+    </tips>
+    <rating>9,1/10</rating>
+  </recipe>
+  <recipe id="179">
+    <name>Gebratener Reis Asia-Style</name>
+    <intro lang="de">Gebratener Reis Asia-Style ist ein idealer Resteverwerter und zugleich ein sehr gutes eigenständiges Wokgericht. Kalter Reis, Ei, Gemüse und eine würzige Sauce ergeben zusammen ein lockeres, aromatisches Gericht mit viel Alltagstauglichkeit.</intro>
+    <persons>4 Personen</persons>
+    <category>Asia-Wok / Wokgerichte</category>
+    <image src="images/rezeptbild_179.png" alt="Gebratener Reis Asia-Style" />
+    <ingredients>
+      <item>300 g Jasminreis</item>
+      <item>2 Eier</item>
+      <item>200 g Erbsen, TK</item>
+      <item>2 Möhren</item>
+      <item>1 rote Paprika</item>
+      <item>4 Frühlingszwiebeln</item>
+      <item>150 g Kochschinken oder gegartes Hähnchen, optional</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Stück Ingwer, ca. 15 g</item>
+      <item>3 EL Öl</item>
+      <item>Für die Sauce: 4 EL Sojasauce</item>
+      <item>Für die Sauce: 1 EL Sesamöl</item>
+      <item>Für die Sauce: 1 EL Reisessig</item>
+      <item>Für die Sauce: 1 TL Zucker</item>
+      <item>Für die Sauce: etwas weißer Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Reis am besten einige Stunden vorher oder am Vortag kochen und vollständig auskühlen lassen.</step>
+      <step nr="2">Möhren und Paprika klein würfeln. Frühlingszwiebeln in Ringe schneiden. Knoblauch und Ingwer fein hacken.</step>
+      <step nr="3">Sauce aus Sojasauce, Sesamöl, Reisessig, Zucker und Pfeffer verrühren.</step>
+      <step nr="4">Wok stark erhitzen. 1 EL Öl hineingeben und die Eier hineinschlagen. Kurz stocken lassen und dann grob verrühren. Herausnehmen.</step>
+      <step nr="5">Restliches Öl in den Wok geben. Knoblauch, Ingwer, Möhren und Paprika 3 Minuten braten.</step>
+      <step nr="6">Erbsen und optional Schinken oder Hähnchen zugeben.</step>
+      <step nr="7">Reis in den Wok geben und bei hoher Hitze unter Rühren anbraten, bis er locker und heiß ist.</step>
+      <step nr="8">Sauce angießen, Eier zurückgeben und alles gut vermengen.</step>
+      <step nr="9">Frühlingszwiebeln zuletzt unterheben und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Reis kochen und abkühlen: ca. 25 Minuten plus Auskühlzeit</item>
+      <item>Vorbereitung restliche Zutaten: ca. 15 Minuten</item>
+      <item>Wok-Zubereitung: ca. 10 Minuten</item>
+      <item>Gesamt aktiv: ca. 25 Minuten, ohne Reis-Vorkochzeit</item>
+    </timing>
+    <tips>
+      <item>Kalter Reis vom Vortag funktioniert am besten.</item>
+      <item>Frisch gekochter, heißer Reis wird schneller matschig.</item>
+      <item>Mit etwas Chiliöl oder Limettensaft kann man das Gericht noch lebendiger machen.</item>
+    </tips>
+    <rating>8,8/10</rating>
   </recipe>
 </cookbook>
