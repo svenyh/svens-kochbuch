@@ -1636,6 +1636,38 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       .replace(/'/g, '&#39;');
   }
 
+  function deriveImageFallback(src){
+    if (!src) return '';
+    if (src.endsWith('.jpg')) return src.slice(0, -4) + '.png';
+    if (src.endsWith('.png')) return src.slice(0, -4) + '.jpg';
+    return '';
+  }
+
+  function imageTag(src, alt, className = '', lazy = true){
+    const fallback = deriveImageFallback(src);
+    const classAttr = className ? ` class="${className}"` : '';
+    const lazyAttr = lazy ? ' loading="lazy"' : '';
+    const fallbackAttr = fallback
+      ? ` data-fallback="${esc(fallback)}" onerror="if(this.dataset.fallback&&this.getAttribute('src')!==this.dataset.fallback){this.setAttribute('src',this.dataset.fallback)}else{this.onerror=null}"`
+      : '';
+    return `<img${classAttr} src="${esc(src)}"${fallbackAttr} alt="${esc(alt)}"${lazyAttr}>`;
+  }
+
+  function applyImageWithFallback(el, src, alt){
+    if (!el) return;
+    const fallback = deriveImageFallback(src);
+    el.onerror = function(){
+      if (fallback && el.getAttribute('src') !== fallback){
+        el.setAttribute('src', fallback);
+      } else {
+        el.onerror = null;
+      }
+    };
+    el.setAttribute('src', src);
+    el.setAttribute('alt', alt || '');
+  }
+
+
   function normalize(value){
     return String(value || '')
       .toLowerCase()
@@ -1754,7 +1786,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
   function createMiniCard(recipe){
     return `
       <article class="mini-card" data-open-recipe="${recipe.id}">
-        <img src="${esc(recipe.imageSrc)}" alt="${esc(recipe.imageAlt || recipe.titleDe)}" loading="lazy">
+        ${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe)}
         <div class="mini-card-body">
           <div class="eyebrow">${textByLang(recipe.categoryDe, recipe.categoryPl)}</div>
           <h3>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</h3>
@@ -1769,7 +1801,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     return `
       <article class="recipe-card" id="rezept-${recipe.id}" data-id="${recipe.id}" data-category="${recipe.categorySlug}" data-title-de="${esc((recipe.id + '. ' + recipe.titleDe).toLowerCase())}" data-title-pl="${esc((recipe.id + '. ' + recipe.titlePl).toLowerCase())}">
         <button class="recipe-card-link" type="button" data-open-recipe="${recipe.id}">
-          <img src="${esc(recipe.imageSrc)}" alt="${esc(recipe.imageAlt || recipe.titleDe)}" loading="lazy">
+          ${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe)}
           <div class="recipe-card-body">
             <div class="recipe-card-meta">
               <span class="pill">${textByLang(recipe.categoryDe, recipe.categoryPl)}</span>
@@ -1860,8 +1892,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
   function updateHero(){
     const feature = state.recipes[0];
     if (!feature) return;
-    featureImage.src = feature.imageSrc;
-    featureImage.alt = feature.imageAlt || feature.titleDe;
+    applyImageWithFallback(featureImage, feature.imageSrc, feature.imageAlt || feature.titleDe);
     featureCategory.innerHTML = textByLang(feature.categoryDe, feature.categoryPl);
     featurePersons.innerHTML = textByLang(feature.personsDe, feature.personsPl);
     featureTitle.innerHTML = textByLang(feature.id + '. ' + feature.titleDe, feature.id + '. ' + feature.titlePl);
@@ -1963,7 +1994,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     modalTitle.innerHTML = textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl);
     modalBody.innerHTML = `
       <div class="modal-recipe-grid">
-        <div><img class="modal-hero-image" src="${esc(recipe.imageSrc)}" alt="${esc(recipe.imageAlt || recipe.titleDe)}"></div>
+        <div>${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe, 'modal-hero-image', false)}</div>
         <div>
           <h2>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</h2>
           <p class="modal-intro">${textByLang(recipe.introDe, recipe.introPl)}</p>
