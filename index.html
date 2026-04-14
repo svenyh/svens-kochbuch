@@ -1353,6 +1353,35 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
   }
 }
 
+
+.legal-section{
+  padding:24px 0 8px;
+}
+.legal-card{
+  background:var(--card, #fff);
+  border:1px solid var(--line, #e7d7c7);
+  border-radius:24px;
+  padding:20px;
+  margin-bottom:16px;
+}
+.legal-card h2{
+  margin:0 0 12px;
+  font-size:clamp(1.3rem, 2vw, 1.8rem);
+}
+.legal-card h3{
+  margin:18px 0 8px;
+  font-size:1rem;
+}
+.legal-card p,
+.legal-card li{
+  line-height:1.6;
+}
+.legal-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
 </style>
 </head>
 <body>
@@ -1550,12 +1579,20 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
   </section>
 </main>
 
+
+
+
+
+
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-links">
       <a href="#allRecipes"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></a>
       <a href="#newest"><span lang-variant="de">Neu</span><span lang-variant="pl">Nowe</span></a>
       <a href="#favorites"><span lang-variant="de">Favoriten</span><span lang-variant="pl">Ulubione</span></a>
+      <a href="impressum_master.html#kontakt"><span lang-variant="de">Kontakt</span><span lang-variant="pl">Kontakt</span></a>
+      <a href="impressum_master.html#impressum"><span lang-variant="de">Impressum</span><span lang-variant="pl">Nota prawna</span></a>
+      <a href="datenschutz_master.html#datenschutz"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Prywatność</span></a>
     </div>
   </div>
 </footer>
@@ -1728,14 +1765,14 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       const slug = categoryFromRaw(rawCategoryDe || rawCategoryPl);
       const label = CATEGORY_LABELS[slug] || CATEGORY_LABELS['klassiker-hausmannskost'];
       const imageNode = recipeNode.querySelector(':scope > image');
-      const timingItems = listTexts(recipeNode, ':scope > timing > item');
-      const tipsItems = listTexts(recipeNode, ':scope > tips > item');
+      const timingItems = listTexts(recipeNode, ':scope > timing > item, :scope > timing > step');
+      const tipsItems = listTexts(recipeNode, ':scope > tips > item, :scope > tips > tip');
       const ingredientsDe = listTexts(recipeNode, ':scope > ingredients > item');
       const ingredientsPl = translationPl ? listTexts(translationPl, ':scope > ingredients > item') : [];
       const preparationDe = listTexts(recipeNode, ':scope > preparation > step');
       const preparationPl = translationPl ? listTexts(translationPl, ':scope > preparation > step') : [];
-      const timingPl = translationPl ? listTexts(translationPl, ':scope > timing > item') : [];
-      const tipsPl = translationPl ? listTexts(translationPl, ':scope > tips > item') : [];
+      const timingPl = translationPl ? listTexts(translationPl, ':scope > timing > item, :scope > timing > step') : [];
+      const tipsPl = translationPl ? listTexts(translationPl, ':scope > tips > item, :scope > tips > tip') : [];
       const ratingDe = firstText(recipeNode, ':scope > rating');
       const ratingPl = translationPl ? firstText(translationPl, ':scope > rating') : ratingDe;
       const titleDe = firstText(recipeNode, ':scope > name');
