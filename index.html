@@ -711,6 +711,589 @@ button,input{font:inherit}
   scroll-margin-top: 96px;
 }
 
+
+/* Complete UX finish */
+.active-filter-summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:.8rem;
+  padding:.85rem .95rem;
+  margin:.85rem 0 .25rem;
+  border:1px solid rgba(132,70,26,.12);
+  border-radius:18px;
+  background:linear-gradient(180deg,#fffaf4 0%, #fff5ed 100%);
+}
+.active-filter-copy{
+  display:flex;
+  flex-direction:column;
+  gap:.12rem;
+}
+.active-filter-copy strong{
+  color:#5a341d;
+}
+.active-filter-copy span{
+  color:var(--muted);
+  line-height:1.5;
+}
+.reset-all-btn{
+  white-space:nowrap;
+}
+.editorial-strip-shell{
+  margin-top:1rem;
+}
+.editorial-strip-card{
+  background:linear-gradient(180deg,#fffdfa 0%, #fff6ef 100%);
+  border:1px solid rgba(132,70,26,.12);
+  border-radius:24px;
+  box-shadow:0 12px 26px rgba(63,36,15,.055);
+  padding:1rem 1.1rem;
+}
+.mood-chip-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin-top:.8rem;
+}
+.mood-chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:.72rem 1rem;
+  border-radius:999px;
+  border:1px solid #dec7b4;
+  background:#fffaf6;
+  color:var(--text);
+  cursor:pointer;
+  font-weight:700;
+}
+.mood-chip:hover,
+.mood-chip:focus-visible{
+  border-color:#a3663a;
+  background:#fff2e7;
+}
+.collection-card,
+.editorial-strip-card,
+.finder-card,
+.category-mag-card{
+  transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.collection-card:hover,
+.finder-card:hover,
+.category-mag-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 28px rgba(63,36,15,.08);
+  border-color:rgba(150,103,64,.22);
+}
+.search-shell{
+  box-shadow:0 14px 28px rgba(63,36,15,.065), 0 0 0 1px rgba(255,255,255,.7) inset;
+}
+.search-top strong{
+  line-height:1.3;
+}
+.search-top span{
+  display:block;
+  margin-top:.16rem;
+}
+.recipe-card{
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.recipe-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 18px 34px rgba(63,36,15,.10);
+  border-color:rgba(150,103,64,.22);
+}
+.recipe-card-intro{
+  min-height:4.9em;
+}
+.pairing-block,
+.related-block{
+  background:#fff8f1;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:1rem;
+  margin-top:1.1rem;
+}
+.footer-links a:hover{
+  text-decoration:underline;
+}
+@media (max-width: 900px){
+  .active-filter-summary{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .reset-all-btn{
+    width:100%;
+    justify-content:center;
+  }
+}
+@media (max-width: 640px){
+  .editorial-strip-card,
+  .pairing-block,
+  .related-block{
+    padding:.92rem;
+    border-radius:22px;
+  }
+  .mood-chip-row{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.5rem;
+  }
+  .mood-chip{
+    width:100%;
+  }
+  .recipe-card-intro{
+    min-height:auto;
+  }
+}
+
+
+/* Fresh visual redesign */
+:root{
+  --bg:#f6f8f3;
+  --panel:#fbfcf9;
+  --panel-soft:#f3f7ef;
+  --text:#243127;
+  --muted:#68756b;
+  --accent:#7fa37b;
+  --accent-dark:#4f6d53;
+  --line:rgba(91,117,95,.16);
+  --chip:#eef5ea;
+  --radius:26px;
+}
+
+body{
+  background:
+    radial-gradient(circle at top left, rgba(159,188,151,.12), transparent 28%),
+    linear-gradient(180deg,#f8fbf6 0%, #f3f6f1 100%);
+  color:var(--text);
+}
+
+.site-header{
+  background:rgba(248,251,246,.86);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(91,117,95,.10);
+}
+
+.brand-block h1{color:#273427;letter-spacing:-.02em}
+.brand-block p{color:var(--muted)}
+
+.lang-btn,.ghost-btn,.load-more-btn,.category-chip,.cta-chip,.clear-btn,.quick-filter-btn,.tag-chip,.mood-chip,.icon-btn{
+  border-color:rgba(91,117,95,.16);
+  background:#ffffff;
+  color:var(--text);
+  box-shadow:none;
+}
+
+.lang-btn.active,.category-chip.active,.quick-filter-btn.active,.tag-chip.active{
+  background:linear-gradient(180deg,#7fa37b 0%, #6c9168 100%);
+  border-color:#6f956b;
+  color:#fff;
+}
+
+.ghost-btn:hover,.load-more-btn:hover,.category-chip:hover,.cta-chip:hover,.quick-filter-btn:hover,.tag-chip:hover,.mood-chip:hover{
+  border-color:#87ab83;
+  background:#f5faf3;
+}
+
+.cta-chip{
+  background:linear-gradient(180deg,#7fa37b 0%, #6f956b 100%);
+  border-color:#6f956b;
+  color:#fff;
+}
+
+.pill{
+  background:#edf5ea;
+  color:#557157;
+  border:1px solid rgba(91,117,95,.14);
+}
+
+.pill.soft{
+  background:#f5f8f3;
+  color:#6d7c70;
+  border:1px solid rgba(91,117,95,.12);
+}
+
+.search-shell,.highlights-card,.category-shell,.toc-shell,.finder-shell,.category-magazine-shell,.collections-shell,.editorial-strip-card,.collection-card,.recipe-card,.mini-card,.magazine-feature-card,.magazine-side-card{
+  background:linear-gradient(180deg,#fbfcf9 0%, #f7faf5 100%) !important;
+  border:1px solid rgba(91,117,95,.14);
+  box-shadow:0 12px 30px rgba(41,67,46,.05);
+}
+
+.search-shell{
+  background:rgba(251,252,249,.95) !important;
+  box-shadow:0 16px 34px rgba(41,67,46,.06), 0 0 0 1px rgba(255,255,255,.7) inset;
+}
+
+.search-input{
+  border:1px solid rgba(91,117,95,.16);
+  background:#fff;
+  color:var(--text);
+}
+.search-input::placeholder{color:#8a968d}
+
+.meta-chip,.micro,.card-tag,.modal-tag{
+  background:#eef5ea;
+  color:#557157;
+  border:1px solid rgba(91,117,95,.12);
+}
+
+.active-filter-summary{
+  background:linear-gradient(180deg,#f8fbf6 0%, #f0f6ed 100%);
+  border:1px solid rgba(91,117,95,.14);
+}
+.active-filter-copy strong{color:#355139}
+
+.editorial-strip-card,.collection-card,.finder-card,.category-mag-card,.magazine-side-card{border-radius:24px}
+.magazine-hero-shell{gap:1.25rem}
+
+.magazine-feature-card{
+  overflow:hidden;
+  background:linear-gradient(180deg,#fbfcf9 0%, #f4f8f2 100%) !important;
+}
+.magazine-feature-media{position:relative}
+.magazine-feature-media::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(248,251,246,0) 0%, rgba(248,251,246,.06) 100%);
+  pointer-events:none;
+}
+.magazine-feature-body{
+  background:
+    radial-gradient(circle at top left, rgba(159,188,151,.14), transparent 34%),
+    linear-gradient(180deg,#fbfcf9 0%, #f5f8f3 100%) !important;
+  padding:1.3rem 1.35rem 1.3rem !important;
+}
+.magazine-feature-body h2{
+  color:#2f3f31;
+  font-size:1.95rem;
+  line-height:1.08;
+  max-width:14ch;
+}
+.magazine-feature-body p,#featureIntro{color:#667369}
+.magazine-side-card strong{color:#304233}
+.magazine-side-card p,.finder-card p,.category-mag-card span,.collection-card p,.section-copy,.section-head p{color:#6a766c}
+
+.section-head h2,.hero-card h2{
+  color:#2d3d30;
+  font-size:1.48rem;
+  letter-spacing:-.01em;
+}
+
+.hero-card{background:linear-gradient(180deg,#fbfcf9 0%, #f5f8f4 100%)}
+.hero-stat{
+  background:#ffffff;
+  border:1px solid rgba(91,117,95,.12);
+  border-radius:20px;
+}
+.hero-stat strong{color:#355139}
+
+.mood-chip{
+  background:#fff;
+  border:1px solid rgba(91,117,95,.16);
+}
+
+.finder-card,.category-mag-card,.collection-card{background:#ffffff}
+.finder-card:hover,.category-mag-card:hover,.collection-card:hover,.recipe-card:hover,.mini-card:hover{
+  border-color:rgba(111,145,104,.26);
+  box-shadow:0 16px 32px rgba(41,67,46,.08);
+}
+
+.recipe-card{
+  border-radius:24px;
+  background:linear-gradient(180deg,#ffffff 0%, #f8fbf7 100%) !important;
+}
+.recipe-card-link{border-radius:24px}
+.recipe-card-body{padding:1rem 1rem 1.05rem}
+.recipe-card h3{
+  color:#2c3b2f;
+  font-size:1.16rem;
+  line-height:1.25;
+}
+.recipe-card-intro{color:#69756b}
+.recipe-card-footer,.eyebrow{color:#738076}
+.recipe-card-readmore,.more{color:#547257}
+
+.recipe-card::after,.finder-card::after,.category-mag-card::after,.mini-card::after,.related-card::after{
+  background:linear-gradient(90deg,transparent,rgba(127,163,123,.42),transparent);
+}
+
+.mini-card,.related-card{
+  background:#ffffff;
+  border:1px solid rgba(91,117,95,.14);
+}
+
+.modal{background:rgba(27,39,30,.42)}
+.modal-dialog{
+  background:#fbfcf9;
+  border:1px solid rgba(91,117,95,.14);
+  box-shadow:0 28px 60px rgba(27,39,30,.18);
+}
+.modal-head{
+  background:linear-gradient(180deg,#fbfcf9 0%, #f3f7f0 100%);
+  border-bottom:1px solid rgba(91,117,95,.12);
+}
+.modal-title{color:#2d3d30}
+.modal-columns section,.steps-block,.rating-block,.pairing-block,.related-block,.modal-stat{
+  background:#f7faf5;
+  border:1px solid rgba(91,117,95,.12);
+}
+.modal-stat strong,.rating-value{color:#355139}
+
+.site-footer{
+  color:#708074;
+  border-top:1px solid rgba(91,117,95,.10);
+}
+.footer-links a{color:#557157}
+.footer-links a:hover{color:#3f5b44}
+
+@media (max-width: 900px){
+  .magazine-feature-body h2{max-width:none}
+}
+
+@media (max-width: 640px){
+  .magazine-feature-card,.search-shell,.highlights-card,.finder-shell,.category-magazine-shell,.collections-shell,.editorial-strip-card,.recipe-card,.modal-dialog{
+    border-radius:22px;
+  }
+}
+
+
+/* Final button color tuning */
+:root{
+  --accent:#8faa8b;
+  --accent-dark:#5f7a63;
+}
+
+.lang-btn.active,
+.category-chip.active,
+.quick-filter-btn.active,
+.tag-chip.active{
+  background:linear-gradient(180deg,#8faa8b 0%, #7f9d7d 100%);
+  border-color:#7f9d7d;
+  color:#fff;
+}
+
+.cta-chip{
+  background:linear-gradient(180deg,#8faa8b 0%, #7f9d7d 100%);
+  border-color:#7f9d7d;
+  color:#fff;
+}
+
+.ghost-btn:hover,
+.load-more-btn:hover,
+.category-chip:hover,
+.cta-chip:hover,
+.quick-filter-btn:hover,
+.tag-chip:hover,
+.mood-chip:hover{
+  border-color:#97b291;
+  background:#f6faf4;
+}
+
+.text-link-btn,
+.reset-all-btn,
+#clearTagsBtn{
+  color:var(--accent-dark) !important;
+  border-color:rgba(91,117,95,.16) !important;
+  background:#ffffff !important;
+}
+
+.text-link-btn:hover,
+.reset-all-btn:hover,
+#clearTagsBtn:hover{
+  color:#4d6752 !important;
+  background:#f6faf4 !important;
+  border-color:#97b291 !important;
+}
+
+.xml-pick-btn{
+  background:linear-gradient(180deg,#8faa8b 0%, #7f9d7d 100%);
+  border-color:#7f9d7d;
+}
+
+
+/* Final utility polish */
+.active-filter-summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:.8rem;
+  padding:.85rem .95rem;
+  margin:.85rem 0 .25rem;
+  border:1px solid rgba(91,117,95,.14);
+  border-radius:18px;
+  background:linear-gradient(180deg,#f8fbf6 0%, #f0f6ed 100%);
+}
+.active-filter-copy{
+  display:flex;
+  flex-direction:column;
+  gap:.12rem;
+}
+.active-filter-copy strong{color:#355139}
+.active-filter-copy span{color:var(--muted);line-height:1.5}
+.reset-all-btn{white-space:nowrap}
+.print-helper{color:var(--muted)}
+.search-utility-row{
+  align-items:end;
+}
+.search-utility-row select{
+  min-height:44px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--text);
+  padding:.72rem .9rem;
+}
+.recipe-card.compact-view img{
+  height:190px !important;
+}
+.recipe-card.compact-view .recipe-card-body{
+  padding:.82rem .9rem;
+}
+.recipe-card.compact-view .recipe-card-intro{
+  -webkit-line-clamp:2;
+  min-height:auto;
+}
+.recipe-card.compact-view .recipe-card-tags{
+  display:none;
+}
+.pairing-block,
+.related-block{
+  background:#f7faf5;
+  border:1px solid rgba(91,117,95,.12);
+  border-radius:20px;
+  padding:1rem;
+  margin-top:1.1rem;
+}
+.editorial-strip-shell{margin-top:1rem}
+.editorial-strip-card{
+  background:linear-gradient(180deg,#fbfcf9 0%, #f7faf5 100%) !important;
+  border:1px solid rgba(91,117,95,.14);
+  border-radius:24px;
+  box-shadow:0 12px 30px rgba(41,67,46,.05);
+  padding:1rem 1.1rem;
+}
+.mood-chip-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin-top:.8rem;
+}
+.mood-chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:.72rem 1rem;
+  border-radius:999px;
+  border:1px solid rgba(91,117,95,.16);
+  background:#fff;
+  color:var(--text);
+  cursor:pointer;
+  font-weight:700;
+}
+.recipe-card img,
+.mini-card img,
+.related-card img{
+  filter:saturate(1.02) contrast(1.01);
+}
+@media print{
+  html.print-recipe-only body{
+    background:#fff !important;
+  }
+  html.print-recipe-only #recipeModal .modal-dialog{
+    background:#fff !important;
+  }
+  html.print-recipe-only #recipeModal .modal-hero-image{
+    max-width:360px !important;
+    border:0 !important;
+    border-radius:0 !important;
+  }
+  html.print-recipe-only #recipeModal .modal-columns section,
+  html.print-recipe-only #recipeModal .steps-block,
+  html.print-recipe-only #recipeModal .rating-block{
+    background:#fff !important;
+    border:1px solid #ddd !important;
+    box-shadow:none !important;
+  }
+  html.print-recipe-only #recipeModal h2,
+  html.print-recipe-only #recipeModal h3{
+    color:#111 !important;
+  }
+}
+@media (max-width: 900px){
+  .active-filter-summary{flex-direction:column;align-items:stretch}
+  .reset-all-btn{width:100%;justify-content:center}
+}
+@media (max-width: 640px){
+  .editorial-strip-card,
+  .pairing-block,
+  .related-block{padding:.92rem;border-radius:22px}
+  .mood-chip-row{display:grid;grid-template-columns:1fr;gap:.5rem}
+  .mood-chip{width:100%}
+  .recipe-card-intro{min-height:auto}
+}
+
+
+/* Comfort and accessibility polish */
+.back-to-top-btn{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:35;
+  min-height:46px;
+  padding:.72rem .95rem;
+  border-radius:999px;
+  border:1px solid rgba(91,117,95,.16);
+  background:rgba(255,255,255,.94);
+  color:var(--text);
+  box-shadow:0 12px 28px rgba(41,67,46,.12);
+  cursor:pointer;
+  opacity:0;
+  transform:translateY(10px);
+  pointer-events:none;
+  transition:.18s ease;
+}
+.back-to-top-btn.show{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+.results-empty{
+  display:none;
+  padding:1rem 1.1rem;
+  border:1px dashed var(--line);
+  border-radius:18px;
+  background:var(--panel-soft);
+  color:var(--muted);
+  margin-top:1rem;
+}
+.results-empty strong{
+  display:block;
+  margin-bottom:.25rem;
+  color:#355139;
+}
+.results-empty p{
+  margin:.2rem 0 0;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible{
+  outline:3px solid rgba(127,163,123,.28);
+  outline-offset:2px;
+}
+@media (max-width: 640px){
+  .back-to-top-btn{
+    left:14px;
+    right:14px;
+    bottom:14px;
+    justify-content:center;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -766,6 +1349,15 @@ button,input{font:inherit}
           </div>
         </div>
 
+        <div class="active-filter-summary" id="activeFilterSummary" hidden>
+          <div class="active-filter-copy">
+            <strong><span lang-variant="de">Aktive Auswahl</span><span lang-variant="pl">Aktywny wybór</span></strong>
+            <span id="activeFilterSummaryText"></span>
+          </div>
+          <button class="ghost-btn reset-all-btn" id="resetAllFiltersBtn" type="button">
+            <span lang-variant="de">Alles zurücksetzen</span><span lang-variant="pl">Wyczyść wszystko</span>
+          </button>
+        </div>
         <div class="search-meta">
           <span class="meta-chip" id="resultCount">
             <span lang-variant="de">0 Rezepte</span><span lang-variant="pl">0 przepisów</span>
@@ -834,11 +1426,11 @@ button,input{font:inherit}
 
     <div class="magazine-side-panel">
       <article class="magazine-side-card">
-        <strong><span lang-variant="de">Gut organisiert</span><span lang-variant="pl">Dobrze uporządkowane</span></strong>
+        <strong><span lang-variant="de">Klar aufgebaut</span><span lang-variant="pl">Przejrzysty układ</span></strong>
         <p><span lang-variant="de">Neue Rezepte, Kategorien, Suche und Sammlungen sind klar gegliedert und schnell erreichbar.</span><span lang-variant="pl">Nowe przepisy, kategorie, wyszukiwarka i kolekcje są przejrzyście ułożone i szybko dostępne.</span></p>
       </article>
       <article class="magazine-side-card">
-        <strong><span lang-variant="de">Schneller Einstieg</span><span lang-variant="pl">Szybki start</span></strong>
+        <strong><span lang-variant="de">Direkt loskochen</span><span lang-variant="pl">Gotuj od razu</span></strong>
         <p><span lang-variant="de">Nutze Suche, Kategorien oder die neuesten Einträge und springe direkt ins Rezept.</span><span lang-variant="pl">Skorzystaj z wyszukiwarki, kategorii albo najnowszych wpisów i przejdź od razu do przepisu.</span></p>
       </article>
     </div>
@@ -1044,7 +1636,9 @@ button,input{font:inherit}
     activeRecipeId: null,
     quickFilter: 'all',
     sortMode: 'new',
-    activeTags: []
+    activeTags: [],
+    viewMode: 'full',
+    preferencesLoaded: false
   };
 
   const htmlEl = document.documentElement;
@@ -1355,7 +1949,7 @@ button,input{font:inherit}
 
   function createRecipeCard(recipe){
     return `
-      <article class="recipe-card" id="rezept-${recipe.id}" data-id="${recipe.id}" data-category="${recipe.categorySlug}" data-title-de="${esc((recipe.id + '. ' + recipe.titleDe).toLowerCase())}" data-title-pl="${esc((recipe.id + '. ' + recipe.titlePl).toLowerCase())}">
+      <article class="recipe-card ${state.viewMode === 'compact' ? 'compact-view' : ''}" id="rezept-${recipe.id}" data-id="${recipe.id}" data-category="${recipe.categorySlug}" data-title-de="${esc((recipe.id + '. ' + recipe.titleDe).toLowerCase())}" data-title-pl="${esc((recipe.id + '. ' + recipe.titlePl).toLowerCase())}">
         <button class="recipe-card-link" type="button" data-open-recipe="${recipe.id}">
           <div class="recipe-card-media">
             ${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe)}
@@ -1579,6 +2173,142 @@ button,input{font:inherit}
     });
   }
 
+
+  function resetAllFilters(){
+    state.activeCategory = 'all';
+    state.activeTags = [];
+    state.quickFilter = 'all';
+    if (searchInput) searchInput.value = '';
+    state.currentLimit = INITIAL_VISIBLE;
+    buildCategoryChips();
+    if (quickFilterRow) {
+      quickFilterRow.querySelectorAll('.quick-filter-btn').forEach(node => node.classList.toggle('active', node.getAttribute('data-quick-filter') === 'all'));
+    }
+    renderRecipeGrid();
+    updateSuggest();
+  }
+
+  function activeFilterParts(){
+    const parts = [];
+    if (state.activeCategory !== 'all') {
+      const cat = CATEGORY_CONFIG.find(item => item.slug === state.activeCategory);
+      if (cat) parts.push(textByLang(cat.de, cat.pl));
+    }
+    if (state.quickFilter && state.quickFilter !== 'all') {
+      const quickMap = {
+        new: ['Neu', 'Nowe'],
+        favorites: ['Beliebt', 'Popularne'],
+        oven: ['Aus dem Ofen', 'Z piekarnika'],
+        quick: ['Schnell & Alltag', 'Szybkie na co dzień']
+      };
+      if (quickMap[state.quickFilter]) parts.push(textByLang(quickMap[state.quickFilter][0], quickMap[state.quickFilter][1]));
+    }
+    if (state.activeTags && state.activeTags.length) {
+      state.activeTags.forEach(tag => {
+        if (TAG_LABELS[tag]) parts.push(textByLang(TAG_LABELS[tag].de, TAG_LABELS[tag].pl));
+      });
+    }
+    const q = currentQuery();
+    if (q) parts.push('“' + q + '”');
+    return parts;
+  }
+
+  function updateActiveFilterSummary(){
+    if (!activeFilterSummary || !activeFilterSummaryText) return;
+    const parts = activeFilterParts();
+    if (!parts.length) {
+      activeFilterSummary.hidden = true;
+      activeFilterSummaryText.textContent = '';
+      return;
+    }
+    activeFilterSummary.hidden = false;
+    activeFilterSummaryText.textContent = parts.join(' · ');
+  }
+
+  function pickPairings(recipe){
+    const recipeTags = new Set((recipe.tags || []).map(t => t.slug));
+    const isMain = ['hack','haehnchen','fisch','pasta','reis','ofen','pfanne','grill'].some(tag => recipeTags.has(tag));
+    const isSide = ['beilage','salat','sauce'].some(tag => recipeTags.has(tag));
+    let candidates = state.recipes.filter(r => r.id !== recipe.id);
+
+    if (isMain) {
+      candidates = candidates.filter(r => (r.tags || []).some(t => ['beilage','salat','sauce'].includes(t.slug)));
+    } else if (isSide) {
+      candidates = candidates.filter(r => (r.tags || []).some(t => ['hack','haehnchen','fisch','pasta','reis','ofen','pfanne','grill'].includes(t.slug)));
+    } else {
+      candidates = candidates.filter(r => r.categorySlug === recipe.categorySlug || (r.tags || []).some(t => recipeTags.has(t.slug)));
+    }
+
+    return candidates
+      .map(r => {
+        let score = 0;
+        (r.tags || []).forEach(t => { if (recipeTags.has(t.slug)) score += 2; });
+        if ((r.tags || []).some(t => ['beilage','salat','sauce'].includes(t.slug))) score += 1;
+        score += (r.ratingValue || 0) / 20;
+        return { recipe: r, score };
+      })
+      .sort((a,b) => b.score - a.score || ((b.recipe.ratingValue || 0) - (a.recipe.ratingValue || 0)) || (b.recipe.id - a.recipe.id))
+      .slice(0,3)
+      .map(item => item.recipe);
+  }
+
+  function applyMood(type){
+    if (searchInput) searchInput.value = '';
+    state.activeCategory = 'all';
+    state.activeTags = [];
+    state.quickFilter = 'all';
+    if (type === 'deftig') {
+      state.activeTags = ['hack'];
+    } else if (type === 'ofen') {
+      state.activeTags = ['ofen'];
+    } else if (type === 'schnell') {
+      state.quickFilter = 'quick';
+    } else if (type === 'salat') {
+      state.activeTags = ['salat'];
+    } else if (type === 'regional') {
+      state.activeCategory = 'woelpinghausener-spezialitaeten';
+    }
+    state.currentLimit = INITIAL_VISIBLE;
+    buildCategoryChips();
+    if (quickFilterRow) {
+      quickFilterRow.querySelectorAll('.quick-filter-btn').forEach(node => node.classList.toggle('active', node.getAttribute('data-quick-filter') === state.quickFilter));
+    }
+    renderRecipeGrid();
+    updateSuggest();
+    const target = document.getElementById('allRecipes');
+    if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+
+  function savePreferences(){
+    try {
+      const payload = {
+        lang: state.activeLang,
+        viewMode: state.viewMode,
+        sortMode: state.sortMode
+      };
+      localStorage.setItem('kochbuchPreferences', JSON.stringify(payload));
+    } catch (err) {}
+  }
+
+  function loadPreferences(){
+    try {
+      const raw = localStorage.getItem('kochbuchPreferences');
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      if (data.lang === 'de' || data.lang === 'pl') state.activeLang = data.lang;
+      if (data.viewMode === 'full' || data.viewMode === 'compact') state.viewMode = data.viewMode;
+      if (typeof data.sortMode === 'string' && data.sortMode) state.sortMode = data.sortMode;
+      state.preferencesLoaded = true;
+    } catch (err) {}
+  }
+
+  function updateBackToTopVisibility(){
+    if (!backToTopBtn) return;
+    const visible = window.scrollY > 700;
+    backToTopBtn.classList.toggle('show', visible);
+  }
+
   function filteredRecipes(){
     const query = currentQuery();
     const base = state.recipes.filter(recipe => {
@@ -1622,6 +2352,8 @@ button,input{font:inherit}
       : textByLang(state.recipes.length + ' Rezepte', state.recipes.length + ' przepisów');
     updateCategoryLabel();
     buildTagFilters();
+    updateActiveFilterSummary();
+    updateActiveFilterSummary();
 
     emptyState.classList.toggle('show', filtered.length === 0);
 
@@ -1760,7 +2492,7 @@ button,input{font:inherit}
             <button class="ghost-btn copy-btn" type="button" data-recipe-id="${recipe.id}">${textByLang('Link kopieren', 'Kopiuj link')}</button>
             <button class="ghost-btn print-btn" type="button" data-recipe-id="${recipe.id}">${textByLang('Rezept drucken', 'Drukuj przepis')}</button>
           </div>
-          <div class="modal-helper-row">${textByLang('Tipp: Mit ← und → wechselst du zwischen ähnlichen sichtbaren Rezepten.', 'Wskazówka: użyj ← i →, aby przełączać się między podobnymi widocznymi przepisami.')}</div>
+          <div class="modal-helper-row"><span class="print-helper"><span lang-variant="de">Druckansicht: fokussiert auf das geöffnete Rezept.</span><span lang-variant="pl">Widok wydruku: skupiony na otwartym przepisie.</span></span><br>${textByLang('Tipp: Mit ← und → wechselst du zwischen ähnlichen sichtbaren Rezepten.', 'Wskazówka: użyj ← i →, aby przełączać się między podobnymi widocznymi przepisami.')}</div>
         </div>
       </div>
       <div class="modal-columns">
@@ -1993,7 +2725,17 @@ button,input{font:inherit}
 
     closeModal.addEventListener('click', closeRecipe);
 
-    document.addEventListener('keydown', function(event){
+  
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  window.addEventListener('scroll', updateBackToTopVisibility, { passive:true });
+  updateBackToTopVisibility();
+
+  document.addEventListener('keydown', function(event){
       if (event.key === 'Escape' && modal.classList.contains('open')) {
         closeRecipe();
         return;
@@ -2128,6 +2870,7 @@ button,input{font:inherit}
 
   async function init(){
     bindStaticEvents();
+    loadPreferences();
     try {
       const response = await fetch('kochbuch.xml', { cache: 'no-store' });
       if (!response.ok) throw new Error('XML konnte nicht geladen werden.');
@@ -2137,7 +2880,14 @@ button,input{font:inherit}
       state.activeTags = [];
       state.currentLimit = INITIAL_VISIBLE;
       state.quickFilter = 'all';
-      state.sortMode = sortMode ? (sortMode.value || 'new') : 'new';
+      if (sortMode) {
+        sortMode.value = state.sortMode || sortMode.value || 'new';
+      }
+      if (viewMode) {
+        viewMode.value = state.viewMode || viewMode.value || 'full';
+      }
+      state.sortMode = sortMode ? (sortMode.value || 'new') : (state.sortMode || 'new');
+      state.viewMode = viewMode ? (viewMode.value || 'full') : (state.viewMode || 'full');
       updateHero();
       updateHeroStats();
       updateSortLabels();
