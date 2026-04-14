@@ -909,6 +909,87 @@ button,input{font:inherit}
   }
 }
 
+
+/* local XML fallback + warmer desktop hero */
+.xml-fallback-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.9rem;
+  padding:.85rem .95rem;
+  margin-bottom:.85rem;
+  border:1px dashed rgba(132,70,26,.2);
+  border-radius:18px;
+  background:linear-gradient(180deg,#fffaf4 0%, #fff3e8 100%);
+}
+.xml-fallback-copy{
+  display:flex;
+  flex-direction:column;
+  gap:.18rem;
+  min-width:0;
+}
+.xml-fallback-copy strong{
+  color:#5a341d;
+}
+.xml-fallback-copy span{
+  color:#8a6b55;
+  line-height:1.5;
+  font-size:.93rem;
+}
+.xml-pick-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:.72rem .95rem;
+  border-radius:999px;
+  background:#8b532c;
+  color:#fff;
+  cursor:pointer;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.magazine-feature-card{
+  background:linear-gradient(180deg,#fffdf9 0%, #fff5ec 100%) !important;
+}
+.magazine-feature-body{
+  background:
+    radial-gradient(circle at top left, rgba(181,129,84,.10), transparent 34%),
+    linear-gradient(180deg,#fffdf9 0%, #fff6ee 100%);
+}
+#featureTitle:empty::before{
+  content:'';
+  display:block;
+  width:54px;
+  height:10px;
+  border-radius:999px;
+  background:#eadccf;
+  margin-bottom:.7rem;
+}
+#featureIntro:empty{
+  min-height:7.2rem;
+  background:
+    linear-gradient(#f2e6db,#f2e6db) left top/76% 12px no-repeat,
+    linear-gradient(#f2e6db,#f2e6db) left 24px/92% 12px no-repeat,
+    linear-gradient(#f2e6db,#f2e6db) left 48px/88% 12px no-repeat,
+    linear-gradient(#f2e6db,#f2e6db) left 72px/72% 12px no-repeat;
+  border-radius:10px;
+}
+.magazine-side-card{
+  background:linear-gradient(180deg,#fffdfa 0%, #fff7ef 100%) !important;
+}
+
+@media (max-width: 760px){
+  .xml-fallback-bar{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .xml-pick-btn{
+    width:100%;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -962,6 +1043,17 @@ button,input{font:inherit}
             <button class="clear-btn hidden" id="clearSearch" type="button">✕</button>
             <div class="search-suggest" id="searchSuggest" hidden></div>
           </div>
+        </div>
+
+        <div class="xml-fallback-bar" id="xmlFallbackBar" hidden>
+          <div class="xml-fallback-copy">
+            <strong><span lang-variant="de">XML lokal laden</span><span lang-variant="pl">Wczytaj lokalny XML</span></strong>
+            <span><span lang-variant="de">Falls der Browser lokale XML-Dateien nicht automatisch lädt, wähle deine Kochbuch-XML direkt aus.</span><span lang-variant="pl">Jeśli przeglądarka nie ładuje lokalnego XML automatycznie, wybierz plik kucharski bezpośrednio tutaj.</span></span>
+          </div>
+          <label class="xml-pick-btn" for="xmlFileInput">
+            <span lang-variant="de">XML auswählen</span><span lang-variant="pl">Wybierz XML</span>
+          </label>
+          <input id="xmlFileInput" type="file" accept=".xml,text/xml,application/xml" hidden>
         </div>
 
         <div class="search-meta">
@@ -1270,6 +1362,8 @@ button,input{font:inherit}
   const quickFilterRow = document.getElementById('quickFilterRow');
   const tagFilterRow = document.getElementById('tagFilterRow');
   const clearTagsBtn = document.getElementById('clearTagsBtn');
+  const xmlFallbackBar = document.getElementById('xmlFallbackBar');
+  const xmlFileInput = document.getElementById('xmlFileInput');
   const heroRecipeCount = document.getElementById('heroRecipeCount');
   const heroCategoryCount = document.getElementById('heroCategoryCount');
   const modal = document.getElementById('recipeModal');
@@ -2177,6 +2271,42 @@ button,input{font:inherit}
     });
 
     closeModal.addEventListener('click', closeRecipe);
+
+    if (xmlFileInput) {
+      xmlFileInput.addEventListener('change', async function(event){
+        const file = event.target.files && event.target.files[0];
+        if (!file) return;
+        try {
+          const xmlText = await file.text();
+          const xmlDoc = new DOMParser().parseFromString(xmlText, 'application/xml');
+          if (!xmlDoc.querySelector('recipe')) throw new Error('Ungültige XML-Datei');
+          state.recipes = parseRecipes(xmlDoc);
+          state.activeCategory = 'all';
+          state.activeTags = [];
+          state.currentLimit = INITIAL_VISIBLE;
+          state.quickFilter = 'all';
+          state.sortMode = sortMode ? (sortMode.value || 'new') : 'new';
+          if (quickFilterRow) {
+            quickFilterRow.querySelectorAll('.quick-filter-btn').forEach(el => el.classList.toggle('active', el.getAttribute('data-quick-filter') === 'all'));
+          }
+          buildCategoryChips();
+          buildCategoryCards();
+          buildTagFilters();
+          renderHighlights();
+          renderRecipeGrid();
+          renderToc();
+          updateHeroStats();
+          renderFeature();
+          updateSuggest();
+          applyLang();
+          if (xmlFallbackBar) xmlFallbackBar.hidden = true;
+          showToast('XML erfolgreich geladen.', 'XML został poprawnie wczytany.', 'success');
+        } catch (err) {
+          console.error(err);
+          showToast('Die ausgewählte XML konnte nicht gelesen werden.', 'Nie udało się odczytać wybranego XML.', 'error');
+        }
+      });
+    }
 
     document.addEventListener('keydown', function(event){
       if (event.key === 'Escape' && modal.classList.contains('open')) {
