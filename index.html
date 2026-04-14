@@ -1382,6 +1382,122 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
   gap:12px;
 }
 
+
+
+/* V60 visual upgrade */
+:root{--hero-grad:linear-gradient(135deg, rgba(159,92,45,.10), rgba(255,244,235,.85) 55%, rgba(255,255,255,.96));}
+body{background:linear-gradient(180deg,#fffaf6 0%, #f8f1e8 45%, #f5ede4 100%)}
+.site-header{position:relative}
+.site-header:after{content:"";position:absolute;inset:auto 0 0 0;height:1px;background:linear-gradient(90deg,transparent,rgba(132,70,26,.18),transparent)}
+.hero-card{background:var(--hero-grad);position:relative;overflow:hidden}
+.hero-card:before{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle, rgba(159,92,45,.16), transparent 70%)}
+.hero-card > *{position:relative}
+.search-shell{border:1px solid rgba(132,70,26,.16);box-shadow:0 14px 32px rgba(63,36,15,.08)}
+.search-utility-row{display:flex;gap:.7rem;flex-wrap:wrap;align-items:center;margin-top:.85rem}
+.search-utility-row select{border:1px solid #e0c7b1;background:#fffaf5;border-radius:14px;padding:.75rem .9rem;color:var(--text);min-height:44px}
+.quick-filter-row{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.85rem}
+.quick-filter-btn{display:inline-flex;align-items:center;gap:.35rem;padding:.55rem .78rem;border-radius:999px;border:1px solid #e0c7b1;background:#fffaf5;color:var(--text);cursor:pointer;transition:.16s}
+.quick-filter-btn.active{background:#84502c;color:#fff;border-color:#84502c}
+.hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin-top:1rem}
+.hero-stat{background:rgba(255,255,255,.78);backdrop-filter:blur(8px);border:1px solid rgba(132,70,26,.12);border-radius:18px;padding:.85rem .95rem}
+.hero-stat strong{display:block;font-size:1.05rem;margin-bottom:.18rem}
+.magazine-feature-card{display:grid;grid-template-columns:1.05fr .95fr;gap:1.2rem;background:var(--panel);border:1px solid rgba(132,70,26,.12);border-radius:28px;box-shadow:0 18px 42px rgba(63,36,15,.07);overflow:hidden}
+.magazine-feature-media{background:linear-gradient(180deg,#fff7f0,#fffaf5)}
+.magazine-feature-media img{width:100%;height:100%;min-height:360px;object-fit:cover}
+.magazine-feature-body{padding:1.35rem 1.35rem 1.5rem;display:flex;flex-direction:column;justify-content:center}
+.magazine-feature-body h2{font-family:Georgia,"Times New Roman",serif;font-size:2rem;line-height:1.1;margin:.3rem 0 .7rem}
+.magazine-feature-body p{margin:0 0 1rem;color:var(--muted)}
+.magazine-feature-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.magazine-side-panel{display:grid;grid-template-columns:1fr;gap:1rem}
+.magazine-side-card{background:var(--panel);border:1px solid rgba(132,70,26,.12);border-radius:22px;padding:1rem 1.05rem;box-shadow:0 12px 24px rgba(63,36,15,.05)}
+.magazine-side-card strong{display:block;margin-bottom:.35rem}
+.finder-shell,.category-magazine-shell{margin-top:1.15rem}
+.finder-grid,.category-magazine-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.finder-card,.category-mag-card{padding:1rem 1.05rem;border:1px solid rgba(132,70,26,.12);border-radius:22px;background:var(--panel);box-shadow:0 12px 24px rgba(63,36,15,.05);text-align:left;cursor:pointer;transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease}
+.finder-card:hover,.category-mag-card:hover,.mini-card:hover,.recipe-card:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(63,36,15,.09);border-color:rgba(132,70,26,.22)}
+.finder-card strong,.category-mag-card strong{display:block;font-size:1rem;margin-bottom:.35rem}
+.finder-card p,.category-mag-card span{margin:0;color:var(--muted)}
+.category-mag-icon{font-size:1.55rem;margin-bottom:.65rem}
+.category-mag-card small{display:block;margin-top:.65rem;color:#8a6a54}
+.mini-card,.recipe-card{transition:transform .16s ease, box-shadow .16s ease,border-color .16s ease}
+.mini-card img,.recipe-card img{background:#f4ece3}
+.mini-card h3,.recipe-card h3{margin:.1rem 0 .45rem;font-size:1.1rem;line-height:1.3}
+.recipe-card-link{height:100%}
+.recipe-card-body{gap:.4rem}
+.recipe-card-footer .more{font-weight:700;color:#8b4c1f}
+.recipe-card-intro{min-height:4.2em}
+.recipe-card-highlight{display:flex;gap:.45rem;flex-wrap:wrap;margin:.15rem 0 .15rem}
+.recipe-card-highlight .micro{display:inline-flex;align-items:center;padding:.28rem .55rem;border-radius:999px;background:#fff3e8;color:#8b4c1f;font-size:.8rem}
+.section-subtle{color:var(--muted);font-size:.96rem}
+.modal-head{backdrop-filter:blur(10px)}
+.modal-title{display:flex;flex-direction:column;gap:.12rem}
+.modal-title .modal-kicker{font-size:.8rem;color:#8a6a54;text-transform:uppercase;letter-spacing:.06em}
+.modal-anchor-nav{display:flex;gap:.55rem;flex-wrap:wrap;margin:.9rem 0 1rem}
+.modal-anchor-nav a{display:inline-flex;align-items:center;min-height:40px;padding:.45rem .72rem;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--text);background:#fffaf5;font-size:.92rem}
+.modal-intro{font-size:1rem;line-height:1.7}
+.modal-actions{position:sticky;top:0;background:linear-gradient(180deg, rgba(255,250,245,.96), rgba(255,247,239,.90));padding:.5rem 0 .15rem;z-index:1}
+.modal-columns section,.steps-block,.rating-block,.related-block{background:#fff7ef;border:1px solid var(--line);border-radius:20px;padding:1rem}
+.steps-block ol{padding-left:1.2rem;margin:0}
+.steps-block li+li{margin-top:.6rem}
+.related-block{margin-top:1.2rem}
+.related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.related-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;cursor:pointer;text-align:left;padding:0}
+.related-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.related-card-body{padding:.8rem .85rem}
+.related-card strong{display:block;line-height:1.35;margin:.15rem 0 .3rem}
+.related-card span{color:var(--muted);font-size:.88rem}
+.toc-shell,.highlights-card,.category-shell,.finder-card,.category-mag-card{scroll-margin-top:90px}
+@media (max-width: 1040px){.finder-grid,.category-magazine-grid,.related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.magazine-feature-card{grid-template-columns:1fr}}
+@media (max-width: 680px){.hero-stats,.finder-grid,.category-magazine-grid,.related-grid{grid-template-columns:1fr}.magazine-feature-media img{min-height:240px}.magazine-feature-body h2{font-size:1.6rem}.search-utility-row{flex-direction:column;align-items:stretch}.search-utility-row select{width:100%}.modal-anchor-nav{overflow:auto;flex-wrap:nowrap;padding-bottom:.2rem}.modal-anchor-nav a{white-space:nowrap}.modal-actions{position:static}}
+
+
+/* v3 mobile, image and tag polish */
+.tag-filter-shell{margin-top:1rem;padding-top:.9rem;border-top:1px dashed rgba(132,70,26,.14)}
+.tag-filter-head{display:flex;justify-content:space-between;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.55rem}
+.tag-filter-row,.recipe-card-tags,.modal-tag-row{display:flex;gap:.45rem;flex-wrap:wrap}
+.tag-chip,.card-tag,.modal-tag{display:inline-flex;align-items:center;gap:.35rem;border-radius:999px;padding:.45rem .72rem;border:1px solid rgba(132,70,26,.14);background:#fff;color:var(--text)}
+.tag-chip{cursor:pointer;transition:.16s}
+.tag-chip.active{background:#84502c;color:#fff;border-color:#84502c}
+.tag-chip-count{font-size:.82em;opacity:.75}
+.card-tag,.modal-tag{background:var(--panel-soft);font-size:.86rem;color:var(--accent-dark)}
+.recipe-card-tags{margin:.72rem 0 .2rem}
+.recipe-card img,.mini-card img,.related-card img{aspect-ratio: 4 / 3; object-fit: cover; background:linear-gradient(180deg,#fff7f0,#f2dfcf)}
+.magazine-feature-media img{aspect-ratio: 4 / 5}
+.img-fallback-active{object-fit:cover;background:#f3e3d6}
+.text-link-btn{border:0;background:transparent;color:#8a4a1b;font-weight:700;cursor:pointer;padding:0}
+.search-shell{box-shadow:0 12px 26px rgba(63,36,15,.055), 0 0 0 1px rgba(255,255,255,.65) inset}
+.modal-tag-row{margin:-.15rem 0 .8rem}
+.modal-actions .ghost-btn{min-height:46px}
+.modal-anchor-nav a{min-height:42px;display:inline-flex;align-items:center}
+@media (max-width: 980px){
+  .magazine-feature-card{grid-template-columns:1fr}
+  .magazine-feature-media img{min-height:240px}
+  .finder-grid,.category-magazine-grid{grid-template-columns:1fr 1fr}
+  .modal-recipe-grid,.modal-columns{grid-template-columns:1fr}
+}
+@media (max-width: 720px){
+  .wrap{padding:16px}
+  .brand-block h1{font-size:2rem}
+  .hero-card{padding:1rem}
+  .hero-stats{grid-template-columns:1fr}
+  .search-shell{top:0;padding:.9rem}
+  .search-top{align-items:stretch}
+  .search-controls{width:100%}
+  .search-input{min-height:48px}
+  .clear-btn,.lang-btn,.cta-chip,.category-chip,.quick-filter-btn,.tag-chip,.finder-card,.category-mag-card,.ghost-btn{min-height:46px}
+  .finder-grid,.category-magazine-grid{grid-template-columns:1fr}
+  .recipe-card-link{display:block}
+  .recipe-card img{border-bottom-left-radius:0;border-bottom-right-radius:0}
+  .recipe-card-body{padding:.95rem}
+  .recipe-card h3{font-size:1.05rem;line-height:1.28}
+  .modal{padding:.4rem}
+  .modal-dialog{max-height:96vh;border-radius:20px}
+  .modal-head{padding:.8rem .9rem}
+  .modal-body{padding:.9rem}
+  .modal-actions{position:sticky;bottom:0;background:linear-gradient(180deg,rgba(255,250,245,.82),#fffaf5);padding:.55rem 0 .1rem;border-top:1px solid rgba(132,70,26,.08)}
+  .site-footer .wrap{padding-top:10px}
+}
+
 </style>
 </head>
 <body>
@@ -1407,18 +1523,18 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
           <a class="cta-chip" href="#newest"><span lang-variant="de">🆕 Neu</span><span lang-variant="pl">🆕 Nowe</span></a>
           <a class="cta-chip" href="#allRecipes"><span lang-variant="de">📚 Alle Rezepte</span><span lang-variant="pl">📚 Wszystkie przepisy</span></a>
         </div>
-        <div class="v21-lead">
-          <div class="v21-lead-card">
-            <strong><span lang-variant="de">Schnell etwas finden</span><span lang-variant="pl">Znajdź coś szybko</span></strong>
-            <span><span lang-variant="de">Perfekt für den Feierabend.</span><span lang-variant="pl">Idealne po pracy.</span></span>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong id="heroRecipeCount">0</strong>
+            <span><span lang-variant="de">Rezepte im Kochbuch</span><span lang-variant="pl">Przepisy w książce kucharskiej</span></span>
           </div>
-          <div class="v21-lead-card">
-            <strong><span lang-variant="de">Inspiration holen</span><span lang-variant="pl">Znajdź inspirację</span></strong>
-            <span><span lang-variant="de">Für Wochenende oder Gäste.</span><span lang-variant="pl">Na weekend lub gości.</span></span>
+          <div class="hero-stat">
+            <strong id="heroCategoryCount">0</strong>
+            <span><span lang-variant="de">Kategorien zum Stöbern</span><span lang-variant="pl">Kategorie do przeglądania</span></span>
           </div>
-          <div class="v21-lead-card">
-            <strong><span lang-variant="de">Einfach loslegen</span><span lang-variant="pl">Po prostu zacznij</span></strong>
-            <span><span lang-variant="de">Ohne langes Suchen.</span><span lang-variant="pl">Bez długiego szukania.</span></span>
+          <div class="hero-stat">
+            <strong><span lang-variant="de">DE + PL</span><span lang-variant="pl">DE + PL</span></strong>
+            <span><span lang-variant="de">Zweisprachig, mobil und druckfreundlich</span><span lang-variant="pl">Dwujęzycznie, mobilnie i gotowe do druku</span></span>
           </div>
         </div>
       </section>
@@ -1448,7 +1564,35 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
           </span>
         </div>
 
+        <div class="search-utility-row">
+          <label>
+            <span class="eyebrow"><span lang-variant="de">Sortierung</span><span lang-variant="pl">Sortowanie</span></span>
+            <select id="sortMode">
+              <option value="new">Neueste zuerst</option>
+              <option value="rating">Beste Bewertung</option>
+              <option value="az">A–Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="quick-filter-row" id="quickFilterRow">
+          <button class="quick-filter-btn active" data-quick-filter="all" type="button"><span lang-variant="de">Alle</span><span lang-variant="pl">Wszystkie</span></button>
+          <button class="quick-filter-btn" data-quick-filter="new" type="button"><span lang-variant="de">Neu ab 195</span><span lang-variant="pl">Nowe od 195</span></button>
+          <button class="quick-filter-btn" data-quick-filter="favorites" type="button"><span lang-variant="de">Favoriten</span><span lang-variant="pl">Ulubione</span></button>
+          <button class="quick-filter-btn" data-quick-filter="oven" type="button"><span lang-variant="de">Ofen & Aufläufe</span><span lang-variant="pl">Piekarnik</span></button>
+          <button class="quick-filter-btn" data-quick-filter="quick" type="button"><span lang-variant="de">Schnell & Alltag</span><span lang-variant="pl">Szybkie</span></button>
+        </div>
+
         <div class="category-chips" id="categoryChips"></div>
+        <div class="tag-filter-shell">
+          <div class="tag-filter-head">
+            <strong><span lang-variant="de">Tags</span><span lang-variant="pl">Tagi</span></strong>
+            <button class="text-link-btn" id="clearTagsBtn" type="button">
+              <span lang-variant="de">Tags zurücksetzen</span><span lang-variant="pl">Wyczyść tagi</span>
+            </button>
+          </div>
+          <div class="tag-filter-row" id="tagFilterRow"></div>
+        </div>
       </aside>
     </div>
   </div>
@@ -1476,8 +1620,8 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
 
     <div class="magazine-side-panel">
       <article class="magazine-side-card">
-        <strong><span lang-variant="de">Automatisch aktuell</span><span lang-variant="pl">Automatycznie aktualne</span></strong>
-        <p><span lang-variant="de">Diese Startseite liest direkt aus der XML und zeigt neue Rezepte, Kategorien, Suche und Inhaltsverzeichnis automatisch an.</span><span lang-variant="pl">Ta strona startowa czyta bezpośrednio z XML i automatycznie pokazuje nowe przepisy, kategorie, wyszukiwarkę i spis treści.</span></p>
+        <strong><span lang-variant="de">Gut organisiert</span><span lang-variant="pl">Automatycznie aktualne</span></strong>
+        <p><span lang-variant="pl">Znajdziesz tu szybko nowe przepisy, mocne kategorie i wygodny start do całej kolekcji.</span></p>
       </article>
       <article class="magazine-side-card">
         <strong><span lang-variant="de">Schneller Einstieg</span><span lang-variant="pl">Szybki start</span></strong>
@@ -1510,8 +1654,8 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     <div class="highlights-card" id="newest">
       <div class="section-head">
         <div>
-          <h2><span lang-variant="de">Neu hinzugefügt</span><span lang-variant="pl">Ostatnio dodane</span></h2>
-          <p><span lang-variant="de">Die neuesten Rezepte direkt aus der XML – automatisch nach Rezept-ID sortiert.</span><span lang-variant="pl">Najnowsze przepisy bezpośrednio z XML – automatycznie sortowane po ID przepisu.</span></p>
+          <h2><span lang-variant="pl">Ostatnio dodane</span></h2>
+          <p><span lang-variant="de">Die zuletzt ergänzten Rezepte auf einen Blick – ideal, wenn du schnell etwas Neues entdecken willst.</span><span lang-variant="pl">Ostatnio dodane przepisy zebrane w jednym miejscu, żeby szybciej coś nowego znaleźć.</span></p>
         </div>
       </div>
       <div class="mini-grid" id="newestGrid"></div>
@@ -1532,7 +1676,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       </button>
       <button class="finder-card finder-link-card" type="button" data-jump-target="newest">
         <strong><span lang-variant="de">Zu den neuesten Rezepten</span><span lang-variant="pl">Do najnowszych przepisów</span></strong>
-        <p><span lang-variant="de">Neue Einträge ohne manuelle Nachpflege.</span><span lang-variant="pl">Nowe wpisy bez ręcznego dopisywania.</span></p>
+        <p><span lang-variant="de">Die neuesten Ideen auf einen Blick.</span><span lang-variant="pl">Najnowsze pomysły w jednym miejscu.</span></p>
       </button>
       <button class="finder-card finder-link-card" type="button" data-jump-target="allRecipes">
         <strong><span lang-variant="de">Alle Rezepte ansehen</span><span lang-variant="pl">Zobacz wszystkie przepisy</span></strong>
@@ -1545,7 +1689,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     <div class="section-head">
       <div>
         <h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2>
-        <p><span lang-variant="de">Die Hauptkategorien werden automatisch aus der XML erkannt und mitgezählt.</span><span lang-variant="pl">Główne kategorie są automatycznie rozpoznawane z XML i liczone.</span></p>
+        <p><span lang-variant="de">Alle Hauptbereiche auf einen Blick – zum Stöbern, Filtern und schnellen Finden.</span><span lang-variant="pl">Wszystkie główne obszary w jednym miejscu – do przeglądania i szybkiego wyboru.</span></p>
       </div>
     </div>
     <div class="category-magazine-grid" id="categoryJumpGrid"></div>
@@ -1555,7 +1699,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     <div class="section-head">
       <div>
         <h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2>
-        <p><span lang-variant="de">Automatisch vollständig aus der XML aufgebaut.</span><span lang-variant="pl">Automatycznie zbudowany w całości z XML.</span></p>
+        <p><span lang-variant="de">Direkter Sprung zu jedem Rezept – besonders praktisch bei einer großen Sammlung.</span><span lang-variant="pl">Bezpośredni skok do każdego przepisu – szczególnie przydatny przy dużej kolekcji.</span></p>
       </div>
     </div>
     <div class="toc-grid" id="tocGrid"></div>
@@ -1590,9 +1734,9 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       <a href="#allRecipes"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></a>
       <a href="#newest"><span lang-variant="de">Neu</span><span lang-variant="pl">Nowe</span></a>
       <a href="#favorites"><span lang-variant="de">Favoriten</span><span lang-variant="pl">Ulubione</span></a>
-      <a href="impressum_master.html#kontakt"><span lang-variant="de">Kontakt</span><span lang-variant="pl">Kontakt</span></a>
-      <a href="impressum_master.html#impressum"><span lang-variant="de">Impressum</span><span lang-variant="pl">Nota prawna</span></a>
-      <a href="datenschutz_master.html#datenschutz"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Prywatność</span></a>
+      <a href="impressum.html#kontakt"><span lang-variant="de">Kontakt</span><span lang-variant="pl">Kontakt</span></a>
+      <a href="impressum.html#impressum"><span lang-variant="de">Impressum</span><span lang-variant="pl">Nota prawna</span></a>
+      <a href="datenschutz.html#datenschutz"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Prywatność</span></a>
     </div>
   </div>
 </footer>
@@ -1633,7 +1777,10 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     activeLang: 'de',
     activeCategory: 'all',
     currentLimit: INITIAL_VISIBLE,
-    activeRecipeId: null
+    activeRecipeId: null,
+    quickFilter: 'all',
+    sortMode: 'new',
+    activeTags: []
   };
 
   const htmlEl = document.documentElement;
@@ -1653,6 +1800,12 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
   const loadMoreRecipes = document.getElementById('loadMoreRecipes');
   const progressNote = document.getElementById('progressNote');
   const emptyState = document.getElementById('emptyState');
+  const sortMode = document.getElementById('sortMode');
+  const quickFilterRow = document.getElementById('quickFilterRow');
+  const tagFilterRow = document.getElementById('tagFilterRow');
+  const clearTagsBtn = document.getElementById('clearTagsBtn');
+  const heroRecipeCount = document.getElementById('heroRecipeCount');
+  const heroCategoryCount = document.getElementById('heroCategoryCount');
   const modal = document.getElementById('recipeModal');
   const modalTitle = document.getElementById('modalTitle');
   const modalBody = document.getElementById('modalBody');
@@ -1680,22 +1833,31 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     return '';
   }
 
+  function placeholderImage(label){
+    const safe = esc(label || 'Rezeptbild');
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff6ee"/><stop offset="1" stop-color="#f0ddcc"/></linearGradient></defs><rect width="900" height="1200" fill="url(#g)"/><rect x="70" y="70" width="760" height="1060" rx="34" fill="#fff9f4" stroke="#ddc1aa"/><circle cx="450" cy="420" r="118" fill="#f3e2d2"/><rect x="220" y="655" width="460" height="28" rx="14" fill="#d2b39a"/><rect x="270" y="710" width="360" height="24" rx="12" fill="#e6d1c0"/><text x="450" y="835" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#7b5a45">Bild folgt</text><text x="450" y="890" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#9b7a63">${safe}</text></svg>`;
+    return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+  }
+
   function imageTag(src, alt, className = '', lazy = true){
     const fallback = deriveImageFallback(src);
+    const placeholder = placeholderImage(alt);
     const classAttr = className ? ` class="${className}"` : '';
     const lazyAttr = lazy ? ' loading="lazy"' : '';
-    const fallbackAttr = fallback
-      ? ` data-fallback="${esc(fallback)}" onerror="if(this.dataset.fallback&&this.getAttribute('src')!==this.dataset.fallback){this.setAttribute('src',this.dataset.fallback)}else{this.onerror=null}"`
-      : '';
+    const fallbackAttr = ` data-fallback="${esc(fallback)}" data-placeholder="${placeholder}" onerror="if(this.dataset.fallback&&this.getAttribute('src')!==this.dataset.fallback){this.setAttribute('src',this.dataset.fallback)}else if(this.dataset.placeholder&&this.getAttribute('src')!==this.dataset.placeholder){this.setAttribute('src',this.dataset.placeholder)}else{this.onerror=null;this.classList.add('img-fallback-active')}"`;
     return `<img${classAttr} src="${esc(src)}"${fallbackAttr} alt="${esc(alt)}"${lazyAttr}>`;
   }
 
   function applyImageWithFallback(el, src, alt){
     if (!el) return;
     const fallback = deriveImageFallback(src);
+    const placeholder = placeholderImage(alt);
     el.onerror = function(){
       if (fallback && el.getAttribute('src') !== fallback){
         el.setAttribute('src', fallback);
+      } else if (placeholder && el.getAttribute('src') !== placeholder){
+        el.setAttribute('src', placeholder);
+        el.classList.add('img-fallback-active');
       } else {
         el.onerror = null;
       }
@@ -1782,6 +1944,29 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       const personsDe = firstText(recipeNode, ':scope > persons');
       const personsPl = translationPl ? firstText(translationPl, ':scope > persons') : personsDe;
 
+      function inferTags(){
+        const source = normalize([
+          titleDe, titlePl, rawCategoryDe, rawCategoryPl,
+          ...ingredientsDe, ...ingredientsPl,
+          ...preparationDe, ...preparationPl
+        ].join(' '));
+        const tags = [];
+        const add = (slug, de, pl) => { if (!tags.some(t => t.slug === slug)) tags.push({slug, de, pl}); };
+        if (/auflauf|lasagne|gratin|piekarnik|zapiek/.test(source)) add('ofen', 'Ofen', 'Piekarnik');
+        if (/pfanne|wok|pateln/.test(source)) add('pfanne', 'Pfanne', 'Patelnia');
+        if (/kartoff|ziemniak|pommes|fries/.test(source)) add('kartoffeln', 'Kartoffeln', 'Ziemniaki');
+        if (/pasta|nudel|makaron|rigatoni|penne|spaghetti|lasagne/.test(source)) add('pasta', 'Pasta', 'Makaron');
+        if (/hahn|huhn|kurcz/.test(source)) add('haehnchen', 'Hähnchen', 'Kurczak');
+        if (/hack|mielon/.test(source)) add('hack', 'Hackfleisch', 'Mięso mielone');
+        if (/bbq|grill/.test(source)) add('bbq', 'BBQ', 'BBQ');
+        if (/schnell|quick|30 minut|30 minuten|alltag|wok|wrap|bowl/.test(source)) add('alltag', 'Alltag', 'Na co dzień');
+        if (/salat|salate|salatki|beilage|dodatki/.test(source)) add('beilage', 'Beilage', 'Dodatek');
+        if (/suppe|eintopf|zupa|gulasz/.test(source)) add('suppe', 'Suppe', 'Zupa');
+        if (/vegetar|tofu|gemuse|warzyw/.test(source)) add('gemuese', 'Gemüse', 'Warzywa');
+        if (/kase|käse|cheddar|gouda|mozzarella|ser/.test(source)) add('kaese', 'Käse', 'Ser');
+        return tags.slice(0, 6);
+      }
+
       return {
         id,
         titleDe,
@@ -1806,6 +1991,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
         ratingDe,
         ratingPl,
         ratingValue: extractNumericRating(ratingDe),
+        tags: inferTags(),
         isPersonal: /^sven/i.test(titleDe),
         isStoredFavorite: /fest gespeichert|sehr gut angekommen|fester favori|sonntagsklassiker|gespeichert/i.test((ratingDe || '') + ' ' + tipsItems.join(' '))
       };
@@ -1846,6 +2032,11 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
             </div>
             <h3>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</h3>
             <p class="recipe-card-intro">${textByLang(recipe.introDe, recipe.introPl)}</p>
+            <div class="recipe-card-highlight">
+              <span class="micro">★ ${esc(recipe.ratingDe || '–')}</span>
+              <span class="micro">${esc((recipe.ingredientsDe || []).length)} ${textByLang('Zutaten', 'składniki')}</span>
+            </div>
+            <div class="recipe-card-tags">${(recipe.tags || []).slice(0,3).map(tag => `<span class="card-tag">${textByLang(tag.de, tag.pl)}</span>`).join('')}</div>
             <div class="recipe-card-footer">
               <span>${textByLang(recipe.timingDe[0] || 'Ohne Zeitangabe', recipe.timingPl[0] || recipe.timingDe[0] || 'Bez czasu')}</span>
               <span class="more">${textByLang('Zum Rezept', 'Do przepisu')}</span>
@@ -1937,17 +2128,126 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     featureOpenBtn.setAttribute('data-open-recipe', String(feature.id));
   }
 
+
+  function recipeHasActiveTags(recipe){
+    if (!state.activeTags.length) return true;
+    const own = (recipe.tags || []).map(tag => tag.slug);
+    return state.activeTags.every(tag => own.includes(tag));
+  }
+
+  function visibleTagPool(){
+    const pool = new Map();
+    state.recipes.forEach(recipe => {
+      if (state.activeCategory !== 'all' && recipe.categorySlug !== state.activeCategory) return;
+      if (!recipeMatchesQuickFilter(recipe)) return;
+      (recipe.tags || []).forEach(tag => {
+        if (!pool.has(tag.slug)) pool.set(tag.slug, { ...tag, count: 0 });
+        pool.get(tag.slug).count += 1;
+      });
+    });
+    return [...pool.values()].sort((a,b) => b.count - a.count || a.de.localeCompare(b.de, 'de', {sensitivity:'base'})).slice(0, 14);
+  }
+
+  function buildTagFilters(){
+    const tags = visibleTagPool();
+    if (!tags.length){
+      tagFilterRow.innerHTML = '';
+      return;
+    }
+    tagFilterRow.innerHTML = tags.map(tag => `
+      <button class="tag-chip ${state.activeTags.includes(tag.slug) ? 'active' : ''}" type="button" data-tag="${tag.slug}">
+        ${textByLang(tag.de, tag.pl)}
+        <span class="tag-chip-count">${tag.count}</span>
+      </button>
+    `).join('');
+  }
+
   function currentQuery(){
     return normalize(searchInput.value);
   }
 
+  function recipeMatchesQuickFilter(recipe){
+    if (state.quickFilter === 'all') return true;
+    if (state.quickFilter === 'new') return recipe.id >= 195;
+    if (state.quickFilter === 'favorites') return recipe.isPersonal || recipe.isStoredFavorite || (recipe.ratingValue || 0) >= 9;
+    if (state.quickFilter === 'oven') return ['ofen-auflaeufe'].includes(recipe.categorySlug) || /auflauf|lasagne|gratin|ofen|zapiek/i.test((recipe.titleDe || '') + ' ' + (recipe.titlePl || ''));
+    if (state.quickFilter === 'quick') return /schnell|pfanne|bowl|wok|wrap|quick|szybk/i.test((recipe.titleDe || '') + ' ' + (recipe.titlePl || '') + ' ' + (recipe.categoryDe || '') + ' ' + (recipe.categoryPl || ''));
+    return true;
+  }
+
+  function sortedRecipes(recipes){
+    const items = [...recipes];
+    if (state.sortMode === 'rating') {
+      return items.sort((a,b) => ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id));
+    }
+    if (state.sortMode === 'az') {
+      return items.sort((a,b) => recipeTitle(a).localeCompare(recipeTitle(b), state.activeLang === 'pl' ? 'pl' : 'de', { sensitivity:'base' }));
+    }
+    return items.sort((a,b) => b.id - a.id);
+  }
+
+  function getRelatedRecipes(recipe){
+    return state.recipes
+      .filter(r => r.id !== recipe.id)
+      .sort((a,b) => {
+        const catA = a.categorySlug === recipe.categorySlug ? 1 : 0;
+        const catB = b.categorySlug === recipe.categorySlug ? 1 : 0;
+        if (catB !== catA) return catB - catA;
+        return ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id);
+      })
+      .slice(0,3);
+  }
+
+  function renderRelatedCards(recipes){
+    return recipes.map(recipe => `
+      <button class="related-card" type="button" data-open-recipe="${recipe.id}">
+        ${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe)}
+        <div class="related-card-body">
+          <div class="eyebrow">${textByLang(recipe.categoryDe, recipe.categoryPl)}</div>
+          <strong>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</strong>
+          <span>${textByLang(recipe.timingDe[0] || 'Ohne Zeitangabe', recipe.timingPl[0] || recipe.timingDe[0] || 'Bez czasu')}</span>
+        </div>
+      </button>
+    `).join('');
+  }
+
+  function updateHeroStats(){
+    if (heroRecipeCount) heroRecipeCount.textContent = String(state.recipes.length);
+    if (heroCategoryCount) {
+      const count = new Set(state.recipes.map(r => r.categorySlug)).size;
+      heroCategoryCount.textContent = String(count);
+    }
+  }
+
+
+  function updateSortLabels(){
+    if (!sortMode) return;
+    const labels = state.activeLang === 'pl'
+      ? { new: 'Najnowsze najpierw', rating: 'Najlepsza ocena', az: 'A–Z' }
+      : { new: 'Neueste zuerst', rating: 'Beste Bewertung', az: 'A–Z' };
+    Array.from(sortMode.options).forEach(opt => {
+      opt.textContent = labels[opt.value] || opt.textContent;
+    });
+  }
+
   function filteredRecipes(){
     const query = currentQuery();
-    return state.recipes.filter(recipe => {
+    const base = state.recipes.filter(recipe => {
       const categoryOk = state.activeCategory === 'all' || recipe.categorySlug === state.activeCategory;
-      const titleOk = !query || normalize(recipe.id + '. ' + recipe.titleDe).includes(query) || normalize(recipe.id + '. ' + recipe.titlePl).includes(query);
-      return categoryOk && titleOk;
+      const quickOk = recipeMatchesQuickFilter(recipe);
+      const haystack = [
+        recipe.id + '. ' + recipe.titleDe,
+        recipe.id + '. ' + recipe.titlePl,
+        recipe.categoryDe,
+        recipe.categoryPl,
+        ...(recipe.ingredientsDe || []),
+        ...(recipe.ingredientsPl || [])
+      ].join(' ');
+      const titleOk = !query || normalize(haystack).includes(query);
+      const tagsOk = recipeHasActiveTags(recipe);
+      return categoryOk && quickOk && titleOk && tagsOk;
     });
+    return sortedRecipes(base);
   }
 
   function updateCategoryLabel(){
@@ -1967,11 +2267,12 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     recipeGrid.innerHTML = visible.map(createRecipeCard).join('');
     buildTOC(filtered);
 
-    const hasFilter = state.activeCategory !== 'all' || !!currentQuery();
+    const hasFilter = state.activeCategory !== 'all' || !!currentQuery() || state.activeTags.length;
     resultCount.innerHTML = hasFilter
       ? textByLang(filtered.length + ' von ' + state.recipes.length + ' Rezepten', filtered.length + ' z ' + state.recipes.length + ' przepisów')
       : textByLang(state.recipes.length + ' Rezepte', state.recipes.length + ' przepisów');
     updateCategoryLabel();
+    buildTagFilters();
 
     emptyState.classList.toggle('show', filtered.length === 0);
 
@@ -2003,8 +2304,11 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     updateHero();
     buildCategoryChips();
     buildCategoryCards();
+    buildTagFilters();
+    updateSortLabels();
     renderHighlights();
     renderRecipeGrid();
+    updateHeroStats();
     updateSuggest();
     if (state.activeRecipeId) openRecipe(state.activeRecipeId, false);
   }
@@ -2028,7 +2332,7 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
     const tips = isPl ? recipe.tipsPl : recipe.tipsDe;
     const rating = isPl ? recipe.ratingPl : recipe.ratingDe;
 
-    modalTitle.innerHTML = textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl);
+    modalTitle.innerHTML = `<span class="modal-kicker">${textByLang(recipe.categoryDe, recipe.categoryPl)}</span><span>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</span>`;
     modalBody.innerHTML = `
       <div class="modal-recipe-grid">
         <div>${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe, 'modal-hero-image', false)}</div>
@@ -2039,6 +2343,14 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
             <span class="pill">${textByLang(recipe.categoryDe, recipe.categoryPl)}</span>
             <span class="pill soft">${textByLang(recipe.personsDe, recipe.personsPl)}</span>
           </div>
+          <div class="modal-tag-row">${(recipe.tags || []).map(tag => `<span class="modal-tag">${textByLang(tag.de, tag.pl)}</span>`).join('')}</div>
+          <nav class="modal-anchor-nav">
+            <a href="#modalIngredients">${textByLang('Zutaten', 'Składniki')}</a>
+            <a href="#modalPreparation">${textByLang('Zubereitung', 'Przygotowanie')}</a>
+            <a href="#modalTiming">${textByLang('Zeit', 'Czas')}</a>
+            <a href="#modalTips">${textByLang('Tipps', 'Wskazówki')}</a>
+            <a href="#modalRelated">${textByLang('Ähnliche Rezepte', 'Podobne przepisy')}</a>
+          </nav>
           <div class="modal-actions">
             <button class="ghost-btn wa-btn" type="button" data-recipe-id="${recipe.id}">${textByLang('Mit WhatsApp teilen', 'Udostępnij przez WhatsApp')}</button>
             <button class="ghost-btn copy-btn" type="button" data-recipe-id="${recipe.id}">${textByLang('Link kopieren', 'Kopiuj link')}</button>
@@ -2048,27 +2360,31 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       </div>
       <div class="modal-columns">
         <section>
-          <h3>${textByLang('Zutaten', 'Składniki')}</h3>
+          <h3 id="modalIngredients">${textByLang('Zutaten', 'Składniki')}</h3>
           <ul>${renderModalList(ingredients)}</ul>
         </section>
         <section>
-          <h3>${textByLang('Zeit', 'Czas')}</h3>
+          <h3 id="modalTiming">${textByLang('Zeit', 'Czas')}</h3>
           <ul>${renderModalList(timing)}</ul>
         </section>
       </div>
       <section class="steps-block">
-        <h3>${textByLang('Zubereitung', 'Przygotowanie')}</h3>
+        <h3 id="modalPreparation">${textByLang('Zubereitung', 'Przygotowanie')}</h3>
         <ol>${preparation.map(step => `<li>${esc(step)}</li>`).join('')}</ol>
       </section>
       <section class="modal-columns">
         <section>
-          <h3>${textByLang('Tipps & Hinweise', 'Wskazówki')}</h3>
+          <h3 id="modalTips">${textByLang('Tipps & Hinweise', 'Wskazówki')}</h3>
           <ul>${renderModalList(tips)}</ul>
         </section>
         <section class="rating-block">
-          <h3>${textByLang('Bewertung', 'Ocena')}</h3>
+          <h3 id="modalRating">${textByLang('Bewertung', 'Ocena')}</h3>
           <p>${esc(rating || (isPl ? 'Brak oceny' : 'Keine Bewertung'))}</p>
         </section>
+      </section>
+      <section class="related-block" id="modalRelated">
+        <h3>${textByLang('Das passt auch gut', 'To też może Ci smakować')}</h3>
+        <div class="related-grid">${renderRelatedCards(getRelatedRecipes(recipe))}</div>
       </section>
     `;
     modal.classList.add('open');
@@ -2252,6 +2568,27 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       if (event.key === 'Escape' && modal.classList.contains('open')) closeRecipe();
     });
 
+    if (sortMode) {
+      sortMode.addEventListener('change', function(){
+        state.sortMode = sortMode.value || 'new';
+        state.currentLimit = INITIAL_VISIBLE;
+        renderRecipeGrid();
+        updateSuggest();
+      });
+    }
+
+    if (quickFilterRow) {
+      quickFilterRow.addEventListener('click', function(event){
+        const btn = event.target.closest('.quick-filter-btn[data-quick-filter]');
+        if (!btn) return;
+        state.quickFilter = btn.getAttribute('data-quick-filter') || 'all';
+        quickFilterRow.querySelectorAll('.quick-filter-btn').forEach(el => el.classList.toggle('active', el === btn));
+        state.currentLimit = INITIAL_VISIBLE;
+        renderRecipeGrid();
+        updateSuggest();
+      });
+    }
+
     searchInput.addEventListener('input', function(){
       state.currentLimit = INITIAL_VISIBLE;
       renderRecipeGrid();
@@ -2322,7 +2659,11 @@ html[data-lang="pl"] [lang-variant="pl"]{display:inline !important;}
       state.recipes = parseRecipes(xmlText);
       state.activeCategory = 'all';
       state.currentLimit = INITIAL_VISIBLE;
+      state.quickFilter = 'all';
+      state.sortMode = sortMode ? (sortMode.value || 'new') : 'new';
       updateHero();
+      updateHeroStats();
+      updateSortLabels();
       buildCategoryChips();
       buildCategoryCards();
       renderHighlights();
