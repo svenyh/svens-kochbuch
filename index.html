@@ -910,46 +910,13 @@ button,input{font:inherit}
 }
 
 
-/* local XML fallback + warmer desktop hero */
-.xml-fallback-bar{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:.9rem;
-  padding:.85rem .95rem;
-  margin-bottom:.85rem;
-  border:1px dashed rgba(132,70,26,.2);
-  border-radius:18px;
-  background:linear-gradient(180deg,#fffaf4 0%, #fff3e8 100%);
-}
-.xml-fallback-copy{
-  display:flex;
-  flex-direction:column;
-  gap:.18rem;
-  min-width:0;
-}
-.xml-fallback-copy strong{
-  color:#5a341d;
-}
-.xml-fallback-copy span{
-  color:#8a6b55;
-  line-height:1.5;
-  font-size:.93rem;
-}
-.xml-pick-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:44px;
-  padding:.72rem .95rem;
-  border-radius:999px;
-  background:#8b532c;
-  color:#fff;
-  cursor:pointer;
-  font-weight:700;
-  white-space:nowrap;
+  .xml-pick-btn{
+    width:100%;
+  }
 }
 
+
+/* Warm hero finish */
 .magazine-feature-card{
   background:linear-gradient(180deg,#fffdf9 0%, #fff5ec 100%) !important;
 }
@@ -978,16 +945,6 @@ button,input{font:inherit}
 }
 .magazine-side-card{
   background:linear-gradient(180deg,#fffdfa 0%, #fff7ef 100%) !important;
-}
-
-@media (max-width: 760px){
-  .xml-fallback-bar{
-    flex-direction:column;
-    align-items:stretch;
-  }
-  .xml-pick-btn{
-    width:100%;
-  }
 }
 
 </style>
@@ -1044,19 +1001,7 @@ button,input{font:inherit}
             <div class="search-suggest" id="searchSuggest" hidden></div>
           </div>
         </div>
-
-        <div class="xml-fallback-bar" id="xmlFallbackBar" hidden>
-          <div class="xml-fallback-copy">
-            <strong><span lang-variant="de">XML lokal laden</span><span lang-variant="pl">Wczytaj lokalny XML</span></strong>
-            <span><span lang-variant="de">Falls der Browser lokale XML-Dateien nicht automatisch lädt, wähle deine Kochbuch-XML direkt aus.</span><span lang-variant="pl">Jeśli przeglądarka nie ładuje lokalnego XML automatycznie, wybierz plik kucharski bezpośrednio tutaj.</span></span>
-          </div>
-          <label class="xml-pick-btn" for="xmlFileInput">
-            <span lang-variant="de">XML auswählen</span><span lang-variant="pl">Wybierz XML</span>
-          </label>
-          <input id="xmlFileInput" type="file" accept=".xml,text/xml,application/xml" hidden>
-        </div>
-
-        <div class="search-meta">
+<div class="search-meta">
           <span class="meta-chip" id="resultCount">
             <span lang-variant="de">0 Rezepte</span><span lang-variant="pl">0 przepisów</span>
           </span>
@@ -1362,8 +1307,6 @@ button,input{font:inherit}
   const quickFilterRow = document.getElementById('quickFilterRow');
   const tagFilterRow = document.getElementById('tagFilterRow');
   const clearTagsBtn = document.getElementById('clearTagsBtn');
-  const xmlFallbackBar = document.getElementById('xmlFallbackBar');
-  const xmlFileInput = document.getElementById('xmlFileInput');
   const heroRecipeCount = document.getElementById('heroRecipeCount');
   const heroCategoryCount = document.getElementById('heroCategoryCount');
   const modal = document.getElementById('recipeModal');
@@ -2272,42 +2215,6 @@ button,input{font:inherit}
 
     closeModal.addEventListener('click', closeRecipe);
 
-    if (xmlFileInput) {
-      xmlFileInput.addEventListener('change', async function(event){
-        const file = event.target.files && event.target.files[0];
-        if (!file) return;
-        try {
-          const xmlText = await file.text();
-          const xmlDoc = new DOMParser().parseFromString(xmlText, 'application/xml');
-          if (!xmlDoc.querySelector('recipe')) throw new Error('Ungültige XML-Datei');
-          state.recipes = parseRecipes(xmlDoc);
-          state.activeCategory = 'all';
-          state.activeTags = [];
-          state.currentLimit = INITIAL_VISIBLE;
-          state.quickFilter = 'all';
-          state.sortMode = sortMode ? (sortMode.value || 'new') : 'new';
-          if (quickFilterRow) {
-            quickFilterRow.querySelectorAll('.quick-filter-btn').forEach(el => el.classList.toggle('active', el.getAttribute('data-quick-filter') === 'all'));
-          }
-          buildCategoryChips();
-          buildCategoryCards();
-          buildTagFilters();
-          renderHighlights();
-          renderRecipeGrid();
-          renderToc();
-          updateHeroStats();
-          renderFeature();
-          updateSuggest();
-          applyLang();
-          if (xmlFallbackBar) xmlFallbackBar.hidden = true;
-          showToast('XML erfolgreich geladen.', 'XML został poprawnie wczytany.', 'success');
-        } catch (err) {
-          console.error(err);
-          showToast('Die ausgewählte XML konnte nicht gelesen werden.', 'Nie udało się odczytać wybranego XML.', 'error');
-        }
-      });
-    }
-
     document.addEventListener('keydown', function(event){
       if (event.key === 'Escape' && modal.classList.contains('open')) {
         closeRecipe();
@@ -2444,28 +2351,34 @@ button,input{font:inherit}
   async function init(){
     bindStaticEvents();
     try {
-      const xmlCandidates = [
-        'kochbuch.xml',
-        'kochbuch_master_final.xml',
-        'kochbuch_214_qualitaetsrunde_v5.xml',
-        'kochbuch_214_qualitaetsrunde_v4.xml',
-        'kochbuch_214_intros_tags_fix.xml'
-      ];
-
       let xmlText = '';
-      let loadedXmlName = '';
+      const embeddedXmlNode = document.getElementById('embeddedXmlData');
+      if (embeddedXmlNode) {
+        const embeddedText = embeddedXmlNode.textContent || '';
+        if (embeddedText.includes('<recipe')) {
+          xmlText = embeddedText;
+        }
+      }
 
-      for (const candidate of xmlCandidates) {
-        try {
-          const response = await fetch(candidate, { cache: 'no-store' });
-          if (!response.ok) continue;
-          const candidateText = await response.text();
-          if (candidateText && candidateText.includes('<recipe')) {
-            xmlText = candidateText;
-            loadedXmlName = candidate;
-            break;
-          }
-        } catch (err) {}
+      if (!xmlText) {
+        const xmlCandidates = [
+          'kochbuch.xml',
+          'kochbuch_214_qualitaetsrunde_v5.xml',
+          'kochbuch_214_qualitaetsrunde_v4.xml',
+          'kochbuch_214_intros_tags_fix.xml'
+        ];
+
+        for (const candidate of xmlCandidates) {
+          try {
+            const response = await fetch(candidate, { cache: 'no-store' });
+            if (!response.ok) continue;
+            const candidateText = await response.text();
+            if (candidateText && candidateText.includes('<recipe')) {
+              xmlText = candidateText;
+              break;
+            }
+          } catch (err) {}
+        }
       }
 
       if (!xmlText) throw new Error('XML konnte nicht geladen werden.');
