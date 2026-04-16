@@ -163,9 +163,9 @@
     .modal-nav h3{font-size:17px;font-weight:800}
     .nav-btn{border:1px solid #e3d9cd;background:#fff;padding:12px 14px;text-align:left;font-weight:700;color:#5a534b}
     .nav-btn.active{background:#f4efe9}
-    .modal-hero{display:grid;grid-template-columns:.9fr 1.1fr;border-bottom:1px solid #e5ddd2;min-height:420px;align-items:stretch}
-    .modal-hero-media{min-height:420px;background:#f3eee7}
-    .modal-hero-media img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block}
+    .modal-hero{display:grid;grid-template-columns:1fr;border-bottom:1px solid #e5ddd2;align-items:stretch}
+    .modal-hero-media{min-height:360px;background:#f3eee7}
+    .modal-hero-media img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block}
     .modal-hero-copy{padding:26px;background:#fffdfa}
     .modal-tag-row{display:flex;flex-wrap:wrap;gap:10px}
     .modal-tag{display:inline-flex;align-items:center;padding:8px 12px;border:1px solid #eadfce;background:#fff4ec;font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#bf6d4b}
@@ -384,8 +384,8 @@
           <div class="hero-card">
             <h3 id="heroQuickTitle">Schnell gefunden</h3>
             <ul id="heroQuickList">
-              <li>Neu entdecken</li>
-              <li>Beliebte Rezepte</li>
+              <li>Wölpinghausen</li>
+              <li>Ostalgie</li>
               <li>Schnelle Küche</li>
             </ul>
           </div>
@@ -445,6 +445,7 @@
       <div class="detail-left">
         <h2 id="previewTitle">Rezept</h2>
         <div class="detail-meta-row">
+          <span id="previewCategory">Kategorie</span>
           <span id="previewTime">30 Minuten</span>
           <span id="previewPersons">4 Portionen</span>
         </div>
@@ -507,7 +508,8 @@
   <script>
   (function(){
     const CATEGORY_CONFIG = [
-      { slug:'woelpinghausener-spezialitaeten', de:'Wölpinghausener Spezialitäten', pl:'Specjały z Wölpinghausen', icon:'🏡' },
+      { slug:'woelpinghausen', de:'Wölpinghausen', pl:'Wölpinghausen', icon:'🏡' },
+      { slug:'ostalgie', de:'Ostalgie', pl:'Ostalgie', icon:'🕰️' },
       { slug:'klassiker-hausmannskost', de:'Klassiker & Hausmannskost', pl:'Klasyki i domowa kuchnia', icon:'🍽️' },
       { slug:'ofen-auflaeufe', de:'Ofen & Aufläufe', pl:'Piekarnik i zapiekanki', icon:'🔥' },
       { slug:'schnelle-kueche', de:'Schnelle Küche', pl:'Szybka kuchnia', icon:'⚡' },
@@ -574,7 +576,8 @@
     }
     function categoryFromRaw(raw){
       const n = normalize(raw);
-      if (n.includes('wolping') || raw.includes('Wölping') || n.includes('schaumburg')) return 'woelpinghausener-spezialitaeten';
+      if (n.includes('wolping') || raw.includes('Wölping') || n.includes('schaumburg')) return 'woelpinghausen';
+      if (n.includes('ostalgie') || n.includes('nostalgie') || n.includes('ddr') || n.includes('kindheit')) return 'ostalgie';
       if (n.includes('cocktail') || n.includes('getrank') || n.includes('drink') || n.includes('napoj')) return 'cocktails-getraenke';
       if (n.includes('back') || n.includes('dessert') || n.includes('suss') || raw.includes('Süß') || n.includes('kuchen') || n.includes('sussspeisen')) return 'backen-suesses';
       if (n.includes('grundlagen') || n.includes('sauce') || n.includes('dressing') || n.includes('sosy')) return 'grundlagen-saucen';
@@ -691,6 +694,7 @@
 
     function categoryCounts(){
       const counts = new Map();
+      const featuredOrder = ['woelpinghausen','ostalgie','klassiker-hausmannskost','ofen-auflaeufe','schnelle-kueche','grill-bbq','salate-beilagen'];
       state.recipes.forEach(r => {
         const cfg = CATEGORY_LABELS[r.categorySlug];
         if (!cfg) return;
@@ -698,7 +702,16 @@
         counts.get(r.categorySlug).count += 1;
         if (!counts.get(r.categorySlug).image && r.imageSrc) counts.get(r.categorySlug).image = r.imageSrc;
       });
-      return [...counts.values()].sort((a,b) => b.count - a.count || a.de.localeCompare(b.de, 'de'));
+      return [...counts.values()].sort((a,b) => {
+        const ai = featuredOrder.indexOf(a.slug);
+        const bi = featuredOrder.indexOf(b.slug);
+        if (ai !== -1 || bi !== -1) {
+          if (ai === -1) return 1;
+          if (bi === -1) return -1;
+          if (ai !== bi) return ai - bi;
+        }
+        return b.count - a.count || a.de.localeCompare(b.de, 'de');
+      });
     }
 
     function recipeMatchesQuickFilter(recipe){
@@ -825,8 +838,8 @@
         textByLang('Mehr Entdecken','Więcej odkrywania')
       ].map(x => `<li>${x}</li>`).join('');
       if (heroLists[1]) heroLists[1].innerHTML = [
-        textByLang('Neu entdecken','Odkrywaj nowości'),
-        textByLang('Beliebte Rezepte','Popularne przepisy'),
+        textByLang('Wölpinghausen','Wölpinghausen'),
+        textByLang('Ostalgie','Ostalgie'),
         textByLang('Schnelle Küche','Szybka kuchnia')
       ].map(x => `<li>${x}</li>`).join('');
     }
@@ -917,6 +930,7 @@
 
     function renderPreview(recipe){
       $('previewTitle').textContent = recipeTitle(recipe);
+      $('previewCategory').textContent = recipeCategory(recipe);
       $('previewTime').textContent = textByLang(recipe.timingDe[0], recipe.timingPl[0]) || textByLang('Ohne Zeitangabe','Brak czasu');
       $('previewPersons').textContent = recipePersons(recipe);
       $('previewIngredients').innerHTML = (state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe).slice(0,6).map(i => `<li>${esc(i)}</li>`).join('');
