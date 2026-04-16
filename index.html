@@ -1,2167 +1,1250 @@
 <!DOCTYPE html>
-<html lang="de" data-lang="de">
+<html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Svens Kochbuch</title>
-<meta name="description" content="Svens Kochbuch – einfache, ehrliche Lieblingsrezepte auf Deutsch und Polnisch.">
-<style>
-:root{--bg:#f9f3ec;--panel:#fffaf6;--panel-soft:#fff7f1;--panel-warm:#fff4eb;--line:#e2cdbb;--text:#342116;--muted:#796759;--accent:#9f5c2d;--accent-dark:#7e4420;--chip:#f3e5d8;--shadow:0 14px 28px rgba(63,36,15,.06);--radius:22px;}
-*{box-sizing:border-box}img{max-width:100%;display:block}html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#fcf8f3 0%, #f9f3ec 100%);color:var(--text);line-height:1.6}
-button,input{font:inherit}
-[lang-variant]{display:none}html[data-lang="de"] [lang-variant="de"]{display:initial}html[data-lang="pl"] [lang-variant="pl"]{display:initial}
-.wrap{max-width:1240px;margin:0 auto;padding:24px}
-.site-header{background:linear-gradient(180deg, rgba(255,250,244,.96) 0%, rgba(255,244,231,.96) 100%);border-bottom:1px solid rgba(132,70,26,.10)}
-.header-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
-.brand-block h1,.hero-card h2,.section-head h2{font-family:Georgia,"Times New Roman",serif;font-weight:700}
-.brand-block h1{margin:.1rem 0 .35rem;font-size:2.35rem;line-height:1.1;color:#442616} .brand-block p{margin:0;color:var(--muted);max-width:720px}
-.lang-switch{display:flex;gap:.6rem;flex-wrap:wrap} .lang-btn,.ghost-btn,.load-more-btn,.category-chip,.cta-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.62rem .9rem;border-radius:999px;background:#fffbf8;border:1px solid #dec7b4;color:var(--text);text-decoration:none;cursor:pointer;transition:.14s} .lang-btn.active,.category-chip.active{background:#84502c;border-color:#84502c;color:#fff}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.25rem;margin-top:1.1rem;align-items:start}
-.hero-card,.search-shell,.highlights-card,.category-shell,.toc-shell,.recipe-card,.mini-card{background:var(--panel);border:1px solid rgba(132,70,26,.12);border-radius:var(--radius);box-shadow:0 12px 26px rgba(63,36,15,.055)}
-.hero-card{padding:1.4rem 1.5rem} .hero-card h2{margin:.2rem 0 .55rem;font-size:1.75rem} .hero-card p{margin:0 0 1rem;color:var(--muted)}
-.cta-row,.category-chips{display:flex;gap:.7rem;flex-wrap:wrap}
-.search-shell{padding:1rem 1.1rem;position:sticky;top:0;z-index:20;background:rgba(255,248,241,.96);backdrop-filter:blur(10px)}
-.search-top{display:flex;justify-content:space-between;gap:1rem;align-items:end;flex-wrap:wrap} .search-controls{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;width:min(100%,560px)} .search-input{flex:1 1 280px;border:1px solid #e0c7b1;background:#fffaf5;border-radius:14px;padding:.82rem .95rem;color:var(--text)} .clear-btn.hidden{display:none} .search-meta{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.75rem} .meta-chip{display:inline-flex;align-items:center;padding:.48rem .8rem;border-radius:999px;background:var(--chip);color:var(--accent-dark);font-weight:600}
-.v21-lead{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.85rem;margin-top:.9rem} .v21-lead-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:.85rem .9rem}
-.v21-lead-card strong{display:block;margin-bottom:.25rem} .v21-lead-card span{color:var(--muted);font-size:.9rem}
-.highlights-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem} .highlights-card,.category-shell,.toc-shell{padding:1rem 1.1rem}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:.85rem} .section-head h2{margin:0;font-size:1.32rem}
-.mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem} .mini-card{overflow:hidden;background:var(--panel-soft)} .mini-card img{aspect-ratio:4/3;object-fit:cover} .mini-card-body{padding:.8rem .85rem} .eyebrow{font-size:.76rem;color:#91725b;margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.05em}
-.toc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;max-height:360px;overflow:auto;padding-right:.2rem} .toc-link{display:block;padding:.72rem .78rem;background:#fffaf5;border:1px solid #e0c7b1;border-radius:14px;text-decoration:none;color:var(--text);line-height:1.35}
-.recipe-section{margin-top:1.2rem} .recipe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem} .recipe-card.hidden{display:none} .recipe-card-link{display:block;width:100%;height:100%;border:0;padding:0;background:none;text-align:left;cursor:pointer} .recipe-card img{aspect-ratio:4/3;object-fit:cover} .recipe-card-body{padding:1rem;display:flex;flex-direction:column;min-height:240px} .recipe-card-meta{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.65rem} .pill{display:inline-flex;align-items:center;padding:.38rem .72rem;border-radius:999px;background:#f5e8db;color:#8b4c1f;font-size:.88rem} .pill.soft{background:#faf2e9;color:#826957} .recipe-card-intro{margin:0 0 .85rem;color:var(--muted);font-size:.94rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden} .recipe-card-footer{display:flex;justify-content:space-between;gap:.75rem;align-items:center;color:var(--muted);font-size:.9rem;margin-top:auto}
-.results-empty{display:none;padding:1rem 1.1rem;border:1px dashed var(--line);border-radius:18px;background:var(--panel-soft);color:var(--muted);margin-top:1rem} .results-empty.show{display:block}
-.controls-row{display:flex;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1rem} .progress-note{color:var(--muted);font-size:.94rem}
-.site-footer{padding:2rem 0 2.5rem;color:var(--muted)} .footer-links{display:flex;gap:1rem;flex-wrap:wrap} .footer-links a{color:#8a4a1b;text-decoration:none;font-weight:600}
-.modal{position:fixed;inset:0;background:rgba(29,19,10,.6);display:none;align-items:center;justify-content:center;padding:1rem;z-index:50} .modal.open{display:flex}
-.modal-dialog{width:min(1080px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:24px;border:1px solid rgba(150,103,64,.15);box-shadow:0 26px 56px rgba(25,14,6,.20)} .modal-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:linear-gradient(180deg,#fffaf5 0%, #fff2e7 100%);border-bottom:1px solid var(--line);padding:1rem 1.15rem;z-index:2} .modal-title{font-size:1.15rem;font-weight:700} .modal-body{padding:1.15rem} .modal-recipe-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:1.25rem;align-items:start} .modal-hero-image{width:100%;border-radius:20px;border:1px solid var(--line)} .modal-meta{display:flex;gap:.6rem;flex-wrap:wrap;margin:.6rem 0 1rem} .modal-actions{display:flex;gap:.6rem;flex-wrap:wrap} .modal-columns{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.25rem} .modal-columns section,.steps-block,.rating-block{background:#fff7ef;border:1px solid var(--line);border-radius:20px;padding:1rem}
-@media (max-width:1100px){.recipe-grid,.toc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:820px){.hero-grid,.highlights-wrap,.modal-recipe-grid,.modal-columns,.v21-lead{grid-template-columns:1fr} .search-shell{position:static}}
-@media (max-width:640px){.wrap{padding:16px} .brand-block h1{font-size:2rem} .mini-grid,.recipe-grid,.toc-grid{grid-template-columns:1fr}}
-
-/* v3 mobile, image and tag polish */
-.tag-filter-shell{margin-top:1rem;padding-top:.9rem;border-top:1px dashed rgba(132,70,26,.14)}
-.tag-filter-head{display:flex;justify-content:space-between;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.55rem}
-.tag-filter-row,.recipe-card-tags,.modal-tag-row{display:flex;gap:.45rem;flex-wrap:wrap}
-.tag-chip,.card-tag,.modal-tag{display:inline-flex;align-items:center;gap:.35rem;border-radius:999px;padding:.45rem .72rem;border:1px solid rgba(132,70,26,.14);background:#fff;color:var(--text)}
-.tag-chip{cursor:pointer;transition:.16s}
-.tag-chip.active{background:#84502c;color:#fff;border-color:#84502c}
-.tag-chip-count{font-size:.82em;opacity:.75}
-.card-tag,.modal-tag{background:var(--panel-soft);font-size:.86rem;color:var(--accent-dark)}
-.recipe-card-tags{margin:.72rem 0 .2rem}
-.recipe-card img,.mini-card img,.related-card img{aspect-ratio: 4 / 3; object-fit: cover; background:linear-gradient(180deg,#fff7f0,#f2dfcf)}
-.magazine-feature-media img{aspect-ratio: 4 / 5}
-.img-fallback-active{object-fit:cover;background:#f3e3d6}
-.text-link-btn{border:0;background:transparent;color:#8a4a1b;font-weight:700;cursor:pointer;padding:0}
-.search-shell{box-shadow:0 12px 26px rgba(63,36,15,.055), 0 0 0 1px rgba(255,255,255,.65) inset}
-.modal-tag-row{margin:-.15rem 0 .8rem}
-.modal-actions .ghost-btn{min-height:46px}
-.modal-anchor-nav a{min-height:42px;display:inline-flex;align-items:center}
-@media (max-width: 980px){
-  .magazine-feature-card{grid-template-columns:1fr}
-  .magazine-feature-media img{min-height:240px}
-  .finder-grid,.category-magazine-grid{grid-template-columns:1fr 1fr}
-  .modal-recipe-grid,.modal-columns{grid-template-columns:1fr}
-}
-@media (max-width: 720px){
-  .wrap{padding:16px}
-  .brand-block h1{font-size:2rem}
-  .hero-card{padding:1rem}
-  .hero-stats{grid-template-columns:1fr}
-  .search-shell{top:0;padding:.9rem}
-  .search-top{align-items:stretch}
-  .search-controls{width:100%}
-  .search-input{min-height:48px}
-  .clear-btn,.lang-btn,.cta-chip,.category-chip,.quick-filter-btn,.tag-chip,.finder-card,.category-mag-card,.ghost-btn{min-height:46px}
-  .finder-grid,.category-magazine-grid{grid-template-columns:1fr}
-  .recipe-card-link{display:block}
-  .recipe-card img{border-bottom-left-radius:0;border-bottom-right-radius:0}
-  .recipe-card-body{padding:.95rem}
-  .recipe-card h3{font-size:1.05rem;line-height:1.28}
-  .modal{padding:.4rem}
-  .modal-dialog{max-height:96vh;border-radius:20px}
-  .modal-head{padding:.8rem .9rem}
-  .modal-body{padding:.9rem}
-  .modal-actions{position:sticky;bottom:0;background:linear-gradient(180deg,rgba(255,250,245,.82),#fffaf5);padding:.55rem 0 .1rem;border-top:1px solid rgba(132,70,26,.08)}
-  .site-footer .wrap{padding-top:10px}
-}
-
-
-/* v4 design polish */
-.brand-block p{max-width:64ch}
-.section-copy{margin:.1rem 0 1rem;color:var(--muted);font-size:.98rem}
-.recipe-card{overflow:hidden;position:relative}
-.recipe-card-link{text-align:left;width:100%;border:0;background:transparent;padding:0;cursor:pointer}
-.recipe-card-media{position:relative;overflow:hidden}
-.recipe-card-media img{width:100%;transition:transform .24s ease}
-.recipe-card:hover .recipe-card-media img{transform:scale(1.03)}
-.recipe-card-badges{position:absolute;left:.9rem;right:.9rem;top:.9rem;display:flex;justify-content:space-between;gap:.55rem;align-items:flex-start}
-.recipe-card-badges .pill,.recipe-card-badges .pill.soft{backdrop-filter:blur(8px);box-shadow:0 6px 18px rgba(34,18,8,.12)}
-.recipe-card-body{padding:1rem 1rem 1.05rem}
-.recipe-card-topline{display:flex;justify-content:space-between;gap:.65rem;flex-wrap:wrap;margin-bottom:.35rem}
-.eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:#8a6347}
-.recipe-card h3{margin:.15rem 0 .45rem;font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;line-height:1.22}
-.recipe-card-intro{color:var(--muted);margin:0 0 .8rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:4.5em}
-.recipe-card-highlight{display:flex;gap:.5rem;flex-wrap:wrap}
-.micro{display:inline-flex;align-items:center;padding:.35rem .58rem;border-radius:999px;background:var(--chip);color:var(--accent-dark);font-size:.85rem;font-weight:700}
-.recipe-card-footer{display:flex;justify-content:space-between;align-items:center;gap:.8rem;margin-top:.9rem;padding-top:.8rem;border-top:1px dashed rgba(132,70,26,.15)}
-.recipe-card-readmore{font-weight:800;color:var(--accent-dark)}
-.more{font-weight:900;font-size:1.15rem;color:var(--accent)}
-.magazine-feature-card{position:relative}
-.magazine-feature-body h2{max-width:14ch}
-.magazine-feature-body .cta-chip,.magazine-feature-body .ghost-btn{min-height:46px}
-.magazine-side-card p{margin:.2rem 0 0;color:var(--muted)}
-.finder-card,.category-mag-card,.mini-card,.related-card{position:relative;overflow:hidden}
-.finder-card::after,.category-mag-card::after,.mini-card::after,.related-card::after,.recipe-card::after{
-  content:'';position:absolute;inset:auto 0 0 0;height:3px;background:linear-gradient(90deg,transparent,rgba(159,92,45,.4),transparent);opacity:0;transition:.18s
-}
-.finder-card:hover::after,.category-mag-card:hover::after,.mini-card:hover::after,.related-card:hover::after,.recipe-card:hover::after{opacity:1}
-.modal-head{backdrop-filter:blur(10px)}
-.modal-intro{font-size:1.02rem;color:var(--muted)}
-.modal-stat-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:.75rem 0 .85rem}
-.modal-stat{background:#fff7ef;border:1px solid var(--line);border-radius:18px;padding:.75rem .8rem}
-.modal-stat strong{display:block;font-size:1.1rem}
-.modal-stat span{display:block;color:var(--muted);font-size:.88rem;margin-top:.1rem}
-.modal-columns section,.steps-block,.rating-block,.related-block{box-shadow:0 10px 24px rgba(63,36,15,.04)}
-.rating-value{font-size:1.45rem;font-weight:800;margin:.1rem 0 .25rem}
-.rating-copy{margin:0;color:var(--muted)}
-.related-block{background:#fff7ef;border:1px solid var(--line);border-radius:20px;padding:1rem;margin-top:1.2rem}
-.related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}
-.related-card{border:1px solid rgba(132,70,26,.12);border-radius:18px;background:#fff;text-align:left;padding:0;cursor:pointer}
-.related-card img{width:100%}
-.related-card-body{padding:.85rem}
-.search-shell strong + span{display:block;color:var(--muted);margin-top:.18rem;max-width:60ch}
-.site-footer{border-top:1px solid rgba(132,70,26,.08)}
-@media (max-width: 980px){
-  .modal-stat-row,.related-grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width: 720px){
-  .recipe-card-badges{left:.7rem;right:.7rem;top:.7rem}
-  .recipe-card-body{padding:.92rem}
-  .recipe-card h3{font-size:1.08rem}
-  .recipe-card-intro{-webkit-line-clamp:4;min-height:5.7em}
-  .modal-stat-row,.related-grid{grid-template-columns:1fr}
-  .modal-intro{font-size:.97rem}
-  .recipe-card-footer{align-items:center}
-}
-
-
-/* v5 action polish */
-.modal-head-actions{display:flex;align-items:center;gap:.45rem}
-.nav-btn.disabled{opacity:.35;pointer-events:none}
-.toast-stack{position:fixed;right:16px;bottom:16px;z-index:90;display:grid;gap:.65rem;pointer-events:none}
-.toast{min-width:220px;max-width:min(88vw,360px);padding:.8rem .95rem;border-radius:16px;background:#2f2017;color:#fff;box-shadow:0 18px 36px rgba(30,17,8,.22);opacity:0;transform:translateY(8px);transition:.18s}
-.toast.show{opacity:1;transform:translateY(0)}
-.toast.success{background:#2b5d3d}
-.toast.error{background:#8b3b2f}
-.modal-helper-row{margin-top:.65rem;color:var(--muted);font-size:.92rem}
-.icon-btn.nav-btn{min-width:42px}
-@media print{
-  html.print-recipe-only body > *:not(#recipeModal){display:none !important}
-  html.print-recipe-only #recipeModal{position:static !important;display:block !important;background:#fff !important;padding:0 !important}
-  html.print-recipe-only #recipeModal .modal-dialog{max-height:none !important;width:100% !important;box-shadow:none !important;border:0 !important;border-radius:0 !important}
-  html.print-recipe-only #recipeModal .modal-head,
-  html.print-recipe-only #recipeModal .modal-actions,
-  html.print-recipe-only #recipeModal .modal-anchor-nav,
-  html.print-recipe-only #recipeModal .related-block,
-  html.print-recipe-only #recipeModal .modal-helper-row{display:none !important}
-  html.print-recipe-only #recipeModal .modal-body{padding:0 !important}
-  html.print-recipe-only #recipeModal .modal-recipe-grid,
-  html.print-recipe-only #recipeModal .modal-columns{grid-template-columns:1fr !important}
-  html.print-recipe-only #recipeModal .modal-hero-image{max-width:420px !important;margin:0 0 18px}
-}
-@media (max-width: 720px){
-  .toast-stack{left:12px;right:12px;bottom:12px}
-  .toast{min-width:0;max-width:none}
-  .modal-head-actions{gap:.35rem}
-}
-
-
-/* v6 bugfixes and wording */
-.tag-filter-shell.active .tag-filter-head strong{color:var(--accent-dark)}
-.tag-chip{user-select:none}
-.magazine-side-card p{min-height:unset}
-
-
-/* editorial collections + reports support */
-.collections-shell{
-  background:linear-gradient(180deg,#fffdfa 0%, #fff7f0 100%);
-  border:1px solid rgba(132,70,26,.12);
-  border-radius:24px;
-  box-shadow:0 12px 26px rgba(63,36,15,.055);
-  padding:1rem 1.1rem;
-  margin-top:1rem;
-}
-.collection-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:1rem;
-}
-.collection-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:1rem;
-}
-.collection-card-head{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:.8rem;
-  margin-bottom:.8rem;
-}
-.collection-card-head h3{
-  margin:0;
-  font-size:1.02rem;
-}
-.compact-grid .mini-card img{
-  height:160px;
-}
-.mini-link-btn{
-  background:transparent;
-  border:0;
-  color:var(--accent-dark);
-  font-weight:800;
-  cursor:pointer;
-  padding:0;
-  white-space:nowrap;
-}
-@media (max-width: 980px){
-  .collection-grid{grid-template-columns:1fr;}
-}
-@media (max-width: 720px){
-  .collections-shell{padding:1rem}
-  .collection-card{padding:.9rem}
-  .compact-grid .mini-card img{height:150px}
-}
-
-
-/* Mobile Polish Final */
-@media (max-width: 900px){
-  .wrap{
-    padding:18px;
-  }
-
-  .header-inner{
-    gap:.8rem;
-    align-items:flex-start;
-  }
-
-  .brand-block h1{
-    font-size:2rem;
-    line-height:1.06;
-  }
-
-  .brand-block p{
-    font-size:.96rem;
-    line-height:1.55;
-    max-width:none;
-  }
-
-  .lang-switch{
-    width:100%;
-    gap:.5rem;
-  }
-
-  .lang-btn,.ghost-btn,.load-more-btn,.category-chip,.cta-chip,.clear-btn,.quick-filter-btn,.tag-chip,.icon-btn{
-    min-height:46px;
-  }
-
-  .magazine-hero-shell,
-  .hero-grid,
-  .highlights-wrap,
-  .modal-recipe-grid,
-  .modal-columns,
-  .v21-lead,
-  .collection-grid{
-    grid-template-columns:1fr !important;
-  }
-
-  .magazine-feature-card{
-    grid-template-columns:1fr !important;
-    border-radius:22px;
-  }
-
-  .magazine-feature-media img{
-    min-height:240px !important;
-    max-height:300px;
-  }
-
-  .magazine-feature-body{
-    padding:1rem 1rem 1.05rem;
-  }
-
-  .magazine-feature-body h2{
-    font-size:1.55rem;
-    line-height:1.14;
-    max-width:none;
-  }
-
-  .magazine-feature-actions{
-    gap:.55rem;
-  }
-
-  .magazine-side-panel{
-    gap:.8rem;
-  }
-
-  .magazine-side-card{
-    padding:.95rem 1rem;
-  }
-
-  .hero-card{
-    padding:1rem 1rem 1.05rem;
-  }
-
-  .hero-stats{
-    grid-template-columns:1fr !important;
-    gap:.65rem;
-  }
-
-  .hero-stat{
-    padding:.8rem .9rem;
-  }
-
-  .search-shell{
-    position:static !important;
-    top:auto !important;
-    padding:.95rem 1rem;
-    border-radius:20px;
-    margin-top:.9rem;
-  }
-
-  .search-top{
-    align-items:stretch;
-    gap:.8rem;
-  }
-
-  .search-top > div:first-child{
-    width:100%;
-  }
-
-  .search-top strong{
-    display:block;
-    line-height:1.35;
-  }
-
-  .search-controls{
-    width:100% !important;
-    gap:.5rem;
-    align-items:stretch;
-  }
-
-  .search-input{
-    width:100%;
-    flex:1 1 100%;
-    min-height:48px;
-    font-size:16px;
-    padding:.86rem .95rem;
-  }
-
-  .clear-btn{
-    min-width:46px;
-    padding:0 .8rem;
-  }
-
-  .search-suggest{
-    width:100%;
-  }
-
-  .search-meta{
-    gap:.5rem;
-  }
-
-  .meta-chip{
-    width:100%;
-    justify-content:center;
-    text-align:center;
-    min-height:42px;
-  }
-
-  .search-utility-row,
-  .controls-row{
-    gap:.7rem;
-    align-items:stretch;
-  }
-
-  .search-utility-row select,
-  .controls-row > *{
-    width:100%;
-  }
-
-  .quick-filter-row{
-    display:grid !important;
-    grid-template-columns:1fr 1fr;
-    gap:.5rem;
-  }
-
-  .quick-filter-btn{
-    justify-content:center;
-    text-align:center;
-    padding:.72rem .8rem;
-  }
-
-  .category-chips{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:.5rem;
-  }
-
-  .category-chip{
-    justify-content:center;
-    text-align:center;
-  }
-
-  .tag-filter-head{
-    align-items:flex-start;
-    gap:.55rem;
-  }
-
-  .tag-filter-row{
-    display:grid !important;
-    grid-template-columns:1fr 1fr;
-    gap:.5rem;
-  }
-
-  .tag-chip{
-    width:100%;
-    justify-content:space-between;
-    padding:.7rem .8rem;
-    text-align:left;
-  }
-
-  .highlights-card,
-  .category-shell,
-  .toc-shell,
-  .finder-shell,
-  .category-magazine-shell,
-  .collections-shell{
-    padding:1rem;
-    border-radius:22px;
-  }
-
-  .section-head h2,
-  .hero-card h2{
-    font-size:1.35rem;
-    line-height:1.18;
-  }
-
-  .section-copy,
-  .section-head p{
-    font-size:.95rem;
-    line-height:1.55;
-  }
-
-  .finder-grid,
-  .category-magazine-grid,
-  .mini-grid,
-  .recipe-grid,
-  .toc-grid,
-  .related-grid{
-    grid-template-columns:1fr !important;
-  }
-
-  .finder-card,
-  .category-mag-card,
-  .collection-card{
-    padding:.95rem 1rem;
-  }
-
-  .compact-grid .mini-card img,
-  .mini-card img{
-    height:180px !important;
-  }
-
-  .recipe-card{
-    border-radius:22px;
-  }
-
-  .recipe-card img{
-    height:220px !important;
-    aspect-ratio:4/3;
-  }
-
-  .recipe-card-body{
-    padding:.95rem;
-    min-height:auto;
-  }
-
-  .recipe-card h3{
-    font-size:1.06rem;
-    line-height:1.28;
-  }
-
-  .recipe-card-intro{
-    font-size:.94rem;
-    line-height:1.56;
-    -webkit-line-clamp:4;
-    min-height:auto;
-  }
-
-  .recipe-card-topline{
-    gap:.4rem;
-  }
-
-  .recipe-card-footer{
-    gap:.5rem;
-    align-items:center;
-  }
-
-  .modal{
-    padding:.45rem;
-    align-items:flex-end;
-  }
-
-  .modal-dialog{
-    width:100%;
-    max-height:94vh;
-    border-radius:22px 22px 0 0;
-  }
-
-  .modal-head{
-    padding:.82rem .92rem;
-    gap:.7rem;
-  }
-
-  .modal-head-actions{
-    gap:.35rem;
-  }
-
-  .modal-title{
-    font-size:1rem;
-    line-height:1.3;
-  }
-
-  .modal-body{
-    padding:.92rem;
-  }
-
-  .modal-hero-image{
-    border-radius:18px;
-  }
-
-  .modal-meta,
-  .modal-tag-row{
-    gap:.45rem;
-  }
-
-  .modal-stat-row{
-    grid-template-columns:1fr !important;
-    gap:.55rem;
-  }
-
-  .modal-stat{
-    padding:.75rem .82rem;
-  }
-
-  .modal-anchor-nav{
-    overflow:auto;
-    flex-wrap:nowrap;
-    gap:.45rem;
-    padding-bottom:.2rem;
-    scrollbar-width:none;
-  }
-
-  .modal-anchor-nav::-webkit-scrollbar{
-    display:none;
-  }
-
-  .modal-anchor-nav a{
-    white-space:nowrap;
-    min-height:42px;
-  }
-
-  .modal-actions{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:.55rem;
-    position:sticky;
-    bottom:0;
-    padding:.7rem 0 .1rem;
-    background:linear-gradient(180deg,rgba(255,250,245,.84), #fffaf5);
-    border-top:1px solid rgba(132,70,26,.08);
-  }
-
-  .modal-helper-row{
-    margin-top:.55rem;
-    font-size:.9rem;
-  }
-
-  .related-card-body{
-    padding:.82rem;
-  }
-
-  .toast-stack{
-    left:12px;
-    right:12px;
-    bottom:12px;
-  }
-
-  .toast{
-    min-width:0;
-    max-width:none;
-  }
-
-  .footer-links{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:.55rem;
-    width:100%;
-  }
-
-  .footer-links a{
-    min-height:42px;
-    display:flex;
-    align-items:center;
-  }
-}
-
-@media (max-width: 560px){
-  .wrap{
-    padding:14px;
-  }
-
-  .brand-block h1{
-    font-size:1.82rem;
-  }
-
-  .magazine-feature-media img{
-    min-height:215px !important;
-    max-height:260px;
-  }
-
-  .magazine-feature-body h2{
-    font-size:1.42rem;
-  }
-
-  .quick-filter-row,
-  .tag-filter-row,
-  .footer-links{
-    grid-template-columns:1fr !important;
-  }
-
-  .hero-card,
-  .search-shell,
-  .highlights-card,
-  .finder-shell,
-  .category-magazine-shell,
-  .collections-shell,
-  .category-shell,
-  .toc-shell{
-    padding:.92rem;
-  }
-
-  .recipe-card img{
-    height:205px !important;
-  }
-
-  .recipe-card-body{
-    padding:.88rem;
-  }
-
-  .modal{
-    padding:0;
-  }
-
-  .modal-dialog{
-    max-height:100vh;
-    border-radius:20px 20px 0 0;
-  }
-
-  .modal-head{
-    padding:.78rem .85rem;
-  }
-
-  .modal-body{
-    padding:.85rem;
-  }
-}
-
-@media (max-width: 380px){
-  .brand-block h1{
-    font-size:1.68rem;
-  }
-
-  .pill,
-  .card-tag,
-  .modal-tag,
-  .micro{
-    font-size:.8rem;
-  }
-
-  .recipe-card h3{
-    font-size:1rem;
-  }
-
-  .section-head h2,
-  .hero-card h2{
-    font-size:1.24rem;
-  }
-}
-
-
-/* desktop recipe jump fix */
-.recipe-card,
-.mini-card,
-.highlights-card,
-.collections-shell,
-.finder-shell,
-.category-magazine-shell,
-#allRecipes{
-  scroll-margin-top: 96px;
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svens Kochbuch – New Design Functional</title>
+  <style>
+    :root{
+      --bg:#f6f3ee;
+      --panel:#ffffff;
+      --panel-soft:#fbf8f4;
+      --line:#e5ddd3;
+      --text:#2f2a26;
+      --muted:#716961;
+      --accent:#6e9641;
+      --accent-dark:#57782f;
+      --warm:#fff3e7;
+      --shadow:0 10px 24px rgba(58,42,27,.08);
+      --shadow-soft:0 8px 16px rgba(58,42,27,.05);
+      --max:1280px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Georgia,"Times New Roman",serif;
+      color:var(--text);
+      background:
+        linear-gradient(180deg,#faf8f5 0%, #f2efea 100%);
+    }
+    img{display:block;max-width:100%}
+    button,input,select{font:inherit}
+    button{cursor:pointer}
+    .ui{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .hidden{display:none !important}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .site-header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(250,248,245,.94);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(139,109,84,.10);
+    }
+    .header-inner{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;
+    }
+    .brand-title{
+      font-size:18px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    }
+    .brand-sub{font-size:13px;color:var(--muted);margin-top:2px}
+    .header-actions{display:flex;gap:10px;align-items:center}
+    .lang-btn{
+      border:1px solid #eadfd2;background:#fff;color:#6a625a;border-radius:999px;padding:9px 14px;font-weight:600;font-size:14px;
+    }
+    .lang-btn.active{
+      background:#ea8a63;border-color:#d8724c;color:#fff;
+    }
+    main{padding:28px 0 60px}
+    .loading{
+      border:1px solid var(--line);background:#fff;border-radius:18px;padding:18px 20px;box-shadow:var(--shadow);font-family:Inter,system-ui,sans-serif;color:var(--muted)
+    }
+
+    .hero{
+      position:relative;min-height:430px;overflow:hidden;border:1px solid #d7cec2;box-shadow:var(--shadow);margin-bottom:16px;background:#ddd;
+    }
+    .hero-media{position:absolute;inset:0;background:center/cover no-repeat}
+    .hero-overlay{
+      position:absolute;inset:0;background:linear-gradient(90deg, rgba(44,31,21,.56) 0%, rgba(44,31,21,.14) 34%, rgba(44,31,21,0) 55%);
+    }
+    .hero-inner{
+      position:relative;z-index:2;min-height:430px;display:grid;grid-template-columns:1fr 260px;gap:20px;align-items:end;padding:34px 30px 24px;
+    }
+    .hero-copy{max-width:450px;color:#fff}
+    .hero-title{
+      font-size:68px;line-height:.95;letter-spacing:-.04em;text-shadow:0 3px 14px rgba(0,0,0,.22);
+    }
+    .hero-sub{
+      margin-top:18px;font-size:18px;line-height:1.5;color:rgba(255,255,255,.92);font-family:Inter,system-ui,sans-serif;
+    }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .btn-primary,.btn-secondary{
+      border:none;border-radius:4px;padding:14px 22px;font-weight:700;font-size:18px;box-shadow:0 6px 14px rgba(0,0,0,.15)
+    }
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-secondary{background:#fff;color:#4d463e}
+    .hero-side{display:grid;gap:14px;align-self:center}
+    .hero-card{
+      background:rgba(255,255,255,.95);border:1px solid #ddd3c7;box-shadow:var(--shadow-soft);padding:18px 18px 16px;
+    }
+    .hero-card h3{font-size:16px;font-weight:800;color:#37312b;margin-bottom:10px;font-family:Inter,system-ui,sans-serif}
+    .hero-card ul{margin:0;padding-left:18px;color:#4f4841;display:grid;gap:8px;font-size:14px;line-height:1.5;font-family:Inter,system-ui,sans-serif}
+
+    .search-shell{
+      background:#f9f8f6;border:1px solid #e4ddd4;box-shadow:var(--shadow);padding:16px;font-family:Inter,system-ui,sans-serif;
+    }
+    .search-top{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+    .search-box{
+      display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #ddd4c8;padding:16px 18px;min-height:56px;
+    }
+    .search-box .icon{font-size:26px;color:#a9a197;line-height:1}
+    .search-box input{flex:1;border:none;outline:none;background:transparent;font-size:18px;color:#4b443d}
+    .search-box input::placeholder{color:#a59c91}
+    .filter-btn{
+      min-height:56px;padding:0 22px;border:none;background:var(--accent);color:#fff;font-weight:700;font-size:18px;box-shadow:var(--shadow);
+    }
+    .search-bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:14px}
+    .chip-row{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid #e3dad0;background:#fff;font-size:15px;color:#5a534b;
+    }
+    .chip.active{background:#f7f7f7}
+    .chip .marker{font-size:16px}
+    .result-count{font-size:15px;color:#605851}
+    .sort-select{
+      border:1px solid #e3dad0;background:#fff;padding:9px 12px;font-size:15px;color:#5a534b
+    }
+
+    .topics{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .topic-card{
+      background:#fff;border:1px solid #ddd6cc;box-shadow:var(--shadow);overflow:hidden;cursor:pointer;
+    }
+    .topic-card img{width:100%;height:165px;object-fit:cover;background-color:#f3eee7}
+    .topic-card h3{padding:14px 18px 6px;text-align:center;font-size:28px;line-height:1.1;color:#302a26}
+    .topic-sub{padding:0 18px 18px;text-align:center;font-family:Inter,system-ui,sans-serif;font-size:13px;color:#746b62}
+
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-top:34px;margin-bottom:14px}
+    .section-head h2{font-size:28px;line-height:1.05}
+    .section-head p{font-family:Inter,system-ui,sans-serif;color:var(--muted);font-size:14px}
+
+    .recipe-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;font-family:Inter,system-ui,sans-serif}
+    .recipe-card{background:#fff;border:1px solid #ddd6cc;box-shadow:var(--shadow);overflow:hidden}
+    .recipe-card img{width:100%;height:185px;object-fit:cover}
+    .recipe-body{padding:14px 16px}
+    .recipe-title{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.15;color:#2f2a26}
+    .recipe-meta{margin-top:12px;font-size:13px;color:#6d655d;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+    .recipe-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .mini-btn{border:1px solid #e2d8cb;background:#fff;padding:8px 12px;font-size:13px;font-weight:700;color:#5a534b}
+    .mini-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+    .detail-preview{
+      margin-top:52px;display:grid;grid-template-columns:300px 1fr;gap:0;border:1px solid #d7cec2;box-shadow:var(--shadow);background:#fff;overflow:hidden;
+    }
+    .detail-left{padding:22px 22px 24px;background:#fbfaf8;border-right:1px solid #e4dbcf}
+    .detail-left h2{font-size:32px;line-height:1.02;margin-bottom:18px}
+    .detail-meta-row{display:flex;gap:16px;flex-wrap:wrap;font-family:Inter,system-ui,sans-serif;font-size:14px;color:#625950;margin-bottom:22px}
+    .detail-block{margin-top:18px}
+    .detail-block h3{font-family:Inter,system-ui,sans-serif;font-size:18px;font-weight:800;margin-bottom:10px}
+    .detail-left ul,.detail-left ol{padding-left:18px;color:#4e4740;display:grid;gap:8px;font-family:Inter,system-ui,sans-serif;line-height:1.55}
+    .detail-right{background:#fff;padding:20px 20px 24px}
+    .detail-right img{width:100%;height:310px;object-fit:cover;border:1px solid #e3d8cb}
+    .detail-right h3{font-size:32px;line-height:1.02;margin:18px 0 10px}
+    .detail-right p{font-family:Inter,system-ui,sans-serif;color:#605851;line-height:1.65}
+
+    .empty{margin-top:20px;background:#fff;border:1px dashed #d9d0c4;padding:18px 20px;font-family:Inter,system-ui,sans-serif;color:#6b645c}
+
+    .modal{position:fixed;inset:0;background:rgba(38,29,22,.55);display:none;align-items:center;justify-content:center;padding:16px;z-index:90}
+    .modal.open{display:flex}
+    .modal-dialog{width:min(1180px,100%);max-height:92vh;overflow:auto;background:#fff;border:1px solid #d7cec2;box-shadow:0 28px 60px rgba(0,0,0,.24)}
+    .modal-head{position:sticky;top:0;z-index:3;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid #e5ddd2;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:Inter,system-ui,sans-serif}
+    .modal-title{font-weight:800;font-size:18px}
+    .close-btn{border:1px solid #e1d7ca;background:#fff;padding:10px 14px;font-weight:700;color:#5a534b}
+    .modal-layout{display:grid;grid-template-columns:260px 1fr;min-height:620px}
+    .modal-nav{background:#fbfaf8;border-right:1px solid #e4dbcf;padding:18px;display:grid;gap:12px;font-family:Inter,system-ui,sans-serif}
+    .modal-nav h3{font-size:17px;font-weight:800}
+    .nav-btn{border:1px solid #e3d9cd;background:#fff;padding:12px 14px;text-align:left;font-weight:700;color:#5a534b}
+    .nav-btn.active{background:#f4efe9}
+    .modal-hero{display:grid;grid-template-columns:.9fr 1.1fr;border-bottom:1px solid #e5ddd2;min-height:420px}
+    .modal-hero-media{background:center/cover no-repeat}
+    .modal-hero-copy{padding:26px;background:#fffdfa}
+    .modal-tag-row{display:flex;flex-wrap:wrap;gap:10px}
+    .modal-tag{display:inline-flex;align-items:center;padding:8px 12px;border:1px solid #eadfce;background:#fff4ec;font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#bf6d4b}
+    .modal-hero-copy h2{font-size:44px;line-height:1.0;margin:14px 0 12px}
+    .modal-hero-copy p{font-family:Inter,system-ui,sans-serif;color:#6b645d;line-height:1.65}
+    .modal-meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+    .modal-meta{border:1px solid #efe3d7;background:#fff8f2;padding:14px}
+    .modal-meta strong{display:block;color:#cb6843;font-size:18px;margin-bottom:4px;font-family:Inter,system-ui,sans-serif}
+    .modal-meta span{font-family:Inter,system-ui,sans-serif;color:#8a7a6a;font-size:13px;line-height:1.5}
+    .modal-action-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;font-family:Inter,system-ui,sans-serif}
+    .modal-sections{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:20px}
+    .modal-card{border:1px solid #e5ddd2;background:#fff;padding:18px;scroll-margin-top:90px}
+    .modal-card h3{font-size:26px;margin-bottom:12px}
+    .modal-card .ui-copy{font-family:Inter,system-ui,sans-serif;color:#5f5952;line-height:1.65}
+    .modal-card ul,.modal-card ol{padding-left:18px;display:grid;gap:8px}
+
+    
+    .search-box{position:relative}
+    .search-suggest{
+      position:absolute;left:-1px;right:-1px;top:calc(100% + 8px);z-index:35;
+      background:#fff;border:1px solid #ddd6cc;box-shadow:var(--shadow);display:grid;overflow:hidden;
+    }
+    .search-suggest-item{
+      border:none;border-top:1px solid #eee7df;background:#fff;padding:12px 14px;text-align:left;display:grid;gap:4px;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    .search-suggest-item:first-child{border-top:none}
+    .search-suggest-item strong{font-size:14px;color:#302a26}
+    .search-suggest-item span{font-size:12px;color:#746b62}
+    .search-suggest-item:hover{background:#faf5ef}
+
+    
+    .nav-btn.active{background:#f4efe9; border-color:#d9cbbc}
+    .modal-card.is-target{
+      outline:2px solid rgba(216,111,74,.35);
+      outline-offset:0;
+      transition:outline-color .4s ease;
+    }
+
+    
+    .topic-card.active{
+      outline:2px solid rgba(110,150,65,.38);
+      outline-offset:0;
+      box-shadow:0 14px 28px rgba(58,42,27,.12);
+    }
+    .recipe-card.active-preview{
+      outline:2px solid rgba(216,111,74,.28);
+      outline-offset:0;
+    }
+    .recipe-category-badge{
+      display:inline-flex;align-items:center;gap:6px;
+      margin-bottom:10px;padding:6px 10px;
+      border:1px solid #eadfd2;background:#fff4ec;
+      color:#bf6d4b;font-size:12px;font-weight:700;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      text-transform:uppercase;letter-spacing:.04em;
+    }
+
+    
+    .hero-card ul, .hero-card li{word-break:break-word}
+    .recipe-card, .topic-card, .hero-card, .search-shell, .detail-preview, .modal-dialog{border-radius:18px}
+    .hero{border-radius:18px}
+    .hero-copy, .detail-right p, .detail-left ul, .detail-left ol{hyphens:auto}
+    .search-box input{min-width:0}
+    .recipe-title{min-height:2.4em}
+    .recipe-actions .mini-btn.primary{min-width:140px}
+    .modal-dialog{scroll-behavior:smooth}
+    .modal-head{border-top-left-radius:18px;border-top-right-radius:18px}
+    .topic-card, .recipe-card, .mini-btn, .chip, .lang-btn, .btn-primary, .btn-secondary, .filter-btn, .sort-select{
+      transition:all .18s ease;
+    }
+    .topic-card:hover, .recipe-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 28px rgba(58,42,27,.12);
+    }
+    .mini-btn:hover, .chip:hover, .lang-btn:hover{
+      box-shadow:0 8px 18px rgba(58,42,27,.08);
+    }
+
+    
+    @media (max-width:980px){
+      .hero-inner{grid-template-columns:1fr}
+      .hero-side{grid-template-columns:1fr 1fr}
+      .recipe-grid{grid-template-columns:repeat(2,1fr)}
+      .topics{grid-template-columns:repeat(2,1fr)}
+      .detail-preview{grid-template-columns:1fr}
+      .detail-left{border-right:none;border-bottom:1px solid #e4dbcf}
+    }
+
+    
+    .site-footer{
+      margin-top:36px;padding:22px 0 28px;border-top:1px solid #e4dbcf;
+      font-family:Inter,system-ui,sans-serif;color:#6a625a;
+    }
+    .footer-inner{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    }
+    .footer-links{
+      display:flex;gap:12px;flex-wrap:wrap;
+    }
+    .footer-link{
+      border:1px solid #e2d8cb;background:#fff;padding:10px 14px;font-size:14px;font-weight:600;color:#5a534b;
+    }
+    .legal-modal-copy{
+      font-family:Inter,system-ui,sans-serif;color:#5f5952;line-height:1.7;
+    }
+    .legal-note{
+      margin-top:14px;padding:12px 14px;border:1px solid #efe3d7;background:#fff8f2;color:#7a6656;
+      font-size:14px;font-family:Inter,system-ui,sans-serif;
+    }
+
+    
+    .footer-link{cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+    .footer-link:hover{box-shadow:0 8px 18px rgba(58,42,27,.08)}
+
+    @media (max-width:1100px){
+      .hero{grid-template-columns:1fr}
+      .hero-inner{grid-template-columns:1fr}
+      .hero-side{grid-template-columns:1fr 1fr}
+      .topics{grid-template-columns:1fr}
+      .recipe-grid{grid-template-columns:repeat(2,1fr)}
+      .detail-preview{grid-template-columns:1fr}
+      .detail-left{border-right:none;border-bottom:1px solid #e4dbcf}
+      .modal-layout,.modal-hero,.modal-sections{grid-template-columns:1fr}
+      .modal-nav{border-right:none;border-bottom:1px solid #e4dbcf}
+      .modal-meta-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:760px){
+      .wrap{padding:0 16px}
+      main{padding:18px 0 42px}
+      .header-inner{flex-direction:column;align-items:flex-start}
+      .header-actions{width:100%;justify-content:flex-start}
+      .hero-title{font-size:40px}
+      .hero-sub{font-size:16px}
+      .hero-inner{padding:22px 16px 16px;gap:14px}
+      .hero-side{grid-template-columns:1fr}
+      .hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
+      .btn-primary,.btn-secondary{width:100%}
+      .search-shell{padding:14px}
+      .search-top{grid-template-columns:1fr}
+      .search-bottom{align-items:flex-start}
+      .chip-row{gap:8px}
+      .chip{font-size:14px;padding:8px 12px}
+      .filter-btn{width:100%}
+      .topics{grid-template-columns:1fr;gap:14px}
+      .topic-card img{height:180px}
+      .topic-card h3{font-size:24px}
+      .recipe-grid{grid-template-columns:1fr;gap:14px}
+      .recipe-card img{height:210px}
+      .recipe-body{padding:14px}
+      .detail-preview{grid-template-columns:1fr;margin-top:34px}
+      .detail-left{border-right:none;border-bottom:1px solid #e4dbcf;padding:18px 16px}
+      .detail-right{padding:16px}
+      .detail-right img{height:240px}
+      .modal{padding:0}
+      .modal-dialog{max-height:100vh;width:100%;height:100%;border-radius:0}
+      .modal-head{border-radius:0;padding:14px 14px}
+      .modal-layout,.modal-hero,.modal-sections{grid-template-columns:1fr}
+      .modal-nav{border-right:none;border-bottom:1px solid #e4dbcf;padding:14px;position:sticky;top:0;background:#fbfaf8;z-index:2}
+      .modal-nav h3{margin-bottom:4px}
+      .modal-hero-copy{padding:18px}
+      .modal-hero-copy h2{font-size:30px}
+      .modal-meta-grid{grid-template-columns:1fr 1fr}
+      .modal-sections{padding:14px;gap:14px}
+      .modal-card{padding:16px}
+      .modal-action-row{display:grid;grid-template-columns:1fr;gap:10px}
+      .modal-action-row .mini-btn{width:100%}
+    }
+  </style>
 </head>
 <body>
-<div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
-<header class="site-header">
-  <div class="wrap">
-    <div class="header-inner">
-      <div class="brand-block">
-        <h1><span lang-variant="de">Svens Kochbuch</span><span lang-variant="pl">Książka kucharska Svena</span></h1>
-        <p><span lang-variant="de">Einfache, ehrliche Lieblingsrezepte – gesammelt, gekocht und für gut befunden.</span><span lang-variant="pl">Proste i sprawdzone ulubione przepisy – ugotowane i warte zachowania.</span></p>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div>
+        <div class="brand-title">Svens Kochbuch</div>
+        <div class="brand-sub ui">Modernes Layout · stabile Funktionsbasis</div>
       </div>
-      <div class="lang-switch">
-        <button class="lang-btn active" data-set-lang="de" type="button">🇩🇪 Deutsch</button>
-        <button class="lang-btn" data-set-lang="pl" type="button">🇵🇱 Polski</button>
+      <div class="header-actions ui">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="pl">PL</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="loading ui" id="loadingBox">Lade kochbuch.xml…</div>
+
+    <section class="hero hidden" id="heroSection">
+      <div class="hero-media" id="heroMedia"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title" id="heroTitle">Willkommen in unserer Rezeptewelt</h1>
+          <p class="hero-sub" id="heroSub">Köstliche Rezepte für jeden Tag.</p>
+          <div class="hero-actions">
+            <button class="btn-primary ui" id="jumpRecipesBtn">Rezepte entdecken</button>
+            <button class="btn-secondary ui" id="jumpTopicsBtn">Sammlungen browsen</button>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-card">
+            <h3>Was sich ändert</h3>
+            <ul id="heroChangesList">
+              <li>Neues Design</li>
+              <li>Neue Struktur</li>
+              <li>Mehr Entdecken</li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <h3 id="heroQuickTitle">Schnell gefunden</h3>
+            <ul id="heroQuickList">
+              <li>Neu entdecken</li>
+              <li>Beliebte Rezepte</li>
+              <li>Schnelle Küche</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-shell hidden ui" id="searchSection">
+      <div class="search-top">
+        <div class="search-box" style="position:relative;">
+          <span class="icon">⌕</span>
+          <input id="searchInput" type="text" placeholder="Rezept suchen…" autocomplete="off" />
+          <div class="search-suggest hidden" id="searchSuggest"></div>
+        </div>
+        <button class="filter-btn" id="focusFilterBtn">Filter & Sortieren</button>
+      </div>
+
+      <div class="search-bottom">
+        <div class="chip-row" id="quickFilterRow">
+          <button class="chip active" data-quick="all"><span class="marker">◆</span><span data-i18n-de="Alle" data-i18n-pl="Wszystkie">Alle</span></button>
+          <button class="chip" data-quick="new"><span class="marker">●</span><span data-i18n-de="Neu" data-i18n-pl="Nowe">Neu</span></button>
+          <button class="chip" data-quick="favorites"><span class="marker">♥</span><span data-i18n-de="Beliebt" data-i18n-pl="Popularne">Beliebt</span></button>
+          <button class="chip" data-quick="oven"><span class="marker">✦</span><span data-i18n-de="Ofen" data-i18n-pl="Piekarnik">Ofen</span></button>
+          <button class="chip" data-quick="quick"><span class="marker">⚡</span><span data-i18n-de="Schnell" data-i18n-pl="Szybkie">Schnell</span></button>
+        </div>
+        <div class="result-count" id="resultCount">0 Rezepte gefunden</div>
+      </div>
+
+      <div class="search-bottom" style="margin-top:10px">
+        <div class="chip-row" id="tagFilterRow"></div>
+        <div class="chip-row">
+          <select id="sortSelect" class="sort-select">
+            <option value="new">Neueste</option>
+            <option value="name">Name A–Z</option>
+            <option value="rating">Bewertung</option>
+          </select>
+          <button class="chip" id="resetBtn">Zurücksetzen</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics hidden" id="topicsSection"></section>
+
+    <div class="section-head hidden" id="popularHead">
+      <div>
+        <h2 id="popularTitle">Beliebte Rezepte</h2>
+        <p id="popularCopy">Klarer, ruhiger und bildstärker im neuen Design.</p>
       </div>
     </div>
 
-    <div class="hero-grid">
-      <section class="hero-card">
-        <h2><span lang-variant="de">Was soll heute auf den Tisch?</span><span lang-variant="pl">Co dziś na obiad?</span></h2>
-        <p><span lang-variant="de">Hier findest du schnell etwas, das du heute kochen kannst – egal ob nach Feierabend oder für ein entspanntes Wochenende.</span><span lang-variant="pl">Znajdziesz tu szybko coś do ugotowania – niezależnie od tego, czy po pracy, czy na spokojny weekend.</span></p>
-        <div class="cta-row">
-          <a class="cta-chip" href="#favorites"><span lang-variant="de">⭐ Favoriten</span><span lang-variant="pl">⭐ Ulubione</span></a>
-          <a class="cta-chip" href="#newest"><span lang-variant="de">🆕 Neu</span><span lang-variant="pl">🆕 Nowe</span></a>
-          <a class="cta-chip" href="#allRecipes"><span lang-variant="de">📚 Alle Rezepte</span><span lang-variant="pl">📚 Wszystkie przepisy</span></a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <strong id="heroRecipeCount">0</strong>
-            <span><span lang-variant="de">Rezepte im Kochbuch</span><span lang-variant="pl">Przepisy w książce kucharskiej</span></span>
-          </div>
-          <div class="hero-stat">
-            <strong id="heroCategoryCount">0</strong>
-            <span><span lang-variant="de">Kategorien zum Stöbern</span><span lang-variant="pl">Kategorie do przeglądania</span></span>
-          </div>
-          <div class="hero-stat">
-            <strong><span lang-variant="de">DE + PL</span><span lang-variant="pl">DE + PL</span></strong>
-            <span><span lang-variant="de">Zweisprachig, mobil und druckfreundlich</span><span lang-variant="pl">Dwujęzycznie, mobilnie i gotowe do druku</span></span>
-          </div>
-        </div>
-      </section>
-
-      <aside class="search-shell">
-        <div class="search-top">
-          <div>
-            <strong><span lang-variant="de">Rezepte entdecken, filtern und direkt kochen</span><span lang-variant="pl">Odkrywaj przepisy, filtruj i gotuj od razu</span></strong>
-            <span><span lang-variant="de">Suche nach Rezeptnamen, kombiniere Kategorien und Tags und finde schneller das passende Gericht.</span><span lang-variant="pl">Szukaj po nazwie przepisu, łącz kategorie i tagi i szybciej znajdź właściwe danie.</span></span>
-          </div>
-          <div class="search-controls">
-            <input class="search-input" id="recipeSearch" type="search" placeholder="Nach Rezeptnamen suchen…" aria-label="Rezept suchen">
-            <button class="clear-btn hidden" id="clearSearch" type="button">✕</button>
-            <div class="search-suggest" id="searchSuggest" hidden></div>
-          </div>
-        </div>
-
-        <div class="search-meta">
-          <span class="meta-chip" id="resultCount">
-            <span lang-variant="de">0 Rezepte</span><span lang-variant="pl">0 przepisów</span>
-          </span>
-          <button class="meta-chip meta-chip-button" id="showAllRecipesChip" type="button">
-            <span lang-variant="de">Alle Rezepte anzeigen</span><span lang-variant="pl">Pokaż wszystkie przepisy</span>
-          </button>
-          <span class="meta-chip" id="activeCategoryLabelText">
-            <span lang-variant="de">Aktiv: Alle Kategorien</span><span lang-variant="pl">Aktywne: Wszystkie kategorie</span>
-          </span>
-        </div>
-
-        <div class="search-utility-row">
-          <label>
-            <span class="eyebrow"><span lang-variant="de">Sortierung</span><span lang-variant="pl">Sortowanie</span></span>
-            <select id="sortMode">
-              <option value="new">Neueste zuerst</option>
-              <option value="rating">Beste Bewertung</option>
-              <option value="az">A–Z</option>
-            </select>
-          </label>
-        </div>
-
-        <div class="quick-filter-row" id="quickFilterRow">
-          <button class="quick-filter-btn active" data-quick-filter="all" type="button"><span lang-variant="de">Alle</span><span lang-variant="pl">Wszystkie</span></button>
-          <button class="quick-filter-btn" data-quick-filter="new" type="button"><span lang-variant="de">Neu ab 195</span><span lang-variant="pl">Nowe od 195</span></button>
-          <button class="quick-filter-btn" data-quick-filter="favorites" type="button"><span lang-variant="de">Favoriten</span><span lang-variant="pl">Ulubione</span></button>
-          <button class="quick-filter-btn" data-quick-filter="oven" type="button"><span lang-variant="de">Ofen & Aufläufe</span><span lang-variant="pl">Piekarnik</span></button>
-          <button class="quick-filter-btn" data-quick-filter="quick" type="button"><span lang-variant="de">Schnell & Alltag</span><span lang-variant="pl">Szybkie</span></button>
-        </div>
-
-        <div class="category-chips" id="categoryChips"></div>
-        <div class="tag-filter-shell">
-          <div class="tag-filter-head">
-            <strong><span lang-variant="de">Tags</span><span lang-variant="pl">Tagi</span></strong>
-            <button class="text-link-btn" id="clearTagsBtn" type="button">
-              <span lang-variant="de">Tags zurücksetzen</span><span lang-variant="pl">Wyczyść tagi</span>
-            </button>
-          </div>
-          <div class="tag-filter-row" id="tagFilterRow"></div>
-        </div>
-      </aside>
-    </div>
-  </div>
-</header>
-
-<main class="wrap">
-  <section class="magazine-hero-shell">
-    <article class="magazine-feature-card">
-      <div class="magazine-feature-media">
-        <img id="featureImage" src="images/rezeptbild_152.png" alt="">
-      </div>
-      <div class="magazine-feature-body">
-        <div class="magazine-feature-meta">
-          <span class="pill" id="featureCategory"></span>
-          <span class="pill soft" id="featurePersons"></span>
-        </div>
-        <h2 id="featureTitle"></h2>
-        <p id="featureIntro"></p>
-        <div class="magazine-feature-actions">
-          <button class="cta-chip" id="featureOpenBtn" type="button"><span lang-variant="de">Rezept öffnen</span><span lang-variant="pl">Otwórz przepis</span></button>
-          <a class="ghost-btn" href="#newest"><span lang-variant="de">Zu den neuesten Rezepten</span><span lang-variant="pl">Do najnowszych przepisów</span></a>
-        </div>
-      </div>
-    </article>
-
-    <div class="magazine-side-panel">
-      <article class="magazine-side-card">
-        <strong><span lang-variant="de">Gut organisiert</span><span lang-variant="pl">Dobrze uporządkowane</span></strong>
-        <p><span lang-variant="de">Neue Rezepte, Kategorien, Suche und Sammlungen sind klar gegliedert und schnell erreichbar.</span><span lang-variant="pl">Nowe przepisy, kategorie, wyszukiwarka i kolekcje są przejrzyście ułożone i szybko dostępne.</span></p>
-      </article>
-      <article class="magazine-side-card">
-        <strong><span lang-variant="de">Schneller Einstieg</span><span lang-variant="pl">Szybki start</span></strong>
-        <p><span lang-variant="de">Nutze Suche, Kategorien oder die neuesten Einträge und springe direkt ins Rezept.</span><span lang-variant="pl">Skorzystaj z wyszukiwarki, kategorii albo najnowszych wpisów i przejdź od razu do przepisu.</span></p>
-      </article>
-    </div>
-  </section>
-
-  <section class="highlights-wrap">
-    <div class="highlights-card" id="trends">
-      <div class="section-head">
-        <div>
-          <h2><span lang-variant="de">Trends &amp; Klassiker</span><span lang-variant="pl">Trendy i klasyki</span></h2>
-          <p><span lang-variant="de">Automatisch aus gut bewerteten und häufig starken Rezepten zusammengestellt.</span><span lang-variant="pl">Automatycznie zestawione z dobrze ocenionych i mocnych przepisów.</span></p>
-        </div>
-      </div>
-      <div class="mini-grid" id="trendsGrid"></div>
+    <section class="recipe-grid hidden" id="recipeGrid"></section>
+    <div class="ui hidden" id="loadMoreWrap" style="margin-top:18px; text-align:center;">
+      <button class="mini-btn" id="loadMoreBtn">Mehr laden</button>
     </div>
 
-    <div class="highlights-card" id="favorites">
-      <div class="section-head">
-        <div>
-          <h2><span lang-variant="de">Svens Favoriten</span><span lang-variant="pl">Ulubione przepisy Svena</span></h2>
-          <p><span lang-variant="de">Automatisch aus persönlichen Rezepten, starken Bewertungen und bewährten Gerichten gewählt.</span><span lang-variant="pl">Automatycznie wybrane z osobistych przepisów, mocnych ocen i sprawdzonych dań.</span></p>
+    <section class="detail-preview hidden" id="detailPreviewSection">
+      <div class="detail-left">
+        <h2 id="previewTitle">Rezept</h2>
+        <div class="detail-meta-row">
+          <span id="previewTime">30 Minuten</span>
+          <span id="previewPersons">4 Portionen</span>
+        </div>
+        <div class="detail-block">
+          <h3 id="previewIngredientsTitle">Zutaten</h3>
+          <ul class="ui" id="previewIngredients"></ul>
+        </div>
+        <div class="detail-block">
+          <h3 id="previewStepsTitle">Zubereitung</h3>
+          <ol class="ui" id="previewSteps"></ol>
         </div>
       </div>
-      <div class="mini-grid" id="favoritesGrid"></div>
-    </div>
+      <div class="detail-right">
+        <img id="previewImage" alt="" />
+        <h3 id="previewRightTitle">Rezeptvorschau</h3>
+        <p id="previewText">Vorschau der neuen Rezeptseite.</p>
+      </div>
+    </section>
 
-    <div class="highlights-card" id="newest">
-      <div class="section-head">
-        <div>
-          <h2><span lang-variant="pl">Ostatnio dodane</span></h2>
-          <p><span lang-variant="de">Die zuletzt ergänzten Rezepte auf einen Blick – ideal, wenn du schnell etwas Neues entdecken willst.</span><span lang-variant="pl">Ostatnio dodane przepisy zebrane w jednym miejscu, żeby szybciej coś nowego znaleźć.</span></p>
-        </div>
-      </div>
-      <div class="mini-grid" id="newestGrid"></div>
-    </div>
+    <section class="empty hidden ui" id="emptyBox">
+      <strong id="emptyTitle">Keine passenden Rezepte gefunden.</strong>
+      <span id="emptyText">Nimm einen Filter zurück oder probiere einen anderen Suchbegriff.</span>
+    </section>
   
-</section>
-
-  <section class="collections-shell">
-    <div class="section-head">
-      <div>
-        <h2><span lang-variant="de">Heute kochen</span><span lang-variant="pl">Gotuj dzisiaj</span></h2>
-        <p><span lang-variant="de">Kuratiert für typische Momente in deiner Küche – direkt startklar ohne langes Suchen.</span><span lang-variant="pl">Wybrane pod typowe sytuacje w kuchni – gotowe do użycia bez długiego szukania.</span></p>
-      </div>
-    </div>
-    <div class="collection-grid">
-      <div class="collection-card">
-        <div class="collection-card-head">
-          <h3><span lang-variant="de">Deftige Klassiker</span><span lang-variant="pl">Solidne klasyki</span></h3>
-          <button class="mini-link-btn" type="button" data-collection="klassiker">
-            <span lang-variant="de">Alle ansehen</span><span lang-variant="pl">Pokaż wszystkie</span>
-          </button>
+    <footer class="site-footer ui">
+      <div class="footer-inner">
+        <div>Svens Kochbuch</div>
+        <div class="footer-links">
+          <a class="footer-link" id="openImpressumBtn" href="impressum.html">Impressum</a>
+          <a class="footer-link" id="openDatenschutzBtn" href="datenschutz.html">Datenschutz</a>
         </div>
-        <div class="mini-grid compact-grid" id="collectionKlassikerGrid"></div>
       </div>
-      <div class="collection-card">
-        <div class="collection-card-head">
-          <h3><span lang-variant="de">Aus dem Ofen</span><span lang-variant="pl">Z piekarnika</span></h3>
-          <button class="mini-link-btn" type="button" data-collection="ofen">
-            <span lang-variant="de">Alle ansehen</span><span lang-variant="pl">Pokaż wszystkie</span>
-          </button>
-        </div>
-        <div class="mini-grid compact-grid" id="collectionOfenGrid"></div>
+    </footer>
+
+  </main>
+
+  <div class="modal" id="recipeModal">
+    <div class="modal-dialog" id="modalDialog">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Rezept</div>
+        <button class="close-btn" id="closeModalBtn">Schließen</button>
       </div>
-      <div class="collection-card">
-        <div class="collection-card-head">
-          <h3><span lang-variant="de">Schnelle Feierabendküche</span><span lang-variant="pl">Szybka kuchnia po pracy</span></h3>
-          <button class="mini-link-btn" type="button" data-collection="alltag">
-            <span lang-variant="de">Alle ansehen</span><span lang-variant="pl">Pokaż wszystkie</span>
-          </button>
-        </div>
-        <div class="mini-grid compact-grid" id="collectionAlltagGrid"></div>
-      </div>
-      <div class="collection-card">
-        <div class="collection-card-head">
-          <h3><span lang-variant="de">Wölpinghausen & Klassiker</span><span lang-variant="pl">Wölpinghausen i klasyki</span></h3>
-          <button class="mini-link-btn" type="button" data-collection="regional">
-            <span lang-variant="de">Alle ansehen</span><span lang-variant="pl">Pokaż wszystkie</span>
-          </button>
-        </div>
-        <div class="mini-grid compact-grid" id="collectionRegionalGrid"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="finder-shell">
-    <div class="section-copy"><span lang-variant="de">Schnelle Einstiege für typische Kochsituationen.</span><span lang-variant="pl">Szybkie wejścia do typowych sytuacji kulinarnych.</span></div>
-    <div class="section-head">
-      <div>
-        <h2><span lang-variant="de">Rezepte direkt finden</span><span lang-variant="pl">Znajdź przepis od razu</span></h2>
-        <p><span lang-variant="de">Springe direkt in wichtige Bereiche oder filtere nach deinen Hauptkategorien.</span><span lang-variant="pl">Przejdź od razu do ważnych obszarów albo filtruj według głównych kategorii.</span></p>
-      </div>
-    </div>
-    <div class="finder-grid">
-      <button class="finder-card finder-link-card" type="button" data-jump-target="favorites">
-        <strong><span lang-variant="de">Zu den Favoriten</span><span lang-variant="pl">Do ulubionych</span></strong>
-        <p><span lang-variant="de">Die automatisch gewählten Lieblingsrezepte direkt öffnen.</span><span lang-variant="pl">Otwórz od razu automatycznie wybrane ulubione przepisy.</span></p>
-      </button>
-      <button class="finder-card finder-link-card" type="button" data-jump-target="newest">
-        <strong><span lang-variant="de">Zu den neuesten Rezepten</span><span lang-variant="pl">Do najnowszych przepisów</span></strong>
-        <p><span lang-variant="de">Die neuesten Ideen auf einen Blick.</span><span lang-variant="pl">Najnowsze pomysły w jednym miejscu.</span></p>
-      </button>
-      <button class="finder-card finder-link-card" type="button" data-jump-target="allRecipes">
-        <strong><span lang-variant="de">Alle Rezepte ansehen</span><span lang-variant="pl">Zobacz wszystkie przepisy</span></strong>
-        <p><span lang-variant="de">Gesamte Sammlung mit Suche, Filter und Inhaltsverzeichnis.</span><span lang-variant="pl">Cała kolekcja z wyszukiwarką, filtrami i spisem treści.</span></p>
-      </button>
-    </div>
-  </section>
-
-  <section class="category-magazine-shell">
-    <div class="section-copy"><span lang-variant="de">Direkt in die wichtigsten Rezeptwelten springen.</span><span lang-variant="pl">Przejdź od razu do najważniejszych światów przepisów.</span></div>
-    <div class="section-head">
-      <div>
-        <h2><span lang-variant="de">Kategorien</span><span lang-variant="pl">Kategorie</span></h2>
-        <p><span lang-variant="de">Alle Hauptbereiche auf einen Blick – zum Stöbern, Filtern und schnellen Finden.</span><span lang-variant="pl">Wszystkie główne obszary w jednym miejscu – do przeglądania i szybkiego wyboru.</span></p>
-      </div>
-    </div>
-    <div class="category-magazine-grid" id="categoryJumpGrid"></div>
-  </section>
-
-  <section class="toc-shell">
-    <div class="section-head">
-      <div>
-        <h2><span lang-variant="de">Inhaltsverzeichnis</span><span lang-variant="pl">Spis treści</span></h2>
-        <p><span lang-variant="de">Direkter Sprung zu jedem Rezept – besonders praktisch bei einer großen Sammlung.</span><span lang-variant="pl">Bezpośredni skok do każdego przepisu – szczególnie przydatny przy dużej kolekcji.</span></p>
-      </div>
-    </div>
-    <div class="toc-grid" id="tocGrid"></div>
-  </section>
-
-  <section class="recipe-section" id="allRecipes">
-    <div class="section-head">
-      <div>
-        <h2><span lang-variant="de">Alle Rezepte auf einen Blick</span><span lang-variant="pl">Wszystkie przepisy w jednym miejscu</span></h2>
-      </div>
-    </div>
-    <div class="recipe-grid" id="recipeGrid"></div>
-    <div class="results-empty" id="emptyState">
-      <span lang-variant="de">Für diese Suche oder Kategorie wurde nichts gefunden.</span>
-      <span lang-variant="pl">Nie znaleziono przepisów dla tego wyszukiwania lub kategorii.</span>
-    </div>
-    <div class="controls-row">
-      <button class="load-more-btn" id="loadMoreRecipes" type="button"><span lang-variant="de">Mehr Rezepte laden</span><span lang-variant="pl">Załaduj więcej przepisów</span></button>
-      <div class="progress-note" id="progressNote"></div>
-    </div>
-  </section>
-</main>
-
-
-
-
-
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-links">
-      <a href="#allRecipes"><span lang-variant="de">Alle Rezepte</span><span lang-variant="pl">Wszystkie przepisy</span></a>
-      <a href="#newest"><span lang-variant="de">Neu</span><span lang-variant="pl">Nowe</span></a>
-      <a href="#favorites"><span lang-variant="de">Favoriten</span><span lang-variant="pl">Ulubione</span></a>
-      <a href="impressum.html#kontakt"><span lang-variant="de">Kontakt</span><span lang-variant="pl">Kontakt</span></a>
-      <a href="impressum.html#impressum"><span lang-variant="de">Impressum</span><span lang-variant="pl">Nota prawna</span></a>
-      <a href="datenschutz.html#datenschutz"><span lang-variant="de">Datenschutz</span><span lang-variant="pl">Prywatność</span></a>
+      <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
-</footer>
 
-<div class="modal" id="recipeModal" aria-hidden="true">
-  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-head">
-      <div class="modal-title" id="modalTitle"></div>
-      <button class="ghost-btn" id="closeModal" type="button"><span lang-variant="de">Schließen</span><span lang-variant="pl">Zamknij</span></button>
+  <div class="modal" id="legalModal">
+    <div class="modal-dialog" style="max-width:820px;">
+      <div class="modal-head">
+        <div class="modal-title" id="legalModalTitle">Impressum</div>
+        <button class="close-btn" id="closeLegalModalBtn">Schließen</button>
+      </div>
+      <div class="modal-body" style="padding:20px 20px 24px;">
+        <div class="legal-modal-copy" id="legalModalBody"></div>
+      </div>
     </div>
-    <div class="modal-body" id="modalBody"></div>
   </div>
-</div>
-
-<script>
-(function(){
-  const CATEGORY_CONFIG = [
-    { slug:'woelpinghausener-spezialitaeten', de:'Wölpinghausener Spezialitäten', pl:'Specjały z Wölpinghausen', icon:'🏡' },
-    { slug:'klassiker-hausmannskost', de:'Klassiker & Hausmannskost', pl:'Klasyki i domowa kuchnia', icon:'🍽️' },
-    { slug:'ofen-auflaeufe', de:'Ofen & Aufläufe', pl:'Piekarnik i zapiekanki', icon:'🔥' },
-    { slug:'schnelle-kueche', de:'Schnelle Küche', pl:'Szybka kuchnia', icon:'⚡' },
-    { slug:'grill-bbq', de:'Grill & BBQ', pl:'Grill i BBQ', icon:'🥩' },
-    { slug:'salate-beilagen', de:'Salate & Beilagen', pl:'Sałatki i dodatki', icon:'🥗' },
-    { slug:'suppen-eintoepfe', de:'Suppen & Eintöpfe', pl:'Zupy i gulasze', icon:'🥣' },
-    { slug:'fisch-meeresfruechte', de:'Fisch & Meeresfrüchte', pl:'Ryby i owoce morza', icon:'🦐' },
-    { slug:'airfryer', de:'Airfryer', pl:'Airfryer', icon:'🍟' },
-    { slug:'grundlagen-saucen', de:'Grundlagen & Saucen', pl:'Podstawy i sosy', icon:'🥄' },
-    { slug:'backen-suesses', de:'Backen & Süßes', pl:'Pieczenie i słodkie', icon:'🍰' },
-    { slug:'cocktails-getraenke', de:'Cocktails & Getränke', pl:'Koktajle i napoje', icon:'🍹' }
-  ];
-
-  const CATEGORY_LABELS = Object.fromEntries(CATEGORY_CONFIG.map(c => [c.slug, c]));
-  const INITIAL_VISIBLE = 12;
-  const BATCH_SIZE = 12;
-
-  const state = {
-    recipes: [],
-    activeLang: 'de',
-    activeCategory: 'all',
-    currentLimit: INITIAL_VISIBLE,
-    activeRecipeId: null,
-    quickFilter: 'all',
-    sortMode: 'new',
-    activeTags: []
-  };
-
-  const htmlEl = document.documentElement;
-  const recipeGrid = document.getElementById('recipeGrid');
-  const tocGrid = document.getElementById('tocGrid');
-  const categoryChips = document.getElementById('categoryChips');
-  const categoryJumpGrid = document.getElementById('categoryJumpGrid');
-  const newestGrid = document.getElementById('newestGrid');
-  const favoritesGrid = document.getElementById('favoritesGrid');
-  const trendsGrid = document.getElementById('trendsGrid');
-  const collectionKlassikerGrid = document.getElementById('collectionKlassikerGrid');
-  const collectionOfenGrid = document.getElementById('collectionOfenGrid');
-  const collectionAlltagGrid = document.getElementById('collectionAlltagGrid');
-  const collectionRegionalGrid = document.getElementById('collectionRegionalGrid');
-  const searchInput = document.getElementById('recipeSearch');
-  const clearSearch = document.getElementById('clearSearch');
-  const searchSuggest = document.getElementById('searchSuggest');
-  const resultCount = document.getElementById('resultCount');
-  const activeCategoryLabelText = document.getElementById('activeCategoryLabelText');
-  const showAllRecipesChip = document.getElementById('showAllRecipesChip');
-  const loadMoreRecipes = document.getElementById('loadMoreRecipes');
-  const progressNote = document.getElementById('progressNote');
-  const emptyState = document.getElementById('emptyState');
-  const sortMode = document.getElementById('sortMode');
-  const quickFilterRow = document.getElementById('quickFilterRow');
-  const tagFilterRow = document.getElementById('tagFilterRow');
-  const clearTagsBtn = document.getElementById('clearTagsBtn');
-  const heroRecipeCount = document.getElementById('heroRecipeCount');
-  const heroCategoryCount = document.getElementById('heroCategoryCount');
-  const modal = document.getElementById('recipeModal');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalBody = document.getElementById('modalBody');
-  const closeModal = document.getElementById('closeModal');
-  const prevRecipeBtn = document.getElementById('prevRecipeBtn');
-  const nextRecipeBtn = document.getElementById('nextRecipeBtn');
-  const toastStack = document.getElementById('toastStack');
-  const featureImage = document.getElementById('featureImage');
-  const featureCategory = document.getElementById('featureCategory');
-  const featurePersons = document.getElementById('featurePersons');
-  const featureTitle = document.getElementById('featureTitle');
-  const featureIntro = document.getElementById('featureIntro');
-  const featureOpenBtn = document.getElementById('featureOpenBtn');
-
-  function esc(value){
-    return String(value == null ? '' : value)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
-
-  function showToast(messageDe, messagePl, variant = 'info'){
-    if (!toastStack) return;
-    const toast = document.createElement('div');
-    toast.className = 'toast ' + variant;
-    toast.innerHTML = textByLang(messageDe, messagePl);
-    toastStack.appendChild(toast);
-    requestAnimationFrame(() => toast.classList.add('show'));
-    window.setTimeout(() => {
-      toast.classList.remove('show');
-      window.setTimeout(() => toast.remove(), 220);
-    }, 2200);
-  }
-
-  function currentRecipeUrl(recipeId){
-    const url = new URL(window.location.href);
-    url.hash = '#rezept-' + recipeId;
-    return url.toString();
-  }
-
-  function getVisibleRecipeSequence(){
-    return filteredRecipes().map(recipe => recipe.id);
-  }
-
-  function openAdjacentRecipe(direction){
-    if (!state.activeRecipeId) return;
-    const visibleIds = getVisibleRecipeSequence();
-    const currentIndex = visibleIds.findIndex(id => String(id) === String(state.activeRecipeId));
-    if (currentIndex === -1) return;
-    const nextIndex = currentIndex + direction;
-    if (nextIndex < 0 || nextIndex >= visibleIds.length) return;
-    openRecipe(visibleIds[nextIndex], false);
-  }
-
-  function updateModalNav(recipeId){
-    const visibleIds = getVisibleRecipeSequence();
-    const currentIndex = visibleIds.findIndex(id => String(id) === String(recipeId));
-    const hasPrev = currentIndex > 0;
-    const hasNext = currentIndex !== -1 && currentIndex < visibleIds.length - 1;
-    if (prevRecipeBtn){
-      prevRecipeBtn.disabled = !hasPrev;
-      prevRecipeBtn.classList.toggle('disabled', !hasPrev);
-    }
-    if (nextRecipeBtn){
-      nextRecipeBtn.disabled = !hasNext;
-      nextRecipeBtn.classList.toggle('disabled', !hasNext);
-    }
-  }
 
 
-  function deriveImageFallback(src){
-    if (!src) return '';
-    if (src.endsWith('.jpg')) return src.slice(0, -4) + '.png';
-    if (src.endsWith('.png')) return src.slice(0, -4) + '.jpg';
-    return '';
-  }
+  <script>
+  (function(){
+    const CATEGORY_CONFIG = [
+      { slug:'woelpinghausener-spezialitaeten', de:'Wölpinghausener Spezialitäten', pl:'Specjały z Wölpinghausen', icon:'🏡' },
+      { slug:'klassiker-hausmannskost', de:'Klassiker & Hausmannskost', pl:'Klasyki i domowa kuchnia', icon:'🍽️' },
+      { slug:'ofen-auflaeufe', de:'Ofen & Aufläufe', pl:'Piekarnik i zapiekanki', icon:'🔥' },
+      { slug:'schnelle-kueche', de:'Schnelle Küche', pl:'Szybka kuchnia', icon:'⚡' },
+      { slug:'grill-bbq', de:'Grill & BBQ', pl:'Grill i BBQ', icon:'🥩' },
+      { slug:'salate-beilagen', de:'Salate & Beilagen', pl:'Sałatki i dodatki', icon:'🥗' },
+      { slug:'suppen-eintoepfe', de:'Suppen & Eintöpfe', pl:'Zupy i gulasze', icon:'🥣' },
+      { slug:'fisch-meeresfruechte', de:'Fisch & Meeresfrüchte', pl:'Ryby i owoce morza', icon:'🦐' },
+      { slug:'airfryer', de:'Airfryer', pl:'Airfryer', icon:'🍟' },
+      { slug:'grundlagen-saucen', de:'Grundlagen & Saucen', pl:'Podstawy i sosy', icon:'🥄' },
+      { slug:'backen-suesses', de:'Backen & Süßes', pl:'Pieczenie i słodkie', icon:'🍰' },
+      { slug:'cocktails-getraenke', de:'Cocktails & Getränke', pl:'Koktajle i napoje', icon:'🍹' }
+    ];
+    const CATEGORY_LABELS = Object.fromEntries(CATEGORY_CONFIG.map(c => [c.slug, c]));
+    const INITIAL_VISIBLE = 24;
 
-  function placeholderImage(label){
-    const safe = esc(label || 'Rezeptbild');
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff6ee"/><stop offset="1" stop-color="#f0ddcc"/></linearGradient></defs><rect width="900" height="1200" fill="url(#g)"/><rect x="70" y="70" width="760" height="1060" rx="34" fill="#fff9f4" stroke="#ddc1aa"/><circle cx="450" cy="420" r="118" fill="#f3e2d2"/><rect x="220" y="655" width="460" height="28" rx="14" fill="#d2b39a"/><rect x="270" y="710" width="360" height="24" rx="12" fill="#e6d1c0"/><text x="450" y="835" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#7b5a45">Bild folgt</text><text x="450" y="890" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#9b7a63">${safe}</text></svg>`;
-    return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
-  }
-
-  function imageTag(src, alt, className = '', lazy = true){
-    const fallback = deriveImageFallback(src);
-    const placeholder = placeholderImage(alt);
-    const classAttr = className ? ` class="${className}"` : '';
-    const lazyAttr = lazy ? ' loading="lazy"' : '';
-    const fallbackAttr = ` data-fallback="${esc(fallback)}" data-placeholder="${placeholder}" onerror="if(this.dataset.fallback&&this.getAttribute('src')!==this.dataset.fallback){this.setAttribute('src',this.dataset.fallback)}else if(this.dataset.placeholder&&this.getAttribute('src')!==this.dataset.placeholder){this.setAttribute('src',this.dataset.placeholder)}else{this.onerror=null;this.classList.add('img-fallback-active')}"`;
-    return `<img${classAttr} src="${esc(src)}"${fallbackAttr} alt="${esc(alt)}"${lazyAttr}>`;
-  }
-
-  function applyImageWithFallback(el, src, alt){
-    if (!el) return;
-    const fallback = deriveImageFallback(src);
-    const placeholder = placeholderImage(alt);
-    el.onerror = function(){
-      if (fallback && el.getAttribute('src') !== fallback){
-        el.setAttribute('src', fallback);
-      } else if (placeholder && el.getAttribute('src') !== placeholder){
-        el.setAttribute('src', placeholder);
-        el.classList.add('img-fallback-active');
-      } else {
-        el.onerror = null;
-      }
+    const state = {
+      recipes: [],
+      activeLang: 'de',
+      activeCategory: 'all',
+      activeQuick: 'all',
+      sortMode: 'new',
+      activeRecipeId: null,
+      activeTags: [],
+      currentLimit: INITIAL_VISIBLE
     };
-    el.setAttribute('src', src);
-    el.setAttribute('alt', alt || '');
-  }
+
+    const $ = id => document.getElementById(id);
+    const loadingBox = $('loadingBox');
+    const heroSection = $('heroSection');
+    const searchSection = $('searchSection');
+    const topicsSection = $('topicsSection');
+    const popularHead = $('popularHead');
+    const recipeGrid = $('recipeGrid');
+    const detailPreviewSection = $('detailPreviewSection');
+    const emptyBox = $('emptyBox');
+    const modal = $('recipeModal');
+    const modalDialog = $('modalDialog');
+    const modalBody = $('modalBody');
+    const legalModal = $('legalModal');
+    const legalModalTitle = $('legalModalTitle');
+    const legalModalBody = $('legalModalBody');
 
 
-  function normalize(value){
-    return String(value || '')
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/ß/g, 'ss')
-      .replace(/ł/g, 'l')
-      .replace(/[^\w\s/&-äöü]/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
-
-  function textByLang(de, pl){
-    return '<span lang-variant="de">' + esc(de) + '</span><span lang-variant="pl">' + esc(pl || de) + '</span>';
-  }
-
-  function extractNumericRating(ratingText){
-    if (!ratingText) return null;
-    const match = String(ratingText).replace(',', '.').match(/(\d+(?:\.\d+)?)/);
-    return match ? parseFloat(match[1]) : null;
-  }
-
-  function categoryFromRaw(raw){
-    const n = normalize(raw);
-    if (n.includes('wolping') || raw.includes('Wölping') || n.includes('schaumburg')) return 'woelpinghausener-spezialitaeten';
-    if (n.includes('cocktail') || n.includes('getrank') || n.includes('drink') || n.includes('napoj')) return 'cocktails-getraenke';
-    if (n.includes('back') || n.includes('dessert') || n.includes('suss') || raw.includes('Süß') || n.includes('kuchen') || n.includes('sussspeisen')) return 'backen-suesses';
-    if (n.includes('grundlagen') || n.includes('sauce') || n.includes('dressing') || n.includes('sosy')) return 'grundlagen-saucen';
-    if (n.includes('airfryer')) return 'airfryer';
-    if (n.includes('fisch') || n.includes('meeres') || n.includes('ryby') || n.includes('owoce morza') || n.includes('muschel') || n.includes('garnelen')) return 'fisch-meeresfruechte';
-    if (n.includes('suppe') || n.includes('eintopf') || n.includes('zupa') || n.includes('gulasz') || n.includes('topf')) return 'suppen-eintoepfe';
-    if (n.includes('salat') || n.includes('beilage') || n.includes('dodatki') || n.includes('salatki')) return 'salate-beilagen';
-    if (n.includes('grill') || n.includes('bbq') || n.includes('smoker') || n.includes('osteuropa')) return 'grill-bbq';
-    if (n.includes('schnell') || n.includes('quick') || n.includes('fix') || n.includes('pfanne')) return 'schnelle-kueche';
-    if (n.includes('ofen') || n.includes('auflauf') || n.includes('zapiek')) return 'ofen-auflaeufe';
-    if (n.includes('klassiker') || n.includes('hausmann') || n.includes('domowa kuchnia') || n.includes('feiertag')) return 'klassiker-hausmannskost';
-    return 'klassiker-hausmannskost';
-  }
-
-  function firstText(node, selector){
-    const el = node.querySelector(selector);
-    return el ? el.textContent.trim() : '';
-  }
-
-  function listTexts(node, selector){
-    return Array.from(node.querySelectorAll(selector)).map(el => el.textContent.trim()).filter(Boolean);
-  }
-
-  const TAG_LABELS = {"ofen": {"de": "Ofen", "pl": "Piekarnik"}, "pfanne": {"de": "Pfanne", "pl": "Patelnia"}, "grill": {"de": "Grill", "pl": "Grill"}, "airfryer": {"de": "Airfryer", "pl": "Airfryer"}, "kartoffeln": {"de": "Kartoffeln", "pl": "Ziemniaki"}, "pasta": {"de": "Pasta", "pl": "Makaron"}, "reis": {"de": "Reis", "pl": "Ryż"}, "haehnchen": {"de": "Hähnchen", "pl": "Kurczak"}, "hack": {"de": "Hackfleisch", "pl": "Mięso mielone"}, "fisch": {"de": "Fisch & Meeresfrüchte", "pl": "Ryby i owoce morza"}, "gemuese": {"de": "Gemüse", "pl": "Warzywa"}, "kaese": {"de": "Käse", "pl": "Ser"}, "bbq": {"de": "BBQ", "pl": "BBQ"}, "alltag": {"de": "Alltag", "pl": "Na co dzień"}, "beilage": {"de": "Beilage", "pl": "Dodatek"}, "suppe": {"de": "Suppe", "pl": "Zupa"}, "salat": {"de": "Salat", "pl": "Sałatka"}, "sauce": {"de": "Sauce", "pl": "Sos"}, "suess": {"de": "Süßes", "pl": "Słodkie"}, "getraenk": {"de": "Getränk", "pl": "Napój"}};
-  const TAG_MAP = {"1": ["ofen", "suess"], "2": ["ofen"], "3": ["pfanne", "airfryer", "fisch", "sauce"], "4": ["ofen", "pfanne", "kartoffeln", "haehnchen", "salat"], "5": ["grill", "gemuese", "bbq", "sauce", "alltag"], "6": ["grill", "bbq", "beilage"], "7": ["pfanne", "hack", "salat", "sauce"], "8": ["pfanne", "kartoffeln", "kaese", "salat"], "9": ["pfanne", "haehnchen"], "10": ["ofen", "kartoffeln", "gemuese"], "11": ["ofen", "kartoffeln", "hack", "kaese", "sauce"], "12": ["pfanne", "kartoffeln", "gemuese", "sauce", "alltag"], "13": ["pfanne", "haehnchen", "gemuese", "alltag"], "14": ["ofen", "gemuese", "suess"], "15": ["ofen", "suess"], "16": ["ofen", "kartoffeln", "kaese", "beilage"], "17": ["ofen", "sauce"], "18": ["kartoffeln", "gemuese", "suppe"], "19": ["sauce"], "20": ["hack"], "21": ["suess"], "22": ["suppe", "salat"], "23": [], "24": ["hack"], "25": ["kartoffeln", "fisch", "salat"], "26": ["fisch"], "27": ["pfanne", "hack"], "28": ["ofen"], "29": ["pfanne"], "30": ["ofen", "gemuese"], "31": ["pasta", "haehnchen", "gemuese", "suppe"], "32": ["kartoffeln", "suppe"], "33": ["sauce"], "34": ["gemuese", "suppe"], "35": ["ofen", "bbq"], "36": ["ofen", "suess"], "37": ["airfryer", "hack", "sauce"], "38": ["ofen", "sauce"], "39": ["ofen", "pfanne", "gemuese", "sauce", "suess"], "40": ["ofen"], "41": ["gemuese", "suess"], "42": ["pasta", "kaese"], "43": ["pfanne", "kartoffeln", "alltag"], "44": ["pasta", "kaese"], "45": ["airfryer", "reis", "gemuese", "sauce"], "46": ["grill", "kaese", "bbq", "salat", "sauce"], "47": ["getraenk"], "48": ["getraenk"], "49": ["getraenk"], "50": ["getraenk"], "51": ["getraenk"], "52": ["kartoffeln"], "53": ["grill", "bbq"], "54": ["grill", "bbq", "sauce", "suess"], "55": ["grill", "kaese", "bbq", "beilage", "suess"], "56": ["grill", "gemuese", "bbq", "beilage"], "57": ["grill", "kaese", "bbq", "beilage"], "58": ["grill", "gemuese", "bbq", "beilage"], "59": ["grill", "bbq", "beilage", "suess"], "60": ["hack", "kaese", "salat", "beilage"], "61": ["gemuese", "suess"], "62": ["ofen", "kaese", "suess"], "63": ["gemuese", "kaese"], "64": ["grill", "gemuese", "bbq", "suess"], "65": ["grill", "bbq", "beilage", "suess"], "66": ["grill", "kaese", "bbq"], "67": ["grill", "bbq", "sauce", "suess"], "68": ["grill", "gemuese", "bbq", "beilage"], "69": ["grill", "bbq", "beilage", "suess"], "70": ["grill", "bbq", "beilage"], "71": ["grill", "bbq"], "72": ["getraenk"], "73": ["getraenk"], "74": ["getraenk"], "75": ["getraenk"], "76": ["getraenk"], "77": ["grill", "gemuese", "kaese", "bbq"], "78": ["grill", "gemuese", "bbq"], "79": ["grill", "gemuese", "kaese", "bbq"], "80": ["airfryer", "gemuese", "kaese"], "81": ["gemuese", "suppe"], "82": ["ofen", "fisch", "kaese", "sauce"], "83": ["pfanne", "fisch", "alltag"], "84": ["fisch", "gemuese", "sauce", "suess"], "85": ["kartoffeln", "beilage"], "86": ["kartoffeln", "beilage"], "87": ["kartoffeln", "beilage"], "88": ["bbq", "sauce"], "89": ["pasta", "kaese", "alltag"], "90": ["ofen", "gemuese"], "91": ["suppe"], "92": ["ofen"], "93": ["ofen", "gemuese", "kaese"], "94": ["gemuese", "beilage"], "95": ["pfanne", "gemuese", "suess", "alltag"], "96": ["ofen", "kartoffeln", "kaese"], "97": ["ofen", "grill", "bbq", "sauce", "suess"], "98": ["pfanne", "hack", "gemuese", "sauce"], "99": ["ofen", "kartoffeln", "kaese", "beilage"], "100": ["airfryer", "bbq", "suess", "alltag"], "101": ["pfanne", "reis", "gemuese", "kaese", "alltag"], "102": ["kartoffeln", "salat", "beilage"], "103": ["haehnchen", "hack", "sauce", "alltag"], "104": ["salat", "beilage"], "105": ["gemuese", "sauce", "suess"], "106": ["pfanne", "sauce", "alltag"], "107": ["pfanne", "alltag"], "108": ["ofen", "kartoffeln", "hack"], "109": ["pfanne", "hack", "alltag"], "110": ["pfanne", "kartoffeln", "hack"], "111": ["kartoffeln", "suppe", "alltag"], "112": ["suppe", "alltag"], "113": ["pfanne", "kartoffeln", "alltag"], "114": ["suppe", "alltag"], "115": ["ofen", "kartoffeln"], "116": ["ofen", "kartoffeln"], "117": ["kartoffeln", "alltag"], "118": ["pasta", "alltag"], "119": ["salat", "beilage"], "120": ["fisch", "salat", "beilage"], "121": ["salat", "beilage"], "122": ["salat", "beilage"], "123": ["salat", "beilage"], "124": ["salat", "beilage"], "125": ["beilage", "sauce"], "126": ["beilage", "sauce"], "127": ["beilage", "sauce"], "128": ["beilage", "sauce"], "129": ["beilage", "sauce"], "130": ["beilage", "sauce"], "131": ["ofen", "hack", "kaese"], "132": ["ofen", "hack", "kaese"], "133": ["ofen", "hack", "kaese"], "134": ["ofen", "hack", "kaese"], "135": ["ofen", "haehnchen"], "136": ["ofen"], "137": ["suppe"], "138": ["suppe", "alltag"], "139": ["suess"], "140": ["suess"], "141": ["kartoffeln", "alltag"], "142": ["ofen", "kartoffeln"], "143": ["grill", "bbq"], "144": ["grill", "haehnchen", "bbq"], "145": ["grill", "bbq"], "146": ["grill", "bbq"], "147": ["grill", "bbq"], "148": ["ofen", "bbq"], "149": ["pfanne", "bbq"], "150": ["bbq", "suppe"], "151": ["bbq", "suppe"], "152": ["grill", "bbq"], "153": ["suppe"], "154": ["ofen", "kaese"], "155": ["pfanne", "pasta"], "156": ["kartoffeln", "alltag"], "157": ["suess"], "158": ["alltag"], "159": ["alltag"], "160": ["pfanne", "hack", "alltag"], "161": ["suess"], "162": ["suess"], "163": ["pfanne", "pasta", "haehnchen"], "164": ["pfanne", "pasta", "haehnchen"], "165": ["pfanne", "pasta", "hack"], "166": ["pasta", "haehnchen", "sauce"], "167": ["ofen", "hack", "kaese"], "168": ["pfanne", "pasta", "haehnchen", "alltag"], "169": ["pfanne", "pasta", "haehnchen", "alltag"], "170": ["pfanne", "gemuese", "alltag"], "171": ["pfanne", "haehnchen", "gemuese", "alltag"], "172": ["pfanne", "reis", "haehnchen"], "173": ["pfanne", "haehnchen", "alltag"], "174": ["pfanne", "haehnchen", "gemuese", "alltag"], "175": ["pfanne", "pasta", "gemuese", "alltag"], "176": ["pfanne", "fisch", "gemuese"], "177": ["pfanne", "gemuese"], "178": ["pfanne", "haehnchen", "alltag"], "179": ["pfanne", "reis", "alltag"], "180": ["pfanne", "pasta"], "181": ["ofen", "pasta"], "182": ["pasta", "hack", "alltag"], "183": ["pasta", "alltag"], "184": ["pasta", "alltag"], "185": ["pasta", "kaese", "alltag"], "186": ["pasta", "kaese"], "187": ["pasta", "haehnchen", "alltag"], "188": ["pasta", "haehnchen", "gemuese"], "189": ["ofen", "pasta", "hack"], "190": ["pfanne", "hack"], "191": ["ofen", "gemuese"], "192": ["beilage"], "193": ["salat", "beilage"], "194": ["reis", "haehnchen", "gemuese"], "195": ["ofen", "pasta", "hack", "kaese", "bbq"], "196": ["ofen", "pasta", "bbq"], "197": ["ofen", "pasta", "kaese", "bbq"], "198": ["pasta", "haehnchen", "bbq", "alltag"], "199": ["ofen", "kartoffeln", "kaese"], "200": ["ofen", "kaese", "alltag"], "201": ["ofen", "kartoffeln", "kaese"], "202": ["ofen", "kartoffeln", "hack"], "203": ["kartoffeln", "beilage", "alltag"], "204": ["pfanne", "kartoffeln", "haehnchen", "gemuese"], "205": ["ofen", "pasta", "haehnchen", "alltag"], "206": ["ofen", "pasta", "kaese"], "207": ["pasta", "hack", "bbq"], "208": ["ofen", "haehnchen", "gemuese"], "209": ["pfanne", "hack"], "210": ["pfanne", "gemuese", "alltag"], "211": ["pfanne", "hack", "alltag"], "212": ["pfanne", "haehnchen", "alltag"], "213": ["kartoffeln", "hack", "kaese"], "214": ["reis", "haehnchen", "kaese", "alltag"]};
-
-  function tagsForRecipe(id, inferredTags){
-    const direct = TAG_MAP[String(id)];
-    const slugs = direct && direct.length ? direct : (inferredTags || []).map(tag => tag.slug);
-    return slugs.map(slug => ({
-      slug,
-      de: (TAG_LABELS[slug] && TAG_LABELS[slug].de) || slug,
-      pl: (TAG_LABELS[slug] && TAG_LABELS[slug].pl) || slug
-    }));
-  }
-
-  function parseRecipes(xmlText){
-    const xml = new DOMParser().parseFromString(xmlText, 'application/xml');
-    const xmlError = xml.querySelector('parsererror');
-    if (xmlError) throw new Error('XML konnte nicht gelesen werden.');
-    return Array.from(xml.querySelectorAll('recipe')).map(recipeNode => {
-      const id = parseInt(recipeNode.getAttribute('id') || '0', 10);
-      const translationPl = recipeNode.querySelector('translation[lang="pl"]');
-      const rawCategoryDe = firstText(recipeNode, ':scope > category');
-      const rawCategoryPl = translationPl ? firstText(translationPl, ':scope > category') : rawCategoryDe;
-      const slug = categoryFromRaw(rawCategoryDe || rawCategoryPl);
-      const label = CATEGORY_LABELS[slug] || CATEGORY_LABELS['klassiker-hausmannskost'];
-      const imageNode = recipeNode.querySelector(':scope > image');
-      const timingItems = listTexts(recipeNode, ':scope > timing > item, :scope > timing > step');
-      const tipsItems = listTexts(recipeNode, ':scope > tips > item, :scope > tips > tip');
-      const ingredientsDe = listTexts(recipeNode, ':scope > ingredients > item');
-      const ingredientsPl = translationPl ? listTexts(translationPl, ':scope > ingredients > item') : [];
-      const preparationDe = listTexts(recipeNode, ':scope > preparation > step');
-      const preparationPl = translationPl ? listTexts(translationPl, ':scope > preparation > step') : [];
-      const timingPl = translationPl ? listTexts(translationPl, ':scope > timing > item, :scope > timing > step') : [];
-      const tipsPl = translationPl ? listTexts(translationPl, ':scope > tips > item, :scope > tips > tip') : [];
-      const ratingDe = firstText(recipeNode, ':scope > rating');
-      const ratingPl = translationPl ? firstText(translationPl, ':scope > rating') : ratingDe;
-      const titleDe = firstText(recipeNode, ':scope > name');
-      const titlePl = translationPl ? firstText(translationPl, ':scope > name') : titleDe;
-      const introDe = firstText(recipeNode, ':scope > intro[lang="de"]') || firstText(recipeNode, ':scope > intro');
-      const introPl = firstText(recipeNode, ':scope > intro[lang="pl"]') || introDe;
-      const personsDe = firstText(recipeNode, ':scope > persons');
-      const personsPl = translationPl ? firstText(translationPl, ':scope > persons') : personsDe;
-
-      function inferTags(){
-        const source = normalize([
-          titleDe, titlePl, rawCategoryDe, rawCategoryPl,
-          ...ingredientsDe, ...ingredientsPl,
-          ...preparationDe, ...preparationPl
-        ].join(' '));
-        const tags = [];
-        const add = (slug, de, pl) => { if (!tags.some(t => t.slug === slug)) tags.push({slug, de, pl}); };
-        if (/auflauf|lasagne|gratin|piekarnik|zapiek/.test(source)) add('ofen', 'Ofen', 'Piekarnik');
-        if (/pfanne|wok|pateln/.test(source)) add('pfanne', 'Pfanne', 'Patelnia');
-        if (/kartoff|ziemniak|pommes|fries/.test(source)) add('kartoffeln', 'Kartoffeln', 'Ziemniaki');
-        if (/pasta|nudel|makaron|rigatoni|penne|spaghetti|lasagne/.test(source)) add('pasta', 'Pasta', 'Makaron');
-        if (/hahn|huhn|kurcz/.test(source)) add('haehnchen', 'Hähnchen', 'Kurczak');
-        if (/hack|mielon/.test(source)) add('hack', 'Hackfleisch', 'Mięso mielone');
-        if (/bbq|grill/.test(source)) add('bbq', 'BBQ', 'BBQ');
-        if (/schnell|quick|30 minut|30 minuten|alltag|wok|wrap|bowl/.test(source)) add('alltag', 'Alltag', 'Na co dzień');
-        if (/salat|salate|salatki|beilage|dodatki/.test(source)) add('beilage', 'Beilage', 'Dodatek');
-        if (/suppe|eintopf|zupa|gulasz/.test(source)) add('suppe', 'Suppe', 'Zupa');
-        if (/vegetar|tofu|gemuse|warzyw/.test(source)) add('gemuese', 'Gemüse', 'Warzywa');
-        if (/kase|käse|cheddar|gouda|mozzarella|ser/.test(source)) add('kaese', 'Käse', 'Ser');
-        return tags.slice(0, 6);
+    const FALLBACK_IMAGE = "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%271200%27%20height%3D%27800%27%3E%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20fill%3D%27%23f3eee7%27/%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2750%25%27%20dominant-baseline%3D%27middle%27%20text-anchor%3D%27middle%27%20font-family%3D%27Arial%27%20font-size%3D%2732%27%20fill%3D%27%238a7a6a%27%3ERezeptbild%3C/text%3E%3C/svg%3E";
+    function onImgError(img){
+      if (!img.dataset.fallbackApplied){
+        img.dataset.fallbackApplied = '1';
+        img.src = FALLBACK_IMAGE;
       }
+    }
 
-      return {
-        id,
-        titleDe,
-        titlePl,
-        introDe,
-        introPl,
-        personsDe,
-        personsPl,
-        categorySlug: slug,
-        categoryDe: label.de,
-        categoryPl: label.pl,
-        imageSrc: imageNode ? imageNode.getAttribute('src') : '',
-        imageAlt: imageNode ? imageNode.getAttribute('alt') : titleDe,
-        ingredientsDe,
-        ingredientsPl: ingredientsPl.length ? ingredientsPl : ingredientsDe,
-        preparationDe,
-        preparationPl: preparationPl.length ? preparationPl : preparationDe,
-        timingDe: timingItems,
-        timingPl: timingPl.length ? timingPl : timingItems,
-        tipsDe: tipsItems,
-        tipsPl: tipsPl.length ? tipsPl : tipsItems,
-        ratingDe,
-        ratingPl,
-        ratingValue: extractNumericRating(ratingDe),
-        tags: tagsForRecipe(id, inferTags()),
-        isPersonal: /^sven/i.test(titleDe),
-        isStoredFavorite: /fest gespeichert|sehr gut angekommen|fester favori|sonntagsklassiker|gespeichert/i.test((ratingDe || '') + ' ' + tipsItems.join(' '))
-      };
-    }).sort((a, b) => b.id - a.id);
-  }
+    function normalize(str=''){
+      return (str || '').toLowerCase()
+        .replaceAll('ä','ae').replaceAll('ö','oe').replaceAll('ü','ue').replaceAll('ß','ss')
+        .replaceAll('ą','a').replaceAll('ć','c').replaceAll('ę','e').replaceAll('ł','l')
+        .replaceAll('ń','n').replaceAll('ó','o').replaceAll('ś','s').replaceAll('ź','z').replaceAll('ż','z')
+        .replace(/\s+/g,' ').trim();
+    }
+    function textByLang(de, pl){ return state.activeLang === 'pl' ? (pl || de || '') : (de || pl || ''); }
+    function esc(v=''){ return String(v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s])); }
+    function extractNumericRating(raw){
+      const m = String(raw || '').replace(',', '.').match(/(\d+(?:\.\d+)?)/);
+      return m ? Number(m[1]) : null;
+    }
+    function categoryFromRaw(raw){
+      const n = normalize(raw);
+      if (n.includes('wolping') || raw.includes('Wölping') || n.includes('schaumburg')) return 'woelpinghausener-spezialitaeten';
+      if (n.includes('cocktail') || n.includes('getrank') || n.includes('drink') || n.includes('napoj')) return 'cocktails-getraenke';
+      if (n.includes('back') || n.includes('dessert') || n.includes('suss') || raw.includes('Süß') || n.includes('kuchen') || n.includes('sussspeisen')) return 'backen-suesses';
+      if (n.includes('grundlagen') || n.includes('sauce') || n.includes('dressing') || n.includes('sosy')) return 'grundlagen-saucen';
+      if (n.includes('airfryer')) return 'airfryer';
+      if (n.includes('fisch') || n.includes('meeres') || n.includes('ryby') || n.includes('owoce morza') || n.includes('muschel') || n.includes('garnelen')) return 'fisch-meeresfruechte';
+      if (n.includes('suppe') || n.includes('eintopf') || n.includes('zupa') || n.includes('gulasz') || n.includes('topf')) return 'suppen-eintoepfe';
+      if (n.includes('salat') || n.includes('beilage') || n.includes('dodatki') || n.includes('salatki')) return 'salate-beilagen';
+      if (n.includes('grill') || n.includes('bbq') || n.includes('smoker') || n.includes('osteuropa')) return 'grill-bbq';
+      if (n.includes('schnell') || n.includes('quick') || n.includes('fix') || n.includes('pfanne') || n.includes('wok')) return 'schnelle-kueche';
+      if (n.includes('ofen') || n.includes('auflauf') || n.includes('zapiek')) return 'ofen-auflaeufe';
+      if (n.includes('klassiker') || n.includes('hausmann') || n.includes('domowa kuchnia') || n.includes('feiertag')) return 'klassiker-hausmannskost';
+      return 'klassiker-hausmannskost';
+    }
+    function inferTags(sourceText){
+      const source = normalize(sourceText);
+      const tags = [];
+      const add = (slug, de, pl) => { if (!tags.some(t => t.slug === slug)) tags.push({slug, de, pl}); };
+      if (/auflauf|lasagne|gratin|piekarnik|zapiek/.test(source)) add('ofen', 'Ofen', 'Piekarnik');
+      if (/pfanne|wok|pateln/.test(source)) add('pfanne', 'Pfanne', 'Patelnia');
+      if (/kartoff|ziemniak|pommes|fries/.test(source)) add('kartoffeln', 'Kartoffeln', 'Ziemniaki');
+      if (/pasta|nudel|makaron|rigatoni|penne|spaghetti|lasagne/.test(source)) add('pasta', 'Pasta', 'Makaron');
+      if (/hahn|huhn|kurcz/.test(source)) add('haehnchen', 'Hähnchen', 'Kurczak');
+      if (/hack|mielon/.test(source)) add('hack', 'Hackfleisch', 'Mięso mielone');
+      if (/bbq|grill/.test(source)) add('bbq', 'BBQ', 'BBQ');
+      if (/schnell|quick|30 minut|30 minuten|alltag|wok|wrap|bowl/.test(source)) add('alltag', 'Schnell', 'Szybkie');
+      if (/salat|salate|salatki|beilage|dodatki/.test(source)) add('beilage', 'Beilage', 'Dodatek');
+      if (/suppe|eintopf|zupa|gulasz/.test(source)) add('suppe', 'Suppe', 'Zupa');
+      if (/vegetar|tofu|gemuse|warzyw/.test(source)) add('gemuese', 'Vegetarisch', 'Wegetariańskie');
+      if (/low carb|kohlenhydratarm/.test(source)) add('lowcarb', 'Low Carb', 'Low Carb');
+      return tags.slice(0, 6);
+    }
+    function listDirectItems(parent, sectionTag, itemTagList){
+      const section = [...parent.children].find(n => n.tagName === sectionTag);
+      if (!section) return [];
+      const tags = itemTagList.split(',').map(x => x.trim());
+      return [...section.children].filter(n => tags.includes(n.tagName)).map(n => (n.textContent || '').trim()).filter(Boolean);
+    }
+    function firstDirectText(parent, tag, predicate=null){
+      const node = [...parent.children].find(n => n.tagName === tag && (!predicate || predicate(n)));
+      return node ? (node.textContent || '').trim() : '';
+    }
+    function parseRecipes(xmlText){
+      const xml = new DOMParser().parseFromString(xmlText, 'application/xml');
+      const xmlError = xml.querySelector('parsererror');
+      if (xmlError) throw new Error('XML konnte nicht gelesen werden.');
+      return Array.from(xml.querySelectorAll('recipe')).map(recipeNode => {
+        const translationPl = [...recipeNode.children].find(n => n.tagName === 'translation' && n.getAttribute('lang') === 'pl');
+        const rawCategoryDe = firstDirectText(recipeNode, 'category');
+        const rawCategoryPl = translationPl ? firstDirectText(translationPl, 'category') : rawCategoryDe;
+        const categorySlug = categoryFromRaw(rawCategoryDe || rawCategoryPl);
+        const imageSrc = [...recipeNode.children].find(n => n.tagName === 'image')?.getAttribute('src') || '';
+        const titleDe = firstDirectText(recipeNode, 'name');
+        const titlePl = translationPl ? firstDirectText(translationPl, 'name') : titleDe;
+        const introDe = [...recipeNode.children].find(n => n.tagName === 'intro' && n.getAttribute('lang') === 'de')?.textContent?.trim() || firstDirectText(recipeNode,'intro');
+        const introPl = translationPl ? (([...translationPl.children].find(n => n.tagName === 'intro' && n.getAttribute('lang') === 'pl')?.textContent?.trim()) || firstDirectText(translationPl,'intro') || introDe) : introDe;
+        const ingredientsDe = listDirectItems(recipeNode, 'ingredients', 'item');
+        const ingredientsPl = translationPl ? listDirectItems(translationPl, 'ingredients', 'item') : [];
+        const preparationDe = listDirectItems(recipeNode, 'preparation', 'step');
+        const preparationPl = translationPl ? listDirectItems(translationPl, 'preparation', 'step') : [];
+        const timingDe = listDirectItems(recipeNode, 'timing', 'item,step');
+        const timingPl = translationPl ? listDirectItems(translationPl, 'timing', 'item,step') : [];
+        const tipsDe = listDirectItems(recipeNode, 'tips', 'item,tip');
+        const tipsPl = translationPl ? listDirectItems(translationPl, 'tips', 'item,tip') : [];
+        const ratingRaw = firstDirectText(recipeNode, 'rating');
+        const ratingValue = extractNumericRating(ratingRaw);
+        const personsDe = firstDirectText(recipeNode, 'persons');
+        const personsPl = translationPl ? firstDirectText(translationPl, 'persons') : personsDe;
+        const tags = inferTags([titleDe,titlePl,rawCategoryDe,rawCategoryPl,...ingredientsDe,...ingredientsPl,...preparationDe,...preparationPl].join(' '));
+        return {
+          id: parseInt(recipeNode.getAttribute('id') || '0', 10),
+          titleDe, titlePl, introDe, introPl,
+          categoryDe: rawCategoryDe, categoryPl: rawCategoryPl, categorySlug,
+          imageSrc, ingredientsDe, ingredientsPl, preparationDe, preparationPl, timingDe, timingPl, tipsDe, tipsPl,
+          ratingRaw, ratingValue, personsDe, personsPl, tags,
+          isStoredFavorite: false,
+          isPersonal: false
+        };
+      }).filter(r => r.titleDe && r.imageSrc);
+    }
+    function recipeTitle(r){ return textByLang(r.titleDe, r.titlePl); }
+    function recipeIntro(r){ return textByLang(r.introDe, r.introPl) || textByLang(r.preparationDe[0], r.preparationPl[0]) || ''; }
+    function recipeCategory(r){
+      const label = CATEGORY_LABELS[r.categorySlug];
+      if (label) return textByLang(label.de, label.pl);
+      return textByLang(r.categoryDe, r.categoryPl);
+    }
+    function recipePersons(r){ return textByLang(r.personsDe, r.personsPl) || textByLang('Siehe Rezept','Zobacz przepis'); }
+    function currentRecipeUrl(recipeId){
+      const url = new URL(window.location.href);
+      url.hash = '#rezept-' + recipeId;
+      return url.toString();
+    }
+    async function copyTextRobust(textToCopy){
+      try{
+        if (navigator.clipboard && window.isSecureContext){
+          await navigator.clipboard.writeText(textToCopy);
+          return true;
+        }
+      }catch(_){}
+      try{
+        const ta = document.createElement('textarea');
+        ta.value = textToCopy;
+        ta.setAttribute('readonly','');
+        ta.style.position='absolute';
+        ta.style.left='-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand('copy');
+        ta.remove();
+        return ok;
+      }catch(_){}
+      return false;
+    }
 
-  function recipeTitle(recipe){
-    return state.activeLang === 'pl' ? recipe.titlePl : recipe.titleDe;
-  }
-
-  function recipeCategory(recipe){
-    return state.activeLang === 'pl' ? recipe.categoryPl : recipe.categoryDe;
-  }
-
-  function createMiniCard(recipe){
-    return `
-      <article class="mini-card" data-open-recipe="${recipe.id}">
-        ${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe)}
-        <div class="mini-card-body">
-          <div class="eyebrow">${textByLang(recipe.categoryDe, recipe.categoryPl)}</div>
-          <h3>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</h3>
-          <p>${textByLang(recipe.introDe, recipe.introPl)}</p>
-          <button class="ghost-btn" type="button" data-open-recipe="${recipe.id}">${textByLang('Rezept öffnen', 'Otwórz przepis')}</button>
-        </div>
-      </article>
-    `;
-  }
-
-  function createRecipeCard(recipe){
-    return `
-      <article class="recipe-card" id="rezept-${recipe.id}" data-id="${recipe.id}" data-category="${recipe.categorySlug}" data-title-de="${esc((recipe.id + '. ' + recipe.titleDe).toLowerCase())}" data-title-pl="${esc((recipe.id + '. ' + recipe.titlePl).toLowerCase())}">
-        <button class="recipe-card-link" type="button" data-open-recipe="${recipe.id}">
-          <div class="recipe-card-media">
-            ${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe)}
-            <div class="recipe-card-badges">
-              <span class="pill">${textByLang(recipe.categoryDe, recipe.categoryPl)}</span>
-              <span class="pill soft">★ ${esc(recipe.ratingDe || '–')}</span>
-            </div>
-          </div>
-          <div class="recipe-card-body">
-            <div class="recipe-card-topline">
-              <span class="eyebrow">${textByLang(recipe.personsDe, recipe.personsPl)}</span>
-              <span class="eyebrow">${textByLang(recipe.timingDe[0] || 'Ohne Zeitangabe', recipe.timingPl[0] || recipe.timingDe[0] || 'Bez czasu')}</span>
-            </div>
-            <h3>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</h3>
-            <p class="recipe-card-intro">${textByLang(recipe.introDe, recipe.introPl)}</p>
-            <div class="recipe-card-highlight">
-              <span class="micro">${esc((recipe.ingredientsDe || []).length)} ${textByLang('Zutaten', 'składniki')}</span>
-              <span class="micro">${esc((recipe.preparationDe || []).length)} ${textByLang('Schritte', 'kroki')}</span>
-            </div>
-            <div class="recipe-card-tags">${(recipe.tags || []).slice(0,3).map(tag => `<span class="card-tag">${textByLang(tag.de, tag.pl)}</span>`).join('')}</div>
-            <div class="recipe-card-footer">
-              <span class="recipe-card-readmore">${textByLang('Rezept öffnen', 'Otwórz przepis')}</span>
-              <span class="more">→</span>
-            </div>
-          </div>
-        </button>
-      </article>
-    `;
-  }
-
-  function getSortedVisibleCategories(counts){
-    return CATEGORY_CONFIG
-      .filter(cat => counts[cat.slug])
-      .sort((a, b) => {
-        const labelA = state.activeLang === 'pl' ? a.pl : a.de;
-        const labelB = state.activeLang === 'pl' ? b.pl : b.de;
-        return labelA.localeCompare(labelB, state.activeLang === 'pl' ? 'pl' : 'de', { sensitivity: 'base' });
+    function categoryCounts(){
+      const counts = new Map();
+      state.recipes.forEach(r => {
+        const cfg = CATEGORY_LABELS[r.categorySlug];
+        if (!cfg) return;
+        if (!counts.has(r.categorySlug)) counts.set(r.categorySlug, { ...cfg, count:0, image:r.imageSrc });
+        counts.get(r.categorySlug).count += 1;
+        if (!counts.get(r.categorySlug).image && r.imageSrc) counts.get(r.categorySlug).image = r.imageSrc;
       });
-  }
+      return [...counts.values()].sort((a,b) => b.count - a.count || a.de.localeCompare(b.de, 'de'));
+    }
 
-  function buildCategoryChips(){
-    const counts = state.recipes.reduce((acc, recipe) => {
-      acc[recipe.categorySlug] = (acc[recipe.categorySlug] || 0) + 1;
-      return acc;
-    }, {});
-    const allCount = state.recipes.length;
-    const sortedCategories = getSortedVisibleCategories(counts);
-    const items = [`<button class="category-chip ${state.activeCategory === 'all' ? 'active' : ''}" data-category="all" type="button">${textByLang('Alle (' + allCount + ')', 'Wszystkie (' + allCount + ')')}</button>`];
-    sortedCategories.forEach(cat => {
-      const count = counts[cat.slug] || 0;
-      items.push(`<button class="category-chip ${state.activeCategory === cat.slug ? 'active' : ''}" data-category="${cat.slug}" type="button">${cat.icon} ${textByLang(cat.de + ' (' + count + ')', cat.pl + ' (' + count + ')')}</button>`);
-    });
-    categoryChips.innerHTML = items.join('');
-  }
+    function recipeMatchesQuickFilter(recipe){
+      if (state.activeQuick === 'all') return true;
+      if (state.activeQuick === 'new') return recipe.id >= 195;
+      if (state.activeQuick === 'favorites') return recipe.isPersonal || recipe.isStoredFavorite || (recipe.ratingValue || 0) >= 9;
+      if (state.activeQuick === 'oven') return ['ofen-auflaeufe'].includes(recipe.categorySlug) || /auflauf|lasagne|gratin|ofen|zapiek/i.test((recipe.titleDe || '') + ' ' + (recipe.titlePl || ''));
+      if (state.activeQuick === 'quick') return /schnell|pfanne|bowl|wok|wrap|quick|szybk/i.test((recipe.titleDe || '') + ' ' + (recipe.titlePl || '') + ' ' + (recipe.categoryDe || '') + ' ' + (recipe.categoryPl || ''));
+      return true;
+    }
+    function recipeHasActiveTags(recipe){
+      if (!state.activeTags.length) return true;
+      const own = (recipe.tags || []).map(tag => tag.slug);
+      return state.activeTags.every(tag => own.includes(tag));
+    }
+    function sortedRecipes(items){
+      const arr = [...items];
+      if (state.sortMode === 'rating') return arr.sort((a,b) => ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id));
+      if (state.sortMode === 'name') return arr.sort((a,b) => recipeTitle(a).localeCompare(recipeTitle(b), state.activeLang));
+      return arr.sort((a,b) => b.id - a.id);
+    }
 
-  function buildCategoryCards(){
-    const counts = state.recipes.reduce((acc, recipe) => {
-      acc[recipe.categorySlug] = (acc[recipe.categorySlug] || 0) + 1;
-      return acc;
-    }, {});
-    const sortedCategories = getSortedVisibleCategories(counts);
-    categoryJumpGrid.innerHTML = sortedCategories
-      .map(cat => `
-        <button class="category-mag-card category-jump-card" type="button" data-category="${cat.slug}">
-          <div class="category-mag-icon">${cat.icon}</div>
-          <strong>${textByLang(cat.de, cat.pl)}</strong>
-          <span>${textByLang('Rezepte in dieser Kategorie direkt anzeigen.', 'Pokaż od razu przepisy z tej kategorii.')}</span>
-          <small>${textByLang(counts[cat.slug] + ' Rezepte', counts[cat.slug] + ' przepisów')}</small>
+    function currentQuery(){
+      return normalize($('searchInput').value || '');
+    }
+
+    function updateSuggest(){
+      const q = currentQuery();
+      const box = $('searchSuggest');
+      if (!q){
+        box.classList.add('hidden');
+        box.innerHTML = '';
+        return;
+      }
+      const hits = filteredRecipes().slice(0, 8);
+      if (!hits.length){
+        box.classList.add('hidden');
+        box.innerHTML = '';
+        return;
+      }
+      box.innerHTML = hits.map(recipe => `
+        <button class="search-suggest-item" type="button" data-suggest-id="${recipe.id}">
+          <strong>${esc(recipe.id + '. ' + recipeTitle(recipe))}</strong>
+          <span>${esc(recipeCategory(recipe))}</span>
         </button>
       `).join('');
-  }
-
-  function buildTOC(filtered){
-    tocGrid.innerHTML = filtered.map(recipe => `
-      <a class="toc-link" data-category="${recipe.categorySlug}" href="#rezept-${recipe.id}" data-open-recipe="${recipe.id}">
-        ${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}
-      </a>
-    `).join('');
-  }
-
-  function pickTrending(){
-    return [...state.recipes].sort((a, b) => {
-      const ar = a.ratingValue ?? -1;
-      const br = b.ratingValue ?? -1;
-      if (br !== ar) return br - ar;
-      return b.id - a.id;
-    }).slice(0, 4);
-  }
-
-  function pickFavorites(){
-    const personal = state.recipes.filter(r => r.isPersonal || r.isStoredFavorite);
-    const filler = state.recipes.filter(r => !personal.some(p => p.id === r.id))
-      .sort((a, b) => ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id));
-    return [...personal, ...filler].filter((recipe, index, arr) => arr.findIndex(x => x.id === recipe.id) === index).slice(0, 4);
-  }
-
-  function pickNewest(){
-    return state.recipes.slice(0, 4);
-  }
-
-  function updateHero(){
-    const feature = state.recipes[0];
-    if (!feature) return;
-    applyImageWithFallback(featureImage, feature.imageSrc, feature.imageAlt || feature.titleDe);
-    featureCategory.innerHTML = textByLang(feature.categoryDe, feature.categoryPl);
-    featurePersons.innerHTML = textByLang(feature.personsDe, feature.personsPl);
-    featureTitle.innerHTML = textByLang(feature.id + '. ' + feature.titleDe, feature.id + '. ' + feature.titlePl);
-    featureIntro.innerHTML = textByLang(feature.introDe, feature.introPl);
-    featureOpenBtn.setAttribute('data-open-recipe', String(feature.id));
-  }
-
-
-  function recipeHasActiveTags(recipe){
-    if (!state.activeTags.length) return true;
-    const own = (recipe.tags || []).map(tag => tag.slug);
-    return state.activeTags.every(tag => own.includes(tag));
-  }
-
-  function visibleTagPool(){
-    const pool = new Map();
-    state.recipes.forEach(recipe => {
-      if (state.activeCategory !== 'all' && recipe.categorySlug !== state.activeCategory) return;
-      if (!recipeMatchesQuickFilter(recipe)) return;
-      (recipe.tags || []).forEach(tag => {
-        if (!pool.has(tag.slug)) pool.set(tag.slug, { ...tag, count: 0 });
-        pool.get(tag.slug).count += 1;
-      });
-    });
-    return [...pool.values()].sort((a,b) => b.count - a.count || a.de.localeCompare(b.de, 'de', {sensitivity:'base'})).slice(0, 14);
-  }
-
-  function buildTagFilters(){
-    const tags = visibleTagPool();
-    if (!tags.length){
-      tagFilterRow.innerHTML = '';
-      return;
+      box.classList.remove('hidden');
     }
-    tagFilterRow.innerHTML = tags.map(tag => `
-      <button class="tag-chip ${state.activeTags.includes(tag.slug) ? 'active' : ''}" type="button" data-tag="${tag.slug}">
-        ${textByLang(tag.de, tag.pl)}
-        <span class="tag-chip-count">${tag.count}</span>
-      </button>
-    `).join('');
-  }
 
-  function currentQuery(){
-    return normalize(searchInput.value);
-  }
-
-  function recipeMatchesQuickFilter(recipe){
-    if (state.quickFilter === 'all') return true;
-    if (state.quickFilter === 'new') return recipe.id >= 195;
-    if (state.quickFilter === 'favorites') return recipe.isPersonal || recipe.isStoredFavorite || (recipe.ratingValue || 0) >= 9;
-    if (state.quickFilter === 'oven') return ['ofen-auflaeufe'].includes(recipe.categorySlug) || /auflauf|lasagne|gratin|ofen|zapiek/i.test((recipe.titleDe || '') + ' ' + (recipe.titlePl || ''));
-    if (state.quickFilter === 'quick') return /schnell|pfanne|bowl|wok|wrap|quick|szybk/i.test((recipe.titleDe || '') + ' ' + (recipe.titlePl || '') + ' ' + (recipe.categoryDe || '') + ' ' + (recipe.categoryPl || ''));
-    return true;
-  }
-
-  function sortedRecipes(recipes){
-    const items = [...recipes];
-    if (state.sortMode === 'rating') {
-      return items.sort((a,b) => ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id));
+    function filteredRecipes(){
+      const query = normalize($('searchInput').value || '');
+      return sortedRecipes(state.recipes.filter(recipe => {
+        const categoryOk = state.activeCategory === 'all' || recipe.categorySlug === state.activeCategory;
+        const quickOk = recipeMatchesQuickFilter(recipe);
+        const haystack = normalize([
+          recipe.id + '. ' + recipe.titleDe,
+          recipe.id + '. ' + recipe.titlePl,
+          recipe.categoryDe,
+          recipe.categoryPl,
+          ...(recipe.ingredientsDe || []),
+          ...(recipe.ingredientsPl || []),
+          ...(recipe.preparationDe || []),
+          ...(recipe.preparationPl || [])
+        ].join(' '));
+        const titleOk = !query || haystack.includes(query);
+        const tagsOk = recipeHasActiveTags(recipe);
+        return categoryOk && quickOk && titleOk && tagsOk;
+      }));
     }
-    if (state.sortMode === 'az') {
-      return items.sort((a,b) => recipeTitle(a).localeCompare(recipeTitle(b), state.activeLang === 'pl' ? 'pl' : 'de', { sensitivity:'base' }));
-    }
-    return items.sort((a,b) => b.id - a.id);
-  }
-
-  function getRelatedRecipes(recipe){
-    const recipeTags = new Set((recipe.tags || []).map(tag => tag.slug));
-    const ingredientTerms = normalize([...(recipe.ingredientsDe || []), ...(recipe.ingredientsPl || [])].join(' ')).split(' ').filter(Boolean);
-    return state.recipes
-      .filter(r => r.id !== recipe.id)
-      .map(r => {
-        const otherTags = new Set((r.tags || []).map(tag => tag.slug));
-        let score = 0;
-        if (r.categorySlug === recipe.categorySlug) score += 5;
-        recipeTags.forEach(tag => { if (otherTags.has(tag)) score += 3; });
-        const otherText = normalize([...(r.ingredientsDe || []), ...(r.ingredientsPl || []), r.titleDe || '', r.titlePl || ''].join(' '));
-        ingredientTerms.slice(0, 10).forEach(term => {
-          if (term.length > 4 && otherText.includes(term)) score += 0.4;
+    function visibleTagPool(){
+      const pool = new Map();
+      state.recipes.forEach(recipe => {
+        if (state.activeCategory !== 'all' && recipe.categorySlug !== state.activeCategory) return;
+        if (!recipeMatchesQuickFilter(recipe)) return;
+        (recipe.tags || []).forEach(tag => {
+          if (!pool.has(tag.slug)) pool.set(tag.slug, { ...tag, count: 0 });
+          pool.get(tag.slug).count += 1;
         });
-        score += (r.ratingValue ?? 0) / 20;
-        return { recipe: r, score };
-      })
-      .sort((a,b) => b.score - a.score || ((b.recipe.ratingValue ?? -1) - (a.recipe.ratingValue ?? -1)) || (b.recipe.id - a.recipe.id))
-      .map(item => item.recipe)
-      .slice(0,3);
-  }
-
-  function renderRelatedCards(recipes){
-    return recipes.map(recipe => `
-      <button class="related-card" type="button" data-open-recipe="${recipe.id}">
-        ${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe)}
-        <div class="related-card-body">
-          <div class="eyebrow">${textByLang(recipe.categoryDe, recipe.categoryPl)}</div>
-          <strong>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</strong>
-          <span>${textByLang(recipe.timingDe[0] || 'Ohne Zeitangabe', recipe.timingPl[0] || recipe.timingDe[0] || 'Bez czasu')}</span>
-        </div>
-      </button>
-    `).join('');
-  }
-
-  function updateHeroStats(){
-    if (heroRecipeCount) heroRecipeCount.textContent = String(state.recipes.length);
-    if (heroCategoryCount) {
-      const count = new Set(state.recipes.map(r => r.categorySlug)).size;
-      heroCategoryCount.textContent = String(count);
+      });
+      return [...pool.values()].sort((a,b) => b.count - a.count || a.de.localeCompare(b.de, 'de')).slice(0,5);
     }
-  }
 
-
-  function updateSortLabels(){
-    if (!sortMode) return;
-    const labels = state.activeLang === 'pl'
-      ? { new: 'Najnowsze najpierw', rating: 'Najlepsza ocena', az: 'A–Z' }
-      : { new: 'Neueste zuerst', rating: 'Beste Bewertung', az: 'A–Z' };
-    Array.from(sortMode.options).forEach(opt => {
-      opt.textContent = labels[opt.value] || opt.textContent;
-    });
-  }
-
-  function filteredRecipes(){
-    const query = currentQuery();
-    const base = state.recipes.filter(recipe => {
-      const categoryOk = state.activeCategory === 'all' || recipe.categorySlug === state.activeCategory;
-      const quickOk = recipeMatchesQuickFilter(recipe);
-      const haystack = [
-        recipe.id + '. ' + recipe.titleDe,
-        recipe.id + '. ' + recipe.titlePl,
-        recipe.categoryDe,
-        recipe.categoryPl,
-        ...(recipe.ingredientsDe || []),
-        ...(recipe.ingredientsPl || [])
-      ].join(' ');
-      const titleOk = !query || normalize(haystack).includes(query);
-      const tagsOk = recipeHasActiveTags(recipe);
-      return categoryOk && quickOk && titleOk && tagsOk;
-    });
-    return sortedRecipes(base);
-  }
-
-  function updateCategoryLabel(){
-    if (state.activeCategory === 'all'){
-      activeCategoryLabelText.style.display = 'none';
-      activeCategoryLabelText.innerHTML = '';
-      return;
+    function updateStaticI18n(){
+      document.querySelectorAll('[data-i18n-de]').forEach(node => {
+        node.textContent = state.activeLang === 'pl' ? node.dataset.i18nPl : node.dataset.i18nDe;
+      });
+      $('popularTitle').textContent = textByLang('Beliebte Rezepte','Popularne przepisy');
+      $('popularCopy').textContent = textByLang('Klarer, ruhiger und bildstärker im neuen Design.','Czytelniej i spokojniej w nowym wyglądzie.');
+      $('previewIngredientsTitle').textContent = textByLang('Zutaten','Składniki');
+      $('previewStepsTitle').textContent = textByLang('Zubereitung','Przygotowanie');
+      $('emptyTitle').textContent = textByLang('Keine passenden Rezepte gefunden.','Nie znaleziono pasujących przepisów.');
+      $('emptyText').textContent = textByLang('Nimm einen Filter zurück oder probiere einen anderen Suchbegriff.','Usuń filtr lub spróbuj innego hasła.');
+      $('closeModalBtn').textContent = textByLang('Schließen','Zamknij');
+      const brandSub = document.querySelector('.brand-sub');
+      if (brandSub) brandSub.textContent = textByLang('Modernes Layout · stabile Funktionsbasis','Nowy układ · stabilna baza funkcji');
+      const heroKeepTitle = document.querySelectorAll('.hero-card h3');
+      if (heroKeepTitle[0]) heroKeepTitle[0].textContent = textByLang('Was sich ändert','Co się zmienia');
+      if (heroKeepTitle[1]) heroKeepTitle[1].textContent = textByLang('Schnell gefunden','Szybko znajdziesz');
+      const footerTitle = document.querySelector('.footer-inner > div');
+      if (footerTitle) footerTitle.textContent = 'Svens Kochbuch';
+      const imp = $('openImpressumBtn');
+      const dat = $('openDatenschutzBtn');
+      if (imp) imp.textContent = textByLang('Impressum','Stopka prawna');
+      if (dat) dat.textContent = textByLang('Datenschutz','Prywatność');
+      const sort = $('sortSelect');
+      if (sort) {
+        sort.options[0].text = textByLang('Neueste','Najnowsze');
+        sort.options[1].text = textByLang('Name A–Z','Nazwa A–Z');
+        sort.options[2].text = textByLang('Bewertung','Ocena');
+      }
+      const reset = $('resetBtn');
+      if (reset) reset.textContent = textByLang('Zurücksetzen','Resetuj');
+      const filterBtn = $('focusFilterBtn');
+      if (filterBtn) filterBtn.textContent = textByLang('Filter & Sortieren','Filtry i sortowanie');
+      const searchInput = $('searchInput');
+      if (searchInput) searchInput.placeholder = textByLang('Rezept suchen…','Szukaj przepisu…');
+      const heroBtns = document.querySelectorAll('.hero-actions button');
+      if (heroBtns[0]) heroBtns[0].textContent = textByLang('Rezepte entdecken','Odkrywaj przepisy');
+      if (heroBtns[1]) heroBtns[1].textContent = textByLang('Sammlungen browsen','Przeglądaj kolekcje');
+      const heroLists = document.querySelectorAll('.hero-card ul');
+      if (heroLists[0]) heroLists[0].innerHTML = [
+        textByLang('Neues Design','Nowy design'),
+        textByLang('Neue Struktur','Nowa struktura'),
+        textByLang('Mehr Entdecken','Więcej odkrywania')
+      ].map(x => `<li>${x}</li>`).join('');
+      if (heroLists[1]) heroLists[1].innerHTML = [
+        textByLang('Neu entdecken','Odkrywaj nowości'),
+        textByLang('Beliebte Rezepte','Popularne przepisy'),
+        textByLang('Schnelle Küche','Szybka kuchnia')
+      ].map(x => `<li>${x}</li>`).join('');
     }
-    const label = CATEGORY_LABELS[state.activeCategory] || CATEGORY_LABELS['klassiker-hausmannskost'];
-    activeCategoryLabelText.style.display = '';
-    activeCategoryLabelText.innerHTML = textByLang('Aktiv: ' + label.de, 'Aktywne: ' + label.pl);
-  }
 
-  function renderRecipeGrid(){
-    const filtered = filteredRecipes();
-    const visible = filtered.slice(0, state.currentLimit);
-    recipeGrid.innerHTML = visible.map(createRecipeCard).join('');
-    buildTOC(filtered);
-
-    const hasFilter = state.activeCategory !== 'all' || !!currentQuery() || state.activeTags.length;
-    resultCount.innerHTML = hasFilter
-      ? textByLang(filtered.length + ' von ' + state.recipes.length + ' Rezepten', filtered.length + ' z ' + state.recipes.length + ' przepisów')
-      : textByLang(state.recipes.length + ' Rezepte', state.recipes.length + ' przepisów');
-    updateCategoryLabel();
-    buildTagFilters();
-
-    emptyState.classList.toggle('show', filtered.length === 0);
-
-    const hasMore = filtered.length > visible.length;
-    loadMoreRecipes.style.display = hasMore ? '' : 'none';
-    progressNote.textContent = filtered.length ? (
-      state.activeLang === 'pl'
-        ? `Pokazane ${visible.length} z ${filtered.length}`
-        : `Gezeigt ${visible.length} von ${filtered.length}`
-    ) : '';
-
-    clearSearch.classList.toggle('hidden', !searchInput.value);
-  }
-
-  function pickCollection(type){
-    const items = [...state.recipes];
-    if (type === 'klassiker') {
-      return items.filter(r => /klassiker|hausmann|omas|klassisch|hochzeitssuppe|rouladen|kohl|braten/i.test((r.titleDe||'') + ' ' + (r.categoryDe||'')))
-        .sort((a,b) => ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id)).slice(0,4);
+    function updateHero(){
+      const featured = filteredRecipes()[0] || state.recipes[0];
+      if (!featured) return;
+      $('heroMedia').style.backgroundImage = `url("${featured.imageSrc}")`;
+      $('heroTitle').textContent = textByLang('Willkommen in unserer Rezeptewelt','Witamy w naszym świecie przepisów');
+      $('heroSub').textContent = textByLang('Köstliche Rezepte für jeden Tag.','Pyszne przepisy na co dzień.');
+      const topCats = categoryCounts().slice(0,3);
+      $('heroChangesList').innerHTML = topCats.map(c => `<li>${esc(textByLang(c.de,c.pl))}</li>`).join('');
     }
-    if (type === 'ofen') {
-      return items.filter(r => (r.tags || []).some(t => t.slug === 'ofen'))
-        .sort((a,b) => ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id)).slice(0,4);
+
+    function renderTagFilters(){
+      const tags = visibleTagPool();
+      $('tagFilterRow').innerHTML = tags.map(tag => `
+        <button class="chip ${state.activeTags.includes(tag.slug) ? 'active' : ''}" data-tag="${esc(tag.slug)}">
+          <span class="marker">•</span>
+          <span>${esc(textByLang(tag.de, tag.pl))}</span>
+        </button>
+      `).join('');
+      markActiveTopicCard();
     }
-    if (type === 'alltag') {
-      return items.filter(r => (r.tags || []).some(t => t.slug === 'alltag'))
-        .sort((a,b) => ((b.ratingValue ?? -1) - (a.ratingValue ?? -1)) || (b.id - a.id)).slice(0,4);
+
+
+    function markActiveTopicCard(){
+      topicsSection.querySelectorAll('[data-category]').forEach(card => {
+        card.classList.toggle('active', state.activeCategory !== 'all' && card.dataset.category === state.activeCategory);
+      });
     }
-    if (type === 'regional') {
-      return items.filter(r => /schaumburger|wolpinghausen|wölpinghausen|bottermelk|gruenkohl|grünkohl/i.test((r.titleDe||'')))
-        .sort((a,b) => b.id - a.id).slice(0,4);
+
+    function syncPreviewWithCurrentResults(){
+      const recipes = filteredRecipes();
+      if (recipes[0]) renderPreview(recipes[0]);
+      return recipes;
     }
-    return [];
-  }
 
-  function renderCollections(){
-    if (collectionKlassikerGrid) collectionKlassikerGrid.innerHTML = pickCollection('klassiker').map(createMiniCard).join('');
-    if (collectionOfenGrid) collectionOfenGrid.innerHTML = pickCollection('ofen').map(createMiniCard).join('');
-    if (collectionAlltagGrid) collectionAlltagGrid.innerHTML = pickCollection('alltag').map(createMiniCard).join('');
-    if (collectionRegionalGrid) collectionRegionalGrid.innerHTML = pickCollection('regional').map(createMiniCard).join('');
-  }
-
-  function jumpToCollection(type){
-    if (type === 'ofen') {
-      state.activeTags = ['ofen'];
-    } else if (type === 'alltag') {
-      state.activeTags = ['alltag'];
-    } else if (type === 'klassiker') {
-      state.activeTags = [];
-      state.activeCategory = 'klassiker-hausmannskost';
-      buildCategoryChips();
-    } else if (type === 'regional') {
-      searchInput.value = 'schaumburger';
-      state.activeTags = [];
-      state.activeCategory = 'all';
-      buildCategoryChips();
+    function renderTopics(){
+      const cats = categoryCounts().slice(0,6);
+      topicsSection.innerHTML = cats.map(cat => {
+        const representative = sortedRecipes(state.recipes.filter(r => r.categorySlug === cat.slug && r.imageSrc))[0];
+        const imageSrc = representative?.imageSrc || FALLBACK_IMAGE;
+        return `
+        <article class="topic-card" data-category="${esc(cat.slug)}">
+          <img src="${esc(imageSrc)}" alt="${esc(textByLang(cat.de, cat.pl))}" onerror="onImgError(this)">
+          <h3>${esc(textByLang(cat.de, cat.pl))}</h3>
+          <div class="topic-sub">${cat.count} ${esc(textByLang('Rezepte','przepisów'))}</div>
+        </article>
+      `;
+      }).join('');
+      markActiveTopicCard();
     }
-    state.currentLimit = INITIAL_VISIBLE;
-    renderRecipeGrid();
-    updateSuggest();
-    document.getElementById('allRecipes').scrollIntoView({behavior:'smooth', block:'start'});
-  }
 
-  function renderHighlights(){
-    trendsGrid.innerHTML = pickTrending().map(createMiniCard).join('');
-    favoritesGrid.innerHTML = pickFavorites().map(createMiniCard).join('');
-    newestGrid.innerHTML = pickNewest().map(createMiniCard).join('');
-    renderCollections();
-  }
-
-  function setLang(lang){
-    state.activeLang = lang === 'pl' ? 'pl' : 'de';
-    htmlEl.setAttribute('data-lang', state.activeLang);
-    htmlEl.setAttribute('lang', state.activeLang);
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === state.activeLang);
-    });
-    searchInput.placeholder = state.activeLang === 'pl' ? 'Szukaj po nazwie przepisu…' : 'Nach Rezeptnamen suchen…';
-    updateHero();
-    buildCategoryChips();
-    buildCategoryCards();
-    buildTagFilters();
-    updateSortLabels();
-    renderHighlights();
-    renderRecipeGrid();
-    updateHeroStats();
-    updateSuggest();
-    if (state.activeRecipeId) openRecipe(state.activeRecipeId, false);
-  }
-
-  function renderModalList(items){
-    return items.map(item => `<li>${esc(item)}</li>`).join('');
-  }
-
-  function openRecipe(id, focusModal = true){
-    const recipe = state.recipes.find(r => String(r.id) === String(id));
-    if (!recipe) return;
-    state.activeRecipeId = recipe.id;
-    const nextHash = '#rezept-' + recipe.id;
-    if (window.location.hash !== nextHash) {
-      history.replaceState(null, '', nextHash);
-    }
-    const isPl = state.activeLang === 'pl';
-    const ingredients = isPl ? recipe.ingredientsPl : recipe.ingredientsDe;
-    const preparation = isPl ? recipe.preparationPl : recipe.preparationDe;
-    const timing = isPl ? recipe.timingPl : recipe.timingDe;
-    const tips = isPl ? recipe.tipsPl : recipe.tipsDe;
-    const rating = isPl ? recipe.ratingPl : recipe.ratingDe;
-
-    modalTitle.innerHTML = `<span class="modal-kicker">${textByLang(recipe.categoryDe, recipe.categoryPl)}</span><span>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</span>`;
-    modalBody.innerHTML = `
-      <div class="modal-recipe-grid">
-        <div>${imageTag(recipe.imageSrc, recipe.imageAlt || recipe.titleDe, 'modal-hero-image', false)}</div>
-        <div>
-          <h2>${textByLang(recipe.id + '. ' + recipe.titleDe, recipe.id + '. ' + recipe.titlePl)}</h2>
-          <p class="modal-intro">${textByLang(recipe.introDe, recipe.introPl)}</p>
-          <div class="modal-meta">
-            <span class="pill">${textByLang(recipe.categoryDe, recipe.categoryPl)}</span>
-            <span class="pill soft">${textByLang(recipe.personsDe, recipe.personsPl)}</span>
+    function renderRecipeGrid(){
+      const recipes = filteredRecipes();
+      $('resultCount').textContent = recipes.length + ' ' + textByLang('Rezepte gefunden','przepisów znaleziono');
+      emptyBox.classList.toggle('hidden', recipes.length !== 0);
+      recipeGrid.innerHTML = recipes.slice(0, state.currentLimit).map(recipe => `
+        <article class="recipe-card">
+          <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+          <div class="recipe-body">
+            <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
+            <div class="recipe-title">${esc(recipeTitle(recipe))}</div>
+            <div class="recipe-meta">
+              <span>★</span>
+              <span>${esc((textByLang(recipe.timingDe[0], recipe.timingPl[0]) || textByLang('Ohne Zeitangabe','Brak czasu')))}</span>
+              ${recipe.ratingValue ? `<span>|</span><span>${esc(String(recipe.ratingValue))}/10</span>` : ''}
+            </div>
+            <div class="recipe-actions">
+              <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Zum Rezept','Do przepisu'))}</button>
+            </div>
           </div>
-          <div class="modal-stat-row">
-            <div class="modal-stat"><strong>★ ${esc(rating || (isPl ? '–' : '–'))}</strong><span>${textByLang('Bewertung', 'Ocena')}</span></div>
-            <div class="modal-stat"><strong>${esc((ingredients || []).length)}</strong><span>${textByLang('Zutaten', 'Składniki')}</span></div>
-            <div class="modal-stat"><strong>${esc((preparation || []).length)}</strong><span>${textByLang('Schritte', 'Kroki')}</span></div>
+        </article>
+      `).join('');
+      $('loadMoreWrap').classList.toggle('hidden', recipes.length <= state.currentLimit);
+      if (recipes[0]) renderPreview(recipes[0]);
+      recipeGrid.querySelectorAll('[data-open]').forEach(btn => {
+        btn.addEventListener('mouseenter', () => {
+          const card = btn.closest('.recipe-card');
+          recipeGrid.querySelectorAll('.recipe-card').forEach(x => x.classList.remove('active-preview'));
+          card?.classList.add('active-preview');
+          const recipe = state.recipes.find(r => String(r.id) === String(btn.dataset.open));
+          if (recipe) renderPreview(recipe);
+        });
+      });
+    }
+
+    function renderPreview(recipe){
+      $('previewTitle').textContent = recipeTitle(recipe);
+      $('previewTime').textContent = textByLang(recipe.timingDe[0], recipe.timingPl[0]) || textByLang('Ohne Zeitangabe','Brak czasu');
+      $('previewPersons').textContent = recipePersons(recipe);
+      $('previewIngredients').innerHTML = (state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe).slice(0,6).map(i => `<li>${esc(i)}</li>`).join('');
+      $('previewSteps').innerHTML = (state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe).slice(0,4).map(i => `<li>${esc(i)}</li>`).join('');
+      $('previewImage').src = recipe.imageSrc;
+      $('previewImage').onerror = () => onImgError($('previewImage'));
+      $('previewImage').alt = recipeTitle(recipe);
+      $('previewRightTitle').textContent = recipeTitle(recipe);
+      $('previewText').textContent = recipeIntro(recipe);
+    }
+
+    function openRecipe(id){
+      const recipe = state.recipes.find(r => String(r.id) === String(id));
+      if (!recipe) return;
+      state.activeRecipeId = recipe.id;
+      const ingredients = state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe;
+      const steps = state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe;
+      const timing = state.activeLang === 'pl' ? recipe.timingPl : recipe.timingDe;
+      const tips = state.activeLang === 'pl' ? recipe.tipsPl : recipe.tipsDe;
+      modalTitle.textContent = recipeTitle(recipe);
+      modalBody.innerHTML = `
+        <section class="modal-layout">
+          <aside class="modal-nav">
+            <h3>${esc(textByLang('Rezeptnavigation','Nawigacja przepisu'))}</h3>
+            <button class="nav-btn active" data-section="overview">${esc(textByLang('Überblick','Przegląd'))}</button>
+            <button class="nav-btn" data-section="ingredients">${esc(textByLang('Zutaten','Składniki'))}</button>
+            <button class="nav-btn" data-section="preparation">${esc(textByLang('Zubereitung','Przygotowanie'))}</button>
+            <button class="nav-btn" data-section="timing">${esc(textByLang('Timing','Czas'))}</button>
+            <button class="nav-btn" data-section="tips">${esc(textByLang('Tipps','Porady'))}</button>
+          </aside>
+          <div class="modal-content">
+            <section class="modal-hero" id="section-overview">
+              <div class="modal-hero-media" style="background-image:url('${esc(recipe.imageSrc)}')"></div>
+              <div class="modal-hero-copy">
+                <div>
+                  <div class="modal-tag-row">
+                    <span class="modal-tag">${esc(recipeCategory(recipe))}</span>
+                    ${recipe.ratingValue ? `<span class="modal-tag">${esc(textByLang('Bewertung','Ocena'))} ${esc(String(recipe.ratingValue))}/10</span>` : ''}
+                    <span class="modal-tag">ID ${recipe.id}</span>
+                  </div>
+                  <h2>${esc(recipeTitle(recipe))}</h2>
+                  <p>${esc(recipeIntro(recipe))}</p>
+                </div>
+                <div class="modal-meta-grid">
+                  <div class="modal-meta"><strong>${ingredients.length}</strong><span>${esc(textByLang('Zutaten','Składniki'))}</span></div>
+                  <div class="modal-meta"><strong>${steps.length}</strong><span>${esc(textByLang('Schritte','Kroki'))}</span></div>
+                  <div class="modal-meta"><strong>${esc(textByLang(recipe.timingDe[0], recipe.timingPl[0]) || '–')}</strong><span>${esc(textByLang('Timing','Czas'))}</span></div>
+                  <div class="modal-meta"><strong>${recipe.ratingValue ? esc(String(recipe.ratingValue)) + '/10' : '–'}</strong><span>${esc(textByLang('Bewertung','Ocena'))}</span></div>
+                </div>
+                <div class="modal-action-row">
+                  <button class="mini-btn" data-copy-recipe="${recipe.id}">${esc(textByLang('Link kopieren','Kopiuj link'))}</button>
+                  <button class="mini-btn" data-share-wa="${recipe.id}">WhatsApp</button>
+                  <button class="mini-btn primary" data-print-recipe="${recipe.id}">${esc(textByLang('Drucken','Drukuj'))}</button>
+                </div>
+              </div>
+            </section>
+            <section class="modal-sections">
+              <article class="modal-card" id="section-ingredients">
+                <h3>${esc(textByLang('Zutaten','Składniki'))}</h3>
+                <div class="ui-copy"><ul>${ingredients.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
+              </article>
+              <article class="modal-card" id="section-preparation">
+                <h3>${esc(textByLang('Zubereitung','Przygotowanie'))}</h3>
+                <div class="ui-copy"><ol>${steps.map(x => `<li>${esc(x)}</li>`).join('')}</ol></div>
+              </article>
+              <article class="modal-card" id="section-timing">
+                <h3>${esc(textByLang('Timing','Czas'))}</h3>
+                <div class="ui-copy">${timing.length ? `<ul>${timing.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Zeitangaben vorhanden.','Brak danych o czasie.'))}</div>
+              </article>
+              <article class="modal-card" id="section-tips">
+                <h3>${esc(textByLang('Tipps','Porady'))}</h3>
+                <div class="ui-copy">${tips.length ? `<ul>${tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Tipps vorhanden.','Brak porad.'))}</div>
+              </article>
+            </section>
           </div>
-          <div class="modal-tag-row">${(recipe.tags || []).map(tag => `<span class="modal-tag">${textByLang(tag.de, tag.pl)}</span>`).join('')}</div>
-          <nav class="modal-anchor-nav">
-            <a href="#modalIngredients">${textByLang('Zutaten', 'Składniki')}</a>
-            <a href="#modalPreparation">${textByLang('Zubereitung', 'Przygotowanie')}</a>
-            <a href="#modalTiming">${textByLang('Zeit', 'Czas')}</a>
-            <a href="#modalTips">${textByLang('Tipps', 'Wskazówki')}</a>
-            <a href="#modalRelated">${textByLang('Ähnliche Rezepte', 'Podobne przepisy')}</a>
-          </nav>
-          <div class="modal-actions">
-            <button class="ghost-btn wa-btn" type="button" data-recipe-id="${recipe.id}">WhatsApp</button>
-            <button class="ghost-btn copy-btn" type="button" data-recipe-id="${recipe.id}">${textByLang('Link kopieren', 'Kopiuj link')}</button>
-            <button class="ghost-btn print-btn" type="button" data-recipe-id="${recipe.id}">${textByLang('Rezept drucken', 'Drukuj przepis')}</button>
-          </div>
-          <div class="modal-helper-row">${textByLang('Tipp: Mit ← und → wechselst du zwischen ähnlichen sichtbaren Rezepten.', 'Wskazówka: użyj ← i →, aby przełączać się między podobnymi widocznymi przepisami.')}</div>
-        </div>
-      </div>
-      <div class="modal-columns">
-        <section>
-          <h3 id="modalIngredients">${textByLang('Zutaten', 'Składniki')}</h3>
-          <ul>${renderModalList(ingredients)}</ul>
         </section>
-        <section>
-          <h3 id="modalTiming">${textByLang('Zeit', 'Czas')}</h3>
-          <ul>${renderModalList(timing)}</ul>
-        </section>
-      </div>
-      <section class="steps-block">
-        <h3 id="modalPreparation">${textByLang('Zubereitung', 'Przygotowanie')}</h3>
-        <ol>${preparation.map(step => `<li>${esc(step)}</li>`).join('')}</ol>
-      </section>
-      <section class="modal-columns">
-        <section>
-          <h3 id="modalTips">${textByLang('Tipps & Hinweise', 'Wskazówki')}</h3>
-          <ul>${renderModalList(tips)}</ul>
-        </section>
-        <section class="rating-block">
-          <h3 id="modalRating">${textByLang('Bewertung', 'Ocena')}</h3>
-          <p class="rating-value">${esc(rating || (isPl ? 'Brak oceny' : 'Keine Bewertung'))}</p>
-          <p class="rating-copy">${textByLang('Schneller Überblick für dieses Rezept.', 'Szybki przegląd tego przepisu.')}</p>
-        </section>
-      </section>
-      <section class="related-block" id="modalRelated">
-        <h3>${textByLang('Ähnliche Rezepte', 'Podobne przepisy')}</h3>
-        <div class="related-grid">${renderRelatedCards(getRelatedRecipes(recipe))}</div>
-      </section>
-    `;
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden', 'false');
-    modal.setAttribute('data-current-recipe', String(recipe.id));
-    updateModalNav(recipe.id);
-    document.body.classList.add('no-scroll');
-    if (focusModal) closeModal.focus();
-  }
+      `;
+      modal.classList.add('open');
+      history.replaceState(null, '', '#rezept-' + recipe.id);
 
-  function closeRecipe(){
-    modal.classList.remove('open');
-    modal.setAttribute('aria-hidden', 'true');
-    modal.removeAttribute('data-current-recipe');
-    document.body.classList.remove('no-scroll');
-    state.activeRecipeId = null;
-    if (window.location.hash.match(/^#rezept-\d+$/)) {
-      history.replaceState(null, '', window.location.pathname + window.location.search);
-    }
-  }
-
-  function isElementComfortablyInView(el){
-    if (!el) return false;
-    const rect = el.getBoundingClientRect();
-    const topLimit = 90;
-    const bottomLimit = window.innerHeight - 90;
-    return rect.top >= topLimit && rect.bottom <= bottomLimit;
-  }
-
-  function scrollToRecipe(recipeId, openAfter = false){
-    state.currentLimit = Math.max(state.currentLimit, state.recipes.length);
-    renderRecipeGrid();
-    const card = document.getElementById('rezept-' + recipeId);
-    if (card) {
-      card.scrollIntoView({ behavior:'smooth', block:'start' });
-      if (openAfter) setTimeout(() => openRecipe(recipeId), 120);
-    }
-  }
-
-  function updateSuggest(){
-    const q = currentQuery();
-    if (!q){
-      searchSuggest.hidden = true;
-      searchSuggest.innerHTML = '';
-      return;
-    }
-    const hits = filteredRecipes().slice(0, 8);
-    if (!hits.length){
-      searchSuggest.hidden = true;
-      searchSuggest.innerHTML = '';
-      return;
-    }
-    searchSuggest.innerHTML = hits.map(recipe => `
-      <button class="search-suggest-item" type="button" data-id="${recipe.id}">
-        <strong>${esc(recipe.id + '. ' + recipeTitle(recipe))}</strong>
-        <span>${esc(recipeCategory(recipe))}</span>
-      </button>
-    `).join('');
-    searchSuggest.hidden = false;
-  }
-
-
-  function showActionFeedback(button, message){
-    if (!button) return;
-    const original = button.getAttribute('data-original-label') || button.textContent;
-    if (!button.getAttribute('data-original-label')) {
-      button.setAttribute('data-original-label', original);
-    }
-    button.textContent = message;
-    window.setTimeout(() => {
-      button.textContent = button.getAttribute('data-original-label') || original;
-    }, 1600);
-  }
-
-  async function copyTextRobust(textToCopy){
-    if (navigator.clipboard && window.isSecureContext) {
-      try {
-        await navigator.clipboard.writeText(textToCopy);
-        return true;
-      } catch (error) {}
-    }
-    const ta = document.createElement('textarea');
-    ta.value = textToCopy;
-    ta.setAttribute('readonly', '');
-    ta.style.position = 'fixed';
-    ta.style.opacity = '0';
-    ta.style.left = '-9999px';
-    document.body.appendChild(ta);
-    ta.focus();
-    ta.select();
-    let ok = false;
-    try {
-      ok = document.execCommand('copy');
-    } catch (error) {
-      ok = false;
-    }
-    document.body.removeChild(ta);
-    return ok;
-  }
-
-  function printCurrentRecipe(){
-    if (!state.activeRecipeId || !modal.classList.contains('open')) {
-      window.print();
-      return;
-    }
-    document.documentElement.classList.add('print-recipe-only');
-    document.body.classList.remove('no-scroll');
-    showToast('Druckansicht wird geöffnet.', 'Otwierany jest widok do druku.');
-    window.print();
-  }
-
-  function bindStaticEvents(){
-    document.addEventListener('click', function(event){
-      const langBtn = event.target.closest('.lang-btn[data-set-lang]');
-      if (langBtn) {
-        setLang(langBtn.getAttribute('data-set-lang'));
-        return;
-      }
-
-      const openBtn = event.target.closest('[data-open-recipe]');
-      if (openBtn) {
-        event.preventDefault();
-        const recipeId = openBtn.getAttribute('data-open-recipe');
-        const insideRecipeCard = !!event.target.closest('.recipe-card');
-        const card = document.getElementById('rezept-' + recipeId);
-
-        if (insideRecipeCard && card && isElementComfortablyInView(card)) {
-          openRecipe(recipeId);
-        } else {
-          scrollToRecipe(recipeId, true);
-        }
-        return;
-      }
-
-      const catBtn = event.target.closest('.category-chip[data-category], .category-jump-card[data-category]');
-      if (catBtn) {
-        state.activeCategory = catBtn.getAttribute('data-category') || 'all';
-        state.activeTags = [];
-        state.currentLimit = INITIAL_VISIBLE;
-        buildCategoryChips();
-        renderRecipeGrid();
-        document.getElementById('allRecipes').scrollIntoView({behavior:'smooth', block:'start'});
-        return;
-      }
-
-      const finderBtn = event.target.closest('[data-jump-target]');
-      if (finderBtn) {
-        const target = document.getElementById(finderBtn.getAttribute('data-jump-target'));
-        if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
-        return;
-      }
-
-      const collectionBtn = event.target.closest('[data-collection]');
-      if (collectionBtn) {
-        jumpToCollection(collectionBtn.getAttribute('data-collection'));
-        return;
-      }
-
-      const suggestBtn = event.target.closest('.search-suggest-item[data-id]');
-      if (suggestBtn) {
-        const rid = suggestBtn.getAttribute('data-id');
-        searchSuggest.hidden = true;
-        scrollToRecipe(rid, true);
-        return;
-      }
-
-      const waBtn = event.target.closest('.wa-btn[data-recipe-id]');
-      if (waBtn) {
-        const recipe = state.recipes.find(r => String(r.id) === waBtn.getAttribute('data-recipe-id'));
-        if (!recipe) return;
-        const title = state.activeLang === 'pl' ? recipe.titlePl : recipe.titleDe;
-        window.open('https://wa.me/?text=' + encodeURIComponent(recipe.id + '. ' + title), '_blank');
-        return;
-      }
-
-      const copyBtn = event.target.closest('.copy-btn[data-recipe-id]');
-      if (copyBtn) {
-        const rid = copyBtn.getAttribute('data-recipe-id');
-        const url = new URL(window.location.href);
-        url.hash = 'rezept-' + rid;
-        copyTextRobust(url.toString()).then(function(ok){
-          showActionFeedback(copyBtn, ok ? textByLang('Link kopiert', 'Link skopiowany') : textByLang('Link markieren & kopieren', 'Zaznacz i skopiuj link'));
-          if (!ok) {
-            window.prompt(textByLang('Diesen Link kopieren:', 'Skopiuj ten link:'), url.toString());
+      modalBody.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          modalBody.querySelectorAll('.nav-btn').forEach(x => x.classList.remove('active'));
+          btn.classList.add('active');
+          const target = modalBody.querySelector('#section-' + btn.dataset.section);
+          if (target) {
+            target.scrollIntoView({behavior:'smooth', block:'start'});
+            modalBody.querySelectorAll('.modal-card').forEach(c => c.classList.remove('is-target'));
+            if (target.classList.contains('modal-card')) {
+              target.classList.add('is-target');
+              setTimeout(() => target.classList.remove('is-target'), 1400);
+            }
           }
         });
-        return;
-      }
-
-      const printBtn = event.target.closest('.print-btn[data-recipe-id]');
-      if (printBtn) {
-        printCurrentRecipe();
-        return;
-      }
-
-      if (event.target === modal) {
-        closeRecipe();
-      }
-    });
-
-    closeModal.addEventListener('click', closeRecipe);
-
-    document.addEventListener('keydown', function(event){
-      if (event.key === 'Escape' && modal.classList.contains('open')) {
-        closeRecipe();
-        return;
-      }
-      if (!modal.classList.contains('open')) return;
-      if (event.key === 'ArrowLeft') {
-        event.preventDefault();
-        openAdjacentRecipe(-1);
-      }
-      if (event.key === 'ArrowRight') {
-        event.preventDefault();
-        openAdjacentRecipe(1);
-      }
-    });
-
-    if (prevRecipeBtn) {
-      prevRecipeBtn.addEventListener('click', function(){ openAdjacentRecipe(-1); });
-    }
-    if (nextRecipeBtn) {
-      nextRecipeBtn.addEventListener('click', function(){ openAdjacentRecipe(1); });
-    }
-
-    if (sortMode) {
-      sortMode.addEventListener('change', function(){
-        state.sortMode = sortMode.value || 'new';
-        state.currentLimit = INITIAL_VISIBLE;
-        renderRecipeGrid();
-        updateSuggest();
       });
-    }
-
-    if (quickFilterRow) {
-      quickFilterRow.addEventListener('click', function(event){
-        const btn = event.target.closest('.quick-filter-btn[data-quick-filter]');
-        if (!btn) return;
-        state.quickFilter = btn.getAttribute('data-quick-filter') || 'all';
-        quickFilterRow.querySelectorAll('.quick-filter-btn').forEach(el => el.classList.toggle('active', el === btn));
-        state.currentLimit = INITIAL_VISIBLE;
-        renderRecipeGrid();
-        updateSuggest();
+      modalBody.querySelector('[data-copy-recipe]')?.addEventListener('click', async () => {
+        const ok = await copyTextRobust(currentRecipeUrl(recipe.id));
+        if (ok) showActionFeedback(textByLang('Link kopiert','Link skopiowany'));
       });
-    }
-
-    if (tagFilterRow) {
-      tagFilterRow.addEventListener('click', function(event){
-        const btn = event.target.closest('.tag-chip[data-tag]');
-        if (!btn) return;
-        const slug = btn.getAttribute('data-tag');
-        if (!slug) return;
-        if (state.activeTags.includes(slug)) {
-          state.activeTags = state.activeTags.filter(tag => tag !== slug);
-        } else {
-          state.activeTags = [...state.activeTags, slug];
+      modalBody.querySelector('[data-share-wa]')?.addEventListener('click', () => {
+        const share = encodeURIComponent(recipeTitle(recipe) + ' ' + currentRecipeUrl(recipe.id));
+        window.open('https://wa.me/?text=' + share, '_blank');
+      });
+      modalBody.querySelector('[data-print-recipe]')?.addEventListener('click', () => {
+        const printWindow = window.open('', '_blank');
+        if (!printWindow) {
+          window.print();
+          return;
         }
-        state.currentLimit = INITIAL_VISIBLE;
-        renderRecipeGrid();
-        updateSuggest();
+        const ingredientsHtml = ingredients.map(x => `<li>${esc(x)}</li>`).join('');
+        const stepsHtml = steps.map(x => `<li>${esc(x)}</li>`).join('');
+        const timingHtml = timing.length ? `<ul>${timing.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+        const tipsHtml = tips.length ? `<ul>${tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+        printWindow.document.write(`
+          <!DOCTYPE html>
+          <html lang="${state.activeLang}">
+          <head>
+            <meta charset="utf-8">
+            <title>${esc(recipeTitle(recipe))}</title>
+            <style>
+              body{font-family:Georgia,"Times New Roman",serif;padding:32px;color:#2f2a26}
+              h1,h2{margin:0 0 12px}
+              p,li{font-family:Arial,sans-serif;line-height:1.55}
+              .meta{margin:10px 0 24px;color:#6a625a;font-family:Arial,sans-serif}
+              img{max-width:100%;height:auto;margin:0 0 20px}
+              section{margin:0 0 24px}
+            </style>
+          </head>
+          <body>
+            <h1>${esc(recipeTitle(recipe))}</h1>
+            <div class="meta">${esc(recipeCategory(recipe))}${recipe.ratingValue ? ' · ' + esc(String(recipe.ratingValue)) + '/10' : ''}</div>
+            <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+            <p>${esc(recipeIntro(recipe))}</p>
+            <section><h2>${esc(textByLang('Zutaten','Składniki'))}</h2><ul>${ingredientsHtml}</ul></section>
+            <section><h2>${esc(textByLang('Zubereitung','Przygotowanie'))}</h2><ol>${stepsHtml}</ol></section>
+            ${timingHtml ? `<section><h2>${esc(textByLang('Timing','Czas'))}</h2>${timingHtml}</section>` : ''}
+            ${tipsHtml ? `<section><h2>${esc(textByLang('Tipps','Porady'))}</h2>${tipsHtml}</section>` : ''}
+          </body></html>
+        `);
+        printWindow.document.close();
+        printWindow.focus();
+        setTimeout(() => printWindow.print(), 250);
       });
     }
 
-    if (clearTagsBtn) {
-      clearTagsBtn.addEventListener('click', function(){
+    function showActionFeedback(text){
+      const el = document.createElement('div');
+      el.textContent = text;
+      el.className = 'ui';
+      Object.assign(el.style, {
+        position:'fixed', bottom:'18px', left:'50%', transform:'translateX(-50%)',
+        background:'#2f2a26', color:'#fff', padding:'10px 14px', zIndex:120, fontSize:'14px',
+        borderRadius:'999px', boxShadow:'0 10px 20px rgba(0,0,0,.18)'
+      });
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 1400);
+    }
+
+
+    function openLegalModal(type){
+      if (type === 'impressum'){
+        legalModalTitle.textContent = 'Impressum';
+        legalModalBody.innerHTML = `
+          <h3>Impressum</h3>
+          <p>Hier sollte das vollständige Impressum mit den echten Pflichtangaben für die Website eingetragen werden.</p>
+          <div class="legal-note">
+            Noch zu ergänzen: Name/Anbieter, Anschrift, Kontakt, verantwortliche Person, ggf. USt-ID und weitere rechtlich notwendige Angaben.
+          </div>
+        `;
+      } else {
+        legalModalTitle.textContent = 'Datenschutz';
+        legalModalBody.innerHTML = `
+          <h3>Datenschutz</h3>
+          <p>Hier sollte die vollständige Datenschutzerklärung für die Website eingetragen werden.</p>
+          <div class="legal-note">
+            Noch zu ergänzen: Verantwortlicher, Zwecke der Verarbeitung, Rechtsgrundlagen, Speicherdauer, Betroffenenrechte, Hosting/Cookies/Analyse-Tools und Kontakt Datenschutz.
+          </div>
+        `;
+      }
+      legalModal.classList.add('open');
+    }
+
+    function bindEvents(){
+      document.querySelectorAll('[data-lang]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.activeLang = btn.dataset.lang;
+          document.querySelectorAll('[data-lang]').forEach(x => x.classList.toggle('active', x === btn));
+          updateStaticI18n();
+          updateHero();
+          renderTagFilters();
+          renderTopics();
+          renderRecipeGrid();
+          if (state.activeRecipeId) openRecipe(state.activeRecipeId);
+        });
+      });
+      $('jumpRecipesBtn').addEventListener('click', () => popularHead.scrollIntoView({behavior:'smooth'}));
+      $('jumpTopicsBtn').addEventListener('click', () => topicsSection.scrollIntoView({behavior:'smooth'}));
+      $('focusFilterBtn').addEventListener('click', () => searchSection.scrollIntoView({behavior:'smooth'}));
+      $('searchInput').addEventListener('input', () => {
+        state.activeCategory = 'all';
         state.activeTags = [];
         state.currentLimit = INITIAL_VISIBLE;
+        renderTagFilters();
+        renderTopics();
         renderRecipeGrid();
         updateSuggest();
       });
-    }
-
-    searchInput.addEventListener('input', function(){
-      state.currentLimit = INITIAL_VISIBLE;
-      renderRecipeGrid();
-      updateSuggest();
-    });
-
-    searchInput.addEventListener('focus', updateSuggest);
-
-    searchInput.addEventListener('keydown', function(event){
-      if (event.key === 'Enter' && !searchSuggest.hidden) {
-        const first = searchSuggest.querySelector('.search-suggest-item');
-        if (first) {
-          event.preventDefault();
-          first.click();
+      $('searchInput').addEventListener('focus', updateSuggest);
+      $('searchInput').addEventListener('keydown', event => {
+        if (event.key === 'Enter' && !$('searchSuggest').classList.contains('hidden')) {
+          const first = $('searchSuggest').querySelector('.search-suggest-item');
+          if (first) {
+            event.preventDefault();
+            first.click();
+          }
         }
-      }
-    });
-
-    clearSearch.addEventListener('click', function(){
-      searchInput.value = '';
-      state.currentLimit = INITIAL_VISIBLE;
-      renderRecipeGrid();
-      updateSuggest();
-      searchInput.focus();
-    });
-
-    document.addEventListener('click', function(event){
-      if (!searchSuggest.contains(event.target) && event.target !== searchInput) {
-        searchSuggest.hidden = true;
-      }
-    });
-
-    showAllRecipesChip.addEventListener('click', function(){
-      state.activeCategory = 'all';
-      state.activeTags = [];
-      searchInput.value = '';
-      state.currentLimit = state.recipes.length;
-      buildCategoryChips();
-      renderRecipeGrid();
-      document.getElementById('allRecipes').scrollIntoView({behavior:'smooth', block:'start'});
-    });
-
-    loadMoreRecipes.addEventListener('click', function(){
-      state.currentLimit += BATCH_SIZE;
-      renderRecipeGrid();
-    });
-
-    featureOpenBtn.addEventListener('click', function(){
-      const rid = featureOpenBtn.getAttribute('data-open-recipe');
-      if (rid) openRecipe(rid);
-    });
-
-    window.addEventListener('hashchange', function(){
-      const match = window.location.hash.match(/^#rezept-(\d+)$/);
-      if (match) scrollToRecipe(match[1], true);
-    });
-
-    window.addEventListener('afterprint', function(){
-      document.documentElement.classList.remove('print-recipe-only');
-      if (modal.classList.contains('open')) document.body.classList.add('no-scroll');
-    });
-  }
-
-  async function init(){
-    bindStaticEvents();
-    try {
-      const response = await fetch('kochbuch.xml', { cache: 'no-store' });
-      if (!response.ok) throw new Error('XML konnte nicht geladen werden.');
-      const xmlText = await response.text();
-      state.recipes = parseRecipes(xmlText);
-      state.activeCategory = 'all';
-      state.activeTags = [];
-      state.currentLimit = INITIAL_VISIBLE;
-      state.quickFilter = 'all';
-      state.sortMode = sortMode ? (sortMode.value || 'new') : 'new';
-      updateHero();
-      updateHeroStats();
-      updateSortLabels();
-      buildCategoryChips();
-      buildCategoryCards();
-      buildTagFilters();
-      renderHighlights();
-      renderRecipeGrid();
-
-      const hashMatch = window.location.hash.match(/^#rezept-(\d+)$/);
-      if (hashMatch) {
-        scrollToRecipe(hashMatch[1], true);
-      }
-    } catch (error) {
-      recipeGrid.innerHTML = `<article class="recipe-card"><div class="recipe-card-body"><h3>${textByLang('Fehler beim Laden der XML', 'Błąd podczas ładowania XML')}</h3><p class="recipe-card-intro">${textByLang('Die Kochbuch-XML konnte nicht geladen werden.', 'Sprawdź, czy plik kochbuch.xml znajduje się w tym samym folderze i jest dostępny.')}</p></div></article>`;
-      emptyState.classList.remove('show');
-      loadMoreRecipes.style.display = 'none';
-      progressNote.textContent = error && error.message ? error.message : '';
-      console.error(error);
+      });
+      $('quickFilterRow').addEventListener('click', e => {
+        const btn = e.target.closest('[data-quick]');
+        if (!btn) return;
+        state.activeQuick = btn.dataset.quick;
+        state.currentLimit = INITIAL_VISIBLE;
+        document.querySelectorAll('[data-quick]').forEach(x => x.classList.toggle('active', x === btn));
+        renderTagFilters();
+        renderRecipeGrid();
+        updateSuggest();
+      });
+      $('tagFilterRow').addEventListener('click', e => {
+        const btn = e.target.closest('[data-tag]');
+        if (!btn) return;
+        const slug = btn.dataset.tag;
+        if (state.activeTags.includes(slug)) state.activeTags = state.activeTags.filter(x => x !== slug);
+        else state.activeTags = [...state.activeTags, slug];
+        renderTagFilters();
+        renderRecipeGrid();
+        updateSuggest();
+      });
+      topicsSection.addEventListener('click', e => {
+        const card = e.target.closest('[data-category]');
+        if (!card) return;
+        state.activeCategory = card.dataset.category;
+        renderTagFilters();
+        renderRecipeGrid();
+        updateSuggest();
+        popularHead.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+      $('sortSelect').addEventListener('change', () => {
+        state.sortMode = $('sortSelect').value;
+        state.currentLimit = INITIAL_VISIBLE;
+        renderRecipeGrid();
+        updateSuggest();
+      });
+      $('resetBtn').addEventListener('click', () => {
+        state.activeCategory = 'all';
+        state.activeQuick = 'all';
+        state.activeTags = [];
+        state.sortMode = 'new';
+        state.currentLimit = INITIAL_VISIBLE;
+        $('searchInput').value = '';
+        $('sortSelect').value = 'new';
+        document.querySelectorAll('[data-quick]').forEach(x => x.classList.toggle('active', x.dataset.quick === 'all'));
+        renderTopics();
+        renderTagFilters();
+        renderRecipeGrid();
+        updateSuggest();
+      });
+      recipeGrid.addEventListener('click', e => {
+        const btn = e.target.closest('[data-open]');
+        if (btn) openRecipe(btn.dataset.open);
+      });
+      $('loadMoreBtn').addEventListener('click', () => {
+        state.currentLimit += 24;
+        renderRecipeGrid();
+      });
+      $('searchSuggest').addEventListener('click', e => {
+        const btn = e.target.closest('[data-suggest-id]');
+        if (!btn) return;
+        $('searchSuggest').classList.add('hidden');
+        openRecipe(btn.dataset.suggestId);
+      });
+      document.addEventListener('click', e => {
+        const suggest = $('searchSuggest');
+        const input = $('searchInput');
+        if (!suggest.contains(e.target) && e.target !== input) {
+          suggest.classList.add('hidden');
+        }
+      });
+      $('closeModalBtn').addEventListener('click', () => { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; });
+      modal.addEventListener('click', e => {
+        if (e.target === modal) { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; }
+      });
+      legalModal.addEventListener('click', e => {
+        if (e.target === legalModal) legalModal.classList.remove('open');
+      });
     }
-  }
 
-  init();
-})();
-</script>
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash;
+      if (hash.startsWith('#rezept-')) {
+        openRecipe(hash.replace('#rezept-',''));
+      }
+    });
+
+    async function init(){
+      try{
+        const res = await fetch('kochbuch.xml', { cache:'no-store' });
+        if (!res.ok) throw new Error('kochbuch.xml konnte nicht geladen werden');
+        const xmlText = await res.text();
+        state.recipes = parseRecipes(xmlText);
+        loadingBox.classList.add('hidden');
+        heroSection.classList.remove('hidden');
+        searchSection.classList.remove('hidden');
+        topicsSection.classList.remove('hidden');
+        popularHead.classList.remove('hidden');
+        recipeGrid.classList.remove('hidden');
+        detailPreviewSection.classList.remove('hidden');
+        updateStaticI18n();
+        updateHero();
+        renderTagFilters();
+        renderTopics();
+        renderRecipeGrid();
+        updateSuggest();
+        bindEvents();
+
+        const hash = window.location.hash;
+        if (hash.startsWith('#rezept-')) {
+          const id = hash.replace('#rezept-','');
+          openRecipe(id);
+        }
+      }catch(err){
+        loadingBox.textContent = 'Die Kochbuch-XML konnte nicht geladen werden.';
+        console.error(err);
+      }
+    }
+    init();
+  })();
+  </script>
 </body>
 </html>
