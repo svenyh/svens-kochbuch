@@ -621,25 +621,6 @@
     .recipe-editorial-note h3{
       font-size:24px;
     }
-    .recipe-section-tabs{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      padding:6px 20px 18px;
-      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    }
-    .recipe-section-tab{
-      border:1px solid #e5d9cc;
-      background:#fff;
-      padding:10px 14px;
-      font-size:14px;
-      font-weight:700;
-      color:#5a534b;
-      cursor:pointer;
-    }
-    .recipe-section-tab:hover{
-      background:#faf3ec;
-    }
 
     @media (max-width:1100px){
       .premium-related-grid{grid-template-columns:1fr 1fr}
@@ -662,7 +643,6 @@
       .recipe-editorial-head{padding:16px 16px 6px}
       .recipe-hero-image{padding:14px 16px 0}
       .recipe-editorial-intro{padding:16px 16px 6px}
-      .recipe-section-tabs{padding:6px 16px 14px}
       .recipe-editorial-sections{padding:4px 16px 8px}
       .recipe-editorial-title{font-size:34px}
 
@@ -1450,8 +1430,6 @@
 
     function buildKnowledgeBlock(recipe){
       const slug = recipe.categorySlug;
-      const title = recipeTitle(recipe);
-      const tipsText = recipeIntro(recipe) || '';
       let heading = textByLang('Wissenswertes','Warto wiedzieć');
       let body = '';
 
@@ -1517,6 +1495,13 @@
                 <button class="mini-btn" data-share-wa="${recipe.id}">WhatsApp</button>
                 <button class="mini-btn primary" data-print-recipe="${recipe.id}">${esc(textByLang('Drucken','Drukuj'))}</button>
               </div>
+              <div class="recipe-section-tabs">
+                <button class="recipe-section-tab" data-section-jump="ingredients">${esc(textByLang('Zutaten','Składniki'))}</button>
+                <button class="recipe-section-tab" data-section-jump="preparation">${esc(textByLang('Zubereitung','Przygotowanie'))}</button>
+                <button class="recipe-section-tab" data-section-jump="timing">${esc(textByLang('Timing','Czas'))}</button>
+                <button class="recipe-section-tab" data-section-jump="tips">${esc(textByLang('Tipps','Porady'))}</button>
+                <button class="recipe-section-tab" data-section-jump="knowledge">${esc(textByLang('Wissenswertes','Warto wiedzieć'))}</button>
+              </div>
             </section>
 
             <section class="recipe-hero-image">
@@ -1526,14 +1511,6 @@
             <section class="recipe-editorial-intro">
               <p>${esc(recipeIntro(recipe) || textByLang('Dieses Rezept ist klar aufgebaut und alltagstauglich.','Ten przepis jest przejrzysty i sprawdza się na co dzień.'))}</p>
             </section>
-
-            <div class="recipe-section-tabs">
-              <button class="recipe-section-tab" data-section-jump="ingredients">${esc(textByLang('Zutaten','Składniki'))}</button>
-              <button class="recipe-section-tab" data-section-jump="preparation">${esc(textByLang('Zubereitung','Przygotowanie'))}</button>
-              <button class="recipe-section-tab" data-section-jump="timing">${esc(textByLang('Timing','Czas'))}</button>
-              <button class="recipe-section-tab" data-section-jump="tips">${esc(textByLang('Tipps','Porady'))}</button>
-              <button class="recipe-section-tab" data-section-jump="knowledge">${esc(textByLang('Wissenswertes','Warto wiedzieć'))}</button>
-            </div>
 
             <section class="recipe-editorial-sections">
               <article class="recipe-editorial-card" id="section-ingredients">
@@ -1582,6 +1559,99 @@
           </div>
         </section>
       `;
+      modal.classList.add('open');
+      history.replaceState(null, '', '#rezept-' + recipe.id);
+
+      modalBody.querySelectorAll('[data-section-jump]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = modalBody.querySelector('#section-' + btn.dataset.sectionJump);
+          if (target) {
+            target.scrollIntoView({behavior:'smooth', block:'start'});
+            modalBody.querySelectorAll('.modal-card').forEach(c => c.classList.remove('is-target'));
+            if (target.classList.contains('modal-card')) {
+              target.classList.add('is-target');
+              setTimeout(() => target.classList.remove('is-target'), 1400);
+            }
+          }
+        });
+      });
+      modalBody.querySelector('[data-copy-recipe]')?.addEventListener('click', async () => {
+        const ok = await copyTextRobust(currentRecipeUrl(recipe.id));
+        if (ok) showActionFeedback(textByLang('Link kopiert','Link skopiowany'));
+      });
+      modalBody.querySelector('[data-share-wa]')?.addEventListener('click', () => {
+        const share = encodeURIComponent(recipeTitle(recipe) + ' ' + currentRecipeUrl(recipe.id));
+        window.open('https://wa.me/?text=' + share, '_blank');
+      });
+      modalBody.querySelectorAll('[data-open-related]').forEach(card => {
+        card.addEventListener('click', () => openRecipe(card.dataset.openRelated));
+      });
+      modalBody.querySelector('[data-print-recipe]')?.addEventListener('click', () => {
+        const printWindow = window.open('', '_blank');
+        if (!printWindow) {
+          window.print();
+          return;
+        }
+        const ingredientsHtml = ingredients.map(x => `<li>${esc(x)}</li>`).join('');
+        const stepsHtml = steps.map(x => `<li>${esc(x)}</li>`).join('');
+        const timingHtml = timing.length ? `<ul>${timing.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+        const tipsHtml = tips.length ? `<ul>${tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+        printWindow.document.write(`
+          <!DOCTYPE html>
+          <html lang="${state.activeLang}">
+          <head>
+            <meta charset="utf-8">
+            <title>${esc(recipeTitle(recipe))}</title>
+            <style>
+              body{font-family:Georgia,"Times New Roman",serif;padding:32px;color:#2f2a26}
+              h1,h2{margin:0 0 12px}
+              p,li{font-family:Arial,sans-serif;line-height:1.55}
+              .meta{margin:10px 0 24px;color:#6a625a;font-family:Arial,sans-serif}
+              img{max-width:100%;height:auto;margin:0 0 20px}
+              section{margin:0 0 24px}
+            </style>
+          </head>
+          <body>
+            <h1>${esc(recipeTitle(recipe))}</h1>
+            <div class="meta">${esc(recipeCategory(recipe))}${recipe.ratingValue ? ' · ' + esc(String(recipe.ratingValue)) + '/10' : ''}</div>
+            <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+            <p>${esc(recipeIntro(recipe))}</p>
+            <section><h2>${esc(textByLang('Zutaten','Składniki'))}</h2><ul>${ingredientsHtml}</ul></section>
+            <section><h2>${esc(textByLang('Zubereitung','Przygotowanie'))}</h2><ol>${stepsHtml}</ol></section>
+            ${timingHtml ? `<section><h2>${esc(textByLang('Timing','Czas'))}</h2>${timingHtml}</section>` : ''}
+            ${tipsHtml ? `<section><h2>${esc(textByLang('Tipps','Porady'))}</h2>${tipsHtml}</section>` : ''}
+          </body></html>
+        `);
+        printWindow.document.close();
+        printWindow.focus();
+        setTimeout(() => printWindow.print(), 250);
+      });
+    }
+
+    function showActionFeedback(text){
+      const el = document.createElement('div');
+      el.textContent = text;
+      el.className = 'ui';
+      Object.assign(el.style, {
+        position:'fixed', bottom:'18px', left:'50%', transform:'translateX(-50%)',
+        background:'#2f2a26', color:'#fff', padding:'10px 14px', zIndex:120, fontSize:'14px',
+        borderRadius:'999px', boxShadow:'0 10px 20px rgba(0,0,0,.18)'
+      });
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 1400);
+    }
+
+
+    function openLegalModal(type){
+      if (type === 'impressum'){
+        legalModalTitle.textContent = 'Impressum';
+        legalModalBody.innerHTML = `
+          <h3>Impressum</h3>
+          <p>${textByLang("Hier sollte das vollständige Impressum mit den echten Pflichtangaben für die Website eingetragen werden.","Tutaj należy wstawić pełną notę prawną z prawidłowymi danymi dla strony.")}</p>
+          <div class="legal-note">
+            ${textByLang("Noch zu ergänzen: Name/Anbieter, Anschrift, Kontakt, verantwortliche Person, ggf. USt-ID und weitere rechtlich notwendige Angaben.","Do uzupełnienia: nazwa/podmiot, adres, kontakt, osoba odpowiedzialna, ewentualnie NIP/VAT i pozostałe wymagane dane prawne.")}
+          </div>
+        `;
       } else {
         legalModalTitle.textContent = 'Datenschutz';
         legalModalBody.innerHTML = `
