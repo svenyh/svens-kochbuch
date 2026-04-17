@@ -103,6 +103,7 @@
       min-height:56px;padding:0 22px;border:none;background:var(--accent);color:#fff;font-weight:700;font-size:18px;box-shadow:var(--shadow);
     }
     .search-bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:14px}
+    #searchHelperText{width:100%}
     .chip-row{display:flex;flex-wrap:wrap;gap:10px}
     .chip{
       display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid #e3dad0;background:#fff;font-size:15px;color:#5a534b;
@@ -281,7 +282,223 @@
     .footer-link{cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
     .footer-link:hover{box-shadow:0 8px 18px rgba(58,42,27,.08)}
 
+    
+    .chip.active{
+      background:#fff3eb;
+      border-color:#ead5c7;
+      color:#c86745;
+      box-shadow:0 6px 14px rgba(58,42,27,.06);
+    }
+    .topic-card .topic-sub{
+      text-transform:none;
+      letter-spacing:0;
+    }
+
+    
+    .recipe-card{cursor:pointer}
+    .recipe-card:focus-within,
+    .recipe-card:hover{
+      box-shadow:0 14px 30px rgba(58,42,27,.10);
+      transform:translateY(-2px);
+    }
+    .topic-card{
+      transition:all .18s ease;
+    }
+    .topic-card:hover{
+      box-shadow:0 14px 30px rgba(58,42,27,.10);
+      transform:translateY(-2px);
+    }
+    .detail-meta-row span{
+      display:inline-flex;
+      align-items:center;
+      padding:6px 10px;
+      border:1px solid #eadfd2;
+      background:#fff7f1;
+    }
+    .modal-nav .nav-btn{
+      transition:all .16s ease;
+    }
+    .modal-nav .nav-btn:hover{
+      background:#faf3ec;
+    }
+
+    
+    .search-suggest{
+      border-radius:14px;
+      overflow:hidden;
+    }
+    .search-suggest-item.is-active{
+      background:#faf3ec;
+    }
+    .topic-card.active{
+      outline:2px solid rgba(110,150,65,.28);
+      outline-offset:0;
+    }
+    .recipe-card.active-preview{
+      outline:2px solid rgba(216,111,74,.24);
+      outline-offset:0;
+    }
+    .footer-link:hover{
+      box-shadow:0 8px 18px rgba(58,42,27,.08);
+    }
+
+    
+    .premium-intro{
+      margin-top:18px;
+      padding:16px 18px;
+      border:1px solid #eee1d5;
+      background:linear-gradient(180deg,#fffdfa 0%, #faf6f1 100%);
+      box-shadow:0 8px 18px rgba(58,42,27,.04);
+    }
+    .premium-intro h4{
+      margin:0 0 8px;
+      font-size:15px;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+      color:#b86745;
+    }
+    .premium-intro p{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#615a53;
+      line-height:1.7;
+    }
+    .premium-chip-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:14px;
+    }
+    .premium-chip{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:7px 10px;
+      border:1px solid #eadfd2;
+      background:#fff4ec;
+      color:#bf6d4b;
+      font-size:12px;
+      font-weight:700;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+    }
+    .premium-related-shell{
+      padding:0 20px 24px;
+    }
+    .premium-section-head{
+      display:flex;
+      align-items:end;
+      justify-content:space-between;
+      gap:16px;
+      margin:6px 0 14px;
+    }
+    .premium-section-head h3{
+      margin:0;
+      font-size:26px;
+      line-height:1.05;
+    }
+    .premium-section-head p{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#746b62;
+      font-size:14px;
+      line-height:1.55;
+    }
+    .premium-related-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+    .premium-related-card{
+      border:1px solid #e7ddd2;
+      background:#fff;
+      box-shadow:0 8px 18px rgba(58,42,27,.05);
+      overflow:hidden;
+      cursor:pointer;
+      transition:all .18s ease;
+    }
+    .premium-related-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 28px rgba(58,42,27,.10);
+    }
+    .premium-related-card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      display:block;
+      background:#f3eee7;
+    }
+    .premium-related-body{
+      padding:12px 13px 14px;
+    }
+    .premium-related-kicker{
+      display:inline-flex;
+      align-items:center;
+      padding:5px 8px;
+      border:1px solid #eadfd2;
+      background:#fff6ef;
+      color:#b86745;
+      font-size:11px;
+      font-weight:700;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+      margin-bottom:9px;
+    }
+    .premium-related-title{
+      font-size:18px;
+      line-height:1.15;
+      margin:0 0 7px;
+      color:#302a26;
+    }
+    .premium-related-copy{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#6d655d;
+      font-size:13px;
+      line-height:1.6;
+      min-height:3.2em;
+    }
+    .premium-related-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#7a7168;
+      font-size:12px;
+    }
+    .premium-pair-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      margin-top:16px;
+    }
+    .premium-pair-card{
+      border:1px solid #e7ddd2;
+      background:#fffdfb;
+      padding:14px 15px;
+      box-shadow:0 8px 18px rgba(58,42,27,.04);
+    }
+    .premium-pair-card h4{
+      margin:0 0 8px;
+      font-size:18px;
+      line-height:1.15;
+    }
+    .premium-pair-card p{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#6c645d;
+      line-height:1.6;
+      font-size:14px;
+    }
+
     @media (max-width:1100px){
+      .premium-related-grid{grid-template-columns:1fr 1fr}
+      .premium-pair-grid{grid-template-columns:1fr}
+
       .hero{grid-template-columns:1fr}
       .hero-inner{grid-template-columns:1fr}
       .hero-side{grid-template-columns:1fr 1fr}
@@ -297,6 +514,9 @@
       .modal-meta-grid{grid-template-columns:repeat(2,1fr)}
     }
     @media (max-width:760px){
+      .premium-related-shell{padding:0 14px 18px}
+      .premium-related-grid{grid-template-columns:1fr}
+
       .wrap{padding:0 16px}
       main{padding:18px 0 42px}
       .header-inner{flex-direction:column;align-items:flex-start}
@@ -404,6 +624,7 @@
       </div>
 
       <div class="search-bottom">
+        <div class="ui" id="searchHelperText" style="font-size:13px;color:#746b62;">Suche nach Titel, Kategorie oder Zutaten.</div>
         <div class="chip-row" id="quickFilterRow">
           <button class="chip active" data-quick="all"><span class="marker">◆</span><span data-i18n-de="Alle" data-i18n-pl="Wszystkie">Alle</span></button>
           <button class="chip" data-quick="new"><span class="marker">●</span><span data-i18n-de="Neu" data-i18n-pl="Nowe">Neu</span></button>
@@ -738,9 +959,13 @@
       return normalize($('searchInput').value || '');
     }
 
+
+    let activeSuggestIndex = -1;
+
     function updateSuggest(){
       const q = currentQuery();
       const box = $('searchSuggest');
+      activeSuggestIndex = -1;
       if (!q){
         box.classList.add('hidden');
         box.innerHTML = '';
@@ -752,8 +977,8 @@
         box.innerHTML = '';
         return;
       }
-      box.innerHTML = hits.map(recipe => `
-        <button class="search-suggest-item" type="button" data-suggest-id="${recipe.id}">
+      box.innerHTML = hits.map((recipe, idx) => `
+        <button class="search-suggest-item" type="button" data-suggest-id="${recipe.id}" data-suggest-index="${idx}">
           <strong>${esc(recipe.id + '. ' + recipeTitle(recipe))}</strong>
           <span>${esc(recipeCategory(recipe))}</span>
         </button>
@@ -782,11 +1007,13 @@
       }));
     }
     function visibleTagPool(){
+      const blocked = new Set(['ofen','alltag']);
       const pool = new Map();
       state.recipes.forEach(recipe => {
         if (state.activeCategory !== 'all' && recipe.categorySlug !== state.activeCategory) return;
         if (!recipeMatchesQuickFilter(recipe)) return;
         (recipe.tags || []).forEach(tag => {
+          if (blocked.has(tag.slug)) return;
           if (!pool.has(tag.slug)) pool.set(tag.slug, { ...tag, count: 0 });
           pool.get(tag.slug).count += 1;
         });
@@ -799,23 +1026,23 @@
         node.textContent = state.activeLang === 'pl' ? node.dataset.i18nPl : node.dataset.i18nDe;
       });
       $('popularTitle').textContent = textByLang('Beliebte Rezepte','Popularne przepisy');
-      $('popularCopy').textContent = textByLang('Klarer, ruhiger und bildstärker im neuen Design.','Czytelniej i spokojniej w nowym wyglądzie.');
+      $('popularCopy').textContent = textByLang('Klarer, ruhiger und bildstärker im neuen Design.','Czytelniej, spokojniej i bardziej apetycznie w nowym układzie.');
       $('previewIngredientsTitle').textContent = textByLang('Zutaten','Składniki');
       $('previewStepsTitle').textContent = textByLang('Zubereitung','Przygotowanie');
       $('emptyTitle').textContent = textByLang('Keine passenden Rezepte gefunden.','Nie znaleziono pasujących przepisów.');
-      $('emptyText').textContent = textByLang('Nimm einen Filter zurück oder probiere einen anderen Suchbegriff.','Usuń filtr lub spróbuj innego hasła.');
+      $('emptyText').textContent = textByLang('Nimm einen Filter zurück oder probiere einen anderen Suchbegriff.','Usuń filtr lub wpisz inne hasło.');
       $('closeModalBtn').textContent = textByLang('Schließen','Zamknij');
       const brandSub = document.querySelector('.brand-sub');
-      if (brandSub) brandSub.textContent = textByLang('Modernes Layout · stabile Funktionsbasis','Nowy układ · stabilna baza funkcji');
+      if (brandSub) brandSub.textContent = textByLang('Modernes Layout · stabile Funktionsbasis','Nowy układ · stabilna baza funkcjonalna');
       const heroKeepTitle = document.querySelectorAll('.hero-card h3');
-      if (heroKeepTitle[0]) heroKeepTitle[0].textContent = textByLang('Was sich ändert','Co się zmienia');
-      if (heroKeepTitle[1]) heroKeepTitle[1].textContent = textByLang('Schnell gefunden','Szybko znajdziesz');
+      if (heroKeepTitle[0]) heroKeepTitle[0].textContent = textByLang('Was sich ändert','Co nowego');
+      if (heroKeepTitle[1]) heroKeepTitle[1].textContent = textByLang('Schnell gefunden','Szybki start');
       const footerTitle = document.querySelector('.footer-inner > div');
       if (footerTitle) footerTitle.textContent = 'Svens Kochbuch';
       const imp = $('openImpressumBtn');
       const dat = $('openDatenschutzBtn');
-      if (imp) imp.textContent = textByLang('Impressum','Stopka prawna');
-      if (dat) dat.textContent = textByLang('Datenschutz','Prywatność');
+      if (imp) imp.textContent = textByLang('Impressum','Nota prawna');
+      if (dat) dat.textContent = textByLang('Datenschutz','Polityka prywatności');
       const sort = $('sortSelect');
       if (sort) {
         sort.options[0].text = textByLang('Neueste','Najnowsze');
@@ -828,14 +1055,16 @@
       if (filterBtn) filterBtn.textContent = textByLang('Filter & Sortieren','Filtry i sortowanie');
       const searchInput = $('searchInput');
       if (searchInput) searchInput.placeholder = textByLang('Rezept suchen…','Szukaj przepisu…');
+      const helper = $('searchHelperText');
+      if (helper) helper.textContent = textByLang('Suche nach Titel, Kategorie oder Zutaten.','Szukaj po nazwie, kategorii lub składnikach.');
       const heroBtns = document.querySelectorAll('.hero-actions button');
-      if (heroBtns[0]) heroBtns[0].textContent = textByLang('Rezepte entdecken','Odkrywaj przepisy');
+      if (heroBtns[0]) heroBtns[0].textContent = textByLang('Rezepte entdecken','Poznaj przepisy');
       if (heroBtns[1]) heroBtns[1].textContent = textByLang('Sammlungen browsen','Przeglądaj kolekcje');
       const heroLists = document.querySelectorAll('.hero-card ul');
       if (heroLists[0]) heroLists[0].innerHTML = [
-        textByLang('Neues Design','Nowy design'),
+        textByLang('Neues Design','Nowy wygląd'),
         textByLang('Neue Struktur','Nowa struktura'),
-        textByLang('Mehr Entdecken','Więcej odkrywania')
+        textByLang('Mehr Entdecken','Więcej inspiracji')
       ].map(x => `<li>${x}</li>`).join('');
       if (heroLists[1]) heroLists[1].innerHTML = [
         textByLang('Wölpinghausen','Wölpinghausen'),
@@ -896,10 +1125,13 @@
 
     function renderRecipeGrid(){
       const recipes = filteredRecipes();
-      $('resultCount').textContent = recipes.length + ' ' + textByLang('Rezepte gefunden','przepisów znaleziono');
+      const activeCat = state.activeCategory !== 'all' ? categoryCounts().find(c => c.slug === state.activeCategory) : null;
+      $('resultCount').textContent = activeCat
+        ? `${recipes.length} ${textByLang('Rezepte in','przepisów w')} ${textByLang(activeCat.de, activeCat.pl)}`
+        : recipes.length + ' ' + textByLang('Rezepte gefunden','przepisów znaleziono');
       emptyBox.classList.toggle('hidden', recipes.length !== 0);
       recipeGrid.innerHTML = recipes.slice(0, state.currentLimit).map(recipe => `
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe-id="${recipe.id}">
           <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
           <div class="recipe-body">
             <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
@@ -939,7 +1171,62 @@
       $('previewImage').onerror = () => onImgError($('previewImage'));
       $('previewImage').alt = recipeTitle(recipe);
       $('previewRightTitle').textContent = recipeTitle(recipe);
-      $('previewText').textContent = recipeIntro(recipe);
+      $('previewText').textContent = recipeIntro(recipe) || textByLang('Rezeptvorschau','Podgląd przepisu');
+    }
+
+
+    function recipeTimingLabel(recipe){
+      return textByLang(recipe.timingDe[0], recipe.timingPl[0]) || textByLang('Ohne Zeitangabe','Brak czasu');
+    }
+
+    function recipeKeywordSet(recipe){
+      const text = normalize([
+        recipe.titleDe, recipe.titlePl, recipe.categoryDe, recipe.categoryPl,
+        ...(recipe.ingredientsDe || []), ...(recipe.ingredientsPl || []),
+        ...(recipe.preparationDe || []), ...(recipe.preparationPl || []),
+        ...(recipe.tipsDe || []), ...(recipe.tipsPl || [])
+      ].join(' '));
+      return new Set(text.split(/[^a-z0-9]+/).filter(x => x.length >= 4));
+    }
+
+    function relatedRecipesFor(recipe, limit=6){
+      const baseSet = recipeKeywordSet(recipe);
+      return state.recipes
+        .filter(r => r.id !== recipe.id)
+        .map(r => {
+          let score = 0;
+          if (r.categorySlug === recipe.categorySlug) score += 30;
+          const kws = recipeKeywordSet(r);
+          let overlap = 0;
+          baseSet.forEach(k => { if (kws.has(k)) overlap += 1; });
+          score += Math.min(overlap, 8) * 4;
+          if ((r.ratingValue || 0) >= 8) score += 4;
+          if (Math.abs((r.id || 0) - (recipe.id || 0)) <= 15) score += 1;
+          return { r, score };
+        })
+        .sort((a,b) => b.score - a.score || (b.r.ratingValue || 0) - (a.r.ratingValue || 0) || b.r.id - a.r.id)
+        .slice(0, limit)
+        .map(x => x.r);
+    }
+
+    function pairSuggestionText(recipe){
+      const slug = recipe.categorySlug;
+      if (slug === 'grill-bbq') return {
+        de: 'Dazu passen besonders gut frische Salate, cremige Dips oder ein rustikales Brot.',
+        pl: 'Do tego szczególnie pasują świeże sałatki, kremowe dipy albo rustykalne pieczywo.'
+      };
+      if (slug === 'ofen-auflaeufe') return {
+        de: 'Ein frischer Salat oder etwas Eingelegtes bringt Ausgleich zu kräftigen Ofengerichten.',
+        pl: 'Świeża sałatka albo coś marynowanego dobrze równoważy sycące dania z piekarnika.'
+      };
+      if (slug === 'salate-beilagen') return {
+        de: 'Diese Rezepte passen besonders gut als Begleitung zu Ofen-, Grill- oder Familiengerichten.',
+        pl: 'Te przepisy świetnie sprawdzają się jako dodatek do dań z piekarnika, z grilla albo rodzinnych obiadów.'
+      };
+      return {
+        de: 'Schau dir als Nächstes ein ähnliches Rezept oder etwas aus derselben Themenwelt an.',
+        pl: 'Następnie zobacz podobny przepis albo coś z tej samej kategorii.'
+      };
     }
 
     function openRecipe(id){
@@ -980,6 +1267,16 @@
                   <div class="modal-meta"><strong>${esc(textByLang(recipe.timingDe[0], recipe.timingPl[0]) || '–')}</strong><span>${esc(textByLang('Timing','Czas'))}</span></div>
                   <div class="modal-meta"><strong>${recipe.ratingValue ? esc(String(recipe.ratingValue)) + '/10' : '–'}</strong><span>${esc(textByLang('Bewertung','Ocena'))}</span></div>
                 </div>
+                <div class="premium-intro">
+                  <h4>${esc(textByLang('Kurzüberblick','Krótki opis'))}</h4>
+                  <p>${esc(recipeIntro(recipe) || textByLang('Dieses Rezept ist klar aufgebaut und alltagstauglich.','Ten przepis jest przejrzysty i sprawdza się na co dzień.'))}</p>
+                  <div class="premium-chip-row">
+                    <span class="premium-chip">${esc(recipeCategory(recipe))}</span>
+                    <span class="premium-chip">${esc(recipeTimingLabel(recipe))}</span>
+                    ${recipe.ratingValue ? `<span class="premium-chip">${esc(textByLang('Bewertung','Ocena'))} ${esc(String(recipe.ratingValue))}/10</span>` : ''}
+                    <span class="premium-chip">${esc(recipePersons(recipe))}</span>
+                  </div>
+                </div>
                 <div class="modal-action-row">
                   <button class="mini-btn" data-copy-recipe="${recipe.id}">${esc(textByLang('Link kopieren','Kopiuj link'))}</button>
                   <button class="mini-btn" data-share-wa="${recipe.id}">WhatsApp</button>
@@ -1004,6 +1301,40 @@
                 <h3>${esc(textByLang('Tipps','Porady'))}</h3>
                 <div class="ui-copy">${tips.length ? `<ul>${tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Tipps vorhanden.','Brak porad.'))}</div>
               </article>
+            </section>
+            <section class="premium-related-shell">
+              <div class="premium-pair-grid">
+                <article class="premium-pair-card">
+                  <h4>${esc(textByLang('Passt gut dazu','Pasuje do tego'))}</h4>
+                  <p>${esc(pairSuggestionText(recipe)[state.activeLang === 'pl' ? 'pl' : 'de'])}</p>
+                </article>
+                <article class="premium-pair-card">
+                  <h4>${esc(textByLang('Mehr aus dieser Kategorie','Więcej z tej kategorii'))}</h4>
+                  <p>${esc(textByLang('Hier findest du weitere Rezepte aus ', 'Tutaj znajdziesz więcej przepisów z kategorii '))}${esc(recipeCategory(recipe))}.</p>
+                </article>
+              </div>
+              <div class="premium-section-head" style="margin-top:20px;">
+                <div>
+                  <h3>${esc(textByLang('Ähnliche Rezepte','Podobne przepisy'))}</h3>
+                  <p>${esc(textByLang('Weitere Vorschläge, die in Stil, Zutaten oder Themenwelt gut passen.','Kolejne propozycje pasujące stylem, składnikami albo kategorią.'))}</p>
+                </div>
+              </div>
+              <div class="premium-related-grid">
+                ${relatedRecipesFor(recipe, 6).map(rel => `
+                  <article class="premium-related-card" data-open-related="${rel.id}">
+                    <img src="${esc(rel.imageSrc)}" alt="${esc(recipeTitle(rel))}" onerror="onImgError(this)">
+                    <div class="premium-related-body">
+                      <div class="premium-related-kicker">${esc(recipeCategory(rel))}</div>
+                      <h4 class="premium-related-title">${esc(recipeTitle(rel))}</h4>
+                      <p class="premium-related-copy">${esc(recipeIntro(rel) || textByLang('Rezeptvorschau','Podgląd przepisu'))}</p>
+                      <div class="premium-related-meta">
+                        <span>${esc(recipeTimingLabel(rel))}</span>
+                        ${rel.ratingValue ? `<span>${esc(String(rel.ratingValue))}/10</span>` : ''}
+                      </div>
+                    </div>
+                  </article>
+                `).join('')}
+              </div>
             </section>
           </div>
         </section>
@@ -1033,6 +1364,9 @@
       modalBody.querySelector('[data-share-wa]')?.addEventListener('click', () => {
         const share = encodeURIComponent(recipeTitle(recipe) + ' ' + currentRecipeUrl(recipe.id));
         window.open('https://wa.me/?text=' + share, '_blank');
+      });
+      modalBody.querySelectorAll('[data-open-related]').forEach(card => {
+        card.addEventListener('click', () => openRecipe(card.dataset.openRelated));
       });
       modalBody.querySelector('[data-print-recipe]')?.addEventListener('click', () => {
         const printWindow = window.open('', '_blank');
@@ -1095,18 +1429,18 @@
         legalModalTitle.textContent = 'Impressum';
         legalModalBody.innerHTML = `
           <h3>Impressum</h3>
-          <p>Hier sollte das vollständige Impressum mit den echten Pflichtangaben für die Website eingetragen werden.</p>
+          <p>${textByLang("Hier sollte das vollständige Impressum mit den echten Pflichtangaben für die Website eingetragen werden.","Tutaj należy wstawić pełną notę prawną z prawidłowymi danymi dla strony.")}</p>
           <div class="legal-note">
-            Noch zu ergänzen: Name/Anbieter, Anschrift, Kontakt, verantwortliche Person, ggf. USt-ID und weitere rechtlich notwendige Angaben.
+            ${textByLang("Noch zu ergänzen: Name/Anbieter, Anschrift, Kontakt, verantwortliche Person, ggf. USt-ID und weitere rechtlich notwendige Angaben.","Do uzupełnienia: nazwa/podmiot, adres, kontakt, osoba odpowiedzialna, ewentualnie NIP/VAT i pozostałe wymagane dane prawne.")}
           </div>
         `;
       } else {
         legalModalTitle.textContent = 'Datenschutz';
         legalModalBody.innerHTML = `
           <h3>Datenschutz</h3>
-          <p>Hier sollte die vollständige Datenschutzerklärung für die Website eingetragen werden.</p>
+          <p>${textByLang("Hier sollte die vollständige Datenschutzerklärung für die Website eingetragen werden.","Tutaj należy wstawić pełną politykę prywatności dla strony.")}</p>
           <div class="legal-note">
-            Noch zu ergänzen: Verantwortlicher, Zwecke der Verarbeitung, Rechtsgrundlagen, Speicherdauer, Betroffenenrechte, Hosting/Cookies/Analyse-Tools und Kontakt Datenschutz.
+            ${textByLang("Noch zu ergänzen: Verantwortlicher, Zwecke der Verarbeitung, Rechtsgrundlagen, Speicherdauer, Betroffenenrechte, Hosting/Cookies/Analyse-Tools und Kontakt Datenschutz.","Do uzupełnienia: administrator danych, cele przetwarzania, podstawy prawne, okres przechowywania, prawa użytkownika, hosting/pliki cookie/narzędzia analityczne oraz kontakt ds. prywatności.")}
           </div>
         `;
       }
@@ -1140,11 +1474,26 @@
       });
       $('searchInput').addEventListener('focus', updateSuggest);
       $('searchInput').addEventListener('keydown', event => {
-        if (event.key === 'Enter' && !$('searchSuggest').classList.contains('hidden')) {
-          const first = $('searchSuggest').querySelector('.search-suggest-item');
-          if (first) {
+        const items = [...$('searchSuggest').querySelectorAll('.search-suggest-item')];
+        if (!$('searchSuggest').classList.contains('hidden') && items.length) {
+          if (event.key === 'ArrowDown') {
             event.preventDefault();
-            first.click();
+            activeSuggestIndex = Math.min(activeSuggestIndex + 1, items.length - 1);
+            items.forEach((el, idx) => el.classList.toggle('is-active', idx === activeSuggestIndex));
+            return;
+          }
+          if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            activeSuggestIndex = Math.max(activeSuggestIndex - 1, 0);
+            items.forEach((el, idx) => el.classList.toggle('is-active', idx === activeSuggestIndex));
+            return;
+          }
+          if (event.key === 'Enter') {
+            const target = activeSuggestIndex >= 0 ? items[activeSuggestIndex] : items[0];
+            if (target) {
+              event.preventDefault();
+              target.click();
+            }
           }
         }
       });
@@ -1199,7 +1548,12 @@
       });
       recipeGrid.addEventListener('click', e => {
         const btn = e.target.closest('[data-open]');
-        if (btn) openRecipe(btn.dataset.open);
+        if (btn) {
+          openRecipe(btn.dataset.open);
+          return;
+        }
+        const card = e.target.closest('[data-recipe-id]');
+        if (card) openRecipe(card.dataset.recipeId);
       });
       $('loadMoreBtn').addEventListener('click', () => {
         state.currentLimit += 24;
@@ -1209,6 +1563,7 @@
         const btn = e.target.closest('[data-suggest-id]');
         if (!btn) return;
         $('searchSuggest').classList.add('hidden');
+        activeSuggestIndex = -1;
         openRecipe(btn.dataset.suggestId);
       });
       document.addEventListener('click', e => {
