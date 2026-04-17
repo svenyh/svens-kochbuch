@@ -3,7 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Svens Kochbuch – New Design Functional</title>
+  <title>Svens Kochbuch – Rezepte auf Deutsch und Polnisch</title>
+  <meta name="description" content="Svens Kochbuch: erprobte Rezepte auf Deutsch und Polnisch – von Klassikern über Ofengerichte bis Grill, Beilagen und Wölpinghausen-Spezialitäten." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#6e9641" />
+  <link rel="canonical" id="canonicalLink" href="https://smilecookbook.de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Svens Kochbuch" />
+  <meta property="og:title" content="Svens Kochbuch – Rezepte auf Deutsch und Polnisch" />
+  <meta property="og:description" content="Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen." />
+  <meta property="og:url" content="https://smilecookbook.de/" />
+  <meta property="og:image" content="https://smilecookbook.de/images/rezeptbild_214.png" />
+  <meta property="og:image:alt" content="Svens Kochbuch" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Svens Kochbuch – Rezepte auf Deutsch und Polnisch" />
+  <meta name="twitter:description" content="Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen." />
+  <meta name="twitter:image" content="https://smilecookbook.de/images/rezeptbild_214.png" />
+  <script type="application/ld+json" id="websiteSchema">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Svens Kochbuch",
+    "url":"https://smilecookbook.de/",
+    "inLanguage":["de","pl"],
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://smilecookbook.de/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json" id="recipeSchema"></script>
+
   <style>
     :root{
       --bg:#f6f3ee;
@@ -386,17 +417,19 @@
     }
     .premium-related-shell{
       padding:0 20px 24px;
+      border-top:1px solid #eee3d8;
+      margin-top:8px;
     }
     .premium-section-head{
       display:flex;
       align-items:end;
       justify-content:space-between;
       gap:16px;
-      margin:6px 0 14px;
+      margin:18px 0 14px;
     }
     .premium-section-head h3{
       margin:0;
-      font-size:26px;
+      font-size:24px;
       line-height:1.05;
     }
     .premium-section-head p{
@@ -470,35 +503,10 @@
       color:#7a7168;
       font-size:12px;
     }
-    .premium-pair-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:14px;
-      margin-top:16px;
-    }
-    .premium-pair-card{
-      border:1px solid #e7ddd2;
-      background:#fffdfb;
-      padding:14px 15px;
-      box-shadow:0 8px 18px rgba(58,42,27,.04);
-    }
-    .premium-pair-card h4{
-      margin:0 0 8px;
-      font-size:18px;
-      line-height:1.15;
-    }
-    .premium-pair-card p{
-      margin:0;
-      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      color:#6c645d;
-      line-height:1.6;
-      font-size:14px;
-    }
 
     @media (max-width:1100px){
       .premium-related-grid{grid-template-columns:1fr 1fr}
-      .premium-pair-grid{grid-template-columns:1fr}
-
+      
       .hero{grid-template-columns:1fr}
       .hero-inner{grid-template-columns:1fr}
       .hero-side{grid-template-columns:1fr 1fr}
@@ -1209,30 +1217,99 @@
         .map(x => x.r);
     }
 
-    function pairSuggestionText(recipe){
-      const slug = recipe.categorySlug;
-      if (slug === 'grill-bbq') return {
-        de: 'Dazu passen besonders gut frische Salate, cremige Dips oder ein rustikales Brot.',
-        pl: 'Do tego szczególnie pasują świeże sałatki, kremowe dipy albo rustykalne pieczywo.'
-      };
-      if (slug === 'ofen-auflaeufe') return {
-        de: 'Ein frischer Salat oder etwas Eingelegtes bringt Ausgleich zu kräftigen Ofengerichten.',
-        pl: 'Świeża sałatka albo coś marynowanego dobrze równoważy sycące dania z piekarnika.'
-      };
-      if (slug === 'salate-beilagen') return {
-        de: 'Diese Rezepte passen besonders gut als Begleitung zu Ofen-, Grill- oder Familiengerichten.',
-        pl: 'Te przepisy świetnie sprawdzają się jako dodatek do dań z piekarnika, z grilla albo rodzinnych obiadów.'
-      };
-      return {
-        de: 'Schau dir als Nächstes ein ähnliches Rezept oder etwas aus derselben Themenwelt an.',
-        pl: 'Następnie zobacz podobny przepis albo coś z tej samej kategorii.'
-      };
+
+
+    function absoluteImageUrl(src){
+      try{
+        return new URL(src, window.location.origin + '/').toString();
+      }catch(_){
+        return src || '';
+      }
+    }
+
+    function setMeta(name, content){
+      const el = document.querySelector(`meta[name="${name}"]`);
+      if (el) el.setAttribute('content', content);
+    }
+
+    function setProp(property, content){
+      const el = document.querySelector(`meta[property="${property}"]`);
+      if (el) el.setAttribute('content', content);
+    }
+
+    function updateGlobalSeo(){
+      const baseTitle = 'Svens Kochbuch – Rezepte auf Deutsch und Polnisch';
+      document.title = baseTitle;
+      const canonical = document.getElementById('canonicalLink');
+      if (canonical) canonical.href = window.location.origin + '/';
+      setMeta('description', 'Svens Kochbuch: erprobte Rezepte auf Deutsch und Polnisch – von Klassikern über Ofengerichte bis Grill, Beilagen und Wölpinghausen-Spezialitäten.');
+      setProp('og:title', baseTitle);
+      setProp('og:description', 'Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen.');
+      setProp('og:url', window.location.origin + '/');
+      setProp('og:image', absoluteImageUrl('images/rezeptbild_214.png'));
+      setProp('og:image:alt', 'Svens Kochbuch');
+      setMeta('twitter:title', baseTitle);
+      setMeta('twitter:description', 'Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen.');
+      setMeta('twitter:image', absoluteImageUrl('images/rezeptbild_214.png'));
+      const recipeSchema = document.getElementById('recipeSchema');
+      if (recipeSchema) recipeSchema.textContent = '';
+    }
+
+    function updateRecipeSeo(recipe){
+      const title = `${recipeTitle(recipe)} – ${recipeCategory(recipe)} | Svens Kochbuch`;
+      const description = recipeIntro(recipe) || textByLang('Rezept aus Svens Kochbuch.','Przepis z Svens Kochbuch.');
+      document.title = title;
+      const canonical = document.getElementById('canonicalLink');
+      if (canonical) canonical.href = currentRecipeUrl(recipe.id);
+      setMeta('description', description);
+      setProp('og:title', title);
+      setProp('og:description', description);
+      setProp('og:url', currentRecipeUrl(recipe.id));
+      setProp('og:image', absoluteImageUrl(recipe.imageSrc));
+      setProp('og:image:alt', recipeTitle(recipe));
+      setMeta('twitter:title', title);
+      setMeta('twitter:description', description);
+      setMeta('twitter:image', absoluteImageUrl(recipe.imageSrc));
+
+      const recipeSchema = document.getElementById('recipeSchema');
+      if (recipeSchema){
+        const data = {
+          "@context":"https://schema.org",
+          "@type":"Recipe",
+          "name": recipeTitle(recipe),
+          "description": description,
+          "inLanguage": state.activeLang,
+          "image": [absoluteImageUrl(recipe.imageSrc)],
+          "recipeCategory": recipeCategory(recipe),
+          "recipeCuisine": recipeCategory(recipe),
+          "recipeIngredient": (state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe),
+          "recipeInstructions": (state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe).map(step => ({
+            "@type":"HowToStep",
+            "text": step
+          })),
+          "keywords": (recipe.tags || []).map(tag => state.activeLang === 'pl' ? (tag.pl || tag.de) : (tag.de || tag.pl)).join(', '),
+          "recipeYield": recipePersons(recipe),
+          "url": currentRecipeUrl(recipe.id)
+        };
+        if (recipeTimingLabel(recipe) && !/ohne zeitangabe|brak czasu/i.test(recipeTimingLabel(recipe))){
+          data.totalTime = recipeTimingLabel(recipe);
+        }
+        if (recipe.ratingValue){
+          data.aggregateRating = {
+            "@type":"AggregateRating",
+            "ratingValue": String(recipe.ratingValue),
+            "reviewCount": "1"
+          };
+        }
+        recipeSchema.textContent = JSON.stringify(data, null, 2);
+      }
     }
 
     function openRecipe(id){
       const recipe = state.recipes.find(r => String(r.id) === String(id));
       if (!recipe) return;
       state.activeRecipeId = recipe.id;
+      updateRecipeSeo(recipe);
       const ingredients = state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe;
       const steps = state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe;
       const timing = state.activeLang === 'pl' ? recipe.timingPl : recipe.timingDe;
@@ -1303,20 +1380,10 @@
               </article>
             </section>
             <section class="premium-related-shell">
-              <div class="premium-pair-grid">
-                <article class="premium-pair-card">
-                  <h4>${esc(textByLang('Passt gut dazu','Pasuje do tego'))}</h4>
-                  <p>${esc(pairSuggestionText(recipe)[state.activeLang === 'pl' ? 'pl' : 'de'])}</p>
-                </article>
-                <article class="premium-pair-card">
-                  <h4>${esc(textByLang('Mehr aus dieser Kategorie','Więcej z tej kategorii'))}</h4>
-                  <p>${esc(textByLang('Hier findest du weitere Rezepte aus ', 'Tutaj znajdziesz więcej przepisów z kategorii '))}${esc(recipeCategory(recipe))}.</p>
-                </article>
-              </div>
-              <div class="premium-section-head" style="margin-top:20px;">
+              <div class="premium-section-head">
                 <div>
                   <h3>${esc(textByLang('Ähnliche Rezepte','Podobne przepisy'))}</h3>
-                  <p>${esc(textByLang('Weitere Vorschläge, die in Stil, Zutaten oder Themenwelt gut passen.','Kolejne propozycje pasujące stylem, składnikami albo kategorią.'))}</p>
+                  <p>${esc(textByLang('Weitere Vorschläge, die thematisch oder geschmacklich gut dazu passen.','Kolejne propozycje, które dobrze pasują tematem albo smakiem.'))}</p>
                 </div>
               </div>
               <div class="premium-related-grid">
@@ -1458,6 +1525,7 @@
           renderTopics();
           renderRecipeGrid();
           if (state.activeRecipeId) openRecipe(state.activeRecipeId);
+          else updateGlobalSeo();
         });
       });
       $('jumpRecipesBtn').addEventListener('click', () => popularHead.scrollIntoView({behavior:'smooth'}));
@@ -1573,9 +1641,9 @@
           suggest.classList.add('hidden');
         }
       });
-      $('closeModalBtn').addEventListener('click', () => { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; });
+      $('closeModalBtn').addEventListener('click', () => { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; updateGlobalSeo(); });
       modal.addEventListener('click', e => {
-        if (e.target === modal) { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; }
+        if (e.target === modal) { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; updateGlobalSeo(); }
       });
       legalModal.addEventListener('click', e => {
         if (e.target === legalModal) legalModal.classList.remove('open');
@@ -1603,6 +1671,7 @@
         recipeGrid.classList.remove('hidden');
         detailPreviewSection.classList.remove('hidden');
         updateStaticI18n();
+        updateGlobalSeo();
         updateHero();
         renderTagFilters();
         renderTopics();
