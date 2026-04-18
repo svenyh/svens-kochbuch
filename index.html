@@ -7,28 +7,33 @@
   <meta name="description" content="Svens Kochbuch: erprobte Rezepte auf Deutsch und Polnisch – von Klassikern über Ofengerichte bis Grill, Beilagen und Wölpinghausen-Spezialitäten." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#6e9641" />
-  <link rel="canonical" id="canonicalLink" href="https://smilecookbook.de/" />
+  <link rel="canonical" id="canonicalLink" href="https://svenskochbuch.de/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Svens Kochbuch" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="pl_PL" />
   <meta property="og:title" content="Svens Kochbuch – Rezepte auf Deutsch und Polnisch" />
   <meta property="og:description" content="Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen." />
-  <meta property="og:url" content="https://smilecookbook.de/" />
-  <meta property="og:image" content="https://smilecookbook.de/images/rezeptbild_214.png" />
+  <meta property="og:url" content="https://svenskochbuch.de/" />
+  <meta property="og:image" content="https://svenskochbuch.de/images/rezeptbild_214.png" />
   <meta property="og:image:alt" content="Svens Kochbuch" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="alternate" hreflang="de" href="https://svenskochbuch.de/" />
+  <link rel="alternate" hreflang="pl" href="https://svenskochbuch.de/?lang=pl" />
+  <link rel="alternate" hreflang="x-default" href="https://svenskochbuch.de/" />
   <meta name="twitter:title" content="Svens Kochbuch – Rezepte auf Deutsch und Polnisch" />
   <meta name="twitter:description" content="Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen." />
-  <meta name="twitter:image" content="https://smilecookbook.de/images/rezeptbild_214.png" />
+  <meta name="twitter:image" content="https://svenskochbuch.de/images/rezeptbild_214.png" />
   <script type="application/ld+json" id="websiteSchema">
   {
     "@context":"https://schema.org",
     "@type":"WebSite",
     "name":"Svens Kochbuch",
-    "url":"https://smilecookbook.de/",
+    "url":"https://svenskochbuch.de/",
     "inLanguage":["de","pl"],
     "potentialAction":{
       "@type":"SearchAction",
-      "target":"https://smilecookbook.de/?q={search_term_string}",
+      "target":"https://svenskochbuch.de/?q={search_term_string}",
       "query-input":"required name=search_term_string"
     }
   }
@@ -698,7 +703,7 @@
     <div class="wrap header-inner">
       <div>
         <div class="brand-title">Svens Kochbuch</div>
-        <div class="brand-sub ui">Modernes Layout · stabile Funktionsbasis</div>
+        <div class="brand-sub ui">Hausgemachte Lieblingsrezepte auf einen Blick</div>
       </div>
       <div class="header-actions ui">
         <button class="lang-btn active" data-lang="de">DE</button>
@@ -762,7 +767,7 @@
           <button class="chip" data-quick="oven"><span class="marker">✦</span><span data-i18n-de="Ofen" data-i18n-pl="Piekarnik">Ofen</span></button>
           <button class="chip" data-quick="quick"><span class="marker">⚡</span><span data-i18n-de="Schnell" data-i18n-pl="Szybkie">Schnell</span></button>
         </div>
-        <div class="result-count" id="resultCount">0 Rezepte gefunden</div>
+        <div class="result-count" id="resultCount">Rezepte werden geladen…</div>
       </div>
 
       <div class="search-bottom" style="margin-top:10px">
@@ -1163,7 +1168,7 @@
       $('emptyText').textContent = textByLang('Nimm einen Filter zurück oder probiere einen anderen Suchbegriff.','Usuń filtr lub wpisz inne hasło.');
       $('closeModalBtn').textContent = textByLang('Schließen','Zamknij');
       const brandSub = document.querySelector('.brand-sub');
-      if (brandSub) brandSub.textContent = textByLang('Modernes Layout · stabile Funktionsbasis','Nowy układ · stabilna baza funkcjonalna');
+      if (brandSub) brandSub.textContent = textByLang('Hausgemachte Lieblingsrezepte auf einen Blick','Domowe ulubione przepisy w jednym miejscu');
       const heroKeepTitle = document.querySelectorAll('.hero-card h3');
       if (heroKeepTitle[0]) heroKeepTitle[0].textContent = textByLang('Was sich ändert','Co nowego');
       if (heroKeepTitle[1]) heroKeepTitle[1].textContent = textByLang('Schnell gefunden','Szybki start');
@@ -1324,16 +1329,21 @@
       return state.recipes
         .filter(r => r.id !== recipe.id)
         .map(r => {
-          let score = 0;
-          if (r.categorySlug === recipe.categorySlug) score += 30;
           const kws = recipeKeywordSet(r);
           let overlap = 0;
           baseSet.forEach(k => { if (kws.has(k)) overlap += 1; });
-          score += Math.min(overlap, 8) * 4;
-          if ((r.ratingValue || 0) >= 8) score += 4;
+          const sameCategory = r.categorySlug === recipe.categorySlug;
+          const sharedTagCount = (r.tags || []).filter(tag => (recipe.tags || []).some(base => base.slug === tag.slug)).length;
+          let score = 0;
+          if (sameCategory) score += 40;
+          score += Math.min(overlap, 8) * 5;
+          score += sharedTagCount * 6;
+          if ((r.ratingValue || 0) >= 8) score += 3;
           if (Math.abs((r.id || 0) - (recipe.id || 0)) <= 15) score += 1;
-          return { r, score };
+          const isRelevant = sameCategory || overlap >= 2 || sharedTagCount >= 1;
+          return { r, score, isRelevant };
         })
+        .filter(x => x.isRelevant && x.score >= 18)
         .sort((a,b) => b.score - a.score || (b.r.ratingValue || 0) - (a.r.ratingValue || 0) || b.r.id - a.r.id)
         .slice(0, limit)
         .map(x => x.r);
@@ -1359,19 +1369,63 @@
       if (el) el.setAttribute('content', content);
     }
 
+    function updateHtmlLang(){
+      document.documentElement.lang = state.activeLang === 'pl' ? 'pl' : 'de';
+    }
+
+    function updateAlternateLinks(recipe=null){
+      const baseUrl = window.location.origin + '/';
+      const deLink = document.querySelector('link[hreflang="de"]');
+      const plLink = document.querySelector('link[hreflang="pl"]');
+      const xDefaultLink = document.querySelector('link[hreflang="x-default"]');
+      const deHref = recipe ? currentRecipeUrl(recipe.id) : baseUrl;
+      const plHref = recipe ? `${currentRecipeUrl(recipe.id)}${currentRecipeUrl(recipe.id).includes('?') ? '&' : '?'}lang=pl` : `${baseUrl}?lang=pl`;
+      if (deLink) deLink.href = deHref;
+      if (plLink) plLink.href = plHref;
+      if (xDefaultLink) xDefaultLink.href = baseUrl;
+    }
+
+    function updateWebsiteSchema(){
+      const websiteSchema = document.getElementById('websiteSchema');
+      if (!websiteSchema) return;
+      const data = {
+        "@context":"https://schema.org",
+        "@type":"WebSite",
+        "name":"Svens Kochbuch",
+        "alternateName":"Svens persönliches Kochbuch",
+        "url": window.location.origin + '/',
+        "description": textByLang(
+          'Erprobte Rezepte auf Deutsch und Polnisch – von Klassikern über Ofengerichte bis Grill, Beilagen und Wölpinghausen.',
+          'Sprawdzone przepisy po niemiecku i po polsku – od klasyków przez dania z piekarnika aż po grill, dodatki i Wölpinghausen.'
+        ),
+        "inLanguage":["de","pl"],
+        "potentialAction":{
+          "@type":"SearchAction",
+          "target": `${window.location.origin}/?q={search_term_string}`,
+          "query-input":"required name=search_term_string"
+        }
+      };
+      websiteSchema.textContent = JSON.stringify(data, null, 2);
+    }
+
     function updateGlobalSeo(){
       const baseTitle = 'Svens Kochbuch – Rezepte auf Deutsch und Polnisch';
+      const baseDescription = 'Svens Kochbuch: erprobte Rezepte auf Deutsch und Polnisch – von Klassikern über Ofengerichte bis Grill, Beilagen und Wölpinghausen-Spezialitäten.';
       document.title = baseTitle;
+      updateHtmlLang();
+      updateWebsiteSchema();
+      updateAlternateLinks();
       const canonical = document.getElementById('canonicalLink');
       if (canonical) canonical.href = window.location.origin + '/';
-      setMeta('description', 'Svens Kochbuch: erprobte Rezepte auf Deutsch und Polnisch – von Klassikern über Ofengerichte bis Grill, Beilagen und Wölpinghausen-Spezialitäten.');
+      setMeta('description', baseDescription);
       setProp('og:title', baseTitle);
       setProp('og:description', 'Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen.');
       setProp('og:url', window.location.origin + '/');
       setProp('og:image', absoluteImageUrl('images/rezeptbild_214.png'));
       setProp('og:image:alt', 'Svens Kochbuch');
+      setProp('og:locale', state.activeLang === 'pl' ? 'pl_PL' : 'de_DE');
       setMeta('twitter:title', baseTitle);
-      setMeta('twitter:description', 'Erprobte Rezepte, moderne Rezeptsuche und starke Rezeptseiten – von Klassikern bis Wölpinghausen.');
+      setMeta('twitter:description', baseDescription);
       setMeta('twitter:image', absoluteImageUrl('images/rezeptbild_214.png'));
       const recipeSchema = document.getElementById('recipeSchema');
       if (recipeSchema) recipeSchema.textContent = '';
@@ -1380,21 +1434,28 @@
     function updateRecipeSeo(recipe){
       const title = `${recipeTitle(recipe)} – ${recipeCategory(recipe)} | Svens Kochbuch`;
       const description = recipeIntro(recipe) || textByLang('Rezept aus Svens Kochbuch.','Przepis z Svens Kochbuch.');
+      const shareUrl = currentRecipeUrl(recipe.id);
       document.title = title;
+      updateHtmlLang();
+      updateWebsiteSchema();
+      updateAlternateLinks(recipe);
       const canonical = document.getElementById('canonicalLink');
-      if (canonical) canonical.href = currentRecipeUrl(recipe.id);
+      if (canonical) canonical.href = window.location.origin + '/';
       setMeta('description', description);
       setProp('og:title', title);
       setProp('og:description', description);
-      setProp('og:url', currentRecipeUrl(recipe.id));
+      setProp('og:url', shareUrl);
       setProp('og:image', absoluteImageUrl(recipe.imageSrc));
       setProp('og:image:alt', recipeTitle(recipe));
+      setProp('og:locale', state.activeLang === 'pl' ? 'pl_PL' : 'de_DE');
       setMeta('twitter:title', title);
       setMeta('twitter:description', description);
       setMeta('twitter:image', absoluteImageUrl(recipe.imageSrc));
 
       const recipeSchema = document.getElementById('recipeSchema');
       if (recipeSchema){
+        const instructions = (state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe);
+        const ingredients = (state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe);
         const data = {
           "@context":"https://schema.org",
           "@type":"Recipe",
@@ -1403,24 +1464,32 @@
           "inLanguage": state.activeLang,
           "image": [absoluteImageUrl(recipe.imageSrc)],
           "recipeCategory": recipeCategory(recipe),
-          "recipeCuisine": recipeCategory(recipe),
-          "recipeIngredient": (state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe),
-          "recipeInstructions": (state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe).map(step => ({
+          "recipeIngredient": ingredients,
+          "recipeInstructions": instructions.map(step => ({
             "@type":"HowToStep",
             "text": step
           })),
           "keywords": (recipe.tags || []).map(tag => state.activeLang === 'pl' ? (tag.pl || tag.de) : (tag.de || tag.pl)).join(', '),
           "recipeYield": recipePersons(recipe),
-          "url": currentRecipeUrl(recipe.id)
+          "url": shareUrl,
+          "mainEntityOfPage": shareUrl,
+          "author": {
+            "@type":"Person",
+            "name":"Sven"
+          },
+          "isPartOf": {
+            "@type":"WebSite",
+            "name":"Svens Kochbuch",
+            "url": window.location.origin + '/'
+          }
         };
-        if (recipeTimingLabel(recipe) && !/ohne zeitangabe|brak czasu/i.test(recipeTimingLabel(recipe))){
-          data.totalTime = recipeTimingLabel(recipe);
-        }
         if (recipe.ratingValue){
           data.aggregateRating = {
             "@type":"AggregateRating",
             "ratingValue": String(recipe.ratingValue),
-            "reviewCount": "1"
+            "reviewCount": "1",
+            "bestRating": "10",
+            "worstRating": "1"
           };
         }
         recipeSchema.textContent = JSON.stringify(data, null, 2);
@@ -1478,6 +1547,7 @@
       const timing = state.activeLang === 'pl' ? recipe.timingPl : recipe.timingDe;
       const tips = state.activeLang === 'pl' ? recipe.tipsPl : recipe.tipsDe;
       modalTitle.textContent = recipeTitle(recipe);
+      const relatedRecipes = relatedRecipesFor(recipe, 6);
       modalBody.innerHTML = `
         <section class="modal-layout">
           <div class="modal-content">
@@ -1532,6 +1602,7 @@
               ${buildKnowledgeBlock(recipe)}
             </section>
 
+            ${relatedRecipes.length ? `
             <section class="premium-related-shell">
               <div class="premium-section-head">
                 <div>
@@ -1540,7 +1611,7 @@
                 </div>
               </div>
               <div class="premium-related-grid">
-                ${relatedRecipesFor(recipe, 6).map(rel => `
+                ${relatedRecipes.map(rel => `
                   <article class="premium-related-card" data-open-related="${rel.id}">
                     <img src="${esc(rel.imageSrc)}" alt="${esc(recipeTitle(rel))}" onerror="onImgError(this)">
                     <div class="premium-related-body">
@@ -1556,6 +1627,7 @@
                 `).join('')}
               </div>
             </section>
+            ` : ''}
           </div>
         </section>
       `;
@@ -1810,11 +1882,11 @@
 
     async function init(){
       try{
+        loadingBox.textContent = textByLang('Rezepte werden geladen…','Przepisy są ładowane…');
         const res = await fetch('kochbuch.xml', { cache:'no-store' });
         if (!res.ok) throw new Error('kochbuch.xml konnte nicht geladen werden');
         const xmlText = await res.text();
         state.recipes = parseRecipes(xmlText);
-        loadingBox.classList.add('hidden');
         heroSection.classList.remove('hidden');
         searchSection.classList.remove('hidden');
         topicsSection.classList.remove('hidden');
@@ -1829,6 +1901,8 @@
         renderRecipeGrid();
         updateSuggest();
         bindEvents();
+        requestAnimationFrame(() => {
+          });
 
         const hash = window.location.hash;
         if (hash.startsWith('#rezept-')) {
