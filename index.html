@@ -1792,8 +1792,13 @@
         const btn = e.target.closest('[data-quick]');
         if (!btn) return;
         state.activeQuick = btn.dataset.quick;
+        if (state.activeQuick === 'all') {
+          state.activeCategory = 'all';
+          state.activeTags = [];
+        }
         state.currentLimit = INITIAL_VISIBLE;
         document.querySelectorAll('[data-quick]').forEach(x => x.classList.toggle('active', x === btn));
+        renderTopics();
         renderTagFilters();
         renderRecipeGrid();
         updateSuggest();
