@@ -531,7 +531,34 @@
       border-bottom:1px solid #eee3d8;
       background:linear-gradient(180deg,#fffdfa 0%, #faf6f1 100%);
     }
-    .recipe-editorial-category{
+    
+    .recipe-breadcrumbs{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:12px;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      font-size:12px;
+      color:#85796c;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+    }
+    .recipe-breadcrumbs span{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .recipe-breadcrumbs span + span::before{
+      content:"›";
+      color:#bf6d4b;
+      margin-right:8px;
+    }
+    .recipe-meta-label{
+      color:#9b6d53;
+      font-weight:800;
+      margin-right:6px;
+    }
+.recipe-editorial-category{
       display:inline-flex;
       align-items:center;
       padding:7px 10px;
@@ -783,6 +810,13 @@
       </div>
     </section>
 
+    <div class="section-head hidden" id="topicsHead">
+      <div>
+        <h2 id="topicsTitle">Themenwelten</h2>
+        <p id="topicsCopy">Kuratiert nach Stil, Alltag und Lieblingsküche.</p>
+      </div>
+    </div>
+
     <section class="topics hidden" id="topicsSection"></section>
 
     <div class="section-head hidden" id="popularHead">
@@ -896,6 +930,7 @@
     const loadingBox = $('loadingBox');
     const heroSection = $('heroSection');
     const searchSection = $('searchSection');
+    const topicsHead = $('topicsHead');
     const topicsSection = $('topicsSection');
     const popularHead = $('popularHead');
     const recipeGrid = $('recipeGrid');
@@ -1160,6 +1195,8 @@
       document.querySelectorAll('[data-i18n-de]').forEach(node => {
         node.textContent = state.activeLang === 'pl' ? node.dataset.i18nPl : node.dataset.i18nDe;
       });
+      $('topicsTitle').textContent = textByLang('Themenwelten','Światy smaków');
+      $('topicsCopy').textContent = textByLang('Kuratiert nach Stil, Alltag und Lieblingsküche.','Wybrane według stylu, codzienności i ulubionej kuchni.');
       $('popularTitle').textContent = textByLang('Beliebte Rezepte','Popularne przepisy');
       $('popularCopy').textContent = textByLang('Klarer, ruhiger und bildstärker im neuen Design.','Czytelniej, spokojniej i bardziej apetycznie w nowym układzie.');
       $('previewIngredientsTitle').textContent = textByLang('Zutaten','Składniki');
@@ -1497,6 +1534,57 @@
     }
 
 
+
+    function buildVariantsFallback(recipe){
+      const title = normalize((recipe.titleDe || '') + ' ' + (recipe.titlePl || ''));
+      const tagSlugs = new Set((recipe.tags || []).map(tag => tag.slug));
+      const hints = [];
+
+      const addHint = (de, pl) => {
+        const text = textByLang(de, pl);
+        if (!hints.includes(text)) hints.push(text);
+      };
+
+      if (recipe.categorySlug === 'ofen-auflaeufe'){
+        addHint('Lässt sich sehr gut vorbereiten und erst kurz vor dem Servieren fertig überbacken.',
+                'To danie można dobrze przygotować wcześniej i zapiec dopiero tuż przed podaniem.');
+      }
+      if (recipe.categorySlug === 'grill-bbq'){
+        addHint('Marinaden, Dips oder Toppings am besten separat vorbereiten und erst am Ende kombinieren.',
+                'Marynaty, dipy i dodatki najlepiej przygotować osobno i połączyć dopiero na końcu.');
+      }
+      if (recipe.categorySlug === 'salate-beilagen'){
+        addHint('Frische Zutaten und Dressing am besten erst kurz vor dem Servieren zusammengeben.',
+                'Świeże składniki i sos najlepiej połączyć tuż przed podaniem.');
+      }
+      if (tagSlugs.has('kartoffeln') || title.includes('kartoff')){
+        addHint('Passt gut zu einem einfachen Gurkensalat, Kräuterquark oder einer schnellen Joghurtsoße.',
+                'Świetnie pasuje do prostej mizerii, twarożku z ziołami albo szybkiego sosu jogurtowego.');
+      }
+      if (title.includes('pizza') || title.includes('stromboli') || title.includes('focaccia') || title.includes('pinsa')){
+        addHint('Mit einem einfachen Tomatensalat oder einem leichten Knoblauchdip wird daraus schnell ein kompletter Abendessen-Teller.',
+                'Z prostą sałatką pomidorową albo lekkim dipem czosnkowym to szybka pełna kolacja.');
+      }
+      if (title.includes('kuchen') || title.includes('ciasto') || title.includes('sernik') || title.includes('szarlotka')){
+        addHint('Am besten vollständig auskühlen lassen, dann wird die Struktur sauberer und der Anschnitt schöner.',
+                'Najlepiej całkowicie ostudzić wypiek, wtedy struktura jest stabilniejsza, a krojenie ładniejsze.');
+      }
+      if (title.includes('gyros')){
+        addHint('Für mehr Frische passen rote Zwiebel, Gurke oder ein Klecks Joghurt-Knoblauchsoße sehr gut dazu.',
+                'Dla większej świeżości świetnie pasują czerwona cebula, ogórek albo odrobina sosu jogurtowo-czosnkowego.');
+      }
+      if (title.includes('cukin') || title.includes('zucchini')){
+        addHint('Bei Zucchini lohnt es sich, überschüssige Flüssigkeit vorher gut auszudrücken oder kurz auszuschwitzen.',
+                'Przy cukinii warto wcześniej dobrze odcisnąć nadmiar wody albo lekko ją odparować.');
+      }
+      if (title.includes('leczo')){
+        addHint('Am nächsten Tag schmeckt Leczo oft noch runder, weil sich Gemüse, Würze und Sauce besser verbinden.',
+                'Następnego dnia leczo często smakuje jeszcze lepiej, bo warzywa, przyprawy i sos lepiej się łączą.');
+      }
+
+      return hints.slice(0, 3);
+    }
+
     function buildKnowledgeBlock(recipe){
       const slug = recipe.categorySlug;
       let heading = textByLang('Wissenswertes','Warto wiedzieć');
@@ -1546,19 +1634,25 @@
       const steps = state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe;
       const timing = state.activeLang === 'pl' ? recipe.timingPl : recipe.timingDe;
       const tips = state.activeLang === 'pl' ? recipe.tipsPl : recipe.tipsDe;
+      const tipsForDisplay = tips.length ? tips : buildVariantsFallback(recipe);
       modalTitle.textContent = recipeTitle(recipe);
       const relatedRecipes = relatedRecipesFor(recipe, 6);
       modalBody.innerHTML = `
         <section class="modal-layout">
           <div class="modal-content">
             <section class="recipe-editorial-head">
+              <div class="recipe-breadcrumbs">
+                <span>${esc(textByLang('Startseite','Strona główna'))}</span>
+                <span>${esc(recipeCategory(recipe))}</span>
+                <span>${esc(recipeTitle(recipe))}</span>
+              </div>
               <div class="recipe-editorial-category">${esc(recipeCategory(recipe))}</div>
               <h2 class="recipe-editorial-title">${esc(recipeTitle(recipe))}</h2>
               <div class="recipe-editorial-meta">
-                <span>${esc(recipeTimingLabel(recipe))}</span>
-                <span>${esc(recipePersons(recipe))}</span>
-                ${recipe.ratingValue ? `<span>${esc(textByLang('Bewertung','Ocena'))} ${esc(String(recipe.ratingValue))}/10</span>` : ''}
-                <span>ID ${recipe.id}</span>
+                <span><span class="recipe-meta-label">${esc(textByLang('Zeit','Czas'))}</span>${esc(recipeTimingLabel(recipe))}</span>
+                <span><span class="recipe-meta-label">${esc(textByLang('Portionen','Porcje'))}</span>${esc(recipePersons(recipe))}</span>
+                ${recipe.ratingValue ? `<span><span class="recipe-meta-label">${esc(textByLang('Bewertung','Ocena'))}</span>${esc(String(recipe.ratingValue))}/10</span>` : ''}
+                <span><span class="recipe-meta-label">${esc(textByLang('Sammlung','Kolekcja'))}</span>${esc(recipeCategory(recipe))}</span>
               </div>
               <div class="modal-action-row">
                 <button class="mini-btn" data-copy-recipe="${recipe.id}">${esc(textByLang('Link kopieren','Kopiuj link'))}</button>
@@ -1569,7 +1663,7 @@
                 <button class="recipe-section-tab" data-section-jump="ingredients">${esc(textByLang('Zutaten','Składniki'))}</button>
                 <button class="recipe-section-tab" data-section-jump="preparation">${esc(textByLang('Zubereitung','Przygotowanie'))}</button>
                 <button class="recipe-section-tab" data-section-jump="timing">${esc(textByLang('Timing','Czas'))}</button>
-                <button class="recipe-section-tab" data-section-jump="tips">${esc(textByLang('Tipps','Porady'))}</button>
+                <button class="recipe-section-tab" data-section-jump="tips">${esc(textByLang('Tipps & Varianten','Porady i warianty'))}</button>
                 <button class="recipe-section-tab" data-section-jump="knowledge">${esc(textByLang('Wissenswertes','Warto wiedzieć'))}</button>
               </div>
             </section>
@@ -1596,8 +1690,8 @@
                 <div class="ui-copy">${timing.length ? `<ul>${timing.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Zeitangaben vorhanden.','Brak danych o czasie.'))}</div>
               </article>
               <article class="recipe-editorial-card" id="section-tips">
-                <h3>${esc(textByLang('Tipps','Porady'))}</h3>
-                <div class="ui-copy">${tips.length ? `<ul>${tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Tipps vorhanden.','Brak porad.'))}</div>
+                <h3>${esc(textByLang('Tipps & Varianten','Porady i warianty'))}</h3>
+                <div class="ui-copy">${tipsForDisplay.length ? `<ul>${tipsForDisplay.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Hinweise vorhanden.','Brak wskazówek.'))}</div>
               </article>
               ${buildKnowledgeBlock(recipe)}
             </section>
@@ -1667,7 +1761,8 @@
         const ingredientsHtml = ingredients.map(x => `<li>${esc(x)}</li>`).join('');
         const stepsHtml = steps.map(x => `<li>${esc(x)}</li>`).join('');
         const timingHtml = timing.length ? `<ul>${timing.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
-        const tipsHtml = tips.length ? `<ul>${tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+        const tipsForPrint = tips.length ? tips : buildVariantsFallback(recipe);
+        const tipsHtml = tipsForPrint.length ? `<ul>${tipsForPrint.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
         printWindow.document.write(`
           <!DOCTYPE html>
           <html lang="${state.activeLang}">
@@ -1691,7 +1786,7 @@
             <section><h2>${esc(textByLang('Zutaten','Składniki'))}</h2><ul>${ingredientsHtml}</ul></section>
             <section><h2>${esc(textByLang('Zubereitung','Przygotowanie'))}</h2><ol>${stepsHtml}</ol></section>
             ${timingHtml ? `<section><h2>${esc(textByLang('Timing','Czas'))}</h2>${timingHtml}</section>` : ''}
-            ${tipsHtml ? `<section><h2>${esc(textByLang('Tipps','Porady'))}</h2>${tipsHtml}</section>` : ''}
+            ${tipsHtml ? `<section><h2>${esc(textByLang('Tipps & Varianten','Porady i warianty'))}</h2>${tipsHtml}</section>` : ''}
           </body></html>
         `);
         printWindow.document.close();
@@ -1894,6 +1989,7 @@
         state.recipes = parseRecipes(xmlText);
         heroSection.classList.remove('hidden');
         searchSection.classList.remove('hidden');
+        topicsHead.classList.remove('hidden');
         topicsSection.classList.remove('hidden');
         popularHead.classList.remove('hidden');
         recipeGrid.classList.remove('hidden');
@@ -1906,6 +2002,7 @@
         renderRecipeGrid();
         updateSuggest();
         bindEvents();
+        loadingBox.classList.add('hidden');
         requestAnimationFrame(() => {
           });
 

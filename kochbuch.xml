@@ -16438,4 +16438,1150 @@
       </tips>
     </translation>
   </recipe>
+  <recipe id="215">
+    <name>Klassischer Pizzateig Sven-Style</name>
+    <persons>2 große Pizzen oder 1 Blechpizza</persons>
+    <category>Pizza / Grundlagen &amp; Saucen</category>
+    <intro lang="de">Ein klassischer Hefeteig für Pizza, der alltagstauglich ist und sowohl auf dem Blech als auch als runde Pizza sehr gut funktioniert.</intro>
+    <image src="images/rezeptbild_215.png" alt="Klassischer Pizzateig Sven-Style" />
+    <ingredients>
+      <item>500 g Weizenmehl Typ 550</item>
+      <item>1 Würfel frische Hefe oder 1 Päckchen Trockenhefe</item>
+      <item>325 ml lauwarmes Wasser</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Zucker</item>
+      <item>2 TL Salz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Das lauwarme Wasser in eine Schüssel geben und Zucker und Hefe darin auflösen.</step>
+      <step nr="2">5–10 Minuten stehen lassen, bis die Hefe leicht arbeitet.</step>
+      <step nr="3">Mehl, Salz und Olivenöl dazugeben und alles 8–10 Minuten zu einem glatten, elastischen Teig verkneten.</step>
+      <step nr="4">Den Teig abdecken und an einem warmen Ort 45–60 Minuten gehen lassen.</step>
+      <step nr="5">Danach kurz durchkneten und je nach gewünschter Pizza dünn oder etwas dicker ausrollen.</step>
+      <step nr="6">Mit Sauce und Belag nach Wunsch belegen und im sehr heißen Ofen backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Gehzeit: ca. 45–60 Minuten</item>
+      <item>Backzeit: ca. 10–15 Minuten bei 230–250 °C</item>
+    </timing>
+    <tips>
+      <item>Typ 550 ergibt meist die bessere Struktur als 405er Mehl.</item>
+      <item>Wer mehr Aroma möchte, lässt den Teig über Nacht im Kühlschrank gehen.</item>
+      <item>Den Ofen mit Blech oder Pizzastein gut vorheizen.</item>
+    </tips>
+    <rating>9/10</rating>
+  </recipe>
+
+  <recipe id="216">
+    <name>Hauspizza vom Blech</name>
+    <persons>4 Personen</persons>
+    <category>Pizza / Ofengerichte</category>
+    <intro lang="de">Eine unkomplizierte Blechpizza für Familie oder Gäste. Sie ist kräftig belegt, schnell portioniert und perfekt für einen entspannten Pizza-Abend.</intro>
+    <image src="images/rezeptbild_216.png" alt="Hauspizza vom Blech" />
+    <ingredients>
+      <item>500 g Weizenmehl Typ 550</item>
+      <item>1 Würfel frische Hefe</item>
+      <item>325 ml lauwarmes Wasser</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Zucker</item>
+      <item>2 TL Salz</item>
+      <item>1 Dose gehackte Tomaten (400 g)</item>
+      <item>2 EL Tomatenmark</item>
+      <item>1 Knoblauchzehe</item>
+      <item>1 TL Oregano</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 TL Zucker</item>
+      <item>200 g geriebener Mozzarella</item>
+      <item>100 g geriebener Gouda</item>
+      <item>100 g Salami</item>
+      <item>1 Paprika</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>150 g Champignons</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Hefeteig wie beim Grundrezept herstellen und gehen lassen.</step>
+      <step nr="2">Für die Sauce Tomaten, Tomatenmark, Knoblauch, Oregano, Salz, Pfeffer und Zucker verrühren.</step>
+      <step nr="3">Den Teig auf ein belegtes Blech ziehen und die Sauce gleichmäßig darauf verteilen.</step>
+      <step nr="4">Mit Käse, Salami, Paprika, Zwiebeln und Champignons belegen.</step>
+      <step nr="5">Im gut vorgeheizten Ofen goldbraun backen.</step>
+      <step nr="6">Kurz ruhen lassen und in Stücke schneiden.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Gehzeit: ca. 45–60 Minuten</item>
+      <item>Backzeit: ca. 15–20 Minuten bei 230 °C</item>
+    </timing>
+    <tips>
+      <item>Ideal für Familien oder Gäste, weil alles auf einmal fertig wird.</item>
+      <item>Nach dem Backen passt etwas Oregano oder Rucola sehr gut dazu.</item>
+      <item>Auch gut für Resteverwertung im Kühlschrank.</item>
+    </tips>
+    <rating>9/10</rating>
+  </recipe>
+
+  <recipe id="217">
+    <name>Pizza Margherita klassisch</name>
+    <persons>2 Personen</persons>
+    <category>Pizza / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Die klassische Pizza Margherita lebt von wenigen guten Zutaten. Weniger Belag, viel Geschmack und ein schön heiß gebackener Boden.</intro>
+    <image src="images/rezeptbild_217.png" alt="Pizza Margherita klassisch" />
+    <ingredients>
+      <item>1 Portion klassischer Pizzateig</item>
+      <item>200 g passierte Tomaten</item>
+      <item>1 EL Tomatenmark</item>
+      <item>1 kleine Knoblauchzehe</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 TL Oregano</item>
+      <item>2 Kugeln Mozzarella</item>
+      <item>einige frische Basilikumblätter</item>
+      <item>1 EL Olivenöl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Pizzateig vorbereiten und dünn ausrollen.</step>
+      <step nr="2">Passierte Tomaten mit Tomatenmark, Knoblauch, Salz, Pfeffer und Oregano verrühren.</step>
+      <step nr="3">Die Sauce auf dem Teig verstreichen und den Mozzarella darauf verteilen.</step>
+      <step nr="4">Im heißen Ofen backen, bis Rand und Käse schön gebräunt sind.</step>
+      <step nr="5">Nach dem Backen mit Basilikum und etwas Olivenöl verfeinern.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Backzeit: ca. 10–12 Minuten bei 250 °C</item>
+    </timing>
+    <tips>
+      <item>Mozzarella vorher etwas abtropfen lassen.</item>
+      <item>Frisches Basilikum erst nach dem Backen auflegen.</item>
+      <item>Nicht zu viel Sauce verwenden, damit der Boden nicht weich wird.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="218">
+    <name>Schnelle Pizza ohne Hefe</name>
+    <persons>2–3 Personen</persons>
+    <category>Pizza / Schnelle Küche</category>
+    <intro lang="de">Eine schnelle Pizza-Variante ohne Hefe für Tage, an denen es unkompliziert und zügig gehen soll.</intro>
+    <image src="images/rezeptbild_218.png" alt="Schnelle Pizza ohne Hefe" />
+    <ingredients>
+      <item>250 g Mehl</item>
+      <item>1 Päckchen Backpulver</item>
+      <item>1 TL Salz</item>
+      <item>125 ml Wasser</item>
+      <item>4 EL Olivenöl</item>
+      <item>150 g passierte Tomaten</item>
+      <item>150 g geriebener Käse</item>
+      <item>Belag nach Wunsch, z. B. Salami, Paprika, Zwiebeln oder Champignons</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Mehl, Backpulver und Salz vermischen.</step>
+      <step nr="2">Wasser und Olivenöl dazugeben und zu einem glatten Teig verkneten.</step>
+      <step nr="3">Den Teig direkt ausrollen und auf ein Blech oder Backpapier legen.</step>
+      <step nr="4">Mit passierten Tomaten bestreichen und mit Käse und gewünschtem Belag belegen.</step>
+      <step nr="5">Im vorgeheizten Ofen backen, bis der Rand goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Backzeit: ca. 15–18 Minuten bei 220 °C</item>
+    </timing>
+    <tips>
+      <item>Der Boden wird eher mürbe als klassischer Hefeteig.</item>
+      <item>Ideal für spontane Pizza-Abende.</item>
+      <item>Für mehr Geschmack etwas Oregano oder Knoblauchpulver in den Teig geben.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="219">
+    <name>Gyros-Salat Sven-Style</name>
+    <persons>4 Personen</persons>
+    <category>Salate &amp; Beilagen / Schnelle Küche</category>
+    <intro lang="de">Ein kräftiger, partytauglicher Salat mit Gyrosfleisch, frischem Gemüse und cremigem Tzatziki. Perfekt für Grillabende oder Gäste.</intro>
+    <image src="images/rezeptbild_219.png" alt="Gyros-Salat Sven-Style" />
+    <ingredients>
+      <item>500 g Hähnchen- oder Schweinegeschnetzeltes</item>
+      <item>2 EL Gyrosgewürz</item>
+      <item>1 EL Öl</item>
+      <item>1 Eisbergsalat</item>
+      <item>1 Gurke</item>
+      <item>3 Tomaten</item>
+      <item>1 rote Zwiebel</item>
+      <item>1 Dose Mais</item>
+      <item>150 g geriebener Käse</item>
+      <item>200 g Tzatziki oder Knoblauch-Joghurt-Dressing</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Das Fleisch mit Gyrosgewürz und Öl marinieren.</step>
+      <step nr="2">In einer Pfanne kräftig anbraten und danach abkühlen lassen.</step>
+      <step nr="3">Eisbergsalat in Streifen schneiden. Gurke, Tomaten und Zwiebel klein schneiden. Mais abgießen.</step>
+      <step nr="4">Alles in eine große Schüssel oder in Schichten in eine Form geben.</step>
+      <step nr="5">Das gebratene Fleisch darauf verteilen und mit Käse bestreuen.</step>
+      <step nr="6">Zum Schluss mit Tzatziki oder Knoblauch-Dressing servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Bratzeit: ca. 10 Minuten</item>
+      <item>Ziehzeit optional: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Das Dressing erst kurz vor dem Servieren zugeben, damit der Salat frisch bleibt.</item>
+      <item>Mit Fladenbrot oder Baguette servieren.</item>
+      <item>Sehr gut für Partys geeignet.</item>
+    </tips>
+    <rating>9/10</rating>
+  </recipe>
+
+  <recipe id="220">
+    <name>Kartoffelauflauf klassisch</name>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Ein cremiger Kartoffelauflauf mit Speck, Zwiebeln und Käse. Bodenständig, deftig und sehr gut als Hauptgericht oder Beilage.</intro>
+    <image src="images/rezeptbild_220.png" alt="Kartoffelauflauf klassisch" />
+    <ingredients>
+      <item>1,2 kg Kartoffeln</item>
+      <item>2 Zwiebeln</item>
+      <item>200 ml Sahne</item>
+      <item>150 ml Milch</item>
+      <item>150 g geriebener Käse</item>
+      <item>100 g Speckwürfel</item>
+      <item>1 Knoblauchzehe</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Muskat</item>
+      <item>etwas Butter für die Form</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln schälen und in dünne Scheiben schneiden.</step>
+      <step nr="2">Zwiebeln fein würfeln und Speck in einer Pfanne kurz anbraten, dann die Zwiebeln dazugeben.</step>
+      <step nr="3">Sahne und Milch mit Knoblauch, Salz, Pfeffer und Muskat verrühren.</step>
+      <step nr="4">Eine Auflaufform buttern und Kartoffeln, Speck und Zwiebeln einschichten.</step>
+      <step nr="5">Die Sahne-Milch-Mischung darüber gießen und mit Käse bestreuen.</step>
+      <step nr="6">Im Ofen goldbraun backen, bis die Kartoffeln weich sind.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 45–55 Minuten bei 180 °C Umluft</item>
+    </timing>
+    <tips>
+      <item>Mit etwas Schmand wird der Auflauf noch cremiger.</item>
+      <item>Als Beilage oder Hauptgericht nutzbar.</item>
+      <item>Für vegetarische Version einfach den Speck weglassen.</item>
+    </tips>
+    <rating>9/10</rating>
+  </recipe>
+
+  <recipe id="221">
+    <name>Leczo mit Wurst Sven-Style</name>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte / Schnelle Küche</category>
+    <intro lang="de">Ein rustikales Leczo mit Paprika, Zucchini und würziger Wurst. Herzhaft, aromatisch und ideal für den Alltag.</intro>
+    <image src="images/rezeptbild_221.png" alt="Leczo mit Wurst Sven-Style" />
+    <ingredients>
+      <item>3 Paprika in verschiedenen Farben</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Zucchini</item>
+      <item>2 Knoblauchzehen</item>
+      <item>300 g Cabanossi oder Krakauer</item>
+      <item>1 Dose gehackte Tomaten</item>
+      <item>2 EL Tomatenmark</item>
+      <item>2 EL Öl</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Chili nach Geschmack</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebeln, Paprika und Zucchini in mundgerechte Stücke schneiden und die Wurst in Scheiben schneiden.</step>
+      <step nr="2">Öl in einem großen Topf erhitzen und die Wurst kurz anbraten, dann herausnehmen.</step>
+      <step nr="3">Zwiebeln und Knoblauch anschwitzen, Paprika und Zucchini dazugeben und anbraten.</step>
+      <step nr="4">Tomatenmark kurz mitrösten, dann gehackte Tomaten und Gewürze dazugeben.</step>
+      <step nr="5">Die Wurst wieder einlegen und alles 20–25 Minuten sanft schmoren lassen.</step>
+      <step nr="6">Abschmecken und heiß servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Kochzeit: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit etwas Ajvar wird es noch würziger.</item>
+      <item>Am nächsten Tag schmeckt Leczo oft noch besser.</item>
+      <item>Dazu passt Baguette oder Brot.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="222">
+    <name>Überbackene Champignons vom Grill oder Ofen</name>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ / Salate &amp; Beilagen</category>
+    <intro lang="de">Große Champignons mit cremiger Füllung und Käse – ideal als Grillbeilage oder als kleiner warmer Snack aus dem Ofen.</intro>
+    <image src="images/rezeptbild_222.png" alt="Überbackene Champignons vom Grill oder Ofen" />
+    <ingredients>
+      <item>12 große Champignons</item>
+      <item>150 g Frischkäse</item>
+      <item>100 g geriebener Käse</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>1 Knoblauchzehe</item>
+      <item>2 EL Petersilie</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>1 TL Paprikapulver</item>
+      <item>etwas Öl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Die Champignons putzen und die Stiele vorsichtig herausdrehen.</step>
+      <step nr="2">Die Stiele fein hacken. Zwiebel und Knoblauch ebenfalls fein schneiden.</step>
+      <step nr="3">Alles mit Frischkäse, Petersilie, Gewürzen und etwas geriebenem Käse vermischen.</step>
+      <step nr="4">Die Pilzköpfe mit der Masse füllen und mit restlichem Käse bestreuen.</step>
+      <step nr="5">Auf dem Grill indirekt garen oder im Ofen backen, bis die Champignons weich und goldbraun sind.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 15–20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit kleinen Speckwürfeln wird die Füllung noch deftiger.</item>
+      <item>Auch mit Feta statt Frischkäse sehr lecker.</item>
+      <item>Passt gut zu Steak, Hähnchen oder Baguette.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="223">
+    <name>Käsekuchen klassisch</name>
+    <persons>1 Springform</persons>
+    <category>Backen &amp; Süßes / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Ein klassischer Käsekuchen mit Quark, der saftig bleibt und unkompliziert gelingt. Pur, bodenständig und immer passend.</intro>
+    <image src="images/rezeptbild_223.png" alt="Käsekuchen klassisch" />
+    <ingredients>
+      <item>750 g Quark</item>
+      <item>200 g Zucker</item>
+      <item>1 Päckchen Vanillezucker</item>
+      <item>3 Eier</item>
+      <item>200 ml Sahne</item>
+      <item>1 Päckchen Vanillepuddingpulver</item>
+      <item>100 g Butter, geschmolzen</item>
+      <item>1 EL Zitronensaft</item>
+      <item>optional: 200 g Butterkekse oder Mürbeteigboden</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Eine Springform einfetten oder mit Backpapier auslegen und optional den Boden vorbereiten.</step>
+      <step nr="2">Quark, Zucker, Vanillezucker, Eier, Sahne, Puddingpulver, Butter und Zitronensaft glatt verrühren.</step>
+      <step nr="3">Die Masse in die Form geben.</step>
+      <step nr="4">Im vorgeheizten Ofen backen, bis der Kuchen gestockt und leicht goldgelb ist.</step>
+      <step nr="5">Im ausgeschalteten Ofen bei leicht geöffneter Tür langsam auskühlen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 55–65 Minuten bei 170 °C Ober-/Unterhitze</item>
+      <item>Auskühlzeit: mindestens 1 Stunde</item>
+    </timing>
+    <tips>
+      <item>Langsames Auskühlen hilft gegen starkes Einreißen.</item>
+      <item>Am nächsten Tag schmeckt Käsekuchen oft noch besser.</item>
+      <item>Mit Mandarinen oder Rosinen abwandelbar.</item>
+    </tips>
+    <rating>9/10</rating>
+  </recipe>
+
+  <recipe id="224">
+    <name>Apfelkuchen / Szarlotka einfach</name>
+    <persons>1 Springform oder kleine Auflaufform</persons>
+    <category>Backen &amp; Süßes / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Ein einfacher Apfelkuchen mit mürbem Teig und saftiger Füllung. Klassisch, unkompliziert und sehr gut für den Alltag.</intro>
+    <image src="images/rezeptbild_224.png" alt="Apfelkuchen / Szarlotka einfach" />
+    <ingredients>
+      <item>300 g Mehl</item>
+      <item>150 g kalte Butter</item>
+      <item>100 g Zucker</item>
+      <item>1 Ei</item>
+      <item>1 TL Backpulver</item>
+      <item>800 g Äpfel</item>
+      <item>2 EL Zucker</item>
+      <item>1 TL Zimt</item>
+      <item>1 EL Zitronensaft</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Mehl, Butter, Zucker, Ei und Backpulver zu einem Mürbeteig verkneten.</step>
+      <step nr="2">Den Teig 20 Minuten kalt stellen.</step>
+      <step nr="3">Äpfel schälen, entkernen und in kleine Stücke schneiden oder grob raspeln.</step>
+      <step nr="4">Mit Zucker, Zimt und Zitronensaft vermischen.</step>
+      <step nr="5">Zwei Drittel des Teigs in die Form drücken, die Apfelfüllung darauf verteilen und den restlichen Teig darüberzupfen oder ausrollen.</step>
+      <step nr="6">Im Ofen backen, bis der Kuchen goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Kühlzeit: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 40–45 Minuten bei 180 °C</item>
+    </timing>
+    <tips>
+      <item>Säuerliche Äpfel funktionieren am besten.</item>
+      <item>Auch als Blechkuchen machbar.</item>
+      <item>Lauwarm mit Sahne sehr gut.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="225">
+    <name>Murzynek / einfacher Schokokuchen</name>
+    <persons>1 Kastenform oder kleine Springform</persons>
+    <category>Backen &amp; Süßes / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Ein saftiger Schokokuchen-Klassiker mit einfacher Glasur. Schnell gemacht und perfekt für Kaffee oder Sonntagnachmittag.</intro>
+    <image src="images/rezeptbild_225.png" alt="Murzynek / einfacher Schokokuchen" />
+    <ingredients>
+      <item>250 g Mehl</item>
+      <item>200 g Zucker</item>
+      <item>3 Eier</item>
+      <item>200 g Butter</item>
+      <item>3 EL Kakao</item>
+      <item>1 Päckchen Backpulver</item>
+      <item>1 Päckchen Vanillezucker</item>
+      <item>150 ml Milch</item>
+      <item>100 g Zartbitterschokolade</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Die Butter in einem Topf schmelzen. Zucker, Vanillezucker, Kakao und Milch dazugeben und verrühren.</step>
+      <step nr="2">Etwas von der Schokomasse für später beiseitestellen.</step>
+      <step nr="3">Den Rest leicht abkühlen lassen und die Eier unterrühren.</step>
+      <step nr="4">Mehl und Backpulver mischen und unterheben. Die gehackte Schokolade dazugeben.</step>
+      <step nr="5">Den Teig in eine gefettete Form füllen und backen.</step>
+      <step nr="6">Nach dem Abkühlen mit der restlichen Schokomasse bestreichen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 40–50 Minuten bei 180 °C</item>
+    </timing>
+    <tips>
+      <item>Nicht zu lange backen, damit der Kuchen saftig bleibt.</item>
+      <item>Mit gehackten Nüssen oder Kirschen ebenfalls sehr gut.</item>
+      <item>Die Glasur macht ihn besonders schön saftig.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="226">
+    <name>Joghurtkuchen mit Früchten</name>
+    <persons>1 Springform</persons>
+    <category>Backen &amp; Süßes / Schnelle Küche</category>
+    <intro lang="de">Ein leichter und schneller Rührkuchen mit Joghurt und Früchten. Sehr wandelbar und ideal für spontane Gäste.</intro>
+    <image src="images/rezeptbild_226.png" alt="Joghurtkuchen mit Früchten" />
+    <ingredients>
+      <item>250 g Naturjoghurt</item>
+      <item>3 Eier</item>
+      <item>180 g Zucker</item>
+      <item>100 ml Öl</item>
+      <item>250 g Mehl</item>
+      <item>1 Päckchen Backpulver</item>
+      <item>1 Päckchen Vanillezucker</item>
+      <item>250 g Früchte nach Wahl, z. B. Himbeeren, Heidelbeeren oder Pfirsiche</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Eier mit Zucker und Vanillezucker schaumig schlagen.</step>
+      <step nr="2">Joghurt und Öl unterrühren.</step>
+      <step nr="3">Mehl und Backpulver mischen und unterheben.</step>
+      <step nr="4">Den Teig in eine gefettete Form geben und die Früchte darauf verteilen.</step>
+      <step nr="5">Im vorgeheizten Ofen backen, bis der Kuchen goldgelb ist.</step>
+      <step nr="6">Auskühlen lassen und nach Wunsch mit Puderzucker bestreuen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 35–40 Minuten bei 180 °C</item>
+    </timing>
+    <tips>
+      <item>Tiefkühlfrüchte vorher nicht komplett auftauen lassen.</item>
+      <item>Mit Zitronenabrieb bekommt der Kuchen eine frische Note.</item>
+      <item>Sehr wandelbar je nach Saison.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="227">
+    <name>Pizza mit Champignons und Salami</name>
+    <persons>2 Personen</persons>
+    <category>Pizza / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Eine klassische, sichere Pizza-Variante mit Salami, Champignons und Zwiebeln – unkompliziert und immer beliebt.</intro>
+    <image src="images/rezeptbild_227.png" alt="Pizza mit Champignons und Salami" />
+    <ingredients>
+      <item>1 Portion klassischer Pizzateig</item>
+      <item>200 g passierte Tomaten</item>
+      <item>1 EL Tomatenmark</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Oregano</item>
+      <item>150 g geriebener Mozzarella</item>
+      <item>100 g Salami</item>
+      <item>150 g Champignons</item>
+      <item>1 kleine Zwiebel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Pizzateig vorbereiten und ausrollen.</step>
+      <step nr="2">Passierte Tomaten mit Tomatenmark, Salz, Pfeffer und Oregano verrühren und auf dem Teig verteilen.</step>
+      <step nr="3">Mit Käse bestreuen.</step>
+      <step nr="4">Salami, Champignons und fein geschnittene Zwiebel darauf verteilen.</step>
+      <step nr="5">Im heißen Ofen backen, bis Rand und Käse schön gebräunt sind.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Backzeit: ca. 10–12 Minuten bei 250 °C</item>
+    </timing>
+    <tips>
+      <item>Champignons vorher in dünne Scheiben schneiden.</item>
+      <item>Wer mag, gibt etwas Knoblauchöl darüber.</item>
+      <item>Perfekt für einen gemütlichen Abend.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="228">
+    <name>Pizza mit Schinken, Paprika und Zwiebeln</name>
+    <persons>2 Personen</persons>
+    <category>Pizza / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Eine milde, familientaugliche Pizza mit Schinken, Paprika und roten Zwiebeln. Auch als Blechpizza sehr gut geeignet.</intro>
+    <image src="images/rezeptbild_228.png" alt="Pizza mit Schinken, Paprika und Zwiebeln" />
+    <ingredients>
+      <item>1 Portion klassischer Pizzateig</item>
+      <item>200 g passierte Tomaten</item>
+      <item>1 EL Tomatenmark</item>
+      <item>150 g geriebener Käse</item>
+      <item>100 g Kochschinken</item>
+      <item>1 Paprika</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Oregano</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Pizzateig ausrollen.</step>
+      <step nr="2">Passierte Tomaten mit Tomatenmark und Gewürzen verrühren und auf dem Teig verteilen.</step>
+      <step nr="3">Den Käse darübergeben.</step>
+      <step nr="4">Schinken in Stücke schneiden, Paprika in Streifen und Zwiebel in feine Ringe schneiden.</step>
+      <step nr="5">Alles gleichmäßig auf der Pizza verteilen und im vorgeheizten Ofen backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Backzeit: ca. 10–12 Minuten bei 250 °C</item>
+    </timing>
+    <tips>
+      <item>Mit etwas Mais ebenfalls lecker.</item>
+      <item>Paprika nicht zu dick schneiden.</item>
+      <item>Auch als Blechpizza gut geeignet.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="229">
+    <name>Pizza Bianca mit Crème fraîche und roten Zwiebeln</name>
+    <persons>2 Personen</persons>
+    <category>Pizza / Ofengerichte</category>
+    <intro lang="de">Eine helle Pizza ohne Tomatensauce mit Crème fraîche, Mozzarella und roten Zwiebeln. Etwas feiner, aber trotzdem unkompliziert.</intro>
+    <image src="images/rezeptbild_229.png" alt="Pizza Bianca mit Crème fraîche und roten Zwiebeln" />
+    <ingredients>
+      <item>1 Portion klassischer Pizzateig</item>
+      <item>150 g Crème fraîche</item>
+      <item>125 g Mozzarella</item>
+      <item>1 rote Zwiebel</item>
+      <item>1 Knoblauchzehe</item>
+      <item>1 EL Olivenöl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Rosmarin oder Thymian</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Pizzateig vorbereiten und ausrollen.</step>
+      <step nr="2">Crème fraîche mit fein gehacktem Knoblauch, Salz und Pfeffer verrühren.</step>
+      <step nr="3">Die Creme auf dem Teig verstreichen und den Mozzarella darauf verteilen.</step>
+      <step nr="4">Die rote Zwiebel in feine Ringe schneiden und darauflegen.</step>
+      <step nr="5">Mit Rosmarin oder Thymian bestreuen und im heißen Ofen backen.</step>
+      <step nr="6">Nach dem Backen mit etwas Olivenöl verfeinern.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Backzeit: ca. 10–12 Minuten bei 250 °C</item>
+    </timing>
+    <tips>
+      <item>Sehr lecker auch mit Speckwürfeln.</item>
+      <item>Für eine edlere Variante etwas Parmesan ergänzen.</item>
+      <item>Weniger Belag ist hier besser.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="230">
+    <name>Focaccia mit Rosmarin und Olivenöl</name>
+    <persons>1 Blech oder 1 große Form</persons>
+    <category>Backen &amp; Süßes / Grundlagen &amp; Saucen</category>
+    <intro lang="de">Eine lockere Focaccia mit Olivenöl, Rosmarin und grobem Salz. Ideal als Beilage, zum Grillen oder für Antipasti.</intro>
+    <image src="images/rezeptbild_230.png" alt="Focaccia mit Rosmarin und Olivenöl" />
+    <ingredients>
+      <item>500 g Mehl</item>
+      <item>1 Würfel frische Hefe</item>
+      <item>325 ml lauwarmes Wasser</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 TL Zucker</item>
+      <item>2 TL Salz</item>
+      <item>2–3 Zweige Rosmarin</item>
+      <item>grobes Salz</item>
+      <item>etwas mehr Olivenöl zum Beträufeln</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hefe mit Zucker im lauwarmen Wasser auflösen.</step>
+      <step nr="2">Mehl, Salz und Olivenöl dazugeben und zu einem weichen Teig verkneten.</step>
+      <step nr="3">Den Teig abgedeckt 45–60 Minuten gehen lassen.</step>
+      <step nr="4">In eine geölte Form geben und mit den Fingern Mulden eindrücken.</step>
+      <step nr="5">Mit Olivenöl beträufeln, Rosmarin und grobes Salz darübergeben und nochmals kurz ruhen lassen.</step>
+      <step nr="6">Im vorgeheizten Ofen goldbraun backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Gehzeit: ca. 60–75 Minuten</item>
+      <item>Backzeit: ca. 20–25 Minuten bei 220 °C</item>
+    </timing>
+    <tips>
+      <item>Warm besonders gut.</item>
+      <item>Auch mit Cocktailtomaten oder Oliven erweiterbar.</item>
+      <item>Beim Olivenöl nicht zu sparsam sein.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="231">
+    <name>Kartoffelauflauf mit Speck und Käse</name>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Eine deftige Variante des Kartoffelauflaufs mit extra Speck und kräftiger Käsekruste. Sehr familienfreundlich und sättigend.</intro>
+    <image src="images/rezeptbild_231.png" alt="Kartoffelauflauf mit Speck und Käse" />
+    <ingredients>
+      <item>1,2 kg Kartoffeln</item>
+      <item>2 Zwiebeln</item>
+      <item>150 g Speckwürfel</item>
+      <item>200 ml Sahne</item>
+      <item>150 ml Milch</item>
+      <item>200 g geriebener Käse</item>
+      <item>1 Knoblauchzehe</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Muskat</item>
+      <item>etwas Butter für die Form</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln schälen und in dünne Scheiben schneiden.</step>
+      <step nr="2">Zwiebeln fein würfeln und den Speck anbraten, dann die Zwiebeln mitschwitzen.</step>
+      <step nr="3">Sahne und Milch mit Knoblauch, Salz, Pfeffer und Muskat verrühren.</step>
+      <step nr="4">Kartoffeln in eine gebutterte Form schichten und Speck und Zwiebeln dazwischen verteilen.</step>
+      <step nr="5">Die Flüssigkeit angießen und mit Käse bestreuen.</step>
+      <step nr="6">Im Ofen backen, bis alles weich und goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 50–60 Minuten bei 180 °C</item>
+    </timing>
+    <tips>
+      <item>Mit Gurkensalat sehr gut als Hauptgericht.</item>
+      <item>Oben gern noch etwas mehr Käse für schöne Kruste.</item>
+      <item>Sehr gut vorzubereiten.</item>
+    </tips>
+    <rating>9/10</rating>
+  </recipe>
+
+  <recipe id="232">
+    <name>Zucchini-Auflauf mit Hackfleisch</name>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte / Schnelle Küche</category>
+    <intro lang="de">Ein unkomplizierter Auflauf mit Zucchini, Hackfleisch und Tomatensauce. Alltagsgericht mit guter Ofenlogik und wenig Aufwand beim Servieren.</intro>
+    <image src="images/rezeptbild_232.png" alt="Zucchini-Auflauf mit Hackfleisch" />
+    <ingredients>
+      <item>2 große Zucchini</item>
+      <item>500 g Hackfleisch</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 Dose gehackte Tomaten</item>
+      <item>2 EL Tomatenmark</item>
+      <item>150 g geriebener Käse</item>
+      <item>2 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver</item>
+      <item>Oregano</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zucchini in Scheiben schneiden und Zwiebel und Knoblauch fein hacken.</step>
+      <step nr="2">Öl in einer Pfanne erhitzen und das Hackfleisch kräftig anbraten.</step>
+      <step nr="3">Zwiebel und Knoblauch dazugeben, Tomatenmark kurz mitrösten und gehackte Tomaten und Gewürze dazugeben.</step>
+      <step nr="4">Zucchini und Hackmasse in eine Auflaufform schichten.</step>
+      <step nr="5">Mit Käse bestreuen und im Ofen backen, bis die Zucchini weich und der Käse goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 30–35 Minuten bei 190 °C</item>
+    </timing>
+    <tips>
+      <item>Mit Feta statt normalem Käse ebenfalls sehr gut.</item>
+      <item>Wer mag, ergänzt etwas Crème fraîche.</item>
+      <item>Passt gut zu Baguette oder Reis.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="233">
+    <name>Zucchini-Puffer / Placki z cukinii</name>
+    <persons>3–4 Personen</persons>
+    <category>Pfannengerichte / Schnelle Küche</category>
+    <intro lang="de">Knusprige Zucchini-Puffer, die schnell gemacht sind und sowohl als Hauptgericht als auch als Beilage gut funktionieren.</intro>
+    <image src="images/rezeptbild_233.png" alt="Zucchini-Puffer / Placki z cukinii" />
+    <ingredients>
+      <item>2 große Zucchini</item>
+      <item>2 Eier</item>
+      <item>120 g Mehl</item>
+      <item>1 kleine Zwiebel</item>
+      <item>1 Knoblauchzehe</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Petersilie</item>
+      <item>Öl zum Ausbacken</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zucchini grob raspeln, mit etwas Salz mischen und 10 Minuten stehen lassen.</step>
+      <step nr="2">Danach gut ausdrücken.</step>
+      <step nr="3">Zwiebel fein würfeln oder raspeln und Knoblauch fein hacken.</step>
+      <step nr="4">Alles mit Eiern, Mehl, Petersilie, Salz und Pfeffer vermischen.</step>
+      <step nr="5">Öl in einer Pfanne erhitzen und aus der Masse kleine Puffer formen.</step>
+      <step nr="6">Von beiden Seiten goldbraun ausbacken und kurz auf Küchenpapier abtropfen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Bratzeit: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Wichtig ist das gute Ausdrücken der Zucchini.</item>
+      <item>Mit Joghurt-Dip oder Kräuterquark servieren.</item>
+      <item>Mit etwas geriebenem Käse in der Masse noch herzhafter.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="234">
+    <name>Warmer Champignon-Salat vom Grill</name>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ / Salate &amp; Beilagen</category>
+    <intro lang="de">Ein lauwarmer Salat mit gerösteten Champignons, Zwiebeln und würzigem Dressing. Sehr gute Grillbeilage mit wenig Aufwand.</intro>
+    <image src="images/rezeptbild_234.png" alt="Warmer Champignon-Salat vom Grill" />
+    <ingredients>
+      <item>500 g Champignons</item>
+      <item>1 rote Zwiebel</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 EL Balsamico</item>
+      <item>1 TL Senf</item>
+      <item>1 Knoblauchzehe</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>2 EL gehackte Petersilie</item>
+      <item>optional etwas Feta</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Champignons putzen und je nach Größe halbieren.</step>
+      <step nr="2">Die Zwiebel in feine Streifen schneiden.</step>
+      <step nr="3">Olivenöl, Balsamico, Senf, Knoblauch, Salz und Pfeffer zu einem Dressing verrühren.</step>
+      <step nr="4">Champignons auf dem Grill oder in der Grillpfanne anrösten, bis sie Farbe bekommen.</step>
+      <step nr="5">Mit der Zwiebel in eine Schüssel geben, das Dressing darübergeben und gut vermengen.</step>
+      <step nr="6">Mit Petersilie bestreuen und optional etwas Feta darüberbröseln.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Grill-/Bratzeit: ca. 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Warm serviert am aromatischsten.</item>
+      <item>Auch mit Rucola sehr gut.</item>
+      <item>Passt zu Fleisch, Baguette oder Kartoffeln.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="235">
+    <name>Pizza aus der Pfanne</name>
+    <persons>2 Personen</persons>
+    <category>Pizza / Schnelle Küche</category>
+    <intro lang="de">Eine praktische Pizza-Variante für Pfanne und Deckel, wenn der Ofen nicht frei ist oder es besonders unkompliziert sein soll.</intro>
+    <image src="images/rezeptbild_235.png" alt="Pizza aus der Pfanne" />
+    <ingredients>
+      <item>250 g Mehl</item>
+      <item>1/2 Würfel frische Hefe</item>
+      <item>150 ml lauwarmes Wasser</item>
+      <item>1 EL Olivenöl</item>
+      <item>1/2 TL Zucker</item>
+      <item>1 TL Salz</item>
+      <item>150 g passierte Tomaten</item>
+      <item>125 g Mozzarella</item>
+      <item>Belag nach Wunsch, z. B. Salami, Paprika, Zwiebeln oder Champignons</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hefe mit Zucker im lauwarmen Wasser auflösen.</step>
+      <step nr="2">Mehl, Salz und Olivenöl dazugeben und zu einem glatten Teig verkneten.</step>
+      <step nr="3">Den Teig 30–45 Minuten gehen lassen und in zwei Portionen teilen.</step>
+      <step nr="4">Passend zur Pfanne ausrollen.</step>
+      <step nr="5">Eine beschichtete Pfanne leicht einölen und den Teig bei mittlerer Hitze kurz anbacken.</step>
+      <step nr="6">Den Boden wenden, mit Tomaten, Käse und Belag belegen und mit Deckel fertig garen, bis der Käse geschmolzen und der Boden knusprig ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Gehzeit: ca. 30–45 Minuten</item>
+      <item>Garzeit: ca. 8–10 Minuten pro Pizza</item>
+    </timing>
+    <tips>
+      <item>Mit Deckel gelingt die Oberseite deutlich besser.</item>
+      <item>Nicht zu viel Belag nehmen, sonst wird sie zu weich.</item>
+      <item>Ideal auch für kleine Küchen.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="236">
+    <name>Low-Carb-Pizza auf Blumenkohlboden</name>
+    <persons>2 Personen</persons>
+    <category>Pizza / Schnelle Küche</category>
+    <intro lang="de">Eine alternative Pizza-Variante mit Blumenkohlboden. Kein Ersatz für klassische Pizza, aber eine gute leichte Alternative.</intro>
+    <image src="images/rezeptbild_236.png" alt="Low-Carb-Pizza auf Blumenkohlboden" />
+    <ingredients>
+      <item>1 kleiner Blumenkohl</item>
+      <item>2 Eier</item>
+      <item>100 g geriebener Käse</item>
+      <item>2 EL Parmesan</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>150 g passierte Tomaten</item>
+      <item>125 g Mozzarella</item>
+      <item>Belag nach Wunsch, z. B. Paprika, Schinken oder Champignons</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Blumenkohl in kleine Stücke teilen und fein raspeln oder mixen.</step>
+      <step nr="2">Kurz garen oder dämpfen und danach gut ausdrücken.</step>
+      <step nr="3">Mit Eiern, Käse, Parmesan, Salz und Pfeffer vermengen.</step>
+      <step nr="4">Die Masse auf Backpapier flach zu einem Boden formen und vorbacken.</step>
+      <step nr="5">Mit passierten Tomaten bestreichen, Käse und Belag daraufgeben und fertig backen, bis alles goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Vorbacken: ca. 15 Minuten</item>
+      <item>Fertigbacken: ca. 10–12 Minuten bei 220 °C</item>
+    </timing>
+    <tips>
+      <item>Der Blumenkohl muss wirklich gut ausgedrückt werden.</item>
+      <item>Dünn geformt wird der Boden besser.</item>
+      <item>Mit Rucola nach dem Backen sehr lecker.</item>
+    </tips>
+    <rating>7,5/10</rating>
+  </recipe>
+
+  <recipe id="237">
+    <name>Festlicher Gyros-Salat mit Rotkohl</name>
+    <persons>6 Personen</persons>
+    <category>Salate &amp; Beilagen / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Eine festlichere Gyros-Salat-Variante mit Rotkohl, Mais und Tomaten. Optisch kräftig und sehr gut für Buffets oder Gäste.</intro>
+    <image src="images/rezeptbild_237.png" alt="Festlicher Gyros-Salat mit Rotkohl" />
+    <ingredients>
+      <item>500 g Hähnchen- oder Schweinegeschnetzeltes</item>
+      <item>2 EL Gyrosgewürz</item>
+      <item>1 EL Öl</item>
+      <item>1/2 Kopf Eisbergsalat</item>
+      <item>200 g Rotkohl aus dem Glas oder fein geschnittener frischer Rotkohl</item>
+      <item>1 Dose Mais</item>
+      <item>1 rote Zwiebel</item>
+      <item>150 g geriebener Käse</item>
+      <item>200 g Tzatziki</item>
+      <item>150 g Cocktailtomaten</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Das Fleisch mit Gyrosgewürz und Öl marinieren und in der Pfanne kräftig anbraten.</step>
+      <step nr="2">Abkühlen lassen.</step>
+      <step nr="3">Eisbergsalat, Rotkohl, Mais, Tomaten und Zwiebel vorbereiten.</step>
+      <step nr="4">Alles schichtweise in eine große Form geben.</step>
+      <step nr="5">Das Fleisch darüber verteilen, mit Käse bestreuen und mit Tzatziki servieren oder dünn darübergeben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Bratzeit: ca. 10 Minuten</item>
+      <item>Ziehzeit optional: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Sehr gut für Partys, Feiertage oder Buffets.</item>
+      <item>Dressing erst kurz vor dem Servieren zugeben.</item>
+      <item>Mit Baguette oder Fladenbrot servieren.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="238">
+    <name>Tortellini-Salat deftig</name>
+    <persons>4–5 Personen</persons>
+    <category>Salate &amp; Beilagen / Schnelle Küche</category>
+    <intro lang="de">Ein würziger Tortellini-Salat für Grillabende oder Mitbringrunden. Schnell gemacht, sättigend und gut vorzubereiten.</intro>
+    <image src="images/rezeptbild_238.png" alt="Tortellini-Salat deftig" />
+    <ingredients>
+      <item>500 g frische Tortellini</item>
+      <item>150 g Kochschinken</item>
+      <item>1 Paprika</item>
+      <item>1 kleine Gurke</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>150 g Cocktailtomaten</item>
+      <item>150 g Joghurt</item>
+      <item>100 g Mayonnaise</item>
+      <item>1 TL Senf</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Tortellini nach Packungsangabe garen und abkühlen lassen.</step>
+      <step nr="2">Schinken, Paprika, Gurke, Zwiebel und Tomaten klein schneiden.</step>
+      <step nr="3">Für das Dressing Joghurt, Mayonnaise, Senf, Salz und Pfeffer verrühren.</step>
+      <step nr="4">Alles in einer großen Schüssel vermengen.</step>
+      <step nr="5">Mit Petersilie bestreuen und kurz durchziehen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Kochzeit: ca. 5–8 Minuten</item>
+      <item>Ziehzeit: ca. 20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Auch mit Käse-Tortellini sehr gut.</item>
+      <item>Mit Mais oder Erbsen erweiterbar.</item>
+      <item>Gut am Vortag vorzubereiten.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="239">
+    <name>Schichtsalat mit Hähnchen und Knoblauchsauce</name>
+    <persons>4–6 Personen</persons>
+    <category>Salate &amp; Beilagen / Schnelle Küche</category>
+    <intro lang="de">Ein frischer Schichtsalat mit gebratenem Hähnchen und cremiger Knoblauchsauce. Sehr gut für Gäste und optisch schön.</intro>
+    <image src="images/rezeptbild_239.png" alt="Schichtsalat mit Hähnchen und Knoblauchsauce" />
+    <ingredients>
+      <item>400 g Hähnchenbrust</item>
+      <item>1 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Paprikapulver</item>
+      <item>1 Eisbergsalat</item>
+      <item>1 Gurke</item>
+      <item>3 Tomaten</item>
+      <item>1 Dose Mais</item>
+      <item>150 g geriebener Käse</item>
+      <item>200 g Naturjoghurt</item>
+      <item>2 EL Mayonnaise</item>
+      <item>1 Knoblauchzehe</item>
+      <item>etwas Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchenbrust würzen, in der Pfanne anbraten, abkühlen lassen und in kleine Stücke schneiden.</step>
+      <step nr="2">Eisbergsalat, Gurke und Tomaten vorbereiten.</step>
+      <step nr="3">Für die Sauce Joghurt, Mayonnaise, Knoblauch, Salz und Pfeffer verrühren.</step>
+      <step nr="4">Den Salat in Schichten in eine Form geben: Salat, Gemüse, Mais, Hähnchen, Sauce, Käse.</step>
+      <step nr="5">Mit Petersilie bestreuen und kurz ziehen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Bratzeit: ca. 10 Minuten</item>
+      <item>Ziehzeit: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Sauce lieber nicht zu flüssig machen.</item>
+      <item>Auch mit Putenbrust machbar.</item>
+      <item>Mit geröstetem Brot ebenfalls gut.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="240">
+    <name>Paprika-Mais-Gurken-Partysalat</name>
+    <persons>4–6 Personen</persons>
+    <category>Salate &amp; Beilagen / Schnelle Küche</category>
+    <intro lang="de">Ein schneller, frischer Partysalat mit cremigem Dressing. Perfekt als Beilage zu Grillgerichten oder für Buffets.</intro>
+    <image src="images/rezeptbild_240.png" alt="Paprika-Mais-Gurken-Partysalat" />
+    <ingredients>
+      <item>2 Paprika</item>
+      <item>1 Salatgurke</item>
+      <item>1 Dose Mais</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>150 g Schmand</item>
+      <item>100 g Joghurt</item>
+      <item>1 TL Senf</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Zitronensaft</item>
+      <item>2 EL gehackte Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Paprika, Gurke und Zwiebel klein schneiden und den Mais abgießen.</step>
+      <step nr="2">Schmand, Joghurt, Senf, Salz, Pfeffer und etwas Zitronensaft zu einem Dressing verrühren.</step>
+      <step nr="3">Alles in einer Schüssel vermengen.</step>
+      <step nr="4">Mit Petersilie abschmecken.</step>
+      <step nr="5">Kurz durchziehen lassen und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Ziehzeit: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Auch mit Feta oder Käsewürfeln erweiterbar.</item>
+      <item>Frisch servieren.</item>
+      <item>Passt zu Grillfleisch, Frikadellen oder Ofengerichten.</item>
+    </tips>
+    <rating>7,5/10</rating>
+  </recipe>
+
+  <recipe id="241">
+    <name>Kartoffelsalat rustikal mit roter Zwiebel</name>
+    <persons>4 Personen</persons>
+    <category>Salate &amp; Beilagen / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Ein bodenständiger Kartoffelsalat mit Brühe, Senf und Gewürzgurken. Schmeckt lauwarm und kalt sehr gut.</intro>
+    <image src="images/rezeptbild_241.png" alt="Kartoffelsalat rustikal mit roter Zwiebel" />
+    <ingredients>
+      <item>1 kg festkochende Kartoffeln</item>
+      <item>1 rote Zwiebel</item>
+      <item>4 Gewürzgurken</item>
+      <item>150 ml Gemüsebrühe</item>
+      <item>2 EL Senf</item>
+      <item>3 EL Öl</item>
+      <item>2 EL Gurkenwasser</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Petersilie oder Schnittlauch</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln in der Schale kochen, abkühlen lassen und pellen.</step>
+      <step nr="2">In Scheiben schneiden.</step>
+      <step nr="3">Zwiebel fein würfeln und Gurken klein schneiden.</step>
+      <step nr="4">Brühe mit Senf, Öl, Gurkenwasser, Salz und Pfeffer verrühren.</step>
+      <step nr="5">Mit Kartoffeln, Zwiebeln und Gurken vermengen.</step>
+      <step nr="6">Kurz ziehen lassen und vor dem Servieren mit Kräutern bestreuen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Kochzeit: ca. 20 Minuten</item>
+      <item>Ziehzeit: ca. 20–30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Je länger er zieht, desto runder wird er.</item>
+      <item>Gut zu Würstchen, Frikadellen oder Grillgut.</item>
+      <item>Für cremige Version etwas Mayo ergänzen.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="242">
+    <name>Grillgemüse-Salat mit Feta</name>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ / Salate &amp; Beilagen</category>
+    <intro lang="de">Ein lauwarmer Salat aus geröstetem Gemüse mit Feta, Balsamico und Zitrone. Sehr gut als Grillbeilage oder leichtes Abendessen.</intro>
+    <image src="images/rezeptbild_242.png" alt="Grillgemüse-Salat mit Feta" />
+    <ingredients>
+      <item>1 Zucchini</item>
+      <item>1 Aubergine</item>
+      <item>2 Paprika</item>
+      <item>1 rote Zwiebel</item>
+      <item>3 EL Olivenöl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>150 g Feta</item>
+      <item>1 EL Balsamico</item>
+      <item>1 EL Zitronensaft</item>
+      <item>etwas Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse in grobe Stücke schneiden.</step>
+      <step nr="2">Mit etwas Olivenöl, Salz und Pfeffer mischen.</step>
+      <step nr="3">Auf dem Grill oder im Ofen rösten, bis es schöne Farbe bekommt.</step>
+      <step nr="4">Etwas abkühlen lassen und mit Balsamico und Zitronensaft marinieren.</step>
+      <step nr="5">Feta darüberbröseln und mit Petersilie bestreuen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Grill-/Backzeit: ca. 20 Minuten</item>
+    </timing>
+    <tips>
+      <item>Lauwarm am besten.</item>
+      <item>Mit Rucola noch frischer.</item>
+      <item>Auch gut zum Vorbereiten.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
+
+  <recipe id="243">
+    <name>Karottenkuchen einfach</name>
+    <persons>1 Springform</persons>
+    <category>Backen &amp; Süßes / Klassiker &amp; Hausmannskost</category>
+    <intro lang="de">Ein saftiger Karottenkuchen ohne viel Aufwand. Sehr alltagstauglich und optional mit einfachem Frischkäse-Topping.</intro>
+    <image src="images/rezeptbild_243.png" alt="Karottenkuchen einfach" />
+    <ingredients>
+      <item>300 g Karotten</item>
+      <item>250 g Mehl</item>
+      <item>180 g Zucker</item>
+      <item>3 Eier</item>
+      <item>150 ml Öl</item>
+      <item>1 Päckchen Backpulver</item>
+      <item>1 TL Zimt</item>
+      <item>100 g gemahlene Mandeln</item>
+      <item>1 Päckchen Vanillezucker</item>
+      <item>optional: 150 g Frischkäse</item>
+      <item>optional: 50 g Puderzucker</item>
+      <item>optional: etwas Zitronensaft</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Karotten fein raspeln.</step>
+      <step nr="2">Eier mit Zucker und Vanillezucker schaumig schlagen.</step>
+      <step nr="3">Öl unterrühren.</step>
+      <step nr="4">Mehl, Backpulver, Zimt und Mandeln mischen und unterheben.</step>
+      <step nr="5">Karotten unterheben und den Teig in eine gefettete Form geben.</step>
+      <step nr="6">Im Ofen backen und nach dem Abkühlen optional mit Frischkäse-Topping bestreichen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 40–45 Minuten bei 180 °C</item>
+    </timing>
+    <tips>
+      <item>Ohne Topping ebenfalls sehr gut.</item>
+      <item>Mit gehackten Walnüssen ebenfalls lecker.</item>
+      <item>Hält sich gut 2–3 Tage.</item>
+    </tips>
+    <rating>8,5/10</rating>
+  </recipe>
+
+  <recipe id="244">
+    <name>Bananenbrot klassisch</name>
+    <persons>1 Kastenform</persons>
+    <category>Backen &amp; Süßes / Schnelle Küche</category>
+    <intro lang="de">Ein unkompliziertes Bananenbrot für sehr reife Bananen. Saftig, einfach und gut zum Frühstück oder Kaffee.</intro>
+    <image src="images/rezeptbild_244.png" alt="Bananenbrot klassisch" />
+    <ingredients>
+      <item>3 reife Bananen</item>
+      <item>250 g Mehl</item>
+      <item>120 g Zucker</item>
+      <item>2 Eier</item>
+      <item>100 g Butter, geschmolzen</item>
+      <item>1 Päckchen Backpulver</item>
+      <item>1 Päckchen Vanillezucker</item>
+      <item>1 Prise Salz</item>
+      <item>optional 80 g gehackte Schokolade oder Nüsse</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Die Bananen mit einer Gabel zerdrücken.</step>
+      <step nr="2">Eier, Zucker, Vanillezucker und geschmolzene Butter verrühren.</step>
+      <step nr="3">Bananen dazugeben.</step>
+      <step nr="4">Mehl, Backpulver und Salz mischen und unterheben.</step>
+      <step nr="5">Optional Schokolade oder Nüsse unterrühren.</step>
+      <step nr="6">Den Teig in eine gefettete Kastenform geben und im Ofen backen, bis das Bananenbrot goldbraun ist.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 50–55 Minuten bei 175 °C</item>
+    </timing>
+    <tips>
+      <item>Mit Zimt oder Nüssen noch aromatischer.</item>
+      <item>Perfekt für sehr reife Bananen.</item>
+      <item>Auch in Scheiben getoastet sehr gut.</item>
+    </tips>
+    <rating>8/10</rating>
+  </recipe>
 </cookbook>
