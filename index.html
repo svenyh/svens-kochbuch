@@ -157,7 +157,8 @@
     }
     .topic-card img{width:100%;height:165px;object-fit:cover;background-color:#f3eee7}
     .topic-card h3{padding:14px 18px 6px;text-align:center;font-size:28px;line-height:1.1;color:#302a26}
-    .topic-sub{padding:0 18px 18px;text-align:center;font-family:Inter,system-ui,sans-serif;font-size:13px;color:#746b62}
+    .topic-sub{padding:0 18px 18px;text-align:center;font-family:Inter,system-ui,sans-serif;font-size:13px;color:#746b62;line-height:1.55;min-height:3.2em}
+    .section-head > div{max-width:760px}
 
     .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-top:34px;margin-bottom:14px}
     .section-head h2{font-size:28px;line-height:1.05}
@@ -573,10 +574,11 @@
       margin-bottom:12px;
     }
     .recipe-editorial-title{
-      font-size:42px;
-      line-height:1.0;
-      margin:0 0 10px;
+      font-size:44px;
+      line-height:0.98;
+      margin:0 0 12px;
       color:#2f2924;
+      max-width:14ch;
     }
     .recipe-editorial-meta{
       display:flex;
@@ -588,12 +590,15 @@
     .recipe-editorial-meta span{
       display:inline-flex;
       align-items:center;
-      padding:7px 10px;
-      border:1px solid #eadfd2;
-      background:#fff;
+      gap:8px;
+      padding:10px 13px;
+      border:1px solid #eee2d6;
+      background:#fffdfa;
       color:#645c54;
       font-size:13px;
       font-weight:600;
+      border-radius:999px;
+      box-shadow:0 4px 10px rgba(58,42,27,.03);
     }
     .recipe-hero-image{
       padding:18px 20px 0;
@@ -601,11 +606,12 @@
     }
     .recipe-hero-image img{
       width:100%;
-      max-height:540px;
+      max-height:560px;
       object-fit:cover;
       display:block;
       background:#f3eee7;
       border:1px solid #eadfd2;
+      border-radius:18px;
     }
     .recipe-editorial-intro{
       padding:18px 20px 8px;
@@ -614,16 +620,54 @@
       line-height:1.75;
       font-size:15px;
     }
+    .recipe-editorial-intro-card{
+      margin:0;
+      padding:18px 18px 16px;
+      border:1px solid #efe3d7;
+      background:linear-gradient(180deg,#fffdfa 0%, #faf5ef 100%);
+      border-radius:16px;
+      box-shadow:0 8px 18px rgba(58,42,27,.04);
+    }
+    .recipe-editorial-lead{
+      display:inline-block;
+      margin:0 0 10px;
+      color:#b86745;
+      font-size:12px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+    }
+    .recipe-editorial-intro p{
+      margin:0;
+    }
+    .recipe-editorial-aside{
+      margin-top:12px;
+      padding-top:12px;
+      border-top:1px solid #eee3d8;
+      font-size:14px;
+      color:#746b62;
+      line-height:1.65;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
     .recipe-editorial-sections{
-      padding:4px 20px 10px;
+      padding:6px 20px 10px;
       display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(0,1fr);
       gap:16px;
+      align-items:start;
     }
     .recipe-editorial-card{
       border:1px solid #e7ddd2;
       background:#fff;
-      padding:18px 18px 16px;
+      padding:20px 20px 18px;
       box-shadow:0 8px 18px rgba(58,42,27,.04);
+      border-radius:16px;
+    }
+    .recipe-editorial-card-main{
+      grid-column:1 / -1;
+    }
+    .recipe-editorial-card-compact h3{
+      font-size:24px;
     }
     .recipe-editorial-card h3{
       margin:0 0 10px;
@@ -675,8 +719,8 @@
       .recipe-editorial-head{padding:16px 16px 6px}
       .recipe-hero-image{padding:14px 16px 0}
       .recipe-editorial-intro{padding:16px 16px 6px}
-      .recipe-editorial-sections{padding:4px 16px 8px}
-      .recipe-editorial-title{font-size:34px}
+      .recipe-editorial-sections{padding:4px 16px 8px;grid-template-columns:1fr}
+      .recipe-editorial-title{font-size:34px;max-width:none}
 
       .premium-related-shell{padding:0 14px 18px}
       .premium-related-grid{grid-template-columns:1fr}
@@ -730,7 +774,7 @@
     <div class="wrap header-inner">
       <div>
         <div class="brand-title">Svens Kochbuch</div>
-        <div class="brand-sub ui">Hausgemachte Lieblingsrezepte auf einen Blick</div>
+        <div class="brand-sub ui">Rezepte für Alltag, Sonntag und Lieblingsmomente</div>
       </div>
       <div class="header-actions ui">
         <button class="lang-btn active" data-lang="de">DE</button>
@@ -747,8 +791,8 @@
       <div class="hero-overlay"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <h1 class="hero-title" id="heroTitle">Willkommen in unserer Rezeptewelt</h1>
-          <p class="hero-sub" id="heroSub">Köstliche Rezepte für jeden Tag.</p>
+          <h1 class="hero-title" id="heroTitle">Hausgemacht, herzlich und immer wieder gut.</h1>
+          <p class="hero-sub" id="heroSub">Bodenständige Küche, bewährte Familienrezepte und neue Lieblingsgerichte für jeden Tag.</p>
           <div class="hero-actions">
             <button class="btn-primary ui" id="jumpRecipesBtn">Rezepte entdecken</button>
             <button class="btn-secondary ui" id="jumpTopicsBtn">Sammlungen browsen</button>
@@ -756,19 +800,19 @@
         </div>
         <div class="hero-side">
           <div class="hero-card">
-            <h3>Was sich ändert</h3>
+            <h3>Im Kochbuch</h3>
             <ul id="heroChangesList">
-              <li>Neues Design</li>
-              <li>Neue Struktur</li>
-              <li>Mehr Entdecken</li>
+              <li>Hausmannskost & Klassiker</li>
+              <li>Ofen, Grill & schnelle Küche</li>
+              <li>Deutsch & Polnisch</li>
             </ul>
           </div>
           <div class="hero-card">
-            <h3 id="heroQuickTitle">Schnell gefunden</h3>
+            <h3 id="heroQuickTitle">Direkt entdecken</h3>
             <ul id="heroQuickList">
               <li>Wölpinghausen</li>
               <li>Ostalgie</li>
-              <li>Schnelle Küche</li>
+              <li>Neue Rezepte</li>
             </ul>
           </div>
         </div>
@@ -813,7 +857,7 @@
     <div class="section-head hidden" id="topicsHead">
       <div>
         <h2 id="topicsTitle">Themenwelten</h2>
-        <p id="topicsCopy">Kuratiert nach Stil, Alltag und Lieblingsküche.</p>
+        <p id="topicsCopy">Kuratierte Themenwelten für Alltag, Wochenende, Gäste und ehrliche Lieblingsküche.</p>
       </div>
     </div>
 
@@ -822,7 +866,7 @@
     <div class="section-head hidden" id="popularHead">
       <div>
         <h2 id="popularTitle">Beliebte Rezepte</h2>
-        <p id="popularCopy">Klarer, ruhiger und bildstärker im neuen Design.</p>
+        <p id="popularCopy">Rezepte zum Stöbern, Speichern und immer wieder Nachkochen.</p>
       </div>
     </div>
 
@@ -1196,19 +1240,21 @@
         node.textContent = state.activeLang === 'pl' ? node.dataset.i18nPl : node.dataset.i18nDe;
       });
       $('topicsTitle').textContent = textByLang('Themenwelten','Światy smaków');
-      $('topicsCopy').textContent = textByLang('Kuratiert nach Stil, Alltag und Lieblingsküche.','Wybrane według stylu, codzienności i ulubionej kuchni.');
+      $('topicsCopy').textContent = textByLang('Lieblingskategorien für Alltag, Wochenende und besondere Küchenmomente.','Wybrane według stylu, codzienności i ulubionej kuchni.');
       $('popularTitle').textContent = textByLang('Beliebte Rezepte','Popularne przepisy');
-      $('popularCopy').textContent = textByLang('Klarer, ruhiger und bildstärker im neuen Design.','Czytelniej, spokojniej i bardziej apetycznie w nowym układzie.');
+      $('popularCopy').textContent = textByLang('Rezepte zum Stöbern, Speichern und immer wieder Nachkochen.','Przepisy do odkrywania, zapisywania i gotowania na nowo.');
+      const topicsCopy = $('topicsCopy');
+      if (topicsCopy) topicsCopy.textContent = textByLang('Kuratierte Themenwelten für Alltag, Wochenende, Gäste und ehrliche Lieblingsküche.','Starannie dobrane światy smaków na co dzień, weekend, dla gości i do prawdziwie domowej kuchni.');
       $('previewIngredientsTitle').textContent = textByLang('Zutaten','Składniki');
       $('previewStepsTitle').textContent = textByLang('Zubereitung','Przygotowanie');
       $('emptyTitle').textContent = textByLang('Keine passenden Rezepte gefunden.','Nie znaleziono pasujących przepisów.');
       $('emptyText').textContent = textByLang('Nimm einen Filter zurück oder probiere einen anderen Suchbegriff.','Usuń filtr lub wpisz inne hasło.');
       $('closeModalBtn').textContent = textByLang('Schließen','Zamknij');
       const brandSub = document.querySelector('.brand-sub');
-      if (brandSub) brandSub.textContent = textByLang('Hausgemachte Lieblingsrezepte auf einen Blick','Domowe ulubione przepisy w jednym miejscu');
+      if (brandSub) brandSub.textContent = textByLang('Rezepte für Alltag, Sonntag und Lieblingsmomente','Domowe klasyki i ulubione przepisy');
       const heroKeepTitle = document.querySelectorAll('.hero-card h3');
-      if (heroKeepTitle[0]) heroKeepTitle[0].textContent = textByLang('Was sich ändert','Co nowego');
-      if (heroKeepTitle[1]) heroKeepTitle[1].textContent = textByLang('Schnell gefunden','Szybki start');
+      if (heroKeepTitle[0]) heroKeepTitle[0].textContent = textByLang('Im Kochbuch','W książce');
+      if (heroKeepTitle[1]) heroKeepTitle[1].textContent = textByLang('Direkt entdecken','Odkryj od razu');
       const footerTitle = document.querySelector('.footer-inner > div');
       if (footerTitle) footerTitle.textContent = 'Svens Kochbuch';
       const imp = $('openImpressumBtn');
@@ -1228,20 +1274,20 @@
       const searchInput = $('searchInput');
       if (searchInput) searchInput.placeholder = textByLang('Rezept suchen…','Szukaj przepisu…');
       const helper = $('searchHelperText');
-      if (helper) helper.textContent = textByLang('Suche nach Titel, Kategorie oder Zutaten.','Szukaj po nazwie, kategorii lub składnikach.');
+      if (helper) helper.textContent = textByLang('Suche nach Titel, Kategorie oder Zutaten – oder entdecke gezielt über Themenwelten.','Szukaj po nazwie, kategorii lub składnikach – albo odkrywaj przez światy smaków.');
       const heroBtns = document.querySelectorAll('.hero-actions button');
-      if (heroBtns[0]) heroBtns[0].textContent = textByLang('Rezepte entdecken','Poznaj przepisy');
-      if (heroBtns[1]) heroBtns[1].textContent = textByLang('Sammlungen browsen','Przeglądaj kolekcje');
+      if (heroBtns[0]) heroBtns[0].textContent = textByLang('Rezepte entdecken','Odkrywaj przepisy');
+      if (heroBtns[1]) heroBtns[1].textContent = textByLang('Themenwelten ansehen','Zobacz światy smaków');
       const heroLists = document.querySelectorAll('.hero-card ul');
       if (heroLists[0]) heroLists[0].innerHTML = [
-        textByLang('Neues Design','Nowy wygląd'),
-        textByLang('Neue Struktur','Nowa struktura'),
-        textByLang('Mehr Entdecken','Więcej inspiracji')
+        textByLang('Hausmannskost & Klassiker','Domowa kuchnia i klasyki'),
+        textByLang('Ofen, Grill & schnelle Küche','Piekarnik, grill i szybka kuchnia'),
+        textByLang('Deutsch & Polnisch','Niemiecki i polski')
       ].map(x => `<li>${x}</li>`).join('');
       if (heroLists[1]) heroLists[1].innerHTML = [
         textByLang('Wölpinghausen','Wölpinghausen'),
         textByLang('Ostalgie','Ostalgie'),
-        textByLang('Schnelle Küche','Szybka kuchnia')
+        textByLang('Pizza, Aufläufe & Salate','Pizza, zapiekanki i sałatki')
       ].map(x => `<li>${x}</li>`).join('');
     }
 
@@ -1249,8 +1295,8 @@
       const featured = filteredRecipes()[0] || state.recipes[0];
       if (!featured) return;
       $('heroMedia').style.backgroundImage = `url("${featured.imageSrc}")`;
-      $('heroTitle').textContent = textByLang('Willkommen in unserer Rezeptewelt','Witamy w naszym świecie przepisów');
-      $('heroSub').textContent = textByLang('Köstliche Rezepte für jeden Tag.','Pyszne przepisy na co dzień.');
+      $('heroTitle').textContent = textByLang('Hausgemacht, herzlich und immer wieder gut.','Domowo, serdecznie i po prostu dobrze.');
+      $('heroSub').textContent = textByLang('Bodenständige Küche, bewährte Familienrezepte und neue Lieblingsgerichte für jeden Tag.','Domowa kuchnia, sprawdzone rodzinne przepisy i nowe ulubione dania na co dzień.');
       const topCats = categoryCounts().slice(0,3);
       $('heroChangesList').innerHTML = topCats.map(c => `<li>${esc(textByLang(c.de,c.pl))}</li>`).join('');
     }
@@ -1279,6 +1325,65 @@
       return recipes;
     }
 
+    function topicDescription(slug){
+      const map = {
+        'woelpinghausen': {
+          de:'Regionale Hausrezepte mit Herz und Erinnerung.',
+          pl:'Regionalne domowe przepisy z sercem i wspomnieniem.'
+        },
+        'ostalgie': {
+          de:'Klassiker mit Nostalgie, Seele und Geschichte.',
+          pl:'Klasyki z nostalgią, duszą i historią.'
+        },
+        'klassiker-hausmannskost': {
+          de:'Deftige Küche für Alltag, Sonntag und Familie.',
+          pl:'Solidna kuchnia na co dzień, niedzielę i dla rodziny.'
+        },
+        'ofen-auflaeufe': {
+          de:'Wärmende Ofengerichte, Aufläufe und goldene Krusten.',
+          pl:'Rozgrzewające dania z piekarnika, zapiekanki i złote warstwy.'
+        },
+        'schnelle-kueche': {
+          de:'Unkomplizierte Rezepte für schnelle Feierabendküche.',
+          pl:'Proste przepisy na szybką kuchnię po pracy.'
+        },
+        'grill-bbq': {
+          de:'Rauchige Favoriten für Grill, Smoker und BBQ.',
+          pl:'Ulubione smaki z grilla, smokera i BBQ.'
+        },
+        'salate-beilagen': {
+          de:'Frische Begleiter, Salate und kleine Lieblingsideen.',
+          pl:'Świeże dodatki, sałatki i małe ulubione pomysły.'
+        },
+        'suppen-eintoepfe': {
+          de:'Herzhaft, wärmend und löffelweise gut.',
+          pl:'Sycące, rozgrzewające i po prostu dobre.'
+        },
+        'fisch-meeresfruechte': {
+          de:'Leichtere Gerichte mit Garnelen, Muscheln und mehr.',
+          pl:'Lżejsze dania z krewetkami, małżami i nie tylko.'
+        },
+        'airfryer': {
+          de:'Knusprige Ideen aus dem Airfryer für jeden Tag.',
+          pl:'Chrupiące pomysły z airfryera na każdy dzień.'
+        },
+        'grundlagen-saucen': {
+          de:'Basics, Würzbasis und Saucen zum Weiterkochen.',
+          pl:'Podstawy, baza smaku i sosy do dalszego gotowania.'
+        },
+        'backen-suesses': {
+          de:'Einfache Kuchen, süße Klassiker und Ofenglück.',
+          pl:'Proste ciasta, słodkie klasyki i pieczone przyjemności.'
+        },
+        'cocktails-getraenke': {
+          de:'Drinks, Erfrischungen und kleine Genussmomente.',
+          pl:'Napoje, orzeźwienie i małe chwile przyjemności.'
+        }
+      };
+      const entry = map[slug];
+      return entry ? textByLang(entry.de, entry.pl) : '';
+    }
+
     function renderTopics(){
       const cats = categoryCounts().slice(0,6);
       topicsSection.innerHTML = cats.map(cat => {
@@ -1288,7 +1393,7 @@
         <article class="topic-card" data-category="${esc(cat.slug)}">
           <img src="${esc(imageSrc)}" alt="${esc(textByLang(cat.de, cat.pl))}" onerror="onImgError(this)">
           <h3>${esc(textByLang(cat.de, cat.pl))}</h3>
-          <div class="topic-sub">${cat.count} ${esc(textByLang('Rezepte','przepisów'))}</div>
+          <div class="topic-sub">${esc(topicDescription(cat.slug) || `${cat.count} ${textByLang('Rezepte','przepisów')}`)}</div>
         </article>
       `;
       }).join('');
@@ -1361,7 +1466,7 @@
       return new Set(text.split(/[^a-z0-9]+/).filter(x => x.length >= 4));
     }
 
-    function relatedRecipesFor(recipe, limit=6){
+    function relatedRecipesFor(recipe, limit=4){
       const baseSet = recipeKeywordSet(recipe);
       return state.recipes
         .filter(r => r.id !== recipe.id)
@@ -1372,15 +1477,15 @@
           const sameCategory = r.categorySlug === recipe.categorySlug;
           const sharedTagCount = (r.tags || []).filter(tag => (recipe.tags || []).some(base => base.slug === tag.slug)).length;
           let score = 0;
-          if (sameCategory) score += 40;
-          score += Math.min(overlap, 8) * 5;
-          score += sharedTagCount * 6;
+          if (sameCategory) score += 42;
+          score += Math.min(overlap, 8) * 4;
+          score += sharedTagCount * 7;
           if ((r.ratingValue || 0) >= 8) score += 3;
-          if (Math.abs((r.id || 0) - (recipe.id || 0)) <= 15) score += 1;
-          const isRelevant = sameCategory || overlap >= 2 || sharedTagCount >= 1;
-          return { r, score, isRelevant };
+          if (Math.abs((r.id || 0) - (recipe.id || 0)) <= 12) score += 2;
+          const isRelevant = (sameCategory && (sharedTagCount >= 1 || overlap >= 2)) || sharedTagCount >= 2 || overlap >= 4;
+          return { r, score, isRelevant, sameCategory, sharedTagCount, overlap };
         })
-        .filter(x => x.isRelevant && x.score >= 18)
+        .filter(x => x.isRelevant && x.score >= 24)
         .sort((a,b) => b.score - a.score || (b.r.ratingValue || 0) - (a.r.ratingValue || 0) || b.r.id - a.r.id)
         .slice(0, limit)
         .map(x => x.r);
@@ -1585,9 +1690,33 @@
       return hints.slice(0, 3);
     }
 
+    function buildIntroAside(recipe){
+      const slug = recipe.categorySlug;
+      if (slug === 'grill-bbq') return textByLang(
+        'Passt gut zu einem einfachen Salat, Brot oder einer kleinen Beilage vom Grill.',
+        'Dobrze pasuje do prostej sałatki, pieczywa albo małego dodatku z grilla.'
+      );
+      if (slug === 'ofen-auflaeufe') return textByLang(
+        'Nach ein paar Minuten Ruhezeit lässt sich das Gericht meist schöner portionieren und servieren.',
+        'Po kilku minutach odpoczynku danie zwykle lepiej się porcjuje i podaje.'
+      );
+      if (slug === 'backen-suesses') return textByLang(
+        'Für den besten Anschnitt lohnt es sich fast immer, Gebäck vollständig auskühlen zu lassen.',
+        'Dla najlepszego krojenia prawie zawsze warto całkowicie ostudzić wypiek.'
+      );
+      if (slug === 'salate-beilagen') return textByLang(
+        'Am besten frisch servieren oder das Dressing erst ganz zum Schluss zugeben.',
+        'Najlepiej podać od razu albo dodać dressing dopiero na samym końcu.'
+      );
+      return textByLang(
+        'Ein ruhiger Aufbau, gute Vorbereitung und sauberes Abschmecken machen dieses Rezept besonders stimmig.',
+        'Spokojny układ pracy, dobre przygotowanie i końcowe doprawienie sprawiają, że ten przepis działa szczególnie dobrze.'
+      );
+    }
+
     function buildKnowledgeBlock(recipe){
       const slug = recipe.categorySlug;
-      let heading = textByLang('Wissenswertes','Warto wiedzieć');
+      let heading = textByLang('Küchenwissen','Warto wiedzieć');
       let body = '';
 
       if (slug === 'salate-beilagen'){
@@ -1618,7 +1747,7 @@
       }
 
       return `
-        <article class="recipe-editorial-card recipe-editorial-note" id="section-knowledge">
+        <article class="recipe-editorial-card recipe-editorial-card-main recipe-editorial-note" id="section-knowledge">
           <h3>${esc(heading)}</h3>
           <div class="ui-copy"><p>${esc(body)}</p></div>
         </article>
@@ -1642,8 +1771,8 @@
           <div class="modal-content">
             <section class="recipe-editorial-head">
               <div class="recipe-breadcrumbs">
-                <span>${esc(textByLang('Startseite','Strona główna'))}</span>
-                <span>${esc(recipeCategory(recipe))}</span>
+                <button type="button" data-breadcrumb-home="1">${esc(textByLang('Startseite','Strona główna'))}</button>
+                <button type="button" data-breadcrumb-category="${esc(recipe.categorySlug)}">${esc(recipeCategory(recipe))}</button>
                 <span>${esc(recipeTitle(recipe))}</span>
               </div>
               <div class="recipe-editorial-category">${esc(recipeCategory(recipe))}</div>
@@ -1664,7 +1793,7 @@
                 <button class="recipe-section-tab" data-section-jump="preparation">${esc(textByLang('Zubereitung','Przygotowanie'))}</button>
                 <button class="recipe-section-tab" data-section-jump="timing">${esc(textByLang('Timing','Czas'))}</button>
                 <button class="recipe-section-tab" data-section-jump="tips">${esc(textByLang('Tipps & Varianten','Porady i warianty'))}</button>
-                <button class="recipe-section-tab" data-section-jump="knowledge">${esc(textByLang('Wissenswertes','Warto wiedzieć'))}</button>
+                <button class="recipe-section-tab" data-section-jump="knowledge">${esc(textByLang('Küchenwissen','Warto wiedzieć'))}</button>
               </div>
             </section>
 
@@ -1673,23 +1802,27 @@
             </section>
 
             <section class="recipe-editorial-intro">
-              <p>${esc(recipeIntro(recipe) || textByLang('Dieses Rezept ist klar aufgebaut und alltagstauglich.','Ten przepis jest przejrzysty i sprawdza się na co dzień.'))}</p>
+              <div class="recipe-editorial-intro-card">
+                <div class="recipe-editorial-lead">${esc(textByLang('Kurz vor dem Kochen','Przed gotowaniem'))}</div>
+                <p>${esc(recipeIntro(recipe) || textByLang('Dieses Rezept ist klar aufgebaut und alltagstauglich.','Ten przepis jest przejrzysty i sprawdza się na co dzień.'))}</p>
+                <div class="recipe-editorial-aside">${esc(buildIntroAside(recipe))}</div>
+              </div>
             </section>
 
             <section class="recipe-editorial-sections">
-              <article class="recipe-editorial-card" id="section-ingredients">
+              <article class="recipe-editorial-card recipe-editorial-card-compact" id="section-ingredients">
                 <h3>${esc(textByLang('Zutaten','Składniki'))}</h3>
                 <div class="ui-copy"><ul>${ingredients.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
               </article>
-              <article class="recipe-editorial-card" id="section-preparation">
-                <h3>${esc(textByLang('Zubereitung','Przygotowanie'))}</h3>
-                <div class="ui-copy"><ol>${steps.map(x => `<li>${esc(x)}</li>`).join('')}</ol></div>
-              </article>
-              <article class="recipe-editorial-card" id="section-timing">
+              <article class="recipe-editorial-card recipe-editorial-card-compact" id="section-timing">
                 <h3>${esc(textByLang('Timing','Czas'))}</h3>
                 <div class="ui-copy">${timing.length ? `<ul>${timing.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Zeitangaben vorhanden.','Brak danych o czasie.'))}</div>
               </article>
-              <article class="recipe-editorial-card" id="section-tips">
+              <article class="recipe-editorial-card recipe-editorial-card-main" id="section-preparation">
+                <h3>${esc(textByLang('Zubereitung','Przygotowanie'))}</h3>
+                <div class="ui-copy"><ol>${steps.map(x => `<li>${esc(x)}</li>`).join('')}</ol></div>
+              </article>
+              <article class="recipe-editorial-card recipe-editorial-card-main" id="section-tips">
                 <h3>${esc(textByLang('Tipps & Varianten','Porady i warianty'))}</h3>
                 <div class="ui-copy">${tipsForDisplay.length ? `<ul>${tipsForDisplay.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : esc(textByLang('Keine Hinweise vorhanden.','Brak wskazówek.'))}</div>
               </article>
@@ -1700,8 +1833,8 @@
             <section class="premium-related-shell">
               <div class="premium-section-head">
                 <div>
-                  <h3>${esc(textByLang('Ähnliche Rezepte','Podobne przepisy'))}</h3>
-                  <p>${esc(textByLang('Weitere Vorschläge, die thematisch oder geschmacklich gut dazu passen.','Kolejne propozycje, które dobrze pasują tematem albo smakiem.'))}</p>
+                  <h3>${esc(textByLang('Das passt auch gut dazu','To też dobrze pasuje'))}</h3>
+                  <p>${esc(textByLang('Aus derselben Küchenwelt oder mit ähnlicher Richtung – bewusst ausgewählt statt zufällig gemischt.','Z tej samej kuchennej rodziny albo o podobnym charakterze – dobrane świadomie, a nie przypadkowo.'))}</p>
                 </div>
               </div>
               <div class="premium-related-grid">
@@ -1733,13 +1866,38 @@
           const target = modalBody.querySelector('#section-' + btn.dataset.sectionJump);
           if (target) {
             target.scrollIntoView({behavior:'smooth', block:'start'});
-            modalBody.querySelectorAll('.modal-card').forEach(c => c.classList.remove('is-target'));
-            if (target.classList.contains('modal-card')) {
-              target.classList.add('is-target');
-              setTimeout(() => target.classList.remove('is-target'), 1400);
-            }
+            modalBody.querySelectorAll('.modal-card, .recipe-editorial-card').forEach(c => c.classList.remove('is-target'));
+            target.classList.add('is-target');
+            setTimeout(() => target.classList.remove('is-target'), 1400);
           }
         });
+      });
+      modalBody.querySelector('[data-breadcrumb-home]')?.addEventListener('click', () => {
+        closeModal();
+        state.activeCategory = 'all';
+        state.activeQuick = 'all';
+        state.activeTags = [];
+        state.currentLimit = INITIAL_VISIBLE;
+        document.querySelectorAll('[data-quick]').forEach(x => x.classList.toggle('active', x.dataset.quick === 'all'));
+        renderTopics();
+        renderTagFilters();
+        renderRecipeGrid();
+        updateSuggest();
+        window.scrollTo({top:0, behavior:'smooth'});
+      });
+      modalBody.querySelector('[data-breadcrumb-category]')?.addEventListener('click', () => {
+        closeModal();
+        state.activeCategory = recipe.categorySlug;
+        state.activeQuick = 'all';
+        state.activeTags = [];
+        state.currentLimit = INITIAL_VISIBLE;
+        document.querySelectorAll('[data-quick]').forEach(x => x.classList.toggle('active', x.dataset.quick === 'all'));
+        renderTopics();
+        renderTagFilters();
+        renderRecipeGrid();
+        updateSuggest();
+        const head = $('topicsHead') || $('popularHead');
+        if (head) head.scrollIntoView({behavior:'smooth', block:'start'});
       });
       modalBody.querySelector('[data-copy-recipe]')?.addEventListener('click', async () => {
         const ok = await copyTextRobust(currentRecipeUrl(recipe.id));
