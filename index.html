@@ -810,8 +810,8 @@
           <div class="hero-card">
             <h3 id="heroQuickTitle">Direkt entdecken</h3>
             <ul id="heroQuickList">
+              <li>Grundrezepte</li>
               <li>Wölpinghausen</li>
-              <li>Ostalgie</li>
               <li>Neue Rezepte</li>
             </ul>
           </div>
@@ -862,6 +862,15 @@
     </div>
 
     <section class="topics hidden" id="topicsSection"></section>
+
+    <div class="section-head hidden" id="recentHead">
+      <div>
+        <h2 id="recentTitle">Zuletzt angesehen</h2>
+        <p id="recentCopy">Deine zuletzt geöffneten Rezepte für den schnellen Wiedereinstieg.</p>
+      </div>
+    </div>
+
+    <section class="recipe-grid hidden" id="recentGrid"></section>
 
     <div class="section-head hidden" id="popularHead">
       <div>
@@ -952,6 +961,7 @@
       { slug:'suppen-eintoepfe', de:'Suppen & Eintöpfe', pl:'Zupy i gulasze', icon:'🥣' },
       { slug:'fisch-meeresfruechte', de:'Fisch & Meeresfrüchte', pl:'Ryby i owoce morza', icon:'🦐' },
       { slug:'airfryer', de:'Airfryer', pl:'Airfryer', icon:'🍟' },
+      { slug:'grundrezepte', de:'Grundrezepte', pl:'Podstawowe przepisy', icon:'🧾' },
       { slug:'grundlagen-saucen', de:'Grundlagen & Saucen', pl:'Podstawy i sosy', icon:'🥄' },
       { slug:'backen-suesses', de:'Backen & Süßes', pl:'Pieczenie i słodkie', icon:'🍰' },
       { slug:'cocktails-getraenke', de:'Cocktails & Getränke', pl:'Koktajle i napoje', icon:'🍹' }
@@ -967,7 +977,8 @@
       sortMode: 'new',
       activeRecipeId: null,
       activeTags: [],
-      currentLimit: INITIAL_VISIBLE
+      currentLimit: INITIAL_VISIBLE,
+      recentlyViewedIds: []
     };
 
     const $ = id => document.getElementById(id);
@@ -1014,6 +1025,7 @@
       if (n.includes('wolping') || raw.includes('Wölping') || n.includes('schaumburg')) return 'woelpinghausen';
       if (n.includes('ostalgie') || n.includes('nostalgie') || n.includes('ddr') || n.includes('kindheit')) return 'ostalgie';
       if (n.includes('cocktail') || n.includes('getrank') || n.includes('drink') || n.includes('napoj')) return 'cocktails-getraenke';
+      if (n.includes('grundrezept') || n.includes('grundrezepte') || n.includes('basisrezept') || n.includes('podstawowe przepisy') || n.includes('pizza & brot') || n.includes('pizza i pieczywo')) return 'grundrezepte';
       if (n.includes('back') || n.includes('dessert') || n.includes('suss') || raw.includes('Süß') || n.includes('kuchen') || n.includes('sussspeisen')) return 'backen-suesses';
       if (n.includes('grundlagen') || n.includes('sauce') || n.includes('dressing') || n.includes('sosy')) return 'grundlagen-saucen';
       if (n.includes('airfryer')) return 'airfryer';
@@ -1100,6 +1112,23 @@
       return textByLang(r.categoryDe, r.categoryPl);
     }
     function recipePersons(r){ return textByLang(r.personsDe, r.personsPl) || textByLang('Siehe Rezept','Zobacz przepis'); }
+    function isBasicRecipe(recipe){
+      const source = normalize([recipe.titleDe, recipe.titlePl, recipe.categoryDe, recipe.categoryPl, ...(recipe.ingredientsDe || []), ...(recipe.ingredientsPl || [])].join(' '));
+      return recipe.categorySlug === 'grundrezepte' || /grundrezept|basisrezept|podstawow|teig|ciasto|sauce|sos|focaccia|knoblauchol|czosnkowy|pizza/.test(source);
+    }
+    function categoryFilterMatch(recipe, categorySlug){
+      if (categorySlug === 'grundrezepte') return isBasicRecipe(recipe);
+      return recipe.categorySlug === categorySlug;
+    }
+    function safeLocalStorageGet(key, fallback){
+      try{
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      }catch(_){ return fallback; }
+    }
+    function safeLocalStorageSet(key, value){
+      try{ localStorage.setItem(key, JSON.stringify(value)); }catch(_){}
+    }
     function currentRecipeUrl(recipeId){
       const url = new URL(window.location.href);
       url.hash = '#rezept-' + recipeId;
@@ -1129,13 +1158,20 @@
 
     function categoryCounts(){
       const counts = new Map();
-      const featuredOrder = ['woelpinghausen','ostalgie','klassiker-hausmannskost','ofen-auflaeufe','schnelle-kueche','grill-bbq','salate-beilagen'];
+      const featuredOrder = ['grundrezepte','woelpinghausen','ostalgie','klassiker-hausmannskost','ofen-auflaeufe','schnelle-kueche','grill-bbq','salate-beilagen'];
       state.recipes.forEach(r => {
         const cfg = CATEGORY_LABELS[r.categorySlug];
-        if (!cfg) return;
-        if (!counts.has(r.categorySlug)) counts.set(r.categorySlug, { ...cfg, count:0, image:r.imageSrc });
-        counts.get(r.categorySlug).count += 1;
-        if (!counts.get(r.categorySlug).image && r.imageSrc) counts.get(r.categorySlug).image = r.imageSrc;
+        if (cfg) {
+          if (!counts.has(r.categorySlug)) counts.set(r.categorySlug, { ...cfg, count:0, image:r.imageSrc });
+          counts.get(r.categorySlug).count += 1;
+          if (!counts.get(r.categorySlug).image && r.imageSrc) counts.get(r.categorySlug).image = r.imageSrc;
+        }
+        if (isBasicRecipe(r)) {
+          const basicCfg = CATEGORY_LABELS['grundrezepte'];
+          if (!counts.has('grundrezepte')) counts.set('grundrezepte', { ...basicCfg, count:0, image:r.imageSrc });
+          counts.get('grundrezepte').count += 1;
+          if (!counts.get('grundrezepte').image && r.imageSrc) counts.get('grundrezepte').image = r.imageSrc;
+        }
       });
       return [...counts.values()].sort((a,b) => {
         const ai = featuredOrder.indexOf(a.slug);
@@ -1203,7 +1239,7 @@
     function filteredRecipes(){
       const query = normalize($('searchInput').value || '');
       return sortedRecipes(state.recipes.filter(recipe => {
-        const categoryOk = state.activeCategory === 'all' || recipe.categorySlug === state.activeCategory;
+        const categoryOk = state.activeCategory === 'all' || categoryFilterMatch(recipe, state.activeCategory);
         const quickOk = recipeMatchesQuickFilter(recipe);
         const haystack = normalize([
           recipe.id + '. ' + recipe.titleDe,
@@ -1224,7 +1260,7 @@
       const blocked = new Set(['ofen','alltag']);
       const pool = new Map();
       state.recipes.forEach(recipe => {
-        if (state.activeCategory !== 'all' && recipe.categorySlug !== state.activeCategory) return;
+        if (state.activeCategory !== 'all' && !categoryFilterMatch(recipe, state.activeCategory)) return;
         if (!recipeMatchesQuickFilter(recipe)) return;
         (recipe.tags || []).forEach(tag => {
           if (blocked.has(tag.slug)) return;
@@ -1367,6 +1403,10 @@
           de:'Knusprige Ideen aus dem Airfryer für jeden Tag.',
           pl:'Chrupiące pomysły z airfryera na każdy dzień.'
         },
+        'grundrezepte': {
+          de:'Teige, Saucen und Küchenbasics zum Weiterkochen.',
+          pl:'Ciasta, sosy i kuchenne podstawy do dalszego gotowania.'
+        },
         'grundlagen-saucen': {
           de:'Basics, Würzbasis und Saucen zum Weiterkochen.',
           pl:'Podstawy, baza smaku i sosy do dalszego gotowania.'
@@ -1382,6 +1422,48 @@
       };
       const entry = map[slug];
       return entry ? textByLang(entry.de, entry.pl) : '';
+    }
+
+    function loadRecentlyViewed(){
+      state.recentlyViewedIds = safeLocalStorageGet('svens_kochbuch_recently_viewed', []).filter(id => state.recipes.some(r => String(r.id) === String(id))).slice(0,8);
+    }
+
+    function rememberRecentlyViewed(recipeId){
+      const clean = state.recentlyViewedIds.filter(id => String(id) !== String(recipeId));
+      state.recentlyViewedIds = [Number(recipeId), ...clean].slice(0,8);
+      safeLocalStorageSet('svens_kochbuch_recently_viewed', state.recentlyViewedIds);
+    }
+
+    function renderRecentlyViewed(){
+      const recipes = state.recentlyViewedIds
+        .map(id => state.recipes.find(r => String(r.id) === String(id)))
+        .filter(Boolean);
+      const hasItems = recipes.length > 0;
+      recentHead.classList.toggle('hidden', !hasItems);
+      recentGrid.classList.toggle('hidden', !hasItems);
+      if (!hasItems){
+        recentGrid.innerHTML = '';
+        return;
+      }
+      $('recentTitle').textContent = textByLang('Zuletzt angesehen','Ostatnio oglądane');
+      $('recentCopy').textContent = textByLang('Deine zuletzt geöffneten Rezepte für den schnellen Wiedereinstieg.','Twoje ostatnio otwierane przepisy na szybki powrót.');
+      recentGrid.innerHTML = recipes.map(recipe => `
+        <article class="recipe-card" data-recipe-id="${recipe.id}">
+          <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+          <div class="recipe-body">
+            <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
+            <div class="recipe-title">${esc(recipeTitle(recipe))}</div>
+            <div class="recipe-meta">
+              <span>★</span>
+              <span>${esc(recipeTimingLabel(recipe))}</span>
+              ${recipe.ratingValue ? `<span>• ${esc(String(recipe.ratingValue))}/10</span>` : ''}
+            </div>
+            <div class="recipe-actions">
+              <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Rezept öffnen','Otwórz przepis'))}</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
     }
 
     function renderTopics(){
@@ -1758,6 +1840,8 @@
       const recipe = state.recipes.find(r => String(r.id) === String(id));
       if (!recipe) return;
       state.activeRecipeId = recipe.id;
+      rememberRecentlyViewed(recipe.id);
+      renderRecentlyViewed();
       updateRecipeSeo(recipe);
       const ingredients = state.activeLang === 'pl' ? recipe.ingredientsPl : recipe.ingredientsDe;
       const steps = state.activeLang === 'pl' ? recipe.preparationPl : recipe.preparationDe;
@@ -1999,6 +2083,7 @@
           updateHero();
           renderTagFilters();
           renderTopics();
+          renderRecentlyViewed();
           renderRecipeGrid();
           if (state.activeRecipeId) openRecipe(state.activeRecipeId);
           else updateGlobalSeo();
@@ -2013,6 +2098,7 @@
         state.currentLimit = INITIAL_VISIBLE;
         renderTagFilters();
         renderTopics();
+        renderRecentlyViewed();
         renderRecipeGrid();
         updateSuggest();
       });
@@ -2095,6 +2181,15 @@
         renderRecipeGrid();
         updateSuggest();
       });
+      recentGrid.addEventListener('click', e => {
+        const btn = e.target.closest('[data-open]');
+        if (btn) {
+          openRecipe(btn.dataset.open);
+          return;
+        }
+        const card = e.target.closest('[data-recipe-id]');
+        if (card) openRecipe(card.dataset.recipeId);
+      });
       recipeGrid.addEventListener('click', e => {
         const btn = e.target.closest('[data-open]');
         if (btn) {
@@ -2145,6 +2240,7 @@
         if (!res.ok) throw new Error('kochbuch.xml konnte nicht geladen werden');
         const xmlText = await res.text();
         state.recipes = parseRecipes(xmlText);
+        loadRecentlyViewed();
         heroSection.classList.remove('hidden');
         searchSection.classList.remove('hidden');
         topicsHead.classList.remove('hidden');
@@ -2157,6 +2253,7 @@
         updateHero();
         renderTagFilters();
         renderTopics();
+        renderRecentlyViewed();
         renderRecipeGrid();
         updateSuggest();
         bindEvents();

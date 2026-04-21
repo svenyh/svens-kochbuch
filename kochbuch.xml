@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="5.0" languages="de,pl">
   <meta>
     <language>de,pl</language>
-    <recipeCount>214</recipeCount>
+    <recipeCount>250</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 klassische Traditionsrezepte (Soljanka, Würzfleisch, Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 weitere polnisch inspirierte Rezepte (klassische Placki, Placki mit Pilzrahm, Pyra mit Speck und Kräuterquark, Babka mit Kassler, Zapiekanka mit Hähnchen und Paprika). Ergänzt um 12 Asia-Wok-Rezepte (Pad Thai, gebratene Asia-Nudeln, Rind mit Brokkoli, Chop Suey, Thai Red Curry, Erdnuss-Wok, Kokos-Wok, Udon-Wok, Garnelen-Wok, Tofu-Wok, Thai Basil Chicken, gebratener Reis). Ergänzt um 15 italienisch inspirierte Rezepte (IDs 180–194). Ergänzt um 20 Fusion-Rezepte (IDs 195–214). Qualitätsrunde: Einleitungen für Rezepte 180–193 ergänzt. Qualitätsrunde V2: klare Kategorien für ausgewählte Rezepte normalisiert. Qualitätsrunde V3: ausgewählte ältere Einleitungen in DE und PL stilistisch veredelt.</notes>
   </meta>
   <recipe id="1">
@@ -16471,8 +16471,41 @@
       <item>Den Ofen mit Blech oder Pizzastein gut vorheizen.</item>
     </tips>
     <rating>9/10</rating>
-  <translation lang="pl"><name>Klasyczne ciasto na pizzę Sven-Style</name><persons>Na 2 duże pizze lub 1 pizzę z blachy</persons><category>Pizza / podstawy i sosy</category><intro lang="pl">Klasyczne ciasto na pizzę, które daje elastyczny, dobrze wypieczony spód. Prosty i pewny przepis jako baza do wielu domowych pizz.</intro><ingredients><item>500 g mąki pszennej typ 550</item><item>1 kostka świeżych drożdży lub 1 opakowanie drożdży instant</item><item>325 ml letniej wody</item><item>2 łyżki oliwy z oliwek</item><item>1 łyżeczka cukru</item><item>2 łyżeczki soli</item></ingredients><preparation><step nr="1">Do dużej miski wlać letnią wodę. Rozpuścić w niej cukier i drożdże.</step><step nr="2">Odstawić na 5–10 minut, aż drożdże zaczną pracować.</step><step nr="3">Dodać mąkę, sól i oliwę z oliwek.</step><step nr="4">Wszystko wyrobić na gładkie, elastyczne ciasto. Zajmuje to około 8–10 minut.</step><step nr="5">Ciasto przykryć i odstawić w ciepłe miejsce na 45–60 minut do wyrośnięcia.</step><step nr="6">Następnie krótko ponownie wyrobić i rozwałkować cienko lub trochę grubiej – zależnie od tego, jaką pizzę chcesz upiec.</step><step nr="7">Posmarować sosem, dodać składniki i piec w bardzo mocno nagrzanym piekarniku.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas wyrastania: 45–60 minut</item><item>Czas pieczenia: 10–15 minut w 230–250 °C</item></timing><tips><item>Mąka typ 550 zwykle daje lepszą strukturę pizzy niż zwykła mąka 405.</item><item>Jeśli chcesz więcej aromatu, zostaw ciasto na noc w lodówce.</item><item>Dobrze nagrzej piekarnik razem z blachą lub kamieniem do pizzy.</item><item>Nie używaj zbyt dużo sosu, żeby spód nie zrobił się miękki.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Klasyczne ciasto na pizzę Sven-Style</name>
+      <persons>Na 2 duże pizze lub 1 pizzę z blachy</persons>
+      <category>Pizza / podstawy i sosy</category>
+      <intro lang="pl">Klasyczne ciasto na pizzę, które daje elastyczny, dobrze wypieczony spód. Prosty i pewny przepis jako baza do wielu domowych pizz.</intro>
+      <ingredients>
+        <item>500 g mąki pszennej typ 550</item>
+        <item>1 kostka świeżych drożdży lub 1 opakowanie drożdży instant</item>
+        <item>325 ml letniej wody</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 łyżeczka cukru</item>
+        <item>2 łyżeczki soli</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Do dużej miski wlać letnią wodę. Rozpuścić w niej cukier i drożdże.</step>
+        <step nr="2">Odstawić na 5–10 minut, aż drożdże zaczną pracować.</step>
+        <step nr="3">Dodać mąkę, sól i oliwę z oliwek.</step>
+        <step nr="4">Wszystko wyrobić na gładkie, elastyczne ciasto. Zajmuje to około 8–10 minut.</step>
+        <step nr="5">Ciasto przykryć i odstawić w ciepłe miejsce na 45–60 minut do wyrośnięcia.</step>
+        <step nr="6">Następnie krótko ponownie wyrobić i rozwałkować cienko lub trochę grubiej – zależnie od tego, jaką pizzę chcesz upiec.</step>
+        <step nr="7">Posmarować sosem, dodać składniki i piec w bardzo mocno nagrzanym piekarniku.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas wyrastania: 45–60 minut</item>
+        <item>Czas pieczenia: 10–15 minut w 230–250 °C</item>
+      </timing>
+      <tips>
+        <item>Mąka typ 550 zwykle daje lepszą strukturę pizzy niż zwykła mąka 405.</item>
+        <item>Jeśli chcesz więcej aromatu, zostaw ciasto na noc w lodówce.</item>
+        <item>Dobrze nagrzej piekarnik razem z blachą lub kamieniem do pizzy.</item>
+        <item>Nie używaj zbyt dużo sosu, żeby spód nie zrobił się miękki.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="216">
     <name>Hauspizza vom Blech</name>
     <persons>4 Personen</persons>
@@ -16519,8 +16552,54 @@
       <item>Auch gut für Resteverwertung im Kühlschrank.</item>
     </tips>
     <rating>9/10</rating>
-  <translation lang="pl"><name>Domowa pizza z blachy</name><persons>Dla 4 osób</persons><category>Pizza / dania z piekarnika</category><intro lang="pl">Prosta pizza z blachy, idealna dla rodziny albo gości. Dużo dodatków, dobry ser i klasyczny domowy styl.</intro><ingredients><item>Na ciasto: 500 g mąki pszennej typ 550</item><item>Na ciasto: 1 kostka świeżych drożdży</item><item>Na ciasto: 325 ml letniej wody</item><item>Na ciasto: 2 łyżki oliwy z oliwek</item><item>Na ciasto: 1 łyżeczka cukru</item><item>Na ciasto: 2 łyżeczki soli</item><item>Na sos: 1 puszka krojonych pomidorów (400 g)</item><item>Na sos: 2 łyżki koncentratu pomidorowego</item><item>Na sos: 1 ząbek czosnku</item><item>Na sos: 1 łyżeczka oregano</item><item>Na sos: sól</item><item>Na sos: pieprz</item><item>Na sos: 1 łyżeczka cukru</item><item>Na wierzch: 200 g tartej mozzarelli</item><item>Na wierzch: 100 g tartego goudy</item><item>Na wierzch: 100 g salami</item><item>Na wierzch: 1 papryka</item><item>Na wierzch: 1 mała czerwona cebula</item><item>Na wierzch: 150 g pieczarek</item></ingredients><preparation><step nr="1">Przygotować ciasto drożdżowe jak w przepisie podstawowym i zostawić do wyrośnięcia.</step><step nr="2">Na sos wymieszać krojone pomidory z koncentratem, przeciśniętym czosnkiem, oregano, solą, pieprzem i cukrem.</step><step nr="3">Ciasto rozciągnąć na natłuszczonej lub wyłożonej papierem blasze.</step><step nr="4">Równomiernie rozprowadzić sos.</step><step nr="5">Na wierzchu rozłożyć ser, salami, paprykę, cebulę i pieczarki.</step><step nr="6">Piec w dobrze nagrzanym piekarniku na złoty kolor.</step><step nr="7">Chwilę odstawić, a potem pokroić na kawałki.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Czas wyrastania: 45–60 minut</item><item>Czas pieczenia: 15–20 minut w 230 °C</item></timing><tips><item>Idealna dla rodziny albo gości, bo wszystko robi się naraz.</item><item>Jeśli lubisz ostrzej, dodaj trochę chili do sosu.</item><item>Po upieczeniu możesz posypać ją oregano albo rukolą.</item><item>To także dobry sposób na wykorzystanie resztek z lodówki.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Domowa pizza z blachy</name>
+      <persons>Dla 4 osób</persons>
+      <category>Pizza / dania z piekarnika</category>
+      <intro lang="pl">Prosta pizza z blachy, idealna dla rodziny albo gości. Dużo dodatków, dobry ser i klasyczny domowy styl.</intro>
+      <ingredients>
+        <item>Na ciasto: 500 g mąki pszennej typ 550</item>
+        <item>Na ciasto: 1 kostka świeżych drożdży</item>
+        <item>Na ciasto: 325 ml letniej wody</item>
+        <item>Na ciasto: 2 łyżki oliwy z oliwek</item>
+        <item>Na ciasto: 1 łyżeczka cukru</item>
+        <item>Na ciasto: 2 łyżeczki soli</item>
+        <item>Na sos: 1 puszka krojonych pomidorów (400 g)</item>
+        <item>Na sos: 2 łyżki koncentratu pomidorowego</item>
+        <item>Na sos: 1 ząbek czosnku</item>
+        <item>Na sos: 1 łyżeczka oregano</item>
+        <item>Na sos: sól</item>
+        <item>Na sos: pieprz</item>
+        <item>Na sos: 1 łyżeczka cukru</item>
+        <item>Na wierzch: 200 g tartej mozzarelli</item>
+        <item>Na wierzch: 100 g tartego goudy</item>
+        <item>Na wierzch: 100 g salami</item>
+        <item>Na wierzch: 1 papryka</item>
+        <item>Na wierzch: 1 mała czerwona cebula</item>
+        <item>Na wierzch: 150 g pieczarek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować ciasto drożdżowe jak w przepisie podstawowym i zostawić do wyrośnięcia.</step>
+        <step nr="2">Na sos wymieszać krojone pomidory z koncentratem, przeciśniętym czosnkiem, oregano, solą, pieprzem i cukrem.</step>
+        <step nr="3">Ciasto rozciągnąć na natłuszczonej lub wyłożonej papierem blasze.</step>
+        <step nr="4">Równomiernie rozprowadzić sos.</step>
+        <step nr="5">Na wierzchu rozłożyć ser, salami, paprykę, cebulę i pieczarki.</step>
+        <step nr="6">Piec w dobrze nagrzanym piekarniku na złoty kolor.</step>
+        <step nr="7">Chwilę odstawić, a potem pokroić na kawałki.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Czas wyrastania: 45–60 minut</item>
+        <item>Czas pieczenia: 15–20 minut w 230 °C</item>
+      </timing>
+      <tips>
+        <item>Idealna dla rodziny albo gości, bo wszystko robi się naraz.</item>
+        <item>Jeśli lubisz ostrzej, dodaj trochę chili do sosu.</item>
+        <item>Po upieczeniu możesz posypać ją oregano albo rukolą.</item>
+        <item>To także dobry sposób na wykorzystanie resztek z lodówki.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="217">
     <name>Pizza Margherita klassisch</name>
     <persons>2 Personen</persons>
@@ -16556,8 +16635,43 @@
       <item>Nicht zu viel Sauce verwenden, damit der Boden nicht weich wird.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Klasyczna pizza Margherita</name><persons>Dla 2 osób</persons><category>Pizza / klasyki i domowa kuchnia</category><intro lang="pl">Klasyczna Margherita to jedna z najprostszych i najlepszych pizz. Mniej dodatków, ale dobry sos, mozzarella i bazylia robią tu całą robotę.</intro><ingredients><item>1 porcja klasycznego ciasta na pizzę</item><item>200 g passaty pomidorowej</item><item>1 łyżka koncentratu pomidorowego</item><item>1 mały ząbek czosnku</item><item>sól</item><item>pieprz</item><item>1 łyżeczka oregano</item><item>2 kulki mozzarelli</item><item>kilka świeżych listków bazylii</item><item>1 łyżka oliwy z oliwek</item></ingredients><preparation><step nr="1">Przygotować ciasto na pizzę i cienko je rozwałkować.</step><step nr="2">Wymieszać passatę z koncentratem, drobno posiekanym czosnkiem, solą, pieprzem i oregano.</step><step nr="3">Rozsmarować sos na cieście.</step><step nr="4">Mozzarellę pokroić albo porwać na kawałki i rozłożyć na wierzchu.</step><step nr="5">Piec pizzę w mocno nagrzanym piekarniku, aż brzegi i ser ładnie się zrumienią.</step><step nr="6">Po upieczeniu dodać świeżą bazylię i skropić oliwą.</step></preparation><timing><item>Przygotowanie: 10 minut</item><item>Czas pieczenia: 10–12 minut w 250 °C</item></timing><tips><item>Tutaj mniej znaczy więcej – nie przeładowuj pizzy dodatkami.</item><item>Przed użyciem warto lekko odsączyć mozzarellę.</item><item>Świeżą bazylię dodawaj dopiero po upieczeniu.</item><item>To świetna baza do innych wariantów pizzy.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Klasyczna pizza Margherita</name>
+      <persons>Dla 2 osób</persons>
+      <category>Pizza / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Klasyczna Margherita to jedna z najprostszych i najlepszych pizz. Mniej dodatków, ale dobry sos, mozzarella i bazylia robią tu całą robotę.</intro>
+      <ingredients>
+        <item>1 porcja klasycznego ciasta na pizzę</item>
+        <item>200 g passaty pomidorowej</item>
+        <item>1 łyżka koncentratu pomidorowego</item>
+        <item>1 mały ząbek czosnku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>1 łyżeczka oregano</item>
+        <item>2 kulki mozzarelli</item>
+        <item>kilka świeżych listków bazylii</item>
+        <item>1 łyżka oliwy z oliwek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować ciasto na pizzę i cienko je rozwałkować.</step>
+        <step nr="2">Wymieszać passatę z koncentratem, drobno posiekanym czosnkiem, solą, pieprzem i oregano.</step>
+        <step nr="3">Rozsmarować sos na cieście.</step>
+        <step nr="4">Mozzarellę pokroić albo porwać na kawałki i rozłożyć na wierzchu.</step>
+        <step nr="5">Piec pizzę w mocno nagrzanym piekarniku, aż brzegi i ser ładnie się zrumienią.</step>
+        <step nr="6">Po upieczeniu dodać świeżą bazylię i skropić oliwą.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Czas pieczenia: 10–12 minut w 250 °C</item>
+      </timing>
+      <tips>
+        <item>Tutaj mniej znaczy więcej – nie przeładowuj pizzy dodatkami.</item>
+        <item>Przed użyciem warto lekko odsączyć mozzarellę.</item>
+        <item>Świeżą bazylię dodawaj dopiero po upieczeniu.</item>
+        <item>To świetna baza do innych wariantów pizzy.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="218">
     <name>Schnelle Pizza ohne Hefe</name>
     <persons>2–3 Personen</persons>
@@ -16591,8 +16705,41 @@
       <item>Für mehr Geschmack etwas Oregano oder Knoblauchpulver in den Teig geben.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Szybka pizza bez drożdży</name><persons>Dla 2–3 osób</persons><category>Pizza / szybka kuchnia</category><intro lang="pl">Szybka pizza bez drożdży, kiedy ma być prosto i bez czekania na wyrastanie. Ciasto jest inne niż klasyczne, ale bardzo praktyczne na co dzień.</intro><ingredients><item>250 g mąki</item><item>1 opakowanie proszku do pieczenia</item><item>1 łyżeczka soli</item><item>125 ml wody</item><item>4 łyżki oliwy z oliwek</item><item>150 g passaty pomidorowej</item><item>150 g tartego sera</item><item>dodatki według uznania, np. salami, papryka, cebula, pieczarki</item></ingredients><preparation><step nr="1">Wymieszać mąkę, proszek do pieczenia i sól.</step><step nr="2">Dodać wodę i oliwę, a następnie zagnieść gładkie ciasto.</step><step nr="3">Od razu rozwałkować ciasto i ułożyć je na blasze albo papierze do pieczenia.</step><step nr="4">Posmarować passatą pomidorową.</step><step nr="5">Dodać ser i wybrane dodatki.</step><step nr="6">Piec w nagrzanym piekarniku, aż brzeg będzie złocisty.</step></preparation><timing><item>Przygotowanie: 10 minut</item><item>Czas pieczenia: 15–18 minut w 220 °C</item></timing><tips><item>To idealna opcja, gdy trzeba zrobić pizzę szybko.</item><item>Spód będzie bardziej kruchy niż przy klasycznym cieście drożdżowym.</item><item>Bardzo dobra na spontaniczne wieczory z pizzą.</item><item>Dla lepszego smaku dodaj do ciasta trochę oregano albo czosnku w proszku.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Szybka pizza bez drożdży</name>
+      <persons>Dla 2–3 osób</persons>
+      <category>Pizza / szybka kuchnia</category>
+      <intro lang="pl">Szybka pizza bez drożdży, kiedy ma być prosto i bez czekania na wyrastanie. Ciasto jest inne niż klasyczne, ale bardzo praktyczne na co dzień.</intro>
+      <ingredients>
+        <item>250 g mąki</item>
+        <item>1 opakowanie proszku do pieczenia</item>
+        <item>1 łyżeczka soli</item>
+        <item>125 ml wody</item>
+        <item>4 łyżki oliwy z oliwek</item>
+        <item>150 g passaty pomidorowej</item>
+        <item>150 g tartego sera</item>
+        <item>dodatki według uznania, np. salami, papryka, cebula, pieczarki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wymieszać mąkę, proszek do pieczenia i sól.</step>
+        <step nr="2">Dodać wodę i oliwę, a następnie zagnieść gładkie ciasto.</step>
+        <step nr="3">Od razu rozwałkować ciasto i ułożyć je na blasze albo papierze do pieczenia.</step>
+        <step nr="4">Posmarować passatą pomidorową.</step>
+        <step nr="5">Dodać ser i wybrane dodatki.</step>
+        <step nr="6">Piec w nagrzanym piekarniku, aż brzeg będzie złocisty.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Czas pieczenia: 15–18 minut w 220 °C</item>
+      </timing>
+      <tips>
+        <item>To idealna opcja, gdy trzeba zrobić pizzę szybko.</item>
+        <item>Spód będzie bardziej kruchy niż przy klasycznym cieście drożdżowym.</item>
+        <item>Bardzo dobra na spontaniczne wieczory z pizzą.</item>
+        <item>Dla lepszego smaku dodaj do ciasta trochę oregano albo czosnku w proszku.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="219">
     <name>Gyros-Salat Sven-Style</name>
     <persons>4 Personen</persons>
@@ -16630,8 +16777,45 @@
       <item>Sehr gut für Partys geeignet.</item>
     </tips>
     <rating>9/10</rating>
-  <translation lang="pl"><name>Sałatka gyros Sven-Style</name><persons>Dla 4 osób</persons><category>Sałatki i dodatki / szybka kuchnia</category><intro lang="pl">Wyrazista, sycąca i bardzo praktyczna sałatka gyros. Dobrze sprawdza się na co dzień, ale też na imprezy i spotkania z gośćmi.</intro><ingredients><item>500 g pokrojonego filetu z kurczaka lub wieprzowiny</item><item>2 łyżki przyprawy gyros</item><item>1 łyżka oleju</item><item>1 sałata lodowa</item><item>1 ogórek</item><item>3 pomidory</item><item>1 czerwona cebula</item><item>1 puszka kukurydzy</item><item>150 g tartego sera</item><item>200 g tzatzików lub jogurtowego sosu czosnkowego</item></ingredients><preparation><step nr="1">Zamarynować mięso w przyprawie gyros i oleju.</step><step nr="2">Mocno obsmażyć na patelni, a następnie zostawić do ostygnięcia.</step><step nr="3">Sałatę lodową pokroić w paski. Ogórka, pomidory i cebulę pokroić na małe kawałki. Kukurydzę odsączyć.</step><step nr="4">Wszystko przełożyć do dużej miski albo ułożyć warstwami w naczyniu.</step><step nr="5">Na wierzchu rozłożyć usmażone mięso.</step><step nr="6">Posypać tartym serem.</step><step nr="7">Na końcu podać z tzatzikami albo rozsmarować na wierzchu sos czosnkowy.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Smażenie: 10 minut</item><item>Opcjonalny czas przegryzienia: 15 minut</item></timing><tips><item>Można ją dobrze przygotować wcześniej.</item><item>Sos dodawaj dopiero krótko przed podaniem, wtedy sałata pozostanie świeża.</item><item>Podawaj z chlebkiem pita albo bagietką.</item><item>Bardzo dobrze sprawdza się też na imprezach.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Sałatka gyros Sven-Style</name>
+      <persons>Dla 4 osób</persons>
+      <category>Sałatki i dodatki / szybka kuchnia</category>
+      <intro lang="pl">Wyrazista, sycąca i bardzo praktyczna sałatka gyros. Dobrze sprawdza się na co dzień, ale też na imprezy i spotkania z gośćmi.</intro>
+      <ingredients>
+        <item>500 g pokrojonego filetu z kurczaka lub wieprzowiny</item>
+        <item>2 łyżki przyprawy gyros</item>
+        <item>1 łyżka oleju</item>
+        <item>1 sałata lodowa</item>
+        <item>1 ogórek</item>
+        <item>3 pomidory</item>
+        <item>1 czerwona cebula</item>
+        <item>1 puszka kukurydzy</item>
+        <item>150 g tartego sera</item>
+        <item>200 g tzatzików lub jogurtowego sosu czosnkowego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Zamarynować mięso w przyprawie gyros i oleju.</step>
+        <step nr="2">Mocno obsmażyć na patelni, a następnie zostawić do ostygnięcia.</step>
+        <step nr="3">Sałatę lodową pokroić w paski. Ogórka, pomidory i cebulę pokroić na małe kawałki. Kukurydzę odsączyć.</step>
+        <step nr="4">Wszystko przełożyć do dużej miski albo ułożyć warstwami w naczyniu.</step>
+        <step nr="5">Na wierzchu rozłożyć usmażone mięso.</step>
+        <step nr="6">Posypać tartym serem.</step>
+        <step nr="7">Na końcu podać z tzatzikami albo rozsmarować na wierzchu sos czosnkowy.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Smażenie: 10 minut</item>
+        <item>Opcjonalny czas przegryzienia: 15 minut</item>
+      </timing>
+      <tips>
+        <item>Można ją dobrze przygotować wcześniej.</item>
+        <item>Sos dodawaj dopiero krótko przed podaniem, wtedy sałata pozostanie świeża.</item>
+        <item>Podawaj z chlebkiem pita albo bagietką.</item>
+        <item>Bardzo dobrze sprawdza się też na imprezach.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="220">
     <name>Kartoffelauflauf klassisch</name>
     <persons>4 Personen</persons>
@@ -16669,8 +16853,46 @@
       <item>Für vegetarische Version einfach den Speck weglassen.</item>
     </tips>
     <rating>9/10</rating>
-  <translation lang="pl"><name>Klasyczna zapiekanka ziemniaczana</name><persons>Dla 4 osób</persons><category>Dania z piekarnika / klasyki i domowa kuchnia</category><intro lang="pl">Kremowa, sycąca i bardzo domowa zapiekanka ziemniaczana. To prosty klasyk, który pasuje zarówno jako danie główne, jak i dodatek.</intro><ingredients><item>1,2 kg ziemniaków</item><item>2 cebule</item><item>200 ml śmietanki</item><item>150 ml mleka</item><item>150 g tartego sera</item><item>100 g kostek boczku</item><item>1 ząbek czosnku</item><item>sól</item><item>pieprz</item><item>gałka muszkatołowa</item><item>trochę masła do formy</item></ingredients><preparation><step nr="1">Obrać ziemniaki i pokroić je w cienkie plasterki.</step><step nr="2">Cebulę drobno posiekać.</step><step nr="3">Podsmażyć boczek na patelni, potem dodać cebulę i zeszklić.</step><step nr="4">Wymieszać śmietankę i mleko z czosnkiem, solą, pieprzem i gałką muszkatołową.</step><step nr="5">Wysmarować formę masłem. Układać warstwami ziemniaki, boczek i cebulę.</step><step nr="6">Zalać mieszanką mleczno-śmietanową.</step><step nr="7">Posypać serem.</step><step nr="8">Piec w piekarniku na złoty kolor, aż ziemniaki będą miękkie.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Czas pieczenia: 45–55 minut w 180 °C z termoobiegiem</item></timing><tips><item>Jeśli chcesz więcej kremowości, dodaj trochę kwaśnej śmietany.</item><item>Sprawdzi się jako dodatek albo samodzielne danie.</item><item>Podana z sałatą świetnie nadaje się na kolację.</item><item>W wersji wegetariańskiej po prostu pomiń boczek.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Klasyczna zapiekanka ziemniaczana</name>
+      <persons>Dla 4 osób</persons>
+      <category>Dania z piekarnika / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Kremowa, sycąca i bardzo domowa zapiekanka ziemniaczana. To prosty klasyk, który pasuje zarówno jako danie główne, jak i dodatek.</intro>
+      <ingredients>
+        <item>1,2 kg ziemniaków</item>
+        <item>2 cebule</item>
+        <item>200 ml śmietanki</item>
+        <item>150 ml mleka</item>
+        <item>150 g tartego sera</item>
+        <item>100 g kostek boczku</item>
+        <item>1 ząbek czosnku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>gałka muszkatołowa</item>
+        <item>trochę masła do formy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać ziemniaki i pokroić je w cienkie plasterki.</step>
+        <step nr="2">Cebulę drobno posiekać.</step>
+        <step nr="3">Podsmażyć boczek na patelni, potem dodać cebulę i zeszklić.</step>
+        <step nr="4">Wymieszać śmietankę i mleko z czosnkiem, solą, pieprzem i gałką muszkatołową.</step>
+        <step nr="5">Wysmarować formę masłem. Układać warstwami ziemniaki, boczek i cebulę.</step>
+        <step nr="6">Zalać mieszanką mleczno-śmietanową.</step>
+        <step nr="7">Posypać serem.</step>
+        <step nr="8">Piec w piekarniku na złoty kolor, aż ziemniaki będą miękkie.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Czas pieczenia: 45–55 minut w 180 °C z termoobiegiem</item>
+      </timing>
+      <tips>
+        <item>Jeśli chcesz więcej kremowości, dodaj trochę kwaśnej śmietany.</item>
+        <item>Sprawdzi się jako dodatek albo samodzielne danie.</item>
+        <item>Podana z sałatą świetnie nadaje się na kolację.</item>
+        <item>W wersji wegetariańskiej po prostu pomiń boczek.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="221">
     <name>Leczo mit Wurst Sven-Style</name>
     <persons>4 Personen</persons>
@@ -16709,8 +16931,49 @@
       <item>Dazu passt Baguette oder Brot.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Leczo z kiełbasą Sven-Style</name><persons>Dla 4 osób</persons><category>Dania z patelni / szybka kuchnia</category><intro lang="pl">Rustykalne leczo z dużą ilością warzyw i wyrazistą kiełbasą. Proste, szybkie i bardzo dobre także następnego dnia.</intro><ingredients><item>3 papryki w różnych kolorach</item><item>2 cebule</item><item>2 cukinie</item><item>2 ząbki czosnku</item><item>300 g kabanosów lub kiełbasy krakowskiej</item><item>1 puszka krojonych pomidorów</item><item>2 łyżki koncentratu pomidorowego</item><item>2 łyżki oleju</item><item>1 łyżeczka słodkiej papryki w proszku</item><item>sól</item><item>pieprz</item><item>trochę chili do smaku</item></ingredients><preparation><step nr="1">Pokroić cebulę, paprykę i cukinię na kawałki.</step><step nr="2">Kiełbasę pokroić w plasterki.</step><step nr="3">Rozgrzać olej w dużym garnku albo głębokiej patelni.</step><step nr="4">Krótko obsmażyć kiełbasę, a potem ją wyjąć.</step><step nr="5">Podsmażyć cebulę i czosnek.</step><step nr="6">Dodać paprykę i cukinię, a następnie obsmażyć.</step><step nr="7">Krótko podsmażyć także koncentrat pomidorowy.</step><step nr="8">Dodać krojone pomidory, paprykę w proszku, sól, pieprz i chili.</step><step nr="9">Włożyć z powrotem kiełbasę i dusić wszystko 20–25 minut na małym ogniu.</step><step nr="10">Doprawić do smaku i podawać na gorąco.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas gotowania: 25 minut</item></timing><tips><item>Pasuje do bagietki, pieczywa albo ryżu jako dodatku.</item><item>Z odrobiną ajvaru będzie jeszcze bardziej wyraziste.</item><item>Następnego dnia leczo często smakuje jeszcze lepiej.</item><item>Cukinię można zastąpić większą ilością papryki.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Leczo z kiełbasą Sven-Style</name>
+      <persons>Dla 4 osób</persons>
+      <category>Dania z patelni / szybka kuchnia</category>
+      <intro lang="pl">Rustykalne leczo z dużą ilością warzyw i wyrazistą kiełbasą. Proste, szybkie i bardzo dobre także następnego dnia.</intro>
+      <ingredients>
+        <item>3 papryki w różnych kolorach</item>
+        <item>2 cebule</item>
+        <item>2 cukinie</item>
+        <item>2 ząbki czosnku</item>
+        <item>300 g kabanosów lub kiełbasy krakowskiej</item>
+        <item>1 puszka krojonych pomidorów</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>2 łyżki oleju</item>
+        <item>1 łyżeczka słodkiej papryki w proszku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>trochę chili do smaku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić cebulę, paprykę i cukinię na kawałki.</step>
+        <step nr="2">Kiełbasę pokroić w plasterki.</step>
+        <step nr="3">Rozgrzać olej w dużym garnku albo głębokiej patelni.</step>
+        <step nr="4">Krótko obsmażyć kiełbasę, a potem ją wyjąć.</step>
+        <step nr="5">Podsmażyć cebulę i czosnek.</step>
+        <step nr="6">Dodać paprykę i cukinię, a następnie obsmażyć.</step>
+        <step nr="7">Krótko podsmażyć także koncentrat pomidorowy.</step>
+        <step nr="8">Dodać krojone pomidory, paprykę w proszku, sól, pieprz i chili.</step>
+        <step nr="9">Włożyć z powrotem kiełbasę i dusić wszystko 20–25 minut na małym ogniu.</step>
+        <step nr="10">Doprawić do smaku i podawać na gorąco.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas gotowania: 25 minut</item>
+      </timing>
+      <tips>
+        <item>Pasuje do bagietki, pieczywa albo ryżu jako dodatku.</item>
+        <item>Z odrobiną ajvaru będzie jeszcze bardziej wyraziste.</item>
+        <item>Następnego dnia leczo często smakuje jeszcze lepiej.</item>
+        <item>Cukinię można zastąpić większą ilością papryki.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="222">
     <name>Überbackene Champignons vom Grill oder Ofen</name>
     <persons>4 Personen</persons>
@@ -16746,8 +17009,44 @@
       <item>Passt gut zu Steak, Hähnchen oder Baguette.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Zapiekane pieczarki z grilla lub z piekarnika</name><persons>Dla 4 osób jako dodatek</persons><category>Grill i BBQ / sałatki i dodatki</category><intro lang="pl">Duże pieczarki z kremowym farszem i serem to świetny dodatek z grilla albo z piekarnika. Proste, ale bardzo efektowne.</intro><ingredients><item>12 dużych pieczarek</item><item>150 g serka śmietankowego</item><item>100 g tartego sera</item><item>1 mała czerwona cebula</item><item>1 ząbek czosnku</item><item>2 łyżki pietruszki</item><item>sól</item><item>pieprz</item><item>1 łyżeczka papryki w proszku</item><item>trochę oleju</item></ingredients><preparation><step nr="1">Oczyścić pieczarki i delikatnie wykręcić trzonki.</step><step nr="2">Trzonki drobno posiekać.</step><step nr="3">Cebulę i czosnek drobno pokroić.</step><step nr="4">Wszystko wymieszać z serkiem śmietankowym, pietruszką, przyprawami i częścią tartego sera.</step><step nr="5">Napełnić kapelusze pieczarek farszem.</step><step nr="6">Posypać resztą sera.</step><step nr="7">Piec pośrednio na grillu albo w piekarniku, aż pieczarki zmiękną, a wierzch się zezłoci.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas pieczenia: 15–20 minut</item></timing><tips><item>To idealny dodatek do grilla.</item><item>Jeśli chcesz, dodaj do farszu małe kostki boczku.</item><item>Dobrze smakują też z fetą zamiast serka śmietankowego.</item><item>Pasują do steka, kurczaka albo bagietki.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Zapiekane pieczarki z grilla lub z piekarnika</name>
+      <persons>Dla 4 osób jako dodatek</persons>
+      <category>Grill i BBQ / sałatki i dodatki</category>
+      <intro lang="pl">Duże pieczarki z kremowym farszem i serem to świetny dodatek z grilla albo z piekarnika. Proste, ale bardzo efektowne.</intro>
+      <ingredients>
+        <item>12 dużych pieczarek</item>
+        <item>150 g serka śmietankowego</item>
+        <item>100 g tartego sera</item>
+        <item>1 mała czerwona cebula</item>
+        <item>1 ząbek czosnku</item>
+        <item>2 łyżki pietruszki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>1 łyżeczka papryki w proszku</item>
+        <item>trochę oleju</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Oczyścić pieczarki i delikatnie wykręcić trzonki.</step>
+        <step nr="2">Trzonki drobno posiekać.</step>
+        <step nr="3">Cebulę i czosnek drobno pokroić.</step>
+        <step nr="4">Wszystko wymieszać z serkiem śmietankowym, pietruszką, przyprawami i częścią tartego sera.</step>
+        <step nr="5">Napełnić kapelusze pieczarek farszem.</step>
+        <step nr="6">Posypać resztą sera.</step>
+        <step nr="7">Piec pośrednio na grillu albo w piekarniku, aż pieczarki zmiękną, a wierzch się zezłoci.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas pieczenia: 15–20 minut</item>
+      </timing>
+      <tips>
+        <item>To idealny dodatek do grilla.</item>
+        <item>Jeśli chcesz, dodaj do farszu małe kostki boczku.</item>
+        <item>Dobrze smakują też z fetą zamiast serka śmietankowego.</item>
+        <item>Pasują do steka, kurczaka albo bagietki.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="223">
     <name>Käsekuchen klassisch</name>
     <persons>1 Springform</persons>
@@ -16783,8 +17082,43 @@
       <item>Mit Mandarinen oder Rosinen abwandelbar.</item>
     </tips>
     <rating>9/10</rating>
-  <translation lang="pl"><name>Klasyczny sernik</name><persons>Na 1 tortownicę</persons><category>Pieczenie i słodkie / klasyki i domowa kuchnia</category><intro lang="pl">Prosty, klasyczny sernik, który dobrze sprawdza się na co dzień i od święta. Kremowy środek i spokojny, domowy charakter bez przesady.</intro><ingredients><item>750 g twarogu lub sera na sernik</item><item>200 g cukru</item><item>1 opakowanie cukru waniliowego</item><item>3 jajka</item><item>200 ml śmietanki</item><item>1 opakowanie budyniu waniliowego w proszku</item><item>100 g roztopionego masła</item><item>1 łyżka soku z cytryny</item><item>opcjonalnie na spód: 200 g herbatników albo kruche ciasto</item></ingredients><preparation><step nr="1">Przygotować tortownicę, smarując ją tłuszczem albo wykładając papierem do pieczenia.</step><step nr="2">Opcjonalnie zrobić spód.</step><step nr="3">Wymieszać twaróg, cukier, cukier waniliowy, jajka, śmietankę, proszek budyniowy, masło i sok z cytryny na gładką masę.</step><step nr="4">Przelać masę do formy.</step><step nr="5">Piec w nagrzanym piekarniku, aż sernik się zetnie i lekko zezłoci.</step><step nr="6">Studzić powoli w wyłączonym piekarniku przy lekko uchylonych drzwiczkach.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas pieczenia: 55–65 minut w 170 °C góra/dół</item><item>Czas studzenia: co najmniej 1 godzina</item></timing><tips><item>Powolne studzenie pomaga ograniczyć pękanie.</item><item>Następnego dnia sernik często smakuje jeszcze lepiej.</item><item>Można go wzbogacić mandarynkami albo rodzynkami.</item><item>Nie ubijaj masy zbyt mocno, wtedy powierzchnia zostanie spokojniejsza.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Klasyczny sernik</name>
+      <persons>Na 1 tortownicę</persons>
+      <category>Pieczenie i słodkie / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Prosty, klasyczny sernik, który dobrze sprawdza się na co dzień i od święta. Kremowy środek i spokojny, domowy charakter bez przesady.</intro>
+      <ingredients>
+        <item>750 g twarogu lub sera na sernik</item>
+        <item>200 g cukru</item>
+        <item>1 opakowanie cukru waniliowego</item>
+        <item>3 jajka</item>
+        <item>200 ml śmietanki</item>
+        <item>1 opakowanie budyniu waniliowego w proszku</item>
+        <item>100 g roztopionego masła</item>
+        <item>1 łyżka soku z cytryny</item>
+        <item>opcjonalnie na spód: 200 g herbatników albo kruche ciasto</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować tortownicę, smarując ją tłuszczem albo wykładając papierem do pieczenia.</step>
+        <step nr="2">Opcjonalnie zrobić spód.</step>
+        <step nr="3">Wymieszać twaróg, cukier, cukier waniliowy, jajka, śmietankę, proszek budyniowy, masło i sok z cytryny na gładką masę.</step>
+        <step nr="4">Przelać masę do formy.</step>
+        <step nr="5">Piec w nagrzanym piekarniku, aż sernik się zetnie i lekko zezłoci.</step>
+        <step nr="6">Studzić powoli w wyłączonym piekarniku przy lekko uchylonych drzwiczkach.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas pieczenia: 55–65 minut w 170 °C góra/dół</item>
+        <item>Czas studzenia: co najmniej 1 godzina</item>
+      </timing>
+      <tips>
+        <item>Powolne studzenie pomaga ograniczyć pękanie.</item>
+        <item>Następnego dnia sernik często smakuje jeszcze lepiej.</item>
+        <item>Można go wzbogacić mandarynkami albo rodzynkami.</item>
+        <item>Nie ubijaj masy zbyt mocno, wtedy powierzchnia zostanie spokojniejsza.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="224">
     <name>Apfelkuchen / Szarlotka einfach</name>
     <persons>1 Springform oder kleine Auflaufform</persons>
@@ -16821,8 +17155,46 @@
       <item>Lauwarm mit Sahne sehr gut.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Prosta szarlotka</name><persons>Na 1 tortownicę lub małe naczynie do zapiekania</persons><category>Pieczenie i słodkie / klasyki i domowa kuchnia</category><intro lang="pl">Prosta szarlotka z kruchym ciastem i jabłkami. Domowy klasyk, który zawsze się sprawdza i dobrze pasuje do kawy.</intro><ingredients><item>Na ciasto: 300 g mąki</item><item>Na ciasto: 150 g zimnego masła</item><item>Na ciasto: 100 g cukru</item><item>Na ciasto: 1 jajko</item><item>Na ciasto: 1 łyżeczka proszku do pieczenia</item><item>Na nadzienie: 800 g jabłek</item><item>Na nadzienie: 2 łyżki cukru</item><item>Na nadzienie: 1 łyżeczka cynamonu</item><item>Na nadzienie: 1 łyżka soku z cytryny</item></ingredients><preparation><step nr="1">Zagnieść kruche ciasto z mąki, masła, cukru, jajka i proszku do pieczenia.</step><step nr="2">Wstawić ciasto na 20 minut do lodówki.</step><step nr="3">Jabłka obrać, usunąć gniazda nasienne i pokroić w małe kawałki albo grubo zetrzeć.</step><step nr="4">Wymieszać je z cukrem, cynamonem i sokiem z cytryny.</step><step nr="5">Dwie trzecie ciasta wcisnąć do formy.</step><step nr="6">Na wierzchu rozłożyć nadzienie jabłkowe.</step><step nr="7">Resztę ciasta zetrzeć albo rozłożyć na wierzchu.</step><step nr="8">Piec do złotego koloru.</step><step nr="9">Po ostudzeniu można posypać cukrem pudrem.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Chłodzenie: 20 minut</item><item>Czas pieczenia: 40–45 minut w 180 °C</item></timing><tips><item>Najlepiej sprawdzają się lekko kwaśne jabłka.</item><item>Można dodać rodzynki albo posiekane orzechy.</item><item>Bardzo dobra także lekko ciepła z bitą śmietaną.</item><item>Da się ją przygotować również na blasze.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Prosta szarlotka</name>
+      <persons>Na 1 tortownicę lub małe naczynie do zapiekania</persons>
+      <category>Pieczenie i słodkie / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Prosta szarlotka z kruchym ciastem i jabłkami. Domowy klasyk, który zawsze się sprawdza i dobrze pasuje do kawy.</intro>
+      <ingredients>
+        <item>Na ciasto: 300 g mąki</item>
+        <item>Na ciasto: 150 g zimnego masła</item>
+        <item>Na ciasto: 100 g cukru</item>
+        <item>Na ciasto: 1 jajko</item>
+        <item>Na ciasto: 1 łyżeczka proszku do pieczenia</item>
+        <item>Na nadzienie: 800 g jabłek</item>
+        <item>Na nadzienie: 2 łyżki cukru</item>
+        <item>Na nadzienie: 1 łyżeczka cynamonu</item>
+        <item>Na nadzienie: 1 łyżka soku z cytryny</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Zagnieść kruche ciasto z mąki, masła, cukru, jajka i proszku do pieczenia.</step>
+        <step nr="2">Wstawić ciasto na 20 minut do lodówki.</step>
+        <step nr="3">Jabłka obrać, usunąć gniazda nasienne i pokroić w małe kawałki albo grubo zetrzeć.</step>
+        <step nr="4">Wymieszać je z cukrem, cynamonem i sokiem z cytryny.</step>
+        <step nr="5">Dwie trzecie ciasta wcisnąć do formy.</step>
+        <step nr="6">Na wierzchu rozłożyć nadzienie jabłkowe.</step>
+        <step nr="7">Resztę ciasta zetrzeć albo rozłożyć na wierzchu.</step>
+        <step nr="8">Piec do złotego koloru.</step>
+        <step nr="9">Po ostudzeniu można posypać cukrem pudrem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Chłodzenie: 20 minut</item>
+        <item>Czas pieczenia: 40–45 minut w 180 °C</item>
+      </timing>
+      <tips>
+        <item>Najlepiej sprawdzają się lekko kwaśne jabłka.</item>
+        <item>Można dodać rodzynki albo posiekane orzechy.</item>
+        <item>Bardzo dobra także lekko ciepła z bitą śmietaną.</item>
+        <item>Da się ją przygotować również na blasze.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="225">
     <name>Murzynek / einfacher Schokokuchen</name>
     <persons>1 Kastenform oder kleine Springform</persons>
@@ -16858,8 +17230,45 @@
       <item>Die Glasur macht ihn besonders schön saftig.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Murzynek / prosty placek czekoladowy</name><persons>Na 1 keksówkę lub małą tortownicę</persons><category>Pieczenie i słodkie / klasyki i domowa kuchnia</category><intro lang="pl">Prosty, wilgotny murzynek z czekoladową nutą. Dobry na co dzień, do kawy i wtedy, gdy ma być klasycznie i bez komplikacji.</intro><ingredients><item>250 g mąki</item><item>200 g cukru</item><item>3 jajka</item><item>200 g masła</item><item>3 łyżki kakao</item><item>1 opakowanie proszku do pieczenia</item><item>1 opakowanie cukru waniliowego</item><item>150 ml mleka</item><item>100 g gorzkiej czekolady</item></ingredients><preparation><step nr="1">W rondelku rozpuścić masło. Dodać cukier, cukier waniliowy, kakao i mleko, a następnie wymieszać.</step><step nr="2">Odłożyć część masy czekoladowej na później.</step><step nr="3">Resztę lekko przestudzić.</step><step nr="4">Wmieszać jajka.</step><step nr="5">Połączyć mąkę z proszkiem do pieczenia i wmieszać do masy.</step><step nr="6">Grubo posiekać czekoladę i dodać do ciasta.</step><step nr="7">Przełożyć ciasto do natłuszczonej formy.</step><step nr="8">Piec w nagrzanym piekarniku.</step><step nr="9">Po ostudzeniu posmarować odłożoną masą czekoladową.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas pieczenia: 40–50 minut w 180 °C</item></timing><tips><item>Nie piecz zbyt długo, żeby ciasto zostało wilgotne.</item><item>Dobrze smakuje także z orzechami albo wiśniami.</item><item>Polewa sprawia, że ciasto jest jeszcze bardziej soczyste.</item><item>Bardzo dobrze pasuje do kawy jako prosty niedzielny wypiek.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Murzynek / prosty placek czekoladowy</name>
+      <persons>Na 1 keksówkę lub małą tortownicę</persons>
+      <category>Pieczenie i słodkie / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Prosty, wilgotny murzynek z czekoladową nutą. Dobry na co dzień, do kawy i wtedy, gdy ma być klasycznie i bez komplikacji.</intro>
+      <ingredients>
+        <item>250 g mąki</item>
+        <item>200 g cukru</item>
+        <item>3 jajka</item>
+        <item>200 g masła</item>
+        <item>3 łyżki kakao</item>
+        <item>1 opakowanie proszku do pieczenia</item>
+        <item>1 opakowanie cukru waniliowego</item>
+        <item>150 ml mleka</item>
+        <item>100 g gorzkiej czekolady</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">W rondelku rozpuścić masło. Dodać cukier, cukier waniliowy, kakao i mleko, a następnie wymieszać.</step>
+        <step nr="2">Odłożyć część masy czekoladowej na później.</step>
+        <step nr="3">Resztę lekko przestudzić.</step>
+        <step nr="4">Wmieszać jajka.</step>
+        <step nr="5">Połączyć mąkę z proszkiem do pieczenia i wmieszać do masy.</step>
+        <step nr="6">Grubo posiekać czekoladę i dodać do ciasta.</step>
+        <step nr="7">Przełożyć ciasto do natłuszczonej formy.</step>
+        <step nr="8">Piec w nagrzanym piekarniku.</step>
+        <step nr="9">Po ostudzeniu posmarować odłożoną masą czekoladową.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas pieczenia: 40–50 minut w 180 °C</item>
+      </timing>
+      <tips>
+        <item>Nie piecz zbyt długo, żeby ciasto zostało wilgotne.</item>
+        <item>Dobrze smakuje także z orzechami albo wiśniami.</item>
+        <item>Polewa sprawia, że ciasto jest jeszcze bardziej soczyste.</item>
+        <item>Bardzo dobrze pasuje do kawy jako prosty niedzielny wypiek.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="226">
     <name>Joghurtkuchen mit Früchten</name>
     <persons>1 Springform</persons>
@@ -16894,8 +17303,42 @@
       <item>Sehr wandelbar je nach Saison.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Ciasto jogurtowe z owocami</name><persons>Na 1 tortownicę</persons><category>Pieczenie i słodkie / szybka kuchnia</category><intro lang="pl">Szybkie ciasto jogurtowe z owocami, które łatwo dopasować do sezonu. Proste, lekkie i bardzo praktyczne, gdy potrzebny jest szybki wypiek.</intro><ingredients><item>250 g jogurtu naturalnego</item><item>3 jajka</item><item>180 g cukru</item><item>100 ml oleju</item><item>250 g mąki</item><item>1 opakowanie proszku do pieczenia</item><item>1 opakowanie cukru waniliowego</item><item>250 g owoców według uznania, np. malin, borówek albo brzoskwiń</item></ingredients><preparation><step nr="1">Ubić jajka z cukrem i cukrem waniliowym na puszystą masę.</step><step nr="2">Wmieszać jogurt i olej.</step><step nr="3">Połączyć mąkę z proszkiem do pieczenia i delikatnie wmieszać do masy.</step><step nr="4">Przełożyć ciasto do natłuszczonej formy.</step><step nr="5">Rozłożyć na wierzchu owoce.</step><step nr="6">Piec w nagrzanym piekarniku, aż ciasto będzie złociste.</step><step nr="7">Ostudzić i ewentualnie posypać cukrem pudrem.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas pieczenia: 35–40 minut w 180 °C</item></timing><tips><item>Bardzo łatwo zmieniać je w zależności od sezonu.</item><item>Mrożonych owoców nie trzeba całkiem rozmrażać.</item><item>Skórka z cytryny doda mu więcej świeżości.</item><item>Dobre także wtedy, gdy niespodziewanie wpadają goście.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Ciasto jogurtowe z owocami</name>
+      <persons>Na 1 tortownicę</persons>
+      <category>Pieczenie i słodkie / szybka kuchnia</category>
+      <intro lang="pl">Szybkie ciasto jogurtowe z owocami, które łatwo dopasować do sezonu. Proste, lekkie i bardzo praktyczne, gdy potrzebny jest szybki wypiek.</intro>
+      <ingredients>
+        <item>250 g jogurtu naturalnego</item>
+        <item>3 jajka</item>
+        <item>180 g cukru</item>
+        <item>100 ml oleju</item>
+        <item>250 g mąki</item>
+        <item>1 opakowanie proszku do pieczenia</item>
+        <item>1 opakowanie cukru waniliowego</item>
+        <item>250 g owoców według uznania, np. malin, borówek albo brzoskwiń</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ubić jajka z cukrem i cukrem waniliowym na puszystą masę.</step>
+        <step nr="2">Wmieszać jogurt i olej.</step>
+        <step nr="3">Połączyć mąkę z proszkiem do pieczenia i delikatnie wmieszać do masy.</step>
+        <step nr="4">Przełożyć ciasto do natłuszczonej formy.</step>
+        <step nr="5">Rozłożyć na wierzchu owoce.</step>
+        <step nr="6">Piec w nagrzanym piekarniku, aż ciasto będzie złociste.</step>
+        <step nr="7">Ostudzić i ewentualnie posypać cukrem pudrem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas pieczenia: 35–40 minut w 180 °C</item>
+      </timing>
+      <tips>
+        <item>Bardzo łatwo zmieniać je w zależności od sezonu.</item>
+        <item>Mrożonych owoców nie trzeba całkiem rozmrażać.</item>
+        <item>Skórka z cytryny doda mu więcej świeżości.</item>
+        <item>Dobre także wtedy, gdy niespodziewanie wpadają goście.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="227">
     <name>Pizza mit Champignons und Salami</name>
     <persons>2 Personen</persons>
@@ -16931,8 +17374,44 @@
       <item>Perfekt für einen gemütlichen Abend.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Pizza z pieczarkami i salami</name><persons>Dla 2 osób</persons><category>Pizza / klasyki i domowa kuchnia</category><intro lang="pl">Klasyczna domowa pizza z salami, pieczarkami i cebulą. Bez eksperymentów, za to bardzo pewna i lubiana kombinacja.</intro><ingredients><item>1 porcja klasycznego ciasta na pizzę</item><item>200 g passaty pomidorowej</item><item>1 łyżka koncentratu pomidorowego</item><item>sól</item><item>pieprz</item><item>oregano</item><item>150 g tartej mozzarelli</item><item>100 g salami</item><item>150 g pieczarek</item><item>1 mała cebula</item></ingredients><preparation><step nr="1">Przygotować ciasto na pizzę i rozwałkować.</step><step nr="2">Wymieszać passatę pomidorową z koncentratem, solą, pieprzem i oregano.</step><step nr="3">Rozprowadzić sos na cieście.</step><step nr="4">Posypać serem.</step><step nr="5">Rozłożyć salami, pieczarki i cienko pokrojoną cebulę.</step><step nr="6">Piec w mocno nagrzanym piekarniku, aż brzegi i ser ładnie się zrumienią.</step><step nr="7">Chwilę odstawić i podawać.</step></preparation><timing><item>Przygotowanie: 10 minut</item><item>Czas pieczenia: 10–12 minut w 250 °C</item></timing><tips><item>Pieczarki najlepiej pokroić w cienkie plasterki.</item><item>Jeśli chcesz, skrop pizzę odrobiną oliwy czosnkowej.</item><item>To bardzo pewny, klasyczny wariant pizzy.</item><item>Idealna na spokojny wieczór.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Pizza z pieczarkami i salami</name>
+      <persons>Dla 2 osób</persons>
+      <category>Pizza / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Klasyczna domowa pizza z salami, pieczarkami i cebulą. Bez eksperymentów, za to bardzo pewna i lubiana kombinacja.</intro>
+      <ingredients>
+        <item>1 porcja klasycznego ciasta na pizzę</item>
+        <item>200 g passaty pomidorowej</item>
+        <item>1 łyżka koncentratu pomidorowego</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>oregano</item>
+        <item>150 g tartej mozzarelli</item>
+        <item>100 g salami</item>
+        <item>150 g pieczarek</item>
+        <item>1 mała cebula</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować ciasto na pizzę i rozwałkować.</step>
+        <step nr="2">Wymieszać passatę pomidorową z koncentratem, solą, pieprzem i oregano.</step>
+        <step nr="3">Rozprowadzić sos na cieście.</step>
+        <step nr="4">Posypać serem.</step>
+        <step nr="5">Rozłożyć salami, pieczarki i cienko pokrojoną cebulę.</step>
+        <step nr="6">Piec w mocno nagrzanym piekarniku, aż brzegi i ser ładnie się zrumienią.</step>
+        <step nr="7">Chwilę odstawić i podawać.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Czas pieczenia: 10–12 minut w 250 °C</item>
+      </timing>
+      <tips>
+        <item>Pieczarki najlepiej pokroić w cienkie plasterki.</item>
+        <item>Jeśli chcesz, skrop pizzę odrobiną oliwy czosnkowej.</item>
+        <item>To bardzo pewny, klasyczny wariant pizzy.</item>
+        <item>Idealna na spokojny wieczór.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="228">
     <name>Pizza mit Schinken, Paprika und Zwiebeln</name>
     <persons>2 Personen</persons>
@@ -16968,8 +17447,44 @@
       <item>Auch als Blechpizza gut geeignet.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Pizza z szynką, papryką i cebulą</name><persons>Dla 2 osób</persons><category>Pizza / klasyki i domowa kuchnia</category><intro lang="pl">Łagodna i rodzinna pizza z szynką, papryką i cebulą. Klasyka, która dobrze smakuje wielu osobom i sprawdza się także na blasze.</intro><ingredients><item>1 porcja klasycznego ciasta na pizzę</item><item>200 g passaty pomidorowej</item><item>1 łyżka koncentratu pomidorowego</item><item>150 g tartego sera</item><item>100 g szynki gotowanej</item><item>1 papryka</item><item>1 mała czerwona cebula</item><item>sól</item><item>pieprz</item><item>oregano</item></ingredients><preparation><step nr="1">Rozwałkować ciasto na pizzę.</step><step nr="2">Wymieszać passatę z koncentratem i przyprawami.</step><step nr="3">Rozsmarować sos na cieście.</step><step nr="4">Posypać serem.</step><step nr="5">Szynkę pokroić na kawałki, paprykę w paski, a cebulę w cienkie krążki.</step><step nr="6">Wszystko równomiernie rozłożyć na pizzy.</step><step nr="7">Piec w nagrzanym piekarniku.</step></preparation><timing><item>Przygotowanie: 10 minut</item><item>Czas pieczenia: 10–12 minut w 250 °C</item></timing><tips><item>Bardzo dobrze smakuje także z odrobiną kukurydzy.</item><item>Nadaje się również jako pizza z blachy.</item><item>Paprykę kroj raczej cienko.</item><item>To łagodny wariant, dobry dla całej rodziny.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Pizza z szynką, papryką i cebulą</name>
+      <persons>Dla 2 osób</persons>
+      <category>Pizza / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Łagodna i rodzinna pizza z szynką, papryką i cebulą. Klasyka, która dobrze smakuje wielu osobom i sprawdza się także na blasze.</intro>
+      <ingredients>
+        <item>1 porcja klasycznego ciasta na pizzę</item>
+        <item>200 g passaty pomidorowej</item>
+        <item>1 łyżka koncentratu pomidorowego</item>
+        <item>150 g tartego sera</item>
+        <item>100 g szynki gotowanej</item>
+        <item>1 papryka</item>
+        <item>1 mała czerwona cebula</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>oregano</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozwałkować ciasto na pizzę.</step>
+        <step nr="2">Wymieszać passatę z koncentratem i przyprawami.</step>
+        <step nr="3">Rozsmarować sos na cieście.</step>
+        <step nr="4">Posypać serem.</step>
+        <step nr="5">Szynkę pokroić na kawałki, paprykę w paski, a cebulę w cienkie krążki.</step>
+        <step nr="6">Wszystko równomiernie rozłożyć na pizzy.</step>
+        <step nr="7">Piec w nagrzanym piekarniku.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Czas pieczenia: 10–12 minut w 250 °C</item>
+      </timing>
+      <tips>
+        <item>Bardzo dobrze smakuje także z odrobiną kukurydzy.</item>
+        <item>Nadaje się również jako pizza z blachy.</item>
+        <item>Paprykę kroj raczej cienko.</item>
+        <item>To łagodny wariant, dobry dla całej rodziny.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="229">
     <name>Pizza Bianca mit Crème fraîche und roten Zwiebeln</name>
     <persons>2 Personen</persons>
@@ -17005,8 +17520,44 @@
       <item>Weniger Belag ist hier besser.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Pizza Bianca z crème fraîche i czerwoną cebulą</name><persons>Dla 2 osób</persons><category>Pizza / dania z piekarnika</category><intro lang="pl">Pizza Bianca bez sosu pomidorowego, za to z delikatną bazą śmietanową i czerwoną cebulą. Trochę inna, ale wciąż bardzo prosta i domowa.</intro><ingredients><item>1 porcja klasycznego ciasta na pizzę</item><item>150 g crème fraîche</item><item>125 g mozzarelli</item><item>1 czerwona cebula</item><item>1 ząbek czosnku</item><item>1 łyżka oliwy z oliwek</item><item>sól</item><item>pieprz</item><item>trochę rozmarynu lub tymianku</item></ingredients><preparation><step nr="1">Przygotować ciasto na pizzę i je rozwałkować.</step><step nr="2">Wymieszać crème fraîche z drobno posiekanym czosnkiem, solą i pieprzem.</step><step nr="3">Cienko rozsmarować krem na cieście.</step><step nr="4">Dodać mozzarellę.</step><step nr="5">Czerwoną cebulę pokroić w cienkie krążki i rozłożyć na wierzchu.</step><step nr="6">Posypać odrobiną rozmarynu albo tymianku.</step><step nr="7">Piec w mocno nagrzanym piekarniku.</step><step nr="8">Po upieczeniu skropić odrobiną oliwy.</step></preparation><timing><item>Przygotowanie: 10 minut</item><item>Czas pieczenia: 10–12 minut w 250 °C</item></timing><tips><item>Bardzo dobrze smakuje również z kostkami boczku.</item><item>Dla bardziej wyrazistej wersji można dodać trochę parmezanu.</item><item>To przyjemna odmiana od klasycznego sosu pomidorowego.</item><item>Tutaj lepiej nie przesadzać z ilością dodatków.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Pizza Bianca z crème fraîche i czerwoną cebulą</name>
+      <persons>Dla 2 osób</persons>
+      <category>Pizza / dania z piekarnika</category>
+      <intro lang="pl">Pizza Bianca bez sosu pomidorowego, za to z delikatną bazą śmietanową i czerwoną cebulą. Trochę inna, ale wciąż bardzo prosta i domowa.</intro>
+      <ingredients>
+        <item>1 porcja klasycznego ciasta na pizzę</item>
+        <item>150 g crème fraîche</item>
+        <item>125 g mozzarelli</item>
+        <item>1 czerwona cebula</item>
+        <item>1 ząbek czosnku</item>
+        <item>1 łyżka oliwy z oliwek</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>trochę rozmarynu lub tymianku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować ciasto na pizzę i je rozwałkować.</step>
+        <step nr="2">Wymieszać crème fraîche z drobno posiekanym czosnkiem, solą i pieprzem.</step>
+        <step nr="3">Cienko rozsmarować krem na cieście.</step>
+        <step nr="4">Dodać mozzarellę.</step>
+        <step nr="5">Czerwoną cebulę pokroić w cienkie krążki i rozłożyć na wierzchu.</step>
+        <step nr="6">Posypać odrobiną rozmarynu albo tymianku.</step>
+        <step nr="7">Piec w mocno nagrzanym piekarniku.</step>
+        <step nr="8">Po upieczeniu skropić odrobiną oliwy.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Czas pieczenia: 10–12 minut w 250 °C</item>
+      </timing>
+      <tips>
+        <item>Bardzo dobrze smakuje również z kostkami boczku.</item>
+        <item>Dla bardziej wyrazistej wersji można dodać trochę parmezanu.</item>
+        <item>To przyjemna odmiana od klasycznego sosu pomidorowego.</item>
+        <item>Tutaj lepiej nie przesadzać z ilością dodatków.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="230">
     <name>Focaccia mit Rosmarin und Olivenöl</name>
     <persons>1 Blech oder 1 große Form</persons>
@@ -17043,8 +17594,45 @@
       <item>Beim Olivenöl nicht zu sparsam sein.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Focaccia z rozmarynem i oliwą z oliwek</name><persons>Na 1 blachę lub 1 dużą formę</persons><category>Pieczenie i słodkie / podstawy i sosy</category><intro lang="pl">Focaccia z oliwą i rozmarynem to świetny dodatek do grilla, antipasti albo po prostu do podania na ciepło. Prosta, aromatyczna i bardzo uniwersalna.</intro><ingredients><item>500 g mąki</item><item>1 kostka świeżych drożdży</item><item>325 ml letniej wody</item><item>3 łyżki oliwy z oliwek</item><item>1 łyżeczka cukru</item><item>2 łyżeczki soli</item><item>2–3 gałązki rozmarynu</item><item>gruba sól</item><item>trochę więcej oliwy do polania</item></ingredients><preparation><step nr="1">Rozpuścić drożdże z cukrem w letniej wodzie.</step><step nr="2">Dodać mąkę, sól i oliwę, a następnie wyrobić miękkie ciasto.</step><step nr="3">Przykryć i odstawić na 45–60 minut do wyrośnięcia.</step><step nr="4">Przełożyć do natłuszczonej formy i palcami zrobić charakterystyczne wgłębienia.</step><step nr="5">Skropić oliwą.</step><step nr="6">Dodać rozmaryn i trochę grubej soli.</step><step nr="7">Zostawić jeszcze na 15 minut.</step><step nr="8">Piec w nagrzanym piekarniku na złoty kolor.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas wyrastania: 60–75 minut</item><item>Czas pieczenia: 20–25 minut w 220 °C</item></timing><tips><item>Najlepsza jeszcze lekko ciepła.</item><item>Można ją wzbogacić pomidorkami koktajlowymi albo oliwkami.</item><item>Idealna jako dodatek do grilla albo antipasti.</item><item>Przy focacci nie warto oszczędzać na oliwie.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Focaccia z rozmarynem i oliwą z oliwek</name>
+      <persons>Na 1 blachę lub 1 dużą formę</persons>
+      <category>Pieczenie i słodkie / podstawy i sosy</category>
+      <intro lang="pl">Focaccia z oliwą i rozmarynem to świetny dodatek do grilla, antipasti albo po prostu do podania na ciepło. Prosta, aromatyczna i bardzo uniwersalna.</intro>
+      <ingredients>
+        <item>500 g mąki</item>
+        <item>1 kostka świeżych drożdży</item>
+        <item>325 ml letniej wody</item>
+        <item>3 łyżki oliwy z oliwek</item>
+        <item>1 łyżeczka cukru</item>
+        <item>2 łyżeczki soli</item>
+        <item>2–3 gałązki rozmarynu</item>
+        <item>gruba sól</item>
+        <item>trochę więcej oliwy do polania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozpuścić drożdże z cukrem w letniej wodzie.</step>
+        <step nr="2">Dodać mąkę, sól i oliwę, a następnie wyrobić miękkie ciasto.</step>
+        <step nr="3">Przykryć i odstawić na 45–60 minut do wyrośnięcia.</step>
+        <step nr="4">Przełożyć do natłuszczonej formy i palcami zrobić charakterystyczne wgłębienia.</step>
+        <step nr="5">Skropić oliwą.</step>
+        <step nr="6">Dodać rozmaryn i trochę grubej soli.</step>
+        <step nr="7">Zostawić jeszcze na 15 minut.</step>
+        <step nr="8">Piec w nagrzanym piekarniku na złoty kolor.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas wyrastania: 60–75 minut</item>
+        <item>Czas pieczenia: 20–25 minut w 220 °C</item>
+      </timing>
+      <tips>
+        <item>Najlepsza jeszcze lekko ciepła.</item>
+        <item>Można ją wzbogacić pomidorkami koktajlowymi albo oliwkami.</item>
+        <item>Idealna jako dodatek do grilla albo antipasti.</item>
+        <item>Przy focacci nie warto oszczędzać na oliwie.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="231">
     <name>Kartoffelauflauf mit Speck und Käse</name>
     <persons>4 Personen</persons>
@@ -17082,8 +17670,46 @@
       <item>Sehr gut vorzubereiten.</item>
     </tips>
     <rating>9/10</rating>
-  <translation lang="pl"><name>Zapiekanka ziemniaczana z boczkiem i serem</name><persons>Dla 4 osób</persons><category>Dania z piekarnika / klasyki i domowa kuchnia</category><intro lang="pl">Bardziej konkretna, bardziej serowa i bardzo sycąca zapiekanka ziemniaczana. Taki domowy klasyk, który dobrze sprawdza się na rodzinny obiad albo kolację.</intro><ingredients><item>1,2 kg ziemniaków</item><item>2 cebule</item><item>150 g kostek boczku</item><item>200 ml śmietanki</item><item>150 ml mleka</item><item>200 g tartego sera</item><item>1 ząbek czosnku</item><item>sól</item><item>pieprz</item><item>gałka muszkatołowa</item><item>trochę masła do formy</item></ingredients><preparation><step nr="1">Obrać ziemniaki i pokroić w cienkie plasterki.</step><step nr="2">Cebulę drobno posiekać.</step><step nr="3">Podsmażyć boczek, a potem zeszklić na nim cebulę.</step><step nr="4">Wymieszać śmietankę i mleko z czosnkiem, solą, pieprzem i gałką muszkatołową.</step><step nr="5">Układać ziemniaki w wysmarowanej masłem formie.</step><step nr="6">Między warstwami rozłożyć boczek i cebulę.</step><step nr="7">Zalać płynem i posypać serem.</step><step nr="8">Piec, aż wszystko będzie miękkie i złociste.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Czas pieczenia: 50–60 minut w 180 °C</item></timing><tips><item>Jeśli chcesz jeszcze bardziej konkretnie, dodaj trochę szynki.</item><item>Jako danie główne dobrze smakuje z sałatką z ogórka.</item><item>Na wierzchu możesz dać więcej sera dla lepszej skórki.</item><item>To bardzo rodzinne i lubiane danie.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Zapiekanka ziemniaczana z boczkiem i serem</name>
+      <persons>Dla 4 osób</persons>
+      <category>Dania z piekarnika / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Bardziej konkretna, bardziej serowa i bardzo sycąca zapiekanka ziemniaczana. Taki domowy klasyk, który dobrze sprawdza się na rodzinny obiad albo kolację.</intro>
+      <ingredients>
+        <item>1,2 kg ziemniaków</item>
+        <item>2 cebule</item>
+        <item>150 g kostek boczku</item>
+        <item>200 ml śmietanki</item>
+        <item>150 ml mleka</item>
+        <item>200 g tartego sera</item>
+        <item>1 ząbek czosnku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>gałka muszkatołowa</item>
+        <item>trochę masła do formy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać ziemniaki i pokroić w cienkie plasterki.</step>
+        <step nr="2">Cebulę drobno posiekać.</step>
+        <step nr="3">Podsmażyć boczek, a potem zeszklić na nim cebulę.</step>
+        <step nr="4">Wymieszać śmietankę i mleko z czosnkiem, solą, pieprzem i gałką muszkatołową.</step>
+        <step nr="5">Układać ziemniaki w wysmarowanej masłem formie.</step>
+        <step nr="6">Między warstwami rozłożyć boczek i cebulę.</step>
+        <step nr="7">Zalać płynem i posypać serem.</step>
+        <step nr="8">Piec, aż wszystko będzie miękkie i złociste.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Czas pieczenia: 50–60 minut w 180 °C</item>
+      </timing>
+      <tips>
+        <item>Jeśli chcesz jeszcze bardziej konkretnie, dodaj trochę szynki.</item>
+        <item>Jako danie główne dobrze smakuje z sałatką z ogórka.</item>
+        <item>Na wierzchu możesz dać więcej sera dla lepszej skórki.</item>
+        <item>To bardzo rodzinne i lubiane danie.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="232">
     <name>Zucchini-Auflauf mit Hackfleisch</name>
     <persons>4 Personen</persons>
@@ -17121,8 +17747,48 @@
       <item>Passt gut zu Baguette oder Reis.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Zapiekanka z cukinii z mięsem mielonym</name><persons>Dla 4 osób</persons><category>Dania z piekarnika / szybka kuchnia</category><intro lang="pl">Prosta zapiekanka z cukinii i mięsa mielonego, dobra na co dzień i łatwa do zrobienia. Warzywa, sos pomidorowy i ser tworzą tu bardzo pewne połączenie.</intro><ingredients><item>2 duże cukinie</item><item>500 g mięsa mielonego</item><item>1 cebula</item><item>2 ząbki czosnku</item><item>1 puszka krojonych pomidorów</item><item>2 łyżki koncentratu pomidorowego</item><item>150 g tartego sera</item><item>2 łyżki oleju</item><item>sól</item><item>pieprz</item><item>papryka w proszku</item><item>oregano</item></ingredients><preparation><step nr="1">Pokroić cukinię w plasterki.</step><step nr="2">Drobno posiekać cebulę i czosnek.</step><step nr="3">Rozgrzać olej na patelni i mocno obsmażyć mięso mielone.</step><step nr="4">Dodać cebulę i czosnek.</step><step nr="5">Krótko podsmażyć koncentrat pomidorowy.</step><step nr="6">Dodać krojone pomidory i przyprawy, a potem chwilę odparować.</step><step nr="7">Układać cukinię i mięso warstwami w naczyniu do zapiekania.</step><step nr="8">Posypać serem.</step><step nr="9">Piec, aż cukinia zmięknie, a ser się zezłoci.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Czas pieczenia: 30–35 minut w 190 °C</item></timing><tips><item>Bardzo dobrze smakuje także z fetą zamiast zwykłego sera.</item><item>Można dodać trochę crème fraîche dla większej kremowości.</item><item>Pasuje do bagietki albo ryżu.</item><item>To dobre codzienne danie z piekarnika.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Zapiekanka z cukinii z mięsem mielonym</name>
+      <persons>Dla 4 osób</persons>
+      <category>Dania z piekarnika / szybka kuchnia</category>
+      <intro lang="pl">Prosta zapiekanka z cukinii i mięsa mielonego, dobra na co dzień i łatwa do zrobienia. Warzywa, sos pomidorowy i ser tworzą tu bardzo pewne połączenie.</intro>
+      <ingredients>
+        <item>2 duże cukinie</item>
+        <item>500 g mięsa mielonego</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>1 puszka krojonych pomidorów</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>150 g tartego sera</item>
+        <item>2 łyżki oleju</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>papryka w proszku</item>
+        <item>oregano</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić cukinię w plasterki.</step>
+        <step nr="2">Drobno posiekać cebulę i czosnek.</step>
+        <step nr="3">Rozgrzać olej na patelni i mocno obsmażyć mięso mielone.</step>
+        <step nr="4">Dodać cebulę i czosnek.</step>
+        <step nr="5">Krótko podsmażyć koncentrat pomidorowy.</step>
+        <step nr="6">Dodać krojone pomidory i przyprawy, a potem chwilę odparować.</step>
+        <step nr="7">Układać cukinię i mięso warstwami w naczyniu do zapiekania.</step>
+        <step nr="8">Posypać serem.</step>
+        <step nr="9">Piec, aż cukinia zmięknie, a ser się zezłoci.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Czas pieczenia: 30–35 minut w 190 °C</item>
+      </timing>
+      <tips>
+        <item>Bardzo dobrze smakuje także z fetą zamiast zwykłego sera.</item>
+        <item>Można dodać trochę crème fraîche dla większej kremowości.</item>
+        <item>Pasuje do bagietki albo ryżu.</item>
+        <item>To dobre codzienne danie z piekarnika.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="233">
     <name>Zucchini-Puffer / Placki z cukinii</name>
     <persons>3–4 Personen</persons>
@@ -17158,8 +17824,45 @@
       <item>Mit etwas geriebenem Käse in der Masse noch herzhafter.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Placki z cukinii</name><persons>Dla 3–4 osób</persons><category>Dania z patelni / szybka kuchnia</category><intro lang="pl">Proste placki z cukinii, które dobrze sprawdzają się jako lekki obiad, kolacja albo dodatek. Najważniejsze jest dobre odciśnięcie cukinii.</intro><ingredients><item>2 duże cukinie</item><item>2 jajka</item><item>120 g mąki</item><item>1 mała cebula</item><item>1 ząbek czosnku</item><item>sól</item><item>pieprz</item><item>trochę pietruszki</item><item>olej do smażenia</item></ingredients><preparation><step nr="1">Zetrzeć cukinię na grubej tarce.</step><step nr="2">Wymieszać z odrobiną soli i odstawić na 10 minut.</step><step nr="3">Następnie bardzo dobrze odcisnąć.</step><step nr="4">Cebulę drobno posiekać albo zetrzeć.</step><step nr="5">Czosnek drobno posiekać.</step><step nr="6">Wymieszać wszystko z jajkami, mąką, pietruszką, solą i pieprzem.</step><step nr="7">Rozgrzać olej na patelni.</step><step nr="8">Nakładać małe placki i smażyć z obu stron na złoty kolor.</step><step nr="9">Na chwilę odsączyć na papierze kuchennym.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Czas smażenia: 15 minut</item></timing><tips><item>Bardzo dobrze pasują z dipem jogurtowym albo twarożkiem z ziołami.</item><item>Dobre odciśnięcie cukinii jest tutaj naprawdę ważne.</item><item>Sprawdzą się jako dodatek albo lekki posiłek.</item><item>Z odrobiną tartego sera w masie będą jeszcze bardziej wyraziste.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Placki z cukinii</name>
+      <persons>Dla 3–4 osób</persons>
+      <category>Dania z patelni / szybka kuchnia</category>
+      <intro lang="pl">Proste placki z cukinii, które dobrze sprawdzają się jako lekki obiad, kolacja albo dodatek. Najważniejsze jest dobre odciśnięcie cukinii.</intro>
+      <ingredients>
+        <item>2 duże cukinie</item>
+        <item>2 jajka</item>
+        <item>120 g mąki</item>
+        <item>1 mała cebula</item>
+        <item>1 ząbek czosnku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>trochę pietruszki</item>
+        <item>olej do smażenia</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Zetrzeć cukinię na grubej tarce.</step>
+        <step nr="2">Wymieszać z odrobiną soli i odstawić na 10 minut.</step>
+        <step nr="3">Następnie bardzo dobrze odcisnąć.</step>
+        <step nr="4">Cebulę drobno posiekać albo zetrzeć.</step>
+        <step nr="5">Czosnek drobno posiekać.</step>
+        <step nr="6">Wymieszać wszystko z jajkami, mąką, pietruszką, solą i pieprzem.</step>
+        <step nr="7">Rozgrzać olej na patelni.</step>
+        <step nr="8">Nakładać małe placki i smażyć z obu stron na złoty kolor.</step>
+        <step nr="9">Na chwilę odsączyć na papierze kuchennym.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Czas smażenia: 15 minut</item>
+      </timing>
+      <tips>
+        <item>Bardzo dobrze pasują z dipem jogurtowym albo twarożkiem z ziołami.</item>
+        <item>Dobre odciśnięcie cukinii jest tutaj naprawdę ważne.</item>
+        <item>Sprawdzą się jako dodatek albo lekki posiłek.</item>
+        <item>Z odrobiną tartego sera w masie będą jeszcze bardziej wyraziste.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="234">
     <name>Warmer Champignon-Salat vom Grill</name>
     <persons>4 Personen</persons>
@@ -17196,8 +17899,45 @@
       <item>Passt zu Fleisch, Baguette oder Kartoffeln.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Ciepła sałatka z pieczarek z grilla</name><persons>Dla 4 osób jako dodatek</persons><category>Grill i BBQ / sałatki i dodatki</category><intro lang="pl">Ciepła sałatka z grillowanych pieczarek to prosty, ale aromatyczny dodatek do grilla. Dobrze smakuje podana lekko ciepła albo letnia.</intro><ingredients><item>500 g pieczarek</item><item>1 czerwona cebula</item><item>2 łyżki oliwy z oliwek</item><item>1 łyżka octu balsamicznego</item><item>1 łyżeczka musztardy</item><item>1 ząbek czosnku</item><item>sól</item><item>pieprz</item><item>2 łyżki posiekanej pietruszki</item><item>opcjonalnie trochę fety</item></ingredients><preparation><step nr="1">Oczyścić pieczarki i w zależności od wielkości przekroić na pół.</step><step nr="2">Cebulę pokroić w cienkie paski.</step><step nr="3">Wymieszać oliwę, ocet balsamiczny, musztardę, czosnek, sól i pieprz na dressing.</step><step nr="4">Zgrillować pieczarki na ruszcie albo patelni grillowej, aż lekko się zrumienią.</step><step nr="5">Przełożyć je z cebulą do miski.</step><step nr="6">Polać dressingiem i dobrze wymieszać.</step><step nr="7">Posypać pietruszką.</step><step nr="8">Opcjonalnie pokruszyć na wierzchu fetę i podawać lekko ciepłe.</step></preparation><timing><item>Przygotowanie: 10 minut</item><item>Czas grillowania/smażenia: 10 minut</item></timing><tips><item>To idealny dodatek do grilla.</item><item>Dobrze smakuje także z rukolą.</item><item>Najwięcej aromatu ma podana na ciepło.</item><item>Pasuje do mięsa, bagietki albo ziemniaków.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Ciepła sałatka z pieczarek z grilla</name>
+      <persons>Dla 4 osób jako dodatek</persons>
+      <category>Grill i BBQ / sałatki i dodatki</category>
+      <intro lang="pl">Ciepła sałatka z grillowanych pieczarek to prosty, ale aromatyczny dodatek do grilla. Dobrze smakuje podana lekko ciepła albo letnia.</intro>
+      <ingredients>
+        <item>500 g pieczarek</item>
+        <item>1 czerwona cebula</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 łyżka octu balsamicznego</item>
+        <item>1 łyżeczka musztardy</item>
+        <item>1 ząbek czosnku</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>2 łyżki posiekanej pietruszki</item>
+        <item>opcjonalnie trochę fety</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Oczyścić pieczarki i w zależności od wielkości przekroić na pół.</step>
+        <step nr="2">Cebulę pokroić w cienkie paski.</step>
+        <step nr="3">Wymieszać oliwę, ocet balsamiczny, musztardę, czosnek, sól i pieprz na dressing.</step>
+        <step nr="4">Zgrillować pieczarki na ruszcie albo patelni grillowej, aż lekko się zrumienią.</step>
+        <step nr="5">Przełożyć je z cebulą do miski.</step>
+        <step nr="6">Polać dressingiem i dobrze wymieszać.</step>
+        <step nr="7">Posypać pietruszką.</step>
+        <step nr="8">Opcjonalnie pokruszyć na wierzchu fetę i podawać lekko ciepłe.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 10 minut</item>
+        <item>Czas grillowania/smażenia: 10 minut</item>
+      </timing>
+      <tips>
+        <item>To idealny dodatek do grilla.</item>
+        <item>Dobrze smakuje także z rukolą.</item>
+        <item>Najwięcej aromatu ma podana na ciepło.</item>
+        <item>Pasuje do mięsa, bagietki albo ziemniaków.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="235">
     <name>Pizza aus der Pfanne</name>
     <persons>2 Personen</persons>
@@ -17234,8 +17974,45 @@
       <item>Ideal auch für kleine Küchen.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Pizza z patelni</name><persons>Dla 2 osób</persons><category>Pizza / szybka kuchnia</category><intro lang="pl">Pizza z patelni jest świetna wtedy, gdy piekarnik jest zajęty albo ma być szybko. Spód wychodzi przyjemnie chrupiący, a ser dobrze się topi pod przykryciem.</intro><ingredients><item>250 g mąki</item><item>1/2 kostki świeżych drożdży</item><item>150 ml letniej wody</item><item>1 łyżka oliwy z oliwek</item><item>1/2 łyżeczki cukru</item><item>1 łyżeczka soli</item><item>150 g passaty pomidorowej</item><item>125 g mozzarelli</item><item>dodatki według uznania, np. salami, papryka, cebula albo pieczarki</item></ingredients><preparation><step nr="1">Rozpuścić drożdże z cukrem w letniej wodzie.</step><step nr="2">Dodać mąkę, sól i oliwę, a następnie wyrobić gładkie ciasto.</step><step nr="3">Odstawić na 30–45 minut do wyrośnięcia.</step><step nr="4">Podzielić ciasto na dwie porcje i rozwałkować pod wielkość patelni.</step><step nr="5">Lekko natłuścić nieprzywierającą patelnię i krótko podsmażyć spód.</step><step nr="6">Odwrócić placek.</step><step nr="7">Na podpieczoną stronę nałożyć passatę, ser i wybrane dodatki.</step><step nr="8">Smażyć pod przykryciem, aż ser się rozpuści, a spód zrobi się chrupiący.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas wyrastania: 30–45 minut</item><item>Czas smażenia: 8–10 minut na jedną pizzę</item></timing><tips><item>To idealna metoda, gdy piekarnik nie jest wolny albo ma być szybko.</item><item>Pokrywka bardzo pomaga w dopieczeniu góry.</item><item>Nie dawaj zbyt dużo dodatków, żeby pizza nie zrobiła się zbyt miękka.</item><item>To dobra opcja także do małych kuchni.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Pizza z patelni</name>
+      <persons>Dla 2 osób</persons>
+      <category>Pizza / szybka kuchnia</category>
+      <intro lang="pl">Pizza z patelni jest świetna wtedy, gdy piekarnik jest zajęty albo ma być szybko. Spód wychodzi przyjemnie chrupiący, a ser dobrze się topi pod przykryciem.</intro>
+      <ingredients>
+        <item>250 g mąki</item>
+        <item>1/2 kostki świeżych drożdży</item>
+        <item>150 ml letniej wody</item>
+        <item>1 łyżka oliwy z oliwek</item>
+        <item>1/2 łyżeczki cukru</item>
+        <item>1 łyżeczka soli</item>
+        <item>150 g passaty pomidorowej</item>
+        <item>125 g mozzarelli</item>
+        <item>dodatki według uznania, np. salami, papryka, cebula albo pieczarki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozpuścić drożdże z cukrem w letniej wodzie.</step>
+        <step nr="2">Dodać mąkę, sól i oliwę, a następnie wyrobić gładkie ciasto.</step>
+        <step nr="3">Odstawić na 30–45 minut do wyrośnięcia.</step>
+        <step nr="4">Podzielić ciasto na dwie porcje i rozwałkować pod wielkość patelni.</step>
+        <step nr="5">Lekko natłuścić nieprzywierającą patelnię i krótko podsmażyć spód.</step>
+        <step nr="6">Odwrócić placek.</step>
+        <step nr="7">Na podpieczoną stronę nałożyć passatę, ser i wybrane dodatki.</step>
+        <step nr="8">Smażyć pod przykryciem, aż ser się rozpuści, a spód zrobi się chrupiący.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas wyrastania: 30–45 minut</item>
+        <item>Czas smażenia: 8–10 minut na jedną pizzę</item>
+      </timing>
+      <tips>
+        <item>To idealna metoda, gdy piekarnik nie jest wolny albo ma być szybko.</item>
+        <item>Pokrywka bardzo pomaga w dopieczeniu góry.</item>
+        <item>Nie dawaj zbyt dużo dodatków, żeby pizza nie zrobiła się zbyt miękka.</item>
+        <item>To dobra opcja także do małych kuchni.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="236">
     <name>Low-Carb-Pizza auf Blumenkohlboden</name>
     <persons>2 Personen</persons>
@@ -17271,8 +18048,45 @@
       <item>Mit Rucola nach dem Backen sehr lecker.</item>
     </tips>
     <rating>7,5/10</rating>
-  <translation lang="pl"><name>Pizza low carb na spodzie z kalafiora</name><persons>Dla 2 osób</persons><category>Pizza / szybka kuchnia</category><intro lang="pl">Alternatywa dla klasycznej pizzy z lekkim spodem z kalafiora. To nie jest to samo co tradycyjne ciasto, ale może być dobrą opcją na lżejszą wersję.</intro><ingredients><item>1 mały kalafior</item><item>2 jajka</item><item>100 g tartego sera</item><item>2 łyżki parmezanu</item><item>sól</item><item>pieprz</item><item>150 g passaty pomidorowej</item><item>125 g mozzarelli</item><item>dodatki według uznania, np. papryka, szynka, pieczarki</item></ingredients><preparation><step nr="1">Podzielić kalafior na małe kawałki i drobno zetrzeć albo zmiksować.</step><step nr="2">Krótko go ugotować albo ugotować na parze, a potem bardzo dobrze odcisnąć.</step><step nr="3">Wymieszać z jajkami, tartym serem, parmezanem, solą i pieprzem.</step><step nr="4">Rozłożyć masę cienko na papierze do pieczenia, formując spód do pizzy.</step><step nr="5">Podpiec, aż lekko się zarumieni.</step><step nr="6">Posmarować passatą pomidorową.</step><step nr="7">Dodać ser i wybrane dodatki.</step><step nr="8">Dopiekać, aż całość będzie złocista.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Podpiekanie: 15 minut</item><item>Dopiekanie: 10–12 minut w 220 °C</item></timing><tips><item>Kalafior trzeba naprawdę dobrze odcisnąć.</item><item>Cieńszy spód zwykle wychodzi lepiej.</item><item>To nie zastąpi klasycznej pizzy, ale jest dobrą alternatywą.</item><item>Po upieczeniu świetnie smakuje z rukolą.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Pizza low carb na spodzie z kalafiora</name>
+      <persons>Dla 2 osób</persons>
+      <category>Pizza / szybka kuchnia</category>
+      <intro lang="pl">Alternatywa dla klasycznej pizzy z lekkim spodem z kalafiora. To nie jest to samo co tradycyjne ciasto, ale może być dobrą opcją na lżejszą wersję.</intro>
+      <ingredients>
+        <item>1 mały kalafior</item>
+        <item>2 jajka</item>
+        <item>100 g tartego sera</item>
+        <item>2 łyżki parmezanu</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>150 g passaty pomidorowej</item>
+        <item>125 g mozzarelli</item>
+        <item>dodatki według uznania, np. papryka, szynka, pieczarki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Podzielić kalafior na małe kawałki i drobno zetrzeć albo zmiksować.</step>
+        <step nr="2">Krótko go ugotować albo ugotować na parze, a potem bardzo dobrze odcisnąć.</step>
+        <step nr="3">Wymieszać z jajkami, tartym serem, parmezanem, solą i pieprzem.</step>
+        <step nr="4">Rozłożyć masę cienko na papierze do pieczenia, formując spód do pizzy.</step>
+        <step nr="5">Podpiec, aż lekko się zarumieni.</step>
+        <step nr="6">Posmarować passatą pomidorową.</step>
+        <step nr="7">Dodać ser i wybrane dodatki.</step>
+        <step nr="8">Dopiekać, aż całość będzie złocista.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Podpiekanie: 15 minut</item>
+        <item>Dopiekanie: 10–12 minut w 220 °C</item>
+      </timing>
+      <tips>
+        <item>Kalafior trzeba naprawdę dobrze odcisnąć.</item>
+        <item>Cieńszy spód zwykle wychodzi lepiej.</item>
+        <item>To nie zastąpi klasycznej pizzy, ale jest dobrą alternatywą.</item>
+        <item>Po upieczeniu świetnie smakuje z rukolą.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="237">
     <name>Festlicher Gyros-Salat mit Rotkohl</name>
     <persons>6 Personen</persons>
@@ -17309,8 +18123,46 @@
       <item>Mit Baguette oder Fladenbrot servieren.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Świąteczna sałatka gyros z czerwoną kapustą</name><persons>Dla 6 osób</persons><category>Sałatki i dodatki / klasyki i domowa kuchnia</category><intro lang="pl">Bardziej odświętny wariant sałatki gyros z dodatkiem czerwonej kapusty. Ładnie wygląda, jest konkretny i dobrze sprawdza się na stół dla gości.</intro><ingredients><item>500 g pokrojonego filetu z kurczaka albo wieprzowiny</item><item>2 łyżki przyprawy gyros</item><item>1 łyżka oleju</item><item>1/2 główki sałaty lodowej</item><item>200 g czerwonej kapusty ze słoika albo drobno posiekanej świeżej czerwonej kapusty</item><item>1 puszka kukurydzy</item><item>1 czerwona cebula</item><item>150 g tartego sera</item><item>200 g tzatzików</item><item>150 g pomidorków koktajlowych</item></ingredients><preparation><step nr="1">Zamarynować mięso w przyprawie gyros i oleju.</step><step nr="2">Mocno obsmażyć na patelni i zostawić do ostygnięcia.</step><step nr="3">Pokroić sałatę lodową w paski.</step><step nr="4">Przygotować czerwoną kapustę, kukurydzę, pomidorki i cienko pokrojoną cebulę.</step><step nr="5">Układać wszystko warstwami w dużym naczyniu.</step><step nr="6">Na wierzchu rozłożyć mięso.</step><step nr="7">Posypać tartym serem.</step><step nr="8">Na końcu podać z tzatzikami albo cienko rozprowadzić je na wierzchu.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Smażenie: 10 minut</item><item>Opcjonalny czas przegryzienia: 15 minut</item></timing><tips><item>Świetna na imprezy, święta albo bufet.</item><item>Czerwona kapusta daje jej ładniejszy wygląd i mocniejszy charakter.</item><item>Sos dodawaj dopiero krótko przed podaniem.</item><item>Najlepiej podawać z bagietką albo pieczywem pita.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Świąteczna sałatka gyros z czerwoną kapustą</name>
+      <persons>Dla 6 osób</persons>
+      <category>Sałatki i dodatki / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Bardziej odświętny wariant sałatki gyros z dodatkiem czerwonej kapusty. Ładnie wygląda, jest konkretny i dobrze sprawdza się na stół dla gości.</intro>
+      <ingredients>
+        <item>500 g pokrojonego filetu z kurczaka albo wieprzowiny</item>
+        <item>2 łyżki przyprawy gyros</item>
+        <item>1 łyżka oleju</item>
+        <item>1/2 główki sałaty lodowej</item>
+        <item>200 g czerwonej kapusty ze słoika albo drobno posiekanej świeżej czerwonej kapusty</item>
+        <item>1 puszka kukurydzy</item>
+        <item>1 czerwona cebula</item>
+        <item>150 g tartego sera</item>
+        <item>200 g tzatzików</item>
+        <item>150 g pomidorków koktajlowych</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Zamarynować mięso w przyprawie gyros i oleju.</step>
+        <step nr="2">Mocno obsmażyć na patelni i zostawić do ostygnięcia.</step>
+        <step nr="3">Pokroić sałatę lodową w paski.</step>
+        <step nr="4">Przygotować czerwoną kapustę, kukurydzę, pomidorki i cienko pokrojoną cebulę.</step>
+        <step nr="5">Układać wszystko warstwami w dużym naczyniu.</step>
+        <step nr="6">Na wierzchu rozłożyć mięso.</step>
+        <step nr="7">Posypać tartym serem.</step>
+        <step nr="8">Na końcu podać z tzatzikami albo cienko rozprowadzić je na wierzchu.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Smażenie: 10 minut</item>
+        <item>Opcjonalny czas przegryzienia: 15 minut</item>
+      </timing>
+      <tips>
+        <item>Świetna na imprezy, święta albo bufet.</item>
+        <item>Czerwona kapusta daje jej ładniejszy wygląd i mocniejszy charakter.</item>
+        <item>Sos dodawaj dopiero krótko przed podaniem.</item>
+        <item>Najlepiej podawać z bagietką albo pieczywem pita.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="238">
     <name>Tortellini-Salat deftig</name>
     <persons>4–5 Personen</persons>
@@ -17349,8 +18201,46 @@
       <item>Gut am Vortag vorzubereiten.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Syta sałatka z tortellini</name><persons>Dla 4–5 osób</persons><category>Sałatki i dodatki / szybka kuchnia</category><intro lang="pl">Syta sałatka z tortellini to dobry wybór na grilla, imprezę albo do przygotowania wcześniej. Prosta, treściwa i bardzo praktyczna.</intro><ingredients><item>500 g świeżych tortellini</item><item>150 g szynki gotowanej</item><item>1 papryka</item><item>1 mały ogórek</item><item>1 mała czerwona cebula</item><item>150 g pomidorków koktajlowych</item><item>150 g jogurtu</item><item>100 g majonezu</item><item>1 łyżeczka musztardy</item><item>sól</item><item>pieprz</item><item>trochę pietruszki</item></ingredients><preparation><step nr="1">Ugotować tortellini według instrukcji na opakowaniu i zostawić do ostygnięcia.</step><step nr="2">Pokroić szynkę, paprykę, ogórek, cebulę i pomidorki.</step><step nr="3">Na dressing wymieszać jogurt, majonez, musztardę, sól i pieprz.</step><step nr="4">Połączyć wszystko w dużej misce.</step><step nr="5">Posypać pietruszką.</step><step nr="6">Odstawić na chwilę do przegryzienia i podawać.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Gotowanie: 5–8 minut</item><item>Czas przegryzienia: 20 minut</item></timing><tips><item>Idealna na grilla albo jako sałatka do zabrania.</item><item>Bardzo dobrze smakuje także z tortellini z serem.</item><item>Można ją rozszerzyć o kukurydzę albo groszek.</item><item>Dobrze przygotować ją dzień wcześniej.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Syta sałatka z tortellini</name>
+      <persons>Dla 4–5 osób</persons>
+      <category>Sałatki i dodatki / szybka kuchnia</category>
+      <intro lang="pl">Syta sałatka z tortellini to dobry wybór na grilla, imprezę albo do przygotowania wcześniej. Prosta, treściwa i bardzo praktyczna.</intro>
+      <ingredients>
+        <item>500 g świeżych tortellini</item>
+        <item>150 g szynki gotowanej</item>
+        <item>1 papryka</item>
+        <item>1 mały ogórek</item>
+        <item>1 mała czerwona cebula</item>
+        <item>150 g pomidorków koktajlowych</item>
+        <item>150 g jogurtu</item>
+        <item>100 g majonezu</item>
+        <item>1 łyżeczka musztardy</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>trochę pietruszki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ugotować tortellini według instrukcji na opakowaniu i zostawić do ostygnięcia.</step>
+        <step nr="2">Pokroić szynkę, paprykę, ogórek, cebulę i pomidorki.</step>
+        <step nr="3">Na dressing wymieszać jogurt, majonez, musztardę, sól i pieprz.</step>
+        <step nr="4">Połączyć wszystko w dużej misce.</step>
+        <step nr="5">Posypać pietruszką.</step>
+        <step nr="6">Odstawić na chwilę do przegryzienia i podawać.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Gotowanie: 5–8 minut</item>
+        <item>Czas przegryzienia: 20 minut</item>
+      </timing>
+      <tips>
+        <item>Idealna na grilla albo jako sałatka do zabrania.</item>
+        <item>Bardzo dobrze smakuje także z tortellini z serem.</item>
+        <item>Można ją rozszerzyć o kukurydzę albo groszek.</item>
+        <item>Dobrze przygotować ją dzień wcześniej.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="239">
     <name>Schichtsalat mit Hähnchen und Knoblauchsauce</name>
     <persons>4–6 Personen</persons>
@@ -17391,8 +18281,49 @@
       <item>Mit geröstetem Brot ebenfalls gut.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Sałatka warstwowa z kurczakiem i sosem czosnkowym</name><persons>Dla 4–6 osób</persons><category>Sałatki i dodatki / szybka kuchnia</category><intro lang="pl">Sałatka warstwowa z kurczakiem, świeżymi warzywami i prostym sosem czosnkowym. Dobrze wygląda i nadaje się zarówno na co dzień, jak i dla gości.</intro><ingredients><item>400 g piersi z kurczaka</item><item>1 łyżka oleju</item><item>sól</item><item>pieprz</item><item>papryka w proszku</item><item>1 sałata lodowa</item><item>1 ogórek</item><item>3 pomidory</item><item>1 puszka kukurydzy</item><item>150 g tartego sera</item><item>200 g jogurtu naturalnego</item><item>2 łyżki majonezu</item><item>1 ząbek czosnku</item><item>trochę pietruszki</item></ingredients><preparation><step nr="1">Doprawić pierś z kurczaka i usmażyć ją na patelni.</step><step nr="2">Zostawić do ostygnięcia i pokroić na małe kawałki.</step><step nr="3">Przygotować sałatę lodową, ogórek i pomidory.</step><step nr="4">Na sos wymieszać jogurt, majonez, czosnek, sól i pieprz.</step><step nr="5">Układać sałatkę warstwami: sałata, warzywa, kukurydza, kurczak, sos, ser.</step><step nr="6">Posypać pietruszką.</step><step nr="7">Odstawić na chwilę i podawać.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Smażenie: 10 minut</item><item>Czas przegryzienia: 15 minut</item></timing><tips><item>To ładna sałatka dla gości.</item><item>Sos nie powinien być zbyt rzadki.</item><item>Dobrze smakuje z pieczywem albo grzankami.</item><item>Można ją zrobić także z indykiem.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Sałatka warstwowa z kurczakiem i sosem czosnkowym</name>
+      <persons>Dla 4–6 osób</persons>
+      <category>Sałatki i dodatki / szybka kuchnia</category>
+      <intro lang="pl">Sałatka warstwowa z kurczakiem, świeżymi warzywami i prostym sosem czosnkowym. Dobrze wygląda i nadaje się zarówno na co dzień, jak i dla gości.</intro>
+      <ingredients>
+        <item>400 g piersi z kurczaka</item>
+        <item>1 łyżka oleju</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>papryka w proszku</item>
+        <item>1 sałata lodowa</item>
+        <item>1 ogórek</item>
+        <item>3 pomidory</item>
+        <item>1 puszka kukurydzy</item>
+        <item>150 g tartego sera</item>
+        <item>200 g jogurtu naturalnego</item>
+        <item>2 łyżki majonezu</item>
+        <item>1 ząbek czosnku</item>
+        <item>trochę pietruszki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doprawić pierś z kurczaka i usmażyć ją na patelni.</step>
+        <step nr="2">Zostawić do ostygnięcia i pokroić na małe kawałki.</step>
+        <step nr="3">Przygotować sałatę lodową, ogórek i pomidory.</step>
+        <step nr="4">Na sos wymieszać jogurt, majonez, czosnek, sól i pieprz.</step>
+        <step nr="5">Układać sałatkę warstwami: sałata, warzywa, kukurydza, kurczak, sos, ser.</step>
+        <step nr="6">Posypać pietruszką.</step>
+        <step nr="7">Odstawić na chwilę i podawać.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Smażenie: 10 minut</item>
+        <item>Czas przegryzienia: 15 minut</item>
+      </timing>
+      <tips>
+        <item>To ładna sałatka dla gości.</item>
+        <item>Sos nie powinien być zbyt rzadki.</item>
+        <item>Dobrze smakuje z pieczywem albo grzankami.</item>
+        <item>Można ją zrobić także z indykiem.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="240">
     <name>Paprika-Mais-Gurken-Partysalat</name>
     <persons>4–6 Personen</persons>
@@ -17429,8 +18360,44 @@
       <item>Passt zu Grillfleisch, Frikadellen oder Ofengerichten.</item>
     </tips>
     <rating>7,5/10</rating>
-  <translation lang="pl"><name>Imprezowa sałatka z papryki, kukurydzy i ogórka</name><persons>Dla 4–6 osób</persons><category>Sałatki i dodatki / szybka kuchnia</category><intro lang="pl">Szybka i lekka sałatka imprezowa z prostych składników. Dobrze pasuje do grilla, pieczonych mięs i codziennych obiadów.</intro><ingredients><item>2 papryki</item><item>1 ogórek sałatkowy</item><item>1 puszka kukurydzy</item><item>1 mała czerwona cebula</item><item>150 g śmietany kwaśnej</item><item>100 g jogurtu</item><item>1 łyżeczka musztardy</item><item>sól</item><item>pieprz</item><item>trochę soku z cytryny</item><item>2 łyżki posiekanej pietruszki</item></ingredients><preparation><step nr="1">Pokroić paprykę, ogórek i cebulę na małe kawałki.</step><step nr="2">Odsączyć kukurydzę.</step><step nr="3">Wymieszać śmietanę, jogurt, musztardę, sól, pieprz i trochę soku z cytryny na dressing.</step><step nr="4">Połączyć wszystko w misce.</step><step nr="5">Doprawić pietruszką.</step><step nr="6">Odstawić na chwilę do przegryzienia i podawać.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas przegryzienia: 15 minut</item></timing><tips><item>Szybka do przygotowania i bardzo praktyczna na co dzień.</item><item>Pasuje do mięsa z grilla, kotletów mielonych albo dań z piekarnika.</item><item>Można ją uzupełnić fetą albo kostkami sera.</item><item>Najlepiej podawać świeżą.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Imprezowa sałatka z papryki, kukurydzy i ogórka</name>
+      <persons>Dla 4–6 osób</persons>
+      <category>Sałatki i dodatki / szybka kuchnia</category>
+      <intro lang="pl">Szybka i lekka sałatka imprezowa z prostych składników. Dobrze pasuje do grilla, pieczonych mięs i codziennych obiadów.</intro>
+      <ingredients>
+        <item>2 papryki</item>
+        <item>1 ogórek sałatkowy</item>
+        <item>1 puszka kukurydzy</item>
+        <item>1 mała czerwona cebula</item>
+        <item>150 g śmietany kwaśnej</item>
+        <item>100 g jogurtu</item>
+        <item>1 łyżeczka musztardy</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>trochę soku z cytryny</item>
+        <item>2 łyżki posiekanej pietruszki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić paprykę, ogórek i cebulę na małe kawałki.</step>
+        <step nr="2">Odsączyć kukurydzę.</step>
+        <step nr="3">Wymieszać śmietanę, jogurt, musztardę, sól, pieprz i trochę soku z cytryny na dressing.</step>
+        <step nr="4">Połączyć wszystko w misce.</step>
+        <step nr="5">Doprawić pietruszką.</step>
+        <step nr="6">Odstawić na chwilę do przegryzienia i podawać.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas przegryzienia: 15 minut</item>
+      </timing>
+      <tips>
+        <item>Szybka do przygotowania i bardzo praktyczna na co dzień.</item>
+        <item>Pasuje do mięsa z grilla, kotletów mielonych albo dań z piekarnika.</item>
+        <item>Można ją uzupełnić fetą albo kostkami sera.</item>
+        <item>Najlepiej podawać świeżą.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="241">
     <name>Kartoffelsalat rustikal mit roter Zwiebel</name>
     <persons>4 Personen</persons>
@@ -17468,8 +18435,45 @@
       <item>Für cremige Version etwas Mayo ergänzen.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Rustykalna sałatka ziemniaczana z czerwoną cebulą</name><persons>Dla 4 osób</persons><category>Sałatki i dodatki / klasyki i domowa kuchnia</category><intro lang="pl">Klasyczna sałatka ziemniaczana w prostym, rustykalnym stylu. Dobrze smakuje na ciepło i na zimno, a po chwili przegryzienia robi się jeszcze lepsza.</intro><ingredients><item>1 kg ziemniaków typu sałatkowego</item><item>1 czerwona cebula</item><item>4 ogórki konserwowe</item><item>150 ml bulionu warzywnego</item><item>2 łyżki musztardy</item><item>3 łyżki oleju</item><item>2 łyżki zalewy z ogórków</item><item>sól</item><item>pieprz</item><item>trochę pietruszki albo szczypiorku</item></ingredients><preparation><step nr="1">Ugotować ziemniaki w mundurkach, ostudzić je i obrać.</step><step nr="2">Pokroić w plasterki.</step><step nr="3">Drobno pokroić cebulę i ogórki.</step><step nr="4">Wymieszać bulion z musztardą, olejem, zalewą z ogórków, solą i pieprzem.</step><step nr="5">Połączyć z ziemniakami, cebulą i ogórkami.</step><step nr="6">Odstawić na chwilę do przegryzienia.</step><step nr="7">Przed podaniem posypać pietruszką albo szczypiorkiem.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Gotowanie: 20 minut</item><item>Czas przegryzienia: 20–30 minut</item></timing><tips><item>Dobrze smakuje zarówno letnia, jak i zimna.</item><item>Im dłużej stoi, tym bardziej się zaokrągla smak.</item><item>Pasuje do kiełbasek, kotletów mielonych i dań z grilla.</item><item>Jeśli chcesz bardziej kremową wersję, dodaj trochę majonezu.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Rustykalna sałatka ziemniaczana z czerwoną cebulą</name>
+      <persons>Dla 4 osób</persons>
+      <category>Sałatki i dodatki / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Klasyczna sałatka ziemniaczana w prostym, rustykalnym stylu. Dobrze smakuje na ciepło i na zimno, a po chwili przegryzienia robi się jeszcze lepsza.</intro>
+      <ingredients>
+        <item>1 kg ziemniaków typu sałatkowego</item>
+        <item>1 czerwona cebula</item>
+        <item>4 ogórki konserwowe</item>
+        <item>150 ml bulionu warzywnego</item>
+        <item>2 łyżki musztardy</item>
+        <item>3 łyżki oleju</item>
+        <item>2 łyżki zalewy z ogórków</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>trochę pietruszki albo szczypiorku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ugotować ziemniaki w mundurkach, ostudzić je i obrać.</step>
+        <step nr="2">Pokroić w plasterki.</step>
+        <step nr="3">Drobno pokroić cebulę i ogórki.</step>
+        <step nr="4">Wymieszać bulion z musztardą, olejem, zalewą z ogórków, solą i pieprzem.</step>
+        <step nr="5">Połączyć z ziemniakami, cebulą i ogórkami.</step>
+        <step nr="6">Odstawić na chwilę do przegryzienia.</step>
+        <step nr="7">Przed podaniem posypać pietruszką albo szczypiorkiem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Gotowanie: 20 minut</item>
+        <item>Czas przegryzienia: 20–30 minut</item>
+      </timing>
+      <tips>
+        <item>Dobrze smakuje zarówno letnia, jak i zimna.</item>
+        <item>Im dłużej stoi, tym bardziej się zaokrągla smak.</item>
+        <item>Pasuje do kiełbasek, kotletów mielonych i dań z grilla.</item>
+        <item>Jeśli chcesz bardziej kremową wersję, dodaj trochę majonezu.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="242">
     <name>Grillgemüse-Salat mit Feta</name>
     <persons>4 Personen</persons>
@@ -17506,8 +18510,45 @@
       <item>Auch gut zum Vorbereiten.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Sałatka z grillowanych warzyw z fetą</name><persons>Dla 4 osób</persons><category>Grill i BBQ / sałatki i dodatki</category><intro lang="pl">Sałatka z grillowanych warzyw z fetą to świetny dodatek do grilla albo lekka kolacja. Dużo warzyw, trochę sera i prosty dressing wystarczą tutaj w zupełności.</intro><ingredients><item>1 cukinia</item><item>1 bakłażan</item><item>2 papryki</item><item>1 czerwona cebula</item><item>3 łyżki oliwy z oliwek</item><item>sól</item><item>pieprz</item><item>150 g fety</item><item>1 łyżka octu balsamicznego</item><item>1 łyżka soku z cytryny</item><item>trochę pietruszki</item></ingredients><preparation><step nr="1">Pokroić warzywa na większe kawałki.</step><step nr="2">Wymieszać z odrobiną oliwy, soli i pieprzu.</step><step nr="3">Upiec albo zgrillować, aż nabiorą ładnego koloru.</step><step nr="4">Lekko przestudzić.</step><step nr="5">Skropić octem balsamicznym i sokiem z cytryny.</step><step nr="6">Na wierzchu pokruszyć fetę.</step><step nr="7">Posypać pietruszką i podawać.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas grillowania/pieczenia: 20 minut</item></timing><tips><item>Najlepiej smakuje letnia.</item><item>To dobry dodatek do grilla albo lekka kolacja.</item><item>Z rukolą jest jeszcze świeższa.</item><item>Bardzo dobrze nadaje się też do wcześniejszego przygotowania.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Sałatka z grillowanych warzyw z fetą</name>
+      <persons>Dla 4 osób</persons>
+      <category>Grill i BBQ / sałatki i dodatki</category>
+      <intro lang="pl">Sałatka z grillowanych warzyw z fetą to świetny dodatek do grilla albo lekka kolacja. Dużo warzyw, trochę sera i prosty dressing wystarczą tutaj w zupełności.</intro>
+      <ingredients>
+        <item>1 cukinia</item>
+        <item>1 bakłażan</item>
+        <item>2 papryki</item>
+        <item>1 czerwona cebula</item>
+        <item>3 łyżki oliwy z oliwek</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>150 g fety</item>
+        <item>1 łyżka octu balsamicznego</item>
+        <item>1 łyżka soku z cytryny</item>
+        <item>trochę pietruszki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić warzywa na większe kawałki.</step>
+        <step nr="2">Wymieszać z odrobiną oliwy, soli i pieprzu.</step>
+        <step nr="3">Upiec albo zgrillować, aż nabiorą ładnego koloru.</step>
+        <step nr="4">Lekko przestudzić.</step>
+        <step nr="5">Skropić octem balsamicznym i sokiem z cytryny.</step>
+        <step nr="6">Na wierzchu pokruszyć fetę.</step>
+        <step nr="7">Posypać pietruszką i podawać.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas grillowania/pieczenia: 20 minut</item>
+      </timing>
+      <tips>
+        <item>Najlepiej smakuje letnia.</item>
+        <item>To dobry dodatek do grilla albo lekka kolacja.</item>
+        <item>Z rukolą jest jeszcze świeższa.</item>
+        <item>Bardzo dobrze nadaje się też do wcześniejszego przygotowania.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="243">
     <name>Karottenkuchen einfach</name>
     <persons>1 Springform</persons>
@@ -17546,8 +18587,44 @@
       <item>Hält sich gut 2–3 Tage.</item>
     </tips>
     <rating>8,5/10</rating>
-  <translation lang="pl"><name>Proste ciasto marchewkowe</name><persons>Na 1 tortownicę</persons><category>Pieczenie i słodkie / klasyki i domowa kuchnia</category><intro lang="pl">Wilgotne ciasto marchewkowe bez większego wysiłku. Bardzo codzienne, proste i opcjonalnie z łatwym kremem z serka śmietankowego.</intro><ingredients><item>300 g marchewki</item><item>250 g mąki</item><item>180 g cukru</item><item>3 jajka</item><item>150 ml oleju</item><item>1 opakowanie proszku do pieczenia</item><item>1 łyżeczka cynamonu</item><item>100 g mielonych migdałów</item><item>1 opakowanie cukru waniliowego</item><item>opcjonalnie: 150 g serka śmietankowego</item><item>opcjonalnie: 50 g cukru pudru</item><item>opcjonalnie: trochę soku z cytryny</item></ingredients><preparation><step nr="1">Drobno zetrzeć marchewkę.</step><step nr="2">Ubić jajka z cukrem i cukrem waniliowym na puszystą masę.</step><step nr="3">Wmieszać olej.</step><step nr="4">Połączyć mąkę, proszek do pieczenia, cynamon i migdały, a następnie delikatnie wmieszać.</step><step nr="5">Dodać marchewkę i przełożyć ciasto do natłuszczonej formy.</step><step nr="6">Upiec w piekarniku i po ostudzeniu opcjonalnie posmarować kremem z serka śmietankowego.</step></preparation><timing><item>Przygotowanie: 20 minut</item><item>Czas pieczenia: 40–45 minut w 180 °C</item></timing><tips><item>Równie dobrze smakuje bez kremu.</item><item>Bardzo dobre także z posiekanymi orzechami włoskimi.</item><item>Dobrze trzyma świeżość przez 2–3 dni.</item></tips></translation></recipe>
-
+    <translation lang="pl">
+      <name>Proste ciasto marchewkowe</name>
+      <persons>Na 1 tortownicę</persons>
+      <category>Pieczenie i słodkie / klasyki i domowa kuchnia</category>
+      <intro lang="pl">Wilgotne ciasto marchewkowe bez większego wysiłku. Bardzo codzienne, proste i opcjonalnie z łatwym kremem z serka śmietankowego.</intro>
+      <ingredients>
+        <item>300 g marchewki</item>
+        <item>250 g mąki</item>
+        <item>180 g cukru</item>
+        <item>3 jajka</item>
+        <item>150 ml oleju</item>
+        <item>1 opakowanie proszku do pieczenia</item>
+        <item>1 łyżeczka cynamonu</item>
+        <item>100 g mielonych migdałów</item>
+        <item>1 opakowanie cukru waniliowego</item>
+        <item>opcjonalnie: 150 g serka śmietankowego</item>
+        <item>opcjonalnie: 50 g cukru pudru</item>
+        <item>opcjonalnie: trochę soku z cytryny</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Drobno zetrzeć marchewkę.</step>
+        <step nr="2">Ubić jajka z cukrem i cukrem waniliowym na puszystą masę.</step>
+        <step nr="3">Wmieszać olej.</step>
+        <step nr="4">Połączyć mąkę, proszek do pieczenia, cynamon i migdały, a następnie delikatnie wmieszać.</step>
+        <step nr="5">Dodać marchewkę i przełożyć ciasto do natłuszczonej formy.</step>
+        <step nr="6">Upiec w piekarniku i po ostudzeniu opcjonalnie posmarować kremem z serka śmietankowego.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 20 minut</item>
+        <item>Czas pieczenia: 40–45 minut w 180 °C</item>
+      </timing>
+      <tips>
+        <item>Równie dobrze smakuje bez kremu.</item>
+        <item>Bardzo dobre także z posiekanymi orzechami włoskimi.</item>
+        <item>Dobrze trzyma świeżość przez 2–3 dni.</item>
+      </tips>
+    </translation>
+  </recipe>
   <recipe id="244">
     <name>Bananenbrot klassisch</name>
     <persons>1 Kastenform</persons>
@@ -17583,5 +18660,437 @@
       <item>Auch in Scheiben getoastet sehr gut.</item>
     </tips>
     <rating>8/10</rating>
-  <translation lang="pl"><name>Klasyczny chlebek bananowy</name><persons>Na 1 keksówkę</persons><category>Pieczenie i słodkie / szybka kuchnia</category><intro lang="pl">Prosty chlebek bananowy na bardzo dojrzałe banany. Wilgotny, łatwy i dobry zarówno do śniadania, jak i do kawy.</intro><ingredients><item>3 dojrzałe banany</item><item>250 g mąki</item><item>120 g cukru</item><item>2 jajka</item><item>100 g roztopionego masła</item><item>1 opakowanie proszku do pieczenia</item><item>1 opakowanie cukru waniliowego</item><item>1 szczypta soli</item><item>opcjonalnie 80 g posiekanej czekolady albo orzechów</item></ingredients><preparation><step nr="1">Rozgnieść banany widelcem.</step><step nr="2">Wymieszać jajka, cukier, cukier waniliowy i roztopione masło.</step><step nr="3">Dodać banany.</step><step nr="4">Połączyć mąkę, proszek do pieczenia i sól, a następnie wmieszać do masy.</step><step nr="5">Opcjonalnie dodać czekoladę albo orzechy.</step><step nr="6">Przełożyć ciasto do natłuszczonej keksówki.</step><step nr="7">Piec w piekarniku, aż chlebek bananowy będzie złocisty.</step><step nr="8">Ostudzić i pokroić na plastry.</step></preparation><timing><item>Przygotowanie: 15 minut</item><item>Czas pieczenia: 50–55 minut w 175 °C</item></timing><tips><item>Idealny do wykorzystania bardzo dojrzałych bananów.</item><item>Z cynamonem albo orzechami będzie jeszcze bardziej aromatyczny.</item><item>Dobrze sprawdza się także jako śniadanie.</item><item>Jest wilgotny i bardzo prosty.</item></tips></translation></recipe>
+    <translation lang="pl">
+      <name>Klasyczny chlebek bananowy</name>
+      <persons>Na 1 keksówkę</persons>
+      <category>Pieczenie i słodkie / szybka kuchnia</category>
+      <intro lang="pl">Prosty chlebek bananowy na bardzo dojrzałe banany. Wilgotny, łatwy i dobry zarówno do śniadania, jak i do kawy.</intro>
+      <ingredients>
+        <item>3 dojrzałe banany</item>
+        <item>250 g mąki</item>
+        <item>120 g cukru</item>
+        <item>2 jajka</item>
+        <item>100 g roztopionego masła</item>
+        <item>1 opakowanie proszku do pieczenia</item>
+        <item>1 opakowanie cukru waniliowego</item>
+        <item>1 szczypta soli</item>
+        <item>opcjonalnie 80 g posiekanej czekolady albo orzechów</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozgnieść banany widelcem.</step>
+        <step nr="2">Wymieszać jajka, cukier, cukier waniliowy i roztopione masło.</step>
+        <step nr="3">Dodać banany.</step>
+        <step nr="4">Połączyć mąkę, proszek do pieczenia i sól, a następnie wmieszać do masy.</step>
+        <step nr="5">Opcjonalnie dodać czekoladę albo orzechy.</step>
+        <step nr="6">Przełożyć ciasto do natłuszczonej keksówki.</step>
+        <step nr="7">Piec w piekarniku, aż chlebek bananowy będzie złocisty.</step>
+        <step nr="8">Ostudzić i pokroić na plastry.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: 15 minut</item>
+        <item>Czas pieczenia: 50–55 minut w 175 °C</item>
+      </timing>
+      <tips>
+        <item>Idealny do wykorzystania bardzo dojrzałych bananów.</item>
+        <item>Z cynamonem albo orzechami będzie jeszcze bardziej aromatyczny.</item>
+        <item>Dobrze sprawdza się także jako śniadanie.</item>
+        <item>Jest wilgotny i bardzo prosty.</item>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="245">
+    <name>Klassischer Pizzateig Sven-Style</name>
+    <persons>Für 2 große Pizzen oder 1 Blechpizza</persons>
+    <category>Pizza &amp; Brot / Ofen &amp; Aufläufe</category>
+    <intro lang="de">Ein einfacher, zuverlässiger Pizzateig für zuhause. Gut für klassische runde Pizzen oder eine Hauspizza vom Blech.</intro>
+    <image src="images/rezeptbild_245.png" alt="Klassischer Pizzateig Sven-Style"/>
+    <ingredients>
+      <item>500 g Weizenmehl Typ 550</item>
+      <item>1 Würfel frische Hefe oder 1 Päckchen Trockenhefe</item>
+      <item>325 ml lauwarmes Wasser</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 TL Zucker</item>
+      <item>2 TL Salz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Das lauwarme Wasser in eine große Schüssel geben und Zucker sowie Hefe darin auflösen.</step>
+      <step nr="2">Die Mischung 5–10 Minuten stehen lassen, bis die Hefe leicht arbeitet.</step>
+      <step nr="3">Mehl, Salz und Olivenöl dazugeben.</step>
+      <step nr="4">Alles 8–10 Minuten zu einem glatten, elastischen Teig verkneten.</step>
+      <step nr="5">Den Teig abdecken und an einem warmen Ort 45–60 Minuten gehen lassen.</step>
+      <step nr="6">Danach nochmals kurz durchkneten und je nach gewünschter Pizza dünn oder etwas dicker ausrollen.</step>
+      <step nr="7">Mit Sauce und Belag belegen und im sehr heißen Ofen backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Gehzeit: ca. 45–60 Minuten</item>
+      <item>Backzeit: ca. 10–15 Minuten bei 230–250 °C</item>
+    </timing>
+    <tips>
+      <item>Typ 550 ergibt meist die bessere Pizza-Struktur als normales 405er Mehl.</item>
+      <item>Für mehr Aroma den Teig über Nacht im Kühlschrank gehen lassen.</item>
+      <item>Ofen und Blech oder Pizzastein gut vorheizen.</item>
+      <item>Nicht zu viel Sauce verwenden, damit der Boden nicht weich wird.</item>
+    </tips>
+    <rating>9/10</rating>
+    <translation lang="pl">
+      <name>Klasyczne ciasto na pizzę Sven-Style</name>
+      <persons>Na 2 duże pizze albo 1 pizzę z blachy</persons>
+      <category>Pizza i pieczywo / piekarnik i zapiekanki</category>
+      <intro lang="pl">Proste i pewne ciasto na pizzę do domu. Dobrze sprawdza się zarówno do klasycznych okrągłych pizz, jak i do domowej pizzy z blachy.</intro>
+      <ingredients>
+        <item>500 g mąki pszennej typ 550</item>
+        <item>1 kostka świeżych drożdży albo 1 opakowanie drożdży instant</item>
+        <item>325 ml letniej wody</item>
+        <item>2 łyżki oliwy z oliwek</item>
+        <item>1 łyżeczka cukru</item>
+        <item>2 łyżeczki soli</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wlać letnią wodę do dużej miski i rozpuścić w niej cukier oraz drożdże.</step>
+        <step nr="2">Odstawić mieszankę na 5–10 minut, aż drożdże zaczną pracować.</step>
+        <step nr="3">Dodać mąkę, sól i oliwę z oliwek.</step>
+        <step nr="4">Wyrabiać całość przez 8–10 minut, aż powstanie gładkie i elastyczne ciasto.</step>
+        <step nr="5">Przykryć ciasto i odstawić w ciepłe miejsce na 45–60 minut do wyrośnięcia.</step>
+        <step nr="6">Po wyrośnięciu krótko jeszcze raz wyrobić i rozwałkować cieniej albo trochę grubiej – zależnie od tego, jaką pizzę chcesz zrobić.</step>
+        <step nr="7">Posmarować sosem, dodać ulubione dodatki i piec w bardzo dobrze nagrzanym piekarniku.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas wyrastania: ok. 45–60 minut</item>
+        <item>Czas pieczenia: ok. 10–15 minut w 230–250 °C</item>
+      </timing>
+      <tips>
+        <item>Mąka typu 550 zazwyczaj daje lepszą strukturę pizzy niż zwykła mąka 405.</item>
+        <item>Dla lepszego aromatu zostaw ciasto na noc w lodówce.</item>
+        <item>Dobrze nagrzej piekarnik oraz blachę albo kamień do pizzy.</item>
+        <item>Nie dawaj zbyt dużo sosu, żeby spód nie zrobił się miękki.</item>
+      </tips>
+    </translation>
+  </recipe>
+  <recipe id="246">
+    <name>Pizzasauce Grundrezept</name>
+    <persons>Für 2 große Pizzen oder 1 Blechpizza</persons>
+    <category>Grundrezepte / Pizza &amp; Brot</category>
+    <intro lang="de">Eine einfache, kräftige Pizzasauce für klassische Pizza, Blechpizza und Pizzabrötchen. Schnell gemacht und deutlich besser als fertig gekauft.</intro>
+    <image src="images/rezeptbild_246.png" alt="Pizzasauce Grundrezept"/>
+    <ingredients>
+      <item>1 Dose gehackte Tomaten (400 g)</item>
+      <item>2 EL Tomatenmark</item>
+      <item>1 kleine Knoblauchzehe</item>
+      <item>1 TL Oregano</item>
+      <item>1 TL Zucker</item>
+      <item>1 EL Olivenöl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Die gehackten Tomaten in eine Schüssel geben.</step>
+      <step nr="2">Tomatenmark, fein gehackten oder gepressten Knoblauch, Oregano, Zucker und Olivenöl dazugeben.</step>
+      <step nr="3">Alles gut verrühren und mit Salz und Pfeffer abschmecken.</step>
+      <step nr="4">Die Sauce direkt verwenden oder vor dem Belegen 10 Minuten durchziehen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Ziehzeit optional: ca. 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Nicht zu dick auftragen, damit der Pizzaboden knusprig bleibt.</item>
+      <item>Für mehr Tiefe kann die Sauce kurz in einem kleinen Topf eingekocht werden.</item>
+      <item>Auch gut als Basis für Pizzaschnecken oder Pizzabrötchen.</item>
+    </tips>
+    <rating>9/10</rating>
+    <translation lang="pl">
+      <name>Podstawowy sos do pizzy</name>
+      <persons>Na 2 duże pizze lub 1 pizzę z blachy</persons>
+      <category>Podstawowe przepisy / pizza i pieczywo</category>
+      <intro lang="pl">Prosty, wyrazisty sos do klasycznej pizzy, pizzy z blachy i bułeczek pizzowych. Szybki i zdecydowanie lepszy niż gotowy.</intro>
+      <ingredients>
+        <item>1 puszka krojonych pomidorów (400 g)</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>1 mały ząbek czosnku</item>
+        <item>1 łyżeczka oregano</item>
+        <item>1 łyżeczka cukru</item>
+        <item>1 łyżka oliwy z oliwek</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przełóż pomidory do miski.</step>
+        <step nr="2">Dodaj koncentrat, drobno posiekany lub przeciśnięty czosnek, oregano, cukier i oliwę.</step>
+        <step nr="3">Całość dokładnie wymieszaj i dopraw solą oraz pieprzem.</step>
+        <step nr="4">Sosu użyj od razu albo odstaw na 10 minut, aby smaki się połączyły.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Czas przegryzienia opcjonalnie: ok. 10 minut</item>
+      </timing>
+      <tips>
+        <item>Nie nakładaj zbyt grubej warstwy, aby spód pozostał chrupiący.</item>
+        <item>Dla głębszego smaku sos można chwilę zredukować w rondelku.</item>
+        <item>Świetny także do ślimaczków lub bułeczek pizzowych.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="247">
+    <name>Knoblauchöl für Pizza und Brot</name>
+    <persons>Für 1 kleines Glas</persons>
+    <category>Grundrezepte / Saucen &amp; Würzbasis</category>
+    <intro lang="de">Ein schnelles Knoblauchöl für Pizza, Focaccia, Bruschetta oder warmes Brot. Gibt sofort mehr Aroma und ist in wenigen Minuten gemacht.</intro>
+    <image src="images/rezeptbild_247.png" alt="Knoblauchöl für Pizza und Brot"/>
+    <ingredients>
+      <item>100 ml Olivenöl</item>
+      <item>2–3 Knoblauchzehen</item>
+      <item>1 kleine Prise Salz</item>
+      <item>optional etwas Oregano oder Chili</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Die Knoblauchzehen sehr fein hacken oder pressen.</step>
+      <step nr="2">Mit dem Olivenöl und einer kleinen Prise Salz verrühren.</step>
+      <step nr="3">Nach Wunsch etwas Oregano oder Chili dazugeben.</step>
+      <step nr="4">Vor dem Verwenden kurz ziehen lassen und sparsam über Pizza, Focaccia oder Brot geben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 5 Minuten</item>
+      <item>Ziehzeit optional: ca. 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Für Pizza erst nach dem Backen verwenden.</item>
+      <item>Im Kühlschrank aufbewahren und zeitnah verbrauchen.</item>
+      <item>Auch sehr gut für Bruschetta oder zum Bestreichen von Brotscheiben.</item>
+    </tips>
+    <rating>8.5/10</rating>
+    <translation lang="pl">
+      <name>Olej czosnkowy do pizzy i pieczywa</name>
+      <persons>Na 1 mały słoiczek</persons>
+      <category>Podstawowe przepisy / sosy i baza smaku</category>
+      <intro lang="pl">Szybki olej czosnkowy do pizzy, focaccii, bruschetty lub ciepłego pieczywa. Daje od razu więcej aromatu i robi się go w kilka minut.</intro>
+      <ingredients>
+        <item>100 ml oliwy z oliwek</item>
+        <item>2–3 ząbki czosnku</item>
+        <item>mała szczypta soli</item>
+        <item>opcjonalnie trochę oregano lub chili</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Czosnek bardzo drobno posiekaj lub przeciśnij.</step>
+        <step nr="2">Wymieszaj go z oliwą i małą szczyptą soli.</step>
+        <step nr="3">Opcjonalnie dodaj trochę oregano lub chili.</step>
+        <step nr="4">Przed użyciem odstaw na chwilę i skrapiaj nim pizzę, focaccię lub pieczywo.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 5 minut</item>
+        <item>Czas przegryzienia opcjonalnie: ok. 10 minut</item>
+      </timing>
+      <tips>
+        <item>Do pizzy dodawaj dopiero po upieczeniu.</item>
+        <item>Przechowuj w lodówce i zużyj w krótkim czasie.</item>
+        <item>Świetny także do bruschetty lub smarowania pieczywa.</item>
+      </tips>
+      <rating>8.5/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="248">
+    <name>Pizza Margherita klassisch</name>
+    <persons>Für 2 Personen</persons>
+    <category>Pizza &amp; Brot / Grundrezepte</category>
+    <intro lang="de">Ein echter Klassiker mit Tomate, Mozzarella und Basilikum. Wenige Zutaten, aber genau deshalb besonders gut.</intro>
+    <image src="images/rezeptbild_248.png" alt="Pizza Margherita klassisch"/>
+    <ingredients>
+      <item>1 Portion klassischer Pizzateig</item>
+      <item>1 Portion Pizzasauce Grundrezept</item>
+      <item>2 Kugeln Mozzarella</item>
+      <item>einige frische Basilikumblätter</item>
+      <item>1 EL Olivenöl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Pizzateig vorbereiten und dünn ausrollen.</step>
+      <step nr="2">Die Pizzasauce gleichmäßig darauf verstreichen.</step>
+      <step nr="3">Mozzarella in Stücke zupfen oder in Scheiben schneiden und darauf verteilen.</step>
+      <step nr="4">Die Pizza im sehr heißen Ofen backen, bis Rand und Käse schön gebräunt sind.</step>
+      <step nr="5">Nach dem Backen mit Basilikum und etwas Olivenöl verfeinern.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Backzeit: ca. 10–12 Minuten bei 250 °C</item>
+    </timing>
+    <tips>
+      <item>Mozzarella vor dem Belegen gut abtropfen lassen.</item>
+      <item>Basilikum erst nach dem Backen auflegen.</item>
+      <item>Weniger Belag ist hier oft mehr.</item>
+    </tips>
+    <rating>8.5/10</rating>
+    <translation lang="pl">
+      <name>Klasyczna pizza Margherita</name>
+      <persons>Dla 2 osób</persons>
+      <category>Pizza i pieczywo / podstawowe przepisy</category>
+      <intro lang="pl">Prawdziwy klasyk z pomidorem, mozzarellą i bazylią. Niewiele składników, ale właśnie dlatego smakuje tak dobrze.</intro>
+      <ingredients>
+        <item>1 porcja klasycznego ciasta do pizzy</item>
+        <item>1 porcja podstawowego sosu do pizzy</item>
+        <item>2 kulki mozzarelli</item>
+        <item>kilka świeżych listków bazylii</item>
+        <item>1 łyżka oliwy z oliwek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotuj ciasto do pizzy i cienko je rozwałkuj.</step>
+        <step nr="2">Równomiernie rozsmaruj sos.</step>
+        <step nr="3">Mozzarellę porwij na kawałki lub pokrój i rozłóż na cieście.</step>
+        <step nr="4">Piecz pizzę w bardzo gorącym piekarniku, aż brzegi i ser ładnie się zarumienią.</step>
+        <step nr="5">Po upieczeniu dodaj bazylię i skrop oliwą.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Pieczenie: ok. 10–12 minut w 250 °C</item>
+      </timing>
+      <tips>
+        <item>Mozzarellę dobrze odsącz przed nałożeniem.</item>
+        <item>Bazylię dodawaj dopiero po pieczeniu.</item>
+        <item>Przy tym rodzaju pizzy mniej znaczy więcej.</item>
+      </tips>
+      <rating>8.5/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="249">
+    <name>Hauspizza vom Blech</name>
+    <persons>Für 4 Personen</persons>
+    <category>Pizza &amp; Brot / Ofen &amp; Aufläufe</category>
+    <intro lang="de">Eine unkomplizierte Blechpizza für Familie, Gäste oder den gemütlichen Abend zuhause. Gut vorzubereiten und wunderbar alltagstauglich.</intro>
+    <image src="images/rezeptbild_249.png" alt="Hauspizza vom Blech"/>
+    <ingredients>
+      <item>1 Portion klassischer Pizzateig</item>
+      <item>1 Portion Pizzasauce Grundrezept</item>
+      <item>200 g geriebener Mozzarella</item>
+      <item>100 g geriebener Gouda</item>
+      <item>100 g Salami</item>
+      <item>1 Paprika</item>
+      <item>1 kleine rote Zwiebel</item>
+      <item>150 g Champignons</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Pizzateig vorbereiten und auf ein Backblech ziehen.</step>
+      <step nr="2">Die Pizzasauce gleichmäßig darauf verteilen.</step>
+      <step nr="3">Mit Mozzarella und Gouda bestreuen.</step>
+      <step nr="4">Salami, Paprika, Zwiebel und Champignons darauf verteilen.</step>
+      <step nr="5">Im gut vorgeheizten Ofen backen, bis der Rand goldbraun und der Käse schön geschmolzen ist.</step>
+      <step nr="6">Kurz ruhen lassen und in Stücke schneiden.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Gehzeit: ca. 45–60 Minuten</item>
+      <item>Backzeit: ca. 15–20 Minuten bei 230 °C</item>
+    </timing>
+    <tips>
+      <item>Ideal für Gäste oder Kindergeburtstage.</item>
+      <item>Auch gut mit Schinken, Mais oder Thunfisch variierbar.</item>
+      <item>Für extra Würze nach dem Backen etwas Oregano darübergeben.</item>
+    </tips>
+    <rating>9/10</rating>
+    <translation lang="pl">
+      <name>Domowa pizza z blachy</name>
+      <persons>Dla 4 osób</persons>
+      <category>Pizza i pieczywo / piekarnik i zapiekanki</category>
+      <intro lang="pl">Prosta pizza z blachy dla rodziny, gości albo spokojnego wieczoru w domu. Dobrze się ją przygotowuje i świetnie sprawdza na co dzień.</intro>
+      <ingredients>
+        <item>1 porcja klasycznego ciasta do pizzy</item>
+        <item>1 porcja podstawowego sosu do pizzy</item>
+        <item>200 g tartej mozzarelli</item>
+        <item>100 g startego goudy</item>
+        <item>100 g salami</item>
+        <item>1 papryka</item>
+        <item>1 mała czerwona cebula</item>
+        <item>150 g pieczarek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotuj ciasto do pizzy i rozciągnij je na blasze.</step>
+        <step nr="2">Równomiernie rozprowadź sos.</step>
+        <step nr="3">Posyp mozzarellą i goudą.</step>
+        <step nr="4">Dodaj salami, paprykę, cebulę i pieczarki.</step>
+        <step nr="5">Piecz w dobrze nagrzanym piekarniku, aż brzegi się zezłocą, a ser ładnie się roztopi.</step>
+        <step nr="6">Krótko odstaw i pokrój na kawałki.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Wyrastanie: ok. 45–60 minut</item>
+        <item>Pieczenie: ok. 15–20 minut w 230 °C</item>
+      </timing>
+      <tips>
+        <item>Świetna dla gości lub na dziecięce urodziny.</item>
+        <item>Można łatwo zmienić dodatki na szynkę, kukurydzę lub tuńczyka.</item>
+        <item>Dla większego aromatu po upieczeniu posyp odrobiną oregano.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="250">
+    <name>Pizzabrötchen klassisch</name>
+    <persons>Für 4 Personen</persons>
+    <category>Grundrezepte / Pizza &amp; Brot</category>
+    <intro lang="de">Knusprige, goldbraun gebackene Pizzabrötchen mit herzhafter Füllung. Perfekt als Snack, für Gäste oder als Begleiter zu Suppe, Salat und Pizzaabend.</intro>
+    <image src="images/rezeptbild_250.png" alt="Pizzabrötchen klassisch"/>
+    <ingredients>
+      <item>1 Rolle Pizzateig oder ca. 300 g selbstgemachter Pizzateig</item>
+      <item>150 g geriebener Käse</item>
+      <item>100 g Salami</item>
+      <item>1 kleine rote Paprika</item>
+      <item>1 kleine Zwiebel</item>
+      <item>2 EL Crème fraîche oder Frischkäse</item>
+      <item>1 TL Oregano</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Den Pizzateig ausrollen und in kleine Quadrate oder Rechtecke schneiden.</step>
+      <step nr="2">Salami, Paprika und Zwiebel sehr fein würfeln.</step>
+      <step nr="3">Alles mit Käse, Crème fraîche, Oregano, Salz und Pfeffer vermischen.</step>
+      <step nr="4">Jeweils etwas Füllung auf den Teig geben, zusammenklappen oder einrollen und gut verschließen.</step>
+      <step nr="5">Die Pizzabrötchen auf ein Blech mit Backpapier setzen.</step>
+      <step nr="6">Im vorgeheizten Ofen goldbraun backen und warm servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 15–18 Minuten bei 200 °C</item>
+    </timing>
+    <tips>
+      <item>Die Füllung nicht zu nass machen, sonst weicht der Teig auf.</item>
+      <item>Auch mit Schinken, Mais oder Champignons sehr gut.</item>
+      <item>Am besten warm servieren, dann sind sie außen knusprig und innen schön saftig.</item>
+    </tips>
+    <rating>8.5/10</rating>
+    <translation lang="pl">
+      <name>Klasyczne bułeczki pizzowe</name>
+      <persons>Dla 4 osób</persons>
+      <category>Podstawowe przepisy / pizza i pieczywo</category>
+      <intro lang="pl">Chrupiące, złociste bułeczki pizzowe z wytrawnym nadzieniem. Idealne jako przekąska, dla gości albo jako dodatek do zupy, sałatki i wieczoru z pizzą.</intro>
+      <ingredients>
+        <item>1 rolka ciasta na pizzę lub ok. 300 g domowego ciasta na pizzę</item>
+        <item>150 g tartego sera</item>
+        <item>100 g salami</item>
+        <item>1 mała czerwona papryka</item>
+        <item>1 mała cebula</item>
+        <item>2 łyżki crème fraîche lub serka śmietankowego</item>
+        <item>1 łyżeczka oregano</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozwałkuj ciasto na pizzę i pokrój je na małe kwadraty albo prostokąty.</step>
+        <step nr="2">Bardzo drobno pokrój salami, paprykę i cebulę.</step>
+        <step nr="3">Wymieszaj wszystko z serem, crème fraîche, oregano, solą i pieprzem.</step>
+        <step nr="4">Nałóż trochę farszu na ciasto, złóż lub zwiń i dobrze zlep brzegi.</step>
+        <step nr="5">Ułóż bułeczki pizzowe na blasze wyłożonej papierem do pieczenia.</step>
+        <step nr="6">Piecz w nagrzanym piekarniku na złoto i podawaj na ciepło.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Pieczenie: ok. 15–18 minut w 200 °C</item>
+      </timing>
+      <tips>
+        <item>Farsz nie powinien być zbyt mokry, żeby ciasto nie rozmiękło.</item>
+        <item>Bardzo dobre także z szynką, kukurydzą albo pieczarkami.</item>
+        <item>Najlepsze są podane na ciepło – chrupiące z zewnątrz i soczyste w środku.</item>
+      </tips>
+      <rating>8.5/10</rating>
+    </translation>
+  </recipe>
 </cookbook>
