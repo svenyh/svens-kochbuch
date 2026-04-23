@@ -1937,6 +1937,16 @@
       return collections;
     }
 
+    function recipeCollectionHighlights(recipe){
+      const defs = collectionDefinitions();
+      const set = recipeCollectionSet(recipe);
+      const labels = defs
+        .filter(def => set.has(def.key))
+        .map(def => textByLang(def.de, def.pl));
+      if (!labels.length) return [recipeCategory(recipe)];
+      return labels.slice(0, 3);
+    }
+
     function overlapCount(setA, setB, max=99){
       let count = 0;
       setA.forEach(value => {
