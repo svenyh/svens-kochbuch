@@ -2003,6 +2003,99 @@
 
 
 
+
+
+    function collectionDefinitions(){
+      return [
+        { key:'pizza-basics', de:'Pizza & Ofen', pl:'Pizza i piekarnik', copyDe:'Pizza, Focaccia, Pizzabrötchen und passende Basics auf einen Blick.', copyPl:'Pizza, focaccia, bułeczki pizzowe i pasujące podstawy w jednym miejscu.', match: recipe => { const set = recipeCollectionSet(recipe); return set.has('pizza-basics') || set.has('ofen-auflaeufe'); }, anchorId:'collectionsHead' },
+        { key:'grundrezepte', de:'Grundrezepte', pl:'Podstawy', copyDe:'Teige, Saucen, Dips und kleine Küchenbasics für den Alltag.', copyPl:'Ciasta, sosy, dipy i małe kuchenne podstawy na co dzień.', match: recipe => recipeCollectionSet(recipe).has('grundrezepte'), anchorId:'collectionsHead' },
+        { key:'woelpinghausen', de:'Wölpinghausen', pl:'Wölpinghausen', copyDe:'Persönliche Lieblingsgerichte und regionale Handschrift.', copyPl:'Osobiste ulubione przepisy i regionalny charakter.', match: recipe => recipe.categorySlug === 'woelpinghausen', anchorId:'collectionsHead' },
+        { key:'ostalgie', de:'Ostalgie', pl:'Ostalgie', copyDe:'Klassiker mit Erinnerungswert und deftiger Seele.', copyPl:'Klasyki z nutą nostalgii i sycącym charakterem.', match: recipe => recipeCollectionSet(recipe).has('ostalgie'), anchorId:'collectionsHead' },
+        { key:'grill-bbq', de:'BBQ & Grill', pl:'BBQ i grill', copyDe:'Rauchige, herzhafte und grilltaugliche Lieblingsrezepte.', copyPl:'Wędzone, sycące i grillowe ulubione przepisy.', match: recipe => recipeCollectionSet(recipe).has('grill-bbq'), anchorId:'collectionsHead' },
+        { key:'schnelle-kueche', de:'Schnelle Küche', pl:'Szybka kuchnia', copyDe:'Alltagstaugliche Rezepte für wenig Zeit und viel Hunger.', copyPl:'Przepisy na co dzień, gdy czasu jest mało, a apetyt duży.', match: recipe => recipeCollectionSet(recipe).has('schnelle-kueche'), anchorId:'collectionsHead' }
+      ];
+    }
+
+    function renderHomePriorityNav(){
+      const nav = $('homePriorityNav');
+      if (!nav) return;
+      nav.classList.remove('hidden');
+      const viewed = $('priorityViewedLink');
+      const favorites = $('priorityFavoritesLink');
+      if (viewed) viewed.classList.toggle('hidden', !state.recentlyViewed || !state.recentlyViewed.length);
+      if (favorites) favorites.classList.toggle('hidden', !state.favoriteIds || !state.favoriteIds.length);
+      const label = $('priorityCollectionsLabel');
+      if (label) label.textContent = textByLang('Sammlungen','Kolekcje');
+    }
+
+    function renderCollections(){
+      const head = $('collectionsHead');
+      const grid = $('collectionsGrid');
+      if (!head || !grid) return;
+      const defs = collectionDefinitions().map(def => {
+        const recipes = sortedRecipes(state.recipes.filter(def.match)).slice(0, 4);
+        return { ...def, recipes };
+      }).filter(def => def.recipes.length);
+      if (!defs.length){
+        head.classList.add('hidden');
+        grid.classList.add('hidden');
+        grid.innerHTML = '';
+        return;
+      }
+      head.classList.remove('hidden');
+      grid.classList.remove('hidden');
+      $('collectionsTitle').textContent = textByLang('Rezeptsammlungen','Kolekcje przepisów');
+      $('collectionsCopy').textContent = textByLang('Sauber kuratierte Einstiege für Pizza, Grundrezepte, Wölpinghausen, Ostalgie, BBQ und schnelle Alltagsküche.','Starannie przygotowane wejścia do świata pizzy, podstaw, Wölpinghausen, Ostalgie, BBQ i szybkiej kuchni.');
+      grid.innerHTML = defs.map(def => {
+        const ids = def.recipes.map(r => r.id);
+        return `
+          <article class="collection-card" data-collection-key="${esc(def.key)}">
+            <h3>${esc(textByLang(def.de, def.pl))}</h3>
+            <p>${esc(textByLang(def.copyDe, def.copyPl))}</p>
+            <div class="collection-meta"><span>${esc(def.recipes.length + ' ' + textByLang('Rezepte','przepisy'))}</span></div>
+            <div class="collection-actions">
+              <button class="mini-btn primary" data-collection-open="${esc(def.key)}">${esc(textByLang('Sammlung ansehen','Pokaż kolekcję'))}</button>
+            </div>
+          </article>
+        `;
+      }).join('');
+      grid.onclick = e => {
+        const btn = e.target.closest('[data-collection-open]');
+        if (!btn) return;
+        const key = btn.dataset.collectionOpen;
+        const def = defs.find(x => x.key === key);
+        if (!def) return;
+        state.activeCategory = 'all';
+        state.activeQuick = 'all';
+        state.activeTags = [];
+        $('searchInput').value = '';
+        document.querySelectorAll('[data-quick]').forEach(x => x.classList.toggle('active', x.dataset.quick === 'all'));
+        const cards = sortedRecipes(state.recipes.filter(def.match));
+        state.currentLimit = Math.max(INITIAL_VISIBLE, cards.length);
+        renderTopics();
+        renderTagFilters();
+        recipeGrid.innerHTML = cards.map(recipe => `
+          <article class="recipe-card" data-recipe-id="${recipe.id}">
+            <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+            <div class="recipe-body">
+              <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
+              <div class="recipe-title">${esc(recipeTitle(recipe))}</div>
+              <div class="recipe-meta"><span>★</span><span>${esc(recipeTimingLabel(recipe))}</span>${recipe.ratingValue ? `<span>|</span><span>${esc(String(recipe.ratingValue))}/10</span>` : ''}</div>
+              <div class="recipe-actions">
+                <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Zum Rezept','Do przepisu'))}</button>
+                <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
+              </div>
+            </div>
+          </article>
+        `).join('');
+        $('resultCount').textContent = cards.length + ' ' + textByLang('Rezepte in','przepisów w') + ' ' + textByLang(def.de, def.pl);
+        $('loadMoreWrap').classList.add('hidden');
+        emptyBox.classList.toggle('hidden', cards.length !== 0);
+        if (cards[0]) renderPreview(cards[0]);
+        popularHead.scrollIntoView({behavior:'smooth', block:'start'});
+      };
+    }
+
     function absoluteImageUrl(src){
       try{
         return new URL(src, window.location.origin + '/').toString();
@@ -2658,7 +2751,7 @@
           renderQuick();
           renderRecentlyViewed();
           renderFavorites();
-          if (typeof renderCollections === 'function') renderCollections();
+          renderCollections();
           renderHomePriorityNav();
           renderRecipeGrid();
           if (state.activeRecipeId) openRecipe(state.activeRecipeId);
@@ -2680,7 +2773,7 @@
         renderQuick();
         renderRecentlyViewed();
         renderFavorites();
-        if (typeof renderCollections === 'function') renderCollections();
+        renderCollections();
         renderHomePriorityNav();
         renderRecipeGrid();
         updateSuggest();
@@ -2925,7 +3018,7 @@
         renderQuick();
         renderRecentlyViewed();
         renderFavorites();
-        if (typeof renderCollections === 'function') renderCollections();
+        renderCollections();
         renderHomePriorityNav();
         renderRecipeGrid();
         updateSuggest();
