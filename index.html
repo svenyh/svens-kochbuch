@@ -173,6 +173,8 @@
     .recipe-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
     .mini-btn{border:1px solid #e2d8cb;background:#fff;padding:8px 12px;font-size:13px;font-weight:700;color:#5a534b}
     .mini-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .mini-btn.favorite-active{background:#fff3eb;border-color:#ead5c7;color:#c86745}
+    .mini-btn.favorite-toggle{display:inline-flex;align-items:center;gap:6px}
 
     .detail-preview{
       margin-top:52px;display:grid;grid-template-columns:300px 1fr;gap:0;border:1px solid #d7cec2;box-shadow:var(--shadow);background:#fff;overflow:hidden;
@@ -211,6 +213,10 @@
     .modal-meta strong{display:block;color:#cb6843;font-size:18px;margin-bottom:4px;font-family:Inter,system-ui,sans-serif}
     .modal-meta span{font-family:Inter,system-ui,sans-serif;color:#8a7a6a;font-size:13px;line-height:1.5}
     .modal-action-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;font-family:Inter,system-ui,sans-serif}
+    .modal-action-row.share-actions .mini-btn{display:inline-flex;align-items:center;justify-content:center}
+    .modal-share-hint{margin-top:10px;font-size:13px;color:#7a7168;font-family:Inter,system-ui,sans-serif}
+    .mobile-recipe-bar{display:none}
+
     .modal-sections{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:20px}
     .modal-card{border:1px solid #e5ddd2;background:#fff;padding:18px;scroll-margin-top:90px}
     .modal-card h3{font-size:26px;margin-bottom:12px}
@@ -698,6 +704,21 @@
       font-size:24px;
     }
 
+    .home-priority-nav{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;font-family:Inter,system-ui,sans-serif}
+    .home-priority-link{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid #e5d9cc;background:#fff;color:#5a534b;font-size:14px;font-weight:700;text-decoration:none}
+    .home-priority-link:hover{background:#faf3ec;box-shadow:0 8px 18px rgba(58,42,27,.08)}
+    .collection-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;font-family:Inter,system-ui,sans-serif}
+    .collection-card{background:#fff;border:1px solid #ddd6cc;box-shadow:var(--shadow);padding:18px;display:grid;gap:12px}
+    .collection-card h3{margin:0;font-size:24px;line-height:1.1;color:#302a26;font-family:Georgia,"Times New Roman",serif}
+    .collection-card p{margin:0;color:#6d655d;line-height:1.65;font-size:14px}
+    .collection-card .collection-meta{display:flex;flex-wrap:wrap;gap:8px;color:#7a7168;font-size:12px}
+    .collection-card .collection-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .recipe-editorial-helper{padding:0 20px 6px}
+    .recipe-editorial-helper-card{border:1px solid #eadfd2;background:#fff8f2;padding:14px 16px;font-family:Inter,system-ui,sans-serif;color:#615a53;line-height:1.7}
+    .recipe-editorial-helper-card strong{color:#b86745}
+    .recipe-editorial-helper-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .recipe-editorial-helper-chip{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid #eadfd2;background:#fff;color:#645c54;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+
     @media (max-width:1100px){
       .premium-related-grid{grid-template-columns:1fr 1fr}
       
@@ -705,6 +726,7 @@
       .hero-inner{grid-template-columns:1fr}
       .hero-side{grid-template-columns:1fr 1fr}
       .topics{grid-template-columns:1fr}
+      .collection-grid{grid-template-columns:1fr 1fr}
       .recipe-grid{grid-template-columns:repeat(2,1fr)}
       .detail-preview{grid-template-columns:1fr}
       .detail-left{border-right:none;border-bottom:1px solid #e4dbcf}
@@ -742,6 +764,7 @@
       .chip{font-size:14px;padding:8px 12px}
       .filter-btn{width:100%}
       .topics{grid-template-columns:1fr;gap:14px}
+      .collection-grid{grid-template-columns:1fr;gap:14px}
       .topic-card img{height:180px}
       .topic-card h3{font-size:24px}
       .recipe-grid{grid-template-columns:1fr;gap:14px}
@@ -766,6 +789,15 @@
       .modal-card{padding:16px}
       .modal-action-row{display:grid;grid-template-columns:1fr;gap:10px}
       .modal-action-row .mini-btn{width:100%}
+      .modal-action-row.share-actions{grid-template-columns:1fr 1fr}
+      .modal-action-row.share-actions .mini-btn.primary{grid-column:1 / -1}
+      .mobile-recipe-bar{
+        position:sticky;bottom:0;z-index:4;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+        padding:12px 14px 14px;background:rgba(255,253,250,.96);backdrop-filter:blur(10px);
+        border-top:1px solid #eadfd2;margin-top:auto;
+      }
+      .mobile-recipe-bar .mini-btn{width:100%;padding:10px 8px;font-size:12px}
+      .mobile-recipe-bar .mini-btn.primary{font-size:13px}
     }
   </style>
 </head>
@@ -863,6 +895,59 @@
 
     <section class="topics hidden" id="topicsSection"></section>
 
+    <div class="home-priority-nav ui hidden" id="homePriorityNav">
+      <a class="home-priority-link" href="#favoritesHead" id="priorityFavoritesLink">♥ <span id="priorityFavoritesLabel">Merkliste</span></a>
+      <a class="home-priority-link" href="#recentHead" id="priorityRecentLink">↺ <span id="priorityRecentLabel">Zuletzt angesehen</span></a>
+      <a class="home-priority-link" href="#eveningHead" id="priorityEveningLink">☾ <span id="priorityEveningLabel">Für heute Abend</span></a>
+      <a class="home-priority-link" href="#quickHead" id="priorityQuickLink">⚡ <span id="priorityQuickLabel">Schnell gekocht</span></a>
+      <a class="home-priority-link" href="#collectionsHead" id="priorityCollectionsLink">◆ <span id="priorityCollectionsLabel">Sammlungen</span></a>
+    </div>
+
+    <div class="section-head hidden" id="collectionsHead">
+      <div>
+        <h2 id="collectionsTitle">Rezeptsammlungen</h2>
+        <p id="collectionsCopy">Sauber kuratierte Einstiege für Pizza, Grundrezepte, Wölpinghausen, Ostalgie, BBQ und schnelle Alltagsküche.</p>
+      </div>
+    </div>
+
+    <section class="collection-grid hidden" id="collectionsGrid"></section>
+
+    <div class="section-head hidden" id="basicsHead">
+      <div>
+        <h2 id="basicsTitle">Grundrezepte & Pizza-Basics</h2>
+        <p id="basicsCopy">Teige, Saucen und einfache Basisrezepte für Pizza, Brot und ehrliche Alltagsküche.</p>
+      </div>
+    </div>
+
+    <section class="recipe-grid hidden" id="basicsGrid"></section>
+
+    <div class="section-head hidden" id="newHead">
+      <div>
+        <h2 id="newTitle">Neu hinzugefügt</h2>
+        <p id="newCopy">Frisch ergänzte Rezepte, neue Ideen und die neuesten Ergänzungen fürs Kochbuch.</p>
+      </div>
+    </div>
+
+    <section class="recipe-grid hidden" id="newGrid"></section>
+
+    <div class="section-head hidden" id="eveningHead">
+      <div>
+        <h2 id="eveningTitle">Für heute Abend</h2>
+        <p id="eveningCopy">Herzhafte Ideen für den Feierabend – unkompliziert, warm und richtig gut.</p>
+      </div>
+    </div>
+
+    <section class="recipe-grid hidden" id="eveningGrid"></section>
+
+    <div class="section-head hidden" id="quickHead">
+      <div>
+        <h2 id="quickTitle">Schnell gekocht</h2>
+        <p id="quickCopy">Rezepte, die flott auf dem Tisch stehen und trotzdem nach richtigem Essen aussehen.</p>
+      </div>
+    </div>
+
+    <section class="recipe-grid hidden" id="quickGrid"></section>
+
     <div class="section-head hidden" id="recentHead">
       <div>
         <h2 id="recentTitle">Zuletzt angesehen</h2>
@@ -871,6 +956,15 @@
     </div>
 
     <section class="recipe-grid hidden" id="recentGrid"></section>
+
+    <div class="section-head hidden" id="favoritesHead">
+      <div>
+        <h2 id="favoritesTitle">Deine Merkliste</h2>
+        <p id="favoritesCopy">Rezepte, die du dir für später gespeichert hast.</p>
+      </div>
+    </div>
+
+    <section class="recipe-grid hidden" id="favoritesGrid"></section>
 
     <div class="section-head hidden" id="popularHead">
       <div>
@@ -968,6 +1062,14 @@
     ];
     const CATEGORY_LABELS = Object.fromEntries(CATEGORY_CONFIG.map(c => [c.slug, c]));
     const INITIAL_VISIBLE = 24;
+    const COLLECTIONS = [
+      { slug:'pizza-ofen', de:'Pizza & Ofen', pl:'Pizza i piekarnik', anchorId:'basicsHead', matcher:(recipe)=>{ const t=normalize([recipe.titleDe, recipe.titlePl, recipe.categoryDe, recipe.categoryPl].join(' ')); return /pizza|pizzateig|pizzasauce|focaccia|pizzabroetchen|pizzabrötchen|margherita|ofen|auflauf|lasagne|gratin/.test(t); }, copyDe:'Von Teig und Sauce bis zur Ofenidee für den Abend.', copyPl:'Od ciasta i sosu po piekarnikowe pomysły na wieczór.' },
+      { slug:'grundrezepte', de:'Grundrezepte', pl:'Podstawowe przepisy', anchorId:'basicsHead', matcher:(recipe)=>isBasicRecipe(recipe), copyDe:'Die Basis für Pizza, Brot, Sauce und Küchenroutine.', copyPl:'Baza do pizzy, pieczywa, sosów i codziennego gotowania.' },
+      { slug:'woelpinghausen', de:'Wölpinghausen', pl:'Wölpinghausen', anchorId:'topicsHead', matcher:(recipe)=>recipe.categorySlug==='woelpinghausen', copyDe:'Regionale Lieblingsgerichte und bodenständige Küche.', copyPl:'Regionalne ulubione dania i solidna domowa kuchnia.' },
+      { slug:'ostalgie', de:'Ostalgie', pl:'Ostalgie', anchorId:'topicsHead', matcher:(recipe)=>recipe.categorySlug==='ostalgie', copyDe:'Klassiker mit Erinnerung, Herz und ehrlicher Küche.', copyPl:'Klasyki z pamięcią, sercem i domowym charakterem.' },
+      { slug:'bbq', de:'BBQ & Grill', pl:'BBQ i grill', anchorId:'topicsHead', matcher:(recipe)=>recipe.categorySlug==='grill-bbq', copyDe:'Rauchige Ideen, Grillbeilagen und kräftige Abendgerichte.', copyPl:'Dymne pomysły, dodatki z grilla i konkretne wieczorne dania.' },
+      { slug:'schnelle-kueche', de:'Schnelle Küche', pl:'Szybka kuchnia', anchorId:'quickHead', matcher:(recipe)=>isQuickRecipe(recipe), copyDe:'Für Tage, an denen es zügig gehen soll und trotzdem gut schmeckt.', copyPl:'Na dni, kiedy ma być szybko, ale nadal bardzo smacznie.' }
+    ];
 
     const state = {
       recipes: [],
@@ -978,7 +1080,10 @@
       activeRecipeId: null,
       activeTags: [],
       currentLimit: INITIAL_VISIBLE,
-      recentlyViewedIds: []
+      recentlyViewedIds: [],
+      favoriteIds: [],
+      modalContext: null,
+      suppressContextRestore: false
     };
 
     const $ = id => document.getElementById(id);
@@ -987,6 +1092,18 @@
     const searchSection = $('searchSection');
     const topicsHead = $('topicsHead');
     const topicsSection = $('topicsSection');
+    const basicsHead = $('basicsHead');
+    const basicsGrid = $('basicsGrid');
+    const newHead = $('newHead');
+    const newGrid = $('newGrid');
+    const eveningHead = $('eveningHead');
+    const eveningGrid = $('eveningGrid');
+    const quickHead = $('quickHead');
+    const quickGrid = $('quickGrid');
+    const recentHead = $('recentHead');
+    const recentGrid = $('recentGrid');
+    const favoritesHead = $('favoritesHead');
+    const favoritesGrid = $('favoritesGrid');
     const popularHead = $('popularHead');
     const recipeGrid = $('recipeGrid');
     const detailPreviewSection = $('detailPreviewSection');
@@ -1129,6 +1246,21 @@
     function safeLocalStorageSet(key, value){
       try{ localStorage.setItem(key, JSON.stringify(value)); }catch(_){}
     }
+
+    function isFavorite(recipeId){
+      return state.favoriteIds.some(id => String(id) === String(recipeId));
+    }
+
+    function favoriteButtonLabel(recipeId){
+      return isFavorite(recipeId)
+        ? textByLang('Gemerkt','Zapisane')
+        : textByLang('Merken','Zapisz');
+    }
+
+    function favoriteButtonClass(recipeId){
+      return `mini-btn favorite-toggle ${isFavorite(recipeId) ? 'favorite-active' : ''}`;
+    }
+
     function currentRecipeUrl(recipeId){
       const url = new URL(window.location.href);
       url.hash = '#rezept-' + recipeId;
@@ -1277,6 +1409,8 @@
       });
       $('topicsTitle').textContent = textByLang('Themenwelten','Światy smaków');
       $('topicsCopy').textContent = textByLang('Lieblingskategorien für Alltag, Wochenende und besondere Küchenmomente.','Wybrane według stylu, codzienności i ulubionej kuchni.');
+      $('basicsTitle').textContent = textByLang('Grundrezepte & Pizza-Basics','Podstawy kuchni i pizza-bazy');
+      $('basicsCopy').textContent = textByLang('Teige, Saucen und einfache Basisrezepte für Pizza, Brot und ehrliche Alltagsküche.','Ciasta, sosy i proste przepisy bazowe do pizzy, pieczywa i codziennego gotowania.');
       $('popularTitle').textContent = textByLang('Beliebte Rezepte','Popularne przepisy');
       $('popularCopy').textContent = textByLang('Rezepte zum Stöbern, Speichern und immer wieder Nachkochen.','Przepisy do odkrywania, zapisywania i gotowania na nowo.');
       const topicsCopy = $('topicsCopy');
@@ -1424,8 +1558,230 @@
       return entry ? textByLang(entry.de, entry.pl) : '';
     }
 
+    function loadFavorites(){
+      state.favoriteIds = safeLocalStorageGet('svens_kochbuch_favorites', []).filter(id => state.recipes.some(r => String(r.id) === String(id))).slice(0,24);
+    }
+
+    function toggleFavorite(recipeId){
+      if (isFavorite(recipeId)) state.favoriteIds = state.favoriteIds.filter(id => String(id) !== String(recipeId));
+      else state.favoriteIds = [Number(recipeId), ...state.favoriteIds.filter(id => String(id) !== String(recipeId))].slice(0,24);
+      safeLocalStorageSet('svens_kochbuch_favorites', state.favoriteIds);
+    }
+
+
+    function isBasicRecipe(recipe){
+      const source = normalize([
+        recipe.titleDe,
+        recipe.titlePl,
+        recipe.categoryDe,
+        recipe.categoryPl,
+        ...(recipe.ingredientsDe || []),
+        ...(recipe.ingredientsPl || [])
+      ].join(' '));
+      return recipe.categorySlug === 'grundlagen-saucen'
+        || /grundrezept|basisrezept|pizzateig|pizza sauce|pizzasauce|knoblauchoel|knoblauchol|focaccia|pizzabroetchen|pizza margherita/.test(source);
+    }
+
+    function basicRecipes(){
+      return sortedRecipes(state.recipes.filter(isBasicRecipe)).slice(0, 8);
+    }
+
+    function renderBasics(){
+      const recipes = basicRecipes();
+      const hasItems = recipes.length > 0;
+      basicsHead.classList.toggle('hidden', !hasItems);
+      basicsGrid.classList.toggle('hidden', !hasItems);
+      if (!hasItems){
+        basicsGrid.innerHTML = '';
+        return;
+      }
+      $('basicsTitle').textContent = textByLang('Grundrezepte & Pizza-Basics','Podstawy kuchni i pizza-bazy');
+      $('basicsCopy').textContent = textByLang('Teige, Saucen und einfache Basisrezepte für Pizza, Brot und ehrliche Alltagsküche.','Ciasta, sosy i proste przepisy bazowe do pizzy, pieczywa i codziennego gotowania.');
+      basicsGrid.innerHTML = recipes.map(recipe => `
+        <article class="recipe-card" data-recipe-id="${recipe.id}">
+          <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+          <div class="recipe-body">
+            <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
+            <div class="recipe-title">${esc(recipeTitle(recipe))}</div>
+            <div class="recipe-meta">
+              <span>★</span>
+              <span>${esc(recipeTimingLabel(recipe))}</span>
+              ${recipe.ratingValue ? `<span>• ${esc(String(recipe.ratingValue))}/10</span>` : ''}
+            </div>
+            <div class="recipe-actions">
+              <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Rezept öffnen','Otwórz przepis'))}</button>
+              <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function newestRecipes(){
+      return sortedRecipes([...state.recipes]).slice(0, 8);
+    }
+
+    function renderNewlyAdded(){
+      const recipes = newestRecipes();
+      const hasItems = recipes.length > 0;
+      newHead.classList.toggle('hidden', !hasItems);
+      newGrid.classList.toggle('hidden', !hasItems);
+      if (!hasItems){
+        newGrid.innerHTML = '';
+        return;
+      }
+      $('newTitle').textContent = textByLang('Neu hinzugefügt','Nowo dodane');
+      $('newCopy').textContent = textByLang('Frisch ergänzte Rezepte, neue Ideen und die neuesten Ergänzungen fürs Kochbuch.','Świeżo dodane przepisy, nowe pomysły i najnowsze dodatki do książki kucharskiej.');
+      newGrid.innerHTML = recipes.map(recipe => `
+        <article class="recipe-card" data-recipe-id="${recipe.id}">
+          <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+          <div class="recipe-body">
+            <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
+            <div class="recipe-title">${esc(recipeTitle(recipe))}</div>
+            <div class="recipe-meta">
+              <span>Neu</span>
+              <span>#${esc(String(recipe.id))}</span>
+              <span>• ${esc(recipeTimingLabel(recipe))}</span>
+            </div>
+            <div class="recipe-actions">
+              <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Rezept öffnen','Otwórz przepis'))}</button>
+              <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+
+    function renderCollectionCards(recipes){
+      return recipes.map(recipe => `
+        <article class="recipe-card" data-recipe-id="${recipe.id}">
+          <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+          <div class="recipe-body">
+            <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
+            <div class="recipe-title">${esc(recipeTitle(recipe))}</div>
+            <div class="recipe-meta">
+              <span>★</span>
+              <span>${esc(recipeTimingLabel(recipe))}</span>
+              ${recipe.ratingValue ? `<span>• ${esc(String(recipe.ratingValue))}/10</span>` : ''}
+            </div>
+            <div class="recipe-actions">
+              <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Rezept öffnen','Otwórz przepis'))}</button>
+              <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function isEveningRecipe(recipe){
+      const text = normalize([
+        recipe.titleDe, recipe.titlePl, recipe.categoryDe, recipe.categoryPl,
+        ...(recipe.ingredientsDe || []), ...(recipe.ingredientsPl || []),
+        ...(recipe.preparationDe || []), ...(recipe.preparationPl || []),
+        ...(recipe.tipsDe || []), ...(recipe.tipsPl || [])
+      ].join(' '));
+      const timing = recipeTimingLabel(recipe);
+      const minutesMatch = timing.match(/(\d{1,3})/);
+      const minutes = minutesMatch ? Number(minutesMatch[1]) : 999;
+      const collections = recipeCollectionSet(recipe);
+      return (
+        collections.has('ofen-auflaeufe')
+        || collections.has('klassiker-hausmannskost')
+        || collections.has('grill-bbq')
+        || /auflauf|ofen|lasagne|gratin|gyros|kartoffel|huhn|hahn|schinken|wurst|leczo|pizza|focaccia|eintopf|pfanne|abend|abendessen|kolacja/.test(text)
+        || minutes <= 55
+      );
+    }
+
+    function eveningRecipes(){
+      return sortedRecipes(state.recipes.filter(recipe => isEveningRecipe(recipe) && !isBasicRecipe(recipe))).slice(0, 8);
+    }
+
+    function renderEvening(){
+      const recipes = eveningRecipes();
+      const hasItems = recipes.length > 0;
+      eveningHead.classList.toggle('hidden', !hasItems);
+      eveningGrid.classList.toggle('hidden', !hasItems);
+      if (!hasItems){
+        eveningGrid.innerHTML = '';
+        return;
+      }
+      $('eveningTitle').textContent = textByLang('Für heute Abend','Na dzisiejszy wieczór');
+      $('eveningCopy').textContent = textByLang('Herzhafte Ideen für den Feierabend – unkompliziert, warm und richtig gut.','Pomysły na ciepły wieczorny posiłek – proste, sycące i naprawdę dobre.');
+      eveningGrid.innerHTML = renderCollectionCards(recipes);
+    }
+
+    function isQuickRecipe(recipe){
+      const text = normalize([
+        recipe.titleDe, recipe.titlePl, recipe.categoryDe, recipe.categoryPl,
+        ...(recipe.ingredientsDe || []), ...(recipe.ingredientsPl || []),
+        ...(recipe.preparationDe || []), ...(recipe.preparationPl || []),
+        ...(recipe.tipsDe || []), ...(recipe.tipsPl || [])
+      ].join(' '));
+      const timing = recipeTimingLabel(recipe);
+      const minutesMatch = timing.match(/(\d{1,3})/);
+      const minutes = minutesMatch ? Number(minutesMatch[1]) : 999;
+      return (
+        (recipe.tags || []).some(tag => ['alltag','pfanne'].includes(tag.slug))
+        || minutes <= 35
+        || /schnell|quick|fix|feierabend|pfanne|wok|salat|wrap|brotchen|brötchen|puffer|30 minuten|30 minut/.test(text)
+      );
+    }
+
+    function quickRecipes(){
+      return sortedRecipes(state.recipes.filter(recipe => isQuickRecipe(recipe) && !isBasicRecipe(recipe))).slice(0, 8);
+    }
+
+    function renderQuick(){
+      const recipes = quickRecipes();
+      const hasItems = recipes.length > 0;
+      quickHead.classList.toggle('hidden', !hasItems);
+      quickGrid.classList.toggle('hidden', !hasItems);
+      if (!hasItems){
+        quickGrid.innerHTML = '';
+        return;
+      }
+      $('quickTitle').textContent = textByLang('Schnell gekocht','Szybko ugotowane');
+      $('quickCopy').textContent = textByLang('Rezepte, die flott auf dem Tisch stehen und trotzdem nach richtigem Essen aussehen.','Przepisy, które szybko lądują na stole, a nadal smakują jak porządny domowy obiad.');
+      quickGrid.innerHTML = renderCollectionCards(recipes);
+    }
+
+    function renderFavorites(){
+      const recipes = state.favoriteIds
+        .map(id => state.recipes.find(r => String(r.id) === String(id)))
+        .filter(Boolean);
+      const hasItems = recipes.length > 0;
+      favoritesHead.classList.toggle('hidden', !hasItems);
+      favoritesGrid.classList.toggle('hidden', !hasItems);
+      if (!hasItems){
+        favoritesGrid.innerHTML = '';
+        return;
+      }
+      $('favoritesTitle').textContent = textByLang('Deine Merkliste','Twoja lista zapisanych');
+      $('favoritesCopy').textContent = textByLang('Rezepte, die du dir für später gespeichert hast.','Przepisy zapisane na później.');
+      favoritesGrid.innerHTML = recipes.map(recipe => `
+        <article class="recipe-card" data-recipe-id="${recipe.id}">
+          <img src="${esc(recipe.imageSrc)}" alt="${esc(recipeTitle(recipe))}" onerror="onImgError(this)">
+          <div class="recipe-body">
+            <div class="recipe-category-badge">${esc(recipeCategory(recipe))}</div>
+            <div class="recipe-title">${esc(recipeTitle(recipe))}</div>
+            <div class="recipe-meta">
+              <span>★</span>
+              <span>${esc(recipeTimingLabel(recipe))}</span>
+              ${recipe.ratingValue ? `<span>• ${esc(String(recipe.ratingValue))}/10</span>` : ''}
+            </div>
+            <div class="recipe-actions">
+              <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Rezept öffnen','Otwórz przepis'))}</button>
+              <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
     function loadRecentlyViewed(){
-      state.recentlyViewedIds = safeLocalStorageGet('svens_kochbuch_recently_viewed', []).filter(id => state.recipes.some(r => String(r.id) === String(id))).slice(0,8);
+      state.recentlyViewedIds = safeLocalStorageGet('svens_kochbuch_recently_viewed', []).filter(id => state.recipes.some(r => String(id) === String(r.id))).slice(0,8);
     }
 
     function rememberRecentlyViewed(recipeId){
@@ -1460,6 +1816,7 @@
             </div>
             <div class="recipe-actions">
               <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Rezept öffnen','Otwórz przepis'))}</button>
+              <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
             </div>
           </div>
         </article>
@@ -1502,6 +1859,7 @@
             </div>
             <div class="recipe-actions">
               <button class="mini-btn primary" data-open="${recipe.id}">${esc(textByLang('Zum Rezept','Do przepisu'))}</button>
+              <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
             </div>
           </div>
         </article>
@@ -1545,29 +1903,99 @@
         ...(recipe.preparationDe || []), ...(recipe.preparationPl || []),
         ...(recipe.tipsDe || []), ...(recipe.tipsPl || [])
       ].join(' '));
-      return new Set(text.split(/[^a-z0-9]+/).filter(x => x.length >= 4));
+      const stopwords = new Set([
+        'frisch','kleine','kleiner','gross','grosse','grosser','etwas','optional','klassisch','klassische','einfach',
+        'rezept','gerichte','gericht','personen','portionen','zubereitung','timing','tipps','varianten','frische','frischer',
+        'salz','pfeffer','wasser','olivenoel','olivenol','minuten','minute','gramm','stueck','stuck','teeloffel','essloffel',
+        'schale','schuessel','schuss','nach','wahl','dazu','dann','heiss','warm'
+      ]);
+      return new Set(text.split(/[^a-z0-9]+/).filter(x => x.length >= 4 && !stopwords.has(x)));
+    }
+
+    function recipeTitleTokenSet(recipe){
+      const text = normalize([recipe.titleDe, recipe.titlePl].join(' '));
+      const stopwords = new Set(['klassisch','klassische','einfach','style','sven','rezept']);
+      return new Set(text.split(/[^a-z0-9]+/).filter(x => x.length >= 4 && !stopwords.has(x)));
+    }
+
+    function recipeCollectionSet(recipe){
+      const text = normalize([recipe.titleDe, recipe.titlePl, recipe.categoryDe, recipe.categoryPl, recipe.categorySlug].join(' '));
+      const collections = new Set();
+      const add = key => collections.add(key);
+      if (recipe.categorySlug) add(recipe.categorySlug);
+      if ((recipe.tags || []).some(tag => ['bbq'].includes(tag.slug))) add('grill-bbq');
+      if ((recipe.tags || []).some(tag => ['beilage'].includes(tag.slug))) add('salate-beilagen');
+      if ((recipe.tags || []).some(tag => ['suppe'].includes(tag.slug))) add('suppen-eintoepfe');
+      if ((recipe.tags || []).some(tag => ['alltag'].includes(tag.slug))) add('schnelle-kueche');
+      if (/pizza|pizzateig|pizzasauce|pizzabrotchen|focaccia|margherita|knoblauchoel|knoblauchol/.test(text)) add('pizza-basics');
+      if (/grundlagen|grundrezepte|basis|basics|sauce|saucen|dressing|oel|ol|dip/.test(text)) add('grundrezepte');
+      if (/kuchen|torte|sernik|szarlotka|murzynek|bananenbrot|karottenkuchen|dessert/.test(text)) add('backen-suesses');
+      if (/auflauf|lasagne|gratin|ofen|zapiek/.test(text)) add('ofen-auflaeufe');
+      if (/salat|salate|salatka|beilage|beilagen/.test(text)) add('salate-beilagen');
+      if (/grill|bbq|smoker/.test(text)) add('grill-bbq');
+      if (/suppe|eintopf|zupa|gulasz/.test(text)) add('suppen-eintoepfe');
+      return collections;
+    }
+
+    function overlapCount(setA, setB, max=99){
+      let count = 0;
+      setA.forEach(value => {
+        if (setB.has(value) && count < max) count += 1;
+      });
+      return count;
     }
 
     function relatedRecipesFor(recipe, limit=4){
-      const baseSet = recipeKeywordSet(recipe);
-      return state.recipes
+      const baseKeywords = recipeKeywordSet(recipe);
+      const baseTitleTokens = recipeTitleTokenSet(recipe);
+      const baseCollections = recipeCollectionSet(recipe);
+      const baseTags = new Set((recipe.tags || []).map(tag => tag.slug));
+
+      const ranked = state.recipes
         .filter(r => r.id !== recipe.id)
         .map(r => {
-          const kws = recipeKeywordSet(r);
-          let overlap = 0;
-          baseSet.forEach(k => { if (kws.has(k)) overlap += 1; });
+          const keywordOverlap = overlapCount(baseKeywords, recipeKeywordSet(r), 6);
+          const titleOverlap = overlapCount(baseTitleTokens, recipeTitleTokenSet(r), 3);
+          const candidateCollections = recipeCollectionSet(r);
+          const sharedCollections = overlapCount(baseCollections, candidateCollections, 4);
           const sameCategory = r.categorySlug === recipe.categorySlug;
-          const sharedTagCount = (r.tags || []).filter(tag => (recipe.tags || []).some(base => base.slug === tag.slug)).length;
+          const sharedTagCount = (r.tags || []).filter(tag => baseTags.has(tag.slug)).length;
+          const bothBasics = baseCollections.has('grundrezepte') && candidateCollections.has('grundrezepte');
+          const bothPizzaBasics = baseCollections.has('pizza-basics') && candidateCollections.has('pizza-basics');
+
           let score = 0;
-          if (sameCategory) score += 42;
-          score += Math.min(overlap, 8) * 4;
-          score += sharedTagCount * 7;
-          if ((r.ratingValue || 0) >= 8) score += 3;
-          if (Math.abs((r.id || 0) - (recipe.id || 0)) <= 12) score += 2;
-          const isRelevant = (sameCategory && (sharedTagCount >= 1 || overlap >= 2)) || sharedTagCount >= 2 || overlap >= 4;
-          return { r, score, isRelevant, sameCategory, sharedTagCount, overlap };
-        })
-        .filter(x => x.isRelevant && x.score >= 24)
+          score += sharedCollections * 24;
+          if (sameCategory) score += 18;
+          score += sharedTagCount * 10;
+          score += titleOverlap * 9;
+          score += Math.min(keywordOverlap, 5) * 4;
+          if (bothBasics) score += 8;
+          if (bothPizzaBasics) score += 10;
+          if ((r.ratingValue || 0) >= 8) score += 2;
+          if (Math.abs((r.id || 0) - (recipe.id || 0)) <= 10) score += 1;
+
+          const isRelevant = (
+            (sharedCollections >= 1 && (sharedTagCount >= 1 || titleOverlap >= 1 || keywordOverlap >= 2 || sameCategory)) ||
+            (sameCategory && (sharedTagCount >= 1 || titleOverlap >= 1 || keywordOverlap >= 2)) ||
+            (sharedTagCount >= 2) ||
+            (titleOverlap >= 2) ||
+            (bothPizzaBasics && (titleOverlap >= 1 || keywordOverlap >= 2)) ||
+            (bothBasics && keywordOverlap >= 2)
+          );
+
+          return { r, score, isRelevant, sameCategory, sharedCollections, sharedTagCount, titleOverlap, keywordOverlap };
+        });
+
+      const primary = ranked
+        .filter(x => x.isRelevant && x.score >= 26)
+        .sort((a,b) => b.score - a.score || (b.r.ratingValue || 0) - (a.r.ratingValue || 0) || b.r.id - a.r.id)
+        .slice(0, limit)
+        .map(x => x.r);
+
+      if (primary.length >= Math.min(limit, 3)) return primary;
+
+      return ranked
+        .filter(x => (x.sameCategory || x.sharedCollections >= 1) && x.score >= 18)
         .sort((a,b) => b.score - a.score || (b.r.ratingValue || 0) - (a.r.ratingValue || 0) || b.r.id - a.r.id)
         .slice(0, limit)
         .map(x => x.r);
@@ -1836,10 +2264,106 @@
       `;
     }
 
-    function openRecipe(id){
+
+    function getBrowseContextTitle(){
+      const query = currentQuery();
+      if (query) return textByLang('Suchergebnisse','Wyniki wyszukiwania');
+      if (state.activeCategory !== 'all'){
+        const cat = categoryCounts().find(c => c.slug === state.activeCategory);
+        return cat ? textByLang(cat.de, cat.pl) : textByLang('Themenwelt','Kolekcja');
+      }
+      if (state.activeQuick === 'favorites') return textByLang('Beliebte Rezepte','Popularne przepisy');
+      if (state.activeQuick === 'new') return textByLang('Neu hinzugefügt','Nowo dodane');
+      if (state.activeQuick === 'oven') return textByLang('Ofenrezepte','Przepisy z piekarnika');
+      if (state.activeQuick === 'quick') return textByLang('Schnelle Küche','Szybka kuchnia');
+      return textByLang('Alle Rezepte','Wszystkie przepisy');
+    }
+
+    function currentBrowseContext(){
+      const query = $('searchInput').value || '';
+      return {
+        source: 'browse',
+        title: getBrowseContextTitle(),
+        anchorId: 'popularHead',
+        recipeIds: filteredRecipes().map(r => r.id),
+        filters: {
+          activeCategory: state.activeCategory,
+          activeQuick: state.activeQuick,
+          activeTags: [...state.activeTags],
+          sortMode: state.sortMode,
+          query,
+          currentLimit: state.currentLimit
+        },
+        scrollY: window.scrollY
+      };
+    }
+
+    function buildContextFromCollection(source, title, recipeIds, anchorId, extra={}){
+      return {
+        source,
+        title,
+        anchorId,
+        recipeIds: (recipeIds || []).map(id => Number(id)).filter(Boolean),
+        filters: null,
+        scrollY: window.scrollY,
+        ...extra
+      };
+    }
+
+    function contextLabel(context){
+      if (!context || !context.title) return textByLang('Zurück','Wróć');
+      return textByLang('Zurück zu','Powrót do') + ' ' + context.title;
+    }
+
+    function restoreModalContext(){
+      const context = state.modalContext;
+      modal.classList.remove('open');
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+      state.activeRecipeId = null;
+      updateGlobalSeo();
+      if (!context || state.suppressContextRestore) {
+        state.suppressContextRestore = false;
+        return;
+      }
+      if (context.filters) {
+        state.activeCategory = context.filters.activeCategory;
+        state.activeQuick = context.filters.activeQuick;
+        state.activeTags = [...(context.filters.activeTags || [])];
+        state.sortMode = context.filters.sortMode || 'new';
+        state.currentLimit = context.filters.currentLimit || INITIAL_VISIBLE;
+        $('searchInput').value = context.filters.query || '';
+        $('sortSelect').value = state.sortMode;
+        document.querySelectorAll('[data-quick]').forEach(x => x.classList.toggle('active', x.dataset.quick === state.activeQuick));
+        renderTopics();
+        renderTagFilters();
+        renderRecipeGrid();
+        updateSuggest();
+      }
+      requestAnimationFrame(() => {
+        const anchor = context.anchorId ? $(context.anchorId) : null;
+        if (anchor) anchor.scrollIntoView({behavior:'smooth', block:'start'});
+        if (typeof context.scrollY === 'number') {
+          setTimeout(() => window.scrollTo({top: context.scrollY, behavior:'smooth'}), 80);
+        }
+      });
+      state.suppressContextRestore = false;
+    }
+
+    function modalPrevNext(recipe, context){
+      if (!context || !context.recipeIds || !context.recipeIds.length) return { prev:null, next:null, title:'' };
+      const ids = context.recipeIds.map(id => String(id));
+      const index = ids.indexOf(String(recipe.id));
+      if (index === -1) return { prev:null, next:null, title:context.title || '' };
+      const prev = index > 0 ? state.recipes.find(r => String(r.id) === ids[index - 1]) : null;
+      const next = index < ids.length - 1 ? state.recipes.find(r => String(r.id) === ids[index + 1]) : null;
+      return { prev, next, title: context.title || '' };
+    }
+
+    function openRecipe(id, context = null){
       const recipe = state.recipes.find(r => String(r.id) === String(id));
       if (!recipe) return;
       state.activeRecipeId = recipe.id;
+      state.modalContext = context || currentBrowseContext();
       rememberRecentlyViewed(recipe.id);
       renderRecentlyViewed();
       updateRecipeSeo(recipe);
@@ -1850,6 +2374,7 @@
       const tipsForDisplay = tips.length ? tips : buildVariantsFallback(recipe);
       modalTitle.textContent = recipeTitle(recipe);
       const relatedRecipes = relatedRecipesFor(recipe, 6);
+      const modalNav = modalPrevNext(recipe, state.modalContext);
       modalBody.innerHTML = `
         <section class="modal-layout">
           <div class="modal-content">
@@ -1867,10 +2392,18 @@
                 ${recipe.ratingValue ? `<span><span class="recipe-meta-label">${esc(textByLang('Bewertung','Ocena'))}</span>${esc(String(recipe.ratingValue))}/10</span>` : ''}
                 <span><span class="recipe-meta-label">${esc(textByLang('Sammlung','Kolekcja'))}</span>${esc(recipeCategory(recipe))}</span>
               </div>
-              <div class="modal-action-row">
+              <div class="modal-action-row share-actions">
                 <button class="mini-btn" data-copy-recipe="${recipe.id}">${esc(textByLang('Link kopieren','Kopiuj link'))}</button>
+                <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥ ${esc(favoriteButtonLabel(recipe.id))}</button>
+                <button class="mini-btn" data-share-recipe="${recipe.id}">${esc(textByLang('Teilen','Udostępnij'))}</button>
                 <button class="mini-btn" data-share-wa="${recipe.id}">WhatsApp</button>
                 <button class="mini-btn primary" data-print-recipe="${recipe.id}">${esc(textByLang('Drucken','Drukuj'))}</button>
+              </div>
+              <div class="modal-share-hint">${esc(textByLang('Teilen, merken oder als saubere Rezeptansicht drucken.','Udostępnij, zapisz lub wydrukuj przepis w czystym widoku.'))}</div>
+              <div class="modal-action-row modal-action-row-nav">
+                <button class="mini-btn" data-back-context="1">← ${esc(contextLabel(state.modalContext))}</button>
+                <button class="mini-btn" data-prev-recipe="${modalNav.prev ? modalNav.prev.id : ''}" ${modalNav.prev ? '' : 'style="opacity:.5;pointer-events:none"'}>← ${esc(textByLang('Vorheriges Rezept','Poprzedni przepis'))}</button>
+                <button class="mini-btn" data-next-recipe="${modalNav.next ? modalNav.next.id : ''}" ${modalNav.next ? '' : 'style="opacity:.5;pointer-events:none"'}>${esc(textByLang('Nächstes Rezept','Następny przepis'))} →</button>
               </div>
               <div class="recipe-section-tabs">
                 <button class="recipe-section-tab" data-section-jump="ingredients">${esc(textByLang('Zutaten','Składniki'))}</button>
@@ -1890,6 +2423,16 @@
                 <div class="recipe-editorial-lead">${esc(textByLang('Kurz vor dem Kochen','Przed gotowaniem'))}</div>
                 <p>${esc(recipeIntro(recipe) || textByLang('Dieses Rezept ist klar aufgebaut und alltagstauglich.','Ten przepis jest przejrzysty i sprawdza się na co dzień.'))}</p>
                 <div class="recipe-editorial-aside">${esc(buildIntroAside(recipe))}</div>
+              </div>
+            </section>
+
+            <section class="recipe-editorial-helper">
+              <div class="recipe-editorial-helper-card">
+                <strong>${esc(textByLang('Sammlung & Orientierung','Kolekcja i orientacja'))}</strong>
+                <div>${esc(textByLang('Dieses Rezept passt in folgende Küchenwelt: ','Ten przepis pasuje do następującej kolekcji: '))}${esc(recipeCollectionHighlights(recipe).join(' · ') || recipeCategory(recipe))}</div>
+                <div class="recipe-editorial-helper-row">
+                  ${recipeCompanionRecipes(recipe,3).map(rel => `<span class="recipe-editorial-helper-chip">${esc(recipeTitle(rel))}</span>`).join('')}
+                </div>
               </div>
             </section>
 
@@ -1918,7 +2461,7 @@
               <div class="premium-section-head">
                 <div>
                   <h3>${esc(textByLang('Das passt auch gut dazu','To też dobrze pasuje'))}</h3>
-                  <p>${esc(textByLang('Aus derselben Küchenwelt oder mit ähnlicher Richtung – bewusst ausgewählt statt zufällig gemischt.','Z tej samej kuchennej rodziny albo o podobnym charakterze – dobrane świadomie, a nie przypadkowo.'))}</p>
+                  <p>${esc(textByLang('Aus derselben Themenwelt, mit ähnlichen Zutaten oder passender Kochidee – gezielter ausgewählt statt nur grob nach Kategorie.','Z tej samej kuchennej rodziny albo o podobnym charakterze – dobrane świadomie, a nie przypadkowo.'))}</p>
                 </div>
               </div>
               <div class="premium-related-grid">
@@ -1939,6 +2482,12 @@
               </div>
             </section>
             ` : ''}
+            <div class="mobile-recipe-bar">
+              <button class="mini-btn" data-copy-recipe="${recipe.id}">${esc(textByLang('Link','Link'))}</button>
+              <button class="mini-btn" data-share-recipe="${recipe.id}">${esc(textByLang('Teilen','Udostępnij'))}</button>
+              <button class="${favoriteButtonClass(recipe.id)}" data-favorite-toggle="${recipe.id}">♥</button>
+              <button class="mini-btn primary" data-print-recipe="${recipe.id}">${esc(textByLang('Drucken','Drukuj'))}</button>
+            </div>
           </div>
         </section>
       `;
@@ -1957,7 +2506,8 @@
         });
       });
       modalBody.querySelector('[data-breadcrumb-home]')?.addEventListener('click', () => {
-        closeModal();
+        state.suppressContextRestore = true;
+        restoreModalContext();
         state.activeCategory = 'all';
         state.activeQuick = 'all';
         state.activeTags = [];
@@ -1970,7 +2520,8 @@
         window.scrollTo({top:0, behavior:'smooth'});
       });
       modalBody.querySelector('[data-breadcrumb-category]')?.addEventListener('click', () => {
-        closeModal();
+        state.suppressContextRestore = true;
+        restoreModalContext();
         state.activeCategory = recipe.categorySlug;
         state.activeQuick = 'all';
         state.activeTags = [];
@@ -1987,12 +2538,31 @@
         const ok = await copyTextRobust(currentRecipeUrl(recipe.id));
         if (ok) showActionFeedback(textByLang('Link kopiert','Link skopiowany'));
       });
+      modalBody.querySelector('[data-favorite-toggle]')?.addEventListener('click', () => {
+        toggleFavorite(recipe.id);
+        renderFavorites();
+        renderRecentlyViewed();
+        renderRecipeGrid();
+        openRecipe(recipe.id);
+      });
       modalBody.querySelector('[data-share-wa]')?.addEventListener('click', () => {
         const share = encodeURIComponent(recipeTitle(recipe) + ' ' + currentRecipeUrl(recipe.id));
         window.open('https://wa.me/?text=' + share, '_blank');
       });
+      modalBody.querySelector('[data-back-context]')?.addEventListener('click', () => {
+        restoreModalContext();
+      });
+      modalBody.querySelector('[data-prev-recipe]')?.addEventListener('click', e => {
+        const targetId = e.currentTarget.dataset.prevRecipe;
+        if (targetId) openRecipe(targetId, state.modalContext);
+      });
+      modalBody.querySelector('[data-next-recipe]')?.addEventListener('click', e => {
+        const targetId = e.currentTarget.dataset.nextRecipe;
+        if (targetId) openRecipe(targetId, state.modalContext);
+      });
       modalBody.querySelectorAll('[data-open-related]').forEach(card => {
-        card.addEventListener('click', () => openRecipe(card.dataset.openRelated));
+        const relatedContext = buildContextFromCollection('related', textByLang('Ähnliche Rezepte','Podobne przepisy'), [recipe.id, ...relatedRecipes.map(rel => rel.id)], 'popularHead');
+        card.addEventListener('click', () => openRecipe(card.dataset.openRelated, relatedContext));
       });
       modalBody.querySelector('[data-print-recipe]')?.addEventListener('click', () => {
         const printWindow = window.open('', '_blank');
@@ -2083,7 +2653,13 @@
           updateHero();
           renderTagFilters();
           renderTopics();
+          renderBasics();
+          renderEvening();
+          renderQuick();
           renderRecentlyViewed();
+          renderFavorites();
+          renderCollections();
+          renderHomePriorityNav();
           renderRecipeGrid();
           if (state.activeRecipeId) openRecipe(state.activeRecipeId);
           else updateGlobalSeo();
@@ -2098,7 +2674,14 @@
         state.currentLimit = INITIAL_VISIBLE;
         renderTagFilters();
         renderTopics();
+        renderBasics();
+        renderNewlyAdded();
+        renderEvening();
+        renderQuick();
         renderRecentlyViewed();
+        renderFavorites();
+        renderCollections();
+        renderHomePriorityNav();
         renderRecipeGrid();
         updateSuggest();
       });
@@ -2181,23 +2764,105 @@
         renderRecipeGrid();
         updateSuggest();
       });
-      recentGrid.addEventListener('click', e => {
+      basicsGrid.addEventListener('click', e => {
+        const favoriteBtn = e.target.closest('[data-favorite-toggle]');
+        if (favoriteBtn) {
+          toggleFavorite(favoriteBtn.dataset.favoriteToggle);
+          renderBasics();
+          renderNewlyAdded();
+          renderNewlyAdded();
+          renderEvening();
+          renderQuick();
+          renderRecentlyViewed();
+          renderFavorites();
+          renderRecipeGrid();
+          return;
+        }
         const btn = e.target.closest('[data-open]');
         if (btn) {
-          openRecipe(btn.dataset.open);
+          openRecipe(btn.dataset.open, buildContextFromCollection('basics', textByLang('Grundrezepte & Pizza-Basics','Podstawy i pizza basics'), basicRecipes().map(r => r.id), 'basicsHead'));
+        }
+        const card = e.target.closest('[data-recipe-id]');
+        if (!btn && !favoriteBtn && card) openRecipe(card.dataset.recipeId, buildContextFromCollection('basics', textByLang('Grundrezepte & Pizza-Basics','Podstawy i pizza basics'), basicRecipes().map(r => r.id), 'basicsHead'));
+      });
+      newGrid.addEventListener('click', e => {
+        const favoriteBtn = e.target.closest('[data-favorite-toggle]');
+        if (favoriteBtn) {
+          toggleFavorite(favoriteBtn.dataset.favoriteToggle);
+          renderNewlyAdded();
+          renderEvening();
+          renderQuick();
+          renderRecentlyViewed();
+          renderFavorites();
+          renderRecipeGrid();
+          return;
+        }
+        const ids = newestRecipes().map(r => r.id);
+        const btn = e.target.closest('[data-open]');
+        if (btn) {
+          openRecipe(btn.dataset.open, buildContextFromCollection('new', textByLang('Neu hinzugefügt','Nowo dodane'), ids, 'newHead'));
           return;
         }
         const card = e.target.closest('[data-recipe-id]');
-        if (card) openRecipe(card.dataset.recipeId);
+        if (card) openRecipe(card.dataset.recipeId, buildContextFromCollection('new', textByLang('Neu hinzugefügt','Nowo dodane'), ids, 'newHead'));
+      });
+      recentGrid.addEventListener('click', e => {
+        const favoriteBtn = e.target.closest('[data-favorite-toggle]');
+        if (favoriteBtn) {
+          toggleFavorite(favoriteBtn.dataset.favoriteToggle);
+          renderBasics();
+          renderNewlyAdded();
+          renderNewlyAdded();
+          renderEvening();
+          renderQuick();
+          renderRecentlyViewed();
+          renderFavorites();
+          renderRecipeGrid();
+          return;
+        }
+        const btn = e.target.closest('[data-open]');
+        if (btn) {
+          openRecipe(btn.dataset.open, buildContextFromCollection('recent', textByLang('Zuletzt angesehen','Ostatnio oglądane'), state.recentlyViewedIds, 'recentHead'));
+          return;
+        }
+        const card = e.target.closest('[data-recipe-id]');
+        if (card) openRecipe(card.dataset.recipeId, buildContextFromCollection('recent', textByLang('Zuletzt angesehen','Ostatnio oglądane'), state.recentlyViewedIds, 'recentHead'));
+      });
+      favoritesGrid.addEventListener('click', e => {
+        const favoriteBtn = e.target.closest('[data-favorite-toggle]');
+        if (favoriteBtn) {
+          toggleFavorite(favoriteBtn.dataset.favoriteToggle);
+          renderFavorites();
+          renderEvening();
+          renderQuick();
+          renderRecentlyViewed();
+          renderRecipeGrid();
+          return;
+        }
+        const btn = e.target.closest('[data-open]');
+        if (btn) {
+          openRecipe(btn.dataset.open, buildContextFromCollection('favorites', textByLang('Deine Merkliste','Twoja lista zapisanych'), state.favoriteIds, 'favoritesHead'));
+          return;
+        }
+        const card = e.target.closest('[data-recipe-id]');
+        if (card) openRecipe(card.dataset.recipeId, buildContextFromCollection('favorites', textByLang('Deine Merkliste','Twoja lista zapisanych'), state.favoriteIds, 'favoritesHead'));
       });
       recipeGrid.addEventListener('click', e => {
+        const favoriteBtn = e.target.closest('[data-favorite-toggle]');
+        if (favoriteBtn) {
+          toggleFavorite(favoriteBtn.dataset.favoriteToggle);
+          renderRecipeGrid();
+          renderFavorites();
+          renderRecentlyViewed();
+          return;
+        }
         const btn = e.target.closest('[data-open]');
         if (btn) {
-          openRecipe(btn.dataset.open);
+          openRecipe(btn.dataset.open, currentBrowseContext());
           return;
         }
         const card = e.target.closest('[data-recipe-id]');
-        if (card) openRecipe(card.dataset.recipeId);
+        if (card) openRecipe(card.dataset.recipeId, currentBrowseContext());
       });
       $('loadMoreBtn').addEventListener('click', () => {
         state.currentLimit += 24;
@@ -2208,7 +2873,7 @@
         if (!btn) return;
         $('searchSuggest').classList.add('hidden');
         activeSuggestIndex = -1;
-        openRecipe(btn.dataset.suggestId);
+        openRecipe(btn.dataset.suggestId, buildContextFromCollection('search', textByLang('Suchergebnisse','Wyniki wyszukiwania'), filteredRecipes().map(r => r.id), 'popularHead', { filters: currentBrowseContext().filters }));
       });
       document.addEventListener('click', e => {
         const suggest = $('searchSuggest');
@@ -2217,9 +2882,9 @@
           suggest.classList.add('hidden');
         }
       });
-      $('closeModalBtn').addEventListener('click', () => { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; updateGlobalSeo(); });
+      $('closeModalBtn').addEventListener('click', () => { restoreModalContext(); });
       modal.addEventListener('click', e => {
-        if (e.target === modal) { modal.classList.remove('open'); history.replaceState(null, '', window.location.pathname); state.activeRecipeId = null; updateGlobalSeo(); }
+        if (e.target === modal) { restoreModalContext(); }
       });
       legalModal.addEventListener('click', e => {
         if (e.target === legalModal) legalModal.classList.remove('open');
@@ -2229,7 +2894,7 @@
     window.addEventListener('hashchange', () => {
       const hash = window.location.hash;
       if (hash.startsWith('#rezept-')) {
-        openRecipe(hash.replace('#rezept-',''));
+        openRecipe(hash.replace('#rezept-',''), currentBrowseContext());
       }
     });
 
@@ -2241,6 +2906,7 @@
         const xmlText = await res.text();
         state.recipes = parseRecipes(xmlText);
         loadRecentlyViewed();
+        loadFavorites();
         heroSection.classList.remove('hidden');
         searchSection.classList.remove('hidden');
         topicsHead.classList.remove('hidden');
@@ -2253,7 +2919,14 @@
         updateHero();
         renderTagFilters();
         renderTopics();
+        renderBasics();
+        renderNewlyAdded();
+        renderEvening();
+        renderQuick();
         renderRecentlyViewed();
+        renderFavorites();
+        renderCollections();
+        renderHomePriorityNav();
         renderRecipeGrid();
         updateSuggest();
         bindEvents();
@@ -2264,7 +2937,7 @@
         const hash = window.location.hash;
         if (hash.startsWith('#rezept-')) {
           const id = hash.replace('#rezept-','');
-          openRecipe(id);
+          openRecipe(id, currentBrowseContext());
         }
       }catch(err){
         loadingBox.textContent = 'Die Kochbuch-XML konnte nicht geladen werden.';
