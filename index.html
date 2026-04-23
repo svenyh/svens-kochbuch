@@ -1955,6 +1955,11 @@
       return count;
     }
 
+
+    function recipeCompanionRecipes(recipe, limit=3){
+      return relatedRecipesFor(recipe, limit);
+    }
+
     function relatedRecipesFor(recipe, limit=4){
       const baseKeywords = recipeKeywordSet(recipe);
       const baseTitleTokens = recipeTitleTokenSet(recipe);
