@@ -2658,7 +2658,7 @@
           renderQuick();
           renderRecentlyViewed();
           renderFavorites();
-          renderCollections();
+          if (typeof renderCollections === 'function') renderCollections();
           renderHomePriorityNav();
           renderRecipeGrid();
           if (state.activeRecipeId) openRecipe(state.activeRecipeId);
@@ -2680,7 +2680,7 @@
         renderQuick();
         renderRecentlyViewed();
         renderFavorites();
-        renderCollections();
+        if (typeof renderCollections === 'function') renderCollections();
         renderHomePriorityNav();
         renderRecipeGrid();
         updateSuggest();
@@ -2925,7 +2925,7 @@
         renderQuick();
         renderRecentlyViewed();
         renderFavorites();
-        renderCollections();
+        if (typeof renderCollections === 'function') renderCollections();
         renderHomePriorityNav();
         renderRecipeGrid();
         updateSuggest();
