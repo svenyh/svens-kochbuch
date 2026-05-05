@@ -21341,4 +21341,506 @@
       <rating>8/10</rating>
     </translation>
   </recipe>
+  <recipe id="281">
+    <name>Smash Burger klassisch – Hamburger Style</name>
+    <persons>4 Burger</persons>
+    <category>Grill &amp; BBQ</category>
+    <intro lang="de">Klassischer Smash Burger mit lockeren Rindfleisch-Patties, kräftiger Kruste und typischem Hamburger-Style. Direkt von der heißen Platte serviert.</intro>
+    <image alt="Smash Burger klassisch – Hamburger Style" src="images/rezeptbild_281.png" />
+    <ingredients>
+      <item>600 g Rinderhack, möglichst mit ca. 20 % Fettanteil</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Öl für die Grillplatte oder Pfanne</item>
+      <item>4 Brioche-Burger-Buns</item>
+      <item>4–8 Scheiben Gewürzgurke</item>
+      <item>1 rote Zwiebel, in feinen Ringen</item>
+      <item>4 große Salatblätter</item>
+      <item>1–2 Tomaten, in Scheiben</item>
+      <item>Ketchup</item>
+      <item>Senf</item>
+      <item>optional: Burger-Sauce</item>
+      <item>4 EL Mayonnaise</item>
+      <item>2 EL Ketchup</item>
+      <item>1 TL Senf</item>
+      <item>1 TL Gurkenwasser</item>
+      <item>1 kleine Gewürzgurke, fein gehackt</item>
+      <item>etwas Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Das Rinderhack nur locker in 4 Portionen à ca. 150 g teilen. Nicht fest kneten.</step>
+      <step nr="2">Jede Portion zu einer lockeren Kugel formen.</step>
+      <step nr="3">Grillplatte, Plancha oder schwere Pfanne sehr heiß vorheizen.</step>
+      <step nr="4">Buns halbieren und kurz auf der Schnittfläche anrösten. Beiseitelegen.</step>
+      <step nr="5">Hackkugeln auf die heiße Fläche legen und mit einem stabilen Spatel oder Burger-Smasher kräftig flachdrücken.</step>
+      <step nr="6">Direkt salzen und pfeffern.</step>
+      <step nr="7">Ca. 1,5–2 Minuten braten, bis sich eine kräftige Kruste bildet.</step>
+      <step nr="8">Patties wenden und nochmals ca. 1 Minute braten.</step>
+      <step nr="9">Untere Bun-Hälfte mit Sauce, Salat, Tomate und Patty belegen.</step>
+      <step nr="10">Zwiebeln, Gurken, Ketchup und Senf daraufgeben.</step>
+      <step nr="11">Deckel drauf und sofort servieren.</step>
+    </preparation>
+    <timing>Vorbereitung: ca. 15 Minuten | Grillen/Braten: ca. 10 Minuten | Gesamtzeit: ca. 25 Minuten</timing>
+    <tips>
+      <item>Wichtig ist starke Hitze. Der Smash Burger lebt von der Kruste.</item>
+      <item>Das Hack nicht vorher würzen oder kneten, sonst wird es eher frikadellenartig.</item>
+      <item>Besonders gut auf einer Gusseisenplatte oder Grillpfanne.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="282">
+    <name>Smash Cheeseburger mit geschmolzenem Käse</name>
+    <persons>4 Burger</persons>
+    <category>Grill &amp; BBQ</category>
+    <intro lang="de">Smash Cheeseburger mit geschmolzenem Käse, kräftiger Kruste und klassischer Burger-Sauce. Saftig, direkt und ohne unnötigen Schnickschnack.</intro>
+    <image alt="Smash Cheeseburger mit geschmolzenem Käse" src="images/rezeptbild_282.png" />
+    <ingredients>
+      <item>600 g Rinderhack</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>etwas Öl</item>
+      <item>4 Brioche-Buns</item>
+      <item>4–8 Scheiben Cheddar oder Schmelzkäse</item>
+      <item>1 rote Zwiebel, fein gewürfelt oder in Ringen</item>
+      <item>Gewürzgurken in Scheiben</item>
+      <item>Eisbergsalat oder Römersalat</item>
+      <item>Burger-Sauce</item>
+      <item>optional: Jalapeños</item>
+      <item>5 EL Mayonnaise</item>
+      <item>2 EL Ketchup</item>
+      <item>1 TL Senf</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1 TL Gurkenwasser</item>
+      <item>1 kleine Gewürzgurke, fein gehackt</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Sauce aus Mayonnaise, Ketchup, Senf, Paprika, Gurkenwasser, Gurke und Pfeffer anrühren.</step>
+      <step nr="2">Hack in 4 lockere Kugeln teilen.</step>
+      <step nr="3">Grillplatte oder Pfanne sehr heiß werden lassen.</step>
+      <step nr="4">Buns auf der Schnittfläche anrösten.</step>
+      <step nr="5">Hackkugeln auf die heiße Fläche legen und kräftig flachdrücken.</step>
+      <step nr="6">Salzen und pfeffern.</step>
+      <step nr="7">Nach ca. 1,5–2 Minuten wenden.</step>
+      <step nr="8">Sofort Käse auf die heiße Seite legen und kurz schmelzen lassen.</step>
+      <step nr="9">Bei Bedarf mit einer kleinen Haube oder einem Deckel abdecken, damit der Käse schneller schmilzt.</step>
+      <step nr="10">Burger mit Sauce, Salat, Patty, Gurken und Zwiebeln zusammenbauen.</step>
+    </preparation>
+    <timing>Vorbereitung: 15 Minuten | Grillen: 10 Minuten | Gesamtzeit: 25 Minuten</timing>
+    <tips>
+      <item>Für Double Cheeseburger einfach 8 kleinere Patties à ca. 75 g formen.</item>
+      <item>Cheddar passt besonders gut, weil er kräftig schmeckt und schön schmilzt.</item>
+      <item>Eine Grillpfanne geht auch, besser ist aber eine glatte Plancha.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="283">
+    <name>DDR-Bier-Senf-Nackensteaks vom Grill</name>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ</category>
+    <intro lang="de">Marinierte Schweinenackensteaks mit Senf, Bier und vielen Zwiebeln. Ein deftiges Grillrezept mit kräftigem DDR-Einschlag.</intro>
+    <image alt="DDR-Bier-Senf-Nackensteaks vom Grill" src="images/rezeptbild_283.png" />
+    <ingredients>
+      <item>4–6 Schweinenackensteaks</item>
+      <item>3–4 große Zwiebeln</item>
+      <item>4 EL mittelscharfer Senf</item>
+      <item>2 EL Öl</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1 TL Majoran</item>
+      <item>1 TL Pfeffer</item>
+      <item>1 TL Salz</item>
+      <item>1 Flasche Bier, ca. 0,5 l</item>
+      <item>optional: 1–2 Knoblauchzehen</item>
+      <item>optional: 1 TL Kümmel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebeln schälen und in Ringe schneiden.</step>
+      <step nr="2">Senf, Öl, Paprika, Majoran, Pfeffer und Salz zu einer Würzpaste verrühren.</step>
+      <step nr="3">Die Nackensteaks großzügig mit der Senfmasse bestreichen.</step>
+      <step nr="4">Steaks mit den Zwiebelringen in eine Schüssel oder Auflaufform schichten.</step>
+      <step nr="5">Bier darübergeben, bis das Fleisch gut bedeckt oder zumindest kräftig umgeben ist.</step>
+      <step nr="6">Abdecken und mindestens 6 Stunden, besser über Nacht, im Kühlschrank ziehen lassen.</step>
+      <step nr="7">Vor dem Grillen das Fleisch aus der Marinade nehmen und etwas abtropfen lassen.</step>
+      <step nr="8">Zwiebeln aus der Marinade herausnehmen und separat in einer Grillpfanne anbraten.</step>
+      <step nr="9">Nackensteaks bei mittlerer bis kräftiger Hitze grillen, bis sie außen schön gebräunt und innen saftig sind.</step>
+      <step nr="10">Mit den geschmorten Bier-Zwiebeln servieren.</step>
+    </preparation>
+    <timing>Marinieren: mindestens 6 Stunden, besser über Nacht | Vorbereitung am Grilltag: 15 Minuten | Grillzeit: ca. 12–18 Minuten | Gesamt aktiv: ca. 30 Minuten</timing>
+    <tips>
+      <item>Das Rezept passt perfekt zu Kartoffelsalat, Brot oder Krautsalat.</item>
+      <item>Nicht zu heiß grillen, sonst verbrennt der Senf außen zu schnell.</item>
+      <item>Die Bier-Zwiebeln unbedingt mit servieren, die machen das Gericht richtig rund.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="284">
+    <name>Frühlings-Grillpfanne mit Hähnchen, Spargel und Kartoffeln</name>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ / Pfannengerichte</category>
+    <intro lang="de">Frühlingshafte Grillpfanne mit Hähnchen, grünem Spargel, Kartoffeln und Gemüse. Herzhaft, frisch und gut für Plancha oder Grillpfanne geeignet.</intro>
+    <image alt="Frühlings-Grillpfanne mit Hähnchen, Spargel und Kartoffeln" src="images/rezeptbild_284.png" />
+    <ingredients>
+      <item>600 g Hähnchenbrust oder Hähnchenschenkel ohne Knochen</item>
+      <item>800 g kleine Kartoffeln</item>
+      <item>500 g grüner Spargel</item>
+      <item>1 rote Paprika</item>
+      <item>1 Zucchini</item>
+      <item>2 rote Zwiebeln</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1 TL Knoblauchpulver oder 2 Knoblauchzehen</item>
+      <item>1 TL Kräuter der Provence</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Saft von ½ Zitrone</item>
+      <item>optional: etwas Feta oder Parmesan zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln halbieren und ca. 10 Minuten vorkochen.</step>
+      <step nr="2">Hähnchen in mundgerechte Stücke schneiden.</step>
+      <step nr="3">Spargel am unteren Ende kürzen und in Stücke schneiden.</step>
+      <step nr="4">Paprika, Zucchini und Zwiebeln grob schneiden.</step>
+      <step nr="5">Hähnchen mit Öl, Paprika, Knoblauch, Kräutern, Salz und Pfeffer würzen.</step>
+      <step nr="6">Grillpfanne oder Plancha vorheizen.</step>
+      <step nr="7">Zuerst Kartoffeln und Hähnchen anbraten.</step>
+      <step nr="8">Nach ca. 8–10 Minuten Gemüse und Spargel dazugeben.</step>
+      <step nr="9">Alles unter gelegentlichem Wenden grillen, bis das Hähnchen gar und das Gemüse leicht geröstet ist.</step>
+      <step nr="10">Zum Schluss mit Zitronensaft abschmecken.</step>
+    </preparation>
+    <timing>Vorbereitung: 20 Minuten | Grillzeit: 20–25 Minuten | Gesamtzeit: ca. 45 Minuten</timing>
+    <tips>
+      <item>Grüner Spargel passt super, weil er direkt auf dem Grill aromatisch wird.</item>
+      <item>Mit Kräuterquark oder Tzatziki servieren.</item>
+      <item>Funktioniert auch sehr gut auf dem Pit Boss auf der Grill-/Gas-Seite.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="285">
+    <name>Lachs in Alufolie mit Kräutern und Zitrone</name>
+    <persons>2–4 Personen</persons>
+    <category>Fisch &amp; Meeresfrüchte / Grill &amp; BBQ</category>
+    <intro lang="de">Lachsfilets im Folienpaket mit Kräutern, Zitrone und etwas Knoblauch. Einfach vorzubereiten und direkt vom Grill serviert besonders saftig.</intro>
+    <image alt="Lachs in Alufolie mit Kräutern und Zitrone" src="images/rezeptbild_285.png" />
+    <ingredients>
+      <item>4 Lachsfilets</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 Bio-Zitrone</item>
+      <item>1–2 Knoblauchzehen, fein gehackt</item>
+      <item>frische Petersilie oder Dill</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: etwas Butter</item>
+      <item>optional: Frühlingszwiebeln</item>
+      <item>Alufolie oder Grillpapier</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Lachsfilets trocken tupfen.</step>
+      <step nr="2">Jeweils ein Stück Alufolie vorbereiten.</step>
+      <step nr="3">Lachs auf die Folie legen.</step>
+      <step nr="4">Mit Olivenöl beträufeln.</step>
+      <step nr="5">Mit Salz, Pfeffer, Knoblauch und Kräutern würzen.</step>
+      <step nr="6">Zitronenscheiben auf den Lachs legen.</step>
+      <step nr="7">Optional ein kleines Stück Butter dazugeben.</step>
+      <step nr="8">Folie locker verschließen, sodass ein kleines Paket entsteht.</step>
+      <step nr="9">Auf den Grill legen und bei mittlerer Hitze ca. 12–15 Minuten garen.</step>
+      <step nr="10">Vorsichtig öffnen und direkt servieren.</step>
+    </preparation>
+    <timing>Vorbereitung: 10 Minuten | Grillzeit: 12–15 Minuten | Gesamtzeit: ca. 25 Minuten</timing>
+    <tips>
+      <item>Passt sehr gut zu Baguette, Kartoffeln oder einem frischen Gurkensalat.</item>
+      <item>Nicht zu lange grillen, sonst wird der Lachs trocken.</item>
+      <item>Für Simon kann man das Rezept auch milder halten und erst am Tisch nachwürzen.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="286">
+    <name>Gegrillter Spargel im Speckmantel mit Honig-Senf-Glasur</name>
+    <persons>4 Personen als Beilage</persons>
+    <category>Salate &amp; Beilagen / Grill &amp; BBQ</category>
+    <intro lang="de">Grüner Spargel im Speckmantel mit einer dünnen Honig-Senf-Glasur. Als Beilage vom Grill oder aus der Grillpfanne sehr passend.</intro>
+    <image alt="Gegrillter Spargel im Speckmantel mit Honig-Senf-Glasur" src="images/rezeptbild_286.png" />
+    <ingredients>
+      <item>500 g grüner Spargel</item>
+      <item>150–200 g Bacon oder Frühstücksspeck</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 EL Senf</item>
+      <item>1 EL Honig</item>
+      <item>1 TL Zitronensaft</item>
+      <item>Pfeffer</item>
+      <item>optional: etwas Parmesan</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Spargel waschen und die holzigen Enden abschneiden.</step>
+      <step nr="2">Je 2–3 Spargelstangen mit Bacon umwickeln.</step>
+      <step nr="3">Honig, Senf, Öl, Zitronensaft und Pfeffer verrühren.</step>
+      <step nr="4">Spargelpäckchen dünn mit der Glasur bestreichen.</step>
+      <step nr="5">Auf dem Grill oder in einer Grillpfanne bei mittlerer Hitze rundherum grillen.</step>
+      <step nr="6">Nach ca. 8–12 Minuten sollte der Bacon knusprig und der Spargel bissfest sein.</step>
+      <step nr="7">Optional mit Parmesan bestreuen und servieren.</step>
+    </preparation>
+    <timing>Vorbereitung: 15 Minuten | Grillzeit: 10–12 Minuten | Gesamtzeit: ca. 30 Minuten</timing>
+    <tips>
+      <item>Nicht zu viel Glasur verwenden, damit nichts verbrennt.</item>
+      <item>Passt perfekt zu Steaks, Burgern oder Grillhähnchen.</item>
+      <item>Auch als kleine Vorspeise sehr gut geeignet.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="287">
+    <name>Grillpfannen-Garnelen mit Knoblauch, Zitrone und Kräutern</name>
+    <persons>4 Personen als Vorspeise oder 2 Personen als Hauptgericht</persons>
+    <category>Fisch &amp; Meeresfrüchte / Grill &amp; BBQ</category>
+    <intro lang="de">Kurz marinierte Garnelen mit Knoblauch, Zitrone und Kräutern aus der Grillpfanne oder von der Plancha. Schnell gemacht und direkt serviert am besten.</intro>
+    <image alt="Grillpfannen-Garnelen mit Knoblauch, Zitrone und Kräutern" src="images/rezeptbild_287.png" />
+    <ingredients>
+      <item>500 g Garnelen, geschält und entdarmt</item>
+      <item>3 EL Olivenöl</item>
+      <item>2–3 Knoblauchzehen</item>
+      <item>Saft von ½ Zitrone</item>
+      <item>Abrieb von ½ Bio-Zitrone</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>1 Prise Chiliflocken</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>frische Petersilie</item>
+      <item>optional: Baguette zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Garnelen trocken tupfen.</step>
+      <step nr="2">Knoblauch fein hacken.</step>
+      <step nr="3">Öl, Knoblauch, Zitronensaft, Zitronenabrieb, Paprika, Chili, Salz und Pfeffer verrühren.</step>
+      <step nr="4">Garnelen damit vermengen und ca. 15–20 Minuten ziehen lassen.</step>
+      <step nr="5">Grillpfanne oder Plancha stark erhitzen.</step>
+      <step nr="6">Garnelen 2–3 Minuten pro Seite grillen, bis sie rosa und leicht gebräunt sind.</step>
+      <step nr="7">Mit frischer Petersilie bestreuen.</step>
+      <step nr="8">Direkt mit Baguette servieren.</step>
+    </preparation>
+    <timing>Marinieren: 15–20 Minuten | Grillzeit: 5–6 Minuten | Gesamtzeit: ca. 30 Minuten</timing>
+    <tips>
+      <item>Garnelen nicht zu lange grillen, sonst werden sie gummiartig.</item>
+      <item>Das Öl mit Knoblauch und Zitrone ist perfekt zum Auftunken mit Brot.</item>
+      <item>Auch gut als Teil eines Grillbuffets.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="288">
+    <name>Mediterrane Grillspieße mit Halloumi, Gemüse und Kräuteröl</name>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ</category>
+    <intro lang="de">Mediterrane Grillspieße mit Halloumi, Paprika, Zucchini, Zwiebeln und Champignons. Eine fleischlose Grillvariante mit Kräuteröl.</intro>
+    <image alt="Mediterrane Grillspieße mit Halloumi, Gemüse und Kräuteröl" src="images/rezeptbild_288.png" />
+    <ingredients>
+      <item>250 g Halloumi</item>
+      <item>1 Zucchini</item>
+      <item>1 rote Paprika</item>
+      <item>1 gelbe Paprika</item>
+      <item>2 rote Zwiebeln</item>
+      <item>250 g Champignons</item>
+      <item>3 EL Olivenöl</item>
+      <item>1 TL Oregano</item>
+      <item>1 TL Thymian</item>
+      <item>1 Knoblauchzehe</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Saft von ½ Zitrone</item>
+      <item>Holz- oder Metallspieße</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Halloumi in große Würfel schneiden.</step>
+      <step nr="2">Gemüse in mundgerechte Stücke schneiden.</step>
+      <step nr="3">Holzspieße vorher ca. 20 Minuten in Wasser legen.</step>
+      <step nr="4">Halloumi und Gemüse abwechselnd aufspießen.</step>
+      <step nr="5">Olivenöl mit Oregano, Thymian, Knoblauch, Zitronensaft, Salz und Pfeffer verrühren.</step>
+      <step nr="6">Spieße mit dem Kräuteröl bestreichen.</step>
+      <step nr="7">Auf dem Grill bei mittlerer Hitze rundherum grillen.</step>
+      <step nr="8">Nach ca. 10–15 Minuten sollten Gemüse und Halloumi leicht gebräunt sein.</step>
+    </preparation>
+    <timing>Vorbereitung: 20 Minuten | Grillzeit: 10–15 Minuten | Gesamtzeit: ca. 35 Minuten</timing>
+    <tips>
+      <item>Halloumi ist ideal für den Grill, weil er nicht zerläuft.</item>
+      <item>Passt gut zu Tzatziki, Fladenbrot oder einem Tomatensalat.</item>
+      <item>Für eine fleischlose Grillvariante sehr gut geeignet.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="289">
+    <name>Frühlings-Bratwurst-Pfanne mit Kartoffeln, Zwiebeln und Paprika</name>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte / Grill &amp; BBQ</category>
+    <intro lang="de">Herzhafte Bratwurst-Pfanne mit Kartoffeln, Paprika und Zwiebeln. Gut für Plancha, Grillpfanne oder große Pfanne geeignet.</intro>
+    <image alt="Frühlings-Bratwurst-Pfanne mit Kartoffeln, Zwiebeln und Paprika" src="images/rezeptbild_289.png" />
+    <ingredients>
+      <item>5–6 grobe Bratwürste</item>
+      <item>800 g kleine Kartoffeln</item>
+      <item>2 Paprika</item>
+      <item>2 rote Zwiebeln</item>
+      <item>1 Bund Frühlingszwiebeln</item>
+      <item>2 EL Öl</item>
+      <item>1 TL Paprikapulver edelsüß</item>
+      <item>½ TL geräuchertes Paprikapulver</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>optional: 1 EL Senf</item>
+      <item>optional: etwas Petersilie</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln halbieren und ca. 10 Minuten vorkochen.</step>
+      <step nr="2">Bratwürste in grobe Stücke schneiden.</step>
+      <step nr="3">Paprika, Zwiebeln und Frühlingszwiebeln schneiden.</step>
+      <step nr="4">Grillpfanne oder Plancha erhitzen.</step>
+      <step nr="5">Kartoffeln mit Öl anbraten, bis sie Farbe bekommen.</step>
+      <step nr="6">Bratwurststücke dazugeben und rundherum kräftig anbraten.</step>
+      <step nr="7">Paprika und Zwiebeln hinzufügen.</step>
+      <step nr="8">Mit Paprika, Salz und Pfeffer würzen.</step>
+      <step nr="9">Optional etwas Senf unterrühren.</step>
+      <step nr="10">Zum Schluss Frühlingszwiebeln und Petersilie darübergeben.</step>
+    </preparation>
+    <timing>Vorbereitung: 15–20 Minuten | Grillzeit: 20 Minuten | Gesamtzeit: ca. 40 Minuten</timing>
+    <tips>
+      <item>Sehr gutes Resteessen, wenn noch Kartoffeln vom Vortag da sind.</item>
+      <item>Mit Ajvar oder Kräuterquark servieren.</item>
+      <item>Funktioniert auch im Airfryer oder in der großen Pfanne.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
+  <recipe id="290">
+    <name>Grillbaguette mit Steakstreifen, Zwiebeln und Käse</name>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ</category>
+    <intro lang="de">Gefülltes Grillbaguette mit Steakstreifen, Zwiebeln, Paprika und Käse. Gut vorzubereiten und ideal für Grillabend oder Party.</intro>
+    <image alt="Grillbaguette mit Steakstreifen, Zwiebeln und Käse" src="images/rezeptbild_290.png" />
+    <ingredients>
+      <item>2 große Baguettes oder 4 kleine Baguettebrötchen</item>
+      <item>500 g Rindersteak, Minutensteaks oder Hüftsteak</item>
+      <item>2 große Zwiebeln</item>
+      <item>1 Paprika</item>
+      <item>150–200 g geriebener Käse</item>
+      <item>2 EL Öl</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 TL Steakgewürz oder Salz und Pfeffer</item>
+      <item>2 EL Crème fraîche oder Schmand</item>
+      <item>1 TL Senf</item>
+      <item>optional: Jalapeños</item>
+      <item>optional: Frühlingszwiebeln</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Steak in dünne Streifen schneiden.</step>
+      <step nr="2">Zwiebeln und Paprika in Streifen schneiden.</step>
+      <step nr="3">Fleisch mit Öl, Paprika, Steakgewürz, Salz und Pfeffer würzen.</step>
+      <step nr="4">Auf der Grillplatte oder in der Grillpfanne scharf anbraten.</step>
+      <step nr="5">Zwiebeln und Paprika dazugeben und mitbraten.</step>
+      <step nr="6">Baguettes längs aufschneiden.</step>
+      <step nr="7">Schmand oder Crème fraîche mit Senf verrühren und auf die Baguettes streichen.</step>
+      <step nr="8">Fleisch-Gemüse-Mischung darauf verteilen.</step>
+      <step nr="9">Mit Käse bestreuen.</step>
+      <step nr="10">Auf dem Grill bei indirekter Hitze oder im Ofen überbacken, bis der Käse geschmolzen ist.</step>
+    </preparation>
+    <timing>Vorbereitung: 20 Minuten | Grillzeit/Überbacken: 15–20 Minuten | Gesamtzeit: ca. 40 Minuten</timing>
+    <tips>
+      <item>Perfekt als Schützenfest-, Party- oder Grillabend-Rezept.</item>
+      <item>Kann gut vorbereitet und später nur noch überbacken werden.</item>
+      <item>Statt Rind geht auch Hähnchen oder Schweinenacken.</item>
+    </tips>
+    <rating />
+    <translation lang="pl">
+      <name />
+      <persons />
+      <category />
+      <intro lang="pl" />
+      <ingredients />
+      <preparation />
+      <timing />
+      <tips />
+    </translation>
+  </recipe>
 </cookbook>
