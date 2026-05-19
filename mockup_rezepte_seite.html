@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sven Kocht | Rezepte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #e67e22;
+      --accent-dark: #d35400;
+      --light: #f9f9f9;
+      --soft: #f6f1eb;
+      --dark: #1a1a1a;
+      --muted: #666;
+      --white: #ffffff;
+      --border: rgba(0,0,0,0.09);
+      --shadow: 0 10px 24px rgba(0,0,0,0.08);
+      --shadow-soft: 0 16px 40px rgba(0,0,0,0.07);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--white);
+    }
+    .site-header {
+      width: 100%;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      line-height: 1;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .page-hero {
+      background:
+        linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.38)),
+        url('https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: var(--white);
+      padding: 92px 28px 82px;
+      text-align: center;
+    }
+    .page-hero-inner {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 34px;
+      padding: 0 16px;
+      margin-bottom: 20px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.24);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(44px, 6vw, 72px);
+      line-height: 1.04;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .page-hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.55;
+    }
+    .main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 28px 64px;
+    }
+    .finder {
+      margin-top: -62px;
+      background: rgba(255,255,255,0.96);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow-soft);
+      padding: 22px;
+      position: relative;
+      z-index: 5;
+    }
+    .finder-top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+    }
+    .search-field {
+      min-height: 58px;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 18px;
+      background: var(--white);
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .search-icon { color: var(--accent); font-weight: 800; }
+    .filter-btn {
+      min-height: 58px;
+      border: 1px solid rgba(230,126,34,0.25);
+      border-radius: 14px;
+      padding: 0 24px;
+      background: #fff8f1;
+      color: #74400d;
+      font-weight: 800;
+      cursor: default;
+      white-space: nowrap;
+    }
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 15px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.10);
+      background: var(--white);
+      color: var(--dark);
+      font-size: 13px;
+      font-weight: 800;
+      cursor: default;
+    }
+    .chip.active {
+      background: var(--accent);
+      color: var(--white);
+      border-color: var(--accent);
+    }
+    .finder-meta {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .content-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      margin: 54px 0 28px;
+    }
+    .content-head h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 4vw, 46px);
+      color: var(--primary);
+      line-height: 1.12;
+      margin-bottom: 8px;
+    }
+    .content-head p {
+      color: var(--muted);
+      max-width: 640px;
+      font-size: 16px;
+    }
+    .sort-pill {
+      min-height: 42px;
+      padding: 0 15px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .recipe-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .sidebar {
+      position: sticky;
+      top: 104px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .sidebar h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+    .side-list {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+    .side-list a {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--dark);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #faf7f3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .side-list span {
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+    }
+    .recipe-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .recipe-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+    }
+    .recipe-img {
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #ececec;
+    }
+    .recipe-content { padding: 22px; }
+    .recipe-tag {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .recipe-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 23px;
+      line-height: 1.15;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .recipe-card p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .meta {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: #fff6ed;
+      color: #7b4816;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .load-more {
+      text-align: center;
+      margin-top: 38px;
+    }
+    .load-more button {
+      min-height: 46px;
+      padding: 0 28px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      font-weight: 800;
+      color: var(--primary);
+      cursor: default;
+    }
+    .footer {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 28px 20px;
+      margin-top: 20px;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 1050px) {
+      .recipe-layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .side-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .recipe-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 720px) {
+      .nav { padding: 18px 20px; }
+      .nav-links { display: none; }
+      .page-hero { padding: 72px 20px 98px; }
+      .finder { margin-top: -54px; padding: 16px; }
+      .finder-top { grid-template-columns: 1fr; }
+      .filter-btn { width: 100%; }
+      .chip-row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+      .chip { flex: 0 0 auto; }
+      .finder-meta { display: block; }
+      .content-head { display: block; }
+      .sort-pill { margin-top: 16px; }
+      .side-list { grid-template-columns: 1fr; }
+      .recipe-grid { grid-template-columns: 1fr; }
+      .recipe-img { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="logo">Sven Kocht.</a>
+      <ul class="nav-links">
+        <li><a href="#rezepte">Rezepte</a></li>
+        <li><a href="#kategorien">Kategorien</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Alle Rezepte</div>
+      <h1>Finde dein nächstes Lieblingsgericht.</h1>
+      <p>Stöbere durch Svens Kochbuch – von schneller Feierabendküche über Ofengerichte bis zu Grillideen, Grundrezepten und regionalen Lieblingsgerichten.</p>
+    </div>
+  </section>
+
+  <main class="main" id="rezepte">
+    <section class="finder" aria-label="Rezepte suchen und filtern">
+      <div class="finder-top">
+        <div class="search-field">
+          <span class="search-icon">⌕</span>
+          <span>Rezept, Zutat oder Kategorie suchen ...</span>
+        </div>
+        <button class="filter-btn" type="button">Filter & Sortieren</button>
+      </div>
+
+      <div class="chip-row" aria-label="Hauptfilter">
+        <button class="chip active" type="button">Alle</button>
+        <button class="chip" type="button">Schnell</button>
+        <button class="chip" type="button">Ofen</button>
+        <button class="chip" type="button">Grill & BBQ</button>
+      </div>
+
+      <div class="chip-row" aria-label="Themenfilter">
+        <button class="chip" type="button">Pfanne & Wok</button>
+        <button class="chip" type="button">Hackfleisch</button>
+        <button class="chip" type="button">Kartoffeln</button>
+        <button class="chip" type="button">Salate & Beilagen</button>
+        <button class="chip" type="button">Pasta & Pizza</button>
+        <button class="chip" type="button">Fisch & Meer</button>
+        <button class="chip" type="button">Wölpinghausen</button>
+      </div>
+
+      <div class="finder-meta">
+        <span>Suche nach Titel, Kategorie oder Zutaten.</span>
+        <strong>290 Rezepte gefunden</strong>
+      </div>
+    </section>
+
+    <section id="kategorien">
+      <div class="content-head">
+        <div>
+          <h2>Alle Rezepte</h2>
+          <p>Wähle eine Kategorie oder stöbere direkt durch alle Gerichte aus Svens Kochbuch.</p>
+        </div>
+        <div class="sort-pill">Sortierung: Neueste zuerst</div>
+      </div>
+
+      <div class="recipe-layout">
+        <aside class="sidebar" aria-label="Kategorien">
+          <h3>Kategorien</h3>
+          <ul class="side-list">
+            <li><a href="#">Schnell <span>38</span></a></li>
+            <li><a href="#">Ofen <span>146</span></a></li>
+            <li><a href="#">Grill & BBQ <span>74</span></a></li>
+            <li><a href="#">Kartoffeln <span>53</span></a></li>
+            <li><a href="#">Salate <span>74</span></a></li>
+            <li><a href="#">Wölpinghausen <span>6</span></a></li>
+          </ul>
+        </aside>
+
+        <section class="recipe-grid" aria-label="Rezeptliste">
+          <article class="recipe-card">
+            <div class="recipe-img" style="background-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="recipe-content">
+              <span class="recipe-tag">Grill & BBQ</span>
+              <h3>Smash Burger klassisch</h3>
+              <p>Saftiger Burger mit kräftiger Kruste, Sauce, Zwiebeln und knackigem Belag.</p>
+              <div class="meta-row"><span class="meta">30 Min.</span><span class="meta">BBQ</span></div>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <div class="recipe-img" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="recipe-content">
+              <span class="recipe-tag">Salate & Beilagen</span>
+              <h3>Grillgemüse-Salat</h3>
+              <p>Bunt, frisch und ideal als Beilage zu Grillabenden oder leichten Gerichten.</p>
+              <div class="meta-row"><span class="meta">20 Min.</span><span class="meta">Beilage</span></div>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <div class="recipe-img" style="background-image: url('https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="recipe-content">
+              <span class="recipe-tag">Ofen & Aufläufe</span>
+              <h3>Loaded Kartoffelauflauf</h3>
+              <p>Herzhaft, cremig und perfekt für alle, die es unkompliziert aus dem Ofen mögen.</p>
+              <div class="meta-row"><span class="meta">45 Min.</span><span class="meta">Ofen</span></div>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <div class="recipe-img" style="background-image: url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="recipe-content">
+              <span class="recipe-tag">Pfanne & Wok</span>
+              <h3>Hähnchen-Pfanne mit Gemüse</h3>
+              <p>Schnell gemacht, würzig und ideal für die Feierabendküche.</p>
+              <div class="meta-row"><span class="meta">25 Min.</span><span class="meta">Pfanne</span></div>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <div class="recipe-img" style="background-image: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="recipe-content">
+              <span class="recipe-tag">Hausmannskost</span>
+              <h3>Hackbällchen-Auflauf</h3>
+              <p>Deftig, cremig und ein echtes Lieblingsgericht für den Familientisch.</p>
+              <div class="meta-row"><span class="meta">40 Min.</span><span class="meta">Hackfleisch</span></div>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <div class="recipe-img" style="background-image: url('https://images.unsplash.com/photo-1572441713132-51c75654db73?auto=format&fit=crop&w=800&q=80');"></div>
+            <div class="recipe-content">
+              <span class="recipe-tag">Grundrezepte</span>
+              <h3>Klassischer Pizzateig</h3>
+              <p>Eine einfache Basis für Pizza, Flammkuchen und viele weitere Ofenideen.</p>
+              <div class="meta-row"><span class="meta">Basis</span><span class="meta">Teig</span></div>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <div class="load-more">
+        <button type="button">Mehr Rezepte laden</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="kontakt">
+    © 2026 Svenskochbuch.de | Mit Liebe gekocht.
+  </footer>
+</body>
+</html>
