@@ -4637,7 +4637,11 @@
             preparation: listSectionFlexible(tr, 'preparation', 'step,item,li'),
             timing: listSectionFlexible(tr, 'timing', 'item,step'),
             tips: listSectionFlexible(tr, 'tips', 'item,tip,li'),
-            knowledge: listSectionFlexible(tr, 'knowledge', 'item,tip,p,li')
+            knowledge: listSectionFlexible(tr, 'knowledge', 'item,tip,p,li'),
+            rating: firstDirectText(tr, 'rating'),
+            ratingValue: firstDirectText(tr, 'ratingValue'),
+            bewertung: firstDirectText(tr, 'bewertung'),
+            score: firstDirectText(tr, 'score')
           };
         }
 
@@ -5843,18 +5847,14 @@
     }
 
     function getRatingDisplayText(raw) {
-      var t = String(raw == null ? '' : raw).trim();
-      if (!t) return '';
-      if (/[★⭐]/.test(t)) return t;
-      if (/\d+([,.]\d+)?\s*\/\s*\d+/.test(t)) return t;
-      return '';
+      return String(raw == null ? '' : raw).trim();
     }
 
     function getRecipeRatingDisplay(r) {
       if (!r) return '';
       var fields = ['rating', 'ratingValue', 'bewertung', 'score'];
       for (var i = 0; i < fields.length; i++) {
-        var line = getRatingDisplayText(r[fields[i]]);
+        var line = getRatingDisplayText(getRecipeField(r, fields[i]));
         if (line) return line;
       }
       return '';
