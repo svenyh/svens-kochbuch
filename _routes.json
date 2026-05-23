@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/robots.txt",
+    "/sitemap.xml",
+    "/legal-common.css",
+    "/legal-common.js",
+    "/impressum.html",
+    "/datenschutz.html",
+    "/kochbuch.xml",
+    "/index.html",
+    "/images/*",
+    "/*.png",
+    "/*.jpg",
+    "/*.jpeg",
+    "/*.webp",
+    "/*.svg",
+    "/*.ico"
+  ]
+}
