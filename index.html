@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sven Kocht | Kulinarische Inspiration</title>
-  <meta name="description" content="Handverlesene Rezepte aus Svens Kochbuch – Kochen mit Leidenschaft." />
+  <title>Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten</title>
+  <meta name="description" content="Svens persönliches Kochbuch mit einfachen Rezepten für jeden Tag: Klassiker, Ofengerichte, Grillideen, Airfryer-Rezepte, Salate, Beilagen und schnelle Küche." />
+  <link rel="canonical" href="https://svenskochbuch.de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten" />
+  <meta property="og:description" content="Einfache Klassiker, herzhafte Ofengerichte, Grillideen und schnelle Rezepte aus Svens persönlichem Kochbuch." />
+  <meta property="og:url" content="https://svenskochbuch.de/" />
+  <meta property="og:site_name" content="Sven Kocht." />
+  <meta property="og:image" content="https://svenskochbuch.de/images/hero-outdoor-kitchen.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten" />
+  <meta name="twitter:description" content="Einfache Klassiker, herzhafte Ofengerichte, Grillideen und schnelle Rezepte aus Svens persönlichem Kochbuch." />
+  <meta name="twitter:image" content="https://svenskochbuch.de/images/hero-outdoor-kitchen.png" />
+  <!-- SEO: hreflang bewusst noch nicht gesetzt. Spaetere Optionen: /de/, /pl/, /en/ oder Query/Hash-Loesung. -->
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -3582,6 +3594,7 @@
     var currentRecipeFilterKey = 'alle';
     var recipeListVisibleCount = 12;
     var parsedRecipes = [];
+    var recipeSlugPathById = {};
     var currentSearchQuery = '';
     var currentDetailRecipe = null;
     var copyBtnResetTimer = null;
@@ -4247,6 +4260,286 @@
       el.dataset.lang = lang;
     }
 
+    var SEO_SITE_ORIGIN = 'https://svenskochbuch.de';
+    var SEO_HOME_META = {
+      title: 'Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten',
+      description: 'Svens persönliches Kochbuch mit einfachen Rezepten für jeden Tag: Klassiker, Ofengerichte, Grillideen, Airfryer-Rezepte, Salate, Beilagen und schnelle Küche.',
+      canonical: SEO_SITE_ORIGIN + '/',
+      ogType: 'website',
+      ogTitle: 'Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten',
+      ogDescription: 'Einfache Klassiker, herzhafte Ofengerichte, Grillideen und schnelle Rezepte aus Svens persönlichem Kochbuch.',
+      ogUrl: SEO_SITE_ORIGIN + '/',
+      ogSiteName: 'Sven Kocht.',
+      ogImage: SEO_SITE_ORIGIN + '/images/hero-outdoor-kitchen.png',
+      twitterCard: 'summary_large_image',
+      twitterTitle: 'Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten',
+      twitterDescription: 'Einfache Klassiker, herzhafte Ofengerichte, Grillideen und schnelle Rezepte aus Svens persönlichem Kochbuch.',
+      twitterImage: SEO_SITE_ORIGIN + '/images/hero-outdoor-kitchen.png'
+    };
+
+    function upsertMetaByName(name, content) {
+      var nodes = document.querySelectorAll('meta[name="' + name + '"]');
+      var el = nodes[0];
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute('name', name);
+        document.head.appendChild(el);
+      }
+      for (var i = 1; i < nodes.length; i++) {
+        if (nodes[i].parentNode) nodes[i].parentNode.removeChild(nodes[i]);
+      }
+      el.setAttribute('content', content);
+    }
+
+    function upsertMetaByProperty(property, content) {
+      var nodes = document.querySelectorAll('meta[property="' + property + '"]');
+      var el = nodes[0];
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute('property', property);
+        document.head.appendChild(el);
+      }
+      for (var i = 1; i < nodes.length; i++) {
+        if (nodes[i].parentNode) nodes[i].parentNode.removeChild(nodes[i]);
+      }
+      el.setAttribute('content', content);
+    }
+
+    function upsertCanonical(href) {
+      var nodes = document.querySelectorAll('link[rel="canonical"]');
+      var el = nodes[0];
+      if (!el) {
+        el = document.createElement('link');
+        el.setAttribute('rel', 'canonical');
+        document.head.appendChild(el);
+      }
+      for (var i = 1; i < nodes.length; i++) {
+        if (nodes[i].parentNode) nodes[i].parentNode.removeChild(nodes[i]);
+      }
+      el.setAttribute('href', href);
+    }
+
+    function truncateSeoDescription(text, maxLen) {
+      maxLen = maxLen || 160;
+      var clean = String(text || '').replace(/\s+/g, ' ').trim();
+      if (!clean) return '';
+      if (clean.length <= maxLen) return clean;
+      var cut = clean.slice(0, maxLen - 1);
+      var lastSpace = cut.lastIndexOf(' ');
+      if (lastSpace > Math.floor(maxLen * 0.6)) cut = cut.slice(0, lastSpace);
+      return cut.replace(/[\s.,;:\-–—]+$/, '') + '\u2026';
+    }
+
+    function recipeSeoImageUrl(recipe) {
+      var src = recipe && recipe.imageSrc ? String(recipe.imageSrc).trim() : '';
+      if (!src) return SEO_HOME_META.ogImage;
+      if (/^https?:\/\//i.test(src)) return src;
+      if (src.charAt(0) === '/') return SEO_SITE_ORIGIN + src;
+      return SEO_SITE_ORIGIN + '/' + src.replace(/^\.\//, '');
+    }
+
+    function applySeoMeta(meta) {
+      if (!meta) return;
+      document.title = meta.title;
+      upsertMetaByName('description', meta.description);
+      upsertCanonical(meta.canonical);
+      upsertMetaByProperty('og:type', meta.ogType);
+      upsertMetaByProperty('og:title', meta.ogTitle);
+      upsertMetaByProperty('og:description', meta.ogDescription);
+      upsertMetaByProperty('og:url', meta.ogUrl);
+      if (meta.ogSiteName) upsertMetaByProperty('og:site_name', meta.ogSiteName);
+      upsertMetaByProperty('og:image', meta.ogImage);
+      upsertMetaByName('twitter:card', meta.twitterCard);
+      upsertMetaByName('twitter:title', meta.twitterTitle);
+      upsertMetaByName('twitter:description', meta.twitterDescription);
+      upsertMetaByName('twitter:image', meta.twitterImage);
+    }
+
+    function updateSeoMetaForHome() {
+      applySeoMeta(SEO_HOME_META);
+      removeRecipeJsonLd();
+    }
+
+    function getRecipeCanonicalUrl(recipe) {
+      if (!recipe) return '';
+      return SEO_SITE_ORIGIN + getRecipeCanonicalPath(recipe);
+    }
+
+    function updateSeoMetaForRecipe(recipe) {
+      if (!recipe) {
+        updateSeoMetaForHome();
+        return;
+      }
+      var name = getRecipeField(recipe, 'name') || recipe.name || 'Rezept';
+      var title = name + ' | Sven Kocht.';
+      var intro = getRecipeField(recipe, 'intro') || '';
+      var description = truncateSeoDescription(intro) || 'Ein Rezept aus Svens persönlichem Kochbuch.';
+      var canonical = getRecipeCanonicalUrl(recipe);
+      var image = recipeSeoImageUrl(recipe);
+      applySeoMeta({
+        title: title,
+        description: description,
+        canonical: canonical,
+        ogType: 'article',
+        ogTitle: title,
+        ogDescription: description,
+        ogUrl: canonical,
+        ogSiteName: 'Sven Kocht.',
+        ogImage: image,
+        twitterCard: 'summary_large_image',
+        twitterTitle: title,
+        twitterDescription: description,
+        twitterImage: image
+      });
+      updateRecipeJsonLd(recipe);
+    }
+
+    function stripHtml(value) {
+      return String(value == null ? '' : value)
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function absoluteUrl(path) {
+      var src = String(path == null ? '' : path).trim();
+      if (!src) return '';
+      if (/^https?:\/\//i.test(src)) return src;
+      if (src.charAt(0) === '/') return SEO_SITE_ORIGIN + src;
+      return SEO_SITE_ORIGIN + '/' + src.replace(/^\.\//, '');
+    }
+
+    function stripJsonLdStepPrefix(step) {
+      return stripHtml(step).replace(/^\s*\d+[\).\:\-]\s*/, '').trim();
+    }
+
+    function toIsoDuration(value) {
+      if (!value) return '';
+      var s = String(value).toLowerCase().replace(/,/g, '.');
+      if (/\d+(?:\.\d+)?\s*(?:bis|to|–|-)\s*\d+/i.test(s)) return '';
+      var hours = 0;
+      var minutes = 0;
+      var hourMatch = s.match(/(\d+(?:\.\d+)?)\s*(?:stunden?|hours?|godzin?\w*|hr\b|hour\b)/);
+      if (hourMatch) {
+        var hv = parseFloat(hourMatch[1]);
+        if (isNaN(hv)) return '';
+        hours = Math.floor(hv);
+        minutes += Math.round((hv - hours) * 60);
+      }
+      var minMatch = s.match(/(\d+(?:\.\d+)?)\s*(?:minuten?|minutes?|min\b)/);
+      if (minMatch) {
+        var mv = parseFloat(minMatch[1]);
+        if (isNaN(mv)) return '';
+        minutes += Math.round(mv);
+      }
+      if (!hours && !minutes) return '';
+      var out = 'PT';
+      if (hours > 0) out += hours + 'H';
+      if (minutes > 0) out += minutes + 'M';
+      return out === 'PT' ? '' : out;
+    }
+
+    function extractRecipeTimingFields(timingList) {
+      var result = { prepTime: '', cookTime: '', totalTime: '' };
+      if (!timingList || !timingList.length) return result;
+      for (var i = 0; i < timingList.length; i++) {
+        var line = String(timingList[i] || '');
+        var lower = line.toLowerCase();
+        var valuePart = line.indexOf(':') >= 0 ? line.slice(line.indexOf(':') + 1).trim() : line.trim();
+        var iso = toIsoDuration(valuePart);
+        if (!iso) continue;
+        if (/(gesamt|total|razem|insgesamt|suma)\b/.test(lower)) {
+          result.totalTime = iso;
+        } else if (/(vorbereit|preparation|przygotow)/.test(lower)) {
+          result.prepTime = iso;
+        } else if (/(koch|gar|schmor|back|grill|braten|anbraten|frit|duszen|piek|roast|bake|simmer|fry|ofen|pieczen)/.test(lower)) {
+          if (!result.cookTime) result.cookTime = iso;
+        }
+      }
+      return result;
+    }
+
+    function buildRecipeJsonLd(recipe) {
+      if (!recipe) return null;
+      var name = stripHtml(getRecipeField(recipe, 'name') || recipe.name || '');
+      var intro = stripHtml(getRecipeField(recipe, 'intro') || '');
+      var description = truncateSeoDescription(intro);
+      var ingredients = normalizeFieldToList(getRecipeField(recipe, 'ingredients'))
+        .map(function (item) { return stripHtml(item); })
+        .filter(Boolean);
+      var prepSteps = normalizeFieldToList(getRecipeField(recipe, 'preparation'))
+        .map(function (step) { return stripJsonLdStepPrefix(step); })
+        .filter(Boolean);
+      var timingList = normalizeFieldToList(getRecipeField(recipe, 'timing'));
+      var categoryRaw = stripHtml(getRecipeField(recipe, 'category') || recipe.category || '');
+      var persons = stripHtml(getRecipeField(recipe, 'persons') || recipe.persons || '');
+      var imageUrl = recipe.imageSrc ? absoluteUrl(recipe.imageSrc) : '';
+      var canonical = getRecipeCanonicalUrl(recipe);
+
+      if (!name || !ingredients.length || !prepSteps.length) return null;
+
+      var obj = {
+        '@context': 'https://schema.org',
+        '@type': 'Recipe',
+        name: name,
+        author: {
+          '@type': 'Person',
+          name: 'Sven Nicolaus'
+        },
+        recipeIngredient: ingredients,
+        recipeInstructions: prepSteps.map(function (step) {
+          return {
+            '@type': 'HowToStep',
+            text: step
+          };
+        }),
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': canonical
+        }
+      };
+
+      if (description) obj.description = description;
+      if (imageUrl) obj.image = [imageUrl];
+      if (categoryRaw) {
+        var catParts = String(categoryRaw).split('/').map(function (p) { return p.trim(); }).filter(Boolean);
+        if (catParts.length) obj.recipeCategory = catParts[0];
+      }
+      if (persons) obj.recipeYield = persons;
+
+      var times = extractRecipeTimingFields(timingList);
+      if (times.prepTime) obj.prepTime = times.prepTime;
+      if (times.cookTime) obj.cookTime = times.cookTime;
+      if (times.totalTime) obj.totalTime = times.totalTime;
+
+      return obj;
+    }
+
+    function removeRecipeJsonLd() {
+      var el = document.getElementById('recipe-jsonld');
+      if (el && el.parentNode) el.parentNode.removeChild(el);
+    }
+
+    function updateRecipeJsonLd(recipe) {
+      if (!recipe) {
+        removeRecipeJsonLd();
+        return;
+      }
+      var data = buildRecipeJsonLd(recipe);
+      if (!data) {
+        removeRecipeJsonLd();
+        return;
+      }
+      var el = document.getElementById('recipe-jsonld');
+      if (!el) {
+        el = document.createElement('script');
+        el.type = 'application/ld+json';
+        el.id = 'recipe-jsonld';
+        document.head.appendChild(el);
+      }
+      el.textContent = JSON.stringify(data);
+    }
+
     function updateLangButtons() {
       var btns = document.querySelectorAll('button.lang-btn[data-lang]');
       [].slice.call(btns).forEach(function (b) {
@@ -4505,7 +4798,7 @@
       populateHomeSidebarNewRecipes();
       if (currentDetailRecipe) {
         var rec = recipeById(currentDetailRecipe.id);
-        if (rec) renderRecipeDetail(rec);
+        if (rec) renderRecipeDetail(rec, { historyMode: 'none' });
       }
       var mv = document.getElementById('merklisteView');
       if (mv && !mv.hidden) renderMerkliste();
@@ -4592,6 +4885,58 @@
       if (!nut) return '';
       if (nut.children && nut.children.length) return '';
       return (nut.textContent || '').trim();
+    }
+
+    // Phase 1: Slug-Infrastruktur für künftige /rezepte/{slug}-{id} URLs (Spec: dev/recipe_url_slug_spec.md)
+    function slugifyRecipeTitle(title) {
+      var s = String(title == null ? '' : title).trim().toLowerCase();
+      s = s.replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
+      if (s.normalize) s = s.normalize('NFKD');
+      s = s.replace(/[\u0300-\u036f]/g, '');
+      s = s.replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '');
+      return s;
+    }
+
+    function recipeUrlPath(recipe) {
+      if (!recipe || recipe.id == null || recipe.id === '') return '';
+      var base = slugifyRecipeTitle(recipe.name || '');
+      var id = String(recipe.id);
+      return base ? '/rezepte/' + base + '-' + id : '/rezepte/' + id;
+    }
+
+    function parseRecipeIdFromPath(pathname) {
+      var path = String(pathname == null ? '' : pathname);
+      var m = /^\/rezepte\/.+-(\d+)$/.exec(path);
+      return m ? m[1] : '';
+    }
+
+    function getRecipeCanonicalPath(recipe) {
+      if (!recipe) return '';
+      return recipe.slugPath || recipeUrlPath(recipe);
+    }
+
+    function attachRecipeSlugPaths(recipes) {
+      recipeSlugPathById = {};
+      if (!recipes || !recipes.length) return recipes;
+      for (var i = 0; i < recipes.length; i++) {
+        var slugPath = recipeUrlPath(recipes[i]);
+        recipes[i].slugPath = slugPath;
+        recipeSlugPathById[String(recipes[i].id)] = slugPath;
+      }
+      return recipes;
+    }
+
+    // Phase 2: Pfad-Routing /rezepte/{slug}-{id} (Spec: dev/recipe_url_slug_spec.md)
+    function detectRecipePathRoute() {
+      var id = parseRecipeIdFromPath(window.location.pathname);
+      if (!id) return null;
+      var recipe = recipeById(id);
+      if (!recipe) return null;
+      return {
+        id: id,
+        recipe: recipe,
+        path: getRecipeCanonicalPath(recipe)
+      };
     }
 
     function parseRecipes(xmlText) {
@@ -5808,14 +6153,25 @@
 
     function recipeDetailShareUrl() {
       if (!currentDetailRecipe) return '';
-      return window.location.origin + window.location.pathname + window.location.search + '#rezept-' + currentDetailRecipe.id;
+      return SEO_SITE_ORIGIN + getRecipeCanonicalPath(currentDetailRecipe);
     }
 
-    function clearDetailViewState(keepHash) {
+    function getHomeHistoryPath() {
+      var path = window.location.pathname || '/';
+      if (/\/index\.html$/i.test(path)) return path.replace(/\/index\.html$/i, '/');
+      return '/';
+    }
+
+    function clearDetailViewState(keepUrl) {
       currentDetailRecipe = null;
-      if (!keepHash) {
+      if (!keepUrl) {
         try {
-          history.replaceState(null, '', window.location.pathname + window.location.search);
+          var path = window.location.pathname || '';
+          if (/^\/rezepte\//i.test(path)) {
+            history.replaceState(null, '', getHomeHistoryPath());
+          } else {
+            history.replaceState(null, '', path + window.location.search);
+          }
         } catch (e) {}
       }
       var view = document.getElementById('recipeDetailView');
@@ -5880,6 +6236,7 @@
       if (home) home.hidden = false;
       refreshHomeCategoryGrid();
       syncHomeCategoryTilesActive();
+      updateSeoMetaForHome();
     }
 
     function scrollToHashAnchor(hash) {
@@ -5898,7 +6255,18 @@
       });
     }
 
-    function applyRouteFromHash() {
+    function applyRouteFromLocation() {
+      if (!parsedRecipes || !parsedRecipes.length) return;
+
+      var pathId = parseRecipeIdFromPath(window.location.pathname);
+      if (pathId) {
+        var pathRec = recipeById(pathId);
+        if (pathRec) {
+          renderRecipeDetail(pathRec, { historyMode: 'replace' });
+          return;
+        }
+      }
+
       var hash = (window.location.hash || '').trim();
       if (hash === '#ueber-mich') hash = '#home-about';
       if (hash === '#kontakt') {
@@ -5917,10 +6285,10 @@
         return;
       }
       var recipeMatch = /^#rezept-(\d+)$/i.exec(hash);
-      if (recipeMatch && parsedRecipes && parsedRecipes.length) {
+      if (recipeMatch) {
         var rec = recipeById(recipeMatch[1]);
         if (rec) {
-          renderRecipeDetail(rec);
+          renderRecipeDetail(rec, { historyMode: 'replace' });
           return;
         }
       }
@@ -5929,8 +6297,17 @@
         if ((detailView && !detailView.hidden) || currentDetailRecipe) {
           hideRecipeDetailPage(true);
         }
+      } else if (!pathId && !recipeMatch) {
+        var detailViewElse = document.getElementById('recipeDetailView');
+        if ((detailViewElse && !detailViewElse.hidden) || currentDetailRecipe) {
+          hideRecipeDetailPage(true);
+        }
       }
       scrollToHashAnchor(hash);
+    }
+
+    function applyRouteFromHash() {
+      applyRouteFromLocation();
     }
 
     function showMerklisteView() {
@@ -6584,8 +6961,10 @@
       img.classList.remove('is-landscape', 'is-portrait', 'is-square');
     }
 
-    function renderRecipeDetail(recipe) {
+    function renderRecipeDetail(recipe, opts) {
       if (!recipe) return;
+      opts = opts || {};
+      var historyMode = opts.historyMode || 'push';
       hideMerklisteView();
       hideShoppingView();
       currentDetailRecipe = recipe;
@@ -6597,9 +6976,17 @@
       kochansichtStepIndex = 0;
       body.innerHTML = buildRecipeDetailHTML(recipe);
       populateDetailSidebar(recipe);
-      try {
-        history.replaceState(null, '', window.location.pathname + window.location.search + '#rezept-' + recipe.id);
-      } catch (e) {}
+      var recipePath = getRecipeCanonicalPath(recipe);
+      if (historyMode !== 'none' && recipePath) {
+        try {
+          var state = { recipeDetail: true, id: String(recipe.id) };
+          if (historyMode === 'push') {
+            history.pushState(state, '', recipePath);
+          } else {
+            history.replaceState(state, '', recipePath);
+          }
+        } catch (e) {}
+      }
       attachRecipeDetailActionDelegation();
       updateFavoriteButtons();
       renderRatingBlock(recipe);
@@ -6625,6 +7012,7 @@
           applyCardImage(imgDiv, rr.imageSrc);
         }
       });
+      updateSeoMetaForRecipe(recipe);
       window.scrollTo(0, 0);
     }
 
@@ -6932,20 +7320,36 @@
       if (highlightViewAllErr) highlightViewAllErr.hidden = true;
     }
 
-    fetch('kochbuch.xml')
+    fetch('/kochbuch.xml')
       .then(function (r) {
         if (!r.ok) throw new Error('kochbuch.xml HTTP ' + r.status);
         return r.text();
       })
       .then(function (text) {
-        var list = parseRecipes(text);
+        var list = attachRecipeSlugPaths(parseRecipes(text));
         parsedRecipes = list;
+        if (typeof window !== 'undefined') {
+          window.__recipeSlugPhase1 = {
+            slugifyRecipeTitle: slugifyRecipeTitle,
+            recipeUrlPath: recipeUrlPath,
+            parseRecipeIdFromPath: parseRecipeIdFromPath,
+            getRecipeCanonicalPath: getRecipeCanonicalPath,
+            detectRecipePathRoute: detectRecipePathRoute,
+            applyRouteFromLocation: applyRouteFromLocation,
+            getSlugPathById: function (id) { return recipeSlugPathById[String(id)] || ''; },
+            getAllSlugPaths: function () {
+              return parsedRecipes.map(function (r) {
+                return { id: String(r.id), name: r.name, slugPath: r.slugPath || '' };
+              });
+            }
+          };
+        }
         currentRecipeFilterKey = 'alle';
         recipeListVisibleCount = 12;
         updateSurpriseMeButtonState();
         updateRecipeListView();
         populateHomeSidebarNewRecipes();
-        applyRouteFromHash();
+        applyRouteFromLocation();
         var merkVAfter = document.getElementById('merklisteView');
         if (merkVAfter && !merkVAfter.hidden) renderMerkliste();
         renderShoppingListIfVisible();
@@ -7004,6 +7408,10 @@
       var btn = document.getElementById('recipeDetailBack');
       if (!btn) return;
       btn.addEventListener('click', function () {
+        if (window.history.length > 1) {
+          history.back();
+          return;
+        }
         hideRecipeDetailPage();
         updateRecipeListView({ skipHideDetail: true });
         var anchor = document.getElementById('rezepte');
@@ -7013,7 +7421,8 @@
       });
     }
     attachRecipeDetailBack();
-    window.addEventListener('hashchange', applyRouteFromHash);
+    window.addEventListener('popstate', applyRouteFromLocation);
+    window.addEventListener('hashchange', applyRouteFromLocation);
 
     var merklisteNavBtn = document.getElementById('merklisteNavBtn');
     if (merklisteNavBtn) {
