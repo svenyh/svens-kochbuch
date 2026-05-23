@@ -7347,7 +7347,7 @@
         currentRecipeFilterKey = 'alle';
         recipeListVisibleCount = 12;
         updateSurpriseMeButtonState();
-        updateRecipeListView();
+        updateRecipeListView({ skipHideDetail: true });
         populateHomeSidebarNewRecipes();
         applyRouteFromLocation();
         var merkVAfter = document.getElementById('merklisteView');
