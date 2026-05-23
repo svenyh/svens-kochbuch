@@ -3606,6 +3606,15 @@
       281, 282, 286, 287, 289, 290, 291
     ];
     var HIGHLIGHT_DISPLAY_LIMIT = 6;
+    /** Phase 3: optimierte Card-WebPs für initiale Startseiten-Highlights (6 sichtbar). */
+    var CARD_WEBP_BY_RECIPE_ID = {
+      '281': '/images/rezeptbild_281_card.webp',
+      '282': '/images/rezeptbild_282_card.webp',
+      '286': '/images/rezeptbild_286_card.webp',
+      '287': '/images/rezeptbild_287_card.webp',
+      '289': '/images/rezeptbild_289_card.webp',
+      '290': '/images/rezeptbild_290_card.webp'
+    };
     var FILTER_HEADINGS = {
       alle: 'Aktuelle Highlights',
       all: 'Alle Rezepte',
@@ -4456,6 +4465,13 @@
       if (/^https?:\/\//i.test(src)) return src;
       if (src.charAt(0) === '/') return src;
       return '/' + src.replace(/^\.?\//, '');
+    }
+
+    function recipeCardImagePath(recipe) {
+      if (!recipe) return '';
+      var id = String(recipe.id || '');
+      if (CARD_WEBP_BY_RECIPE_ID[id]) return CARD_WEBP_BY_RECIPE_ID[id];
+      return rootImagePath(recipe.imageSrc);
     }
 
     function stripJsonLdStepPrefix(step) {
@@ -6526,7 +6542,7 @@
         var r = list[idx];
         if (imgDiv && r) {
           imgDiv.setAttribute('aria-label', 'Bild: ' + (getRecipeField(r, 'name') || r.name || ''));
-          applyCardImage(imgDiv, r.imageSrc);
+          applyCardImage(imgDiv, recipeCardImagePath(r));
         }
       });
     }
@@ -7013,7 +7029,7 @@
       [].slice.call(grid.querySelectorAll('[data-home-sidebar-img]')).forEach(function (el) {
         var rid = el.getAttribute('data-home-sidebar-img');
         var rr = recipeById(rid);
-        if (rr) applyCardImage(el, rr.imageSrc);
+        if (rr) applyCardImage(el, recipeCardImagePath(rr));
       });
     }
 
@@ -7072,7 +7088,7 @@
           [].slice.call(grid.querySelectorAll('.detail-sidebar-recipe-img')).forEach(function (el) {
             var rid = el.getAttribute('data-sidebar-img');
             var rx = recipeById(rid);
-            if (rx) applyCardImage(el, rx.imageSrc);
+            if (rx) applyCardImage(el, recipeCardImagePath(rx));
           });
         }
       }
@@ -7131,7 +7147,7 @@
         var rr = recipeById(rid);
         if (imgDiv && rr) {
           imgDiv.setAttribute('aria-label', 'Bild: ' + (getRecipeField(rr, 'name') || rr.name || ''));
-          applyCardImage(imgDiv, rr.imageSrc);
+          applyCardImage(imgDiv, recipeCardImagePath(rr));
         }
       });
       updateSeoMetaForRecipe(recipe);
@@ -7235,7 +7251,7 @@
         var r = list[i];
         if (imgDiv && r) {
           imgDiv.setAttribute('aria-label', 'Bild: ' + (getRecipeField(r, 'name') || r.name || ''));
-          applyCardImage(imgDiv, r.imageSrc);
+          applyCardImage(imgDiv, recipeCardImagePath(r));
         }
       });
       updateFavoriteButtons();
