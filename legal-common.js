@@ -23,7 +23,7 @@
       footerClaim: '© 2026 Svenskochbuch.de | Mit Liebe gekocht.',
       footerNavAria: 'Fußnavigation',
       page_title_impressum: 'Impressum | Sven Kocht.',
-      page_title_privacy: 'Datenschutz | Sven Kocht.',
+      page_title_privacy: 'Datenschutzerklärung | Sven Kocht.',
       legal_contact_title: 'Kontakt',
       legal_imprint_title: 'Impressum',
       legal_ddg_info: 'Angaben gemäß § 5 DDG',
