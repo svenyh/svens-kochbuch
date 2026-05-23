@@ -3615,6 +3615,43 @@
       '289': '/images/rezeptbild_289_card.webp',
       '290': '/images/rezeptbild_290_card.webp'
     };
+    /** Phase 4: Detail-WebPs fuer Rezeptbilder > 1 MB. */
+    var DETAIL_WEBP_BY_RECIPE_ID = {
+      '116': '/images/rezeptbild_116_detail.webp',
+      '195': '/images/rezeptbild_195_detail.webp',
+      '196': '/images/rezeptbild_196_detail.webp',
+      '197': '/images/rezeptbild_197_detail.webp',
+      '198': '/images/rezeptbild_198_detail.webp',
+      '199': '/images/rezeptbild_199_detail.webp',
+      '200': '/images/rezeptbild_200_detail.webp',
+      '201': '/images/rezeptbild_201_detail.webp',
+      '202': '/images/rezeptbild_202_detail.webp',
+      '203': '/images/rezeptbild_203_detail.webp',
+      '204': '/images/rezeptbild_204_detail.webp',
+      '205': '/images/rezeptbild_205_detail.webp',
+      '206': '/images/rezeptbild_206_detail.webp',
+      '207': '/images/rezeptbild_207_detail.webp',
+      '208': '/images/rezeptbild_208_detail.webp',
+      '209': '/images/rezeptbild_209_detail.webp',
+      '210': '/images/rezeptbild_210_detail.webp',
+      '211': '/images/rezeptbild_211_detail.webp',
+      '212': '/images/rezeptbild_212_detail.webp',
+      '213': '/images/rezeptbild_213_detail.webp',
+      '214': '/images/rezeptbild_214_detail.webp',
+      '215': '/images/rezeptbild_215_detail.webp',
+      '217': '/images/rezeptbild_217_detail.webp',
+      '281': '/images/rezeptbild_281_detail.webp',
+      '282': '/images/rezeptbild_282_detail.webp',
+      '283': '/images/rezeptbild_283_detail.webp',
+      '284': '/images/rezeptbild_284_detail.webp',
+      '285': '/images/rezeptbild_285_detail.webp',
+      '286': '/images/rezeptbild_286_detail.webp',
+      '287': '/images/rezeptbild_287_detail.webp',
+      '288': '/images/rezeptbild_288_detail.webp',
+      '289': '/images/rezeptbild_289_detail.webp',
+      '290': '/images/rezeptbild_290_detail.webp',
+      '291': '/images/rezeptbild_291_detail.webp'
+    };
     var FILTER_HEADINGS = {
       alle: 'Aktuelle Highlights',
       all: 'Alle Rezepte',
@@ -4471,6 +4508,13 @@
       if (!recipe) return '';
       var id = String(recipe.id || '');
       if (CARD_WEBP_BY_RECIPE_ID[id]) return CARD_WEBP_BY_RECIPE_ID[id];
+      return rootImagePath(recipe.imageSrc);
+    }
+
+    function recipeDetailImagePath(recipe) {
+      if (!recipe) return '';
+      var id = String(recipe.id || '');
+      if (DETAIL_WEBP_BY_RECIPE_ID[id]) return DETAIL_WEBP_BY_RECIPE_ID[id];
       return rootImagePath(recipe.imageSrc);
     }
 
@@ -6937,7 +6981,7 @@
 
       parts.push('<div class="detail-hero" id="recipe-hero"><div class="detail-hero-media">');
       if (r.imageSrc) {
-        parts.push('<img class="detail-hero-img" src="' + esc(rootImagePath(r.imageSrc)) + '" alt="' + esc(getRecipeField(r, "name") || r.name) + '" loading="eager" fetchpriority="high" decoding="async" />');
+        parts.push('<img class="detail-hero-img" src="' + esc(recipeDetailImagePath(r)) + '" alt="' + esc(getRecipeField(r, "name") || r.name) + '" loading="eager" fetchpriority="high" decoding="async" />');
       } else {
         parts.push('<div class="detail-hero-placeholder" aria-hidden="true"></div>');
       }
