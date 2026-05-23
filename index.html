@@ -3378,7 +3378,7 @@
   </div>
 
   <div id="homeView">
-  <section class="hero" style="--hero-image: url('images/hero-outdoor-kitchen.png');">
+  <section class="hero" style="--hero-image: url('/images/hero-outdoor-kitchen.png');">
     <div class="hero-inner">
       <div class="hero-content">
         <p class="hero-badge" id="heroBadge">Svens persönliches Kochbuch</p>
@@ -4447,6 +4447,14 @@
       if (/^https?:\/\//i.test(src)) return src;
       if (src.charAt(0) === '/') return SEO_SITE_ORIGIN + src;
       return SEO_SITE_ORIGIN + '/' + src.replace(/^\.\//, '');
+    }
+
+    function rootImagePath(path) {
+      var src = String(path == null ? '' : path).trim();
+      if (!src) return '';
+      if (/^https?:\/\//i.test(src)) return src;
+      if (src.charAt(0) === '/') return src;
+      return '/' + src.replace(/^\.?\//, '');
     }
 
     function stripJsonLdStepPrefix(step) {
@@ -6912,7 +6920,7 @@
 
       parts.push('<div class="detail-hero" id="recipe-hero"><div class="detail-hero-media">');
       if (r.imageSrc) {
-        parts.push('<img class="detail-hero-img" src="' + esc(r.imageSrc) + '" alt="' + esc(getRecipeField(r, "name") || r.name) + '" loading="lazy" />');
+        parts.push('<img class="detail-hero-img" src="' + esc(rootImagePath(r.imageSrc)) + '" alt="' + esc(getRecipeField(r, "name") || r.name) + '" loading="eager" fetchpriority="high" decoding="async" />');
       } else {
         parts.push('<div class="detail-hero-placeholder" aria-hidden="true"></div>');
       }
@@ -7165,9 +7173,10 @@
     function applyCardImage(div, src) {
       div.classList.add('recipe-img--fallback');
       if (!src) return;
-      probeImage(src, function () {
+      var url = rootImagePath(src);
+      probeImage(url, function () {
         div.classList.remove('recipe-img--fallback');
-        div.style.backgroundImage = "url('" + src.replace(/'/g, '%27') + "')";
+        div.style.backgroundImage = "url('" + url.replace(/'/g, '%27') + "')";
       }, function () {});
     }
 
