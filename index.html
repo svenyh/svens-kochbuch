@@ -6589,6 +6589,7 @@
           applyCardImage(imgDiv, recipeCardImagePath(r));
         }
       });
+      observeLazyCardImages(grid);
     }
 
     function attachMerklisteInteractions() {
@@ -7075,6 +7076,7 @@
         var rr = recipeById(rid);
         if (rr) applyCardImage(el, recipeCardImagePath(rr));
       });
+      observeLazyCardImages(grid);
     }
 
     function getSidebarNewRecipes(limit) {
@@ -7134,6 +7136,7 @@
             var rx = recipeById(rid);
             if (rx) applyCardImage(el, recipeCardImagePath(rx));
           });
+          observeLazyCardImages(grid);
         }
       }
     }
@@ -7194,6 +7197,7 @@
           applyCardImage(imgDiv, recipeCardImagePath(rr));
         }
       });
+      observeLazyCardImages(body);
       updateSeoMetaForRecipe(recipe);
       window.scrollTo(0, 0);
     }
@@ -7231,14 +7235,61 @@
       img.src = url;
     }
 
+    var cardImageLazyObserver = null;
+
+    function loadCardBackgroundImage(el) {
+      if (!el || el.getAttribute('data-bg-loaded') === 'true') return;
+      var src = el.getAttribute('data-bg-src');
+      if (!src) return;
+      el.setAttribute('data-bg-loaded', 'true');
+      el.classList.add('recipe-img--fallback');
+      probeImage(src, function () {
+        el.classList.remove('recipe-img--fallback');
+        el.style.backgroundImage = "url('" + src.replace(/'/g, '%27') + "')";
+      }, function () {});
+    }
+
+    function observeLazyCardImages(root) {
+      var scope = root && root.querySelectorAll ? root : document;
+      var lazyImages = scope.querySelectorAll('[data-bg-src]:not([data-bg-loaded])');
+      if (!lazyImages.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        [].slice.call(lazyImages).forEach(loadCardBackgroundImage);
+        return;
+      }
+
+      if (!cardImageLazyObserver) {
+        cardImageLazyObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            loadCardBackgroundImage(entry.target);
+            cardImageLazyObserver.unobserve(entry.target);
+          });
+        }, { rootMargin: '300px 0px' });
+      }
+
+      var margin = 300;
+      var vh = window.innerHeight || document.documentElement.clientHeight || 0;
+      [].slice.call(lazyImages).forEach(function (el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.bottom >= -margin && rect.top <= vh + margin) {
+          loadCardBackgroundImage(el);
+        } else {
+          cardImageLazyObserver.observe(el);
+        }
+      });
+    }
+
     function applyCardImage(div, src) {
       div.classList.add('recipe-img--fallback');
-      if (!src) return;
-      var url = rootImagePath(src);
-      probeImage(url, function () {
-        div.classList.remove('recipe-img--fallback');
-        div.style.backgroundImage = "url('" + url.replace(/'/g, '%27') + "')";
-      }, function () {});
+      div.style.backgroundImage = '';
+      div.removeAttribute('data-bg-loaded');
+      if (!src) {
+        div.removeAttribute('data-bg-src');
+        return;
+      }
+      div.setAttribute('data-bg-src', rootImagePath(src));
     }
 
     function renderRecipeCards(recipes) {
@@ -7298,6 +7349,7 @@
           applyCardImage(imgDiv, recipeCardImagePath(r));
         }
       });
+      observeLazyCardImages(grid);
       updateFavoriteButtons();
     }
 
