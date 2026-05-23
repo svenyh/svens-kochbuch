@@ -3822,6 +3822,7 @@
         detail_back: '← Zurück zu den Rezepten',
         detail_ingredients: 'Zutaten',
         detail_preparation: 'Zubereitung',
+        jsonld_step_name: 'Schritt {n}',
         detail_timing: 'Timing',
         detail_tips: 'Tipps & Varianten',
         detail_knowledge_kicker: 'Kochwissen',
@@ -4030,6 +4031,7 @@
         detail_back: '← Wróć do przepisów',
         detail_ingredients: 'Składniki',
         detail_preparation: 'Przygotowanie',
+        jsonld_step_name: 'Krok {n}',
         detail_timing: 'Czas',
         detail_tips: 'Wskazówki i warianty',
         detail_knowledge_kicker: 'Wiedza kulinarna',
@@ -4238,6 +4240,7 @@
         detail_back: '← Back to recipes',
         detail_ingredients: 'Ingredients',
         detail_preparation: 'Preparation',
+        jsonld_step_name: 'Step {n}',
         detail_timing: 'Timing',
         detail_tips: 'Tips & variations',
         detail_knowledge_kicker: 'Cooking knowledge',
@@ -4482,18 +4485,74 @@
       for (var i = 0; i < timingList.length; i++) {
         var line = String(timingList[i] || '');
         var lower = line.toLowerCase();
+        if (/\b(ziehzeit|ruhezeit|marinierzeit|kühlzeit|kuehlzeit|wartezeit)\b/.test(lower)) continue;
         var valuePart = line.indexOf(':') >= 0 ? line.slice(line.indexOf(':') + 1).trim() : line.trim();
         var iso = toIsoDuration(valuePart);
         if (!iso) continue;
-        if (/(gesamt|total|razem|insgesamt|suma)\b/.test(lower)) {
+        if (/\b(gesamt|total|razem|insgesamt|suma)\b/.test(lower)) {
           result.totalTime = iso;
-        } else if (/(vorbereit|preparation|przygotow)/.test(lower)) {
+        } else if (/(vorbereitung|vorbereitungszeit|preparation|przygotow)/.test(lower)) {
           result.prepTime = iso;
-        } else if (/(koch|gar|schmor|back|grill|braten|anbraten|frit|duszen|piek|roast|bake|simmer|fry|ofen|pieczen)/.test(lower)) {
+        } else if (/(kochzeit|backzeit|garzeit|grillzeit|bratzeit|schmorzeit)/.test(lower)) {
           if (!result.cookTime) result.cookTime = iso;
         }
       }
       return result;
+    }
+
+    var JSONLD_KEYWORD_STOP = {
+      mit: 1, und: 1, oder: 1, aus: 1, mit: 1, dem: 1, der: 1, die: 1, das: 1, den: 1, des: 1,
+      ein: 1, eine: 1, einer: 1, eins: 1, zum: 1, zur: 1, von: 1, im: 1, in: 1, am: 1, an: 1,
+      for: 1, with: 1, and: 1, the: 1, from: 1, na: 1, w: 1, z: 1, i: 1, do: 1, po: 1
+    };
+
+    function buildRecipeKeywords(recipe) {
+      if (!recipe) return '';
+      var seen = {};
+      var out = [];
+      function add(kw) {
+        var k = String(kw || '').trim();
+        if (!k || k.length < 2) return;
+        var key = k.toLowerCase();
+        if (seen[key]) return;
+        seen[key] = true;
+        out.push(k);
+      }
+      var categoryRaw = stripHtml(getRecipeField(recipe, 'category') || recipe.category || '');
+      if (categoryRaw) {
+        String(categoryRaw).split('/').forEach(function (part) {
+          add(part.trim());
+        });
+      }
+      var name = stripHtml(getRecipeField(recipe, 'name') || recipe.name || '');
+      if (name) {
+        var nameParts = name.split(/[\s,/–\-]+/);
+        for (var ni = 0; ni < nameParts.length; ni++) {
+          var word = nameParts[ni].trim();
+          if (!word || word.length < 3) continue;
+          if (JSONLD_KEYWORD_STOP[word.toLowerCase()]) continue;
+          add(word);
+        }
+        if (!out.length) add(name);
+      }
+      return out.slice(0, 10).join(', ');
+    }
+
+    function buildRecipeHowToSteps(recipe, canonical) {
+      var prepSteps = normalizeFieldToList(getRecipeField(recipe, 'preparation'))
+        .map(function (step) { return stripJsonLdStepPrefix(step); })
+        .filter(Boolean);
+      return prepSteps.map(function (step, index) {
+        var position = index + 1;
+        var item = {
+          '@type': 'HowToStep',
+          position: position,
+          name: t('jsonld_step_name', { n: position }),
+          text: step
+        };
+        if (canonical) item.url = canonical + '#step-' + position;
+        return item;
+      });
     }
 
     function buildRecipeJsonLd(recipe) {
@@ -4512,6 +4571,7 @@
       var persons = stripHtml(getRecipeField(recipe, 'persons') || recipe.persons || '');
       var imageUrl = recipe.imageSrc ? absoluteUrl(recipe.imageSrc) : '';
       var canonical = getRecipeCanonicalUrl(recipe);
+      var keywords = buildRecipeKeywords(recipe);
 
       if (!name || !ingredients.length || !prepSteps.length) return null;
 
@@ -4524,12 +4584,7 @@
           name: 'Sven Nicolaus'
         },
         recipeIngredient: ingredients,
-        recipeInstructions: prepSteps.map(function (step) {
-          return {
-            '@type': 'HowToStep',
-            text: step
-          };
-        }),
+        recipeInstructions: buildRecipeHowToSteps(recipe, canonical),
         mainEntityOfPage: {
           '@type': 'WebPage',
           '@id': canonical
@@ -4538,6 +4593,7 @@
 
       if (description) obj.description = description;
       if (imageUrl) obj.image = [imageUrl];
+      if (keywords) obj.keywords = keywords;
       if (categoryRaw) {
         var catParts = String(categoryRaw).split('/').map(function (p) { return p.trim(); }).filter(Boolean);
         if (catParts.length) obj.recipeCategory = catParts[0];
@@ -6834,7 +6890,7 @@
       if (!steps || !steps.length) return '';
       var h = '<div class="recipe-steps">';
       for (var si = 0; si < steps.length; si++) {
-        h += '<div class="step"><span class="step-number">' + String(si + 1) + '</span><div class="step-body">' + esc(steps[si]) + '</div></div>';
+        h += '<div class="step" id="step-' + String(si + 1) + '"><span class="step-number">' + String(si + 1) + '</span><div class="step-body">' + esc(steps[si]) + '</div></div>';
       }
       return h + '</div>';
     }
