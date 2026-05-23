@@ -21,6 +21,7 @@
     .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
     .stat { background: #fff; border: 1px solid #e5e0d6; border-radius: 10px; padding: 12px 16px; min-width: 120px; }
     .stat strong { display: block; font-size: 1.4rem; }
+    .hint { color: #666; font-size: 13px; margin: -8px 0 16px; max-width: 420px; }
   </style>
 </head>
 <body>
@@ -29,7 +30,8 @@
 
   <div id="loginPanel">
     <label for="apiBase">API-Basis-URL</label>
-    <input type="text" id="apiBase" value="/api" placeholder="/api oder https://svenskochbuch.de/api" />
+    <input type="text" id="apiBase" value="/api" placeholder="/api" autocomplete="off" />
+    <p class="hint">Bei Live normalerweise /api verwenden. Alternativ: https://svenskochbuch.de/api</p>
     <label for="adminToken">Admin-Token (Bearer)</label>
     <input type="password" id="adminToken" autocomplete="current-password" />
     <button type="button" class="primary" id="loginBtn">Anmelden &amp; laden</button>
@@ -51,12 +53,52 @@
       var statsEl = document.getElementById('stats');
       var listEl = document.getElementById('list');
 
+      function looksLikeApiBase(value) {
+        if (!value) return true;
+        return value.charAt(0) === '/' || /^https?:\/\//i.test(value);
+      }
+
+      function normalizeApiBaseInput() {
+        var raw = (apiBaseInput.value || '').trim();
+        if (!raw || !looksLikeApiBase(raw)) {
+          apiBaseInput.value = '/api';
+        }
+      }
+
       function base() {
-        return (apiBaseInput.value || '/api').replace(/\/+$/, '');
+        var raw = (apiBaseInput.value || '').trim();
+        if (!raw) return '/api';
+        if (!looksLikeApiBase(raw)) {
+          throw new Error('API-Basis-URL muss /api oder eine vollständige URL sein.');
+        }
+        return raw.replace(/\/+$/, '');
       }
 
       function token() {
         return tokenInput.value.trim();
+      }
+
+      function countOf(data, key) {
+        if (!data) return 0;
+        var direct = data[key];
+        if (Array.isArray(direct)) return direct.length;
+        if (direct != null && typeof direct === 'object' && direct.count != null) {
+          return Number(direct.count) || 0;
+        }
+        if (data.summary && data.summary[key] != null) return Number(data.summary[key]) || 0;
+        if (data.counts && data.counts[key] != null) return Number(data.counts[key]) || 0;
+        if (direct != null && direct !== '' && !isNaN(Number(direct))) return Number(direct);
+        return 0;
+      }
+
+      function renderStats(data) {
+        var pending = countOf(data, 'pending');
+        var approved = countOf(data, 'approved');
+        var rejected = countOf(data, 'rejected');
+        statsEl.innerHTML =
+          '<div class="stat"><strong>' + pending + '</strong> Ausstehend</div>' +
+          '<div class="stat"><strong>' + approved + '</strong> Freigegeben</div>' +
+          '<div class="stat"><strong>' + rejected + '</strong> Abgelehnt</div>';
       }
 
       function stars(n) {
@@ -68,18 +110,34 @@
       async function apiFetch(path, opts) {
         opts = opts || {};
         var headers = Object.assign({ Authorization: 'Bearer ' + token() }, opts.headers || {});
-        var res = await fetch(base() + path, Object.assign({}, opts, { headers: headers }));
-        var data = await res.json().catch(function () { return {}; });
-        if (!res.ok) throw new Error(data.error || res.statusText);
+        var url = base() + path;
+        var res;
+        try {
+          res = await fetch(url, Object.assign({}, opts, { headers: headers }));
+        } catch (err) {
+          throw new Error('API nicht erreichbar – bitte API-Basis-URL prüfen.');
+        }
+        var data = null;
+        try {
+          data = await res.json();
+        } catch (err) {
+          data = null;
+        }
+        if (res.status === 401) {
+          throw new Error('Unauthorized – bitte Admin-Token prüfen.');
+        }
+        if (!res.ok) {
+          throw new Error((data && data.error) || res.statusText || ('API-Fehler (' + res.status + ')'));
+        }
+        if (data == null || typeof data !== 'object') {
+          throw new Error('API nicht erreichbar – bitte API-Basis-URL prüfen.');
+        }
         return data;
       }
 
       async function loadStats() {
-        var s = await apiFetch('/admin/stats');
-        statsEl.innerHTML =
-          '<div class="stat"><strong>' + s.pending + '</strong> Ausstehend</div>' +
-          '<div class="stat"><strong>' + s.approved + '</strong> Freigegeben</div>' +
-          '<div class="stat"><strong>' + s.rejected + '</strong> Abgelehnt</div>';
+        var statsData = await apiFetch('/admin/stats');
+        renderStats(statsData);
       }
 
       async function loadPending() {
@@ -123,9 +181,16 @@
         return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       }
 
+      normalizeApiBaseInput();
+
       loginBtn.addEventListener('click', async function () {
         loginErr.hidden = true;
+        mainPanel.hidden = true;
         try {
+          if (!token()) {
+            throw new Error('Unauthorized – bitte Admin-Token prüfen.');
+          }
+          normalizeApiBaseInput();
           await loadStats();
           await loadPending();
           mainPanel.hidden = false;
