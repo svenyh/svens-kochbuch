@@ -2210,6 +2210,102 @@
       margin-top: 8px;
     }
 
+    .detail-rating-public {
+      margin: 0 0 16px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: rgba(184, 134, 11, 0.06);
+      border: 1px solid rgba(184, 134, 11, 0.14);
+    }
+
+    .detail-rating-public.is-loading {
+      opacity: 0.7;
+    }
+
+    .detail-rating-public-avg {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 0 0 4px;
+    }
+
+    .detail-rating-public-count {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .detail-rating-form {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .detail-rating-form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin: 0 0 6px;
+      color: var(--dark);
+    }
+
+    .detail-rating-input,
+    .detail-rating-textarea {
+      width: 100%;
+      max-width: 420px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font: inherit;
+      margin-bottom: 12px;
+      background: #fff;
+    }
+
+    .detail-rating-textarea {
+      min-height: 88px;
+      resize: vertical;
+    }
+
+    .detail-rating-consent {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--muted);
+      margin: 0 0 12px;
+      max-width: 520px;
+    }
+
+    .detail-rating-consent input {
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .detail-rating-hp {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .detail-rating-msg {
+      font-size: 13px;
+      margin: 8px 0 0;
+      font-weight: 600;
+    }
+
+    .detail-rating-msg.is-success { color: #1e7e34; }
+    .detail-rating-msg.is-error { color: #c0392b; }
+
+    .detail-rating-private-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 14px 0 0;
+      line-height: 1.45;
+    }
+
     .detail-feedback-merken-btn.is-favorite {
       border-color: rgba(230, 126, 34, 0.45);
       color: var(--accent-dark);
@@ -3716,6 +3812,17 @@
     var SHOPPING_STORAGE_KEY = 'svenskochbuch_shopping_list';
     var SHOPPING_RECIPE_STATE_KEY = 'svenskochbuch_shopping_recipe_state';
     var RATINGS_STORAGE_KEY = 'svenskochbuch_ratings';
+    var RATINGS_PUBLIC_ENABLED = true;
+    var AGGREGATE_RATING_ENABLED = true;
+    var MIN_RATINGS_FOR_SEO = 5;
+    var publicRatingsCache = {};
+    var publicRatingSubmitValue = 0;
+    var publicRatingPageLoadedAt = 0;
+    var RATINGS_API_BASE = (function () {
+      var host = window.location.hostname;
+      if (host === '127.0.0.1' || host === 'localhost') return 'http://127.0.0.1:8787';
+      return '';
+    })();
     var LANG_STORAGE_KEY = 'svenskochbuch_lang';
     var currentLang = 'de';
 
@@ -3906,10 +4013,26 @@
         detail_add_to_shopping: 'Zutaten zur Einkaufsliste hinzufügen',
         detail_added_to_shopping: 'Zutaten hinzugefügt',
         rating_title: 'Hat dir das Rezept gefallen?',
-        rating_sub: 'Deine persönliche Bewertung wird nur auf diesem Gerät gespeichert.',
+        rating_sub: 'Bewerte dieses Rezept öffentlich oder speichere eine private Notiz nur auf diesem Gerät.',
         rating_not_rated: 'Noch nicht bewertet',
-        rating_value: 'Deine Bewertung: {rating} von 5 Sternen',
-        rating_clear: 'Bewertung löschen',
+        rating_value: 'Deine private Notiz: {rating} von 5 Sternen',
+        rating_clear: 'Private Notiz löschen',
+        rating_public_loading: 'Bewertungen werden geladen …',
+        rating_public_none: 'Noch keine öffentlichen Bewertungen',
+        rating_public_avg: '{avg} von 5 · {count} Bewertungen',
+        rating_public_submit_label: 'Öffentliche Bewertung abgeben',
+        rating_public_name_label: 'Name (optional)',
+        rating_public_name_placeholder: 'Dein Name oder Nickname',
+        rating_public_comment_label: 'Kommentar (optional)',
+        rating_public_comment_placeholder: 'Kurzer Kommentar zum Rezept',
+        rating_public_consent: 'Ich willige ein, dass mein Name und/oder Kommentar nach Prüfung veröffentlicht werden.',
+        rating_public_submit: 'Bewertung absenden',
+        rating_public_submitting: 'Wird gesendet …',
+        rating_public_success: 'Danke für deine Bewertung!',
+        rating_public_pending: 'Danke! Deine Bewertung wird geprüft.',
+        rating_public_error: 'Senden fehlgeschlagen. Bitte später erneut versuchen.',
+        rating_public_offline: 'Bewertungen derzeit nicht verfügbar.',
+        rating_private_note: 'Private Sterne unten gelten nur für dieses Gerät (Merkliste-Filter).',
 
         merkliste_title: 'Merkliste',
         merkliste_empty: 'Noch keine Rezepte gemerkt.',
@@ -4115,10 +4238,26 @@
         detail_add_to_shopping: 'Dodaj składniki do listy zakupów',
         detail_added_to_shopping: 'Składniki dodane',
         rating_title: 'Czy przepis Ci się podobał?',
-        rating_sub: 'Twoja osobista ocena jest zapisywana tylko na tym urządzeniu.',
+        rating_sub: 'Oceń przepis publicznie lub zapisz prywatną notatkę tylko na tym urządzeniu.',
         rating_not_rated: 'Jeszcze nie oceniono',
-        rating_value: 'Twoja ocena: {rating} z 5 gwiazdek',
-        rating_clear: 'Usuń ocenę',
+        rating_value: 'Twoja prywatna notatka: {rating} z 5 gwiazdek',
+        rating_clear: 'Usuń prywatną notatkę',
+        rating_public_loading: 'Ładowanie ocen …',
+        rating_public_none: 'Brak publicznych ocen',
+        rating_public_avg: '{avg} z 5 · {count} ocen',
+        rating_public_submit_label: 'Wyślij publiczną ocenę',
+        rating_public_name_label: 'Imię (opcjonalnie)',
+        rating_public_name_placeholder: 'Twoje imię lub nick',
+        rating_public_comment_label: 'Komentarz (opcjonalnie)',
+        rating_public_comment_placeholder: 'Krótki komentarz do przepisu',
+        rating_public_consent: 'Wyrażam zgodę na publikację mojego imienia i/lub komentarza po weryfikacji.',
+        rating_public_submit: 'Wyślij ocenę',
+        rating_public_submitting: 'Wysyłanie …',
+        rating_public_success: 'Dziękujemy za ocenę!',
+        rating_public_pending: 'Dziękujemy! Twoja ocena jest weryfikowana.',
+        rating_public_error: 'Wysyłanie nie powiodło się. Spróbuj ponownie później.',
+        rating_public_offline: 'Oceny są obecnie niedostępne.',
+        rating_private_note: 'Prywatne gwiazdki poniżej dotyczą tylko tego urządzenia (filtr ulubionych).',
 
         merkliste_title: 'Ulubione',
         merkliste_empty: 'Nie zapisano jeszcze żadnych przepisów.',
@@ -4324,10 +4463,26 @@
         detail_add_to_shopping: 'Add ingredients to shopping list',
         detail_added_to_shopping: 'Ingredients added',
         rating_title: 'Did you like this recipe?',
-        rating_sub: 'Your personal rating is saved only on this device.',
+        rating_sub: 'Rate this recipe publicly or save a private note on this device only.',
         rating_not_rated: 'Not rated yet',
-        rating_value: 'Your rating: {rating} out of 5 stars',
-        rating_clear: 'Delete rating',
+        rating_value: 'Your private note: {rating} out of 5 stars',
+        rating_clear: 'Delete private note',
+        rating_public_loading: 'Loading ratings …',
+        rating_public_none: 'No public ratings yet',
+        rating_public_avg: '{avg} of 5 · {count} ratings',
+        rating_public_submit_label: 'Submit a public rating',
+        rating_public_name_label: 'Name (optional)',
+        rating_public_name_placeholder: 'Your name or nickname',
+        rating_public_comment_label: 'Comment (optional)',
+        rating_public_comment_placeholder: 'Short comment about the recipe',
+        rating_public_consent: 'I consent to my name and/or comment being published after review.',
+        rating_public_submit: 'Submit rating',
+        rating_public_submitting: 'Sending …',
+        rating_public_success: 'Thank you for your rating!',
+        rating_public_pending: 'Thank you! Your rating is being reviewed.',
+        rating_public_error: 'Could not submit. Please try again later.',
+        rating_public_offline: 'Ratings are currently unavailable.',
+        rating_private_note: 'Private stars below apply to this device only (favorites filter).',
 
         merkliste_title: 'Saved recipes',
         merkliste_empty: 'No recipes saved yet.',
@@ -4706,6 +4861,19 @@
       if (times.prepTime) obj.prepTime = times.prepTime;
       if (times.cookTime) obj.cookTime = times.cookTime;
       if (times.totalTime) obj.totalTime = times.totalTime;
+
+      if (AGGREGATE_RATING_ENABLED && recipe && recipe.id != null) {
+        var pub = publicRatingsCache[String(recipe.id)];
+        if (pub && pub.hasEnoughForSeo && pub.ratingCount >= MIN_RATINGS_FOR_SEO && pub.ratingAverage != null) {
+          obj.aggregateRating = {
+            '@type': 'AggregateRating',
+            ratingValue: String(Math.round(Number(pub.ratingAverage) * 10) / 10),
+            reviewCount: String(pub.ratingCount),
+            bestRating: '5',
+            worstRating: '1'
+          };
+        }
+      }
 
       return obj;
     }
@@ -5717,12 +5885,41 @@
       if (!r || typeof toggleFavorite !== 'function' || typeof updateFavoriteButtons !== 'function') return '';
       var hid = 'detail-feedback-heading-' + esc(String(r.id));
       var sid = esc(String(r.id));
+      var publicBlock = RATINGS_PUBLIC_ENABLED
+        ? (
+          '<div class="detail-rating-public is-loading" data-public-rating-box="' + sid + '">' +
+          '<p class="detail-rating-public-avg" data-public-rating-avg>' + esc(t('rating_public_loading')) + '</p>' +
+          '<p class="detail-rating-public-count" data-public-rating-count hidden></p>' +
+          '</div>' +
+          '<div class="detail-rating-form" data-public-rating-form="' + sid + '">' +
+          '<p class="detail-rating-form-label">' + esc(t('rating_public_submit_label')) + '</p>' +
+          '<div class="detail-rating-stars detail-rating-stars--submit" role="group" aria-label="' + esc(t('rating_stars_group_aria')) + '" data-public-rating-stars="' + sid + '">' +
+            '<button type="button" class="detail-rating-star" data-public-rating-value="1" aria-label="' + esc(t('rating_star_aria_1')) + '">\u2605</button>' +
+            '<button type="button" class="detail-rating-star" data-public-rating-value="2" aria-label="' + esc(t('rating_star_aria_2')) + '">\u2605</button>' +
+            '<button type="button" class="detail-rating-star" data-public-rating-value="3" aria-label="' + esc(t('rating_star_aria_3')) + '">\u2605</button>' +
+            '<button type="button" class="detail-rating-star" data-public-rating-value="4" aria-label="' + esc(t('rating_star_aria_4')) + '">\u2605</button>' +
+            '<button type="button" class="detail-rating-star" data-public-rating-value="5" aria-label="' + esc(t('rating_star_aria_5')) + '">\u2605</button>' +
+          '</div>' +
+          '<label class="detail-rating-form-label" for="public-rating-name-' + sid + '">' + esc(t('rating_public_name_label')) + '</label>' +
+          '<input class="detail-rating-input" type="text" id="public-rating-name-' + sid + '" maxlength="50" autocomplete="nickname" placeholder="' + esc(t('rating_public_name_placeholder')) + '" data-public-rating-name />' +
+          '<label class="detail-rating-form-label" for="public-rating-comment-' + sid + '">' + esc(t('rating_public_comment_label')) + '</label>' +
+          '<textarea class="detail-rating-textarea" id="public-rating-comment-' + sid + '" maxlength="500" placeholder="' + esc(t('rating_public_comment_placeholder')) + '" data-public-rating-comment></textarea>' +
+          '<label class="detail-rating-hp" for="public-rating-hp-' + sid + '">Leave empty</label>' +
+          '<input class="detail-rating-hp" type="text" id="public-rating-hp-' + sid + '" tabindex="-1" autocomplete="off" data-public-rating-hp />' +
+          '<label class="detail-rating-consent"><input type="checkbox" data-public-rating-consent /> ' + esc(t('rating_public_consent')) + '</label>' +
+          '<button type="button" class="detail-action-btn" data-public-rating-submit="1">' + esc(t('rating_public_submit')) + '</button>' +
+          '<p class="detail-rating-msg" data-public-rating-msg hidden></p>' +
+          '</div>'
+        )
+        : '';
       return (
         '<div class="detail-follow" id="recipe-rating">' +
         '<section class="detail-card detail-feedback-hint" aria-labelledby="' + hid + '">' +
         '<h2 id="' + hid + '" class="detail-feedback-heading">' + esc(t('rating_title')) + '</h2>' +
         '<p class="detail-rating-sub">' + esc(t('rating_sub')) + '</p>' +
-        '<div class="detail-rating-stars" role="group" aria-label="Sterne-Bewertung" data-rating-recipe-id="' + sid + '">' +
+        publicBlock +
+        '<p class="detail-rating-form-label">' + esc(t('rating_private_note')) + '</p>' +
+        '<div class="detail-rating-stars" role="group" aria-label="' + esc(t('rating_stars_group_aria')) + '" data-rating-recipe-id="' + sid + '">' +
           '<button type="button" class="detail-rating-star" data-rating-value="1" aria-label="' + esc(t('rating_star_aria_1')) + '">\u2605</button>' +
           '<button type="button" class="detail-rating-star" data-rating-value="2" aria-label="' + esc(t('rating_star_aria_2')) + '">\u2605</button>' +
           '<button type="button" class="detail-rating-star" data-rating-value="3" aria-label="' + esc(t('rating_star_aria_3')) + '">\u2605</button>' +
@@ -5735,6 +5932,160 @@
         '</div>' +
         '</section></div>'
       );
+    }
+
+    function ratingsApiUrl(path) {
+      var base = RATINGS_API_BASE || '';
+      return base + path;
+    }
+
+    function formatRatingAverage(avg) {
+      if (avg == null || !isFinite(Number(avg))) return '';
+      return String(Math.round(Number(avg) * 10) / 10).replace('.', ',');
+    }
+
+    function renderPublicRatingAggregate(recipeId, data, err) {
+      var body = document.getElementById('recipeDetailBody');
+      if (!body) return;
+      var box = body.querySelector('[data-public-rating-box="' + String(recipeId) + '"]');
+      if (!box) return;
+      var avgEl = box.querySelector('[data-public-rating-avg]');
+      var countEl = box.querySelector('[data-public-rating-count]');
+      box.classList.remove('is-loading');
+      if (err || !data) {
+        if (avgEl) avgEl.textContent = t('rating_public_offline');
+        if (countEl) countEl.hidden = true;
+        return;
+      }
+      publicRatingsCache[String(recipeId)] = data;
+      if (!data.ratingCount) {
+        if (avgEl) avgEl.textContent = t('rating_public_none');
+        if (countEl) countEl.hidden = true;
+      } else {
+        if (avgEl) {
+          avgEl.textContent = t('rating_public_avg', {
+            avg: formatRatingAverage(data.ratingAverage),
+            count: data.ratingCount
+          });
+        }
+        if (countEl) countEl.hidden = true;
+      }
+      if (currentDetailRecipe && String(currentDetailRecipe.id) === String(recipeId)) {
+        updateRecipeJsonLd(currentDetailRecipe);
+      }
+    }
+
+    function loadPublicRatings(recipeId) {
+      if (!RATINGS_PUBLIC_ENABLED || !recipeId) return Promise.resolve(null);
+      var sid = String(recipeId);
+      return fetch(ratingsApiUrl('/api/ratings/' + encodeURIComponent(sid)), {
+        method: 'GET',
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
+        .then(function (data) {
+          renderPublicRatingAggregate(sid, data, false);
+          return data;
+        })
+        .catch(function () {
+          renderPublicRatingAggregate(sid, null, true);
+          return null;
+        });
+    }
+
+    function renderPublicRatingSubmitStars(recipeId) {
+      var body = document.getElementById('recipeDetailBody');
+      if (!body) return;
+      var wrap = body.querySelector('[data-public-rating-stars="' + String(recipeId) + '"]');
+      if (!wrap) return;
+      var stars = [].slice.call(wrap.querySelectorAll('[data-public-rating-value]'));
+      stars.forEach(function (btn) {
+        var v = parseInt(btn.getAttribute('data-public-rating-value') || '0', 10);
+        var active = !!publicRatingSubmitValue && v <= publicRatingSubmitValue;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+    }
+
+    function setPublicRatingSubmitMessage(recipeId, text, kind) {
+      var body = document.getElementById('recipeDetailBody');
+      if (!body) return;
+      var msg = body.querySelector('[data-public-rating-form="' + String(recipeId) + '"] [data-public-rating-msg]');
+      if (!msg) return;
+      if (!text) {
+        msg.hidden = true;
+        msg.textContent = '';
+        msg.classList.remove('is-success', 'is-error');
+        return;
+      }
+      msg.hidden = false;
+      msg.textContent = text;
+      msg.classList.toggle('is-success', kind === 'success');
+      msg.classList.toggle('is-error', kind === 'error');
+    }
+
+    function submitPublicRating(recipe) {
+      if (!recipe || !RATINGS_PUBLIC_ENABLED) return Promise.resolve(false);
+      if (!publicRatingSubmitValue || publicRatingSubmitValue < 1 || publicRatingSubmitValue > 5) {
+        setPublicRatingSubmitMessage(recipe.id, t('rating_not_rated'), 'error');
+        return Promise.resolve(false);
+      }
+      var body = document.getElementById('recipeDetailBody');
+      var form = body && body.querySelector('[data-public-rating-form="' + String(recipe.id) + '"]');
+      if (!form) return Promise.resolve(false);
+      var nameEl = form.querySelector('[data-public-rating-name]');
+      var commentEl = form.querySelector('[data-public-rating-comment]');
+      var hpEl = form.querySelector('[data-public-rating-hp]');
+      var consentEl = form.querySelector('[data-public-rating-consent]');
+      var submitBtn = form.querySelector('[data-public-rating-submit="1"]');
+      var userName = nameEl ? String(nameEl.value || '').trim() : '';
+      var comment = commentEl ? String(commentEl.value || '').trim() : '';
+      var honeypot = hpEl ? String(hpEl.value || '').trim() : '';
+      if ((userName || comment) && consentEl && !consentEl.checked) {
+        setPublicRatingSubmitMessage(recipe.id, t('rating_public_consent'), 'error');
+        return Promise.resolve(false);
+      }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = t('rating_public_submitting');
+      }
+      return fetch(ratingsApiUrl('/api/ratings'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          recipeId: recipe.id,
+          ratingValue: publicRatingSubmitValue,
+          userName: userName,
+          comment: comment,
+          honeypot: honeypot,
+          consent: !!(consentEl && consentEl.checked),
+          pageLoadedAt: publicRatingPageLoadedAt || Date.now()
+        })
+      })
+        .then(function (res) {
+          return res.json().then(function (data) {
+            if (!res.ok) throw new Error((data && data.error) || 'HTTP ' + res.status);
+            return data;
+          });
+        })
+        .then(function (data) {
+          var msg = data.status === 'pending' ? t('rating_public_pending') : t('rating_public_success');
+          setPublicRatingSubmitMessage(recipe.id, msg, 'success');
+          return loadPublicRatings(recipe.id);
+        })
+        .catch(function () {
+          setPublicRatingSubmitMessage(recipe.id, t('rating_public_error'), 'error');
+          return null;
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = t('rating_public_submit');
+          }
+        });
     }
 
     function getRatings() {
@@ -6713,6 +7064,22 @@
           }
           return;
         }
+        var pubRateBtn = e.target.closest('[data-public-rating-value]');
+        if (pubRateBtn && body.contains(pubRateBtn) && currentDetailRecipe) {
+          e.preventDefault();
+          var pval = parseInt(pubRateBtn.getAttribute('data-public-rating-value') || '0', 10);
+          if (pval >= 1 && pval <= 5) {
+            publicRatingSubmitValue = pval;
+            renderPublicRatingSubmitStars(currentDetailRecipe.id);
+          }
+          return;
+        }
+        var pubSubmitBtn = e.target.closest('[data-public-rating-submit="1"]');
+        if (pubSubmitBtn && body.contains(pubSubmitBtn) && currentDetailRecipe) {
+          e.preventDefault();
+          submitPublicRating(currentDetailRecipe);
+          return;
+        }
         var clrBtn = e.target.closest('[data-rating-clear="1"]');
         if (clrBtn && body.contains(clrBtn) && currentDetailRecipe) {
           e.preventDefault();
@@ -7203,7 +7570,11 @@
       }
       attachRecipeDetailActionDelegation();
       updateFavoriteButtons();
+      publicRatingSubmitValue = 0;
+      publicRatingPageLoadedAt = Date.now();
       renderRatingBlock(recipe);
+      renderPublicRatingSubmitStars(recipe.id);
+      loadPublicRatings(recipe.id);
       var imgEl = body.querySelector('.detail-hero-img');
       if (imgEl) {
         applyDetailHeroAspectClass(imgEl);

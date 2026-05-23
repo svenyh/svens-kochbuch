@@ -40,9 +40,13 @@
       privacy_tracking: '4. Tracking und Analyse',
       privacy_tracking_text_1: 'Auf dieser Website sind derzeit keine externen Tracking- oder Analyse-Tools vorgesehen. Sofern zukünftig zusätzliche Dienste eingebunden werden, ist diese Erklärung entsprechend anzupassen.',
       privacy_tracking_text_2: 'Wenn du auf der Startseite die Funktion „Merken“ nutzt, werden die gewählten Rezept-IDs lokal in deinem Browser gespeichert (localStorage). Es werden dafür keine Daten zu Werbe- oder Analysezwecken an den Betreiber übermittelt.',
-      privacy_rights: '5. Deine Rechte',
-      privacy_rights_text: 'Du hast im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Beschwerde bei einer zuständigen Aufsichtsbehörde.',
-      privacy_updated: '6. Stand',
+      privacy_ratings: '5. Rezeptbewertungen',
+      privacy_ratings_text_1: 'Du kannst Rezepte optional mit 1–5 Sternen bewerten. Sterne ohne Name oder Kommentar können nach technischer Prüfung direkt veröffentlicht werden. Wenn du einen Namen oder Kommentar angibst, prüfen wir den Inhalt vor der Veröffentlichung.',
+      privacy_ratings_text_2: 'Für Missbrauchsschutz speichern wir eine gekürzte, gehashte Kennung deiner IP-Adresse (kein Klartext) sowie optional einen Hash des Browsers. Es werden keine E-Mail-Adressen abgefragt. Private Sterne in deinem Browser (localStorage) bleiben nur auf deinem Gerät.',
+      privacy_ratings_text_3: 'Die Bewertungsfunktion wird über Cloudflare Workers und Cloudflare D1 bereitgestellt. Rechtsgrundlage ist deine Einwilligung, soweit du Name/Kommentar veröffentlichst, sowie unser berechtigtes Interesse an der technischen Bereitstellung und Absicherung der Funktion.',
+      privacy_rights: '6. Deine Rechte',
+      privacy_rights_text: 'Du hast im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Beschwerde bei einer zuständigen Aufsichtsbehörde. Löschanfragen zu veröffentlichten Bewertungen kannst du per E-Mail an uns richten.',
+      privacy_updated: '7. Stand',
       privacy_updated_text: 'Stand: Mai 2026'
     },
     pl: {
@@ -80,9 +84,13 @@
       privacy_tracking: '4. Śledzenie i analiza',
       privacy_tracking_text_1: 'Na tej stronie obecnie nie są przewidziane zewnętrzne narzędzia śledzące ani analityczne. Jeśli w przyszłości zostaną dodane dodatkowe usługi, niniejsza informacja zostanie odpowiednio zaktualizowana.',
       privacy_tracking_text_2: 'Jeśli na stronie głównej korzystasz z funkcji „Ulubione”, wybrane identyfikatory przepisów są zapisywane lokalnie w Twojej przeglądarce (localStorage). Dane te nie są przekazywane operatorowi strony w celach reklamowych ani analitycznych.',
-      privacy_rights: '5. Twoje prawa',
-      privacy_rights_text: 'W ramach obowiązujących przepisów masz prawo do informacji, sprostowania, usunięcia, ograniczenia przetwarzania oraz złożenia skargi do właściwego organu nadzorczego.',
-      privacy_updated: '6. Stan',
+      privacy_ratings: '5. Oceny przepisów',
+      privacy_ratings_text_1: 'Możesz opcjonalnie oceniać przepisy od 1 do 5 gwiazdek. Oceny bez imienia lub komentarza mogą zostać opublikowane po technicznej weryfikacji. Jeśli podasz imię lub komentarz, sprawdzimy treść przed publikacją.',
+      privacy_ratings_text_2: 'W celu ochrony przed nadużyciami przechowujemy skrócony, zhashowany identyfikator adresu IP (bez zapisu w postaci jawnej) oraz opcjonalnie hash przeglądarki. Nie zbieramy adresów e-mail. Prywatne gwiazdki w przeglądarce (localStorage) pozostają tylko na Twoim urządzeniu.',
+      privacy_ratings_text_3: 'Funkcja ocen jest udostępniana przez Cloudflare Workers i Cloudflare D1. Podstawą prawną jest Twoja zgoda, jeśli publikujesz imię/komentarz, oraz nasz prawnie uzasadniony interes w zapewnieniu i zabezpieczeniu tej funkcji.',
+      privacy_rights: '6. Twoje prawa',
+      privacy_rights_text: 'W ramach obowiązujących przepisów masz prawo do informacji, sprostowania, usunięcia, ograniczenia przetwarzania oraz złożenia skargi do właściwego organu nadzorczego. Prośby o usunięcie opublikowanych ocen możesz wysłać do nas e-mailem.',
+      privacy_updated: '7. Stan',
       privacy_updated_text: 'Stan: maj 2026'
     },
     en: {
@@ -120,9 +128,13 @@
       privacy_tracking: '4. Tracking and analytics',
       privacy_tracking_text_1: 'No external tracking or analytics tools are currently planned for this website. If additional services are integrated in the future, this privacy policy must be updated accordingly.',
       privacy_tracking_text_2: 'If you use the “Saved” function on the homepage, the selected recipe IDs are stored locally in your browser (localStorage). No data is transmitted to the website operator for advertising or analytics purposes.',
-      privacy_rights: '5. Your rights',
-      privacy_rights_text: 'Within the scope of legal requirements, you have the right to information, correction, deletion, restriction of processing and the right to lodge a complaint with a competent supervisory authority.',
-      privacy_updated: '6. Last updated',
+      privacy_ratings: '5. Recipe ratings',
+      privacy_ratings_text_1: 'You can optionally rate recipes with 1–5 stars. Star ratings without a name or comment may be published after technical validation. If you provide a name or comment, we review the content before publication.',
+      privacy_ratings_text_2: 'For abuse prevention we store a shortened hashed identifier of your IP address (not in plain text) and optionally a browser hash. We do not collect email addresses. Private stars in your browser (localStorage) remain on your device only.',
+      privacy_ratings_text_3: 'The rating feature is provided via Cloudflare Workers and Cloudflare D1. The legal basis is your consent when you publish a name/comment, and our legitimate interest in providing and securing the feature.',
+      privacy_rights: '6. Your rights',
+      privacy_rights_text: 'Within the scope of legal requirements, you have the right to information, correction, deletion, restriction of processing and the right to lodge a complaint with a competent supervisory authority. You may request deletion of published ratings by email.',
+      privacy_updated: '7. Last updated',
       privacy_updated_text: 'Last updated: May 2026'
     }
   };

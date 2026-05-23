@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Bewertungen moderieren | Svens Kochbuch</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #1a1a1a; background: #f7f5f0; }
+    body { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    .meta { color: #666; margin-bottom: 24px; font-size: 14px; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    input[type="password"], input[type="text"] { width: 100%; max-width: 420px; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 16px; }
+    button { padding: 8px 14px; border-radius: 8px; border: 1px solid #ccc; background: #fff; cursor: pointer; margin-right: 8px; }
+    button.primary { background: #b8860b; color: #fff; border-color: #b8860b; }
+    button.danger { background: #c0392b; color: #fff; border-color: #c0392b; }
+    .card { background: #fff; border: 1px solid #e5e0d6; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+    .stars { color: #b8860b; letter-spacing: 2px; }
+    .err { color: #c0392b; margin-top: 12px; }
+    .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+    .stat { background: #fff; border: 1px solid #e5e0d6; border-radius: 10px; padding: 12px 16px; min-width: 120px; }
+    .stat strong { display: block; font-size: 1.4rem; }
+  </style>
+</head>
+<body>
+  <h1>Bewertungen moderieren</h1>
+  <p class="meta">Nur für Admin. Seite ist nicht indexiert.</p>
+
+  <div id="loginPanel">
+    <label for="apiBase">API-Basis-URL</label>
+    <input type="text" id="apiBase" value="/api" placeholder="/api oder https://svenskochbuch.de/api" />
+    <label for="adminToken">Admin-Token (Bearer)</label>
+    <input type="password" id="adminToken" autocomplete="current-password" />
+    <button type="button" class="primary" id="loginBtn">Anmelden &amp; laden</button>
+    <p class="err" id="loginErr" hidden></p>
+  </div>
+
+  <div id="mainPanel" hidden>
+    <div class="stats" id="stats"></div>
+    <div id="list"></div>
+  </div>
+
+  <script>
+    (function () {
+      var apiBaseInput = document.getElementById('apiBase');
+      var tokenInput = document.getElementById('adminToken');
+      var loginBtn = document.getElementById('loginBtn');
+      var loginErr = document.getElementById('loginErr');
+      var mainPanel = document.getElementById('mainPanel');
+      var statsEl = document.getElementById('stats');
+      var listEl = document.getElementById('list');
+
+      function base() {
+        return (apiBaseInput.value || '/api').replace(/\/+$/, '');
+      }
+
+      function token() {
+        return tokenInput.value.trim();
+      }
+
+      function stars(n) {
+        var s = '';
+        for (var i = 1; i <= 5; i++) s += i <= n ? '\u2605' : '\u2606';
+        return s;
+      }
+
+      async function apiFetch(path, opts) {
+        opts = opts || {};
+        var headers = Object.assign({ Authorization: 'Bearer ' + token() }, opts.headers || {});
+        var res = await fetch(base() + path, Object.assign({}, opts, { headers: headers }));
+        var data = await res.json().catch(function () { return {}; });
+        if (!res.ok) throw new Error(data.error || res.statusText);
+        return data;
+      }
+
+      async function loadStats() {
+        var s = await apiFetch('/admin/stats');
+        statsEl.innerHTML =
+          '<div class="stat"><strong>' + s.pending + '</strong> Ausstehend</div>' +
+          '<div class="stat"><strong>' + s.approved + '</strong> Freigegeben</div>' +
+          '<div class="stat"><strong>' + s.rejected + '</strong> Abgelehnt</div>';
+      }
+
+      async function loadPending() {
+        var data = await apiFetch('/admin/ratings?status=pending');
+        if (!data.ratings || !data.ratings.length) {
+          listEl.innerHTML = '<p>Keine ausstehenden Bewertungen.</p>';
+          return;
+        }
+        listEl.innerHTML = data.ratings.map(function (r) {
+          return (
+            '<div class="card" data-id="' + r.id + '">' +
+            '<p><strong>Rezept #' + r.recipe_id + '</strong> · <span class="stars">' + stars(r.rating_value) + '</span></p>' +
+            (r.user_name ? '<p>Name: ' + escapeHtml(r.user_name) + '</p>' : '') +
+            (r.comment ? '<p>Kommentar: ' + escapeHtml(r.comment) + '</p>' : '') +
+            '<p class="meta">' + r.created_at + '</p>' +
+            '<button type="button" class="primary" data-action="approve">Freigeben</button>' +
+            '<button type="button" class="danger" data-action="reject">Ablehnen</button>' +
+            '</div>'
+          );
+        }).join('');
+
+        listEl.querySelectorAll('[data-action]').forEach(function (btn) {
+          btn.addEventListener('click', async function () {
+            var card = btn.closest('.card');
+            var id = card.getAttribute('data-id');
+            var action = btn.getAttribute('data-action');
+            btn.disabled = true;
+            try {
+              await apiFetch('/admin/ratings/' + id + '/' + action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+              await loadStats();
+              await loadPending();
+            } catch (e) {
+              alert(e.message);
+              btn.disabled = false;
+            }
+          });
+        });
+      }
+
+      function escapeHtml(t) {
+        return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+
+      loginBtn.addEventListener('click', async function () {
+        loginErr.hidden = true;
+        try {
+          await loadStats();
+          await loadPending();
+          mainPanel.hidden = false;
+        } catch (e) {
+          loginErr.textContent = e.message;
+          loginErr.hidden = false;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
