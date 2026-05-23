@@ -4473,6 +4473,10 @@
         minutes += Math.round(mv);
       }
       if (!hours && !minutes) return '';
+      if (minutes >= 60) {
+        hours += Math.floor(minutes / 60);
+        minutes = minutes % 60;
+      }
       var out = 'PT';
       if (hours > 0) out += hours + 'H';
       if (minutes > 0) out += minutes + 'M';
@@ -4489,7 +4493,7 @@
         var valuePart = line.indexOf(':') >= 0 ? line.slice(line.indexOf(':') + 1).trim() : line.trim();
         var iso = toIsoDuration(valuePart);
         if (!iso) continue;
-        if (/\b(gesamt|total|razem|insgesamt|suma)\b/.test(lower)) {
+        if (/gesamt(?:zeit)?|total(?:\s*time)?|insgesamt|razem|suma|czas\s+całkowity|całkowity\s+czas|łączny\s+czas/i.test(lower)) {
           result.totalTime = iso;
         } else if (/(vorbereitung|vorbereitungszeit|preparation|przygotow)/.test(lower)) {
           result.prepTime = iso;
