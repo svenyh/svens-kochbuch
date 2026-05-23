@@ -19,12 +19,19 @@
     button { padding: 8px 14px; border-radius: 8px; border: 1px solid #ccc; background: #fff; cursor: pointer; margin-right: 8px; }
     button.primary { background: #b8860b; color: #fff; border-color: #b8860b; }
     button.danger { background: #c0392b; color: #fff; border-color: #c0392b; }
+    button.tab { background: #fff; color: #444; border-color: #d8d2c6; }
+    button.tab.active { background: #b8860b; color: #fff; border-color: #b8860b; }
     .card { background: #fff; border: 1px solid #e5e0d6; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
     .stars { color: #b8860b; letter-spacing: 2px; }
     .err { color: #c0392b; margin-top: 12px; }
+    .success { color: #2d6a4f; margin: 0 0 16px; font-weight: 600; }
     .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
     .stat { background: #fff; border: 1px solid #e5e0d6; border-radius: 10px; padding: 12px 16px; min-width: 120px; }
     .stat strong { display: block; font-size: 1.4rem; }
+    .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    .detail-grid { display: grid; grid-template-columns: minmax(120px, 160px) 1fr; gap: 6px 12px; margin-bottom: 12px; font-size: 14px; }
+    .detail-grid dt { color: #666; font-weight: 600; }
+    .detail-grid dd { margin: 0; }
     details.advanced { margin: 8px 0 16px; max-width: 420px; color: #666; font-size: 14px; }
     details.advanced summary { cursor: pointer; font-weight: 600; color: #444; margin-bottom: 8px; }
     details.advanced[open] summary { margin-bottom: 12px; }
@@ -56,6 +63,8 @@
 
   <div id="mainPanel" hidden>
     <div class="stats" id="stats"></div>
+    <div class="tabs" id="tabs"></div>
+    <p class="success" id="actionMsg" hidden></p>
     <div id="list"></div>
   </div>
 
@@ -63,6 +72,17 @@
     (function () {
       var DEFAULT_API_BASE = '/api';
       var API_BASE_STORAGE_KEY = 'svens_admin_api_base';
+      var STATUS_LABELS = {
+        pending: 'Ausstehend',
+        approved: 'Freigegeben',
+        rejected: 'Abgelehnt'
+      };
+      var EMPTY_TEXTS = {
+        pending: 'Keine ausstehenden Bewertungen.',
+        approved: 'Keine freigegebenen Bewertungen.',
+        rejected: 'Keine abgelehnten Bewertungen.'
+      };
+      var TAB_ORDER = ['pending', 'approved', 'rejected'];
 
       var roleSelect = document.getElementById('roleSelect');
       var tokenInput = document.getElementById('adminToken');
@@ -70,9 +90,12 @@
       var loginErr = document.getElementById('loginErr');
       var mainPanel = document.getElementById('mainPanel');
       var statsEl = document.getElementById('stats');
+      var tabsEl = document.getElementById('tabs');
+      var actionMsgEl = document.getElementById('actionMsg');
       var listEl = document.getElementById('list');
       var advancedSettings = document.getElementById('advancedSettings');
       var apiBaseInput = document.getElementById('apiBase');
+      var currentTab = 'pending';
 
       function looksLikeApiBase(value) {
         if (!value) return true;
@@ -151,10 +174,46 @@
           '<div class="stat"><strong>' + rejected + '</strong> Abgelehnt</div>';
       }
 
+      function renderTabs() {
+        tabsEl.innerHTML = TAB_ORDER.map(function (status) {
+          var cls = status === currentTab ? 'tab active' : 'tab';
+          return '<button type="button" class="' + cls + '" data-tab="' + status + '">' + STATUS_LABELS[status] + '</button>';
+        }).join('');
+
+        tabsEl.querySelectorAll('[data-tab]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            currentTab = btn.getAttribute('data-tab');
+            hideActionMsg();
+            renderTabs();
+            loadRatings(currentTab);
+          });
+        });
+      }
+
+      function showActionMsg(text) {
+        actionMsgEl.textContent = text;
+        actionMsgEl.hidden = false;
+      }
+
+      function hideActionMsg() {
+        actionMsgEl.hidden = true;
+        actionMsgEl.textContent = '';
+      }
+
       function stars(n) {
+        var value = Number(n) || 0;
         var s = '';
-        for (var i = 1; i <= 5; i++) s += i <= n ? '\u2605' : '\u2606';
+        for (var i = 1; i <= 5; i++) s += i <= value ? '\u2605' : '\u2606';
         return s;
+      }
+
+      function displayValue(value, fallback) {
+        if (value == null || value === '') return fallback || '\u2014';
+        return escapeHtml(String(value));
+      }
+
+      function statusLabel(status) {
+        return STATUS_LABELS[status] || displayValue(status, '\u2014');
       }
 
       async function apiFetch(path, opts) {
@@ -186,24 +245,57 @@
         renderStats(await apiFetch('/admin/stats'));
       }
 
-      async function loadPending() {
-        var data = await apiFetch('/admin/ratings?status=pending');
-        if (!data.ratings || !data.ratings.length) {
-          listEl.innerHTML = '<p>Keine ausstehenden Bewertungen.</p>';
+      function actionButtonsFor(status) {
+        if (status === 'pending') {
+          return (
+            '<button type="button" class="primary" data-action="approve">Freigeben</button>' +
+            '<button type="button" class="danger" data-action="reject">Ablehnen</button>'
+          );
+        }
+        if (status === 'approved') {
+          return '<button type="button" class="danger" data-action="reject">Ablehnen</button>';
+        }
+        if (status === 'rejected') {
+          return '<button type="button" class="primary" data-action="approve">Freigeben</button>';
+        }
+        return '';
+      }
+
+      function renderRatingCard(r) {
+        var recipeLine = r.recipe_name
+          ? 'Rezept #' + r.recipe_id + ' \u2013 ' + escapeHtml(r.recipe_name)
+          : 'Rezept #' + r.recipe_id;
+        var updatedAt = r.updated_at
+          ? '<dt>Aktualisiert am</dt><dd>' + displayValue(r.updated_at) + '</dd>'
+          : '';
+
+        return (
+          '<div class="card" data-id="' + escapeHtml(r.id) + '">' +
+          '<p><strong>' + recipeLine + '</strong></p>' +
+          '<dl class="detail-grid">' +
+          '<dt>Rezept-ID</dt><dd>' + displayValue(r.recipe_id) + '</dd>' +
+          '<dt>Bewertung</dt><dd><span class="stars">' + stars(r.rating_value) + '</span> (' + displayValue(r.rating_value) + '/5)</dd>' +
+          '<dt>Name</dt><dd>' + displayValue(r.user_name) + '</dd>' +
+          '<dt>Kommentar</dt><dd>' + displayValue(r.comment) + '</dd>' +
+          '<dt>Status</dt><dd>' + statusLabel(r.status) + '</dd>' +
+          '<dt>Erstellt am</dt><dd>' + displayValue(r.created_at) + '</dd>' +
+          updatedAt +
+          '</dl>' +
+          actionButtonsFor(r.status || currentTab) +
+          '</div>'
+        );
+      }
+
+      async function loadRatings(status) {
+        var data = await apiFetch('/admin/ratings?status=' + encodeURIComponent(status));
+        var ratings = Array.isArray(data.ratings) ? data.ratings : [];
+
+        if (!ratings.length) {
+          listEl.innerHTML = '<p>' + (EMPTY_TEXTS[status] || 'Keine Bewertungen.') + '</p>';
           return;
         }
-        listEl.innerHTML = data.ratings.map(function (r) {
-          return (
-            '<div class="card" data-id="' + r.id + '">' +
-            '<p><strong>Rezept #' + r.recipe_id + '</strong> · <span class="stars">' + stars(r.rating_value) + '</span></p>' +
-            (r.user_name ? '<p>Name: ' + escapeHtml(r.user_name) + '</p>' : '') +
-            (r.comment ? '<p>Kommentar: ' + escapeHtml(r.comment) + '</p>' : '') +
-            '<p class="meta">' + r.created_at + '</p>' +
-            '<button type="button" class="primary" data-action="approve">Freigeben</button>' +
-            '<button type="button" class="danger" data-action="reject">Ablehnen</button>' +
-            '</div>'
-          );
-        }).join('');
+
+        listEl.innerHTML = ratings.map(renderRatingCard).join('');
 
         listEl.querySelectorAll('[data-action]').forEach(function (btn) {
           btn.addEventListener('click', async function () {
@@ -212,13 +304,14 @@
             var action = btn.getAttribute('data-action');
             btn.disabled = true;
             try {
-              await apiFetch('/admin/ratings/' + id + '/' + action, {
+              await apiFetch('/admin/ratings/' + encodeURIComponent(id) + '/' + action, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: '{}'
               });
+              showActionMsg(action === 'approve' ? 'Bewertung freigegeben.' : 'Bewertung abgelehnt.');
               await loadStats();
-              await loadPending();
+              await loadRatings(currentTab);
             } catch (e) {
               alert(e.message);
               btn.disabled = false;
@@ -243,6 +336,7 @@
       loginBtn.addEventListener('click', async function () {
         loginErr.hidden = true;
         mainPanel.hidden = true;
+        hideActionMsg();
 
         if (roleSelect.value !== 'admin') {
           loginErr.textContent = 'Passwort falsch oder keine Admin-Berechtigung.';
@@ -262,8 +356,10 @@
         }
 
         try {
+          currentTab = 'pending';
           await loadStats();
-          await loadPending();
+          renderTabs();
+          await loadRatings(currentTab);
           mainPanel.hidden = false;
         } catch (e) {
           loginErr.textContent = e.message;
