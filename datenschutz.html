@@ -6,427 +6,9 @@
   <title>Datenschutz | Sven Kocht.</title>
   <meta name="description" content="Datenschutzerklärung – Sven Kocht." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style id="legal-inline-fallback">
-:root {
-  --accent: #ef7d18;
-  --accent-dark: #cf6510;
-  --text: #111827;
-  --muted: #6b7280;
-  --white: #ffffff;
-  --line: rgba(0, 0, 0, 0.1);
-  --shadow: 0 12px 32px rgba(17, 24, 39, 0.06);
-  --header-offset: 168px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--text);
-  background: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-.visually-hidden,
-.lang-top-label.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  clip-path: inset(50%) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-.site-topbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #fff;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-}
-
-.lang-top-bar,
-.language-layer {
-  background: #fff;
-  border-bottom: 1px solid var(--line);
-}
-
-.lang-top-bar-inner,
-.language-inner {
-  max-width: 1240px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 6px 24px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.lang-switcher,
-.lang-switcher--top {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.lang-btn {
-  border: 1px solid var(--line);
-  background: #f3f4f6;
-  color: var(--text);
-  border-radius: 999px;
-  padding: 6px 12px;
-  font: inherit;
-  font-weight: 800;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.lang-btn.is-active,
-.lang-btn.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-
-.lang-btn.is-active:hover,
-.lang-btn.active:hover {
-  color: #fff;
-}
-
-.lang-btn:hover:not(.is-active):not(.active) {
-  color: var(--accent);
-}
-
-.lang-sep,
-.lang-separator {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 600;
-  user-select: none;
-}
-
-.site-header {
-  width: 100%;
-  background: #fff;
-  border-bottom: 1px solid var(--line);
-}
-
-.nav {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-}
-
-.brand {
-  text-decoration: none;
-  color: inherit;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  min-width: 0;
-}
-
-.brand:visited,
-.brand:hover,
-.brand:active,
-.brand:focus {
-  color: inherit;
-  text-decoration: none;
-}
-
-.brand-mark {
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
-  background: var(--accent);
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 22px;
-  flex: 0 0 auto;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  min-width: 0;
-}
-
-.brand-title {
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 32px;
-  line-height: 1;
-  color: var(--text);
-  font-weight: 900;
-  letter-spacing: -0.04em;
-}
-
-.brand-subtitle {
-  font-size: 13px;
-  line-height: 1.25;
-  color: var(--muted);
-  font-weight: 700;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 24px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--text);
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-family: Inter, system-ui, sans-serif;
-}
-
-.nav-links a:visited {
-  color: var(--text);
-}
-
-.nav-links a:hover,
-.nav-links a.is-active {
-  color: var(--accent);
-}
-
-.legal-main {
-  flex: 1;
-  padding: 48px 24px 56px;
-}
-
-.legal-inner {
-  max-width: 920px;
-  margin: 0 auto;
-  width: 100%;
-  min-width: 0;
-}
-
-.legal-stack {
-  display: grid;
-  gap: 24px;
-}
-
-.legal-card {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 30px 34px;
-  box-shadow: var(--shadow);
-  scroll-margin-top: var(--header-offset);
-  max-width: 100%;
-  min-width: 0;
-}
-
-.legal-card h1,
-.legal-card h2 {
-  font-family: Inter, system-ui, sans-serif;
-  font-weight: 900;
-  font-size: clamp(30px, 4vw, 44px);
-  color: var(--text);
-  margin: 0 0 18px;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
-}
-
-.legal-card h3 {
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 20px;
-  margin: 28px 0 10px;
-  color: var(--text);
-  font-weight: 850;
-  line-height: 1.25;
-}
-
-.legal-card p,
-.legal-card li {
-  color: #374151;
-  margin: 0 0 12px;
-  line-height: 1.72;
-  font-size: 16px;
-  max-width: 75ch;
-  overflow-wrap: break-word;
-}
-
-.legal-card strong {
-  color: var(--text);
-  font-weight: 700;
-}
-
-.legal-card a {
-  color: var(--accent-dark);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  overflow-wrap: anywhere;
-}
-
-.legal-card a:hover {
-  color: var(--accent);
-}
-
-.footer,
-.site-footer {
-  background: #fff;
-  color: var(--muted);
-  text-align: center;
-  padding: 32px 20px 36px;
-  border-top: 1px solid var(--line);
-  margin-top: auto;
-  flex-shrink: 0;
-}
-
-.footer-inner {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-.footer-copy {
-  margin: 0 0 12px;
-  font-size: 14px;
-}
-
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 20px;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.footer-nav a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.footer-nav a:visited {
-  color: var(--text);
-}
-
-.footer-nav a:hover,
-.footer-nav a.is-active {
-  color: var(--accent);
-}
-
-@media (max-width: 760px) {
-  :root {
-    --header-offset: 200px;
-  }
-
-  .lang-top-bar-inner,
-  .language-inner {
-    justify-content: center;
-    padding: 6px 18px;
-  }
-
-  .nav {
-    padding: 14px 18px;
-    flex-wrap: nowrap;
-  }
-
-  .nav-links {
-    display: none !important;
-  }
-
-  .brand-mark {
-    width: 44px;
-    height: 44px;
-    border-radius: 13px;
-    font-size: 17px;
-  }
-
-  .brand-title {
-    font-size: 24px;
-  }
-
-  .brand-subtitle {
-    font-size: 12px;
-  }
-
-  .legal-main {
-    padding: 32px 18px 44px;
-  }
-
-  .legal-card {
-    padding: 22px 20px;
-    border-radius: 20px;
-  }
-
-  .legal-card h1,
-  .legal-card h2 {
-    font-size: clamp(28px, 8vw, 40px);
-  }
-
-  .legal-card h3 {
-    font-size: 19px;
-  }
-
-  .legal-card p,
-  .legal-card li {
-    font-size: 16px;
-    line-height: 1.68;
-  }
-
-  .footer {
-    padding: 28px 18px 34px;
-  }
-}
-
-  </style>
-  <link rel="stylesheet" href="./legal-common.css?v=2" />
+  <link rel="stylesheet" href="./legal-common.css?v=13" />
 </head>
 <body data-legal-page="privacy">
-  <!-- Rechtstexte nur auf Deutsch. TODO: PL/EN-Version rechtlich prüfen/einfügen -->
-
   <div class="site-topbar">
     <div class="lang-top-bar language-layer">
       <div class="lang-top-bar-inner language-inner">
@@ -464,45 +46,45 @@ ol {
 
   <main class="legal-main">
     <div class="legal-inner legal-stack">
-      <section class="legal-card legal-body-de-only" id="datenschutz">
+      <section class="legal-card" id="datenschutz">
         <h2 data-legal-i18n="privacy_title">Datenschutzerklärung</h2>
 
         <h3 data-legal-i18n="privacy_general">1. Allgemeine Hinweise</h3>
-        <p>Diese Website dient der Bereitstellung von Rezeptinhalten. Beim rein informatorischen Besuch werden nur die technisch erforderlichen Daten verarbeitet, die dein Browser an den Server übermittelt.</p>
+        <p data-legal-i18n="privacy_general_text">Diese Website dient der Bereitstellung von Rezeptinhalten. Beim rein informatorischen Besuch werden nur die technisch erforderlichen Daten verarbeitet, die dein Browser an den Server übermittelt.</p>
 
         <h3 data-legal-i18n="privacy_controller">2. Verantwortliche Stelle</h3>
-        <p>Sven Nicolaus<br>Waidmannsweg 12<br>31556 Wölpinghausen<br>Deutschland<br>E-Mail: <a href="mailto:sven.nicolaus78@gmail.com">sven.nicolaus78@gmail.com</a></p>
+        <p>Sven Nicolaus<br>Waidmannsweg 12<br>31556 Wölpinghausen<br><span data-legal-i18n="legal_country">Deutschland</span><br>E-Mail: <a href="mailto:sven.nicolaus78@gmail.com">sven.nicolaus78@gmail.com</a></p>
 
         <h3 data-legal-i18n="privacy_hosting">3. Hosting und Server-Logfiles</h3>
-        <p>Der Hosting-Anbieter kann Zugriffsdaten wie IP-Adresse, Datum und Uhrzeit des Abrufs, Browsertyp, Betriebssystem und besuchte Seiten in Server-Logfiles speichern. Diese Verarbeitung erfolgt zur technisch sicheren Bereitstellung der Website.</p>
+        <p data-legal-i18n="privacy_hosting_text">Der Hosting-Anbieter kann Zugriffsdaten wie IP-Adresse, Datum und Uhrzeit des Abrufs, Browsertyp, Betriebssystem und besuchte Seiten in Server-Logfiles speichern. Diese Verarbeitung erfolgt zur technisch sicheren Bereitstellung der Website.</p>
 
         <h3 data-legal-i18n="privacy_tracking">4. Tracking und Analyse</h3>
-        <p>Auf dieser Website sind derzeit keine externen Tracking- oder Analyse-Tools vorgesehen. Sofern zukünftig zusätzliche Dienste eingebunden werden, ist diese Erklärung entsprechend anzupassen.</p>
-        <p>Wenn du auf der Startseite die Funktion „Merken“ nutzt, werden die gewählten Rezept-IDs lokal in deinem Browser gespeichert (localStorage). Es werden dafür keine Daten zu Werbe- oder Analysezwecken an den Betreiber übermittelt.</p>
+        <p data-legal-i18n="privacy_tracking_text_1">Auf dieser Website sind derzeit keine externen Tracking- oder Analyse-Tools vorgesehen. Sofern zukünftig zusätzliche Dienste eingebunden werden, ist diese Erklärung entsprechend anzupassen.</p>
+        <p data-legal-i18n="privacy_tracking_text_2">Wenn du auf der Startseite die Funktion „Merken“ nutzt, werden die gewählten Rezept-IDs lokal in deinem Browser gespeichert (localStorage). Es werden dafür keine Daten zu Werbe- oder Analysezwecken an den Betreiber übermittelt.</p>
 
         <h3 data-legal-i18n="privacy_rights">5. Deine Rechte</h3>
-        <p>Du hast im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Beschwerde bei einer zuständigen Aufsichtsbehörde.</p>
+        <p data-legal-i18n="privacy_rights_text">Du hast im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Beschwerde bei einer zuständigen Aufsichtsbehörde.</p>
 
         <h3 data-legal-i18n="privacy_updated">6. Stand</h3>
-        <p>Stand: Mai 2026</p>
+        <p data-legal-i18n="privacy_updated_text">Stand: Mai 2026</p>
       </section>
     </div>
   </main>
 
   <footer class="footer site-footer">
     <div class="footer-inner">
-      <p class="footer-copy">© 2026 Svenskochbuch.de | Mit Liebe gekocht.</p>
-      <nav class="footer-nav" aria-label="Fußnavigation">
-        <a href="index.html" data-footer-link="home">Startseite</a>
-        <a href="index.html#rezepte" data-footer-link="recipes">Rezepte</a>
-        <a href="index.html#home-about" data-footer-link="about">Über mich</a>
-        <a href="impressum.html#kontakt" data-footer-link="contact">Kontakt</a>
-        <a href="impressum.html" data-footer-link="legal">Impressum</a>
-        <a href="datenschutz.html" data-footer-link="privacy" class="is-active">Datenschutz</a>
+      <p class="footer-copy" data-i18n="footerClaim">© 2026 Svenskochbuch.de | Mit Liebe gekocht.</p>
+      <nav class="footer-nav" data-i18n-aria="footerNavAria" aria-label="Fußnavigation">
+        <a href="index.html" data-i18n="footerHome" data-footer-link="home">Startseite</a>
+        <a href="index.html#rezepte" data-i18n="footerRecipes" data-footer-link="recipes">Rezepte</a>
+        <a href="index.html#home-about" data-i18n="footerAbout" data-footer-link="about">Über mich</a>
+        <a href="impressum.html#kontakt" data-i18n="footerContact" data-footer-link="contact">Kontakt</a>
+        <a href="impressum.html" data-i18n="footerImprint" data-footer-link="legal">Impressum</a>
+        <a href="datenschutz.html" data-i18n="footerPrivacy" data-footer-link="privacy">Datenschutz</a>
       </nav>
     </div>
   </footer>
 
-  <script src="./legal-common.js?v=2"></script>
+  <script src="./legal-common.js?v=13"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a {
@@ -62,12 +62,15 @@ ol {
   z-index: 1000;
   background: #fff;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
 }
 
 .lang-top-bar,
 .language-layer {
+  position: static;
   background: #fff;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
 .lang-top-bar-inner,
@@ -129,8 +132,9 @@ ol {
 
 .site-header {
   width: 100%;
+  position: static;
   background: #fff;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -200,7 +204,7 @@ ol {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap: 26px;
   align-items: center;
   flex-wrap: wrap;
   margin: 0;
@@ -214,7 +218,7 @@ ol {
 .nav-links a {
   text-decoration: none;
   color: var(--text);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 900;
   letter-spacing: 0.02em;
   text-transform: uppercase;

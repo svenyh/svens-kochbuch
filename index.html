@@ -43,7 +43,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      overflow-x: hidden;
+      overflow-x: clip;
     }
 
     .site-topbar {
@@ -52,12 +52,15 @@
       z-index: 1000;
       background: #fff;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+      flex-shrink: 0;
     }
 
     .lang-top-bar,
     .language-layer {
+      position: static;
       background: #fff;
-      border-bottom: 1px solid var(--line);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
     }
 
     .lang-top-bar-inner,
@@ -128,21 +131,20 @@
 
     .site-header {
       width: 100%;
+      position: static;
       background: #fff;
-      border-bottom: 1px solid var(--line);
-      position: relative;
-      z-index: 1;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       box-shadow: none;
     }
 
     .nav {
       max-width: 1240px;
       margin: 0 auto;
-      padding: 20px 24px;
+      padding: 16px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
     }
 
     .brand {
@@ -154,17 +156,17 @@
     }
 
     .brand-mark {
-      width: 58px;
-      height: 58px;
-      border-radius: 15px;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
       background: var(--accent);
       color: #fff;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      font-size: 18px;
-      letter-spacing: 0.04em;
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: 0.02em;
       flex: 0 0 auto;
       font-family: 'Inter', sans-serif;
     }
@@ -180,25 +182,31 @@
       font-family: 'Inter', sans-serif;
       font-size: 32px;
       font-weight: 900;
-      line-height: 1.05;
+      line-height: 1;
       color: var(--primary);
-      letter-spacing: -0.02em;
+      letter-spacing: -0.04em;
     }
 
     .brand-subtitle {
       font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      line-height: 1.3;
+      font-size: 13px;
+      line-height: 1.25;
       color: var(--muted);
-      font-weight: 500;
+      font-weight: 700;
     }
 
     .nav-links {
       display: flex;
       list-style: none;
-      gap: 28px;
+      gap: 26px;
       align-items: center;
       flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      list-style: none;
     }
 
     .lang-switch {
@@ -242,8 +250,8 @@
       text-decoration: none;
       color: var(--dark);
       font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 0.03em;
+      font-weight: 900;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
     }
 
@@ -262,8 +270,8 @@
       cursor: pointer;
       font: inherit;
       font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 0.03em;
+      font-weight: 900;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
       color: var(--dark);
       padding: 0;
@@ -294,8 +302,8 @@
       cursor: pointer;
       font: inherit;
       font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 0.03em;
+      font-weight: 900;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
       color: var(--dark);
       padding: 0;
@@ -768,17 +776,29 @@
 
     .category-tile h3,
     .home-category-label {
+      display: block;
+      margin-top: 8px;
       font-family: 'Inter', sans-serif;
       font-size: 13px;
       font-weight: 800;
       color: var(--text);
-      margin: 0;
       line-height: 1.2;
       text-align: center;
       white-space: normal;
       word-break: normal;
       overflow-wrap: normal;
       hyphens: none;
+    }
+
+    #home-categories .category-tile p {
+      display: none;
+    }
+
+    #home-categories .category-tile h3,
+    #home-categories .home-category-label {
+      word-break: normal !important;
+      overflow-wrap: normal !important;
+      hyphens: none !important;
     }
 
     #home-categories .welcome-card h3 {
@@ -1256,7 +1276,7 @@
       width: min(900px, calc(100vw - 32px));
       max-height: calc(100vh - 48px);
       overflow-y: auto;
-      background: var(--background);
+      background: #fff;
       border-radius: 28px;
       padding: 36px 40px 32px;
       box-shadow: 0 24px 64px rgba(17, 24, 39, 0.22);
@@ -2561,8 +2581,8 @@
     }
 
     #recipe-results,
-    #highlightGrid {
-      scroll-margin-top: calc(var(--header-offset) + 8px);
+    #home-highlights {
+      scroll-margin-top: max(130px, var(--header-offset));
     }
 
     #home-categories .category-tile.is-active .category-icon {
@@ -2575,8 +2595,18 @@
       color: var(--accent);
     }
 
-    [id^="recipe-"] {
-      scroll-margin-top: calc(var(--header-offset) + 12px);
+    #recipe-title-card,
+    #recipe-ingredients,
+    #recipe-preparation,
+    #recipe-cook-view,
+    #recipe-timing,
+    #recipe-tips,
+    #recipe-knowledge,
+    #recipe-new-recipes,
+    #recipe-related,
+    #recipe-rating,
+    #recipe-quick-access {
+      scroll-margin-top: calc(var(--header-offset) + 8px);
     }
 
     .site-footer {
@@ -2628,6 +2658,7 @@
     .about-section {
       background: var(--white);
       border-top: 1px solid var(--line);
+      margin-top: 8px;
     }
 
     .about-inner {
@@ -2637,9 +2668,9 @@
     }
 
     .about-copy {
-      max-width: min(900px, 100%);
+      max-width: min(860px, 100%);
       margin: 0 auto;
-      padding: 40px 44px;
+      padding: 44px 48px;
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 24px;
@@ -2863,54 +2894,39 @@
       }
 
       #home-surprise-wrap {
-        order: 2;
+        order: 3;
         width: 100%;
         text-align: center;
         padding: 0 0 4px;
       }
 
       #home-categories {
-        order: 3;
+        order: 4;
       }
 
       #recipe-results {
-        order: 4;
-        width: 100%;
-      }
-
-      .home-recipes-section .rating-filters {
         order: 5;
         width: 100%;
       }
 
-      #recipeStatus {
+      #home-highlights {
         order: 6;
         width: 100%;
       }
 
-      #highlightGrid {
+      #homeSidebarNewPanel {
         order: 7;
         width: 100%;
       }
 
-      #highlightViewAllWrap {
+      .sidebar-about-card {
         order: 8;
         width: 100%;
       }
 
-      #recipeListActions {
-        order: 9;
-        width: 100%;
-      }
-
-      #homeSidebarNewPanel {
-        order: 10;
-        width: 100%;
-      }
-
-      .sidebar-about-card {
-        order: 11;
-        width: 100%;
+      #recipe-results,
+      #home-highlights {
+        scroll-margin-top: 130px;
       }
 
       .recipe-detail-layout {
@@ -2929,19 +2945,25 @@
 
       #recipeDetailBack { order: 1; }
       #recipe-hero { order: 2; }
+      #recipe-title-card { order: 3; }
       #recipe-ingredients { order: 4; }
       #recipe-preparation { order: 5; }
       #recipe-cook-view { order: 6; }
       #recipe-timing { order: 7; }
-      #recipe-nutrition { order: 8; }
-      #recipe-tips { order: 9; }
-      #recipe-knowledge { order: 10; }
-      #recipe-new-recipes { order: 11; }
-      #recipe-related { order: 12; }
-      #recipe-rating { order: 13; }
+      #recipe-tips { order: 8; }
+      #recipe-new-recipes { order: 9; }
+      #recipe-related { order: 10; }
+      #recipe-rating { order: 11; }
+      #recipe-nutrition { order: 12; }
+      #recipe-knowledge { order: 13; }
 
       .recipe-quick-access,
       #recipe-quick-access {
+        display: none !important;
+      }
+
+      #recipeDetailBody .detail-koch-ui,
+      #recipeDetailBody .detail-koch-panel {
         display: none !important;
       }
 
@@ -2953,6 +2975,7 @@
 
       #recipe-ingredients,
       #recipe-preparation,
+      #recipe-title-card,
       #recipe-cook-view,
       #recipe-timing,
       #recipe-nutrition,
@@ -3132,80 +3155,31 @@
       }
 
       .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
-        padding: 16px 22px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 18px;
+        flex-wrap: nowrap;
       }
 
       .nav-links {
-        display: flex;
-        width: 100%;
-        gap: 8px;
-        flex-wrap: wrap;
-        overflow-x: visible;
-        padding-bottom: 4px;
-        list-style: none;
-        max-width: 100%;
-      }
-
-      .nav-links li {
-        flex: 0 0 auto;
-      }
-
-      .nav-links a,
-      .nav-links button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 40px;
-        padding: 0 14px;
-        border-radius: 999px;
-        border: 1px solid rgba(0,0,0,.10);
-        background: #fff;
-        color: var(--dark);
-        font-size: 13px;
-        font-weight: 800;
-        text-decoration: none;
-        white-space: nowrap;
-        letter-spacing: 0;
-        text-transform: none;
-      }
-
-      .lang-switch {
-        width: 100%;
-        margin-left: 0;
-      }
-
-      .nav-dropdown-panel {
-        z-index: 200;
-        max-height: 70vh;
-        overflow-y: auto;
-        width: max-content;
-        max-width: 320px;
-      }
-
-      .brand-subtitle {
-        font-size: 13px;
+        display: none !important;
       }
 
       .brand-mark {
-        width: 48px;
-        height: 48px;
-        border-radius: 14px;
-        font-size: 16px;
+        width: 44px;
+        height: 44px;
+        border-radius: 13px;
+        font-size: 17px;
       }
 
       .brand-title {
-        font-size: 26px;
+        font-size: 24px;
       }
 
       .brand-subtitle {
-        font-size: 13px;
-      }
-
-      .nav-links {
-        gap: 8px;
+        font-size: 12px;
       }
 
       .hero {
@@ -3267,7 +3241,7 @@
         padding: 0 18px;
       }
 
-      .welcome-cards {
+      .welcome-cards:not(.home-category-grid):not(.category-grid) {
         grid-template-columns: 1fr;
         gap: 14px;
         margin-top: 22px;
@@ -3319,7 +3293,7 @@
         <span class="brand-mark">SK</span>
         <span class="brand-text">
           <span class="brand-title">Sven Kocht.</span>
-          <span class="brand-subtitle">Rezepte aus Svens Kochbuch</span>
+          <span class="brand-subtitle" id="brandSubtitle">Rezepte aus Svens Kochbuch</span>
         </span>
       </a>
       <ul class="nav-links">
@@ -3403,68 +3377,70 @@
               <button type="button" class="btn" id="surpriseMeBtn" disabled aria-disabled="true">Überrasch mich</button>
             </div>
           </div>
-          <div class="rating-filters" aria-label="Persönliche Bewertungsfilter">
-            <div class="rating-filters-label">Persönliche Bewertung</div>
-            <div class="rating-filters-row" role="group" aria-label="Bewertungsfilter">
-              <button type="button" class="rating-filter-btn is-active" data-rating-filter="rating-all">Alle Bewertungen</button>
-              <button type="button" class="rating-filter-btn" data-rating-filter="rated">Bewertet</button>
-              <button type="button" class="rating-filter-btn" data-rating-filter="rated-5">5 Sterne</button>
-              <button type="button" class="rating-filter-btn" data-rating-filter="rated-4p">4+ Sterne</button>
-              <button type="button" class="rating-filter-btn" data-rating-filter="rated-3p">3+ Sterne</button>
-              <button type="button" class="rating-filter-btn" data-rating-filter="rated-none">Nicht bewertet</button>
+          <div id="home-highlights" class="home-recipe-output">
+            <div class="rating-filters" aria-label="Persönliche Bewertungsfilter">
+              <div class="rating-filters-label">Persönliche Bewertung</div>
+              <div class="rating-filters-row" role="group" aria-label="Bewertungsfilter">
+                <button type="button" class="rating-filter-btn is-active" data-rating-filter="rating-all">Alle Bewertungen</button>
+                <button type="button" class="rating-filter-btn" data-rating-filter="rated">Bewertet</button>
+                <button type="button" class="rating-filter-btn" data-rating-filter="rated-5">5 Sterne</button>
+                <button type="button" class="rating-filter-btn" data-rating-filter="rated-4p">4+ Sterne</button>
+                <button type="button" class="rating-filter-btn" data-rating-filter="rated-3p">3+ Sterne</button>
+                <button type="button" class="rating-filter-btn" data-rating-filter="rated-none">Nicht bewertet</button>
+              </div>
             </div>
-          </div>
-          <p id="recipeStatus" class="status-line" role="status">Rezepte werden geladen …</p>
-          <div class="recipe-grid home-highlights-grid" id="highlightGrid" hidden></div>
-          <div class="recipe-list-actions highlight-view-all-wrap" id="highlightViewAllWrap" hidden>
-            <button type="button" class="btn" id="highlightViewAllBtn">Alle beliebten Rezepte ansehen</button>
-          </div>
-          <div id="recipeListActions" class="recipe-list-actions" hidden>
-            <button type="button" class="btn" id="recipeLoadMore">Mehr laden</button>
+            <p id="recipeStatus" class="status-line" role="status">Rezepte werden geladen …</p>
+            <div class="recipe-grid home-highlights-grid" id="highlightGrid" data-home-highlights="1" hidden></div>
+            <div class="recipe-list-actions highlight-view-all-wrap" id="highlightViewAllWrap" hidden>
+              <button type="button" class="btn" id="highlightViewAllBtn">Alle beliebten Rezepte ansehen</button>
+            </div>
+            <div id="recipeListActions" class="recipe-list-actions" hidden>
+              <button type="button" class="btn" id="recipeLoadMore">Mehr laden</button>
+            </div>
           </div>
         </div>
         <aside class="home-sidebar" aria-label="Seitenleiste">
           <div class="sidebar-panel" id="home-categories">
             <h2 class="sidebar-heading" id="sidebarCategoriesHeading">Rezept-Kategorien</h2>
             <div class="category-grid home-category-grid" id="themenweltenGrid">
-              <article class="category-tile" role="link" tabindex="0" data-filter="schnell" aria-label="Themenwelt öffnen: Schnelle Küche">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="schnell" aria-label="Themenwelt öffnen: Schnelle Küche">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span>
-                <h3>Schnelle Küche</h3>
+                <h3 class="home-category-label">Schnelle Küche</h3>
                 <p>Fix gekocht, ohne Stress.</p>
               </article>
-              <article class="category-tile" role="link" tabindex="0" data-filter="ofen" aria-label="Themenwelt öffnen: Ofen &amp; Aufläufe">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="ofen" aria-label="Themenwelt öffnen: Ofen &amp; Aufläufe">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg></span>
-                <h3>Ofen &amp; Aufläufe</h3>
+                <h3 class="home-category-label">Ofen &amp; Aufläufe</h3>
                 <p>Alles rein, alles gut.</p>
               </article>
-              <article class="category-tile" role="link" tabindex="0" data-filter="grill-bbq" aria-label="Themenwelt öffnen: Grill &amp; BBQ">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="grill-bbq" aria-label="Themenwelt öffnen: Grill &amp; BBQ">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16M6 14h12M8 18h8"/></svg></span>
-                <h3>Grill &amp; BBQ</h3>
+                <h3 class="home-category-label">Grill &amp; BBQ</h3>
                 <p>Für Rost, Pfanne &amp; draußen.</p>
               </article>
-              <article class="category-tile" role="link" tabindex="0" data-filter="airfryer" aria-label="Themenwelt öffnen: Airfryer">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="airfryer" aria-label="Themenwelt öffnen: Airfryer">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12c3-4 6 4 9 0s6 4 9 0"/><path d="M4 16c3-4 6 4 9 0s6 4 9 0"/></svg></span>
-                <h3>Airfryer</h3>
+                <h3 class="home-category-label">Airfryer</h3>
                 <p>Heißluft, knusprig, schnell.</p>
               </article>
-              <article class="category-tile" role="link" tabindex="0" data-filter="salate-beilagen" aria-label="Themenwelt öffnen: Salate &amp; Beilagen">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="salate-beilagen" aria-label="Themenwelt öffnen: Salate &amp; Beilagen">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4C9 8 6 9 6 13a6 6 0 0 0 12 0c0-4-3-5-6-9z"/></svg></span>
-                <h3>Salate &amp; Beilagen</h3>
+                <h3 class="home-category-label">Salate &amp; Beilagen</h3>
                 <p>Frisch, bunt, passt immer.</p>
               </article>
-              <article class="category-tile" role="link" tabindex="0" data-filter="grundrezepte" aria-label="Themenwelt öffnen: Grundrezepte">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="grundrezepte" aria-label="Themenwelt öffnen: Grundrezepte">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5h12v14H6z"/><path d="M9 9h6M9 13h4"/></svg></span>
-                <h3>Grundrezepte</h3>
+                <h3 class="home-category-label">Grundrezepte</h3>
                 <p>Basics für deine Küche.</p>
               </article>
-              <article class="category-tile" role="link" tabindex="0" data-filter="woelpinghausen" aria-label="Themenwelt öffnen: Wölpinghausen">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="woelpinghausen" aria-label="Themenwelt öffnen: Wölpinghausen">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z"/><circle cx="12" cy="11" r="2"/></svg></span>
-                <h3>Wölpinghausen</h3>
+                <h3 class="home-category-label">Wölpinghausen</h3>
                 <p>Regional &amp; persönlich.</p>
               </article>
-              <article class="category-tile" role="link" tabindex="0" data-filter="suesses-backen" aria-label="Themenwelt öffnen: Süßes &amp; Backen">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="suesses-backen" aria-label="Themenwelt öffnen: Süßes &amp; Backen">
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 14a6 6 0 0 0 12 0c0-4-2-6-6-6s-6 2-6 6z"/><path d="M9 10h6"/></svg></span>
-                <h3>Süßes &amp; Backen</h3>
+                <h3 class="home-category-label">Süßes &amp; Backen</h3>
                 <p>Für Kuchen, Desserts &amp; mehr.</p>
               </article>
             </div>
@@ -3517,8 +3493,7 @@
           <div class="detail-sidebar-card detail-sidebar-card--koch" id="recipe-cook-view">
             <h2 class="detail-sidebar-title" id="detailSidebarKochTitle">Kochansicht</h2>
             <p class="detail-sidebar-text" id="detailSidebarKochLead">Schritt für Schritt durch die Zubereitung.</p>
-            <button type="button" class="detail-sidebar-cta detail-sidebar-cta--accent" id="detailSidebarKochStart" data-action="koch-start">Kochmodus starten</button>
-            <p class="detail-sidebar-koch-status" id="detailSidebarKochStatus" hidden>Kochmodus läuft</p>
+            <button type="button" class="detail-sidebar-cta detail-sidebar-cta--accent" id="detailSidebarKochStart" data-action="koch-start">Kochansicht starten</button>
           </div>
           <div class="detail-sidebar-card detail-sidebar-card--new" id="recipe-new-recipes">
             <h2 class="detail-sidebar-title" id="detailSidebarNewTitle">Neue Rezepte</h2>
@@ -3562,14 +3537,14 @@
 
   <footer class="footer site-footer">
     <div class="footer-inner">
-      <p class="footer-copy">© 2026 Svenskochbuch.de | Mit Liebe gekocht.</p>
-      <nav class="footer-nav" aria-label="Fußnavigation">
-        <a href="index.html" data-footer-link="home">Startseite</a>
-        <a href="index.html#rezepte" data-footer-link="recipes">Rezepte</a>
-        <a href="index.html#home-about" data-footer-link="about">Über mich</a>
-        <a href="impressum.html#kontakt" data-footer-link="contact">Kontakt</a>
-        <a href="impressum.html" data-footer-link="legal">Impressum</a>
-        <a href="datenschutz.html" data-footer-link="privacy">Datenschutz</a>
+      <p class="footer-copy" data-i18n="footerClaim">© 2026 Svenskochbuch.de | Mit Liebe gekocht.</p>
+      <nav class="footer-nav" data-i18n-aria="footerNavAria" aria-label="Fußnavigation">
+        <a href="index.html" data-i18n="footerHome">Startseite</a>
+        <a href="index.html#rezepte" data-i18n="footerRecipes">Rezepte</a>
+        <a href="index.html#home-about" data-i18n="footerAbout">Über mich</a>
+        <a href="impressum.html#kontakt" data-i18n="footerContact">Kontakt</a>
+        <a href="impressum.html" data-i18n="footerImprint">Impressum</a>
+        <a href="datenschutz.html" data-i18n="footerPrivacy">Datenschutz</a>
       </nav>
     </div>
   </footer>
@@ -3688,13 +3663,14 @@
         section_all: 'Alle Rezepte',
         section_about: 'Über mich',
 
-        footer_home: 'Startseite',
-        footer_recipes: 'Rezepte',
-        footer_about: 'Über mich',
-        footer_legal: 'Impressum',
-        footer_privacy: 'Datenschutz',
-        footer_contact: 'Kontakt',
-        footer_copy: '© 2026 Svenskochbuch.de | Mit Liebe gekocht.',
+        footerHome: 'Startseite',
+        footerRecipes: 'Rezepte',
+        footerAbout: 'Über mich',
+        footerContact: 'Kontakt',
+        footerImprint: 'Impressum',
+        footerPrivacy: 'Datenschutz',
+        footerClaim: '© 2026 Svenskochbuch.de | Mit Liebe gekocht.',
+        footerNavAria: 'Fußnavigation',
 
         about_title: 'Über mich',
         about_p1: 'Svens Kochbuch ist meine persönliche Sammlung alltagstauglicher Rezepte. Hier geht es nicht um perfekte Hochglanzküche, sondern um Gerichte, die wirklich funktionieren – für den Feierabend, den Sonntag, den Grillabend oder wenn Familie und Freunde mit am Tisch sitzen.',
@@ -3895,13 +3871,14 @@
         section_all: 'Wszystkie przepisy',
         section_about: 'O mnie',
 
-        footer_home: 'Strona główna',
-        footer_recipes: 'Przepisy',
-        footer_about: 'O mnie',
-        footer_legal: 'Nota prawna',
-        footer_privacy: 'Ochrona danych',
-        footer_contact: 'Kontakt',
-        footer_copy: '© 2026 Svenskochbuch.de | Gotowane z sercem.',
+        footerHome: 'Strona główna',
+        footerRecipes: 'Przepisy',
+        footerAbout: 'O mnie',
+        footerContact: 'Kontakt',
+        footerImprint: 'Nota prawna',
+        footerPrivacy: 'Polityka prywatności',
+        footerClaim: '© 2026 Svenskochbuch.de | Gotowane z miłością.',
+        footerNavAria: 'Nawigacja stopki',
 
         about_title: 'O mnie',
         about_p1: 'Książka kucharska Svena to moja osobista kolekcja praktycznych przepisów na co dzień. Nie chodzi tu o idealną kuchnię z magazynu, lecz o dania, które naprawdę działają – po pracy, w niedzielę, podczas grillowania albo gdy przy stole siedzą rodzina i przyjaciele.',
@@ -4102,13 +4079,14 @@
         section_all: 'All recipes',
         section_about: 'About',
 
-        footer_home: 'Home',
-        footer_recipes: 'Recipes',
-        footer_about: 'About',
-        footer_legal: 'Legal notice',
-        footer_privacy: 'Privacy policy',
-        footer_contact: 'Contact',
-        footer_copy: '© 2026 Svenskochbuch.de | Cooked with love.',
+        footerHome: 'Home',
+        footerRecipes: 'Recipes',
+        footerAbout: 'About',
+        footerContact: 'Contact',
+        footerImprint: 'Legal notice',
+        footerPrivacy: 'Privacy policy',
+        footerClaim: '© 2026 Svenskochbuch.de | Cooked with love.',
+        footerNavAria: 'Footer navigation',
 
         about_title: 'About',
         about_p1: 'Sven’s cookbook is my personal collection of everyday recipes. This is not about perfect glossy cooking, but about dishes that really work – for weeknights, Sundays, barbecue evenings or when family and friends sit around the table.',
@@ -4251,6 +4229,18 @@
       });
     }
 
+    function applyDataI18n(root) {
+      root = root || document;
+      [].slice.call(root.querySelectorAll('[data-i18n]')).forEach(function (el) {
+        var key = el.getAttribute('data-i18n');
+        if (key) el.textContent = t(key);
+      });
+      [].slice.call(root.querySelectorAll('[data-i18n-aria]')).forEach(function (el) {
+        var key = el.getAttribute('data-i18n-aria');
+        if (key) el.setAttribute('aria-label', t(key));
+      });
+    }
+
     function setHtmlLanguage(lang) {
       var el = document.documentElement;
       el.lang = lang;
@@ -4289,6 +4279,7 @@
       }
 
       updateNavBadges();
+      refreshHomeCategoryGrid();
 
       var aboutLink = document.querySelector('.nav-links a[href="#home-about"]');
       if (aboutLink) aboutLink.textContent = t('nav_about');
@@ -4420,19 +4411,7 @@
         aboutP[4].innerHTML = t('about_p5') + '<br />' + t('about_signature');
       }
 
-      var footerCopy = document.querySelector('.footer-copy');
-      if (footerCopy) footerCopy.textContent = t('footer_copy');
-
-      var footerLinks = document.querySelectorAll('.footer-nav a');
-      [].slice.call(footerLinks).forEach(function (a) {
-        var key = a.getAttribute('data-footer-link');
-        if (key === 'home') a.textContent = t('footer_home');
-        else if (key === 'recipes') a.textContent = t('footer_recipes');
-        else if (key === 'about') a.textContent = t('footer_about');
-        else if (key === 'contact') a.textContent = t('footer_contact');
-        else if (key === 'legal') a.textContent = t('footer_legal');
-        else if (key === 'privacy') a.textContent = t('footer_privacy');
-      });
+      applyDataI18n();
 
       var detailBack = document.getElementById('recipeDetailBack');
       if (detailBack) detailBack.textContent = t('detail_back');
@@ -4483,8 +4462,6 @@
         shopAdd.textContent = t('detail_add_to_shopping');
       }
 
-      var dsKochStatus = document.getElementById('detailSidebarKochStatus');
-      if (dsKochStatus) dsKochStatus.textContent = t('koch_running');
       var dsKochStartBtn = document.getElementById('detailSidebarKochStart');
       if (dsKochStartBtn) {
         var ovOpen = document.getElementById('kochansichtOverlay');
@@ -4532,6 +4509,10 @@
       }
       var mv = document.getElementById('merklisteView');
       if (mv && !mv.hidden) renderMerkliste();
+      renderShoppingListIfVisible();
+    }
+
+    function renderShoppingListIfVisible() {
       var sv = document.getElementById('shoppingView');
       if (sv && !sv.hidden) renderShoppingList();
     }
@@ -4924,6 +4905,24 @@
       return String(c == null ? '' : c).trim().toLowerCase();
     }
 
+    function relatedCategoryParts(c) {
+      return String(c == null ? '' : c).trim().toLowerCase().split('/').map(function (x) {
+        return x.trim();
+      }).filter(Boolean);
+    }
+
+    function relatedCategoriesMatch(catA, catB) {
+      var pa = relatedCategoryParts(catA);
+      var pb = relatedCategoryParts(catB);
+      if (!pa.length || !pb.length) return false;
+      for (var i = 0; i < pa.length; i++) {
+        for (var j = 0; j < pb.length; j++) {
+          if (pa[i] === pb[j]) return true;
+        }
+      }
+      return false;
+    }
+
     function tokenizeRelatedText(s) {
       var t = String(s == null ? '' : s).toLowerCase();
       t = t.replace(/[/|,;:]+/g, ' ');
@@ -4931,26 +4930,35 @@
       var map = {};
       for (var ti = 0; ti < parts.length; ti++) {
         var w = parts[ti].replace(/^[^a-zäöüß0-9]+|[^a-zäöüß0-9]+$/gi, '');
-        if (w.length >= 4) map[w] = true;
+        if (w.length >= 3) map[w] = true;
       }
       return map;
     }
 
-    function relatedTokenOverlap(curTokens, name, cat) {
-      var o = tokenizeRelatedText(String(name || '') + ' ' + String(cat || ''));
-      var n = 0;
-      for (var k in curTokens) {
-        if (o[k]) n++;
-      }
-      return n;
-    }
-
-    var RELATED_STOP_INGREDIENTS = {
-      salz: 1, pfeffer: 1, oel: 1, ol: 1, olivenoel: 1, rapsöl: 1, rapsol: 1,
+    var RELATED_STANDARD_INGREDIENTS = {
+      salz: 1, pfeffer: 1, oel: 1, ol: 1, olivenoel: 1, olivenöl: 1, rapsöl: 1, rapsol: 1,
       sonnenblumenöl: 1, sonnenblumenoel: 1, wasser: 1, butter: 1, margarine: 1,
       zwiebel: 1, zwiebeln: 1, knoblauch: 1, petersilie: 1, schnittlauch: 1,
-      zucker: 1, mehl: 1, ei: 1, eier: 1, milch: 1
+      zucker: 1, mehl: 1, ei: 1, eier: 1, milch: 1, optional: 1, etwas: 1,
+      majoran: 1, thymian: 1, oregano: 1, paprikapulver: 1, knoblauchpulver: 1,
+      senf: 1, essig: 1, zitrone: 1, zitronensaft: 1, honig: 1, kraeuter: 1, kräuter: 1,
+      bund: 1, personen: 1, scheiben: 1, stuecke: 1, stücke: 1, frisch: 1, fein: 1,
+      grob: 1, grobe: 1, kleine: 1, rote: 1, gruene: 1, grüne: 1, edelsuess: 1, edelsüß: 1,
+      geräuchertes: 1, geräuchert: 1, geräuchertes: 1
     };
+
+    var RELATED_RECIPE_GROUP_PATTERNS = [
+      { re: /bratwurst|bratwürst|bratwuerst|currywurst|kiełbas|kiełbasa|sausage/i, key: 'wurst' },
+      { re: /burger|smash/i, key: 'burger' },
+      { re: /pfanne|wok|grillpfanne|plancha|bratkartoffel|gemüsepfanne|gemusepfanne/i, key: 'pfanne' },
+      { re: /auflauf|gratin|zapiekank|lasagne/i, key: 'auflauf' },
+      { re: /spargel/i, key: 'spargel' },
+      { re: /beilage|grillbeilage/i, key: 'beilage' },
+      { re: /hähnchen|haehnchen|chicken|kurczak/i, key: 'haehnchen' },
+      { re: /fisch|lachs|kabeljau|garnele|shrimp|muschel/i, key: 'fisch' },
+      { re: /pizza|focaccia/i, key: 'pizza' },
+      { re: /pasta|nudel|spaghetti|penne|tagliatelle/i, key: 'pasta' }
+    ];
 
     function relatedCookingStyle(r) {
       var hay = lc(
@@ -4958,51 +4966,109 @@
         (getRecipeField(r, 'category') || r.category || '') + ' ' +
         joinLines(getRecipeField(r, 'preparation'))
       );
-      if (/pfanne|brat|wok|grillpfanne/.test(hay)) return 'pfanne';
-      if (/grill|bbq|smoker/.test(hay)) return 'grill';
-      if (/ofen|backen|auflauf|überbacken|gratin/.test(hay)) return 'ofen';
+      if (/\bofen\b|backofen|\bauflauf\b|überbacken|ueberbacken|gratin|\bbacken\b/.test(hay)) return 'ofen';
+      if (/\bpfanne\b|\bwok\b|grillpfanne|plancha/.test(hay)) return 'pfanne';
+      if (/\bbraten\b|\bbratwurst|\bbratwürst|\bbratkartoffel|\bbratpfanne/.test(hay)) return 'pfanne';
+      if (/\bgrill\b|\bbbq\b|smoker/.test(hay)) return 'grill';
       if (/airfryer|heißluft|heissluft/.test(hay)) return 'airfryer';
-      if (/suppe|eintopf/.test(hay)) return 'suppe';
+      if (/\bsuppe\b|\beintopf\b/.test(hay)) return 'suppe';
       return '';
     }
 
+    function relatedRecipeGroups(r) {
+      var hay = lc(
+        (getRecipeField(r, 'name') || r.name || '') + ' ' +
+        (getRecipeField(r, 'category') || r.category || '') + ' ' +
+        joinLines(r.tags || [])
+      );
+      var groups = {};
+      for (var gi = 0; gi < RELATED_RECIPE_GROUP_PATTERNS.length; gi++) {
+        var gp = RELATED_RECIPE_GROUP_PATTERNS[gi];
+        if (gp.re.test(hay)) groups[gp.key] = true;
+      }
+      return groups;
+    }
+
+    function relatedMainIngredients(recipe) {
+      var mains = {};
+      var list = normalizeFieldToList(getRecipeField(recipe, 'ingredients'));
+      for (var i = 0; i < list.length; i++) {
+        var part = lc(list[i]);
+        part = part.replace(/^optional:\s*/, '');
+        part = part.replace(/^\d+[\d,\.\-/–]*\s*(g|kg|ml|l|el|tl|bund|stück|stueck|scheiben|große|kleine|rote|grüne|gruene|grobe)?\s*/, '');
+        var words = part.match(/[a-zäöüß]{4,}/g) || [];
+        for (var wi = 0; wi < words.length; wi++) {
+          var w = words[wi].replace(/[^a-zäöüß0-9]/gi, '');
+          if (!w || RELATED_STANDARD_INGREDIENTS[w]) continue;
+          if (w === 'kartoffeln' || w === 'kartoffel' || w === 'ziemniak' || w === 'ziemniaki') continue;
+          mains[w] = true;
+        }
+      }
+      return mains;
+    }
+
     function scoreRelatedRecipe(current, candidate) {
+      var meta = {
+        catMatch: false,
+        styleMatch: false,
+        tagOverlap: 0,
+        groupOverlap: 0,
+        mainHits: 0,
+        kartoffelHit: 0
+      };
       var score = 0;
-      var curCat = normalizeCategoryForRelated(getRecipeField(current, 'category') || current.category);
-      var candCat = normalizeCategoryForRelated(getRecipeField(candidate, 'category') || candidate.category);
-      if (curCat && candCat && curCat === candCat) score += 5;
+      var curCat = getRecipeField(current, 'category') || current.category;
+      var candCat = getRecipeField(candidate, 'category') || candidate.category;
+      meta.catMatch = relatedCategoriesMatch(curCat, candCat);
+      if (meta.catMatch) score += 5;
 
       var curStyle = relatedCookingStyle(current);
       var candStyle = relatedCookingStyle(candidate);
-      if (curStyle && candStyle && curStyle === candStyle) score += 4;
+      meta.styleMatch = !!(curStyle && candStyle && curStyle === candStyle);
+      if (meta.styleMatch) score += 4;
 
       var curTags = tokenizeRelatedText(joinLines(current.tags || []));
-      var tagOverlap = relatedTokenOverlap(curTags, joinLines(candidate.tags || []), '');
-      if (tagOverlap) score += Math.min(3, tagOverlap * 1.5);
-
-      var curNameTok = tokenizeRelatedText(getRecipeField(current, 'name') || current.name);
-      var nameOverlap = relatedTokenOverlap(curNameTok, getRecipeField(candidate, 'name') || candidate.name, '');
-      if (nameOverlap) score += Math.min(3, nameOverlap);
-
-      var ingHay = lc(joinLines(getRecipeField(candidate, 'ingredients')));
-      var ingScore = 0;
-      var curIng = normalizeFieldToList(getRecipeField(current, 'ingredients'));
-      for (var ii = 0; ii < curIng.length; ii++) {
-        var part = lc(curIng[ii]);
-        var words = part.split(/\s+/).filter(function (w) { return w.length >= 4; });
-        for (var wi = 0; wi < words.length; wi++) {
-          var w = words[wi].replace(/[^a-zäöüß0-9]/gi, '');
-          if (!w || RELATED_STOP_INGREDIENTS[w]) continue;
-          if (w === 'kartoffeln' || w === 'kartoffel' || w === 'zwiebeln' || w === 'zwiebel') {
-            if (curCat && candCat && curCat === candCat) ingScore += 1;
-            else ingScore += 0.2;
-          } else if (ingHay.indexOf(w) >= 0) {
-            ingScore += 2;
-          }
-        }
+      var candTags = tokenizeRelatedText(joinLines(candidate.tags || []));
+      for (var tk in curTags) {
+        if (candTags[tk]) meta.tagOverlap++;
       }
-      score += Math.min(4, ingScore);
-      return score;
+      if (meta.tagOverlap) score += Math.min(3, meta.tagOverlap);
+
+      var curGroups = relatedRecipeGroups(current);
+      var candGroups = relatedRecipeGroups(candidate);
+      for (var gk in curGroups) {
+        if (candGroups[gk]) meta.groupOverlap++;
+      }
+      score += meta.groupOverlap;
+
+      var curMains = relatedMainIngredients(current);
+      var candHay = lc(
+        joinLines(getRecipeField(candidate, 'ingredients')) + ' ' +
+        (getRecipeField(candidate, 'name') || candidate.name || '')
+      );
+      for (var mk in curMains) {
+        if (candHay.indexOf(mk) >= 0) meta.mainHits++;
+      }
+      if (meta.mainHits) score += Math.min(4, meta.mainHits * 2);
+
+      var curIngHay = lc(joinLines(getRecipeField(current, 'ingredients')));
+      if (/kartoffel|ziemniak/.test(curIngHay) && /kartoffel|ziemniak/.test(candHay)) {
+        if (meta.catMatch || meta.groupOverlap >= 1) meta.kartoffelHit = 1;
+        else meta.kartoffelHit = 0.2;
+        score += meta.kartoffelHit;
+      }
+
+      return { score: score, meta: meta };
+    }
+
+    function isRelatedCandidateRelevant(score, meta) {
+      if (score < 5) return false;
+      if (meta.catMatch) return true;
+      if (meta.styleMatch && meta.groupOverlap >= 1) return true;
+      if (meta.styleMatch && meta.mainHits >= 1) return true;
+      if (meta.groupOverlap >= 2) return true;
+      if (meta.tagOverlap >= 2) return true;
+      return score >= 8;
     }
 
     function findRelatedRecipes(current, all, want) {
@@ -5012,30 +5078,55 @@
       for (var i = 0; i < all.length; i++) {
         var r = all[i];
         if (String(r.id) === cid) continue;
-        var sc = scoreRelatedRecipe(current, r);
-        if (sc > 0) scored.push({ r: r, sc: sc, id: r.id });
+        var result = scoreRelatedRecipe(current, r);
+        scored.push({
+          r: r,
+          sc: result.score,
+          meta: result.meta,
+          id: r.id,
+          relevant: isRelatedCandidateRelevant(result.score, result.meta)
+        });
       }
       scored.sort(function (a, b) {
         if (b.sc !== a.sc) return b.sc - a.sc;
-        return a.id - b.id;
+        if (b.meta.groupOverlap !== a.meta.groupOverlap) return b.meta.groupOverlap - a.meta.groupOverlap;
+        if (b.meta.mainHits !== a.meta.mainHits) return b.meta.mainHits - a.meta.mainHits;
+        if (b.meta.catMatch !== a.meta.catMatch) return (b.meta.catMatch ? 1 : 0) - (a.meta.catMatch ? 1 : 0);
+        if (b.meta.styleMatch !== a.meta.styleMatch) return (b.meta.styleMatch ? 1 : 0) - (a.meta.styleMatch ? 1 : 0);
+        return b.id - a.id;
       });
+
       var picked = [];
-      var usedCat = {};
-      for (var j = 0; j < scored.length && picked.length < want; j++) {
-        var cand = scored[j].r;
-        var cat = normalizeCategoryForRelated(getRecipeField(cand, 'category') || cand.category) || '_';
-        if (picked.length && usedCat[cat] && scored[j].sc < 4) continue;
+      var used = {};
+      function addCandidate(cand) {
+        var sid = String(cand.id);
+        if (used[sid]) return;
         picked.push(cand);
-        usedCat[cat] = true;
+        used[sid] = true;
       }
-      for (var k = 0; k < scored.length && picked.length < want; k++) {
-        var c2 = scored[k].r;
-        var seen = false;
-        for (var p = 0; p < picked.length; p++) {
-          if (String(picked[p].id) === String(c2.id)) { seen = true; break; }
+
+      for (var j = 0; j < scored.length && picked.length < want; j++) {
+        if (scored[j].relevant) addCandidate(scored[j].r);
+      }
+
+      if (picked.length < want) {
+        var curCat = getRecipeField(current, 'category') || current.category;
+        for (var k = 0; k < scored.length && picked.length < want; k++) {
+          var c2 = scored[k].r;
+          if (relatedCategoriesMatch(curCat, getRecipeField(c2, 'category') || c2.category)) {
+            addCandidate(c2);
+          }
         }
-        if (!seen) picked.push(c2);
       }
+
+      if (picked.length < want) {
+        var byNewest = all.slice().sort(function (a, b) { return b.id - a.id; });
+        for (var n = 0; n < byNewest.length && picked.length < want; n++) {
+          if (String(byNewest[n].id) === cid) continue;
+          addCandidate(byNewest[n]);
+        }
+      }
+
       return picked.slice(0, want);
     }
 
@@ -5184,6 +5275,27 @@
       saveFavoriteIds(arr);
     }
 
+    function syncHeaderOffset() {
+      var topbar = document.querySelector('.site-topbar');
+      if (!topbar) return;
+      var h = topbar.offsetHeight;
+      if (h > 0) {
+        document.documentElement.style.setProperty('--header-offset', h + 'px');
+      }
+    }
+
+    function initHeaderOffsetSync() {
+      syncHeaderOffset();
+      window.addEventListener('resize', syncHeaderOffset);
+      if (typeof ResizeObserver !== 'undefined') {
+        var topbar = document.querySelector('.site-topbar');
+        if (topbar) {
+          var ro = new ResizeObserver(syncHeaderOffset);
+          ro.observe(topbar);
+        }
+      }
+    }
+
     function updateNavBadges() {
       var favBtn = document.getElementById('merklisteNavBtn');
       var shopBtn = document.getElementById('shoppingNavBtn');
@@ -5193,6 +5305,7 @@
       if (shopBtn) {
         shopBtn.textContent = t('nav_shopping') + ' (' + getShoppingList().length + ')';
       }
+      syncHeaderOffset();
     }
 
     function updateFavoriteButtons() {
@@ -5263,14 +5376,17 @@
 
     function migrateShoppingListItem(item) {
       if (!item || typeof item !== 'object') return null;
+      var legacyText = getLegacyShoppingItemText(item);
+      var legacyName = getLegacyShoppingRecipeName(item);
       var rid = String(item.recipeId == null ? '' : item.recipeId).trim();
+      if (!rid && legacyName) rid = findRecipeIdByShoppingTitle(legacyName);
       if (!rid) {
         return {
-          id: String(item.id || 'unknown-' + Math.random()),
+          id: String(item.id || 'unknown-' + normalizeShoppingIdText(legacyText || legacyName || Math.random())),
           recipeId: 'unknown',
           ingredientIndex: null,
-          text: String(item.text || ''),
-          recipeName: String(item.recipeName || ''),
+          text: legacyText,
+          recipeName: legacyName,
           checked: !!item.checked,
           _legacy: true
         };
@@ -5298,26 +5414,23 @@
           checked: !!item.checked
         };
       }
-      if (recipe && item.text) {
-        var baseList = getRecipeBaseIngredients(recipe);
-        var want = String(item.text).trim().toLowerCase();
-        for (var bi = 0; bi < baseList.length; bi++) {
-          if (String(baseList[bi]).trim().toLowerCase() === want) {
-            return {
-              id: makeShoppingItemId(rid, bi),
-              recipeId: rid,
-              ingredientIndex: bi,
-              checked: !!item.checked
-            };
-          }
+      if (recipe && legacyText) {
+        var matchedIx = findIngredientIndexForShoppingText(recipe, legacyText);
+        if (matchedIx != null) {
+          return {
+            id: makeShoppingItemId(rid, matchedIx),
+            recipeId: rid,
+            ingredientIndex: matchedIx,
+            checked: !!item.checked
+          };
         }
       }
       return {
-        id: String(item.id || rid + '-legacy-' + normalizeShoppingIdText(item.text)),
+        id: String(item.id || rid + '-legacy-' + normalizeShoppingIdText(legacyText || legacyName)),
         recipeId: rid,
         ingredientIndex: null,
-        text: String(item.text || ''),
-        recipeName: String(item.recipeName || ''),
+        text: legacyText,
+        recipeName: legacyName,
         checked: !!item.checked,
         _legacy: true
       };
@@ -5360,19 +5473,19 @@
       var recipe = rid && rid !== 'unknown' ? recipeById(rid) : null;
       var recipeTitle = rid === 'unknown'
         ? t('shopping_unknown_recipe')
-        : getShoppingRecipeDisplayName(rid, item.recipeName);
+        : getShoppingRecipeDisplayName(rid, getLegacyShoppingRecipeName(item));
       var text = '';
       if (recipe && item.ingredientIndex != null && item.ingredientIndex !== '') {
-        text = getShoppingIngredientDisplay(recipe, item.ingredientIndex, item.text);
-      } else if (recipe && item.text) {
+        text = getShoppingIngredientDisplay(recipe, item.ingredientIndex, getLegacyShoppingItemText(item));
+      } else if (recipe && getLegacyShoppingItemText(item)) {
         var mig = migrateShoppingListItem(item);
         if (mig && mig.ingredientIndex != null && mig.ingredientIndex !== '' && !mig._legacy) {
-          text = getShoppingIngredientDisplay(recipe, mig.ingredientIndex, item.text);
+          text = getShoppingIngredientDisplay(recipe, mig.ingredientIndex, getLegacyShoppingItemText(item));
         } else {
-          text = String(item.text || '');
+          text = getLegacyShoppingItemText(item);
         }
       } else {
-        text = String(item.text || '');
+        text = getLegacyShoppingItemText(item);
       }
       return { recipeTitle: recipeTitle, text: text };
     }
@@ -5385,9 +5498,7 @@
         if (!Array.isArray(arr)) return [];
         var norm = normalizeShoppingList(arr);
         if (norm.changed) {
-          try {
-            localStorage.setItem(SHOPPING_STORAGE_KEY, JSON.stringify(norm.list));
-          } catch (e) {}
+          persistShoppingList(norm.list);
           updateNavBadges();
         }
         return norm.list;
@@ -5397,9 +5508,8 @@
     }
 
     function saveShoppingList(list) {
-      try {
-        localStorage.setItem(SHOPPING_STORAGE_KEY, JSON.stringify(list || []));
-      } catch (e) {}
+      var norm = normalizeShoppingList(list || []);
+      persistShoppingList(norm.list);
       updateNavBadges();
     }
 
@@ -5452,6 +5562,124 @@
         .toLowerCase()
         .replace(/\s+/g, '-')
         .replace(/[^a-z0-9äöüß\-]/g, '');
+    }
+
+    function normalizeShoppingMatchText(text) {
+      return String(text == null ? '' : text)
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, ' ');
+    }
+
+    function getLegacyShoppingItemText(item) {
+      if (!item) return '';
+      return String(item.text || item.ingredientText || '').trim();
+    }
+
+    function getLegacyShoppingRecipeName(item) {
+      if (!item) return '';
+      return String(item.recipeName || item.recipeTitle || '').trim();
+    }
+
+    function getRecipeNameCandidates(recipe) {
+      if (!recipe) return [];
+      var names = [];
+      var base = String(recipe.name || '').trim();
+      if (base) names.push(base);
+      if (recipe.translations) {
+        ['pl', 'en'].forEach(function (lang) {
+          var tr = recipe.translations[lang];
+          if (tr && tr.name) {
+            var n = String(tr.name).trim();
+            if (n) names.push(n);
+          }
+        });
+      }
+      return names;
+    }
+
+    function getRecipeIngredientListsAllLangs(recipe) {
+      if (!recipe) return [];
+      var lists = [getRecipeBaseIngredients(recipe)];
+      if (recipe.translations) {
+        ['pl', 'en'].forEach(function (lang) {
+          if (recipe.translations[lang]) {
+            var trIng = normalizeFieldToList(recipe.translations[lang].ingredients);
+            if (trIng.length) lists.push(trIng);
+          }
+        });
+      }
+      return lists;
+    }
+
+    function findRecipeIdByShoppingTitle(title) {
+      var want = normalizeShoppingMatchText(title);
+      if (!want || !parsedRecipes.length) return '';
+      for (var i = 0; i < parsedRecipes.length; i++) {
+        var r = parsedRecipes[i];
+        var candidates = getRecipeNameCandidates(r);
+        for (var c = 0; c < candidates.length; c++) {
+          if (normalizeShoppingMatchText(candidates[c]) === want) return String(r.id);
+        }
+      }
+      return '';
+    }
+
+    function findIngredientIndexForShoppingText(recipe, text) {
+      if (!recipe || !text) return null;
+      var want = normalizeShoppingMatchText(text);
+      if (!want) return null;
+      var lists = getRecipeIngredientListsAllLangs(recipe);
+      for (var li = 0; li < lists.length; li++) {
+        var ingList = lists[li];
+        for (var bi = 0; bi < ingList.length; bi++) {
+          if (normalizeShoppingMatchText(ingList[bi]) === want) return bi;
+        }
+      }
+      return null;
+    }
+
+    function serializeShoppingItem(item) {
+      if (!item || typeof item !== 'object') return null;
+      var rid = String(item.recipeId == null ? '' : item.recipeId).trim();
+      if (!rid) return null;
+      var out = {
+        id: String(item.id || ''),
+        recipeId: rid,
+        checked: !!item.checked
+      };
+      if (item.ingredientIndex != null && item.ingredientIndex !== '') {
+        var ix = parseInt(item.ingredientIndex, 10);
+        if (!isNaN(ix) && ix >= 0) {
+          out.ingredientIndex = ix;
+          if (!out.id || out.id.indexOf('-legacy-') >= 0 || out.id.indexOf('unknown-') === 0) {
+            out.id = makeShoppingItemId(rid, ix);
+          }
+        }
+      }
+      if (out.ingredientIndex == null) {
+        var legacyText = getLegacyShoppingItemText(item);
+        if (legacyText) out.text = legacyText;
+        var legacyName = getLegacyShoppingRecipeName(item);
+        if (legacyName) out.recipeName = legacyName;
+      }
+      if (!out.id) {
+        out.id = out.ingredientIndex != null
+          ? makeShoppingItemId(rid, out.ingredientIndex)
+          : rid + '-legacy-' + normalizeShoppingIdText(out.text || out.recipeName || 'item');
+      }
+      return out;
+    }
+
+    function persistShoppingList(list) {
+      var serialized = [];
+      for (var i = 0; i < list.length; i++) {
+        var s = serializeShoppingItem(list[i]);
+        if (s) serialized.push(s);
+      }
+      try {
+        localStorage.setItem(SHOPPING_STORAGE_KEY, JSON.stringify(serialized));
+      } catch (e) {}
     }
 
     function addRecipeIngredientsToShoppingList(recipe) {
@@ -5625,7 +5853,7 @@
       }
       [].slice.call(grid.querySelectorAll('article')).forEach(function (tile) {
         tile.classList.remove('welcome-card');
-        tile.classList.add('category-tile');
+        tile.classList.add('category-tile', 'home-category-tile');
         if (!tile.getAttribute('role')) tile.setAttribute('role', 'link');
         if (!tile.hasAttribute('tabindex')) tile.setAttribute('tabindex', '0');
         tile.style.removeProperty('width');
@@ -5633,10 +5861,13 @@
         tile.style.removeProperty('max-width');
         var label = tile.querySelector('h3');
         if (label) {
+          label.classList.add('home-category-label');
           label.style.removeProperty('word-break');
           label.style.removeProperty('overflow-wrap');
           label.style.removeProperty('hyphens');
           label.style.removeProperty('max-width');
+          label.style.removeProperty('font-family');
+          label.style.removeProperty('font-size');
         }
       });
     }
@@ -6043,9 +6274,7 @@
     }
 
     function updateKochSidebarState(active) {
-      var hint = document.getElementById('detailSidebarKochStatus');
       var start = document.getElementById('detailSidebarKochStart');
-      if (hint) hint.hidden = !active;
       if (start) start.textContent = active ? t('koch_reopen') : t('koch_start');
     }
 
@@ -6199,15 +6428,16 @@
       } else {
         parts.push('<div class="detail-hero-placeholder" aria-hidden="true"></div>');
       }
-      parts.push('</div><div class="detail-hero-card">');
+      parts.push('</div></div>');
+      parts.push('<div class="detail-hero-card" id="recipe-title-card">');
       parts.push(buildDetailCategoryBadge(r));
       parts.push('<h1 class="detail-title">' + esc(getRecipeField(r, 'name') || r.name) + '</h1>');
       if (introTxt) {
         parts.push('<p class="detail-intro detail-intro--in-card">' + esc(introTxt) + '</p>');
       }
       parts.push(buildDetailMetaHTML(r));
-      parts.push(buildDetailActionsHTML(hasIng));
-      parts.push('</div></div>');
+      parts.push(buildDetailActionsHTML(false));
+      parts.push('</div>');
 
       parts.push('<div class="detail-lead" hidden aria-hidden="true"></div>');
 
@@ -6460,6 +6690,9 @@
       var grid = document.getElementById('highlightGrid');
       if (!grid) return;
       var list = recipes || [];
+      if (currentRecipeFilterKey === 'alle' && list.length > HIGHLIGHT_DISPLAY_LIMIT) {
+        list = list.slice(0, HIGHLIGHT_DISPLAY_LIMIT);
+      }
       grid.innerHTML = list.map(function (r) {
         var intro = getRecipeField(r, 'intro');
         var introHtml = intro ? '<p class="intro">' + esc(intro) + '</p>' : '';
@@ -6506,26 +6739,15 @@
       updateFavoriteButtons();
     }
 
-    function isMobileHomeLayout() {
-      try {
-        return window.matchMedia('(max-width: 900px)').matches;
-      } catch (e) {
-        return window.innerWidth <= 900;
-      }
-    }
-
     function scrollToHomeRecipeResults() {
-      if (!isMobileHomeLayout()) return;
-      var target = document.getElementById('recipe-results') || document.getElementById('highlightGrid');
-      if (!target) return;
+      var target = document.querySelector('#recipe-results') || document.querySelector('#home-highlights');
+      if (!target || !window.matchMedia('(max-width: 900px)').matches) return;
       requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          try {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          } catch (err) {
-            target.scrollIntoView();
-          }
-        });
+        try {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch (err) {
+          target.scrollIntoView();
+        }
       });
     }
 
@@ -6552,13 +6774,13 @@
         var search = document.getElementById('recipeSearchInput');
         if (search) search.value = '';
       }
-      updateRecipeListView();
+      updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
       syncHomeCategoryTilesActive();
-      if (opt.scrollToResults) scrollToHomeRecipeResults();
     }
 
     function updateRecipeListView(opt) {
       opt = opt || {};
+      try {
       if (!opt.skipHideDetail) hideRecipeDetailPage();
 
       var heading = document.getElementById('recipeSectionHeading');
@@ -6692,6 +6914,9 @@
       grid.hidden = false;
       renderRecipeCards(slice);
       if (loadWrap) loadWrap.hidden = full.length <= slice.length;
+      } finally {
+        if (opt.scrollToResults) scrollToHomeRecipeResults();
+      }
     }
 
     function setStatus(msg, isError) {
@@ -6723,6 +6948,7 @@
         applyRouteFromHash();
         var merkVAfter = document.getElementById('merklisteView');
         if (merkVAfter && !merkVAfter.hidden) renderMerkliste();
+        renderShoppingListIfVisible();
       })
       .catch(function (e) {
         setStatus('Rezepte konnten nicht geladen werden. Bitte Seite über einen lokalen Server öffnen (kochbuch.xml).', true);
@@ -6752,6 +6978,9 @@
     attachSurpriseMeButton();
     attachMerklisteInteractions();
     attachRecipeDetailActionDelegation();
+
+    initHeaderOffsetSync();
+    refreshHomeCategoryGrid();
 
     // Sprache initialisieren + Umschalter binden
     (function initLanguage() {
@@ -6949,11 +7178,10 @@
             updateRecipeListView();
           }
         } else {
-          applyRecipeFilter(k);
+          applyRecipeFilter(k, { scrollToResults: true });
         }
         syncRatingFilterButtons();
-        var anchor = document.getElementById('rezepte');
-        if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        scrollToHomeRecipeResults();
       });
     }
 
@@ -7029,7 +7257,7 @@
           }
           if (action === 'koch') {
             e.preventDefault();
-            scrollToRecipeSidebarSection('recipe-cook-view');
+            handleDetailKochAction('koch-start');
             return;
           }
           if (action === 'recipes') {
@@ -7067,7 +7295,6 @@
         } catch (err) {}
         applyRecipeFilter(key, { scrollToResults: true });
         syncRatingFilterButtons();
-        applyRouteFromHash();
       }
       grid.addEventListener('click', function (e) {
         var tile = e.target.closest('[data-filter]');
@@ -7111,7 +7338,6 @@
         } catch (err) {}
         applyRecipeFilter(key, { scrollToResults: true });
         syncRatingFilterButtons();
-        applyRouteFromHash();
       }
       strip.addEventListener('click', function (e) {
         var shop = e.target.closest('#homeQuickShopping');
