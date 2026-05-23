@@ -1076,7 +1076,7 @@
     }
 
     .recipe-card {
-      cursor: pointer;
+      cursor: default;
       background: var(--white);
       border: 1px solid var(--line);
       border-radius: 20px;
@@ -1086,8 +1086,44 @@
     }
 
     .recipe-card:focus-visible {
+      outline: none;
+    }
+
+    a.recipe-card-link {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    a.recipe-card-link--cover {
+      display: block;
+    }
+
+    a.recipe-card-link--cta {
+      display: inline-flex;
+    }
+
+    a.recipe-card-link:focus-visible {
       outline: 3px solid var(--accent);
       outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    a.detail-sidebar-recipe-card,
+    a.home-sidebar-recipe-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.detail-related-card {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .shopping-recipe-title-link {
+      color: inherit;
+      text-decoration: none;
     }
 
     .recipe-detail {
@@ -2342,6 +2378,7 @@
       font-size: 13px;
       font-weight: 600;
       cursor: pointer;
+      text-decoration: none;
       transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
     }
 
@@ -4939,6 +4976,25 @@
       };
     }
 
+    function handleRecipeLinkClick(event) {
+      var link = event.target.closest('a[data-recipe-id]');
+      if (!link) return;
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+      ) {
+        return;
+      }
+      var recipe = recipeById(link.getAttribute('data-recipe-id'));
+      if (!recipe) return;
+      event.preventDefault();
+      renderRecipeDetail(recipe, { historyMode: 'push' });
+    }
+
     function parseRecipes(xmlText) {
       var xml = new DOMParser().parseFromString(xmlText, 'application/xml');
       var err = xml.querySelector('parsererror');
@@ -5487,11 +5543,12 @@
         var catHtml = cat
           ? '<span class="recipe-tag">' + esc(cat) + '</span>'
           : '';
+        var href = recipeUrlPath(item);
         h += (
-          '<article class="detail-related-card" tabindex="0" role="link" data-recipe-id="' + esc(String(item.id)) + '" aria-label="' + esc(t('detail_related_open', { name: nm })) + '">' +
+          '<a href="' + esc(href) + '" class="detail-related-card" data-recipe-id="' + esc(String(item.id)) + '" aria-label="' + esc(t('detail_related_open', { name: nm })) + '">' +
             '<div class="detail-related-img" role="img" aria-label=""></div>' +
             '<div class="detail-related-body">' + catHtml + '<h3 class="detail-related-title">' + esc(nm) + '</h3></div>' +
-          '</article>'
+          '</a>'
         );
       }
       h += '</div></div>';
@@ -6109,6 +6166,16 @@
           ? t('shopping_unknown_recipe')
           : getShoppingRecipeDisplayName(rid, '');
         if (!title && rid !== 'unknown') title = t('shopping_recipe_fallback', { id: rid });
+        var titleHtml = title;
+        if (rid !== 'unknown') {
+          var shopRec = recipeById(rid);
+          if (shopRec) {
+            var shopHref = recipeUrlPath(shopRec);
+            if (shopHref) {
+              titleHtml = '<a href="' + esc(shopHref) + '" class="shopping-recipe-title-link" data-recipe-id="' + esc(String(rid)) + '">' + esc(title) + '</a>';
+            }
+          }
+        }
         var count = g.items.length;
         var itemHtml = g.items.map(function (it) {
           var checked = !!it.checked;
@@ -6137,7 +6204,7 @@
           '<li class="shopping-recipe-group' + inactiveCls + '" data-shopping-recipe-group="' + esc(String(rid)) + '">' +
             '<div class="shopping-recipe-head">' +
               '<div style="min-width: 220px; flex: 1 1 auto;">' +
-                '<h2 class="shopping-recipe-title">' + esc(title) + '</h2>' +
+                '<h2 class="shopping-recipe-title">' + titleHtml + '</h2>' +
                 '<div class="shopping-recipe-meta">' + esc(String(count)) + ' ' + esc(t('shopping_items_label')) + '</div>' +
               '</div>' +
               '<div class="shopping-recipe-actions">' +
@@ -6365,15 +6432,20 @@
           ? '<span class="recipe-tag">' + esc(cat) + '</span>'
           : '';
         var title = getRecipeField(r, 'name') || r.name;
+        var href = recipeUrlPath(r);
         return (
           '<article class="recipe-card recipe-card--merkliste" data-merkliste-recipe-id="' + esc(String(r.id)) + '">' +
-            '<div class="recipe-img" role="img" aria-label=""></div>' +
+            '<a href="' + esc(href) + '" class="recipe-card-link recipe-card-link--cover" data-recipe-id="' + esc(String(r.id)) + '" aria-label="' + esc(t('detail_related_open', { name: title })) + '">' +
+              '<div class="recipe-img" role="img" aria-label=""></div>' +
+            '</a>' +
             '<div class="recipe-content">' +
-              catHtml +
-              '<h3>' + esc(title) + '</h3>' +
-              introHtml +
+              '<a href="' + esc(href) + '" class="recipe-card-link" data-recipe-id="' + esc(String(r.id)) + '">' +
+                catHtml +
+                '<h3>' + esc(title) + '</h3>' +
+                introHtml +
+              '</a>' +
               '<div class="recipe-card-merkliste-actions">' +
-                '<button type="button" class="merkliste-card-btn merkliste-card-btn--primary" data-merkliste-open="' + esc(String(r.id)) + '">' + esc(t('merkliste_open')) + '</button>' +
+                '<a href="' + esc(href) + '" class="merkliste-card-btn merkliste-card-btn--primary recipe-card-link" data-recipe-id="' + esc(String(r.id)) + '">' + esc(t('merkliste_open')) + '</a>' +
                 '<button type="button" class="merkliste-card-btn" data-merkliste-remove="' + esc(String(r.id)) + '">' + esc(t('merkliste_remove')) + '</button>' +
               '</div>' +
             '</div>' +
@@ -6395,17 +6467,10 @@
       if (!grid || grid.dataset.merklisteBound === '1') return;
       grid.dataset.merklisteBound = '1';
       grid.addEventListener('click', function (ev) {
-        var openBtn = ev.target.closest('[data-merkliste-open]');
-        if (openBtn && grid.contains(openBtn)) {
-          ev.preventDefault();
-          var rid = openBtn.getAttribute('data-merkliste-open');
-          var rec = recipeById(rid);
-          if (rec) renderRecipeDetail(rec);
-          return;
-        }
         var remBtn = ev.target.closest('[data-merkliste-remove]');
         if (remBtn && grid.contains(remBtn)) {
           ev.preventDefault();
+          ev.stopPropagation();
           toggleFavorite(remBtn.getAttribute('data-merkliste-remove'));
           updateFavoriteButtons();
         }
@@ -6473,12 +6538,6 @@
       if (!body || body.dataset.detailActionsBound === '1') return;
       body.dataset.detailActionsBound = '1';
       body.addEventListener('click', function (e) {
-        var rel = e.target.closest('.detail-related-card[data-recipe-id]');
-        if (rel && body.contains(rel)) {
-          var rec = recipeById(rel.getAttribute('data-recipe-id'));
-          if (rec) renderRecipeDetail(rec);
-          return;
-        }
         var fbBtn = e.target.closest('[data-detail-feedback-merken="1"]');
         if (fbBtn && body.contains(fbBtn) && currentDetailRecipe) {
           toggleFavorite(currentDetailRecipe.id);
@@ -6550,14 +6609,6 @@
         if (act === 'print') {
           window.print();
         }
-      });
-      body.addEventListener('keydown', function (e) {
-        if (e.key !== 'Enter' && e.key !== ' ') return;
-        var relK = e.target.closest('.detail-related-card[data-recipe-id]');
-        if (!relK || !body.contains(relK)) return;
-        e.preventDefault();
-        var recK = recipeById(relK.getAttribute('data-recipe-id'));
-        if (recK) renderRecipeDetail(recK);
       });
     }
 
@@ -6884,9 +6935,10 @@
       for (var i = 0; i < recs.length; i++) {
         var rr = recs[i];
         var nm = getRecipeField(rr, 'name') || rr.name;
-        h += '<button type="button" class="home-sidebar-recipe-link" data-recipe-id="' + esc(String(rr.id)) + '">';
+        var href = recipeUrlPath(rr);
+        h += '<a href="' + esc(href) + '" class="home-sidebar-recipe-link" data-recipe-id="' + esc(String(rr.id)) + '">';
         h += '<div class="home-sidebar-recipe-img" data-home-sidebar-img="' + esc(String(rr.id)) + '"></div>';
-        h += '<p class="home-sidebar-recipe-title">' + esc(nm) + '</p></button>';
+        h += '<p class="home-sidebar-recipe-title">' + esc(nm) + '</p></a>';
       }
       grid.innerHTML = h;
       [].slice.call(grid.querySelectorAll('[data-home-sidebar-img]')).forEach(function (el) {
@@ -6942,9 +6994,10 @@
           for (var ri = 0; ri < recs.length; ri++) {
             var rr = recs[ri];
             var nm = getRecipeField(rr, 'name') || rr.name;
-            nh += '<button type="button" class="detail-sidebar-recipe-card" data-recipe-id="' + esc(String(rr.id)) + '">';
+            var href = recipeUrlPath(rr);
+            nh += '<a href="' + esc(href) + '" class="detail-sidebar-recipe-card" data-recipe-id="' + esc(String(rr.id)) + '">';
             nh += '<div class="detail-sidebar-recipe-img" data-sidebar-img="' + esc(String(rr.id)) + '"></div>';
-            nh += '<p class="detail-sidebar-recipe-title">' + esc(nm) + '</p></button>';
+            nh += '<p class="detail-sidebar-recipe-title">' + esc(nm) + '</p></a>';
           }
                     grid.innerHTML = nh;
           [].slice.call(grid.querySelectorAll('.detail-sidebar-recipe-img')).forEach(function (el) {
@@ -7018,12 +7071,6 @@
 
     function attachHighlightInteractions() {
       var grid = document.getElementById('highlightGrid');
-      function activateFromCard(card) {
-        if (!card) return;
-        var id = card.getAttribute('data-recipe-id');
-        var recipe = recipeById(id);
-        if (recipe) renderRecipeDetail(recipe);
-      }
       grid.addEventListener('click', function (ev) {
         var favBtn = ev.target.closest('.recipe-card-fav');
         if (favBtn && grid.contains(favBtn)) {
@@ -7032,11 +7079,7 @@
           var rid = favBtn.getAttribute('data-recipe-fav');
           toggleFavorite(rid);
           updateFavoriteButtons();
-          return;
         }
-        var card = ev.target.closest('.recipe-card[data-recipe-id]');
-        if (!card || !grid.contains(card)) return;
-        activateFromCard(card);
       });
       grid.addEventListener('keydown', function (ev) {
         var favBtn = ev.target.closest('.recipe-card-fav');
@@ -7047,13 +7090,7 @@
             toggleFavorite(favBtn.getAttribute('data-recipe-fav'));
             updateFavoriteButtons();
           }
-          return;
         }
-        if (ev.key !== 'Enter' && ev.key !== ' ') return;
-        var card = ev.target.closest('.recipe-card[data-recipe-id]');
-        if (!card || !grid.contains(card)) return;
-        ev.preventDefault();
-        activateFromCard(card);
       });
     }
 
@@ -7102,16 +7139,23 @@
             '</div>';
         }
         var title = getRecipeField(r, 'name') || r.name;
+        var href = recipeUrlPath(r);
         return (
-          '<article class="recipe-card" tabindex="0" role="button" aria-label="Details: ' + esc(title) + '" data-recipe-id="' + esc(String(r.id)) + '">' +
-            '<div class="recipe-img" role="img" aria-label=""></div>' +
+          '<article class="recipe-card" data-recipe-id="' + esc(String(r.id)) + '">' +
+            '<a href="' + esc(href) + '" class="recipe-card-link recipe-card-link--cover" data-recipe-id="' + esc(String(r.id)) + '" aria-label="' + esc(t('detail_related_open', { name: title })) + '">' +
+              '<div class="recipe-img" role="img" aria-label=""></div>' +
+            '</a>' +
             '<div class="recipe-content">' +
-              catHtml +
-              '<h3>' + esc(title) + '</h3>' +
-              ratingHtml +
-              introHtml +
+              '<a href="' + esc(href) + '" class="recipe-card-link" data-recipe-id="' + esc(String(r.id)) + '">' +
+                catHtml +
+                '<h3>' + esc(title) + '</h3>' +
+                ratingHtml +
+                introHtml +
+              '</a>' +
               '<button type="button" class="recipe-card-fav" data-recipe-fav="' + esc(String(r.id)) + '" aria-pressed="false" aria-label="' + esc(t('favorite_save')) + '">\u2661 ' + esc(t('favorite_save')) + '</button>' +
-              '<span class="recipe-card-cta">' + esc(t('card_view')) + '</span>' +
+              '<a href="' + esc(href) + '" class="recipe-card-link recipe-card-link--cta" data-recipe-id="' + esc(String(r.id)) + '">' +
+                '<span class="recipe-card-cta">' + esc(t('card_view')) + '</span>' +
+              '</a>' +
             '</div>' +
           '</article>'
         );
@@ -7381,6 +7425,11 @@
     attachHighlightInteractions();
     attachSurpriseMeButton();
     attachMerklisteInteractions();
+    (function attachRecipeLinkClicks() {
+      if (document.documentElement.dataset.recipeLinksBound === '1') return;
+      document.documentElement.dataset.recipeLinksBound = '1';
+      document.addEventListener('click', handleRecipeLinkClick);
+    })();
     attachRecipeDetailActionDelegation();
 
     initHeaderOffsetSync();
@@ -7675,13 +7724,6 @@
             return;
           }
         }
-        var card = e.target.closest('.detail-sidebar-recipe-card[data-recipe-id]');
-        if (card && bar.contains(card)) {
-          e.preventDefault();
-          var rec = recipeById(card.getAttribute('data-recipe-id'));
-          if (rec) renderRecipeDetail(rec);
-          return;
-        }
         var kochActBtn = e.target.closest('[data-action^="koch-"]');
         if (kochActBtn && bar.contains(kochActBtn)) {
           e.preventDefault();
@@ -7717,19 +7759,6 @@
         if (!tile || !grid.contains(tile)) return;
         e.preventDefault();
         activate(tile);
-      });
-    })();
-
-    (function attachHomeSidebarRecipes() {
-      var grid = document.getElementById('homeSidebarNewRecipes');
-      if (!grid || grid.dataset.bound === '1') return;
-      grid.dataset.bound = '1';
-      grid.addEventListener('click', function (e) {
-        var btn = e.target.closest('[data-recipe-id]');
-        if (!btn || !grid.contains(btn)) return;
-        e.preventDefault();
-        var recipe = recipeById(btn.getAttribute('data-recipe-id'));
-        if (recipe) renderRecipeDetail(recipe);
       });
     })();
 
