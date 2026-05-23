@@ -11,7 +11,11 @@
     h1 { font-size: 1.5rem; margin-bottom: 8px; }
     .meta { color: #666; margin-bottom: 24px; font-size: 14px; }
     label { display: block; font-weight: 600; margin-bottom: 6px; }
-    input[type="password"], input[type="text"] { width: 100%; max-width: 420px; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 16px; }
+    input[type="password"], input[type="text"], select {
+      width: 100%; max-width: 420px; padding: 10px 12px;
+      border: 1px solid #ccc; border-radius: 8px; margin-bottom: 16px;
+      font: inherit; background: #fff;
+    }
     button { padding: 8px 14px; border-radius: 8px; border: 1px solid #ccc; background: #fff; cursor: pointer; margin-right: 8px; }
     button.primary { background: #b8860b; color: #fff; border-color: #b8860b; }
     button.danger { background: #c0392b; color: #fff; border-color: #c0392b; }
@@ -21,20 +25,32 @@
     .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
     .stat { background: #fff; border: 1px solid #e5e0d6; border-radius: 10px; padding: 12px 16px; min-width: 120px; }
     .stat strong { display: block; font-size: 1.4rem; }
-    .hint { color: #666; font-size: 13px; margin: -8px 0 16px; max-width: 420px; }
+    details.advanced { margin: 8px 0 16px; max-width: 420px; color: #666; font-size: 14px; }
+    details.advanced summary { cursor: pointer; font-weight: 600; color: #444; margin-bottom: 8px; }
+    details.advanced[open] summary { margin-bottom: 12px; }
   </style>
 </head>
 <body>
   <h1>Bewertungen moderieren</h1>
-  <p class="meta">Nur für Admin. Seite ist nicht indexiert.</p>
+  <p class="meta">Nur für Admin. Diese Seite ist nicht indexiert.</p>
 
   <div id="loginPanel">
-    <label for="apiBase">API-Basis-URL</label>
-    <input type="text" id="apiBase" value="/api" placeholder="/api" autocomplete="off" />
-    <p class="hint">Bei Live normalerweise /api verwenden. Alternativ: https://svenskochbuch.de/api</p>
-    <label for="adminToken">Admin-Token (Bearer)</label>
+    <label for="roleSelect">Rolle</label>
+    <select id="roleSelect">
+      <option value="admin">Admin</option>
+    </select>
+
+    <label for="adminToken">Passwort</label>
     <input type="password" id="adminToken" autocomplete="current-password" />
-    <button type="button" class="primary" id="loginBtn">Anmelden &amp; laden</button>
+
+    <button type="button" class="primary" id="loginBtn">Anmelden</button>
+
+    <details class="advanced" id="advancedSettings">
+      <summary>Erweiterte Einstellungen</summary>
+      <label for="apiBase">API-Basis-URL</label>
+      <input type="text" id="apiBase" value="/api" placeholder="/api" autocomplete="off" />
+    </details>
+
     <p class="err" id="loginErr" hidden></p>
   </div>
 
@@ -45,37 +61,71 @@
 
   <script>
     (function () {
-      var apiBaseInput = document.getElementById('apiBase');
+      var DEFAULT_API_BASE = '/api';
+      var API_BASE_STORAGE_KEY = 'svens_admin_api_base';
+
+      var roleSelect = document.getElementById('roleSelect');
       var tokenInput = document.getElementById('adminToken');
       var loginBtn = document.getElementById('loginBtn');
       var loginErr = document.getElementById('loginErr');
       var mainPanel = document.getElementById('mainPanel');
       var statsEl = document.getElementById('stats');
       var listEl = document.getElementById('list');
+      var advancedSettings = document.getElementById('advancedSettings');
+      var apiBaseInput = document.getElementById('apiBase');
 
       function looksLikeApiBase(value) {
         if (!value) return true;
         return value.charAt(0) === '/' || /^https?:\/\//i.test(value);
       }
 
+      function normalizeApiBaseValue(raw) {
+        raw = (raw || '').trim();
+        if (!raw || !looksLikeApiBase(raw)) return DEFAULT_API_BASE;
+        return raw.replace(/\/+$/, '');
+      }
+
       function normalizeApiBaseInput() {
-        var raw = (apiBaseInput.value || '').trim();
-        if (!raw || !looksLikeApiBase(raw)) {
-          apiBaseInput.value = '/api';
+        apiBaseInput.value = normalizeApiBaseValue(apiBaseInput.value);
+      }
+
+      function loadStoredApiBase() {
+        try {
+          var stored = localStorage.getItem(API_BASE_STORAGE_KEY);
+          if (stored && looksLikeApiBase(stored)) {
+            apiBaseInput.value = normalizeApiBaseValue(stored);
+          }
+        } catch (err) {
+          /* ignore */
+        }
+      }
+
+      function saveApiBaseIfAdvanced() {
+        if (!advancedSettings.open) return;
+        normalizeApiBaseInput();
+        try {
+          if (apiBaseInput.value === DEFAULT_API_BASE) {
+            localStorage.removeItem(API_BASE_STORAGE_KEY);
+          } else {
+            localStorage.setItem(API_BASE_STORAGE_KEY, apiBaseInput.value);
+          }
+        } catch (err) {
+          /* ignore */
         }
       }
 
       function base() {
-        var raw = (apiBaseInput.value || '').trim();
-        if (!raw) return '/api';
-        if (!looksLikeApiBase(raw)) {
-          throw new Error('API-Basis-URL muss /api oder eine vollständige URL sein.');
-        }
-        return raw.replace(/\/+$/, '');
+        if (!advancedSettings.open) return DEFAULT_API_BASE;
+        return normalizeApiBaseValue(apiBaseInput.value);
       }
 
       function token() {
         return tokenInput.value.trim();
+      }
+
+      function userError(status) {
+        if (status === 401) return 'Passwort falsch oder keine Admin-Berechtigung.';
+        return 'Bewertungs-API nicht erreichbar. Bitte später erneut versuchen.';
       }
 
       function countOf(data, key) {
@@ -115,7 +165,7 @@
         try {
           res = await fetch(url, Object.assign({}, opts, { headers: headers }));
         } catch (err) {
-          throw new Error('API nicht erreichbar – bitte API-Basis-URL prüfen.');
+          throw new Error(userError());
         }
         var data = null;
         try {
@@ -124,20 +174,16 @@
           data = null;
         }
         if (res.status === 401) {
-          throw new Error('Unauthorized – bitte Admin-Token prüfen.');
+          throw new Error(userError(401));
         }
-        if (!res.ok) {
-          throw new Error((data && data.error) || res.statusText || ('API-Fehler (' + res.status + ')'));
-        }
-        if (data == null || typeof data !== 'object') {
-          throw new Error('API nicht erreichbar – bitte API-Basis-URL prüfen.');
+        if (!res.ok || data == null || typeof data !== 'object') {
+          throw new Error(userError());
         }
         return data;
       }
 
       async function loadStats() {
-        var statsData = await apiFetch('/admin/stats');
-        renderStats(statsData);
+        renderStats(await apiFetch('/admin/stats'));
       }
 
       async function loadPending() {
@@ -166,7 +212,11 @@
             var action = btn.getAttribute('data-action');
             btn.disabled = true;
             try {
-              await apiFetch('/admin/ratings/' + id + '/' + action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+              await apiFetch('/admin/ratings/' + id + '/' + action, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: '{}'
+              });
               await loadStats();
               await loadPending();
             } catch (e) {
@@ -181,16 +231,37 @@
         return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       }
 
+      loadStoredApiBase();
       normalizeApiBaseInput();
+
+      apiBaseInput.addEventListener('change', saveApiBaseIfAdvanced);
+      apiBaseInput.addEventListener('blur', function () {
+        normalizeApiBaseInput();
+        saveApiBaseIfAdvanced();
+      });
 
       loginBtn.addEventListener('click', async function () {
         loginErr.hidden = true;
         mainPanel.hidden = true;
-        try {
-          if (!token()) {
-            throw new Error('Unauthorized – bitte Admin-Token prüfen.');
-          }
+
+        if (roleSelect.value !== 'admin') {
+          loginErr.textContent = 'Passwort falsch oder keine Admin-Berechtigung.';
+          loginErr.hidden = false;
+          return;
+        }
+
+        if (!token()) {
+          loginErr.textContent = 'Bitte Passwort eingeben.';
+          loginErr.hidden = false;
+          return;
+        }
+
+        if (advancedSettings.open) {
           normalizeApiBaseInput();
+          saveApiBaseIfAdvanced();
+        }
+
+        try {
           await loadStats();
           await loadPending();
           mainPanel.hidden = false;
