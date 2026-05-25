@@ -15,7 +15,7 @@
   <meta name="twitter:title" content="Datenschutzerklärung | Sven Kocht." />
   <meta name="twitter:description" content="Datenschutzerklärung von Sven Kocht. Informationen zu Datenschutz, Hosting, lokalen Browserdaten und deinen Rechten." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./legal-common.css?v=13" />
+  <link rel="stylesheet" href="./legal-common.css?v=14" />
 </head>
 <body data-legal-page="privacy">
   <div class="site-topbar">
@@ -72,12 +72,16 @@
         <p data-legal-i18n="privacy_tracking_text_2">Wenn du auf der Startseite die Funktion „Merken“ nutzt, werden die gewählten Rezept-IDs lokal in deinem Browser gespeichert (localStorage). Es werden dafür keine Daten zu Werbe- oder Analysezwecken an den Betreiber übermittelt.</p>
 
         <h3 data-legal-i18n="privacy_ratings">5. Rezeptbewertungen</h3>
-        <p data-legal-i18n="privacy_ratings_text_1">Du kannst Rezepte optional mit 1–5 Sternen bewerten. Sterne ohne Name oder Kommentar können nach technischer Prüfung direkt veröffentlicht werden. Wenn du einen Namen oder Kommentar angibst, prüfen wir den Inhalt vor der Veröffentlichung.</p>
-        <p data-legal-i18n="privacy_ratings_text_2">Für Missbrauchsschutz speichern wir eine gekürzte, gehashte Kennung deiner IP-Adresse (kein Klartext) sowie optional einen Hash des Browsers. Es werden keine E-Mail-Adressen abgefragt. Private Sterne in deinem Browser (localStorage) bleiben nur auf deinem Gerät.</p>
-        <p data-legal-i18n="privacy_ratings_text_3">Die Bewertungsfunktion wird über Cloudflare Workers und Cloudflare D1 bereitgestellt. Rechtsgrundlage ist deine Einwilligung, soweit du Name/Kommentar veröffentlichst, sowie unser berechtigtes Interesse an der technischen Bereitstellung und Absicherung der Funktion.</p>
+        <p data-legal-i18n="privacy_ratings_text_1">Die Bewertungsfunktion ermöglicht dir, Rezeptfeedback abzugeben. Dazu speichern und moderieren wir Bewertungen, schützen die Funktion vor Missbrauch, bilden Durchschnittswerte für Rezepte und können freigegebene Bewertungen – nur echte, von uns freigegebene Bewertungen, keine erfundenen Werte – für strukturierte Daten (aggregateRating) nutzen.</p>
+        <p data-legal-i18n="privacy_ratings_text_2">Wenn du eine öffentliche Bewertung abgibst, können folgende personenbezogene bzw. funktionsbezogene Daten verarbeitet werden: Rezept-ID, Sternebewertung (1–5), optional Name/Nickname, optional Kommentar, Zeitpunkt der Abgabe sowie der Moderationsstatus (ausstehend, freigegeben oder abgelehnt). Zum Missbrauchsschutz speichern wir außerdem eine gekürzte, gehashte Kennung deiner IP-Adresse (kein Klartext) sowie optional einen Hash des Browsers (User-Agent-Hash). Zur Vermeidung doppelter Erinnerungs-E-Mails an den Betreiber kann ein technischer Zeitstempel gespeichert werden (admin_notified_at), wenn eine Bewertung länger unbearbeitet bleibt. Es werden keine E-Mail-Adressen von Nutzerinnen und Nutzern abgefragt.</p>
+        <p data-legal-i18n="privacy_ratings_text_3">Bewertungen können vor der Veröffentlichung geprüft werden. Wir können Bewertungen freigeben oder ablehnen. Kommentare und Namen werden – sofern eine öffentliche Anzeige vorgesehen ist – erst nach Freigabe veröffentlicht. Freigegebene Sternebewertungen können in Durchschnittswerte einfließen und, ab einer ausreichenden Anzahl freigegebener Bewertungen, in strukturierten Daten als aggregateRating erscheinen.</p>
+        <p data-legal-i18n="privacy_ratings_text_4">Die Bewertungsfunktion wird technisch über Cloudflare Workers bereitgestellt und in Cloudflare D1 gespeichert. Rechtsgrundlage ist deine Einwilligung, soweit du Name und/oder Kommentar zur Veröffentlichung angibst, sowie unser berechtigtes Interesse an der Bereitstellung, Moderation, Qualitätssicherung und Absicherung der Bewertungsfunktion.</p>
+        <p data-legal-i18n="privacy_ratings_text_5">Für E-Mail-Benachrichtigungen an den Betreiber bei länger unbearbeiteten Bewertungen (z. B. wenn eine Bewertung länger als 48 Stunden ausstehend ist) nutzen wir den E-Mail-Dienst Resend. Dabei können zur Benachrichtigung erforderliche Inhalte verarbeitet werden, etwa Anzahl offener Bewertungen, Rezept-ID, Sternebewertung, optional Name/Kommentar und Zeitpunkt der Abgabe. Es erhält ausschließlich der Betreiber diese E-Mail; Nutzerinnen und Nutzer erhalten keine Benachrichtigung über Resend.</p>
+        <p data-legal-i18n="privacy_ratings_text_6">Bewertungen werden gespeichert, solange dies für Darstellung, Moderation, Missbrauchsschutz oder Nachvollziehbarkeit erforderlich ist. Du kannst die Löschung deiner Bewertung verlangen. Abgelehnte oder testhafte Bewertungen können gelöscht oder – soweit erforderlich – für Missbrauchsschutz und Prüfung begrenzt aufbewahrt werden. Der Zeitstempel admin_notified_at dient ausschließlich dazu, doppelte Erinnerungs-E-Mails zu vermeiden.</p>
+        <p data-legal-i18n="privacy_ratings_text_7">Private Sternebewertungen, die du nur in deinem Browser speicherst (localStorage), bleiben auf deinem Gerät. Sie dienen als lokale Gerätenotiz für Filterfunktionen und werden dabei nicht an den Server übermittelt, sofern du keine öffentliche Bewertung absendest. Diese lokalen Daten dienen keiner Tracking-Funktion.</p>
 
         <h3 data-legal-i18n="privacy_rights">6. Deine Rechte</h3>
-        <p data-legal-i18n="privacy_rights_text">Du hast im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Beschwerde bei einer zuständigen Aufsichtsbehörde. Löschanfragen zu veröffentlichten Bewertungen kannst du per E-Mail an uns richten.</p>
+        <p data-legal-i18n="privacy_rights_text">Du hast im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Beschwerde bei einer zuständigen Aufsichtsbehörde. Erteilst du eine Einwilligung zur Veröffentlichung von Name/Kommentar, kannst du diese Einwilligung widerrufen. Verarbeiten wir Daten auf Grundlage berechtigter Interessen, hast du das Recht, aus Gründen, die sich aus deiner besonderen Situation ergeben, Widerspruch gegen die Verarbeitung einzulegen. Löschanfragen zu veröffentlichten Bewertungen kannst du per E-Mail an uns richten.</p>
 
         <h3 data-legal-i18n="privacy_updated">7. Stand</h3>
         <p data-legal-i18n="privacy_updated_text">Stand: Mai 2026</p>
@@ -99,6 +103,6 @@
     </div>
   </footer>
 
-  <script src="./legal-common.js?v=13"></script>
+  <script src="./legal-common.js?v=14"></script>
 </body>
 </html>
