@@ -856,6 +856,18 @@
       line-height: 1.35;
     }
 
+    .sidebar-new-subtitle {
+      margin: -2px 0 12px;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .sidebar-new-view-all {
+      width: 100%;
+      margin-top: 12px;
+    }
+
     .category-tile p {
       display: none;
     }
@@ -3593,7 +3605,9 @@
           </div>
           <div class="sidebar-panel sidebar-new-card" id="homeSidebarNewPanel" hidden>
             <h2 class="sidebar-heading" id="homeSidebarNewHeading">Neue Rezepte</h2>
+            <p class="sidebar-new-subtitle" id="homeSidebarNewSubtitle">Frisch ergänzt</p>
             <div class="home-sidebar-recipes" id="homeSidebarNewRecipes"></div>
+            <button type="button" class="btn btn--ghost sidebar-new-view-all" id="homeSidebarNewViewAll">Alle neuen Rezepte ansehen</button>
           </div>
           <div class="sidebar-panel sidebar-about-card">
             <h2 class="sidebar-heading" id="sidebarAboutHeading">Über mich</h2>
@@ -3702,6 +3716,9 @@
       309, 308, 306, 303, 300, 299
     ];
     var HIGHLIGHT_DISPLAY_LIMIT = 6;
+    /** Virtuelle „Neue Rezepte“-Übersicht: neueste IDs absteigend. */
+    var LATEST_RECIPE_LIMIT = 12;
+    var SIDEBAR_NEW_PREVIEW_COUNT = 4;
     /** Phase 3: optimierte Card-WebPs für initiale Startseiten-Highlights (6 sichtbar). */
     var CARD_WEBP_BY_RECIPE_ID = {
       '281': '/images/rezeptbild_281_card.webp',
@@ -3878,7 +3895,8 @@
       'suppen-eintoepfe': 'Suppen & Eintöpfe',
       grundrezepte: 'Grundrezepte',
       'suesses-backen': 'Süßes & Backen',
-      woelpinghausen: 'Wölpinghausen'
+      woelpinghausen: 'Wölpinghausen',
+      latest: 'Neue Rezepte'
     };
     var currentRecipeFilterKey = 'alle';
     var recipeListVisibleCount = 12;
@@ -3943,6 +3961,11 @@
         detail_sidebar_koch_lead: 'Schritt für Schritt durch die Zubereitung.',
         detail_sidebar_recipes: 'Neue Rezepte',
         detail_sidebar_about: 'Über mich',
+        sidebar_new_subtitle: 'Frisch ergänzt',
+        sidebar_new_view_all: 'Alle neuen Rezepte ansehen',
+        section_latest_title: 'Neue Rezepte',
+        section_latest_subtitle: 'Die zuletzt ergänzten Rezepte aus Svens Kochbuch',
+        status_latest: '{count} zuletzt ergänzte Rezepte',
 
         themenwelten_title: 'Themenwelten',
         themenwelten_tile1_title: 'Schnelle Küche',
@@ -4168,6 +4191,11 @@
         detail_sidebar_koch_lead: 'Krok po kroku przez przygotowanie.',
         detail_sidebar_recipes: 'Nowe przepisy',
         detail_sidebar_about: 'O mnie',
+        sidebar_new_subtitle: 'Świeżo dodane',
+        sidebar_new_view_all: 'Zobacz wszystkie nowe przepisy',
+        section_latest_title: 'Nowe przepisy',
+        section_latest_subtitle: 'Ostatnio dodane przepisy z książki Svena',
+        status_latest: '{count} ostatnio dodanych przepisów',
 
         themenwelten_title: 'Światy tematyczne',
         themenwelten_tile1_title: 'Szybka kuchnia',
@@ -4393,6 +4421,11 @@
         detail_sidebar_koch_lead: 'Step by step through the preparation.',
         detail_sidebar_recipes: 'New recipes',
         detail_sidebar_about: 'About me',
+        sidebar_new_subtitle: 'Freshly added',
+        sidebar_new_view_all: 'View all new recipes',
+        section_latest_title: 'New recipes',
+        section_latest_subtitle: 'The most recently added recipes from Sven\'s cookbook',
+        status_latest: '{count} recently added recipes',
 
         themenwelten_title: 'Recipe worlds',
         themenwelten_tile1_title: 'Quick cooking',
@@ -5031,7 +5064,11 @@
       var heroP = document.getElementById('heroLead');
       if (heroP) heroP.textContent = t('hero_lead');
       var homeNewH = document.getElementById('homeSidebarNewHeading');
-      if (homeNewH) homeNewH.textContent = t('detail_sidebar_recipes');
+      if (homeNewH) homeNewH.textContent = t('section_latest_title');
+      var homeNewSub = document.getElementById('homeSidebarNewSubtitle');
+      if (homeNewSub) homeNewSub.textContent = t('sidebar_new_subtitle');
+      var homeNewBtn = document.getElementById('homeSidebarNewViewAll');
+      if (homeNewBtn) homeNewBtn.textContent = t('sidebar_new_view_all');
       var qS = document.getElementById('homeQuickSchnell');
       if (qS) {
         var qsStrong = qS.querySelector('strong');
@@ -5682,8 +5719,21 @@
       return out;
     }
 
+    function getLatestRecipes(limit, excludeId) {
+      if (!parsedRecipes || !parsedRecipes.length) return [];
+      var sorted = parsedRecipes.slice().sort(function (a, b) { return b.id - a.id; });
+      var out = [];
+      var ex = excludeId != null ? String(excludeId) : '';
+      for (var i = 0; i < sorted.length && out.length < limit; i++) {
+        if (ex && String(sorted[i].id) === ex) continue;
+        out.push(sorted[i]);
+      }
+      return out;
+    }
+
     function getCurrentFullRecipeList() {
       if (currentRecipeFilterKey === 'alle') return buildHighlightPicks(parsedRecipes);
+      if (currentRecipeFilterKey === 'latest') return getLatestRecipes(LATEST_RECIPE_LIMIT);
       if (currentRecipeFilterKey === 'all') return parsedRecipes.slice().sort(function (a, b) { return a.id - b.id; });
       if (String(currentRecipeFilterKey).indexOf('rated') === 0) {
         var allR = parsedRecipes.slice().sort(function (a, b) { return a.id - b.id; });
@@ -7526,11 +7576,32 @@
     }
 
 
+    function showLatestRecipesOverview(opt) {
+      opt = opt || {};
+      hideRecipeDetailPage(true);
+      try {
+        history.replaceState(null, '', window.location.pathname + window.location.search + '#rezepte');
+      } catch (err) {}
+      applyRecipeFilter('latest', { scrollToResults: opt.scrollToResults !== false });
+      syncRatingFilterButtons();
+      var sec = document.getElementById('rezepte');
+      if (sec) {
+        try { sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) { sec.scrollIntoView(); }
+      }
+    }
+
     function populateHomeSidebarNewRecipes() {
       var panel = document.getElementById('homeSidebarNewPanel');
       var grid = document.getElementById('homeSidebarNewRecipes');
+      var viewAllBtn = document.getElementById('homeSidebarNewViewAll');
       if (!grid) return;
-      var recs = getSidebarNewRecipes(3);
+      if (viewAllBtn && viewAllBtn.dataset.bound !== '1') {
+        viewAllBtn.dataset.bound = '1';
+        viewAllBtn.addEventListener('click', function () {
+          showLatestRecipesOverview({ scrollToResults: true });
+        });
+      }
+      var recs = getSidebarNewRecipes(SIDEBAR_NEW_PREVIEW_COUNT);
       if (!recs.length) {
         grid.innerHTML = '';
         if (panel) panel.hidden = true;
@@ -7553,28 +7624,12 @@
         if (rr) applyCardImage(el, recipeCardImagePath(rr));
       });
       observeLazyCardImages(grid);
+      if (viewAllBtn) viewAllBtn.hidden = false;
     }
 
     function getSidebarNewRecipes(limit) {
-      var out = [];
       var cid = currentDetailRecipe ? String(currentDetailRecipe.id) : '';
-      var i;
-      for (i = 0; i < HIGHLIGHT_WISHLIST.length && out.length < limit; i++) {
-        var hr = recipeById(HIGHLIGHT_WISHLIST[i]);
-        if (hr && String(hr.id) !== cid) out.push(hr);
-      }
-      if (out.length < limit && parsedRecipes && parsedRecipes.length) {
-        var sorted = parsedRecipes.slice().sort(function (a, b) { return b.id - a.id; });
-        for (i = 0; i < sorted.length && out.length < limit; i++) {
-          if (String(sorted[i].id) === cid) continue;
-          var seen = false;
-          for (var j = 0; j < out.length; j++) {
-            if (String(out[j].id) === String(sorted[i].id)) { seen = true; break; }
-          }
-          if (!seen) out.push(sorted[i]);
-        }
-      }
-      return out.slice(0, limit);
+      return getLatestRecipes(limit || SIDEBAR_NEW_PREVIEW_COUNT, cid);
     }
 
     function populateDetailSidebar(recipe) {
@@ -7849,7 +7904,7 @@
       var grid = document.getElementById('themenweltenGrid');
       if (!grid) return;
       var key = String(currentRecipeFilterKey || '');
-      var isCategoryFilter = key !== 'alle' && key !== 'all' && String(key).indexOf('rated') !== 0;
+      var isCategoryFilter = key !== 'alle' && key !== 'all' && key !== 'latest' && String(key).indexOf('rated') !== 0;
       [].slice.call(grid.querySelectorAll('.category-tile[data-filter]')).forEach(function (tile) {
         var active = isCategoryFilter && tile.getAttribute('data-filter') === key;
         tile.classList.toggle('is-active', active);
@@ -7893,6 +7948,12 @@
       } else if (currentRecipeFilterKey === 'all') {
         if (kickerEl) kickerEl.style.display = 'none';
         heading.textContent = t('section_all');
+      } else if (currentRecipeFilterKey === 'latest') {
+        if (kickerEl) {
+          kickerEl.style.display = '';
+          kickerEl.textContent = t('section_latest_subtitle');
+        }
+        heading.textContent = t('section_latest_title');
       } else if (currentRecipeFilterKey === 'rated') {
         if (kickerEl) kickerEl.style.display = 'none';
         heading.textContent = t('heading_rated');
@@ -8000,9 +8061,12 @@
       status.classList.remove('error');
       status.textContent = (currentRecipeFilterKey === 'all'
         ? t('status_all', { count: full.length })
-        : (String(currentRecipeFilterKey).indexOf('rated') === 0
-          ? (t('status_personal_ratings') + ' ' + full.length + ' Treffer.')
-          : t('status_matching', { count: full.length })
+        : (currentRecipeFilterKey === 'latest'
+          ? t('status_latest', { count: full.length })
+          : (String(currentRecipeFilterKey).indexOf('rated') === 0
+            ? (t('status_personal_ratings') + ' ' + full.length + ' Treffer.')
+            : t('status_matching', { count: full.length })
+          )
         )
       );
       grid.hidden = false;
