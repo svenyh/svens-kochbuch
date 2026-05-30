@@ -3716,8 +3716,9 @@
       309, 308, 306, 303, 300, 299
     ];
     var HIGHLIGHT_DISPLAY_LIMIT = 6;
-    /** Virtuelle „Neue Rezepte“-Übersicht: neueste IDs absteigend. */
-    var LATEST_RECIPE_LIMIT = 12;
+    /** Virtuelle „Neue Rezepte“-Übersicht: neueste IDs absteigend, initial + Schrittweise. */
+    var LATEST_RECIPE_INITIAL = 12;
+    var LATEST_RECIPE_LOAD_STEP = 12;
     var SIDEBAR_NEW_PREVIEW_COUNT = 4;
     /** Phase 3: optimierte Card-WebPs für initiale Startseiten-Highlights (6 sichtbar). */
     var CARD_WEBP_BY_RECIPE_ID = {
@@ -3966,6 +3967,9 @@
         section_latest_title: 'Neue Rezepte',
         section_latest_subtitle: 'Die zuletzt ergänzten Rezepte aus Svens Kochbuch',
         status_latest: '{count} zuletzt ergänzte Rezepte',
+        status_latest_shown: '{shown} von {total} Rezepten angezeigt',
+        status_latest_all_loaded: 'Alle neuen Rezepte geladen',
+        latest_load_more: 'Weitere laden',
 
         themenwelten_title: 'Themenwelten',
         themenwelten_tile1_title: 'Schnelle Küche',
@@ -4196,6 +4200,9 @@
         section_latest_title: 'Nowe przepisy',
         section_latest_subtitle: 'Ostatnio dodane przepisy z książki Svena',
         status_latest: '{count} ostatnio dodanych przepisów',
+        status_latest_shown: 'Wyświetlono {shown} z {total} przepisów',
+        status_latest_all_loaded: 'Wszystkie nowe przepisy załadowane',
+        latest_load_more: 'Załaduj więcej',
 
         themenwelten_title: 'Światy tematyczne',
         themenwelten_tile1_title: 'Szybka kuchnia',
@@ -4426,6 +4433,9 @@
         section_latest_title: 'New recipes',
         section_latest_subtitle: 'The most recently added recipes from Sven\'s cookbook',
         status_latest: '{count} recently added recipes',
+        status_latest_shown: '{shown} of {total} recipes shown',
+        status_latest_all_loaded: 'All new recipes loaded',
+        latest_load_more: 'Load more',
 
         themenwelten_title: 'Recipe worlds',
         themenwelten_tile1_title: 'Quick cooking',
@@ -5167,7 +5177,7 @@
       var loadMore = document.getElementById('recipeLoadMore');
       var highlightViewAllBtn = document.getElementById('highlightViewAllBtn');
       if (highlightViewAllBtn) highlightViewAllBtn.textContent = t('highlights_view_all');
-      if (loadMore) loadMore.textContent = t('recipe_load_more');
+      if (loadMore) loadMore.textContent = currentRecipeFilterKey === 'latest' ? t('latest_load_more') : t('recipe_load_more');
       var status = document.getElementById('recipeStatus');
       if (status && !status.classList.contains('error') && (!parsedRecipes || !parsedRecipes.length)) {
         status.textContent = t('status_loading');
@@ -5719,6 +5729,11 @@
       return out;
     }
 
+    function getAllLatestRecipesSorted() {
+      if (!parsedRecipes || !parsedRecipes.length) return [];
+      return parsedRecipes.slice().sort(function (a, b) { return b.id - a.id; });
+    }
+
     function getLatestRecipes(limit, excludeId) {
       if (!parsedRecipes || !parsedRecipes.length) return [];
       var sorted = parsedRecipes.slice().sort(function (a, b) { return b.id - a.id; });
@@ -5733,7 +5748,7 @@
 
     function getCurrentFullRecipeList() {
       if (currentRecipeFilterKey === 'alle') return buildHighlightPicks(parsedRecipes);
-      if (currentRecipeFilterKey === 'latest') return getLatestRecipes(LATEST_RECIPE_LIMIT);
+      if (currentRecipeFilterKey === 'latest') return getAllLatestRecipesSorted();
       if (currentRecipeFilterKey === 'all') return parsedRecipes.slice().sort(function (a, b) { return a.id - b.id; });
       if (String(currentRecipeFilterKey).indexOf('rated') === 0) {
         var allR = parsedRecipes.slice().sort(function (a, b) { return a.id - b.id; });
@@ -7917,7 +7932,7 @@
       opt = opt || {};
       if (!FILTER_HEADINGS.hasOwnProperty(key)) key = 'alle';
       currentRecipeFilterKey = key;
-      recipeListVisibleCount = 12;
+      recipeListVisibleCount = key === 'latest' ? LATEST_RECIPE_INITIAL : 12;
       if (key === 'all' || String(key).indexOf('rated') === 0) {
         currentSearchQuery = '';
         var search = document.getElementById('recipeSearchInput');
@@ -8059,19 +8074,33 @@
       var slice = full.slice(0, Math.min(recipeListVisibleCount, full.length));
       status.hidden = false;
       status.classList.remove('error');
-      status.textContent = (currentRecipeFilterKey === 'all'
-        ? t('status_all', { count: full.length })
-        : (currentRecipeFilterKey === 'latest'
-          ? t('status_latest', { count: full.length })
+      if (currentRecipeFilterKey === 'latest') {
+        if (slice.length >= full.length) {
+          status.textContent = slice.length >= LATEST_RECIPE_INITIAL
+            ? t('status_latest_all_loaded')
+            : t('status_latest_shown', { shown: slice.length, total: full.length });
+        } else {
+          status.textContent = t('status_latest_shown', { shown: slice.length, total: full.length });
+        }
+      } else {
+        status.textContent = (currentRecipeFilterKey === 'all'
+          ? t('status_all', { count: full.length })
           : (String(currentRecipeFilterKey).indexOf('rated') === 0
             ? (t('status_personal_ratings') + ' ' + full.length + ' Treffer.')
             : t('status_matching', { count: full.length })
           )
-        )
-      );
+        );
+      }
       grid.hidden = false;
       renderRecipeCards(slice);
-      if (loadWrap) loadWrap.hidden = full.length <= slice.length;
+      if (loadWrap) {
+        loadWrap.hidden = full.length <= slice.length;
+        var loadMoreBtn = document.getElementById('recipeLoadMore');
+        if (loadMoreBtn) {
+          loadMoreBtn.textContent = currentRecipeFilterKey === 'latest' ? t('latest_load_more') : t('recipe_load_more');
+          loadMoreBtn.disabled = full.length <= slice.length;
+        }
+      }
       } finally {
         if (opt.scrollToResults) scrollToHomeRecipeResults();
       }
@@ -8546,7 +8575,8 @@
     var recipeLoadMoreBtn = document.getElementById('recipeLoadMore');
     if (recipeLoadMoreBtn) {
       recipeLoadMoreBtn.addEventListener('click', function () {
-        recipeListVisibleCount += 12;
+        var step = currentRecipeFilterKey === 'latest' ? LATEST_RECIPE_LOAD_STEP : 12;
+        recipeListVisibleCount += step;
         updateRecipeListView({ skipHideDetail: true });
       });
     }
