@@ -1063,6 +1063,7 @@
       flex-wrap: wrap;
       align-items: stretch;
       justify-content: flex-start;
+      overflow-x: clip;
     }
 
     .world-filter-btn {
@@ -1081,9 +1082,11 @@
       font-weight: 800;
       cursor: pointer;
       white-space: normal;
+      overflow-wrap: anywhere;
       text-align: center;
       line-height: 1.25;
       max-width: 100%;
+      touch-action: manipulation;
     }
 
     .world-filter-btn.is-active {
@@ -4219,10 +4222,14 @@
         world_cat_frankreich: 'Frankreich',
         world_cat_spanien: 'Spanien',
         world_cat_oesterreich: 'Österreich',
+        world_cat_grossbritannien_irland: 'Großbritannien & Irland',
+        world_cat_skandinavien: 'Skandinavien',
         world_cat_balkan: 'Balkan & Osteuropa',
         world_cat_mittelmeer: 'Mittelmeer & Nordafrika',
+        world_cat_afrika: 'Afrika',
         world_cat_asien: 'Asien',
         world_cat_usa_bbq: 'USA & BBQ',
+        world_cat_mexiko_lateinamerika: 'Mexiko & Lateinamerika',
         world_cat_fusion: 'International / Fusion',
         world_cat_backen: 'Backen & Süßes',
         world_cat_getraenke_specials: 'Getränke & Specials',
@@ -4486,10 +4493,14 @@
         world_cat_frankreich: 'Francja',
         world_cat_spanien: 'Hiszpania',
         world_cat_oesterreich: 'Austria',
+        world_cat_grossbritannien_irland: 'Wielka Brytania i Irlandia',
+        world_cat_skandinavien: 'Skandynawia',
         world_cat_balkan: 'Bałkany i Europa Wschodnia',
         world_cat_mittelmeer: 'Morze Śródziemne i Afryka Północna',
+        world_cat_afrika: 'Afryka',
         world_cat_asien: 'Azja',
         world_cat_usa_bbq: 'USA i BBQ',
+        world_cat_mexiko_lateinamerika: 'Meksyk i Ameryka Łacińska',
         world_cat_fusion: 'Międzynarodowe / Fusion',
         world_cat_backen: 'Wypieki i słodkości',
         world_cat_getraenke_specials: 'Napoje i Specjały',
@@ -4753,10 +4764,14 @@
         world_cat_frankreich: 'France',
         world_cat_spanien: 'Spain',
         world_cat_oesterreich: 'Austria',
+        world_cat_grossbritannien_irland: 'Britain & Ireland',
+        world_cat_skandinavien: 'Scandinavia',
         world_cat_balkan: 'Balkans & Eastern Europe',
         world_cat_mittelmeer: 'Mediterranean & North Africa',
+        world_cat_afrika: 'Africa',
         world_cat_asien: 'Asia',
         world_cat_usa_bbq: 'USA & BBQ',
+        world_cat_mexiko_lateinamerika: 'Mexico & Latin America',
         world_cat_fusion: 'International / Fusion',
         world_cat_backen: 'Baking & Sweets',
         world_cat_getraenke_specials: 'Drinks & Specials',
@@ -5967,10 +5982,14 @@
       { value: 'Frankreich', i18n: 'world_cat_frankreich' },
       { value: 'Spanien', i18n: 'world_cat_spanien' },
       { value: 'Österreich', i18n: 'world_cat_oesterreich' },
+      { value: 'Großbritannien & Irland', i18n: 'world_cat_grossbritannien_irland' },
+      { value: 'Skandinavien', i18n: 'world_cat_skandinavien' },
       { value: 'Balkan & Osteuropa', i18n: 'world_cat_balkan' },
       { value: 'Mittelmeer & Nordafrika', i18n: 'world_cat_mittelmeer' },
+      { value: 'Afrika', i18n: 'world_cat_afrika' },
       { value: 'Asien', i18n: 'world_cat_asien' },
       { value: 'USA & BBQ', i18n: 'world_cat_usa_bbq' },
+      { value: 'Mexiko & Lateinamerika', i18n: 'world_cat_mexiko_lateinamerika' },
       { value: 'International / Fusion', i18n: 'world_cat_fusion' },
       { value: 'Backen & Süßes', i18n: 'world_cat_backen' },
       { value: 'Getränke & Specials', i18n: 'world_cat_getraenke_specials' }
@@ -6080,6 +6099,11 @@
         'Provenzalische Küche': 'Provençal cuisine',
         'Deutsche Backtradition': 'German baking tradition',
         'Polnische Backtradition': 'Polish baking tradition',
+        'Irische Küche': 'Irish cuisine',
+        'Skandinavische Küche': 'Scandinavian cuisine',
+        'Mexikanische Küche': 'Mexican cuisine',
+        'Mexiko & USA': 'Mexico & USA',
+        'Westafrikanisch inspirierte Küche': 'West African inspired cuisine',
         'Allgemeine Küche': 'General cuisine',
         'Internationale Küche': 'International cuisine'
       },
@@ -6111,6 +6135,11 @@
         'Provenzalische Küche': 'Kuchnia prowansalska',
         'Deutsche Backtradition': 'Niemiecka tradycja wypieków',
         'Polnische Backtradition': 'Polska tradycja wypieków',
+        'Irische Küche': 'Kuchnia irlandzka',
+        'Skandinavische Küche': 'Kuchnia skandynawska',
+        'Mexikanische Küche': 'Kuchnia meksykańska',
+        'Mexiko & USA': 'Meksyk i USA',
+        'Westafrikanisch inspirierte Küche': 'Kuchnia inspirowana Afryką Zachodnią',
         'Allgemeine Küche': 'Kuchnia ogólna',
         'Internationale Küche': 'Kuchnia międzynarodowa'
       }
@@ -6130,6 +6159,19 @@
       if (lang === 'de') return v;
       var map = ORIGIN_REGION_I18N[lang];
       return (map && map[v]) ? map[v] : v;
+    }
+
+    function translateOriginWorldCategory(value, lang) {
+      var v = String(value == null ? '' : value).trim();
+      if (!v) return '';
+      if (lang === 'de') return v;
+      var dict = I18N[lang] || I18N.de;
+      for (var wi = 0; wi < WORLD_CATEGORY_FILTER_ITEMS.length; wi++) {
+        if (WORLD_CATEGORY_FILTER_ITEMS[wi].value === v) {
+          return dict[WORLD_CATEGORY_FILTER_ITEMS[wi].i18n] || v;
+        }
+      }
+      return v;
     }
 
     function resetWorldCategoryFilter() {
@@ -6173,12 +6215,7 @@
     function getWorldCategoryFilterLabel(filterKey) {
       var key = String(filterKey || '').trim();
       if (!key || key === 'world-all') return '';
-      for (var wi = 0; wi < WORLD_CATEGORY_FILTER_ITEMS.length; wi++) {
-        if (WORLD_CATEGORY_FILTER_ITEMS[wi].value === key) {
-          return t(WORLD_CATEGORY_FILTER_ITEMS[wi].i18n);
-        }
-      }
-      return key;
+      return translateOriginWorldCategory(key, currentLang);
     }
 
     function applyWorldCategoryFilter(filterKey, opt) {
