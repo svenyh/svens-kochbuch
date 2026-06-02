@@ -1016,6 +1016,90 @@
       color: var(--accent-dark);
     }
 
+    .world-filters {
+      margin-top: 22px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .world-filters-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .world-filters-icon {
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      color: var(--muted);
+    }
+
+    .world-filters-icon svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .world-filters-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .world-filters-row {
+      width: 100%;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+    .world-filter-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 8px 14px;
+      transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background: #fff;
+      color: var(--dark);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: normal;
+      text-align: center;
+      line-height: 1.25;
+      max-width: 100%;
+    }
+
+    .world-filter-btn.is-active {
+      background: rgba(239, 125, 24, 0.1);
+      border-color: rgba(239, 125, 24, 0.45);
+      color: var(--accent-dark);
+    }
+
+    .detail-origin-line {
+      margin: 0 0 14px;
+      font-size: 15px;
+      line-height: 1.45;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
     .recipe-search input:focus {
       border-color: var(--accent);
       box-shadow: 0 0 0 3px rgba(239, 125, 24, 0.18);
@@ -3345,6 +3429,17 @@
         overscroll-behavior-x: contain;
       }
 
+      .world-filters-row {
+        flex-wrap: wrap;
+        overflow: visible;
+      }
+
+      .world-filter-btn {
+        flex: 1 1 calc(50% - 4px);
+        min-width: 0;
+        max-width: 100%;
+      }
+
       .nav {
         flex-direction: row;
         align-items: center;
@@ -3649,6 +3744,13 @@
                 <h3 class="home-category-label">Kulinarische Weltreise</h3>
                 <p>Europa, Mittelmeer &amp; Weltküche.</p>
               </article>
+            </div>
+            <div class="world-filters" id="homeWorldOverview" aria-labelledby="worldOverviewFiltersLabel">
+              <div class="world-filters-head">
+                <span class="world-filters-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.8 4 6 4 9s-1.5 6.2-4 9"/><path d="M12 3c-2.5 2.8-4 6-4 9s1.5 6.2 4 9"/></svg></span>
+                <div class="world-filters-label" id="worldOverviewFiltersLabel">Weltübersicht</div>
+              </div>
+              <div class="world-filters-row" id="worldOverviewFiltersRow" role="group" aria-label="Weltübersicht"></div>
             </div>
           </div>
           <div class="sidebar-panel sidebar-new-card" id="homeSidebarNewPanel" hidden>
@@ -3971,6 +4073,7 @@
       latest: 'Neue Rezepte'
     };
     var currentRecipeFilterKey = 'alle';
+    var currentWorldCategoryFilter = 'world-all';
     var recipeListVisibleCount = 12;
     var parsedRecipes = [];
     var recipeSlugPathById = {};
@@ -4107,6 +4210,24 @@
         rating_filters_3p: '3+ Sterne',
         rating_filters_none: 'Nicht bewertet',
 
+        world_overview_title: 'Weltübersicht',
+        world_overview_aria: 'Weltübersicht',
+        world_cat_all: 'Alle Weltregionen',
+        world_cat_deutschland: 'Deutschland',
+        world_cat_polen: 'Polen',
+        world_cat_italien: 'Italien',
+        world_cat_frankreich: 'Frankreich',
+        world_cat_spanien: 'Spanien',
+        world_cat_oesterreich: 'Österreich',
+        world_cat_balkan: 'Balkan & Osteuropa',
+        world_cat_mittelmeer: 'Mittelmeer & Nordafrika',
+        world_cat_asien: 'Asien',
+        world_cat_usa_bbq: 'USA & BBQ',
+        world_cat_fusion: 'International / Fusion',
+        world_cat_backen: 'Backen & Süßes',
+        world_cat_getraenke_specials: 'Getränke & Specials',
+        detail_origin_prefix: 'Herkunft:',
+
         dropdown_all: 'Alle Rezepte',
         dropdown_schnell: 'Schnell',
         dropdown_ofen: 'Ofen',
@@ -4208,6 +4329,7 @@
         rating_title: 'Hat dir das Rezept gefallen?',
         rating_sub: 'Bewerte dieses Rezept öffentlich oder speichere eine private Notiz nur auf diesem Gerät.',
         rating_not_rated: 'Noch nicht bewertet',
+        rating_saved_proven: 'Als bewährtes Rezept gespeichert.',
         rating_value: 'Deine private Notiz: {rating} von 5 Sternen',
         rating_clear: 'Private Notiz löschen',
         rating_public_loading: 'Bewertungen werden geladen …',
@@ -4355,6 +4477,24 @@
         rating_filters_3p: '3+ gwiazdki',
         rating_filters_none: 'Nieocenione',
 
+        world_overview_title: 'Mapa smaków',
+        world_overview_aria: 'Mapa smaków',
+        world_cat_all: 'Wszystkie regiony świata',
+        world_cat_deutschland: 'Niemcy',
+        world_cat_polen: 'Polska',
+        world_cat_italien: 'Włochy',
+        world_cat_frankreich: 'Francja',
+        world_cat_spanien: 'Hiszpania',
+        world_cat_oesterreich: 'Austria',
+        world_cat_balkan: 'Bałkany i Europa Wschodnia',
+        world_cat_mittelmeer: 'Morze Śródziemne i Afryka Północna',
+        world_cat_asien: 'Azja',
+        world_cat_usa_bbq: 'USA i BBQ',
+        world_cat_fusion: 'Międzynarodowe / Fusion',
+        world_cat_backen: 'Wypieki i słodkości',
+        world_cat_getraenke_specials: 'Napoje i Specjały',
+        detail_origin_prefix: 'Pochodzenie:',
+
         dropdown_all: 'Wszystkie przepisy',
         dropdown_schnell: 'Szybkie',
         dropdown_ofen: 'Piekarnik',
@@ -4369,7 +4509,7 @@
         dropdown_grundrezepte: 'Przepisy podstawowe',
         dropdown_suesses: 'Słodkie i wypieki',
         dropdown_woelpinghausen: 'Wölpinghausen',
-        dropdown_kulinarische_weltreise: 'Podróż kulinarna',
+        dropdown_kulinarische_weltreise: 'Kulinarna podróż po świecie',
         dropdown_kulinarische_weltreise_europa: 'Europa',
         dropdown_kulinarische_weltreise_mittelmeer: 'Morze Śródziemne i Afryka Północna',
         dropdown_kulinarische_weltreise_weltreise: 'Podróż po świecie',
@@ -4388,7 +4528,7 @@
         filter_grundrezepte: 'Przepisy podstawowe',
         filter_suesses_backen: 'Słodkie i wypieki',
         filter_woelpinghausen: 'Wölpinghausen',
-        filter_kulinarische_weltreise: 'Podróż kulinarna',
+        filter_kulinarische_weltreise: 'Kulinarna podróż po świecie',
         filter_kulinarische_weltreise_subtitle: 'Inspirowane międzynarodowymi pojedynkami kulinarnymi i podróżami – nowa interpretacja kuchni Svena.',
         filter_kulinarische_weltreise_europa: 'Europa',
         filter_kulinarische_weltreise_mittelmeer: 'Morze Śródziemne i Afryka Północna',
@@ -4456,6 +4596,7 @@
         rating_title: 'Czy przepis Ci się podobał?',
         rating_sub: 'Oceń przepis publicznie lub zapisz prywatną notatkę tylko na tym urządzeniu.',
         rating_not_rated: 'Jeszcze nie oceniono',
+        rating_saved_proven: 'Zapisane jako sprawdzony przepis.',
         rating_value: 'Twoja prywatna notatka: {rating} z 5 gwiazdek',
         rating_clear: 'Usuń prywatną notatkę',
         rating_public_loading: 'Ładowanie ocen …',
@@ -4603,6 +4744,24 @@
         rating_filters_3p: '3+ stars',
         rating_filters_none: 'Not rated',
 
+        world_overview_title: 'World overview',
+        world_overview_aria: 'World overview',
+        world_cat_all: 'All world regions',
+        world_cat_deutschland: 'Germany',
+        world_cat_polen: 'Poland',
+        world_cat_italien: 'Italy',
+        world_cat_frankreich: 'France',
+        world_cat_spanien: 'Spain',
+        world_cat_oesterreich: 'Austria',
+        world_cat_balkan: 'Balkans & Eastern Europe',
+        world_cat_mittelmeer: 'Mediterranean & North Africa',
+        world_cat_asien: 'Asia',
+        world_cat_usa_bbq: 'USA & BBQ',
+        world_cat_fusion: 'International / Fusion',
+        world_cat_backen: 'Baking & Sweets',
+        world_cat_getraenke_specials: 'Drinks & Specials',
+        detail_origin_prefix: 'Origin:',
+
         dropdown_all: 'All recipes',
         dropdown_schnell: 'Quick',
         dropdown_ofen: 'Oven',
@@ -4617,7 +4776,7 @@
         dropdown_grundrezepte: 'Basic recipes',
         dropdown_suesses: 'Sweet & baking',
         dropdown_woelpinghausen: 'Wölpinghausen',
-        dropdown_kulinarische_weltreise: 'Culinary world tour',
+        dropdown_kulinarische_weltreise: 'Culinary World Tour',
         dropdown_kulinarische_weltreise_europa: 'Europe',
         dropdown_kulinarische_weltreise_mittelmeer: 'Mediterranean & North Africa',
         dropdown_kulinarische_weltreise_weltreise: 'World tour',
@@ -4636,7 +4795,7 @@
         filter_grundrezepte: 'Basic recipes',
         filter_suesses_backen: 'Sweet & baking',
         filter_woelpinghausen: 'Wölpinghausen',
-        filter_kulinarische_weltreise: 'Culinary world tour',
+        filter_kulinarische_weltreise: 'Culinary World Tour',
         filter_kulinarische_weltreise_subtitle: 'Inspired by international cook-offs and culinary journeys – reimagined for Sven’s kitchen.',
         filter_kulinarische_weltreise_europa: 'Europe',
         filter_kulinarische_weltreise_mittelmeer: 'Mediterranean & North Africa',
@@ -4704,6 +4863,7 @@
         rating_title: 'Did you like this recipe?',
         rating_sub: 'Rate this recipe publicly or save a private note on this device only.',
         rating_not_rated: 'Not rated yet',
+        rating_saved_proven: 'Saved as a proven recipe.',
         rating_value: 'Your private note: {rating} out of 5 stars',
         rating_clear: 'Delete private note',
         rating_public_loading: 'Loading ratings …',
@@ -5342,6 +5502,7 @@
       if (sb2) sb2.textContent = t('shopping_back');
 
       syncWeltreiseSubFilters();
+      syncWorldCategoryFilterButtons();
       refreshDetailToolbarLabels();
     }
 
@@ -5622,12 +5783,17 @@
         var nutritionFiber = readNutritionValue(recipeNode, 'fiber');
         var nutritionFree = readNutritionFreeform(recipeNode);
         var tags = listSectionFlexible(recipeNode, 'tags', 'tag,item,li');
+        var originNode = [].slice.call(recipeNode.children).find(function (n) { return n.tagName === 'origin'; });
+        var originCountry = originNode ? firstDirectText(originNode, 'country') : '';
+        var originRegion = originNode ? firstDirectText(originNode, 'region') : '';
+        var originWorldCategory = originNode ? firstDirectText(originNode, 'worldCategory') : '';
         var trPl = readTranslation('pl');
         var trEn = readTranslation('en');
         return {
           id: id,
           name: name,
           category: category,
+          categoryKey: deriveRecipeCategoryKey(category),
           persons: persons,
           rating: rating,
           ratingValue: ratingValue,
@@ -5644,6 +5810,9 @@
           nutritionFiber: nutritionFiber,
           nutritionFree: nutritionFree,
           tags: tags,
+          originCountry: originCountry,
+          originRegion: originRegion,
+          originWorldCategory: originWorldCategory,
           ingredients: listSectionFlexible(recipeNode, 'ingredients', 'item,ingredient,li'),
           preparation: listSectionFlexible(recipeNode, 'preparation', 'step,item,li'),
           timing: listSectionFlexible(recipeNode, 'timing', 'item,step'),
@@ -5790,6 +5959,248 @@
       return parts.join(' \n ');
     }
 
+    var WORLD_CATEGORY_FILTER_ITEMS = [
+      { value: 'world-all', i18n: 'world_cat_all' },
+      { value: 'Deutschland', i18n: 'world_cat_deutschland' },
+      { value: 'Polen', i18n: 'world_cat_polen' },
+      { value: 'Italien', i18n: 'world_cat_italien' },
+      { value: 'Frankreich', i18n: 'world_cat_frankreich' },
+      { value: 'Spanien', i18n: 'world_cat_spanien' },
+      { value: 'Österreich', i18n: 'world_cat_oesterreich' },
+      { value: 'Balkan & Osteuropa', i18n: 'world_cat_balkan' },
+      { value: 'Mittelmeer & Nordafrika', i18n: 'world_cat_mittelmeer' },
+      { value: 'Asien', i18n: 'world_cat_asien' },
+      { value: 'USA & BBQ', i18n: 'world_cat_usa_bbq' },
+      { value: 'International / Fusion', i18n: 'world_cat_fusion' },
+      { value: 'Backen & Süßes', i18n: 'world_cat_backen' },
+      { value: 'Getränke & Specials', i18n: 'world_cat_getraenke_specials' }
+    ];
+
+    var ORIGIN_COUNTRY_I18N = {
+      en: {
+        'Deutschland': 'Germany',
+        'Polen': 'Poland',
+        'Italien': 'Italy',
+        'Frankreich': 'France',
+        'Spanien': 'Spain',
+        'Österreich': 'Austria',
+        'Kroatien': 'Croatia',
+        'Marokko': 'Morocco',
+        'Portugal': 'Portugal',
+        'Libanon': 'Lebanon',
+        'VAE': 'United Arab Emirates',
+        'Vereinigte Arabische Emirate': 'United Arab Emirates',
+        'Indien': 'India',
+        'Thailand': 'Thailand',
+        'USA': 'USA',
+        'Indonesien': 'Indonesia',
+        'Japan': 'Japan',
+        'Türkei': 'Turkey',
+        'Balkan': 'Balkans',
+        'Asien': 'Asia',
+        'International': 'International',
+        'Griechenland': 'Greece',
+        'Serbien': 'Serbia',
+        'Russland': 'Russia',
+        'Irland': 'Ireland',
+        'Afrika': 'Africa',
+        'Norwegen': 'Norway',
+        'Mexiko': 'Mexico',
+        'Zypern': 'Cyprus',
+        'Südkorea': 'South Korea',
+        'China': 'China',
+        'Tschechien': 'Czech Republic',
+        'Europa': 'Europe',
+        'Mittelmeer': 'Mediterranean'
+      },
+      pl: {
+        'Deutschland': 'Niemcy',
+        'Polen': 'Polska',
+        'Italien': 'Włochy',
+        'Frankreich': 'Francja',
+        'Spanien': 'Hiszpania',
+        'Österreich': 'Austria',
+        'Kroatien': 'Chorwacja',
+        'Marokko': 'Maroko',
+        'Portugal': 'Portugalia',
+        'Libanon': 'Liban',
+        'VAE': 'Zjednoczone Emiraty Arabskie',
+        'Vereinigte Arabische Emirate': 'Zjednoczone Emiraty Arabskie',
+        'Indien': 'Indie',
+        'Thailand': 'Tajlandia',
+        'USA': 'USA',
+        'Indonesien': 'Indonezja',
+        'Japan': 'Japonia',
+        'Türkei': 'Turcja',
+        'Balkan': 'Bałkany',
+        'Asien': 'Azja',
+        'International': 'Międzynarodowe',
+        'Griechenland': 'Grecja',
+        'Serbien': 'Serbia',
+        'Russland': 'Rosja',
+        'Irland': 'Irlandia',
+        'Afrika': 'Afryka',
+        'Norwegen': 'Norwegia',
+        'Mexiko': 'Meksyk',
+        'Zypern': 'Cypr',
+        'Südkorea': 'Korea Południowa',
+        'China': 'Chiny',
+        'Tschechien': 'Czechy',
+        'Europa': 'Europa',
+        'Mittelmeer': 'Morze Śródziemne'
+      }
+    };
+
+    var ORIGIN_REGION_I18N = {
+      en: {
+        'Deutsche Küche': 'German cuisine',
+        'Polnische Küche': 'Polish cuisine',
+        'Italienische Küche': 'Italian cuisine',
+        'Französische Küche': 'French cuisine',
+        'Spanische Küche': 'Spanish cuisine',
+        'Österreichische Küche': 'Austrian cuisine',
+        'Balkan-Küche': 'Balkan cuisine',
+        'Balkan & Osteuropa': 'Balkans & Eastern Europe',
+        'Mittelmeer & Nordafrika': 'Mediterranean & North Africa',
+        'Asiatische Küche': 'Asian cuisine',
+        'Amerikanische Küche & BBQ': 'American cuisine & BBQ',
+        'Fusion-Küche': 'Fusion cuisine',
+        'Backen & Süßes': 'Baking & sweets',
+        'Griechische Küche': 'Greek cuisine',
+        'Türkische Küche': 'Turkish cuisine',
+        'Marokkanische Küche': 'Moroccan cuisine',
+        'Libanesische Küche': 'Lebanese cuisine',
+        'Indische Küche': 'Indian cuisine',
+        'Thailändische Küche': 'Thai cuisine',
+        'Japanische Küche': 'Japanese cuisine',
+        'Indonesische Küche': 'Indonesian cuisine',
+        'Louisiana-Küche': 'Louisiana cuisine',
+        'Portugiesische Küche': 'Portuguese cuisine',
+        'Sardische Küche': 'Sardinian cuisine',
+        'Provenzalische Küche': 'Provençal cuisine',
+        'Deutsche Backtradition': 'German baking tradition',
+        'Polnische Backtradition': 'Polish baking tradition',
+        'Allgemeine Küche': 'General cuisine',
+        'Internationale Küche': 'International cuisine'
+      },
+      pl: {
+        'Deutsche Küche': 'Kuchnia niemiecka',
+        'Polnische Küche': 'Kuchnia polska',
+        'Italienische Küche': 'Kuchnia włoska',
+        'Französische Küche': 'Kuchnia francuska',
+        'Spanische Küche': 'Kuchnia hiszpańska',
+        'Österreichische Küche': 'Kuchnia austriacka',
+        'Balkan-Küche': 'Kuchnia bałkańska',
+        'Balkan & Osteuropa': 'Bałkany i Europa Wschodnia',
+        'Mittelmeer & Nordafrika': 'Morze Śródziemne i Afryka Północna',
+        'Asiatische Küche': 'Kuchnia azjatycka',
+        'Amerikanische Küche & BBQ': 'Kuchnia amerykańska i BBQ',
+        'Fusion-Küche': 'Kuchnia fusion',
+        'Backen & Süßes': 'Wypieki i słodkości',
+        'Griechische Küche': 'Kuchnia grecka',
+        'Türkische Küche': 'Kuchnia turecka',
+        'Marokkanische Küche': 'Kuchnia marokańska',
+        'Libanesische Küche': 'Kuchnia libańska',
+        'Indische Küche': 'Kuchnia indyjska',
+        'Thailändische Küche': 'Kuchnia tajska',
+        'Japanische Küche': 'Kuchnia japońska',
+        'Indonesische Küche': 'Kuchnia indonezyjska',
+        'Louisiana-Küche': 'Kuchnia Luizjany',
+        'Portugiesische Küche': 'Kuchnia portugalska',
+        'Sardische Küche': 'Kuchnia sardyńska',
+        'Provenzalische Küche': 'Kuchnia prowansalska',
+        'Deutsche Backtradition': 'Niemiecka tradycja wypieków',
+        'Polnische Backtradition': 'Polska tradycja wypieków',
+        'Allgemeine Küche': 'Kuchnia ogólna',
+        'Internationale Küche': 'Kuchnia międzynarodowa'
+      }
+    };
+
+    function translateOriginCountry(value, lang) {
+      var v = String(value == null ? '' : value).trim();
+      if (!v) return '';
+      if (lang === 'de') return v;
+      var map = ORIGIN_COUNTRY_I18N[lang];
+      return (map && map[v]) ? map[v] : v;
+    }
+
+    function translateOriginRegion(value, lang) {
+      var v = String(value == null ? '' : value).trim();
+      if (!v) return '';
+      if (lang === 'de') return v;
+      var map = ORIGIN_REGION_I18N[lang];
+      return (map && map[v]) ? map[v] : v;
+    }
+
+    function resetWorldCategoryFilter() {
+      currentWorldCategoryFilter = 'world-all';
+      syncWorldCategoryFilterButtons();
+    }
+
+    function recipeMatchesWorldCategory(r, filterKey) {
+      if (!filterKey || filterKey === 'world-all') return true;
+      return String(r.originWorldCategory || '').trim() === String(filterKey).trim();
+    }
+
+    function applyWorldCategoryFilterToList(list) {
+      if (!list || !list.length) return list || [];
+      if (currentWorldCategoryFilter === 'world-all') return list;
+      return list.filter(function (r) {
+        return recipeMatchesWorldCategory(r, currentWorldCategoryFilter);
+      });
+    }
+
+    function initWorldOverviewFilters() {
+      var row = document.getElementById('worldOverviewFiltersRow');
+      if (!row) return;
+      if (row.dataset.bound !== '1') {
+        row.dataset.bound = '1';
+        row.innerHTML = '';
+        for (var wi = 0; wi < WORLD_CATEGORY_FILTER_ITEMS.length; wi++) {
+          var item = WORLD_CATEGORY_FILTER_ITEMS[wi];
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'world-filter-btn' + (item.value === currentWorldCategoryFilter ? ' is-active' : '');
+          btn.setAttribute('data-world-filter', item.value);
+          btn.textContent = t(item.i18n);
+          row.appendChild(btn);
+        }
+        row.addEventListener('click', function (e) {
+          var btnEl = e.target.closest('button[data-world-filter]');
+          if (!btnEl || !row.contains(btnEl)) return;
+          e.preventDefault();
+          currentWorldCategoryFilter = btnEl.getAttribute('data-world-filter') || 'world-all';
+          recipeListVisibleCount = 12;
+          syncWorldCategoryFilterButtons();
+          updateRecipeListView({ scrollToResults: true });
+        });
+      }
+      syncWorldCategoryFilterButtons();
+    }
+
+    function syncWorldCategoryFilterButtons() {
+      var row = document.getElementById('worldOverviewFiltersRow');
+      if (row) {
+        [].slice.call(row.querySelectorAll('button[data-world-filter]')).forEach(function (btn) {
+          var val = btn.getAttribute('data-world-filter');
+          var active = val === currentWorldCategoryFilter;
+          btn.classList.toggle('is-active', active);
+          for (var wi = 0; wi < WORLD_CATEGORY_FILTER_ITEMS.length; wi++) {
+            if (WORLD_CATEGORY_FILTER_ITEMS[wi].value === val) {
+              btn.textContent = t(WORLD_CATEGORY_FILTER_ITEMS[wi].i18n);
+              break;
+            }
+          }
+          if (active) btn.setAttribute('aria-current', 'true');
+          else btn.removeAttribute('aria-current');
+        });
+      }
+      var label = document.getElementById('worldOverviewFiltersLabel');
+      if (label) label.textContent = t('world_overview_title');
+      var wrap = document.getElementById('homeWorldOverview');
+      if (wrap) wrap.setAttribute('aria-label', t('world_overview_aria'));
+    }
+
     function recipeMatchesSearchTokens(r, tokens) {
       if (!tokens || !tokens.length) return true;
       var hay = recipeHaystackParts(r, ['name', 'category', 'intro', 'ingredients', 'preparation', 'tags']);
@@ -5811,8 +6222,31 @@
       return String(key || '').indexOf('kulinarische-weltreise') === 0;
     }
 
+    function deriveRecipeCategoryKey(deCategory) {
+      var deCat = String(deCategory == null ? '' : deCategory).toLowerCase().trim();
+      if (!deCat) return '';
+      if (deCat.indexOf('kulinarische weltreise / europa') >= 0) return 'kulinarische-weltreise-europa';
+      if (deCat.indexOf('kulinarische weltreise / mittelmeer') >= 0) return 'kulinarische-weltreise-mittelmeer';
+      if (deCat.indexOf('kulinarische weltreise / weltreise') >= 0) return 'kulinarische-weltreise-weltreise';
+      if (deCat.indexOf('kulinarische weltreise') >= 0) return 'kulinarische-weltreise';
+      return '';
+    }
+
+    function getRecipeCategoryKey(r) {
+      if (!r) return '';
+      if (r.categoryKey) return r.categoryKey;
+      return deriveRecipeCategoryKey(r.category || '');
+    }
+
+    function recipeMatchesWeltreiseFilterKey(r, filterKey) {
+      var catKey = getRecipeCategoryKey(r);
+      if (!catKey || catKey.indexOf('kulinarische-weltreise') !== 0) return false;
+      if (filterKey === 'kulinarische-weltreise') return true;
+      return catKey === filterKey;
+    }
+
     function recipeCategoryLower(r) {
-      return String(getRecipeField(r, 'category') || r.category || '').toLowerCase();
+      return String(r.category || '').toLowerCase();
     }
 
     function recipeMatchesCategoryContains(r, fragment) {
@@ -5850,13 +6284,10 @@
         case 'woelpinghausen':
           return matchesRecipeFields(r, ['name', 'category', 'tags'], ['wölpinghausen', 'woelpinghausen', 'wölpinghäuser', 'woelpinghaeuser']);
         case 'kulinarische-weltreise':
-          return recipeMatchesCategoryContains(r, 'kulinarische weltreise');
         case 'kulinarische-weltreise-europa':
-          return recipeMatchesCategoryContains(r, 'kulinarische weltreise / europa');
         case 'kulinarische-weltreise-mittelmeer':
-          return recipeMatchesCategoryContains(r, 'kulinarische weltreise / mittelmeer');
         case 'kulinarische-weltreise-weltreise':
-          return recipeMatchesCategoryContains(r, 'kulinarische weltreise / weltreise');
+          return recipeMatchesWeltreiseFilterKey(r, key);
         default:
           return false;
       }
@@ -7320,11 +7751,29 @@
       return String(raw == null ? '' : raw).trim();
     }
 
-    function getRecipeRatingDisplay(r) {
-      if (!r) return '';
+    function recipeHasBaseRating(r) {
+      if (!r) return false;
       var fields = ['rating', 'ratingValue', 'bewertung', 'score'];
       for (var i = 0; i < fields.length; i++) {
-        var line = getRatingDisplayText(getRecipeField(r, fields[i]));
+        if (getRatingDisplayText(r[fields[i]])) return true;
+      }
+      return false;
+    }
+
+    function getRecipeRatingDisplay(r) {
+      if (!r) return '';
+      var lang = I18N[currentLang] ? currentLang : 'de';
+      var fields = ['rating', 'ratingValue', 'bewertung', 'score'];
+      if (lang !== 'de' && r.translations && r.translations[lang]) {
+        for (var i = 0; i < fields.length; i++) {
+          var translated = getRatingDisplayText(r.translations[lang][fields[i]]);
+          if (translated) return translated;
+        }
+        if (recipeHasBaseRating(r)) return t('rating_saved_proven');
+        return '';
+      }
+      for (var j = 0; j < fields.length; j++) {
+        var line = getRatingDisplayText(r[fields[j]]);
         if (line) return line;
       }
       return '';
@@ -7429,6 +7878,16 @@
       var cat = getRecipeField(r, 'category');
       if (!cat || !String(cat).trim()) return '';
       return '<p class="detail-category-badge">' + esc(String(cat)) + '</p>';
+    }
+
+    function buildDetailOriginLine(r) {
+      var country = translateOriginCountry(r.originCountry, currentLang);
+      var region = translateOriginRegion(r.originRegion, currentLang);
+      var parts = [];
+      if (country) parts.push(country);
+      if (region) parts.push(region);
+      if (!parts.length) return '';
+      return '<p class="detail-origin-line">' + esc(t('detail_origin_prefix')) + ' ' + esc(parts.join(' · ')) + '</p>';
     }
 
     function buildDetailMetaHTML(r) {
@@ -7676,6 +8135,7 @@
       if (introTxt) {
         parts.push('<p class="detail-intro detail-intro--in-card">' + esc(introTxt) + '</p>');
       }
+      parts.push(buildDetailOriginLine(r));
       parts.push(buildDetailMetaHTML(r));
       parts.push(buildDetailActionsHTML(false));
       parts.push('</div>');
@@ -8101,6 +8561,9 @@
       if (!FILTER_HEADINGS.hasOwnProperty(key)) key = 'alle';
       currentRecipeFilterKey = key;
       recipeListVisibleCount = key === 'latest' ? LATEST_RECIPE_INITIAL : 12;
+      if (key === 'all' || key === 'alle') {
+        resetWorldCategoryFilter();
+      }
       if (key === 'all' || String(key).indexOf('rated') === 0) {
         currentSearchQuery = '';
         var search = document.getElementById('recipeSearchInput');
@@ -8109,6 +8572,25 @@
       updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
       syncHomeCategoryTilesActive();
       syncWeltreiseSubFilters();
+      syncWorldCategoryFilterButtons();
+    }
+
+    function syncWeltreiseSectionHeadOrder() {
+      var block = document.getElementById('recipe-results');
+      var kickerEl = document.getElementById('recipeSectionKicker');
+      var heading = document.getElementById('recipeSectionHeading');
+      if (!block || !kickerEl || !heading) return;
+      if (isWeltreiseFilterKey(currentRecipeFilterKey)) {
+        kickerEl.style.margin = '6px 0 0';
+        if (block.firstElementChild !== heading) {
+          block.insertBefore(heading, kickerEl);
+        }
+      } else {
+        kickerEl.style.margin = '';
+        if (block.firstElementChild !== kickerEl) {
+          block.insertBefore(kickerEl, heading);
+        }
+      }
     }
 
     function updateRecipeListView(opt) {
@@ -8178,9 +8660,11 @@
           : ('filter_' + fk);
         heading.textContent = (I18N[currentLang] && I18N[currentLang][mapKey]) ? t(mapKey) : (FILTER_HEADINGS[currentRecipeFilterKey] || t('nav_recipes'));
       }
+      syncWeltreiseSectionHeadOrder();
       syncRatingFilterButtons();
       syncHomeCategoryTilesActive();
       syncWeltreiseSubFilters();
+      syncWorldCategoryFilterButtons();
 
       var highlightViewAll = document.getElementById('highlightViewAllWrap');
       if (highlightViewAll && currentRecipeFilterKey !== 'alle') {
@@ -8190,12 +8674,12 @@
       if (!parsedRecipes.length) return;
 
       var tokens = normalizeSearchTokens(currentSearchQuery);
-      var full = getCurrentFullRecipeList();
+      var full = applyWorldCategoryFilterToList(getCurrentFullRecipeList());
 
       if (tokens.length) {
         var base = full;
         if (currentRecipeFilterKey === 'alle') {
-          base = parsedRecipes.slice().sort(function (a, b) { return a.id - b.id; });
+          base = applyWorldCategoryFilterToList(parsedRecipes.slice().sort(function (a, b) { return a.id - b.id; }));
         }
         var matches = base.filter(function (r) { return recipeMatchesSearchTokens(r, tokens); });
 
@@ -8325,7 +8809,9 @@
           };
         }
         currentRecipeFilterKey = 'alle';
+        currentWorldCategoryFilter = 'world-all';
         recipeListVisibleCount = 12;
+        initWorldOverviewFilters();
         updateSurpriseMeButtonState();
         updateRecipeListView({ skipHideDetail: true });
         populateHomeSidebarNewRecipes();
@@ -8360,6 +8846,7 @@
 
     attachHighlightInteractions();
     attachSurpriseMeButton();
+    initWorldOverviewFilters();
     attachMerklisteInteractions();
     (function attachRecipeLinkClicks() {
       if (document.documentElement.dataset.recipeLinksBound === '1') return;
@@ -8562,15 +9049,10 @@
         e.preventDefault();
         var k = btn.getAttribute('data-rating-filter');
         if (k === 'rating-all') {
-          if (String(currentRecipeFilterKey).indexOf('rated') === 0) {
-            currentRecipeFilterKey = 'all';
-            recipeListVisibleCount = 12;
-            updateRecipeListView();
-          } else {
-            currentRecipeFilterKey = 'all';
-            recipeListVisibleCount = 12;
-            updateRecipeListView();
-          }
+          resetWorldCategoryFilter();
+          currentRecipeFilterKey = 'all';
+          recipeListVisibleCount = 12;
+          updateRecipeListView();
         } else {
           applyRecipeFilter(k, { scrollToResults: true });
         }
