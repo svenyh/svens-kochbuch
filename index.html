@@ -6169,6 +6169,13 @@
       syncWorldCategoryFilterButtons();
     }
 
+    function isRecipeCategoryFilterKey(key) {
+      var k = String(key || '');
+      if (k === 'alle' || k === 'all' || k === 'latest') return false;
+      if (k.indexOf('rated') === 0) return false;
+      return FILTER_HEADINGS.hasOwnProperty(k);
+    }
+
     function shouldApplyWorldCategoryFilter() {
       return currentWorldCategoryFilter !== 'world-all';
     }
@@ -6198,6 +6205,9 @@
     function applyWorldCategoryFilter(filterKey, opt) {
       opt = opt || {};
       var nextKey = filterKey || 'world-all';
+      if (nextKey !== 'world-all') {
+        currentRecipeFilterKey = 'all';
+      }
       currentWorldCategoryFilter = nextKey;
       recipeListVisibleCount = 12;
       syncWorldCategoryFilterButtons();
@@ -8591,6 +8601,9 @@
       if (key === 'all') {
         resetAllRecipeFilters(opt);
         return;
+      }
+      if (isRecipeCategoryFilterKey(key)) {
+        resetWorldCategoryFilter();
       }
       currentRecipeFilterKey = key;
       recipeListVisibleCount = key === 'latest' ? LATEST_RECIPE_INITIAL : 12;
