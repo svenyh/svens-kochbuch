@@ -2,7 +2,7 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="5.0" languages="de,pl">
   <meta>
     <language>de,pl,en</language>
-    <recipeCount>329</recipeCount>
+    <recipeCount>371</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 klassische Traditionsrezepte (Soljanka, Würzfleisch, Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 weitere polnisch inspirierte Rezepte (klassische Placki, Placki mit Pilzrahm, Pyra mit Speck und Kräuterquark, Babka mit Kassler, Zapiekanka mit Hähnchen und Paprika). Ergänzt um 12 Asia-Wok-Rezepte (Pad Thai, gebratene Asia-Nudeln, Rind mit Brokkoli, Chop Suey, Thai Red Curry, Erdnuss-Wok, Kokos-Wok, Udon-Wok, Garnelen-Wok, Tofu-Wok, Thai Basil Chicken, gebratener Reis). Ergänzt um 15 italienisch inspirierte Rezepte (IDs 180–194). Ergänzt um 20 Fusion-Rezepte (IDs 195–214). Qualitätsrunde: Einleitungen für Rezepte 180–193 ergänzt. Qualitätsrunde V2: klare Kategorien für ausgewählte Rezepte normalisiert. Qualitätsrunde V3: ausgewählte ältere Einleitungen in DE und PL stilistisch veredelt. Ergänzt um 30 neue Rezepte: 10 Pizza &amp; Basics, 10 schnelle Feierabendküche und 10 Kuchen/Blechkuchen. Ergänzt um 19 Rezepte „Kulinarische Weltreise“ (IDs 311–329): Europa, Mittelmeer &amp;amp; Nordafrika, Weltreise. Eigene Sven-Versionen, DE zunächst; PL-Übersetzung folgt.</notes>
   </meta>
   <recipe id="1">
@@ -40943,6 +40943,4386 @@
         <item>Teriyaki bowls are popular everyday dishes in Japan and worldwide.</item>
       </knowledge>
       <rating>very good</rating>
+    </translation>
+  </recipe>
+  <recipe id="330">
+    <name>Albóndigas in Tomatensauce</name>
+    <intro lang="de">Albóndigas gehören zu den beliebtesten Tapas Spaniens. Saftige Hackfleischbällchen treffen auf eine aromatische Tomatensauce und ergeben ein unkompliziertes Gericht für Familie oder Gäste.</intro>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte / Fleischgerichte</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Spanische Küche</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_330.png" alt="Albóndigas in Tomatensauce" />
+    <imagePromptEn>Create an ultra realistic food photography image of Spanish albóndigas meatballs in a rich tomato sauce, garnished with fresh parsley. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>600 g gemischtes Hackfleisch</item>
+      <item>1 Ei</item>
+      <item>50 g Paniermehl</item>
+      <item>1 kleine Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>1 TL Paprikapulver</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>2 EL Olivenöl</item>
+      <item>1 Zwiebel (Sauce)</item>
+      <item>2 Knoblauchzehen (Sauce)</item>
+      <item>400 g stückige Tomaten</item>
+      <item>2 EL Tomatenmark</item>
+      <item>150 ml Gemüsebrühe</item>
+      <item>1 TL Zucker</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hackfleisch mit Ei, Paniermehl, kleiner Zwiebel und Gewürzen vermengen.</step>
+      <step nr="2">Kleine Bällchen formen.</step>
+      <step nr="3">In Olivenöl rundum anbraten und beiseitestellen.</step>
+      <step nr="4">Für die Sauce Zwiebel und Knoblauch anschwitzen.</step>
+      <step nr="5">Tomatenmark zugeben.</step>
+      <step nr="6">Tomaten und Brühe einrühren, mit Zucker abschmecken.</step>
+      <step nr="7">15 Minuten köcheln lassen.</step>
+      <step nr="8">Hackbällchen zurückgeben.</step>
+      <step nr="9">Weitere 15 Minuten schmoren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Garzeit: ca. 30 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Baguette servieren.</item>
+      <item>Auch als Tapas geeignet.</item>
+    </tips>
+    <rating>9/10</rating>
+    <translation lang="pl">
+      <name>Albóndigas w sosie pomidorowym</name>
+      <persons>4 osoby</persons>
+      <category>Dania z patelni / Dania mięsne</category>
+      <intro>Albóndigas należą do najpopularniejszych tapas w Hiszpanii. Soczyste klopsiki w aromatycznym sosie pomidorowym to proste danie na rodzinny obiad lub dla gości.</intro>
+      <ingredients>
+        <item>600 g mięsa mielonego (mieszanego)</item>
+        <item>1 jajko</item>
+        <item>50 g bułki tartej</item>
+        <item>1 mała cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>1 łyżeczka papryki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>2 łyżki oliwy</item>
+        <item>1 cebula (sos)</item>
+        <item>2 ząbki czosnku (sos)</item>
+        <item>400 g kawałków pomidorów</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>150 ml bulionu warzywnego</item>
+        <item>1 łyżeczka cukru</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Mięso mielone wymieszać z jajkiem, bułką tartą, małą cebulą i przyprawami.</step>
+        <step nr="2">Uformować małe kulki.</step>
+        <step nr="3">Obsmażyć na oliwie ze wszystkich stron i odłożyć.</step>
+        <step nr="4">Na sos podsmażyć cebulę i czosnek.</step>
+        <step nr="5">Dodać koncentrat pomidorowy.</step>
+        <step nr="6">Wymieszać pomidory i bulion, doprawić cukrem.</step>
+        <step nr="7">Gotować 15 minut.</step>
+        <step nr="8">Wrócić klopsiki.</step>
+        <step nr="9">Dusić jeszcze 15 minut.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Czas gotowania: ok. 30 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Podawać z bagietką.</item>
+        <item>Sprawdza się też jako tapas.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Albóndigas in tomato sauce</name>
+      <persons>4 people</persons>
+      <category>Pan dishes / Meat dishes</category>
+      <intro>Albóndigas are among Spain's most popular tapas. Juicy meatballs in an aromatic tomato sauce make an uncomplicated dish for family or guests.</intro>
+      <ingredients>
+        <item>600 g mixed minced meat</item>
+        <item>1 egg</item>
+        <item>50 g breadcrumbs</item>
+        <item>1 small onion</item>
+        <item>2 garlic cloves</item>
+        <item>1 tsp paprika</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>2 tbsp olive oil</item>
+        <item>1 onion (sauce)</item>
+        <item>2 garlic cloves (sauce)</item>
+        <item>400 g chopped tomatoes</item>
+        <item>2 tbsp tomato paste</item>
+        <item>150 ml vegetable stock</item>
+        <item>1 tsp sugar</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Mix the minced meat with egg, breadcrumbs, small onion and spices.</step>
+        <step nr="2">Shape into small balls.</step>
+        <step nr="3">Brown all over in olive oil and set aside.</step>
+        <step nr="4">For the sauce, sauté the onion and garlic.</step>
+        <step nr="5">Add the tomato paste.</step>
+        <step nr="6">Stir in tomatoes and stock, season with sugar.</step>
+        <step nr="7">Simmer for 15 minutes.</step>
+        <step nr="8">Return the meatballs.</step>
+        <step nr="9">Braise for another 15 minutes.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Cooking time: approx. 30 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Serve with baguette.</item>
+        <item>Also great as tapas.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="331">
+    <name>Patatas Bravas</name>
+    <intro lang="de">Knusprige Ofenkartoffeln mit würziger Bravas-Sauce – ein spanischer Tapas-Klassiker, den Sven für den Alltag vereinfacht hat. Pikant, herzhaft und bei Groß und Klein beliebt.</intro>
+    <persons>4 Personen</persons>
+    <category>Beilagen / Spanien</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Tapas-Küche</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_331.png" alt="Patatas Bravas" />
+    <imagePromptEn>Create an ultra realistic food photography image of patatas bravas – crispy golden potato cubes drizzled with spicy bravas sauce. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1 kg Kartoffeln</item>
+      <item>3 EL Olivenöl</item>
+      <item>Salz</item>
+      <item>1 Zwiebel</item>
+      <item>2 Knoblauchzehen</item>
+      <item>400 g passierte Tomaten</item>
+      <item>1 TL Zucker</item>
+      <item>1 TL geräuchertes Paprikapulver</item>
+      <item>1 Prise Cayenne</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln schälen, würfeln und mit Öl und Salz mischen.</step>
+      <step nr="2">Bei 200 °C Ober-/Unterhitze ca. 35 Minuten goldbraun rösten.</step>
+      <step nr="3">Für die Sauce Zwiebel und Knoblauch anschwitzen.</step>
+      <step nr="4">Passierte Tomaten, Zucker, Paprika und Cayenne zugeben.</step>
+      <step nr="5">Sauce 10 Minuten köcheln und mit den Kartoffeln servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 35 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Kartoffeln vor dem Backen gut trocknen.</item>
+      <item>Mit Aioli oder Mayo servieren.</item>
+    </tips>
+    <rating>8,8/10</rating>
+    <translation lang="pl">
+      <name>Patatas Bravas</name>
+      <persons>4 osoby</persons>
+      <category>Dodatki / Hiszpania</category>
+      <intro>Chrupiące ziemniaki z piekarnika z pikantnym sosem bravas – hiszpański klasyk tapas w wydaniu Svena na co dzień. Pikantne, sycące i lubiane przez wszystkich.</intro>
+      <ingredients>
+        <item>1 kg ziemniaków</item>
+        <item>3 łyżki oliwy</item>
+        <item>sól</item>
+        <item>1 cebula</item>
+        <item>2 ząbki czosnku</item>
+        <item>400 g passaty pomidorowej</item>
+        <item>1 łyżeczka cukru</item>
+        <item>1 łyżeczka wędzonej papryki</item>
+        <item>szczypta cayenne</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać, pokroić w kostkę i wymieszać z oliwą i solą.</step>
+        <step nr="2">Piec w 200 °C ok. 35 minut na złoty kolor.</step>
+        <step nr="3">Na sos podsmażyć cebulę i czosnek.</step>
+        <step nr="4">Dodać passatę, cukier, paprykę i cayenne.</step>
+        <step nr="5">Gotować sos 10 minut i podać z ziemniakami.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Pieczenie: ok. 35 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Przed pieczeniem dobrze osuszyć ziemniaki.</item>
+        <item>Podawać z aioli lub majonezem.</item>
+      </tips>
+      <rating>8,8/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Patatas Bravas</name>
+      <persons>4 people</persons>
+      <category>Side dishes / Spain</category>
+      <intro>Crispy oven potatoes with a spicy bravas sauce – a Spanish tapas classic simplified by Sven for everyday cooking. Punchy, hearty and popular with young and old.</intro>
+      <ingredients>
+        <item>1 kg potatoes</item>
+        <item>3 tbsp olive oil</item>
+        <item>salt</item>
+        <item>1 onion</item>
+        <item>2 garlic cloves</item>
+        <item>400 g passata</item>
+        <item>1 tsp sugar</item>
+        <item>1 tsp smoked paprika</item>
+        <item>a pinch of cayenne</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Peel, dice and toss the potatoes with oil and salt.</step>
+        <step nr="2">Roast at 200 °C for approx. 35 minutes until golden.</step>
+        <step nr="3">For the sauce, sauté the onion and garlic.</step>
+        <step nr="4">Add passata, sugar, paprika and cayenne.</step>
+        <step nr="5">Simmer the sauce for 10 minutes and serve with the potatoes.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Roasting time: approx. 35 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Dry the potatoes well before roasting.</item>
+        <item>Serve with aioli or mayo.</item>
+      </tips>
+      <rating>8.8/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="332">
+    <name>Gambas al Ajillo</name>
+    <intro lang="de">Garnelen in heißem Knoblauch-Öl – ein andalusischer Klassiker, der in wenigen Minuten auf dem Tisch steht. Das Knoblauchöl ist das Beste und darf unbedingt mit Brot aufgetunkt werden.</intro>
+    <persons>3 Personen</persons>
+    <category>Fisch &amp; Meeresfrüchte</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Andalusien</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_332.png" alt="Gambas al Ajillo" />
+    <imagePromptEn>Create an ultra realistic food photography image of gambas al ajillo – sizzling prawns in golden garlic oil with red chili and parsley. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>500 g Garnelen</item>
+      <item>6 Knoblauchzehen</item>
+      <item>5 EL Olivenöl</item>
+      <item>1 Chili</item>
+      <item>Petersilie</item>
+      <item>Salz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Garnelen trocken tupfen und leicht salzen.</step>
+      <step nr="2">Olivenöl erhitzen.</step>
+      <step nr="3">Knoblauch in Scheiben und Chili anrösten.</step>
+      <step nr="4">Garnelen 2–3 Minuten pro Seite garen.</step>
+      <step nr="5">Mit Petersilie bestreuen und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 8 Minuten</item>
+      <item>Gesamt: ca. 18 Minuten</item>
+    </timing>
+    <tips>
+      <item>Öl nicht zu heiß werden lassen.</item>
+      <item>Mit Baguette zum Saucen servieren.</item>
+    </tips>
+    <rating>9,2/10</rating>
+    <translation lang="pl">
+      <name>Gambas al Ajillo</name>
+      <persons>3 osoby</persons>
+      <category>Ryby i owoce morza</category>
+      <intro>Krewetki na gorącym oleju czosnkowym – andaluzyjski klasyk gotowy w kilka minut. Olej czosnkowy jest najlepszy – koniecznie podawaj z chlebem do maczania.</intro>
+      <ingredients>
+        <item>500 g krewetek</item>
+        <item>6 ząbków czosnku</item>
+        <item>5 łyżek oliwy</item>
+        <item>1 chili</item>
+        <item>pietruszka</item>
+        <item>sól</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Krewetki osuszyć i lekko posolić.</step>
+        <step nr="2">Podgrzać oliwę.</step>
+        <step nr="3">Czosnek w plastrach i chili zeszklić.</step>
+        <step nr="4">Krewetki smażyć 2–3 minuty z każdej strony.</step>
+        <step nr="5">Posypać pietruszką i podać od razu.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Czas gotowania: ok. 8 minut</item>
+        <item>Razem: ok. 18 minut</item>
+      </timing>
+      <tips>
+        <item>Nie przegrzewać oleju.</item>
+        <item>Podawać z bagietką do maczania.</item>
+      </tips>
+      <rating>9,2/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Gambas al Ajillo</name>
+      <persons>3 people</persons>
+      <category>Fish &amp; seafood</category>
+      <intro>Prawns in hot garlic oil – an Andalusian classic on the table in minutes. The garlic oil is the best part – serve with bread for dipping.</intro>
+      <ingredients>
+        <item>500 g prawns</item>
+        <item>6 garlic cloves</item>
+        <item>5 tbsp olive oil</item>
+        <item>1 chilli</item>
+        <item>parsley</item>
+        <item>salt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pat the prawns dry and season lightly with salt.</step>
+        <step nr="2">Heat the olive oil.</step>
+        <step nr="3">Fry the garlic slices and chilli until fragrant.</step>
+        <step nr="4">Cook the prawns for 2–3 minutes per side.</step>
+        <step nr="5">Sprinkle with parsley and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Cooking time: approx. 8 minutes</item>
+        <item>Total: approx. 18 minutes</item>
+      </timing>
+      <tips>
+        <item>Don't overheat the oil.</item>
+        <item>Serve with baguette for dipping.</item>
+      </tips>
+      <rating>9.2/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="333">
+    <name>Tortilla Española</name>
+    <intro lang="de">Das spanische Kartoffel-Eier-Omelett ist Klassiker und Alltagsgericht zugleich. Warm oder kalt schmeckt es hervorragend – Svens Version mit viel Kartoffel und geduldigem Garen.</intro>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Spanische Küche</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_333.png" alt="Tortilla Española" />
+    <imagePromptEn>Create an ultra realistic food photography image of a thick Spanish tortilla española – golden potato omelette with visible layers of potato and onion. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>800 g Kartoffeln</item>
+      <item>1 Zwiebel</item>
+      <item>6 Eier</item>
+      <item>Olivenöl</item>
+      <item>Salz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln schälen und dünn in Scheiben schneiden.</step>
+      <step nr="2">Zwiebel in feine Streifen schneiden.</step>
+      <step nr="3">Kartoffeln und Zwiebel in Olivenöl bei mittlerer Hitze weich braten.</step>
+      <step nr="4">Eier verquirlen, würzen und mit den Kartoffeln vermengen.</step>
+      <step nr="5">Masse in eine Pfanne geben und als dickes Omelett bei niedriger Hitze stocken lassen.</step>
+      <step nr="6">Mit einem Teller wenden und von der anderen Seite fertig garen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 30 Minuten</item>
+      <item>Gesamt: ca. 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Geduldig bei niedriger Hitze garen.</item>
+      <item>Schmeckt kalt am nächsten Tag hervorragend.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Tortilla Española</name>
+      <persons>4 osoby</persons>
+      <category>Dania z patelni</category>
+      <intro>Hiszpański omlet ziemniaczany to klasyk na co dzień. Smakuje ciepły i zimny – wersja Svena z dużą ilością ziemniaków i spokojnym smażeniem.</intro>
+      <ingredients>
+        <item>800 g ziemniaków</item>
+        <item>1 cebula</item>
+        <item>6 jajek</item>
+        <item>oliwa</item>
+        <item>sól</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać ziemniaki i pokroić w cienkie plastry.</step>
+        <step nr="2">Cebulę pokroić w cienkie paski.</step>
+        <step nr="3">Ziemniaki i cebulę smażyć na oliwie na średnim ogniu do miękkości.</step>
+        <step nr="4">Jajka roztrzepać, doprawić i wymieszać z ziemniakami.</step>
+        <step nr="5">Masę wlać na patelnię i gotować na małym ogniu do zastygnięcia.</step>
+        <step nr="6">Przewrócić na talerz i dopiekać z drugiej strony.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 30 minut</item>
+        <item>Razem: ok. 45 minut</item>
+      </timing>
+      <tips>
+        <item>Gotować cierpliwie na małym ogniu.</item>
+        <item>Na zimno następnego dnia smakuje wyśmienicie.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Tortilla Española</name>
+      <persons>4 people</persons>
+      <category>Pan dishes</category>
+      <intro>The Spanish potato and egg omelette is an everyday classic. Delicious warm or cold – Sven's version with plenty of potato and patient cooking.</intro>
+      <ingredients>
+        <item>800 g potatoes</item>
+        <item>1 onion</item>
+        <item>6 eggs</item>
+        <item>olive oil</item>
+        <item>salt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Peel the potatoes and slice thinly.</step>
+        <step nr="2">Cut the onion into fine strips.</step>
+        <step nr="3">Cook the potatoes and onion in olive oil over medium heat until tender.</step>
+        <step nr="4">Beat the eggs, season and mix with the potatoes.</step>
+        <step nr="5">Pour into a pan and set over low heat as a thick omelette.</step>
+        <step nr="6">Flip with a plate and finish cooking on the other side.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 30 minutes</item>
+        <item>Total: approx. 45 minutes</item>
+      </timing>
+      <tips>
+        <item>Cook patiently over low heat.</item>
+        <item>Excellent cold the next day.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="334">
+    <name>Pollo al Ajillo</name>
+    <intro lang="de">Hähnchen in goldenem Knoblauch-Öl mit Weißwein – ein spanischer Klassiker für die Pfanne. Deftig, aromatisch und perfekt mit Brot zum Saucen.</intro>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte / Geflügel</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Spanische Küche</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_334.png" alt="Pollo al Ajillo" />
+    <imagePromptEn>Create an ultra realistic food photography image of pollo al ajillo – golden-brown garlic chicken pieces glistening with olive oil and herbs. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>800 g Hähnchenschenkel</item>
+      <item>8 Knoblauchzehen</item>
+      <item>150 ml Weißwein</item>
+      <item>Olivenöl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen in Stücke schneiden, würzen und in Olivenöl kräftig anbraten.</step>
+      <step nr="2">Knoblauch in Scheiben zugeben und goldgelb braten.</step>
+      <step nr="3">Mit Weißwein ablöschen.</step>
+      <step nr="4">Bei mittlerer Hitze ca. 35 Minuten schmoren, gelegentlich wenden.</step>
+      <step nr="5">Mit Brot servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Schmorzeit: ca. 35 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Knoblauch nicht zu dunkel braten.</item>
+      <item>Trockener Weißwein passt am besten.</item>
+    </tips>
+    <rating>9/10</rating>
+    <translation lang="pl">
+      <name>Pollo al Ajillo</name>
+      <persons>4 osoby</persons>
+      <category>Dania z patelni / Drób</category>
+      <intro>Kurczak na złocistym oleju czosnkowym z białym winem – hiszpański klasyk z patelni. Wyrazisty, aromatyczny i idealny z chlebem do maczania.</intro>
+      <ingredients>
+        <item>800 g udek kurczaka</item>
+        <item>8 ząbków czosnku</item>
+        <item>150 ml białego wina</item>
+        <item>oliwa</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Kurczaka pokroić, doprawić i mocno obsmażyć na oliwie.</step>
+        <step nr="2">Dodać czosnek w plastrach i zeszklić na złoto.</step>
+        <step nr="3">Zdeglazować winem.</step>
+        <step nr="4">Dusić na średnim ogniu ok. 35 minut, od czasu do czasu obracać.</step>
+        <step nr="5">Podawać z chlebem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas duszenia: ok. 35 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Nie przypalaj czosnku.</item>
+        <item>Najlepiej smakuje z suchym białym winem.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Pollo al Ajillo</name>
+      <persons>4 people</persons>
+      <category>Pan dishes / Poultry</category>
+      <intro>Chicken in golden garlic oil with white wine – a Spanish pan classic. Hearty, aromatic and perfect with bread for dipping.</intro>
+      <ingredients>
+        <item>800 g chicken thighs</item>
+        <item>8 garlic cloves</item>
+        <item>150 ml white wine</item>
+        <item>olive oil</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Cut the chicken into pieces, season and sear well in olive oil.</step>
+        <step nr="2">Add garlic slices and fry until golden.</step>
+        <step nr="3">Deglaze with white wine.</step>
+        <step nr="4">Braise over medium heat for approx. 35 minutes, turning occasionally.</step>
+        <step nr="5">Serve with bread.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Braising time: approx. 35 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Don't brown the garlic too dark.</item>
+        <item>Dry white wine works best.</item>
+      </tips>
+      <rating>9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="335">
+    <name>Chorizo in Rotwein</name>
+    <intro lang="de">Ein spanischer Tapas-Klassiker. Die würzige Chorizo schmort in kräftigem Rotwein und entwickelt dabei ein intensives Aroma, das perfekt zu frischem Brot passt.</intro>
+    <persons>4 Personen</persons>
+    <category>Tapas / Pfannengerichte</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Spanische Tapas-Küche</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_335.png" alt="Chorizo in Rotwein" />
+    <imagePromptEn>Create an ultra realistic food photography image of chorizo slices simmering in a dark red wine sauce with a bay leaf. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>400 g Chorizo</item>
+      <item>250 ml trockener Rotwein</item>
+      <item>1 Lorbeerblatt</item>
+      <item>1 kleine Zwiebel</item>
+      <item>1 EL Olivenöl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Chorizo in Scheiben schneiden.</step>
+      <step nr="2">Zwiebel fein würfeln.</step>
+      <step nr="3">Öl erhitzen und Zwiebel anschwitzen.</step>
+      <step nr="4">Chorizo kurz anbraten.</step>
+      <step nr="5">Mit Rotwein ablöschen.</step>
+      <step nr="6">Lorbeerblatt zugeben.</step>
+      <step nr="7">15–20 Minuten leicht einköcheln lassen.</step>
+      <step nr="8">Mit Baguette servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 20 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Auch perfekt vom Grill in einer Gusspfanne.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Chorizo w czerwonym winie</name>
+      <persons>4 osoby</persons>
+      <category>Tapas / Dania z patelni</category>
+      <intro>Hiszpański klasyk tapas. Pikantne chorizo dusi się w mocnym czerwonym winie i nabiera intensywnego aromatu – idealne ze świeżym chlebem.</intro>
+      <ingredients>
+        <item>400 g chorizo</item>
+        <item>250 ml czerwonego wina</item>
+        <item>1 liść laurowy</item>
+        <item>1 mała cebula</item>
+        <item>1 łyżka oliwy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chorizo pokroić w plastry.</step>
+        <step nr="2">Cebulę drobno posiekać.</step>
+        <step nr="3">Podgrzać oliwę i podsmażyć cebulę.</step>
+        <step nr="4">Krótko obsmażyć chorizo.</step>
+        <step nr="5">Zdeglazować winem.</step>
+        <step nr="6">Dodać liść laurowy.</step>
+        <step nr="7">Gotować 15–20 minut na wolnym ogniu.</step>
+        <step nr="8">Podawać z bagietką.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Czas gotowania: ok. 20 minut</item>
+        <item>Razem: ok. 30 minut</item>
+      </timing>
+      <tips>
+        <item>Świetne też z grilla w żeliwnej patelni.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Chorizo in red wine</name>
+      <persons>4 people</persons>
+      <category>Tapas / Pan dishes</category>
+      <intro>A Spanish tapas classic. Spicy chorizo braises in robust red wine and develops an intense aroma that pairs perfectly with fresh bread.</intro>
+      <ingredients>
+        <item>400 g chorizo</item>
+        <item>250 ml dry red wine</item>
+        <item>1 bay leaf</item>
+        <item>1 small onion</item>
+        <item>1 tbsp olive oil</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Slice the chorizo.</step>
+        <step nr="2">Finely dice the onion.</step>
+        <step nr="3">Heat the oil and sauté the onion.</step>
+        <step nr="4">Briefly fry the chorizo.</step>
+        <step nr="5">Deglaze with red wine.</step>
+        <step nr="6">Add the bay leaf.</step>
+        <step nr="7">Simmer gently for 15–20 minutes.</step>
+        <step nr="8">Serve with baguette.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Cooking time: approx. 20 minutes</item>
+        <item>Total: approx. 30 minutes</item>
+      </timing>
+      <tips>
+        <item>Also perfect from the grill in a cast-iron pan.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="336">
+    <name>Pimientos de Padrón</name>
+    <intro lang="de">Kleine grüne Paprikaschoten aus Galicien, blitzschnell in heißem Öl gebraten – ein spanischer Tapas-Klassiker mit überraschendem Charakter.</intro>
+    <persons>4 Personen</persons>
+    <category>Beilagen / Tapas</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Galicien</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_336.png" alt="Pimientos de Padrón" />
+    <imagePromptEn>Create an ultra realistic food photography image of pimientos de Padrón – blistered green Padron peppers sprinkled with coarse sea salt. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>500 g Pimientos de Padrón</item>
+      <item>2 EL Olivenöl</item>
+      <item>Meersalz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Öl in einer Pfanne stark erhitzen.</step>
+      <step nr="2">Paprika 5–7 Minuten braten.</step>
+      <step nr="3">Bis sie Blasen werfen.</step>
+      <step nr="4">Mit grobem Meersalz bestreuen.</step>
+      <step nr="5">Sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 5 Minuten</item>
+      <item>Garzeit: ca. 5–7 Minuten</item>
+      <item>Gesamt: ca. 10 Minuten</item>
+    </timing>
+    <tips>
+      <item>Je nach Ernte kann eine Schote überraschend scharf sein.</item>
+    </tips>
+    <rating>8,5/10</rating>
+    <translation lang="pl">
+      <name>Pimientos de Padrón</name>
+      <persons>4 osoby</persons>
+      <category>Dodatki / Tapas</category>
+      <intro>Małe zielone papryczki z Galicji, smażone błyskawicznie na gorącym oleju – hiszpański klasyk tapas o zaskakującym charakterze.</intro>
+      <ingredients>
+        <item>500 g papryczek Padrón</item>
+        <item>2 łyżki oliwy</item>
+        <item>sól morska</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Mocno podgrzać oliwę na patelni.</step>
+        <step nr="2">Smażyć papryczki 5–7 minut.</step>
+        <step nr="3">Aż pojawią się pęcherzyki.</step>
+        <step nr="4">Posypać grubą solą morską.</step>
+        <step nr="5">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 5 minut</item>
+        <item>Smażenie: ok. 5–7 minut</item>
+        <item>Razem: ok. 10 minut</item>
+      </timing>
+      <tips>
+        <item>W zależności od zbioru jedna strączka może być zaskakująco ostra.</item>
+      </tips>
+      <rating>8,5/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Pimientos de Padrón</name>
+      <persons>4 people</persons>
+      <category>Side dishes / Tapas</category>
+      <intro>Small green peppers from Galicia, quickly fried in hot oil – a Spanish tapas classic with a surprising twist.</intro>
+      <ingredients>
+        <item>500 g Padrón peppers</item>
+        <item>2 tbsp olive oil</item>
+        <item>sea salt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Heat the oil in a pan until very hot.</step>
+        <step nr="2">Fry the peppers for 5–7 minutes.</step>
+        <step nr="3">Until they blister.</step>
+        <step nr="4">Sprinkle with coarse sea salt.</step>
+        <step nr="5">Serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 5 minutes</item>
+        <item>Cooking time: approx. 5–7 minutes</item>
+        <item>Total: approx. 10 minutes</item>
+      </timing>
+      <tips>
+        <item>Depending on the harvest, one pod can be surprisingly hot.</item>
+      </tips>
+      <rating>8.5/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="337">
+    <name>Gazpacho Andaluz</name>
+    <intro lang="de">Die kalte Tomatensuppe aus Andalusien ist im Sommer unschlagbar erfrischend. Svens Version mit reifen Tomaten, Gurke und Paprika – püriert, gekühlt, fertig.</intro>
+    <persons>4 Personen</persons>
+    <category>Suppen</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Andalusien</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_337.png" alt="Gazpacho Andaluz" />
+    <imagePromptEn>Create an ultra realistic food photography image of gazpacho andaluz – chilled tomato soup in a rustic bowl, garnished with cucumber and olive oil. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>800 g reife Tomaten</item>
+      <item>1 Gurke</item>
+      <item>1 rote Paprika</item>
+      <item>1 Knoblauchzehe</item>
+      <item>3 EL Olivenöl</item>
+      <item>2 EL Weißweinessig</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse grob schneiden.</step>
+      <step nr="2">Fein pürieren.</step>
+      <step nr="3">Öl und Essig einarbeiten.</step>
+      <step nr="4">Mindestens 2 Stunden kaltstellen.</step>
+      <step nr="5">Gut gekühlt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Kühlzeit: mindestens 2 Stunden</item>
+      <item>Gesamt: ca. 2 Stunden 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Croutons servieren.</item>
+    </tips>
+    <rating>8,7/10</rating>
+    <translation lang="pl">
+      <name>Gazpacho Andaluz</name>
+      <persons>4 osoby</persons>
+      <category>Zupy</category>
+      <intro>Zimna andaluzyjska zupa pomidorowa to letni klasyk. Wersja Svena z dojrzałymi pomidorami, ogórkiem i papryką – zmiksowana, schłodzona, gotowa.</intro>
+      <ingredients>
+        <item>800 g dojrzałych pomidorów</item>
+        <item>1 ogórek</item>
+        <item>1 czerwona papryka</item>
+        <item>1 ząbek czosnku</item>
+        <item>3 łyżki oliwy</item>
+        <item>2 łyżki octu winnego</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Warzywa pokroić grubo.</step>
+        <step nr="2">Dokładnie zmiksować.</step>
+        <step nr="3">Wymieszać z oliwą i octem.</step>
+        <step nr="4">Schłodzić minimum 2 godziny.</step>
+        <step nr="5">Podawać dobrze schłodzone.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Chłodzenie: minimum 2 godziny</item>
+        <item>Razem: ok. 2 godziny 15 minut</item>
+      </timing>
+      <tips>
+        <item>Podawać z grzankami.</item>
+      </tips>
+      <rating>8,7/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Gazpacho Andaluz</name>
+      <persons>4 people</persons>
+      <category>Soups</category>
+      <intro>The cold tomato soup from Andalusia is unbeatable in summer. Sven's version with ripe tomatoes, cucumber and pepper – puréed, chilled and ready.</intro>
+      <ingredients>
+        <item>800 g ripe tomatoes</item>
+        <item>1 cucumber</item>
+        <item>1 red pepper</item>
+        <item>1 garlic clove</item>
+        <item>3 tbsp olive oil</item>
+        <item>2 tbsp white wine vinegar</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Roughly chop the vegetables.</step>
+        <step nr="2">Purée until smooth.</step>
+        <step nr="3">Stir in the oil and vinegar.</step>
+        <step nr="4">Chill for at least 2 hours.</step>
+        <step nr="5">Serve well chilled.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Chilling time: at least 2 hours</item>
+        <item>Total: approx. 2 hours 15 minutes</item>
+      </timing>
+      <tips>
+        <item>Serve with croutons.</item>
+      </tips>
+      <rating>8.7/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="338">
+    <name>Croquetas de Jamón</name>
+    <intro lang="de">Knusprige spanische Kroketten mit cremiger Schinkenfüllung – ein Tapas-Favorit, der etwas Vorbereitung braucht, sich aber lohnt. Goldbraun frittiert und innen wunderbar saftig.</intro>
+    <persons>4 Personen</persons>
+    <category>Tapas</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Spanische Küche</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_338.png" alt="Croquetas de Jamón" />
+    <imagePromptEn>Create an ultra realistic food photography image of golden croquetas de jamón – crispy ham croquettes with a creamy Serrano ham filling, one cut open. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>100 g Serrano-Schinken</item>
+      <item>50 g Butter</item>
+      <item>50 g Mehl</item>
+      <item>500 ml Milch</item>
+      <item>2 Eier</item>
+      <item>Paniermehl</item>
+      <item>Öl zum Frittieren</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Butter schmelzen.</step>
+      <step nr="2">Mehl einrühren.</step>
+      <step nr="3">Milch langsam zugeben und glatt rühren.</step>
+      <step nr="4">Schinken unterheben, würzen.</step>
+      <step nr="5">Masse kaltstellen.</step>
+      <step nr="6">Kroketten formen.</step>
+      <step nr="7">Panieren.</step>
+      <step nr="8">Goldbraun ausbacken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Kühlzeit: mindestens 1 Stunde</item>
+      <item>Ausbacken: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 45 Minuten + Kühlzeit</item>
+    </timing>
+    <tips>
+      <item>Die Masse am Vortag vorbereiten.</item>
+    </tips>
+    <rating>9,1/10</rating>
+    <translation lang="pl">
+      <name>Croquetas de Jamón</name>
+      <persons>4 osoby</persons>
+      <category>Tapas</category>
+      <intro>Chrupiące hiszpańskie krokiety z kremowym nadzieniem szynkowym – ulubione tapas, które wymaga przygotowania, ale się opłaca. Złociste i soczyste w środku.</intro>
+      <ingredients>
+        <item>100 g szynki serrano</item>
+        <item>50 g masła</item>
+        <item>50 g mąki</item>
+        <item>500 ml mleka</item>
+        <item>2 jajka</item>
+        <item>bułka tarta</item>
+        <item>olej do smażenia</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Rozpuścić masło.</step>
+        <step nr="2">Wmieszać mąkę.</step>
+        <step nr="3">Powoli dolać mleko i wymieszać do gładkości.</step>
+        <step nr="4">Wmieszać szynkę, doprawić.</step>
+        <step nr="5">Schłodzić masę.</step>
+        <step nr="6">Uformować krokiety.</step>
+        <step nr="7">Panierować.</step>
+        <step nr="8">Smażyć na złoty kolor.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 30 minut</item>
+        <item>Chłodzenie: minimum 1 godzina</item>
+        <item>Smażenie: ok. 15 minut</item>
+        <item>Razem: ok. 45 minut + chłodzenie</item>
+      </timing>
+      <tips>
+        <item>Masę można przygotować dzień wcześniej.</item>
+      </tips>
+      <rating>9,1/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Croquetas de Jamón</name>
+      <persons>4 people</persons>
+      <category>Tapas</category>
+      <intro>Crispy Spanish croquettes with a creamy ham filling – a tapas favourite worth the prep. Fried golden and wonderfully moist inside.</intro>
+      <ingredients>
+        <item>100 g Serrano ham</item>
+        <item>50 g butter</item>
+        <item>50 g flour</item>
+        <item>500 ml milk</item>
+        <item>2 eggs</item>
+        <item>breadcrumbs</item>
+        <item>oil for frying</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Melt the butter.</step>
+        <step nr="2">Stir in the flour.</step>
+        <step nr="3">Gradually add the milk and whisk until smooth.</step>
+        <step nr="4">Fold in the ham and season.</step>
+        <step nr="5">Chill the mixture.</step>
+        <step nr="6">Shape into croquettes.</step>
+        <step nr="7">Coat in breadcrumbs.</step>
+        <step nr="8">Fry until golden.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 30 minutes</item>
+        <item>Chilling time: at least 1 hour</item>
+        <item>Frying: approx. 15 minutes</item>
+        <item>Total: approx. 45 minutes + chilling</item>
+      </timing>
+      <tips>
+        <item>Prepare the mixture the day before.</item>
+      </tips>
+      <rating>9.1/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="339">
+    <name>Pulpo a la Gallega</name>
+    <intro lang="de">Galicischer Oktopus auf Kartoffelscheiben mit Olivenöl, Paprika und Meersalz – ein klassisches Festtagsgericht aus dem Nordwesten Spaniens. Einfach anrichten, großartig im Geschmack.</intro>
+    <persons>4 Personen</persons>
+    <category>Fisch &amp; Meeresfrüchte</category>
+    <origin>
+      <country>Spanien</country>
+      <region>Galicien</region>
+      <worldCategory>Spanien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_339.png" alt="Pulpo a la Gallega" />
+    <imagePromptEn>Create an ultra realistic food photography image of pulpo a la gallega – tender octopus slices on potato rounds, drizzled with olive oil and paprika. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1 kg Oktopus</item>
+      <item>800 g Kartoffeln</item>
+      <item>Olivenöl</item>
+      <item>Paprikapulver edelsüß</item>
+      <item>Meersalz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Oktopus weich kochen.</step>
+      <step nr="2">Kartoffeln separat garen.</step>
+      <step nr="3">Kartoffeln in Scheiben schneiden.</step>
+      <step nr="4">Oktopus schneiden.</step>
+      <step nr="5">Auf Kartoffeln anrichten.</step>
+      <step nr="6">Mit Olivenöl beträufeln.</step>
+      <step nr="7">Paprikapulver und Meersalz darübergeben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Kochzeit: ca. 70 Minuten</item>
+      <item>Gesamt: ca. 90 Minuten</item>
+    </timing>
+    <tips>
+      <item>Traditionell auf Holztellern servieren.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Pulpo a la Gallega</name>
+      <persons>4 osoby</persons>
+      <category>Ryby i owoce morza</category>
+      <intro>Galicyjska ośmiornica na plastrach ziemniaków z oliwą, papryką i solą morską – klasyczne danie świąteczne z północno-zachodniej Hiszpanii.</intro>
+      <ingredients>
+        <item>1 kg ośmiornicy</item>
+        <item>800 g ziemniaków</item>
+        <item>oliwa</item>
+        <item>słodka papryka w proszku</item>
+        <item>sól morska</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ugotować ośmiornicę do miękkości.</step>
+        <step nr="2">Oddzielnie ugotować ziemniaki.</step>
+        <step nr="3">Ziemniaki pokroić w plastry.</step>
+        <step nr="4">Ośmiornicę pokroić.</step>
+        <step nr="5">Ułożyć na ziemniakach.</step>
+        <step nr="6">Skropić oliwą.</step>
+        <step nr="7">Posypać papryką i solą morską.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Czas gotowania: ok. 70 minut</item>
+        <item>Razem: ok. 90 minut</item>
+      </timing>
+      <tips>
+        <item>Tradycyjnie podawane na drewnianych talerzach.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Pulpo a la Gallega</name>
+      <persons>4 people</persons>
+      <category>Fish &amp; seafood</category>
+      <intro>Galician octopus on potato slices with olive oil, paprika and sea salt – a classic festive dish from north-west Spain. Simple to plate, outstanding in flavour.</intro>
+      <ingredients>
+        <item>1 kg octopus</item>
+        <item>800 g potatoes</item>
+        <item>olive oil</item>
+        <item>sweet paprika</item>
+        <item>sea salt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Cook the octopus until tender.</step>
+        <step nr="2">Cook the potatoes separately.</step>
+        <step nr="3">Slice the potatoes.</step>
+        <step nr="4">Cut the octopus.</step>
+        <step nr="5">Arrange on the potatoes.</step>
+        <step nr="6">Drizzle with olive oil.</step>
+        <step nr="7">Sprinkle with paprika and sea salt.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Cooking time: approx. 70 minutes</item>
+        <item>Total: approx. 90 minutes</item>
+      </timing>
+      <tips>
+        <item>Traditionally served on wooden plates.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="340">
+    <name>Coq au Vin</name>
+    <intro lang="de">Hähnchen langsam in Rotwein geschmort – ein burgundischer Klassiker für besondere Anlässe. Svens familienfreundliche Version mit Speck, Champignons und kräftiger Sauce.</intro>
+    <persons>4 Personen</persons>
+    <category>Schmorgerichte / Feiertagsessen</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Burgund</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_340.png" alt="Coq au Vin" />
+    <imagePromptEn>Create an ultra realistic food photography image of coq au vin – French braised chicken in a deep red wine sauce with mushrooms and herbs. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1,5 kg Hähnchenschenkel</item>
+      <item>200 g Speck</item>
+      <item>250 g Champignons</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Möhren</item>
+      <item>500 ml Rotwein</item>
+      <item>300 ml Hühnerfond</item>
+      <item>2 EL Tomatenmark</item>
+      <item>1 Lorbeerblatt</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Butterschmalz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen würzen und kräftig anbraten.</step>
+      <step nr="2">Speck und Gemüse rösten.</step>
+      <step nr="3">Tomatenmark zugeben.</step>
+      <step nr="4">Mit Rotwein und Fond ablöschen.</step>
+      <step nr="5">Hähnchen zurückgeben.</step>
+      <step nr="6">90 Minuten schmoren.</step>
+      <step nr="7">Champignons gegen Ende zugeben und abschmecken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 25 Minuten</item>
+      <item>Schmorzeit: ca. 90 Minuten</item>
+      <item>Gesamt: ca. 2 Stunden</item>
+    </timing>
+    <tips>
+      <item>Mit Kartoffeln oder Baguette servieren.</item>
+      <item>Am Vortag zubereiten – schmeckt noch besser.</item>
+    </tips>
+    <rating>9,4/10</rating>
+    <translation lang="pl">
+      <name>Coq au Vin</name>
+      <persons>4 osoby</persons>
+      <category>Dania duszone / Obiady świąteczne</category>
+      <intro>Kurczak duszony powoli w czerwonym winie – burgundzki klasyk na wyjątkowe okazje. Rodzinna wersja Svena z boczkiem, pieczarkami i mocnym sosem.</intro>
+      <ingredients>
+        <item>1,5 kg udek kurczaka</item>
+        <item>200 g boczku</item>
+        <item>250 g pieczarek</item>
+        <item>2 cebule</item>
+        <item>2 marchewki</item>
+        <item>500 ml czerwonego wina</item>
+        <item>300 ml bulionu drobiowego</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>1 liść laurowy</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>masło klarowane</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doprawić kurczaka i mocno obsmażyć.</step>
+        <step nr="2">Podsmażyć boczek i warzywa.</step>
+        <step nr="3">Dodać koncentrat pomidorowy.</step>
+        <step nr="4">Zdeglazować winem i bulionem.</step>
+        <step nr="5">Wrócić kurczaka.</step>
+        <step nr="6">Dusić 90 minut.</step>
+        <step nr="7">Pod koniec dodać pieczarki i doprawić.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 25 minut</item>
+        <item>Czas duszenia: ok. 90 minut</item>
+        <item>Razem: ok. 2 godziny</item>
+      </timing>
+      <tips>
+        <item>Podawać z ziemniakami lub bagietką.</item>
+        <item>Przygotować dzień wcześniej – smakuje jeszcze lepiej.</item>
+      </tips>
+      <rating>9,4/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Coq au Vin</name>
+      <persons>4 people</persons>
+      <category>Braised dishes / Holiday meals</category>
+      <intro>Chicken slowly braised in red wine – a Burgundian classic for special occasions. Sven's family-friendly version with bacon, mushrooms and a rich sauce.</intro>
+      <ingredients>
+        <item>1.5 kg chicken thighs</item>
+        <item>200 g bacon</item>
+        <item>250 g mushrooms</item>
+        <item>2 onions</item>
+        <item>2 carrots</item>
+        <item>500 ml red wine</item>
+        <item>300 ml chicken stock</item>
+        <item>2 tbsp tomato paste</item>
+        <item>1 bay leaf</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>clarified butter</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Season the chicken and sear well.</step>
+        <step nr="2">Roast the bacon and vegetables.</step>
+        <step nr="3">Add the tomato paste.</step>
+        <step nr="4">Deglaze with wine and stock.</step>
+        <step nr="5">Return the chicken.</step>
+        <step nr="6">Braise for 90 minutes.</step>
+        <step nr="7">Add mushrooms near the end and season.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 25 minutes</item>
+        <item>Braising time: approx. 90 minutes</item>
+        <item>Total: approx. 2 hours</item>
+      </timing>
+      <tips>
+        <item>Serve with potatoes or baguette.</item>
+        <item>Make ahead – tastes even better the next day.</item>
+      </tips>
+      <rating>9.4/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="341">
+    <name>Quiche Lorraine</name>
+    <intro lang="de">Cremige Speck-Quiche aus Lothringen – herzhaft, unkompliziert und perfekt für Gäste oder den Sonntagsbrunch. Svens Version mit knusprigem Mürbeteig.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Lothringen</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_341.png" alt="Quiche Lorraine" />
+    <imagePromptEn>Create an ultra realistic food photography image of quiche Lorraine – golden-brown quiche with visible bacon lardons and a creamy filling. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1 Mürbeteig</item>
+      <item>200 g Speckwürfel</item>
+      <item>3 Eier</item>
+      <item>200 ml Sahne</item>
+      <item>100 g Käse</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Muskat</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Teig in Form legen und randhoch auskleiden.</step>
+      <step nr="2">Speck anbraten.</step>
+      <step nr="3">Eier, Sahne und Käse verrühren, würzen.</step>
+      <step nr="4">Speck auf den Teig geben, Guss einfüllen.</step>
+      <step nr="5">35 Minuten bei 180 °C backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 35 Minuten</item>
+      <item>Gesamt: ca. 55 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit grünem Salat servieren.</item>
+      <item>Schmeckt warm und lauwarm.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Quiche Lorraine</name>
+      <persons>4 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <intro>Kremowa tarta lorraine z boczkiem – sycąca, prosta i idealna na gości lub niedzielny brunch. Wersja Svena na kruchym cieście.</intro>
+      <ingredients>
+        <item>1 ciasto kruche</item>
+        <item>200 g kostek boczku</item>
+        <item>3 jajka</item>
+        <item>200 ml śmietanki</item>
+        <item>100 g sera</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>gałka muszkatołowa</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wyłożyć ciasto formą i uformować brzegi.</step>
+        <step nr="2">Obsmażyć boczek.</step>
+        <step nr="3">Wymieszać jajka, śmietankę i ser, doprawić.</step>
+        <step nr="4">Boczek na cieście, zalać masą jajeczną.</step>
+        <step nr="5">Piec 35 minut w 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Pieczenie: ok. 35 minut</item>
+        <item>Razem: ok. 55 minut</item>
+      </timing>
+      <tips>
+        <item>Podawać z zieloną sałatą.</item>
+        <item>Smakuje na ciepło i lekko ciepła.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Quiche Lorraine</name>
+      <persons>4 people</persons>
+      <category>Oven dishes</category>
+      <intro>Creamy bacon quiche from Lorraine – hearty, straightforward and perfect for guests or Sunday brunch. Sven's version with crisp shortcrust pastry.</intro>
+      <ingredients>
+        <item>1 shortcrust pastry</item>
+        <item>200 g bacon lardons</item>
+        <item>3 eggs</item>
+        <item>200 ml cream</item>
+        <item>100 g cheese</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>nutmeg</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Line a tin with the pastry.</step>
+        <step nr="2">Fry the bacon.</step>
+        <step nr="3">Whisk eggs, cream and cheese, season.</step>
+        <step nr="4">Spread bacon on the pastry and pour over the custard.</step>
+        <step nr="5">Bake for 35 minutes at 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Baking time: approx. 35 minutes</item>
+        <item>Total: approx. 55 minutes</item>
+      </timing>
+      <tips>
+        <item>Serve with green salad.</item>
+        <item>Delicious warm or lukewarm.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="342">
+    <name>Französische Zwiebelsuppe</name>
+    <intro lang="de">Langsam karamellisierte Zwiebeln in kräftiger Rinderbrühe – die Pariser Suppenikone, bei Sven mit Käse-Baguette überbacken. Wärmend, tief im Geschmack und ideal für kühle Tage.</intro>
+    <persons>4 Personen</persons>
+    <category>Suppen</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Pariser Küche</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_342.png" alt="Französische Zwiebelsuppe" />
+    <imagePromptEn>Create an ultra realistic food photography image of French onion soup – gratinated onion soup with a melted golden cheese crust and toasted bread. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>800 g Zwiebeln</item>
+      <item>50 g Butter</item>
+      <item>1 Liter Rinderfond</item>
+      <item>150 ml Weißwein</item>
+      <item>Baguette</item>
+      <item>Käse</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Thymian</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebeln in feine Streifen schneiden.</step>
+      <step nr="2">In Butter langsam karamellisieren.</step>
+      <step nr="3">Mit Wein ablöschen.</step>
+      <step nr="4">Fond zugeben und 30 Minuten köcheln.</step>
+      <step nr="5">Mit Käsebrot überbacken und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Kochzeit: ca. 45 Minuten</item>
+      <item>Gesamt: ca. 60 Minuten</item>
+    </timing>
+    <tips>
+      <item>Zwiebeln wirklich langsam braten – das macht die Tiefe.</item>
+      <item>Gruyère oder Emmentaler eignen sich gut.</item>
+    </tips>
+    <rating>9,1/10</rating>
+    <translation lang="pl">
+      <name>Francuska zupa cebulowa</name>
+      <persons>4 osoby</persons>
+      <category>Zupy</category>
+      <intro>Powoli karmelizowana cebula w mocnym bulionie wołowym – paryska ikona, u Svena zapiekana z serem i bagietką. Rozgrzewająca i głęboka w smaku.</intro>
+      <ingredients>
+        <item>800 g cebuli</item>
+        <item>50 g masła</item>
+        <item>1 l bulionu wołowego</item>
+        <item>150 ml białego wina</item>
+        <item>bagietka</item>
+        <item>ser</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>tymianek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Cebulę pokroić w cienkie paski.</step>
+        <step nr="2">Powoli karmelizować na maśle.</step>
+        <step nr="3">Zdeglazować winem.</step>
+        <step nr="4">Dolać bulion i gotować 30 minut.</step>
+        <step nr="5">Zapiec z chlebem i serem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 45 minut</item>
+        <item>Razem: ok. 60 minut</item>
+      </timing>
+      <tips>
+        <item>Cebulę smażyć naprawdę powoli – to daje głębię smaku.</item>
+        <item>Gruyère lub emmentaler pasują idealnie.</item>
+      </tips>
+      <rating>9,1/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>French onion soup</name>
+      <persons>4 people</persons>
+      <category>Soups</category>
+      <intro>Slowly caramelised onions in rich beef stock – the Parisian icon, topped with cheese and baguette at Sven's table. Warming, deep in flavour and ideal for cold days.</intro>
+      <ingredients>
+        <item>800 g onions</item>
+        <item>50 g butter</item>
+        <item>1 litre beef stock</item>
+        <item>150 ml white wine</item>
+        <item>baguette</item>
+        <item>cheese</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>thyme</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Slice the onions into fine strips.</step>
+        <step nr="2">Caramelise slowly in butter.</step>
+        <step nr="3">Deglaze with wine.</step>
+        <step nr="4">Add stock and simmer for 30 minutes.</step>
+        <step nr="5">Top with cheese bread and grill until golden.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 45 minutes</item>
+        <item>Total: approx. 60 minutes</item>
+      </timing>
+      <tips>
+        <item>Really slow-cook the onions – that creates the depth.</item>
+        <item>Gruyère or Emmental work well.</item>
+      </tips>
+      <rating>9.1/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="343">
+    <name>Gratin Dauphinois</name>
+    <intro lang="de">Kartoffelgratin aus der Dauphiné – dünn gehobelt, mit Sahne übergossen und langsam im Ofen gegart. Cremig, deftig und die perfekte Beilage zu Braten oder Schmorgerichten.</intro>
+    <persons>4 Personen</persons>
+    <category>Beilagen / Ofengerichte</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Dauphiné</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_343.png" alt="Gratin Dauphinois" />
+    <imagePromptEn>Create an ultra realistic food photography image of gratin dauphinois – creamy layered potato gratin with a golden baked top. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1,2 kg Kartoffeln</item>
+      <item>400 ml Sahne</item>
+      <item>2 Knoblauchzehen</item>
+      <item>Muskat</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln schälen und dünn hobeln.</step>
+      <step nr="2">Mit Knoblauch, Salz, Pfeffer und Muskat würzen.</step>
+      <step nr="3">In eine Form schichten.</step>
+      <step nr="4">Mit Sahne übergießen.</step>
+      <step nr="5">60 Minuten bei 180 °C backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 60 Minuten</item>
+      <item>Gesamt: ca. 80 Minuten</item>
+    </timing>
+    <tips>
+      <item>Festkochende Kartoffeln halten besser ihre Form.</item>
+      <item>10 Minuten ruhen lassen vor dem Servieren.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Gratin Dauphinois</name>
+      <persons>4 osoby</persons>
+      <category>Dodatki / Dania z piekarnika</category>
+      <intro>Ziemniaczany gratin z Dauphiné – cienko pokrojone, zalane śmietanką i pieczone powoli. Kremowe, sycące i idealne jako dodatek do pieczeni.</intro>
+      <ingredients>
+        <item>1,2 kg ziemniaków</item>
+        <item>400 ml śmietanki</item>
+        <item>2 ząbki czosnku</item>
+        <item>gałka muszkatołowa</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać i cienko pokroić ziemniaki.</step>
+        <step nr="2">Doprawić czosnkiem, solą, pieprzem i gałką.</step>
+        <step nr="3">Ułożyć warstwami w naczyniu.</step>
+        <step nr="4">Zalać śmietanką.</step>
+        <step nr="5">Piec 60 minut w 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Pieczenie: ok. 60 minut</item>
+        <item>Razem: ok. 80 minut</item>
+      </timing>
+      <tips>
+        <item>Ziemniaki sałatkowe lepiej trzymają kształt.</item>
+        <item>Odczekać 10 minut przed podaniem.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Gratin Dauphinois</name>
+      <persons>4 people</persons>
+      <category>Side dishes / Oven dishes</category>
+      <intro>Potato gratin from the Dauphiné – thinly sliced, covered with cream and baked slowly. Creamy, hearty and the perfect side for roasts or braises.</intro>
+      <ingredients>
+        <item>1.2 kg potatoes</item>
+        <item>400 ml cream</item>
+        <item>2 garlic cloves</item>
+        <item>nutmeg</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Peel and slice the potatoes thinly.</step>
+        <step nr="2">Season with garlic, salt, pepper and nutmeg.</step>
+        <step nr="3">Layer in a baking dish.</step>
+        <step nr="4">Pour over the cream.</step>
+        <step nr="5">Bake for 60 minutes at 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Baking time: approx. 60 minutes</item>
+        <item>Total: approx. 80 minutes</item>
+      </timing>
+      <tips>
+        <item>Waxy potatoes hold their shape better.</item>
+        <item>Rest for 10 minutes before serving.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="344">
+    <name>Croque Monsieur</name>
+    <intro lang="de">Der Croque Monsieur ist der Inbegriff eines französischen Bistro-Snacks. Knuspriges Toastbrot, Schinken und geschmolzener Käse ergeben ein einfaches, aber unglaublich gutes Gericht.</intro>
+    <persons>2–3 Personen</persons>
+    <category>Schnelle Feierabendküche / Ofengerichte</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Pariser Bistro-Küche</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_344.png" alt="Croque Monsieur" />
+    <imagePromptEn>Create an ultra realistic food photography image of croque monsieur – gratinated sandwich with ham and melted cheese, golden béchamel crust. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>8 Scheiben Toastbrot</item>
+      <item>4 Scheiben Kochschinken</item>
+      <item>200 g Gruyère oder Emmentaler</item>
+      <item>40 g Butter</item>
+      <item>20 g Mehl</item>
+      <item>250 ml Milch</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Muskat</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Butter schmelzen.</step>
+      <step nr="2">Mehl einrühren.</step>
+      <step nr="3">Milch zugeben und Béchamel herstellen.</step>
+      <step nr="4">Mit Salz, Pfeffer und Muskat würzen.</step>
+      <step nr="5">Toast mit Schinken und Käse belegen.</step>
+      <step nr="6">Zusammenklappen.</step>
+      <step nr="7">Mit Béchamel bestreichen.</step>
+      <step nr="8">Mit Käse bestreuen.</step>
+      <step nr="9">Bei 200 °C ca. 15 Minuten überbacken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit kleinem Salat als leichtes Mittagessen servieren.</item>
+      <item>Gruyère gibt mehr Würze als Emmentaler.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Croque Monsieur</name>
+      <persons>2–3 osoby</persons>
+      <category>Szybka kuchnia na wieczór / Dania z piekarnika</category>
+      <intro>Croque Monsieur to kwintesencja francuskiej przekąski bistro. Chrupiące tosty, szynka i roztopiony ser tworzą proste, ale niezwykle smaczne danie.</intro>
+      <ingredients>
+        <item>8 kromek tostowego</item>
+        <item>4 plastry szynki</item>
+        <item>200 g Gruyère lub Emmentaler</item>
+        <item>40 g masła</item>
+        <item>20 g mąki</item>
+        <item>250 ml mleka</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>gałka muszkatołowa</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Roztopić masło.</step>
+        <step nr="2">Wmieszać mąkę.</step>
+        <step nr="3">Dolać mleko i przygotować beszamel.</step>
+        <step nr="4">Doprawić solą, pieprzem i gałką.</step>
+        <step nr="5">Tosty przełożyć szynką i serem.</step>
+        <step nr="6">Złożyć na pół.</step>
+        <step nr="7">Posmarować beszamelem.</step>
+        <step nr="8">Posypać serem.</step>
+        <step nr="9">Zapiekać ok. 15 minut w 200 °C.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Pieczenie: ok. 15 minut</item>
+        <item>Razem: ok. 30 minut</item>
+      </timing>
+      <tips>
+        <item>Podawać z małą sałatką jako lekki lunch.</item>
+        <item>Gruyère daje więcej charakteru niż Emmentaler.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Croque Monsieur</name>
+      <persons>2–3 people</persons>
+      <category>Quick weeknight cooking / Oven dishes</category>
+      <intro>The croque monsieur is the quintessential French bistro snack. Crisp toast, ham and melted cheese make a simple but incredibly good dish.</intro>
+      <ingredients>
+        <item>8 slices sandwich bread</item>
+        <item>4 slices cooked ham</item>
+        <item>200 g Gruyère or Emmental</item>
+        <item>40 g butter</item>
+        <item>20 g flour</item>
+        <item>250 ml milk</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>nutmeg</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Melt the butter.</step>
+        <step nr="2">Stir in the flour.</step>
+        <step nr="3">Add the milk and make a béchamel.</step>
+        <step nr="4">Season with salt, pepper and nutmeg.</step>
+        <step nr="5">Top the toast with ham and cheese.</step>
+        <step nr="6">Fold together.</step>
+        <step nr="7">Spread with béchamel.</step>
+        <step nr="8">Sprinkle with cheese.</step>
+        <step nr="9">Gratin for about 15 minutes at 200 °C.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Baking time: approx. 15 minutes</item>
+        <item>Total: approx. 30 minutes</item>
+      </timing>
+      <tips>
+        <item>Serve with a small salad for a light lunch.</item>
+        <item>Gruyère adds more flavour than Emmental.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="345">
+    <name>Tartiflette</name>
+    <intro lang="de">Aus den französischen Alpen: Kartoffeln, Speck und Reblochon in cremiger Sahne – deftig, wärmend und perfekt für kalte Tage.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Savoyen</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_345.png" alt="Tartiflette" />
+    <imagePromptEn>Create an ultra realistic food photography image of tartiflette – potato bake with bacon lardons and melted Reblochon cheese. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1 kg Kartoffeln</item>
+      <item>200 g Speckwürfel</item>
+      <item>2 Zwiebeln</item>
+      <item>250 ml Sahne</item>
+      <item>250 g Reblochon oder Camembert</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln vorkochen.</step>
+      <step nr="2">Zwiebeln und Speck anbraten.</step>
+      <step nr="3">Kartoffeln in Scheiben schneiden.</step>
+      <step nr="4">Alles schichten.</step>
+      <step nr="5">Sahne angießen.</step>
+      <step nr="6">Käse darauf verteilen.</step>
+      <step nr="7">30 Minuten bei 180 °C backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 25 Minuten</item>
+      <item>Backzeit: ca. 30 Minuten</item>
+      <item>Gesamt: ca. 55 Minuten</item>
+    </timing>
+    <tips>
+      <item>Reblochon schmeckt authentischer als Camembert.</item>
+      <item>Mit grünem Salat servieren.</item>
+    </tips>
+    <rating>9,2/10</rating>
+    <translation lang="pl">
+      <name>Tartiflette</name>
+      <persons>4 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <intro>Z francuskich Alp: ziemniaki, boczek i Reblochon w kremowej śmietance – sycące, rozgrzewające i idealne na chłodne dni.</intro>
+      <ingredients>
+        <item>1 kg ziemniaków</item>
+        <item>200 g kostek boczku</item>
+        <item>2 cebule</item>
+        <item>250 ml śmietanki</item>
+        <item>250 g Reblochon lub Camembert</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ugotować ziemniaki w mundurkach.</step>
+        <step nr="2">Podsmażyć cebulę i boczek.</step>
+        <step nr="3">Pokroić ziemniaki w plastry.</step>
+        <step nr="4">Ułożyć warstwami.</step>
+        <step nr="5">Zalać śmietanką.</step>
+        <step nr="6">Rozłożyć ser na wierzchu.</step>
+        <step nr="7">Piec 30 minut w 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 25 minut</item>
+        <item>Pieczenie: ok. 30 minut</item>
+        <item>Razem: ok. 55 minut</item>
+      </timing>
+      <tips>
+        <item>Reblochon smakuje bardziej autentycznie niż Camembert.</item>
+        <item>Podawać z zieloną sałatką.</item>
+      </tips>
+      <rating>9,2/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Tartiflette</name>
+      <persons>4 people</persons>
+      <category>Oven dishes</category>
+      <intro>From the French Alps: potatoes, bacon and Reblochon in creamy cream – hearty, warming and perfect for cold days.</intro>
+      <ingredients>
+        <item>1 kg potatoes</item>
+        <item>200 g bacon lardons</item>
+        <item>2 onions</item>
+        <item>250 ml cream</item>
+        <item>250 g Reblochon or Camembert</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Parboil the potatoes.</step>
+        <step nr="2">Fry the onions and bacon.</step>
+        <step nr="3">Slice the potatoes.</step>
+        <step nr="4">Layer everything in a dish.</step>
+        <step nr="5">Pour over the cream.</step>
+        <step nr="6">Spread the cheese on top.</step>
+        <step nr="7">Bake for 30 minutes at 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 25 minutes</item>
+        <item>Baking time: approx. 30 minutes</item>
+        <item>Total: approx. 55 minutes</item>
+      </timing>
+      <tips>
+        <item>Reblochon tastes more authentic than Camembert.</item>
+        <item>Serve with a green salad.</item>
+      </tips>
+      <rating>9.2/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="346">
+    <name>Crêpes Suzette</name>
+    <intro lang="de">Dünne Crêpes in butteriger Orangen-Zitronen-Sauce – ein klassisches französisches Dessert, das am Tisch flambiert oder warm serviert beeindruckt.</intro>
+    <persons>4 Personen</persons>
+    <category>Backen &amp; Süßes</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Französische Dessertküche</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_346.png" alt="Crêpes Suzette" />
+    <imagePromptEn>Create an ultra realistic food photography image of crêpes Suzette – folded crêpes in a glossy orange butter sauce with zest. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>250 ml Milch</item>
+      <item>125 g Mehl</item>
+      <item>2 Eier</item>
+      <item>30 g Butter</item>
+      <item>Für die Sauce: 2 Orangen</item>
+      <item>Für die Sauce: 1 Zitrone</item>
+      <item>Für die Sauce: 50 g Zucker</item>
+      <item>Für die Sauce: 40 g Butter</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Crêpe-Teig herstellen.</step>
+      <step nr="2">Dünne Crêpes ausbacken.</step>
+      <step nr="3">Orangensaft und Zitronensaft einkochen.</step>
+      <step nr="4">Zucker karamellisieren.</step>
+      <step nr="5">Butter einarbeiten.</step>
+      <step nr="6">Crêpes darin schwenken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Crêpes dünn halten – sie werden in der Sauce noch weicher.</item>
+      <item>Optional mit Grand Marnier flambieren.</item>
+    </tips>
+    <rating>8,8/10</rating>
+    <translation lang="pl">
+      <name>Crêpes Suzette</name>
+      <persons>4 osoby</persons>
+      <category>Wypieki i słodkości</category>
+      <intro>Cienkie naleśniki w maślanej sosie pomarańczowo-cytrynowej – klasyczny francuski deser, który robi wrażenie podany na ciepło przy stole.</intro>
+      <ingredients>
+        <item>250 ml mleka</item>
+        <item>125 g mąki</item>
+        <item>2 jajka</item>
+        <item>30 g masła</item>
+        <item>Do sosu: 2 pomarańcze</item>
+        <item>Do sosu: 1 cytryna</item>
+        <item>Do sosu: 50 g cukru</item>
+        <item>Do sosu: 40 g masła</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować ciasto na naleśniki.</step>
+        <step nr="2">Upiec cienkie crêpes.</step>
+        <step nr="3">Redukować sok z pomarańczy i cytryny.</step>
+        <step nr="4">Skarmelizować cukier.</step>
+        <step nr="5">Wmiesać masło.</step>
+        <step nr="6">Przewracać naleśniki w sosie.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Czas gotowania: ok. 15 minut</item>
+        <item>Razem: ok. 35 minut</item>
+      </timing>
+      <tips>
+        <item>Naleśniki robić cienkie – w sosie jeszcze zmiękną.</item>
+        <item>Opcjonalnie flambować Grand Marnier.</item>
+      </tips>
+      <rating>8,8/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Crêpes Suzette</name>
+      <persons>4 people</persons>
+      <category>Baking &amp; sweets</category>
+      <intro>Thin crêpes in a buttery orange-lemon sauce – a classic French dessert that impresses served warm at the table.</intro>
+      <ingredients>
+        <item>250 ml milk</item>
+        <item>125 g flour</item>
+        <item>2 eggs</item>
+        <item>30 g butter</item>
+        <item>For the sauce: 2 oranges</item>
+        <item>For the sauce: 1 lemon</item>
+        <item>For the sauce: 50 g sugar</item>
+        <item>For the sauce: 40 g butter</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Make the crêpe batter.</step>
+        <step nr="2">Cook thin crêpes.</step>
+        <step nr="3">Reduce the orange and lemon juice.</step>
+        <step nr="4">Caramelise the sugar.</step>
+        <step nr="5">Work in the butter.</step>
+        <step nr="6">Toss the crêpes in the sauce.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Cooking time: approx. 15 minutes</item>
+        <item>Total: approx. 35 minutes</item>
+      </timing>
+      <tips>
+        <item>Keep the crêpes thin – they soften further in the sauce.</item>
+        <item>Optionally flambé with Grand Marnier.</item>
+      </tips>
+      <rating>8.8/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="347">
+    <name>Flammkuchen Elsässer Art</name>
+    <intro lang="de">Dünner knuspriger Teig mit Crème fraîche, Speck und Zwiebeln – der elsässische Klassiker aus dem Ofen, schnell gemacht und ideal zum Teilen.</intro>
+    <persons>4 Personen</persons>
+    <category>Pizza &amp; Basics</category>
+    <origin>
+      <country>Frankreich</country>
+      <region>Elsass</region>
+      <worldCategory>Frankreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_347.png" alt="Flammkuchen Elsässer Art" />
+    <imagePromptEn>Create an ultra realistic food photography image of Flammkuchen Alsatian style – thin crispy flatbread with crème fraîche, bacon and caramelized onions. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>250 g Mehl</item>
+      <item>125 ml Wasser</item>
+      <item>2 EL Öl</item>
+      <item>Für den Belag: 200 g Crème fraîche</item>
+      <item>Für den Belag: 150 g Speckwürfel</item>
+      <item>Für den Belag: 2 Zwiebeln</item>
+      <item>Für den Belag: Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Dünnen Teig herstellen.</step>
+      <step nr="2">Crème fraîche verstreichen.</step>
+      <step nr="3">Speck und Zwiebeln verteilen.</step>
+      <step nr="4">Bei 250 °C ca. 10–12 Minuten backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 10–12 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Ofen so heiß wie möglich vorheizen.</item>
+      <item>Zwiebeln in feine Ringe schneiden.</item>
+    </tips>
+    <rating>9,3/10</rating>
+    <translation lang="pl">
+      <name>Flammkuchen po alzacku</name>
+      <persons>4 osoby</persons>
+      <category>Pizza i podstawy</category>
+      <intro>Cienkie chrupiące ciasto z crème fraîche, boczkiem i cebulą – alzacki klasyk z piekarnika, szybki i idealny do dzielenia.</intro>
+      <ingredients>
+        <item>250 g mąki</item>
+        <item>125 ml wody</item>
+        <item>2 łyżki oleju</item>
+        <item>Do wierzchu: 200 g crème fraîche</item>
+        <item>Do wierzchu: 150 g kostek boczku</item>
+        <item>Do wierzchu: 2 cebule</item>
+        <item>Do wierzchu: pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować cienkie ciasto.</step>
+        <step nr="2">Posmarować crème fraîche.</step>
+        <step nr="3">Rozłożyć boczek i cebulę.</step>
+        <step nr="4">Piec ok. 10–12 minut w 250 °C.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Pieczenie: ok. 10–12 minut</item>
+        <item>Razem: ok. 35 minut</item>
+      </timing>
+      <tips>
+        <item>Rozgrzać piekarnik jak najmocniej.</item>
+        <item>Cebulę pokroić w cienkie plastry.</item>
+      </tips>
+      <rating>9,3/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Flammkuchen Alsatian style</name>
+      <persons>4 people</persons>
+      <category>Pizza &amp; basics</category>
+      <intro>Thin crisp dough with crème fraîche, bacon and onions – the Alsatian oven classic, quick to make and perfect for sharing.</intro>
+      <ingredients>
+        <item>250 g flour</item>
+        <item>125 ml water</item>
+        <item>2 tbsp oil</item>
+        <item>For the topping: 200 g crème fraîche</item>
+        <item>For the topping: 150 g bacon lardons</item>
+        <item>For the topping: 2 onions</item>
+        <item>For the topping: pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Make a thin dough.</step>
+        <step nr="2">Spread with crème fraîche.</step>
+        <step nr="3">Scatter bacon and onions.</step>
+        <step nr="4">Bake for about 10–12 minutes at 250 °C.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Baking time: approx. 10–12 minutes</item>
+        <item>Total: approx. 35 minutes</item>
+      </timing>
+      <tips>
+        <item>Preheat the oven as hot as possible.</item>
+        <item>Slice the onions into fine rings.</item>
+      </tips>
+      <rating>9.3/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="348">
+    <name>Tiroler Gröstl</name>
+    <intro lang="de">Resteverwertung deluxe aus Tirol: knusprige Kartoffelscheiben, Schweinebraten und ein Spiegelei obendrauf – deftig, schnell und typisch alpine Hausmannskost.</intro>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <origin>
+      <country>Österreich</country>
+      <region>Tirol</region>
+      <worldCategory>Österreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_348.png" alt="Tiroler Gröstl" />
+    <imagePromptEn>Create an ultra realistic food photography image of Tiroler Gröstl – crispy pan-fried potato slices with roast pork and a sunny-side-up egg. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>800 g gekochte Kartoffeln</item>
+      <item>400 g Schweinebratenreste</item>
+      <item>2 Zwiebeln</item>
+      <item>4 Eier</item>
+      <item>Butterschmalz</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Majoran</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln in Scheiben schneiden.</step>
+      <step nr="2">Zwiebeln anbraten.</step>
+      <step nr="3">Fleisch zugeben.</step>
+      <step nr="4">Kartoffeln knusprig braten.</step>
+      <step nr="5">Mit Majoran würzen.</step>
+      <step nr="6">Mit Spiegelei servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 20 Minuten</item>
+      <item>Gesamt: ca. 35 Minuten</item>
+    </timing>
+    <tips>
+      <item>Gekochte Kartoffeln vom Vortag eignen sich am besten.</item>
+      <item>Butterschmalz gibt mehr Aroma als Öl.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Tiroler Gröstl</name>
+      <persons>4 osoby</persons>
+      <category>Dania z patelni</category>
+      <intro>Tyrolska klasyka z resztek: chrupiące plastry ziemniaków, pieczeń wieprzowa i jajko sadzone na wierzchu – sycące, szybkie i typowo alpejskie.</intro>
+      <ingredients>
+        <item>800 g ugotowanych ziemniaków</item>
+        <item>400 g resztek pieczeni wieprzowej</item>
+        <item>2 cebule</item>
+        <item>4 jajka</item>
+        <item>smalec</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>majeranek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić ziemniaki w plastry.</step>
+        <step nr="2">Podsmażyć cebulę.</step>
+        <step nr="3">Dodać mięso.</step>
+        <step nr="4">Smażyć ziemniaki na chrupko.</step>
+        <step nr="5">Doprawić majerankiem.</step>
+        <step nr="6">Podawać z jajkiem sadzonym.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 20 minut</item>
+        <item>Razem: ok. 35 minut</item>
+      </timing>
+      <tips>
+        <item>Najlepiej użyć ziemniaków ugotowanych dzień wcześniej.</item>
+        <item>Smalec daje więcej aromatu niż olej.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Tyrolean Gröstl</name>
+      <persons>4 people</persons>
+      <category>Pan dishes</category>
+      <intro>Tyrolean leftover deluxe: crisp potato slices, roast pork and a fried egg on top – hearty, quick and classic Alpine home cooking.</intro>
+      <ingredients>
+        <item>800 g boiled potatoes</item>
+        <item>400 g leftover roast pork</item>
+        <item>2 onions</item>
+        <item>4 eggs</item>
+        <item>clarified butter</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>marjoram</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Slice the potatoes.</step>
+        <step nr="2">Fry the onions.</step>
+        <step nr="3">Add the meat.</step>
+        <step nr="4">Fry the potatoes until crisp.</step>
+        <step nr="5">Season with marjoram.</step>
+        <step nr="6">Serve with a fried egg.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 20 minutes</item>
+        <item>Total: approx. 35 minutes</item>
+      </timing>
+      <tips>
+        <item>Potatoes boiled the day before work best.</item>
+        <item>Clarified butter adds more flavour than oil.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="349">
+    <name>Backhendl</name>
+    <intro lang="de">Wiener Klassiker: paniertes Hähnchen goldbraun ausgebacken – außen knusprig, innen saftig. Passt zu Kartoffelsalat oder frischem Salat.</intro>
+    <persons>4 Personen</persons>
+    <category>Fleischgerichte</category>
+    <origin>
+      <country>Österreich</country>
+      <region>Wien</region>
+      <worldCategory>Österreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_349.png" alt="Backhendl" />
+    <imagePromptEn>Create an ultra realistic food photography image of Backhendl – crispy golden breaded fried chicken pieces on a wooden board. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1,2 kg Hähnchenteile</item>
+      <item>2 Eier</item>
+      <item>Mehl</item>
+      <item>Paniermehl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Öl zum Ausbacken</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen würzen.</step>
+      <step nr="2">Mehlieren.</step>
+      <step nr="3">Durch Ei ziehen.</step>
+      <step nr="4">Panieren.</step>
+      <step nr="5">Goldbraun ausbacken.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Garzeit: ca. 25 Minuten</item>
+      <item>Gesamt: ca. 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Öl auf ca. 170 °C erhitzen – nicht zu heiß.</item>
+      <item>Auf Küchenpapier abtropfen lassen.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Backhendl</name>
+      <persons>4 osoby</persons>
+      <category>Dania mięsne</category>
+      <intro>Wiedeński klasyk: panierowany kurczak smażony na złoto – chrupiący na zewnątrz, soczysty w środku. Pasuje do sałatki ziemniaczanej lub świeżej sałaty.</intro>
+      <ingredients>
+        <item>1,2 kg części kurczaka</item>
+        <item>2 jajka</item>
+        <item>mąka</item>
+        <item>bułka tarta</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>olej do smażenia</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doprawić kurczaka.</step>
+        <step nr="2">Obtoczyć w mące.</step>
+        <step nr="3">Przeciągnąć przez jajko.</step>
+        <step nr="4">Obtoczyć w bułce tartej.</step>
+        <step nr="5">Smażyć na złoto.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Czas gotowania: ok. 25 minut</item>
+        <item>Razem: ok. 45 minut</item>
+      </timing>
+      <tips>
+        <item>Rozgrzać olej do ok. 170 °C – nie za gorąco.</item>
+        <item>Odsączyć na papierze kuchennym.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Backhendl</name>
+      <persons>4 people</persons>
+      <category>Meat dishes</category>
+      <intro>Viennese classic: breaded chicken fried golden brown – crisp outside, juicy inside. Great with potato salad or a fresh green salad.</intro>
+      <ingredients>
+        <item>1.2 kg chicken pieces</item>
+        <item>2 eggs</item>
+        <item>flour</item>
+        <item>breadcrumbs</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>oil for frying</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Season the chicken.</step>
+        <step nr="2">Coat in flour.</step>
+        <step nr="3">Dip in egg.</step>
+        <step nr="4">Coat in breadcrumbs.</step>
+        <step nr="5">Fry until golden brown.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Cooking time: approx. 25 minutes</item>
+        <item>Total: approx. 45 minutes</item>
+      </timing>
+      <tips>
+        <item>Heat the oil to about 170 °C – not too hot.</item>
+        <item>Drain on kitchen paper.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="350">
+    <name>Kasnocken</name>
+    <intro lang="de">Alpine Käsespätzle mit Röstzwiebeln – cremig, deftig und einer der beliebtesten Hüttenklassiker Österreichs.</intro>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <origin>
+      <country>Österreich</country>
+      <region>Alpenküche</region>
+      <worldCategory>Österreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_350.png" alt="Kasnocken" />
+    <imagePromptEn>Create an ultra realistic food photography image of Kasnocken – cheesy spätzle with melted mountain cheese and golden fried onions. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>300 g Spätzle</item>
+      <item>250 g Bergkäse</item>
+      <item>2 Zwiebeln</item>
+      <item>Butter</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebeln rösten.</step>
+      <step nr="2">Spätzle erhitzen.</step>
+      <step nr="3">Käse unterheben.</step>
+      <step nr="4">Mit Röstzwiebeln servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Bergkäse schmilzt besser als junger Gouda.</item>
+      <item>In der Pfanne servieren – bleibt länger warm.</item>
+    </tips>
+    <rating>9,1/10</rating>
+    <translation lang="pl">
+      <name>Kasnocken</name>
+      <persons>4 osoby</persons>
+      <category>Dania z patelni</category>
+      <intro>Alpejskie spätzle z serem i cebulą prażoną – kremowe, sycące i jeden z najpopularniejszych klasyków austriackich schronisk.</intro>
+      <ingredients>
+        <item>300 g spätzle</item>
+        <item>250 g sera alpejskiego</item>
+        <item>2 cebule</item>
+        <item>masło</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prażyć cebulę.</step>
+        <step nr="2">Podgrzać spätzle.</step>
+        <step nr="3">Wmiesać ser.</step>
+        <step nr="4">Podawać z prażoną cebulą.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Czas gotowania: ok. 15 minut</item>
+        <item>Razem: ok. 25 minut</item>
+      </timing>
+      <tips>
+        <item>Ser alpejski topi się lepiej niż młody Gouda.</item>
+        <item>Podawać w patelni – dłużej utrzymuje ciepło.</item>
+      </tips>
+      <rating>9,1/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Kasnocken</name>
+      <persons>4 people</persons>
+      <category>Pan dishes</category>
+      <intro>Alpine cheese spätzle with fried onions – creamy, hearty and one of Austria's most popular mountain-hut classics.</intro>
+      <ingredients>
+        <item>300 g spätzle</item>
+        <item>250 g mountain cheese</item>
+        <item>2 onions</item>
+        <item>butter</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Fry the onions until golden.</step>
+        <step nr="2">Heat the spätzle.</step>
+        <step nr="3">Fold in the cheese.</step>
+        <step nr="4">Serve with the fried onions.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Cooking time: approx. 15 minutes</item>
+        <item>Total: approx. 25 minutes</item>
+      </timing>
+      <tips>
+        <item>Mountain cheese melts better than young Gouda.</item>
+        <item>Serve in the pan – stays warm longer.</item>
+      </tips>
+      <rating>9.1/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="351">
+    <name>Frittatensuppe</name>
+    <intro lang="de">Klare Rinderbrühe mit feinen Pfannkuchenstreifen – eine leichte, elegante Suppe aus der Wiener Küche, die als Vorspeise oder leichtes Mittagessen überzeugt.</intro>
+    <persons>4 Personen</persons>
+    <category>Suppen</category>
+    <origin>
+      <country>Österreich</country>
+      <region>Wiener Küche</region>
+      <worldCategory>Österreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_351.png" alt="Frittatensuppe" />
+    <imagePromptEn>Create an ultra realistic food photography image of Frittatensuppe – clear golden beef broth with fine pancake strips and fresh chives. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1 Liter Rinderbrühe</item>
+      <item>2 Pfannkuchen</item>
+      <item>Schnittlauch</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Pfannkuchen in Streifen schneiden.</step>
+      <step nr="2">Brühe erhitzen.</step>
+      <step nr="3">Streifen einlegen.</step>
+      <step nr="4">Mit Schnittlauch servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 5 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Pfannkuchen dünn backen – sie quellen in der Brühe leicht auf.</item>
+      <item>Selbstgemachte Brühe schmeckt am besten.</item>
+    </tips>
+    <rating>8,5/10</rating>
+    <translation lang="pl">
+      <name>Frittatensuppe</name>
+      <persons>4 osoby</persons>
+      <category>Zupy</category>
+      <intro>Czysty rosół wołowy z cienkimi paskami naleśników – lekka, elegancka zupa z kuchni wiedeńskiej, idealna na przystawkę lub lekki obiad.</intro>
+      <ingredients>
+        <item>1 l bulionu wołowego</item>
+        <item>2 naleśniki</item>
+        <item>szczypiorek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić naleśniki w paski.</step>
+        <step nr="2">Podgrzać bulion.</step>
+        <step nr="3">Wrzucić paski.</step>
+        <step nr="4">Podawać ze szczypiorkiem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Czas gotowania: ok. 5 minut</item>
+        <item>Razem: ok. 15 minut</item>
+      </timing>
+      <tips>
+        <item>Naleśniki upiec cienko – lekko puchną w bulionie.</item>
+        <item>Domowy bulion smakuje najlepiej.</item>
+      </tips>
+      <rating>8,5/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Frittatensuppe</name>
+      <persons>4 people</persons>
+      <category>Soups</category>
+      <intro>Clear beef broth with fine pancake strips – a light, elegant soup from Viennese cuisine, perfect as a starter or light lunch.</intro>
+      <ingredients>
+        <item>1 litre beef broth</item>
+        <item>2 pancakes</item>
+        <item>chives</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Cut the pancakes into strips.</step>
+        <step nr="2">Heat the broth.</step>
+        <step nr="3">Add the strips.</step>
+        <step nr="4">Serve with chives.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Cooking time: approx. 5 minutes</item>
+        <item>Total: approx. 15 minutes</item>
+      </timing>
+      <tips>
+        <item>Make the pancakes thin – they swell slightly in the broth.</item>
+        <item>Homemade broth tastes best.</item>
+      </tips>
+      <rating>8.5/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="352">
+    <name>Marillenknödel</name>
+    <intro lang="de">Süße Kartoffelknödel mit Marillenfüllung, in Butterbröseln gewendet – ein Wahrzeichen der Wachau und eines der beliebtesten österreichischen Desserts.</intro>
+    <persons>4 Personen</persons>
+    <category>Backen &amp; Süßes</category>
+    <origin>
+      <country>Österreich</country>
+      <region>Wachau</region>
+      <worldCategory>Österreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_352.png" alt="Marillenknödel" />
+    <imagePromptEn>Create an ultra realistic food photography image of Marillenknödel – apricot dumplings rolled in golden butter breadcrumbs with powdered sugar. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>500 g Kartoffelteig</item>
+      <item>8 Marillen</item>
+      <item>50 g Butter</item>
+      <item>80 g Semmelbrösel</item>
+      <item>Zucker</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Marillen umhüllen.</step>
+      <step nr="2">Knödel formen.</step>
+      <step nr="3">Kochen.</step>
+      <step nr="4">In Butterbröseln wenden.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 45 Minuten</item>
+    </timing>
+    <tips>
+      <item>Marillen halbieren und Kern entfernen.</item>
+      <item>Mit Puderzucker und Zimt servieren.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Marillenknödel</name>
+      <persons>4 osoby</persons>
+      <category>Wypieki i słodkości</category>
+      <intro>Słodkie knedle ziemniaczane z morelami, obtoczone w bułce tartej na maśle – symbol Wachau i jeden z najpopularniejszych austriackich deserów.</intro>
+      <ingredients>
+        <item>500 g ciasta ziemniaczanego</item>
+        <item>8 moreli</item>
+        <item>50 g masła</item>
+        <item>80 g bułki tartej</item>
+        <item>cukier</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Owinąć morele ciastem.</step>
+        <step nr="2">Uformować knedle.</step>
+        <step nr="3">Gotować.</step>
+        <step nr="4">Obtoczyć w bułce na maśle.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 30 minut</item>
+        <item>Czas gotowania: ok. 15 minut</item>
+        <item>Razem: ok. 45 minut</item>
+      </timing>
+      <tips>
+        <item>Morele przekroić i usunąć pestki.</item>
+        <item>Podawać z cukrem pudrem i cynamonem.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Marillenknödel</name>
+      <persons>4 people</persons>
+      <category>Baking &amp; sweets</category>
+      <intro>Sweet potato dumplings filled with apricots, rolled in buttered breadcrumbs – a Wachau landmark and one of Austria's most beloved desserts.</intro>
+      <ingredients>
+        <item>500 g potato dough</item>
+        <item>8 apricots</item>
+        <item>50 g butter</item>
+        <item>80 g breadcrumbs</item>
+        <item>sugar</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wrap the apricots in dough.</step>
+        <step nr="2">Shape into dumplings.</step>
+        <step nr="3">Boil.</step>
+        <step nr="4">Roll in buttered breadcrumbs.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 30 minutes</item>
+        <item>Cooking time: approx. 15 minutes</item>
+        <item>Total: approx. 45 minutes</item>
+      </timing>
+      <tips>
+        <item>Halve the apricots and remove the stones.</item>
+        <item>Serve with icing sugar and cinnamon.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="353">
+    <name>Schweinsbraten mit Knödeln</name>
+    <intro lang="de">Saftiger Schweinsbraten aus der Schulter, langsam im Ofen geschmort – der österreichische Sonntagsklassiker, der mit Knödeln und Krautsalat perfekt abgerundet wird.</intro>
+    <persons>4 Personen</persons>
+    <category>Feiertagsessen</category>
+    <origin>
+      <country>Österreich</country>
+      <region>Österreichische Hausküche</region>
+      <worldCategory>Österreich</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_353.png" alt="Schweinsbraten mit Knödeln" />
+    <imagePromptEn>Create an ultra realistic food photography image of Schweinsbraten – slow-roasted pork shoulder with dark pan sauce and bread dumplings. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1,5 kg Schweineschulter</item>
+      <item>2 Zwiebeln</item>
+      <item>500 ml Brühe</item>
+      <item>Kümmel</item>
+      <item>Knoblauch</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Fleisch würzen.</step>
+      <step nr="2">Anbraten.</step>
+      <step nr="3">Mit Brühe in den Ofen.</step>
+      <step nr="4">2,5 Stunden schmoren.</step>
+      <step nr="5">Mit Knödeln servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Garzeit: ca. 150 Minuten</item>
+      <item>Gesamt: ca. 3 Stunden</item>
+    </timing>
+    <tips>
+      <item>Schmorbrühe als Soße servieren.</item>
+      <item>Fleisch vor dem Schmoren mit Kümmel und Knoblauch einreiben.</item>
+    </tips>
+    <rating>9,4/10</rating>
+    <translation lang="pl">
+      <name>Schweinsbraten mit Knödeln</name>
+      <persons>4 osoby</persons>
+      <category>Dania świąteczne</category>
+      <intro>Soczysta pieczeń wieprzowa z łopatki, duszona powoli w piekarniku – austriacki klasyk niedzielny, idealny z knedlami i surówką z kapusty.</intro>
+      <ingredients>
+        <item>1,5 kg łopatki wieprzowej</item>
+        <item>2 cebule</item>
+        <item>500 ml bulionu</item>
+        <item>kminek</item>
+        <item>czosnek</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doprawić mięso.</step>
+        <step nr="2">Obsmażyć.</step>
+        <step nr="3">Zalać bulionem i włożyć do piekarnika.</step>
+        <step nr="4">Dusić 2,5 godziny.</step>
+        <step nr="5">Podawać z knedlami.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 30 minut</item>
+        <item>Czas gotowania: ok. 150 minut</item>
+        <item>Razem: ok. 3 godziny</item>
+      </timing>
+      <tips>
+        <item>Sos z bulionu podawać do mięsa.</item>
+        <item>Przed duszeniem natrzeć kminkiem i czosnkiem.</item>
+      </tips>
+      <rating>9,4/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Roast pork with dumplings</name>
+      <persons>4 people</persons>
+      <category>Holiday dishes</category>
+      <intro>Juicy shoulder roast pork, slowly braised in the oven – the Austrian Sunday classic, perfect with dumplings and coleslaw.</intro>
+      <ingredients>
+        <item>1.5 kg pork shoulder</item>
+        <item>2 onions</item>
+        <item>500 ml broth</item>
+        <item>caraway</item>
+        <item>garlic</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Season the meat.</step>
+        <step nr="2">Sear on all sides.</step>
+        <step nr="3">Add broth and transfer to the oven.</step>
+        <step nr="4">Braise for 2.5 hours.</step>
+        <step nr="5">Serve with dumplings.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 30 minutes</item>
+        <item>Cooking time: approx. 150 minutes</item>
+        <item>Total: approx. 3 hours</item>
+      </timing>
+      <tips>
+        <item>Serve the braising liquid as a sauce.</item>
+        <item>Rub with caraway and garlic before braising.</item>
+      </tips>
+      <rating>9.4/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="354">
+    <name>Köttbullar mit Rahmsauce</name>
+    <intro lang="de">Köttbullar gehören zu den bekanntesten Gerichten Skandinaviens. Die kleinen Fleischbällchen werden mit einer cremigen Rahmsauce serviert und sind echtes Wohlfühlessen.</intro>
+    <persons>4 Personen</persons>
+    <category>Fleischgerichte / Pfannengerichte</category>
+    <origin>
+      <country>Schweden</country>
+      <region>Schwedische Küche</region>
+      <worldCategory>Skandinavien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_354.png" alt="Köttbullar mit Rahmsauce" />
+    <imagePromptEn>Create an ultra realistic food photography image of köttbullar with cream sauce – Swedish meatballs in a creamy gravy with lingonberries. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>600 g gemischtes Hackfleisch</item>
+      <item>1 Ei</item>
+      <item>1 kleine Zwiebel</item>
+      <item>50 g Paniermehl</item>
+      <item>100 ml Milch</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+      <item>Butter</item>
+      <item>Für die Sauce: 30 g Butter</item>
+      <item>Für die Sauce: 30 g Mehl</item>
+      <item>Für die Sauce: 300 ml Rinderfond</item>
+      <item>Für die Sauce: 200 ml Sahne</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Paniermehl in Milch einweichen.</step>
+      <step nr="2">Mit Hackfleisch, Ei und Zwiebel vermengen.</step>
+      <step nr="3">Kleine Bällchen formen.</step>
+      <step nr="4">In Butter goldbraun braten.</step>
+      <step nr="5">Für die Sauce Butter schmelzen.</step>
+      <step nr="6">Mehl einrühren.</step>
+      <step nr="7">Fond und Sahne angießen.</step>
+      <step nr="8">Köttbullar in der Sauce ziehen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 25 Minuten</item>
+      <item>Garzeit: ca. 25 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Preiselbeeren und Kartoffelpüree servieren.</item>
+      <item>Bällchen nicht zu groß formen – sie garen gleichmäßiger.</item>
+    </tips>
+    <rating>9,1/10</rating>
+    <translation lang="pl">
+      <name>Köttbullar w sosie śmietanowym</name>
+      <persons>4 osoby</persons>
+      <category>Dania mięsne / Dania z patelni</category>
+      <intro>Köttbullar to jedno z najbardziej znanych dań Skandynawii. Małe klopsiki podawane w kremowym sosie śmietanowym to prawdziwe comfort food.</intro>
+      <ingredients>
+        <item>600 g mieszanego mięsa mielonego</item>
+        <item>1 jajko</item>
+        <item>1 mała cebula</item>
+        <item>50 g bułki tartej</item>
+        <item>100 ml mleka</item>
+        <item>sól</item>
+        <item>pieprz</item>
+        <item>masło</item>
+        <item>Do sosu: 30 g masła</item>
+        <item>Do sosu: 30 g mąki</item>
+        <item>Do sosu: 300 ml bulionu wołowego</item>
+        <item>Do sosu: 200 ml śmietanki</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Namoczyć bułkę tartą w mleku.</step>
+        <step nr="2">Wymieszać z mięsem, jajkiem i cebulą.</step>
+        <step nr="3">Uformować małe kulki.</step>
+        <step nr="4">Smażyć na maśle na złoto.</step>
+        <step nr="5">Do sosu roztopić masło.</step>
+        <step nr="6">Wmiesać mąkę.</step>
+        <step nr="7">Dolać bulion i śmietankę.</step>
+        <step nr="8">Pozwolić klopsikom dusić się w sosie.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 25 minut</item>
+        <item>Czas gotowania: ok. 25 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Podawać z żurawiną i puree ziemniaczanym.</item>
+        <item>Nie robić kulek zbyt dużych – równomierniej się ugotują.</item>
+      </tips>
+      <rating>9,1/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Köttbullar with cream sauce</name>
+      <persons>4 people</persons>
+      <category>Meat dishes / Pan dishes</category>
+      <intro>Köttbullar are among Scandinavia's best-known dishes. The small meatballs served with a creamy sauce are true comfort food.</intro>
+      <ingredients>
+        <item>600 g mixed minced meat</item>
+        <item>1 egg</item>
+        <item>1 small onion</item>
+        <item>50 g breadcrumbs</item>
+        <item>100 ml milk</item>
+        <item>salt</item>
+        <item>pepper</item>
+        <item>butter</item>
+        <item>For the sauce: 30 g butter</item>
+        <item>For the sauce: 30 g flour</item>
+        <item>For the sauce: 300 ml beef stock</item>
+        <item>For the sauce: 200 ml cream</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Soak the breadcrumbs in milk.</step>
+        <step nr="2">Mix with the mince, egg and onion.</step>
+        <step nr="3">Shape into small balls.</step>
+        <step nr="4">Fry golden in butter.</step>
+        <step nr="5">For the sauce, melt the butter.</step>
+        <step nr="6">Stir in the flour.</step>
+        <step nr="7">Add stock and cream.</step>
+        <step nr="8">Let the meatballs simmer in the sauce.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 25 minutes</item>
+        <item>Cooking time: approx. 25 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Serve with lingonberries and mashed potatoes.</item>
+        <item>Don't make the balls too large – they cook more evenly.</item>
+      </tips>
+      <rating>9.1/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="355">
+    <name>Lachs mit Senf-Dill-Sauce</name>
+    <intro lang="de">Zart gegarter Lachs mit cremiger Senf-Dill-Sauce – ein schwedischer Klassiker, der in wenigen Minuten auf den Tisch kommt und elegant wirkt.</intro>
+    <persons>4 Personen</persons>
+    <category>Fisch &amp; Meeresfrüchte</category>
+    <origin>
+      <country>Schweden</country>
+      <region>Skandinavische Küche</region>
+      <worldCategory>Skandinavien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_355.png" alt="Lachs mit Senf-Dill-Sauce" />
+    <imagePromptEn>Create an ultra realistic food photography image of salmon fillet with creamy mustard-dill sauce and fresh dill. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>800 g Lachsfilet</item>
+      <item>2 EL Senf</item>
+      <item>200 ml Sahne</item>
+      <item>1 Bund Dill</item>
+      <item>1 EL Zitronensaft</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Lachs würzen.</step>
+      <step nr="2">Bei 180 °C ca. 20 Minuten garen.</step>
+      <step nr="3">Sahne, Senf und Dill verrühren.</step>
+      <step nr="4">Kurz erwärmen.</step>
+      <step nr="5">Über den Lachs geben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 20 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Sauce nicht kochen – sonst gerinnt die Sahne.</item>
+      <item>Mit neuen Kartoffeln servieren.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Łosoś w sosie musztardowo-koperkowym</name>
+      <persons>4 osoby</persons>
+      <category>Ryby i owoce morza</category>
+      <intro>Delikatnie pieczony łosoś w kremowym sosie musztardowo-koperkowym – szwedzki klasyk gotowy w kilka minut i wyglądający elegancko.</intro>
+      <ingredients>
+        <item>800 g filetu z łososia</item>
+        <item>2 łyżki musztardy</item>
+        <item>200 ml śmietanki</item>
+        <item>1 pęczek koperku</item>
+        <item>1 łyżka soku z cytryny</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doprawić łososia.</step>
+        <step nr="2">Piec ok. 20 minut w 180 °C.</step>
+        <step nr="3">Wymieszać śmietankę, musztardę i koperek.</step>
+        <step nr="4">Krótko podgrzać.</step>
+        <step nr="5">Polać łososia.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Czas gotowania: ok. 20 minut</item>
+        <item>Razem: ok. 30 minut</item>
+      </timing>
+      <tips>
+        <item>Nie gotować sosu – śmietanka może się zwarzyć.</item>
+        <item>Podawać z młodymi ziemniakami.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Salmon with mustard-dill sauce</name>
+      <persons>4 people</persons>
+      <category>Fish &amp; seafood</category>
+      <intro>Gently baked salmon with a creamy mustard-dill sauce – a Swedish classic on the table in minutes and elegantly simple.</intro>
+      <ingredients>
+        <item>800 g salmon fillet</item>
+        <item>2 tbsp mustard</item>
+        <item>200 ml cream</item>
+        <item>1 bunch dill</item>
+        <item>1 tbsp lemon juice</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Season the salmon.</step>
+        <step nr="2">Bake for about 20 minutes at 180 °C.</step>
+        <step nr="3">Whisk cream, mustard and dill.</step>
+        <step nr="4">Warm briefly.</step>
+        <step nr="5">Pour over the salmon.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Cooking time: approx. 20 minutes</item>
+        <item>Total: approx. 30 minutes</item>
+      </timing>
+      <tips>
+        <item>Don't boil the sauce – the cream may curdle.</item>
+        <item>Serve with new potatoes.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="356">
+    <name>Smørrebrød mit Garnelen</name>
+    <intro lang="de">Dänische Butterbrote mit Garnelen, Frischkäse und Dill – hübsch angerichtet, leicht und perfekt als Snack oder kleine Mahlzeit.</intro>
+    <persons>4 Personen</persons>
+    <category>Snacks &amp; Kleingerichte</category>
+    <origin>
+      <country>Dänemark</country>
+      <region>Dänische Küche</region>
+      <worldCategory>Skandinavien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_356.png" alt="Smørrebrød mit Garnelen" />
+    <imagePromptEn>Create an ultra realistic food photography image of smørrebrød with prawns – open-faced rye bread topped with prawns, cream cheese, dill and lemon. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>8 Scheiben Roggenbrot</item>
+      <item>300 g Garnelen</item>
+      <item>150 g Frischkäse</item>
+      <item>1 Zitrone</item>
+      <item>Dill</item>
+      <item>Salatblätter</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Brot mit Frischkäse bestreichen.</step>
+      <step nr="2">Salat auflegen.</step>
+      <step nr="3">Garnelen verteilen.</step>
+      <step nr="4">Mit Dill und Zitrone garnieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 15 Minuten</item>
+    </timing>
+    <tips>
+      <item>Garnelen kurz in Butter anbraten oder kalt mariniert servieren.</item>
+      <item>Roggenbrot nicht zu dick schneiden.</item>
+    </tips>
+    <rating>8,8/10</rating>
+    <translation lang="pl">
+      <name>Smørrebrød z krewetkami</name>
+      <persons>4 osoby</persons>
+      <category>Przekąski i małe dania</category>
+      <intro>Duńskie kanapki na żytnim chlebie z krewetkami, serkiem śmietankowym i koperkiem – ładnie podane, lekkie i idealne jako przekąska.</intro>
+      <ingredients>
+        <item>8 kromek chleba żytniego</item>
+        <item>300 g krewetek</item>
+        <item>150 g serka śmietankowego</item>
+        <item>1 cytryna</item>
+        <item>koperek</item>
+        <item>liście sałaty</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Posmarować chleb serkiem.</step>
+        <step nr="2">Położyć sałatę.</step>
+        <step nr="3">Rozłożyć krewetki.</step>
+        <step nr="4">Udekorować koperkiem i cytryną.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Razem: ok. 15 minut</item>
+      </timing>
+      <tips>
+        <item>Krewetki krótko podsmażyć na maśle lub podać na zimno w marymacie.</item>
+        <item>Chleb żytni nie za gruby.</item>
+      </tips>
+      <rating>8,8/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Smørrebrød with prawns</name>
+      <persons>4 people</persons>
+      <category>Snacks &amp; small dishes</category>
+      <intro>Danish open sandwiches with prawns, cream cheese and dill – prettily arranged, light and perfect as a snack or small meal.</intro>
+      <ingredients>
+        <item>8 slices rye bread</item>
+        <item>300 g prawns</item>
+        <item>150 g cream cheese</item>
+        <item>1 lemon</item>
+        <item>dill</item>
+        <item>lettuce leaves</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Spread the bread with cream cheese.</step>
+        <step nr="2">Add lettuce.</step>
+        <step nr="3">Arrange the prawns.</step>
+        <step nr="4">Garnish with dill and lemon.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Total: approx. 15 minutes</item>
+      </timing>
+      <tips>
+        <item>Briefly fry the prawns in butter or serve cold marinated.</item>
+        <item>Don't cut the rye bread too thick.</item>
+      </tips>
+      <rating>8.8/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="357">
+    <name>Dänischer Kartoffelauflauf</name>
+    <intro lang="de">Cremiger Kartoffelauflauf mit Sahne und Käse aus der dänischen Hausmannskost – deftig, wärmend und ideal als Beilage oder Hauptgericht.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte</category>
+    <origin>
+      <country>Dänemark</country>
+      <region>Hausmannskost</region>
+      <worldCategory>Skandinavien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_357.png" alt="Dänischer Kartoffelauflauf" />
+    <imagePromptEn>Create an ultra realistic food photography image of Danish potato bake – creamy layered potatoes with melted cheese and a golden top. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1,2 kg Kartoffeln</item>
+      <item>250 ml Sahne</item>
+      <item>150 g Käse</item>
+      <item>2 Zwiebeln</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kartoffeln hobeln.</step>
+      <step nr="2">Zwiebeln schneiden.</step>
+      <step nr="3">Schichten.</step>
+      <step nr="4">Sahne angießen.</step>
+      <step nr="5">Käse darüber.</step>
+      <step nr="6">50 Minuten bei 180 °C backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Backzeit: ca. 50 Minuten</item>
+      <item>Gesamt: ca. 70 Minuten</item>
+    </timing>
+    <tips>
+      <item>Festkochende Kartoffeln halten besser ihre Form.</item>
+      <item>10 Minuten ruhen lassen vor dem Servieren.</item>
+    </tips>
+    <rating>8,7/10</rating>
+    <translation lang="pl">
+      <name>Duński zapiekany placek ziemniaczany</name>
+      <persons>4 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <intro>Kremowy zapiekany placek ziemniaczany ze śmietanką i serem z duńskiej kuchni domowej – sycący, rozgrzewający i idealny jako dodatek lub danie główne.</intro>
+      <ingredients>
+        <item>1,2 kg ziemniaków</item>
+        <item>250 ml śmietanki</item>
+        <item>150 g sera</item>
+        <item>2 cebule</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić ziemniaki w cienkie plastry.</step>
+        <step nr="2">Pokroić cebulę.</step>
+        <step nr="3">Układać warstwami.</step>
+        <step nr="4">Zalać śmietanką.</step>
+        <step nr="5">Posypać serem.</step>
+        <step nr="6">Piec 50 minut w 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Pieczenie: ok. 50 minut</item>
+        <item>Razem: ok. 70 minut</item>
+      </timing>
+      <tips>
+        <item>Ziemniaki sałatkowe lepiej trzymają kształt.</item>
+        <item>Odczekać 10 minut przed podaniem.</item>
+      </tips>
+      <rating>8,7/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Danish potato bake</name>
+      <persons>4 people</persons>
+      <category>Oven dishes</category>
+      <intro>Creamy potato bake with cream and cheese from Danish home cooking – hearty, warming and ideal as a side or main dish.</intro>
+      <ingredients>
+        <item>1.2 kg potatoes</item>
+        <item>250 ml cream</item>
+        <item>150 g cheese</item>
+        <item>2 onions</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Slice the potatoes thinly.</step>
+        <step nr="2">Slice the onions.</step>
+        <step nr="3">Layer in a dish.</step>
+        <step nr="4">Pour over the cream.</step>
+        <step nr="5">Top with cheese.</step>
+        <step nr="6">Bake for 50 minutes at 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Baking time: approx. 50 minutes</item>
+        <item>Total: approx. 70 minutes</item>
+      </timing>
+      <tips>
+        <item>Waxy potatoes hold their shape better.</item>
+        <item>Rest for 10 minutes before serving.</item>
+      </tips>
+      <rating>8.7/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="358">
+    <name>Norwegische Fischsuppe</name>
+    <intro lang="de">Cremige Suppe mit Fisch, Garnelen und Gemüse – ein norwegischer Klassiker, der die reiche Küste des Landes auf den Teller bringt.</intro>
+    <persons>4 Personen</persons>
+    <category>Suppen</category>
+    <origin>
+      <country>Norwegen</country>
+      <region>Norwegische Küche</region>
+      <worldCategory>Skandinavien</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_358.png" alt="Norwegische Fischsuppe" />
+    <imagePromptEn>Create an ultra realistic food photography image of Norwegian fish soup – light creamy fish soup with prawns, fish pieces and fresh dill. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>500 g Fischfilet</item>
+      <item>200 g Garnelen</item>
+      <item>1 Liter Fischfond</item>
+      <item>200 ml Sahne</item>
+      <item>2 Möhren</item>
+      <item>1 Lauchstange</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse anschwitzen.</step>
+      <step nr="2">Fond zugeben.</step>
+      <step nr="3">15 Minuten köcheln.</step>
+      <step nr="4">Fisch und Garnelen einlegen.</step>
+      <step nr="5">Sahne zufügen.</step>
+      <step nr="6">Kurz ziehen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 25 Minuten</item>
+      <item>Gesamt: ca. 40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Fisch und Garnelen nicht zu lange kochen – sie werden zäh.</item>
+      <item>Mit frischem Dill garnieren.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Norweska zupa rybna</name>
+      <persons>4 osoby</persons>
+      <category>Zupy</category>
+      <intro>Kremowa zupa z rybą, krewetkami i warzywami – norweski klasyk, który przenosi bogactwo wybrzeża na talerz.</intro>
+      <ingredients>
+        <item>500 g filetu rybnego</item>
+        <item>200 g krewetek</item>
+        <item>1 l bulionu rybnego</item>
+        <item>200 ml śmietanki</item>
+        <item>2 marchewki</item>
+        <item>1 por</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Podsmażyć warzywa.</step>
+        <step nr="2">Dolać bulion.</step>
+        <step nr="3">Gotować 15 minut.</step>
+        <step nr="4">Dodać rybę i krewetki.</step>
+        <step nr="5">Wlać śmietankę.</step>
+        <step nr="6">Krótko odstawić.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 25 minut</item>
+        <item>Razem: ok. 40 minut</item>
+      </timing>
+      <tips>
+        <item>Nie gotować ryb i krewetek zbyt długo – staną się twarde.</item>
+        <item>Udekorować świeżym koperkiem.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Norwegian fish soup</name>
+      <persons>4 people</persons>
+      <category>Soups</category>
+      <intro>Creamy soup with fish, prawns and vegetables – a Norwegian classic that brings the richness of the coast to the plate.</intro>
+      <ingredients>
+        <item>500 g fish fillet</item>
+        <item>200 g prawns</item>
+        <item>1 litre fish stock</item>
+        <item>200 ml cream</item>
+        <item>2 carrots</item>
+        <item>1 leek</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Sweat the vegetables.</step>
+        <step nr="2">Add the stock.</step>
+        <step nr="3">Simmer for 15 minutes.</step>
+        <step nr="4">Add the fish and prawns.</step>
+        <step nr="5">Stir in the cream.</step>
+        <step nr="6">Rest briefly.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 25 minutes</item>
+        <item>Total: approx. 40 minutes</item>
+      </timing>
+      <tips>
+        <item>Don't cook fish and prawns too long – they become tough.</item>
+        <item>Garnish with fresh dill.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="359">
+    <name>Chili con Carne</name>
+    <intro lang="de">Deftiges Rinderhack mit Bohnen, Mais und Tomaten – ein Tex-Mex-Klassiker, der wärmt und sich hervorragend vorbereiten lässt.</intro>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Tex-Mex Küche</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_359.png" alt="Chili con Carne" />
+    <imagePromptEn>Create an ultra realistic food photography image of chili con carne – hearty spicy bean and beef stew with kidney beans and corn. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>600 g Rinderhack</item>
+      <item>2 Dosen Kidneybohnen</item>
+      <item>1 Dose Mais</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Knoblauchzehen</item>
+      <item>400 g Tomaten</item>
+      <item>Chilipulver</item>
+      <item>Kreuzkümmel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hackfleisch anbraten.</step>
+      <step nr="2">Zwiebeln zufügen.</step>
+      <step nr="3">Gewürze einarbeiten.</step>
+      <step nr="4">Tomaten zugeben.</step>
+      <step nr="5">Bohnen und Mais zufügen.</step>
+      <step nr="6">30 Minuten köcheln.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 35 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Am nächsten Tag schmeckt es oft noch besser.</item>
+      <item>Mit Reis, Tortilla-Chips oder Sauerrahm servieren.</item>
+    </tips>
+    <rating>9,2/10</rating>
+    <translation lang="pl">
+      <name>Chili con Carne</name>
+      <persons>4 osoby</persons>
+      <category>Dania z patelni</category>
+      <intro>Sycące mielone wołowina z fasolą, kukurydzą i pomidorami – klasyk Tex-Mex, który rozgrzewa i świetnie się przechowuje.</intro>
+      <ingredients>
+        <item>600 g mielonej wołowiny</item>
+        <item>2 puszki czerwonej fasoli</item>
+        <item>1 puszka kukurydzy</item>
+        <item>2 cebule</item>
+        <item>2 ząbki czosnku</item>
+        <item>400 g pomidorów</item>
+        <item>papryka chili w proszku</item>
+        <item>kminek</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obsmażyć mięso.</step>
+        <step nr="2">Dodać cebulę.</step>
+        <step nr="3">Wmiesać przyprawy.</step>
+        <step nr="4">Dodać pomidory.</step>
+        <step nr="5">Dodać fasolę i kukurydzę.</step>
+        <step nr="6">Gotować 30 minut.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 35 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Następnego dnia często smakuje jeszcze lepiej.</item>
+        <item>Podawać z ryżem, chipsami lub śmietaną.</item>
+      </tips>
+      <rating>9,2/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Chili con carne</name>
+      <persons>4 people</persons>
+      <category>Pan dishes</category>
+      <intro>Hearty minced beef with beans, corn and tomatoes – a Tex-Mex classic that warms you up and keeps well.</intro>
+      <ingredients>
+        <item>600 g minced beef</item>
+        <item>2 cans kidney beans</item>
+        <item>1 can sweetcorn</item>
+        <item>2 onions</item>
+        <item>2 garlic cloves</item>
+        <item>400 g tomatoes</item>
+        <item>chilli powder</item>
+        <item>cumin</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Brown the mince.</step>
+        <step nr="2">Add the onions.</step>
+        <step nr="3">Stir in the spices.</step>
+        <step nr="4">Add the tomatoes.</step>
+        <step nr="5">Add beans and corn.</step>
+        <step nr="6">Simmer for 30 minutes.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 35 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Often tastes even better the next day.</item>
+        <item>Serve with rice, tortilla chips or sour cream.</item>
+      </tips>
+      <rating>9.2/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="360">
+    <name>Carnitas Tacos</name>
+    <intro lang="de">Langsam geschmortes Schweinefleisch, knusprig angebraten und in warmen Tortillas serviert – authentische mexikanische Straßenküche zum Selbermachen.</intro>
+    <persons>4 Personen</persons>
+    <category>Fleischgerichte</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Mexikanische Küche</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_360.png" alt="Carnitas Tacos" />
+    <imagePromptEn>Create an ultra realistic food photography image of carnitas tacos – soft tortillas filled with crispy pulled pork, onion and fresh cilantro. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>1 kg Schweineschulter</item>
+      <item>8 Tortillas</item>
+      <item>2 Zwiebeln</item>
+      <item>1 Limette</item>
+      <item>Koriander</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Schweinefleisch schmoren.</step>
+      <step nr="2">Zerzupfen.</step>
+      <step nr="3">Kurz knusprig anbraten.</step>
+      <step nr="4">In Tortillas servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Garzeit: ca. 180 Minuten</item>
+      <item>Gesamt: ca. 3,5 Stunden</item>
+    </timing>
+    <tips>
+      <item>Mit Zwiebeln, Koriander und Limette toppen.</item>
+      <item>Reste eignen sich für Quesadillas.</item>
+    </tips>
+    <rating>9,3/10</rating>
+    <translation lang="pl">
+      <name>Carnitas Tacos</name>
+      <persons>4 osoby</persons>
+      <category>Dania mięsne</category>
+      <intro>Powoli duszona wieprzowina, chrupiąco podsmażona i podana w ciepłych tortillach – autentyczna meksykańska ulica kuchni w domu.</intro>
+      <ingredients>
+        <item>1 kg łopatki wieprzowej</item>
+        <item>8 tortill</item>
+        <item>2 cebule</item>
+        <item>1 limonka</item>
+        <item>kolendra</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dusić wieprzowinę.</step>
+        <step nr="2">Rozszyfrować widelcem.</step>
+        <step nr="3">Krótko podsmażyć na chrupko.</step>
+        <step nr="4">Podawać w tortillach.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Czas gotowania: ok. 180 minut</item>
+        <item>Razem: ok. 3,5 godziny</item>
+      </timing>
+      <tips>
+        <item>Podawać z cebulą, kolendrą i limonką.</item>
+        <item>Resztki nadają się na quesadille.</item>
+      </tips>
+      <rating>9,3/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Carnitas tacos</name>
+      <persons>4 people</persons>
+      <category>Meat dishes</category>
+      <intro>Slow-braised pork, crisped in a pan and served in warm tortillas – authentic Mexican street food to make at home.</intro>
+      <ingredients>
+        <item>1 kg pork shoulder</item>
+        <item>8 tortillas</item>
+        <item>2 onions</item>
+        <item>1 lime</item>
+        <item>coriander</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Braise the pork.</step>
+        <step nr="2">Shred with forks.</step>
+        <step nr="3">Crisp briefly in a hot pan.</step>
+        <step nr="4">Serve in tortillas.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Cooking time: approx. 180 minutes</item>
+        <item>Total: approx. 3.5 hours</item>
+      </timing>
+      <tips>
+        <item>Top with onion, coriander and lime.</item>
+        <item>Leftovers work well in quesadillas.</item>
+      </tips>
+      <rating>9.3/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="361">
+    <name>Chicken Tinga Tacos</name>
+    <intro lang="de">Zartes Hähnchen in würziger Chipotle-Tomatensauce – ein beliebtes Streetfood aus Mexiko, schnell gemacht und voller Aroma.</intro>
+    <persons>4 Personen</persons>
+    <category>Geflügelgerichte</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Mexikanische Küche</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_361.png" alt="Chicken Tinga Tacos" />
+    <imagePromptEn>Create an ultra realistic food photography image of chicken tinga tacos – tacos filled with shredded chicken in smoky chipotle tomato sauce. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>700 g Hähnchenbrust</item>
+      <item>400 g Tomaten</item>
+      <item>2 Zwiebeln</item>
+      <item>Chipotle-Chili</item>
+      <item>8 Tortillas</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen garen.</step>
+      <step nr="2">Zerzupfen.</step>
+      <step nr="3">Tomatensauce kochen.</step>
+      <step nr="4">Fleisch einarbeiten.</step>
+      <step nr="5">In Tortillas servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 35 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Chipotle nach Schärfewunsch dosieren.</item>
+      <item>Mit Sauerrahm und Avocado servieren.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Chicken Tinga Tacos</name>
+      <persons>4 osoby</persons>
+      <category>Dania z drobiu</category>
+      <intro>Delikatny kurczak w pikantnym sosie pomidorowym z chipotle – popularne meksykańskie street food, szybkie i pełne smaku.</intro>
+      <ingredients>
+        <item>700 g piersi z kurczaka</item>
+        <item>400 g pomidorów</item>
+        <item>2 cebule</item>
+        <item>chipotle</item>
+        <item>8 tortill</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ugotować kurczaka.</step>
+        <step nr="2">Rozszyfrować widelcem.</step>
+        <step nr="3">Ugotować sos pomidorowy.</step>
+        <step nr="4">Wmiesać mięso.</step>
+        <step nr="5">Podawać w tortillach.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 35 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Chipotle do smaku – od łagodnego do ostrego.</item>
+        <item>Podawać ze śmietaną i awokado.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Chicken tinga tacos</name>
+      <persons>4 people</persons>
+      <category>Poultry dishes</category>
+      <intro>Tender chicken in a spicy chipotle tomato sauce – popular Mexican street food, quick to make and full of flavour.</intro>
+      <ingredients>
+        <item>700 g chicken breast</item>
+        <item>400 g tomatoes</item>
+        <item>2 onions</item>
+        <item>chipotle chilli</item>
+        <item>8 tortillas</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Cook the chicken.</step>
+        <step nr="2">Shred with forks.</step>
+        <step nr="3">Make the tomato sauce.</step>
+        <step nr="4">Fold in the meat.</step>
+        <step nr="5">Serve in tortillas.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 35 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Adjust chipotle to taste.</item>
+        <item>Serve with sour cream and avocado.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="362">
+    <name>Enchiladas Rojas</name>
+    <intro lang="de">Gerollte Tortillas mit Hähnchen, in roter Tomatensauce und Käse überbacken – ein mexikanischer Ofenklassiker für die ganze Familie.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Mexikanische Küche</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_362.png" alt="Enchiladas Rojas" />
+    <imagePromptEn>Create an ultra realistic food photography image of enchiladas rojas – baked enchiladas in red tomato sauce topped with melted cheese. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>8 Tortillas</item>
+      <item>500 g Hähnchen</item>
+      <item>300 g Käse</item>
+      <item>400 g Tomatensauce</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Tortillas füllen.</step>
+      <step nr="2">Aufrollen.</step>
+      <step nr="3">Sauce darübergeben.</step>
+      <step nr="4">Käse darauf.</step>
+      <step nr="5">25 Minuten backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 25 Minuten</item>
+      <item>Backzeit: ca. 25 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Tortillas kurz anbraten – sie reißen weniger.</item>
+      <item>Mit Sauerrahm und Salat servieren.</item>
+    </tips>
+    <rating>9,1/10</rating>
+    <translation lang="pl">
+      <name>Enchiladas Rojas</name>
+      <persons>4 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <intro>Zawinięte tortille z kurczakiem, w czerwonym sosie pomidorowym i serze – meksykański klasyk z piekarnika dla całej rodziny.</intro>
+      <ingredients>
+        <item>8 tortill</item>
+        <item>500 g kurczaka</item>
+        <item>300 g sera</item>
+        <item>400 g sosu pomidorowego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Napełnić tortille.</step>
+        <step nr="2">Zwinąć.</step>
+        <step nr="3">Polać sosem.</step>
+        <step nr="4">Posypać serem.</step>
+        <step nr="5">Piec 25 minut.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 25 minut</item>
+        <item>Pieczenie: ok. 25 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Krótko podsmażyć tortille – mniej pękają.</item>
+        <item>Podawać ze śmietaną i sałatą.</item>
+      </tips>
+      <rating>9,1/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Enchiladas rojas</name>
+      <persons>4 people</persons>
+      <category>Oven dishes</category>
+      <intro>Rolled tortillas with chicken, baked in red tomato sauce and cheese – a Mexican oven classic for the whole family.</intro>
+      <ingredients>
+        <item>8 tortillas</item>
+        <item>500 g chicken</item>
+        <item>300 g cheese</item>
+        <item>400 g tomato sauce</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Fill the tortillas.</step>
+        <step nr="2">Roll up.</step>
+        <step nr="3">Pour over the sauce.</step>
+        <step nr="4">Top with cheese.</step>
+        <step nr="5">Bake for 25 minutes.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 25 minutes</item>
+        <item>Baking time: approx. 25 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Briefly toast the tortillas – they tear less.</item>
+        <item>Serve with sour cream and salad.</item>
+      </tips>
+      <rating>9.1/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="363">
+    <name>Quesadillas mit Hähnchen</name>
+    <intro lang="de">Gefüllte Tortillas mit Hähnchen und Käse, in der Pfanne goldbraun gebraten – schnell, deftig und perfekt für den Feierabend.</intro>
+    <persons>4 Personen</persons>
+    <category>Schnelle Feierabendküche</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Mexikanische Küche</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_363.png" alt="Quesadillas mit Hähnchen" />
+    <imagePromptEn>Create an ultra realistic food photography image of chicken quesadillas – golden crispy folded tortillas with melted cheese and chicken. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>8 Tortillas</item>
+      <item>400 g Hähnchen</item>
+      <item>250 g Käse</item>
+      <item>Paprika</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Tortillas belegen.</step>
+      <step nr="2">Zusammenklappen.</step>
+      <step nr="3">In Pfanne goldbraun braten.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Hähnchenreste eignen sich hervorragend.</item>
+      <item>Mit Salsa und Guacamole servieren.</item>
+    </tips>
+    <rating>8,8/10</rating>
+    <translation lang="pl">
+      <name>Quesadille z kurczakiem</name>
+      <persons>4 osoby</persons>
+      <category>Szybka kuchnia na wieczór</category>
+      <intro>Tortille z kurczakiem i serem, smażone na złoto na patelni – szybkie, sycące i idealne na wieczór.</intro>
+      <ingredients>
+        <item>8 tortill</item>
+        <item>400 g kurczaka</item>
+        <item>250 g sera</item>
+        <item>papryka</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Napełnić tortille.</step>
+        <step nr="2">Złożyć na pół.</step>
+        <step nr="3">Smażyć na patelni na złoto.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 15 minut</item>
+        <item>Razem: ok. 30 minut</item>
+      </timing>
+      <tips>
+        <item>Resztki kurczaka nadają się świetnie.</item>
+        <item>Podawać z salsą i guacamole.</item>
+      </tips>
+      <rating>8,8/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Chicken quesadillas</name>
+      <persons>4 people</persons>
+      <category>Quick weeknight cooking</category>
+      <intro>Tortillas filled with chicken and cheese, fried golden in a pan – quick, hearty and perfect for weeknights.</intro>
+      <ingredients>
+        <item>8 tortillas</item>
+        <item>400 g chicken</item>
+        <item>250 g cheese</item>
+        <item>bell pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Fill the tortillas.</step>
+        <step nr="2">Fold in half.</step>
+        <step nr="3">Fry golden in a pan.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 15 minutes</item>
+        <item>Total: approx. 30 minutes</item>
+      </timing>
+      <tips>
+        <item>Leftover chicken works perfectly.</item>
+        <item>Serve with salsa and guacamole.</item>
+      </tips>
+      <rating>8.8/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="364">
+    <name>Burrito Bowl</name>
+    <intro lang="de">Alles drin, nichts drumherum: Reis, Hähnchen, Bohnen, Mais und Avocado in einer Schüssel – der beliebte Tex-Mex-Trend zum Selberbauen.</intro>
+    <persons>4 Personen</persons>
+    <category>Bowls</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Tex-Mex Küche</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_364.png" alt="Burrito Bowl" />
+    <imagePromptEn>Create an ultra realistic food photography image of a burrito bowl – colourful bowl with rice, chicken, black beans, corn, tomato and avocado. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>Reis</item>
+      <item>Hähnchen</item>
+      <item>Mais</item>
+      <item>Bohnen</item>
+      <item>Tomaten</item>
+      <item>Avocado</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zutaten vorbereiten.</step>
+      <step nr="2">In Schüsseln anrichten.</step>
+      <step nr="3">Mit Limette servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 30 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Jeder kann seine Bowl selbst belegen.</item>
+      <item>Mit Salsa, Sauerrahm oder Koriander toppen.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Burrito Bowl</name>
+      <persons>4 osoby</persons>
+      <category>Bowls</category>
+      <intro>Wszystko w misce: ryż, kurczak, fasola, kukurydza i awokado – popularny trend Tex-Mex do samodzielnego składania.</intro>
+      <ingredients>
+        <item>ryż</item>
+        <item>kurczak</item>
+        <item>kukurydza</item>
+        <item>fasola</item>
+        <item>pomidory</item>
+        <item>awokado</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować składniki.</step>
+        <step nr="2">Ułożyć w miseczkach.</step>
+        <step nr="3">Podawać z limonką.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 30 minut</item>
+        <item>Razem: ok. 30 minut</item>
+      </timing>
+      <tips>
+        <item>Każdy może ułożyć swoją miskę.</item>
+        <item>Dodać salsę, śmietanę lub kolendrę.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Burrito bowl</name>
+      <persons>4 people</persons>
+      <category>Bowls</category>
+      <intro>Everything in one bowl: rice, chicken, beans, corn and avocado – the popular Tex-Mex trend to build yourself.</intro>
+      <ingredients>
+        <item>rice</item>
+        <item>chicken</item>
+        <item>sweetcorn</item>
+        <item>beans</item>
+        <item>tomatoes</item>
+        <item>avocado</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepare the ingredients.</step>
+        <step nr="2">Arrange in bowls.</step>
+        <step nr="3">Serve with lime.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 30 minutes</item>
+        <item>Total: approx. 30 minutes</item>
+      </timing>
+      <tips>
+        <item>Everyone can build their own bowl.</item>
+        <item>Top with salsa, sour cream or coriander.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="365">
+    <name>Pico de Gallo</name>
+    <intro lang="de">Frische mexikanische Salsa aus Tomaten, Zwiebel, Limette und Koriander – der perfekte Dip und Beilage zu Tacos und Tortilla-Chips.</intro>
+    <persons>4 Personen</persons>
+    <category>Beilagen</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Mexikanische Küche</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_365.png" alt="Pico de Gallo" />
+    <imagePromptEn>Create an ultra realistic food photography image of pico de gallo – fresh chunky tomato salsa with onion, cilantro and lime. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>5 Tomaten</item>
+      <item>1 Zwiebel</item>
+      <item>1 Limette</item>
+      <item>Koriander</item>
+      <item>Salz</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alles fein würfeln.</step>
+      <step nr="2">Vermengen.</step>
+      <step nr="3">15 Minuten ziehen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Ziehen: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Kerne der Tomaten entfernen – die Salsa wird weniger wässrig.</item>
+      <item>Am besten am selben Tag verbrauchen.</item>
+    </tips>
+    <rating>8,6/10</rating>
+    <translation lang="pl">
+      <name>Pico de Gallo</name>
+      <persons>4 osoby</persons>
+      <category>Dodatki</category>
+      <intro>Świeża meksykańska salsa z pomidorów, cebuli, limonki i kolendry – idealny dip i dodatek do tacos i chipsów.</intro>
+      <ingredients>
+        <item>5 pomidorów</item>
+        <item>1 cebula</item>
+        <item>1 limonka</item>
+        <item>kolendra</item>
+        <item>sól</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wszystko drobno pokroić w kostkę.</step>
+        <step nr="2">Wymieszać.</step>
+        <step nr="3">Odstawić na 15 minut.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Odczynanie: ok. 15 minut</item>
+        <item>Razem: ok. 30 minut</item>
+      </timing>
+      <tips>
+        <item>Usunąć nasiona pomidorów – salsa będzie mniej wodnista.</item>
+        <item>Najlepiej zużyć tego samego dnia.</item>
+      </tips>
+      <rating>8,6/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Pico de gallo</name>
+      <persons>4 people</persons>
+      <category>Side dishes</category>
+      <intro>Fresh Mexican salsa of tomatoes, onion, lime and coriander – the perfect dip and side for tacos and tortilla chips.</intro>
+      <ingredients>
+        <item>5 tomatoes</item>
+        <item>1 onion</item>
+        <item>1 lime</item>
+        <item>coriander</item>
+        <item>salt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dice everything finely.</step>
+        <step nr="2">Mix together.</step>
+        <step nr="3">Rest for 15 minutes.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Resting: approx. 15 minutes</item>
+        <item>Total: approx. 30 minutes</item>
+      </timing>
+      <tips>
+        <item>Remove tomato seeds – the salsa stays less watery.</item>
+        <item>Best used the same day.</item>
+      </tips>
+      <rating>8.6/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="366">
+    <name>Elote – Mexikanischer Grillmais</name>
+    <intro lang="de">Gegrillte Maiskolben mit Mayo, Käse und Chili – ein beliebtes mexikanisches Streetfood, das auf jeder Grillparty begeistert.</intro>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ</category>
+    <origin>
+      <country>Mexiko</country>
+      <region>Streetfood</region>
+      <worldCategory>Mexiko &amp; Lateinamerika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_366.png" alt="Elote – Mexikanischer Grillmais" />
+    <imagePromptEn>Create an ultra realistic food photography image of elote – Mexican grilled corn on the cob with mayo, cotija cheese and chili powder. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>4 Maiskolben</item>
+      <item>100 g Mayonnaise</item>
+      <item>50 g Käse</item>
+      <item>Chilipulver</item>
+      <item>Limette</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Mais grillen.</step>
+      <step nr="2">Mit Mayo bestreichen.</step>
+      <step nr="3">Käse und Chili darübergeben.</step>
+      <step nr="4">Mit Limette servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Grillzeit: ca. 15 Minuten</item>
+      <item>Gesamt: ca. 25 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mais auf dem Grill leicht anrösten.</item>
+      <item>Cotija-Käse ist authentisch – Feta geht als Ersatz.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Elote – Meksykańska kukurydza z grilla</name>
+      <persons>4 osoby</persons>
+      <category>Grill i BBQ</category>
+      <intro>Kolby kukurydzy z grilla z majonezem, serem i chili – popularne meksykańskie street food, które zachwyca na każdym grillu.</intro>
+      <ingredients>
+        <item>4 kolby kukurydzy</item>
+        <item>100 g majonezu</item>
+        <item>50 g sera</item>
+        <item>papryka chili w proszku</item>
+        <item>limonka</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Grillować kukurydzę.</step>
+        <step nr="2">Posmarować majonezem.</step>
+        <step nr="3">Posypać serem i chili.</step>
+        <step nr="4">Podawać z limonką.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Grill: ok. 15 minut</item>
+        <item>Razem: ok. 25 minut</item>
+      </timing>
+      <tips>
+        <item>Lekko przypiecz kukurydzę na grillu.</item>
+        <item>Cotija jest autentyczny – feta jako zamiennik.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Elote – Mexican grilled corn</name>
+      <persons>4 people</persons>
+      <category>Grill &amp; BBQ</category>
+      <intro>Grilled corn on the cob with mayo, cheese and chilli – popular Mexican street food that delights at any barbecue.</intro>
+      <ingredients>
+        <item>4 corn cobs</item>
+        <item>100 g mayonnaise</item>
+        <item>50 g cheese</item>
+        <item>chilli powder</item>
+        <item>lime</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Grill the corn.</step>
+        <step nr="2">Spread with mayo.</step>
+        <step nr="3">Top with cheese and chilli.</step>
+        <step nr="4">Serve with lime.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Grilling: approx. 15 minutes</item>
+        <item>Total: approx. 25 minutes</item>
+      </timing>
+      <tips>
+        <item>Char the corn lightly on the grill.</item>
+        <item>Cotija is authentic – feta works as a substitute.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="367">
+    <name>Bobotie</name>
+    <intro lang="de">Bobotie gilt als Nationalgericht Südafrikas. Würziges Hackfleisch trifft auf eine goldgelbe Eiermilch-Kruste und verbindet afrikanische, asiatische und europäische Einflüsse.</intro>
+    <persons>4 Personen</persons>
+    <category>Ofengerichte</category>
+    <origin>
+      <country>Südafrika</country>
+      <region>Kap-Malay-Küche</region>
+      <worldCategory>Afrika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_367.png" alt="Bobotie" />
+    <imagePromptEn>Create an ultra realistic food photography image of bobotie – South African spiced mince bake with a golden egg-milk custard topping. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>600 g Rinderhack</item>
+      <item>2 Zwiebeln</item>
+      <item>2 Scheiben Toastbrot</item>
+      <item>150 ml Milch</item>
+      <item>2 EL Aprikosenmarmelade</item>
+      <item>1 EL Currypulver</item>
+      <item>1 TL Kurkuma</item>
+      <item>2 Eier</item>
+      <item>100 ml Milch für den Guss</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Toast in Milch einweichen.</step>
+      <step nr="2">Zwiebeln anbraten.</step>
+      <step nr="3">Hackfleisch zufügen.</step>
+      <step nr="4">Gewürze und Marmelade einarbeiten.</step>
+      <step nr="5">In Auflaufform geben.</step>
+      <step nr="6">Eier mit Milch verquirlen.</step>
+      <step nr="7">Darüber gießen.</step>
+      <step nr="8">Bei 180 °C ca. 35 Minuten backen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 35 Minuten</item>
+      <item>Gesamt: ca. 50 Minuten</item>
+    </timing>
+    <tips>
+      <item>Traditionell mit Reis servieren.</item>
+    </tips>
+    <rating>9,0/10</rating>
+    <translation lang="pl">
+      <name>Bobotie</name>
+      <persons>4 osoby</persons>
+      <category>Dania z piekarnika</category>
+      <intro>Bobotie uważane jest za narodowe danie RPA. Pikantne mielone mięso z pokrywającą je złotą skorupą jajeczno-mleczną łączy wpływy afrykańskie, azjatyckie i europejskie.</intro>
+      <ingredients>
+        <item>600 g mielonej wołowiny</item>
+        <item>2 cebule</item>
+        <item>2 kromki tostowego</item>
+        <item>150 ml mleka</item>
+        <item>2 łyżki konfitury morelowej</item>
+        <item>1 łyżka curry w proszku</item>
+        <item>1 łyżeczka kurkumy</item>
+        <item>2 jajka</item>
+        <item>100 ml mleka na polewę</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Namoczyć tost w mleku.</step>
+        <step nr="2">Podsmażyć cebulę.</step>
+        <step nr="3">Dodać mięso mielone.</step>
+        <step nr="4">Wmiesać przyprawy i konfiturę.</step>
+        <step nr="5">Przełożyć do naczynia żaroodpornego.</step>
+        <step nr="6">Roztrzepać jajka z mlekiem.</step>
+        <step nr="7">Wlać na wierzch.</step>
+        <step nr="8">Piec ok. 35 minut w 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Pieczenie: ok. 35 minut</item>
+        <item>Razem: ok. 50 minut</item>
+      </timing>
+      <tips>
+        <item>Tradycyjnie podawać z ryżem.</item>
+      </tips>
+      <rating>9,0/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Bobotie</name>
+      <persons>4 people</persons>
+      <category>Oven dishes</category>
+      <intro>Bobotie is considered South Africa's national dish. Spiced minced meat topped with a golden egg-milk crust blends African, Asian and European influences.</intro>
+      <ingredients>
+        <item>600 g minced beef</item>
+        <item>2 onions</item>
+        <item>2 slices sandwich bread</item>
+        <item>150 ml milk</item>
+        <item>2 tbsp apricot jam</item>
+        <item>1 tbsp curry powder</item>
+        <item>1 tsp turmeric</item>
+        <item>2 eggs</item>
+        <item>100 ml milk for the topping</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Soak the bread in milk.</step>
+        <step nr="2">Fry the onions.</step>
+        <step nr="3">Add the mince.</step>
+        <step nr="4">Stir in spices and jam.</step>
+        <step nr="5">Transfer to a baking dish.</step>
+        <step nr="6">Whisk eggs with milk.</step>
+        <step nr="7">Pour over the top.</step>
+        <step nr="8">Bake for about 35 minutes at 180 °C.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Baking time: approx. 35 minutes</item>
+        <item>Total: approx. 50 minutes</item>
+      </timing>
+      <tips>
+        <item>Traditionally served with rice.</item>
+      </tips>
+      <rating>9.0/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="368">
+    <name>Chakalaka</name>
+    <intro lang="de">Würziges Gemüse aus der südafrikanischen Township-Küche – bunt, pikant und der perfekte Begleiter zu Braai und Grillfleisch.</intro>
+    <persons>4 Personen</persons>
+    <category>Beilagen</category>
+    <origin>
+      <country>Südafrika</country>
+      <region>Township-Küche</region>
+      <worldCategory>Afrika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_368.png" alt="Chakalaka" />
+    <imagePromptEn>Create an ultra realistic food photography image of chakalaka – vibrant spicy vegetable relish with peppers, carrots and beans. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>2 Zwiebeln</item>
+      <item>2 Paprika</item>
+      <item>2 Möhren</item>
+      <item>1 Dose Bohnen</item>
+      <item>400 g Tomaten</item>
+      <item>1 TL Currypulver</item>
+      <item>1 TL Paprika edelsüß</item>
+      <item>Chili nach Geschmack</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gemüse würfeln.</step>
+      <step nr="2">Zwiebeln anbraten.</step>
+      <step nr="3">Restliches Gemüse zufügen.</step>
+      <step nr="4">Gewürze einarbeiten.</step>
+      <step nr="5">Tomaten zugeben.</step>
+      <step nr="6">20 Minuten köcheln.</step>
+      <step nr="7">Bohnen unterheben.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Garzeit: ca. 20 Minuten</item>
+      <item>Gesamt: ca. 30 Minuten</item>
+    </timing>
+    <tips>
+      <item>Perfekt zu Grillfleisch.</item>
+    </tips>
+    <rating>8,8/10</rating>
+    <translation lang="pl">
+      <name>Chakalaka</name>
+      <persons>4 osoby</persons>
+      <category>Dodatki</category>
+      <intro>Pikantne warzywa z południowoafrykańskiej kuchni township – kolorowe, ostre i idealne do braai i mięsa z grilla.</intro>
+      <ingredients>
+        <item>2 cebule</item>
+        <item>2 papryki</item>
+        <item>2 marchewki</item>
+        <item>1 puszka fasoli</item>
+        <item>400 g pomidorów</item>
+        <item>1 łyżeczka curry w proszku</item>
+        <item>1 łyżeczka słodkiej papryki</item>
+        <item>chili do smaku</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić warzywa w kostkę.</step>
+        <step nr="2">Podsmażyć cebulę.</step>
+        <step nr="3">Dodać pozostałe warzywa.</step>
+        <step nr="4">Wmiesać przyprawy.</step>
+        <step nr="5">Dodać pomidory.</step>
+        <step nr="6">Gotować 20 minut.</step>
+        <step nr="7">Wmiesać fasolę.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Czas gotowania: ok. 20 minut</item>
+        <item>Razem: ok. 30 minut</item>
+      </timing>
+      <tips>
+        <item>Idealne do mięsa z grilla.</item>
+      </tips>
+      <rating>8,8/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Chakalaka</name>
+      <persons>4 people</persons>
+      <category>Side dishes</category>
+      <intro>Spicy vegetables from South African township cooking – colourful, punchy and the perfect partner for braai and grilled meat.</intro>
+      <ingredients>
+        <item>2 onions</item>
+        <item>2 bell peppers</item>
+        <item>2 carrots</item>
+        <item>1 can beans</item>
+        <item>400 g tomatoes</item>
+        <item>1 tsp curry powder</item>
+        <item>1 tsp sweet paprika</item>
+        <item>chilli to taste</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dice the vegetables.</step>
+        <step nr="2">Fry the onions.</step>
+        <step nr="3">Add the remaining vegetables.</step>
+        <step nr="4">Stir in the spices.</step>
+        <step nr="5">Add the tomatoes.</step>
+        <step nr="6">Simmer for 20 minutes.</step>
+        <step nr="7">Fold in the beans.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Cooking time: approx. 20 minutes</item>
+        <item>Total: approx. 30 minutes</item>
+      </timing>
+      <tips>
+        <item>Perfect with grilled meat.</item>
+      </tips>
+      <rating>8.8/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="369">
+    <name>Jollof Rice</name>
+    <intro lang="de">Roter, würziger Reis aus Westafrika – ein Festtagsklassiker in Nigeria und Ghana, der bei jeder Feier auf den Tisch kommt.</intro>
+    <persons>4 Personen</persons>
+    <category>Pfannengerichte</category>
+    <origin>
+      <country>Westafrika</country>
+      <region>Nigeria &amp; Ghana</region>
+      <worldCategory>Afrika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_369.png" alt="Jollof Rice" />
+    <imagePromptEn>Create an ultra realistic food photography image of jollof rice – West African tomato rice with a rich red colour and bell peppers. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>300 g Langkornreis</item>
+      <item>1 Zwiebel</item>
+      <item>1 Paprika</item>
+      <item>400 g Tomaten</item>
+      <item>2 EL Tomatenmark</item>
+      <item>750 ml Brühe</item>
+      <item>1 TL Paprika</item>
+      <item>1 TL Curry</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zwiebeln und Paprika anbraten.</step>
+      <step nr="2">Tomatenmark zufügen.</step>
+      <step nr="3">Tomaten einarbeiten.</step>
+      <step nr="4">Reis zugeben.</step>
+      <step nr="5">Brühe angießen.</step>
+      <step nr="6">Ca. 25 Minuten garen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 25 Minuten</item>
+      <item>Gesamt: ca. 40 Minuten</item>
+    </timing>
+    <tips>
+      <item>Mit Hähnchen oder Grillfleisch servieren.</item>
+    </tips>
+    <rating>8,9/10</rating>
+    <translation lang="pl">
+      <name>Jollof Rice</name>
+      <persons>4 osoby</persons>
+      <category>Dania z patelni</category>
+      <intro>Czerwony, pikantny ryż z Afryki Zachodniej – świąteczny klasyk Nigerii i Ghany, który pojawia się przy każdej uroczystości.</intro>
+      <ingredients>
+        <item>300 g ryżu długoziarnistego</item>
+        <item>1 cebula</item>
+        <item>1 papryka</item>
+        <item>400 g pomidorów</item>
+        <item>2 łyżki koncentratu pomidorowego</item>
+        <item>750 ml bulionu</item>
+        <item>1 łyżeczka papryki</item>
+        <item>1 łyżeczka curry</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Podsmażyć cebulę i paprykę.</step>
+        <step nr="2">Dodać koncentrat pomidorowy.</step>
+        <step nr="3">Wmiesać pomidory.</step>
+        <step nr="4">Dodać ryż.</step>
+        <step nr="5">Zalać bulionem.</step>
+        <step nr="6">Gotować ok. 25 minut.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 25 minut</item>
+        <item>Razem: ok. 40 minut</item>
+      </timing>
+      <tips>
+        <item>Podawać z kurczakiem lub mięsem z grilla.</item>
+      </tips>
+      <rating>8,9/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Jollof rice</name>
+      <persons>4 people</persons>
+      <category>Pan dishes</category>
+      <intro>Red, spiced rice from West Africa – a celebration classic in Nigeria and Ghana that appears at every feast.</intro>
+      <ingredients>
+        <item>300 g long-grain rice</item>
+        <item>1 onion</item>
+        <item>1 bell pepper</item>
+        <item>400 g tomatoes</item>
+        <item>2 tbsp tomato paste</item>
+        <item>750 ml stock</item>
+        <item>1 tsp paprika</item>
+        <item>1 tsp curry</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Fry the onion and pepper.</step>
+        <step nr="2">Add the tomato paste.</step>
+        <step nr="3">Stir in the tomatoes.</step>
+        <step nr="4">Add the rice.</step>
+        <step nr="5">Pour in the stock.</step>
+        <step nr="6">Cook for about 25 minutes.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 25 minutes</item>
+        <item>Total: approx. 40 minutes</item>
+      </timing>
+      <tips>
+        <item>Serve with chicken or grilled meat.</item>
+      </tips>
+      <rating>8.9/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="370">
+    <name>Chicken Yassa</name>
+    <intro lang="de">Senegalesisches Hähnchen in Zitronen-Senf-Marinade – sauer, würzig und eines der bekanntesten Gerichte Westafrikas.</intro>
+    <persons>4 Personen</persons>
+    <category>Geflügelgerichte</category>
+    <origin>
+      <country>Senegal</country>
+      <region>Westafrikanische Küche</region>
+      <worldCategory>Afrika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_370.png" alt="Chicken Yassa" />
+    <imagePromptEn>Create an ultra realistic food photography image of chicken yassa – Senegalese lemon-mustard chicken with caramelized onions. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>800 g Hähnchenschenkel</item>
+      <item>4 große Zwiebeln</item>
+      <item>2 Zitronen</item>
+      <item>2 EL Senf</item>
+      <item>2 EL Öl</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zitronensaft, Senf und Gewürze verrühren.</step>
+      <step nr="2">Hähnchen marinieren.</step>
+      <step nr="3">Anbraten.</step>
+      <step nr="4">Zwiebeln zufügen.</step>
+      <step nr="5">40 Minuten schmoren.</step>
+      <step nr="6">Mit Reis servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Garzeit: ca. 40 Minuten</item>
+      <item>Gesamt: ca. 55 Minuten</item>
+    </timing>
+    <tips>
+      <item>Am besten über Nacht marinieren.</item>
+    </tips>
+    <rating>9,1/10</rating>
+    <translation lang="pl">
+      <name>Chicken Yassa</name>
+      <persons>4 osoby</persons>
+      <category>Dania z drobiu</category>
+      <intro>Senegalski kurczak w marynacie cytrynowo-musztardowej – kwaskowaty, pikantny i jedno z najbardziej znanych dań Afryki Zachodniej.</intro>
+      <ingredients>
+        <item>800 g udek z kurczaka</item>
+        <item>4 duże cebule</item>
+        <item>2 cytryny</item>
+        <item>2 łyżki musztardy</item>
+        <item>2 łyżki oleju</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wymieszać sok z cytryny, musztardę i przyprawy.</step>
+        <step nr="2">Zamarynować kurczaka.</step>
+        <step nr="3">Obsmażyć.</step>
+        <step nr="4">Dodać cebulę.</step>
+        <step nr="5">Dusić 40 minut.</step>
+        <step nr="6">Podawać z ryżem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 minut</item>
+        <item>Czas gotowania: ok. 40 minut</item>
+        <item>Razem: ok. 55 minut</item>
+      </timing>
+      <tips>
+        <item>Najlepiej marynować przez noc.</item>
+      </tips>
+      <rating>9,1/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Chicken yassa</name>
+      <persons>4 people</persons>
+      <category>Poultry dishes</category>
+      <intro>Senegalese chicken in a lemon-mustard marinade – tangy, spiced and one of West Africa's best-known dishes.</intro>
+      <ingredients>
+        <item>800 g chicken thighs</item>
+        <item>4 large onions</item>
+        <item>2 lemons</item>
+        <item>2 tbsp mustard</item>
+        <item>2 tbsp oil</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Whisk lemon juice, mustard and seasonings.</step>
+        <step nr="2">Marinate the chicken.</step>
+        <step nr="3">Sear in a pan.</step>
+        <step nr="4">Add the onions.</step>
+        <step nr="5">Braise for 40 minutes.</step>
+        <step nr="6">Serve with rice.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Cooking time: approx. 40 minutes</item>
+        <item>Total: approx. 55 minutes</item>
+      </timing>
+      <tips>
+        <item>Best marinated overnight.</item>
+      </tips>
+      <rating>9.1/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="371">
+    <name>Couscous Royal</name>
+    <intro lang="de">Großer marokkanischer Couscous mit Hähnchen, Merguez und Gemüse – ein festliches Schmorgericht für Gäste und größere Runden.</intro>
+    <persons>6 Personen</persons>
+    <category>Feiertagsessen</category>
+    <origin>
+      <country>Nordafrika</country>
+      <region>Marokko</region>
+      <worldCategory>Afrika</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_371.png" alt="Couscous Royal" />
+    <imagePromptEn>Create an ultra realistic food photography image of couscous royal – fluffy couscous with chicken, merguez sausage and colourful vegetables. Served on rustic tableware on a natural wooden table. Warm daylight, shallow depth of field, highly detailed ingredients, authentic food blog style, professional food photography, appetizing presentation, restaurant quality plating, natural colors, no people, no text, no logos, no watermark, 16:9 composition.</imagePromptEn>
+    <ingredients>
+      <item>400 g Couscous</item>
+      <item>500 g Hähnchen</item>
+      <item>300 g Merguez</item>
+      <item>3 Möhren</item>
+      <item>2 Zucchini</item>
+      <item>1 Dose Kichererbsen</item>
+      <item>1 Liter Brühe</item>
+      <item>1 TL Kreuzkümmel</item>
+      <item>1 TL Paprika</item>
+      <item>Salz</item>
+      <item>Pfeffer</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Fleisch anbraten.</step>
+      <step nr="2">Gemüse zufügen.</step>
+      <step nr="3">Brühe angießen.</step>
+      <step nr="4">45 Minuten schmoren.</step>
+      <step nr="5">Couscous nach Packungsanleitung zubereiten.</step>
+      <step nr="6">Alles gemeinsam servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Garzeit: ca. 45 Minuten</item>
+      <item>Gesamt: ca. 60 Minuten</item>
+    </timing>
+    <tips>
+      <item>Ideal für Gäste und größere Runden.</item>
+    </tips>
+    <rating>9,2/10</rating>
+    <translation lang="pl">
+      <name>Couscous Royal</name>
+      <persons>6 osób</persons>
+      <category>Dania świąteczne</category>
+      <intro>Duży marokański couscous z kurczakiem, merguez i warzywami – uroczyste danie duszone idealne na gości i większe spotkania.</intro>
+      <ingredients>
+        <item>400 g kuskusu</item>
+        <item>500 g kurczaka</item>
+        <item>300 g merguez</item>
+        <item>3 marchewki</item>
+        <item>2 cukinie</item>
+        <item>1 puszka ciecierzycy</item>
+        <item>1 l bulionu</item>
+        <item>1 łyżeczka kminku</item>
+        <item>1 łyżeczka papryki</item>
+        <item>sól</item>
+        <item>pieprz</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obsmażyć mięso.</step>
+        <step nr="2">Dodać warzywa.</step>
+        <step nr="3">Zalać bulionem.</step>
+        <step nr="4">Dusić 45 minut.</step>
+        <step nr="5">Kuskus przygotować według instrukcji na opakowaniu.</step>
+        <step nr="6">Podawać wszystko razem.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Czas gotowania: ok. 45 minut</item>
+        <item>Razem: ok. 60 minut</item>
+      </timing>
+      <tips>
+        <item>Idealne na gości i większe spotkania.</item>
+      </tips>
+      <rating>9,2/10</rating>
+    </translation>
+    <translation lang="en">
+      <name>Couscous royal</name>
+      <persons>6 people</persons>
+      <category>Holiday dishes</category>
+      <intro>A grand Moroccan couscous with chicken, merguez and vegetables – a festive braise ideal for guests and larger gatherings.</intro>
+      <ingredients>
+        <item>400 g couscous</item>
+        <item>500 g chicken</item>
+        <item>300 g merguez</item>
+        <item>3 carrots</item>
+        <item>2 courgettes</item>
+        <item>1 can chickpeas</item>
+        <item>1 litre stock</item>
+        <item>1 tsp cumin</item>
+        <item>1 tsp paprika</item>
+        <item>salt</item>
+        <item>pepper</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Sear the meat.</step>
+        <step nr="2">Add the vegetables.</step>
+        <step nr="3">Pour in the stock.</step>
+        <step nr="4">Braise for 45 minutes.</step>
+        <step nr="5">Prepare the couscous according to package instructions.</step>
+        <step nr="6">Serve everything together.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Cooking time: approx. 45 minutes</item>
+        <item>Total: approx. 60 minutes</item>
+      </timing>
+      <tips>
+        <item>Ideal for guests and larger gatherings.</item>
+      </tips>
+      <rating>9.2/10</rating>
     </translation>
   </recipe>
 </cookbook>

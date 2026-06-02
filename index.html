@@ -396,32 +396,6 @@
       color: #555;
     }
 
-    .subcategory-filter-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 0 0 1.25rem;
-    }
-
-    .subcategory-filter-btn {
-      appearance: none;
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--dark);
-      border-radius: 999px;
-      padding: 7px 14px;
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      line-height: 1.2;
-    }
-
-    .subcategory-filter-btn.is-active {
-      border-color: var(--accent);
-      background: rgba(196, 92, 38, 0.08);
-      color: var(--accent);
-    }
-
     .hero {
       position: relative;
       width: 100%;
@@ -3606,10 +3580,6 @@
             <a href="#rezepte" role="menuitem" data-filter="grundrezepte">Grundrezepte</a>
             <a href="#rezepte" role="menuitem" data-filter="suesses-backen">Süßes &amp; Backen</a>
             <a href="#rezepte" role="menuitem" data-filter="woelpinghausen">Wölpinghausen</a>
-            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise">Kulinarische Weltreise</a>
-            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise-europa" class="nav-dropdown-sub">Europa</a>
-            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise-mittelmeer" class="nav-dropdown-sub">Mittelmeer &amp; Nordafrika</a>
-            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise-weltreise" class="nav-dropdown-sub">Weltreise</a>
           </div>
         </li>
         <li><button type="button" class="nav-merkliste-btn" id="merklisteNavBtn">Merkliste</button></li>
@@ -3669,12 +3639,6 @@
             <div class="recipe-list-actions" id="home-surprise-wrap">
               <button type="button" class="btn" id="surpriseMeBtn" disabled aria-disabled="true">Überrasch mich</button>
             </div>
-          </div>
-          <div class="subcategory-filter-row" id="weltreiseSubFilters" hidden aria-label="Unterkategorien Kulinarische Weltreise">
-            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise">Alle</button>
-            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise-europa">Europa</button>
-            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise-mittelmeer">Mittelmeer &amp; Nordafrika</button>
-            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise-weltreise">Weltreise</button>
           </div>
           <div id="home-highlights" class="home-recipe-output">
             <div class="rating-filters" aria-label="Persönliche Bewertungsfilter">
@@ -3741,11 +3705,6 @@
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 14a6 6 0 0 0 12 0c0-4-2-6-6-6s-6 2-6 6z"/><path d="M9 10h6"/></svg></span>
                 <h3 class="home-category-label">Süßes &amp; Backen</h3>
                 <p>Für Kuchen, Desserts &amp; mehr.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="kulinarische-weltreise" aria-label="Themenwelt öffnen: Kulinarische Weltreise">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.8 4 6 4 9s-1.5 6.2-4 9M12 3c-2.5 2.8-4 6-4 9s1.5 6.2 4 9"/></svg></span>
-                <h3 class="home-category-label">Kulinarische Weltreise</h3>
-                <p>Europa, Mittelmeer &amp; Weltküche.</p>
               </article>
             </div>
             <div class="world-filters" id="homeWorldOverview" aria-labelledby="worldOverviewFiltersLabel">
@@ -4045,7 +4004,49 @@
       '326': '/images/rezeptbild_326_detail.webp',
       '327': '/images/rezeptbild_327_detail.webp',
       '328': '/images/rezeptbild_328_detail.webp',
-      '329': '/images/rezeptbild_329_detail.webp'
+      '329': '/images/rezeptbild_329_detail.webp',
+      '330': '/images/rezeptbild_330_detail.webp',
+      '331': '/images/rezeptbild_331_detail.webp',
+      '332': '/images/rezeptbild_332_detail.webp',
+      '333': '/images/rezeptbild_333_detail.webp',
+      '334': '/images/rezeptbild_334_detail.webp',
+      '335': '/images/rezeptbild_335_detail.webp',
+      '336': '/images/rezeptbild_336_detail.webp',
+      '337': '/images/rezeptbild_337_detail.webp',
+      '338': '/images/rezeptbild_338_detail.webp',
+      '339': '/images/rezeptbild_339_detail.webp',
+      '340': '/images/rezeptbild_340_detail.webp',
+      '341': '/images/rezeptbild_341_detail.webp',
+      '342': '/images/rezeptbild_342_detail.webp',
+      '343': '/images/rezeptbild_343_detail.webp',
+      '344': '/images/rezeptbild_344_detail.webp',
+      '345': '/images/rezeptbild_345_detail.webp',
+      '346': '/images/rezeptbild_346_detail.webp',
+      '347': '/images/rezeptbild_347_detail.webp',
+      '348': '/images/rezeptbild_348_detail.webp',
+      '349': '/images/rezeptbild_349_detail.webp',
+      '350': '/images/rezeptbild_350_detail.webp',
+      '351': '/images/rezeptbild_351_detail.webp',
+      '352': '/images/rezeptbild_352_detail.webp',
+      '353': '/images/rezeptbild_353_detail.webp',
+      '354': '/images/rezeptbild_354_detail.webp',
+      '355': '/images/rezeptbild_355_detail.webp',
+      '356': '/images/rezeptbild_356_detail.webp',
+      '357': '/images/rezeptbild_357_detail.webp',
+      '358': '/images/rezeptbild_358_detail.webp',
+      '359': '/images/rezeptbild_359_detail.webp',
+      '360': '/images/rezeptbild_360_detail.webp',
+      '361': '/images/rezeptbild_361_detail.webp',
+      '362': '/images/rezeptbild_362_detail.webp',
+      '363': '/images/rezeptbild_363_detail.webp',
+      '364': '/images/rezeptbild_364_detail.webp',
+      '365': '/images/rezeptbild_365_detail.webp',
+      '366': '/images/rezeptbild_366_detail.webp',
+      '367': '/images/rezeptbild_367_detail.webp',
+      '368': '/images/rezeptbild_368_detail.webp',
+      '369': '/images/rezeptbild_369_detail.webp',
+      '370': '/images/rezeptbild_370_detail.webp',
+      '371': '/images/rezeptbild_371_detail.webp'
     };
     var FILTER_HEADINGS = {
       alle: 'Aktuelle Highlights',
@@ -4069,10 +4070,6 @@
       grundrezepte: 'Grundrezepte',
       'suesses-backen': 'Süßes & Backen',
       woelpinghausen: 'Wölpinghausen',
-      'kulinarische-weltreise': 'Kulinarische Weltreise',
-      'kulinarische-weltreise-europa': 'Kulinarische Weltreise – Europa',
-      'kulinarische-weltreise-mittelmeer': 'Kulinarische Weltreise – Mittelmeer & Nordafrika',
-      'kulinarische-weltreise-weltreise': 'Kulinarische Weltreise – Weltreise',
       latest: 'Neue Rezepte'
     };
     var currentRecipeFilterKey = 'alle';
@@ -5346,10 +5343,6 @@
         var ddGr = dd.querySelector('a[data-filter="grundrezepte"]'); if (ddGr) ddGr.textContent = t('dropdown_grundrezepte');
         var ddSw = dd.querySelector('a[data-filter="suesses-backen"]'); if (ddSw) ddSw.textContent = t('dropdown_suesses');
         var ddW = dd.querySelector('a[data-filter="woelpinghausen"]'); if (ddW) ddW.textContent = t('dropdown_woelpinghausen');
-        var ddKw = dd.querySelector('a[data-filter="kulinarische-weltreise"]'); if (ddKw) ddKw.textContent = t('dropdown_kulinarische_weltreise');
-        var ddKwe = dd.querySelector('a[data-filter="kulinarische-weltreise-europa"]'); if (ddKwe) ddKwe.textContent = t('dropdown_kulinarische_weltreise_europa');
-        var ddKwm = dd.querySelector('a[data-filter="kulinarische-weltreise-mittelmeer"]'); if (ddKwm) ddKwm.textContent = t('dropdown_kulinarische_weltreise_mittelmeer');
-        var ddKww = dd.querySelector('a[data-filter="kulinarische-weltreise-weltreise"]'); if (ddKww) ddKww.textContent = t('dropdown_kulinarische_weltreise_weltreise');
       }
 
       updateNavBadges();
@@ -5430,7 +5423,7 @@
       if (dsNewT) dsNewT.textContent = t('detail_sidebar_recipes');
 
       var twTiles = document.querySelectorAll('#themenweltenGrid .category-tile');
-      if (twTiles && twTiles.length >= 9) {
+      if (twTiles && twTiles.length >= 8) {
         var keys = [
           ['themenwelten_tile1_title', 'themenwelten_tile1_text'],
           ['themenwelten_tile2_title', 'themenwelten_tile2_text'],
@@ -5439,10 +5432,9 @@
           ['themenwelten_tile5_title', 'themenwelten_tile5_text'],
           ['themenwelten_tile6_title', 'themenwelten_tile6_text'],
           ['themenwelten_tile7_title', 'themenwelten_tile7_text'],
-          ['themenwelten_tile8_title', 'themenwelten_tile8_text'],
-          ['themenwelten_tile9_title', 'themenwelten_tile9_text']
+          ['themenwelten_tile8_title', 'themenwelten_tile8_text']
         ];
-        for (var ti = 0; ti < 9; ti++) {
+        for (var ti = 0; ti < 8; ti++) {
           var h3 = twTiles[ti].querySelector('h3');
           var p = twTiles[ti].querySelector('p');
           if (h3) h3.textContent = t(keys[ti][0]);
@@ -5516,7 +5508,6 @@
       var sb2 = document.getElementById('shoppingBack2');
       if (sb2) sb2.textContent = t('shopping_back');
 
-      syncWeltreiseSubFilters();
       syncWorldCategoryFilterButtons();
       refreshDetailToolbarLabels();
     }
@@ -5808,7 +5799,6 @@
           id: id,
           name: name,
           category: category,
-          categoryKey: deriveRecipeCategoryKey(category),
           persons: persons,
           rating: rating,
           ratingValue: ratingValue,
@@ -6179,20 +6169,8 @@
       syncWorldCategoryFilterButtons();
     }
 
-    function isCategoryRecipeFilterKey(key) {
-      key = String(key || '');
-      return key !== 'all' && key !== 'alle' && key !== 'latest' && key.indexOf('rated') !== 0;
-    }
-
     function shouldApplyWorldCategoryFilter() {
-      return currentWorldCategoryFilter !== 'world-all' && currentRecipeFilterKey === 'all';
-    }
-
-    function enforceFilterMutualExclusion() {
-      if (currentWorldCategoryFilter !== 'world-all' && isCategoryRecipeFilterKey(currentRecipeFilterKey)) {
-        currentWorldCategoryFilter = 'world-all';
-        syncWorldCategoryFilterButtons();
-      }
+      return currentWorldCategoryFilter !== 'world-all';
     }
 
     function resetAllRecipeFilters(opt) {
@@ -6205,7 +6183,6 @@
       if (searchInput) searchInput.value = '';
       syncWorldCategoryFilterButtons();
       syncHomeCategoryTilesActive();
-      syncWeltreiseSubFilters();
       syncRatingFilterButtons();
       if (!opt.skipView) {
         updateRecipeListView({ scrollToResults: !!opt.scrollToResults, skipHideDetail: !!opt.skipHideDetail });
@@ -6222,13 +6199,9 @@
       opt = opt || {};
       var nextKey = filterKey || 'world-all';
       currentWorldCategoryFilter = nextKey;
-      if (nextKey !== 'world-all') {
-        currentRecipeFilterKey = 'all';
-      }
       recipeListVisibleCount = 12;
       syncWorldCategoryFilterButtons();
       syncHomeCategoryTilesActive();
-      syncWeltreiseSubFilters();
       syncRatingFilterButtons();
       updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
     }
@@ -6311,31 +6284,24 @@
       return false;
     }
 
-    function isWeltreiseFilterKey(key) {
-      return String(key || '').indexOf('kulinarische-weltreise') === 0;
+    function getCategoryFilterLabel(filterKey) {
+      var fk = String(filterKey || '');
+      if (!fk || fk === 'all' || fk === 'alle' || fk === 'latest' || fk.indexOf('rated') === 0) return '';
+      var mapKey =
+        fk === 'grill-bbq' ? 'filter_grill_bbq'
+        : fk === 'pfanne-wok' ? 'filter_pfanne_wok'
+        : fk === 'salate-beilagen' ? 'filter_salate_beilagen'
+        : fk === 'pasta-pizza' ? 'filter_pasta_pizza'
+        : fk === 'fisch-meer' ? 'filter_fisch_meer'
+        : fk === 'suppen-eintoepfe' ? 'filter_suppen_eintoepfe'
+        : fk === 'suesses-backen' ? 'filter_suesses_backen'
+        : ('filter_' + fk);
+      return (I18N[currentLang] && I18N[currentLang][mapKey]) ? t(mapKey) : (FILTER_HEADINGS[fk] || '');
     }
 
-    function deriveRecipeCategoryKey(deCategory) {
-      var deCat = String(deCategory == null ? '' : deCategory).toLowerCase().trim();
-      if (!deCat) return '';
-      if (deCat.indexOf('kulinarische weltreise / europa') >= 0) return 'kulinarische-weltreise-europa';
-      if (deCat.indexOf('kulinarische weltreise / mittelmeer') >= 0) return 'kulinarische-weltreise-mittelmeer';
-      if (deCat.indexOf('kulinarische weltreise / weltreise') >= 0) return 'kulinarische-weltreise-weltreise';
-      if (deCat.indexOf('kulinarische weltreise') >= 0) return 'kulinarische-weltreise';
-      return '';
-    }
-
-    function getRecipeCategoryKey(r) {
-      if (!r) return '';
-      if (r.categoryKey) return r.categoryKey;
-      return deriveRecipeCategoryKey(r.category || '');
-    }
-
-    function recipeMatchesWeltreiseFilterKey(r, filterKey) {
-      var catKey = getRecipeCategoryKey(r);
-      if (!catKey || catKey.indexOf('kulinarische-weltreise') !== 0) return false;
-      if (filterKey === 'kulinarische-weltreise') return true;
-      return catKey === filterKey;
+    function combineFilterHeading(primary, secondary) {
+      if (primary && secondary) return primary + ' · ' + secondary;
+      return primary || secondary || '';
     }
 
     function recipeCategoryLower(r) {
@@ -6376,11 +6342,6 @@
           return matchesRecipeFields(r, ['name', 'category', 'tags'], ['backen', 'süßes', 'suesses', 'kuchen', 'blechkuchen', 'dessert', 'torte', 'gebäck', 'gebaeck']);
         case 'woelpinghausen':
           return matchesRecipeFields(r, ['name', 'category', 'tags'], ['wölpinghausen', 'woelpinghausen', 'wölpinghäuser', 'woelpinghaeuser']);
-        case 'kulinarische-weltreise':
-        case 'kulinarische-weltreise-europa':
-        case 'kulinarische-weltreise-mittelmeer':
-        case 'kulinarische-weltreise-weltreise':
-          return recipeMatchesWeltreiseFilterKey(r, key);
         default:
           return false;
       }
@@ -8617,35 +8578,10 @@
       var isCategoryFilter = key !== 'alle' && key !== 'all' && key !== 'latest' && String(key).indexOf('rated') !== 0;
       [].slice.call(grid.querySelectorAll('.category-tile[data-filter]')).forEach(function (tile) {
         var tileKey = tile.getAttribute('data-filter');
-        var active = isCategoryFilter && (
-          tileKey === key ||
-          (tileKey === 'kulinarische-weltreise' && isWeltreiseFilterKey(key))
-        );
+        var active = isCategoryFilter && tileKey === key;
         tile.classList.toggle('is-active', active);
         if (active) tile.setAttribute('aria-current', 'true');
         else tile.removeAttribute('aria-current');
-      });
-    }
-
-    function syncWeltreiseSubFilters() {
-      var row = document.getElementById('weltreiseSubFilters');
-      if (!row) return;
-      var show = isWeltreiseFilterKey(currentRecipeFilterKey);
-      row.hidden = !show;
-      if (!show) return;
-      var labelMap = {
-        'kulinarische-weltreise': 'weltreise_subfilter_all',
-        'kulinarische-weltreise-europa': 'weltreise_subfilter_europa',
-        'kulinarische-weltreise-mittelmeer': 'weltreise_subfilter_mittelmeer',
-        'kulinarische-weltreise-weltreise': 'weltreise_subfilter_weltreise'
-      };
-      [].slice.call(row.querySelectorAll('[data-filter]')).forEach(function (btn) {
-        var fk = btn.getAttribute('data-filter');
-        var active = fk === currentRecipeFilterKey;
-        btn.classList.toggle('is-active', active);
-        if (labelMap[fk]) btn.textContent = t(labelMap[fk]);
-        if (active) btn.setAttribute('aria-current', 'true');
-        else btn.removeAttribute('aria-current');
       });
     }
 
@@ -8658,7 +8594,6 @@
       }
       currentRecipeFilterKey = key;
       recipeListVisibleCount = key === 'latest' ? LATEST_RECIPE_INITIAL : 12;
-      resetWorldCategoryFilter();
       if (String(key).indexOf('rated') === 0) {
         currentSearchQuery = '';
         var search = document.getElementById('recipeSearchInput');
@@ -8666,32 +8601,12 @@
       }
       updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
       syncHomeCategoryTilesActive();
-      syncWeltreiseSubFilters();
       syncWorldCategoryFilterButtons();
-    }
-
-    function syncWeltreiseSectionHeadOrder() {
-      var block = document.getElementById('recipe-results');
-      var kickerEl = document.getElementById('recipeSectionKicker');
-      var heading = document.getElementById('recipeSectionHeading');
-      if (!block || !kickerEl || !heading) return;
-      if (isWeltreiseFilterKey(currentRecipeFilterKey)) {
-        kickerEl.style.margin = '6px 0 0';
-        if (block.firstElementChild !== heading) {
-          block.insertBefore(heading, kickerEl);
-        }
-      } else {
-        kickerEl.style.margin = '';
-        if (block.firstElementChild !== kickerEl) {
-          block.insertBefore(kickerEl, heading);
-        }
-      }
     }
 
     function updateRecipeListView(opt) {
       opt = opt || {};
       try {
-      enforceFilterMutualExclusion();
       if (!opt.skipHideDetail) hideRecipeDetailPage();
 
       var heading = document.getElementById('recipeSectionHeading');
@@ -8701,69 +8616,45 @@
       if (!heading || !status || !grid) return;
 
       var kickerEl = document.getElementById('recipeSectionKicker');
+      var worldLabel = getWorldCategoryFilterLabel(currentWorldCategoryFilter);
       if (currentRecipeFilterKey === 'alle') {
         if (kickerEl) {
           kickerEl.style.display = '';
-          kickerEl.textContent = t('section_highlights_kicker');
+          kickerEl.textContent = worldLabel ? worldLabel : t('section_highlights_kicker');
         }
-        heading.textContent = t('section_highlights_title');
+        heading.textContent = worldLabel
+          ? combineFilterHeading(t('section_highlights_title'), worldLabel)
+          : t('section_highlights_title');
       } else if (currentRecipeFilterKey === 'all') {
         if (kickerEl) kickerEl.style.display = 'none';
-        if (currentWorldCategoryFilter !== 'world-all') {
-          heading.textContent = getWorldCategoryFilterLabel(currentWorldCategoryFilter);
-        } else {
-          heading.textContent = t('section_all');
-        }
+        heading.textContent = worldLabel || t('section_all');
       } else if (currentRecipeFilterKey === 'latest') {
         if (kickerEl) {
           kickerEl.style.display = '';
-          kickerEl.textContent = t('section_latest_subtitle');
+          kickerEl.textContent = worldLabel || t('section_latest_subtitle');
         }
-        heading.textContent = t('section_latest_title');
+        heading.textContent = combineFilterHeading(t('section_latest_title'), worldLabel);
       } else if (currentRecipeFilterKey === 'rated') {
         if (kickerEl) kickerEl.style.display = 'none';
-        heading.textContent = t('heading_rated');
+        heading.textContent = combineFilterHeading(t('heading_rated'), worldLabel);
       } else if (currentRecipeFilterKey === 'rated-5') {
         if (kickerEl) kickerEl.style.display = 'none';
-        heading.textContent = t('heading_rated_5');
+        heading.textContent = combineFilterHeading(t('heading_rated_5'), worldLabel);
       } else if (currentRecipeFilterKey === 'rated-4p') {
         if (kickerEl) kickerEl.style.display = 'none';
-        heading.textContent = t('heading_rated_4p');
+        heading.textContent = combineFilterHeading(t('heading_rated_4p'), worldLabel);
       } else if (currentRecipeFilterKey === 'rated-3p') {
         if (kickerEl) kickerEl.style.display = 'none';
-        heading.textContent = t('heading_rated_3p');
+        heading.textContent = combineFilterHeading(t('heading_rated_3p'), worldLabel);
       } else if (currentRecipeFilterKey === 'rated-none') {
         if (kickerEl) kickerEl.style.display = 'none';
-        heading.textContent = t('heading_rated_none');
+        heading.textContent = combineFilterHeading(t('heading_rated_none'), worldLabel);
       } else {
-        var fk = String(currentRecipeFilterKey || '');
-        if (isWeltreiseFilterKey(fk)) {
-          if (kickerEl) {
-            kickerEl.style.display = '';
-            kickerEl.textContent = t('filter_kulinarische_weltreise_subtitle');
-          }
-        } else if (kickerEl) {
-          kickerEl.style.display = 'none';
-        }
-        var mapKey =
-          fk === 'grill-bbq' ? 'filter_grill_bbq'
-          : fk === 'pfanne-wok' ? 'filter_pfanne_wok'
-          : fk === 'salate-beilagen' ? 'filter_salate_beilagen'
-          : fk === 'pasta-pizza' ? 'filter_pasta_pizza'
-          : fk === 'fisch-meer' ? 'filter_fisch_meer'
-          : fk === 'suppen-eintoepfe' ? 'filter_suppen_eintoepfe'
-          : fk === 'suesses-backen' ? 'filter_suesses_backen'
-          : fk === 'kulinarische-weltreise' ? 'filter_kulinarische_weltreise'
-          : fk === 'kulinarische-weltreise-europa' ? 'filter_kulinarische_weltreise_europa'
-          : fk === 'kulinarische-weltreise-mittelmeer' ? 'filter_kulinarische_weltreise_mittelmeer'
-          : fk === 'kulinarische-weltreise-weltreise' ? 'filter_kulinarische_weltreise_weltreise'
-          : ('filter_' + fk);
-        heading.textContent = (I18N[currentLang] && I18N[currentLang][mapKey]) ? t(mapKey) : (FILTER_HEADINGS[currentRecipeFilterKey] || t('nav_recipes'));
+        if (kickerEl) kickerEl.style.display = 'none';
+        heading.textContent = combineFilterHeading(getCategoryFilterLabel(currentRecipeFilterKey), worldLabel);
       }
-      syncWeltreiseSectionHeadOrder();
       syncRatingFilterButtons();
       syncHomeCategoryTilesActive();
-      syncWeltreiseSubFilters();
       syncWorldCategoryFilterButtons();
 
       var highlightViewAll = document.getElementById('highlightViewAllWrap');
@@ -9276,29 +9167,6 @@
         if (!tile || !grid.contains(tile)) return;
         e.preventDefault();
         activate(tile);
-      });
-    })();
-
-    (function attachWeltreiseSubFilters() {
-      var row = document.getElementById('weltreiseSubFilters');
-      if (!row || row.dataset.bound === '1') return;
-      row.dataset.bound = '1';
-      function activate(btn) {
-        if (!btn) return;
-        var key = btn.getAttribute('data-filter');
-        if (!key) return;
-        hideRecipeDetailPage(true);
-        try {
-          history.replaceState(null, '', window.location.pathname + window.location.search + '#rezepte');
-        } catch (err) {}
-        applyRecipeFilter(key, { scrollToResults: true });
-        syncRatingFilterButtons();
-      }
-      row.addEventListener('click', function (e) {
-        var btn = e.target.closest('[data-filter]');
-        if (!btn || !row.contains(btn)) return;
-        e.preventDefault();
-        activate(btn);
       });
     })();
 
