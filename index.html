@@ -6137,6 +6137,29 @@
       syncWorldCategoryFilterButtons();
     }
 
+    function getWorldCategoryFilterLabel(filterKey) {
+      var key = String(filterKey || '').trim();
+      if (!key || key === 'world-all') return '';
+      for (var wi = 0; wi < WORLD_CATEGORY_FILTER_ITEMS.length; wi++) {
+        if (WORLD_CATEGORY_FILTER_ITEMS[wi].value === key) {
+          return t(WORLD_CATEGORY_FILTER_ITEMS[wi].i18n);
+        }
+      }
+      return key;
+    }
+
+    function applyWorldCategoryFilter(filterKey, opt) {
+      opt = opt || {};
+      currentWorldCategoryFilter = filterKey || 'world-all';
+      currentRecipeFilterKey = 'all';
+      recipeListVisibleCount = 12;
+      syncWorldCategoryFilterButtons();
+      syncHomeCategoryTilesActive();
+      syncWeltreiseSubFilters();
+      syncRatingFilterButtons();
+      updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
+    }
+
     function recipeMatchesWorldCategory(r, filterKey) {
       if (!filterKey || filterKey === 'world-all') return true;
       return String(r.originWorldCategory || '').trim() === String(filterKey).trim();
@@ -6169,10 +6192,7 @@
           var btnEl = e.target.closest('button[data-world-filter]');
           if (!btnEl || !row.contains(btnEl)) return;
           e.preventDefault();
-          currentWorldCategoryFilter = btnEl.getAttribute('data-world-filter') || 'world-all';
-          recipeListVisibleCount = 12;
-          syncWorldCategoryFilterButtons();
-          updateRecipeListView({ scrollToResults: true });
+          applyWorldCategoryFilter(btnEl.getAttribute('data-world-filter') || 'world-all', { scrollToResults: true });
         });
       }
       syncWorldCategoryFilterButtons();
@@ -8561,9 +8581,7 @@
       if (!FILTER_HEADINGS.hasOwnProperty(key)) key = 'alle';
       currentRecipeFilterKey = key;
       recipeListVisibleCount = key === 'latest' ? LATEST_RECIPE_INITIAL : 12;
-      if (key === 'all' || key === 'alle') {
-        resetWorldCategoryFilter();
-      }
+      resetWorldCategoryFilter();
       if (key === 'all' || String(key).indexOf('rated') === 0) {
         currentSearchQuery = '';
         var search = document.getElementById('recipeSearchInput');
@@ -8613,7 +8631,11 @@
         heading.textContent = t('section_highlights_title');
       } else if (currentRecipeFilterKey === 'all') {
         if (kickerEl) kickerEl.style.display = 'none';
-        heading.textContent = t('section_all');
+        if (currentWorldCategoryFilter !== 'world-all') {
+          heading.textContent = getWorldCategoryFilterLabel(currentWorldCategoryFilter);
+        } else {
+          heading.textContent = t('section_all');
+        }
       } else if (currentRecipeFilterKey === 'latest') {
         if (kickerEl) {
           kickerEl.style.display = '';
@@ -8749,7 +8771,9 @@
         }
       } else {
         status.textContent = (currentRecipeFilterKey === 'all'
-          ? t('status_all', { count: full.length })
+          ? (currentWorldCategoryFilter !== 'world-all'
+            ? t('status_matching', { count: full.length })
+            : t('status_all', { count: full.length }))
           : (String(currentRecipeFilterKey).indexOf('rated') === 0
             ? (t('status_personal_ratings') + ' ' + full.length + ' Treffer.')
             : t('status_matching', { count: full.length })
