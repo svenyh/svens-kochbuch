@@ -6137,6 +6137,39 @@
       syncWorldCategoryFilterButtons();
     }
 
+    function isCategoryRecipeFilterKey(key) {
+      key = String(key || '');
+      return key !== 'all' && key !== 'alle' && key !== 'latest' && key.indexOf('rated') !== 0;
+    }
+
+    function shouldApplyWorldCategoryFilter() {
+      return currentWorldCategoryFilter !== 'world-all' && currentRecipeFilterKey === 'all';
+    }
+
+    function enforceFilterMutualExclusion() {
+      if (currentWorldCategoryFilter !== 'world-all' && isCategoryRecipeFilterKey(currentRecipeFilterKey)) {
+        currentWorldCategoryFilter = 'world-all';
+        syncWorldCategoryFilterButtons();
+      }
+    }
+
+    function resetAllRecipeFilters(opt) {
+      opt = opt || {};
+      currentRecipeFilterKey = 'all';
+      currentWorldCategoryFilter = 'world-all';
+      recipeListVisibleCount = 12;
+      currentSearchQuery = '';
+      var searchInput = document.getElementById('recipeSearchInput');
+      if (searchInput) searchInput.value = '';
+      syncWorldCategoryFilterButtons();
+      syncHomeCategoryTilesActive();
+      syncWeltreiseSubFilters();
+      syncRatingFilterButtons();
+      if (!opt.skipView) {
+        updateRecipeListView({ scrollToResults: !!opt.scrollToResults, skipHideDetail: !!opt.skipHideDetail });
+      }
+    }
+
     function getWorldCategoryFilterLabel(filterKey) {
       var key = String(filterKey || '').trim();
       if (!key || key === 'world-all') return '';
@@ -6150,8 +6183,11 @@
 
     function applyWorldCategoryFilter(filterKey, opt) {
       opt = opt || {};
-      currentWorldCategoryFilter = filterKey || 'world-all';
-      currentRecipeFilterKey = 'all';
+      var nextKey = filterKey || 'world-all';
+      currentWorldCategoryFilter = nextKey;
+      if (nextKey !== 'world-all') {
+        currentRecipeFilterKey = 'all';
+      }
       recipeListVisibleCount = 12;
       syncWorldCategoryFilterButtons();
       syncHomeCategoryTilesActive();
@@ -6167,7 +6203,7 @@
 
     function applyWorldCategoryFilterToList(list) {
       if (!list || !list.length) return list || [];
-      if (currentWorldCategoryFilter === 'world-all') return list;
+      if (!shouldApplyWorldCategoryFilter()) return list;
       return list.filter(function (r) {
         return recipeMatchesWorldCategory(r, currentWorldCategoryFilter);
       });
@@ -8579,10 +8615,14 @@
     function applyRecipeFilter(key, opt) {
       opt = opt || {};
       if (!FILTER_HEADINGS.hasOwnProperty(key)) key = 'alle';
+      if (key === 'all') {
+        resetAllRecipeFilters(opt);
+        return;
+      }
       currentRecipeFilterKey = key;
       recipeListVisibleCount = key === 'latest' ? LATEST_RECIPE_INITIAL : 12;
       resetWorldCategoryFilter();
-      if (key === 'all' || String(key).indexOf('rated') === 0) {
+      if (String(key).indexOf('rated') === 0) {
         currentSearchQuery = '';
         var search = document.getElementById('recipeSearchInput');
         if (search) search.value = '';
@@ -8614,6 +8654,7 @@
     function updateRecipeListView(opt) {
       opt = opt || {};
       try {
+      enforceFilterMutualExclusion();
       if (!opt.skipHideDetail) hideRecipeDetailPage();
 
       var heading = document.getElementById('recipeSectionHeading');
@@ -9073,10 +9114,7 @@
         e.preventDefault();
         var k = btn.getAttribute('data-rating-filter');
         if (k === 'rating-all') {
-          resetWorldCategoryFilter();
-          currentRecipeFilterKey = 'all';
-          recipeListVisibleCount = 12;
-          updateRecipeListView();
+          resetAllRecipeFilters({ scrollToResults: true });
         } else {
           applyRecipeFilter(k, { scrollToResults: true });
         }
@@ -9273,7 +9311,7 @@
         try {
           history.replaceState(null, '', window.location.pathname + window.location.search + '#rezepte');
         } catch (err) {}
-        applyRecipeFilter('all');
+        applyRecipeFilter('all', { scrollToResults: false });
         syncRatingFilterButtons();
         var sec = document.getElementById('rezepte');
         if (sec) {
