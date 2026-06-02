@@ -389,6 +389,39 @@
       background: rgba(0, 0, 0, 0.03);
     }
 
+    .nav-dropdown-panel a.nav-dropdown-sub {
+      padding-left: 28px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #555;
+    }
+
+    .subcategory-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 1.25rem;
+    }
+
+    .subcategory-filter-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--dark);
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      line-height: 1.2;
+    }
+
+    .subcategory-filter-btn.is-active {
+      border-color: var(--accent);
+      background: rgba(196, 92, 38, 0.08);
+      color: var(--accent);
+    }
+
     .hero {
       position: relative;
       width: 100%;
@@ -3475,6 +3508,10 @@
             <a href="#rezepte" role="menuitem" data-filter="grundrezepte">Grundrezepte</a>
             <a href="#rezepte" role="menuitem" data-filter="suesses-backen">Süßes &amp; Backen</a>
             <a href="#rezepte" role="menuitem" data-filter="woelpinghausen">Wölpinghausen</a>
+            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise">Kulinarische Weltreise</a>
+            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise-europa" class="nav-dropdown-sub">Europa</a>
+            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise-mittelmeer" class="nav-dropdown-sub">Mittelmeer &amp; Nordafrika</a>
+            <a href="#rezepte" role="menuitem" data-filter="kulinarische-weltreise-weltreise" class="nav-dropdown-sub">Weltreise</a>
           </div>
         </li>
         <li><button type="button" class="nav-merkliste-btn" id="merklisteNavBtn">Merkliste</button></li>
@@ -3526,7 +3563,7 @@
     <section class="home-recipes-section" id="rezepte">
       <div class="home-main">
         <div class="home-primary">
-          <div class="section-head-row">
+            <div class="section-head-row">
             <div class="section-head-block" id="recipe-results">
               <p class="section-kicker" id="recipeSectionKicker">Aktuelle Highlights</p>
               <h2 id="recipeSectionHeading">Heute besonders beliebt</h2>
@@ -3534,6 +3571,12 @@
             <div class="recipe-list-actions" id="home-surprise-wrap">
               <button type="button" class="btn" id="surpriseMeBtn" disabled aria-disabled="true">Überrasch mich</button>
             </div>
+          </div>
+          <div class="subcategory-filter-row" id="weltreiseSubFilters" hidden aria-label="Unterkategorien Kulinarische Weltreise">
+            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise">Alle</button>
+            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise-europa">Europa</button>
+            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise-mittelmeer">Mittelmeer &amp; Nordafrika</button>
+            <button type="button" class="subcategory-filter-btn" data-filter="kulinarische-weltreise-weltreise">Weltreise</button>
           </div>
           <div id="home-highlights" class="home-recipe-output">
             <div class="rating-filters" aria-label="Persönliche Bewertungsfilter">
@@ -3600,6 +3643,11 @@
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 14a6 6 0 0 0 12 0c0-4-2-6-6-6s-6 2-6 6z"/><path d="M9 10h6"/></svg></span>
                 <h3 class="home-category-label">Süßes &amp; Backen</h3>
                 <p>Für Kuchen, Desserts &amp; mehr.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="kulinarische-weltreise" aria-label="Themenwelt öffnen: Kulinarische Weltreise">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.8 4 6 4 9s-1.5 6.2-4 9M12 3c-2.5 2.8-4 6-4 9s1.5 6.2 4 9"/></svg></span>
+                <h3 class="home-category-label">Kulinarische Weltreise</h3>
+                <p>Europa, Mittelmeer &amp; Weltküche.</p>
               </article>
             </div>
           </div>
@@ -3873,7 +3921,26 @@
       '307': '/images/rezeptbild_307_detail.webp',
       '308': '/images/rezeptbild_308_detail.webp',
       '309': '/images/rezeptbild_309_detail.webp',
-      '310': '/images/rezeptbild_310_detail.webp'
+      '310': '/images/rezeptbild_310_detail.webp',
+      '311': '/images/rezeptbild_311_detail.webp',
+      '312': '/images/rezeptbild_312_detail.webp',
+      '313': '/images/rezeptbild_313_detail.webp',
+      '314': '/images/rezeptbild_314_detail.webp',
+      '315': '/images/rezeptbild_315_detail.webp',
+      '316': '/images/rezeptbild_316_detail.webp',
+      '317': '/images/rezeptbild_317_detail.webp',
+      '318': '/images/rezeptbild_318_detail.webp',
+      '319': '/images/rezeptbild_319_detail.webp',
+      '320': '/images/rezeptbild_320_detail.webp',
+      '321': '/images/rezeptbild_321_detail.webp',
+      '322': '/images/rezeptbild_322_detail.webp',
+      '323': '/images/rezeptbild_323_detail.webp',
+      '324': '/images/rezeptbild_324_detail.webp',
+      '325': '/images/rezeptbild_325_detail.webp',
+      '326': '/images/rezeptbild_326_detail.webp',
+      '327': '/images/rezeptbild_327_detail.webp',
+      '328': '/images/rezeptbild_328_detail.webp',
+      '329': '/images/rezeptbild_329_detail.webp'
     };
     var FILTER_HEADINGS = {
       alle: 'Aktuelle Highlights',
@@ -3897,6 +3964,10 @@
       grundrezepte: 'Grundrezepte',
       'suesses-backen': 'Süßes & Backen',
       woelpinghausen: 'Wölpinghausen',
+      'kulinarische-weltreise': 'Kulinarische Weltreise',
+      'kulinarische-weltreise-europa': 'Kulinarische Weltreise – Europa',
+      'kulinarische-weltreise-mittelmeer': 'Kulinarische Weltreise – Mittelmeer & Nordafrika',
+      'kulinarische-weltreise-weltreise': 'Kulinarische Weltreise – Weltreise',
       latest: 'Neue Rezepte'
     };
     var currentRecipeFilterKey = 'alle';
@@ -3988,6 +4059,8 @@
         themenwelten_tile7_text: 'Regional & persönlich.',
         themenwelten_tile8_title: 'Süßes & Backen',
         themenwelten_tile8_text: 'Für Kuchen, Desserts & mehr.',
+        themenwelten_tile9_title: 'Kulinarische Weltreise',
+        themenwelten_tile9_text: 'Europa, Mittelmeer & Weltküche.',
 
         welcome_kicker: 'Warum dieses Kochbuch?',
         welcome_title: 'Willkommen in Svens Kochbuch',
@@ -4048,6 +4121,10 @@
         dropdown_grundrezepte: 'Grundrezepte',
         dropdown_suesses: 'Süßes & Backen',
         dropdown_woelpinghausen: 'Wölpinghausen',
+        dropdown_kulinarische_weltreise: 'Kulinarische Weltreise',
+        dropdown_kulinarische_weltreise_europa: 'Europa',
+        dropdown_kulinarische_weltreise_mittelmeer: 'Mittelmeer & Nordafrika',
+        dropdown_kulinarische_weltreise_weltreise: 'Weltreise',
 
         filter_schnell: 'Schnell',
         filter_airfryer: 'Airfryer',
@@ -4063,6 +4140,15 @@
         filter_grundrezepte: 'Grundrezepte',
         filter_suesses_backen: 'Süßes & Backen',
         filter_woelpinghausen: 'Wölpinghausen',
+        filter_kulinarische_weltreise: 'Kulinarische Weltreise',
+        filter_kulinarische_weltreise_subtitle: 'Inspiriert von internationalen Kochduellen und kulinarischen Reisen – neu interpretiert für Svens Küche.',
+        filter_kulinarische_weltreise_europa: 'Europa',
+        filter_kulinarische_weltreise_mittelmeer: 'Mittelmeer & Nordafrika',
+        filter_kulinarische_weltreise_weltreise: 'Weltreise',
+        weltreise_subfilter_all: 'Alle',
+        weltreise_subfilter_europa: 'Europa',
+        weltreise_subfilter_mittelmeer: 'Mittelmeer & Nordafrika',
+        weltreise_subfilter_weltreise: 'Weltreise',
 
         heading_rated: 'Bewertete Rezepte',
         heading_rated_5: 'Deine 5-Sterne-Rezepte',
@@ -4221,6 +4307,8 @@
         themenwelten_tile7_text: 'Regionalnie i osobiście.',
         themenwelten_tile8_title: 'Słodkie i wypieki',
         themenwelten_tile8_text: 'Ciasta, desery i nie tylko.',
+        themenwelten_tile9_title: 'Podróż kulinarna',
+        themenwelten_tile9_text: 'Europa, Morze Śródziemne i kuchnia świata.',
 
         welcome_kicker: 'Dlaczego ta książka kucharska?',
         welcome_title: 'Witaj w książce kucharskiej Svena',
@@ -4281,6 +4369,10 @@
         dropdown_grundrezepte: 'Przepisy podstawowe',
         dropdown_suesses: 'Słodkie i wypieki',
         dropdown_woelpinghausen: 'Wölpinghausen',
+        dropdown_kulinarische_weltreise: 'Podróż kulinarna',
+        dropdown_kulinarische_weltreise_europa: 'Europa',
+        dropdown_kulinarische_weltreise_mittelmeer: 'Morze Śródziemne i Afryka Północna',
+        dropdown_kulinarische_weltreise_weltreise: 'Podróż po świecie',
 
         filter_schnell: 'Szybkie',
         filter_airfryer: 'Airfryer',
@@ -4296,6 +4388,15 @@
         filter_grundrezepte: 'Przepisy podstawowe',
         filter_suesses_backen: 'Słodkie i wypieki',
         filter_woelpinghausen: 'Wölpinghausen',
+        filter_kulinarische_weltreise: 'Podróż kulinarna',
+        filter_kulinarische_weltreise_subtitle: 'Inspirowane międzynarodowymi pojedynkami kulinarnymi i podróżami – nowa interpretacja kuchni Svena.',
+        filter_kulinarische_weltreise_europa: 'Europa',
+        filter_kulinarische_weltreise_mittelmeer: 'Morze Śródziemne i Afryka Północna',
+        filter_kulinarische_weltreise_weltreise: 'Podróż po świecie',
+        weltreise_subfilter_all: 'Wszystkie',
+        weltreise_subfilter_europa: 'Europa',
+        weltreise_subfilter_mittelmeer: 'Morze Śródziemne i Afryka Północna',
+        weltreise_subfilter_weltreise: 'Podróż po świecie',
 
         heading_rated: 'Ocenione przepisy',
         heading_rated_5: 'Twoje przepisy 5★',
@@ -4454,6 +4555,8 @@
         themenwelten_tile7_text: 'Regional and personal.',
         themenwelten_tile8_title: 'Sweet & baking',
         themenwelten_tile8_text: 'Cakes, desserts and more.',
+        themenwelten_tile9_title: 'Culinary world tour',
+        themenwelten_tile9_text: 'Europe, Mediterranean & world cuisine.',
 
         welcome_kicker: 'Why this cookbook?',
         welcome_title: 'Welcome to Sven’s cookbook',
@@ -4514,6 +4617,10 @@
         dropdown_grundrezepte: 'Basic recipes',
         dropdown_suesses: 'Sweet & baking',
         dropdown_woelpinghausen: 'Wölpinghausen',
+        dropdown_kulinarische_weltreise: 'Culinary world tour',
+        dropdown_kulinarische_weltreise_europa: 'Europe',
+        dropdown_kulinarische_weltreise_mittelmeer: 'Mediterranean & North Africa',
+        dropdown_kulinarische_weltreise_weltreise: 'World tour',
 
         filter_schnell: 'Quick',
         filter_airfryer: 'Air fryer',
@@ -4529,6 +4636,15 @@
         filter_grundrezepte: 'Basic recipes',
         filter_suesses_backen: 'Sweet & baking',
         filter_woelpinghausen: 'Wölpinghausen',
+        filter_kulinarische_weltreise: 'Culinary world tour',
+        filter_kulinarische_weltreise_subtitle: 'Inspired by international cook-offs and culinary journeys – reimagined for Sven’s kitchen.',
+        filter_kulinarische_weltreise_europa: 'Europe',
+        filter_kulinarische_weltreise_mittelmeer: 'Mediterranean & North Africa',
+        filter_kulinarische_weltreise_weltreise: 'World tour',
+        weltreise_subfilter_all: 'All',
+        weltreise_subfilter_europa: 'Europe',
+        weltreise_subfilter_mittelmeer: 'Mediterranean & North Africa',
+        weltreise_subfilter_weltreise: 'World tour',
 
         heading_rated: 'Rated recipes',
         heading_rated_5: 'Your 5-star recipes',
@@ -5055,6 +5171,10 @@
         var ddGr = dd.querySelector('a[data-filter="grundrezepte"]'); if (ddGr) ddGr.textContent = t('dropdown_grundrezepte');
         var ddSw = dd.querySelector('a[data-filter="suesses-backen"]'); if (ddSw) ddSw.textContent = t('dropdown_suesses');
         var ddW = dd.querySelector('a[data-filter="woelpinghausen"]'); if (ddW) ddW.textContent = t('dropdown_woelpinghausen');
+        var ddKw = dd.querySelector('a[data-filter="kulinarische-weltreise"]'); if (ddKw) ddKw.textContent = t('dropdown_kulinarische_weltreise');
+        var ddKwe = dd.querySelector('a[data-filter="kulinarische-weltreise-europa"]'); if (ddKwe) ddKwe.textContent = t('dropdown_kulinarische_weltreise_europa');
+        var ddKwm = dd.querySelector('a[data-filter="kulinarische-weltreise-mittelmeer"]'); if (ddKwm) ddKwm.textContent = t('dropdown_kulinarische_weltreise_mittelmeer');
+        var ddKww = dd.querySelector('a[data-filter="kulinarische-weltreise-weltreise"]'); if (ddKww) ddKww.textContent = t('dropdown_kulinarische_weltreise_weltreise');
       }
 
       updateNavBadges();
@@ -5135,7 +5255,7 @@
       if (dsNewT) dsNewT.textContent = t('detail_sidebar_recipes');
 
       var twTiles = document.querySelectorAll('#themenweltenGrid .category-tile');
-      if (twTiles && twTiles.length >= 8) {
+      if (twTiles && twTiles.length >= 9) {
         var keys = [
           ['themenwelten_tile1_title', 'themenwelten_tile1_text'],
           ['themenwelten_tile2_title', 'themenwelten_tile2_text'],
@@ -5144,9 +5264,10 @@
           ['themenwelten_tile5_title', 'themenwelten_tile5_text'],
           ['themenwelten_tile6_title', 'themenwelten_tile6_text'],
           ['themenwelten_tile7_title', 'themenwelten_tile7_text'],
-          ['themenwelten_tile8_title', 'themenwelten_tile8_text']
+          ['themenwelten_tile8_title', 'themenwelten_tile8_text'],
+          ['themenwelten_tile9_title', 'themenwelten_tile9_text']
         ];
-        for (var ti = 0; ti < 8; ti++) {
+        for (var ti = 0; ti < 9; ti++) {
           var h3 = twTiles[ti].querySelector('h3');
           var p = twTiles[ti].querySelector('p');
           if (h3) h3.textContent = t(keys[ti][0]);
@@ -5220,6 +5341,7 @@
       var sb2 = document.getElementById('shoppingBack2');
       if (sb2) sb2.textContent = t('shopping_back');
 
+      syncWeltreiseSubFilters();
       refreshDetailToolbarLabels();
     }
 
@@ -5685,6 +5807,18 @@
       return false;
     }
 
+    function isWeltreiseFilterKey(key) {
+      return String(key || '').indexOf('kulinarische-weltreise') === 0;
+    }
+
+    function recipeCategoryLower(r) {
+      return String(getRecipeField(r, 'category') || r.category || '').toLowerCase();
+    }
+
+    function recipeMatchesCategoryContains(r, fragment) {
+      return recipeCategoryLower(r).indexOf(String(fragment || '').toLowerCase()) >= 0;
+    }
+
     function recipeMatchesFilterKey(r, key) {
       switch (key) {
         case 'schnell':
@@ -5715,6 +5849,14 @@
           return matchesRecipeFields(r, ['name', 'category', 'tags'], ['backen', 'süßes', 'suesses', 'kuchen', 'blechkuchen', 'dessert', 'torte', 'gebäck', 'gebaeck']);
         case 'woelpinghausen':
           return matchesRecipeFields(r, ['name', 'category', 'tags'], ['wölpinghausen', 'woelpinghausen', 'wölpinghäuser', 'woelpinghaeuser']);
+        case 'kulinarische-weltreise':
+          return recipeMatchesCategoryContains(r, 'kulinarische weltreise');
+        case 'kulinarische-weltreise-europa':
+          return recipeMatchesCategoryContains(r, 'kulinarische weltreise / europa');
+        case 'kulinarische-weltreise-mittelmeer':
+          return recipeMatchesCategoryContains(r, 'kulinarische weltreise / mittelmeer');
+        case 'kulinarische-weltreise-weltreise':
+          return recipeMatchesCategoryContains(r, 'kulinarische weltreise / weltreise');
         default:
           return false;
       }
@@ -7921,10 +8063,36 @@
       var key = String(currentRecipeFilterKey || '');
       var isCategoryFilter = key !== 'alle' && key !== 'all' && key !== 'latest' && String(key).indexOf('rated') !== 0;
       [].slice.call(grid.querySelectorAll('.category-tile[data-filter]')).forEach(function (tile) {
-        var active = isCategoryFilter && tile.getAttribute('data-filter') === key;
+        var tileKey = tile.getAttribute('data-filter');
+        var active = isCategoryFilter && (
+          tileKey === key ||
+          (tileKey === 'kulinarische-weltreise' && isWeltreiseFilterKey(key))
+        );
         tile.classList.toggle('is-active', active);
         if (active) tile.setAttribute('aria-current', 'true');
         else tile.removeAttribute('aria-current');
+      });
+    }
+
+    function syncWeltreiseSubFilters() {
+      var row = document.getElementById('weltreiseSubFilters');
+      if (!row) return;
+      var show = isWeltreiseFilterKey(currentRecipeFilterKey);
+      row.hidden = !show;
+      if (!show) return;
+      var labelMap = {
+        'kulinarische-weltreise': 'weltreise_subfilter_all',
+        'kulinarische-weltreise-europa': 'weltreise_subfilter_europa',
+        'kulinarische-weltreise-mittelmeer': 'weltreise_subfilter_mittelmeer',
+        'kulinarische-weltreise-weltreise': 'weltreise_subfilter_weltreise'
+      };
+      [].slice.call(row.querySelectorAll('[data-filter]')).forEach(function (btn) {
+        var fk = btn.getAttribute('data-filter');
+        var active = fk === currentRecipeFilterKey;
+        btn.classList.toggle('is-active', active);
+        if (labelMap[fk]) btn.textContent = t(labelMap[fk]);
+        if (active) btn.setAttribute('aria-current', 'true');
+        else btn.removeAttribute('aria-current');
       });
     }
 
@@ -7940,6 +8108,7 @@
       }
       updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
       syncHomeCategoryTilesActive();
+      syncWeltreiseSubFilters();
     }
 
     function updateRecipeListView(opt) {
@@ -7985,8 +8154,15 @@
         if (kickerEl) kickerEl.style.display = 'none';
         heading.textContent = t('heading_rated_none');
       } else {
-        if (kickerEl) kickerEl.style.display = 'none';
         var fk = String(currentRecipeFilterKey || '');
+        if (isWeltreiseFilterKey(fk)) {
+          if (kickerEl) {
+            kickerEl.style.display = '';
+            kickerEl.textContent = t('filter_kulinarische_weltreise_subtitle');
+          }
+        } else if (kickerEl) {
+          kickerEl.style.display = 'none';
+        }
         var mapKey =
           fk === 'grill-bbq' ? 'filter_grill_bbq'
           : fk === 'pfanne-wok' ? 'filter_pfanne_wok'
@@ -7995,11 +8171,16 @@
           : fk === 'fisch-meer' ? 'filter_fisch_meer'
           : fk === 'suppen-eintoepfe' ? 'filter_suppen_eintoepfe'
           : fk === 'suesses-backen' ? 'filter_suesses_backen'
+          : fk === 'kulinarische-weltreise' ? 'filter_kulinarische_weltreise'
+          : fk === 'kulinarische-weltreise-europa' ? 'filter_kulinarische_weltreise_europa'
+          : fk === 'kulinarische-weltreise-mittelmeer' ? 'filter_kulinarische_weltreise_mittelmeer'
+          : fk === 'kulinarische-weltreise-weltreise' ? 'filter_kulinarische_weltreise_weltreise'
           : ('filter_' + fk);
         heading.textContent = (I18N[currentLang] && I18N[currentLang][mapKey]) ? t(mapKey) : (FILTER_HEADINGS[currentRecipeFilterKey] || t('nav_recipes'));
       }
       syncRatingFilterButtons();
       syncHomeCategoryTilesActive();
+      syncWeltreiseSubFilters();
 
       var highlightViewAll = document.getElementById('highlightViewAllWrap');
       if (highlightViewAll && currentRecipeFilterKey !== 'alle') {
@@ -8514,6 +8695,29 @@
         if (!tile || !grid.contains(tile)) return;
         e.preventDefault();
         activate(tile);
+      });
+    })();
+
+    (function attachWeltreiseSubFilters() {
+      var row = document.getElementById('weltreiseSubFilters');
+      if (!row || row.dataset.bound === '1') return;
+      row.dataset.bound = '1';
+      function activate(btn) {
+        if (!btn) return;
+        var key = btn.getAttribute('data-filter');
+        if (!key) return;
+        hideRecipeDetailPage(true);
+        try {
+          history.replaceState(null, '', window.location.pathname + window.location.search + '#rezepte');
+        } catch (err) {}
+        applyRecipeFilter(key, { scrollToResults: true });
+        syncRatingFilterButtons();
+      }
+      row.addEventListener('click', function (e) {
+        var btn = e.target.closest('[data-filter]');
+        if (!btn || !row.contains(btn)) return;
+        e.preventDefault();
+        activate(btn);
       });
     })();
 
