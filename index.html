@@ -2486,6 +2486,10 @@
       margin-bottom: 8px;
     }
 
+    .summer-drinks-collection[hidden] {
+      display: none !important;
+    }
+
     .summer-drinks-intro {
       border: 1px solid rgba(0, 0, 0, 0.08);
       border-radius: 18px;
@@ -9426,17 +9430,18 @@
         highlightViewAll.hidden = true;
       }
 
-      if (!parsedRecipes.length) return;
-
       var tokens = normalizeSearchTokens(currentSearchQuery);
       var summerView = document.getElementById('summerDrinksCollectionView');
       var lmView = document.getElementById('sommerdrinksLmCollectionView');
-      if (currentRecipeFilterKey === 'sommer-horchatas' && !tokens.length) {
-        if (summerView) {
-          summerView.hidden = false;
-          renderSummerDrinksCollectionView();
-        }
-        if (lmView) lmView.hidden = true;
+      var showSummerCollection = currentRecipeFilterKey === 'sommer-horchatas' && !tokens.length;
+      var showLmCollection = currentRecipeFilterKey === 'sommerdrinks-limonaden-mocktails' && !tokens.length;
+      if (summerView) summerView.hidden = !showSummerCollection;
+      if (lmView) lmView.hidden = !showLmCollection;
+
+      if (!parsedRecipes.length) return;
+
+      if (showSummerCollection) {
+        renderSummerDrinksCollectionView();
         grid.hidden = true;
         grid.innerHTML = '';
         if (loadWrap) loadWrap.hidden = true;
@@ -9448,12 +9453,8 @@
         if (opt.scrollToResults) scrollToHomeRecipeResults();
         return;
       }
-      if (currentRecipeFilterKey === 'sommerdrinks-limonaden-mocktails' && !tokens.length) {
-        if (lmView) {
-          lmView.hidden = false;
-          renderSommerdrinksLmCollectionView();
-        }
-        if (summerView) summerView.hidden = true;
+      if (showLmCollection) {
+        renderSommerdrinksLmCollectionView();
         grid.hidden = true;
         grid.innerHTML = '';
         if (loadWrap) loadWrap.hidden = true;
