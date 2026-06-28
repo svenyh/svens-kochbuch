@@ -1,0 +1,1068 @@
+<?xml version='1.0' encoding='utf-8'?>
+<drinkCollection id="sommer-horchatas" title="Sommer-Horchatas &amp; Aguas Frescas" version="2">
+  <recipe id="372">
+    <name>Erdbeer-Wassermelonen-Horchata mit Reismilch</name>
+    <intro lang="de">Eine schnelle, europäisch inspirierte Thermomix-Variante einer Horchata: cremig durch Reismilch, fruchtig durch Erdbeeren und Wassermelone, frisch durch Limette. Perfekt für heiße Sommertage, Grillabende oder die Terrasse.</intro>
+    <persons>ca. 6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>sommerdrink</tag>
+      <tag>horchata</tag>
+      <tag>erdbeere</tag>
+      <tag>wassermelone</tag>
+    </tags>
+    <image src="images/rezeptbild_372.png" alt="Erdbeer-Wassermelonen-Horchata mit Reismilch"/>
+    <ingredients>
+      <item>500 g Erdbeeren</item>
+      <item>600 g Wassermelone, ohne Schale und möglichst kernarm</item>
+      <item>500 ml Reismilch</item>
+      <item>80–120 ml gezuckerte Kondensmilch</item>
+      <item>Saft von 1 Limette</item>
+      <item>1 TL Vanilleextrakt</item>
+      <item>1 Prise Zimt</item>
+      <item>6–8 Eiswürfel</item>
+      <item>optional: frische Minze zum Servieren</item>
+      <item>optional: Erdbeerscheiben und kleine Wassermelonenwürfel als Deko</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Erdbeeren waschen, Grün entfernen. Wassermelone würfeln.</step>
+      <step nr="2">Erdbeeren und Wassermelone in den Mixtopf geben und 20 Sek. / Stufe 8 mixen.</step>
+      <step nr="3">Reismilch, Kondensmilch, Limettensaft, Vanille, Zimt und Eiswürfel dazugeben.</step>
+      <step nr="4">30 Sek. / Stufe 8–10 cremig mixen.</step>
+      <step nr="5">Abschmecken: Bei sehr süßer Wassermelone reichen 80 ml Kondensmilch. Für mehr Süße bis 120 ml verwenden.</step>
+      <step nr="6">Mindestens 1 Stunde kalt stellen.</step>
+      <step nr="7">Mit Eis, frischen Erdbeeren, Wassermelonenwürfeln und optional Minze servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 1 Stunde</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Sehr kalt servieren. Besonders schön wirkt das Getränk in großen Gläsern mit Eis, Erdbeerscheiben, kleinen Wassermelonenwürfeln und frischer Minze.</servingTip>
+    <variant>Diese Version nutzt Reismilch statt eingeweichtem Reis. Dadurch ist sie schneller und alltagstauglicher, bleibt aber cremig und erinnert geschmacklich an eine Horchata.</variant>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of creamy pale-pink horchata drink in a large glass tumbler, filled with ice. Garnish with fresh strawberry slices, small watermelon cubes, lime wedge, mint sprig. Fresh strawberries and watermelon nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowo-arbuzowa z mlekiem ryżowym</name>
+      <persons>ok. 6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Podawać bardzo zimne. Napój wygląda szczególnie pięknie w dużych szklankach z lodem, plasterkami truskawek, małymi kostkami arbuza i świeżą miętą.</servingTip>
+      <variant>Ta wersja używa mleka ryżowego zamiast namoczonego ryżu. Dzięki temu jest szybsza i praktyczniejsza na co dzień, ale pozostaje kremowa i smakiem przypomina Horchatę.</variant>
+      <intro lang="pl">Szybka, inspirowana europejsko wersja Horchaty z Thermomixa: kremowa dzięki mleku ryżowemu, owocowa dzięki truskawkom i arbuzowi, świeża dzięki limonce. Idealna na gorące letnie dni, wieczory przy grillu lub taras.</intro>
+      <ingredients>
+        <item>500 g truskawek</item>
+        <item>600 g arbuza, bez skórki i możliwie z małą ilością pestek</item>
+        <item>500 ml mleka ryżowego</item>
+        <item>80–120 ml słodzonego mleka skondensowanego</item>
+        <item>sok z 1 limonki</item>
+        <item>1 łyżeczka ekstraktu waniliowego</item>
+        <item>1 szczypta cynamonu</item>
+        <item>6–8 kostek lodu</item>
+        <item>opcjonalnie: świeża mięta do podania</item>
+        <item>opcjonalnie: plasterki truskawek i małe kostki arbuza do dekoracji</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Umyć truskawki, usunąć szypułki. Arbuza pokroić w kostkę.</step>
+        <step nr="2">Włożyć truskawki i arbuza do naczynia miksującego i miksować 20 Sek. / Stufe 8.</step>
+        <step nr="3">Dodać mleko ryżowe, mleko skondensowane, sok z limonki, wanilię, cynamon i kostki lodu.</step>
+        <step nr="4">Miksować na kremowo 30 Sek. / Stufe 8–10.</step>
+        <step nr="5">Doprawić do smaku: przy bardzo słodkim arbuzie wystarczy 80 ml mleka skondensowanego. Dla większej słodyczy użyć do 120 ml.</step>
+        <step nr="6">Chłodzić przez co najmniej 1 godzinę.</step>
+        <step nr="7">Podawać z lodem, świeżymi truskawkami, kostkami arbuza i opcjonalnie miętą.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 1 godzina</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Watermelon Horchata with Rice Milk</name>
+      <persons>approx. 6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Serve very cold. The drink looks especially nice in large glasses with ice, strawberry slices, small watermelon cubes, and fresh mint.</servingTip>
+      <variant>This version uses rice milk instead of soaked rice. That makes it quicker and more practical for everyday use, while it stays creamy and tastes reminiscent of a Horchata.</variant>
+      <intro lang="en">A quick, European-inspired Thermomix version of a Horchata: creamy from rice milk, fruity from strawberries and watermelon, fresh from lime. Perfect for hot summer days, barbecues, or the terrace.</intro>
+      <ingredients>
+        <item>500 g strawberries</item>
+        <item>600 g watermelon, rind removed and as seedless as possible</item>
+        <item>500 ml rice milk</item>
+        <item>80–120 ml sweetened condensed milk</item>
+        <item>juice of 1 lime</item>
+        <item>1 tsp vanilla extract</item>
+        <item>1 pinch cinnamon</item>
+        <item>6–8 ice cubes</item>
+        <item>optional: fresh mint for serving</item>
+        <item>optional: strawberry slices and small watermelon cubes for garnish</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wash the strawberries and remove the greens. Dice the watermelon.</step>
+        <step nr="2">Add strawberries and watermelon to the mixing bowl and blend 20 Sek. / Stufe 8.</step>
+        <step nr="3">Add rice milk, condensed milk, lime juice, vanilla, cinnamon, and ice cubes.</step>
+        <step nr="4">Blend until creamy 30 Sek. / Stufe 8–10.</step>
+        <step nr="5">Taste: if the watermelon is very sweet, 80 ml condensed milk is enough. For more sweetness, use up to 120 ml.</step>
+        <step nr="6">Chill for at least 1 hour.</step>
+        <step nr="7">Serve with ice, fresh strawberries, watermelon cubes, and optional mint.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 1 hour</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="373">
+    <name>Erdbeer-Horchata mit Reismilch</name>
+    <intro lang="de">Eine schnelle, cremige Erdbeer-Horchata nach europäisch inspirierter Thermomix-Art. Frische Erdbeeren, Reismilch, Vanille und ein Hauch Zimt machen sie zum perfekten Sommerdrink.</intro>
+    <persons>ca. 6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>sommerdrink</tag>
+      <tag>horchata</tag>
+      <tag>erdbeere</tag>
+      <tag>reismilch</tag>
+    </tags>
+    <image src="images/rezeptbild_373.png" alt="Erdbeer-Horchata mit Reismilch"/>
+    <ingredients>
+      <item>600 g Erdbeeren</item>
+      <item>700 ml Reismilch</item>
+      <item>100 ml gezuckerte Kondensmilch</item>
+      <item>Saft von 1/2 Limette</item>
+      <item>1 TL Vanilleextrakt</item>
+      <item>1 Prise Zimt</item>
+      <item>6–8 Eiswürfel</item>
+      <item>optional: frische Erdbeeren zum Servieren</item>
+      <item>optional: Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Erdbeeren waschen und das Grün entfernen.</step>
+      <step nr="2">Erdbeeren in den Mixtopf geben und 20 Sek. / Stufe 8 mixen.</step>
+      <step nr="3">Reismilch, Kondensmilch, Limettensaft, Vanille, Zimt und Eiswürfel dazugeben.</step>
+      <step nr="4">30 Sek. / Stufe 8–10 cremig mixen.</step>
+      <step nr="5">Abschmecken und bei Bedarf etwas mehr Limettensaft oder Kondensmilch ergänzen.</step>
+      <step nr="6">Mindestens 1 Stunde kalt stellen.</step>
+      <step nr="7">Mit Eis, Erdbeerscheiben und optional Minze servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 1 Stunde</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Sehr kalt servieren. Für eine besonders schöne Optik einige Erdbeerscheiben direkt ins Glas geben.</servingTip>
+    <variant>Diese schnelle Variante nutzt Reismilch statt eingeweichtem Reis und ist dadurch besonders alltagstauglich.</variant>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of creamy pink strawberry horchata with rice milk in a tall glass, filled with ice. Garnish with fresh strawberry slices, mint leaves. Fresh strawberries nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowa z mlekiem ryżowym</name>
+      <persons>ok. 6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Podawać bardzo zimne. Dla szczególnie ładnego wyglądu włożyć kilka plasterków truskawek bezpośrednio do szklanki.</servingTip>
+      <variant>Ta szybka wersja używa mleka ryżowego zamiast namoczonego ryżu i dzięki temu jest szczególnie praktyczna na co dzień.</variant>
+      <intro lang="pl">Szybka, kremowa Horchata truskawkowa w inspirowanym europejsko stylu Thermomixa. Świeże truskawki, mleko ryżowe, wanilia i odrobina cynamonu czynią ją idealnym letnim napojem.</intro>
+      <ingredients>
+        <item>600 g truskawek</item>
+        <item>700 ml mleka ryżowego</item>
+        <item>100 ml słodzonego mleka skondensowanego</item>
+        <item>sok z 1/2 limonki</item>
+        <item>1 łyżeczka ekstraktu waniliowego</item>
+        <item>1 szczypta cynamonu</item>
+        <item>6–8 kostek lodu</item>
+        <item>opcjonalnie: świeże truskawki do podania</item>
+        <item>opcjonalnie: mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Umyć truskawki i usunąć szypułki.</step>
+        <step nr="2">Włożyć truskawki do naczynia miksującego i miksować 20 Sek. / Stufe 8.</step>
+        <step nr="3">Dodać mleko ryżowe, mleko skondensowane, sok z limonki, wanilię, cynamon i kostki lodu.</step>
+        <step nr="4">Miksować na kremowo 30 Sek. / Stufe 8–10.</step>
+        <step nr="5">Doprawić do smaku i w razie potrzeby dodać nieco więcej soku z limonki lub mleka skondensowanego.</step>
+        <step nr="6">Chłodzić przez co najmniej 1 godzinę.</step>
+        <step nr="7">Podawać z lodem, plasterkami truskawek i opcjonalnie miętą.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 1 godzina</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Horchata with Rice Milk</name>
+      <persons>approx. 6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Serve very cold. For a particularly pretty look, place a few strawberry slices directly into the glass.</servingTip>
+      <variant>This quick version uses rice milk instead of soaked rice, making it especially practical for everyday use.</variant>
+      <intro lang="en">A quick, creamy strawberry Horchata in a European-inspired Thermomix style. Fresh strawberries, rice milk, vanilla, and a hint of cinnamon make it the perfect summer drink.</intro>
+      <ingredients>
+        <item>600 g strawberries</item>
+        <item>700 ml rice milk</item>
+        <item>100 ml sweetened condensed milk</item>
+        <item>juice of 1/2 lime</item>
+        <item>1 tsp vanilla extract</item>
+        <item>1 pinch cinnamon</item>
+        <item>6–8 ice cubes</item>
+        <item>optional: fresh strawberries for serving</item>
+        <item>optional: mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wash the strawberries and remove the greens.</step>
+        <step nr="2">Add strawberries to the mixing bowl and blend 20 Sek. / Stufe 8.</step>
+        <step nr="3">Add rice milk, condensed milk, lime juice, vanilla, cinnamon, and ice cubes.</step>
+        <step nr="4">Blend until creamy 30 Sek. / Stufe 8–10.</step>
+        <step nr="5">Taste and add a little more lime juice or condensed milk if needed.</step>
+        <step nr="6">Chill for at least 1 hour.</step>
+        <step nr="7">Serve with ice, strawberry slices, and optional mint.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 1 hour</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="374">
+    <name>Wassermelone-Limette-Minze Agua Fresca</name>
+    <intro lang="de">Ein leichter, eiskalter Sommerdrink aus Wassermelone, Limette und Minze. Fruchtig, frisch und perfekt bei heißen Temperaturen.</intro>
+    <persons>ca. 6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>sommerdrink</tag>
+      <tag>agua-fresca</tag>
+      <tag>wassermelone</tag>
+      <tag>limette</tag>
+      <tag>minze</tag>
+    </tags>
+    <image src="images/rezeptbild_374.png" alt="Wassermelone-Limette-Minze Agua Fresca"/>
+    <ingredients>
+      <item>1 kg Wassermelone, ohne Schale und möglichst kernarm</item>
+      <item>Saft von 2 Limetten</item>
+      <item>300 ml kaltes Wasser</item>
+      <item>1–2 EL Agavendicksaft oder Honig, optional</item>
+      <item>8–10 Eiswürfel</item>
+      <item>8–10 Minzblätter</item>
+      <item>optional: Limettenscheiben zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Wassermelone würfeln.</step>
+      <step nr="2">Wassermelone, Limettensaft, Wasser, optional Agavendicksaft oder Honig und Eiswürfel in den Mixtopf geben.</step>
+      <step nr="3">30 Sek. / Stufe 8–10 mixen.</step>
+      <step nr="4">Minzblätter dazugeben und 5 Sek. / Stufe 4 unterrühren.</step>
+      <step nr="5">Abschmecken und bei Bedarf mehr Limette oder Süße ergänzen.</step>
+      <step nr="6">30 Minuten kalt stellen oder direkt auf Eis servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit viel Eis, Minze und Limettenscheiben servieren.</servingTip>
+    <variant>Dieses Rezept ist eine Agua Fresca und kommt ohne Reis oder Reismilch aus.</variant>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of pale pink-red watermelon agua fresca in a clear glass, filled with ice. Garnish with lime wheel, fresh mint sprig, watermelon wedge. Fresh watermelon, lime and mint nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca arbuzowo-limonkowo-miętowa</name>
+      <persons>ok. 6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Podawać z dużą ilością lodu, miętą i plasterkami limonki.</servingTip>
+      <variant>Ten przepis to Agua Fresca i nie zawiera ryżu ani mleka ryżowego.</variant>
+      <intro lang="pl">Lekki, lodowaty letni napój z arbuza, limonki i mięty. Owocowy, świeży i idealny na gorące temperatury.</intro>
+      <ingredients>
+        <item>1 kg arbuza, bez skórki i możliwie z małą ilością pestek</item>
+        <item>sok z 2 limonek</item>
+        <item>300 ml zimnej wody</item>
+        <item>1–2 łyżki syropu z agawy lub miodu, opcjonalnie</item>
+        <item>8–10 kostek lodu</item>
+        <item>8–10 listków mięty</item>
+        <item>opcjonalnie: plasterki limonki do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić arbuza w kostkę.</step>
+        <step nr="2">Włożyć arbuza, sok z limonki, wodę, opcjonalnie syrop z agawy lub miód oraz kostki lodu do naczynia miksującego.</step>
+        <step nr="3">Miksować 30 Sek. / Stufe 8–10.</step>
+        <step nr="4">Dodać listki mięty i wmieszać 5 Sek. / Stufe 4.</step>
+        <step nr="5">Doprawić do smaku i w razie potrzeby dodać więcej limonki lub słodyczy.</step>
+        <step nr="6">Chłodzić 30 minut albo podawać od razu na lodzie.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Watermelon Lime Mint Agua Fresca</name>
+      <persons>approx. 6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Serve with plenty of ice, mint, and lime slices.</servingTip>
+      <variant>This recipe is an Agua Fresca and contains no rice or rice milk.</variant>
+      <intro lang="en">A light, ice-cold summer drink made with watermelon, lime, and mint. Fruity, fresh, and perfect in hot weather.</intro>
+      <ingredients>
+        <item>1 kg watermelon, rind removed and as seedless as possible</item>
+        <item>juice of 2 limes</item>
+        <item>300 ml cold water</item>
+        <item>1–2 tbsp agave syrup or honey, optional</item>
+        <item>8–10 ice cubes</item>
+        <item>8–10 mint leaves</item>
+        <item>optional: lime slices for serving</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dice the watermelon.</step>
+        <step nr="2">Add watermelon, lime juice, water, optional agave syrup or honey, and ice cubes to the mixing bowl.</step>
+        <step nr="3">Blend 30 Sek. / Stufe 8–10.</step>
+        <step nr="4">Add mint leaves and stir in 5 Sek. / Stufe 4.</step>
+        <step nr="5">Taste and add more lime or sweetness if needed.</step>
+        <step nr="6">Chill for 30 minutes or serve immediately over ice.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="375">
+    <name>Gurke-Limette-Minze Agua Fresca</name>
+    <intro lang="de">Eine besonders erfrischende Agua Fresca mit Gurke, Limette und Minze. Leicht, kühlend und ideal für heiße Sommertage.</intro>
+    <persons>ca. 6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>sommerdrink</tag>
+      <tag>agua-fresca</tag>
+      <tag>gurke</tag>
+      <tag>limette</tag>
+      <tag>minze</tag>
+    </tags>
+    <image src="images/rezeptbild_375.png" alt="Gurke-Limette-Minze Agua Fresca"/>
+    <ingredients>
+      <item>2 Salatgurken</item>
+      <item>Saft von 2 Limetten</item>
+      <item>600 ml kaltes Wasser</item>
+      <item>1–2 EL Agavendicksaft oder Honig, optional</item>
+      <item>8–10 Eiswürfel</item>
+      <item>10 Minzblätter</item>
+      <item>optional: Gurkenscheiben zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Gurken waschen und grob würfeln.</step>
+      <step nr="2">Gurken, Limettensaft, Wasser, optional Agavendicksaft oder Honig und Eiswürfel in den Mixtopf geben.</step>
+      <step nr="3">30 Sek. / Stufe 8–10 mixen.</step>
+      <step nr="4">Bei Bedarf durch ein feines Sieb gießen.</step>
+      <step nr="5">Minzblätter dazugeben und 5 Sek. / Stufe 4 unterrühren.</step>
+      <step nr="6">30 Minuten kalt stellen oder direkt auf Eis servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit Gurkenscheiben, Minze und viel Eis servieren.</servingTip>
+    <variant>Sehr frisch und eher leicht herb. Wer es runder mag, ergänzt etwas mehr Süße.</variant>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of pale green cucumber agua fresca in a clear glass, filled with ice. Garnish with cucumber ribbon, lime slice, mint leaves. Fresh cucumber, lime and mint nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ogórkowo-limonkowo-miętowa</name>
+      <persons>ok. 6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Podawać z plasterkami ogórka, miętą i dużą ilością lodu.</servingTip>
+      <variant>Bardzo świeża i raczej lekko cierpka. Kto woli pełniejszy smak, może dodać trochę więcej słodyczy.</variant>
+      <intro lang="pl">Wyjątkowo orzeźwiająca Agua Fresca z ogórkiem, limonką i miętą. Lekka, chłodząca i idealna na gorące letnie dni.</intro>
+      <ingredients>
+        <item>2 ogórki sałatkowe</item>
+        <item>sok z 2 limonek</item>
+        <item>600 ml zimnej wody</item>
+        <item>1–2 łyżki syropu z agawy lub miodu, opcjonalnie</item>
+        <item>8–10 kostek lodu</item>
+        <item>10 listków mięty</item>
+        <item>opcjonalnie: plasterki ogórka do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Umyć ogórki i pokroić je grubo w kostkę.</step>
+        <step nr="2">Włożyć ogórki, sok z limonki, wodę, opcjonalnie syrop z agawy lub miód oraz kostki lodu do naczynia miksującego.</step>
+        <step nr="3">Miksować 30 Sek. / Stufe 8–10.</step>
+        <step nr="4">W razie potrzeby przelać przez drobne sitko.</step>
+        <step nr="5">Dodać listki mięty i wmieszać 5 Sek. / Stufe 4.</step>
+        <step nr="6">Chłodzić 30 minut albo podawać od razu na lodzie.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Cucumber Lime Mint Agua Fresca</name>
+      <persons>approx. 6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Serve with cucumber slices, mint, and plenty of ice.</servingTip>
+      <variant>Very fresh and slightly tart. If you prefer it rounder, add a little more sweetness.</variant>
+      <intro lang="en">An especially refreshing Agua Fresca with cucumber, lime, and mint. Light, cooling, and ideal for hot summer days.</intro>
+      <ingredients>
+        <item>2 cucumbers</item>
+        <item>juice of 2 limes</item>
+        <item>600 ml cold water</item>
+        <item>1–2 tbsp agave syrup or honey, optional</item>
+        <item>8–10 ice cubes</item>
+        <item>10 mint leaves</item>
+        <item>optional: cucumber slices for serving</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wash cucumbers and roughly dice them.</step>
+        <step nr="2">Add cucumbers, lime juice, water, optional agave syrup or honey, and ice cubes to the mixing bowl.</step>
+        <step nr="3">Blend 30 Sek. / Stufe 8–10.</step>
+        <step nr="4">Pour through a fine sieve if needed.</step>
+        <step nr="5">Add mint leaves and stir in 5 Sek. / Stufe 4.</step>
+        <step nr="6">Chill for 30 minutes or serve immediately over ice.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="376">
+    <name>Mango-Maracuja Agua Fresca</name>
+    <intro lang="de">Eine tropische Agua Fresca mit Mango und Maracuja. Süß, säuerlich und herrlich sommerlich.</intro>
+    <persons>ca. 6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>sommerdrink</tag>
+      <tag>agua-fresca</tag>
+      <tag>mango</tag>
+      <tag>maracuja</tag>
+    </tags>
+    <image src="images/rezeptbild_376.png" alt="Mango-Maracuja Agua Fresca"/>
+    <ingredients>
+      <item>2 reife Mangos, geschält und gewürfelt</item>
+      <item>200 ml Maracujasaft oder Maracujapüree</item>
+      <item>Saft von 1 Limette</item>
+      <item>500 ml kaltes Wasser</item>
+      <item>6–8 Eiswürfel</item>
+      <item>optional: 1 EL Agavendicksaft oder Honig</item>
+      <item>optional: Minze zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Mango schälen und würfeln.</step>
+      <step nr="2">Mango, Maracujasaft oder Maracujapüree, Limettensaft, Wasser, Eiswürfel und optional Süße in den Mixtopf geben.</step>
+      <step nr="3">30 Sek. / Stufe 8–10 mixen.</step>
+      <step nr="4">Abschmecken und bei Bedarf mehr Limette oder Süße ergänzen.</step>
+      <step nr="5">30 Minuten kalt stellen oder direkt auf Eis servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit Eis und etwas Minze servieren. Besonders schön wirkt der Drink in hohen Gläsern.</servingTip>
+    <variant>Dieses Rezept ist fruchtiger und intensiver als klassische leichte Agua Frescas.</variant>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of golden tropical mango passion fruit agua fresca in a tall glass, filled with ice. Garnish with passion fruit seeds visible, mango dice, lime slice, mint. Fresh mango and passion fruit nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca mango-marakuja</name>
+      <persons>ok. 6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Podawać z lodem i odrobiną mięty. Napój wygląda szczególnie pięknie w wysokich szklankach.</servingTip>
+      <variant>Ten przepis jest bardziej owocowy i intensywny niż klasyczne, lekkie Aguas Frescas.</variant>
+      <intro lang="pl">Tropikalna Agua Fresca z mango i marakują. Słodka, kwaskowa i cudownie letnia.</intro>
+      <ingredients>
+        <item>2 dojrzałe mango, obrane i pokrojone w kostkę</item>
+        <item>200 ml soku z marakui lub puree z marakui</item>
+        <item>sok z 1 limonki</item>
+        <item>500 ml zimnej wody</item>
+        <item>6–8 kostek lodu</item>
+        <item>opcjonalnie: 1 łyżka syropu z agawy lub miodu</item>
+        <item>opcjonalnie: mięta do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Obrać mango i pokroić w kostkę.</step>
+        <step nr="2">Włożyć mango, sok z marakui lub puree z marakui, sok z limonki, wodę, kostki lodu i opcjonalnie słodycz do naczynia miksującego.</step>
+        <step nr="3">Miksować 30 Sek. / Stufe 8–10.</step>
+        <step nr="4">Doprawić do smaku i w razie potrzeby dodać więcej limonki lub słodyczy.</step>
+        <step nr="5">Chłodzić 30 minut albo podawać od razu na lodzie.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Mango Passion Fruit Agua Fresca</name>
+      <persons>approx. 6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Serve with ice and a little mint. The drink looks especially nice in tall glasses.</servingTip>
+      <variant>This recipe is fruitier and more intense than classic light Aguas Frescas.</variant>
+      <intro lang="en">A tropical Agua Fresca with mango and passion fruit. Sweet, tangy, and wonderfully summery.</intro>
+      <ingredients>
+        <item>2 ripe mangoes, peeled and diced</item>
+        <item>200 ml passion fruit juice or passion fruit puree</item>
+        <item>juice of 1 lime</item>
+        <item>500 ml cold water</item>
+        <item>6–8 ice cubes</item>
+        <item>optional: 1 tbsp agave syrup or honey</item>
+        <item>optional: mint for serving</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Peel and dice the mango.</step>
+        <step nr="2">Add mango, passion fruit juice or passion fruit puree, lime juice, water, ice cubes, and optional sweetness to the mixing bowl.</step>
+        <step nr="3">Blend 30 Sek. / Stufe 8–10.</step>
+        <step nr="4">Taste and add more lime or sweetness if needed.</step>
+        <step nr="5">Chill for 30 minutes or serve immediately over ice.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="377">
+    <name>Erdbeer-Ananas Agua Fresca</name>
+    <intro lang="de">Fruchtig, leicht exotisch und wunderbar erfrischend. Die Kombination aus süßen Erdbeeren und saftiger Ananas ist der perfekte Sommerdrink.</intro>
+    <persons>6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>agua-fresca</tag>
+      <tag>erdbeere</tag>
+      <tag>ananas</tag>
+      <tag>sommerdrink</tag>
+    </tags>
+    <image src="images/rezeptbild_377.png" alt="Erdbeer-Ananas Agua Fresca"/>
+    <ingredients>
+      <item>400 g Erdbeeren</item>
+      <item>500 g frische Ananas</item>
+      <item>400 ml kaltes Wasser</item>
+      <item>Saft von 1 Limette</item>
+      <item>6–8 Eiswürfel</item>
+      <item>optional 1 EL Agavendicksaft</item>
+      <item>Minze zum Servieren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Obst grob zerkleinern.</step>
+      <step nr="2">Mit Wasser, Limettensaft und Eis 30 Sek. / Stufe 10 mixen.</step>
+      <step nr="3">Abschmecken.</step>
+      <step nr="4">Gut gekühlt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit frischer Minze und kleinen Ananasstücken dekorieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of vibrant coral-pink strawberry pineapple agua fresca in a glass, filled with ice. Garnish with strawberry half, small pineapple chunk, mint. Fresh strawberries and pineapple nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca truskawkowo-ananasowa</name>
+      <persons>6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Udekorować świeżą miętą i małymi kawałkami ananasa.</servingTip>
+      <intro lang="pl">Owocowa, lekko egzotyczna i cudownie orzeźwiająca. Połączenie słodkich truskawek i soczystego ananasa to idealny letni napój.</intro>
+      <ingredients>
+        <item>400 g truskawek</item>
+        <item>500 g świeżego ananasa</item>
+        <item>400 ml zimnej wody</item>
+        <item>sok z 1 limonki</item>
+        <item>6–8 kostek lodu</item>
+        <item>opcjonalnie 1 łyżka syropu z agawy</item>
+        <item>mięta do podania</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Owoce grubo rozdrobnić.</step>
+        <step nr="2">Miksować z wodą, sokiem z limonki i lodem 30 Sek. / Stufe 10.</step>
+        <step nr="3">Doprawić do smaku.</step>
+        <step nr="4">Podawać dobrze schłodzone.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Pineapple Agua Fresca</name>
+      <persons>6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Decorate with fresh mint and small pineapple pieces.</servingTip>
+      <intro lang="en">Fruity, slightly exotic, and wonderfully refreshing. The combination of sweet strawberries and juicy pineapple is the perfect summer drink.</intro>
+      <ingredients>
+        <item>400 g strawberries</item>
+        <item>500 g fresh pineapple</item>
+        <item>400 ml cold water</item>
+        <item>juice of 1 lime</item>
+        <item>6–8 ice cubes</item>
+        <item>optional 1 tbsp agave syrup</item>
+        <item>mint for serving</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Roughly chop the fruit.</step>
+        <step nr="2">Blend with water, lime juice, and ice 30 Sek. / Stufe 10.</step>
+        <step nr="3">Taste.</step>
+        <step nr="4">Serve well chilled.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="378">
+    <name>Ananas-Mango Agua Fresca</name>
+    <intro lang="de">Eine tropische Kombination mit intensiver Fruchtigkeit und leichter Säure.</intro>
+    <persons>6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>agua-fresca</tag>
+      <tag>ananas</tag>
+      <tag>mango</tag>
+    </tags>
+    <image src="images/rezeptbild_378.png" alt="Ananas-Mango Agua Fresca"/>
+    <ingredients>
+      <item>500 g Ananas</item>
+      <item>2 reife Mangos</item>
+      <item>500 ml kaltes Wasser</item>
+      <item>Saft von 1 Limette</item>
+      <item>Eiswürfel</item>
+      <item>optional etwas Honig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alles in den Mixtopf geben.</step>
+      <step nr="2">30 Sek. / Stufe 10 mixen.</step>
+      <step nr="3">Nach Geschmack süßen.</step>
+      <step nr="4">Kalt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit Limettenscheibe und Minze servieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of bright golden tropical pineapple mango agua fresca in a tall glass, filled with ice. Garnish with pineapple wedge, mango cubes, lime slice. Fresh pineapple and mango nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ananasowo-mangowa</name>
+      <persons>6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Podawać z plasterkiem limonki i miętą.</servingTip>
+      <intro lang="pl">Tropikalne połączenie o intensywnej owocowości i lekkiej kwasowości.</intro>
+      <ingredients>
+        <item>500 g ananasa</item>
+        <item>2 dojrzałe mango</item>
+        <item>500 ml zimnej wody</item>
+        <item>sok z 1 limonki</item>
+        <item>kostki lodu</item>
+        <item>opcjonalnie trochę miodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Włożyć wszystko do naczynia miksującego.</step>
+        <step nr="2">Miksować 30 Sek. / Stufe 10.</step>
+        <step nr="3">Dosłodzić do smaku.</step>
+        <step nr="4">Podawać na zimno.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Pineapple Mango Agua Fresca</name>
+      <persons>6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Serve with a lime slice and mint.</servingTip>
+      <intro lang="en">A tropical combination with intense fruitiness and gentle acidity.</intro>
+      <ingredients>
+        <item>500 g pineapple</item>
+        <item>2 ripe mangoes</item>
+        <item>500 ml cold water</item>
+        <item>juice of 1 lime</item>
+        <item>ice cubes</item>
+        <item>optional a little honey</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Add everything to the mixing bowl.</step>
+        <step nr="2">Blend 30 Sek. / Stufe 10.</step>
+        <step nr="3">Sweeten to taste.</step>
+        <step nr="4">Serve cold.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="379">
+    <name>Honigmelone-Minze Agua Fresca</name>
+    <intro lang="de">Ein besonders leichter Sommerdrink mit feiner Süße und frischer Minznote.</intro>
+    <persons>6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>honigmelone</tag>
+      <tag>minze</tag>
+      <tag>agua-fresca</tag>
+    </tags>
+    <image src="images/rezeptbild_379.png" alt="Honigmelone-Minze Agua Fresca"/>
+    <ingredients>
+      <item>1 kleine Honigmelone</item>
+      <item>500 ml kaltes Wasser</item>
+      <item>Saft von 1 Limette</item>
+      <item>10 Minzblätter</item>
+      <item>Eiswürfel</item>
+      <item>optional Agavendicksaft</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Honigmelone würfeln.</step>
+      <step nr="2">Alle Zutaten 30 Sek. / Stufe 10 mixen.</step>
+      <step nr="3">Kurz kalt stellen.</step>
+      <step nr="4">Mit Eis servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit Minze und kleinen Melonenkugeln dekorieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of pale golden honeydew melon agua fresca in a clear glass, filled with ice. Garnish with melon ball garnish, mint sprig. Fresh honeydew melon and mint nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca z melona miodowego i mięty</name>
+      <persons>6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Udekorować miętą i małymi kulkami melona.</servingTip>
+      <intro lang="pl">Wyjątkowo lekki letni napój z delikatną słodyczą i świeżą nutą mięty.</intro>
+      <ingredients>
+        <item>1 mały melon miodowy</item>
+        <item>500 ml zimnej wody</item>
+        <item>sok z 1 limonki</item>
+        <item>10 listków mięty</item>
+        <item>kostki lodu</item>
+        <item>opcjonalnie syrop z agawy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pokroić melona miodowego w kostkę.</step>
+        <step nr="2">Miksować wszystkie składniki 30 Sek. / Stufe 10.</step>
+        <step nr="3">Krótko schłodzić.</step>
+        <step nr="4">Podawać z lodem.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Honeydew Mint Agua Fresca</name>
+      <persons>6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Decorate with mint and small melon balls.</servingTip>
+      <intro lang="en">An especially light summer drink with delicate sweetness and a fresh mint note.</intro>
+      <ingredients>
+        <item>1 small honeydew melon</item>
+        <item>500 ml cold water</item>
+        <item>juice of 1 lime</item>
+        <item>10 mint leaves</item>
+        <item>ice cubes</item>
+        <item>optional agave syrup</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Dice the honeydew melon.</step>
+        <step nr="2">Blend all ingredients 30 Sek. / Stufe 10.</step>
+        <step nr="3">Chill briefly.</step>
+        <step nr="4">Serve with ice.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="404">
+    <name>Pfirsich-Himbeer Agua Fresca</name>
+    <intro lang="de">Sommerlich-fruchtig mit angenehmer Säure. Besonders aromatisch mit reifen Pfirsichen.</intro>
+    <persons>6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>pfirsich</tag>
+      <tag>himbeere</tag>
+      <tag>agua-fresca</tag>
+    </tags>
+    <image src="images/rezeptbild_404.png" alt="Pfirsich-Himbeer Agua Fresca"/>
+    <ingredients>
+      <item>4 reife Pfirsiche</item>
+      <item>250 g Himbeeren</item>
+      <item>450 ml kaltes Wasser</item>
+      <item>Saft von 1 Limette</item>
+      <item>Eiswürfel</item>
+      <item>optional Honig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Obst vorbereiten.</step>
+      <step nr="2">Alles 30 Sek. / Stufe 10 mixen.</step>
+      <step nr="3">Nach Geschmack süßen.</step>
+      <step nr="4">Gut gekühlt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit frischen Himbeeren und Pfirsichspalten dekorieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of soft peach-pink peach raspberry agua fresca in a glass, filled with ice. Garnish with peach slice, fresh raspberries, mint. Fresh peach and raspberry nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca brzoskwiniowo-malinowa</name>
+      <persons>6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Udekorować świeżymi malinami i cząstkami brzoskwini.</servingTip>
+      <intro lang="pl">Letnio-owocowa z przyjemną kwasowością. Szczególnie aromatyczna z dojrzałymi brzoskwiniami.</intro>
+      <ingredients>
+        <item>4 dojrzałe brzoskwinie</item>
+        <item>250 g malin</item>
+        <item>450 ml zimnej wody</item>
+        <item>sok z 1 limonki</item>
+        <item>kostki lodu</item>
+        <item>opcjonalnie miód</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować owoce.</step>
+        <step nr="2">Miksować wszystko 30 Sek. / Stufe 10.</step>
+        <step nr="3">Dosłodzić do smaku.</step>
+        <step nr="4">Podawać dobrze schłodzone.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Peach Raspberry Agua Fresca</name>
+      <persons>6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Decorate with fresh raspberries and peach wedges.</servingTip>
+      <intro lang="en">Summery and fruity with pleasant acidity. Especially aromatic with ripe peaches.</intro>
+      <ingredients>
+        <item>4 ripe peaches</item>
+        <item>250 g raspberries</item>
+        <item>450 ml cold water</item>
+        <item>juice of 1 lime</item>
+        <item>ice cubes</item>
+        <item>optional honey</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepare the fruit.</step>
+        <step nr="2">Blend everything 30 Sek. / Stufe 10.</step>
+        <step nr="3">Sweeten to taste.</step>
+        <step nr="4">Serve well chilled.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="405">
+    <name>Kiwi-Limette Agua Fresca</name>
+    <intro lang="de">Frisch, leicht säuerlich und herrlich grün – perfekt für heiße Sommertage.</intro>
+    <persons>6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>kiwi</tag>
+      <tag>limette</tag>
+      <tag>agua-fresca</tag>
+    </tags>
+    <image src="images/rezeptbild_405.png" alt="Kiwi-Limette Agua Fresca"/>
+    <ingredients>
+      <item>6 Kiwis</item>
+      <item>500 ml Wasser</item>
+      <item>Saft von 2 Limetten</item>
+      <item>Eiswürfel</item>
+      <item>optional Agavendicksaft</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alles in den Mixtopf geben.</step>
+      <step nr="2">30 Sek. / Stufe 10 mixen.</step>
+      <step nr="3">Abschmecken.</step>
+      <step nr="4">Gekühlt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit Limettenscheibe und Kiwi dekorieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of vivid green kiwi lime agua fresca in a clear glass, filled with ice. Garnish with kiwi slice, lime wheel, mint. Fresh kiwi and lime nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca kiwi-limonka</name>
+      <persons>6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Udekorować plasterkiem limonki i kiwi.</servingTip>
+      <intro lang="pl">Świeża, lekko kwaskowa i cudownie zielona – idealna na gorące letnie dni.</intro>
+      <ingredients>
+        <item>6 kiwi</item>
+        <item>500 ml wody</item>
+        <item>sok z 2 limonek</item>
+        <item>kostki lodu</item>
+        <item>opcjonalnie syrop z agawy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Włożyć wszystko do naczynia miksującego.</step>
+        <step nr="2">Miksować 30 Sek. / Stufe 10.</step>
+        <step nr="3">Doprawić do smaku.</step>
+        <step nr="4">Podawać schłodzone.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Kiwi Lime Agua Fresca</name>
+      <persons>6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Decorate with a lime slice and kiwi.</servingTip>
+      <intro lang="en">Fresh, slightly tangy, and wonderfully green - perfect for hot summer days.</intro>
+      <ingredients>
+        <item>6 kiwis</item>
+        <item>500 ml water</item>
+        <item>juice of 2 limes</item>
+        <item>ice cubes</item>
+        <item>optional agave syrup</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Add everything to the mixing bowl.</step>
+        <step nr="2">Blend 30 Sek. / Stufe 10.</step>
+        <step nr="3">Taste.</step>
+        <step nr="4">Serve chilled.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="406">
+    <name>Blaubeere-Zitrone Agua Fresca</name>
+    <intro lang="de">Fruchtig, leicht herb und wunderbar erfrischend.</intro>
+    <persons>6 Gläser</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Alkoholfreie Sommerdrinks</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>thermomix</tag>
+      <tag>blaubeere</tag>
+      <tag>zitrone</tag>
+      <tag>agua-fresca</tag>
+    </tags>
+    <image src="images/rezeptbild_406.png" alt="Blaubeere-Zitrone Agua Fresca"/>
+    <ingredients>
+      <item>300 g Blaubeeren</item>
+      <item>Saft von 2 Zitronen</item>
+      <item>500 ml Wasser</item>
+      <item>Eiswürfel</item>
+      <item>optional Honig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alle Zutaten 30 Sek. / Stufe 10 mixen.</step>
+      <step nr="2">Abschmecken.</step>
+      <step nr="3">Gut gekühlt servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <thermomix/>
+    <servingTip>Mit Zitronenscheiben und einigen frischen Blaubeeren dekorieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. Hero shot of deep purple-blue blueberry lemon agua fresca in a glass, filled with ice. Garnish with lemon slice, fresh blueberries on rim. Fresh blueberries and lemon nearby on the table. Refreshing summer drink scene.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca jagodowo-cytrynowa</name>
+      <persons>6 szklanek</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Bezalkoholowe napoje letnie</subcategory>
+      <servingTip>Udekorować plasterkami cytryny i kilkoma świeżymi borówkami.</servingTip>
+      <intro lang="pl">Owocowa, lekko cierpka i cudownie orzeźwiająca.</intro>
+      <ingredients>
+        <item>300 g borówek</item>
+        <item>sok z 2 cytryn</item>
+        <item>500 ml wody</item>
+        <item>kostki lodu</item>
+        <item>opcjonalnie miód</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Miksować wszystkie składniki 30 Sek. / Stufe 10.</step>
+        <step nr="2">Doprawić do smaku.</step>
+        <step nr="3">Podawać dobrze schłodzone.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Blueberry Lemon Agua Fresca</name>
+      <persons>6 glasses</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Non-alcoholic summer drinks</subcategory>
+      <servingTip>Decorate with lemon slices and a few fresh blueberries.</servingTip>
+      <intro lang="en">Fruity, slightly tart, and wonderfully refreshing.</intro>
+      <ingredients>
+        <item>300 g blueberries</item>
+        <item>juice of 2 lemons</item>
+        <item>500 ml water</item>
+        <item>ice cubes</item>
+        <item>optional honey</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Blend all ingredients 30 Sek. / Stufe 10.</step>
+        <step nr="2">Taste.</step>
+        <step nr="3">Serve well chilled.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+</drinkCollection>

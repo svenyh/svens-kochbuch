@@ -2444,6 +2444,161 @@
       letter-spacing: 0.06em;
     }
 
+    .recipe-tag--alkoholfrei {
+      color: #1f7a4a;
+    }
+
+    .recipe-tag--aperitif {
+      color: #9b3d7a;
+    }
+
+    .recipe-tag--thermomix {
+      color: #2563a8;
+    }
+
+    .recipe-card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .recipe-card-base-ref {
+      margin: 0 0 8px;
+      font-size: 13px;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+
+    .recipe-card-base-ref a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .recipe-card-base-ref a:hover {
+      text-decoration: underline;
+    }
+
+    .summer-drinks-collection {
+      display: grid;
+      gap: 28px;
+      margin-bottom: 8px;
+    }
+
+    .summer-drinks-intro {
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 18px;
+      padding: 22px 24px;
+      background: linear-gradient(180deg, #fffaf3 0%, #fff 100%);
+    }
+
+    .summer-drinks-intro h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.35rem, 2vw, 1.75rem);
+      color: var(--dark);
+    }
+
+    .summer-drinks-intro p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+      max-width: 70ch;
+    }
+
+    .summer-drinks-section {
+      display: grid;
+      gap: 14px;
+    }
+
+    .summer-drinks-section-head h3 {
+      margin: 0 0 4px;
+      font-size: 1.2rem;
+      color: var(--dark);
+    }
+
+    .summer-drinks-section-head p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .summer-drinks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .detail-summer-aperitif {
+      margin-top: 4px;
+    }
+
+    .detail-summer-aperitif-intro {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .summer-aperitif-variant {
+      display: grid;
+      gap: 12px;
+      padding: 18px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .summer-aperitif-variant:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .summer-aperitif-variant h3 {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--dark);
+    }
+
+    .summer-aperitif-variant-media {
+      border-radius: 14px;
+      overflow: hidden;
+      background: #f6f6f6;
+      aspect-ratio: 4 / 5;
+      max-width: 360px;
+    }
+
+    .summer-aperitif-variant-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .summer-aperitif-variant .detail-list {
+      margin: 0;
+    }
+
+    .detail-drink-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 10px;
+    }
+
+    .detail-base-recipe-link {
+      margin: 0 0 12px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .detail-base-recipe-link a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .detail-base-recipe-link a:hover {
+      text-decoration: underline;
+    }
+
     .card-rating {
       display: inline-flex;
       align-items: center;
@@ -3579,6 +3734,8 @@
             <a href="#rezepte" role="menuitem" data-filter="suppen-eintoepfe">Suppen &amp; Eintöpfe</a>
             <a href="#rezepte" role="menuitem" data-filter="grundrezepte">Grundrezepte</a>
             <a href="#rezepte" role="menuitem" data-filter="suesses-backen">Süßes &amp; Backen</a>
+            <a href="#rezepte" role="menuitem" data-filter="sommer-horchatas">Sommer-Horchatas &amp; Aguas Frescas</a>
+            <a href="#rezepte" role="menuitem" data-filter="sommerdrinks-limonaden-mocktails">Sommerdrinks, Limonaden &amp; Mocktails</a>
             <a href="#rezepte" role="menuitem" data-filter="woelpinghausen">Wölpinghausen</a>
           </div>
         </li>
@@ -3653,6 +3810,60 @@
               </div>
             </div>
             <p id="recipeStatus" class="status-line" role="status">Rezepte werden geladen …</p>
+            <div id="summerDrinksCollectionView" class="summer-drinks-collection" hidden>
+              <div class="summer-drinks-intro">
+                <h2 id="summerDrinksIntroTitle">Sommer-Horchatas &amp; Aguas Frescas</h2>
+                <p id="summerDrinksIntroText">Fruchtige Horchatas, erfrischende Aguas Frescas und leichte Aperitif-Varianten für warme Tage.</p>
+              </div>
+              <section class="summer-drinks-section" id="summerDrinksAlkoholfreiSection" aria-labelledby="summerDrinksAlkoholfreiHeading">
+                <div class="summer-drinks-section-head">
+                  <h3 id="summerDrinksAlkoholfreiHeading">Alkoholfreie Sommerdrinks</h3>
+                  <p id="summerDrinksAlkoholfreiDesc">Fruchtige, cremige oder erfrischende Sommergetränke ohne Alkohol – inklusive optionaler Aperitif-Ideen auf jeder Rezeptseite.</p>
+                </div>
+                <div class="recipe-grid summer-drinks-grid" id="summerDrinksAlkoholfreiGrid"></div>
+              </section>
+              <section class="summer-drinks-section" id="summerDrinksAperitifSection" aria-labelledby="summerDrinksAperitifHeading" hidden>
+                <div class="summer-drinks-section-head">
+                  <h3 id="summerDrinksAperitifHeading">Sommer-Aperitifs</h3>
+                  <p id="summerDrinksAperitifDesc">Leichte Varianten mit Rosé, Weißwein oder Sekt auf Basis der alkoholfreien Drinks.</p>
+                </div>
+                <div class="recipe-grid summer-drinks-grid" id="summerDrinksAperitifGrid"></div>
+              </section>
+            </div>
+            <div id="sommerdrinksLmCollectionView" class="summer-drinks-collection" hidden>
+              <div class="summer-drinks-intro">
+                <h2 id="sommerdrinksLmIntroTitle">Sommerdrinks, Limonaden &amp; Mocktails</h2>
+                <p id="sommerdrinksLmIntroText">Hausgemachte Limonaden, kalte Eistees, Frozen Drinks und alkoholfreie Mocktails für heiße Tage.</p>
+              </div>
+              <section class="summer-drinks-section" id="sommerdrinksLmLimonadenSection" aria-labelledby="sommerdrinksLmLimonadenHeading">
+                <div class="summer-drinks-section-head">
+                  <h3 id="sommerdrinksLmLimonadenHeading">Hausgemachte Limonaden</h3>
+                  <p id="sommerdrinksLmLimonadenDesc">Klassische und fruchtige Limonaden – frisch gemixt und ohne Alkohol.</p>
+                </div>
+                <div class="recipe-grid summer-drinks-grid" id="sommerdrinksLmLimonadenGrid"></div>
+              </section>
+              <section class="summer-drinks-section" id="sommerdrinksLmEisteeSection" aria-labelledby="sommerdrinksLmEisteeHeading">
+                <div class="summer-drinks-section-head">
+                  <h3 id="sommerdrinksLmEisteeHeading">Eistee &amp; Kaffee kalt</h3>
+                  <p id="sommerdrinksLmEisteeDesc">Eistee, Cold Brew und Eiskaffee für den Sommer.</p>
+                </div>
+                <div class="recipe-grid summer-drinks-grid" id="sommerdrinksLmEisteeGrid"></div>
+              </section>
+              <section class="summer-drinks-section" id="sommerdrinksLmFrozenSection" aria-labelledby="sommerdrinksLmFrozenHeading">
+                <div class="summer-drinks-section-head">
+                  <h3 id="sommerdrinksLmFrozenHeading">Frozen Drinks &amp; Frappés</h3>
+                  <p id="sommerdrinksLmFrozenDesc">Eisige Blender-Drinks und Frappés.</p>
+                </div>
+                <div class="recipe-grid summer-drinks-grid" id="sommerdrinksLmFrozenGrid"></div>
+              </section>
+              <section class="summer-drinks-section" id="sommerdrinksLmMocktailsSection" aria-labelledby="sommerdrinksLmMocktailsHeading">
+                <div class="summer-drinks-section-head">
+                  <h3 id="sommerdrinksLmMocktailsHeading">Mocktails &amp; Bowlen</h3>
+                  <p id="sommerdrinksLmMocktailsDesc">Alkoholfreie Mocktails und Bowlen für Gäste.</p>
+                </div>
+                <div class="recipe-grid summer-drinks-grid" id="sommerdrinksLmMocktailsGrid"></div>
+              </section>
+            </div>
             <div class="recipe-grid home-highlights-grid" id="highlightGrid" data-home-highlights="1" hidden></div>
             <div class="recipe-list-actions highlight-view-all-wrap" id="highlightViewAllWrap" hidden>
               <button type="button" class="btn" id="highlightViewAllBtn">Alle beliebten Rezepte ansehen</button>
@@ -3705,6 +3916,16 @@
                 <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 14a6 6 0 0 0 12 0c0-4-2-6-6-6s-6 2-6 6z"/><path d="M9 10h6"/></svg></span>
                 <h3 class="home-category-label">Süßes &amp; Backen</h3>
                 <p>Für Kuchen, Desserts &amp; mehr.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="sommer-horchatas" aria-label="Themenwelt öffnen: Sommer-Horchatas &amp; Aguas Frescas">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 20V8h8v12"/><path d="M6 8h12l-2-4H8z"/><path d="M10 12h4"/></svg></span>
+                <h3 class="home-category-label">Sommer-Horchatas</h3>
+                <p>Aguas Frescas &amp; Aperitifs.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="sommerdrinks-limonaden-mocktails" aria-label="Themenwelt öffnen: Sommerdrinks, Limonaden &amp; Mocktails">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 20V8h8v12"/><path d="M6 8h12l-2-4H8z"/><path d="M10 12h4"/></svg></span>
+                <h3 class="home-category-label">Sommerdrinks</h3>
+                <p>Limonaden, Eistee &amp; Mocktails.</p>
               </article>
             </div>
             <div class="world-filters" id="homeWorldOverview" aria-labelledby="worldOverviewFiltersLabel">
@@ -4046,7 +4267,30 @@
       '368': '/images/rezeptbild_368_detail.webp',
       '369': '/images/rezeptbild_369_detail.webp',
       '370': '/images/rezeptbild_370_detail.webp',
-      '371': '/images/rezeptbild_371_detail.webp'
+      '371': '/images/rezeptbild_371_detail.webp',
+      '372': '/images/rezeptbild_372_detail.webp',
+      '373': '/images/rezeptbild_373_detail.webp',
+      '374': '/images/rezeptbild_374_detail.webp',
+      '375': '/images/rezeptbild_375_detail.webp',
+      '376': '/images/rezeptbild_376_detail.webp',
+      '377': '/images/rezeptbild_377_detail.webp',
+      '378': '/images/rezeptbild_378_detail.webp',
+      '379': '/images/rezeptbild_379_detail.webp',
+      '404': '/images/rezeptbild_404_detail.webp',
+      '405': '/images/rezeptbild_405_detail.webp',
+      '406': '/images/rezeptbild_406_detail.webp',
+      '407': '/images/rezeptbild_407_detail.webp',
+      '408': '/images/rezeptbild_408_detail.webp',
+      '409': '/images/rezeptbild_409_detail.webp',
+      '410': '/images/rezeptbild_410_detail.webp',
+      '411': '/images/rezeptbild_411_detail.webp',
+      '412': '/images/rezeptbild_412_detail.webp',
+      '413': '/images/rezeptbild_413_detail.webp',
+      '414': '/images/rezeptbild_414_detail.webp',
+      '415': '/images/rezeptbild_415_detail.webp',
+      '416': '/images/rezeptbild_416_detail.webp',
+      '417': '/images/rezeptbild_417_detail.webp',
+      '418': '/images/rezeptbild_418_detail.webp'
     };
     var FILTER_HEADINGS = {
       alle: 'Aktuelle Highlights',
@@ -4069,9 +4313,71 @@
       'suppen-eintoepfe': 'Suppen & Eintöpfe',
       grundrezepte: 'Grundrezepte',
       'suesses-backen': 'Süßes & Backen',
+      'sommer-horchatas': 'Sommer-Horchatas & Aguas Frescas',
+      'sommerdrinks-limonaden-mocktails': 'Sommerdrinks, Limonaden & Mocktails',
       woelpinghausen: 'Wölpinghausen',
       latest: 'Neue Rezepte'
     };
+    var SUMMER_DRINKS_SUB_ALKO = 'Alkoholfreie Sommerdrinks';
+    var SUMMER_DRINKS_SUB_APERITIF = 'Sommer-Aperitifs';
+    var SUMMER_DRINKS_SEED_URL = '/data/sommer-horchatas-aguas-frescas-seed.xml';
+    var SOMMERDRINKS_LM_SEED_URL = '/data/sommerdrinks-limonaden-mocktails-seed.xml';
+    var SOMMERDRINKS_LM_SUB = {
+      limonaden: 'Hausgemachte Limonaden',
+      eistee: 'Eistee & Kaffee kalt',
+      frozen: 'Frozen Drinks & Frappés',
+      mocktails: 'Mocktails & Bowlen'
+    };
+    var SUMMER_APERITIF_LEGACY_TO_BASE = (function () {
+      var map = {};
+      for (var bi = 0; bi < 8; bi++) {
+        var baseId = String(372 + bi);
+        for (var vi = 0; vi < 3; vi++) {
+          map[String(380 + bi * 3 + vi)] = baseId;
+        }
+      }
+      return map;
+    })();
+    var SUMMER_APERITIF_VARIANTS = [
+      {
+        key: 'rose-spritz',
+        titleKey: 'summer_aperitif_rose_title',
+        items: function (baseName) {
+          return [
+            t('summer_aperitif_item_base_120', { baseName: baseName }),
+            t('summer_aperitif_item_rose_wine'),
+            t('summer_aperitif_item_mineral_water'),
+            t('summer_aperitif_item_ice'),
+            t('summer_aperitif_garnish')
+          ];
+        }
+      },
+      {
+        key: 'weisswein-spritz',
+        titleKey: 'summer_aperitif_weisswein_title',
+        items: function (baseName) {
+          return [
+            t('summer_aperitif_item_base_120', { baseName: baseName }),
+            t('summer_aperitif_item_white_wine'),
+            t('summer_aperitif_item_mineral_water'),
+            t('summer_aperitif_item_ice'),
+            t('summer_aperitif_garnish_generic')
+          ];
+        }
+      },
+      {
+        key: 'sekt-royal',
+        titleKey: 'summer_aperitif_sekt_title',
+        items: function (baseName) {
+          return [
+            t('summer_aperitif_item_base_100', { baseName: baseName }),
+            t('summer_aperitif_item_sparkling'),
+            t('summer_aperitif_item_ice'),
+            t('summer_aperitif_garnish')
+          ];
+        }
+      }
+    ];
     var currentRecipeFilterKey = 'alle';
     var currentWorldCategoryFilter = 'world-all';
     var recipeListVisibleCount = 12;
@@ -4162,6 +4468,51 @@
         themenwelten_tile7_text: 'Regional & persönlich.',
         themenwelten_tile8_title: 'Süßes & Backen',
         themenwelten_tile8_text: 'Für Kuchen, Desserts & mehr.',
+        themenwelten_tile9_title: 'Sommer-Horchatas',
+        themenwelten_tile9_text: 'Aguas Frescas & Aperitifs.',
+        themenwelten_tile10_title: 'Sommerdrinks',
+        themenwelten_tile10_text: 'Limonaden, Eistee & Mocktails.',
+        summer_drinks_intro_title: 'Sommer-Horchatas & Aguas Frescas',
+        summer_drinks_intro_text: 'Fruchtige Horchatas, erfrischende Aguas Frescas und leichte Aperitif-Ideen direkt auf den Rezeptseiten der alkoholfreien Drinks.',
+        summer_drinks_alko_title: 'Alkoholfreie Sommerdrinks',
+        summer_drinks_alko_desc: 'Fruchtige, cremige oder erfrischende Sommergetränke ohne Alkohol – inklusive optionaler Aperitif-Ideen auf jeder Rezeptseite.',
+        summer_drinks_aperitif_title: 'Sommer-Aperitifs',
+        summer_drinks_aperitif_desc: 'Leichte Varianten mit Rosé, Weißwein oder Sekt auf Basis der alkoholfreien Drinks.',
+        summer_drinks_aperitif_section_title: 'Sommer-Aperitif (optional)',
+        summer_drinks_aperitif_section_intro: 'Diese alkoholhaltigen Varianten bauen auf dem Basisdrink auf. Die Menge Basisdrink bezieht sich jeweils auf das Rezept oben.',
+        summer_aperitif_rose_title: '🍷 Rosé Spritz',
+        summer_aperitif_weisswein_title: '🥂 Weißwein Spritz',
+        summer_aperitif_sekt_title: '🍾 Sekt Royal',
+        summer_aperitif_garnish: 'passende Fruchtgarnitur',
+        summer_aperitif_garnish_generic: 'passende Garnitur',
+        summer_aperitif_item_base_120: '120 ml {baseName}',
+        summer_aperitif_item_base_100: '100 ml {baseName}',
+        summer_aperitif_item_rose_wine: '120 ml gut gekühlter trockener Rosé',
+        summer_aperitif_item_white_wine: '120 ml trockener Weißwein',
+        summer_aperitif_item_sparkling: '120 ml trockener Sekt',
+        summer_aperitif_item_mineral_water: '30–40 ml Mineralwasser',
+        summer_aperitif_item_ice: 'Eiswürfel',
+        filter_sommer_horchatas: 'Sommer-Horchatas & Aguas Frescas',
+        filter_sommerdrinks_lm: 'Sommerdrinks, Limonaden & Mocktails',
+        summer_drinks_badge_alkoholfrei: 'Alkoholfrei',
+        summer_drinks_badge_aperitif: 'Aperitif',
+        summer_drinks_badge_thermomix: 'Thermomix',
+        summer_drinks_based_on: 'Basiert auf:',
+        summer_drinks_detail_thermomix: 'Thermomix-Hinweis',
+        summer_drinks_detail_serving: 'Servier-Tipp',
+        summer_drinks_detail_variant: 'Optionale Variante',
+        dropdown_sommer_horochatas: 'Sommer-Horchatas & Aguas Frescas',
+        dropdown_sommerdrinks_lm: 'Sommerdrinks, Limonaden & Mocktails',
+        sommerdrinks_lm_intro_title: 'Sommerdrinks, Limonaden & Mocktails',
+        sommerdrinks_lm_intro_text: 'Hausgemachte Limonaden, kalte Eistees, Frozen Drinks und alkoholfreie Mocktails für heiße Tage.',
+        sommerdrinks_lm_limonaden_title: 'Hausgemachte Limonaden',
+        sommerdrinks_lm_limonaden_desc: 'Klassische und fruchtige Limonaden – frisch gemixt und ohne Alkohol.',
+        sommerdrinks_lm_eistee_title: 'Eistee & Kaffee kalt',
+        sommerdrinks_lm_eistee_desc: 'Eistee, Cold Brew und Eiskaffee für den Sommer.',
+        sommerdrinks_lm_frozen_title: 'Frozen Drinks & Frappés',
+        sommerdrinks_lm_frozen_desc: 'Eisige Blender-Drinks und Frappés.',
+        sommerdrinks_lm_mocktails_title: 'Mocktails & Bowlen',
+        sommerdrinks_lm_mocktails_desc: 'Alkoholfreie Mocktails und Bowlen für Gäste.',
         themenwelten_tile9_title: 'Kulinarische Weltreise',
         themenwelten_tile9_text: 'Europa, Mittelmeer & Weltküche.',
 
@@ -4433,6 +4784,51 @@
         themenwelten_tile7_text: 'Regionalnie i osobiście.',
         themenwelten_tile8_title: 'Słodkie i wypieki',
         themenwelten_tile8_text: 'Ciasta, desery i nie tylko.',
+        themenwelten_tile9_title: 'Letnie horchaty',
+        themenwelten_tile9_text: 'Aguas frescas i aperitify.',
+        themenwelten_tile10_title: 'Letnie napoje',
+        themenwelten_tile10_text: 'Limonady, iced tea i mocktaile.',
+        summer_drinks_intro_title: 'Letnie horchaty i aguas frescas',
+        summer_drinks_intro_text: 'Owocowe horchaty, orzeźwiające aguas frescas i lekkie pomysły aperitif bezpośrednio na stronach napojów bezalkoholowych.',
+        summer_drinks_alko_title: 'Bezalkoholowe napoje letnie',
+        summer_drinks_alko_desc: 'Owocowe, kremowe lub orzeźwiające napoje bez alkoholu – z opcjonalnymi pomysłami aperitif na każdej stronie przepisu.',
+        summer_drinks_aperitif_title: 'Letnie aperitify',
+        summer_drinks_aperitif_desc: 'Lekkie warianty z rosé, białym winem lub sektem na bazie napojów bezalkoholowych.',
+        summer_drinks_aperitif_section_title: 'Letni aperitif (opcjonalnie)',
+        summer_drinks_aperitif_section_intro: 'Te warianty z alkoholem bazują na napoju bezalkoholowym powyżej.',
+        summer_aperitif_rose_title: '🍷 Rosé Spritz',
+        summer_aperitif_weisswein_title: '🥂 Spritz z białym winem',
+        summer_aperitif_sekt_title: '🍾 Sekt Royal',
+        summer_aperitif_garnish: 'odpowiednia owocowa dekoracja',
+        summer_aperitif_garnish_generic: 'odpowiednia dekoracja',
+        summer_aperitif_item_base_120: '120 ml {baseName}',
+        summer_aperitif_item_base_100: '100 ml {baseName}',
+        summer_aperitif_item_rose_wine: '120 ml dobrze schłodzone wytrawne rosé',
+        summer_aperitif_item_white_wine: '120 ml wytrawnego białego wina',
+        summer_aperitif_item_sparkling: '120 ml wytrawnego wina musującego',
+        summer_aperitif_item_mineral_water: '30–40 ml wody mineralnej',
+        summer_aperitif_item_ice: 'Kostki lodu',
+        filter_sommer_horchatas: 'Letnie horchaty i aguas frescas',
+        filter_sommerdrinks_lm: 'Letnie napoje, limonady i mocktaile',
+        summer_drinks_badge_alkoholfrei: 'Bezalkoholowy',
+        summer_drinks_badge_aperitif: 'Aperitif',
+        summer_drinks_badge_thermomix: 'Thermomix',
+        summer_drinks_based_on: 'Na bazie:',
+        summer_drinks_detail_thermomix: 'Wskazówka Thermomix',
+        summer_drinks_detail_serving: 'Wskazówka podania',
+        summer_drinks_detail_variant: 'Opcjonalny wariant',
+        dropdown_sommer_horochatas: 'Letnie horchaty i aguas frescas',
+        dropdown_sommerdrinks_lm: 'Letnie napoje, limonady i mocktaile',
+        sommerdrinks_lm_intro_title: 'Letnie napoje, limonady i mocktaile',
+        sommerdrinks_lm_intro_text: 'Domowe limonady, mrożona herbata, napoje blenderowe i bezalkoholowe mocktaile na gorące dni.',
+        sommerdrinks_lm_limonaden_title: 'Domowe limonady',
+        sommerdrinks_lm_limonaden_desc: 'Klasyczne i owocowe limonady – świeżo wymieszane i bez alkoholu.',
+        sommerdrinks_lm_eistee_title: 'Mrożona herbata i kawa na zimno',
+        sommerdrinks_lm_eistee_desc: 'Mrożona herbata, cold brew i kawa mrożona na lato.',
+        sommerdrinks_lm_frozen_title: 'Frozen drinks i frappé',
+        sommerdrinks_lm_frozen_desc: 'Lodowe napoje blenderowe i frappé.',
+        sommerdrinks_lm_mocktails_title: 'Mocktaile i bowle',
+        sommerdrinks_lm_mocktails_desc: 'Bezalkoholowe mocktaile i bowle dla gości.',
         themenwelten_tile9_title: 'Podróż kulinarna',
         themenwelten_tile9_text: 'Europa, Morze Śródziemne i kuchnia świata.',
 
@@ -4704,6 +5100,51 @@
         themenwelten_tile7_text: 'Regional and personal.',
         themenwelten_tile8_title: 'Sweet & baking',
         themenwelten_tile8_text: 'Cakes, desserts and more.',
+        themenwelten_tile9_title: 'Summer horchatas',
+        themenwelten_tile9_text: 'Aguas frescas & aperitifs.',
+        themenwelten_tile10_title: 'Summer drinks',
+        themenwelten_tile10_text: 'Lemonades, iced tea & mocktails.',
+        summer_drinks_intro_title: 'Summer horchatas & aguas frescas',
+        summer_drinks_intro_text: 'Fruity horchatas, refreshing aguas frescas and light aperitif ideas on each non-alcoholic recipe page.',
+        summer_drinks_alko_title: 'Non-alcoholic summer drinks',
+        summer_drinks_alko_desc: 'Fruity, creamy or refreshing summer drinks without alcohol – including optional aperitif ideas on every recipe page.',
+        summer_drinks_aperitif_title: 'Summer aperitifs',
+        summer_drinks_aperitif_desc: 'Light variants with rosé, white wine or sparkling wine based on the non-alcoholic drinks.',
+        summer_drinks_aperitif_section_title: 'Summer aperitif (optional)',
+        summer_drinks_aperitif_section_intro: 'These alcoholic variants build on the base drink above.',
+        summer_aperitif_rose_title: '🍷 Rosé spritz',
+        summer_aperitif_weisswein_title: '🥂 White wine spritz',
+        summer_aperitif_sekt_title: '🍾 Sparkling royal',
+        summer_aperitif_garnish: 'matching fruit garnish',
+        summer_aperitif_garnish_generic: 'matching garnish',
+        summer_aperitif_item_base_120: '120 ml {baseName}',
+        summer_aperitif_item_base_100: '100 ml {baseName}',
+        summer_aperitif_item_rose_wine: '120 ml well-chilled dry rosé',
+        summer_aperitif_item_white_wine: '120 ml dry white wine',
+        summer_aperitif_item_sparkling: '120 ml dry sparkling wine',
+        summer_aperitif_item_mineral_water: '30–40 ml mineral water',
+        summer_aperitif_item_ice: 'Ice cubes',
+        filter_sommer_horchatas: 'Summer horchatas & aguas frescas',
+        filter_sommerdrinks_lm: 'Summer drinks, lemonades & mocktails',
+        summer_drinks_badge_alkoholfrei: 'Non-alcoholic',
+        summer_drinks_badge_aperitif: 'Aperitif',
+        summer_drinks_badge_thermomix: 'Thermomix',
+        summer_drinks_based_on: 'Based on:',
+        summer_drinks_detail_thermomix: 'Thermomix note',
+        summer_drinks_detail_serving: 'Serving tip',
+        summer_drinks_detail_variant: 'Optional variant',
+        dropdown_sommer_horochatas: 'Summer horchatas & aguas frescas',
+        dropdown_sommerdrinks_lm: 'Summer drinks, lemonades & mocktails',
+        sommerdrinks_lm_intro_title: 'Summer drinks, lemonades & mocktails',
+        sommerdrinks_lm_intro_text: 'Homemade lemonades, iced tea, frozen drinks and non-alcoholic mocktails for hot days.',
+        sommerdrinks_lm_limonaden_title: 'Homemade lemonades',
+        sommerdrinks_lm_limonaden_desc: 'Classic and fruity lemonades – freshly mixed and alcohol-free.',
+        sommerdrinks_lm_eistee_title: 'Iced tea & cold coffee',
+        sommerdrinks_lm_eistee_desc: 'Iced tea, cold brew and iced coffee for summer.',
+        sommerdrinks_lm_frozen_title: 'Frozen drinks & frappés',
+        sommerdrinks_lm_frozen_desc: 'Icy blender drinks and frappés.',
+        sommerdrinks_lm_mocktails_title: 'Mocktails & punches',
+        sommerdrinks_lm_mocktails_desc: 'Non-alcoholic mocktails and punches for guests.',
         themenwelten_tile9_title: 'Culinary world tour',
         themenwelten_tile9_text: 'Europe, Mediterranean & world cuisine.',
 
@@ -5342,6 +5783,8 @@
         var ddSu = dd.querySelector('a[data-filter="suppen-eintoepfe"]'); if (ddSu) ddSu.textContent = t('dropdown_suppen');
         var ddGr = dd.querySelector('a[data-filter="grundrezepte"]'); if (ddGr) ddGr.textContent = t('dropdown_grundrezepte');
         var ddSw = dd.querySelector('a[data-filter="suesses-backen"]'); if (ddSw) ddSw.textContent = t('dropdown_suesses');
+        var ddSom = dd.querySelector('a[data-filter="sommer-horchatas"]'); if (ddSom) ddSom.textContent = t('dropdown_sommer_horochatas');
+        var ddSomLm = dd.querySelector('a[data-filter="sommerdrinks-limonaden-mocktails"]'); if (ddSomLm) ddSomLm.textContent = t('dropdown_sommerdrinks_lm');
         var ddW = dd.querySelector('a[data-filter="woelpinghausen"]'); if (ddW) ddW.textContent = t('dropdown_woelpinghausen');
       }
 
@@ -5423,7 +5866,7 @@
       if (dsNewT) dsNewT.textContent = t('detail_sidebar_recipes');
 
       var twTiles = document.querySelectorAll('#themenweltenGrid .category-tile');
-      if (twTiles && twTiles.length >= 8) {
+      if (twTiles && twTiles.length >= 9) {
         var keys = [
           ['themenwelten_tile1_title', 'themenwelten_tile1_text'],
           ['themenwelten_tile2_title', 'themenwelten_tile2_text'],
@@ -5432,9 +5875,11 @@
           ['themenwelten_tile5_title', 'themenwelten_tile5_text'],
           ['themenwelten_tile6_title', 'themenwelten_tile6_text'],
           ['themenwelten_tile7_title', 'themenwelten_tile7_text'],
-          ['themenwelten_tile8_title', 'themenwelten_tile8_text']
+          ['themenwelten_tile8_title', 'themenwelten_tile8_text'],
+          ['themenwelten_tile9_title', 'themenwelten_tile9_text'],
+          ['themenwelten_tile10_title', 'themenwelten_tile10_text']
         ];
-        for (var ti = 0; ti < 8; ti++) {
+        for (var ti = 0; ti < keys.length && ti < twTiles.length; ti++) {
           var h3 = twTiles[ti].querySelector('h3');
           var p = twTiles[ti].querySelector('p');
           if (h3) h3.textContent = t(keys[ti][0]);
@@ -5456,6 +5901,9 @@
       if (rf3) rf3.textContent = t('rating_filters_3p');
       var rfNone = document.querySelector('button[data-rating-filter="rated-none"]');
       if (rfNone) rfNone.textContent = t('rating_filters_none');
+
+      syncSummerDrinksCollectionI18n();
+      syncSommerdrinksLmCollectionI18n();
 
       var surpriseBtn = document.getElementById('surpriseMeBtn');
       if (surpriseBtn) surpriseBtn.textContent = t('surprise_me');
@@ -5737,12 +6185,17 @@
       renderRecipeDetail(recipe, { historyMode: 'push' });
     }
 
-    function parseRecipes(xmlText) {
+    function parseRecipes(xmlText, opts) {
+      opts = opts || {};
+      var selector = opts.selector || 'cookbook > recipe';
       var xml = new DOMParser().parseFromString(xmlText, 'application/xml');
       var err = xml.querySelector('parsererror');
       if (err) throw new Error('XML-Parserfehler');
-      var recipes = [].slice.call(xml.querySelectorAll('cookbook > recipe'));
-      if (!recipes.length) throw new Error('Keine recipe-Elemente unter cookbook gefunden.');
+      var recipes = [].slice.call(xml.querySelectorAll(selector));
+      if (!recipes.length && !opts.optional) {
+        throw new Error('Keine recipe-Elemente unter ' + selector + ' gefunden.');
+      }
+      if (!recipes.length) return [];
       return recipes.map(function (recipeNode) {
         function readTranslation(lang) {
           var tr = [].slice.call(recipeNode.children).find(function (n) {
@@ -5762,6 +6215,10 @@
             timing: listSectionFlexible(tr, 'timing', 'item,step'),
             tips: listSectionFlexible(tr, 'tips', 'item,tip,li'),
             knowledge: listSectionFlexible(tr, 'knowledge', 'item,tip,p,li'),
+            subcategory: firstDirectText(tr, 'subcategory'),
+            thermomix: firstDirectText(tr, 'thermomix'),
+            servingTip: firstDirectText(tr, 'servingTip'),
+            variant: firstDirectText(tr, 'variant'),
             rating: firstDirectText(tr, 'rating'),
             ratingValue: firstDirectText(tr, 'ratingValue'),
             bewertung: firstDirectText(tr, 'bewertung'),
@@ -5789,6 +6246,15 @@
         var nutritionFiber = readNutritionValue(recipeNode, 'fiber');
         var nutritionFree = readNutritionFreeform(recipeNode);
         var tags = listSectionFlexible(recipeNode, 'tags', 'tag,item,li');
+        var subcategory = firstDirectText(recipeNode, 'subcategory');
+        var drinkType = firstDirectText(recipeNode, 'drinkType');
+        var aperitifStyle = firstDirectText(recipeNode, 'aperitifStyle');
+        var thermomix = firstDirectText(recipeNode, 'thermomix');
+        var servingTip = firstDirectText(recipeNode, 'servingTip');
+        var variant = firstDirectText(recipeNode, 'variant');
+        var baseRefEl = [].slice.call(recipeNode.children).find(function (n) { return n.tagName === 'baseRecipeRef'; });
+        var baseRecipeRefId = baseRefEl ? parseInt(baseRefEl.getAttribute('id') || '0', 10) || 0 : 0;
+        var variantOf = firstDirectText(recipeNode, 'variantOf');
         var originNode = [].slice.call(recipeNode.children).find(function (n) { return n.tagName === 'origin'; });
         var originCountry = originNode ? firstDirectText(originNode, 'country') : '';
         var originRegion = originNode ? firstDirectText(originNode, 'region') : '';
@@ -5815,6 +6281,14 @@
           nutritionFiber: nutritionFiber,
           nutritionFree: nutritionFree,
           tags: tags,
+          subcategory: subcategory,
+          drinkType: drinkType,
+          aperitifStyle: aperitifStyle,
+          thermomix: thermomix,
+          servingTip: servingTip,
+          variant: variant,
+          baseRecipeRefId: baseRecipeRefId,
+          variantOf: variantOf,
           originCountry: originCountry,
           originRegion: originRegion,
           originWorldCategory: originWorldCategory,
@@ -6305,6 +6779,8 @@
         : fk === 'fisch-meer' ? 'filter_fisch_meer'
         : fk === 'suppen-eintoepfe' ? 'filter_suppen_eintoepfe'
         : fk === 'suesses-backen' ? 'filter_suesses_backen'
+        : fk === 'sommer-horchatas' ? 'filter_sommer_horchatas'
+        : fk === 'sommerdrinks-limonaden-mocktails' ? 'filter_sommerdrinks_lm'
         : ('filter_' + fk);
       return (I18N[currentLang] && I18N[currentLang][mapKey]) ? t(mapKey) : (FILTER_HEADINGS[fk] || '');
     }
@@ -6312,6 +6788,220 @@
     function combineFilterHeading(primary, secondary) {
       if (primary && secondary) return primary + ' · ' + secondary;
       return primary || secondary || '';
+    }
+
+    function isSummerDrinkRecipe(r) {
+      if (!r) return false;
+      return recipeMatchesCategoryContains(r, 'Sommer-Horchatas');
+    }
+
+    function isSommerdrinksLmRecipe(r) {
+      if (!r) return false;
+      return recipeMatchesCategoryContains(r, 'Sommerdrinks');
+    }
+
+    function isDrinkChapterRecipe(r) {
+      return isSummerDrinkRecipe(r) || isSommerdrinksLmRecipe(r);
+    }
+
+    function isSummerDrinkBaseRecipe(r) {
+      if (!isSummerDrinkRecipe(r) || r.drinkType !== 'alkoholfrei') return false;
+      var intro = getRecipeField(r, 'intro');
+      return !!(intro && String(intro).trim());
+    }
+
+    function summerAperitifVariantImagePath(recipeId, variantKey) {
+      return '/images/sommergetraenk_' + String(recipeId) + '_' + String(variantKey) + '_detail.webp';
+    }
+
+    function buildDetailSummerAperitifSectionHTML(r) {
+      if (!isSummerDrinkBaseRecipe(r)) return '';
+      var baseName = getRecipeField(r, 'name') || r.name;
+      var parts = [];
+      parts.push('<div class="detail-follow detail-summer-aperitif" id="summer-aperitif">');
+      parts.push('<div class="detail-card">');
+      parts.push('<h2 class="detail-section-title">' + esc(t('summer_drinks_aperitif_section_title')) + '</h2>');
+      parts.push('<p class="detail-summer-aperitif-intro">' + esc(t('summer_drinks_aperitif_section_intro')) + '</p>');
+      for (var vi = 0; vi < SUMMER_APERITIF_VARIANTS.length; vi++) {
+        var variant = SUMMER_APERITIF_VARIANTS[vi];
+        var items = variant.items(baseName);
+        parts.push('<section class="summer-aperitif-variant" aria-labelledby="summer-aperitif-' + esc(variant.key) + '">');
+        parts.push('<h3 id="summer-aperitif-' + esc(variant.key) + '">' + esc(t(variant.titleKey)) + '</h3>');
+        parts.push('<div class="summer-aperitif-variant-media"><img src="' + esc(summerAperitifVariantImagePath(r.id, variant.key)) + '" alt="' + esc(t(variant.titleKey) + ' – ' + baseName) + '" loading="lazy" decoding="async" onerror="this.closest(\'.summer-aperitif-variant-media\').hidden=true" /></div>');
+        parts.push('<ul class="detail-list">');
+        for (var ii = 0; ii < items.length; ii++) {
+          parts.push('<li>' + esc(items[ii]) + '</li>');
+        }
+        parts.push('</ul></section>');
+      }
+      parts.push('</div></div>');
+      return parts.join('');
+    }
+
+    function getSummerDrinkRecipes(subcategory) {
+      return parsedRecipes.filter(function (r) {
+        if (!isSummerDrinkBaseRecipe(r)) return false;
+        if (!subcategory) return true;
+        return String(r.subcategory || '').trim() === String(subcategory).trim();
+      }).sort(function (a, b) { return a.id - b.id; });
+    }
+
+    function getSommerdrinksLmRecipes(subcategory) {
+      return parsedRecipes.filter(function (r) {
+        if (!isSommerdrinksLmRecipe(r)) return false;
+        if (!subcategory) return true;
+        return String(r.subcategory || '').trim() === String(subcategory).trim();
+      }).sort(function (a, b) { return a.id - b.id; });
+    }
+
+    function getSummerDrinkBadgeLabel(r) {
+      if (!r) return '';
+      if (r.drinkType === 'aperitif') return t('summer_drinks_badge_aperitif');
+      if (r.drinkType === 'alkoholfrei') return t('summer_drinks_badge_alkoholfrei');
+      return '';
+    }
+
+    function hasThermomixBadge(r) {
+      if (!r) return false;
+      var tags = r.tags || [];
+      for (var ti = 0; ti < tags.length; ti++) {
+        if (String(tags[ti] || '').trim().toLowerCase() === 'thermomix') return true;
+      }
+      var note = getRecipeField(r, 'thermomix');
+      if (!note || !String(note).trim()) return false;
+      return !/^platzhalter/i.test(String(note).trim());
+    }
+
+    function recipeBySlugPath(slugPath) {
+      var norm = String(slugPath || '').trim();
+      if (!norm) return null;
+      for (var i = 0; i < parsedRecipes.length; i++) {
+        var r = parsedRecipes[i];
+        if (r.slugPath === norm || recipeUrlPath(r) === norm) return r;
+      }
+      var id = parseRecipeIdFromPath(norm);
+      return id ? recipeById(id) : null;
+    }
+
+    function resolveBaseRecipe(r) {
+      if (!r) return null;
+      if (r.baseRecipeRefId) {
+        var byId = recipeById(r.baseRecipeRefId);
+        if (byId) return byId;
+      }
+      if (r.variantOf) return recipeBySlugPath(r.variantOf);
+      return null;
+    }
+
+    function buildSummerDrinkBadgesHTML(r) {
+      var badges = [];
+      var typeLabel = getSummerDrinkBadgeLabel(r);
+      if (typeLabel) {
+        var cls = r.drinkType === 'aperitif' ? 'recipe-tag recipe-tag--aperitif' : 'recipe-tag recipe-tag--alkoholfrei';
+        badges.push('<span class="' + cls + '">' + esc(typeLabel) + '</span>');
+      }
+      if (hasThermomixBadge(r)) {
+        badges.push('<span class="recipe-tag recipe-tag--thermomix">' + esc(t('summer_drinks_badge_thermomix')) + '</span>');
+      }
+      if (!badges.length) return '';
+      return '<div class="recipe-card-badges">' + badges.join('') + '</div>';
+    }
+
+    function buildSummerDrinkBaseRefHTML(r) {
+      if (!r || r.drinkType !== 'aperitif') return '';
+      var base = resolveBaseRecipe(r);
+      if (!base) return '';
+      var baseName = getRecipeField(base, 'name') || base.name;
+      var href = recipeUrlPath(base);
+      return '<p class="recipe-card-base-ref">' + esc(t('summer_drinks_based_on')) + ' <a href="' + esc(href) + '" data-recipe-id="' + esc(String(base.id)) + '">' + esc(baseName) + '</a></p>';
+    }
+
+    function syncSummerDrinksCollectionI18n() {
+      var map = [
+        ['summerDrinksIntroTitle', 'summer_drinks_intro_title'],
+        ['summerDrinksIntroText', 'summer_drinks_intro_text'],
+        ['summerDrinksAlkoholfreiHeading', 'summer_drinks_alko_title'],
+        ['summerDrinksAlkoholfreiDesc', 'summer_drinks_alko_desc'],
+        ['summerDrinksAperitifHeading', 'summer_drinks_aperitif_title'],
+        ['summerDrinksAperitifDesc', 'summer_drinks_aperitif_desc']
+      ];
+      for (var i = 0; i < map.length; i++) {
+        var el = document.getElementById(map[i][0]);
+        if (el) el.textContent = t(map[i][1]);
+      }
+    }
+
+    function syncSommerdrinksLmCollectionI18n() {
+      var map = [
+        ['sommerdrinksLmIntroTitle', 'sommerdrinks_lm_intro_title'],
+        ['sommerdrinksLmIntroText', 'sommerdrinks_lm_intro_text'],
+        ['sommerdrinksLmLimonadenHeading', 'sommerdrinks_lm_limonaden_title'],
+        ['sommerdrinksLmLimonadenDesc', 'sommerdrinks_lm_limonaden_desc'],
+        ['sommerdrinksLmEisteeHeading', 'sommerdrinks_lm_eistee_title'],
+        ['sommerdrinksLmEisteeDesc', 'sommerdrinks_lm_eistee_desc'],
+        ['sommerdrinksLmFrozenHeading', 'sommerdrinks_lm_frozen_title'],
+        ['sommerdrinksLmFrozenDesc', 'sommerdrinks_lm_frozen_desc'],
+        ['sommerdrinksLmMocktailsHeading', 'sommerdrinks_lm_mocktails_title'],
+        ['sommerdrinksLmMocktailsDesc', 'sommerdrinks_lm_mocktails_desc']
+      ];
+      for (var i = 0; i < map.length; i++) {
+        var el = document.getElementById(map[i][0]);
+        if (el) el.textContent = t(map[i][1]);
+      }
+    }
+
+    function renderSummerDrinkCardHTML(r) {
+      var intro = getRecipeField(r, 'intro');
+      var introHtml = intro ? '<p class="intro">' + esc(intro) + '</p>' : '';
+      var title = getRecipeField(r, 'name') || r.name;
+      var href = recipeUrlPath(r);
+      return (
+        '<article class="recipe-card" data-recipe-id="' + esc(String(r.id)) + '">' +
+          '<a href="' + esc(href) + '" class="recipe-card-link recipe-card-link--cover" data-recipe-id="' + esc(String(r.id)) + '" aria-label="' + esc(t('detail_related_open', { name: title })) + '">' +
+            '<div class="recipe-img" role="img" aria-label=""></div>' +
+          '</a>' +
+          '<div class="recipe-content">' +
+            '<a href="' + esc(href) + '" class="recipe-card-link" data-recipe-id="' + esc(String(r.id)) + '">' +
+              buildSummerDrinkBadgesHTML(r) +
+              '<h3>' + esc(title) + '</h3>' +
+              buildSummerDrinkBaseRefHTML(r) +
+              introHtml +
+            '</a>' +
+            '<button type="button" class="recipe-card-fav" data-recipe-fav="' + esc(String(r.id)) + '" aria-pressed="false" aria-label="' + esc(t('favorite_save')) + '">\u2661 ' + esc(t('favorite_save')) + '</button>' +
+            '<a href="' + esc(href) + '" class="recipe-card-link recipe-card-link--cta" data-recipe-id="' + esc(String(r.id)) + '">' +
+              '<span class="recipe-card-cta">' + esc(t('card_view')) + '</span>' +
+            '</a>' +
+          '</div>' +
+        '</article>'
+      );
+    }
+
+    function mountSummerDrinkCards(grid, list) {
+      if (!grid) return;
+      grid.innerHTML = (list || []).map(renderSummerDrinkCardHTML).join('');
+      [].slice.call(grid.querySelectorAll('.recipe-card')).forEach(function (card, i) {
+        var imgDiv = card.querySelector('.recipe-img');
+        var r = list[i];
+        if (imgDiv && r) {
+          imgDiv.setAttribute('aria-label', 'Bild: ' + (getRecipeField(r, 'name') || r.name || ''));
+          applyCardImage(imgDiv, recipeCardImagePath(r));
+        }
+      });
+      observeLazyCardImages(grid);
+      updateFavoriteButtons();
+    }
+
+    function renderSummerDrinksCollectionView() {
+      syncSummerDrinksCollectionI18n();
+      mountSummerDrinkCards(document.getElementById('summerDrinksAlkoholfreiGrid'), getSummerDrinkRecipes(SUMMER_DRINKS_SUB_ALKO));
+    }
+
+    function renderSommerdrinksLmCollectionView() {
+      syncSommerdrinksLmCollectionI18n();
+      mountSummerDrinkCards(document.getElementById('sommerdrinksLmLimonadenGrid'), getSommerdrinksLmRecipes(SOMMERDRINKS_LM_SUB.limonaden));
+      mountSummerDrinkCards(document.getElementById('sommerdrinksLmEisteeGrid'), getSommerdrinksLmRecipes(SOMMERDRINKS_LM_SUB.eistee));
+      mountSummerDrinkCards(document.getElementById('sommerdrinksLmFrozenGrid'), getSommerdrinksLmRecipes(SOMMERDRINKS_LM_SUB.frozen));
+      mountSummerDrinkCards(document.getElementById('sommerdrinksLmMocktailsGrid'), getSommerdrinksLmRecipes(SOMMERDRINKS_LM_SUB.mocktails));
     }
 
     function recipeCategoryLower(r) {
@@ -6352,6 +7042,10 @@
           return matchesRecipeFields(r, ['name', 'category', 'tags'], ['backen', 'süßes', 'suesses', 'kuchen', 'blechkuchen', 'dessert', 'torte', 'gebäck', 'gebaeck']);
         case 'woelpinghausen':
           return matchesRecipeFields(r, ['name', 'category', 'tags'], ['wölpinghausen', 'woelpinghausen', 'wölpinghäuser', 'woelpinghaeuser']);
+        case 'sommer-horchatas':
+          return isSummerDrinkBaseRecipe(r);
+        case 'sommerdrinks-limonaden-mocktails':
+          return isSommerdrinksLmRecipe(r);
         default:
           return false;
       }
@@ -7619,6 +8313,17 @@
       var pathId = parseRecipeIdFromPath(window.location.pathname);
       if (pathId) {
         var pathRec = recipeById(pathId);
+        if (!pathRec && SUMMER_APERITIF_LEGACY_TO_BASE[pathId]) {
+          pathRec = recipeById(SUMMER_APERITIF_LEGACY_TO_BASE[pathId]);
+          if (pathRec) {
+            renderRecipeDetail(pathRec, { historyMode: 'replace' });
+            var aperitifEl = document.getElementById('summer-aperitif');
+            if (aperitifEl) {
+              try { aperitifEl.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) { aperitifEl.scrollIntoView(); }
+            }
+            return;
+          }
+        }
         if (pathRec) {
           renderRecipeDetail(pathRec, { historyMode: 'replace' });
           return;
@@ -7944,6 +8649,48 @@
       return '<p class="detail-category-badge">' + esc(String(cat)) + '</p>';
     }
 
+    function buildDetailDrinkBadgesHTML(r) {
+      if (!isDrinkChapterRecipe(r)) return '';
+      var badges = [];
+      var typeLabel = getSummerDrinkBadgeLabel(r);
+      if (typeLabel) {
+        var cls = r.drinkType === 'aperitif' ? 'recipe-tag recipe-tag--aperitif' : 'recipe-tag recipe-tag--alkoholfrei';
+        badges.push('<span class="' + cls + '">' + esc(typeLabel) + '</span>');
+      }
+      if (hasThermomixBadge(r)) {
+        badges.push('<span class="recipe-tag recipe-tag--thermomix">' + esc(t('summer_drinks_badge_thermomix')) + '</span>');
+      }
+      if (!badges.length) return '';
+      return '<div class="detail-drink-badges">' + badges.join('') + '</div>';
+    }
+
+    function buildDetailBaseRecipeLinkHTML(r) {
+      if (!r || r.drinkType !== 'aperitif') return '';
+      var base = resolveBaseRecipe(r);
+      if (!base) return '';
+      var baseName = getRecipeField(base, 'name') || base.name;
+      var href = recipeUrlPath(base);
+      return '<p class="detail-base-recipe-link">' + esc(t('summer_drinks_based_on')) + ' <a href="' + esc(href) + '" data-recipe-id="' + esc(String(base.id)) + '">' + esc(baseName) + '</a></p>';
+    }
+
+    function buildDetailDrinkExtraSectionsHTML(r) {
+      if (!isDrinkChapterRecipe(r)) return '';
+      var parts = [];
+      var sections = [
+        ['thermomix', 'summer_drinks_detail_thermomix'],
+        ['servingTip', 'summer_drinks_detail_serving'],
+        ['variant', 'summer_drinks_detail_variant']
+      ];
+      for (var si = 0; si < sections.length; si++) {
+        var field = sections[si][0];
+        var labelKey = sections[si][1];
+        var val = getRecipeField(r, field);
+        if (!val || !String(val).trim()) continue;
+        parts.push('<div class="detail-follow"><div class="detail-card"><h2 class="detail-section-title">' + esc(t(labelKey)) + '</h2><p>' + esc(String(val)) + '</p></div></div>');
+      }
+      return parts.join('');
+    }
+
     function buildDetailOriginLine(r) {
       var country = translateOriginCountry(r.originCountry, currentLang);
       var region = translateOriginRegion(r.originRegion, currentLang);
@@ -8195,7 +8942,9 @@
       parts.push('</div></div>');
       parts.push('<div class="detail-hero-card" id="recipe-title-card">');
       parts.push(buildDetailCategoryBadge(r));
+      parts.push(buildDetailDrinkBadgesHTML(r));
       parts.push('<h1 class="detail-title">' + esc(getRecipeField(r, 'name') || r.name) + '</h1>');
+      parts.push(buildDetailBaseRecipeLinkHTML(r));
       if (introTxt) {
         parts.push('<p class="detail-intro detail-intro--in-card">' + esc(introTxt) + '</p>');
       }
@@ -8251,6 +9000,8 @@
         }
         parts.push('</section></div>');
       }
+      parts.push(buildDetailDrinkExtraSectionsHTML(r));
+      parts.push(buildDetailSummerAperitifSectionHTML(r));
       parts.push(buildDetailRelatedHTML(r));
       parts.push(buildDetailFeedbackHTML(r));
       return parts.join('');
@@ -8678,6 +9429,45 @@
       if (!parsedRecipes.length) return;
 
       var tokens = normalizeSearchTokens(currentSearchQuery);
+      var summerView = document.getElementById('summerDrinksCollectionView');
+      var lmView = document.getElementById('sommerdrinksLmCollectionView');
+      if (currentRecipeFilterKey === 'sommer-horchatas' && !tokens.length) {
+        if (summerView) {
+          summerView.hidden = false;
+          renderSummerDrinksCollectionView();
+        }
+        if (lmView) lmView.hidden = true;
+        grid.hidden = true;
+        grid.innerHTML = '';
+        if (loadWrap) loadWrap.hidden = true;
+        if (highlightViewAll) highlightViewAll.hidden = true;
+        var summerTotal = getSummerDrinkRecipes().length;
+        status.hidden = false;
+        status.classList.remove('error');
+        status.textContent = summerTotal ? t('ui_found', { count: summerTotal }) : t('ui_no_matches');
+        if (opt.scrollToResults) scrollToHomeRecipeResults();
+        return;
+      }
+      if (currentRecipeFilterKey === 'sommerdrinks-limonaden-mocktails' && !tokens.length) {
+        if (lmView) {
+          lmView.hidden = false;
+          renderSommerdrinksLmCollectionView();
+        }
+        if (summerView) summerView.hidden = true;
+        grid.hidden = true;
+        grid.innerHTML = '';
+        if (loadWrap) loadWrap.hidden = true;
+        if (highlightViewAll) highlightViewAll.hidden = true;
+        var lmTotal = getSommerdrinksLmRecipes().length;
+        status.hidden = false;
+        status.classList.remove('error');
+        status.textContent = lmTotal ? t('ui_found', { count: lmTotal }) : t('ui_no_matches');
+        if (opt.scrollToResults) scrollToHomeRecipeResults();
+        return;
+      }
+      if (summerView) summerView.hidden = true;
+      if (lmView) lmView.hidden = true;
+
       var full = applyWorldCategoryFilterToList(getCurrentFullRecipeList());
 
       if (tokens.length) {
@@ -8796,7 +9586,29 @@
         return r.text();
       })
       .then(function (text) {
-        var list = attachRecipeSlugPaths(parseRecipes(text));
+        return Promise.all([
+          fetch(SUMMER_DRINKS_SEED_URL).then(function (seedResp) {
+            return seedResp.ok ? seedResp.text() : '';
+          }),
+          fetch(SOMMERDRINKS_LM_SEED_URL).then(function (seedResp) {
+            return seedResp.ok ? seedResp.text() : '';
+          })
+        ]).then(function (seedTexts) {
+          return { main: text, seedHorchatas: seedTexts[0], seedLm: seedTexts[1] };
+        });
+      })
+      .then(function (payload) {
+        var mainList = attachRecipeSlugPaths(parseRecipes(payload.main));
+        var seedList = [];
+        try {
+          var horchataSeed = attachRecipeSlugPaths(parseRecipes(payload.seedHorchatas, { selector: 'drinkCollection > recipe', optional: true }));
+          horchataSeed = horchataSeed.filter(function (r) { return r.drinkType !== 'aperitif'; });
+          var lmSeed = attachRecipeSlugPaths(parseRecipes(payload.seedLm, { selector: 'drinkCollection > recipe', optional: true }));
+          seedList = horchataSeed.concat(lmSeed);
+        } catch (seedErr) {
+          console.warn('Getränke-Seed konnte nicht geladen werden:', seedErr);
+        }
+        var list = mainList.concat(seedList);
         parsedRecipes = list;
         if (typeof window !== 'undefined') {
           window.__recipeSlugPhase1 = {

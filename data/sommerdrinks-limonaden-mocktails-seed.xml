@@ -1,0 +1,1017 @@
+<?xml version='1.0' encoding='utf-8'?>
+<drinkCollection id="sommerdrinks-limonaden-mocktails" title="Sommerdrinks, Limonaden &amp; Mocktails" version="3">
+  <recipe id="407">
+    <name>Zitronen-Limetten-Limonade</name>
+    <intro lang="de">Eine klassische hausgemachte Zitronen-Limetten-Limonade mit angenehmer Säure und viel Frische – perfekt für heiße Sommertage.</intro>
+    <persons>6 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Hausgemachte Limonaden</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>limonade</tag>
+      <tag>zitrone</tag>
+      <tag>limette</tag>
+    </tags>
+    <image src="images/rezeptbild_407.png" alt="Zitronen-Limetten-Limonade"/>
+    <ingredients>
+      <item>4 Zitronen</item>
+      <item>3 Limetten</item>
+      <item>800 ml Mineralwasser</item>
+      <item>3–4 EL Honig oder Agavendicksaft</item>
+      <item>Eiswürfel</item>
+      <item>Zitronen- und Limettenscheiben</item>
+      <item>Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Zitronen und Limetten auspressen.</step>
+      <step nr="2">Saft mit Honig oder Agavendicksaft verrühren.</step>
+      <step nr="3">Mineralwasser hinzufügen.</step>
+      <step nr="4">Eiswürfel einfüllen.</step>
+      <step nr="5">Mit Zitronen-, Limettenscheiben und Minze servieren.</step>
+    </preparation>
+    <servingTip>Gut gekühlt in großen Gläsern mit viel Eis, frischen Zitronen- und Limettenscheiben und Minze servieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A bright homemade lemon and lime lemonade in a clear glass pitcher and glasses filled with ice, fresh lemon and lime slices, mint leaves, sparkling summer look, natural daylight, wooden table, high-end food photography, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 30 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Limonada cytrynowo-limonkowa</name>
+      <persons>ok. 6 szklanek</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Domowe limonady</subcategory>
+      <servingTip>Podawać dobrze schłodzoną w dużych szklankach z dużą ilością lodu, świeżymi plasterkami cytryny i limonki oraz miętą.</servingTip>
+      <intro lang="pl">Klasyczna domowa limonada cytrynowo-limonkowa z przyjemną kwasowością i dużą świeżością – idealna na gorące letnie dni.</intro>
+      <ingredients>
+        <item>4 cytryny</item>
+        <item>3 limonki</item>
+        <item>800 ml wody mineralnej</item>
+        <item>3–4 łyżki miodu lub syropu z agawy</item>
+        <item>kostki lodu</item>
+        <item>plasterki cytryny i limonki</item>
+        <item>mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wycisnąć sok z cytryn i limonek.</step>
+        <step nr="2">Wymieszać sok z miodem lub syropem z agawy.</step>
+        <step nr="3">Dodać wodę mineralną.</step>
+        <step nr="4">Wlać kostki lodu.</step>
+        <step nr="5">Podawać z plasterkami cytryny, limonki i miętą.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 30 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Lemon Lime Lemonade</name>
+      <persons>approx. 6 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Homemade lemonades</subcategory>
+      <servingTip>Serve well chilled in large glasses with plenty of ice, fresh lemon and lime slices, and mint.</servingTip>
+      <intro lang="en">A classic homemade lemon and lime lemonade with pleasant acidity and plenty of freshness – perfect for hot summer days.</intro>
+      <ingredients>
+        <item>4 lemons</item>
+        <item>3 limes</item>
+        <item>800 ml sparkling mineral water</item>
+        <item>3–4 tbsp honey or agave syrup</item>
+        <item>ice cubes</item>
+        <item>lemon and lime slices</item>
+        <item>mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Juice the lemons and limes.</step>
+        <step nr="2">Stir the juice with honey or agave syrup.</step>
+        <step nr="3">Add the sparkling mineral water.</step>
+        <step nr="4">Fill with ice cubes.</step>
+        <step nr="5">Serve with lemon and lime slices and mint.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 30 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="408">
+    <name>Erdbeer-Basilikum-Limonade</name>
+    <intro lang="de">Fruchtige Erdbeerlimonade mit frischem Basilikum – erfrischend, sommerlich und im Thermomix schnell zubereitet.</intro>
+    <persons>4–6 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Hausgemachte Limonaden</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>limonade</tag>
+      <tag>thermomix</tag>
+    </tags>
+    <image src="images/rezeptbild_408.png" alt="Erdbeer-Basilikum-Limonade"/>
+    <ingredients>
+      <item>500 g Erdbeeren</item>
+      <item>Saft von 2 Zitronen</item>
+      <item>700 ml Mineralwasser</item>
+      <item>2–3 EL Honig oder Agavendicksaft</item>
+      <item>8–10 Basilikumblätter</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Erdbeeren, Zitronensaft und Honig 20 Sek. / Stufe 8.</step>
+      <step nr="2">Mineralwasser hinzufügen.</step>
+      <step nr="3">Basilikum unterrühren.</step>
+      <step nr="4">Mit Eis servieren.</step>
+    </preparation>
+    <thermomix>Erdbeeren, Zitronensaft und Honig 20 Sek. / Stufe 8 mixen.</thermomix>
+    <servingTip>Mit Eis und frischen Erdbeerstücken servieren. Basilikum erst kurz vor dem Servieren einrühren, damit er frisch bleibt.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A fresh strawberry basil lemonade in tall glasses with ice, sliced strawberries, basil leaves, soft pink-red color, summer terrace feeling, natural daylight, elegant food photography, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Limonada truskawkowo-bazyliowa</name>
+      <persons>ok. 4–6 szklanek</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Domowe limonady</subcategory>
+      <servingTip>Podawać z lodem i świeżymi kawałkami truskawek. Bazylię dodać dopiero tuż przed podaniem, aby pozostała świeża.</servingTip>
+      <thermomix>Miksować truskawki, sok z cytryn i miód 20 Sek. / Stufe 8.</thermomix>
+      <intro lang="pl">Owocowa limonada truskawkowa ze świeżą bazylią – orzeźwiająca, letnia i szybka w Thermomixie.</intro>
+      <ingredients>
+        <item>500 g truskawek</item>
+        <item>sok z 2 cytryn</item>
+        <item>700 ml wody mineralnej</item>
+        <item>2–3 łyżki miodu lub syropu z agawy</item>
+        <item>8–10 listków bazylii</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Włożyć truskawki, sok z cytryn i miód do naczynia miksującego i miksować 20 Sek. / Stufe 8.</step>
+        <step nr="2">Dodać wodę mineralną.</step>
+        <step nr="3">Delikatnie wmieszać bazylię.</step>
+        <step nr="4">Podawać z lodem.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Basil Lemonade</name>
+      <persons>approx. 4–6 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Homemade lemonades</subcategory>
+      <servingTip>Serve with ice and fresh strawberry pieces. Stir in the basil just before serving so it stays fresh.</servingTip>
+      <thermomix>Blend strawberries, lemon juice, and honey 20 Sek. / Stufe 8.</thermomix>
+      <intro lang="en">A fruity strawberry lemonade with fresh basil – refreshing, summery, and quick to make in the Thermomix.</intro>
+      <ingredients>
+        <item>500 g strawberries</item>
+        <item>juice of 2 lemons</item>
+        <item>700 ml sparkling mineral water</item>
+        <item>2–3 tbsp honey or agave syrup</item>
+        <item>8–10 basil leaves</item>
+        <item>ice cubes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Add strawberries, lemon juice, and honey to the mixing bowl and blend 20 Sek. / Stufe 8.</step>
+        <step nr="2">Add the sparkling mineral water.</step>
+        <step nr="3">Gently stir in the basil.</step>
+        <step nr="4">Serve with ice.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="409">
+    <name>Pfirsich-Eistee</name>
+    <intro lang="de">Süß-fruchtiger Pfirsich-Eistee auf Basis von schwarzem Tee – ideal für entspannte Sommernachmittage.</intro>
+    <persons>6–8 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Eistee &amp; Kaffee kalt</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>eistee</tag>
+    </tags>
+    <image src="images/rezeptbild_409.png" alt="Pfirsich-Eistee"/>
+    <ingredients>
+      <item>1 Liter schwarzer Tee</item>
+      <item>4 reife Pfirsiche</item>
+      <item>Saft einer Zitrone</item>
+      <item>Honig</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Schwarzen Tee zubereiten und vollständig abkühlen lassen.</step>
+      <step nr="2">Pfirsiche pürieren.</step>
+      <step nr="3">Mit Tee vermischen.</step>
+      <step nr="4">Zitronensaft und Honig ergänzen.</step>
+      <step nr="5">Kalt servieren.</step>
+    </preparation>
+    <servingTip>Mit Eis und frischen Pfirsichscheiben servieren. Je länger der Tee kühlt, desto aromatischer wird er.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A chilled peach iced tea in tall glasses with ice, peach slices, black tea amber color, lemon slice, summer garden background, natural daylight, high-quality food photography, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 15 Minuten</item>
+      <item>Kühlzeit: 1 Stunde</item>
+    </timing>
+    <translation lang="pl">
+      <name>Mrożona herbata brzoskwiniowa</name>
+      <persons>ok. 6–8 szklanek</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mrożona herbata i kawa na zimno</subcategory>
+      <servingTip>Podawać z lodem i świeżymi plasterkami brzoskwini. Im dłużej herbata się schłodzi, tym bardziej aromatyczna.</servingTip>
+      <intro lang="pl">Słodko-owocowa mrożona herbata brzoskwiniowa na bazie czarnej herbaty – idealna na spokojne letnie popołudnia.</intro>
+      <ingredients>
+        <item>1 l czarnej herbaty</item>
+        <item>4 dojrzałe brzoskwinie</item>
+        <item>sok z 1 cytryny</item>
+        <item>miód</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Zaparzyć czarną herbatę i całkowicie ostudzić.</step>
+        <step nr="2">Zmiksować brzoskwinie na puree.</step>
+        <step nr="3">Wymiesać z herbatą.</step>
+        <step nr="4">Dodać sok z cytryny i miód.</step>
+        <step nr="5">Podawać na zimno.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 15 minut</item>
+        <item>Czas chłodzenia: 1 godzina</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Peach Iced Tea</name>
+      <persons>approx. 6–8 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Iced tea &amp; cold coffee</subcategory>
+      <servingTip>Serve with ice and fresh peach slices. The longer the tea chills, the more aromatic it becomes.</servingTip>
+      <intro lang="en">A sweet, fruity peach iced tea based on black tea – ideal for relaxed summer afternoons.</intro>
+      <ingredients>
+        <item>1 litre black tea</item>
+        <item>4 ripe peaches</item>
+        <item>juice of 1 lemon</item>
+        <item>honey</item>
+        <item>ice cubes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Brew the black tea and let it cool completely.</step>
+        <step nr="2">Purée the peaches.</step>
+        <step nr="3">Mix with the tea.</step>
+        <step nr="4">Add lemon juice and honey.</step>
+        <step nr="5">Serve cold.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 15 minutes</item>
+        <item>Chill time: 1 hour</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="410">
+    <name>Zitronen-Minze-Eistee</name>
+    <intro lang="de">Erfrischender Zitronen-Minze-Eistee mit grünem Tee – leicht, aromatisch und perfekt für heiße Tage.</intro>
+    <persons>6–8 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Eistee &amp; Kaffee kalt</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>eistee</tag>
+    </tags>
+    <image src="images/rezeptbild_410.png" alt="Zitronen-Minze-Eistee"/>
+    <ingredients>
+      <item>1 Liter grüner Tee</item>
+      <item>2 Zitronen</item>
+      <item>Honig</item>
+      <item>Minze</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Grünen Tee zubereiten.</step>
+      <step nr="2">Zitronensaft und Honig einrühren.</step>
+      <step nr="3">Minze ergänzen.</step>
+      <step nr="4">Gut kühlen.</step>
+      <step nr="5">Mit Eis servieren.</step>
+    </preparation>
+    <servingTip>Mit viel Eis, frischen Minzblättern und Zitronenscheiben servieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A fresh lemon mint iced tea in clear glasses with ice, lemon slices and mint leaves, light green-gold tea color, bright summer daylight, clean foodblog style, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 10 Minuten</item>
+      <item>Kühlzeit: 1 Stunde</item>
+    </timing>
+    <translation lang="pl">
+      <name>Mrożona herbata cytrynowo-miętowa</name>
+      <persons>ok. 6–8 szklanek</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mrożona herbata i kawa na zimno</subcategory>
+      <servingTip>Podawać z dużą ilością lodu, świeżymi listkami mięty i plasterkami cytryny.</servingTip>
+      <intro lang="pl">Orzeźwiająca mrożona herbata cytrynowo-miętowa na bazie zielonej herbaty – lekka, aromatyczna i idealna na gorące dni.</intro>
+      <ingredients>
+        <item>1 l zielonej herbaty</item>
+        <item>2 cytryny</item>
+        <item>miód</item>
+        <item>mięta</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Zaparzyć zieloną herbatę.</step>
+        <step nr="2">Wmiesać sok z cytryny i miód.</step>
+        <step nr="3">Dodać miętę.</step>
+        <step nr="4">Dobrze schłodzić.</step>
+        <step nr="5">Podawać z lodem.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 10 minut</item>
+        <item>Czas chłodzenia: 1 godzina</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Lemon Mint Iced Tea</name>
+      <persons>approx. 6–8 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Iced tea &amp; cold coffee</subcategory>
+      <servingTip>Serve with plenty of ice, fresh mint leaves, and lemon slices.</servingTip>
+      <intro lang="en">A refreshing lemon and mint iced tea with green tea – light, aromatic, and perfect for hot days.</intro>
+      <ingredients>
+        <item>1 litre green tea</item>
+        <item>2 lemons</item>
+        <item>honey</item>
+        <item>mint</item>
+        <item>ice cubes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Brew the green tea.</step>
+        <step nr="2">Stir in lemon juice and honey.</step>
+        <step nr="3">Add mint.</step>
+        <step nr="4">Chill well.</step>
+        <step nr="5">Serve with ice.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 10 minutes</item>
+        <item>Chill time: 1 hour</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="411">
+    <name>Cold Brew Orange</name>
+    <intro lang="de">Schichtiger Cold Brew mit Orangensaft – koffeinhaltig, fruchtig und ideal als erfrischender Sommer-Kaffee.</intro>
+    <persons>2 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Eistee &amp; Kaffee kalt</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>kaffee</tag>
+    </tags>
+    <image src="images/rezeptbild_411.png" alt="Cold Brew Orange"/>
+    <ingredients>
+      <item>300 ml Cold Brew</item>
+      <item>150 ml Orangensaft</item>
+      <item>Eiswürfel</item>
+      <item>Orangenscheiben</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Eis ins Glas.</step>
+      <step nr="2">Orangensaft einfüllen.</step>
+      <step nr="3">Cold Brew langsam aufgießen.</step>
+      <step nr="4">Mit Orangenscheibe servieren.</step>
+    </preparation>
+    <servingTip>Cold Brew langsam aufgießen, damit sich die schöne Schichtung ergibt. Am besten sofort trinken.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A layered cold brew coffee with orange juice in a glass full of ice, orange slices, dark coffee floating above orange juice, modern café summer style, natural daylight, high-end drink photography, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Cold Brew z pomarańczą</name>
+      <persons>ok. 2 szklanki</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mrożona herbata i kawa na zimno</subcategory>
+      <servingTip>Wlewać cold brew powoli, aby uzyskać ładne warstwy. Najlepiej pić od razu.</servingTip>
+      <intro lang="pl">Warstwowy cold brew z sokiem pomarańczowym – pobudzający, owocowy i idealny jako orzeźwiająca letnia kawa.</intro>
+      <ingredients>
+        <item>300 ml cold brew</item>
+        <item>150 ml soku pomarańczowego</item>
+        <item>kostki lodu</item>
+        <item>plasterki pomarańczy</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Włożyć lód do szklanki.</step>
+        <step nr="2">Wlać sok pomarańczowy.</step>
+        <step nr="3">Powoli wlać cold brew.</step>
+        <step nr="4">Podawać z plasterkiem pomarańczy.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Cold Brew Orange</name>
+      <persons>approx. 2 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Iced tea &amp; cold coffee</subcategory>
+      <servingTip>Pour the cold brew slowly to create a nice layered effect. Best enjoyed right away.</servingTip>
+      <intro lang="en">A layered cold brew with orange juice – caffeinated, fruity, and ideal as a refreshing summer coffee.</intro>
+      <ingredients>
+        <item>300 ml cold brew</item>
+        <item>150 ml orange juice</item>
+        <item>ice cubes</item>
+        <item>orange slices</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Add ice to the glass.</step>
+        <step nr="2">Pour in the orange juice.</step>
+        <step nr="3">Slowly pour in the cold brew.</step>
+        <step nr="4">Serve with an orange slice.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="412">
+    <name>Eiskaffee Vanille</name>
+    <intro lang="de">Cremiger Eiskaffee mit Vanille – mild, kühlend und perfekt für Kaffeeliebhaber an warmen Tagen.</intro>
+    <persons>2 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Eistee &amp; Kaffee kalt</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>kaffee</tag>
+    </tags>
+    <image src="images/rezeptbild_412.png" alt="Eiskaffee Vanille"/>
+    <ingredients>
+      <item>300 ml kalter Kaffee</item>
+      <item>250 ml Milch</item>
+      <item>Vanilleextrakt</item>
+      <item>Eiswürfel</item>
+      <item>optional Vanilleeis</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Kaffee und Milch verrühren.</step>
+      <step nr="2">Vanille ergänzen.</step>
+      <step nr="3">Eiswürfel dazugeben.</step>
+      <step nr="4">Optional Vanilleeis hinzufügen.</step>
+    </preparation>
+    <servingTip>Mit optionaler Kugel Vanilleeis besonders cremig servieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A creamy vanilla iced coffee in a tall glass with ice cubes, cold coffee, milk swirl, optional scoop of vanilla ice cream, summer café look, natural daylight, premium food photography, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Mrożona kawa waniliowa</name>
+      <persons>ok. 2 szklanki</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mrożona herbata i kawa na zimno</subcategory>
+      <servingTip>Podawać z opcjonalną gałką lodów waniliowych – wtedy napój jest szczególnie kremowy.</servingTip>
+      <intro lang="pl">Kremowa mrożona kawa waniliowa – łagodna, chłodząca i idealna dla miłośników kawy w ciepłe dni.</intro>
+      <ingredients>
+        <item>300 ml zimnej kawy</item>
+        <item>250 ml mleka</item>
+        <item>ekstrakt waniliowy</item>
+        <item>kostki lodu</item>
+        <item>opcjonalnie: lody waniliowe</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Wymiesać kawę i mleko.</step>
+        <step nr="2">Dodać wanilię.</step>
+        <step nr="3">Włożyć kostki lodu.</step>
+        <step nr="4">Opcjonalnie dodać lody waniliowe.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Vanilla Iced Coffee</name>
+      <persons>approx. 2 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Iced tea &amp; cold coffee</subcategory>
+      <servingTip>Serve with an optional scoop of vanilla ice cream for an especially creamy drink.</servingTip>
+      <intro lang="en">A creamy vanilla iced coffee – mild, cooling, and perfect for coffee lovers on warm days.</intro>
+      <ingredients>
+        <item>300 ml cold coffee</item>
+        <item>250 ml milk</item>
+        <item>vanilla extract</item>
+        <item>ice cubes</item>
+        <item>optional: vanilla ice cream</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Stir together the coffee and milk.</step>
+        <step nr="2">Add vanilla.</step>
+        <step nr="3">Add ice cubes.</step>
+        <step nr="4">Optionally add vanilla ice cream.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="413">
+    <name>Frozen Erdbeer-Limette</name>
+    <intro lang="de">Gefrorener Erdbeer-Limetten-Drink – eisig, fruchtig und im Thermomix blitzschnell mixbar.</intro>
+    <persons>2–3 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Frozen Drinks &amp; Frappés</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>frozen</tag>
+      <tag>thermomix</tag>
+    </tags>
+    <image src="images/rezeptbild_413.png" alt="Frozen Erdbeer-Limette"/>
+    <ingredients>
+      <item>500 g gefrorene Erdbeeren</item>
+      <item>2 Limetten</item>
+      <item>250 ml Wasser</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alles 30 Sek. / Stufe 10 mixen.</step>
+      <step nr="2">Sofort servieren.</step>
+    </preparation>
+    <thermomix>Alles 30 Sek. / Stufe 10 mixen.</thermomix>
+    <servingTip>Sofort nach dem Mixen servieren – am besten in vorgekühlten Gläsern.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A frozen strawberry lime drink in chilled glasses, crushed ice texture, bright red color, lime slices, frosty summer look, natural daylight, high-quality drink photography, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Frozen truskawka z limonką</name>
+      <persons>ok. 2–3 szklanki</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Frozen drinks i frappé</subcategory>
+      <servingTip>Podawać natychmiast po zmiksowaniu – najlepiej w wcześniej schłodzonych szklankach.</servingTip>
+      <thermomix>Miksować wszystko 30 Sek. / Stufe 10.</thermomix>
+      <intro lang="pl">Mrożony napój truskawkowo-limonkowy – lodowaty, owocowy i błyskawiczny w Thermomixie.</intro>
+      <ingredients>
+        <item>500 g mrożonych truskawek</item>
+        <item>2 limonki</item>
+        <item>250 ml wody</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Włożyć wszystko do naczynia miksującego i miksować 30 Sek. / Stufe 10.</step>
+        <step nr="2">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Frozen Strawberry Lime</name>
+      <persons>approx. 2–3 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Frozen drinks &amp; frappés</subcategory>
+      <servingTip>Serve immediately after blending – ideally in pre-chilled glasses.</servingTip>
+      <thermomix>Blend everything 30 Sek. / Stufe 10.</thermomix>
+      <intro lang="en">A frozen strawberry and lime drink – icy, fruity, and lightning-fast in the Thermomix.</intro>
+      <ingredients>
+        <item>500 g frozen strawberries</item>
+        <item>2 limes</item>
+        <item>250 ml water</item>
+        <item>ice cubes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Add everything to the mixing bowl and blend 30 Sek. / Stufe 10.</step>
+        <step nr="2">Serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="414">
+    <name>Mango Frozen Mocktail</name>
+    <intro lang="de">Tropischer Mango-Frozen-Mocktail – cremig, fruchtig und im Thermomix in Sekunden fertig.</intro>
+    <persons>2–3 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Frozen Drinks &amp; Frappés</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>mocktail</tag>
+      <tag>frozen</tag>
+      <tag>thermomix</tag>
+    </tags>
+    <image src="images/rezeptbild_414.png" alt="Mango Frozen Mocktail"/>
+    <ingredients>
+      <item>500 g gefrorene Mango</item>
+      <item>300 ml Orangensaft</item>
+      <item>1 Limette</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alles 30 Sek. / Stufe 10 mixen.</step>
+      <step nr="2">Direkt servieren.</step>
+    </preparation>
+    <thermomix>Alles 30 Sek. / Stufe 10 mixen.</thermomix>
+    <servingTip>Mit Limettenscheibe garnieren und sofort eiskalt genießen.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A tropical frozen mango mocktail in a chilled glass, vivid yellow-orange color, crushed ice texture, lime slice, mint garnish, bright summer setting, natural daylight, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Mango frozen mocktail</name>
+      <persons>ok. 2–3 szklanki</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Frozen drinks i frappé</subcategory>
+      <servingTip>Udekorować plasterkiem limonki i od razu pić bardzo zimny.</servingTip>
+      <thermomix>Miksować wszystko 30 Sek. / Stufe 10.</thermomix>
+      <intro lang="pl">Tropikalny mrożony mocktail mango – kremowy, owocowy i gotowy w Thermomixie w kilka sekund.</intro>
+      <ingredients>
+        <item>500 g mrożonego mango</item>
+        <item>300 ml soku pomarańczowego</item>
+        <item>1 limonka</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Włożyć wszystko do naczynia miksującego i miksować 30 Sek. / Stufe 10.</step>
+        <step nr="2">Podawać od razu.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Mango Frozen Mocktail</name>
+      <persons>approx. 2–3 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Frozen drinks &amp; frappés</subcategory>
+      <servingTip>Garnish with a lime slice and enjoy ice-cold right away.</servingTip>
+      <thermomix>Blend everything 30 Sek. / Stufe 10.</thermomix>
+      <intro lang="en">A tropical mango frozen mocktail – creamy, fruity, and ready in seconds in the Thermomix.</intro>
+      <ingredients>
+        <item>500 g frozen mango</item>
+        <item>300 ml orange juice</item>
+        <item>1 lime</item>
+        <item>ice cubes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Add everything to the mixing bowl and blend 30 Sek. / Stufe 10.</step>
+        <step nr="2">Serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="415">
+    <name>Virgin Mojito</name>
+    <intro lang="de">Alkoholfreier Virgin Mojito – klassisch frisch mit Limette, Minze und sprudelndem Mineralwasser.</intro>
+    <persons>2 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Mocktails &amp; Bowlen</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>mocktail</tag>
+    </tags>
+    <image src="images/rezeptbild_415.png" alt="Virgin Mojito"/>
+    <ingredients>
+      <item>Limetten</item>
+      <item>Minze</item>
+      <item>Brauner Zucker</item>
+      <item>Crushed Ice</item>
+      <item>Mineralwasser</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Limetten leicht andrücken.</step>
+      <step nr="2">Zucker hinzufügen.</step>
+      <step nr="3">Minze ergänzen.</step>
+      <step nr="4">Crushed Ice dazugeben.</step>
+      <step nr="5">Mit Mineralwasser auffüllen.</step>
+    </preparation>
+    <servingTip>Limetten und Minze leicht andrücken, damit die Aromen frei werden. Mit frischen Minzzweigen garnieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A virgin mojito mocktail with crushed ice, lime wedges, fresh mint, sparkling water bubbles, clear glass, bright summer bar style, natural daylight, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Virgin mojito</name>
+      <persons>ok. 2 szklanki</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mocktaile i bowle</subcategory>
+      <servingTip>Lekko ugnieść limonki i miętę, aby uwolnić aromaty. Udekorować świeżymi gałązkami mięty.</servingTip>
+      <intro lang="pl">Bezalkoholowy virgin mojito – klasycznie świeży z limonką, miętą i musującą wodą mineralną.</intro>
+      <ingredients>
+        <item>limonki</item>
+        <item>mięta</item>
+        <item>brązowy cukier</item>
+        <item>lód kruszony</item>
+        <item>woda mineralna</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Lekko ugnieść limonki.</step>
+        <step nr="2">Dodać cukier.</step>
+        <step nr="3">Dodać miętę.</step>
+        <step nr="4">Włożyć lód kruszony.</step>
+        <step nr="5">Uzupełnić wodą mineralną.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Virgin Mojito</name>
+      <persons>approx. 2 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Mocktails &amp; punches</subcategory>
+      <servingTip>Lightly muddle the limes and mint to release the aromas. Garnish with fresh mint sprigs.</servingTip>
+      <intro lang="en">A non-alcoholic virgin mojito – classically fresh with lime, mint, and sparkling mineral water.</intro>
+      <ingredients>
+        <item>limes</item>
+        <item>mint</item>
+        <item>brown sugar</item>
+        <item>crushed ice</item>
+        <item>sparkling mineral water</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Lightly muddle the limes.</step>
+        <step nr="2">Add sugar.</step>
+        <step nr="3">Add mint.</step>
+        <step nr="4">Add crushed ice.</step>
+        <step nr="5">Top up with sparkling mineral water.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="416">
+    <name>Virgin Maracuja Spritz</name>
+    <intro lang="de">Fruchtiger Virgin Maracuja Spritz – spritzig, exotisch und alkoholfrei erfrischend.</intro>
+    <persons>2 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Mocktails &amp; Bowlen</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>mocktail</tag>
+    </tags>
+    <image src="images/rezeptbild_416.png" alt="Virgin Maracuja Spritz"/>
+    <ingredients>
+      <item>Maracujasaft</item>
+      <item>Limettensaft</item>
+      <item>Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Alle Zutaten ins Glas geben.</step>
+      <step nr="2">Vorsichtig umrühren.</step>
+      <step nr="3">Mit Minze servieren.</step>
+    </preparation>
+    <servingTip>Vorsichtig umrühren, damit die Sprudeligkeit erhalten bleibt. Mit frischer Minze servieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A passion fruit virgin spritz in elegant glasses with ice, bright golden-orange color, lime slice, mint garnish, sparkling bubbles, summer terrace atmosphere, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <translation lang="pl">
+      <name>Virgin maracuja spritz</name>
+      <persons>ok. 2 szklanki</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mocktaile i bowle</subcategory>
+      <servingTip>Delikatnie wymieszać, aby zachować musujący charakter. Podawać ze świeżą miętą.</servingTip>
+      <intro lang="pl">Owocowy virgin maracuja spritz – musujący, egzotyczny i orzeźwiający bez alkoholu.</intro>
+      <ingredients>
+        <item>sok z marakui</item>
+        <item>sok z limonki</item>
+        <item>woda mineralna</item>
+        <item>kostki lodu</item>
+        <item>mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Włożyć wszystkie składniki do szklanki.</step>
+        <step nr="2">Delikatnie wymieszać.</step>
+        <step nr="3">Podawać z miętą.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Virgin Passion Fruit Spritz</name>
+      <persons>approx. 2 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Mocktails &amp; punches</subcategory>
+      <servingTip>Stir gently to keep the fizz. Serve with fresh mint.</servingTip>
+      <intro lang="en">A fruity virgin passion fruit spritz – sparkling, exotic, and refreshingly non-alcoholic.</intro>
+      <ingredients>
+        <item>passion fruit juice</item>
+        <item>lime juice</item>
+        <item>sparkling mineral water</item>
+        <item>ice cubes</item>
+        <item>mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Add all ingredients to the glass.</step>
+        <step nr="2">Stir gently.</step>
+        <step nr="3">Serve with mint.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="417">
+    <name>Alkoholfreie Sommer-Sangria</name>
+    <intro lang="de">Alkoholfreie Sommer-Sangria mit frischem Obst – fruchtig, festlich und ideal für Gartenpartys.</intro>
+    <persons>6–8 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Mocktails &amp; Bowlen</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>mocktail</tag>
+    </tags>
+    <image src="images/rezeptbild_417.png" alt="Alkoholfreie Sommer-Sangria"/>
+    <ingredients>
+      <item>Roter Traubensaft</item>
+      <item>Mineralwasser</item>
+      <item>Orange</item>
+      <item>Zitrone</item>
+      <item>Erdbeeren</item>
+      <item>Blaubeeren</item>
+      <item>Eiswürfel</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Früchte vorbereiten.</step>
+      <step nr="2">Mit Traubensaft vermengen.</step>
+      <step nr="3">Gut kühlen.</step>
+      <step nr="4">Vor dem Servieren Mineralwasser ergänzen.</step>
+    </preparation>
+    <servingTip>Mineralwasser erst kurz vor dem Servieren zugeben, damit der Spritz erhalten bleibt.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A non-alcoholic summer sangria in a large glass pitcher with red grape juice, orange slices, lemon slices, strawberries, blueberries and ice, festive summer table, natural daylight, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 15 Minuten</item>
+      <item>Kühlzeit: 1 Stunde</item>
+    </timing>
+    <translation lang="pl">
+      <name>Bezalkoholowa letnia sangria</name>
+      <persons>ok. 6–8 szklanek</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mocktaile i bowle</subcategory>
+      <servingTip>Wodę mineralną dodać dopiero tuż przed podaniem, aby zachować musujący charakter.</servingTip>
+      <intro lang="pl">Bezalkoholowa letnia sangria ze świeżymi owocami – owocowa, świąteczna i idealna na imprezy w ogrodzie.</intro>
+      <ingredients>
+        <item>czerwony sok winogronowy</item>
+        <item>woda mineralna</item>
+        <item>pomarańcza</item>
+        <item>cytryna</item>
+        <item>truskawki</item>
+        <item>borówki</item>
+        <item>kostki lodu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować owoce.</step>
+        <step nr="2">Wymiesać z sokiem winogronowym.</step>
+        <step nr="3">Dobrze schłodzić.</step>
+        <step nr="4">Tuż przed podaniem dodać wodę mineralną.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 15 minut</item>
+        <item>Czas chłodzenia: 1 godzina</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Non-Alcoholic Summer Sangria</name>
+      <persons>approx. 6–8 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Mocktails &amp; punches</subcategory>
+      <servingTip>Add the sparkling mineral water just before serving to keep the fizz.</servingTip>
+      <intro lang="en">A non-alcoholic summer sangria with fresh fruit – fruity, festive, and ideal for garden parties.</intro>
+      <ingredients>
+        <item>red grape juice</item>
+        <item>sparkling mineral water</item>
+        <item>orange</item>
+        <item>lemon</item>
+        <item>strawberries</item>
+        <item>blueberries</item>
+        <item>ice cubes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepare the fruit.</step>
+        <step nr="2">Mix with the grape juice.</step>
+        <step nr="3">Chill well.</step>
+        <step nr="4">Add sparkling mineral water just before serving.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 15 minutes</item>
+        <item>Chill time: 1 hour</item>
+      </timing>
+    </translation>
+  </recipe>
+  <recipe id="418">
+    <name>Beeren-Sommerbowle</name>
+    <intro lang="de">Fruchtige Beeren-Sommerbowle mit weißem Traubensaft – erfrischend, bunt und perfekt für Sommerfeste.</intro>
+    <persons>8–10 Gläser</persons>
+    <category>Sommerdrinks, Limonaden &amp; Mocktails</category>
+    <subcategory>Mocktails &amp; Bowlen</subcategory>
+    <drinkType>alkoholfrei</drinkType>
+    <tags>
+      <tag>alkoholfrei</tag>
+      <tag>sommerdrink</tag>
+      <tag>bowle</tag>
+    </tags>
+    <image src="images/rezeptbild_418.png" alt="Beeren-Sommerbowle"/>
+    <ingredients>
+      <item>Erdbeeren</item>
+      <item>Himbeeren</item>
+      <item>Blaubeeren</item>
+      <item>Weißer Traubensaft</item>
+      <item>Mineralwasser</item>
+      <item>Limette</item>
+      <item>Eiswürfel</item>
+      <item>Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Früchte vorbereiten.</step>
+      <step nr="2">Mit Traubensaft vermengen.</step>
+      <step nr="3">Mindestens zwei Stunden kalt stellen.</step>
+      <step nr="4">Kurz vor dem Servieren Mineralwasser und Eis ergänzen.</step>
+    </preparation>
+    <servingTip>In einer großen Glaskaraffe servieren – mit Minze und frischen Beeren garnieren.</servingTip>
+    <variant/>
+    <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A berry summer punch in a large glass bowl with strawberries, raspberries, blueberries, mint, ice and sparkling juice, garden party setting, natural daylight, high-end food photography, no text.</imagePromptEn>
+    <timing>
+      <item>Arbeitszeit: 15 Minuten</item>
+      <item>Kühlzeit: 2 Stunden</item>
+    </timing>
+    <translation lang="pl">
+      <name>Letnia bowla jagodowa</name>
+      <persons>ok. 8–10 szklanek</persons>
+      <category>Letnie napoje, limonady i mocktaile</category>
+      <subcategory>Mocktaile i bowle</subcategory>
+      <servingTip>Podawać w dużym szklanym dzbanie – udekorować miętą i świeżymi owocami jagodowymi.</servingTip>
+      <intro lang="pl">Owocowa letnia bowla jagodowa z białym sokiem winogronowym – orzeźwiająca, kolorowa i idealna na letnie spotkania.</intro>
+      <ingredients>
+        <item>truskawki</item>
+        <item>maliny</item>
+        <item>borówki</item>
+        <item>biały sok winogronowy</item>
+        <item>woda mineralna</item>
+        <item>limonka</item>
+        <item>kostki lodu</item>
+        <item>mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Przygotować owoce.</step>
+        <step nr="2">Wymiesać z sokiem winogronowym.</step>
+        <step nr="3">Schłodzić przez co najmniej dwie godziny.</step>
+        <step nr="4">Tuż przed podaniem dodać wodę mineralną i lód.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 15 minut</item>
+        <item>Czas chłodzenia: 2 godziny</item>
+      </timing>
+    </translation>
+    <translation lang="en">
+      <name>Berry Summer Punch</name>
+      <persons>approx. 8–10 glasses</persons>
+      <category>Summer drinks, lemonades &amp; mocktails</category>
+      <subcategory>Mocktails &amp; punches</subcategory>
+      <servingTip>Serve in a large glass pitcher – garnish with mint and fresh berries.</servingTip>
+      <intro lang="en">A fruity berry summer punch with white grape juice – refreshing, colourful, and perfect for summer gatherings.</intro>
+      <ingredients>
+        <item>strawberries</item>
+        <item>raspberries</item>
+        <item>blueberries</item>
+        <item>white grape juice</item>
+        <item>sparkling mineral water</item>
+        <item>lime</item>
+        <item>ice cubes</item>
+        <item>mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepare the fruit.</step>
+        <step nr="2">Mix with the grape juice.</step>
+        <step nr="3">Chill for at least two hours.</step>
+        <step nr="4">Add sparkling mineral water and ice just before serving.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 15 minutes</item>
+        <item>Chill time: 2 hours</item>
+      </timing>
+    </translation>
+  </recipe>
+</drinkCollection>
