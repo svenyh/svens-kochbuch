@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<drinkCollection id="sommer-horchatas" title="Sommer-Horchatas &amp; Aguas Frescas" version="2">
+<!--
+  Sommer-Horchatas & Aguas Frescas – 11 Basisdrinks + 33 Sommer-Aperitifs.
+  Bild-Prompts: dev/sommergetraenke_image_prompts.json
+  Pipeline: dev/recipe_images_sommergetraenke.py
+-->
+<drinkCollection id="sommer-horchatas" title="Sommer-Horchatas &amp; Aguas Frescas" version="3">
   <recipe id="372">
     <name>Erdbeer-Wassermelonen-Horchata mit Reismilch</name>
     <intro lang="de">Eine schnelle, europäisch inspirierte Thermomix-Variante einer Horchata: cremig durch Reismilch, fruchtig durch Erdbeeren und Wassermelone, frisch durch Limette. Perfekt für heiße Sommertage, Grillabende oder die Terrasse.</intro>
@@ -1063,6 +1068,2844 @@
         <item>Prep time: 10 minutes</item>
         <item>Chill time: 30 minutes</item>
       </timing>
+    </translation>
+  </recipe>
+  <recipe id="380">
+    <name>Erdbeer-Wassermelonen-Horchata mit Reismilch Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Wassermelonen-Horchata mit Reismilch Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="372"/>
+    <variantOf>/rezepte/erdbeer-wassermelonen-horchata-mit-reismilch-372</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_372_rose-spritz.png" alt="Erdbeer-Wassermelonen-Horchata mit Reismilch Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Erdbeer-Wassermelonen-Horchata mit Reismilch</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben, kleine Wassermelonenwürfel und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Wassermelonen-Horchata mit Reismilch) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Erdbeer-Wassermelonen-Horchata mit Reismilch einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on creamy pale-pink horchata drink in a large glass tumbler. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and fresh strawberry slices, small watermelon cubes, lime wedge, mint sprig. Fresh strawberries and watermelon garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowo-arbuzowa z mlekiem ryżowym Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Horchata truskawkowo-arbuzowa z mlekiem ryżowym Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Horchata truskawkowo-arbuzowa z mlekiem ryżowym</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek, małe kostki arbuza i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Horchata truskawkowo-arbuzowa z mlekiem ryżowym) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Horchata truskawkowo-arbuzowa z mlekiem ryżowym.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Watermelon Horchata with Rice Milk Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Watermelon Horchata with Rice Milk Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Strawberry Watermelon Horchata with Rice Milk</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices, small watermelon cubes and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Watermelon Horchata with Rice Milk) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Strawberry Watermelon Horchata with Rice Milk first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="381">
+    <name>Erdbeer-Wassermelonen-Horchata mit Reismilch Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Wassermelonen-Horchata mit Reismilch Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="372"/>
+    <variantOf>/rezepte/erdbeer-wassermelonen-horchata-mit-reismilch-372</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_372_weisswein-spritz.png" alt="Erdbeer-Wassermelonen-Horchata mit Reismilch Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Erdbeer-Wassermelonen-Horchata mit Reismilch</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben, kleine Wassermelonenwürfel und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Wassermelonen-Horchata mit Reismilch) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Erdbeer-Wassermelonen-Horchata mit Reismilch einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on creamy pale-pink horchata drink in a large glass tumbler. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and fresh strawberry slices, small watermelon cubes, lime wedge, mint sprig. Fresh strawberries and watermelon garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowo-arbuzowa z mlekiem ryżowym Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Horchata truskawkowo-arbuzowa z mlekiem ryżowym Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Horchata truskawkowo-arbuzowa z mlekiem ryżowym</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek, małe kostki arbuza i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Horchata truskawkowo-arbuzowa z mlekiem ryżowym) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Horchata truskawkowo-arbuzowa z mlekiem ryżowym.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Watermelon Horchata with Rice Milk White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Watermelon Horchata with Rice Milk White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Strawberry Watermelon Horchata with Rice Milk</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices, small watermelon cubes and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Watermelon Horchata with Rice Milk) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Strawberry Watermelon Horchata with Rice Milk first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="382">
+    <name>Erdbeer-Wassermelonen-Horchata mit Reismilch Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Wassermelonen-Horchata mit Reismilch Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="372"/>
+    <variantOf>/rezepte/erdbeer-wassermelonen-horchata-mit-reismilch-372</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_372_sekt-royal.png" alt="Erdbeer-Wassermelonen-Horchata mit Reismilch Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Erdbeer-Wassermelonen-Horchata mit Reismilch</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben, kleine Wassermelonenwürfel und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Wassermelonen-Horchata mit Reismilch) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Erdbeer-Wassermelonen-Horchata mit Reismilch einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on creamy pale-pink horchata drink in a large glass tumbler. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and fresh strawberry slices, small watermelon cubes, lime wedge, mint sprig. Fresh strawberries and watermelon garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowo-arbuzowa z mlekiem ryżowym Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Horchata truskawkowo-arbuzowa z mlekiem ryżowym Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Horchata truskawkowo-arbuzowa z mlekiem ryżowym</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek, małe kostki arbuza i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Horchata truskawkowo-arbuzowa z mlekiem ryżowym) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Horchata truskawkowo-arbuzowa z mlekiem ryżowym.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Watermelon Horchata with Rice Milk Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Watermelon Horchata with Rice Milk Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Strawberry Watermelon Horchata with Rice Milk</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices, small watermelon cubes and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Watermelon Horchata with Rice Milk) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Strawberry Watermelon Horchata with Rice Milk first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="383">
+    <name>Erdbeer-Horchata mit Reismilch Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Horchata mit Reismilch Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="373"/>
+    <variantOf>/rezepte/erdbeer-horchata-mit-reismilch-373</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_373_rose-spritz.png" alt="Erdbeer-Horchata mit Reismilch Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Erdbeer-Horchata mit Reismilch</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Horchata mit Reismilch) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Erdbeer-Horchata mit Reismilch einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on creamy pink strawberry horchata with rice milk in a tall glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and fresh strawberry slices, mint leaves. Fresh strawberries garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowa z mlekiem ryżowym Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Horchata truskawkowa z mlekiem ryżowym Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Horchata truskawkowa z mlekiem ryżowym</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Horchata truskawkowa z mlekiem ryżowym) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Horchata truskawkowa z mlekiem ryżowym.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Horchata with Rice Milk Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Horchata with Rice Milk Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Strawberry Horchata with Rice Milk</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Horchata with Rice Milk) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Strawberry Horchata with Rice Milk first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="384">
+    <name>Erdbeer-Horchata mit Reismilch Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Horchata mit Reismilch Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="373"/>
+    <variantOf>/rezepte/erdbeer-horchata-mit-reismilch-373</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_373_weisswein-spritz.png" alt="Erdbeer-Horchata mit Reismilch Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Erdbeer-Horchata mit Reismilch</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Horchata mit Reismilch) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Erdbeer-Horchata mit Reismilch einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on creamy pink strawberry horchata with rice milk in a tall glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and fresh strawberry slices, mint leaves. Fresh strawberries garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowa z mlekiem ryżowym Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Horchata truskawkowa z mlekiem ryżowym Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Horchata truskawkowa z mlekiem ryżowym</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Horchata truskawkowa z mlekiem ryżowym) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Horchata truskawkowa z mlekiem ryżowym.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Horchata with Rice Milk White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Horchata with Rice Milk White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Strawberry Horchata with Rice Milk</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Horchata with Rice Milk) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Strawberry Horchata with Rice Milk first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="385">
+    <name>Erdbeer-Horchata mit Reismilch Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Horchata mit Reismilch Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="373"/>
+    <variantOf>/rezepte/erdbeer-horchata-mit-reismilch-373</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_373_sekt-royal.png" alt="Erdbeer-Horchata mit Reismilch Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Erdbeer-Horchata mit Reismilch</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Horchata mit Reismilch) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Erdbeer-Horchata mit Reismilch einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on creamy pink strawberry horchata with rice milk in a tall glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and fresh strawberry slices, mint leaves. Fresh strawberries garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Horchata truskawkowa z mlekiem ryżowym Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Horchata truskawkowa z mlekiem ryżowym Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Horchata truskawkowa z mlekiem ryżowym</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Horchata truskawkowa z mlekiem ryżowym) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Horchata truskawkowa z mlekiem ryżowym.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Horchata with Rice Milk Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Horchata with Rice Milk Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Strawberry Horchata with Rice Milk</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Horchata with Rice Milk) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Strawberry Horchata with Rice Milk first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="386">
+    <name>Wassermelone-Limette-Minze Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Wassermelone-Limette-Minze Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="374"/>
+    <variantOf>/rezepte/wassermelone-limette-minze-agua-fresca-374</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_374_rose-spritz.png" alt="Wassermelone-Limette-Minze Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Wassermelone-Limette-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Wassermelonenwürfel, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Wassermelone-Limette-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Wassermelone-Limette-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on pale pink-red watermelon agua fresca in a clear glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and lime wheel, fresh mint sprig, watermelon wedge. Fresh watermelon, lime and mint garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca arbuzowo-limonkowo-miętowa Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca arbuzowo-limonkowo-miętowa Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca arbuzowo-limonkowo-miętowa</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kostki arbuza, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca arbuzowo-limonkowo-miętowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca arbuzowo-limonkowo-miętowa.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Watermelon Lime Mint Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Watermelon Lime Mint Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Watermelon Lime Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>watermelon cubes, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Watermelon Lime Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Watermelon Lime Mint Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="387">
+    <name>Wassermelone-Limette-Minze Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Wassermelone-Limette-Minze Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="374"/>
+    <variantOf>/rezepte/wassermelone-limette-minze-agua-fresca-374</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_374_weisswein-spritz.png" alt="Wassermelone-Limette-Minze Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Wassermelone-Limette-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Wassermelonenwürfel, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Wassermelone-Limette-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Wassermelone-Limette-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on pale pink-red watermelon agua fresca in a clear glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and lime wheel, fresh mint sprig, watermelon wedge. Fresh watermelon, lime and mint garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca arbuzowo-limonkowo-miętowa Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca arbuzowo-limonkowo-miętowa Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca arbuzowo-limonkowo-miętowa</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kostki arbuza, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca arbuzowo-limonkowo-miętowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca arbuzowo-limonkowo-miętowa.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Watermelon Lime Mint Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Watermelon Lime Mint Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Watermelon Lime Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>watermelon cubes, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Watermelon Lime Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Watermelon Lime Mint Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="388">
+    <name>Wassermelone-Limette-Minze Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Wassermelone-Limette-Minze Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="374"/>
+    <variantOf>/rezepte/wassermelone-limette-minze-agua-fresca-374</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_374_sekt-royal.png" alt="Wassermelone-Limette-Minze Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Wassermelone-Limette-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Wassermelonenwürfel, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Wassermelone-Limette-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Wassermelone-Limette-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on pale pink-red watermelon agua fresca in a clear glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and lime wheel, fresh mint sprig, watermelon wedge. Fresh watermelon, lime and mint garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca arbuzowo-limonkowo-miętowa Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca arbuzowo-limonkowo-miętowa Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca arbuzowo-limonkowo-miętowa</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>kostki arbuza, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca arbuzowo-limonkowo-miętowa) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca arbuzowo-limonkowo-miętowa.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Watermelon Lime Mint Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Watermelon Lime Mint Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Watermelon Lime Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>watermelon cubes, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Watermelon Lime Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Watermelon Lime Mint Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="389">
+    <name>Gurke-Limette-Minze Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Gurke-Limette-Minze Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="375"/>
+    <variantOf>/rezepte/gurke-limette-minze-agua-fresca-375</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_375_rose-spritz.png" alt="Gurke-Limette-Minze Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Gurke-Limette-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Gurkenscheiben, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Gurke-Limette-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Gurke-Limette-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on pale green cucumber agua fresca in a clear glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and cucumber ribbon, lime slice, mint leaves. Fresh cucumber, lime and mint garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ogórkowo-limonkowo-miętowa Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca ogórkowo-limonkowo-miętowa Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca ogórkowo-limonkowo-miętowa</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki ogórka, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca ogórkowo-limonkowo-miętowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca ogórkowo-limonkowo-miętowa.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Cucumber Lime Mint Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Cucumber Lime Mint Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Cucumber Lime Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>cucumber slices, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Cucumber Lime Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Cucumber Lime Mint Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="390">
+    <name>Gurke-Limette-Minze Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Gurke-Limette-Minze Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="375"/>
+    <variantOf>/rezepte/gurke-limette-minze-agua-fresca-375</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_375_weisswein-spritz.png" alt="Gurke-Limette-Minze Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Gurke-Limette-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Gurkenscheiben, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Gurke-Limette-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Gurke-Limette-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on pale green cucumber agua fresca in a clear glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and cucumber ribbon, lime slice, mint leaves. Fresh cucumber, lime and mint garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ogórkowo-limonkowo-miętowa Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca ogórkowo-limonkowo-miętowa Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca ogórkowo-limonkowo-miętowa</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki ogórka, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca ogórkowo-limonkowo-miętowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca ogórkowo-limonkowo-miętowa.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Cucumber Lime Mint Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Cucumber Lime Mint Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Cucumber Lime Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>cucumber slices, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Cucumber Lime Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Cucumber Lime Mint Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="391">
+    <name>Gurke-Limette-Minze Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Gurke-Limette-Minze Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="375"/>
+    <variantOf>/rezepte/gurke-limette-minze-agua-fresca-375</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_375_sekt-royal.png" alt="Gurke-Limette-Minze Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Gurke-Limette-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Gurkenscheiben, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Gurke-Limette-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Gurke-Limette-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on pale green cucumber agua fresca in a clear glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and cucumber ribbon, lime slice, mint leaves. Fresh cucumber, lime and mint garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ogórkowo-limonkowo-miętowa Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca ogórkowo-limonkowo-miętowa Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca ogórkowo-limonkowo-miętowa</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>plasterki ogórka, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca ogórkowo-limonkowo-miętowa) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca ogórkowo-limonkowo-miętowa.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Cucumber Lime Mint Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Cucumber Lime Mint Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Cucumber Lime Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>cucumber slices, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Cucumber Lime Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Cucumber Lime Mint Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="392">
+    <name>Mango-Maracuja Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Mango-Maracuja Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="376"/>
+    <variantOf>/rezepte/mango-maracuja-agua-fresca-376</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_376_rose-spritz.png" alt="Mango-Maracuja Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Mango-Maracuja Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Mangostückchen und Maracuja</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Mango-Maracuja Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Mango-Maracuja Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on golden tropical mango passion fruit agua fresca in a tall glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and passion fruit seeds visible, mango dice, lime slice, mint. Fresh mango and passion fruit garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca mango-marakuja Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca mango-marakuja Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca mango-marakuja</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kawałki mango i marakuja</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca mango-marakuja) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca mango-marakuja.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Mango Passion Fruit Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Mango Passion Fruit Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Mango Passion Fruit Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>mango pieces and passion fruit</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Mango Passion Fruit Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Mango Passion Fruit Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="393">
+    <name>Mango-Maracuja Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Mango-Maracuja Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="376"/>
+    <variantOf>/rezepte/mango-maracuja-agua-fresca-376</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_376_weisswein-spritz.png" alt="Mango-Maracuja Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Mango-Maracuja Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Mangostückchen und Maracuja</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Mango-Maracuja Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Mango-Maracuja Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on golden tropical mango passion fruit agua fresca in a tall glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and passion fruit seeds visible, mango dice, lime slice, mint. Fresh mango and passion fruit garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca mango-marakuja Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca mango-marakuja Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca mango-marakuja</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kawałki mango i marakuja</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca mango-marakuja) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca mango-marakuja.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Mango Passion Fruit Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Mango Passion Fruit Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Mango Passion Fruit Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>mango pieces and passion fruit</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Mango Passion Fruit Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Mango Passion Fruit Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="394">
+    <name>Mango-Maracuja Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Mango-Maracuja Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="376"/>
+    <variantOf>/rezepte/mango-maracuja-agua-fresca-376</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_376_sekt-royal.png" alt="Mango-Maracuja Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Mango-Maracuja Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Mangostückchen und Maracuja</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Mango-Maracuja Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Mango-Maracuja Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on golden tropical mango passion fruit agua fresca in a tall glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and passion fruit seeds visible, mango dice, lime slice, mint. Fresh mango and passion fruit garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca mango-marakuja Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca mango-marakuja Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca mango-marakuja</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>kawałki mango i marakuja</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca mango-marakuja) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca mango-marakuja.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Mango Passion Fruit Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Mango Passion Fruit Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Mango Passion Fruit Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>mango pieces and passion fruit</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Mango Passion Fruit Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Mango Passion Fruit Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="395">
+    <name>Erdbeer-Ananas Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Ananas Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="377"/>
+    <variantOf>/rezepte/erdbeer-ananas-agua-fresca-377</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_377_rose-spritz.png" alt="Erdbeer-Ananas Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Erdbeer-Ananas Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben und Ananasstückchen</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Ananas Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Erdbeer-Ananas Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on vibrant coral-pink strawberry pineapple agua fresca in a glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and strawberry half, small pineapple chunk, mint. Fresh strawberries and pineapple garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca truskawkowo-ananasowa Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca truskawkowo-ananasowa Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca truskawkowo-ananasowa</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek i kawałki ananasa</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca truskawkowo-ananasowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca truskawkowo-ananasowa.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Pineapple Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Pineapple Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Strawberry Pineapple Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices and pineapple pieces</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Pineapple Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Strawberry Pineapple Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="396">
+    <name>Erdbeer-Ananas Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Ananas Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="377"/>
+    <variantOf>/rezepte/erdbeer-ananas-agua-fresca-377</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_377_weisswein-spritz.png" alt="Erdbeer-Ananas Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Erdbeer-Ananas Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben und Ananasstückchen</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Ananas Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Erdbeer-Ananas Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on vibrant coral-pink strawberry pineapple agua fresca in a glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and strawberry half, small pineapple chunk, mint. Fresh strawberries and pineapple garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca truskawkowo-ananasowa Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca truskawkowo-ananasowa Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca truskawkowo-ananasowa</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek i kawałki ananasa</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca truskawkowo-ananasowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca truskawkowo-ananasowa.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Pineapple Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Pineapple Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Strawberry Pineapple Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices and pineapple pieces</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Pineapple Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Strawberry Pineapple Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="397">
+    <name>Erdbeer-Ananas Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Erdbeer-Ananas Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="377"/>
+    <variantOf>/rezepte/erdbeer-ananas-agua-fresca-377</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_377_sekt-royal.png" alt="Erdbeer-Ananas Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Erdbeer-Ananas Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Erdbeerscheiben und Ananasstückchen</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Erdbeer-Ananas Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Erdbeer-Ananas Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on vibrant coral-pink strawberry pineapple agua fresca in a glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and strawberry half, small pineapple chunk, mint. Fresh strawberries and pineapple garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca truskawkowo-ananasowa Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca truskawkowo-ananasowa Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca truskawkowo-ananasowa</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>plasterki truskawek i kawałki ananasa</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca truskawkowo-ananasowa) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca truskawkowo-ananasowa.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Strawberry Pineapple Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Strawberry Pineapple Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Strawberry Pineapple Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>strawberry slices and pineapple pieces</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Strawberry Pineapple Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Strawberry Pineapple Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="398">
+    <name>Ananas-Mango Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Ananas-Mango Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="378"/>
+    <variantOf>/rezepte/ananas-mango-agua-fresca-378</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_378_rose-spritz.png" alt="Ananas-Mango Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Ananas-Mango Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Ananas- und Mangostückchen</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Ananas-Mango Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Ananas-Mango Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on bright golden tropical pineapple mango agua fresca in a tall glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and pineapple wedge, mango cubes, lime slice. Fresh pineapple and mango garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ananasowo-mangowa Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca ananasowo-mangowa Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca ananasowo-mangowa</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kawałki ananasa i mango</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca ananasowo-mangowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca ananasowo-mangowa.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Pineapple Mango Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Pineapple Mango Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Pineapple Mango Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>pineapple and mango pieces</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Pineapple Mango Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Pineapple Mango Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="399">
+    <name>Ananas-Mango Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Ananas-Mango Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="378"/>
+    <variantOf>/rezepte/ananas-mango-agua-fresca-378</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_378_weisswein-spritz.png" alt="Ananas-Mango Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Ananas-Mango Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Ananas- und Mangostückchen</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Ananas-Mango Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Ananas-Mango Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on bright golden tropical pineapple mango agua fresca in a tall glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and pineapple wedge, mango cubes, lime slice. Fresh pineapple and mango garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ananasowo-mangowa Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca ananasowo-mangowa Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca ananasowo-mangowa</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kawałki ananasa i mango</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca ananasowo-mangowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca ananasowo-mangowa.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Pineapple Mango Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Pineapple Mango Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Pineapple Mango Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>pineapple and mango pieces</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Pineapple Mango Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Pineapple Mango Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="400">
+    <name>Ananas-Mango Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Ananas-Mango Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="378"/>
+    <variantOf>/rezepte/ananas-mango-agua-fresca-378</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_378_sekt-royal.png" alt="Ananas-Mango Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Ananas-Mango Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Ananas- und Mangostückchen</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Ananas-Mango Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Ananas-Mango Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on bright golden tropical pineapple mango agua fresca in a tall glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and pineapple wedge, mango cubes, lime slice. Fresh pineapple and mango garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca ananasowo-mangowa Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca ananasowo-mangowa Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca ananasowo-mangowa</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>kawałki ananasa i mango</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca ananasowo-mangowa) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca ananasowo-mangowa.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Pineapple Mango Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Pineapple Mango Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Pineapple Mango Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>pineapple and mango pieces</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Pineapple Mango Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Pineapple Mango Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="401">
+    <name>Honigmelone-Minze Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Honigmelone-Minze Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="379"/>
+    <variantOf>/rezepte/honigmelone-minze-agua-fresca-379</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_379_rose-spritz.png" alt="Honigmelone-Minze Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Honigmelone-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Honigmelonenkugeln und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Honigmelone-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Honigmelone-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on pale golden honeydew melon agua fresca in a clear glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and melon ball garnish, mint sprig. Fresh honeydew melon and mint garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca z melona miodowego i mięty Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca z melona miodowego i mięty Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca z melona miodowego i mięty</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kulki melona miodowego i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca z melona miodowego i mięty) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca z melona miodowego i mięty.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Honeydew Mint Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Honeydew Mint Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Honeydew Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>honeydew melon balls and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Honeydew Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Honeydew Mint Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="402">
+    <name>Honigmelone-Minze Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Honigmelone-Minze Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="379"/>
+    <variantOf>/rezepte/honigmelone-minze-agua-fresca-379</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_379_weisswein-spritz.png" alt="Honigmelone-Minze Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Honigmelone-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Honigmelonenkugeln und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Honigmelone-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Honigmelone-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on pale golden honeydew melon agua fresca in a clear glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and melon ball garnish, mint sprig. Fresh honeydew melon and mint garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca z melona miodowego i mięty Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca z melona miodowego i mięty Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca z melona miodowego i mięty</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>kulki melona miodowego i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca z melona miodowego i mięty) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca z melona miodowego i mięty.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Honeydew Mint Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Honeydew Mint Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Honeydew Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>honeydew melon balls and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Honeydew Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Honeydew Mint Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="403">
+    <name>Honigmelone-Minze Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Honigmelone-Minze Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="379"/>
+    <variantOf>/rezepte/honigmelone-minze-agua-fresca-379</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_379_sekt-royal.png" alt="Honigmelone-Minze Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Honigmelone-Minze Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Honigmelonenkugeln und frische Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Honigmelone-Minze Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Honigmelone-Minze Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on pale golden honeydew melon agua fresca in a clear glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and melon ball garnish, mint sprig. Fresh honeydew melon and mint garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca z melona miodowego i mięty Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca z melona miodowego i mięty Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca z melona miodowego i mięty</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>kulki melona miodowego i świeża mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca z melona miodowego i mięty) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca z melona miodowego i mięty.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Honeydew Mint Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Honeydew Mint Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Honeydew Mint Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>honeydew melon balls and fresh mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Honeydew Mint Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Honeydew Mint Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="419">
+    <name>Pfirsich-Himbeer Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Pfirsich-Himbeer Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="404"/>
+    <variantOf>/rezepte/pfirsich-himbeer-agua-fresca-404</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_404_rose-spritz.png" alt="Pfirsich-Himbeer Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Pfirsich-Himbeer Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Pfirsichscheibe, frische Himbeeren und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Pfirsich-Himbeer Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Pfirsich-Himbeer Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on soft peach-pink peach raspberry agua fresca in a glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and peach slice, fresh raspberries, mint. Fresh peach and raspberry garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca brzoskwiniowo-malinowa Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca brzoskwiniowo-malinowa Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca brzoskwiniowo-malinowa</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plaster brzoskwini, świeże maliny i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca brzoskwiniowo-malinowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca brzoskwiniowo-malinowa.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Peach Raspberry Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Peach Raspberry Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Peach Raspberry Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>peach slice, fresh raspberries and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Peach Raspberry Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Peach Raspberry Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="420">
+    <name>Pfirsich-Himbeer Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Pfirsich-Himbeer Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="404"/>
+    <variantOf>/rezepte/pfirsich-himbeer-agua-fresca-404</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_404_weisswein-spritz.png" alt="Pfirsich-Himbeer Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Pfirsich-Himbeer Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Pfirsichscheibe, frische Himbeeren und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Pfirsich-Himbeer Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Pfirsich-Himbeer Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on soft peach-pink peach raspberry agua fresca in a glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and peach slice, fresh raspberries, mint. Fresh peach and raspberry garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca brzoskwiniowo-malinowa Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca brzoskwiniowo-malinowa Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca brzoskwiniowo-malinowa</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plaster brzoskwini, świeże maliny i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca brzoskwiniowo-malinowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca brzoskwiniowo-malinowa.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Peach Raspberry Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Peach Raspberry Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Peach Raspberry Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>peach slice, fresh raspberries and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Peach Raspberry Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Peach Raspberry Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="421">
+    <name>Pfirsich-Himbeer Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Pfirsich-Himbeer Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="404"/>
+    <variantOf>/rezepte/pfirsich-himbeer-agua-fresca-404</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_404_sekt-royal.png" alt="Pfirsich-Himbeer Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Pfirsich-Himbeer Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Pfirsichscheibe, frische Himbeeren und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Pfirsich-Himbeer Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Pfirsich-Himbeer Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on soft peach-pink peach raspberry agua fresca in a glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and peach slice, fresh raspberries, mint. Fresh peach and raspberry garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca brzoskwiniowo-malinowa Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca brzoskwiniowo-malinowa Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca brzoskwiniowo-malinowa</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>plaster brzoskwini, świeże maliny i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca brzoskwiniowo-malinowa) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca brzoskwiniowo-malinowa.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Peach Raspberry Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Peach Raspberry Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Peach Raspberry Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>peach slice, fresh raspberries and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Peach Raspberry Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Peach Raspberry Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="422">
+    <name>Kiwi-Limette Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Kiwi-Limette Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="405"/>
+    <variantOf>/rezepte/kiwi-limette-agua-fresca-405</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_405_rose-spritz.png" alt="Kiwi-Limette Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Kiwi-Limette Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Kiwischeibe, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Kiwi-Limette Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Kiwi-Limette Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on vivid green kiwi lime agua fresca in a clear glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and kiwi slice, lime wheel, mint. Fresh kiwi and lime garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca kiwi-limonka Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca kiwi-limonka Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca kiwi-limonka</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plaster kiwi, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca kiwi-limonka) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca kiwi-limonka.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Kiwi Lime Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Kiwi Lime Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Kiwi Lime Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>kiwi slice, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Kiwi Lime Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Kiwi Lime Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="423">
+    <name>Kiwi-Limette Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Kiwi-Limette Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="405"/>
+    <variantOf>/rezepte/kiwi-limette-agua-fresca-405</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_405_weisswein-spritz.png" alt="Kiwi-Limette Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Kiwi-Limette Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Kiwischeibe, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Kiwi-Limette Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Kiwi-Limette Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on vivid green kiwi lime agua fresca in a clear glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and kiwi slice, lime wheel, mint. Fresh kiwi and lime garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca kiwi-limonka Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca kiwi-limonka Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca kiwi-limonka</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plaster kiwi, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca kiwi-limonka) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca kiwi-limonka.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Kiwi Lime Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Kiwi Lime Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Kiwi Lime Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>kiwi slice, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Kiwi Lime Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Kiwi Lime Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="424">
+    <name>Kiwi-Limette Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Kiwi-Limette Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="405"/>
+    <variantOf>/rezepte/kiwi-limette-agua-fresca-405</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_405_sekt-royal.png" alt="Kiwi-Limette Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Kiwi-Limette Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Kiwischeibe, Limettenscheibe und Minze</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Kiwi-Limette Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Kiwi-Limette Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on vivid green kiwi lime agua fresca in a clear glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and kiwi slice, lime wheel, mint. Fresh kiwi and lime garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca kiwi-limonka Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca kiwi-limonka Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca kiwi-limonka</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>plaster kiwi, plaster limonki i mięta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca kiwi-limonka) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca kiwi-limonka.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Kiwi Lime Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Kiwi Lime Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Kiwi Lime Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>kiwi slice, lime slice and mint</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Kiwi Lime Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Kiwi Lime Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="425">
+    <name>Blaubeere-Zitrone Agua Fresca Rosé Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Blaubeere-Zitrone Agua Fresca Rosé Spritz. Trockener Rosé und sprudelndes Mineralwasser verwandeln den Basisdrink in einen leichten Terrassen-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>rose-spritz</aperitifStyle>
+    <baseRecipeRef id="406"/>
+    <variantOf>/rezepte/blaubeere-zitrone-agua-fresca-406</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>rose_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_406_rose-spritz.png" alt="Blaubeere-Zitrone Agua Fresca Rosé Spritz"/>
+    <ingredients>
+      <item>120 ml Blaubeere-Zitrone Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Rosé</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Zitronenscheibe und frische Blaubeeren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Blaubeere-Zitrone Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Blaubeere-Zitrone Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Rosé und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Rosé Spritz summer aperitif based on deep purple-blue blueberry lemon agua fresca in a glass. large wine glass with pale rosé spritz cocktail, visible dry rosé wine tone, light bubbles from mineral water. Mixed drink with ice and lemon slice, fresh blueberries on rim. Fresh blueberries and lemon garnish. elegant stemmed wine glass, chilled dry rosé wine visible, refined summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca jagodowo-cytrynowa Rosé Spritz</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca jagodowo-cytrynowa Rosé Spritz. Wytrawne rosé i woda mineralna zamieniają bazę w lekki letni aperitif.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca jagodowo-cytrynowa</item>
+        <item>120 ml dobrze schłodzone wytrawne rosé</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plaster cytryny i świeże jagody</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca jagodowo-cytrynowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca jagodowo-cytrynowa.</step>
+        <step nr="4">Dodać 120 ml rosé i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Blueberry Lemon Agua Fresca Rosé Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Blueberry Lemon Agua Fresca Rosé Spritz. Dry rosé and sparkling mineral water turn the base drink into a light terrace aperitif.</intro>
+      <ingredients>
+        <item>120 ml Blueberry Lemon Agua Fresca</item>
+        <item>120 ml well-chilled dry rosé</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>lemon slice and fresh blueberries</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Blueberry Lemon Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Blueberry Lemon Agua Fresca first.</step>
+        <step nr="4">Add 120 ml rosé and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="426">
+    <name>Blaubeere-Zitrone Agua Fresca Weißwein Spritz</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Blaubeere-Zitrone Agua Fresca Weißwein Spritz. Gut gekühlter trockener Weißwein und Mineralwasser machen daraus einen frischen Sommer-Spritz.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>weisswein-spritz</aperitifStyle>
+    <baseRecipeRef id="406"/>
+    <variantOf>/rezepte/blaubeere-zitrone-agua-fresca-406</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>weisswein_spritz</tag>
+    </tags>
+    <image src="images/sommergetraenk_406_weisswein-spritz.png" alt="Blaubeere-Zitrone Agua Fresca Weißwein Spritz"/>
+    <ingredients>
+      <item>120 ml Blaubeere-Zitrone Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Weißwein</item>
+      <item>30–40 ml Mineralwasser</item>
+      <item>Eiswürfel</item>
+      <item>Zitronenscheibe und frische Blaubeeren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Blaubeere-Zitrone Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein großes Weinglas mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 120 ml Blaubeere-Zitrone Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Weißwein und 30–40 ml Mineralwasser dazugeben.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Weißwein Spritz summer aperitif based on deep purple-blue blueberry lemon agua fresca in a glass. white wine spritz in a wine glass, pale golden-green hue, gentle bubbles. Mixed drink with ice and lemon slice, fresh blueberries on rim. Fresh blueberries and lemon garnish. elegant white wine glass, chilled dry white wine visible, fresh summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca jagodowo-cytrynowa Spritz z białym winem</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca jagodowo-cytrynowa Spritz z białym winem. Schłodzone wytrawne białe wino i woda mineralna tworzą świeży letni spritz.</intro>
+      <ingredients>
+        <item>120 ml Agua Fresca jagodowo-cytrynowa</item>
+        <item>120 ml dobrze schłodzone wytrawne białe wino</item>
+        <item>30–40 ml wody mineralnej</item>
+        <item>Kostki lodu</item>
+        <item>plaster cytryny i świeże jagody</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca jagodowo-cytrynowa) i alkohol.</step>
+        <step nr="2">Napełnić dużą szklankę do wina kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 120 ml Agua Fresca jagodowo-cytrynowa.</step>
+        <step nr="4">Dodać 120 ml białego wina i 30–40 ml wody mineralnej.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Blueberry Lemon Agua Fresca White Wine Spritz</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Blueberry Lemon Agua Fresca White Wine Spritz. Well-chilled dry white wine and mineral water make a fresh summer spritz.</intro>
+      <ingredients>
+        <item>120 ml Blueberry Lemon Agua Fresca</item>
+        <item>120 ml well-chilled dry white wine</item>
+        <item>30–40 ml mineral water</item>
+        <item>Ice cubes</item>
+        <item>lemon slice and fresh blueberries</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Blueberry Lemon Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a large wine glass with ice cubes.</step>
+        <step nr="3">Pour 120 ml Blueberry Lemon Agua Fresca first.</step>
+        <step nr="4">Add 120 ml white wine and 30–40 ml mineral water.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
+    </translation>
+  </recipe>
+  <recipe id="427">
+    <name>Blaubeere-Zitrone Agua Fresca Sekt Royal</name>
+    <intro lang="de">Leichter Sommer-Aperitif: Blaubeere-Zitrone Agua Fresca Sekt Royal. Trockener Sekt gibt dem Basisdrink festliche Perlung – ideal als Sommer-Aperitif.</intro>
+    <persons>1 Glas</persons>
+    <category>Sommer-Horchatas &amp; Aguas Frescas</category>
+    <subcategory>Sommer-Aperitifs</subcategory>
+    <drinkType>aperitif</drinkType>
+    <aperitifStyle>sekt-royal</aperitifStyle>
+    <baseRecipeRef id="406"/>
+    <variantOf>/rezepte/blaubeere-zitrone-agua-fresca-406</variantOf>
+    <tags>
+      <tag>aperitif</tag>
+      <tag>sommerdrink</tag>
+      <tag>sommer-aperitif</tag>
+      <tag>sekt_royal</tag>
+    </tags>
+    <image src="images/sommergetraenk_406_sekt-royal.png" alt="Blaubeere-Zitrone Agua Fresca Sekt Royal"/>
+    <ingredients>
+      <item>100 ml Blaubeere-Zitrone Agua Fresca</item>
+      <item>120 ml gut gekühlter trockener Sekt</item>
+      <item>Eiswürfel</item>
+      <item>Zitronenscheibe und frische Blaubeeren</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Basisdrink (Blaubeere-Zitrone Agua Fresca) und Alkohol gut gekühlt bereitstellen.</step>
+      <step nr="2">Ein Sektflöte mit Eiswürfeln füllen.</step>
+      <step nr="3">Zuerst 100 ml Blaubeere-Zitrone Agua Fresca einfüllen.</step>
+      <step nr="4">120 ml Sekt vorsichtig dazugießen.</step>
+      <step nr="5">Leicht umrühren, mit passender Fruchtgarnitur dekorieren und sofort servieren.</step>
+    </preparation>
+    <timing>
+      <item>Arbeitszeit: 5 Minuten</item>
+    </timing>
+    <servingTip>Sehr kalt servieren. Besonders erfrischend auf der Terrasse oder als leichter Aperitif vor dem Essen.</servingTip>
+    <imagePromptEn>Professional high-end aperitif food photography, 4:5 vertical composition, elegant summer terrace mood with soft background bokeh, bright natural daylight, sophisticated styling, light condensation on glass, photorealistic, modern food magazine quality, no text, no watermark, no people, no AI artifacts. Sekt Royal summer aperitif based on deep purple-blue blueberry lemon agua fresca in a glass. sparkling sekt royal cocktail in a champagne flute, fine bubbles, festive summer aperitif. Mixed drink with ice and lemon slice, fresh blueberries on rim. Fresh blueberries and lemon garnish. tall champagne flute, dry sparkling sekt with elegant bubbles, celebratory summer aperitif. Terrace summer atmosphere.</imagePromptEn>
+    <translation lang="pl">
+      <name>Agua Fresca jagodowo-cytrynowa Sekt Royal</name>
+      <persons>1 szklanka</persons>
+      <category>Letnie horchaty i aguas frescas</category>
+      <subcategory>Letnie aperitify</subcategory>
+      <intro lang="pl">Lekki letni aperitif: Agua Fresca jagodowo-cytrynowa Sekt Royal. Wytrawne wino musujące nadaje bazie eleganckie bąbelki – idealny letni aperitif.</intro>
+      <ingredients>
+        <item>100 ml Agua Fresca jagodowo-cytrynowa</item>
+        <item>120 ml dobrze schłodzone wytrawne wino musujące</item>
+        <item>Kostki lodu</item>
+        <item>plaster cytryny i świeże jagody</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Schłodzić napój bazowy (Agua Fresca jagodowo-cytrynowa) i alkohol.</step>
+        <step nr="2">Napełnić kieliszek do szampana kostkami lodu.</step>
+        <step nr="3">Nalać najpierw 100 ml Agua Fresca jagodowo-cytrynowa.</step>
+        <step nr="4">Ostrożnie dolać 120 ml wina musującego.</step>
+        <step nr="5">Delikatnie wymieszać, udekorować owocową dekoracją i od razu podać.</step>
+      </preparation>
+      <timing>
+        <item>Czas pracy: 5 minut</item>
+      </timing>
+      <servingTip>Podawać bardzo zimne. Szczególnie orzeźwiające na tarasie lub jako lekki aperitif przed posiłkiem.</servingTip>
+    </translation>
+    <translation lang="en">
+      <name>Blueberry Lemon Agua Fresca Sekt Royal</name>
+      <persons>1 glass</persons>
+      <category>Summer horchatas &amp; aguas frescas</category>
+      <subcategory>Summer aperitifs</subcategory>
+      <intro lang="en">Light summer aperitif: Blueberry Lemon Agua Fresca Sekt Royal. Dry sparkling wine adds festive bubbles – perfect as a summer aperitif.</intro>
+      <ingredients>
+        <item>100 ml Blueberry Lemon Agua Fresca</item>
+        <item>120 ml well-chilled dry sparkling wine</item>
+        <item>Ice cubes</item>
+        <item>lemon slice and fresh blueberries</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Chill the base drink (Blueberry Lemon Agua Fresca) and alcohol well.</step>
+        <step nr="2">Fill a champagne flute with ice cubes.</step>
+        <step nr="3">Pour 100 ml Blueberry Lemon Agua Fresca first.</step>
+        <step nr="4">Top up carefully with 120 ml sparkling wine.</step>
+        <step nr="5">Stir gently, garnish with matching fruit and serve immediately.</step>
+      </preparation>
+      <timing>
+        <item>Prep time: 5 minutes</item>
+      </timing>
+      <servingTip>Serve very cold. Especially refreshing on the terrace or as a light aperitif before a meal.</servingTip>
     </translation>
   </recipe>
 </drinkCollection>
