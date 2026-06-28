@@ -6442,6 +6442,8 @@
       return parts.join(' \n ');
     }
 
+    var WORLD_CATEGORY_DRINKS = 'Getränke & Specials';
+
     var WORLD_CATEGORY_FILTER_ITEMS = [
       { value: 'world-all', i18n: 'world_cat_all' },
       { value: 'Deutschland', i18n: 'world_cat_deutschland' },
@@ -6694,8 +6696,19 @@
       updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
     }
 
+    function isDrinkChapterBaseRecipe(r) {
+      return isSummerDrinkBaseRecipe(r) || isSommerdrinksLmRecipe(r);
+    }
+
+    function getDrinkChapterBaseRecipeCount() {
+      return getSummerDrinkRecipes().length + getSommerdrinksLmRecipes().length;
+    }
+
     function recipeMatchesWorldCategory(r, filterKey) {
       if (!filterKey || filterKey === 'world-all') return true;
+      if (String(filterKey).trim() === WORLD_CATEGORY_DRINKS) {
+        return isDrinkChapterBaseRecipe(r);
+      }
       return String(r.originWorldCategory || '').trim() === String(filterKey).trim();
     }
 
@@ -9435,8 +9448,13 @@
       var lmView = document.getElementById('sommerdrinksLmCollectionView');
       var showSummerCollection = currentRecipeFilterKey === 'sommer-horchatas' && !tokens.length;
       var showLmCollection = currentRecipeFilterKey === 'sommerdrinks-limonaden-mocktails' && !tokens.length;
-      if (summerView) summerView.hidden = !showSummerCollection;
-      if (lmView) lmView.hidden = !showLmCollection;
+      var showDrinksWorldCollection = currentWorldCategoryFilter === WORLD_CATEGORY_DRINKS
+        && !tokens.length
+        && !showSummerCollection
+        && !showLmCollection
+        && (currentRecipeFilterKey === 'alle' || currentRecipeFilterKey === 'all');
+      if (summerView) summerView.hidden = !(showSummerCollection || showDrinksWorldCollection);
+      if (lmView) lmView.hidden = !(showLmCollection || showDrinksWorldCollection);
 
       if (!parsedRecipes.length) return;
 
@@ -9463,6 +9481,20 @@
         status.hidden = false;
         status.classList.remove('error');
         status.textContent = lmTotal ? t('ui_found', { count: lmTotal }) : t('ui_no_matches');
+        if (opt.scrollToResults) scrollToHomeRecipeResults();
+        return;
+      }
+      if (showDrinksWorldCollection) {
+        renderSummerDrinksCollectionView();
+        renderSommerdrinksLmCollectionView();
+        grid.hidden = true;
+        grid.innerHTML = '';
+        if (loadWrap) loadWrap.hidden = true;
+        if (highlightViewAll) highlightViewAll.hidden = true;
+        var drinksTotal = getDrinkChapterBaseRecipeCount();
+        status.hidden = false;
+        status.classList.remove('error');
+        status.textContent = drinksTotal ? t('ui_found', { count: drinksTotal }) : t('ui_no_matches');
         if (opt.scrollToResults) scrollToHomeRecipeResults();
         return;
       }
