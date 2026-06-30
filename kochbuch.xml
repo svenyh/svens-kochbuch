@@ -2,7 +2,7 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="5.0" languages="de,pl">
   <meta>
     <language>de,pl,en</language>
-    <recipeCount>371</recipeCount>
+    <recipeCount>372</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 klassische Traditionsrezepte (Soljanka, Würzfleisch, Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 weitere polnisch inspirierte Rezepte (klassische Placki, Placki mit Pilzrahm, Pyra mit Speck und Kräuterquark, Babka mit Kassler, Zapiekanka mit Hähnchen und Paprika). Ergänzt um 12 Asia-Wok-Rezepte (Pad Thai, gebratene Asia-Nudeln, Rind mit Brokkoli, Chop Suey, Thai Red Curry, Erdnuss-Wok, Kokos-Wok, Udon-Wok, Garnelen-Wok, Tofu-Wok, Thai Basil Chicken, gebratener Reis). Ergänzt um 15 italienisch inspirierte Rezepte (IDs 180–194). Ergänzt um 20 Fusion-Rezepte (IDs 195–214). Qualitätsrunde: Einleitungen für Rezepte 180–193 ergänzt. Qualitätsrunde V2: klare Kategorien für ausgewählte Rezepte normalisiert. Qualitätsrunde V3: ausgewählte ältere Einleitungen in DE und PL stilistisch veredelt. Ergänzt um 30 neue Rezepte: 10 Pizza &amp; Basics, 10 schnelle Feierabendküche und 10 Kuchen/Blechkuchen. Ergänzt um 19 Rezepte „Kulinarische Weltreise“ (IDs 311–329): Europa, Mittelmeer &amp;amp; Nordafrika, Weltreise. Eigene Sven-Versionen, DE zunächst; PL-Übersetzung folgt.</notes>
   </meta>
   <recipe id="1">
@@ -45323,6 +45323,173 @@
         <item>Ideal for guests and larger gatherings.</item>
       </tips>
       <rating>9.2/10</rating>
+    </translation>
+  </recipe>
+  <recipe id="428">
+    <name>Roadkill Chicken vom Grill mit Knoblauch-Kräuter-Dip</name>
+    <intro lang="de">Inspiriert von rustikalen rumänischen Grilltechniken: knuspriges plattgedrücktes Hähnchen vom Grill, zwischendurch immer wieder in eine würzige Knoblauch-Kräuter-Lake getaucht oder damit bestrichen. Außen rauchig und knusprig, innen saftig, mit Knoblauch, Paprika und frischen Kräutern.</intro>
+    <persons>2–4 Personen</persons>
+    <category>Grill &amp; BBQ</category>
+    <origin>
+      <country>Rumänien</country>
+      <region>Rustikale Grillküche</region>
+      <worldCategory>Balkan &amp; Osteuropa</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_428.png" alt="Roadkill Chicken vom Grill mit Knoblauch-Kräuter-Dip" />
+    <imagePromptEn>Professional realistic food photography, 16:9 horizontal landscape composition, warm natural daylight. Whole spatchcock flat grilled chicken, golden-brown and crispy with slightly smoky skin, visible grill marks and a glossy paprika-garlic-herb marinade glaze. Rustic BBQ scene on a dark wooden board or cast iron plate, small bowl of garlic-herb baste beside it, roughly chopped parsley, garlic cloves, lemon wedges and a touch of paprika powder. Subtle grill smoke in the background, shallow depth of field, appetizing and photorealistic, no people, no hands, no text, no logos, no watermark.</imagePromptEn>
+    <tags>
+      <tag>Hähnchen</tag>
+      <tag>Grill</tag>
+      <tag>BBQ</tag>
+      <tag>Knoblauch</tag>
+      <tag>Kräuter</tag>
+      <tag>Paprika</tag>
+      <tag>Spatchcock</tag>
+      <tag>Roadkill Chicken</tag>
+    </tags>
+    <ingredients>
+      <item>1 ganzes Hähnchen, ca. 1,3–1,6 kg</item>
+      <item>2 EL Öl</item>
+      <item>1 EL Paprikapulver edelsüß</item>
+      <item>1 TL Paprikapulver geräuchert</item>
+      <item>1 TL Salz</item>
+      <item>1 TL Pfeffer</item>
+      <item>1 TL Knoblauchpulver</item>
+      <item>1 TL Zwiebelpulver</item>
+      <item>optional etwas Chili</item>
+      <item>Knoblauch-Kräuter-Lake:</item>
+      <item>250 ml warmes Wasser</item>
+      <item>4–6 Knoblauchzehen, fein gerieben oder gepresst</item>
+      <item>1 kleine Zwiebel, sehr fein gerieben oder fein gehackt</item>
+      <item>1 Bund Petersilie, fein gehackt</item>
+      <item>optional etwas Koriander</item>
+      <item>1 TL Salz</item>
+      <item>1 TL Paprikapulver</item>
+      <item>1 EL Öl</item>
+      <item>1 Spritzer Zitronensaft oder Essig</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Hähnchen mit der Brust nach unten auf ein Brett legen und das Rückgrat mit einer Geflügelschere herausschneiden.</step>
+      <step nr="2">Hähnchen umdrehen und mit beiden Händen kräftig auf das Brustbein drücken, bis es flach liegt.</step>
+      <step nr="3">Öl mit Paprika, Salz, Pfeffer, Knoblauchpulver, Zwiebelpulver und optional Chili verrühren. Hähnchen rundum einreiben.</step>
+      <step nr="4">Grill auf indirekte Hitze vorbereiten, ca. 180–200 °C.</step>
+      <step nr="5">Hähnchen indirekt grillen, Hautseite nach oben, ca. 35–45 Minuten.</step>
+      <step nr="6">Knoblauch-Kräuter-Lake anrühren.</step>
+      <step nr="7">Sobald das Hähnchen Farbe bekommt, alle 10–15 Minuten kurz vom Grill nehmen, in die Lake tauchen oder kräftig damit bestreichen und wieder auf den Grill legen.</step>
+      <step nr="8">Zum Schluss die Hautseite kurz direkter Hitze aussetzen, bis sie knusprig ist.</step>
+      <step nr="9">Fertig bei ca. 74–78 °C Kerntemperatur an der dicksten Stelle.</step>
+      <step nr="10">Vor dem Anschneiden 5–10 Minuten ruhen lassen.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Grillzeit indirekt: ca. 35–45 Minuten</item>
+      <item>Finish direkt: ca. 5–10 Minuten</item>
+      <item>Ruhezeit: 5–10 Minuten</item>
+      <item>Gesamt: ca. 70–80 Minuten</item>
+    </timing>
+    <tips>
+      <item>Die Lake darf ruhig kräftig schmecken. Durch das wiederholte Tauchen bekommt das Hähnchen den rustikalen Knoblauch-Kräuter-Kick.</item>
+    </tips>
+    <rating>Neu im Kochbuch – Bewertung folgt.</rating>
+    <translation lang="pl">
+      <name>Roadkill Chicken z grilla z dipem czosnkowo-ziołowym</name>
+      <persons>2–4 osoby</persons>
+      <category>Grill &amp; BBQ</category>
+      <intro>Inspirowane rustykalnymi rumuńskimi technikami grillowania: chrupiący, spłaszczony kurczak z grilla, co jakiś czas maczany w pikantnej lake czosnkowo-ziołowej lub mocno nią smarowany. Na zewnątrz dymny i chrupiący, w środku soczysty – z czosnkiem, papryką i świeżymi ziołami.</intro>
+      <ingredients>
+        <item>1 cały kurczak, ok. 1,3–1,6 kg</item>
+        <item>2 łyżki oleju</item>
+        <item>1 łyżka słodkiej papryki</item>
+        <item>1 łyżeczka wędzonej papryki</item>
+        <item>1 łyżeczka soli</item>
+        <item>1 łyżeczka pieprzu</item>
+        <item>1 łyżeczka czosnku w proszku</item>
+        <item>1 łyżeczka cebuli w proszku</item>
+        <item>opcjonalnie odrobina chili</item>
+        <item>Lake czosnkowo-ziołowa:</item>
+        <item>250 ml ciepłej wody</item>
+        <item>4–6 ząbków czosnku, drobno startych lub przeciśniętych</item>
+        <item>1 mała cebula, bardzo drobno starta lub posiekana</item>
+        <item>1 pęczek pietruszki, drobno posiekany</item>
+        <item>opcjonalnie odrobina kolendry</item>
+        <item>1 łyżeczka soli</item>
+        <item>1 łyżeczka papryki</item>
+        <item>1 łyżka oleju</item>
+        <item>1 łyżka soku z cytryny lub octu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Położyć kurczaka skórą do dołu na desce i wyjąć kręgosłup nożyczkami do drobiu.</step>
+        <step nr="2">Odwrócić kurczaka i mocno nacisnąć obiema dłońmi na mostku, aż będzie płaski.</step>
+        <step nr="3">Wymieszać olej z papryką, solą, pieprzem, czosnkiem, cebulą w proszku i opcjonalnie chili. Natrzeć kurczaka dokładnie z każdej strony.</step>
+        <step nr="4">Przygotować grill na pośrednie ciepło, ok. 180–200 °C.</step>
+        <step nr="5">Grillować pośrednio, skórą do góry, ok. 35–45 minut.</step>
+        <step nr="6">Wymieszać lake czosnkowo-ziołową.</step>
+        <step nr="7">Gdy kurczak nabierze koloru, co 10–15 minut zdjąć z grilla, zanurzyć w lake lub mocno posmarować i położyć z powrotem.</step>
+        <step nr="8">Na końcu skórę na chwilę podstawić pod bezpośrednie ciepło, aż będzie chrupiąca.</step>
+        <step nr="9">Gotowe, gdy w najgrubszym miejscu temperatura w środku wynosi ok. 74–78 °C.</step>
+        <step nr="10">Przed krojeniem odczyć 5–10 minut.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 15 Minuten</item>
+        <item>Grillowanie pośrednie: ok. 35–45 Minuten</item>
+        <item>Wykończenie bezpośrednie: ok. 5–10 Minuten</item>
+        <item>Odpoczynek: 5–10 Minuten</item>
+        <item>Razem: ok. 70–80 Minuten</item>
+      </timing>
+      <tips>
+        <item>Lake może spokojnie być wyrazista w smaku. Dzięki wielokrotnemu maczaniu kurczak dostaje rustykalny czosnkowo-ziołowy charakter.</item>
+      </tips>
+      <rating>Nowy przepis – ocena wkrótce.</rating>
+    </translation>
+    <translation lang="en">
+      <name>Roadkill chicken from the grill with garlic herb dip</name>
+      <persons>2–4 people</persons>
+      <category>Grill &amp; BBQ</category>
+      <intro>Inspired by rustic Romanian grilling techniques: crispy spatchcock chicken from the grill, dipped again and again in a bold garlic-herb baste or brushed generously with it. Smoky and crunchy outside, juicy inside, with garlic, paprika and fresh herbs.</intro>
+      <ingredients>
+        <item>1 whole chicken, approx. 1.3–1.6 kg</item>
+        <item>2 tbsp oil</item>
+        <item>1 tbsp sweet paprika</item>
+        <item>1 tsp smoked paprika</item>
+        <item>1 tsp salt</item>
+        <item>1 tsp pepper</item>
+        <item>1 tsp garlic powder</item>
+        <item>1 tsp onion powder</item>
+        <item>optional a little chili</item>
+        <item>Garlic herb baste:</item>
+        <item>250 ml warm water</item>
+        <item>4–6 garlic cloves, finely grated or pressed</item>
+        <item>1 small onion, very finely grated or minced</item>
+        <item>1 bunch parsley, finely chopped</item>
+        <item>optional a little coriander</item>
+        <item>1 tsp salt</item>
+        <item>1 tsp paprika</item>
+        <item>1 tbsp oil</item>
+        <item>a splash of lemon juice or vinegar</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Place the chicken breast-side down on a board and cut out the backbone with poultry shears.</step>
+        <step nr="2">Turn the chicken over and press firmly on the breastbone with both hands until it lies flat.</step>
+        <step nr="3">Mix oil with paprika, salt, pepper, garlic powder, onion powder and optional chili. Rub the chicken all over.</step>
+        <step nr="4">Prepare the grill for indirect heat, approx. 180–200 °C.</step>
+        <step nr="5">Grill indirectly, skin side up, for approx. 35–45 minutes.</step>
+        <step nr="6">Mix the garlic herb baste.</step>
+        <step nr="7">Once the chicken colours, remove from the grill every 10–15 minutes, dip in the baste or brush generously, and return to the grill.</step>
+        <step nr="8">Finish with the skin side over direct heat until crisp.</step>
+        <step nr="9">Done when the thickest part reaches approx. 74–78 °C core temperature.</step>
+        <step nr="10">Rest 5–10 minutes before carving.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Indirect grilling: approx. 35–45 minutes</item>
+        <item>Direct finish: approx. 5–10 minutes</item>
+        <item>Resting: 5–10 minutes</item>
+        <item>Total: approx. 70–80 minutes</item>
+      </timing>
+      <tips>
+        <item>The baste can be boldly flavoured. Repeated dipping gives the chicken that rustic garlic-herb kick.</item>
+      </tips>
+      <rating>New recipe – rating to follow.</rating>
     </translation>
   </recipe>
 </cookbook>
