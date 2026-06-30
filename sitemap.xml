@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  TODO: Für echte Rezept-SEO sollten später echte Rezept-URLs statt Hash-Routen
-  gebaut werden, z.B. https://svenskochbuch.de/rezepte/kartoffelsalat-mit-mayonnaise-klassisch
-  Hash-Fragmente (#rezept-116) werden serverseitig nicht als eigene Ressourcen ausgeliefert
-  und gehören deshalb nicht in die Sitemap.
--->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://svenskochbuch.de/</loc>
-    <lastmod>2026-05-23</lastmod>
-  </url>
-  <url>
-    <loc>https://svenskochbuch.de/impressum</loc>
-    <lastmod>2026-05-23</lastmod>
-  </url>
-  <url>
-    <loc>https://svenskochbuch.de/datenschutz</loc>
-    <lastmod>2026-05-23</lastmod>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://svenskochbuch.de/sitemap-pages.xml</loc>
+    <lastmod>2026-05-30</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://svenskochbuch.de/sitemap-recipes.xml</loc>
+    <lastmod>2026-05-30</lastmod>
+  </sitemap>
+</sitemapindex>

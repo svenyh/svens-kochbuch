@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://svenskochbuch.de/sitemap.xml
-Sitemap: https://svenskochbuch.de/sitemap-recipes.xml
