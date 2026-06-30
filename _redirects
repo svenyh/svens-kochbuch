@@ -1,1 +1,3 @@
 /rezepte/*  /rezepte/:splat/index.html  200
+/pl/rezepte/*  /pl/rezepte/:splat/index.html  200
+/en/rezepte/*  /en/rezepte/:splat/index.html  200

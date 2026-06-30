@@ -13,6 +13,8 @@
     "/kochbuch.xml",
     "/index.html",
     "/rezepte/*",
+    "/pl/rezepte/*",
+    "/en/rezepte/*",
     "/recipe-prerender.css",
     "/images/*",
     "/*.png",

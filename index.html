@@ -8423,6 +8423,15 @@
       scrollToHashAnchor(hash);
     }
 
+    function applyFilterFromQuery() {
+      try {
+        var params = new URLSearchParams(window.location.search || '');
+        var filterKey = params.get('filter');
+        if (!filterKey || !FILTER_HEADINGS.hasOwnProperty(filterKey)) return;
+        applyRecipeFilter(filterKey, { scrollToResults: false, skipHideDetail: true });
+      } catch (err) {}
+    }
+
     function applyRouteFromHash() {
       applyRouteFromLocation();
     }
@@ -9702,6 +9711,7 @@
         updateSurpriseMeButtonState();
         updateRecipeListView({ skipHideDetail: true });
         populateHomeSidebarNewRecipes();
+        applyFilterFromQuery();
         applyRouteFromLocation();
         var merkVAfter = document.getElementById('merklisteView');
         if (merkVAfter && !merkVAfter.hidden) renderMerkliste();
@@ -9749,7 +9759,11 @@
     (function initLanguage() {
       var stored = null;
       try { stored = localStorage.getItem(LANG_STORAGE_KEY); } catch (e) {}
-      var initial = (stored && I18N[stored]) ? stored : 'de';
+      var fromQuery = null;
+      try {
+        fromQuery = new URLSearchParams(window.location.search || '').get('lang');
+      } catch (e) {}
+      var initial = (fromQuery && I18N[fromQuery]) ? fromQuery : ((stored && I18N[stored]) ? stored : 'de');
       setLanguage(initial);
       var wrap = document.querySelector('.lang-switcher');
       if (wrap && wrap.dataset.bound !== '1') {
