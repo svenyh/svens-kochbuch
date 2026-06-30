@@ -1148,7 +1148,7 @@
       <region>Indische Küche</region>
       <worldCategory>Asien</worldCategory>
     </origin>
-    <intro lang="de">Chicken Masala mit Naturjoghurt und Protein-Wraps verbindet würzige Pfannenküche mit einer alltagstauglichen Servieridee. Das Ergebnis ist aromatisch, sättigend und trotzdem unkompliziert genug für einen normalen Wochentag.</intro>
+    <intro lang="de">Würziges Hähnchen in cremiger Joghurtsauce – Chicken Masala verbindet indische Aromen mit einer unkomplizierten Pfannenvariante. Die Protein-Wraps machen daraus ein schnelles, sättigendes Gericht für unter der Woche, ohne lange am Herd zu stehen.</intro>
     <image src="images/rezeptbild_09.png" alt="Chicken Masala mit Naturjoghurt &amp; Protein-Wraps" />
     <ingredients>
       <item>500 g Hähnchenbrust</item>
@@ -1164,32 +1164,32 @@
       <item>4 Protein-Wraps</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hähnchen in Stücke schneiden.</step>
-      <step nr="2">Zwiebel anbraten.</step>
-      <step nr="3">Hähnchen zugeben und kurz anrösten.</step>
-      <step nr="4">Gewürze und Tomatenmark einrühren.</step>
-      <step nr="5">Mit etwas Wasser oder Brühe ablöschen.</step>
-      <step nr="6">Kurz einkochen lassen.</step>
-      <step nr="7">Naturjoghurt unterrühren.</step>
-      <step nr="8">Nicht mehr stark kochen.</step>
-      <step nr="9">Mit warmen Protein-Wraps servieren.</step>
+      <step nr="1">Hähnchen in mundgerechte Stücke schneiden und mit Salz und Pfeffer würzen.</step>
+      <step nr="2">Öl in einer großen Pfanne erhitzen, Zwiebel 3 bis 4 Minuten goldgelb anschwitzen.</step>
+      <step nr="3">Hähnchen zugeben und 4 bis 5 Minuten kräftig anbraten, bis es außen leicht Farbe annimmt.</step>
+      <step nr="4">Garam Masala, Paprikapulver und Tomatenmark einrühren und 1 Minute mitrösten.</step>
+      <step nr="5">Mit Wasser oder Brühe ablöschen, kurz aufkochen und 8 bis 10 Minuten bei mittlerer Hitze köcheln lassen, bis das Hähnchen gar ist.</step>
+      <step nr="6">Hitze reduzieren, Naturjoghurt unter Rühren einrühren und nur noch kurz durchziehen lassen – nicht mehr sprudelnd kochen.</step>
+      <step nr="7">Protein-Wraps trocken in einer Pfanne oder kurz in der Mikrowelle erwärmen.</step>
+      <step nr="8">Chicken Masala in tiefe Teller füllen oder direkt in die warmen Wraps geben und sofort servieren.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 10 Minuten</item>
-      <item>Garzeit: 15 Minuten</item>
-      <item>Gesamt: ca. 25 Minuten</item>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Braten und Köcheln: ca. 15 Minuten</item>
+      <item>Wraps erwärmen: ca. 2 Minuten</item>
+      <item>Gesamt: ca. 25 bis 30 Minuten</item>
     </timing>
     <tips>
-      <item>Joghurt erst bei reduzierter Hitze einrühren.</item>
-      <item>Wraps kurz erwärmen.</item>
-      <item>Sehr alltagstauglich.</item>
+      <item>Joghurt erst bei reduzierter Hitze einrühren, sonst flockt er aus.</item>
+      <item>Tomatenmark und Gewürze kurz mitrösten – das macht die Sauce aromatischer.</item>
+      <item>Wraps kurz erwärmen, dann bleiben sie biegsam und reißen nicht beim Befüllen.</item>
     </tips>
     <rating>Gut angekommen.</rating>
     <translation lang="pl">
       <name>Chicken Masala z jogurtem naturalnym i proteinowymi wrapami</name>
       <persons>2–3 osoby</persons>
       <category>Dania z patelni / dania z kurczaka</category>
-      <intro lang="pl">Chicken Masala z jogurtem naturalnym i proteinowymi wrapami łączy wyrazistą kuchnię z patelni z wygodnym podaniem na co dzień. Efekt jest aromatyczny, sycący, a jednocześnie na tyle prosty, że sprawdzi się w zwykły dzień tygodnia.</intro>
+      <intro lang="pl">Pikantny kurczak w kremowym sosie jogurtowym – Chicken Masala łączy indyjskie aromaty z prostą wersją z patelni. Proteinowe wrapy robią z tego szybkie, sycące danie na co dzień, bez długiego stania przy kuchence.</intro>
       <ingredients>
         <item>500 g pierś z kurczaka</item>
         <item>1 cebula</item>
@@ -1204,25 +1204,25 @@
         <item>4 proteinowe wrapy</item>
       </ingredients>
       <preparation>
-        <step nr="1">Pokroić kurczaka na kawałki.</step>
-        <step nr="2">Obsmażyć cebulę.</step>
-        <step nr="3">Dodać kurczaka i krótko go obsmażyć.</step>
-        <step nr="4">Wmieszać przyprawy i koncentrat pomidorowy.</step>
-        <step nr="5">Podlać odrobiną wody lub bulionu.</step>
-        <step nr="6">Krótko zredukować.</step>
-        <step nr="7">Wmieszać jogurt naturalny.</step>
-        <step nr="8">Nie gotować już mocno.</step>
-        <step nr="9">Podawać z ciepłymi proteinowymi wrapami.</step>
+        <step nr="1">Pokroić kurczaka na kawałki wielkości kęsa i doprawić solą oraz pieprzem.</step>
+        <step nr="2">Rozgrzać olej na dużej patelni i podsmażyć cebulę 3 do 4 minut, aż będzie złocista.</step>
+        <step nr="3">Dodać kurczaka i smażyć 4 do 5 minut, aż z zewnątrz lekko się zrumieni.</step>
+        <step nr="4">Wmiesać garam masala, paprykę i koncentrat pomidorowy, podsmażać 1 minutę.</step>
+        <step nr="5">Podlać wodą lub bulionem, zagotować i gotować na średnim ogniu 8 do 10 minut, aż kurczak będzie miękki.</step>
+        <step nr="6">Zmniejszyć ogień, wmiesać jogurt naturalny i tylko krótko podgrzać – nie gotować już mocno.</step>
+        <step nr="7">Krótko podgrzać wrapy na suchej patelni albo w kuchence mikrofalowej.</step>
+        <step nr="8">Podawać Chicken Masala w głębokich talerzach albo od razu na ciepłych wrapach.</step>
       </preparation>
       <timing>
-        <item>przygotowanie: 10 min</item>
-        <item>czas gotowania: 15 min</item>
-        <item>łącznie: ok. 25 min</item>
+        <item>przygotowanie: ok. 10 min</item>
+        <item>smażenie i gotowanie: ok. 15 min</item>
+        <item>podgrzanie wrapów: ok. 2 min</item>
+        <item>łącznie: ok. 25–30 min</item>
       </timing>
       <tips>
-        <item>Jogurt wmieszaj dopiero przy zmniejszonym ogniu.</item>
-        <item>Krótko podgrzać wrapy.</item>
-        <item>Bardzo praktyczne na co dzień.</item>
+        <item>Jogurt dodawaj dopiero przy zmniejszonym ogniu, inaczej może się zwarzyć.</item>
+        <item>Koncentrat i przyprawy krótko podsmaż – sos będzie bardziej aromatyczny.</item>
+        <item>Podgrzane wrapy są bardziej elastyczne i nie pękają przy napełnianiu.</item>
       </tips>
       <rating>Danie bardzo smakowało.</rating>
     </translation>
@@ -1230,7 +1230,7 @@
       <name>Chicken Masala with natural yogurt &amp; protein wraps</name>
       <persons>2-3 people</persons>
       <category>Stir fry/chicken dishes</category>
-      <intro>Chicken Masala with natural yogurt and protein wraps combines spicy pan-fried cuisine with an everyday serving idea. The result is aromatic, filling and yet uncomplicated enough for a normal weekday.</intro>
+      <intro>Spicy chicken in a creamy yogurt sauce – Chicken Masala combines Indian aromas with an uncomplicated pan version. The protein wraps turn it into a quick, filling weekday meal without long time at the stove.</intro>
       <ingredients>
         <item>500g chicken breast</item>
         <item>1 onion</item>
@@ -1245,25 +1245,25 @@
         <item>4 protein wraps</item>
       </ingredients>
       <preparation>
-        <step nr="1">Cut chicken into pieces.</step>
-        <step nr="2">Fry onion.</step>
-        <step nr="3">Add chicken and fry briefly.</step>
-        <step nr="4">Stir in spices and tomato paste.</step>
-        <step nr="5">Deglaze with a little water or broth.</step>
-        <step nr="6">Let it boil down briefly.</step>
-        <step nr="7">Stir in natural yogurt.</step>
-        <step nr="8">No more boiling.</step>
-        <step nr="9">Serve with warm protein wraps.</step>
+        <step nr="1">Cut the chicken into bite-sized pieces and season with salt and pepper.</step>
+        <step nr="2">Heat oil in a large pan and sauté the onion for 3 to 4 minutes until golden.</step>
+        <step nr="3">Add the chicken and fry for 4 to 5 minutes until lightly colored on the outside.</step>
+        <step nr="4">Stir in garam masala, paprika powder and tomato paste and toast for 1 minute.</step>
+        <step nr="5">Deglaze with water or broth, bring to a boil and simmer over medium heat for 8 to 10 minutes until the chicken is cooked through.</step>
+        <step nr="6">Reduce heat, stir in natural yogurt and heat through briefly – do not boil vigorously.</step>
+        <step nr="7">Warm the protein wraps briefly in a dry pan or microwave.</step>
+        <step nr="8">Serve the chicken masala in deep plates or directly in the warm wraps.</step>
       </preparation>
       <timing>
-        <item>Preparation: 10 minutes</item>
-        <item>Cooking time: 15 minutes</item>
-        <item>Total: approx. 25 minutes</item>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Frying and simmering: approx. 15 minutes</item>
+        <item>Warming wraps: approx. 2 minutes</item>
+        <item>Total: approx. 25 to 30 minutes</item>
       </timing>
       <tips>
-        <item>Stir in the yogurt over reduced heat.</item>
-        <item>Heat the wraps briefly.</item>
-        <item>Very suitable for everyday use.</item>
+        <item>Stir in the yogurt over reduced heat, otherwise it may curdle.</item>
+        <item>Toast tomato paste and spices briefly – that makes the sauce more aromatic.</item>
+        <item>Warm wraps stay flexible and won't tear when filling.</item>
       </tips>
     </translation>
   </recipe>
@@ -6003,9 +6003,9 @@
       <item>optional: 1 TL Zuckersirup</item>
     </ingredients>
     <preparation>
-      <step nr="1">Ananassaft, weißen Rum und Kokossirup gut gekühlt bereitstellen.</step>
-      <step nr="2">Alle Zutaten nach Geschmack in den Ninja Slushi geben.</step>
-      <step nr="3">Das passende Slush-Programm starten und die Mischung cremig gefrieren lassen.</step>
+      <step nr="1">Ananassaft, Wasser, weißen Rum und optional Zuckersirup gut gekühlt bereitstellen.</step>
+      <step nr="2">Alle Zutaten in den Ninja Slushi geben.</step>
+      <step nr="3">Das passende Slush-Programm starten und die Mischung cremig-slushig ziehen lassen.</step>
       <step nr="4">Zwischendurch kurz prüfen, ob die Konsistenz gleichmäßig anzieht.</step>
       <step nr="5">In gekühlte Gläser füllen und direkt servieren.</step>
     </preparation>
@@ -6020,6 +6020,11 @@
       <item>Für eine stärkere Cocktailnote den Rum erst nach dem Zapfen leicht nachgießen.</item>
     </tips>
     <rating>8 / 10 – einfache Piña-Idee ohne Kokos.</rating>
+    <knowledge>
+      <item>Die Flüssigkeitsmischung kann 1–2 Stunden vorher gekühlt vorbereitet werden; den Slush in der Maschine direkt vor dem Servieren ziehen.</item>
+      <item>Ohne Zuckersirup wird der Drink etwas herber – alternativ etwas mehr Ananassaft für mehr Süße.</item>
+      <item>Im Kühlschrank hält sich der Slush-Rest höchstens kurz – am besten frisch servieren.</item>
+    </knowledge>
     <translation lang="pl">
       <name>Ananasowy slush z rumem do Ninja Slushi</name>
       <persons>2–3 szklanki</persons>
@@ -6031,9 +6036,9 @@
         <item>opcjonalnie: 1 łyżeczka syropu cukrowego</item>
       </ingredients>
       <preparation>
-        <step nr="1">Przygotować dobrze schłodzony sok ananasowy, biały rum i syrop kokosowy.</step>
-        <step nr="2">Wlać wszystkie składniki do urządzenia Ninja Slushi według własnego smaku.</step>
-        <step nr="3">Uruchomić odpowiedni program slush i poczekać, aż napój stanie się kremowo zmrożony.</step>
+        <step nr="1">Przygotować dobrze schłodzony sok ananasowy, wodę, biały rum i ewentualnie syrop cukrowy.</step>
+        <step nr="2">Wlać wszystkie składniki do urządzenia Ninja Slushi.</step>
+        <step nr="3">Uruchomić odpowiedni program slush i poczekać, aż napój stanie się kremowo-slushowy.</step>
         <step nr="4">W międzyczasie krótko sprawdzić, czy konsystencja równomiernie się ścina.</step>
         <step nr="5">Przelać do schłodzonych szklanek i od razu podawać.</step>
       </preparation>
@@ -6048,7 +6053,12 @@
         <item>Jeśli chcesz mocniejszy smak koktajlu, rum dolej lekko dopiero po nalaniu.</item>
       </tips>
       <rating>8 / 10 – prosty tropikalny drink bez kokosa.</rating>
-      <intro>Ananas i rum pasują do siebie tak, jak chcesz w nieskomplikowanym letnim napoju. Błoto pośniegowe ma smak tropikalny, chłodny i przyjemnie lekki – idealny na taras, do ogrodu lub na spontaniczną wizytę.</intro>
+      <intro>Slush z ananasa i rumu smakuje tak, jak chcesz w nieskomplikowanym letnim napoju: tropikalnie, chłodno i przyjemnie lekko – idealny na taras, do ogrodu albo na spontaniczną wizytę.</intro>
+      <knowledge>
+        <item>Mieszaninę płynów można przygotować 1–2 godziny wcześniej i schłodzić; slush w urządzeniu najlepiej robić tuż przed podaniem.</item>
+        <item>Bez syropu cukrowego napój będzie bardziej wytrawny – alternatywnie odrobina więcej soku ananasowego dla słodyczy.</item>
+        <item>Slush podawaj od razu; resztki w lodówce trzymają się tylko przez krótki czas.</item>
+      </knowledge>
     </translation>
     <translation lang="en">
       <name>Pineapple rum slush for the Ninja Slushi</name>
@@ -6062,10 +6072,10 @@
         <item>optional: 1 tsp sugar syrup</item>
       </ingredients>
       <preparation>
-        <step nr="1">Keep the pineapple juice, white rum and coconut syrup well chilled.</step>
-        <step nr="2">Add all ingredients to the Ninja Slushy to taste.</step>
-        <step nr="3">Start the appropriate slush program and let the mixture freeze until creamy.</step>
-        <step nr="4">Check briefly from time to time whether the consistency is uniform.</step>
+        <step nr="1">Chill the pineapple juice, water, white rum and optional sugar syrup well.</step>
+        <step nr="2">Pour all ingredients into the Ninja Slushi.</step>
+        <step nr="3">Start the appropriate slush program and let the mixture turn creamy and slushy.</step>
+        <step nr="4">Check briefly from time to time whether the consistency is even.</step>
         <step nr="5">Pour into chilled glasses and serve immediately.</step>
       </preparation>
       <timing>
@@ -6074,10 +6084,15 @@
         <item>Total: approx. 20-35 minutes</item>
       </timing>
       <tips>
-        <item>Do not put ice cream or pineapple pieces in the machine.</item>
+        <item>Do not put ice or pineapple pieces in the machine.</item>
         <item>With a little more water the drink becomes lighter.</item>
-        <item>For a stronger cocktail note, add the rum slightly after tapping.</item>
+        <item>For a stronger cocktail note, add the rum slightly after pouring.</item>
       </tips>
+      <knowledge>
+        <item>The liquid mix can be prepared and chilled 1–2 hours ahead; make the slush in the machine just before serving.</item>
+        <item>Without sugar syrup the drink is slightly tarter – alternatively a little more pineapple juice for sweetness.</item>
+        <item>Best served fresh; the leftover slush keeps in the fridge only briefly.</item>
+      </knowledge>
     </translation>
   </recipe>
   <recipe id="49">
@@ -6099,9 +6114,9 @@
       <item>4 cl Wodka</item>
     </ingredients>
     <preparation>
-      <step nr="1">Zitronenlimonade, Vodka und bei Bedarf etwas Zuckersirup gut vorkühlen.</step>
+      <step nr="1">Zitronensaft, Wasser, Zuckersirup und Vodka gut gekühlt bereitstellen.</step>
       <step nr="2">Alle Zutaten in den Ninja Slushi geben.</step>
-      <step nr="3">Das Slush-Programm starten und die Mischung gefrieren lassen.</step>
+      <step nr="3">Das Slush-Programm starten und die Mischung slushig ziehen lassen.</step>
       <step nr="4">Bei Bedarf kurz abschmecken und den Süße-Säure-Ausgleich anpassen.</step>
       <step nr="5">Sofort eisgekühlt in Gläser füllen und servieren.</step>
     </preparation>
@@ -6111,11 +6126,16 @@
       <item>Gesamt: ca. 20–35 Minuten</item>
     </timing>
     <tips>
-      <item>Mit zusätzlichem Zuckersirup wird der Drink runder und etwas milder.</item>
+      <item>Alternativ mehr Zuckersirup für Süße oder mehr Zitronensaft für mehr Säure.</item>
       <item>Sehr gut als saure, klare Sommer-Variante.</item>
       <item>Nur flüssige Zutaten einfüllen.</item>
     </tips>
     <rating>8,5 / 10 – frisch, sauer und eiskalt stark.</rating>
+    <knowledge>
+      <item>Zitronensaft, Wasser, Sirup und Vodka lassen sich gut vorbereiten und 1–2 Stunden vorher im Kühlschrank kalt stellen.</item>
+      <item>Optional mehr Zuckersirup für Süße oder etwas mehr Zitronensaft für mehr Säure.</item>
+      <item>Am besten frisch servieren; im Kühlschrank hält sich der Rest höchstens kurz, bevor die Konsistenz wieder flüssig wird.</item>
+    </knowledge>
     <translation lang="pl">
       <name>Cytrynowy slush z wódką do Ninja Slushi</name>
       <persons>2 szklanki</persons>
@@ -6127,9 +6147,9 @@
         <item>4 cl wódki</item>
       </ingredients>
       <preparation>
-        <step nr="1">Dobrze schłodzić lemoniadę cytrynową, wódkę i ewentualnie odrobinę syropu cukrowego.</step>
+        <step nr="1">Dobrze schłodzić sok z cytryny, wodę, syrop cukrowy i wódkę.</step>
         <step nr="2">Wlać wszystkie składniki do urządzenia Ninja Slushi.</step>
-        <step nr="3">Uruchomić program slush i poczekać, aż napój się zmrozi.</step>
+        <step nr="3">Uruchomić program slush i poczekać, aż napój stanie się slushowy.</step>
         <step nr="4">W razie potrzeby doprawić i wyrównać balans słodyczy oraz kwasowości.</step>
         <step nr="5">Od razu przelać do szklanek i podawać mocno schłodzone.</step>
       </preparation>
@@ -6144,7 +6164,12 @@
         <item>Do urządzenia wlewaj wyłącznie płynne składniki.</item>
       </tips>
       <rating>8,5 / 10 – świeży, kwaśny i porządnie lodowy.</rating>
-      <intro>Ten slush z wódki cytrynowej jest klarowny, świeży i celowo ma bardziej bezpośredni smak. To właśnie czyni go mocnym, jeśli chcesz czegoś fajnego z przyzwoitą nutą cytrusową, która nie wygląda zabawnie, ale raczej czysto i prosto.</intro>
+      <intro>Ten cytrynowo-wódkowy slush jest wyrazisty, świeży i celowo bardziej bezpośredni w smaku. Właśnie to sprawia, że świetnie działa, gdy masz ochotę na coś zimnego z mocną nutą cytrusową, bez zbędnych ozdobników.</intro>
+      <knowledge>
+        <item>Sok z cytryny, wodę, syrop i wódkę można przygotować 1–2 godziny wcześniej i schłodzić w lodówce.</item>
+        <item>Opcjonalnie więcej syropu cukrowego dla słodyczy lub odrobina więcej soku z cytryny dla kwasu.</item>
+        <item>Podawaj od razu; resztki w lodówce trzymają się tylko przez krótki czas.</item>
+      </knowledge>
     </translation>
     <translation lang="en">
       <name>Lemon vodka slush for the Ninja Slushi</name>
@@ -6158,11 +6183,11 @@
         <item>4 cl vodka</item>
       </ingredients>
       <preparation>
-        <step nr="1">Pre-cool lemonade, vodka and, if necessary, some sugar syrup well.</step>
-        <step nr="2">Add all ingredients to the Ninja Slushy.</step>
-        <step nr="3">Start the slush program and let the mixture freeze.</step>
-        <step nr="4">If necessary, taste briefly and adjust the sweetness and acid balance.</step>
-        <step nr="5">Pour immediately into ice-cold glasses and serve.</step>
+        <step nr="1">Chill the lemon juice, water, sugar syrup and vodka well.</step>
+        <step nr="2">Pour all ingredients into the Ninja Slushi.</step>
+        <step nr="3">Start the slush program and let the mixture turn slushy.</step>
+        <step nr="4">If necessary, taste briefly and adjust the sweet-sour balance.</step>
+        <step nr="5">Pour immediately into glasses and serve ice cold.</step>
       </preparation>
       <timing>
         <item>Preparation: 5 minutes</item>
@@ -6174,6 +6199,11 @@
         <item>Very good as a sour, clear summer variant.</item>
         <item>Only add liquid ingredients.</item>
       </tips>
+      <knowledge>
+        <item>Lemon juice, water, syrup and vodka can be prepared and chilled 1–2 hours ahead in the fridge.</item>
+        <item>Optionally use more sugar syrup for sweetness or a little more lemon juice for acidity.</item>
+        <item>Best served fresh; leftovers keep in the fridge only briefly before turning liquid again.</item>
+      </knowledge>
     </translation>
   </recipe>
   <recipe id="50">
@@ -6995,8 +7025,8 @@
   </recipe>
   <recipe id="57">
     <name>Gefüllte Portobello-Pilze vom Grill</name>
-    <intro lang="de">Gefüllte Portobellos haben vom Grill richtig Substanz und wirken schnell deutlich hochwertiger als klassische Beilagen. Gerade mit einer guten Füllung werden sie saftig, aromatisch und fast schon zum Hauptdarsteller auf dem Rost.</intro>
-    <intro lang="pl">Nadziewane portobello z grilla mają konkretną strukturę i szybko sprawiają wrażenie czegoś bardziej wyjątkowego niż zwykły dodatek. Dobre nadzienie sprawia, że są soczyste, aromatyczne i niemal stają się główną atrakcją rusztu.</intro>
+    <intro lang="de">Gefüllte Portobellos vom Grill haben richtig Substanz und wirken schnell deutlich hochwertiger als klassische Beilagen. Mit cremiger Frischkäsefüllung werden sie saftig und aromatisch – fast schon zum Hauptdarsteller auf dem Rost, oder mit Baguette als leichte Hauptmahlzeit.</intro>
+    <intro lang="pl">Nadziewane portobello z grilla mają konkretną strukturę i szybko sprawiają wrażenie czegoś bardziej wyjątkowego niż zwykły dodatek. Kremowe nadzienie sprawia, że są soczyste, aromatyczne i niemal stają się główną atrakcją rusztu.</intro>
     <persons>2–3 Personen</persons>
     <category>Grill &amp; BBQ / Beilagen</category>
     <origin>
@@ -7017,21 +7047,21 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Die Pilze vorsichtig putzen, die Stiele entfernen und die Unterseite leicht säubern.</step>
-      <step nr="2">Tomaten klein würfeln und mit Frischkäse, Knoblauch, Kräutern, Salz, Pfeffer und etwas Olivenöl verrühren.</step>
-      <step nr="3">Die Portobellos mit der Füllung großzügig befüllen. Wer mag, streut etwas geriebenen Käse darüber.</step>
-      <step nr="4">Die Pilze bei indirekter bis mittlerer Hitze 10–15 Minuten grillen, bis sie weich sind und die Füllung heiß und leicht gebräunt ist.</step>
-      <step nr="5">Direkt servieren – als Beilage oder zusammen mit Baguette auch als leichte Hauptmahlzeit.</step>
+      <step nr="1">Die Pilze vorsichtig putzen, Stiele entfernen und die Unterseite leicht säubern. Kappen innen und außen leicht mit Olivenöl einreiben.</step>
+      <step nr="2">Tomaten klein würfeln und mit Frischkäse, fein gehacktem Knoblauch, Petersilie, Salz, Pfeffer und etwas Olivenöl zu einer cremigen Füllung verrühren.</step>
+      <step nr="3">Die Portobellos großzügig befüllen. Wer mag, streut etwas geriebenen Käse darüber.</step>
+      <step nr="4">Bei indirekter bis mittlerer Hitze 10 bis 15 Minuten grillen, bis die Pilze weich sind und die Füllung heiß und leicht gebräunt ist. Bei Bedarf Deckel schließen.</step>
+      <step nr="5">Direkt servieren – als Beilage zum Grillfleisch oder mit Baguette als leichte Hauptmahlzeit.</step>
     </preparation>
     <timing>
-      <item>Vorbereitung: 15 Minuten</item>
-      <item>Grillzeit: 10–15 Minuten</item>
-      <item>Gesamt: ca. 25–30 Minuten</item>
+      <item>Vorbereitung: ca. 15 Minuten</item>
+      <item>Grillzeit: ca. 10 bis 15 Minuten</item>
+      <item>Gesamt: ca. 25 bis 30 Minuten</item>
     </timing>
     <tips>
       <item>Portobellos verlieren beim Grillen Flüssigkeit – deshalb nicht zu stark salzen.</item>
       <item>Mit etwas Parmesan obendrauf wird die Füllung noch herzhafter.</item>
-      <item>Auch im Ofen bei etwa 190 °C sehr gut umsetzbar.</item>
+      <item>Alternativ im Ofen bei 190 °C ca. 18 bis 22 Minuten backen, bis die Füllung leicht gebräunt ist.</item>
     </tips>
     <rating>8,9 / 10 – saftig, würzig und eine richtig gute vegetarische Grillidee.</rating>
     <translation lang="pl">
@@ -7050,30 +7080,30 @@
         <item>pieprz</item>
       </ingredients>
       <preparation>
-        <step nr="1">Delikatnie oczyścić grzyby, usunąć trzonki i lekko oczyścić spód kapeluszy.</step>
-        <step nr="2">Pokroić pomidory w małą kostkę i wymieszać z serkiem śmietankowym, czosnkiem, ziołami, solą, pieprzem i odrobiną oliwy.</step>
+        <step nr="1">Delikatnie oczyścić grzyby, usunąć trzonki i lekko oczyścić spód kapeluszy. Wewnątrz i na zewnątrz lekko posmarować oliwą.</step>
+        <step nr="2">Pomidory pokroić w małą kostkę i wymiesać z serkiem śmietankowym, drobno posiekanym czosnkiem, pietruszką, solą, pieprzem i odrobiną oliwy.</step>
         <step nr="3">Napełnić portobello farszem. Jeśli chcesz, posypać wierzch tartym serem.</step>
-        <step nr="4">Grillować przy pośrednim lub średnim ogniu przez 10–15 minut, aż grzyby zmiękną, a farsz będzie gorący i lekko zarumieniony.</step>
-        <step nr="5">Podawać od razu – jako dodatek lub z bagietką jako lekkie danie główne.</step>
+        <step nr="4">Grillować przy pośrednim lub średnim ogniu 10 do 15 minut, aż grzyby zmiękną, a farsz będzie gorący i lekko zarumieniony. W razie potrzeby przykryć.</step>
+        <step nr="5">Podawać od razu – jako dodatek do mięsa z grilla albo z bagietką jako lekkie danie główne.</step>
       </preparation>
       <timing>
-        <item>przygotowanie: 15 min</item>
-        <item>czas grillowania: 10–15 min</item>
+        <item>przygotowanie: ok. 15 min</item>
+        <item>czas grillowania: ok. 10–15 min</item>
         <item>łącznie: ok. 25–30 min</item>
       </timing>
       <tips>
-        <item>Portobello podczas grillowania puszczają trochę płynu, dlatego nie sol ich zbyt mocno na początku.</item>
+        <item>Portobello podczas grillowania puszczają płyn – nie sol ich zbyt mocno na początku.</item>
         <item>Z dodatkiem parmezanu farsz będzie jeszcze bardziej wyrazisty.</item>
-        <item>Przepis można też bardzo dobrze zrobić w piekarniku w około 190 °C.</item>
+        <item>Alternatywnie piec w piekarniku w 190 °C około 18 do 22 minut, aż farsz lekko się zrumieni.</item>
       </tips>
       <rating>8,9 / 10 – soczyste, aromatyczne i naprawdę świetne wegetariańskie danie z grilla.</rating>
-      <intro>Nadziewane portobellos po grillowaniu są naprawdę treściwe i szybko wydają się znacznie lepszej jakości niż klasyczne dodatki. Zwłaszcza z dobrym nadzieniem stają się soczyste, aromatyczne i niemal główną gwiazdą grilla.</intro>
+      <intro>Nadziewane portobello z grilla mają konkretną strukturę i szybko sprawiają wrażenie czegoś bardziej wyjątkowego niż zwykły dodatek. Kremowe nadzienie sprawia, że są soczyste, aromatyczne i niemal stają się główną atrakcją rusztu.</intro>
     </translation>
     <translation lang="en">
       <name>Grilled Stuffed Portobello Mushrooms</name>
       <persons>2-3 people</persons>
       <category>Grill &amp; BBQ / Side Dishes</category>
-      <intro>Filled portobellos have real substance when grilled and quickly seem much more high-quality than classic side dishes. Especially with a good filling, they become juicy, aromatic and almost the main star on the grill.</intro>
+      <intro>Stuffed portobellos from the grill have real substance and quickly feel much more special than classic side dishes. With a creamy cheese filling they become juicy and aromatic – almost the main star on the grill, or a light main meal with baguette.</intro>
       <ingredients>
         <item>4 large portobello mushrooms</item>
         <item>150 g cream cheese</item>
@@ -7086,21 +7116,21 @@
         <item>pepper</item>
       </ingredients>
       <preparation>
-        <step nr="1">Carefully clean the mushrooms, remove the stems and lightly clean the underside.</step>
-        <step nr="2">Dice tomatoes small and mix with cream cheese, garlic, herbs, salt, pepper and a little olive oil.</step>
-        <step nr="3">Fill the portobellos generously with the filling. If you like, sprinkle some grated cheese on top.</step>
-        <step nr="4">Grill the mushrooms over indirect to medium heat for 10-15 minutes, until tender and the filling is hot and lightly browned.</step>
-        <step nr="5">Serve straight away – as a side dish or with baguette as a light main meal.</step>
+        <step nr="1">Carefully clean the mushrooms, remove the stems and lightly clean the underside. Brush caps inside and out lightly with olive oil.</step>
+        <step nr="2">Dice tomatoes small and mix with cream cheese, finely chopped garlic, parsley, salt, pepper and a little olive oil into a creamy filling.</step>
+        <step nr="3">Fill the portobellos generously. If you like, sprinkle some grated cheese on top.</step>
+        <step nr="4">Grill over indirect to medium heat for 10 to 15 minutes until tender and the filling is hot and lightly browned. Close the lid if needed.</step>
+        <step nr="5">Serve immediately – as a side with grilled meat or with baguette as a light main meal.</step>
       </preparation>
       <timing>
-        <item>Preparation: 15 minutes</item>
-        <item>Grilling time: 10-15 minutes</item>
-        <item>Total: approx. 25-30 minutes</item>
+        <item>Preparation: approx. 15 minutes</item>
+        <item>Grilling time: approx. 10 to 15 minutes</item>
+        <item>Total: approx. 25 to 30 minutes</item>
       </timing>
       <tips>
-        <item>Portobellos lose liquid when grilling - so don't salt them too much.</item>
-        <item>With a little parmesan on top, the filling becomes even heartier.</item>
-        <item>Can also be baked very well in the oven at around 190 °C.</item>
+        <item>Portobellos release liquid when grilling – don't salt them too heavily at the start.</item>
+        <item>A little parmesan on top makes the filling even heartier.</item>
+        <item>Alternatively bake in the oven at 190 °C for about 18 to 22 minutes until the filling is lightly browned.</item>
       </tips>
     </translation>
   </recipe>
@@ -7249,7 +7279,7 @@
       <item>Am besten direkt heiß essen, dann sind sie außen am besten.</item>
     </tips>
     <rating>8,4/10 – süßlich, würzig und mit Dip am stärksten.</rating>
-    <translation lang="pl">
+    <knowledge><item>Die Süßkartoffelstifte lassen sich 2–3 Stunden vorher schneiden und trocken lagern – unmittelbar vor dem Grillen mit Öl und Gewürzen mischen.</item><item>Reste schmecken am nächsten Tag eher weich; am besten frisch vom Grill essen.</item><item>Statt Paprikapulver funktioniert auch Rauchpaprika für mehr BBQ-Note.</item><item>Passt sehr gut zu Burger, Spießen oder gegrilltem Gemüse auf dem gleichen Rost.</item></knowledge><translation lang="pl">
       <name>Frytki z batatów z grilla</name>
       <persons>2–3 osoby</persons>
       <category>Grill &amp; BBQ / dodatki</category>
@@ -7282,7 +7312,7 @@
         <step nr="6">Z Dip oder Kräuterquark sofort podawać.</step>
       </preparation>
       <intro>Grillowane frytki z batatów to dobra alternatywa dla klasycznych dodatków ziemniaczanych, jeśli masz ochotę na coś bardziej wędzonego i bardziej letniego. Lekko prażone na zewnątrz i miękkie w środku, urozmaicają płytę grillową.</intro>
-    </translation>
+    <knowledge><item>Słupki z batata można pokroić 2–3 godziny wcześniej i trzymać na sucho – olej i przyprawy dodaj bezpośrednio przed grillowaniem.</item><item>Resztki następnego dnia robią się raczej miękkie; najlepiej jeść od razu z grilla.</item><item>Zamiast papryki można użyć wędzonej papryki dla mocniejszego smaku BBQ.</item><item>Świetnie pasuje do burgerów, szaszłyków albo warzyw z tego samego grilla.</item></knowledge></translation>
     <translation lang="en">
       <name>Grilled sweet potato fries</name>
       <persons>2-3 people</persons>
@@ -7315,7 +7345,7 @@
         <item>They work much better on a plancha or grill plate than directly on the grill.</item>
         <item>It's best to eat them straight away, then they're best on the outside.</item>
       </tips>
-    </translation>
+    <knowledge><item>Sweet potato sticks can be cut 2–3 hours before and kept dry – mix with oil and spices when grilling starts.</item><item>Leftovers soften by the next day; best eaten fresh off the grill.</item><item>Smoked paprika works instead of regular paprika for a stronger BBQ note.</item><item>Pairs very well with burgers, skewers or grilled vegetables from the same grill.</item></knowledge></translation>
   </recipe>
   <recipe id="60">
     <name>Melonen-Feta-Salat mit Minze</name>
@@ -7470,7 +7500,7 @@
       <item>Die Soße lässt sich gut vorbereiten; Eier erst kurz vor dem Essen hineingeben.</item>
     </tips>
     <rating>8,8/10 – würzig, saftig und ideal mit gutem Brot.</rating>
-    <translation lang="pl">
+    <knowledge><item>Die Tomatensoße lässt sich am Vortag vorbereiten; die Eier unmittelbar vor dem Essen hineinschlagen und stocken lassen.</item><item>Reste halten sich im Kühlschrank 1–2 Tage und schmecken aufgewärmt in der Pfanne oft noch besser.</item><item>Statt Paprika edelsüß funktioniert auch etwas Harissa für mehr Schärfe.</item><item>Klassisch passt knuspriges Fladenbrot oder Baguette zum Auftunken.</item></knowledge><translation lang="pl">
       <name>Szakszuka</name>
       <persons>2–3 osoby</persons>
       <category>Szybka kuchnia</category>
@@ -7511,7 +7541,7 @@
       </tips>
       <rating>9 / 10 – proste, aromatyczne i bardzo dobre na co dzień.</rating>
       <intro>Shakshuka jest pikantna, ciepła i idealna, gdy chcesz zrobić coś prawdziwego z zaledwie kilku składników. Sos pomidorowy zawiera jajka, trochę chleba jest wliczone w cenę, a na stole znajduje się danie z patelni, które po prostu sprawi, że poczujesz się pełny i usatysfakcjonowany.</intro>
-    </translation>
+    <knowledge><item>Sos pomidorowy można przygotować dzień wcześniej; jajka wbij dopiero bezpośrednio przed jedzeniem.</item><item>Resztki trzymają się w lodówce 1–2 dni i po podgrzaniu na patelni często smakują jeszcze lepiej.</item><item>Zamiast słodkiej papryki można dodać odrobinę harrissy dla większej ostrości.</item><item>Klasycznie podawaj chrupiące pieczywo pita albo bagietkę do maczania.</item></knowledge></translation>
     <translation lang="en">
       <name>Shakshuka</name>
       <persons>2-3 people</persons>
@@ -7552,7 +7582,7 @@
         <item>Best served with fresh bread.</item>
         <item>The sauce is easy to prepare; Add eggs just before eating.</item>
       </tips>
-    </translation>
+    <knowledge><item>The tomato sauce can be prepared the day before; crack the eggs in when you are ready to eat.</item><item>Leftovers keep in the fridge for 1–2 days and often taste even better reheated in the pan.</item><item>A little harissa works instead of sweet paprika for more heat.</item><item>Crispy flatbread or baguette is the classic side for dipping.</item></knowledge></translation>
   </recipe>
   <recipe id="62">
     <name>Gefüllte Hähnchenbrust mit Frischkäse und Ofenkartoffeln</name>
@@ -8089,7 +8119,7 @@
       <item>Passt sehr gut zu Salat, gegrilltem Gemüse oder Brot.</item>
     </tips>
     <rating>8,5/10 – schnell, salzig und als vegetarische Grilloption sehr verlässlich.</rating>
-    <translation lang="pl">
+    <knowledge><item>Halloumi-Scheiben können am Vortag vorbereitet werden und kühl lagern – unmittelbar vor dem Grillen mit Öl bestreichen.</item><item>Am besten direkt nach dem Grillen essen; im Kühlschrank werden die Scheiben schnell zäh.</item><item>Statt Oregano funktioniert auch Thymian oder etwas Chiliflocken auf dem Käse.</item><item>Passt gut zu gegrilltem Gemüse, Couscous oder warmem Fladenbrot.</item></knowledge><translation lang="pl">
       <name>Halloumi z grilla</name>
       <persons>2–3 osoby</persons>
       <category>Grill &amp; BBQ / danie wegetariańskie</category>
@@ -8122,7 +8152,7 @@
         <step nr="7">Sofort z Salat, Brot oder gegrilltem Gemüse podawać.</step>
       </preparation>
       <intro>Grillowane Halloumi jest szybkie w przygotowaniu i świetnie sprawdza się, gdy masz ochotę na coś wegetariańskiego z prawdziwym kęsem na grillu. Dodaje pikanterii i struktury, działa równie dobrze samodzielnie, jak i jako część większego talerza.</intro>
-    </translation>
+    <knowledge><item>Plasterki halloumi można przygotować wcześniej i trzymać w lodówce – olej dodaj bezpośrednio przed grillowaniem.</item><item>Najlepiej jeść od razu po grillu; w lodówce ser szybko twardnieje.</item><item>Zamiast oregano sprawdzi się tymianek albo odrobina płatków chili.</item><item>Dobrze komponuje się z grillowanymi warzywami, kuskusem albo ciepłym pieczywem.</item></knowledge></translation>
     <translation lang="en">
       <name>Grilled halloumi</name>
       <persons>2-3 people</persons>
@@ -8155,7 +8185,7 @@
         <item>It's best to eat it straight after grilling, so it's browned on the outside and soft on the inside.</item>
         <item>Goes very well with salad, grilled vegetables or bread.</item>
       </tips>
-    </translation>
+    <knowledge><item>Halloumi slices can be prepared ahead and kept chilled – brush with oil when grilling starts.</item><item>Best eaten straight after grilling; slices turn chewy in the fridge.</item><item>Thyme or a pinch of chilli flakes work instead of oregano.</item><item>Pairs well with grilled vegetables, couscous or warm flatbread.</item></knowledge></translation>
   </recipe>
   <recipe id="67">
     <name>Würzige Bratwürste vom Grill (klassisch und einfache Variante)</name>
@@ -8950,7 +8980,7 @@
       <item>Gut gekühlte Zutaten verwenden.</item>
     </tips>
     <rating>8,5 / 10 – schnell gemacht und ein echter Sommerklassiker.</rating>
-    <translation lang="pl">
+    <knowledge><item>Prosecco, Aperol und Mineralwasser lassen sich 1–2 Stunden vorher im Kühlschrank kalt stellen – mixen unmittelbar vor dem Servieren.</item><item>Gemischter Spritz schmeckt am besten frisch und hält sich im Kühlschrank höchstens kurz.</item><item>Statt Aperol funktioniert für eine bittere Variante auch Campari im gleichen Verhältnis.</item><item>Für eine alkoholfreie Variante Aperol durch bitteres Orangenlimonade-Sirup ersetzen.</item></knowledge><translation lang="pl">
       <name>Aperol Spritz</name>
       <persons>1 kieliszek</persons>
       <category>Koktajle / napoje letnie</category>
@@ -8980,7 +9010,7 @@
       </tips>
       <rating>8,5 / 10 – szybki i bardzo letni klasyk.</rating>
       <intro>Aperol Spritz to nowoczesny klasyk, który opiera się na swojej prostej strukturze. Gorzka pomarańcza, cierpkość i dużo lodu sprawiają, że jest to napój, który można szybko przygotować, a mimo to od razu tworzy odpowiedni nastrój aperitifu.</intro>
-    </translation>
+    <knowledge><item>Prosecco, Aperol i wodę można schłodzić 1–2 godziny wcześniej – mieszaj bezpośrednio przed podaniem.</item><item>Gotowy drink najlepiej pić od razu i trzyma się w lodówce tylko krótko.</item><item>Zamiast Aperolu można użyć Campari w tym samym proporcji dla bardziej gorzkiej wersji.</item><item>W wersji bezalkoholowej zastąp Aperol gorzkim syropem pomarańczowym.</item></knowledge></translation>
     <translation lang="en">
       <name>Aperol Spritz</name>
       <persons>1 glass</persons>
@@ -9010,7 +9040,7 @@
         <item>Simply extrapolate the mixing ratio for several guests.</item>
         <item>Use well-chilled ingredients.</item>
       </tips>
-    </translation>
+    <knowledge><item>Prosecco, Aperol and mineral water can chill 1–2 hours before – mix when you are ready to serve.</item><item>Mixed spritz tastes best fresh and keeps in the fridge only briefly.</item><item>Campari in the same ratio works instead of Aperol for a bitterer version.</item><item>For a non-alcoholic version, replace Aperol with bitter orange syrup.</item></knowledge></translation>
   </recipe>
   <recipe id="75">
     <name>Mojito</name>
@@ -11782,8 +11812,8 @@
   </recipe>
   <recipe id="99">
     <name>Ofenkartoffeln Deluxe mit Toppings</name>
-    <intro lang="de">Hier wird aus einer einfachen Beilage ein komplettes Gericht. Knusprige Kartoffeln, dazu verschiedene Toppings – von cremig bis würzig. Perfekt, wenn jeder sich sein Essen selbst zusammenstellen will.</intro>
-    <intro lang="pl">Tutaj z prostego dodatku robi się pełne danie. Chrupiące ziemniaki, do tego różne dodatki – od kremowych po bardziej wyraziste. Idealne, gdy każdy chce złożyć sobie talerz po swojemu.</intro>
+    <intro lang="de">Aus einer einfachen Beilage wird hier ein komplettes Gericht: knusprige Ofenkartoffeln mit verschiedenen Toppings – von cremig bis würzig. Perfekt, wenn jeder sich sein Essen selbst zusammenstellen will.</intro>
+    <intro lang="pl">Tutaj z prostego dodatku robi się pełne danie. Chrupiące ziemniaki z różnymi dodatkami – od kremowych po bardziej wyraziste. Idealne, gdy każdy chce złożyć sobie talerz po swojemu.</intro>
     <persons>3–4 Personen</persons>
     <category>Ofengerichte / Beilagen</category>
     <origin>
@@ -11803,21 +11833,22 @@
       <item>Salz</item>
     </ingredients>
     <preparation>
-      <step nr="1">Kartoffeln waschen, mit Öl einreiben und salzen.</step>
-      <step nr="2">Bei 200 °C je nach Größe 50–60 Minuten backen.</step>
-      <step nr="3">Inzwischen Toppings vorbereiten: Bacon knusprig braten, Frühlingszwiebeln schneiden, Käse bereitstellen.</step>
-      <step nr="4">Kartoffeln einschneiden und etwas aufdrücken.</step>
-      <step nr="5">Mit Quark, Käse und den gewünschten Toppings füllen und sofort servieren.</step>
+      <step nr="1">Kartoffeln gründlich waschen, trocken tupfen, mit Öl einreiben und großzügig salzen. Mit einer Gabel mehrmals einstechen.</step>
+      <step nr="2">Auf dem Backblech bei 200 °C je nach Größe 50 bis 60 Minuten backen, bis die Schale knusprig ist und das Innere weich.</step>
+      <step nr="3">Inzwischen Toppings vorbereiten: Bacon knusprig braten, Frühlingszwiebeln in feine Ringe schneiden, Käse bereitstellen.</step>
+      <step nr="4">Kartoffeln 3 bis 5 Minuten ruhen lassen, längs einschneiden, vorsichtig aufdrücken und leicht auseinanderziehen.</step>
+      <step nr="5">Mit Kräuterquark oder Sour Cream, Käse und den gewünschten Toppings füllen und sofort heiß servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Backzeit: ca. 50–60 Minuten</item>
-      <item>Gesamt: ca. 70 Minuten</item>
+      <item>Backzeit: ca. 50 bis 60 Minuten</item>
+      <item>Ruhezeit: ca. 3 bis 5 Minuten</item>
+      <item>Gesamt: ca. 70 bis 75 Minuten</item>
     </timing>
     <tips>
-      <item>Ideal als Baukasten-Essen für mehrere Leute.</item>
-      <item>Auch mit Chili con Carne als Topping stark.</item>
-      <item>Für vegetarische Variante Bacon einfach weglassen.</item>
+      <item>Ideal als Baukasten-Essen für mehrere Leute – Toppings separat auf den Tisch stellen.</item>
+      <item>Auch mit Chili con Carne als Topping sehr gut.</item>
+      <item>Für vegetarische Variante Bacon weglassen und Mais oder Jalapeños nutzen.</item>
     </tips>
     <rating>8,9 / 10 – einfach, gesellig und überraschend vielseitig.</rating>
     <translation lang="pl">
@@ -11835,30 +11866,31 @@
         <item>sól</item>
       </ingredients>
       <preparation>
-        <step nr="1">Umyć ziemniaki, natrzeć olejem i posolić.</step>
-        <step nr="2">Piec w 200 °C przez 50–60 minut, zależnie od wielkości.</step>
-        <step nr="3">W międzyczasie przygotować dodatki: podsmażyć boczek, pokroić dymkę, przygotować ser.</step>
-        <step nr="4">Naciąć ziemniaki i lekko je otworzyć.</step>
-        <step nr="5">Wypełnić twarożkiem, serem i wybranymi dodatkami, od razu podawać.</step>
+        <step nr="1">Umyć ziemniaki, osuszyć, natrzeć olejem i posolić. Kilka razy przebić widelcem.</step>
+        <step nr="2">Piec na blasze w 200 °C przez 50 do 60 minut, aż skórka będzie chrupiąca, a środek miękki.</step>
+        <step nr="3">W międzyczasie przygotować dodatki: podsmażyć boczek, pokroić dymkę w cienkie plastry, przygotować ser.</step>
+        <step nr="4">Odstawić ziemniaki na 3 do 5 minut, naciąć wzdłuż, delikatnie otworzyć i lekko rozłożyć.</step>
+        <step nr="5">Wypełnić twarożkiem z ziołami lub sour cream, serem i wybranymi dodatkami, od razu podawać na gorąco.</step>
       </preparation>
       <timing>
         <item>przygotowanie: ok. 15 min</item>
         <item>pieczenie: ok. 50–60 min</item>
-        <item>łącznie: ok. 70 min</item>
+        <item>odpoczynek: ok. 3–5 min</item>
+        <item>łącznie: ok. 70–75 min</item>
       </timing>
       <tips>
-        <item>Świetne jako danie do składania dla kilku osób.</item>
+        <item>Świetne jako danie do składania – dodatki podawaj osobno na stole.</item>
         <item>Mocna wersja także z chili con carne na wierzchu.</item>
-        <item>W wersji wegetariańskiej po prostu pominąć boczek.</item>
+        <item>W wersji wegetariańskiej pominąć boczek, dodać kukurydzę albo jalapeño.</item>
       </tips>
-      <rating>8,9 / 10 – einfach, gesellig und überraschend vielseitig.</rating>
-      <intro>Tutaj prosta przystawka staje się kompletnym daniem. Chrupiące ziemniaki, podawane z różnymi dodatkami – od kremowych po pikantne. Idealne, jeśli każdy chce skomponować własny posiłek.</intro>
+      <rating>8,9 / 10 – proste, towarzyskie i zaskakująco uniwersalne.</rating>
+      <intro>Tutaj z prostego dodatku robi się pełne danie. Chrupiące ziemniaki z różnymi dodatkami – od kremowych po bardziej wyraziste. Idealne, gdy każdy chce złożyć sobie talerz po swojemu.</intro>
     </translation>
     <translation lang="en">
       <name>Baked potatoes deluxe with toppings</name>
       <persons>3-4 people</persons>
       <category>Oven dishes/side dishes</category>
-      <intro>Here, a simple side dish becomes a complete dish. Crispy potatoes, served with various toppings – from creamy to spicy. Perfect if everyone wants to put together their own meal.</intro>
+      <intro>A simple side dish becomes a complete meal here: crispy baked potatoes with various toppings – from creamy to spicy. Perfect when everyone wants to assemble their own plate.</intro>
       <ingredients>
         <item>4 large baked potatoes</item>
         <item>150 g herb quark or sour cream</item>
@@ -11870,21 +11902,22 @@
         <item>Salt</item>
       </ingredients>
       <preparation>
-        <step nr="1">Wash the potatoes, rub with oil and season with salt.</step>
-        <step nr="2">Bake at 200°C for 50-60 minutes depending on size.</step>
-        <step nr="3">Meanwhile, prepare the toppings: Fry the bacon until crispy, cut the spring onions, prepare the cheese.</step>
-        <step nr="4">Cut the potatoes and press them down a little.</step>
-        <step nr="5">Fill with quark, cheese and desired toppings and serve immediately.</step>
+        <step nr="1">Wash potatoes thoroughly, pat dry, rub with oil and season generously with salt. Pierce several times with a fork.</step>
+        <step nr="2">Bake on a baking sheet at 200 °C for 50 to 60 minutes depending on size, until the skin is crispy and the inside is tender.</step>
+        <step nr="3">Meanwhile prepare toppings: fry bacon until crispy, slice spring onions into fine rings, prepare cheese.</step>
+        <step nr="4">Let potatoes rest for 3 to 5 minutes, cut lengthwise, gently press open and pull apart slightly.</step>
+        <step nr="5">Fill with herb quark or sour cream, cheese and desired toppings and serve immediately while hot.</step>
       </preparation>
       <timing>
         <item>Preparation: approx. 15 minutes</item>
-        <item>Baking time: approx. 50-60 minutes</item>
-        <item>Total: approx. 70 minutes</item>
+        <item>Baking time: approx. 50 to 60 minutes</item>
+        <item>Resting time: approx. 3 to 5 minutes</item>
+        <item>Total: approx. 70 to 75 minutes</item>
       </timing>
       <tips>
-        <item>Ideal as a modular meal for several people.</item>
-        <item>Also strong with chili con carne as a topping.</item>
-        <item>For a vegetarian version, simply leave out the bacon.</item>
+        <item>Ideal as a build-your-own meal – serve toppings separately on the table.</item>
+        <item>Also great with chili con carne as a topping.</item>
+        <item>For a vegetarian version, skip bacon and use corn or jalapeños.</item>
       </tips>
     </translation>
   </recipe>
@@ -12934,7 +12967,7 @@
   </recipe>
   <recipe id="109">
     <name>Buletten nach Omas Art</name>
-    <intro lang="de">Buletten gehören zu den Rezepten, die in jeder Küche irgendwie sofort vertraut wirken. Außen schön gebräunt, innen saftig und kräftig gewürzt – genau so müssen sie sein, wenn sie nach Omas Art schmecken sollen.</intro>
+    <intro lang="de">Buletten gehören zu den Rezepten, die in jeder Küche sofort vertraut wirken. Außen schön gebräunt, innen saftig und kräftig gewürzt – genau so schmecken sie nach Omas Art am besten.</intro>
     <intro lang="pl">Kotlety mielone to jeden z tych przepisów, które od razu kojarzą się z domem. Dobrze zrumienione z zewnątrz, soczyste w środku i porządnie doprawione – właśnie tak smakują najlepiej.</intro>
     <persons>4 Personen</persons>
     <category>Klassiker &amp; Hausmannskost</category>
@@ -12956,23 +12989,23 @@
       <item>Öl zum Braten</item>
     </ingredients>
     <preparation>
-      <step nr="1">Brötchen einweichen und gut ausdrücken.</step>
-      <step nr="2">Hackfleisch mit Brötchen, fein gewürfelter Zwiebel, Ei, Senf und Gewürzen gründlich vermengen.</step>
+      <step nr="1">Brötchen in etwas Wasser oder Milch einweichen, gut ausdrücken und in kleine Stücke zupfen.</step>
+      <step nr="2">Hackfleisch mit Brötchen, fein gewürfelter Zwiebel, Ei, Senf, Salz, Pfeffer und Paprikapulver gründlich vermengen.</step>
       <step nr="3">Die Masse 10 Minuten ruhen lassen, damit sie bindet.</step>
-      <step nr="4">Mit feuchten Händen Buletten formen.</step>
-      <step nr="5">In einer Pfanne mit etwas Öl bei mittlerer Hitze 12 bis 15 Minuten rundherum braun braten.</step>
-      <step nr="6">Vor dem Servieren 2 Minuten ruhen lassen und warm oder kalt servieren.</step>
+      <step nr="4">Mit feuchten Händen gleichmäßige Buletten formen – nicht zu fest drücken.</step>
+      <step nr="5">In einer Pfanne mit etwas Öl bei mittlerer Hitze 12 bis 15 Minuten rundherum goldbraun braten, zwischendurch wenden.</step>
+      <step nr="6">2 Minuten ruhen lassen und warm mit Kartoffeln oder kalt auf Brot servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
       <item>Masse ruhen lassen: 10 Minuten</item>
-      <item>Bratzeit: ca. 12–15 Minuten bei mittlerer Hitze</item>
-      <item>Gesamtzeit: ca. 35–40 Minuten</item>
+      <item>Bratzeit: ca. 12 bis 15 Minuten bei mittlerer Hitze</item>
+      <item>Gesamtzeit: ca. 35 bis 40 Minuten</item>
     </timing>
     <tips>
-      <item>Auch kalt auf Brot sehr gut.</item>
+      <item>Auch kalt auf Brot mit Senf sehr gut.</item>
       <item>Ein wenig Majoran passt gut dazu.</item>
-      <item>Nicht zu heiß braten, damit die Buletten innen saftig bleiben.</item>
+      <item>Nicht zu heiß braten – mittlere Hitze hält die Buletten innen saftig.</item>
     </tips>
     <rating>9/10 – saftig, bodenständig und sehr verlässlich.</rating>
     <translation lang="pl">
@@ -12992,31 +13025,31 @@
       </ingredients>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
-        <item>Smażenie: ok. 15 minut</item>
-        <item>Łącznie: ok. 30 minut</item>
-        <item>Czas całkowity: ok. 35-40 minut</item>
+        <item>Odpoczynek masy: 10 minut</item>
+        <item>Smażenie: ok. 12–15 minut na średnim ogniu</item>
+        <item>Łącznie: ok. 35–40 minut</item>
       </timing>
       <tips>
-        <item>Świetne także na zimno do chleba.</item>
+        <item>Świetne także na zimno do chleba z musztardą.</item>
         <item>Pasuje odrobina majeranku.</item>
-        <item>Masę warto odstawić na kilka minut.</item>
+        <item>Nie smaż zbyt mocno – średni ogień utrzymuje soczystość w środku.</item>
       </tips>
       <rating>9/10 – prosty i bardzo domowy klasyk.</rating>
       <preparation>
-        <step nr="1">Brötchen namoczyć und gut ausdrücken.</step>
-        <step nr="2">Hackfleisch z Brötchen, fein gewürfelter cebula, Ei, musztarda und Gewürzen gründlich wymieszać.</step>
-        <step nr="3">Masse 10 Minuten ruhen lassen, damit sie bindet.</step>
-        <step nr="4">Z feuchten Händen Buletten formen.</step>
-        <step nr="5">Smażyć na patelni z odrobiną oleju na średnim ogniu przez 12 do 15 minut, aż zrumieni się ze wszystkich stron.</step>
-        <step nr="6">Przed podaniem odstaw na 2 minuty i podawaj na ciepło lub na zimno.</step>
+        <step nr="1">Bułkę namoczyć w odrobinie wody lub mleka, dobrze odcisnąć i pokroić na drobne kawałki.</step>
+        <step nr="2">Mięso mielone wymieszać z bułką, drobno posiekaną cebulą, jajkiem, musztardą, solą, pieprzem i papryką.</step>
+        <step nr="3">Masę odstawić na 10 minut, żeby się związała.</step>
+        <step nr="4">Mokrymi dłońmi uformować równe kotlety – nie dociskać zbyt mocno.</step>
+        <step nr="5">Smażyć na patelni z odrobiną oleju na średnim ogniu 12 do 15 minut, aż zrumienią się ze wszystkich stron.</step>
+        <step nr="6">Odstawić na 2 minuty i podawać na ciepło z ziemniakami albo na zimno do chleba.</step>
       </preparation>
-      <intro>Klopsiki to jeden z tych przepisów, które wydają się znajome w każdej kuchni. Ładnie przyrumienione na zewnątrz, soczyste i mocno doprawione w środku – takie właśnie muszą być, jeśli chcą smakować po Babci.</intro>
+      <intro>Kotlety mielone to jeden z tych przepisów, które od razu kojarzą się z domem. Dobrze zrumienione z zewnątrz, soczyste w środku i porządnie doprawione – właśnie tak smakują najlepiej jak u babci.</intro>
     </translation>
     <translation lang="en">
       <name>Meatballs Grandma's style</name>
       <persons>4 people</persons>
       <category>Classics &amp; home cooking</category>
-      <intro>Meatballs are one of those recipes that seem immediately familiar in every kitchen. Nicely browned on the outside, juicy and strongly seasoned on the inside - that's exactly how they have to be if they want to taste like Grandma's style.</intro>
+      <intro>Meatballs are one of those recipes that feel immediately familiar in every kitchen. Nicely browned on the outside, juicy and well seasoned on the inside – that's exactly how they taste best Grandma's style.</intro>
       <ingredients>
         <item>600g mixed minced meat</item>
         <item>1 bun</item>
@@ -13029,23 +13062,23 @@
         <item>oil for frying</item>
       </ingredients>
       <preparation>
-        <step nr="1">Soak the rolls and squeeze them out well.</step>
-        <step nr="2">Thoroughly mix the minced meat with the bread roll, finely diced onion, egg, mustard and spices.</step>
-        <step nr="3">Let the mixture rest for 10 minutes so that it binds.</step>
-        <step nr="4">Form meatballs with wet hands.</step>
-        <step nr="5">Fry in a pan with a little oil over medium heat for 12 to 15 minutes until brown on all sides.</step>
-        <step nr="6">Let rest for 2 minutes before serving and serve warm or cold.</step>
+        <step nr="1">Soak the bun in a little water or milk, squeeze out well and tear into small pieces.</step>
+        <step nr="2">Thoroughly mix the minced meat with the bun, finely diced onion, egg, mustard, salt, pepper and paprika powder.</step>
+        <step nr="3">Let the mixture rest for 10 minutes so it binds.</step>
+        <step nr="4">Shape even patties with wet hands – don't press too firmly.</step>
+        <step nr="5">Fry in a pan with a little oil over medium heat for 12 to 15 minutes until golden brown on all sides, turning occasionally.</step>
+        <step nr="6">Rest for 2 minutes and serve warm with potatoes or cold on bread.</step>
       </preparation>
       <timing>
         <item>Preparation: approx. 15 minutes</item>
-        <item>Let the mixture rest: 10 minutes</item>
-        <item>Roasting time: approx. 12-15 minutes over medium heat</item>
-        <item>Total time: approx. 35-40 minutes</item>
+        <item>Resting the mixture: 10 minutes</item>
+        <item>Frying time: approx. 12 to 15 minutes over medium heat</item>
+        <item>Total time: approx. 35 to 40 minutes</item>
       </timing>
       <tips>
-        <item>Also very good cold on bread.</item>
+        <item>Also very good cold on bread with mustard.</item>
         <item>A little marjoram goes well with it.</item>
-        <item>Do not fry too hot so that the meatballs remain juicy on the inside.</item>
+        <item>Don't fry too hot – medium heat keeps the patties juicy inside.</item>
       </tips>
     </translation>
   </recipe>
@@ -13318,22 +13351,22 @@
       <item>Majoran</item>
     </ingredients>
     <preparation>
-      <step nr="1">Gemüse klein schneiden und in etwas Öl oder Speckfett kurz anschwitzen.</step>
-      <step nr="2">Erbsen dazugeben, mit Brühe auffüllen und aufkochen.</step>
+      <step nr="1">Zwiebel, Möhren, Sellerie und Lauch klein schneiden und in Öl 3 bis 4 Minuten anschwitzen.</step>
+      <step nr="2">Erbsen dazugeben, mit Brühe auffüllen, aufkochen und eventuell entstehenden Schaum abschöpfen.</step>
       <step nr="3">Die Suppe 45 bis 60 Minuten sanft köcheln lassen, bis die Erbsen weich sind.</step>
       <step nr="4">Nach Wunsch einen Teil pürieren oder stückig lassen.</step>
-      <step nr="5">Würstchen in Scheiben oder Stücke schneiden und in den letzten 5 Minuten nur heiß ziehen lassen.</step>
-      <step nr="6">Mit Majoran, Salz und Pfeffer abschmecken und kurz ruhen lassen.</step>
+      <step nr="5">Würstchen in Scheiben oder Stücke schneiden und in den letzten 5 Minuten nur heiß ziehen lassen – nicht kochen.</step>
+      <step nr="6">Mit Majoran, Salz und Pfeffer abschmecken, 2 Minuten ruhen lassen und heiß servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
-      <item>Kochzeit: ca. 45–60 Minuten</item>
-      <item>Würstchen am Ende: 5 Minuten</item>
-      <item>Gesamtzeit: ca. 75 Minuten</item>
+      <item>Kochzeit: ca. 45 bis 60 Minuten</item>
+      <item>Würstchen am Ende: ca. 5 Minuten</item>
+      <item>Gesamtzeit: ca. 70 bis 75 Minuten</item>
     </timing>
     <tips>
-      <item>Mit Speck wird die Suppe noch kräftiger.</item>
-      <item>Majoran passt besonders gut.</item>
+      <item>Mit etwas Speck beim Anschwitzen wird die Suppe noch kräftiger.</item>
+      <item>Majoran passt besonders gut – erst am Ende dazugeben.</item>
       <item>Am nächsten Tag schmeckt sie oft noch besser.</item>
     </tips>
     <rating>8,9/10 – deftig, wärmend und sehr klassisch.</rating>
@@ -13356,25 +13389,25 @@
       </ingredients>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
-        <item>Gotowanie: ok. 60 minut</item>
-        <item>Łącznie: ok. 75 minut</item>
-        <item>Czas całkowity: ok. 75 minut</item>
+        <item>Gotowanie: ok. 45–60 minut</item>
+        <item>Kiełbasa na końcu: ok. 5 minut</item>
+        <item>Łącznie: ok. 70–75 minut</item>
       </timing>
       <tips>
-        <item>Ze słoniną albo boczkiem jest jeszcze bardziej konkretna.</item>
-        <item>Majeranek bardzo dobrze pasuje.</item>
+        <item>Ze słoniną albo boczkiem przy podsmażaniu będzie jeszcze bardziej konkretna.</item>
+        <item>Majeranek dodawaj na końcu – pasuje szczególnie dobrze.</item>
         <item>Następnego dnia smakuje jeszcze lepiej.</item>
       </tips>
       <rating>9/10 – bardzo domowa i rozgrzewająca klasyka.</rating>
       <preparation>
-        <step nr="1">Gemüse pokroić drobno und na odrobinie oleju oder Speckfett kurz podsmażyć.</step>
-        <step nr="2">Dodać groszek, dodać bulion i doprowadzić do wrzenia.</step>
-        <step nr="3">Suppe 45 bis 60 Minuten gotować delikatnie, bis die Erbsen weich sind.</step>
-        <step nr="4">W razie potrzeby zmiksuj trochę na puree lub pozostaw kawałki.</step>
-        <step nr="5">Kiełbasy pokroić w plasterki lub kawałki i pozostawić gorące na ostatnie 5 minut.</step>
-        <step nr="6">Z Majoran, Salz und Pfeffer doprawić do smaku und kurz ruhen lassen.</step>
+        <step nr="1">Cebulę, marchew, seler i por pokroić drobno i podsmażyć na oleju 3 do 4 minut.</step>
+        <step nr="2">Dodać groch, zalać bulionem, zagotować i ewentualnie zebrać pianę.</step>
+        <step nr="3">Gotować delikatnie 45 do 60 minut, aż groch będzie miękki.</step>
+        <step nr="4">W razie potrzeby część zblendować albo zostawić kawałki.</step>
+        <step nr="5">Kiełbasy pokroić w plasterki lub kawałki i podgrzać w ostatnich 5 minutach – nie gotować.</step>
+        <step nr="6">Doprawić majerankiem, solą i pieprzem, odstawić 2 minuty i podawać na gorąco.</step>
       </preparation>
-      <intro>Zupa grochowa to dokładnie taki rodzaj dania, które zapewnia natychmiastowe ciepło i uczucie sytości. Gęsty, pożywny i podawany z kiełbaskami to prawdziwy klasyk, jaki znamy z przeszłości.</intro>
+      <intro>Grochówka to właśnie taki garnek, który od razu daje ciepło i sytość. Gęsta, konkretna i podana z kiełbasą – klasyka, jaką pamięta się z dawnych lat.</intro>
     </translation>
     <translation lang="en">
       <name>Pea soup with sausages</name>
@@ -13395,30 +13428,30 @@
         <item>marjoram</item>
       </ingredients>
       <preparation>
-        <step nr="1">Cut vegetables into small pieces and sauté briefly in a little oil or bacon fat.</step>
-        <step nr="2">Add peas, add broth and bring to the boil.</step>
-        <step nr="3">Simmer the soup gently for 45 to 60 minutes, until the peas are tender.</step>
+        <step nr="1">Cut onion, carrots, celery and leek into small pieces and sauté in oil for 3 to 4 minutes.</step>
+        <step nr="2">Add peas, pour in broth, bring to a boil and skim off any foam if needed.</step>
+        <step nr="3">Simmer gently for 45 to 60 minutes until the peas are tender.</step>
         <step nr="4">If desired, puree some or leave it chunky.</step>
-        <step nr="5">Cut the sausages into slices or pieces and let them sit hot for the last 5 minutes.</step>
-        <step nr="6">Season with marjoram, salt and pepper and let rest briefly.</step>
+        <step nr="5">Cut sausages into slices or pieces and heat through in the last 5 minutes – do not boil.</step>
+        <step nr="6">Season with marjoram, salt and pepper, rest for 2 minutes and serve hot.</step>
       </preparation>
       <timing>
         <item>Preparation: approx. 15 minutes</item>
-        <item>Cooking time: approx. 45-60 minutes</item>
-        <item>Sausages at the end: 5 minutes</item>
-        <item>Total time: approx. 75 minutes</item>
+        <item>Cooking time: approx. 45 to 60 minutes</item>
+        <item>Sausages at the end: approx. 5 minutes</item>
+        <item>Total time: approx. 70 to 75 minutes</item>
       </timing>
       <tips>
-        <item>The soup becomes even stronger with bacon.</item>
-        <item>Marjoram goes particularly well.</item>
+        <item>A little bacon when sautéing makes the soup even heartier.</item>
+        <item>Marjoram goes particularly well – add at the end.</item>
         <item>It often tastes even better the next day.</item>
       </tips>
     </translation>
   </recipe>
   <recipe id="113">
     <name>Jägerschnitzel mit Bratkartoffeln</name>
-    <intro lang="de">Jägerschnitzel ist genau einer dieser Klassiker, bei denen man sofort weiß, was man bekommt – und genau das ist das Gute daran. Saftiges Fleisch, kräftige Pilzsauce und dazu Bratkartoffeln – mehr Hausmannskost geht kaum.</intro>
-    <intro lang="pl">Sznycel po myśliwsku to klasyk, przy którym od razu wiadomo, czego się spodziewać – i właśnie to jest w nim dobre. Soczyste mięso, mocny sos pieczarkowy i smażone ziemniaki to prawdziwie domowy obiad.</intro>
+    <intro lang="de">Jägerschnitzel ist genau einer dieser Klassiker, bei denen man sofort weiß, was man bekommt – und genau das ist das Gute daran. Saftiges Fleisch, kräftige Pilzsauce und knusprige Bratkartoffeln: mehr Hausmannskost geht kaum.</intro>
+    <intro lang="pl">Sznycel po myśliwsku to klasyk, przy którym od razu wiadomo, czego się spodziewać – i właśnie to jest w nim dobre. Soczyste mięso, mocny sos pieczarkowy i chrupiące ziemniaki smażone to prawdziwie domowy obiad.</intro>
     <persons>4 Personen</persons>
     <category>Klassiker &amp; Hausmannskost</category>
     <origin>
@@ -13441,24 +13474,24 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step nr="1">Schnitzel würzen und in einer Pfanne goldbraun braten; anschließend warm halten.</step>
-      <step nr="2">Vorgekochte Kartoffeln in Scheiben schneiden und in einer zweiten Pfanne knusprig braten.</step>
-      <step nr="3">Für die Sauce Zwiebel und Champignons in Butter anschwitzen.</step>
-      <step nr="4">Mit Brühe und Sahne ablöschen, Senf einrühren und 5 bis 8 Minuten einkochen lassen.</step>
-      <step nr="5">Mit Salz, Pfeffer und Petersilie abschmecken.</step>
-      <step nr="6">Schnitzel mit Sauce und Bratkartoffeln servieren.</step>
+      <step nr="1">Schnitzel mit Salz und Pfeffer würzen. Öl und Butter in einer großen Pfanne erhitzen und die Schnitzel 3 bis 4 Minuten pro Seite goldbraun braten. Warm stellen.</step>
+      <step nr="2">Vorgekochte Kartoffeln in Scheiben schneiden. In einer zweiten Pfanne mit etwas Öl bei mittlerer Hitze 12 bis 15 Minuten knusprig braten, zwischendurch wenden.</step>
+      <step nr="3">Für die Sauce Zwiebel und in Scheiben geschnittene Champignons in Butter 4 bis 5 Minuten anschwitzen.</step>
+      <step nr="4">Mit Brühe und Sahne ablöschen, Senf einrühren und 5 bis 8 Minuten einkochen lassen, bis die Sauce cremig ist.</step>
+      <step nr="5">Mit Salz, Pfeffer und frischer Petersilie abschmecken.</step>
+      <step nr="6">Schnitzel mit Pilzsauce und Bratkartoffeln anrichten und sofort servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 15 Minuten</item>
       <item>Schnitzel braten: ca. 8 Minuten</item>
-      <item>Bratkartoffeln: ca. 15 Minuten</item>
-      <item>Sauce: ca. 8 Minuten</item>
-      <item>Gesamtzeit: ca. 40 Minuten</item>
+      <item>Bratkartoffeln: ca. 12 bis 15 Minuten</item>
+      <item>Sauce: ca. 10 Minuten</item>
+      <item>Gesamtzeit: ca. 40 bis 45 Minuten</item>
     </timing>
     <tips>
-      <item>Mit frischer Petersilie wirkt die Sauce runder.</item>
-      <item>Vorgekochte Kartoffeln werden knuspriger.</item>
-      <item>Die Sauce kann mit etwas Weißwein verfeinert werden.</item>
+      <item>Schnitzel und Kartoffeln parallel in zwei Pfannen spart Zeit.</item>
+      <item>Vorgekochte Kartoffeln vom Vortag werden besonders knusprig.</item>
+      <item>Die Sauce lässt sich mit etwas Weißwein verfeinern.</item>
     </tips>
     <rating>9/10 – deftig, cremig und sehr stimmig als Klassiker.</rating>
     <translation lang="pl">
@@ -13480,32 +13513,32 @@
       </ingredients>
       <timing>
         <item>Przygotowanie: ok. 15 minut</item>
-        <item>Smażenie/gotowanie: ok. 25 minut</item>
-        <item>Łącznie: ok. 40 minut</item>
-        <item>Sos: ok. 8 minut</item>
-        <item>Czas całkowity: ok. 40 minut</item>
+        <item>Smażenie kotletów: ok. 8 minut</item>
+        <item>Ziemniaki smażone: ok. 12–15 minut</item>
+        <item>Sos: ok. 10 minut</item>
+        <item>Łącznie: ok. 40–45 minut</item>
       </timing>
       <tips>
-        <item>Natka dobrze pasuje do sosu.</item>
-        <item>Ugotowane wcześniej ziemniaki są bardziej chrupiące.</item>
-        <item>Trochę białego wina podkręca sos.</item>
+        <item>Sznycel i ziemniaki można smażyć równolegle na dwóch patelniach – oszczędza to czas.</item>
+        <item>Ugotowane wcześniej ziemniaki, najlepiej z poprzedniego dnia, są bardziej chrupiące.</item>
+        <item>Odrobina białego wina dobrze podkręca sos.</item>
       </tips>
       <rating>9/10 – konkretny i bardzo klasyczny obiad.</rating>
       <preparation>
-        <step nr="1">Dopraw sznycel i usmaż go na patelni na złoty kolor; potem trzymaj się ciepło.</step>
-        <step nr="2">Ugotowane ziemniaki pokroić w plasterki i smażyć na drugiej patelni, aż będą chrupiące.</step>
-        <step nr="3">Do przygotowania sosu podsmaż cebulę i grzyby na maśle.</step>
-        <step nr="4">Zgasić bulionem i śmietaną, dodać musztardę i dusić przez 5 do 8 minut.</step>
-        <step nr="5">Z Salz, Pfeffer und Petersilie doprawić do smaku.</step>
-        <step nr="6">Podawać sznycel z sosem i pieczonymi ziemniakami.</step>
+        <step nr="1">Doprawić kotlety solą i pieprzem. Rozgrzać olej z masłem na dużej patelni i smażyć 3 do 4 minut z każdej strony na złoty kolor. Odstawić w cieple.</step>
+        <step nr="2">Ugotowane ziemniaki pokroić w plasterki. Na drugiej patelni z odrobiną oleju smażyć 12 do 15 minut na średnim ogniu, aż będą chrupiące.</step>
+        <step nr="3">Do sosu podsmażyć cebulę i pokrojone w plastry pieczarki na maśle przez 4 do 5 minut.</step>
+        <step nr="4">Zgasić bulionem i śmietaną, dodać musztardę i gotować 5 do 8 minut, aż sos będzie kremowy.</step>
+        <step nr="5">Doprawić solą, pieprzem i świeżą natką pietruszki.</step>
+        <step nr="6">Podawać kotlety z sosem pieczarkowym i smażonymi ziemniakami od razu na talerzu.</step>
       </preparation>
-      <intro>Jägerschnitzel to dokładnie jeden z tych klasyków, w przypadku których od razu wiesz, co dostaniesz – i to jest właśnie jego zaleta. Soczyste mięso, mocny sos grzybowy i smażone ziemniaki – trudno o bardziej domową kuchnię.</intro>
+      <intro>Sznycel po myśliwsku to klasyk, przy którym od razu wiadomo, czego się spodziewać – i właśnie to jest w nim dobre. Soczyste mięso, mocny sos pieczarkowy i chrupiące ziemniaki smażone to prawdziwie domowy obiad.</intro>
     </translation>
     <translation lang="en">
       <name>Jägerschnitzel with fried potatoes</name>
       <persons>4 people</persons>
       <category>Classics &amp; home cooking</category>
-      <intro>Jägerschnitzel is exactly one of those classics where you immediately know what you're getting - and that's exactly the good thing about it. Juicy meat, strong mushroom sauce and fried potatoes – you can hardly get more home-style cooking.</intro>
+      <intro>Jägerschnitzel is exactly one of those classics where you immediately know what you're getting – and that's the good thing about it. Juicy meat, strong mushroom sauce and crispy fried potatoes – you can hardly get more home-style cooking.</intro>
       <ingredients>
         <item>4 schnitzels</item>
         <item>250 g mushrooms</item>
@@ -13520,23 +13553,23 @@
         <item>pepper</item>
       </ingredients>
       <preparation>
-        <step nr="1">Season the schnitzel and fry it in a pan until golden brown; then keep warm.</step>
-        <step nr="2">Cut the pre-cooked potatoes into slices and fry them in a second pan until crispy.</step>
-        <step nr="3">For the sauce, sauté the onion and mushrooms in butter.</step>
-        <step nr="4">Deglaze with broth and cream, stir in mustard and simmer for 5 to 8 minutes.</step>
-        <step nr="5">Season with salt, pepper and parsley.</step>
-        <step nr="6">Serve schnitzel with sauce and fried potatoes.</step>
+        <step nr="1">Season schnitzels with salt and pepper. Heat oil and butter in a large pan and fry for 3 to 4 minutes per side until golden brown. Keep warm.</step>
+        <step nr="2">Slice pre-cooked potatoes. Fry in a second pan with a little oil over medium heat for 12 to 15 minutes until crispy, turning occasionally.</step>
+        <step nr="3">For the sauce, sauté onion and sliced mushrooms in butter for 4 to 5 minutes.</step>
+        <step nr="4">Deglaze with broth and cream, stir in mustard and simmer for 5 to 8 minutes until the sauce is creamy.</step>
+        <step nr="5">Season with salt, pepper and fresh parsley.</step>
+        <step nr="6">Plate schnitzels with mushroom sauce and fried potatoes and serve immediately.</step>
       </preparation>
       <timing>
         <item>Preparation: approx. 15 minutes</item>
-        <item>Fry the schnitzel: approx. 8 minutes</item>
-        <item>Fried potatoes: approx. 15 minutes</item>
-        <item>Sauce: approx. 8 minutes</item>
-        <item>Total time: approx. 40 minutes</item>
+        <item>Fry schnitzels: approx. 8 minutes</item>
+        <item>Fried potatoes: approx. 12 to 15 minutes</item>
+        <item>Sauce: approx. 10 minutes</item>
+        <item>Total time: approx. 40 to 45 minutes</item>
       </timing>
       <tips>
-        <item>The sauce appears rounder with fresh parsley.</item>
-        <item>Pre-cooked potatoes will be crispier.</item>
+        <item>Fry schnitzels and potatoes in parallel in two pans to save time.</item>
+        <item>Pre-cooked potatoes from the day before become especially crispy.</item>
         <item>The sauce can be refined with a little white wine.</item>
       </tips>
     </translation>
@@ -13822,7 +13855,7 @@
       <item>Kartoffeln nicht zu weich kochen.</item>
     </tips>
     <rating>9/10 – cremig, klassisch und immer beliebt.</rating>
-    <translation lang="pl">
+    <knowledge><item>Kartoffelsalat lässt sich am Vortag vorbereiten und über Nacht im Kühlschrank durchziehen lassen – schmeckt dann oft runder.</item><item>Im Kühlschrank hält er sich luftdicht verschlossen 2–3 Tage.</item><item>Statt klassischer Mayonnaise funktioniert auch die Hälfte Joghurt für eine leichtere Variante.</item><item>Mit Schnittlauch oder etwas mehr Gurkenwasser wird er frischer und cremiger.</item></knowledge><translation lang="pl">
       <name>Klasyczna sałatka ziemniaczana z majonezem</name>
       <persons>4 osoby</persons>
       <category>Sałatki / klasyki</category>
@@ -13856,7 +13889,7 @@
       </tips>
       <rating>9/10 – kremowa i bardzo klasyczna.</rating>
       <intro>Ta sałatka ziemniaczana jest kremowa, aromatyczna i to taki klasyk, który sprawdza się na imprezach, grillach lub po prostu. Z majonezem, korniszonami i odrobiną cebuli smakuje tak, jak znamy z wielu rodzin.</intro>
-    </translation>
+    <knowledge><item>Sałatkę można zrobić dzień wcześniej i zostawić na noc w lodówce – wtedy smakuje pełniej.</item><item>W szczelnie zamkniętym pojemniku trzyma się w lodówce 2–3 dni.</item><item>Zamiast samego majonezu można użyć połowy jogurtu na lżejszą wersję.</item><item>Szczypiorek albo odrobina więcej zalewy z ogórków daje świeższy, kremowy efekt.</item></knowledge></translation>
     <translation lang="en">
       <name>Classic potato salad with mayonnaise</name>
       <persons>4 people</persons>
@@ -13890,7 +13923,7 @@
         <item>It becomes fresher with chives.</item>
         <item>Do not cook potatoes too soft.</item>
       </tips>
-    </translation>
+    <knowledge><item>Potato salad can be made the day before and rest overnight in the fridge – it often tastes rounder then.</item><item>It keeps in the fridge for 2–3 days in an airtight container.</item><item>Half yogurt instead of classic mayonnaise works for a lighter version.</item><item>Chives or a little extra pickle brine make it fresher and creamier.</item></knowledge></translation>
   </recipe>
   <recipe id="117">
     <name>Kartoffelsalat mit Essig und Brühe</name>
@@ -14044,7 +14077,7 @@
       <item>Vor dem Servieren eventuell noch etwas Mayo ergänzen.</item>
     </tips>
     <rating>8,5/10 – der typische Partyklassiker.</rating>
-    <translation lang="pl">
+    <knowledge><item>Nudelsalat lässt sich mehrere Stunden vorher zubereiten; unmittelbar vor dem Servieren final abschmecken.</item><item>Im Kühlschrank hält er sich 1–2 Tage – vor dem Essen etwas Mayonnaise oder Gurkenwasser nachgeben.</item><item>Statt Mayo-Mix funktioniert auch Crème fraîche für eine mildere, leichtere Note.</item><item>Mit Erbsen, Paprika oder Mais lässt sich der Salat unkompliziert erweitern.</item></knowledge><translation lang="pl">
       <name>Klasyczna sałatka makaronowa z majonezem</name>
       <persons>4–6 osób</persons>
       <category>Sałatki / klasyki</category>
@@ -14078,7 +14111,7 @@
       </tips>
       <rating>8,5/10 – typowy klasyk na imprezy.</rating>
       <intro>Klasyczna sałatka makaronowa z majonezem to jeden z przepisów, który na przyjęciach i grillach prawie zawsze jako pierwszy zostaje pusty. Jest kremowy, nieskomplikowany i właśnie dlatego jest tak popularny.</intro>
-    </translation>
+    <knowledge><item>Sałatkę makaronową można przygotować kilka godzin wcześniej; dopraw bezpośrednio przed podaniem.</item><item>W lodówce trzyma się 1–2 dni – przed podaniem dodaj odrobinę majonezu albo zalewy.</item><item>Zamiast majonezu można użyć crème fraîche na łagodniejszą wersję.</item><item>Groszek, papryka albo kukurydza łatwo urozmaicają sałatkę.</item></knowledge></translation>
     <translation lang="en">
       <name>Classic pasta salad with mayo</name>
       <persons>4-6 people</persons>
@@ -14112,7 +14145,7 @@
         <item>Do not use pasta that has been cooked too soft.</item>
         <item>Maybe add a little mayo before serving.</item>
       </tips>
-    </translation>
+    <knowledge><item>Pasta salad can be prepared several hours before; season finally when you are ready to serve.</item><item>It keeps in the fridge for 1–2 days – add a little mayo or pickle brine before eating.</item><item>Crème fraîche works instead of mayo for a milder, lighter note.</item><item>Peas, pepper or corn easily expand the salad.</item></knowledge></translation>
   </recipe>
   <recipe id="119">
     <name>Italienischer Nudelsalat mit Pesto</name>
@@ -17428,7 +17461,7 @@
       <item>Durch die Essig-Zwiebel-Marinade lieber mit mittlerer Hitze arbeiten, damit außen nichts verbrennt.</item>
     </tips>
     <rating>8,6/10 – würzig, kernig und mit langer Marinade am besten.</rating>
-    <translation lang="pl">
+    <knowledge><item>Die Zwiebel-Essig-Marinade sollte mindestens 4 Stunden, ideal über Nacht im Kühlschrank ziehen.</item><item>Mariniertes Fleisch hält sich roh 1 Tag im Kühlschrank; gegrillte Reste 2 Tage.</item><item>Statt Schweinefleisch funktioniert auch Lamm oder Hähnchen – dann etwas kürzer marinieren.</item><item>Passt gut zu Paprikasalat, Fladenbrot und scharfer Senf- oder Ajvarsoße.</item></knowledge><translation lang="pl">
       <name>Szaszłyk w marynacie cebulowo-octowej</name>
       <persons>4 osoby</persons>
       <category>Grill / Europa Wschodnia / Klasyki</category>
@@ -17465,7 +17498,7 @@
         <item>Świetnie komponuje się z sałatką paprykową, pieczywem i rustykalnymi dodatkami z grilla.</item>
         <item>Ze względu na marynatę octowo-cebulową lepiej jest smażyć na średnim ogniu, aby nic nie przypaliło się z zewnątrz.</item>
       </tips>
-    </translation>
+    <knowledge><item>Marynata cebulowo-octowa powinna działać minimum 4 godziny, najlepiej całą noc w lodówce.</item><item>Surowe mięso w marynacie trzyma się 1 dzień; upieczone resztki około 2 dni.</item><item>Zamiast wieprzowiny można użyć jagnięciny albo kurczaka – wtedy krócej marynuj.</item><item>Świetnie pasuje sałatka paprykowa, pieczywo i ostry sos musztardowy albo ajvar.</item></knowledge></translation>
     <translation lang="en">
       <name>Shish kebab with onion and vinegar marinade</name>
       <persons>4 people</persons>
@@ -17503,7 +17536,7 @@
         <item>Goes very well with pepper salad, bread and rustic grill side dishes.</item>
         <item>Because of the vinegar and onion marinade, it is better to use medium heat so that nothing burns on the outside.</item>
       </tips>
-    </translation>
+    <knowledge><item>The onion-vinegar marinade should rest at least 4 hours, ideally overnight in the fridge.</item><item>Raw marinated meat keeps 1 day in the fridge; grilled leftovers about 2 days.</item><item>Lamb or chicken works instead of pork – marinate a little shorter then.</item><item>Pairs well with pepper salad, flatbread and sharp mustard or ajvar sauce.</item></knowledge></translation>
   </recipe>
   <recipe id="147">
     <name>Barbecue-Schaschlik mit rauchiger Sauce</name>
@@ -18750,10 +18783,15 @@
     </timing>
     <tips>
       <item>Die Blutwurst nicht zu heiß braten, sonst wird sie trocken und krümelig.</item>
-      <item>Beim Sauerkraut hilft etwas Brühe statt zu viel Flüssigkeit, damit es nicht wässrig wird.</item>
-      <item>Kartoffelpüree mit warmer Milch statt kalter Milch anrühren, dann bleibt es cremiger.</item>
+      <item>Beim Sauerkraut reicht wenig Brühe – zu viel Flüssigkeit macht es schnell wässrig.</item>
+      <item>Kartoffelpüree mit warmer Milch anrühren, dann bleibt es cremiger.</item>
+      <item>Butterschmalz lässt sich beim Braten der Blutwurst durch neutrales Öl ersetzen.</item>
     </tips>
     <rating>8,7/10 – deftig, bodenständig und genau richtig für Fans klassischer Hausmannskost.</rating>
+    <knowledge>
+      <item>Sauerkraut und Kartoffelpüree lassen sich vorbereiten; die Blutwurst brät man am besten erst kurz vor dem Servieren.</item>
+      <item>Reste halten sich im Kühlschrank 1–2 Tage; das Püree am besten mit etwas Milch wieder erwärmen.</item>
+    </knowledge>
     <translation lang="pl">
       <name>Tote Oma z kapustą kiszoną i puree ziemniaczanym</name>
       <persons>4 osoby</persons>
@@ -18793,9 +18831,14 @@
       </timing>
       <tips>
         <item>Nie smaż kaszanki zbyt gorąco, w przeciwnym razie stanie się sucha i krucha.</item>
-        <item>W przypadku kiszonej kapusty zamiast zbyt dużej ilości płynu warto dodać odrobinę bulionu, aby nie stała się wodnista.</item>
-        <item>Zmieszaj puree ziemniaczane z ciepłym mlekiem zamiast zimnego mleka, aby zachować bardziej kremową konsystencję.</item>
+        <item>Do kiszonej kapusty wystarczy odrobina bulionu – zbyt dużo płynu szybko ją rozwodni.</item>
+        <item>Puree ziemniaczane wymieszaj z ciepłym mlekiem, aby było bardziej kremowe.</item>
+        <item>Masło klarowane można zastąpić neutralnym olejem do smażenia kaszanki.</item>
       </tips>
+      <knowledge>
+        <item>Kapustę kiszoną i puree ziemniaczane można przygotować wcześniej; kaszankę najlepiej smażyć tuż przed podaniem.</item>
+        <item>Resztki przechowuje się w lodówce 1–2 dni; puree podgrzewaj z odrobiną mleka.</item>
+      </knowledge>
     </translation>
     <translation lang="en">
       <name>Dead grandma with sauerkraut and mashed potatoes</name>
@@ -18836,9 +18879,14 @@
       </timing>
       <tips>
         <item>Do not fry the black pudding too hot, otherwise it will become dry and crumbly.</item>
-        <item>With sauerkraut, it helps to use a little broth instead of too much liquid so that it doesn't become watery.</item>
-        <item>Mix mashed potatoes with warm milk instead of cold milk, so it stays creamier.</item>
+        <item>With sauerkraut, a little broth is enough – too much liquid makes it watery quickly.</item>
+        <item>Mix mashed potatoes with warm milk for a creamier result.</item>
+        <item>Clarified butter can be replaced with neutral oil when frying the black pudding.</item>
       </tips>
+      <knowledge>
+        <item>Sauerkraut and mashed potatoes can be prepared ahead; fry the black pudding just before serving.</item>
+        <item>Leftovers keep in the fridge for 1–2 days; reheat the mash with a little milk.</item>
+      </knowledge>
     </translation>
   </recipe>
   <recipe id="157">
@@ -24809,7 +24857,7 @@
       <region>Deutsche Küche</region>
       <worldCategory>Deutschland</worldCategory>
     </origin>
-    <intro lang="de">Dieses Kartoffel-Hack-Gratin bleibt bodenständig, bekommt aber durch die Würzung einen kleinen modernen Dreh. Ein schönes Familiengericht, wenn etwas Vertrautes mit Twist auf den Tisch soll.</intro>
+    <intro lang="de">Dieses Kartoffel-Hack-Gratin bleibt bodenständig, bekommt aber durch die Würzung einen kleinen modernen Dreh. Ein schönes Familiengericht, wenn etwas Vertrautes mit Twist auf den Tisch soll – cremig, herzhaft und aus dem Ofen.</intro>
     <image src="images/rezeptbild_202.png" />
     <ingredients>
       <item>800 g Kartoffeln</item>
@@ -24828,23 +24876,24 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step>Kartoffeln schälen, in dünne Scheiben schneiden und 8 Minuten in Salzwasser vorkochen. Abgießen.</step>
-      <step>Zwiebel, Möhre und Paprika klein würfeln. Öl in einer Pfanne erhitzen und das Hackfleisch krümelig anbraten.</step>
-      <step>Gemüse zugeben und 4 bis 5 Minuten mitbraten. Tomatenmark, Currypulver und Paprikapulver einrühren.</step>
-      <step>Sahne und Brühe angießen, mit Salz und Pfeffer würzen und 5 Minuten leicht einkochen lassen.</step>
-      <step>Kartoffeln und Hackmasse in eine Auflaufform schichten. Mit Käse bestreuen.</step>
-      <step>Bei 190 °C Ober-/Unterhitze 25 bis 30 Minuten backen, bis die Oberfläche goldbraun ist.</step>
+      <step nr="1">Kartoffeln schälen, in dünne Scheiben schneiden und 8 Minuten in Salzwasser vorkochen. Abgießen und kurz abtropfen lassen.</step>
+      <step nr="2">Zwiebel, Möhre und Paprika klein würfeln. Öl in einer Pfanne erhitzen und das Hackfleisch krümelig anbraten.</step>
+      <step nr="3">Gemüse zugeben und 4 bis 5 Minuten mitbraten. Tomatenmark, Currypulver und Paprikapulver einrühren und 1 Minute mitrösten.</step>
+      <step nr="4">Sahne und Brühe angießen, mit Salz und Pfeffer würzen und 5 Minuten leicht einkochen lassen.</step>
+      <step nr="5">Kartoffeln und Hackmasse abwechselnd in eine Auflaufform schichten. Mit Käse bestreuen.</step>
+      <step nr="6">Bei 190 °C Ober-/Unterhitze 25 bis 30 Minuten backen, bis die Oberfläche goldbraun ist. 5 Minuten ruhen lassen und warm servieren.</step>
     </preparation>
     <timing>
-      <step>Vorbereitung: ca. 20 Minuten</step>
-      <step>Kartoffeln vorkochen: ca. 8 Minuten</step>
-      <step>Hackpfanne: ca. 15 Minuten</step>
-      <step>Backzeit: ca. 25 bis 30 Minuten</step>
-      <step>Gesamt: ca. 50 Minuten</step>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Kartoffeln vorkochen: ca. 8 Minuten</item>
+      <item>Hackpfanne: ca. 15 Minuten</item>
+      <item>Backzeit: ca. 25 bis 30 Minuten</item>
+      <item>Gesamt: ca. 50 bis 55 Minuten</item>
     </timing>
     <tips>
-      <tip>Der Twist soll nur leicht würzig wirken. Das Currypulver sparsam dosieren, damit das Gericht bodenständig bleibt.</tip>
-      <tip>Mit einem Klecks Schmand beim Servieren wird das Gratin noch runder.</tip>
+      <item>Der Twist soll nur leicht würzig wirken. Currypulver sparsam dosieren, damit das Gericht bodenständig bleibt.</item>
+      <item>Mit einem Klecks Schmand beim Servieren wird das Gratin noch runder.</item>
+      <item>Kartoffeln nicht zu weich vorkochen – sie sollen im Ofen noch Form halten.</item>
     </tips>
     <rating>8,8</rating>
     <translation lang="pl">
@@ -24869,30 +24918,31 @@
         <item>pieprz</item>
       </ingredients>
       <preparation>
-        <step>Obrać ziemniaki, pokroić w cienkie plasterki i podgotować 8 minut w osolonej wodzie. Odcedzić.</step>
-        <step>Cebulę, marchewkę i paprykę pokroić w drobną kostkę. Rozgrzać olej na patelni i usmażyć mięso mielone, aż będzie sypkie.</step>
-        <step>Dodać warzywa i smażyć 4 do 5 minut. Wmieszać koncentrat pomidorowy, curry i paprykę.</step>
-        <step>Wlać śmietankę i bulion, doprawić solą oraz pieprzem i gotować 5 minut, aż lekko zgęstnieje.</step>
-        <step>Układać w formie warstwami ziemniaki i masę mięsną. Posypać serem.</step>
-        <step>Piec 25 do 30 minut w 190 °C góra/dół, aż wierzch będzie złocisty.</step>
+        <step nr="1">Obrać ziemniaki, pokroić w cienkie plasterki i podgotować 8 minut w osolonej wodzie. Odcedzić i krótko odsączyć.</step>
+        <step nr="2">Cebulę, marchewkę i paprykę pokroić w drobną kostkę. Rozgrzać olej na patelni i usmażyć mięso mielone, aż będzie sypkie.</step>
+        <step nr="3">Dodać warzywa i smażyć 4 do 5 minut. Wmiesać koncentrat, curry i paprykę, podsmażać 1 minutę.</step>
+        <step nr="4">Wlać śmietankę i bulion, doprawić solą oraz pieprzem i gotować 5 minut, aż lekko zgęstnieje.</step>
+        <step nr="5">Układać w formie naprzemiennie ziemniaki i masę mięsną. Posypać serem.</step>
+        <step nr="6">Piec 25 do 30 minut w 190 °C góra/dół, aż wierzch będzie złocisty. Odstawić 5 minut i podawać na ciepło.</step>
       </preparation>
       <timing>
-        <step>Przygotowanie: ok. 20 minut</step>
-        <step>Podgotowanie ziemniaków: ok. 8 minut</step>
-        <step>Patelnia z mięsem: ok. 15 minut</step>
-        <step>Pieczenie: ok. 25 do 30 minut</step>
-        <step>Łącznie: ok. 50 minut</step>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Podgotowanie ziemniaków: ok. 8 minut</item>
+        <item>Patelnia z mięsem: ok. 15 minut</item>
+        <item>Pieczenie: ok. 25 do 30 minut</item>
+        <item>Łącznie: ok. 50 do 55 minut</item>
       </timing>
       <tips>
-        <tip>Twist powinien być delikatny. Curry dodawaj oszczędnie, żeby danie pozostało domowe i znajome w smaku.</tip>
-        <tip>Kleks kwaśnej śmietany przy podaniu dobrze domyka smak gratinu.</tip>
+        <item>Twist powinien być delikatny. Curry dodawaj oszczędnie, żeby danie pozostało domowe.</item>
+        <item>Kleks kwaśnej śmietany przy podaniu dobrze domyka smak gratinu.</item>
+        <item>Nie gotuj ziemniaków zbyt długo – w piekarniku mają jeszcze trzymać formę.</item>
       </tips>
     </translation>
     <translation lang="en">
       <name>Potato minced gratin with a twist</name>
       <persons>4 people</persons>
       <category>Potato dishes</category>
-      <intro>This minced potato gratin remains down-to-earth, but gets a little modern twist through the seasoning. A nice family dish when you want something familiar with a twist on the table.</intro>
+      <intro>This minced potato gratin stays down-to-earth but gets a little modern twist through the seasoning. A nice family dish when you want something familiar with a twist on the table – creamy, hearty and from the oven.</intro>
       <ingredients>
         <item>800g potatoes</item>
         <item>500 g minced beef</item>
@@ -24910,23 +24960,24 @@
         <item>pepper</item>
       </ingredients>
       <preparation>
-        <step nr="1">Peel the potatoes, cut them into thin slices and pre-boil them in salted water for 8 minutes. Pour off.</step>
-        <step nr="2">Dice the onion, carrot and pepper small. Heat oil in a pan and fry the minced meat until crumbly.</step>
-        <step nr="3">Add vegetables and fry for 4 to 5 minutes. Stir in tomato paste, curry powder and paprika powder.</step>
-        <step nr="4">Pour in the cream and broth, season with salt and pepper and simmer gently for 5 minutes.</step>
-        <step nr="5">Layer potatoes and minced mixture in a baking dish. Sprinkle with cheese.</step>
-        <step nr="6">Bake at 190 °C top/bottom heat for 25 to 30 minutes until the surface is golden brown.</step>
+        <step nr="1">Peel the potatoes, cut into thin slices and pre-boil in salted water for 8 minutes. Drain and let drip briefly.</step>
+        <step nr="2">Dice onion, carrot and pepper small. Heat oil in a pan and fry the minced meat until crumbly.</step>
+        <step nr="3">Add vegetables and fry for 4 to 5 minutes. Stir in tomato paste, curry powder and paprika powder and toast for 1 minute.</step>
+        <step nr="4">Pour in cream and broth, season with salt and pepper and simmer gently for 5 minutes.</step>
+        <step nr="5">Layer potatoes and minced mixture alternately in a baking dish. Sprinkle with cheese.</step>
+        <step nr="6">Bake at 190 °C top/bottom heat for 25 to 30 minutes until golden brown. Rest for 5 minutes and serve warm.</step>
       </preparation>
       <timing>
-        <step nr="1">Preparation: approx. 20 minutes</step>
-        <step nr="2">Pre-cook potatoes: approx. 8 minutes</step>
-        <step nr="3">Mincing pan: approx. 15 minutes</step>
-        <step nr="4">Baking time: approx. 25 to 30 minutes</step>
-        <step nr="5">Total: approx. 50 minutes</step>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Pre-cook potatoes: approx. 8 minutes</item>
+        <item>Minced meat pan: approx. 15 minutes</item>
+        <item>Baking time: approx. 25 to 30 minutes</item>
+        <item>Total: approx. 50 to 55 minutes</item>
       </timing>
       <tips>
-        <tip>The twist should only seem slightly spicy. Use the curry powder sparingly so that the dish remains down-to-earth.</tip>
-        <tip>With a dollop of sour cream when serving, the gratin becomes even more rounded.</tip>
+        <item>The twist should only seem slightly spicy. Use curry powder sparingly so the dish stays down-to-earth.</item>
+        <item>A dollop of sour cream when serving makes the gratin even more rounded.</item>
+        <item>Don't pre-cook potatoes too soft – they should still hold shape in the oven.</item>
       </tips>
     </translation>
   </recipe>
@@ -25314,7 +25365,7 @@
       <region>Italienische Küche</region>
       <worldCategory>Italien</worldCategory>
     </origin>
-    <intro lang="de">Käse-Pasta aus dem Ofen lebt von cremiger Sauce und einer schön gebräunten Oberfläche. Ein schlichtes, aber sehr dankbares Rezept für Tage, an denen Comfort Food gefragt ist.</intro>
+    <intro lang="de">Käse-Pasta aus dem Ofen lebt von cremiger Sauce und einer schön gebräunten Kruste. Ein schlichtes, aber sehr dankbares Comfort-Food – ideal, wenn alle satt und zufrieden werden sollen.</intro>
     <image src="images/rezeptbild_206.png" />
     <ingredients>
       <item>350 g Rigatoni</item>
@@ -25331,23 +25382,24 @@
       <item>Pfeffer</item>
     </ingredients>
     <preparation>
-      <step>Rigatoni in Salzwasser knapp al dente kochen und abgießen.</step>
-      <step>Butter im Topf schmelzen, Mehl einrühren und 1 Minute anschwitzen. Milch und Sahne unter Rühren angießen.</step>
-      <step>Die Sauce 5 Minuten sanft kochen, dann Gouda, Cheddar, Senf und die Hälfte des Parmesans einrühren.</step>
-      <step>Mit Salz und Pfeffer abschmecken und die Rigatoni darin vermengen.</step>
-      <step>Alles in eine Auflaufform füllen. Restlichen Parmesan mit Semmelbröseln mischen und darüberstreuen.</step>
-      <step>Bei 200 °C Ober-/Unterhitze 15 bis 20 Minuten goldbraun backen.</step>
+      <step nr="1">Rigatoni in Salzwasser 2 Minuten kürzer als Packungsangabe kochen – sie sollen knapp al dente sein. Abgießen.</step>
+      <step nr="2">Butter im Topf schmelzen, Mehl einrühren und 1 Minute anschwitzen. Milch und Sahne unter ständigem Rühren angießen.</step>
+      <step nr="3">Die Sauce 5 Minuten sanft köcheln lassen, dann Gouda, Cheddar, Senf und die Hälfte des Parmesans einrühren, bis alles geschmolzen ist.</step>
+      <step nr="4">Mit Salz und Pfeffer abschmecken und die Rigatoni darin vermengen.</step>
+      <step nr="5">Alles in eine Auflaufform füllen. Restlichen Parmesan mit Semmelbröseln mischen und darüberstreuen.</step>
+      <step nr="6">Bei 200 °C Ober-/Unterhitze 15 bis 20 Minuten goldbraun backen. 5 Minuten ruhen lassen und warm servieren.</step>
     </preparation>
     <timing>
-      <step>Vorbereitung: ca. 10 Minuten</step>
-      <step>Pasta kochen: ca. 10 Minuten</step>
-      <step>Käsesauce: ca. 12 Minuten</step>
-      <step>Backzeit: ca. 15 bis 20 Minuten</step>
-      <step>Gesamt: ca. 35 Minuten</step>
+      <item>Vorbereitung: ca. 10 Minuten</item>
+      <item>Pasta kochen: ca. 10 Minuten</item>
+      <item>Käsesauce: ca. 12 Minuten</item>
+      <item>Backzeit: ca. 15 bis 20 Minuten</item>
+      <item>Gesamt: ca. 40 bis 45 Minuten</item>
     </timing>
     <tips>
-      <tip>Der Senf gibt Tiefe, ohne als eigener Geschmack stark hervorzutreten.</tip>
-      <tip>Mit etwas gebratenem Lauch oder Brokkoli kann die Pasta unkompliziert erweitert werden.</tip>
+      <item>Der Senf gibt Tiefe, ohne als eigener Geschmack stark hervorzutreten.</item>
+      <item>Pasta im Ofen nicht zu weich kochen – sie gart in der Sauce noch nach.</item>
+      <item>Mit gebratenem Lauch oder Brokkoli lässt sich das Gericht unkompliziert erweitern.</item>
     </tips>
     <rating>8,8</rating>
     <translation lang="pl">
@@ -25370,23 +25422,24 @@
         <item>pieprz</item>
       </ingredients>
       <preparation>
-        <step>Ugotować rigatoni na lekko al dente w osolonej wodzie i odcedzić.</step>
-        <step>Rozpuścić masło w garnku, wsypać mąkę i podsmażyć 1 minutę. Wlać mleko i śmietankę, cały czas mieszając.</step>
-        <step>Gotować sos 5 minut na małym ogniu, następnie wmieszać goudę, cheddar, musztardę i połowę parmezanu.</step>
-        <step>Doprawić solą i pieprzem, po czym wymieszać z rigatoni.</step>
-        <step>Przełożyć do formy. Wymieszać resztę parmezanu z bułką tartą i posypać wierzch.</step>
-        <step>Piec 15 do 20 minut w 200 °C góra/dół, aż wierzch będzie złocisty.</step>
+        <step nr="1">Ugotować rigatoni w osolonej wodzie 2 minuty krócej niż na opakowaniu – mają być lekko al dente. Odcedzić.</step>
+        <step nr="2">Rozpuścić masło w garnku, wsypać mąkę i podsmażyć 1 minutę. Wlać mleko i śmietankę, cały czas mieszając.</step>
+        <step nr="3">Gotować sos 5 minut na małym ogniu, następnie wmiesać goudę, cheddar, musztardę i połowę parmezanu, aż się rozpuści.</step>
+        <step nr="4">Doprawić solą i pieprzem, po czym wymieszać z rigatoni.</step>
+        <step nr="5">Przełożyć do formy. Wymieszać resztę parmezanu z bułką tartą i posypać wierzch.</step>
+        <step nr="6">Piec 15 do 20 minut w 200 °C góra/dół, aż wierzch będzie złocisty. Odstawić 5 minut i podawać na ciepło.</step>
       </preparation>
       <timing>
-        <step>Przygotowanie: ok. 10 minut</step>
-        <step>Gotowanie makaronu: ok. 10 minut</step>
-        <step>Sos serowy: ok. 12 minut</step>
-        <step>Pieczenie: ok. 15 do 20 minut</step>
-        <step>Łącznie: ok. 35 minut</step>
+        <item>Przygotowanie: ok. 10 minut</item>
+        <item>Gotowanie makaronu: ok. 10 minut</item>
+        <item>Sos serowy: ok. 12 minut</item>
+        <item>Pieczenie: ok. 15 do 20 minut</item>
+        <item>Łącznie: ok. 40 do 45 minut</item>
       </timing>
       <tips>
-        <tip>Musztarda daje głębię smaku, ale nie powinna wybijać się na pierwszy plan.</tip>
-        <tip>Makaron można łatwo urozmaicić dodatkiem podsmażonego pora albo brokułu.</tip>
+        <item>Musztarda daje głębię smaku, ale nie powinna wybijać się na pierwszy plan.</item>
+        <item>Nie gotuj makaronu zbyt długo – w piekarniku dociągnie w sosie.</item>
+        <item>Danie można urozmaicić podsmażonym porem albo brokułem.</item>
       </tips>
     </translation>
     <translation lang="en">
@@ -25409,23 +25462,24 @@
         <item>pepper</item>
       </ingredients>
       <preparation>
-        <step nr="1">Cook rigatoni in salted water until just al dente and drain.</step>
-        <step nr="2">Melt butter in the pot, stir in flour and sauté for 1 minute. Pour in milk and cream while stirring.</step>
-        <step nr="3">Cook the sauce gently for 5 minutes, then stir in the Gouda, Cheddar, mustard and half the Parmesan.</step>
+        <step nr="1">Cook rigatoni in salted water for 2 minutes less than package directions – they should be just al dente. Drain.</step>
+        <step nr="2">Melt butter in the pot, stir in flour and sauté for 1 minute. Pour in milk and cream while stirring constantly.</step>
+        <step nr="3">Simmer the sauce gently for 5 minutes, then stir in Gouda, Cheddar, mustard and half the Parmesan until melted.</step>
         <step nr="4">Season with salt and pepper and mix in the rigatoni.</step>
-        <step nr="5">Pour everything into a baking dish. Mix the remaining Parmesan with breadcrumbs and sprinkle on top.</step>
-        <step nr="6">Bake at 200 °C top/bottom heat for 15 to 20 minutes until golden brown.</step>
+        <step nr="5">Pour everything into a baking dish. Mix remaining Parmesan with breadcrumbs and sprinkle on top.</step>
+        <step nr="6">Bake at 200 °C top/bottom heat for 15 to 20 minutes until golden brown. Rest for 5 minutes and serve warm.</step>
       </preparation>
       <timing>
-        <step nr="1">Preparation: approx. 10 minutes</step>
-        <step nr="2">Cook pasta: about 10 minutes</step>
-        <step nr="3">Cheese sauce: about 12 minutes</step>
-        <step nr="4">Baking time: approx. 15 to 20 minutes</step>
-        <step nr="5">Total: approx. 35 minutes</step>
+        <item>Preparation: approx. 10 minutes</item>
+        <item>Cook pasta: approx. 10 minutes</item>
+        <item>Cheese sauce: approx. 12 minutes</item>
+        <item>Baking time: approx. 15 to 20 minutes</item>
+        <item>Total: approx. 40 to 45 minutes</item>
       </timing>
       <tips>
-        <tip>The mustard adds depth without standing out strongly as its own flavor.</tip>
-        <tip>The pasta can easily be expanded with some fried leek or broccoli.</tip>
+        <item>Mustard adds depth without standing out strongly as its own flavor.</item>
+        <item>Don't overcook the pasta – it will finish cooking in the sauce in the oven.</item>
+        <item>Easily expanded with fried leek or broccoli.</item>
       </tips>
     </translation>
   </recipe>
@@ -29203,7 +29257,7 @@
       <region>Deutsche Küche</region>
       <worldCategory>Deutschland</worldCategory>
     </origin>
-    <intro lang="de">Ein frischer Schichtsalat mit gebratenem Hähnchen und cremiger Knoblauchsauce. Sehr gut für Gäste und optisch schön.</intro>
+    <intro lang="de">Ein frischer Schichtsalat mit gebratenem Hähnchen und cremiger Knoblauchsauce – optisch schön und ideal für Gäste. Jede Schicht bleibt klar erkennbar, der Salat zieht kurz durch und schmeckt dann rund und frisch.</intro>
     <image src="images/rezeptbild_239.png" alt="Schichtsalat mit Hähnchen und Knoblauchsauce" />
     <ingredients>
       <item>400 g Hähnchenbrust</item>
@@ -29222,28 +29276,29 @@
       <item>etwas Petersilie</item>
     </ingredients>
     <preparation>
-      <step nr="1">Hähnchenbrust würzen, in der Pfanne anbraten, abkühlen lassen und in kleine Stücke schneiden.</step>
-      <step nr="2">Eisbergsalat, Gurke und Tomaten vorbereiten.</step>
-      <step nr="3">Für die Sauce Joghurt, Mayonnaise, Knoblauch, Salz und Pfeffer verrühren.</step>
-      <step nr="4">Den Salat in Schichten in eine Form geben: Salat, Gemüse, Mais, Hähnchen, Sauce, Käse.</step>
-      <step nr="5">Mit Petersilie bestreuen und kurz ziehen lassen.</step>
+      <step nr="1">Hähnchenbrust mit Salz, Pfeffer und Paprikapulver würzen, in Öl 8 bis 10 Minuten anbraten, bis sie durch ist. Abkühlen lassen und in kleine Stücke schneiden.</step>
+      <step nr="2">Eisbergsalat waschen und in Streifen schneiden, Gurke in Scheiben, Tomaten würfeln, Mais abtropfen lassen.</step>
+      <step nr="3">Für die Sauce Joghurt, Mayonnaise, fein gehackten Knoblauch, Salz und Pfeffer glatt verrühren – die Sauce soll cremig, nicht zu flüssig sein.</step>
+      <step nr="4">In eine hohe Schüssel oder Form schichten: Salat, Gemüse, Mais, Hähnchen, Sauce und zum Schluss Käse.</step>
+      <step nr="5">Mit Petersilie bestreuen, 15 bis 30 Minuten kühl stellen und dann portionsweise servieren.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 20 Minuten</item>
-      <item>Bratzeit: ca. 10 Minuten</item>
-      <item>Ziehzeit: ca. 15 Minuten</item>
+      <item>Bratzeit Hähnchen: ca. 8 bis 10 Minuten</item>
+      <item>Ziehzeit im Kühlschrank: ca. 15 bis 30 Minuten</item>
+      <item>Gesamt: ca. 45 bis 60 Minuten</item>
     </timing>
     <tips>
-      <item>Sauce lieber nicht zu flüssig machen.</item>
-      <item>Auch mit Putenbrust machbar.</item>
-      <item>Mit geröstetem Brot ebenfalls gut.</item>
+      <item>Sauce lieber etwas dicker ansetzen – beim Durchziehen wird sie etwas flüssiger.</item>
+      <item>Auch mit Putenbrust statt Hähnchen sehr gut.</item>
+      <item>Mit geröstetem Brot oder Baguette servieren.</item>
     </tips>
     <rating>8/10</rating>
     <translation lang="pl">
       <name>Sałatka warstwowa z kurczakiem i sosem czosnkowym</name>
       <persons>Dla 4–6 osób</persons>
       <category>Sałatki i dodatki / szybka kuchnia</category>
-      <intro lang="pl">Sałatka warstwowa z kurczakiem, świeżymi warzywami i prostym sosem czosnkowym. Dobrze wygląda i nadaje się zarówno na co dzień, jak i dla gości.</intro>
+      <intro>Sałatka warstwowa z kurczakiem, świeżymi warzywami i kremowym sosem czosnkowym – ładna na stole i idealna dla gości. Warstwy pozostają wyraźne, a po krótkim czasie w lodówce smakuje pełniej.</intro>
       <ingredients>
         <item>400 g piersi z kurczaka</item>
         <item>1 łyżka oleju</item>
@@ -29261,31 +29316,29 @@
         <item>trochę pietruszki</item>
       </ingredients>
       <preparation>
-        <step nr="1">Doprawić pierś z kurczaka i usmażyć ją na patelni.</step>
-        <step nr="2">Zostawić do ostygnięcia i pokroić na małe kawałki.</step>
-        <step nr="3">Przygotować sałatę lodową, ogórek i pomidory.</step>
-        <step nr="4">Na sos wymieszać jogurt, majonez, czosnek, sól i pieprz.</step>
-        <step nr="5">Układać sałatkę warstwami: sałata, warzywa, kukurydza, kurczak, sos, ser.</step>
-        <step nr="6">Posypać pietruszką.</step>
-        <step nr="7">Odstawić na chwilę i podawać.</step>
+        <step nr="1">Doprawić pierś z kurczaka solą, pieprzem i papryką, usmażyć na oleju 8 do 10 minut, aż będzie miękka. Ostudzić i pokroić na małe kawałki.</step>
+        <step nr="2">Umyć sałatę lodową i pokroić w paski, ogórek w plasterki, pomidory w kostkę, kukurydzę odcedzić.</step>
+        <step nr="3">Na sos wymiesać jogurt, majonez, drobno posiekany czosnek, sól i pieprz – sos ma być kremowy, nie zbyt rzadki.</step>
+        <step nr="4">Układać w wysokiej misce warstwami: sałata, warzywa, kukurydza, kurczak, sos i na końcu ser.</step>
+        <step nr="5">Posypać pietruszką, odstawić na 15 do 30 minut do lodówki i podawać porcjami.</step>
       </preparation>
       <timing>
-        <item>Przygotowanie: 20 minut</item>
-        <item>Smażenie: 10 minut</item>
-        <item>Czas przegryzienia: 15 minut</item>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Smażenie kurczaka: ok. 8–10 minut</item>
+        <item>Czas w lodówce: ok. 15–30 minut</item>
+        <item>Łącznie: ok. 45–60 minut</item>
       </timing>
       <tips>
-        <item>To ładna sałatka dla gości.</item>
-        <item>Sos nie powinien być zbyt rzadki.</item>
-        <item>Dobrze smakuje z pieczywem albo grzankami.</item>
-        <item>Można ją zrobić także z indykiem.</item>
+        <item>Sos lepiej zrobić nieco gęstszy – podczas przegryzienia lekko zmięknie.</item>
+        <item>Świetnie smakuje także z indykiem zamiast kurczaka.</item>
+        <item>Podawaj z pieczywem albo grzankami.</item>
       </tips>
     </translation>
     <translation lang="en">
       <name>Layered salad with chicken and garlic sauce</name>
       <persons>4-6 people</persons>
       <category>Salads &amp; Side Dishes / Fast Food</category>
-      <intro>A fresh layered salad with fried chicken and creamy garlic sauce. Very good for guests and visually beautiful.</intro>
+      <intro>A fresh layered salad with fried chicken and creamy garlic sauce – visually beautiful and ideal for guests. Each layer stays clearly visible, and after a short chill it tastes round and fresh.</intro>
       <ingredients>
         <item>400g chicken breast</item>
         <item>1 tbsp oil</item>
@@ -29303,21 +29356,22 @@
         <item>some parsley</item>
       </ingredients>
       <preparation>
-        <step nr="1">Season the chicken breast, fry it in the pan, let it cool and cut into small pieces.</step>
-        <step nr="2">Prepare iceberg lettuce, cucumber and tomatoes.</step>
-        <step nr="3">For the sauce, mix yogurt, mayonnaise, garlic, salt and pepper.</step>
-        <step nr="4">Put the salad in a mold in layers: lettuce, vegetables, corn, chicken, sauce, cheese.</step>
-        <step nr="5">Sprinkle with parsley and let it steep briefly.</step>
+        <step nr="1">Season chicken breast with salt, pepper and paprika powder, fry in oil for 8 to 10 minutes until cooked through. Cool and cut into small pieces.</step>
+        <step nr="2">Wash iceberg lettuce and cut into strips, slice cucumber, dice tomatoes, drain corn.</step>
+        <step nr="3">For the sauce, mix yogurt, mayonnaise, finely chopped garlic, salt and pepper until smooth – the sauce should be creamy, not too runny.</step>
+        <step nr="4">Layer in a tall bowl or dish: lettuce, vegetables, corn, chicken, sauce and cheese on top.</step>
+        <step nr="5">Sprinkle with parsley, chill for 15 to 30 minutes and serve in portions.</step>
       </preparation>
       <timing>
         <item>Preparation: approx. 20 minutes</item>
-        <item>Roasting time: approx. 10 minutes</item>
-        <item>Brewing time: approx. 15 minutes</item>
+        <item>Chicken frying time: approx. 8 to 10 minutes</item>
+        <item>Chilling time: approx. 15 to 30 minutes</item>
+        <item>Total: approx. 45 to 60 minutes</item>
       </timing>
       <tips>
-        <item>It's better not to make the sauce too runny.</item>
-        <item>Can also be made with turkey breast.</item>
-        <item>Also good with toasted bread.</item>
+        <item>Make the sauce slightly thick – it loosens a little while chilling.</item>
+        <item>Also works very well with turkey breast instead of chicken.</item>
+        <item>Serve with toasted bread or baguette.</item>
       </tips>
     </translation>
   </recipe>
@@ -37069,7 +37123,7 @@
       <item>Sehr gut mit Joghurt oder Kräuterquark servieren.</item>
     </tips>
     <rating>sehr gut</rating>
-    <translation lang="pl">
+    <knowledge><item>Tomatensoße und Gemüse können am Vortag vorbereitet werden; Fladenbrot unmittelbar vor dem Backen belegen.</item><item>Reste schmecken am nächsten Tag im Ofen oder in der Pfanne am besten wieder knusprig.</item><item>Statt Sucuk funktioniert auch scharfe Salami oder geräucherte Paprikawurst.</item><item>Mit Joghurt, Kräuterquark oder einem kleinen Salat wird daraus ein schnelles Abendessen.</item></knowledge><translation lang="pl">
       <name>Pizza typu Flatbread w stylu Sucuk</name>
       <persons>2-3 osoby</persons>
       <category>Pizza/Fastfood</category>
@@ -37108,7 +37162,7 @@
         <item>Bardzo dobrze podawać z jogurtem lub twarogiem ziołowym.</item>
       </tips>
       <rating>bardzo dobre</rating>
-    </translation>
+    <knowledge><item>Sos i warzywa można przygotować wcześniej; placek przełóż bezpośrednio przed pieczeniem.</item><item>Resztki następnego dnia najlepiej podgrzać w piekarniku albo na patelni, żeby znów były chrupiące.</item><item>Zamiast sucuk można użyć ostrej salami albo kiełbasy paprykowej.</item><item>Jogurt, twarożek z ziołami albo mała sałatka robią z tego szybki obiad.</item></knowledge></translation>
     <translation lang="en">
       <name>Flatbread pizza Sucuk style</name>
       <persons>2-3 people</persons>
@@ -37148,11 +37202,11 @@
         <item>Serve very well with yogurt or herb quark.</item>
       </tips>
       <rating>very good</rating>
-    </translation>
+    <knowledge><item>Tomato sauce and vegetables can be prepared ahead; top the flatbread when you are ready to bake.</item><item>Leftovers crisp up best reheated in the oven or pan the next day.</item><item>Spicy salami or smoked paprika sausage works instead of sucuk.</item><item>Yogurt, herb quark or a small salad turns this into a quick dinner.</item></knowledge></translation>
   </recipe>
   <recipe id="300">
     <name>Knusprige Tortilla-Hackfleisch-Taschen</name>
-    <intro lang="de">Kein weich gerollter Burrito, sondern gefaltete Tortilla-Taschen, die in der Pfanne oder im Airfryer schön knusprig werden. Würziges Hackfleisch, Käse und Gemüse stecken innen – außen wird es goldbraun und richtig crunchig.</intro>
+    <intro lang="de">Kein weich gerollter Burrito, sondern gefaltete Tortilla-Taschen, die in der Pfanne oder im Airfryer schön knusprig werden. Würziges Hackfleisch, Käse und Gemüse innen – außen goldbraun und richtig crunchig.</intro>
     <persons>3–4 Personen</persons>
     <category>Schnelle Küche</category>
     <origin>
@@ -37177,35 +37231,36 @@
       <item>optional: 2 EL Salsa</item>
     </ingredients>
     <preparation>
-      <step nr="1">Zwiebel und Paprika fein würfeln.</step>
-      <step nr="2">Hackfleisch in einer Pfanne kräftig anbraten.</step>
-      <step nr="3">Gemüse, Mais, Tomatenmark, Paprika, Kreuzkümmel, Salz und Pfeffer zugeben und 5 Minuten mitbraten.</step>
-      <step nr="4">Käse unterrühren, bis die Füllung cremig ist.</step>
-      <step nr="5">Tortillas leicht erwärmen.</step>
-      <step nr="6">Pro Tortilla Füllung auf eine Hälfte geben, zu einer Tasche falten und die Ränder fest andrücken.</step>
-      <step nr="7">Taschen in Öl von beiden Seiten goldbraun und knusprig braten – oder im Airfryer bei 190 °C 6–8 Minuten backen.</step>
-      <step nr="8">Mit Salsa servieren.</step>
+      <step nr="1">Zwiebel und Paprika fein würfeln, Mais abtropfen lassen.</step>
+      <step nr="2">Öl in einer Pfanne erhitzen und Hackfleisch kräftig anbraten, bis es krümelig ist.</step>
+      <step nr="3">Gemüse, Mais, Tomatenmark, Paprikapulver, Kreuzkümmel, Salz und Pfeffer zugeben und 5 Minuten mitbraten.</step>
+      <step nr="4">Hitze reduzieren, Käse unterrühren und kurz schmelzen lassen, bis die Füllung cremig ist. Etwas abkühlen lassen.</step>
+      <step nr="5">Tortillas trocken in einer Pfanne oder kurz in der Mikrowelle erwärmen.</step>
+      <step nr="6">Pro Tortilla Füllung auf eine Hälfte geben, zur Tasche falten und die Ränder fest andrücken.</step>
+      <step nr="7">Taschen in Öl von beiden Seiten 2 bis 3 Minuten goldbraun braten – oder im Airfryer bei 190 °C 6 bis 8 Minuten, einmal wenden.</step>
+      <step nr="8">Mit Salsa servieren – am besten sofort knusprig essen.</step>
     </preparation>
     <timing>
       <item>Vorbereitung: ca. 10 Minuten</item>
-      <item>Pfannen-/Airfryer-Zeit: ca. 12–15 Minuten</item>
-      <item>Gesamt: ca. 25 Minuten</item>
+      <item>Füllung: ca. 12 Minuten</item>
+      <item>Pfannen-/Airfryer-Zeit: ca. 6 bis 8 Minuten</item>
+      <item>Gesamt: ca. 25 bis 30 Minuten</item>
     </timing>
     <tips>
-      <item>Nicht zu viel Füllung, sonst geht die Tasche beim Falten auf.</item>
-      <item>Im Airfryer werden die Taschen besonders knusprig.</item>
-      <item>Bewusst anders als ein gerollter Burrito – hier steht die Knusprigkeit im Vordergrund.</item>
+      <item>Nicht zu viel Füllung – sonst geht die Tasche beim Falten auf.</item>
+      <item>Füllung kurz abkühlen lassen, dann bleibt die Tortilla beim Falten stabiler.</item>
+      <item>Im Airfryer werden die Taschen besonders knusprig – beide Seiten kurz mit Öl bestreichen.</item>
     </tips>
     <rating>sehr gut</rating>
     <translation lang="pl">
       <name>Kieszonki z mięsa mielonego na chrupiącej tortilli</name>
       <persons>3-4 osoby</persons>
       <category>Szybka kuchnia</category>
-      <intro>Nie miękko zwinięte burrito, ale złożone kieszenie tortilli, które stają się ładne i chrupiące na patelni lub we frytkownicy. W środku znajduje się pikantne mięso mielone, ser i warzywa, a na zewnątrz jest złotobrązowe i naprawdę chrupiące.</intro>
+      <intro>Nie miękko zwinięte burrito, lecz złożone kieszenie tortilli – chrupiące na patelni lub we frytkownicy. W środku pikantne mięso, ser i warzywa, na zewnątrz złoto i mocny crunch.</intro>
       <ingredients>
-        <item>500g mięsa mielonego</item>
+        <item>500 g mięsa mielonego</item>
         <item>1 cebula</item>
-        <item>1 pieprz</item>
+        <item>1 papryka</item>
         <item>1 puszka kukurydzy</item>
         <item>150 g startego sera</item>
         <item>8 małych tortilli pszennych</item>
@@ -37213,29 +37268,30 @@
         <item>1 łyżeczka papryki w proszku</item>
         <item>1 łyżeczka kminku</item>
         <item>2 łyżki oleju</item>
-        <item>Sól</item>
+        <item>sól</item>
         <item>pieprz</item>
         <item>opcjonalnie: 2 łyżki salsy</item>
       </ingredients>
       <preparation>
-        <step nr="1">Drobno posiekaj cebulę i paprykę.</step>
-        <step nr="2">Na patelni energicznie podsmaż mięso mielone.</step>
-        <step nr="3">Dodać warzywa, kukurydzę, koncentrat pomidorowy, paprykę, kminek, sól i pieprz i smażyć przez 5 minut.</step>
-        <step nr="4">Mieszaj ser, aż nadzienie będzie kremowe.</step>
-        <step nr="5">Lekko podgrzej tortille.</step>
-        <step nr="6">Na połówkę każdej tortilli nakładamy farsz, zkładamy ją do kieszonki i mocno dociskamy brzegi.</step>
-        <step nr="7">Smażyć kieszenie na oleju z obu stron na złoty kolor i chrupkość – lub piec w frytkownicy w temperaturze 190°C przez 6-8 minut.</step>
-        <step nr="8">Podawać z salsą.</step>
+        <step nr="1">Drobno posiekać cebulę i paprykę, kukurydzę odcedzić.</step>
+        <step nr="2">Rozgrzać olej na patelni i usmażyć mięso mielone, aż będzie sypkie.</step>
+        <step nr="3">Dodać warzywa, kukurydzę, koncentrat, paprykę, kminek, sól i pieprz, smażyć 5 minut.</step>
+        <step nr="4">Zmniejszyć ogień, wmiesać ser i krótko rozpuścić, aż farsz będzie kremowy. Lekko ostudzić.</step>
+        <step nr="5">Krótko podgrzać tortille na suchej patelni albo w mikrofalówce.</step>
+        <step nr="6">Na połowę każdej tortilli nałożyć farsz, złożyć w kieszonkę i mocno docisnąć brzegi.</step>
+        <step nr="7">Smażyć na oleju z obu stron po 2 do 3 minut – albo piec we frytkownicy w 190 °C przez 6 do 8 minut, raz obracając.</step>
+        <step nr="8">Podawać z salsą – najlepiej od razu, póki są chrupiące.</step>
       </preparation>
       <timing>
         <item>Przygotowanie: ok. 10 minut</item>
-        <item>Czas pracy patelni/frytownicy: ok. 12-15 minut</item>
-        <item>Razem: ok. 25 minut</item>
+        <item>Farsz: ok. 12 minut</item>
+        <item>Patelnia/frytkownica: ok. 6–8 minut</item>
+        <item>Razem: ok. 25–30 minut</item>
       </timing>
       <tips>
-        <item>Nie napełniaj zbyt dużo, w przeciwnym razie torba otworzy się po złożeniu.</item>
-        <item>Kieszonki stają się szczególnie chrupiące we frytkownicy.</item>
-        <item>Celowo różni się od zawiniętego burrito – nacisk położony jest tutaj na chrupkość.</item>
+        <item>Nie napełniaj zbyt mocno – inaczej kieszonka pęknie przy składaniu.</item>
+        <item>Ostudzony farsz ułatwia składanie i stabilizuje tortillę.</item>
+        <item>We frytkownicy smakują najbardziej chrupiąco – lekko posmaruj obie strony olejem.</item>
       </tips>
       <rating>bardzo dobre</rating>
     </translation>
@@ -37243,7 +37299,7 @@
       <name>Crispy tortilla minced meat pockets</name>
       <persons>3-4 people</persons>
       <category>Fast cuisine</category>
-      <intro>Not a softly rolled burrito, but folded tortilla pockets that get nice and crispy in the pan or air fryer. Spicy minced meat, cheese and vegetables are inside - the outside is golden brown and really crunchy.</intro>
+      <intro>Not a softly rolled burrito, but folded tortilla pockets that get crispy in the pan or air fryer. Spicy minced meat, cheese and vegetables inside – golden and crunchy on the outside.</intro>
       <ingredients>
         <item>500g minced meat</item>
         <item>1 onion</item>
@@ -37260,24 +37316,25 @@
         <item>optional: 2 tbsp salsa</item>
       </ingredients>
       <preparation>
-        <step nr="1">Finely dice the onion and peppers.</step>
-        <step nr="2">Fry the minced meat vigorously in a pan.</step>
+        <step nr="1">Finely dice onion and pepper, drain corn.</step>
+        <step nr="2">Heat oil in a pan and fry minced meat until crumbly.</step>
         <step nr="3">Add vegetables, corn, tomato paste, paprika, cumin, salt and pepper and fry for 5 minutes.</step>
-        <step nr="4">Stir in cheese until filling is creamy.</step>
-        <step nr="5">Warm the tortillas slightly.</step>
-        <step nr="6">Put the filling on one half of each tortilla, fold it into a pocket and press the edges firmly.</step>
-        <step nr="7">Fry the pockets in oil on both sides until golden brown and crispy - or bake in the air fryer at 190 °C for 6-8 minutes.</step>
-        <step nr="8">Serve with salsa.</step>
+        <step nr="4">Reduce heat, stir in cheese until creamy. Let cool slightly.</step>
+        <step nr="5">Warm tortillas briefly in a dry pan or microwave.</step>
+        <step nr="6">Put filling on one half of each tortilla, fold into a pocket and press edges firmly.</step>
+        <step nr="7">Fry in oil for 2 to 3 minutes per side until golden – or bake in air fryer at 190 °C for 6 to 8 minutes, turning once.</step>
+        <step nr="8">Serve with salsa – best eaten immediately while crispy.</step>
       </preparation>
       <timing>
         <item>Preparation: approx. 10 minutes</item>
-        <item>Pan/Air Fryer Time: Approx. 12-15 minutes</item>
-        <item>Total: approx. 25 minutes</item>
+        <item>Filling: approx. 12 minutes</item>
+        <item>Pan/air fryer time: approx. 6 to 8 minutes</item>
+        <item>Total: approx. 25 to 30 minutes</item>
       </timing>
       <tips>
-        <item>Don't fill too much, otherwise the bag will open when folded.</item>
-        <item>The pockets become particularly crispy in the air fryer.</item>
-        <item>Deliberately different from a rolled burrito – the focus here is on the crunchiness.</item>
+        <item>Don't overfill – otherwise the pocket opens when folding.</item>
+        <item>Let filling cool slightly so the tortilla folds more easily.</item>
+        <item>Especially crispy in the air fryer – lightly brush both sides with oil.</item>
       </tips>
       <rating>very good</rating>
     </translation>
@@ -37598,9 +37655,15 @@
     <tips>
       <item>Ohne Hähnchen ist die Suppe vegetarisch und genauso gut.</item>
       <item>Ein süß-säuerlicher Apfel passt besonders gut zum Curry.</item>
-      <item>Nicht zu stark kochen, damit der Apfel noch etwas Biss behält.</item>
+      <item>Nicht zu lang köcheln, damit der Apfel noch etwas fest bleibt.</item>
     </tips>
     <rating>sehr gut</rating>
+    <knowledge>
+      <item>Die Suppe lässt sich am Vortag vorbereiten und schmeckt aufgewärmt oft noch besser.</item>
+      <item>Ohne Hähnchen ist die Mulligatawny vegetarisch; Sahne lässt sich durch Kokosmilch ersetzen.</item>
+      <item>Im Kühlschrank hält sich die Suppe 2–3 Tage gut.</item>
+      <item>Als Beilage passt frisches Brot oder Naan.</item>
+    </knowledge>
     <translation lang="pl">
       <name>Zupa Mulligatawny</name>
       <persons>4 osoby</persons>
@@ -37641,9 +37704,15 @@
       <tips>
         <item>Bez kurczaka zupa jest wegetariańska i równie dobra.</item>
         <item>Do curry szczególnie dobrze komponuje się słodko-kwaśne jabłko.</item>
-        <item>Nie gotuj zbyt długo, aby jabłko zachowało trochę kęsa.</item>
+        <item>Nie gotuj zbyt długo, aby jabłko zachowało lekki kęs.</item>
       </tips>
       <rating>bardzo dobre</rating>
+      <knowledge>
+        <item>Zupę można przygotować dzień wcześniej – po podgrzaniu często smakuje jeszcze lepiej.</item>
+        <item>Bez kurczaka Mulligatawny jest wegetariańska; śmietanę można zastąpić mlekiem kokosowym.</item>
+        <item>W lodówce zupa trzyma się dobrze przez 2–3 dni.</item>
+        <item>Jako dodatek pasuje świeże pieczywo lub naan.</item>
+      </knowledge>
     </translation>
     <translation lang="en">
       <name>Mulligatawny soup</name>
@@ -37685,9 +37754,15 @@
       <tips>
         <item>Without the chicken, the soup is vegetarian and just as good.</item>
         <item>A sweet and sour apple goes particularly well with the curry.</item>
-        <item>Do not overcook so that the apple retains some bite.</item>
+        <item>Do not simmer too long so the apple stays slightly firm.</item>
       </tips>
       <rating>very good</rating>
+      <knowledge>
+        <item>The soup can be prepared the day before and often tastes even better when reheated.</item>
+        <item>Without chicken the Mulligatawny is vegetarian; cream can be replaced with coconut milk.</item>
+        <item>It keeps well in the fridge for 2–3 days.</item>
+        <item>Fresh bread or naan works well as a side.</item>
+      </knowledge>
     </translation>
   </recipe>
   <recipe id="304">
@@ -37995,7 +38070,7 @@
       <item>Auch kalt am nächsten Tag sehr gut.</item>
     </tips>
     <rating>sehr gut</rating>
-    <translation lang="pl">
+    <knowledge><item>Rhabarber und Crumble-Masse lassen sich getrennt vorbereiten; kurz vor dem Backen zusammenfügen.</item><item>Reste halten sich im Kühlschrank 2 Tage – im Ofen oder Airfryer kurz wieder aufbacken.</item><item>Der Crumble lässt sich gut einfrieren und später direkt gefroren backen.</item><item>Statt Vanilleeis passt auch Sahne, Crème fraîche oder warmer Vanillepudding.</item></knowledge><translation lang="pl">
       <name>Kruszonka rabarbarowa z lodami waniliowymi</name>
       <persons>4-6 osób</persons>
       <category>Pieczenie i słodycze / Ciasta</category>
@@ -38033,7 +38108,7 @@
         <item>Bardzo dobre również na zimno następnego dnia.</item>
       </tips>
       <rating>bardzo dobre</rating>
-    </translation>
+    <knowledge><item>Rabarbar i masę crumble można przygotować osobno; połącz bezpośrednio przed pieczeniem.</item><item>Resztki trzymają się w lodówce 2 dni – podgrzej w piekarniku albo frytkownicy.</item><item>Crumble można zamrozić i piec później prosto z mrożonego stanu.</item><item>Zamiast lodów waniliowych pasuje bita śmietana albo ciepły budyń waniliowy.</item></knowledge></translation>
     <translation lang="en">
       <name>Rhubarb crumble with vanilla ice cream</name>
       <persons>4-6 people</persons>
@@ -38072,7 +38147,7 @@
         <item>Also very good cold the next day.</item>
       </tips>
       <rating>very good</rating>
-    </translation>
+    <knowledge><item>Rhubarb and crumble mix can be prepared separately; combine when you are ready to bake.</item><item>Leftovers keep in the fridge for 2 days – reheat briefly in the oven or air fryer.</item><item>The crumble freezes well and can be baked straight from frozen later.</item><item>Whipped cream, crème fraîche or warm vanilla custard work instead of ice cream.</item></knowledge></translation>
   </recipe>
   <recipe id="307">
     <name>Gerösteter Blumenkohl im Ganzen</name>
@@ -38248,7 +38323,7 @@
       <item>Am nächsten Tag schmeckt das Curry oft noch besser.</item>
     </tips>
     <rating>sehr gut</rating>
-    <translation lang="pl">
+    <knowledge><item>Gemüse und Kichererbsen können am Vortag vorbereitet werden; Curry unmittelbar vor dem Essen fertig köcheln.</item><item>Reste halten sich im Kühlschrank 2–3 Tage und schmecken aufgewärmt oft noch besser.</item><item>Statt Kokosmilch funktioniert auch Sahne für eine mildere, cremigere Variante.</item><item>Passt gut zu Basmatireis, Naan oder warmem Fladenbrot.</item></knowledge><translation lang="pl">
       <name>Curry z brukselki i ciecierzycy</name>
       <persons>4 osoby</persons>
       <category>Dania smażone na patelni / kuchnia szybka</category>
@@ -38290,7 +38365,7 @@
         <item>Curry często smakuje jeszcze lepiej następnego dnia.</item>
       </tips>
       <rating>bardzo dobre</rating>
-    </translation>
+    <knowledge><item>Warzywa i ciecierzycę można przygotować wcześniej; curry dokończ bezpośrednio przed jedzeniem.</item><item>Resztki trzymają się w lodówce 2–3 dni i po podgrzaniu często smakują lepiej.</item><item>Zamiast mleka kokosowego można użyć śmietanki na łagodniejszą wersję.</item><item>Dobrze pasuje ryż basmati, naan albo ciepłe pieczywo.</item></knowledge></translation>
     <translation lang="en">
       <name>Brussels sprouts curry with chickpeas</name>
       <persons>4 people</persons>
@@ -38333,7 +38408,7 @@
         <item>The curry often tastes even better the next day.</item>
       </tips>
       <rating>very good</rating>
-    </translation>
+    <knowledge><item>Vegetables and chickpeas can be prepared ahead; finish the curry when you are ready to eat.</item><item>Leftovers keep in the fridge for 2–3 days and often taste better reheated.</item><item>Cream works instead of coconut milk for a milder, creamier version.</item><item>Basmati rice, naan or warm flatbread pair well.</item></knowledge></translation>
   </recipe>
   <recipe id="309">
     <name>Trüffel-Pasta</name>
@@ -40610,12 +40685,7 @@
       <item>Sehr gut in der Gusseisenpfanne oder auf dem Grill.</item>
     </tips>
     <rating>sehr gut</rating>
-    <knowledge>
-      <item>Jambalaya stammt aus Louisiana in den Südstaaten der USA.</item>
-      <item>Reis, Wurst, Hähnchen und Meeresfrüchte werden in einer Pfanne gegart.</item>
-      <item>Cajun-Gewürze geben dem Gericht seine typische Würze.</item>
-    </knowledge>
-    <translation lang="pl">
+    <knowledge><item>Gemüse und Fleisch können am Vortag vorbereitet werden; Reis und Garnelen erst in den letzten Minuten zugeben.</item><item>Reste halten sich im Kühlschrank 2 Tage – mit etwas Brühe aufwärmen, damit der Reis nicht trocken wird.</item><item>Statt Chorizo funktioniert auch Andouille oder geräucherte Paprikawurst.</item><item>Mit Baguette oder Cornbread passt die Jambalaya als rustikales One-Pot-Gericht.</item></knowledge><translation lang="pl">
       <name>Jambalaya – Luizjana/USA</name>
       <persons>4 osoby</persons>
       <category>Kulinarna podróż po świecie / Podróż po świecie</category>
@@ -40648,13 +40718,8 @@
       <tips>
         <item>Bardzo dobra w żeliwnej patelni lub na ruszcie.</item>
       </tips>
-      <knowledge>
-        <item>Jambalaya pochodzi z Luizjany na południu USA.</item>
-        <item>Ryż, kiełbasa, kurczak i owoce morza gotuje się w jednej patelni.</item>
-        <item>Przyprawy Cajun nadają daniu typową ostrość.</item>
-      </knowledge>
       <rating>bardzo dobre</rating>
-    </translation>
+    <knowledge><item>Warzywa i mięso można przygotować wcześniej; ryż i krewetki dodaj na końcu.</item><item>Resztki trzymają się w lodówce 2 dni – podgrzewaj z odrobiną bulionu, żeby ryż nie wyschł.</item><item>Zamiast chorizo można użyć andouille albo kiełbasy wędzonej.</item><item>Bagietka albo cornbread dobrze uzupełniają jambalayę z jednego garnka.</item></knowledge></translation>
     <translation lang="en">
       <name>Jambalaya – Louisiana/USA</name>
       <persons>4 people</persons>
@@ -40688,13 +40753,8 @@
       <tips>
         <item>Works very well in a cast-iron pan or on the grill.</item>
       </tips>
-      <knowledge>
-        <item>Jambalaya comes from Louisiana in the American South.</item>
-        <item>Rice, sausage, chicken and seafood are cooked in one pan.</item>
-        <item>Cajun spices give the dish its characteristic heat.</item>
-      </knowledge>
       <rating>very good</rating>
-    </translation>
+    <knowledge><item>Vegetables and meat can be prepared ahead; add rice and prawns in the final minutes.</item><item>Leftovers keep in the fridge for 2 days – reheat with a little broth so the rice stays moist.</item><item>Andouille or smoked paprika sausage works instead of chorizo.</item><item>Baguette or cornbread pair well with this rustic one-pot dish.</item></knowledge></translation>
   </recipe>
   <recipe id="328">
     <name>Rendang – Indonesien</name>
@@ -43303,7 +43363,7 @@
       <item>Mit Puderzucker und Zimt servieren.</item>
     </tips>
     <rating>9,0/10</rating>
-    <translation lang="pl">
+    <knowledge><item>Teig und Marillenfüllung können am Vortag vorbereitet werden; Knödel unmittelbar vor dem Kochen formen.</item><item>Gekochte Knödel halten sich im Kühlschrank 1 Tag – in Butter oder Bröseln kurz anbraten.</item><item>Rohe Knödel lassen sich gut einfrieren und später direkt kochen.</item><item>Statt Marillen funktioniert auch Zwetschgenmus oder Apfelmus für eine andere Füllung.</item></knowledge><translation lang="pl">
       <name>Marillenknödel</name>
       <persons>4 osoby</persons>
       <category>Wypieki i słodkości</category>
@@ -43331,7 +43391,7 @@
         <item>Podawać z cukrem pudrem i cynamonem.</item>
       </tips>
       <rating>9,0/10</rating>
-    </translation>
+    <knowledge><item>Ciasto i nadzienie morelowe można przygotować wcześniej; knedle formuj bezpośrednio przed gotowaniem.</item><item>Ugotowane knedle trzymają się w lodówce 1 dzień – podsmaż na maśle albo w bułce tartej.</item><item>Surowe knedle można zamrozić i gotować później prosto z mrożonego stanu.</item><item>Zamiast moreli można użyć powideł śliwkowych albo jabłkowych.</item></knowledge></translation>
     <translation lang="en">
       <name>Marillenknödel</name>
       <persons>4 people</persons>
@@ -43360,7 +43420,7 @@
         <item>Serve with icing sugar and cinnamon.</item>
       </tips>
       <rating>9.0/10</rating>
-    </translation>
+    <knowledge><item>Dough and apricot filling can be prepared ahead; shape dumplings when you are ready to cook.</item><item>Cooked dumplings keep in the fridge for 1 day – pan-fry in butter or breadcrumbs.</item><item>Raw dumplings freeze well and can be cooked straight from frozen.</item><item>Plum or apple purée works instead of apricots for a different filling.</item></knowledge></translation>
   </recipe>
   <recipe id="353">
     <name>Schweinsbraten mit Knödeln</name>
@@ -43932,7 +43992,7 @@
       <item>Mit frischem Dill garnieren.</item>
     </tips>
     <rating>9,0/10</rating>
-    <translation lang="pl">
+    <knowledge><item>Fisch und Gemüse können am Vortag vorbereitet werden; Suppe unmittelbar vor dem Servieren sanft köcheln.</item><item>Reste halten sich im Kühlschrank 1–2 Tage – nicht zu stark aufkochen, damit der Fisch zart bleibt.</item><item>Statt Sahne funktioniert auch Crème fraîche für etwas mehr Säure.</item><item>Mit Roggenbrot oder knusprigem Baguette passt die Suppe als leichtes Hauptgericht.</item></knowledge><translation lang="pl">
       <name>Norweska zupa rybna</name>
       <persons>4 osoby</persons>
       <category>Zupy</category>
@@ -43965,7 +44025,7 @@
         <item>Udekorować świeżym koperkiem.</item>
       </tips>
       <rating>9,0/10</rating>
-    </translation>
+    <knowledge><item>Ryby i warzywa można przygotować wcześniej; zupę gotuj delikatnie bezpośrednio przed podaniem.</item><item>Resztki trzymają się w lodówce 1–2 dni – nie gotuj zbyt mocno, żeby ryba nie twardniała.</item><item>Zamiast śmietanki można użyć crème fraîche dla lekko kwaskowego smaku.</item><item>Chleb żytni albo chrupiąca bagietka dobrze uzupełniają zupę jako lekkie danie główne.</item></knowledge></translation>
     <translation lang="en">
       <name>Norwegian fish soup</name>
       <persons>4 people</persons>
@@ -43999,7 +44059,7 @@
         <item>Garnish with fresh dill.</item>
       </tips>
       <rating>9.0/10</rating>
-    </translation>
+    <knowledge><item>Fish and vegetables can be prepared ahead; simmer the soup gently when you are ready to serve.</item><item>Leftovers keep in the fridge for 1–2 days – do not boil hard or the fish turns tough.</item><item>Crème fraîche works instead of cream for a slightly tangier note.</item><item>Rye bread or crispy baguette pair well as a light main meal.</item></knowledge></translation>
   </recipe>
   <recipe id="359">
     <name>Chili con Carne</name>
@@ -44926,7 +44986,7 @@
       <item>Perfekt zu Grillfleisch.</item>
     </tips>
     <rating>8,8/10</rating>
-    <translation lang="pl">
+    <knowledge><item>Gemüse lässt sich vorbereiten; Chakalaka kurz vor dem Grillen oder Servieren fertig köcheln.</item><item>Im Kühlschrank hält sich das Relish 3–4 Tage und schmeckt aufgewärmt oft noch besser.</item><item>Statt Kidneybohnen funktioniert auch weiße oder schwarze Bohnen aus der Dose.</item><item>Passt hervorragend zu Braai, Boerewors, Steaks oder gegrilltem Hähnchen.</item></knowledge><translation lang="pl">
       <name>Chakalaka</name>
       <persons>4 osoby</persons>
       <category>Dodatki</category>
@@ -44959,7 +45019,7 @@
         <item>Idealne do mięsa z grilla.</item>
       </tips>
       <rating>8,8/10</rating>
-    </translation>
+    <knowledge><item>Warzywa można przygotować wcześniej; chakalakę dokończ bezpośrednio przed grillem albo podaniem.</item><item>W lodówce relish trzyma się 3–4 dni i po podgrzaniu często smakuje lepiej.</item><item>Zamiast czerwonej fasoli można użyć białej albo czarnej z puszki.</item><item>Świetnie pasuje do braai, boerewors, steków albo kurczaka z grilla.</item></knowledge></translation>
     <translation lang="en">
       <name>Chakalaka</name>
       <persons>4 people</persons>
@@ -44993,7 +45053,7 @@
         <item>Perfect with grilled meat.</item>
       </tips>
       <rating>8.8/10</rating>
-    </translation>
+    <knowledge><item>Vegetables can be prepared ahead; finish chakalaka when grilling starts or serving.</item><item>The relish keeps in the fridge for 3–4 days and often tastes better reheated.</item><item>White or black beans from a tin work instead of kidney beans.</item><item>Excellent with braai, boerewors, steaks or grilled chicken.</item></knowledge></translation>
   </recipe>
   <recipe id="369">
     <name>Jollof Rice</name>

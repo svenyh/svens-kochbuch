@@ -14,7 +14,7 @@
       <tag>zitrone</tag>
       <tag>limette</tag>
     </tags>
-    <image src="images/rezeptbild_407.png" alt="Zitronen-Limetten-Limonade"/>
+    <image src="images/rezeptbild_407.png" alt="Zitronen-Limetten-Limonade" />
     <ingredients>
       <item>4 Zitronen</item>
       <item>3 Limetten</item>
@@ -32,13 +32,13 @@
       <step nr="5">Mit Zitronen-, Limettenscheiben und Minze servieren.</step>
     </preparation>
     <servingTip>Gut gekühlt in großen Gläsern mit viel Eis, frischen Zitronen- und Limettenscheiben und Minze servieren.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A bright homemade lemon and lime lemonade in a clear glass pitcher and glasses filled with ice, fresh lemon and lime slices, mint leaves, sparkling summer look, natural daylight, wooden table, high-end food photography, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 10 Minuten</item>
       <item>Kühlzeit: 30 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Saft und Sirup lassen sich am Vortag mischen und im Kühlschrank kalt stellen – Mineralwasser unmittelbar vor dem Servieren dazugeben.</item><item>Angemischte Limonade hält sich im Kühlschrank 1 Tag; ohne Wasser als Konzentrat 2 Tage.</item><item>Statt Honig funktioniert auch Rohrzucker oder Agavendicksaft.</item><item>Mit mehr Minze und extra Eis wird die Limonade besonders erfrischend.</item></knowledge><translation lang="pl">
       <name>Limonada cytrynowo-limonkowa</name>
       <persons>ok. 6 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -65,7 +65,7 @@
         <item>Czas pracy: 10 minut</item>
         <item>Czas chłodzenia: 30 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Sok i syrop można wymieszać dzień wcześniej i schłodzić – wodę dodaj bezpośrednio przed podaniem.</item><item>Gotowa limonada trzyma się w lodówce 1 dzień; koncentrat bez wody około 2 dni.</item><item>Zamiast miodu można użyć cukru trzcinowego albo syropu z agawy.</item><item>Więcej mięty i lodu daje szczególnie orzeźwiający efekt.</item></knowledge></translation>
     <translation lang="en">
       <name>Lemon Lime Lemonade</name>
       <persons>approx. 6 glasses</persons>
@@ -93,7 +93,7 @@
         <item>Prep time: 10 minutes</item>
         <item>Chill time: 30 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>Juice and syrup can be mixed the day before and chilled – add sparkling water when you are ready to serve.</item><item>Mixed lemonade keeps in the fridge for 1 day; concentrate without water about 2 days.</item><item>Cane sugar or agave syrup works instead of honey.</item><item>Extra mint and ice make the lemonade especially refreshing.</item></knowledge></translation>
   </recipe>
   <recipe id="408">
     <name>Erdbeer-Basilikum-Limonade</name>
@@ -108,7 +108,7 @@
       <tag>limonade</tag>
       <tag>thermomix</tag>
     </tags>
-    <image src="images/rezeptbild_408.png" alt="Erdbeer-Basilikum-Limonade"/>
+    <image src="images/rezeptbild_408.png" alt="Erdbeer-Basilikum-Limonade" />
     <ingredients>
       <item>500 g Erdbeeren</item>
       <item>Saft von 2 Zitronen</item>
@@ -125,12 +125,12 @@
     </preparation>
     <thermomix>Erdbeeren, Zitronensaft und Honig 20 Sek. / Stufe 8 mixen.</thermomix>
     <servingTip>Mit Eis und frischen Erdbeerstücken servieren. Basilikum erst kurz vor dem Servieren einrühren, damit er frisch bleibt.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A fresh strawberry basil lemonade in tall glasses with ice, sliced strawberries, basil leaves, soft pink-red color, summer terrace feeling, natural daylight, elegant food photography, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 10 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Erdbeer-Basilikum-Basis lässt sich 2–3 Stunden vorher kalt stellen; mit Wasser unmittelbar vor dem Servieren mischen.</item><item>Im Kühlschrank hält sich die Limonade 1–2 Tage – vor dem Trinken kräftig umrühren.</item><item>Statt Basilikum funktioniert auch Minze für eine mildere Kräuternote.</item><item>Weniger Süße? Einfach etwas mehr Mineralwasser oder Zitronensaft zugeben.</item></knowledge><translation lang="pl">
       <name>Limonada truskawkowo-bazyliowa</name>
       <persons>ok. 4–6 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -155,7 +155,7 @@
       <timing>
         <item>Czas pracy: 10 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Bazę truskawkowo-bazyliową można schłodzić 2–3 godziny wcześniej; wodę dodaj bezpośrednio przed podaniem.</item><item>W lodówce limonada trzyma się 1–2 dni – przed podaniem dobrze wymieszaj.</item><item>Zamiast bazylii można użyć mięty na łagodniejszą nutę.</item><item>Mniej słodkości? Dodaj więcej wody mineralnej albo soku z cytryny.</item></knowledge></translation>
     <translation lang="en">
       <name>Strawberry Basil Lemonade</name>
       <persons>approx. 4–6 glasses</persons>
@@ -181,7 +181,7 @@
       <timing>
         <item>Prep time: 10 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>The strawberry-basil base can chill 2–3 hours before; mix with water when you are ready to serve.</item><item>The lemonade keeps in the fridge for 1–2 days – stir well before drinking.</item><item>Mint works instead of basil for a milder herbal note.</item><item>Want less sweetness? Add more sparkling water or lemon juice.</item></knowledge></translation>
   </recipe>
   <recipe id="409">
     <name>Pfirsich-Eistee</name>
@@ -195,7 +195,7 @@
       <tag>sommerdrink</tag>
       <tag>eistee</tag>
     </tags>
-    <image src="images/rezeptbild_409.png" alt="Pfirsich-Eistee"/>
+    <image src="images/rezeptbild_409.png" alt="Pfirsich-Eistee" />
     <ingredients>
       <item>1 Liter schwarzer Tee</item>
       <item>4 reife Pfirsiche</item>
@@ -211,13 +211,13 @@
       <step nr="5">Kalt servieren.</step>
     </preparation>
     <servingTip>Mit Eis und frischen Pfirsichscheiben servieren. Je länger der Tee kühlt, desto aromatischer wird er.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A chilled peach iced tea in tall glasses with ice, peach slices, black tea amber color, lemon slice, summer garden background, natural daylight, high-quality food photography, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 15 Minuten</item>
       <item>Kühlzeit: 1 Stunde</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Tee und Pfirsichsirup lassen sich am Vortag kalt stellen; Eis unmittelbar vor dem Servieren zugeben.</item><item>Im Kühlschrank hält sich der Eistee 1–2 Tage luftdicht verschlossen.</item><item>Statt Pfirsichsirup funktioniert auch Mango- oder Maracuja-Sirup.</item><item>Als Eiswürfel eingefrorener Tee verhindert verwässertes Nachschütten.</item></knowledge><translation lang="pl">
       <name>Mrożona herbata brzoskwiniowa</name>
       <persons>ok. 6–8 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -242,7 +242,7 @@
         <item>Czas pracy: 15 minut</item>
         <item>Czas chłodzenia: 1 godzina</item>
       </timing>
-    </translation>
+    <knowledge><item>Herbatę i syrop brzoskwiniowy można schłodzić dzień wcześniej; lód dodaj bezpośrednio przed podaniem.</item><item>Mrożona herbata trzyma się w lodówce 1–2 dni w szczelnym pojemniku.</item><item>Zamiast syropu brzoskwiniowego można użyć mango albo marakui.</item><item>Kostki lodu z mrożonej herbaty zapobiegają rozwodnieniu napoju.</item></knowledge></translation>
     <translation lang="en">
       <name>Peach Iced Tea</name>
       <persons>approx. 6–8 glasses</persons>
@@ -268,7 +268,7 @@
         <item>Prep time: 15 minutes</item>
         <item>Chill time: 1 hour</item>
       </timing>
-    </translation>
+    <knowledge><item>Tea and peach syrup can chill the day before; add ice when you are ready to serve.</item><item>Iced tea keeps in the fridge for 1–2 days in an airtight container.</item><item>Mango or passion fruit syrup works instead of peach syrup.</item><item>Tea frozen into ice cubes prevents watering down when topping up.</item></knowledge></translation>
   </recipe>
   <recipe id="410">
     <name>Zitronen-Minze-Eistee</name>
@@ -282,7 +282,7 @@
       <tag>sommerdrink</tag>
       <tag>eistee</tag>
     </tags>
-    <image src="images/rezeptbild_410.png" alt="Zitronen-Minze-Eistee"/>
+    <image src="images/rezeptbild_410.png" alt="Zitronen-Minze-Eistee" />
     <ingredients>
       <item>1 Liter grüner Tee</item>
       <item>2 Zitronen</item>
@@ -298,13 +298,13 @@
       <step nr="5">Mit Eis servieren.</step>
     </preparation>
     <servingTip>Mit viel Eis, frischen Minzblättern und Zitronenscheiben servieren.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A fresh lemon mint iced tea in clear glasses with ice, lemon slices and mint leaves, light green-gold tea color, bright summer daylight, clean foodblog style, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 10 Minuten</item>
       <item>Kühlzeit: 1 Stunde</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Zitronen-Minze-Tee lässt sich am Vortag ziehen und kalt stellen; frische Minze kurz vor dem Servieren zugeben.</item><item>Im Kühlschrank hält sich der Eistee 1–2 Tage.</item><item>Statt Schwarztee funktioniert auch grüner Tee für eine leichtere Variante.</item><item>Mit etwas Honig oder Agavendicksaft lässt sich die Süße individuell anpassen.</item></knowledge><translation lang="pl">
       <name>Mrożona herbata cytrynowo-miętowa</name>
       <persons>ok. 6–8 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -329,7 +329,7 @@
         <item>Czas pracy: 10 minut</item>
         <item>Czas chłodzenia: 1 godzina</item>
       </timing>
-    </translation>
+    <knowledge><item>Herbatę cytrynowo-miętową można parzyć dzień wcześniej i schłodzić; świeżą miętę dodaj na końcu.</item><item>Mrożona herbata trzyma się w lodówce 1–2 dni.</item><item>Zamiast czarnej herbaty można użyć zielonej na lżejszą wersję.</item><item>Odrobina miodu albo syropu z agawy pozwala dopasować słodycz.</item></knowledge></translation>
     <translation lang="en">
       <name>Lemon Mint Iced Tea</name>
       <persons>approx. 6–8 glasses</persons>
@@ -355,7 +355,7 @@
         <item>Prep time: 10 minutes</item>
         <item>Chill time: 1 hour</item>
       </timing>
-    </translation>
+    <knowledge><item>Lemon-mint tea can brew the day before and chill; add fresh mint when you are ready to serve.</item><item>Iced tea keeps in the fridge for 1–2 days.</item><item>Green tea works instead of black tea for a lighter version.</item><item>A little honey or agave syrup lets you adjust sweetness individually.</item></knowledge></translation>
   </recipe>
   <recipe id="411">
     <name>Cold Brew Orange</name>
@@ -369,7 +369,7 @@
       <tag>sommerdrink</tag>
       <tag>kaffee</tag>
     </tags>
-    <image src="images/rezeptbild_411.png" alt="Cold Brew Orange"/>
+    <image src="images/rezeptbild_411.png" alt="Cold Brew Orange" />
     <ingredients>
       <item>300 ml Cold Brew</item>
       <item>150 ml Orangensaft</item>
@@ -383,12 +383,12 @@
       <step nr="4">Mit Orangenscheibe servieren.</step>
     </preparation>
     <servingTip>Cold Brew langsam aufgießen, damit sich die schöne Schichtung ergibt. Am besten sofort trinken.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A layered cold brew coffee with orange juice in a glass full of ice, orange slices, dark coffee floating above orange juice, modern café summer style, natural daylight, high-end drink photography, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Cold Brew lässt sich am Vortag ziehen; Orangensaft und Eis unmittelbar vor dem Servieren dazugeben.</item><item>Angemischter Cold Brew hält sich im Kühlschrank 1 Tag.</item><item>Statt Orangensaft funktioniert auch Mandarinen- oder Blutorangensaft.</item><item>Weniger Süße? Einfach mehr Cold Brew und weniger Saft verwenden.</item></knowledge><translation lang="pl">
       <name>Cold Brew z pomarańczą</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -410,7 +410,7 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Cold brew można parzyć dzień wcześniej; sok pomarańczowy i lód dodaj bezpośrednio przed podaniem.</item><item>Gotowy napój trzyma się w lodówce 1 dzień.</item><item>Zamiast soku pomarańczowego można użyć mandarynkowego albo krwi pomarańczy.</item><item>Mniej słodkości? Dodaj więcej cold brew i mniej soku.</item></knowledge></translation>
     <translation lang="en">
       <name>Cold Brew Orange</name>
       <persons>approx. 2 glasses</persons>
@@ -433,7 +433,7 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>Cold brew can steep the day before; add orange juice and ice when you are ready to serve.</item><item>Mixed cold brew keeps in the fridge for 1 day.</item><item>Mandarin or blood orange juice works instead of regular orange juice.</item><item>Want less sweetness? Use more cold brew and less juice.</item></knowledge></translation>
   </recipe>
   <recipe id="412">
     <name>Eiskaffee Vanille</name>
@@ -447,7 +447,7 @@
       <tag>sommerdrink</tag>
       <tag>kaffee</tag>
     </tags>
-    <image src="images/rezeptbild_412.png" alt="Eiskaffee Vanille"/>
+    <image src="images/rezeptbild_412.png" alt="Eiskaffee Vanille" />
     <ingredients>
       <item>300 ml kalter Kaffee</item>
       <item>250 ml Milch</item>
@@ -462,12 +462,12 @@
       <step nr="4">Optional Vanilleeis hinzufügen.</step>
     </preparation>
     <servingTip>Mit optionaler Kugel Vanilleeis besonders cremig servieren.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A creamy vanilla iced coffee in a tall glass with ice cubes, cold coffee, milk swirl, optional scoop of vanilla ice cream, summer café look, natural daylight, premium food photography, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Espresso lässt sich vorbereiten und kalt stellen; mit Milch und Vanille unmittelbar vor dem Servieren mixen.</item><item>Fertiger Eiskaffee schmeckt am besten frisch; im Kühlschrank höchstens wenige Stunden.</item><item>Statt Vanillesirup funktioniert auch etwas Karamell- oder Haselnusssirup.</item><item>Als Eiswürfel eingefrorener Kaffee hält den Drink länger kalt ohne Verwässern.</item></knowledge><translation lang="pl">
       <name>Mrożona kawa waniliowa</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -490,7 +490,7 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Espresso można przygotować wcześniej i schłodzić; mleko i wanilię dodaj bezpośrednio przed podaniem.</item><item>Gotowa kawa lodowa smakuje najlepiej od razu; w lodówce tylko kilka godzin.</item><item>Zamiast syropu waniliowego można użyć karmelowego albo orzechowego.</item><item>Kostki lodu z mrożonej kawy dłużej utrzymują chłód bez rozwadniania.</item></knowledge></translation>
     <translation lang="en">
       <name>Vanilla Iced Coffee</name>
       <persons>approx. 2 glasses</persons>
@@ -514,7 +514,7 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>Espresso can be prepared and chilled; mix with milk and vanilla when you are ready to serve.</item><item>Finished iced coffee tastes best fresh; in the fridge only a few hours.</item><item>Caramel or hazelnut syrup works instead of vanilla syrup.</item><item>Coffee frozen into ice cubes keeps the drink cold longer without watering down.</item></knowledge></translation>
   </recipe>
   <recipe id="413">
     <name>Frozen Erdbeer-Limette</name>
@@ -529,7 +529,7 @@
       <tag>frozen</tag>
       <tag>thermomix</tag>
     </tags>
-    <image src="images/rezeptbild_413.png" alt="Frozen Erdbeer-Limette"/>
+    <image src="images/rezeptbild_413.png" alt="Frozen Erdbeer-Limette" />
     <ingredients>
       <item>500 g gefrorene Erdbeeren</item>
       <item>2 Limetten</item>
@@ -542,12 +542,12 @@
     </preparation>
     <thermomix>Alles 30 Sek. / Stufe 10 mixen.</thermomix>
     <servingTip>Sofort nach dem Mixen servieren – am besten in vorgekühlten Gläsern.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A frozen strawberry lime drink in chilled glasses, crushed ice texture, bright red color, lime slices, frosty summer look, natural daylight, high-quality drink photography, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Frucht und Limette können am Vortag vorbereitet werden; unmittelbar vor dem Servieren im Mixer mit Eis pürieren.</item><item>Frozen-Drinks schmecken am besten sofort – im Gefrierfach nur kurz zwischenlagern, nicht einfrieren.</item><item>Statt Erdbeeren funktioniert auch Himbeer- oder Waldbeermix.</item><item>Weniger Süße? Einfach mehr Eis und etwas Wasser statt extra Sirup zugeben.</item></knowledge><translation lang="pl">
       <name>Frozen truskawka z limonką</name>
       <persons>ok. 2–3 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -568,7 +568,7 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Owoce i limonkę można przygotować wcześniej; blenduj z lodem bezpośrednio przed podaniem.</item><item>Frozen najlepiej pić od razu – w zamrażarce tylko krótko, nie zamrażaj całego napoju.</item><item>Zamiast truskawek można użyć malin albo mieszanki owoców leśnych.</item><item>Mniej słodkości? Dodaj więcej lodu i odrobinę wody zamiast syropu.</item></knowledge></translation>
     <translation lang="en">
       <name>Frozen Strawberry Lime</name>
       <persons>approx. 2–3 glasses</persons>
@@ -590,7 +590,7 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>Fruit and lime can be prepared ahead; blend with ice when you are ready to serve.</item><item>Frozen drinks taste best immediately – do not freeze the finished drink.</item><item>Raspberry or mixed forest berries work instead of strawberries.</item><item>Want less sweetness? Add more ice and a little water instead of extra syrup.</item></knowledge></translation>
   </recipe>
   <recipe id="414">
     <name>Mango Frozen Mocktail</name>
@@ -606,7 +606,7 @@
       <tag>frozen</tag>
       <tag>thermomix</tag>
     </tags>
-    <image src="images/rezeptbild_414.png" alt="Mango Frozen Mocktail"/>
+    <image src="images/rezeptbild_414.png" alt="Mango Frozen Mocktail" />
     <ingredients>
       <item>500 g gefrorene Mango</item>
       <item>300 ml Orangensaft</item>
@@ -619,12 +619,12 @@
     </preparation>
     <thermomix>Alles 30 Sek. / Stufe 10 mixen.</thermomix>
     <servingTip>Mit Limettenscheibe garnieren und sofort eiskalt genießen.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A tropical frozen mango mocktail in a chilled glass, vivid yellow-orange color, crushed ice texture, lime slice, mint garnish, bright summer setting, natural daylight, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Mango und Limette können am Vortag vorbereitet werden; mit Eis unmittelbar vor dem Servieren mixen.</item><item>Frozen Mocktails schmecken am besten frisch – nicht als fertigen Drink einfrieren.</item><item>Statt Mango funktioniert auch Ananas oder Maracuja für eine tropischere Note.</item><item>Mit etwas Kokosmilch wird der Mocktail cremiger und milder.</item></knowledge><translation lang="pl">
       <name>Mango frozen mocktail</name>
       <persons>ok. 2–3 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -645,7 +645,7 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Mango i limonkę można przygotować wcześniej; blenduj z lodem bezpośrednio przed podaniem.</item><item>Frozen mocktail najlepiej podawać od razu – nie zamrażaj gotowego napoju.</item><item>Zamiast mango można użyć ananasa albo marakui.</item><item>Odrobina mleka kokosowego daje kremowszy, łagodniejszy smak.</item></knowledge></translation>
     <translation lang="en">
       <name>Mango Frozen Mocktail</name>
       <persons>approx. 2–3 glasses</persons>
@@ -667,7 +667,7 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>Mango and lime can be prepared ahead; blend with ice when you are ready to serve.</item><item>Frozen mocktails taste best fresh – do not freeze the finished drink.</item><item>Pineapple or passion fruit works instead of mango for a more tropical note.</item><item>A little coconut milk makes the mocktail creamier and milder.</item></knowledge></translation>
   </recipe>
   <recipe id="415">
     <name>Virgin Mojito</name>
@@ -681,7 +681,7 @@
       <tag>sommerdrink</tag>
       <tag>mocktail</tag>
     </tags>
-    <image src="images/rezeptbild_415.png" alt="Virgin Mojito"/>
+    <image src="images/rezeptbild_415.png" alt="Virgin Mojito" />
     <ingredients>
       <item>Limetten</item>
       <item>Minze</item>
@@ -697,12 +697,12 @@
       <step nr="5">Mit Mineralwasser auffüllen.</step>
     </preparation>
     <servingTip>Limetten und Minze leicht andrücken, damit die Aromen frei werden. Mit frischen Minzzweigen garnieren.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A virgin mojito mocktail with crushed ice, lime wedges, fresh mint, sparkling water bubbles, clear glass, bright summer bar style, natural daylight, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Limette und Minze können am Vortag vorbereitet werden; unmittelbar vor dem Servieren kräftig mit Eis muddeln.</item><item>Fertiger Mojito hält sich im Kühlschrank höchstens kurz – am besten direkt nach dem Muddeln servieren.</item><item>Statt Rohrzucker funktioniert auch Agavendicksaft oder etwas Honig.</item><item>Mehr Mineralwasser macht den Virgin Mojito leichter und weniger süß.</item></knowledge><translation lang="pl">
       <name>Virgin mojito</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -726,7 +726,7 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Limonkę i miętę można przygotować wcześniej; muddleruj z lodem bezpośrednio przed podaniem.</item><item>Gotowy mojito trzyma się w lodówce tylko krótko – najlepiej od razu po muddlerowaniu.</item><item>Zamiast cukru trzcinowego można użyć syropu z agawy albo miodu.</item><item>Więcej wody mineralnej daje lżejszą, mniej słodką wersję.</item></knowledge></translation>
     <translation lang="en">
       <name>Virgin Mojito</name>
       <persons>approx. 2 glasses</persons>
@@ -751,7 +751,7 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>Lime and mint can be prepared ahead; muddle with ice when you are ready to serve.</item><item>Finished mojito keeps in the fridge only briefly – best served right after muddling.</item><item>Agave syrup or a little honey works instead of cane sugar.</item><item>More sparkling water makes the virgin mojito lighter and less sweet.</item></knowledge></translation>
   </recipe>
   <recipe id="416">
     <name>Virgin Maracuja Spritz</name>
@@ -765,7 +765,7 @@
       <tag>sommerdrink</tag>
       <tag>mocktail</tag>
     </tags>
-    <image src="images/rezeptbild_416.png" alt="Virgin Maracuja Spritz"/>
+    <image src="images/rezeptbild_416.png" alt="Virgin Maracuja Spritz" />
     <ingredients>
       <item>Maracujasaft</item>
       <item>Limettensaft</item>
@@ -779,12 +779,12 @@
       <step nr="3">Mit Minze servieren.</step>
     </preparation>
     <servingTip>Vorsichtig umrühren, damit die Sprudeligkeit erhalten bleibt. Mit frischer Minze servieren.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A passion fruit virgin spritz in elegant glasses with ice, bright golden-orange color, lime slice, mint garnish, sparkling bubbles, summer terrace atmosphere, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Maracuja-Basis und Mineralwasser lassen sich 1–2 Stunden vorher kalt stellen; mixen unmittelbar vor dem Servieren.</item><item>Fertiger Spritz schmeckt am besten frisch; im Kühlschrank höchstens kurz lagern.</item><item>Statt Maracujasaft funktioniert auch Mango-Nektar für eine mildere Variante.</item><item>Mit extra Limette wird der Mocktail frischer und weniger süß.</item></knowledge><translation lang="pl">
       <name>Virgin maracuja spritz</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -806,7 +806,7 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    </translation>
+    <knowledge><item>Bazę marakui i wodę można schłodzić 1–2 godziny wcześniej; mieszaj bezpośrednio przed podaniem.</item><item>Gotowy spritz najlepiej pić od razu; w lodówce tylko krótko.</item><item>Zamiast soku marakui można użyć nektaru mango na łagodniejszą wersję.</item><item>Dodatkowa limonka daje świeższy, mniej słodki smak.</item></knowledge></translation>
     <translation lang="en">
       <name>Virgin Passion Fruit Spritz</name>
       <persons>approx. 2 glasses</persons>
@@ -829,7 +829,7 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    </translation>
+    <knowledge><item>Passion fruit base and mineral water can chill 1–2 hours before; mix when you are ready to serve.</item><item>Finished spritz tastes best fresh; store in the fridge only briefly.</item><item>Mango nectar works instead of passion fruit juice for a milder version.</item><item>Extra lime makes the mocktail fresher and less sweet.</item></knowledge></translation>
   </recipe>
   <recipe id="417">
     <name>Alkoholfreie Sommer-Sangria</name>
@@ -843,7 +843,7 @@
       <tag>sommerdrink</tag>
       <tag>mocktail</tag>
     </tags>
-    <image src="images/rezeptbild_417.png" alt="Alkoholfreie Sommer-Sangria"/>
+    <image src="images/rezeptbild_417.png" alt="Alkoholfreie Sommer-Sangria" />
     <ingredients>
       <item>Roter Traubensaft</item>
       <item>Mineralwasser</item>
@@ -860,13 +860,13 @@
       <step nr="4">Vor dem Servieren Mineralwasser ergänzen.</step>
     </preparation>
     <servingTip>Mineralwasser erst kurz vor dem Servieren zugeben, damit der Spritz erhalten bleibt.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A non-alcoholic summer sangria in a large glass pitcher with red grape juice, orange slices, lemon slices, strawberries, blueberries and ice, festive summer table, natural daylight, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 15 Minuten</item>
       <item>Kühlzeit: 1 Stunde</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Früchte und Saft lassen sich am Vortag schneiden und kalt stellen; unmittelbar vor der Bowle alles zusammenfügen.</item><item>Angemischte Sangria hält sich im Kühlschrank 1 Tag – vor dem Servieren kräftig umrühren.</item><item>Statt Traubensaft funktioniert auch Apfelsaft für eine mildere Süße.</item><item>Mit mehr Mineralwasser wird die alkoholfreie Sangria leichter und spritziger.</item></knowledge><translation lang="pl">
       <name>Bezalkoholowa letnia sangria</name>
       <persons>ok. 6–8 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -892,7 +892,7 @@
         <item>Czas pracy: 15 minut</item>
         <item>Czas chłodzenia: 1 godzina</item>
       </timing>
-    </translation>
+    <knowledge><item>Owoce i sok można przygotować dzień wcześniej; połącz wszystko bezpośrednio przed podaniem.</item><item>Gotowa sangria trzyma się w lodówce 1 dzień – przed podaniem dobrze wymieszaj.</item><item>Zamiast soku winogronowego można użyć jabłkowego na łagodniejszą słodycz.</item><item>Więcej wody mineralnej daje lżejszą, bardziej musującą wersję.</item></knowledge></translation>
     <translation lang="en">
       <name>Non-Alcoholic Summer Sangria</name>
       <persons>approx. 6–8 glasses</persons>
@@ -919,7 +919,7 @@
         <item>Prep time: 15 minutes</item>
         <item>Chill time: 1 hour</item>
       </timing>
-    </translation>
+    <knowledge><item>Fruit and juice can be prepared the day before and chilled; combine when you are ready to serve.</item><item>Mixed sangria keeps in the fridge for 1 day – stir well before serving.</item><item>Apple juice works instead of grape juice for milder sweetness.</item><item>More sparkling water makes the alcohol-free sangria lighter and fizzier.</item></knowledge></translation>
   </recipe>
   <recipe id="418">
     <name>Beeren-Sommerbowle</name>
@@ -933,7 +933,7 @@
       <tag>sommerdrink</tag>
       <tag>bowle</tag>
     </tags>
-    <image src="images/rezeptbild_418.png" alt="Beeren-Sommerbowle"/>
+    <image src="images/rezeptbild_418.png" alt="Beeren-Sommerbowle" />
     <ingredients>
       <item>Erdbeeren</item>
       <item>Himbeeren</item>
@@ -951,13 +951,13 @@
       <step nr="4">Kurz vor dem Servieren Mineralwasser und Eis ergänzen.</step>
     </preparation>
     <servingTip>In einer großen Glaskaraffe servieren – mit Minze und frischen Beeren garnieren.</servingTip>
-    <variant/>
+    <variant />
     <imagePromptEn>Professional high-end food photography, 4:5 vertical composition, bright natural summer daylight, soft shadows, wooden or light stone table surface, abundant clear ice cubes, light condensation on glass, modern European food blog aesthetic, photorealistic, shallow depth of field, no text, no watermark, no people, no hands, no AI artifacts, crisp detail. A berry summer punch in a large glass bowl with strawberries, raspberries, blueberries, mint, ice and sparkling juice, garden party setting, natural daylight, high-end food photography, no text.</imagePromptEn>
     <timing>
       <item>Arbeitszeit: 15 Minuten</item>
       <item>Kühlzeit: 2 Stunden</item>
     </timing>
-    <translation lang="pl">
+    <knowledge><item>Früchte lassen sich am Vortag schneiden und kalt stellen; Bowle unmittelbar vor den Gästen mit Limonade und Eis ansetzen.</item><item>Angemischte Bowle schmeckt am besten am selben Tag; im Kühlschrank höchstens 1 Tag.</item><item>Statt einer Limonade funktioniert auch eine Mischung aus Mineralwasser und Fruchtsaft.</item><item>Mit gefrorenen Beeren statt Eiswürfeln bleibt die Bowle länger kalt ohne zu verwässern.</item></knowledge><translation lang="pl">
       <name>Letnia bowla jagodowa</name>
       <persons>ok. 8–10 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -984,7 +984,7 @@
         <item>Czas pracy: 15 minut</item>
         <item>Czas chłodzenia: 2 godziny</item>
       </timing>
-    </translation>
+    <knowledge><item>Owoce można pokroić dzień wcześniej i schłodzić; bowle zalew limonadą i lodem bezpośrednio przed gośćmi.</item><item>Gotowa bowle smakuje najlepiej tego samego dnia; w lodówce maksymalnie 1 dzień.</item><item>Zamiast jednej limonady można użyć wody mineralnej z sokiem owocowym.</item><item>Mrożone owoce zamiast kostek lodu dłużej utrzymują chłód bez rozwadniania.</item></knowledge></translation>
     <translation lang="en">
       <name>Berry Summer Punch</name>
       <persons>approx. 8–10 glasses</persons>
@@ -1012,6 +1012,6 @@
         <item>Prep time: 15 minutes</item>
         <item>Chill time: 2 hours</item>
       </timing>
-    </translation>
+    <knowledge><item>Fruit can be cut the day before and chilled; assemble the bowl with lemonade and ice when guests are about to arrive.</item><item>Mixed bowl tastes best the same day; in the fridge at most 1 day.</item><item>Sparkling water mixed with fruit juice works instead of a single lemonade.</item><item>Frozen berries instead of ice cubes keep the bowl cold longer without watering down.</item></knowledge></translation>
   </recipe>
 </drinkCollection>
