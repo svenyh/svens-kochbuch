@@ -2,7 +2,7 @@
 <cookbook title="Svens persönliches Kochbuch" subtitle="Rezepte (bereits gekocht und für gut befunden)" version="5.0" languages="de,pl">
   <meta>
     <language>de,pl,en</language>
-    <recipeCount>372</recipeCount>
+    <recipeCount>429</recipeCount>
     <notes>Bilinguale Version Deutsch/Polnisch. Qualitätsstandard 1–152 vereinheitlicht, inklusive überarbeiteter Einleitungen, klarerer Zubereitung, präziserer Zeitangaben und bereinigter Bewertungsformulierungen. Dynamische Website kompatibel. Ergänzt um 10 klassische Traditionsrezepte (Soljanka, Würzfleisch, Jägerschnitzel, Tote Oma, Karlsbader Schnitten, Grilletta, Ketwurst, Schmorkohl, Kalter Hund, Eierschecke). Ergänzt um 5 weitere polnisch inspirierte Rezepte (klassische Placki, Placki mit Pilzrahm, Pyra mit Speck und Kräuterquark, Babka mit Kassler, Zapiekanka mit Hähnchen und Paprika). Ergänzt um 12 Asia-Wok-Rezepte (Pad Thai, gebratene Asia-Nudeln, Rind mit Brokkoli, Chop Suey, Thai Red Curry, Erdnuss-Wok, Kokos-Wok, Udon-Wok, Garnelen-Wok, Tofu-Wok, Thai Basil Chicken, gebratener Reis). Ergänzt um 15 italienisch inspirierte Rezepte (IDs 180–194). Ergänzt um 20 Fusion-Rezepte (IDs 195–214). Qualitätsrunde: Einleitungen für Rezepte 180–193 ergänzt. Qualitätsrunde V2: klare Kategorien für ausgewählte Rezepte normalisiert. Qualitätsrunde V3: ausgewählte ältere Einleitungen in DE und PL stilistisch veredelt. Ergänzt um 30 neue Rezepte: 10 Pizza &amp; Basics, 10 schnelle Feierabendküche und 10 Kuchen/Blechkuchen. Ergänzt um 19 Rezepte „Kulinarische Weltreise“ (IDs 311–329): Europa, Mittelmeer &amp;amp; Nordafrika, Weltreise. Eigene Sven-Versionen, DE zunächst; PL-Übersetzung folgt.</notes>
   </meta>
   <recipe id="1">
@@ -45548,6 +45548,157 @@
       </timing>
       <tips>
         <item>The baste can be boldly flavoured. Repeated dipping gives the chicken that rustic garlic-herb kick.</item>
+      </tips>
+      <rating>New recipe – rating to follow.</rating>
+    </translation>
+  </recipe>
+  <recipe id="429">
+    <name>BBQ-Rinderroulade mit Old Amsterdam, Pesto, Rucola &amp; Pinienkernen</name>
+    <intro lang="de">Saftige Rinderroulade aus der Oberschale, gefüllt mit Old Amsterdam, grünem Pesto, Rucola und Pinienkernen. Draußen kräftig angebraten, im Ofen langsam gegart und innen schön rosa – ein BBQ-Gericht mit viel Aroma und klarer Technik.</intro>
+    <persons>4 Personen</persons>
+    <category>Grill &amp; BBQ / Fleischgerichte</category>
+    <origin>
+      <country>International</country>
+      <region>BBQ &amp; Ofen</region>
+      <worldCategory>International / Fusion</worldCategory>
+    </origin>
+    <image src="images/rezeptbild_429.png" alt="BBQ-Rinderroulade mit Old Amsterdam, Pesto, Rucola &amp; Pinienkernen" />
+    <imagePromptEn>Professional realistic food photography, 16:9 horizontal landscape composition, warm natural daylight. Thick slices of BBQ beef roulade from the top round, pink-medium core, visible layers of green pesto, aged Gouda-style cheese, arugula and pine nuts in the cross-section, dark seared crust on the outside. Rustic wooden cutting board, a few pine nuts and arugula leaves scattered beside the slices, subtle rosemary sprig in the background, shallow depth of field, appetizing and photorealistic, no people, no hands, no text, no logos, no watermark.</imagePromptEn>
+    <tags>
+      <tag>Rinderroulade</tag>
+      <tag>BBQ</tag>
+      <tag>Old Amsterdam</tag>
+      <tag>Pesto</tag>
+      <tag>Rucola</tag>
+      <tag>Pinienkerne</tag>
+      <tag>Kerntemperatur</tag>
+    </tags>
+    <ingredients>
+      <item>ca. 900 g Rinderrouladen aus der Oberschale (3 große Stücke)</item>
+      <item>150 g Old Amsterdam</item>
+      <item>3 EL grünes Pesto</item>
+      <item>2 Hände Rucola</item>
+      <item>2 EL Pinienkerne</item>
+      <item>Salz</item>
+      <item>schwarzer Pfeffer</item>
+      <item>etwas Pflanzenöl</item>
+    </ingredients>
+    <preparation>
+      <step nr="1">Drei Rinderrouladen leicht überlappend auslegen.</step>
+      <step nr="2">Mit Salz und Pfeffer würzen.</step>
+      <step nr="3">Pesto dünn verstreichen.</step>
+      <step nr="4">Old Amsterdam auflegen.</step>
+      <step nr="5">Rucola und Pinienkerne verteilen.</step>
+      <step nr="6">Straff aufrollen.</step>
+      <step nr="7">Mit Küchengarn abbinden.</step>
+      <step nr="8">Rundherum kräftig anbraten.</step>
+      <step nr="9">Anschließend bei 120 °C Ober-/Unterhitze oder Heißluft bis 54–55 °C Kerntemperatur garen.</step>
+      <step nr="10">10 Minuten ruhen lassen.</step>
+      <step nr="11">Garn entfernen.</step>
+      <step nr="12">In dicke Scheiben schneiden und servieren.</step>
+    </preparation>
+    <timing>
+      <item>Vorbereitung: ca. 20 Minuten</item>
+      <item>Anbraten: ca. 8–10 Minuten</item>
+      <item>Garzeit im Ofen: ca. 45–60 Minuten bei 120 °C</item>
+      <item>Ruhezeit: 10 Minuten</item>
+      <item>Gesamt: ca. 85–100 Minuten</item>
+    </timing>
+    <tips>
+      <item>Das Fleisch nicht zu dünn klopfen.</item>
+      <item>Käse nicht bis zum Rand legen.</item>
+      <item>Bei 54–55 °C aus dem Ofen nehmen.</item>
+      <item>Während der Ruhezeit steigt die Kerntemperatur noch leicht an.</item>
+      <item>Besonders gut mit Rosmarinkartoffeln oder Baguette.</item>
+    </tips>
+    <rating>Neu im Kochbuch – Bewertung folgt.</rating>
+    <translation lang="pl">
+      <name>BBQ rolada wołowa z Old Amsterdam, pesto, rukolą i orzeszkami pinii</name>
+      <persons>4 osoby</persons>
+      <category>Grill &amp; BBQ / dania mięsne</category>
+      <intro>Soczysta rolada wołowa z górnej części mięsa, nadziewana Old Amsterdam, zielonym pesto, rukolą i orzeszkami pinii. Mocno obsmażona na zewnątrz, powoli pieczona w piekarniku i różowa w środku – danie BBQ z wyraźnym aromatem i prostą techniką.</intro>
+      <ingredients>
+        <item>ok. 900 g rolad wołowych z górnej części mięsa (3 duże kawałki)</item>
+        <item>150 g Old Amsterdam</item>
+        <item>3 łyżki zielonego pesto</item>
+        <item>2 garści rukoli</item>
+        <item>2 łyżki orzeszków pinii</item>
+        <item>sól</item>
+        <item>czarny pieprz</item>
+        <item>odrobina oleju roślinnego</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Położyć trzy rolad wołowe lekko nachodzące na siebie.</step>
+        <step nr="2">Doprawić solą i pieprzem.</step>
+        <step nr="3">Cienko posmarować pesto.</step>
+        <step nr="4">Położyć Old Amsterdam.</step>
+        <step nr="5">Rozłożyć rukolę i orzeszki pinii.</step>
+        <step nr="6">Ciasno zwinąć.</step>
+        <step nr="7">Związać kuchnianą nicią.</step>
+        <step nr="8">Mocno obsmażyć ze wszystkich stron.</step>
+        <step nr="9">Następnie piec w 120 °C (góra/dół lub termoobieg) do temperatury w środku 54–55 °C.</step>
+        <step nr="10">Odczyć 10 minut.</step>
+        <step nr="11">Usunąć nić.</step>
+        <step nr="12">Pokroić na grube plastry i podawać.</step>
+      </preparation>
+      <timing>
+        <item>Przygotowanie: ok. 20 minut</item>
+        <item>Obsmażanie: ok. 8–10 minut</item>
+        <item>Pieczenie: ok. 45–60 minut w 120 °C</item>
+        <item>Odpoczynek: 10 minut</item>
+        <item>Razem: ok. 85–100 minut</item>
+      </timing>
+      <tips>
+        <item>Mięsa nie rozbijać zbyt cienko.</item>
+        <item>Sera nie układać aż do samej krawędzi.</item>
+        <item>Wyjmować z piekarnika przy 54–55 °C.</item>
+        <item>Podczas odpoczynku temperatura w środku jeszcze lekko rośnie.</item>
+        <item>Świetnie smakuje z ziemniakami z rozmarynem albo bagietką.</item>
+      </tips>
+      <rating>Nowy przepis – ocena wkrótce.</rating>
+    </translation>
+    <translation lang="en">
+      <name>BBQ beef roulade with Old Amsterdam, pesto, arugula &amp; pine nuts</name>
+      <persons>4 people</persons>
+      <category>Grill &amp; BBQ / Meat dishes</category>
+      <intro>Juicy beef roulade from the top round, filled with Old Amsterdam, green pesto, arugula and pine nuts. Seared all over, slowly roasted in the oven and beautifully pink inside – a BBQ dish with bold flavour and clear technique.</intro>
+      <ingredients>
+        <item>approx. 900 g beef roulades from the top round (3 large pieces)</item>
+        <item>150 g Old Amsterdam</item>
+        <item>3 tbsp green pesto</item>
+        <item>2 handfuls arugula</item>
+        <item>2 tbsp pine nuts</item>
+        <item>salt</item>
+        <item>black pepper</item>
+        <item>a little vegetable oil</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Lay out three beef roulades slightly overlapping.</step>
+        <step nr="2">Season with salt and pepper.</step>
+        <step nr="3">Spread pesto thinly.</step>
+        <step nr="4">Add Old Amsterdam.</step>
+        <step nr="5">Distribute arugula and pine nuts.</step>
+        <step nr="6">Roll up tightly.</step>
+        <step nr="7">Tie with kitchen twine.</step>
+        <step nr="8">Sear vigorously all over.</step>
+        <step nr="9">Then roast at 120 °C conventional or fan until core temperature reaches 54–55 °C.</step>
+        <step nr="10">Rest for 10 minutes.</step>
+        <step nr="11">Remove the twine.</step>
+        <step nr="12">Slice thickly and serve.</step>
+      </preparation>
+      <timing>
+        <item>Preparation: approx. 20 minutes</item>
+        <item>Searing: approx. 8–10 minutes</item>
+        <item>Oven time: approx. 45–60 minutes at 120 °C</item>
+        <item>Resting: 10 minutes</item>
+        <item>Total: approx. 85–100 minutes</item>
+      </timing>
+      <tips>
+        <item>Do not pound the meat too thin.</item>
+        <item>Do not place cheese all the way to the edge.</item>
+        <item>Remove from the oven at 54–55 °C.</item>
+        <item>Core temperature rises slightly during resting.</item>
+        <item>Especially good with rosemary potatoes or baguette.</item>
       </tips>
       <rating>New recipe – rating to follow.</rating>
     </translation>
