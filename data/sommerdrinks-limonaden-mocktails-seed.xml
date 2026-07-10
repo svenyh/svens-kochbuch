@@ -38,7 +38,13 @@
       <item>Arbeitszeit: 10 Minuten</item>
       <item>Kühlzeit: 30 Minuten</item>
     </timing>
-    <knowledge><item>Saft und Sirup lassen sich am Vortag mischen und im Kühlschrank kalt stellen – Mineralwasser unmittelbar vor dem Servieren dazugeben.</item><item>Angemischte Limonade hält sich im Kühlschrank 1 Tag; ohne Wasser als Konzentrat 2 Tage.</item><item>Statt Honig funktioniert auch Rohrzucker oder Agavendicksaft.</item><item>Mit mehr Minze und extra Eis wird die Limonade besonders erfrischend.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Saft und Sirup lassen sich am Vortag mischen und im Kühlschrank kalt stellen – Mineralwasser unmittelbar vor dem Servieren dazugeben.</item>
+      <item>Angemischte Limonade hält sich im Kühlschrank 1 Tag; ohne Wasser als Konzentrat 2 Tage.</item>
+      <item>Statt Honig funktioniert auch Rohrzucker oder Agavendicksaft.</item>
+      <item>Mit mehr Minze und extra Eis wird die Limonade besonders erfrischend.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Limonada cytrynowo-limonkowa</name>
       <persons>ok. 6 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -65,7 +71,13 @@
         <item>Czas pracy: 10 minut</item>
         <item>Czas chłodzenia: 30 minut</item>
       </timing>
-    <knowledge><item>Sok i syrop można wymieszać dzień wcześniej i schłodzić – wodę dodaj bezpośrednio przed podaniem.</item><item>Gotowa limonada trzyma się w lodówce 1 dzień; koncentrat bez wody około 2 dni.</item><item>Zamiast miodu można użyć cukru trzcinowego albo syropu z agawy.</item><item>Więcej mięty i lodu daje szczególnie orzeźwiający efekt.</item></knowledge></translation>
+      <knowledge>
+        <item>Sok i syrop można wymieszać dzień wcześniej i schłodzić – wodę dodaj bezpośrednio przed podaniem.</item>
+        <item>Gotowa limonada trzyma się w lodówce 1 dzień; koncentrat bez wody około 2 dni.</item>
+        <item>Zamiast miodu można użyć cukru trzcinowego albo syropu z agawy.</item>
+        <item>Więcej mięty i lodu daje szczególnie orzeźwiający efekt.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Lemon Lime Lemonade</name>
       <persons>approx. 6 glasses</persons>
@@ -93,7 +105,183 @@
         <item>Prep time: 10 minutes</item>
         <item>Chill time: 30 minutes</item>
       </timing>
-    <knowledge><item>Juice and syrup can be mixed the day before and chilled – add sparkling water when you are ready to serve.</item><item>Mixed lemonade keeps in the fridge for 1 day; concentrate without water about 2 days.</item><item>Cane sugar or agave syrup works instead of honey.</item><item>Extra mint and ice make the lemonade especially refreshing.</item></knowledge></translation>
+      <knowledge>
+        <item>Juice and syrup can be mixed the day before and chilled – add sparkling water when you are ready to serve.</item>
+        <item>Mixed lemonade keeps in the fridge for 1 day; concentrate without water about 2 days.</item>
+        <item>Cane sugar or agave syrup works instead of honey.</item>
+        <item>Extra mint and ice make the lemonade especially refreshing.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Citroen Limoenlimonade</name>
+      <persons>ca. 6 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Zelfgemaakte limonades</subcategory>
+      <intro>Een klassieke zelfgemaakte citroen- en limoenlimonade met een aangename zuurgraad en veel frisheid – perfect voor warme zomerdagen.</intro>
+      <servingTip> Serveer goed gekoeld in grote glazen met veel ijs, verse citroen- en limoenschijfjes en munt.</servingTip>
+      <ingredients>
+        <item>4 citroenen</item>
+        <item>3 limoenen</item>
+        <item>800 ml bruisend mineraalwater</item>
+        <item>3–4 eetlepels honing of agavesiroop</item>
+        <item>ijsblokjes</item>
+        <item>Plakken van citroen en limoen</item>
+        <item>munt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Sap de citroenen en limoenen uit.</step>
+        <step nr="2">Roer het sap door met honing of agavesiroop.</step>
+        <step nr="3">Voeg het bruisende mineraalwater toe.</step>
+        <step nr="4">Vullen met ijsblokjes.</step>
+        <step nr="5">Serveer met schijfjes citroen, limoen en munt.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 10 minuten</item>
+        <item> Chill-tijd: 30 minuten</item>
+      </timing>
+      <knowledge>
+        <item>Sap en siroop kunnen de dag ervoor worden gemengd en gekoeld – voeg bruisend water toe als je klaar bent om te serveren.</item>
+        <item>Gemengde limonade is 1 dag houdbaar in de koelkast; concentraat zonder water ongeveer 2 dagen.</item>
+        <item>Rietsuiker of agavesiroop werkt in plaats van honing.</item>
+        <item>Extra munt en ijs maken de limonade bijzonder verfrissend.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Limonade Citron Lime</name>
+      <persons>env. 6 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Limonades maison</subcategory>
+      <intro>Une limonade maison classique au citron et au citron vert avec une acidité agréable et beaucoup de fraîcheur – parfaite pour les chaudes journées d’été.</intro>
+      <servingTip> Servir bien frais dans de grands verres avec beaucoup de glace, des tranches de citron et de lime fraîches et de la menthe.</servingTip>
+      <ingredients>
+        <item>4 citrons</item>
+        <item>3 citrons verts</item>
+        <item>800 ml d'eau minérale gazeuse</item>
+        <item>3-4 cuillères à soupe de miel ou de sirop d'agave</item>
+        <item>glaçons</item>
+        <item>tranches de citron et de lime</item>
+        <item>menthe</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pressez les citrons et les limes.</step>
+        <step nr="2">Mélanger le jus avec du miel ou du sirop d'agave.</step>
+        <step nr="3">Ajoutez l'eau minérale gazeuse.</step>
+        <step nr="4">Remplir de glaçons.</step>
+        <step nr="5">Servir avec des tranches de citron et de lime et de la menthe.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 10 minutes</item>
+        <item>Temps de refroidissement : 30 minutes</item>
+      </timing>
+      <knowledge>
+        <item>Jus et sirop peuvent être mélangés la veille et réfrigérés – ajoutez de l'eau gazeuse au moment de servir.</item>
+        <item>Le mélange de limonade se conserve 1 jour au réfrigérateur ; concentrer sans eau environ 2 jours.</item>
+        <item>Le sucre de canne ou le sirop d'agave remplace le miel.</item>
+        <item>La menthe et la glace supplémentaires rendent la limonade particulièrement rafraîchissante.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Limonada de lima limón</name>
+      <persons>aprox. 6 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Limonadas caseras</subcategory>
+      <intro>Una clásica limonada casera de limón y lima con una agradable acidez y mucha frescura, perfecta para los calurosos días de verano.</intro>
+      <servingTip>Sirva bien frío en vasos grandes con abundante hielo, rodajas de limón y lima frescas y menta.</servingTip>
+      <ingredients>
+        <item>4 limones</item>
+        <item>3 limas</item>
+        <item>800 ml de agua mineral con gas</item>
+        <item>3–4 cucharadas de miel o sirope de agave</item>
+        <item>cubitos de hielo</item>
+        <item>rodajas de limón y lima</item>
+        <item>menta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Exprime los limones y las limas.</step>
+        <step nr="2">Revuelve el jugo con miel o sirope de agave.</step>
+        <step nr="3">Añadir el agua mineral con gas.</step>
+        <step nr="4">Rellenar con cubitos de hielo.</step>
+        <step nr="5">Sirve con rodajas de limón y lima y menta.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 10 minutos</item>
+        <item>Tiempo de enfriamiento: 30 minutos</item>
+      </timing>
+      <knowledge>
+        <item>El jugo y el almíbar se pueden mezclar el día anterior y enfriar; agregue agua con gas cuando esté listo para servir.</item>
+        <item>La limonada mixta se conserva en el refrigerador por 1 día; concentrar sin agua unos 2 días.</item>
+        <item>El azúcar de caña o el jarabe de agave funcionan en lugar de la miel.</item>
+        <item>La menta extra y el hielo hacen que la limonada sea especialmente refrescante.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Limonata al limone e lime</name>
+      <persons>ca. 6 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Limonate fatte in casa</subcategory>
+      <intro>Una classica limonata al limone e lime fatta in casa con una piacevole acidità e molta freschezza, perfetta per le calde giornate estive.</intro>
+      <servingTip>Servire ben freddo in ampi bicchieri con abbondante ghiaccio, fette di limone e lime freschi e menta.</servingTip>
+      <ingredients>
+        <item>4 limoni</item>
+        <item>3 lime</item>
+        <item>Acqua minerale frizzante da 800 ml</item>
+        <item>3–4 cucchiai di miele o sciroppo d'agave</item>
+        <item>cubetti di ghiaccio</item>
+        <item>fette di limone e lime</item>
+        <item>menta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Succo i limoni e i lime.</step>
+        <step nr="2">Mescola il succo con miele o sciroppo d'agave.</step>
+        <step nr="3">Aggiungi l'acqua minerale frizzante.</step>
+        <step nr="4">Riempire con cubetti di ghiaccio.</step>
+        <step nr="5">Servire con fette di limone, lime e menta.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 10 minuti</item>
+        <item>Tempo di raffreddamento: 30 minuti</item>
+      </timing>
+      <knowledge>
+        <item>Succo e sciroppo possono essere mescolati il giorno prima e raffreddati: aggiungi acqua frizzante quando sei pronto per servire.</item>
+        <item>La limonata mista si conserva in frigorifero per 1 giorno; concentrato senza acqua circa 2 giorni.</item>
+        <item>Lo zucchero di canna o lo sciroppo d'agave funzionano al posto del miele.</item>
+        <item>Un extra di menta e ghiaccio rendono la limonata particolarmente rinfrescante.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Limonáda s citronem a limetkou</name>
+      <persons>cca. 6 sklenic</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Domácí limonády</subcategory>
+      <intro>Klasická domácí citronová a limetková limonáda s příjemnou kyselinkou a spoustou svěžesti – ideální pro horké letní dny.</intro>
+      <servingTip>Podávejte dobře vychlazené ve velkých sklenicích se spoustou ledu, plátky čerstvého citronu a limetky a mátou.</servingTip>
+      <ingredients>
+        <item>4 citrony</item>
+        <item>3 limetky</item>
+        <item>800 ml perlivé minerální vody</item>
+        <item>3–4 lžíce medu nebo agávového sirupu</item>
+        <item>kostky ledu</item>
+        <item>plátky citronu a limetky</item>
+        <item>máta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Odšťavněte citrony a limetky.</step>
+        <step nr="2">Smíchejte šťávu s medem nebo agávovým sirupem.</step>
+        <step nr="3">Přidejte perlivou minerální vodu.</step>
+        <step nr="4">Naplňte kostkami ledu.</step>
+        <step nr="5">Podávejte s plátky citronu a limetky a mátou.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 10 minut</item>
+        <item>Doba chlazení: 30 minut</item>
+      </timing>
+      <knowledge>
+        <item>Šťávu a sirup lze smíchat den předem a vychladit – až budete připraveni podávat, přidejte perlivou vodu.</item>
+        <item>Míchaná limonáda vydrží v lednici 1 den; koncentrát bez vody cca 2 dny.</item>
+        <item>Místo medu funguje třtinový cukr nebo agávový sirup.</item>
+        <item>Navíc máta a led dělají limonádu obzvlášť osvěžující.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="408">
     <name>Erdbeer-Basilikum-Limonade</name>
@@ -130,7 +318,13 @@
     <timing>
       <item>Arbeitszeit: 10 Minuten</item>
     </timing>
-    <knowledge><item>Erdbeer-Basilikum-Basis lässt sich 2–3 Stunden vorher kalt stellen; mit Wasser unmittelbar vor dem Servieren mischen.</item><item>Im Kühlschrank hält sich die Limonade 1–2 Tage – vor dem Trinken kräftig umrühren.</item><item>Statt Basilikum funktioniert auch Minze für eine mildere Kräuternote.</item><item>Weniger Süße? Einfach etwas mehr Mineralwasser oder Zitronensaft zugeben.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Erdbeer-Basilikum-Basis lässt sich 2–3 Stunden vorher kalt stellen; mit Wasser unmittelbar vor dem Servieren mischen.</item>
+      <item>Im Kühlschrank hält sich die Limonade 1–2 Tage – vor dem Trinken kräftig umrühren.</item>
+      <item>Statt Basilikum funktioniert auch Minze für eine mildere Kräuternote.</item>
+      <item>Weniger Süße? Einfach etwas mehr Mineralwasser oder Zitronensaft zugeben.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Limonada truskawkowo-bazyliowa</name>
       <persons>ok. 4–6 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -155,7 +349,13 @@
       <timing>
         <item>Czas pracy: 10 minut</item>
       </timing>
-    <knowledge><item>Bazę truskawkowo-bazyliową można schłodzić 2–3 godziny wcześniej; wodę dodaj bezpośrednio przed podaniem.</item><item>W lodówce limonada trzyma się 1–2 dni – przed podaniem dobrze wymieszaj.</item><item>Zamiast bazylii można użyć mięty na łagodniejszą nutę.</item><item>Mniej słodkości? Dodaj więcej wody mineralnej albo soku z cytryny.</item></knowledge></translation>
+      <knowledge>
+        <item>Bazę truskawkowo-bazyliową można schłodzić 2–3 godziny wcześniej; wodę dodaj bezpośrednio przed podaniem.</item>
+        <item>W lodówce limonada trzyma się 1–2 dni – przed podaniem dobrze wymieszaj.</item>
+        <item>Zamiast bazylii można użyć mięty na łagodniejszą nutę.</item>
+        <item>Mniej słodkości? Dodaj więcej wody mineralnej albo soku z cytryny.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Strawberry Basil Lemonade</name>
       <persons>approx. 4–6 glasses</persons>
@@ -181,7 +381,168 @@
       <timing>
         <item>Prep time: 10 minutes</item>
       </timing>
-    <knowledge><item>The strawberry-basil base can chill 2–3 hours before; mix with water when you are ready to serve.</item><item>The lemonade keeps in the fridge for 1–2 days – stir well before drinking.</item><item>Mint works instead of basil for a milder herbal note.</item><item>Want less sweetness? Add more sparkling water or lemon juice.</item></knowledge></translation>
+      <knowledge>
+        <item>The strawberry-basil base can chill 2–3 hours before; mix with water when you are ready to serve.</item>
+        <item>The lemonade keeps in the fridge for 1–2 days – stir well before drinking.</item>
+        <item>Mint works instead of basil for a milder herbal note.</item>
+        <item>Want less sweetness? Add more sparkling water or lemon juice.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Aardbeien-basilicumlimonade</name>
+      <persons>ca. 4–6 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Zelfgemaakte limonades</subcategory>
+      <intro>Een fruitige aardbeienlimonade met verse basilicum – verfrissend, zomers en snel te maken in de Thermomix.</intro>
+      <servingTip>Serveer met ijs en verse stukjes aardbei. Roer vlak voor het serveren de basilicum erdoor, zodat deze vers blijft.</servingTip>
+      <ingredients>
+        <item>500 g aardbeien</item>
+        <item>sap van 2 citroenen</item>
+        <item>700 ml bruisend mineraalwater</item>
+        <item>2–3 eetlepels honing of agavesiroop</item>
+        <item>8–10 basilicumblaadjes</item>
+        <item>ijsblokjes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Voeg aardbeien, citroensap en honing toe aan de mengkom en mix 20 Sek. / Stufe 8.</step>
+        <step nr="2">Voeg het bruisende mineraalwater toe.</step>
+        <step nr="3">Roer de basilicum er voorzichtig door.</step>
+        <step nr="4">Serveer met ijs.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 10 minuten</item>
+      </timing>
+      <knowledge>
+        <item>De aardbei-basilicumbasis kan 2-3 uur van tevoren worden gekoeld; meng met water als u klaar bent om te serveren.</item>
+        <item>De limonade is 1 à 2 dagen houdbaar in de koelkast – roer goed voordat je hem drinkt.</item>
+        <item>Mint werkt in plaats van basilicum voor een mildere, kruidige toon.</item>
+        <item>Wil je minder zoetigheid? Voeg meer bruisend water of citroensap toe.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Limonade Fraises Basilic</name>
+      <persons>env. 4 à 6 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Limonades maison</subcategory>
+      <intro>Une limonade fruitée à la fraise et au basilic frais – rafraîchissante, estivale et rapide à réaliser au Thermomix.</intro>
+      <servingTip>Servir avec de la glace et des morceaux de fraises fraîches. Incorporer le basilic juste avant de servir pour qu'il reste frais.</servingTip>
+      <ingredients>
+        <item>500 g de fraises</item>
+        <item>jus de 2 citrons</item>
+        <item>700 ml d'eau minérale gazeuse</item>
+        <item>2-3 cuillères à soupe de miel ou de sirop d'agave</item>
+        <item>8 à 10 feuilles de basilic</item>
+        <item>glaçons</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ajouter les fraises, le jus de citron et le miel dans le bol et mélanger 20 Sek. / Stuffe 8.</step>
+        <step nr="2">Ajoutez l'eau minérale gazeuse.</step>
+        <step nr="3">Incorporer délicatement le basilic.</step>
+        <step nr="4">Servir avec de la glace.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 10 minutes</item>
+      </timing>
+      <knowledge>
+        <item>La base fraise-basilic peut être réfrigérée 2 à 3 heures avant ; mélanger avec de l'eau au moment de servir.</item>
+        <item>La limonade se conserve 1 à 2 jours au réfrigérateur – remuez bien avant de la boire.</item>
+        <item>La menthe remplace le basilic pour une note herbacée plus douce.</item>
+        <item>Envie de moins de douceur ? Ajoutez plus d'eau gazeuse ou de jus de citron.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Limonada de fresa y albahaca</name>
+      <persons>aprox. 4 a 6 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Limonadas caseras</subcategory>
+      <intro>Una limonada afrutada de fresa con albahaca fresca: refrescante, veraniega y rápida de preparar en Thermomix.</intro>
+      <servingTip>Sirva con hielo y trozos de fresa fresca. Agrega la albahaca justo antes de servir para que se mantenga fresca.</servingTip>
+      <ingredients>
+        <item>500 g de fresas</item>
+        <item>jugo de 2 limones</item>
+        <item>700 ml de agua mineral con gas</item>
+        <item>2–3 cucharadas de miel o sirope de agave</item>
+        <item>8–10 hojas de albahaca</item>
+        <item>cubitos de hielo</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Agregue las fresas, el jugo de limón y la miel al tazón y mezcle 20 seg. / Estufa 8.</step>
+        <step nr="2">Añadir el agua mineral con gas.</step>
+        <step nr="3">Agregue suavemente la albahaca.</step>
+        <step nr="4">Sirve con hielo.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 10 minutos</item>
+      </timing>
+      <knowledge>
+        <item>La base de fresa y albahaca se puede enfriar 2 o 3 horas antes; mezcle con agua cuando esté listo para servir.</item>
+        <item>La limonada se conserva en el refrigerador durante 1 o 2 días; revuélvela bien antes de beberla.</item>
+        <item>La menta funciona en lugar de la albahaca para obtener una nota herbácea más suave.</item>
+        <item>¿Quieres menos dulzura? Agregue más agua con gas o jugo de limón.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Limonata alle fragole e basilico</name>
+      <persons>ca. 4–6 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Limonate fatte in casa</subcategory>
+      <intro>Una limonata fruttata alla fragola con basilico fresco: rinfrescante, estiva e veloce da preparare con il Bimby.</intro>
+      <servingTip>Servire con ghiaccio e pezzetti di fragole fresche. Mescolare il basilico appena prima di servire in modo che rimanga fresco.</servingTip>
+      <ingredients>
+        <item>500 g di fragole</item>
+        <item>succo di 2 limoni</item>
+        <item>Acqua minerale frizzante da 700 ml</item>
+        <item>2–3 cucchiai di miele o sciroppo d'agave</item>
+        <item>8–10 foglie di basilico</item>
+        <item>cubetti di ghiaccio</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Aggiungi le fragole, il succo di limone e il miele nella ciotola e frulla per 20 Sek. / Stufa 8.</step>
+        <step nr="2">Aggiungi l'acqua minerale frizzante.</step>
+        <step nr="3">Incorpora delicatamente il basilico.</step>
+        <step nr="4">Servire con ghiaccio.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 10 minuti</item>
+      </timing>
+      <knowledge>
+        <item>La base fragola-basilico può essere lasciata raffreddare 2–3 ore prima; mescolare con acqua quando sei pronto per servire.</item>
+        <item>La limonata si conserva in frigorifero per 1-2 giorni: mescola bene prima di berla.</item>
+        <item>La menta sostituisce il basilico per una nota erbacea più delicata.</item>
+        <item>Vuoi meno dolcezza? Aggiungi altra acqua frizzante o succo di limone.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Jahodová bazalková limonáda</name>
+      <persons>cca. 4–6 sklenic</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Domácí limonády</subcategory>
+      <intro>Ovocná jahodová limonáda s čerstvou bazalkou – osvěžující, letní a rychlá na přípravu v Thermomixu.</intro>
+      <servingTip>Podávejte s ledem a kousky čerstvých jahod. Bazalku vmíchejte těsně před podáváním, aby zůstala čerstvá.</servingTip>
+      <ingredients>
+        <item>500 g jahod</item>
+        <item>šťáva ze 2 citronů</item>
+        <item>700 ml perlivé minerální vody</item>
+        <item>2–3 lžíce medu nebo agávového sirupu</item>
+        <item>8–10 lístků bazalky</item>
+        <item>kostek ledu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Do mixovací nádoby přidejte jahody, citronovou šťávu a med a mixujte 20 sekund. / Věci 8.</step>
+        <step nr="2">Přidejte perlivou minerální vodu.</step>
+        <step nr="3">Jemně vmíchejte bazalku.</step>
+        <step nr="4">Podávejte s ledem.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 10 minut</item>
+      </timing>
+      <knowledge>
+        <item>Jahodovo-bazalkový základ může vychladnout 2–3 hodiny předem; smíchejte s vodou, když jste připraveni podávat.</item>
+        <item>Limonáda vydrží v lednici 1–2 dny – před pitím ji dobře promíchejte.</item>
+        <item>Máta funguje místo bazalky pro jemnější bylinný tón.</item>
+        <item>Chcete méně sladkostí? Přidejte více perlivé vody nebo citronové šťávy.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="409">
     <name>Pfirsich-Eistee</name>
@@ -217,7 +578,13 @@
       <item>Arbeitszeit: 15 Minuten</item>
       <item>Kühlzeit: 1 Stunde</item>
     </timing>
-    <knowledge><item>Tee und Pfirsichsirup lassen sich am Vortag kalt stellen; Eis unmittelbar vor dem Servieren zugeben.</item><item>Im Kühlschrank hält sich der Eistee 1–2 Tage luftdicht verschlossen.</item><item>Statt Pfirsichsirup funktioniert auch Mango- oder Maracuja-Sirup.</item><item>Als Eiswürfel eingefrorener Tee verhindert verwässertes Nachschütten.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Tee und Pfirsichsirup lassen sich am Vortag kalt stellen; Eis unmittelbar vor dem Servieren zugeben.</item>
+      <item>Im Kühlschrank hält sich der Eistee 1–2 Tage luftdicht verschlossen.</item>
+      <item>Statt Pfirsichsirup funktioniert auch Mango- oder Maracuja-Sirup.</item>
+      <item>Als Eiswürfel eingefrorener Tee verhindert verwässertes Nachschütten.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Mrożona herbata brzoskwiniowa</name>
       <persons>ok. 6–8 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -242,7 +609,13 @@
         <item>Czas pracy: 15 minut</item>
         <item>Czas chłodzenia: 1 godzina</item>
       </timing>
-    <knowledge><item>Herbatę i syrop brzoskwiniowy można schłodzić dzień wcześniej; lód dodaj bezpośrednio przed podaniem.</item><item>Mrożona herbata trzyma się w lodówce 1–2 dni w szczelnym pojemniku.</item><item>Zamiast syropu brzoskwiniowego można użyć mango albo marakui.</item><item>Kostki lodu z mrożonej herbaty zapobiegają rozwodnieniu napoju.</item></knowledge></translation>
+      <knowledge>
+        <item>Herbatę i syrop brzoskwiniowy można schłodzić dzień wcześniej; lód dodaj bezpośrednio przed podaniem.</item>
+        <item>Mrożona herbata trzyma się w lodówce 1–2 dni w szczelnym pojemniku.</item>
+        <item>Zamiast syropu brzoskwiniowego można użyć mango albo marakui.</item>
+        <item>Kostki lodu z mrożonej herbaty zapobiegają rozwodnieniu napoju.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Peach Iced Tea</name>
       <persons>approx. 6–8 glasses</persons>
@@ -268,7 +641,173 @@
         <item>Prep time: 15 minutes</item>
         <item>Chill time: 1 hour</item>
       </timing>
-    <knowledge><item>Tea and peach syrup can chill the day before; add ice when you are ready to serve.</item><item>Iced tea keeps in the fridge for 1–2 days in an airtight container.</item><item>Mango or passion fruit syrup works instead of peach syrup.</item><item>Tea frozen into ice cubes prevents watering down when topping up.</item></knowledge></translation>
+      <knowledge>
+        <item>Tea and peach syrup can chill the day before; add ice when you are ready to serve.</item>
+        <item>Iced tea keeps in the fridge for 1–2 days in an airtight container.</item>
+        <item>Mango or passion fruit syrup works instead of peach syrup.</item>
+        <item>Tea frozen into ice cubes prevents watering down when topping up.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Perzik ijsthee</name>
+      <persons>ca. 6–8 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>IJsthee en koude koffie</subcategory>
+      <intro>Een zoete, fruitige perzik-ijsthee op basis van zwarte thee – ideaal voor ontspannen zomermiddagen.</intro>
+      <servingTip>Serveer met ijs en verse perzikschijfjes. Hoe langer de thee koelt, hoe aromatischer deze wordt.</servingTip>
+      <ingredients>
+        <item>1 liter zwarte thee</item>
+        <item>4 rijpe perziken</item>
+        <item>sap van 1 citroen</item>
+        <item>schat</item>
+        <item>ijsblokjes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Brouw de zwarte thee en laat deze volledig afkoelen.</step>
+        <step nr="2">Pureer de perziken.</step>
+        <step nr="3">Meng met de thee.</step>
+        <step nr="4">Voeg citroensap en honing toe.</step>
+        <step nr="5">Serveer koud.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 15 minuten</item>
+        <item> Chill-tijd: 1 uur</item>
+      </timing>
+      <knowledge>
+        <item>Thee en perziksiroop kunnen de dag ervoor gekoeld worden; voeg ijs toe als u klaar bent om te serveren.</item>
+        <item>IJsthee is in de koelkast 1 à 2 dagen houdbaar in een luchtdichte verpakking.</item>
+        <item>Mango- of passievruchtsiroop werkt in plaats van perziksiroop.</item>
+        <item>In ijsblokjes ingevroren thee voorkomt het verwateren bij het bijvullen.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Thé glacé à la pêche</name>
+      <persons>env. 6 à 8 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Thé glacé et café froid</subcategory>
+      <intro>Un thé glacé à la pêche sucré et fruité à base de thé noir – idéal pour les après-midi d'été détendus.</intro>
+      <servingTip>Servir avec de la glace et des tranches de pêches fraîches. Plus le thé refroidit longtemps, plus il devient aromatique.</servingTip>
+      <ingredients>
+        <item>1 litre de thé noir</item>
+        <item>4 pêches mûres</item>
+        <item>jus de 1 citron</item>
+        <item>chérie</item>
+        <item>glaçons</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Infusez le thé noir et laissez-le refroidir complètement.</step>
+        <step nr="2">Réduire les pêches en purée.</step>
+        <step nr="3">Mélanger avec le thé.</step>
+        <step nr="4">Ajouter le jus de citron et le miel.</step>
+        <step nr="5">Servir froid.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 15 minutes</item>
+        <item>Temps de refroidissement : 1 heure</item>
+      </timing>
+      <knowledge>
+        <item>Le thé et le sirop de pêche peuvent rafraîchir la veille ; ajoutez de la glace lorsque vous êtes prêt à servir.</item>
+        <item>Le thé glacé se conserve 1 à 2 jours au réfrigérateur dans un récipient hermétique.</item>
+        <item>Le sirop de mangue ou de fruit de la passion remplace le sirop de pêche.</item>
+        <item>Le thé congelé dans des glaçons évite qu'il ne soit dilué lors de l'appoint.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Té helado de melocotón</name>
+      <persons>aprox. 6 a 8 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Té helado y café frío</subcategory>
+      <intro>Un té helado de melocotón dulce y afrutado a base de té negro, ideal para las tardes relajadas de verano.</intro>
+      <servingTip>Sirva con hielo y rodajas de durazno fresco. Cuanto más se enfría el té, más aromático se vuelve.</servingTip>
+      <ingredients>
+        <item>1 litro de té negro</item>
+        <item>4 melocotones maduros</item>
+        <item>jugo de 1 limón</item>
+        <item>miel</item>
+        <item>cubitos de hielo</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepara el té negro y déjalo enfriar por completo.</step>
+        <step nr="2">Hacer puré con los melocotones.</step>
+        <step nr="3">Mezclar con el té.</step>
+        <step nr="4">Agrega el jugo de limón y la miel.</step>
+        <step nr="5">Servir frío.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 15 minutos</item>
+        <item>Tiempo de enfriamiento: 1 hora</item>
+      </timing>
+      <knowledge>
+        <item>El té y el jarabe de durazno pueden enfriar el día anterior; agregue hielo cuando esté listo para servir.</item>
+        <item>El té helado se conserva en el refrigerador durante 1 o 2 días en un recipiente hermético.</item>
+        <item>El jarabe de mango o maracuyá funciona en lugar del jarabe de melocotón.</item>
+        <item>El té congelado en cubitos de hielo evita que se diluya al rellenar.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Tè freddo alla pesca</name>
+      <persons>ca. 6–8 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Tè freddo e caffè freddo</subcategory>
+      <intro>Un tè freddo alla pesca dolce e fruttato a base di tè nero, ideale per rilassanti pomeriggi estivi.</intro>
+      <servingTip>Servire con ghiaccio e fettine di pesca fresca. Più a lungo il tè si raffredda, più diventa aromatico.</servingTip>
+      <ingredients>
+        <item>1 litro di tè nero</item>
+        <item>4 pesche mature</item>
+        <item>succo di 1 limone</item>
+        <item>tesoro</item>
+        <item>cubetti di ghiaccio</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepara il tè nero e lascialo raffreddare completamente.</step>
+        <step nr="2">Riduci a purea le pesche.</step>
+        <step nr="3">Mescolare con il tè.</step>
+        <step nr="4">Aggiungi il succo di limone e il miele.</step>
+        <step nr="5">Servire freddo.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 15 minuti</item>
+        <item>Tempo di raffreddamento: 1 ora</item>
+      </timing>
+      <knowledge>
+        <item>Il tè e lo sciroppo di pesca possono rinfrescare il giorno prima; aggiungi il ghiaccio quando sei pronto per servire.</item>
+        <item>Il tè freddo si conserva in frigorifero per 1-2 giorni in un contenitore ermetico.</item>
+        <item>Lo sciroppo di mango o frutto della passione funziona al posto dello sciroppo di pesca.</item>
+        <item>Il tè congelato in cubetti di ghiaccio impedisce l'annacquamento durante il rabbocco.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Broskvový ledový čaj</name>
+      <persons>cca. 6–8 sklenic</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Ledový čaj a studená káva</subcategory>
+      <intro>Sladký ovocný broskvový ledový čaj na bázi černého čaje – ideální pro pohodová letní odpoledne.</intro>
+      <servingTip>Podávejte s ledem a plátky čerstvé broskve. Čím déle čaj chladne, tím je aromatičtější.</servingTip>
+      <ingredients>
+        <item>1 litr černého čaje</item>
+        <item>4 zralé broskve</item>
+        <item>šťáva z 1 citronu</item>
+        <item>zlato</item>
+        <item>kostky ledu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Uvařte černý čaj a nechte ho úplně vychladnout.</step>
+        <step nr="2">Uvařte broskve na pyré.</step>
+        <step nr="3">Smíchejte s čajem.</step>
+        <step nr="4">Přidejte citronovou šťávu a med.</step>
+        <step nr="5">Podávejte vychlazené.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 15 minut</item>
+        <item>Doba chlazení: 1 hodina</item>
+      </timing>
+      <knowledge>
+        <item>Čaj a broskvový sirup mohou den předem vychladit; přidejte led, když jste připraveni podávat.</item>
+        <item>Ledový čaj vydrží v lednici 1–2 dny ve vzduchotěsné nádobě.</item>
+        <item>Místo broskvového sirupu funguje mangový nebo marakujový sirup.</item>
+        <item>Čaj zmražený na kostky ledu zabraňuje stékání vody při doplňování.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="410">
     <name>Zitronen-Minze-Eistee</name>
@@ -304,7 +843,13 @@
       <item>Arbeitszeit: 10 Minuten</item>
       <item>Kühlzeit: 1 Stunde</item>
     </timing>
-    <knowledge><item>Zitronen-Minze-Tee lässt sich am Vortag ziehen und kalt stellen; frische Minze kurz vor dem Servieren zugeben.</item><item>Im Kühlschrank hält sich der Eistee 1–2 Tage.</item><item>Statt Schwarztee funktioniert auch grüner Tee für eine leichtere Variante.</item><item>Mit etwas Honig oder Agavendicksaft lässt sich die Süße individuell anpassen.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Zitronen-Minze-Tee lässt sich am Vortag ziehen und kalt stellen; frische Minze kurz vor dem Servieren zugeben.</item>
+      <item>Im Kühlschrank hält sich der Eistee 1–2 Tage.</item>
+      <item>Statt Schwarztee funktioniert auch grüner Tee für eine leichtere Variante.</item>
+      <item>Mit etwas Honig oder Agavendicksaft lässt sich die Süße individuell anpassen.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Mrożona herbata cytrynowo-miętowa</name>
       <persons>ok. 6–8 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -329,7 +874,13 @@
         <item>Czas pracy: 10 minut</item>
         <item>Czas chłodzenia: 1 godzina</item>
       </timing>
-    <knowledge><item>Herbatę cytrynowo-miętową można parzyć dzień wcześniej i schłodzić; świeżą miętę dodaj na końcu.</item><item>Mrożona herbata trzyma się w lodówce 1–2 dni.</item><item>Zamiast czarnej herbaty można użyć zielonej na lżejszą wersję.</item><item>Odrobina miodu albo syropu z agawy pozwala dopasować słodycz.</item></knowledge></translation>
+      <knowledge>
+        <item>Herbatę cytrynowo-miętową można parzyć dzień wcześniej i schłodzić; świeżą miętę dodaj na końcu.</item>
+        <item>Mrożona herbata trzyma się w lodówce 1–2 dni.</item>
+        <item>Zamiast czarnej herbaty można użyć zielonej na lżejszą wersję.</item>
+        <item>Odrobina miodu albo syropu z agawy pozwala dopasować słodycz.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Lemon Mint Iced Tea</name>
       <persons>approx. 6–8 glasses</persons>
@@ -355,7 +906,173 @@
         <item>Prep time: 10 minutes</item>
         <item>Chill time: 1 hour</item>
       </timing>
-    <knowledge><item>Lemon-mint tea can brew the day before and chill; add fresh mint when you are ready to serve.</item><item>Iced tea keeps in the fridge for 1–2 days.</item><item>Green tea works instead of black tea for a lighter version.</item><item>A little honey or agave syrup lets you adjust sweetness individually.</item></knowledge></translation>
+      <knowledge>
+        <item>Lemon-mint tea can brew the day before and chill; add fresh mint when you are ready to serve.</item>
+        <item>Iced tea keeps in the fridge for 1–2 days.</item>
+        <item>Green tea works instead of black tea for a lighter version.</item>
+        <item>A little honey or agave syrup lets you adjust sweetness individually.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Ijsthee met citroenmunt</name>
+      <persons>ca. 6–8 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>IJsthee en koude koffie</subcategory>
+      <intro>Een verfrissende ijsthee met citroen en munt en groene thee – licht, aromatisch en perfect voor warme dagen.</intro>
+      <servingTip>Serveer met veel ijs, verse muntblaadjes en schijfjes citroen.</servingTip>
+      <ingredients>
+        <item>1 liter groene thee</item>
+        <item>2 citroenen</item>
+        <item>schat</item>
+        <item>munt</item>
+        <item>ijsblokjes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Brouw de groene thee.</step>
+        <step nr="2">Roer het citroensap en de honing erdoor.</step>
+        <step nr="3">Voeg munt toe.</step>
+        <step nr="4">Goed afkoelen.</step>
+        <step nr="5">Serveer met ijs.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 10 minuten</item>
+        <item> Chill-tijd: 1 uur</item>
+      </timing>
+      <knowledge>
+        <item>Citroen-muntthee kan de dag ervoor worden gezet en gekoeld; voeg verse munt toe als je klaar bent om te serveren.</item>
+        <item>IJsthee is in de koelkast 1 à 2 dagen houdbaar.</item>
+        <item>Groene thee werkt in plaats van zwarte thee voor een lichtere versie.</item>
+        <item>Met een beetje honing of agavesiroop kun je de zoetheid individueel aanpassen.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Thé glacé à la menthe et au citron</name>
+      <persons>env. 6 à 8 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Thé glacé et café froid</subcategory>
+      <intro>Un thé glacé rafraîchissant au citron et à la menthe avec du thé vert – léger, aromatique et parfait pour les journées chaudes.</intro>
+      <servingTip> Servir avec beaucoup de glace, des feuilles de menthe fraîche et des tranches de citron.</servingTip>
+      <ingredients>
+        <item>1 litre de thé vert</item>
+        <item>2 citrons</item>
+        <item>chérie</item>
+        <item>menthe</item>
+        <item>glaçons</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Infusez le thé vert.</step>
+        <step nr="2">Incorporer le jus de citron et le miel.</step>
+        <step nr="3">Ajouter la menthe.</step>
+        <step nr="4">Bien refroidir.</step>
+        <step nr="5">Servir avec de la glace.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 10 minutes</item>
+        <item>Temps de refroidissement : 1 heure</item>
+      </timing>
+      <knowledge>
+        <item>Le thé citron-menthe peut être infusé la veille et réfrigéré ; ajoutez de la menthe fraîche au moment de servir.</item>
+        <item>Le thé glacé se conserve 1 à 2 jours au réfrigérateur.</item>
+        <item>Le thé vert fonctionne à la place du thé noir pour une version plus légère.</item>
+        <item>Un peu de miel ou de sirop d'agave permet d'ajuster individuellement la douceur.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Té helado de limón y menta</name>
+      <persons>aprox. 6 a 8 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Té helado y café frío</subcategory>
+      <intro>Un refrescante té helado de limón y menta con té verde: ligero, aromático y perfecto para los días calurosos.</intro>
+      <servingTip>Sirve con abundante hielo, hojas de menta fresca y rodajas de limón.</servingTip>
+      <ingredients>
+        <item>1 litro de té verde</item>
+        <item>2 limones</item>
+        <item>miel</item>
+        <item>menta</item>
+        <item>cubitos de hielo</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepara el té verde.</step>
+        <step nr="2">Agregue el jugo de limón y la miel.</step>
+        <step nr="3">Agrega menta.</step>
+        <step nr="4">Relájate bien.</step>
+        <step nr="5">Sirva con hielo.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 10 minutos</item>
+        <item>Tiempo de enfriamiento: 1 hora</item>
+      </timing>
+      <knowledge>
+        <item>El té de limón y menta se puede preparar el día anterior y enfriar; agregue menta fresca cuando esté listo para servir.</item>
+        <item>El té helado se conserva en el refrigerador durante 1 o 2 días.</item>
+        <item>El té verde funciona en lugar del té negro para obtener una versión más ligera.</item>
+        <item>Un poco de miel o jarabe de agave te permite ajustar el dulzor individualmente.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Tè freddo alla menta e limone</name>
+      <persons>ca. 6–8 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Tè freddo e caffè freddo</subcategory>
+      <intro>Un rinfrescante tè freddo al limone e menta con tè verde: leggero, aromatico e perfetto per le giornate calde.</intro>
+      <servingTip>Servire con abbondante ghiaccio, foglie di menta fresca e fette di limone.</servingTip>
+      <ingredients>
+        <item>1 litro di tè verde</item>
+        <item>2 limoni</item>
+        <item>tesoro</item>
+        <item>menta</item>
+        <item>cubetti di ghiaccio</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepara il tè verde.</step>
+        <step nr="2">Incorpora il succo di limone e il miele.</step>
+        <step nr="3">Aggiungi la menta.</step>
+        <step nr="4">Rilassati bene.</step>
+        <step nr="5">Servire con ghiaccio.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 10 minuti</item>
+        <item>Tempo di raffreddamento: 1 ora</item>
+      </timing>
+      <knowledge>
+        <item>Il tè al limone e menta può essere preparato il giorno prima e lasciato raffreddare; aggiungi la menta fresca quando sei pronto per servire.</item>
+        <item>Il tè freddo si conserva in frigorifero per 1-2 giorni.</item>
+        <item>Il tè verde funziona al posto del tè nero per una versione più leggera.</item>
+        <item>Un po' di miele o sciroppo d'agave ti consente di regolare la dolcezza individualmente.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Mátový ledový čaj</name>
+      <persons>cca. 6–8 sklenic</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Ledový čaj a studená káva</subcategory>
+      <intro>Osvěžující citronový a mátový ledový čaj se zeleným čajem – lehký, aromatický a ideální pro horké dny.</intro>
+      <servingTip>Podávejte se spoustou ledu, čerstvými lístky máty a plátky citronu.</servingTip>
+      <ingredients>
+        <item>1 litr zeleného čaje</item>
+        <item>2 citrony</item>
+        <item>zlato</item>
+        <item>máta</item>
+        <item>kostky ledu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Uvařte zelený čaj.</step>
+        <step nr="2">Přimíchejte citronovou šťávu a med.</step>
+        <step nr="3">Přidejte mátu.</step>
+        <step nr="4">Vychlaďte se.</step>
+        <step nr="5">Podávejte s ledem.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 10 minut</item>
+        <item>Doba chlazení: 1 hodina</item>
+      </timing>
+      <knowledge>
+        <item>Citrónovo-mátový čaj lze uvařit den předem a vychladit; přidejte čerstvou mátu, když jste připraveni podávat.</item>
+        <item>Ledový čaj vydrží v lednici 1–2 dny.</item>
+        <item>U lehčí verze funguje zelený čaj místo černého čaje.</item>
+        <item>Trocha medu nebo agávového sirupu vám umožní individuálně upravit sladkost.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="411">
     <name>Cold Brew Orange</name>
@@ -388,7 +1105,13 @@
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <knowledge><item>Cold Brew lässt sich am Vortag ziehen; Orangensaft und Eis unmittelbar vor dem Servieren dazugeben.</item><item>Angemischter Cold Brew hält sich im Kühlschrank 1 Tag.</item><item>Statt Orangensaft funktioniert auch Mandarinen- oder Blutorangensaft.</item><item>Weniger Süße? Einfach mehr Cold Brew und weniger Saft verwenden.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Cold Brew lässt sich am Vortag ziehen; Orangensaft und Eis unmittelbar vor dem Servieren dazugeben.</item>
+      <item>Angemischter Cold Brew hält sich im Kühlschrank 1 Tag.</item>
+      <item>Statt Orangensaft funktioniert auch Mandarinen- oder Blutorangensaft.</item>
+      <item>Weniger Süße? Einfach mehr Cold Brew und weniger Saft verwenden.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Cold Brew z pomarańczą</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -410,7 +1133,13 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    <knowledge><item>Cold brew można parzyć dzień wcześniej; sok pomarańczowy i lód dodaj bezpośrednio przed podaniem.</item><item>Gotowy napój trzyma się w lodówce 1 dzień.</item><item>Zamiast soku pomarańczowego można użyć mandarynkowego albo krwi pomarańczy.</item><item>Mniej słodkości? Dodaj więcej cold brew i mniej soku.</item></knowledge></translation>
+      <knowledge>
+        <item>Cold brew można parzyć dzień wcześniej; sok pomarańczowy i lód dodaj bezpośrednio przed podaniem.</item>
+        <item>Gotowy napój trzyma się w lodówce 1 dzień.</item>
+        <item>Zamiast soku pomarańczowego można użyć mandarynkowego albo krwi pomarańczy.</item>
+        <item>Mniej słodkości? Dodaj więcej cold brew i mniej soku.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Cold Brew Orange</name>
       <persons>approx. 2 glasses</persons>
@@ -433,7 +1162,158 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    <knowledge><item>Cold brew can steep the day before; add orange juice and ice when you are ready to serve.</item><item>Mixed cold brew keeps in the fridge for 1 day.</item><item>Mandarin or blood orange juice works instead of regular orange juice.</item><item>Want less sweetness? Use more cold brew and less juice.</item></knowledge></translation>
+      <knowledge>
+        <item>Cold brew can steep the day before; add orange juice and ice when you are ready to serve.</item>
+        <item>Mixed cold brew keeps in the fridge for 1 day.</item>
+        <item>Mandarin or blood orange juice works instead of regular orange juice.</item>
+        <item>Want less sweetness? Use more cold brew and less juice.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Cold Brew-sinaasappel</name>
+      <persons>ca. 2 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>IJsthee en koude koffie</subcategory>
+      <intro>Een gelaagd koud brouwsel met sinaasappelsap – cafeïnehoudend, fruitig en ideaal als verfrissende zomerkoffie.</intro>
+      <servingTip>Giet het koude brouwsel langzaam uit om een ​​mooi gelaagd effect te creëren. Het lekkerst is meteen genieten.</servingTip>
+      <ingredients>
+        <item>300 ml koud brouwsel</item>
+        <item>150 ml sinaasappelsap</item>
+        <item>ijsblokjes</item>
+        <item>Sinaasappelschijfjes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Voeg ijs toe aan het glas.</step>
+        <step nr="2">Giet het sinaasappelsap erbij.</step>
+        <step nr="3">Giet langzaam het koude brouwsel erbij.</step>
+        <step nr="4">Serveer met een schijfje sinaasappel.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 5 minuten</item>
+      </timing>
+      <knowledge>
+        <item>Koud brouwsel kan de dag ervoor trekken; voeg sinaasappelsap en ijs toe als u klaar bent om te serveren.</item>
+        <item>Gemengd cold brew is 1 dag houdbaar in de koelkast.</item>
+        <item>Mandarijn- of bloedsinaasappelsap werkt in plaats van gewoon sinaasappelsap.</item>
+        <item>Wil je minder zoetigheid? Gebruik meer koud brouwsel en minder sap.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Orange infusée à froid</name>
+      <persons>env. 2 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Thé glacé et café froid</subcategory>
+      <intro>Une infusion froide étagée avec du jus d'orange – caféinée, fruitée et idéale comme café d'été rafraîchissant.</intro>
+      <servingTip>Versez lentement l'infusion froide pour créer un bel effet superposé. A déguster tout de suite.</servingTip>
+      <ingredients>
+        <item>300 ml d'infusion froide</item>
+        <item>150 ml de jus d'orange</item>
+        <item>glaçons</item>
+        <item>tranches d'orange</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ajoutez de la glace dans le verre.</step>
+        <step nr="2">Versez le jus d'orange.</step>
+        <step nr="3">Versez lentement l'infusion froide.</step>
+        <step nr="4">Servir avec une tranche d'orange.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 5 minutes</item>
+      </timing>
+      <knowledge>
+        <item>L'infusion froide peut être infusée la veille ; ajoutez du jus d'orange et de la glace au moment de servir.</item>
+        <item>Le mélange d'infusions froides se conserve 1 journée au réfrigérateur.</item>
+        <item>Le jus de mandarine ou d'orange sanguine fonctionne à la place du jus d'orange ordinaire.</item>
+        <item>Envie de moins de douceur ? Utilisez plus d'infusion froide et moins de jus.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Naranja preparada en frío</name>
+      <persons>aprox. 2 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Té helado y café frío</subcategory>
+      <intro>Una infusión fría en capas con jugo de naranja: con cafeína, afrutada e ideal como refrescante café de verano.</intro>
+      <servingTip>Vierta la infusión fría lentamente para crear un agradable efecto de capas. Se disfruta mejor de inmediato.</servingTip>
+      <ingredients>
+        <item>300 ml de cerveza fría</item>
+        <item>150 ml de zumo de naranja</item>
+        <item>cubitos de hielo</item>
+        <item>rodajas de naranja</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Agrega hielo al vaso.</step>
+        <step nr="2">Vierta el jugo de naranja.</step>
+        <step nr="3">Vierta lentamente la bebida fría.</step>
+        <step nr="4">Sirve con una rodaja de naranja.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 5 minutos</item>
+      </timing>
+      <knowledge>
+        <item>La cerveza fría puede reposar el día anterior; agregue jugo de naranja y hielo cuando esté listo para servir.</item>
+        <item>La cerveza fría mixta se conserva en el refrigerador durante 1 día.</item>
+        <item>El jugo de mandarina o naranja sanguina funciona en lugar del jugo de naranja normal.</item>
+        <item>¿Quieres menos dulzura? Utilice más cerveza fría y menos jugo.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Arancia prodotta a freddo</name>
+      <persons>ca. 2 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Tè freddo e caffè freddo</subcategory>
+      <intro>Un infuso freddo a strati con succo d'arancia: contenente caffeina, fruttato e ideale come rinfrescante caffè estivo.</intro>
+      <servingTip>Versare lentamente l'infuso freddo per creare un gradevole effetto a strati. Da gustare subito.</servingTip>
+      <ingredients>
+        <item>300 ml di infuso freddo</item>
+        <item>150 ml di succo d'arancia</item>
+        <item>cubetti di ghiaccio</item>
+        <item>fette d'arancia</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Aggiungi il ghiaccio nel bicchiere.</step>
+        <step nr="2">Versare il succo d'arancia.</step>
+        <step nr="3">Versare lentamente l'infuso freddo.</step>
+        <step nr="4">Servire con una fetta d'arancia.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 5 minuti</item>
+      </timing>
+      <knowledge>
+        <item>L'infuso freddo può essere macerato il giorno prima; aggiungi il succo d'arancia e il ghiaccio quando sei pronto per servire.</item>
+        <item>La miscela fredda si conserva in frigorifero per 1 giorno.</item>
+        <item>Il succo di mandarino o di arancia rossa funziona al posto del normale succo d'arancia.</item>
+        <item>Vuoi meno dolcezza? Usa più birra fredda e meno succo.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Cold Brew Orange</name>
+      <persons>cca. 2 sklenice</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Ledový čaj a studená káva</subcategory>
+      <intro>Vrstvený studený nálev s pomerančovým džusem – kofeinový, ovocný a ideální jako osvěžující letní káva.</intro>
+      <servingTip>Nalévejte studený nápoj pomalu, abyste vytvořili pěkný vrstvený efekt. Nejlépe si hned vychutnáte.</servingTip>
+      <ingredients>
+        <item>300 ml studeného vaření</item>
+        <item>150 ml pomerančové šťávy</item>
+        <item>kostky ledu</item>
+        <item>plátky pomeranče</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Přidejte do sklenice led.</step>
+        <step nr="2">Nalijte pomerančovou šťávu.</step>
+        <step nr="3">Pomalu nalijte studený nápoj.</step>
+        <step nr="4">Podávejte s plátkem pomeranče.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 5 minut</item>
+      </timing>
+      <knowledge>
+        <item>Studený nápoj může den předem vyluhovat; až budete připraveni podávat, přidejte pomerančový džus a led.</item>
+        <item>Smíšený studený nápoj vydrží v lednici 1 den.</item>
+        <item>Místo běžného pomerančového džusu funguje mandarinkový nebo krvavý pomeranč.</item>
+        <item>Chcete méně sladkostí? Použijte více studeného vaření a méně šťávy.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="412">
     <name>Eiskaffee Vanille</name>
@@ -467,7 +1347,13 @@
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <knowledge><item>Espresso lässt sich vorbereiten und kalt stellen; mit Milch und Vanille unmittelbar vor dem Servieren mixen.</item><item>Fertiger Eiskaffee schmeckt am besten frisch; im Kühlschrank höchstens wenige Stunden.</item><item>Statt Vanillesirup funktioniert auch etwas Karamell- oder Haselnusssirup.</item><item>Als Eiswürfel eingefrorener Kaffee hält den Drink länger kalt ohne Verwässern.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Espresso lässt sich vorbereiten und kalt stellen; mit Milch und Vanille unmittelbar vor dem Servieren mixen.</item>
+      <item>Fertiger Eiskaffee schmeckt am besten frisch; im Kühlschrank höchstens wenige Stunden.</item>
+      <item>Statt Vanillesirup funktioniert auch etwas Karamell- oder Haselnusssirup.</item>
+      <item>Als Eiswürfel eingefrorener Kaffee hält den Drink länger kalt ohne Verwässern.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Mrożona kawa waniliowa</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -490,7 +1376,13 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    <knowledge><item>Espresso można przygotować wcześniej i schłodzić; mleko i wanilię dodaj bezpośrednio przed podaniem.</item><item>Gotowa kawa lodowa smakuje najlepiej od razu; w lodówce tylko kilka godzin.</item><item>Zamiast syropu waniliowego można użyć karmelowego albo orzechowego.</item><item>Kostki lodu z mrożonej kawy dłużej utrzymują chłód bez rozwadniania.</item></knowledge></translation>
+      <knowledge>
+        <item>Espresso można przygotować wcześniej i schłodzić; mleko i wanilię dodaj bezpośrednio przed podaniem.</item>
+        <item>Gotowa kawa lodowa smakuje najlepiej od razu; w lodówce tylko kilka godzin.</item>
+        <item>Zamiast syropu waniliowego można użyć karmelowego albo orzechowego.</item>
+        <item>Kostki lodu z mrożonej kawy dłużej utrzymują chłód bez rozwadniania.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Vanilla Iced Coffee</name>
       <persons>approx. 2 glasses</persons>
@@ -514,7 +1406,163 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    <knowledge><item>Espresso can be prepared and chilled; mix with milk and vanilla when you are ready to serve.</item><item>Finished iced coffee tastes best fresh; in the fridge only a few hours.</item><item>Caramel or hazelnut syrup works instead of vanilla syrup.</item><item>Coffee frozen into ice cubes keeps the drink cold longer without watering down.</item></knowledge></translation>
+      <knowledge>
+        <item>Espresso can be prepared and chilled; mix with milk and vanilla when you are ready to serve.</item>
+        <item>Finished iced coffee tastes best fresh; in the fridge only a few hours.</item>
+        <item>Caramel or hazelnut syrup works instead of vanilla syrup.</item>
+        <item>Coffee frozen into ice cubes keeps the drink cold longer without watering down.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Vanille-ijskoffie</name>
+      <persons>ca. 2 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>IJsthee en koude koffie</subcategory>
+      <intro>Een romige vanille-ijskoffie – mild, verkoelend en perfect voor koffieliefhebbers op warme dagen.</intro>
+      <servingTip>Serveer met een optioneel bolletje vanille-ijs voor een bijzonder romig drankje.</servingTip>
+      <ingredients>
+        <item>300 ml koude koffie</item>
+        <item>250 ml melk</item>
+        <item>vanille-extract</item>
+        <item>ijsblokjes</item>
+        <item>optioneel: vanille-ijs</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Roer de koffie en de melk door elkaar.</step>
+        <step nr="2">Voeg vanille toe.</step>
+        <step nr="3">Voeg ijsblokjes toe.</step>
+        <step nr="4">Voeg eventueel vanille-ijs toe.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 5 minuten</item>
+      </timing>
+      <knowledge>
+        <item>Espresso kan worden bereid en gekoeld; meng met melk en vanille als je klaar bent om te serveren.</item>
+        <item>Afgemaakte ijskoffie smaakt vers het lekkerst; slechts een paar uur in de koelkast.</item>
+        <item>Karamel- of hazelnootsiroop werkt in plaats van vanillesiroop.</item>
+        <item>Koffie, ingevroren in ijsblokjes, houdt de drank langer koud zonder te verwateren.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Café glacé à la vanille</name>
+      <persons>env. 2 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Thé glacé et café froid</subcategory>
+      <intro>Un café glacé à la vanille crémeux – doux, rafraîchissant et parfait pour les amateurs de café lors des journées chaudes.</intro>
+      <servingTip>Servir avec une boule facultative de glace à la vanille pour une boisson particulièrement crémeuse.</servingTip>
+      <ingredients>
+        <item>300 ml de café froid</item>
+        <item>250 ml de lait</item>
+        <item>extrait de vanille</item>
+        <item>glaçons</item>
+        <item>facultatif : glace vanille</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Mélanger le café et le lait.</step>
+        <step nr="2">Ajouter la vanille.</step>
+        <step nr="3">Ajoutez des glaçons.</step>
+        <step nr="4">Ajoutez éventuellement de la glace vanille.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 5 minutes</item>
+      </timing>
+      <knowledge>
+        <item>L'expresso peut être préparé et réfrigéré ; mélanger avec le lait et la vanille au moment de servir.</item>
+        <item>Le café glacé fini a meilleur goût frais ; au réfrigérateur seulement quelques heures.</item>
+        <item>Le sirop de caramel ou de noisette fonctionne à la place du sirop de vanille.</item>
+        <item>Le café congelé en glaçons garde la boisson froide plus longtemps sans la diluer.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Café helado de vainilla</name>
+      <persons>aprox. 2 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Té helado y café frío</subcategory>
+      <intro>Un café cremoso helado de vainilla: suave, refrescante y perfecto para los amantes del café en los días cálidos.</intro>
+      <servingTip>Sirva con una bola opcional de helado de vainilla para obtener una bebida especialmente cremosa.</servingTip>
+      <ingredients>
+        <item>300 ml de café frío</item>
+        <item>250 ml de leche</item>
+        <item>extracto de vainilla</item>
+        <item>cubitos de hielo</item>
+        <item>opcional: helado de vainilla</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Mezclar el café y la leche.</step>
+        <step nr="2">Agrega vainilla.</step>
+        <step nr="3">Agregue cubitos de hielo.</step>
+        <step nr="4">Opcionalmente agrega helado de vainilla.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 5 minutos</item>
+      </timing>
+      <knowledge>
+        <item>El espresso se puede preparar y enfriar; mézclalo con la leche y la vainilla cuando estés listo para servir.</item>
+        <item>El café helado terminado sabe mejor fresco; en el frigorífico sólo unas horas.</item>
+        <item>El jarabe de caramelo o de avellana funciona en lugar del jarabe de vainilla.</item>
+        <item>El café congelado en cubitos de hielo mantiene la bebida fría por más tiempo sin diluirse.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Caffè freddo alla vaniglia</name>
+      <persons>ca. 2 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Tè freddo e caffè freddo</subcategory>
+      <intro>Un cremoso caffè ghiacciato alla vaniglia: delicato, rinfrescante e perfetto per gli amanti del caffè nelle giornate calde.</intro>
+      <servingTip>Servire con una pallina opzionale di gelato alla vaniglia per una bevanda particolarmente cremosa.</servingTip>
+      <ingredients>
+        <item>300 ml di caffè freddo</item>
+        <item>250 ml di latte</item>
+        <item>estratto di vaniglia</item>
+        <item>cubetti di ghiaccio</item>
+        <item>facoltativo: gelato alla vaniglia</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Mescola il caffè e il latte.</step>
+        <step nr="2">Aggiungi la vaniglia.</step>
+        <step nr="3">Aggiungi i cubetti di ghiaccio.</step>
+        <step nr="4">Aggiungi eventualmente il gelato alla vaniglia.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 5 minuti</item>
+      </timing>
+      <knowledge>
+        <item>L'espresso può essere preparato e raffreddato; mescolare con latte e vaniglia al momento di servire.</item>
+        <item>Il caffè freddo finito ha un sapore migliore fresco; in frigo solo poche ore.</item>
+        <item>Lo sciroppo al caramello o alla nocciola funziona al posto dello sciroppo alla vaniglia.</item>
+        <item>Il caffè congelato in cubetti di ghiaccio mantiene la bevanda fredda più a lungo senza annacquarla.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Vanilková ledová káva</name>
+      <persons>cca. 2 sklenice</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Ledový čaj a studená káva</subcategory>
+      <intro>Krémová vanilková ledová káva – jemná, chladivá a ideální pro milovníky kávy v teplých dnech.</intro>
+      <servingTip>Podávejte s volitelným kopečkem vanilkové zmrzliny pro obzvláště krémový nápoj.</servingTip>
+      <ingredients>
+        <item>300 ml studené kávy</item>
+        <item>250 ml mléka</item>
+        <item>vanilkový extrakt</item>
+        <item>kostky ledu</item>
+        <item>volitelně: vanilková zmrzlina</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Smíchejte kávu a mléko.</step>
+        <step nr="2">Přidejte vanilku.</step>
+        <step nr="3">Přidejte kostky ledu.</step>
+        <step nr="4">Volitelně přidejte vanilkovou zmrzlinu.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 5 minut</item>
+      </timing>
+      <knowledge>
+        <item>Espresso lze připravit a vychladit; smíchejte s mlékem a vanilkou, když jste připraveni podávat.</item>
+        <item>Hotová ledová káva chutná nejlépe čerstvá; v lednici jen pár hodin.</item>
+        <item>Místo vanilkového sirupu funguje karamelový nebo oříškový sirup.</item>
+        <item>Káva zmražená na kostky ledu udrží nápoj déle studený, aniž by se zaléval.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="413">
     <name>Frozen Erdbeer-Limette</name>
@@ -547,7 +1595,13 @@
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <knowledge><item>Frucht und Limette können am Vortag vorbereitet werden; unmittelbar vor dem Servieren im Mixer mit Eis pürieren.</item><item>Frozen-Drinks schmecken am besten sofort – im Gefrierfach nur kurz zwischenlagern, nicht einfrieren.</item><item>Statt Erdbeeren funktioniert auch Himbeer- oder Waldbeermix.</item><item>Weniger Süße? Einfach mehr Eis und etwas Wasser statt extra Sirup zugeben.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Frucht und Limette können am Vortag vorbereitet werden; unmittelbar vor dem Servieren im Mixer mit Eis pürieren.</item>
+      <item>Frozen-Drinks schmecken am besten sofort – im Gefrierfach nur kurz zwischenlagern, nicht einfrieren.</item>
+      <item>Statt Erdbeeren funktioniert auch Himbeer- oder Waldbeermix.</item>
+      <item>Weniger Süße? Einfach mehr Eis und etwas Wasser statt extra Sirup zugeben.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Frozen truskawka z limonką</name>
       <persons>ok. 2–3 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -568,7 +1622,13 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    <knowledge><item>Owoce i limonkę można przygotować wcześniej; blenduj z lodem bezpośrednio przed podaniem.</item><item>Frozen najlepiej pić od razu – w zamrażarce tylko krótko, nie zamrażaj całego napoju.</item><item>Zamiast truskawek można użyć malin albo mieszanki owoców leśnych.</item><item>Mniej słodkości? Dodaj więcej lodu i odrobinę wody zamiast syropu.</item></knowledge></translation>
+      <knowledge>
+        <item>Owoce i limonkę można przygotować wcześniej; blenduj z lodem bezpośrednio przed podaniem.</item>
+        <item>Frozen najlepiej pić od razu – w zamrażarce tylko krótko, nie zamrażaj całego napoju.</item>
+        <item>Zamiast truskawek można użyć malin albo mieszanki owoców leśnych.</item>
+        <item>Mniej słodkości? Dodaj więcej lodu i odrobinę wody zamiast syropu.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Frozen Strawberry Lime</name>
       <persons>approx. 2–3 glasses</persons>
@@ -590,7 +1650,148 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    <knowledge><item>Fruit and lime can be prepared ahead; blend with ice when you are ready to serve.</item><item>Frozen drinks taste best immediately – do not freeze the finished drink.</item><item>Raspberry or mixed forest berries work instead of strawberries.</item><item>Want less sweetness? Add more ice and a little water instead of extra syrup.</item></knowledge></translation>
+      <knowledge>
+        <item>Fruit and lime can be prepared ahead; blend with ice when you are ready to serve.</item>
+        <item>Frozen drinks taste best immediately – do not freeze the finished drink.</item>
+        <item>Raspberry or mixed forest berries work instead of strawberries.</item>
+        <item>Want less sweetness? Add more ice and a little water instead of extra syrup.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Bevroren Aardbei Limoen</name>
+      <persons>ca. 2-3 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Bevroren drankjes en frappés</subcategory>
+      <intro>Een bevroren aardbei-limoendrank – ijskoud, fruitig en razendsnel in de Thermomix.</intro>
+      <servingTip>Serveer onmiddellijk na het blenden – bij voorkeur in voorgekoelde glazen.</servingTip>
+      <ingredients>
+        <item>500 g bevroren aardbeien</item>
+        <item>2 limoenen</item>
+        <item>250 ml water</item>
+        <item>ijsblokjes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doe alles in de mengkom en mix 30 Sek. / Stufe 10.</step>
+        <step nr="2">Serveer onmiddellijk.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 5 minuten</item>
+      </timing>
+      <knowledge>
+        <item>Fruit en limoen kunnen van tevoren worden bereid; meng met ijs als u klaar bent om te serveren.</item>
+        <item>Bevroren dranken smaken meteen het lekkerst – vries de afgewerkte drank niet in.</item>
+        <item>Frambozen of gemengde bosbessen werken in plaats van aardbeien.</item>
+        <item>Wil je minder zoetigheid? Voeg meer ijs en een beetje water toe in plaats van extra siroop.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Fraise et citron vert surgelés</name>
+      <persons>env. 2 à 3 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Boissons glacées et frappés</subcategory>
+      <intro>Une boisson glacée à la fraise et au citron vert – glacée, fruitée et ultra-rapide dans le Thermomix.</intro>
+      <servingTip>Servir immédiatement après le mixage – idéalement dans des verres pré-réfrigérés.</servingTip>
+      <ingredients>
+        <item>500 g de fraises surgelées</item>
+        <item>2 citrons verts</item>
+        <item>250 ml d'eau</item>
+        <item>glaçons</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ajouter le tout dans le bol et mixer 30 Sek. / Stuffe 10.</step>
+        <step nr="2">Servir immédiatement.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 5 minutes</item>
+      </timing>
+      <knowledge>
+        <item>Les fruits et le citron vert peuvent être préparés à l'avance ; mélanger avec de la glace au moment de servir.</item>
+        <item>Les boissons glacées ont immédiatement meilleur goût – ne congelez pas la boisson finie.</item>
+        <item>Les framboises ou les baies forestières mélangées fonctionnent à la place des fraises.</item>
+        <item>Envie de moins de douceur ? Ajoutez plus de glace et un peu d'eau au lieu de sirop supplémentaire.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Lima fresa congelada</name>
+      <persons>aprox. 2-3 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Bebidas heladas y frappés</subcategory>
+      <intro>Una bebida helada de fresa y lima: helada, afrutada y ultrarrápida en Thermomix.</intro>
+      <servingTip>Sirva inmediatamente después de licuar, idealmente en vasos previamente enfriados.</servingTip>
+      <ingredients>
+        <item>500 g de fresas congeladas</item>
+        <item>2 limas</item>
+        <item>250 ml de agua</item>
+        <item>cubitos de hielo</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Añadir todo al vaso y licuar 30 Sek. / Estufa 10.</step>
+        <step nr="2">Sirva inmediatamente.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 5 minutos</item>
+      </timing>
+      <knowledge>
+        <item>La fruta y la lima se pueden preparar con antelación; licúa con hielo cuando estés listo para servir.</item>
+        <item>Las bebidas congeladas saben mejor inmediatamente; no congele la bebida terminada.</item>
+        <item>Las frambuesas o una mezcla de bayas del bosque funcionan en lugar de fresas.</item>
+        <item>¿Quieres menos dulzura? Agregue más hielo y un poco de agua en lugar de almíbar extra.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Lime alla fragola congelato</name>
+      <persons>ca. 2–3 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Bevande ghiacciate e frappé</subcategory>
+      <intro>Una bevanda ghiacciata alla fragola e lime: ghiacciata, fruttata e velocissima nel Bimby.</intro>
+      <servingTip>Servire immediatamente dopo la miscelazione, preferibilmente in bicchieri pre-raffreddati.</servingTip>
+      <ingredients>
+        <item>500 g di fragole congelate</item>
+        <item>2 lime</item>
+        <item>250 ml di acqua</item>
+        <item>cubetti di ghiaccio</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Aggiungere il tutto nel boccale e frullare 30 Sek. / Stufa 10.</step>
+        <step nr="2">Servire immediatamente.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 5 minuti</item>
+      </timing>
+      <knowledge>
+        <item>Frutta e lime possono essere preparati in anticipo; frullare con ghiaccio al momento di servire.</item>
+        <item>Le bevande congelate hanno un sapore migliore subito: non congelare la bevanda finita.</item>
+        <item>Il lampone o i frutti di bosco misti vanno bene al posto delle fragole.</item>
+        <item>Vuoi meno dolcezza? Aggiungi più ghiaccio e un po' d'acqua invece dello sciroppo extra.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Zmrazená jahodová limetka</name>
+      <persons>cca. 2–3 sklenice</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Mražené nápoje a frappé</subcategory>
+      <intro>Mražený jahodový a limetkový nápoj – ledový, ovocný a bleskurychlý v Thermomixu.</intro>
+      <servingTip>Podávejte ihned po rozmixování – ideálně v předem vychlazených sklenicích.</servingTip>
+      <ingredients>
+        <item>500 g mražených jahod</item>
+        <item>2 limetky</item>
+        <item>250 ml vody</item>
+        <item>kostky ledu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Přidejte vše do mixovací nádoby a mixujte 30 sek. / Věci 10.</step>
+        <step nr="2">Ihned podávejte.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 5 minut</item>
+      </timing>
+      <knowledge>
+        <item>Ovoce a limetka lze připravit předem; smíchejte s ledem, když jste připraveni podávat.</item>
+        <item>Mražené nápoje chutnají nejlépe ihned – hotový nápoj nezmrazujte.</item>
+        <item>Místo jahod fungují maliny nebo smíšené lesní plody.</item>
+        <item>Chcete méně sladkostí? Místo extra sirupu přidejte více ledu a trochu vody.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="414">
     <name>Mango Frozen Mocktail</name>
@@ -624,7 +1825,13 @@
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <knowledge><item>Mango und Limette können am Vortag vorbereitet werden; mit Eis unmittelbar vor dem Servieren mixen.</item><item>Frozen Mocktails schmecken am besten frisch – nicht als fertigen Drink einfrieren.</item><item>Statt Mango funktioniert auch Ananas oder Maracuja für eine tropischere Note.</item><item>Mit etwas Kokosmilch wird der Mocktail cremiger und milder.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Mango und Limette können am Vortag vorbereitet werden; mit Eis unmittelbar vor dem Servieren mixen.</item>
+      <item>Frozen Mocktails schmecken am besten frisch – nicht als fertigen Drink einfrieren.</item>
+      <item>Statt Mango funktioniert auch Ananas oder Maracuja für eine tropischere Note.</item>
+      <item>Mit etwas Kokosmilch wird der Mocktail cremiger und milder.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Mango frozen mocktail</name>
       <persons>ok. 2–3 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -645,7 +1852,13 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    <knowledge><item>Mango i limonkę można przygotować wcześniej; blenduj z lodem bezpośrednio przed podaniem.</item><item>Frozen mocktail najlepiej podawać od razu – nie zamrażaj gotowego napoju.</item><item>Zamiast mango można użyć ananasa albo marakui.</item><item>Odrobina mleka kokosowego daje kremowszy, łagodniejszy smak.</item></knowledge></translation>
+      <knowledge>
+        <item>Mango i limonkę można przygotować wcześniej; blenduj z lodem bezpośrednio przed podaniem.</item>
+        <item>Frozen mocktail najlepiej podawać od razu – nie zamrażaj gotowego napoju.</item>
+        <item>Zamiast mango można użyć ananasa albo marakui.</item>
+        <item>Odrobina mleka kokosowego daje kremowszy, łagodniejszy smak.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Mango Frozen Mocktail</name>
       <persons>approx. 2–3 glasses</persons>
@@ -667,7 +1880,148 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    <knowledge><item>Mango and lime can be prepared ahead; blend with ice when you are ready to serve.</item><item>Frozen mocktails taste best fresh – do not freeze the finished drink.</item><item>Pineapple or passion fruit works instead of mango for a more tropical note.</item><item>A little coconut milk makes the mocktail creamier and milder.</item></knowledge></translation>
+      <knowledge>
+        <item>Mango and lime can be prepared ahead; blend with ice when you are ready to serve.</item>
+        <item>Frozen mocktails taste best fresh – do not freeze the finished drink.</item>
+        <item>Pineapple or passion fruit works instead of mango for a more tropical note.</item>
+        <item>A little coconut milk makes the mocktail creamier and milder.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Bevroren mangomocktail</name>
+      <persons>ca. 2-3 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Bevroren drankjes en frappés</subcategory>
+      <intro>Een bevroren mocktail met tropische mango – romig, fruitig en binnen enkele seconden klaar in de Thermomix.</intro>
+      <servingTip>Garneer met een schijfje limoen en geniet meteen van ijskoud.</servingTip>
+      <ingredients>
+        <item>500 g bevroren mango</item>
+        <item>300 ml sinaasappelsap</item>
+        <item>1 limoen</item>
+        <item>ijsblokjes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doe alles in de mengkom en mix 30 Sek. / Stufe 10.</step>
+        <step nr="2">Serveer onmiddellijk.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 5 minuten</item>
+      </timing>
+      <knowledge>
+        <item>Mango en limoen kunnen van tevoren worden bereid; meng met ijs als u klaar bent om te serveren.</item>
+        <item>Bevroren mocktails smaken vers het lekkerst – vries het afgewerkte drankje niet in.</item>
+        <item>Ananas of passievrucht werken in plaats van mango voor een meer tropische toets.</item>
+        <item>Een beetje kokosmelk maakt de mocktail romiger en milder.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Mocktail glacé à la mangue</name>
+      <persons>env. 2 à 3 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Boissons glacées et frappés</subcategory>
+      <intro>Un mocktail glacé à la mangue tropicale – crémeux, fruité et prêt en quelques secondes au Thermomix.</intro>
+      <servingTip>Garnir d'une tranche de citron vert et déguster aussitôt glacé.</servingTip>
+      <ingredients>
+        <item>500 g de mangue surgelée</item>
+        <item>300 ml de jus d'orange</item>
+        <item>1 citron vert</item>
+        <item>glaçons</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ajouter le tout dans le bol et mixer 30 Sek. / Stuffe 10.</step>
+        <step nr="2">Servir immédiatement.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 5 minutes</item>
+      </timing>
+      <knowledge>
+        <item>La mangue et le citron vert peuvent être préparés à l'avance ; mélanger avec de la glace au moment de servir.</item>
+        <item>Les cocktails sans alcool surgelés ont meilleur goût frais – ne congelez pas la boisson finie.</item>
+        <item>L'ananas ou le fruit de la passion remplacent la mangue pour une note plus tropicale.</item>
+        <item>Un peu de lait de coco rend le mocktail plus crémeux et plus doux.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Cóctel sin alcohol helado de mango</name>
+      <persons>aprox. 2-3 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Bebidas heladas y frappés</subcategory>
+      <intro>Un cóctel sin alcohol helado de mango tropical: cremoso, afrutado y listo en segundos en Thermomix.</intro>
+      <servingTip>Adorne con una rodaja de lima y disfrútelo helado de inmediato.</servingTip>
+      <ingredients>
+        <item>500 g de mango congelado</item>
+        <item>300 ml de zumo de naranja</item>
+        <item>1 lima</item>
+        <item>cubitos de hielo</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Añadir todo al vaso y licuar 30 Sek. / Estufa 10.</step>
+        <step nr="2">Sirva inmediatamente.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 5 minutos</item>
+      </timing>
+      <knowledge>
+        <item>El mango y la lima se pueden preparar con anticipación; licúa con hielo cuando estés listo para servir.</item>
+        <item>Los cócteles sin alcohol congelados saben mejor frescos; no congele la bebida terminada.</item>
+        <item>La piña o la maracuyá funcionan en lugar del mango para obtener una nota más tropical.</item>
+        <item>Un poco de leche de coco hace que el cóctel sin alcohol sea más cremoso y suave.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Mocktail congelato al mango</name>
+      <persons>ca. 2–3 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Bevande ghiacciate e frappé</subcategory>
+      <intro>Un mocktail tropicale congelato al mango: cremoso, fruttato e pronto in pochi secondi nel Bimby.</intro>
+      <servingTip>Guarnire con una fetta di lime e gustare subito ghiacciato.</servingTip>
+      <ingredients>
+        <item>500 g di mango congelato</item>
+        <item>300 ml di succo d'arancia</item>
+        <item>1 lime</item>
+        <item>cubetti di ghiaccio</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Aggiungere il tutto nel boccale e frullare 30 Sek. / Stufa 10.</step>
+        <step nr="2">Servire immediatamente.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 5 minuti</item>
+      </timing>
+      <knowledge>
+        <item>Mango e lime possono essere preparati in anticipo; frullare con ghiaccio al momento di servire.</item>
+        <item>I mocktail surgelati hanno un sapore migliore se freschi: non congelare la bevanda finita.</item>
+        <item>Ananas o frutto della passione vanno bene al posto del mango per una nota più tropicale.</item>
+        <item>Un po' di latte di cocco rende il mocktail più cremoso e delicato.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Mango Frozen Mocktail</name>
+      <persons>cca. 2–3 sklenice</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Mražené nápoje a frappé</subcategory>
+      <intro>Mražený maketa tropického manga – krémový, ovocný a hotový během několika sekund v Thermomixu.</intro>
+      <servingTip>Ozdobte plátkem limetky a hned si vychutnejte ledově vychlazené.</servingTip>
+      <ingredients>
+        <item>500 g mraženého manga</item>
+        <item>300 ml pomerančové šťávy</item>
+        <item>1 vápno</item>
+        <item>kostky ledu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Přidejte vše do mixovací nádoby a mixujte 30 sek. / Věci 10.</step>
+        <step nr="2">Ihned podávejte.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 5 minut</item>
+      </timing>
+      <knowledge>
+        <item>Mango a limetku lze připravit předem; smíchejte s ledem, když jste připraveni podávat.</item>
+        <item>Mražené mocktaily chutnají nejlépe čerstvé – hotový nápoj nezmrazujte.</item>
+        <item>Ananas nebo mučenka fungují místo manga pro tropickější tón.</item>
+        <item>Trocha kokosového mléka udělá mocktail krémovější a jemnější.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="415">
     <name>Virgin Mojito</name>
@@ -702,7 +2056,13 @@
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <knowledge><item>Limette und Minze können am Vortag vorbereitet werden; unmittelbar vor dem Servieren kräftig mit Eis muddeln.</item><item>Fertiger Mojito hält sich im Kühlschrank höchstens kurz – am besten direkt nach dem Muddeln servieren.</item><item>Statt Rohrzucker funktioniert auch Agavendicksaft oder etwas Honig.</item><item>Mehr Mineralwasser macht den Virgin Mojito leichter und weniger süß.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Limette und Minze können am Vortag vorbereitet werden; unmittelbar vor dem Servieren kräftig mit Eis muddeln.</item>
+      <item>Fertiger Mojito hält sich im Kühlschrank höchstens kurz – am besten direkt nach dem Muddeln servieren.</item>
+      <item>Statt Rohrzucker funktioniert auch Agavendicksaft oder etwas Honig.</item>
+      <item>Mehr Mineralwasser macht den Virgin Mojito leichter und weniger süß.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Virgin mojito</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -726,7 +2086,13 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    <knowledge><item>Limonkę i miętę można przygotować wcześniej; muddleruj z lodem bezpośrednio przed podaniem.</item><item>Gotowy mojito trzyma się w lodówce tylko krótko – najlepiej od razu po muddlerowaniu.</item><item>Zamiast cukru trzcinowego można użyć syropu z agawy albo miodu.</item><item>Więcej wody mineralnej daje lżejszą, mniej słodką wersję.</item></knowledge></translation>
+      <knowledge>
+        <item>Limonkę i miętę można przygotować wcześniej; muddleruj z lodem bezpośrednio przed podaniem.</item>
+        <item>Gotowy mojito trzyma się w lodówce tylko krótko – najlepiej od razu po muddlerowaniu.</item>
+        <item>Zamiast cukru trzcinowego można użyć syropu z agawy albo miodu.</item>
+        <item>Więcej wody mineralnej daje lżejszą, mniej słodką wersję.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Virgin Mojito</name>
       <persons>approx. 2 glasses</persons>
@@ -751,7 +2117,168 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    <knowledge><item>Lime and mint can be prepared ahead; muddle with ice when you are ready to serve.</item><item>Finished mojito keeps in the fridge only briefly – best served right after muddling.</item><item>Agave syrup or a little honey works instead of cane sugar.</item><item>More sparkling water makes the virgin mojito lighter and less sweet.</item></knowledge></translation>
+      <knowledge>
+        <item>Lime and mint can be prepared ahead; muddle with ice when you are ready to serve.</item>
+        <item>Finished mojito keeps in the fridge only briefly – best served right after muddling.</item>
+        <item>Agave syrup or a little honey works instead of cane sugar.</item>
+        <item>More sparkling water makes the virgin mojito lighter and less sweet.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Virge Mojito</name>
+      <persons>ca. 2 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Mocktails en stoten</subcategory>
+      <intro>Een alcoholvrije virgin mojito – klassiek fris met limoen, munt en bruisend mineraalwater.</intro>
+      <servingTip>Maak de limoenen en de munt lichtjes door elkaar, zodat de aroma's vrijkomen. Garneer met verse munttakjes.</servingTip>
+      <ingredients>
+        <item>limoenen</item>
+        <item>munt</item>
+        <item>bruine suiker</item>
+        <item>gemalen ijs</item>
+        <item>Bruisend mineraalwater</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Mest de limoenen lichtjes.</step>
+        <step nr="2">Voeg suiker toe.</step>
+        <step nr="3">Voeg munt toe.</step>
+        <step nr="4">Voeg gemalen ijs toe.</step>
+        <step nr="5">Vul aan met bruisend mineraalwater.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 5 minuten</item>
+      </timing>
+      <knowledge>
+        <item>Limoen en munt kunnen van tevoren worden bereid; modder met ijs als je klaar bent om te serveren.</item>
+        <item>Afgemaakte mojito is slechts kort houdbaar in de koelkast en kan het beste direct na het modderen worden geserveerd.</item>
+        <item>Agavesiroop of een beetje honing werkt in plaats van rietsuiker.</item>
+        <item>Meer bruisend water maakt de virgin mojito lichter en minder zoet.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Mojito Vierge</name>
+      <persons>env. 2 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Mocktails &amp; punchs</subcategory>
+      <intro>Un mojito vierge sans alcool – classiquement frais avec du citron vert, de la menthe et de l'eau minérale gazeuse.</intro>
+      <servingTip>Ecrasez légèrement les citrons verts et la menthe pour libérer les arômes. Garnir de brins de menthe fraîche.</servingTip>
+      <ingredients>
+        <item>chaux</item>
+        <item>menthe</item>
+        <item>cassonade</item>
+        <item>glace pilée</item>
+        <item>eau minérale gazeuse</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ecrasez légèrement les citrons verts.</step>
+        <step nr="2">Ajouter le sucre.</step>
+        <step nr="3">Ajouter la menthe.</step>
+        <step nr="4">Ajouter de la glace pilée.</step>
+        <step nr="5">Remplir d'eau minérale gazeuse.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 5 minutes</item>
+      </timing>
+      <knowledge>
+        <item>Le citron vert et la menthe peuvent être préparés à l'avance ; écraser avec de la glace au moment de servir.</item>
+        <item>Le mojito fini ne se conserve que brièvement au réfrigérateur – il est préférable de le servir juste après l'avoir mélangé.</item>
+        <item>Le sirop d'agave ou un peu de miel remplace le sucre de canne.</item>
+        <item>Plus d'eau gazeuse rend le virgin mojito plus léger et moins sucré.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Mojito Virgen</name>
+      <persons>aprox. 2 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Cócteles sin alcohol y ponches</subcategory>
+      <intro>Un mojito virgen sin alcohol, clásicamente fresco con lima, menta y agua mineral con gas.</intro>
+      <servingTip>Mezcla ligeramente las limas y la menta para liberar los aromas. Adorne con ramitas de menta fresca.</servingTip>
+      <ingredients>
+        <item>limas</item>
+        <item>perfecto</item>
+        <item>azúcar moreno</item>
+        <item>hielo picado</item>
+        <item>agua mineral con gas</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Machaca ligeramente las limas.</step>
+        <step nr="2">Añadir azúcar.</step>
+        <step nr="3">Agrega menta.</step>
+        <step nr="4">Agregue hielo picado.</step>
+        <step nr="5">Rellénalo con agua mineral con gas.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 5 minutos</item>
+      </timing>
+      <knowledge>
+        <item>La lima y la menta se pueden preparar con anticipación; mezcle con hielo cuando esté listo para servir.</item>
+        <item>El mojito terminado se conserva en el refrigerador solo por poco tiempo; es mejor servirlo inmediatamente después de mezclarlo.</item>
+        <item>El jarabe de agave o un poco de miel funcionan en lugar del azúcar de caña.</item>
+        <item>Más agua con gas hace que el mojito virgen sea más ligero y menos dulce.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Mojito vergine</name>
+      <persons>ca. 2 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Mocktail e punch</subcategory>
+      <intro>Un mojito vergine analcolico: classicamente fresco con lime, menta e acqua minerale frizzante.</intro>
+      <servingTip>Pestare leggermente il lime e la menta per liberare gli aromi. Guarnire con rametti di menta fresca.</servingTip>
+      <ingredients>
+        <item>lime</item>
+        <item>menta</item>
+        <item>zucchero di canna</item>
+        <item>ghiaccio tritato</item>
+        <item>acqua minerale frizzante</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Pestate leggermente i lime.</step>
+        <step nr="2">Aggiungi lo zucchero.</step>
+        <step nr="3">Aggiungi la menta.</step>
+        <step nr="4">Aggiungi il ghiaccio tritato.</step>
+        <step nr="5">Rabboccare con acqua minerale frizzante.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 5 minuti</item>
+      </timing>
+      <knowledge>
+        <item>Lime e menta possono essere preparati in anticipo; confondere con ghiaccio quando sei pronto per servire.</item>
+        <item>Il mojito finito si conserva in frigorifero solo per breve tempo: è meglio servirlo subito dopo averlo confuso.</item>
+        <item>Lo sciroppo d'agave o un po' di miele funzionano al posto dello zucchero di canna.</item>
+        <item>Più acqua frizzante rende il Virgin Mojito più leggero e meno dolce.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Virgin Mojito</name>
+      <persons>cca. 2 sklenice</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Mocktaily a údery</subcategory>
+      <intro>Nealkoholické panenské mojito – klasicky čerstvé s limetkou, mátou a perlivou minerální vodou.</intro>
+      <servingTip>Lipety a mátu lehce rozmačkejte, aby se uvolnily vůně. Ozdobte snítkami čerstvé máty.</servingTip>
+      <ingredients>
+        <item>líp</item>
+        <item>máta</item>
+        <item>hnědý cukr</item>
+        <item>drcený led</item>
+        <item>perlivá minerální voda</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Lehce rozmačkejte limetky.</step>
+        <step nr="2">Přidejte cukr.</step>
+        <step nr="3">Přidejte mátu.</step>
+        <step nr="4">Přidejte drcený led.</step>
+        <step nr="5">Doplňte perlivou minerální vodou.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 5 minut</item>
+      </timing>
+      <knowledge>
+        <item>Limetku a mátu lze připravit předem; když jste připraveni podávat, promíchejte s ledem.</item>
+        <item>Hotové mojito vydrží v lednici jen krátce – nejlépe hned po rozmuchlání.</item>
+        <item>Místo třtinového cukru funguje agávový sirup nebo trocha medu.</item>
+        <item>S větším množstvím perlivé vody je panenské mojito lehčí a méně sladké.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="416">
     <name>Virgin Maracuja Spritz</name>
@@ -784,7 +2311,13 @@
     <timing>
       <item>Arbeitszeit: 5 Minuten</item>
     </timing>
-    <knowledge><item>Maracuja-Basis und Mineralwasser lassen sich 1–2 Stunden vorher kalt stellen; mixen unmittelbar vor dem Servieren.</item><item>Fertiger Spritz schmeckt am besten frisch; im Kühlschrank höchstens kurz lagern.</item><item>Statt Maracujasaft funktioniert auch Mango-Nektar für eine mildere Variante.</item><item>Mit extra Limette wird der Mocktail frischer und weniger süß.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Maracuja-Basis und Mineralwasser lassen sich 1–2 Stunden vorher kalt stellen; mixen unmittelbar vor dem Servieren.</item>
+      <item>Fertiger Spritz schmeckt am besten frisch; im Kühlschrank höchstens kurz lagern.</item>
+      <item>Statt Maracujasaft funktioniert auch Mango-Nektar für eine mildere Variante.</item>
+      <item>Mit extra Limette wird der Mocktail frischer und weniger süß.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Virgin maracuja spritz</name>
       <persons>ok. 2 szklanki</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -806,7 +2339,13 @@
       <timing>
         <item>Czas pracy: 5 minut</item>
       </timing>
-    <knowledge><item>Bazę marakui i wodę można schłodzić 1–2 godziny wcześniej; mieszaj bezpośrednio przed podaniem.</item><item>Gotowy spritz najlepiej pić od razu; w lodówce tylko krótko.</item><item>Zamiast soku marakui można użyć nektaru mango na łagodniejszą wersję.</item><item>Dodatkowa limonka daje świeższy, mniej słodki smak.</item></knowledge></translation>
+      <knowledge>
+        <item>Bazę marakui i wodę można schłodzić 1–2 godziny wcześniej; mieszaj bezpośrednio przed podaniem.</item>
+        <item>Gotowy spritz najlepiej pić od razu; w lodówce tylko krótko.</item>
+        <item>Zamiast soku marakui można użyć nektaru mango na łagodniejszą wersję.</item>
+        <item>Dodatkowa limonka daje świeższy, mniej słodki smak.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Virgin Passion Fruit Spritz</name>
       <persons>approx. 2 glasses</persons>
@@ -829,7 +2368,158 @@
       <timing>
         <item>Prep time: 5 minutes</item>
       </timing>
-    <knowledge><item>Passion fruit base and mineral water can chill 1–2 hours before; mix when you are ready to serve.</item><item>Finished spritz tastes best fresh; store in the fridge only briefly.</item><item>Mango nectar works instead of passion fruit juice for a milder version.</item><item>Extra lime makes the mocktail fresher and less sweet.</item></knowledge></translation>
+      <knowledge>
+        <item>Passion fruit base and mineral water can chill 1–2 hours before; mix when you are ready to serve.</item>
+        <item>Finished spritz tastes best fresh; store in the fridge only briefly.</item>
+        <item>Mango nectar works instead of passion fruit juice for a milder version.</item>
+        <item>Extra lime makes the mocktail fresher and less sweet.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Vergine passievruchtspritz</name>
+      <persons>ca. 2 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Mocktails en stoten</subcategory>
+      <intro>Een fruitige maagdelijke passievruchtspritz – sprankelend, exotisch en verfrissend alcoholvrij.</intro>
+      <servingTip>Roer zachtjes om het bruisen te behouden. Serveer met verse munt.</servingTip>
+      <ingredients>
+        <item>passievruchtensap</item>
+        <item>limoensap</item>
+        <item>Bruisend mineraalwater</item>
+        <item>ijsblokjes</item>
+        <item>munt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Doe alle ingrediënten in het glas.</step>
+        <step nr="2">Zachtjes roeren.</step>
+        <step nr="3">Serveer met munt.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 5 minuten</item>
+      </timing>
+      <knowledge>
+        <item>Passievruchtbasis en mineraalwater kunnen 1 à 2 uur van tevoren worden gekoeld; meng als u klaar bent om te serveren.</item>
+        <item>Afgewerkte spritz smaakt vers het lekkerst; slechts kort in de koelkast bewaren.</item>
+        <item>Mangonectar werkt in plaats van passievruchtensap voor een mildere versie.</item>
+        <item>Extra limoen maakt de mocktail frisser en minder zoet.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Spritz aux Fruits de la Passion Vierges</name>
+      <persons>env. 2 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Mocktails &amp; punchs</subcategory>
+      <intro>Un spritz fruité et vierge aux fruits de la passion – pétillant, exotique et rafraîchissant sans alcool.</intro>
+      <servingTip>Remuez doucement pour garder le pétillant. Servir avec de la menthe fraîche.</servingTip>
+      <ingredients>
+        <item>jus de fruit de la passion</item>
+        <item>jus de citron vert</item>
+        <item>eau minérale gazeuse</item>
+        <item>glaçons</item>
+        <item>menthe</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Ajouter tous les ingrédients dans le verre.</step>
+        <step nr="2">Remuez doucement.</step>
+        <step nr="3">Servir avec de la menthe.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 5 minutes</item>
+      </timing>
+      <knowledge>
+        <item>La base de fruit de la passion et l'eau minérale peuvent être réfrigérées 1 à 2 heures avant ; mélangez au moment de servir.</item>
+        <item>Le spritz fini a meilleur goût frais ; conserver au réfrigérateur seulement brièvement.</item>
+        <item>Le nectar de mangue remplace le jus de fruit de la passion pour une version plus douce.</item>
+        <item>Le citron vert supplémentaire rend le mocktail plus frais et moins sucré.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Spritz de maracuyá virgen</name>
+      <persons>aprox. 2 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Cócteles sin alcohol y ponches</subcategory>
+      <intro>Un spritz afrutado de maracuyá virgen: chispeante, exótico y refrescante sin alcohol.</intro>
+      <servingTip>Revuelva suavemente para mantener la efervescencia. Servir con menta fresca.</servingTip>
+      <ingredients>
+        <item>jugo de maracuyá</item>
+        <item>jugo de lima</item>
+        <item>agua mineral con gas</item>
+        <item>cubitos de hielo</item>
+        <item>menta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Añadir todos los ingredientes al vaso.</step>
+        <step nr="2">Revuelva suavemente.</step>
+        <step nr="3">Sirve con menta.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 5 minutos</item>
+      </timing>
+      <knowledge>
+        <item>La base de maracuyá y el agua mineral se pueden enfriar 1 a 2 horas antes; mezcle cuando esté listo para servir.</item>
+        <item>El spritz terminado sabe mejor fresco; guárdelo en el frigorífico sólo brevemente.</item>
+        <item>El néctar de mango funciona en lugar del jugo de maracuyá para obtener una versión más suave.</item>
+        <item>La lima extra hace que el cóctel sin alcohol sea más fresco y menos dulce.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Spritz vergine al frutto della passione</name>
+      <persons>ca. 2 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Mocktail e punch</subcategory>
+      <intro>Uno spritz fruttato e vergine al frutto della passione: frizzante, esotico e piacevolmente analcolico.</intro>
+      <servingTip>Mescolare delicatamente per mantenere l'effervescenza. Servire con menta fresca.</servingTip>
+      <ingredients>
+        <item>succo di frutto della passione</item>
+        <item>succo di lime</item>
+        <item>acqua minerale frizzante</item>
+        <item>cubetti di ghiaccio</item>
+        <item>menta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Aggiungi tutti gli ingredienti nel bicchiere.</step>
+        <step nr="2">Mescolare delicatamente.</step>
+        <step nr="3">Servire con la menta.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 5 minuti</item>
+      </timing>
+      <knowledge>
+        <item>La base di frutto della passione e acqua minerale possono essere raffreddate 1-2 ore prima; mescolare quando sei pronto per servire.</item>
+        <item>Lo spritz finito ha un sapore migliore fresco; conservare in frigorifero solo brevemente.</item>
+        <item>Il nettare di mango funziona al posto del succo del frutto della passione per una versione più delicata.</item>
+        <item>Il lime extra rende il mocktail più fresco e meno dolce.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Mučenka panenský</name>
+      <persons>cca. 2 sklenice</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Mocktaily a údery</subcategory>
+      <intro>Ovocná panenská mučenka – jiskřivá, exotická a osvěžující nealkoholická.</intro>
+      <servingTip>Jemně promíchejte, aby zůstal šumivý. Podávejte s čerstvou mátou.</servingTip>
+      <ingredients>
+        <item>maracuja šťáva</item>
+        <item>limetková šťáva</item>
+        <item>perlivá minerální voda</item>
+        <item>kostky ledu</item>
+        <item>máta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Přidejte všechny přísady do sklenice.</step>
+        <step nr="2">Jemně promíchejte.</step>
+        <step nr="3">Podávejte s mátou.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 5 minut</item>
+      </timing>
+      <knowledge>
+        <item>Základ z mučenky a minerální voda mohou vychladnout 1–2 hodiny předem; promíchejte, když jste připraveni podávat.</item>
+        <item>Hotový střik chutná nejlépe čerstvý; uchovávejte v lednici jen krátce.</item>
+        <item>Mangový nektar funguje u jemnější verze místo šťávy z mučenky.</item>
+        <item>Extra limetka dělá mocktail svěžejší a méně sladký.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="417">
     <name>Alkoholfreie Sommer-Sangria</name>
@@ -866,7 +2556,13 @@
       <item>Arbeitszeit: 15 Minuten</item>
       <item>Kühlzeit: 1 Stunde</item>
     </timing>
-    <knowledge><item>Früchte und Saft lassen sich am Vortag schneiden und kalt stellen; unmittelbar vor der Bowle alles zusammenfügen.</item><item>Angemischte Sangria hält sich im Kühlschrank 1 Tag – vor dem Servieren kräftig umrühren.</item><item>Statt Traubensaft funktioniert auch Apfelsaft für eine mildere Süße.</item><item>Mit mehr Mineralwasser wird die alkoholfreie Sangria leichter und spritziger.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Früchte und Saft lassen sich am Vortag schneiden und kalt stellen; unmittelbar vor der Bowle alles zusammenfügen.</item>
+      <item>Angemischte Sangria hält sich im Kühlschrank 1 Tag – vor dem Servieren kräftig umrühren.</item>
+      <item>Statt Traubensaft funktioniert auch Apfelsaft für eine mildere Süße.</item>
+      <item>Mit mehr Mineralwasser wird die alkoholfreie Sangria leichter und spritziger.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Bezalkoholowa letnia sangria</name>
       <persons>ok. 6–8 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -892,7 +2588,13 @@
         <item>Czas pracy: 15 minut</item>
         <item>Czas chłodzenia: 1 godzina</item>
       </timing>
-    <knowledge><item>Owoce i sok można przygotować dzień wcześniej; połącz wszystko bezpośrednio przed podaniem.</item><item>Gotowa sangria trzyma się w lodówce 1 dzień – przed podaniem dobrze wymieszaj.</item><item>Zamiast soku winogronowego można użyć jabłkowego na łagodniejszą słodycz.</item><item>Więcej wody mineralnej daje lżejszą, bardziej musującą wersję.</item></knowledge></translation>
+      <knowledge>
+        <item>Owoce i sok można przygotować dzień wcześniej; połącz wszystko bezpośrednio przed podaniem.</item>
+        <item>Gotowa sangria trzyma się w lodówce 1 dzień – przed podaniem dobrze wymieszaj.</item>
+        <item>Zamiast soku winogronowego można użyć jabłkowego na łagodniejszą słodycz.</item>
+        <item>Więcej wody mineralnej daje lżejszą, bardziej musującą wersję.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Non-Alcoholic Summer Sangria</name>
       <persons>approx. 6–8 glasses</persons>
@@ -919,7 +2621,178 @@
         <item>Prep time: 15 minutes</item>
         <item>Chill time: 1 hour</item>
       </timing>
-    <knowledge><item>Fruit and juice can be prepared the day before and chilled; combine when you are ready to serve.</item><item>Mixed sangria keeps in the fridge for 1 day – stir well before serving.</item><item>Apple juice works instead of grape juice for milder sweetness.</item><item>More sparkling water makes the alcohol-free sangria lighter and fizzier.</item></knowledge></translation>
+      <knowledge>
+        <item>Fruit and juice can be prepared the day before and chilled; combine when you are ready to serve.</item>
+        <item>Mixed sangria keeps in the fridge for 1 day – stir well before serving.</item>
+        <item>Apple juice works instead of grape juice for milder sweetness.</item>
+        <item>More sparkling water makes the alcohol-free sangria lighter and fizzier.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Alcoholische zomersangria</name>
+      <persons>ca. 6–8 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Mocktails en stoten</subcategory>
+      <intro>Een alcoholvrije zomersangria met vers fruit – fruitig, feestelijk en ideaal voor tuinfeestjes.</intro>
+      <servingTip>Voeg vlak voor het serveren het bruisende mineraalwater toe om het bruisen te behouden.</servingTip>
+      <ingredients>
+        <item>rode druivensap</item>
+        <item>Bruisend mineraalwater</item>
+        <item>oranje</item>
+        <item>citroen</item>
+        <item>aardbeien</item>
+        <item>bosbessen</item>
+        <item>ijsblokjes</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Bereid het fruit voor.</step>
+        <step nr="2">Vermeng met het druivensap.</step>
+        <step nr="3">Goed afkoelen.</step>
+        <step nr="4">Voeg vlak voor het serveren bruisend mineraalwater toe.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 15 minuten</item>
+        <item> Chill-tijd: 1 uur</item>
+      </timing>
+      <knowledge>
+        <item>Fruit en sap kunnen de dag ervoor worden bereid en gekoeld; combineer wanneer u klaar bent om te serveren.</item>
+        <item>Gemengde sangria is 1 dag houdbaar in de koelkast – roer goed voordat je hem serveert.</item>
+        <item>Appelsap werkt in plaats van druivensap voor een mildere zoetheid.</item>
+        <item>Meer bruisend water maakt de alcoholvrije sangria lichter en bruisender.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Sangria d'été sans alcool</name>
+      <persons>env. 6 à 8 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Mocktails &amp; punchs</subcategory>
+      <intro>Une sangria estivale sans alcool avec des fruits frais – fruitée, festive et idéale pour les garden-parties.</intro>
+      <servingTip>Ajoutez l'eau minérale gazeuse juste avant de servir pour conserver le pétillant.</servingTip>
+      <ingredients>
+        <item>jus de raisin rouge</item>
+        <item>eau minérale gazeuse</item>
+        <item>orange</item>
+        <item>citron</item>
+        <item>fraises</item>
+        <item>myrtilles</item>
+        <item>glaçons</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Préparez les fruits.</step>
+        <step nr="2">Mélanger avec le jus de raisin.</step>
+        <step nr="3">Bien refroidir.</step>
+        <step nr="4">Ajoutez de l'eau minérale gazeuse juste avant de servir.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 15 minutes</item>
+        <item>Temps de refroidissement : 1 heure</item>
+      </timing>
+      <knowledge>
+        <item>Les fruits et jus peuvent être préparés la veille et réfrigérés ; mélanger lorsque vous êtes prêt à servir.</item>
+        <item>La sangria mélangée se conserve 1 journée au réfrigérateur – mélangez bien avant de servir.</item>
+        <item>Le jus de pomme remplace le jus de raisin pour une douceur plus douce.</item>
+        <item>Plus d'eau gazeuse rend la sangria sans alcool plus légère et plus pétillante.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Sangría de verano sin alcohol</name>
+      <persons>aprox. 6 a 8 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Cócteles sin alcohol y ponches</subcategory>
+      <intro>Una sangría de verano sin alcohol con fruta fresca: afrutada, festiva e ideal para fiestas en el jardín.</intro>
+      <servingTip>Agregue el agua mineral con gas justo antes de servir para mantener la efervescencia.</servingTip>
+      <ingredients>
+        <item>jugo de uva tinta</item>
+        <item>agua mineral con gas</item>
+        <item>naranja</item>
+        <item>limón</item>
+        <item>fresas</item>
+        <item>arándanos</item>
+        <item>cubitos de hielo</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Preparad la fruta.</step>
+        <step nr="2">Mezclar con el zumo de uva.</step>
+        <step nr="3">Relájate bien.</step>
+        <step nr="4">Agregue agua mineral con gas justo antes de servir.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 15 minutos</item>
+        <item>Tiempo de enfriamiento: 1 hora</item>
+      </timing>
+      <knowledge>
+        <item>La fruta y el jugo se pueden preparar el día anterior y enfriar; combine cuando esté listo para servir.</item>
+        <item>La sangría mixta se conserva en el refrigerador durante 1 día; revuelve bien antes de servir.</item>
+        <item>El jugo de manzana funciona en lugar del jugo de uva para obtener un dulzor más suave.</item>
+        <item>Más agua con gas hace que la sangría sin alcohol sea más ligera y gaseosa.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Sangria estiva analcolica</name>
+      <persons>ca. 6–8 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Mocktail e punch</subcategory>
+      <intro>Una sangria estiva analcolica con frutta fresca: fruttata, festosa e ideale per le feste in giardino.</intro>
+      <servingTip>Aggiungere l'acqua minerale frizzante appena prima di servire per mantenere l'effervescenza.</servingTip>
+      <ingredients>
+        <item>succo d'uva rossa</item>
+        <item>acqua minerale frizzante</item>
+        <item>arancione</item>
+        <item>limone</item>
+        <item>fragole</item>
+        <item>mirtilli</item>
+        <item>cubetti di ghiaccio</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepara la frutta.</step>
+        <step nr="2">Mescolare con il succo d'uva.</step>
+        <step nr="3">Far raffreddare bene.</step>
+        <step nr="4">Aggiungi acqua minerale frizzante subito prima di servire.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 15 minuti</item>
+        <item>Tempo di raffreddamento: 1 ora</item>
+      </timing>
+      <knowledge>
+        <item>Frutta e succhi possono essere preparati il giorno prima e refrigerati; unisci quando sei pronto per servire.</item>
+        <item>La sangria mista si conserva in frigorifero per 1 giorno: mescola bene prima di servire.</item>
+        <item>Il succo di mela funziona al posto del succo d'uva per una dolcezza più delicata.</item>
+        <item>Più acqua frizzante rende la sangria analcolica più leggera e frizzante.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Nealkoholická letní sangria</name>
+      <persons>cca. 6–8 sklenic</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Mocktaily a údery</subcategory>
+      <intro>Letní nealkoholická sangria s čerstvým ovocem – ovocná, sváteční, ideální na zahradní párty.</intro>
+      <servingTip>Pervou minerální vodu přidejte těsně před podáváním, aby zůstala šumivá.</servingTip>
+      <ingredients>
+        <item>šťáva z červených hroznů</item>
+        <item>perlivá minerální voda</item>
+        <item>oranžová</item>
+        <item>citron</item>
+        <item>jahody</item>
+        <item>borůvky</item>
+        <item>kostky ledu</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Připravte ovoce.</step>
+        <step nr="2">Smíchejte s hroznovou šťávou.</step>
+        <step nr="3">Vychlaďte se.</step>
+        <step nr="4">Před podáváním přidejte perlivou minerální vodu.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 15 minut</item>
+        <item>Doba chlazení: 1 hodina</item>
+      </timing>
+      <knowledge>
+        <item>Ovoce a šťávy lze připravit den předem a vychladit; spojte, až budete připraveni podávat.</item>
+        <item>Smíchanou sangrii uchováme v lednici 1 den – před podáváním dobře promícháme.</item>
+        <item>Jablečná šťáva funguje místo hroznové šťávy pro jemnější sladkost.</item>
+        <item>S více perlivou vodou je sangria bez alkoholu lehčí a šumivější.</item>
+      </knowledge>
+    </translation>
   </recipe>
   <recipe id="418">
     <name>Beeren-Sommerbowle</name>
@@ -957,7 +2830,13 @@
       <item>Arbeitszeit: 15 Minuten</item>
       <item>Kühlzeit: 2 Stunden</item>
     </timing>
-    <knowledge><item>Früchte lassen sich am Vortag schneiden und kalt stellen; Bowle unmittelbar vor den Gästen mit Limonade und Eis ansetzen.</item><item>Angemischte Bowle schmeckt am besten am selben Tag; im Kühlschrank höchstens 1 Tag.</item><item>Statt einer Limonade funktioniert auch eine Mischung aus Mineralwasser und Fruchtsaft.</item><item>Mit gefrorenen Beeren statt Eiswürfeln bleibt die Bowle länger kalt ohne zu verwässern.</item></knowledge><translation lang="pl">
+    <knowledge>
+      <item>Früchte lassen sich am Vortag schneiden und kalt stellen; Bowle unmittelbar vor den Gästen mit Limonade und Eis ansetzen.</item>
+      <item>Angemischte Bowle schmeckt am besten am selben Tag; im Kühlschrank höchstens 1 Tag.</item>
+      <item>Statt einer Limonade funktioniert auch eine Mischung aus Mineralwasser und Fruchtsaft.</item>
+      <item>Mit gefrorenen Beeren statt Eiswürfeln bleibt die Bowle länger kalt ohne zu verwässern.</item>
+    </knowledge>
+    <translation lang="pl">
       <name>Letnia bowla jagodowa</name>
       <persons>ok. 8–10 szklanek</persons>
       <category>Letnie napoje, limonady i mocktaile</category>
@@ -984,7 +2863,13 @@
         <item>Czas pracy: 15 minut</item>
         <item>Czas chłodzenia: 2 godziny</item>
       </timing>
-    <knowledge><item>Owoce można pokroić dzień wcześniej i schłodzić; bowle zalew limonadą i lodem bezpośrednio przed gośćmi.</item><item>Gotowa bowle smakuje najlepiej tego samego dnia; w lodówce maksymalnie 1 dzień.</item><item>Zamiast jednej limonady można użyć wody mineralnej z sokiem owocowym.</item><item>Mrożone owoce zamiast kostek lodu dłużej utrzymują chłód bez rozwadniania.</item></knowledge></translation>
+      <knowledge>
+        <item>Owoce można pokroić dzień wcześniej i schłodzić; bowle zalew limonadą i lodem bezpośrednio przed gośćmi.</item>
+        <item>Gotowa bowle smakuje najlepiej tego samego dnia; w lodówce maksymalnie 1 dzień.</item>
+        <item>Zamiast jednej limonady można użyć wody mineralnej z sokiem owocowym.</item>
+        <item>Mrożone owoce zamiast kostek lodu dłużej utrzymują chłód bez rozwadniania.</item>
+      </knowledge>
+    </translation>
     <translation lang="en">
       <name>Berry Summer Punch</name>
       <persons>approx. 8–10 glasses</persons>
@@ -1012,6 +2897,182 @@
         <item>Prep time: 15 minutes</item>
         <item>Chill time: 2 hours</item>
       </timing>
-    <knowledge><item>Fruit can be cut the day before and chilled; assemble the bowl with lemonade and ice when guests are about to arrive.</item><item>Mixed bowl tastes best the same day; in the fridge at most 1 day.</item><item>Sparkling water mixed with fruit juice works instead of a single lemonade.</item><item>Frozen berries instead of ice cubes keep the bowl cold longer without watering down.</item></knowledge></translation>
+      <knowledge>
+        <item>Fruit can be cut the day before and chilled; assemble the bowl with lemonade and ice when guests are about to arrive.</item>
+        <item>Mixed bowl tastes best the same day; in the fridge at most 1 day.</item>
+        <item>Sparkling water mixed with fruit juice works instead of a single lemonade.</item>
+        <item>Frozen berries instead of ice cubes keep the bowl cold longer without watering down.</item>
+      </knowledge>
+    </translation>
+    <translation lang="nl">
+      <name>Bessen zomerpunch</name>
+      <persons>ca. 8–10 glazen</persons>
+      <category>Zomerdrankjes, limonades &amp; mocktails</category>
+      <subcategory>Mocktails en stoten</subcategory>
+      <intro>Een fruitige zomerpunch van bessen met sap van witte druiven – verfrissend, kleurrijk en perfect voor zomerse bijeenkomsten.</intro>
+      <servingTip>Serveer in een grote glazen kan – garneer met munt en verse bessen.</servingTip>
+      <ingredients>
+        <item>aardbeien</item>
+        <item>frambozen</item>
+        <item>bosbessen</item>
+        <item>wit druivensap</item>
+        <item>Bruisend mineraalwater</item>
+        <item>limoen</item>
+        <item>ijsblokjes</item>
+        <item>munt</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Bereid het fruit voor.</step>
+        <step nr="2">Vermeng met het druivensap.</step>
+        <step nr="3">Koel minimaal twee uur.</step>
+        <step nr="4">Voeg vlak voor het serveren bruisend mineraalwater en ijs toe.</step>
+      </preparation>
+      <timing>
+        <item>Voorbereidingstijd: 15 minuten</item>
+        <item> Chill-tijd: 2 uur</item>
+      </timing>
+      <knowledge>
+        <item>Fruit kan de dag ervoor worden gesneden en gekoeld; zet de kom met limonade en ijs klaar als de gasten arriveren.</item>
+        <item>Gemengde kom smaakt dezelfde dag het lekkerst; in de koelkast maximaal 1 dag.</item>
+        <item>Bruisend water vermengd met vruchtensap werkt in plaats van een enkele limonade.</item>
+        <item>Bevroren bessen in plaats van ijsblokjes houden de kom langer koud zonder te verwateren.</item>
+      </knowledge>
+    </translation>
+    <translation lang="fr">
+      <name>Punch d'été aux baies</name>
+      <persons>env. 8 à 10 verres</persons>
+      <category>Boissons d'été, limonades et cocktails sans alcool</category>
+      <subcategory>Mocktails &amp; punchs</subcategory>
+      <intro>Un punch d'été fruité aux baies avec du jus de raisin blanc – rafraîchissant, coloré et parfait pour les réunions d'été.</intro>
+      <servingTip>Servir dans un grand pichet en verre – garnir de menthe et de baies fraîches.</servingTip>
+      <ingredients>
+        <item>fraises</item>
+        <item>framboises</item>
+        <item>myrtilles</item>
+        <item>jus de raisin blanc</item>
+        <item>eau minérale gazeuse</item>
+        <item>chaux</item>
+        <item>glaçons</item>
+        <item>menthe</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Préparez les fruits.</step>
+        <step nr="2">Mélanger avec le jus de raisin.</step>
+        <step nr="3">Réfrigérer au moins deux heures.</step>
+        <step nr="4">Ajoutez de l'eau minérale gazeuse et des glaçons juste avant de servir.</step>
+      </preparation>
+      <timing>
+        <item>Temps de préparation : 15 minutes</item>
+        <item>Temps de refroidissement : 2 heures</item>
+      </timing>
+      <knowledge>
+        <item>Les fruits peuvent être coupés la veille et réfrigérés ; assemblez le bol avec de la limonade et de la glace lorsque les invités sont sur le point d'arriver.</item>
+        <item>Le bol mélangé est meilleur le jour même ; au réfrigérateur au maximum 1 jour.</item>
+        <item>De l'eau gazeuse mélangée à du jus de fruit fonctionne à la place d'une simple limonade.</item>
+        <item>Des baies congelées au lieu de glaçons maintiennent le bol froid plus longtemps sans le diluer.</item>
+      </knowledge>
+    </translation>
+    <translation lang="es">
+      <name>Ponche de verano con bayas</name>
+      <persons>aprox. 8 a 10 vasos</persons>
+      <category>Bebidas de verano, limonadas y cócteles sin alcohol</category>
+      <subcategory>Cócteles sin alcohol y ponches</subcategory>
+      <intro>Un ponche veraniego afrutado de bayas con jugo de uva blanca: refrescante, colorido y perfecto para las reuniones de verano.</intro>
+      <servingTip>Sirva en una jarra de vidrio grande y decore con menta y bayas frescas.</servingTip>
+      <ingredients>
+        <item>fresas</item>
+        <item>frambuesas</item>
+        <item>arándanos</item>
+        <item>jugo de uva blanca</item>
+        <item>agua mineral con gas</item>
+        <item>lima</item>
+        <item>cubitos de hielo</item>
+        <item>menta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Preparad la fruta.</step>
+        <step nr="2">Mezclar con el zumo de uva.</step>
+        <step nr="3">Enfriar durante al menos dos horas.</step>
+        <step nr="4">Agregue agua mineral con gas y hielo justo antes de servir.</step>
+      </preparation>
+      <timing>
+        <item>Tiempo de preparación: 15 minutos</item>
+        <item>Tiempo de enfriamiento: 2 horas</item>
+      </timing>
+      <knowledge>
+        <item>La fruta se puede cortar el día anterior y enfriar; Arma el bol con limonada y hielo cuando los invitados estén a punto de llegar.</item>
+        <item>El tazón mixto sabe mejor el mismo día; en la nevera como máximo 1 día.</item>
+        <item>El agua con gas mezclada con jugo de frutas funciona en lugar de una sola limonada.</item>
+        <item>Las bayas congeladas en lugar de cubitos de hielo mantienen el recipiente frío por más tiempo sin diluirse.</item>
+      </knowledge>
+    </translation>
+    <translation lang="it">
+      <name>Punch estivo alle bacche</name>
+      <persons>ca. 8-10 bicchieri</persons>
+      <category>Bevande estive, limonate e cocktail analcolici</category>
+      <subcategory>Mocktail e punch</subcategory>
+      <intro>Un punch estivo fruttato ai frutti di bosco con succo d'uva bianca: rinfrescante, colorato e perfetto per le riunioni estive.</intro>
+      <servingTip>Servire in una grande brocca di vetro – guarnire con menta e frutti di bosco freschi.</servingTip>
+      <ingredients>
+        <item>fragole</item>
+        <item>lamponi</item>
+        <item>mirtilli</item>
+        <item>succo d'uva bianca</item>
+        <item>acqua minerale frizzante</item>
+        <item>calce</item>
+        <item>cubetti di ghiaccio</item>
+        <item>menta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Prepara la frutta.</step>
+        <step nr="2">Mescolare con il succo d'uva.</step>
+        <step nr="3">Far raffreddare per almeno due ore.</step>
+        <step nr="4">Aggiungi acqua minerale frizzante e ghiaccio subito prima di servire.</step>
+      </preparation>
+      <timing>
+        <item>Tempo di preparazione: 15 minuti</item>
+        <item>Tempo di raffreddamento: 2 ore</item>
+      </timing>
+      <knowledge>
+        <item>La frutta può essere tagliata il giorno prima e refrigerata; montare la ciotola con la limonata e il ghiaccio quando stanno per arrivare gli ospiti.</item>
+        <item>Il piatto misto è più buono il giorno stesso; in frigo al massimo 1 giorno.</item>
+        <item>L'acqua frizzante mescolata con succo di frutta funziona al posto di una semplice limonata.</item>
+        <item>I frutti di bosco congelati invece dei cubetti di ghiaccio mantengono la ciotola fredda più a lungo senza annacquare.</item>
+      </knowledge>
+    </translation>
+    <translation lang="cs">
+      <name>Berry Summer Punch</name>
+      <persons>cca. 8–10 sklenic</persons>
+      <category>Letní nápoje, limonády a mocktaily</category>
+      <subcategory>Mocktaily a údery</subcategory>
+      <intro>Ovocný bobulový letní punč se šťávou z bílých hroznů – osvěžující, barevný a ideální pro letní posezení.</intro>
+      <servingTip>Podávejte ve velkém skleněném džbánu – ozdobte mátou a čerstvým ovocem.</servingTip>
+      <ingredients>
+        <item>jahody</item>
+        <item>maliny</item>
+        <item>borůvky</item>
+        <item>bílá hroznová šťáva</item>
+        <item>perlivá minerální voda</item>
+        <item>vápno</item>
+        <item>kostky ledu</item>
+        <item>máta</item>
+      </ingredients>
+      <preparation>
+        <step nr="1">Připravte ovoce.</step>
+        <step nr="2">Smíchejte s hroznovou šťávou.</step>
+        <step nr="3">Chlaďte alespoň dvě hodiny.</step>
+        <step nr="4">Těsně před podáváním přidejte perlivou minerální vodu a led.</step>
+      </preparation>
+      <timing>
+        <item>Čas přípravy: 15 minut</item>
+        <item>Doba chlazení: 2 hodiny</item>
+      </timing>
+      <knowledge>
+        <item>Ovoce lze nakrájet den předem a vychladit; sestavte misku s limonádou a ledem, když se hosté chystají dorazit.</item>
+        <item>Míchaná mísa chutná nejlépe tentýž den; v lednici maximálně 1 den.</item>
+        <item>Namísto jedné limonády funguje perlivá voda smíchaná s ovocnou šťávou.</item>
+        <item>Mražené bobule místo kostek ledu udrží mísu déle chladnou, aniž by se zalévaly.</item>
+      </knowledge>
+    </translation>
   </recipe>
 </drinkCollection>

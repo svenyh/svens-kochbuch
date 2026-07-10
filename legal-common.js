@@ -24,6 +24,25 @@
       footerNavAria: 'Fußnavigation',
       page_title_impressum: 'Impressum | Sven Kocht.',
       page_title_privacy: 'Datenschutzerklärung | Sven Kocht.',
+      page_title_about: 'Über mich | Sven Kocht.',
+      about_title: 'Über mich',
+      about_intro_welcome: 'Willkommen bei Svens Kochbuch.',
+      about_p1: 'Ich bin Sven und koche mit Leidenschaft – nicht für perfekte Hochglanzfotos, sondern für Menschen, die ehrliche Rezepte suchen, die wirklich funktionieren.',
+      about_p2: 'Hier findest du Gerichte, die ich selbst entwickelt, ausprobiert und immer wieder gekocht habe. Viele Rezepte stammen aus Familienklassikern, Grillabenden mit Freunden oder spontanen Ideen, die sich als echte Lieblingsgerichte etabliert haben.',
+      about_p3: 'Mein Schwerpunkt liegt auf einer bodenständigen Küche:',
+      about_focus_1: 'Hausmannskost',
+      about_focus_2: 'Grill & BBQ',
+      about_focus_3: 'Smoker',
+      about_focus_4: 'Thermomix',
+      about_focus_5: 'Feierabendküche',
+      about_focus_6: 'internationale Lieblingsgerichte',
+      about_focus_7: 'saisonale Rezepte',
+      about_p4: 'Ich glaube daran, dass gutes Essen nicht kompliziert sein muss. Gute Zutaten, verständliche Anleitungen und Rezepte, die beim ersten Nachkochen gelingen, sind für mich wichtiger als Perfektion.',
+      about_p5: 'Deshalb schreibe ich jedes Rezept so, wie ich es auch einem guten Freund erklären würde – Schritt für Schritt, ehrlich und ohne unnötigen Schnickschnack.',
+      about_p6: 'Svens Kochbuch wächst ständig weiter. Neue Rezepte, saisonale Ideen und persönliche Favoriten kommen regelmäßig dazu. Mein Ziel ist eine umfangreiche Rezeptsammlung, auf die man sich jederzeit verlassen kann.',
+      about_p7: 'Ich wünsche dir viel Freude beim Stöbern, Nachkochen und Genießen.',
+      about_closing_bold: 'Viel Spaß beim Kochen!',
+      about_signature: 'Sven',
       legal_contact_title: 'Kontakt',
       legal_imprint_title: 'Impressum',
       legal_ddg_info: 'Angaben gemäß § 5 DDG',
@@ -72,6 +91,25 @@
       footerNavAria: 'Nawigacja stopki',
       page_title_impressum: 'Nota prawna | Sven Kocht.',
       page_title_privacy: 'Polityka prywatności | Sven Kocht.',
+      page_title_about: 'O mnie | Sven Kocht.',
+      about_title: 'O mnie',
+      about_intro_welcome: 'Witaj w książce kucharskiej Svena.',
+      about_p1: 'Nazywam się Sven i gotuję z pasją – nie dla perfekcyjnych zdjęć z magazynu, lecz dla osób, które szukają uczciwych przepisów, które naprawdę działają.',
+      about_p2: 'Tutaj znajdziesz dania, które sam opracowałem, testowałem i gotowałem wielokrotnie. Wiele przepisów pochodzi z rodzinnych klasyków, grillowania z przyjaciółmi lub spontanicznych pomysłów, które stały się prawdziwymi ulubionymi potrawami.',
+      about_p3: 'Skupiam się na kuchni prostej i codziennej:',
+      about_focus_1: 'Kuchnia domowa',
+      about_focus_2: 'Grill & BBQ',
+      about_focus_3: 'Smoker',
+      about_focus_4: 'Thermomix',
+      about_focus_5: 'Kuchnia na wieczór po pracy',
+      about_focus_6: 'Międzynarodowe ulubione dania',
+      about_focus_7: 'Sezonowe przepisy',
+      about_p4: 'Wierzę, że dobre jedzenie nie musi być skomplikowane. Dobre składniki, zrozumiałe instrukcje i przepisy, które udają się za pierwszym razem, są dla mnie ważniejsze niż perfekcja.',
+      about_p5: 'Dlatego piszę każdy przepis tak, jak tłumaczyłbym go dobremu przyjacielowi – krok po kroku, uczciwie i bez zbędnego zamieszania.',
+      about_p6: 'Książka kucharska Svena stale rośnie. Regularnie pojawiają się nowe przepisy, sezonowe pomysły i osobiste ulubione dania. Moim celem jest obszerna kolekcja przepisów, na której można zawsze polegać.',
+      about_p7: 'Życzę Ci miłego przeglądania, gotowania i delektowania się potrawami.',
+      about_closing_bold: 'Miłego gotowania!',
+      about_signature: 'Sven',
       legal_contact_title: 'Kontakt',
       legal_imprint_title: 'Nota prawna',
       legal_ddg_info: 'Informacje zgodnie z § 5 DDG',
@@ -120,6 +158,25 @@
       footerNavAria: 'Footer navigation',
       page_title_impressum: 'Legal notice | Sven Kocht.',
       page_title_privacy: 'Privacy policy | Sven Kocht.',
+      page_title_about: 'About | Sven Kocht.',
+      about_title: 'About me',
+      about_intro_welcome: 'Welcome to Sven’s cookbook.',
+      about_p1: 'I’m Sven and I cook with passion – not for perfect glossy photos, but for people looking for honest recipes that really work.',
+      about_p2: 'Here you will find dishes I developed, tested and cooked again and again myself. Many recipes come from family classics, barbecue evenings with friends or spontaneous ideas that became true favourites.',
+      about_p3: 'My focus is on down-to-earth cooking:',
+      about_focus_1: 'Home-style cooking',
+      about_focus_2: 'Grill & BBQ',
+      about_focus_3: 'Smoker',
+      about_focus_4: 'Thermomix',
+      about_focus_5: 'Weeknight cooking',
+      about_focus_6: 'International favourites',
+      about_focus_7: 'Seasonal recipes',
+      about_p4: 'I believe good food does not have to be complicated. Good ingredients, clear instructions and recipes that work the first time you cook them matter more to me than perfection.',
+      about_p5: 'That is why I write every recipe the way I would explain it to a good friend – step by step, honestly and without unnecessary fuss.',
+      about_p6: 'Sven’s cookbook keeps growing. New recipes, seasonal ideas and personal favourites are added regularly. My goal is a comprehensive recipe collection you can rely on at any time.',
+      about_p7: 'I wish you lots of fun browsing, cooking and enjoying.',
+      about_closing_bold: 'Happy cooking!',
+      about_signature: 'Sven',
       legal_contact_title: 'Contact',
       legal_imprint_title: 'Legal notice',
       legal_ddg_info: 'Information according to § 5 DDG',
@@ -249,6 +306,11 @@
 
     if (path.indexOf('impressum') !== -1) return;
     if (path.indexOf('datenschutz') !== -1) return;
+    if (path.indexOf('ueber-mich') !== -1) {
+      var aboutLink = document.querySelector('[data-nav-link="about"]');
+      if (aboutLink) aboutLink.classList.add('is-active');
+      return;
+    }
 
     if (path.indexOf('kontakt') !== -1) {
       var kontaktPageLink = document.querySelector('[data-nav-link="contact"]');
@@ -274,6 +336,11 @@
       if (privacyLink) privacyLink.classList.add('is-active');
     }
 
+    if (path.indexOf('ueber-mich') !== -1) {
+      var aboutFooter = document.querySelector('[data-footer-link="about"]');
+      if (aboutFooter) aboutFooter.classList.add('is-active');
+    }
+
     if (hash === '#kontakt') {
       var footerContact = document.querySelector('[data-footer-link="contact"]');
       if (footerContact) footerContact.classList.add('is-active');
@@ -297,6 +364,7 @@
     var page = document.body.getAttribute('data-legal-page');
     if (page === 'impressum') document.title = t('page_title_impressum');
     if (page === 'privacy') document.title = t('page_title_privacy');
+    if (page === 'about') document.title = t('page_title_about');
   }
 
   function scrollToLegalHash(hash) {

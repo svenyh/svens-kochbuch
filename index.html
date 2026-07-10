@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preload" as="image" href="/images/hero-outdoor-kitchen.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/assets/brand-chef-hat.svg" />
+  <link rel="preload" as="image" href="/images/rezeptbild_54_detail.webp" fetchpriority="high" />
   <title>Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten</title>
   <meta name="description" content="Svens persönliches Kochbuch mit einfachen Rezepten für jeden Tag: Klassiker, Ofengerichte, Grillideen, Airfryer-Rezepte, Salate, Beilagen und schnelle Küche." />
   <link rel="canonical" href="https://svenskochbuch.de/" />
@@ -19,7 +20,8 @@
   <meta name="twitter:image" content="https://svenskochbuch.de/images/hero-outdoor-kitchen.png" />
   <!-- SEO: hreflang bewusst noch nicht gesetzt. Spaetere Optionen: /de/, /pl/, /en/ oder Query/Hash-Loesung. -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/home-redesign.css?v=14" />
 
   <style>
     :root {
@@ -3027,11 +3029,6 @@
       padding: 8px 0 28px;
     }
 
-    #home-about,
-    #ueber-mich {
-      scroll-margin-top: var(--header-offset);
-    }
-
     #home-categories {
       scroll-margin-top: var(--header-offset);
     }
@@ -3109,28 +3106,6 @@
 
     .footer-nav a:hover {
       color: var(--accent);
-    }
-
-    .about-section {
-      background: var(--white);
-      border-top: 1px solid var(--line);
-      margin-top: 8px;
-    }
-
-    .about-inner {
-      max-width: 1240px;
-      margin: 0 auto;
-      padding: 72px 24px 80px;
-    }
-
-    .about-copy {
-      max-width: min(860px, 100%);
-      margin: 0 auto;
-      padding: 44px 48px;
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
     }
 
     @media (hover: hover) and (pointer: fine) {
@@ -3270,37 +3245,6 @@
         color: var(--accent-dark);
         transform: translateY(-1px);
       }
-    }
-
-    .about-copy h2 {
-      font-family: 'Inter', sans-serif;
-      font-weight: 900;
-      font-size: clamp(32px, 4vw, 42px);
-      line-height: 1.12;
-      color: var(--primary);
-      margin: 0 0 1.5rem;
-    }
-
-    .about-copy p {
-      font-family: 'Inter', sans-serif;
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--muted);
-      margin: 0 0 1.2rem;
-      max-width: 100%;
-    }
-
-    .about-copy > p:nth-last-of-type(2) {
-      margin-top: 2rem;
-      margin-bottom: 0.4rem;
-      font-weight: 500;
-      color: var(--dark);
-    }
-
-    .about-copy > p:last-of-type {
-      margin-bottom: 0;
-      font-weight: 600;
-      color: var(--primary);
     }
 
     @media (max-width: 900px) {
@@ -3718,14 +3662,6 @@
         font-size: 15px;
       }
 
-      .about-inner {
-        padding: 48px 18px 56px;
-      }
-
-      .about-copy {
-        padding: 28px 22px;
-      }
-
       .shopping-recipe-head {
         flex-direction: column;
         align-items: flex-start;
@@ -3738,32 +3674,29 @@
   </style>
 </head>
 
-<body>
+<body class="home-redesign-active">
 
   <div class="site-topbar">
-  <div class="lang-top-bar language-layer">
-    <div class="lang-top-bar-inner language-inner">
-      <span class="lang-top-label visually-hidden" id="langTopLabel">Sprache</span>
-      <div class="lang-switcher lang-switcher--top" aria-label="Sprache wählen">
-        <button type="button" class="lang-btn is-active" data-lang="de" aria-label="Deutsch">DE</button>
-        <span class="lang-sep" aria-hidden="true">|</span>
-        <button type="button" class="lang-btn" data-lang="pl" aria-label="Polski">PL</button>
-        <span class="lang-sep" aria-hidden="true">|</span>
-        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
-      </div>
-    </div>
-  </div>
-
   <header class="site-header">
     <nav class="nav">
       <a href="/" class="brand" aria-label="Zur Startseite">
-        <span class="brand-mark">SK</span>
+        <span class="brand-mark" aria-hidden="true">
+          <img src="/assets/brand-chef-hat.svg" alt="" width="52" height="52" decoding="async" />
+        </span>
         <span class="brand-text">
           <span class="brand-title">Sven Kocht.</span>
-          <span class="brand-subtitle" id="brandSubtitle">Rezepte aus Svens Kochbuch</span>
+          <span class="brand-subtitle" id="brandSubtitle" data-i18n="brand_subtitle">Rezepte aus Svens Kochbuch</span>
         </span>
       </a>
-      <ul class="nav-links">
+      <div class="home-nav-center" aria-label="Hauptnavigation">
+        <a href="#rezepte" id="homeNavRecipes" data-i18n="home_nav_recipes">Rezepte</a>
+        <a href="#home-categories" id="homeNavCategories" data-i18n="home_nav_categories">Kategorien</a>
+        <button type="button" id="homeNavGrill" data-filter="grill-bbq" data-i18n="home_nav_grill">Grill</button>
+        <button type="button" id="homeNavAirfryer" data-filter="airfryer" data-i18n="home_nav_airfryer">Airfryer</button>
+        <button type="button" id="homeNavWorld" data-filter="kulinarische-weltreise" data-i18n="home_nav_world">Länderküche</button>
+        <a href="/ueber-mich.html" id="homeNavAbout" data-i18n="home_nav_about">Über mich</a>
+      </div>
+      <ul class="nav-links nav-links--legacy" hidden aria-hidden="true">
         <li><a href="/" class="nav-home-link is-active" id="navHomeLink">Startseite</a></li>
         <li class="nav-dropdown">
           <button type="button" class="nav-dropdown-trigger" id="recipesMenuToggle" aria-expanded="false" aria-controls="recipesDropdown" aria-haspopup="true">
@@ -3790,51 +3723,240 @@
         </li>
         <li><button type="button" class="nav-merkliste-btn" id="merklisteNavBtn">Merkliste</button></li>
         <li><button type="button" class="nav-merkliste-btn" id="shoppingNavBtn">Einkaufsliste</button></li>
-        <li><a href="#home-about">Über mich</a></li>
+        <li><a href="/ueber-mich.html">Über mich</a></li>
         <li><a href="/impressum.html#kontakt" class="nav-contact-link">Kontakt</a></li>
       </ul>
+      <div class="home-nav-actions" aria-label="Schnellaktionen">
+        <div class="lang-switcher lang-switcher--nav">
+          <label class="visually-hidden" for="homeLangSelect" id="langTopLabel">Sprache</label>
+          <select id="homeLangSelect" class="home-lang-select" aria-label="Sprache wählen">
+            <option value="de">DE</option>
+            <option value="en">EN</option>
+            <option value="pl">PL</option>
+            <option value="nl">NL</option>
+            <option value="fr">FR</option>
+            <option value="es">ES</option>
+            <option value="it">IT</option>
+            <option value="cs">CS</option>
+          </select>
+        </div>
+        <button type="button" class="home-nav-search-btn" id="homeNavSearchBtn" data-i18n-aria="home_search_open" aria-label="Suche öffnen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        </button>
+        <div class="home-trust-badge home-trust-badge--header" id="homeTrustBadge" aria-live="polite">
+          <span class="home-trust-count" id="homeTrustCount">— Rezepte</span>
+          <span class="home-trust-free" id="homeTrustFree" data-i18n="home_trust_free">100 % kostenlos</span>
+          <span class="home-trust-stars" id="homeTrustStars" aria-hidden="true">★★★★★</span>
+        </div>
+        <button type="button" class="home-nav-theme-btn" id="homeNavThemeBtn" disabled aria-label="Darkmode (demnächst)" title="Darkmode demnächst">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+        </button>
+      </div>
     </nav>
   </header>
   </div>
 
   <div id="homeView">
-  <section class="hero" style="--hero-image: url('/images/hero-outdoor-kitchen.webp');">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <p class="hero-badge" id="heroBadge">Svens persönliches Kochbuch</p>
-        <h1>Willkommen in Svens Küche!</h1>
-        <p class="hero-lead" id="heroLead">Einfache Klassiker, herzhafte Ofengerichte, Grillideen — Rezepte für jeden Tag.</p>
+  <section class="hero home-hero" aria-labelledby="heroTitle">
+    <div class="home-hero-bg" aria-hidden="true">
+      <img src="/images/rezeptbild_54_detail.webp" alt="" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" />
+    </div>
+    <div class="hero-inner home-hero-inner">
+      <div class="hero-content home-hero-content">
+        <h1 id="heroTitle">Ehrlich gekocht.<br>Einfach nachgekocht.</h1>
+        <p class="hero-lead" id="heroLead">Über 428 Rezepte für jeden Tag – vom schnellen Feierabendgericht bis zum Sonntagsbraten.</p>
         <div class="hero-search">
-          <label class="visually-hidden" for="recipeSearchInput">Rezepte suchen</label>
-          <input type="search" id="recipeSearchInput" placeholder="Rezept, Zutat oder Kategorie suchen …" autocomplete="off" />
-          <button type="button" class="hero-search-btn" id="heroSearchBtn">Suchen</button>
+          <span class="hero-search-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+          </span>
+          <label class="visually-hidden" for="recipeSearchInput" data-i18n="home_hero_search_label">Rezept suchen</label>
+          <input type="search" id="recipeSearchInput" data-i18n-placeholder="home_hero_search_placeholder" placeholder="Rezept suchen …" autocomplete="off" />
+          <button type="button" class="hero-search-btn" id="heroSearchBtn" data-i18n="home_hero_search_btn">Suchen</button>
         </div>
-        <div class="hero-actions">
-          <a href="#rezepte" class="btn">Zum Rezept-Archiv</a>
+        <div class="hero-actions home-hero-actions">
+          <button type="button" class="home-hero-chip" id="homeHeroBtnGrill" data-filter="grill-bbq">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h16M6 14h12M8 18h8"/></svg>
+            <span data-i18n="home_hero_btn_grill">Grillrezepte</span>
+          </button>
+          <button type="button" class="home-hero-chip" id="homeHeroBtnAirfryer" data-filter="airfryer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12c3-4 6 4 9 0s6 4 9 0"/></svg>
+            <span data-i18n="home_hero_btn_airfryer">Airfryer</span>
+          </button>
+          <button type="button" class="home-hero-chip" id="homeHeroBtnNew" data-filter="latest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            <span data-i18n="home_hero_btn_new">Neue Rezepte</span>
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="home-quick-strip" aria-label="Schnellzugriff">
-    <div class="home-quick-inner">
-      <button type="button" class="home-quick-card" data-filter="schnell" id="homeQuickSchnell">
-        <span class="home-quick-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span>
-        <span class="home-quick-text"><strong>Schnell gekocht</strong><span>Fix auf den Tisch</span></span>
-      </button>
-      <button type="button" class="home-quick-card" data-filter="grill-bbq" id="homeQuickGrill">
-        <span class="home-quick-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16M6 14h12M8 18h8"/></svg></span>
-        <span class="home-quick-text"><strong>Grill &amp; BBQ</strong><span>Für draußen &amp; den Rost</span></span>
-      </button>
-      <button type="button" class="home-quick-card" id="homeQuickShopping">
-        <span class="home-quick-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7h15l-1.5 9h-12z"/><path d="M6 7l-1-3H3"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></span>
-        <span class="home-quick-text"><strong>Einkaufsliste</strong><span>Zutaten im Blick</span></span>
-      </button>
+  <section class="home-section home-popular" aria-labelledby="homePopularHeading">
+    <div class="home-section-head">
+      <div>
+        <p class="home-section-kicker" id="homePopularKicker" data-i18n="home_popular_kicker">Beliebt</p>
+        <h2 id="homePopularHeading" data-i18n="home_popular_title">Beliebteste Rezepte</h2>
+      </div>
+      <a href="#rezepte" class="home-section-link" id="homePopularViewAll" data-i18n="home_popular_view_all">Alle ansehen</a>
     </div>
-  </div>
+    <div class="home-scroll-track" id="homePopularGrid" role="list" aria-live="polite"></div>
+  </section>
+
+  <section class="home-section home-categories-section" id="home-categories" aria-labelledby="homeCategoriesHeading">
+    <div class="home-section-head home-section-head--center">
+      <h2 id="homeCategoriesHeading" data-i18n="home_categories_title">Wonach hast du heute Lust?</h2>
+    </div>
+    <div class="home-category-showcase" id="homeCategoryShowcase" role="list"></div>
+    <div class="category-grid home-category-grid visually-hidden" id="themenweltenGrid" aria-hidden="true">
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="schnell" aria-label="Themenwelt öffnen: Schnelle Küche">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span>
+                <h3 class="home-category-label">Schnelle Küche</h3>
+                <p>Fix gekocht, ohne Stress.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="ofen" aria-label="Themenwelt öffnen: Ofen &amp; Aufläufe">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg></span>
+                <h3 class="home-category-label">Ofen &amp; Aufläufe</h3>
+                <p>Alles rein, alles gut.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="grill-bbq" aria-label="Themenwelt öffnen: Grill &amp; BBQ">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16M6 14h12M8 18h8"/></svg></span>
+                <h3 class="home-category-label">Grill &amp; BBQ</h3>
+                <p>Für Rost, Pfanne &amp; draußen.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="airfryer" aria-label="Themenwelt öffnen: Airfryer">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12c3-4 6 4 9 0s6 4 9 0"/><path d="M4 16c3-4 6 4 9 0s6 4 9 0"/></svg></span>
+                <h3 class="home-category-label">Airfryer</h3>
+                <p>Heißluft, knusprig, schnell.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="salate-beilagen" aria-label="Themenwelt öffnen: Salate &amp; Beilagen">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4C9 8 6 9 6 13a6 6 0 0 0 12 0c0-4-3-5-6-9z"/></svg></span>
+                <h3 class="home-category-label">Salate &amp; Beilagen</h3>
+                <p>Frisch, bunt, passt immer.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="grundrezepte" aria-label="Themenwelt öffnen: Grundrezepte">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5h12v14H6z"/><path d="M9 9h6M9 13h4"/></svg></span>
+                <h3 class="home-category-label">Grundrezepte</h3>
+                <p>Basics für deine Küche.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="woelpinghausen" aria-label="Themenwelt öffnen: Wölpinghausen">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z"/><circle cx="12" cy="11" r="2"/></svg></span>
+                <h3 class="home-category-label">Wölpinghausen</h3>
+                <p>Regional &amp; persönlich.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="suesses-backen" aria-label="Themenwelt öffnen: Süßes &amp; Backen">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 14a6 6 0 0 0 12 0c0-4-2-6-6-6s-6 2-6 6z"/><path d="M9 10h6"/></svg></span>
+                <h3 class="home-category-label">Süßes &amp; Backen</h3>
+                <p>Für Kuchen, Desserts &amp; mehr.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="sommer-horchatas" aria-label="Themenwelt öffnen: Sommer-Horchatas &amp; Aguas Frescas">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 20V8h8v12"/><path d="M6 8h12l-2-4H8z"/><path d="M10 12h4"/></svg></span>
+                <h3 class="home-category-label">Sommer-Horchatas</h3>
+                <p>Aguas Frescas &amp; Aperitifs.</p>
+              </article>
+              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="sommerdrinks-limonaden-mocktails" aria-label="Themenwelt öffnen: Sommerdrinks, Limonaden &amp; Mocktails">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 20V8h8v12"/><path d="M6 8h12l-2-4H8z"/><path d="M10 12h4"/></svg></span>
+                <h3 class="home-category-label">Sommerdrinks</h3>
+                <p>Limonaden, Eistee &amp; Mocktails.</p>
+              </article>
+    </div>
+  </section>
+
+  <section class="home-section home-new-section" id="home-new" aria-labelledby="homeNewHeading">
+    <div class="home-section-head">
+      <div>
+        <p class="home-section-kicker" data-i18n="home_new_kicker">Frisch</p>
+        <h2 id="homeNewHeading" data-i18n="home_new_title">Neu auf Svens Kochbuch</h2>
+      </div>
+      <button type="button" class="home-section-link" id="homeNewViewAll" data-filter="latest" data-i18n="home_new_view_all">Alle neuen Rezepte</button>
+    </div>
+    <div class="home-scroll-track" id="homeNewGrid" role="list" aria-live="polite"></div>
+  </section>
+
+  <section class="home-section home-about-preview" aria-labelledby="homeAboutHeading">
+    <div class="home-about-card">
+      <div class="home-about-photo-wrap">
+        <img class="home-about-photo" src="/images/hero-outdoor-kitchen.webp" alt="" width="320" height="320" loading="lazy" decoding="async" />
+      </div>
+      <div class="home-about-copy">
+        <h2 id="homeAboutHeading" data-i18n="home_about_title">Über Sven</h2>
+        <p data-i18n="home_about_p1">Kochen war für mich nie kompliziert – sondern der schönste Teil des Tages. Hier teile ich Rezepte, die bei mir zuhause wirklich ankommen.</p>
+        <p class="home-about-copy-extra" data-i18n="home_about_p2">Ehrlich, alltagstauglich und ohne unnötiges Theater – so, wie ich es auch Freunden erklären würde.</p>
+        <a href="/ueber-mich.html" class="home-about-cta" id="homeAboutCta" data-i18n="home_about_cta">Mehr über mich →</a>
+      </div>
+      <blockquote class="home-about-quote">
+        <p data-i18n="home_about_quote">Kochen soll Spaß machen und Menschen zusammenbringen.</p>
+        <cite data-i18n="home_about_signature">— Sven</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="home-section home-why" aria-labelledby="homeWhyHeading">
+    <div class="home-section-head">
+      <h2 id="homeWhyHeading" data-i18n="home_why_title">Warum Svens Kochbuch?</h2>
+    </div>
+    <div class="home-why-grid">
+      <article class="home-why-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 6.8H21l-5.5 4 2.1 6.7L12 16.8 6.4 20.5l2.1-6.7L3 9.8h6.8z"/></svg>
+        <h3 data-i18n="home_why_1_title">Erprobt &amp; verständlich</h3>
+        <p data-i18n="home_why_1_text">Rezepte mit klaren Schritten, alltagstauglichen Zutaten und nachvollziehbarer Zubereitung.</p>
+      </article>
+      <article class="home-why-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M4 16l4-4 3 3 5-6 4 5"/></svg>
+        <h3 data-i18n="home_why_2_title">Ehrliche Rezepte</h3>
+        <p data-i18n="home_why_2_text">Alltagstauglich, verständlich und ohne unnötigen Schnickschnack.</p>
+      </article>
+      <article class="home-why-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M8 8v8M16 6v12"/></svg>
+        <h3 data-i18n="home_why_3_title">Alltagstauglich</h3>
+        <p data-i18n="home_why_3_text">Klare Schritte, verständliche Zutaten – auch nach Feierabend.</p>
+      </article>
+      <article class="home-why-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-4.5-6-10a6 6 0 1 1 12 0c0 5.5-6 10-6 10z"/></svg>
+        <h3 data-i18n="home_why_4_title">Mit Leidenschaft</h3>
+        <p data-i18n="home_why_4_text">Geschrieben wie für gute Freunde – ehrlich und ohne Schnickschnack.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer site-footer home-mockup-footer">
+    <div class="home-footer-grid">
+      <div class="home-footer-brand">
+        <div class="brand-title">Sven Kocht.</div>
+        <p data-i18n="home_footer_blurb">Ehrlich gekocht. Einfach nachgekocht. Über {count} Rezepte – 100&nbsp;% kostenlos.</p>
+      </div>
+      <div class="home-footer-col">
+        <h3 data-i18n="home_footer_quick">Schnellzugriff</h3>
+        <ul>
+          <li><a href="#rezepte" data-i18n="home_nav_recipes">Rezepte</a></li>
+          <li><a href="#home-categories" data-i18n="home_nav_categories">Kategorien</a></li>
+          <li><a href="#rezepte" data-filter-link="grill-bbq" data-i18n="home_nav_grill">Grill</a></li>
+          <li><a href="#rezepte" data-filter-link="airfryer" data-i18n="home_nav_airfryer">Airfryer</a></li>
+          <li><a href="#home-new" data-i18n="home_hero_btn_new">Neue Rezepte</a></li>
+        </ul>
+      </div>
+      <div class="home-footer-col">
+        <h3 data-i18n="home_footer_legal">Rechtliches</h3>
+        <ul>
+          <li><a href="/datenschutz.html" data-i18n="footerPrivacy">Datenschutz</a></li>
+          <li><a href="/impressum.html" data-i18n="footerImprint">Impressum</a></li>
+          <li><a href="/impressum.html#kontakt" data-i18n="footerContact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="home-footer-bottom">
+      <p class="footer-copy" data-i18n="footerClaim">© 2026 Svens Kochbuch – Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
 
   <main id="recipeListView">
-    <section class="home-recipes-section" id="rezepte">
+    <div class="world-filters home-archive-world" id="homeWorldOverview" aria-labelledby="worldOverviewFiltersLabel">
+      <div class="world-filters-head">
+        <span class="world-filters-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.8 4 6 4 9s-1.5 6.2-4 9"/><path d="M12 3c-2.5 2.8-4 6-4 9s1.5 6.2 4 9"/></svg></span>
+        <div class="world-filters-label" id="worldOverviewFiltersLabel">Weltübersicht</div>
+      </div>
+      <div class="world-filters-row" id="worldOverviewFiltersRow" role="group" aria-label="Weltübersicht"></div>
+    </div>
+    <section class="home-recipes-section home-archive" id="rezepte">
       <div class="home-main">
         <div class="home-primary">
             <div class="section-head-row">
@@ -3922,69 +4044,8 @@
             </div>
           </div>
         </div>
-        <aside class="home-sidebar" aria-label="Seitenleiste">
-          <div class="sidebar-panel" id="home-categories">
-            <h2 class="sidebar-heading" id="sidebarCategoriesHeading">Rezept-Kategorien</h2>
-            <div class="category-grid home-category-grid" id="themenweltenGrid">
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="schnell" aria-label="Themenwelt öffnen: Schnelle Küche">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span>
-                <h3 class="home-category-label">Schnelle Küche</h3>
-                <p>Fix gekocht, ohne Stress.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="ofen" aria-label="Themenwelt öffnen: Ofen &amp; Aufläufe">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg></span>
-                <h3 class="home-category-label">Ofen &amp; Aufläufe</h3>
-                <p>Alles rein, alles gut.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="grill-bbq" aria-label="Themenwelt öffnen: Grill &amp; BBQ">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16M6 14h12M8 18h8"/></svg></span>
-                <h3 class="home-category-label">Grill &amp; BBQ</h3>
-                <p>Für Rost, Pfanne &amp; draußen.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="airfryer" aria-label="Themenwelt öffnen: Airfryer">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12c3-4 6 4 9 0s6 4 9 0"/><path d="M4 16c3-4 6 4 9 0s6 4 9 0"/></svg></span>
-                <h3 class="home-category-label">Airfryer</h3>
-                <p>Heißluft, knusprig, schnell.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="salate-beilagen" aria-label="Themenwelt öffnen: Salate &amp; Beilagen">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4C9 8 6 9 6 13a6 6 0 0 0 12 0c0-4-3-5-6-9z"/></svg></span>
-                <h3 class="home-category-label">Salate &amp; Beilagen</h3>
-                <p>Frisch, bunt, passt immer.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="grundrezepte" aria-label="Themenwelt öffnen: Grundrezepte">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5h12v14H6z"/><path d="M9 9h6M9 13h4"/></svg></span>
-                <h3 class="home-category-label">Grundrezepte</h3>
-                <p>Basics für deine Küche.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="woelpinghausen" aria-label="Themenwelt öffnen: Wölpinghausen">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z"/><circle cx="12" cy="11" r="2"/></svg></span>
-                <h3 class="home-category-label">Wölpinghausen</h3>
-                <p>Regional &amp; persönlich.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="suesses-backen" aria-label="Themenwelt öffnen: Süßes &amp; Backen">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 14a6 6 0 0 0 12 0c0-4-2-6-6-6s-6 2-6 6z"/><path d="M9 10h6"/></svg></span>
-                <h3 class="home-category-label">Süßes &amp; Backen</h3>
-                <p>Für Kuchen, Desserts &amp; mehr.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="sommer-horchatas" aria-label="Themenwelt öffnen: Sommer-Horchatas &amp; Aguas Frescas">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 20V8h8v12"/><path d="M6 8h12l-2-4H8z"/><path d="M10 12h4"/></svg></span>
-                <h3 class="home-category-label">Sommer-Horchatas</h3>
-                <p>Aguas Frescas &amp; Aperitifs.</p>
-              </article>
-              <article class="category-tile home-category-tile" role="link" tabindex="0" data-filter="sommerdrinks-limonaden-mocktails" aria-label="Themenwelt öffnen: Sommerdrinks, Limonaden &amp; Mocktails">
-                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 20V8h8v12"/><path d="M6 8h12l-2-4H8z"/><path d="M10 12h4"/></svg></span>
-                <h3 class="home-category-label">Sommerdrinks</h3>
-                <p>Limonaden, Eistee &amp; Mocktails.</p>
-              </article>
-            </div>
-            <div class="world-filters" id="homeWorldOverview" aria-labelledby="worldOverviewFiltersLabel">
-              <div class="world-filters-head">
-                <span class="world-filters-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.8 4 6 4 9s-1.5 6.2-4 9"/><path d="M12 3c-2.5 2.8-4 6-4 9s1.5 6.2 4 9"/></svg></span>
-                <div class="world-filters-label" id="worldOverviewFiltersLabel">Weltübersicht</div>
-              </div>
-              <div class="world-filters-row" id="worldOverviewFiltersRow" role="group" aria-label="Weltübersicht"></div>
-            </div>
-          </div>
+        <aside class="home-sidebar" aria-label="Seitenleiste" hidden>
+          <h2 class="sidebar-heading visually-hidden" id="sidebarCategoriesHeading">Rezept-Kategorien</h2>
           <div class="sidebar-panel sidebar-new-card" id="homeSidebarNewPanel" hidden>
             <h2 class="sidebar-heading" id="homeSidebarNewHeading">Neue Rezepte</h2>
             <p class="sidebar-new-subtitle" id="homeSidebarNewSubtitle">Frisch ergänzt</p>
@@ -3993,23 +4054,10 @@
           </div>
           <div class="sidebar-panel sidebar-about-card">
             <h2 class="sidebar-heading" id="sidebarAboutHeading">Über mich</h2>
-            <p class="sidebar-about-teaser" id="sidebarAboutTeaser">Svens persönliche Rezeptwelt – ehrlich gekocht, gut nachkochbar und ohne unnötiges Theater.</p>
-            <a href="#home-about" class="btn btn--ghost" id="sidebarAboutLink">Mehr erfahren</a>
+            <p class="sidebar-about-teaser" id="sidebarAboutTeaser">Svens persönliches Rezeptbuch – ehrlich gekocht, gut nachkochbar und ohne unnötiges Theater. Hier findest du Rezepte, die im Alltag funktionieren und immer wieder gerne auf den Tisch kommen.</p>
+            <a href="/ueber-mich.html" class="btn btn--ghost" id="sidebarAboutLink">Mehr erfahren</a>
           </div>
         </aside>
-      </div>
-    </section>
-
-    <section class="about-section" id="home-about" aria-labelledby="ueber-mich-heading">
-      <div class="about-inner">
-        <div class="about-copy">
-          <h2 id="ueber-mich-heading">Über mich</h2>
-          <p>Svens Kochbuch ist meine persönliche Sammlung alltagstauglicher Rezepte. Hier geht es nicht um perfekte Hochglanzküche, sondern um Gerichte, die wirklich funktionieren – für den Feierabend, den Sonntag, den Grillabend oder wenn Familie und Freunde mit am Tisch sitzen.</p>
-          <p>Viele Rezepte entstehen aus echten Kochabenden, aus Lieblingsgerichten, aus spontanen Ideen und aus allem, was man gerne wieder kochen möchte. Wichtig ist: Es soll verständlich sein, gut schmecken und ohne unnötiges Theater nachkochbar bleiben.</p>
-          <p>Ich sammle hier Rezepte, die sich im Alltag bewährt haben: einfache Klassiker, herzhafte Ofengerichte, Grillideen, Beilagen, Grundrezepte und Gerichte, die man gerne wieder auf den Tisch bringt.</p>
-          <p>Dieses Kochbuch soll kein perfektes Hochglanzmagazin sein, sondern eine praktische Rezeptwelt: ehrlich, übersichtlich und so geschrieben, dass man beim Kochen nicht rätseln muss.</p>
-          <p>Viel Spaß beim Stöbern und Nachkochen<br />Sven</p>
-        </div>
       </div>
     </section>
   </main>
@@ -4077,20 +4125,7 @@
     </div>
   </div>
 
-  <footer class="footer site-footer">
-    <div class="footer-inner">
-      <p class="footer-copy" data-i18n="footerClaim">© 2026 Svenskochbuch.de | Mit Liebe gekocht.</p>
-      <nav class="footer-nav" data-i18n-aria="footerNavAria" aria-label="Fußnavigation">
-        <a href="/" data-i18n="footerHome">Startseite</a>
-        <a href="/#rezepte" data-i18n="footerRecipes">Rezepte</a>
-        <a href="/#home-about" data-i18n="footerAbout">Über mich</a>
-        <a href="/impressum.html#kontakt" data-i18n="footerContact">Kontakt</a>
-        <a href="/impressum.html" data-i18n="footerImprint">Impressum</a>
-        <a href="/datenschutz.html" data-i18n="footerPrivacy">Datenschutz</a>
-      </nav>
-    </div>
-  </footer>
-
+  <script src="/assets/site-i18n-locales.js?v=4"></script>
   <script>
   (function () {
     /** Highlights: feste Startseiten-Kacheln (Reihenfolge = Anzeige). */
@@ -4400,7 +4435,27 @@
       'sommer-horchatas': 'Sommer-Horchatas & Aguas Frescas',
       'sommerdrinks-limonaden-mocktails': 'Sommerdrinks, Limonaden & Mocktails',
       woelpinghausen: 'Wölpinghausen',
-      latest: 'Neue Rezepte'
+      latest: 'Neue Rezepte',
+      haehnchen: 'Hähnchen',
+      thermomix: 'Thermomix'
+    };
+    var RECIPE_CATEGORY_FILTER_KEYWORDS = {
+      schnell: ['schnell', 'schnelle küche', 'schnell & einfach', 'airfryer'],
+      airfryer: ['airfryer', 'heißluftfritteuse', 'heissluftfritteuse'],
+      ofen: ['ofen', 'ofengericht', 'ofengerichte', 'auflauf', 'aufläufe', 'überbacken', 'backofen'],
+      'grill-bbq': ['grill', 'bbq', 'smoker', 'barbecue'],
+      'pfanne-wok': ['pfanne', 'pfannengericht', 'pfannengerichte', 'wok', 'grillpfanne'],
+      hackfleisch: ['hackfleisch', 'hackbällchen', 'hackbraten', 'frikadelle', 'frikadellen', 'köfte', 'klopse', 'bolognese'],
+      kartoffeln: ['kartoffel', 'kartoffeln', 'süßkartoffel', 'süßkartoffeln', 'kartoffelpüree', 'kartoffelstampf'],
+      'salate-beilagen': ['salat', 'salate', 'beilage', 'beilagen', 'dip', 'dips', 'sauce', 'saucen'],
+      'pasta-pizza': ['pasta', 'pizza', 'nudel', 'nudeln', 'spaghetti', 'maccheroni', 'tortellini', 'lasagne'],
+      'fisch-meer': ['fisch', 'lachs', 'garnelen', 'muscheln', 'meeresfrüchte', 'meeresfruechte', 'thunfisch', 'hering'],
+      'suppen-eintoepfe': ['suppe', 'suppen', 'eintopf', 'eintöpfe', 'eintoepfe'],
+      grundrezepte: ['grundrezept', 'grundrezepte', 'teig', 'dip', 'dips', 'sauce', 'saucen', 'würzbasis', 'grundlagen'],
+      'suesses-backen': ['backen', 'süßes', 'suesses', 'kuchen', 'blechkuchen', 'dessert', 'torte', 'gebäck', 'gebaeck'],
+      woelpinghausen: ['wölpinghausen', 'woelpinghausen', 'wölpinghäuser', 'woelpinghaeuser'],
+      haehnchen: ['hähnchen', 'haehnchen', 'huhn', 'hühnchen', 'huehnchen', 'chicken', 'geflügel', 'gefluegel'],
+      thermomix: ['thermomix']
     };
     var SUMMER_DRINKS_SUB_ALKO = 'Alkoholfreie Sommerdrinks';
     var SUMMER_DRINKS_SUB_APERITIF = 'Sommer-Aperitifs';
@@ -4448,11 +4503,77 @@
         nav_about: 'Über mich',
         nav_contact: 'Kontakt',
         brand_home_aria: 'Zur Startseite',
+        brand_subtitle: 'Rezepte aus Svens Kochbuch',
+        home_search_open: 'Suche öffnen',
+        seo_home_title: 'Sven Kocht. | Persönliches Kochbuch mit einfachen Rezepten',
+        seo_home_description: 'Svens persönliches Kochbuch mit einfachen Rezepten für jeden Tag: Klassiker, Ofengerichte, Grillideen, Airfryer-Rezepte, Salate, Beilagen und schnelle Küche.',
+        lang_switcher_aria: 'Sprache wählen',
 
         nav_home: 'Startseite',
         hero_badge: 'Svens persönliches Kochbuch',
         hero_title: 'Willkommen in Svens Küche!',
         hero_lead: 'Einfache Klassiker, herzhafte Ofengerichte, Grillideen — Rezepte für jeden Tag.',
+        home_hero_title: 'Ehrlich gekocht.\nEinfach nachgekocht.',
+        home_hero_subtitle: 'Über {count} Rezepte für jeden Tag – vom schnellen Feierabendgericht bis zum Sonntagsbraten.',
+        home_hero_search_label: 'Rezept suchen',
+        home_hero_search_placeholder: 'Rezept suchen …',
+        home_hero_search_btn: 'Suchen',
+        home_hero_btn_grill: 'Grillrezepte',
+        home_hero_btn_airfryer: 'Airfryer',
+        home_hero_btn_new: 'Neue Rezepte',
+        home_trust_free: '100 % kostenlos',
+        home_trust_recipes: '{count} Rezepte',
+        home_nav_recipes: 'Rezepte',
+        home_nav_categories: 'Kategorien',
+        home_nav_grill: 'Grill',
+        home_nav_airfryer: 'Airfryer',
+        home_nav_world: 'Weltküche',
+        home_nav_about: 'Über mich',
+        home_popular_kicker: 'Beliebt',
+        home_popular_title: 'Beliebteste Rezepte',
+        home_popular_view_all: 'Alle beliebten Rezepte →',
+        home_categories_kicker: 'Entdecken',
+        home_categories_title: 'Wonach hast du heute Lust?',
+        home_cat_burger: 'Burger',
+        home_cat_grill: 'Grill',
+        home_cat_stews: 'Eintöpfe',
+        home_cat_soups: 'Suppen',
+        home_cat_potatoes: 'Kartoffeln',
+        home_cat_cake: 'Kuchen',
+        home_cat_airfryer: 'Airfryer',
+        home_cat_smoker: 'Smoker',
+        home_cat_thermomix: 'Thermomix',
+        home_cat_chicken: 'Hähnchen',
+        home_cat_salads: 'Salate',
+        home_cat_casseroles: 'Aufläufe',
+        home_new_kicker: 'Frisch',
+        home_new_title: 'Neu auf Svens Kochbuch',
+        home_new_view_all: 'Alle neuen Rezepte →',
+        home_new_badge: 'NEU',
+        home_about_title: 'Über Sven',
+        home_about_p1: 'Kochen war für mich nie kompliziert – sondern der schönste Teil des Tages. Hier teile ich Rezepte, die bei mir zuhause wirklich ankommen.',
+        home_about_p2: 'Ehrlich, alltagstauglich und ohne unnötiges Theater – so, wie ich es auch Freunden erklären würde.',
+        home_about_cta: 'Mehr über mich →',
+        home_about_quote: 'Kochen soll Spaß machen und Menschen zusammenbringen.',
+        home_about_signature: '— Sven',
+        home_why_title: 'Warum Svens Kochbuch?',
+        home_why_1_title: 'Erprobt & verständlich',
+        home_why_1_text: 'Rezepte mit klaren Schritten, alltagstauglichen Zutaten und nachvollziehbarer Zubereitung.',
+        home_why_2_title: 'Ehrliche Rezepte',
+        home_why_2_text: 'Alltagstauglich, verständlich und ohne unnötigen Schnickschnack.',
+        home_why_3_title: 'Alltagstauglich',
+        home_why_3_text: 'Klare Schritte, verständliche Zutaten – auch nach Feierabend.',
+        home_why_4_title: 'Mit Leidenschaft',
+        home_why_4_text: 'Geschrieben wie für gute Freunde – ehrlich und ohne Schnickschnack.',
+        home_footer_blurb: 'Ehrlich gekocht. Einfach nachgekocht. Über {count} Rezepte – 100 % kostenlos.',
+        home_footer_tagline: 'Ehrlich gekocht. Einfach nachgekocht.',
+        home_footer_quick: 'Schnellzugriff',
+        home_footer_legal: 'Rechtliches',
+        home_footer_follow: 'Folge mir',
+        home_footer_social: 'Social Media',
+        home_footer_social_note: 'Folge Sven Kocht. auf Social Media – demnächst.',
+        home_card_time_prefix: 'Zeit',
+        home_card_view: 'Ansehen',
         hero_cta: 'Zum Rezept-Archiv',
         quick_schnell_title: 'Schnell gekocht',
         quick_schnell_text: 'Fix auf den Tisch',
@@ -4468,7 +4589,7 @@
         lang_top_label: 'Sprache',
         sidebar_categories_heading: 'Rezept-Kategorien',
         sidebar_about_heading: 'Über mich',
-        sidebar_about_teaser: 'Svens persönliche Rezeptwelt – ehrlich gekocht, gut nachkochbar und ohne unnötiges Theater.',
+        sidebar_about_teaser: 'Svens persönliches Rezeptbuch – ehrlich gekocht, gut nachkochbar und ohne unnötiges Theater. Hier findest du Rezepte, die im Alltag funktionieren und immer wieder gerne auf den Tisch kommen.',
         sidebar_about_link: 'Mehr erfahren',
         detail_sidebar_quick_title: 'Schnellzugriff',
         detail_sidebar_shopping: 'Einkaufsliste',
@@ -4570,7 +4691,7 @@
         footerContact: 'Kontakt',
         footerImprint: 'Impressum',
         footerPrivacy: 'Datenschutz',
-        footerClaim: '© 2026 Svenskochbuch.de | Mit Liebe gekocht.',
+        footerClaim: '© 2026 Svens Kochbuch – Alle Rechte vorbehalten.',
         footerNavAria: 'Fußnavigation',
 
         about_title: 'Über mich',
@@ -4764,6 +4885,30 @@
         nav_about: 'O mnie',
         nav_contact: 'Kontakt',
         brand_home_aria: 'Strona główna',
+        brand_subtitle: 'Przepisy z książki Svena',
+        home_search_open: 'Otwórz wyszukiwanie',
+        seo_home_title: 'Sven Kocht. | Osobista książka kucharska z prostymi przepisami',
+        seo_home_description: 'Osobista książka kucharska Svena z prostymi przepisami na co dzień: klasyki, dania z piekarnika, grill, airfryer, sałatki i szybkie posiłki.',
+        lang_switcher_aria: 'Wybierz język',
+        home_hero_search_label: 'Szukaj przepisu',
+        home_nav_recipes: 'Przepisy',
+        home_nav_categories: 'Kategorie',
+        home_nav_grill: 'Grill',
+        home_nav_airfryer: 'Airfryer',
+        home_nav_about: 'O mnie',
+        home_popular_kicker: 'Popularne',
+        home_categories_kicker: 'Odkrywaj',
+        home_new_kicker: 'Świeże',
+        home_cat_burger: 'Burgery',
+        home_cat_grill: 'Grill',
+        home_cat_soups: 'Zupy',
+        home_cat_potatoes: 'Ziemniaki',
+        home_cat_airfryer: 'Airfryer',
+        home_cat_smoker: 'Smoker',
+        home_cat_thermomix: 'Thermomix',
+        home_cat_chicken: 'Kurczak',
+        home_cat_salads: 'Sałatki',
+        home_cat_casseroles: 'Zapiekanki',
 
         nav_home: 'Strona główna',
         hero_badge: 'Osobista książka kucharska Svena',
@@ -4779,12 +4924,54 @@
         highlights_view_all: 'Zobacz wszystkie popularne przepisy',
         card_view: 'Zobacz',
         hero_lead: 'Proste klasyki, dania z piekarnika, pomysły na grilla — przepisy na każdy dzień.',
+        home_hero_title: 'Uczciwie ugotowane.\nŁatwo powtórzone.',
+        home_hero_subtitle: 'Ponad {count} przepisów na każdy dzień – od szybkiego dania po pracy po niedzielny obiad.',
+        home_hero_search_placeholder: 'Szukaj przepisu …',
+        home_hero_search_btn: 'Szukaj',
+        home_hero_btn_grill: 'Przepisy z grilla',
+        home_hero_btn_airfryer: 'Airfryer',
+        home_hero_btn_new: 'Nowe przepisy',
+        home_trust_free: '100 % za darmo',
+        home_trust_recipes: '{count} przepisów',
+        home_nav_world: 'Kuchnia świata',
+        home_popular_view_all: 'Wszystkie popularne przepisy →',
+        home_popular_title: 'Najpopularniejsze przepisy',
+        home_categories_title: 'Na co masz dziś ochotę?',
+        home_new_title: 'Nowości w książce Svena',
+        home_new_view_all: 'Wszystkie nowe przepisy →',
+        home_cat_stews: 'Gulasze',
+        home_cat_cake: 'Ciasta',
+        home_about_signature: '— Sven',
+        home_about_p1: 'Gotowanie nigdy nie było dla mnie skomplikowane – to najpiękniejsza część dnia. Tutaj dzielę się przepisami, które naprawdę sprawdzają się u mnie w domu.',
+        home_about_p2: 'Uczciwie, na co dzień i bez zbędnego zamieszania – tak, jak tłumaczyłbym to przyjaciołom.',
+        home_about_cta: 'Więcej o mnie →',
+        home_about_quote: 'Gotowanie ma sprawiać radość i łączyć ludzi.',
+        home_footer_blurb: 'Uczciwie ugotowane. Łatwo powtórzone. Ponad {count} przepisów – 100 % za darmo.',
+        home_footer_quick: 'Szybki dostęp',
+        home_footer_legal: 'Prawne',
+        home_footer_follow: 'Obserwuj mnie',
+        home_new_badge: 'Nowe',
+        home_about_title: 'O Svenie',
+        home_why_title: 'Dlaczego książka kucharska Svena?',
+        home_why_1_title: 'Sprawdzone i zrozumiałe',
+        home_why_1_text: 'Przepisy z jasnymi krokami, składnikami na co dzień i przejrzystym przygotowaniem.',
+        home_why_2_title: 'Uczciwe przepisy',
+        home_why_2_text: 'Praktyczne na co dzień, zrozumiałe i bez zbędnego zamieszania.',
+        home_why_3_title: 'Praktyczne na co dzień',
+        home_why_3_text: 'Jasne kroki i zrozumiałe składniki – także po pracy.',
+        home_why_4_title: 'Z pasją',
+        home_why_4_text: 'Napisane jak dla dobrych przyjaciół – uczciwie i bez zbędnego zamieszania.',
+        home_footer_tagline: 'Uczciwie ugotowane. Łatwo powtórzone.',
+        home_footer_social: 'Media społecznościowe',
+        home_footer_social_note: 'Obserwuj Sven Kocht. w mediach społecznościowych – wkrótce.',
+        home_card_time_prefix: 'Czas',
+        home_card_view: 'Zobacz',
         hero_cta: 'Do archiwum przepisów',
         hero_search_btn: 'Szukaj',
         lang_top_label: 'Język',
         sidebar_categories_heading: 'Kategorie przepisów',
         sidebar_about_heading: 'O mnie',
-        sidebar_about_teaser: 'Osobisty świat przepisów Svena — uczciwie ugotowane, łatwe do powtórzenia.',
+        sidebar_about_teaser: 'Osobista książka kucharska Svena – uczciwie ugotowane, łatwe do powtórzenia i bez zbędnego zamieszania. Znajdziesz tu przepisy, które sprawdzają się na co dzień i chętnie wracają na stół.',
         sidebar_about_link: 'Więcej o mnie',
         detail_sidebar_quick_title: 'Szybki dostęp',
         detail_sidebar_shopping: 'Lista zakupów',
@@ -5080,6 +5267,30 @@
         nav_about: 'About',
         nav_contact: 'Contact',
         brand_home_aria: 'Home',
+        brand_subtitle: 'Recipes from Sven\'s cookbook',
+        home_search_open: 'Open search',
+        seo_home_title: 'Sven Kocht. | Personal cookbook with simple recipes',
+        seo_home_description: 'Sven’s personal cookbook with simple everyday recipes: classics, oven dishes, grill ideas, air fryer, salads and quick meals.',
+        lang_switcher_aria: 'Choose language',
+        home_hero_search_label: 'Search recipes',
+        home_nav_recipes: 'Recipes',
+        home_nav_categories: 'Categories',
+        home_nav_grill: 'Grill',
+        home_nav_airfryer: 'Air fryer',
+        home_nav_about: 'About me',
+        home_popular_kicker: 'Popular',
+        home_categories_kicker: 'Discover',
+        home_new_kicker: 'Fresh',
+        home_cat_burger: 'Burgers',
+        home_cat_grill: 'Grill',
+        home_cat_soups: 'Soups',
+        home_cat_potatoes: 'Potatoes',
+        home_cat_airfryer: 'Air fryer',
+        home_cat_smoker: 'Smoker',
+        home_cat_thermomix: 'Thermomix',
+        home_cat_chicken: 'Chicken',
+        home_cat_salads: 'Salads',
+        home_cat_casseroles: 'Casseroles',
 
         nav_home: 'Home',
         hero_badge: 'Sven’s personal cookbook',
@@ -5095,12 +5306,54 @@
         highlights_view_all: 'View all popular recipes',
         card_view: 'View',
         hero_lead: 'Simple classics, hearty oven dishes, grill ideas — recipes for every day.',
+        home_hero_title: 'Honestly cooked.\nEasy to recreate.',
+        home_hero_subtitle: 'Over {count} recipes for every day – from quick weeknight meals to Sunday roasts.',
+        home_hero_search_placeholder: 'Search recipes …',
+        home_hero_search_btn: 'Search',
+        home_hero_btn_grill: 'Grill recipes',
+        home_hero_btn_airfryer: 'Air fryer',
+        home_hero_btn_new: 'New recipes',
+        home_trust_free: '100% free',
+        home_trust_recipes: '{count} recipes',
+        home_nav_world: 'World cuisine',
+        home_popular_view_all: 'All popular recipes →',
+        home_popular_title: 'Most popular recipes',
+        home_categories_title: 'What are you in the mood for today?',
+        home_new_title: 'New on Sven’s cookbook',
+        home_new_view_all: 'All new recipes →',
+        home_cat_stews: 'Stews',
+        home_cat_cake: 'Cakes',
+        home_about_signature: '— Sven',
+        home_about_p1: 'Cooking was never complicated for me – it’s the best part of the day. Here I share recipes that really work at my table.',
+        home_about_p2: 'Honest, everyday-friendly and without unnecessary fuss – just as I’d explain it to friends.',
+        home_about_cta: 'More about me →',
+        home_about_quote: 'Cooking should be fun and bring people together.',
+        home_footer_blurb: 'Honestly cooked. Easy to recreate. Over {count} recipes – 100% free.',
+        home_footer_quick: 'Quick links',
+        home_footer_legal: 'Legal',
+        home_footer_follow: 'Follow me',
+        home_new_badge: 'New',
+        home_about_title: 'About Sven',
+        home_why_title: 'Why Sven’s cookbook?',
+        home_why_1_title: 'Tested & clear',
+        home_why_1_text: 'Recipes with clear steps, everyday ingredients and easy-to-follow preparation.',
+        home_why_2_title: 'Honest recipes',
+        home_why_2_text: 'Everyday-friendly, clear and without unnecessary fuss.',
+        home_why_3_title: 'Everyday-friendly',
+        home_why_3_text: 'Clear steps and understandable ingredients – even after work.',
+        home_why_4_title: 'With passion',
+        home_why_4_text: 'Written like for good friends – honest and without unnecessary fuss.',
+        home_footer_tagline: 'Honestly cooked. Easy to recreate.',
+        home_footer_social: 'Social media',
+        home_footer_social_note: 'Follow Sven Kocht. on social media – coming soon.',
+        home_card_time_prefix: 'Time',
+        home_card_view: 'View',
         hero_cta: 'Browse the recipe archive',
         hero_search_btn: 'Search',
         lang_top_label: 'Language',
         sidebar_categories_heading: 'Recipe categories',
         sidebar_about_heading: 'About me',
-        sidebar_about_teaser: 'Sven’s personal recipe world — honestly cooked and easy to follow.',
+        sidebar_about_teaser: 'Sven’s personal cookbook — honestly cooked, easy to follow and without unnecessary fuss. Here you will find recipes that work in everyday life and are worth bringing back to the table.',
         sidebar_about_link: 'Learn more',
         detail_sidebar_quick_title: 'Quick links',
         detail_sidebar_shopping: 'Shopping list',
@@ -5390,20 +5643,65 @@
       }
     };
 
+    var SUPPORTED_LANGS = (typeof SITE_SUPPORTED_LANGS !== 'undefined' && SITE_SUPPORTED_LANGS.length)
+      ? SITE_SUPPORTED_LANGS.slice()
+      : ['de', 'en', 'pl', 'nl', 'fr', 'es', 'it', 'cs'];
+
+    function mergeSiteLocales() {
+      if (!I18N.en) I18N.en = {};
+      if (I18N.pl) I18N.pl = Object.assign({}, I18N.en, I18N.pl);
+      var locales = (typeof SITE_I18N_LOCALES !== 'undefined') ? SITE_I18N_LOCALES : {};
+      ['nl', 'fr', 'es', 'it', 'cs'].forEach(function (code) {
+        if (locales[code]) I18N[code] = Object.assign({}, I18N.en, locales[code]);
+      });
+    }
+    mergeSiteLocales();
+
+    function isSupportedLang(lang) {
+      return !!(lang && I18N[lang]);
+    }
+
     function t(key, vars) {
       vars = vars || {};
-      var lang = I18N[currentLang] ? currentLang : 'de';
-      var raw = (I18N[lang] && I18N[lang][key]) || (I18N.de && I18N.de[key]) || key;
+      var lang = isSupportedLang(currentLang) ? currentLang : 'de';
+      var raw =
+        (I18N[lang] && I18N[lang][key]) ||
+        (I18N.en && I18N.en[key]) ||
+        (I18N.de && I18N.de[key]) ||
+        '';
       return String(raw).replace(/\{(\w+)\}/g, function (_, k) {
         return Object.prototype.hasOwnProperty.call(vars, k) ? String(vars[k]) : '{' + k + '}';
       });
     }
 
+    function tCount(key, count) {
+      var oneKey = key + '_one';
+      var vars = { count: count };
+      if (
+        Number(count) === 1 &&
+        I18N[currentLang] &&
+        Object.prototype.hasOwnProperty.call(I18N[currentLang], oneKey)
+      ) {
+        return t(oneKey, vars);
+      }
+      return t(key, vars);
+    }
+
+    var I18N_DYNAMIC_TEXT_KEYS = {
+      home_footer_blurb: true,
+      home_trust_recipes: true,
+      home_hero_subtitle: true
+    };
+
     function applyDataI18n(root) {
       root = root || document;
       [].slice.call(root.querySelectorAll('[data-i18n]')).forEach(function (el) {
         var key = el.getAttribute('data-i18n');
-        if (key) el.textContent = t(key);
+        if (key && !I18N_DYNAMIC_TEXT_KEYS[key]) el.textContent = t(key);
+      });
+      [].slice.call(root.querySelectorAll('[data-i18n-placeholder]')).forEach(function (el) {
+        var key = el.getAttribute('data-i18n-placeholder');
+        if (key) el.setAttribute('placeholder', t(key));
       });
       [].slice.call(root.querySelectorAll('[data-i18n-aria]')).forEach(function (el) {
         var key = el.getAttribute('data-i18n-aria');
@@ -5495,6 +5793,12 @@
       return SEO_SITE_ORIGIN + '/' + src.replace(/^\.\//, '');
     }
 
+    function recipeJsonLdImageUrl(recipe) {
+      var detailPath = recipeDetailImagePath(recipe);
+      if (detailPath) return absoluteUrl(detailPath);
+      return recipeSeoImageUrl(recipe);
+    }
+
     function applySeoMeta(meta) {
       if (!meta) return;
       document.title = meta.title;
@@ -5513,7 +5817,15 @@
     }
 
     function updateSeoMetaForHome() {
-      applySeoMeta(SEO_HOME_META);
+      var meta = Object.assign({}, SEO_HOME_META, {
+        title: t('seo_home_title'),
+        description: t('seo_home_description'),
+        ogTitle: t('seo_home_title'),
+        ogDescription: t('seo_home_description'),
+        twitterTitle: t('seo_home_title'),
+        twitterDescription: t('seo_home_description')
+      });
+      applySeoMeta(meta);
       removeRecipeJsonLd();
     }
 
@@ -5634,9 +5946,9 @@
         if (!iso) continue;
         if (/gesamt(?:zeit)?|total(?:\s*time)?|insgesamt|razem|suma|czas\s+całkowity|całkowity\s+czas|łączny\s+czas/i.test(lower)) {
           result.totalTime = iso;
-        } else if (/(vorbereitung|vorbereitungszeit|preparation|przygotow)/.test(lower)) {
+        } else if (/(vorbereitung|vorbereitungszeit|preparation|przygotow|arbeitzeit|mischen|abfüllen|abfuellen)/.test(lower)) {
           result.prepTime = iso;
-        } else if (/(kochzeit|backzeit|garzeit|grillzeit|bratzeit|schmorzeit)/.test(lower)) {
+        } else if (/(kochzeit|backzeit|garzeit|grillzeit|bratzeit|schmorzeit|ofenzeit)/.test(lower)) {
           if (!result.cookTime) result.cookTime = iso;
         }
       }
@@ -5666,6 +5978,10 @@
         String(categoryRaw).split('/').forEach(function (part) {
           add(part.trim());
         });
+      }
+      var tags = normalizeFieldToList(recipe.tags);
+      for (var ti = 0; ti < tags.length; ti++) {
+        add(stripHtml(tags[ti]));
       }
       var name = stripHtml(getRecipeField(recipe, 'name') || recipe.name || '');
       if (name) {
@@ -5712,9 +6028,10 @@
       var timingList = normalizeFieldToList(getRecipeField(recipe, 'timing'));
       var categoryRaw = stripHtml(getRecipeField(recipe, 'category') || recipe.category || '');
       var persons = stripHtml(getRecipeField(recipe, 'persons') || recipe.persons || '');
-      var imageUrl = recipe.imageSrc ? absoluteUrl(recipe.imageSrc) : '';
+      var imageUrl = recipeJsonLdImageUrl(recipe);
       var canonical = getRecipeCanonicalUrl(recipe);
       var keywords = buildRecipeKeywords(recipe);
+      var lang = isSupportedLang(currentLang) ? currentLang : 'de';
 
       if (!name || !ingredients.length || !prepSteps.length) return null;
 
@@ -5726,21 +6043,28 @@
           '@type': 'Person',
           name: 'Sven Nicolaus'
         },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Svens Kochbuch'
+        },
+        image: [imageUrl],
         recipeIngredient: ingredients,
         recipeInstructions: buildRecipeHowToSteps(recipe, canonical),
         mainEntityOfPage: {
           '@type': 'WebPage',
           '@id': canonical
-        }
+        },
+        inLanguage: lang
       };
 
       if (description) obj.description = description;
-      if (imageUrl) obj.image = [imageUrl];
       if (keywords) obj.keywords = keywords;
       if (categoryRaw) {
         var catParts = String(categoryRaw).split('/').map(function (p) { return p.trim(); }).filter(Boolean);
         if (catParts.length) obj.recipeCategory = catParts[0];
       }
+      var cuisine = stripHtml(recipe.originCountry || '');
+      if (cuisine && cuisine.toLowerCase() !== 'international') obj.recipeCuisine = cuisine;
       if (persons) obj.recipeYield = persons;
 
       var times = extractRecipeTimingFields(timingList);
@@ -5792,8 +6116,12 @@
     function updateLangButtons() {
       var btns = document.querySelectorAll('button.lang-btn[data-lang]');
       [].slice.call(btns).forEach(function (b) {
-        b.classList.toggle('is-active', b.getAttribute('data-lang') === currentLang);
+        var active = b.getAttribute('data-lang') === currentLang;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', active ? 'true' : 'false');
       });
+      var sel = document.getElementById('homeLangSelect');
+      if (sel && sel.value !== currentLang) sel.value = currentLang;
     }
 
     function applyStaticTranslations() {
@@ -5825,19 +6153,16 @@
       updateNavBadges();
       refreshHomeCategoryGrid();
 
-      var aboutLink = document.querySelector('.nav-links a[href="#home-about"]');
+      var aboutLink = document.querySelector('.nav-links a[href="/ueber-mich.html"]');
       if (aboutLink) aboutLink.textContent = t('nav_about');
       var contactLink = document.querySelector('.nav-links a.nav-contact-link');
       if (contactLink) contactLink.textContent = t('nav_contact');
 
       var navHome = document.getElementById('navHomeLink');
       if (navHome) navHome.textContent = t('nav_home');
-      var heroBadge = document.getElementById('heroBadge');
-      if (heroBadge) heroBadge.textContent = t('hero_badge');
-      var heroH1 = document.querySelector('.hero h1');
-      if (heroH1) heroH1.textContent = t('hero_title');
-      var heroP = document.getElementById('heroLead');
-      if (heroP) heroP.textContent = t('hero_lead');
+      var heroTitle = document.getElementById('heroTitle');
+      if (heroTitle) heroTitle.innerHTML = formatHomeHeroTitleHTML();
+      applyHomeDynamicTexts();
       var homeNewH = document.getElementById('homeSidebarNewHeading');
       if (homeNewH) homeNewH.textContent = t('section_latest_title');
       var homeNewSub = document.getElementById('homeSidebarNewSubtitle');
@@ -5868,10 +6193,12 @@
       var heroCta = document.querySelector('.hero .btn');
       if (heroCta) heroCta.textContent = t('hero_cta');
       var heroSearchBtn = document.getElementById('heroSearchBtn');
-      if (heroSearchBtn) heroSearchBtn.textContent = t('hero_search_btn');
+      if (heroSearchBtn) heroSearchBtn.textContent = t('home_hero_search_btn');
 
       var langTop = document.getElementById('langTopLabel');
       if (langTop) langTop.textContent = t('lang_top_label');
+      var langSelectAria = document.getElementById('homeLangSelect');
+      if (langSelectAria) langSelectAria.setAttribute('aria-label', t('lang_switcher_aria'));
       var sidebarCat = document.getElementById('sidebarCategoriesHeading');
       if (sidebarCat) sidebarCat.textContent = t('sidebar_categories_heading');
       var sidebarAboutH = document.getElementById('sidebarAboutHeading');
@@ -5943,7 +6270,7 @@
       if (surpriseBtn) surpriseBtn.textContent = t('surprise_me');
 
       var search = document.getElementById('recipeSearchInput');
-      if (search) search.setAttribute('placeholder', t('search_placeholder'));
+      if (search) search.setAttribute('placeholder', t('home_hero_search_placeholder'));
       var loadMore = document.getElementById('recipeLoadMore');
       var highlightViewAllBtn = document.getElementById('highlightViewAllBtn');
       if (highlightViewAllBtn) highlightViewAllBtn.textContent = t('highlights_view_all');
@@ -5953,18 +6280,9 @@
         status.textContent = t('status_loading');
       }
 
-      var aboutH = document.getElementById('ueber-mich-heading');
-      if (aboutH) aboutH.textContent = t('about_title');
-      var aboutP = document.querySelectorAll('#home-about .about-copy p');
-      if (aboutP && aboutP.length >= 5) {
-        aboutP[0].textContent = t('about_p1');
-        aboutP[1].textContent = t('about_p2');
-        aboutP[2].textContent = t('about_p3');
-        aboutP[3].textContent = t('about_p4');
-        aboutP[4].innerHTML = t('about_p5') + '<br />' + t('about_signature');
-      }
-
       applyDataI18n();
+      applyHomeDynamicTexts();
+      renderHomeRedesignSections();
 
       var detailBack = document.getElementById('recipeDetailBack');
       if (detailBack) detailBack.textContent = t('detail_back');
@@ -6049,14 +6367,16 @@
     }
 
     function setLanguage(lang) {
-      if (!I18N[lang]) lang = 'de';
+      if (!isSupportedLang(lang)) lang = isSupportedLang('en') ? 'en' : 'de';
       currentLang = lang;
       try { localStorage.setItem(LANG_STORAGE_KEY, lang); } catch (e) {}
       setHtmlLanguage(lang);
       updateLangButtons();
       applyStaticTranslations();
+      if (!currentDetailRecipe) updateSeoMetaForHome();
       updateRecipeListView({ skipHideDetail: true });
       populateHomeSidebarNewRecipes();
+      renderHomeRedesignSections();
       if (currentDetailRecipe) {
         var rec = recipeById(currentDetailRecipe.id);
         if (rec) renderRecipeDetail(rec, { historyMode: 'none' });
@@ -6167,7 +6487,7 @@
 
     function parseRecipeIdFromPath(pathname) {
       var path = String(pathname == null ? '' : pathname);
-      var m = /^\/rezepte\/.+-(\d+)$/.exec(path);
+      var m = /^\/rezepte\/.+-(\d+)\/?$/.exec(path);
       return m ? m[1] : '';
     }
 
@@ -6183,6 +6503,62 @@
         var slugPath = recipeUrlPath(recipes[i]);
         recipes[i].slugPath = slugPath;
         recipeSlugPathById[String(recipes[i].id)] = slugPath;
+      }
+      return recipes;
+    }
+
+    function recipeFilterHaystack(r) {
+      return lc(
+        (r.name || '') + ' \n ' +
+        (r.category || '') + ' \n ' +
+        joinLines(r.tags || [])
+      );
+    }
+
+    function matchesRecipeFilterHaystack(r, keywords) {
+      if (!r || !keywords || !keywords.length) return false;
+      var hay = recipeFilterHaystack(r);
+      for (var k = 0; k < keywords.length; k++) {
+        if (hay.indexOf(String(keywords[k] || '').toLowerCase()) >= 0) return true;
+      }
+      return false;
+    }
+
+    function isSummerDrinkBaseRecipeForFilter(r) {
+      if (!r || r.drinkType !== 'alkoholfrei') return false;
+      if (!recipeMatchesCategoryContains(r, 'Sommer-Horchatas')) return false;
+      var intro = r.introDe || '';
+      return !!(intro && String(intro).trim());
+    }
+
+    function isSummerDrinkAperitifRecipeForFilter(r) {
+      if (!r || r.drinkType !== 'aperitif') return false;
+      if (!recipeMatchesCategoryContains(r, 'Sommer-Horchatas')) return false;
+      var intro = r.introDe || '';
+      return !!(intro && String(intro).trim());
+    }
+
+    function deriveRecipeCategoryKeys(r) {
+      var keys = {};
+      var fk;
+      for (fk in RECIPE_CATEGORY_FILTER_KEYWORDS) {
+        if (!Object.prototype.hasOwnProperty.call(RECIPE_CATEGORY_FILTER_KEYWORDS, fk)) continue;
+        if (matchesRecipeFilterHaystack(r, RECIPE_CATEGORY_FILTER_KEYWORDS[fk])) keys[fk] = true;
+      }
+      if (isSummerDrinkBaseRecipeForFilter(r) || isSummerDrinkAperitifRecipeForFilter(r)) {
+        keys['sommer-horchatas'] = true;
+      }
+      if (recipeMatchesCategoryContains(r, 'Sommerdrinks')) {
+        keys['sommerdrinks-limonaden-mocktails'] = true;
+      }
+      if (hasThermomixBadge(r)) keys.thermomix = true;
+      return keys;
+    }
+
+    function attachRecipeCategoryKeys(recipes) {
+      if (!recipes || !recipes.length) return recipes;
+      for (var i = 0; i < recipes.length; i++) {
+        recipes[i].categoryKeys = deriveRecipeCategoryKeys(recipes[i]);
       }
       return recipes;
     }
@@ -6333,8 +6709,13 @@
           knowledge: listSectionFlexible(recipeNode, 'knowledge', 'item,tip,p,li'),
           translations: (function () {
             var out = {};
-            if (trPl) out.pl = trPl;
-            if (trEn) out.en = trEn;
+            [].slice.call(recipeNode.children).forEach(function (n) {
+              if (n.tagName !== 'translation') return;
+              var langCode = (n.getAttribute('lang') || '').trim();
+              if (!langCode) return;
+              var tr = readTranslation(langCode);
+              if (tr) out[langCode] = tr;
+            });
             return out;
           })()
         };
@@ -6346,16 +6727,32 @@
       return String(value == null ? '' : value).trim().length > 0;
     }
     function getRecipeField(recipe, field) {
-      var lang = I18N[currentLang] ? currentLang : 'de';
-      if (lang !== 'de' && recipe && recipe.translations && recipe.translations[lang]) {
-        var translated = recipe.translations[lang][field];
-        if (isFilled(translated)) return translated;
+      var lang = isSupportedLang(currentLang) ? currentLang : 'de';
+      var emptyList = field === 'ingredients' || field === 'preparation' || field === 'tips' || field === 'knowledge';
+
+      function getDeBase() {
+        if (!recipe) return emptyList ? [] : '';
+        if (field === 'intro') return recipe.introDe || '';
+        var base = recipe[field];
+        if (isFilled(base)) return base;
+        return Array.isArray(base) ? [] : '';
       }
-      if (!recipe) return (field === 'ingredients' || field === 'preparation' || field === 'tips' || field === 'knowledge') ? [] : '';
-      if (field === 'intro') return recipe.introDe || '';
-      var base = recipe[field];
-      if (isFilled(base)) return base;
-      return Array.isArray(base) ? [] : '';
+
+      function getTranslation(langCode) {
+        if (!recipe || !recipe.translations || !recipe.translations[langCode]) return null;
+        var translated = recipe.translations[langCode][field];
+        return isFilled(translated) ? translated : null;
+      }
+
+      if (lang === 'de') return getDeBase();
+
+      var tryLangs = [lang];
+      if (lang !== 'en') tryLangs.push('en');
+      for (var ti = 0; ti < tryLangs.length; ti++) {
+        var val = getTranslation(tryLangs[ti]);
+        if (val != null) return val;
+      }
+      return getDeBase();
     }
     function normalizeFieldToList(v) {
       if (Array.isArray(v)) return v;
@@ -6649,7 +7046,7 @@
       var v = String(value == null ? '' : value).trim();
       if (!v) return '';
       if (lang === 'de') return v;
-      var map = ORIGIN_COUNTRY_I18N[lang];
+      var map = ORIGIN_COUNTRY_I18N[lang] || ORIGIN_COUNTRY_I18N.en;
       return (map && map[v]) ? map[v] : v;
     }
 
@@ -6657,7 +7054,7 @@
       var v = String(value == null ? '' : value).trim();
       if (!v) return '';
       if (lang === 'de') return v;
-      var map = ORIGIN_REGION_I18N[lang];
+      var map = ORIGIN_REGION_I18N[lang] || ORIGIN_REGION_I18N.en;
       return (map && map[v]) ? map[v] : v;
     }
 
@@ -6715,6 +7112,8 @@
     function applyWorldCategoryFilter(filterKey, opt) {
       opt = opt || {};
       var nextKey = filterKey || 'world-all';
+      setHomeRecipeArchiveVisible(true);
+      document.body.classList.add('is-world-overview-active');
       if (nextKey !== 'world-all') {
         currentRecipeFilterKey = 'all';
       }
@@ -6828,6 +7227,8 @@
         : fk === 'suesses-backen' ? 'filter_suesses_backen'
         : fk === 'sommer-horchatas' ? 'filter_sommer_horchatas'
         : fk === 'sommerdrinks-limonaden-mocktails' ? 'filter_sommerdrinks_lm'
+        : fk === 'haehnchen' ? 'home_cat_chicken'
+        : fk === 'thermomix' ? 'home_cat_thermomix'
         : ('filter_' + fk);
       return (I18N[currentLang] && I18N[currentLang][mapKey]) ? t(mapKey) : (FILTER_HEADINGS[fk] || '');
     }
@@ -7080,42 +7481,9 @@
     }
 
     function recipeMatchesFilterKey(r, key) {
-      switch (key) {
-        case 'schnell':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['schnell', 'schnelle küche', 'schnell & einfach', 'airfryer']);
-        case 'airfryer':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['airfryer', 'heißluftfritteuse', 'heissluftfritteuse']);
-        case 'ofen':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['ofen', 'ofengericht', 'ofengerichte', 'auflauf', 'aufläufe', 'überbacken', 'backofen']);
-        case 'grill-bbq':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['grill', 'bbq', 'smoker', 'barbecue']);
-        case 'pfanne-wok':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['pfanne', 'pfannengericht', 'pfannengerichte', 'wok', 'grillpfanne']);
-        case 'hackfleisch':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['hackfleisch', 'hackbällchen', 'hackbraten', 'frikadelle', 'frikadellen', 'köfte', 'klopse', 'bolognese']);
-        case 'kartoffeln':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['kartoffel', 'kartoffeln', 'süßkartoffel', 'süßkartoffeln', 'kartoffelpüree', 'kartoffelstampf']);
-        case 'salate-beilagen':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['salat', 'salate', 'beilage', 'beilagen', 'dip', 'dips', 'sauce', 'saucen']);
-        case 'pasta-pizza':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['pasta', 'pizza', 'nudel', 'nudeln', 'spaghetti', 'maccheroni', 'tortellini', 'lasagne']);
-        case 'fisch-meer':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['fisch', 'lachs', 'garnelen', 'muscheln', 'meeresfrüchte', 'meeresfruechte', 'thunfisch', 'hering']);
-        case 'suppen-eintoepfe':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['suppe', 'suppen', 'eintopf', 'eintöpfe', 'eintoepfe']);
-        case 'grundrezepte':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['grundrezept', 'grundrezepte', 'teig', 'dip', 'dips', 'sauce', 'saucen', 'würzbasis', 'grundlagen']);
-        case 'suesses-backen':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['backen', 'süßes', 'suesses', 'kuchen', 'blechkuchen', 'dessert', 'torte', 'gebäck', 'gebaeck']);
-        case 'woelpinghausen':
-          return matchesRecipeFields(r, ['name', 'category', 'tags'], ['wölpinghausen', 'woelpinghausen', 'wölpinghäuser', 'woelpinghaeuser']);
-        case 'sommer-horchatas':
-          return isSummerDrinkBaseRecipe(r) || isSummerDrinkAperitifRecipe(r);
-        case 'sommerdrinks-limonaden-mocktails':
-          return isSommerdrinksLmRecipe(r);
-        default:
-          return false;
-      }
+      if (!r || !key) return false;
+      if (!r.categoryKeys) r.categoryKeys = deriveRecipeCategoryKeys(r);
+      return !!r.categoryKeys[key];
     }
 
     function filterRecipes(filterKey) {
@@ -8387,7 +8755,10 @@
       }
 
       var hash = (window.location.hash || '').trim();
-      if (hash === '#ueber-mich') hash = '#home-about';
+      if (hash === '#ueber-mich' || hash === '#home-about') {
+        window.location.href = '/ueber-mich.html';
+        return;
+      }
       if (hash === '#kontakt') {
         hideRecipeDetailPage(true);
         window.location.href = '/impressum.html#kontakt';
@@ -8411,9 +8782,15 @@
           return;
         }
       }
-      if (hash === '#home-about' || hash === '#rezepte' || hash === '#home-categories') {
+      if (hash === '#rezepte') {
+        setHomeRecipeArchiveVisible(true);
         var detailView = document.getElementById('recipeDetailView');
         if ((detailView && !detailView.hidden) || currentDetailRecipe) {
+          hideRecipeDetailPage(true);
+        }
+      } else if (hash === '#home-categories') {
+        var detailViewCat = document.getElementById('recipeDetailView');
+        if ((detailViewCat && !detailViewCat.hidden) || currentDetailRecipe) {
           hideRecipeDetailPage(true);
         }
       } else if (!pathId && !recipeMatch) {
@@ -9313,6 +9690,370 @@
       });
     }
 
+    var HOME_NEW_RECIPE_ID_WINDOW = 25;
+    var HOME_SHOWCASE_CATEGORIES = [
+      { filter: 'hackfleisch', labelKey: 'home_cat_burger', icon: '<path d="M4 12h16M6 16h12"/><circle cx="8" cy="9" r="2"/><circle cx="16" cy="9" r="2"/>' },
+      { filter: 'grill-bbq', labelKey: 'home_cat_grill', icon: '<path d="M4 10h16M6 14h12M8 18h8"/>' },
+      { filter: 'suppen-eintoepfe', labelKey: 'home_cat_stews', icon: '<path d="M6 10h12v8H6z"/><path d="M8 6c2 2 6 2 8 0"/>' },
+      { filter: 'haehnchen', labelKey: 'home_cat_chicken', icon: '<path d="M8 12c0-3 2-6 4-6s4 3 4 6"/><path d="M6 18h12"/>' },
+      { filter: 'kartoffeln', labelKey: 'home_cat_potatoes', icon: '<ellipse cx="12" cy="13" rx="7" ry="4"/><path d="M9 10v6M12 9v8M15 10v6"/>' },
+      { filter: 'suesses-backen', labelKey: 'home_cat_cake', icon: '<path d="M6 14a6 6 0 0 0 12 0c0-4-2-6-6-6s-6 2-6 6z"/><path d="M9 10h6"/>' },
+      { filter: 'airfryer', labelKey: 'home_cat_airfryer', icon: '<path d="M4 12c3-4 6 4 9 0s6 4 9 0"/>' },
+      { filter: 'grill-bbq', labelKey: 'home_cat_smoker', icon: '<path d="M8 18c0-4 2-8 4-10s4 6 4 10"/><path d="M6 18h12"/>' },
+      { filter: 'thermomix', labelKey: 'home_cat_thermomix', icon: '<rect x="5" y="6" width="14" height="12" rx="2"/><path d="M9 10h6"/>' },
+      { filter: 'suppen-eintoepfe', labelKey: 'home_cat_soups', icon: '<path d="M6 10h12v8H6z"/><path d="M8 6c2 2 6 2 8 0"/>' },
+      { filter: 'ofen', labelKey: 'home_cat_casseroles', icon: '<rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/>' },
+      { filter: 'salate-beilagen', labelKey: 'home_cat_salads', icon: '<path d="M12 4C9 8 6 9 6 13a6 6 0 0 0 12 0c0-4-3-5-6-9z"/>' }
+    ];
+
+    function setHomeRecipeArchiveVisible(visible) {
+      if (!document.body.classList.contains('home-redesign-active')) return;
+      if (visible) document.body.classList.add('is-recipe-archive-visible');
+      else {
+        document.body.classList.remove('is-recipe-archive-visible');
+        document.body.classList.remove('is-world-overview-active');
+      }
+    }
+
+    function scrollToRecipeArchiveSection() {
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          var target = document.getElementById('rezepte') || document.getElementById('recipe-results');
+          if (!target) return;
+          try {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } catch (err) {
+            target.scrollIntoView();
+          }
+        });
+      });
+    }
+
+    function scrollToHomeWorldOverview() {
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          var target = document.getElementById('homeWorldOverview') || document.getElementById('rezepte');
+          if (!target) return;
+          try {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } catch (err) {
+            target.scrollIntoView();
+          }
+        });
+      });
+    }
+
+    function navigateHomeRecipeArchive(key, opt) {
+      opt = opt || {};
+      if (!parsedRecipes || !parsedRecipes.length) return;
+      hideRecipeDetailPage(true);
+      try {
+        history.replaceState(null, '', window.location.pathname + window.location.search + '#rezepte');
+      } catch (err) {}
+      applyRecipeFilter(key, { scrollToResults: false, skipHideDetail: true });
+      if (opt.scrollToResults !== false) scrollToRecipeArchiveSection();
+    }
+
+    function navigateHomeCategories() {
+      setHomeRecipeArchiveVisible(false);
+      hideRecipeDetailPage(true);
+      try {
+        history.replaceState(null, '', window.location.pathname + window.location.search + '#home-categories');
+      } catch (err) {}
+      var target = document.getElementById('home-categories');
+      if (target) {
+        try {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch (e) {
+          target.scrollIntoView();
+        }
+      }
+    }
+
+    function openHomeWorldCuisine() {
+      if (!parsedRecipes || !parsedRecipes.length) return;
+      hideRecipeDetailPage(true);
+      setHomeRecipeArchiveVisible(true);
+      document.body.classList.add('is-world-overview-active');
+      try {
+        history.replaceState(null, '', window.location.pathname + window.location.search + '#rezepte');
+      } catch (err) {}
+      currentRecipeFilterKey = 'all';
+      currentWorldCategoryFilter = 'world-all';
+      recipeListVisibleCount = 12;
+      currentSearchQuery = '';
+      var searchInput = document.getElementById('recipeSearchInput');
+      if (searchInput) searchInput.value = '';
+      syncWorldCategoryFilterButtons();
+      syncHomeCategoryTilesActive();
+      syncRatingFilterButtons();
+      updateRecipeListView({ scrollToResults: false, skipHideDetail: true });
+      initWorldOverviewFilters();
+      scrollToHomeWorldOverview();
+    }
+
+    function handleHomeCategoryChipClick(chip) {
+      if (!chip) return;
+      var key = chip.getAttribute('data-filter') || 'all';
+      var search = chip.getAttribute('data-search') || '';
+      hideRecipeDetailPage(true);
+      try {
+        history.replaceState(null, '', window.location.pathname + window.location.search + '#rezepte');
+      } catch (err) {}
+      if (search) {
+        currentSearchQuery = search;
+        var input = document.getElementById('recipeSearchInput');
+        if (input) input.value = search;
+        applyRecipeFilter('all', { scrollToResults: false, skipHideDetail: true });
+        scrollToRecipeArchiveSection();
+        return;
+      }
+      applyRecipeFilter(key, { scrollToResults: false, skipHideDetail: true });
+      scrollToRecipeArchiveSection();
+    }
+
+    function recipeTimingLabel(recipe) {
+      var timing = recipe && recipe.timing ? recipe.timing : [];
+      for (var i = 0; i < timing.length; i++) {
+        var line = String(timing[i] || '');
+        if (/gesamt|total|ca\./i.test(line)) return line.replace(/^[^:]+:\s*/, '').trim() || line;
+      }
+      return timing.length ? String(timing[0]).replace(/^[^:]+:\s*/, '').trim() : '';
+    }
+
+    function recipePublicRatingValue(recipe) {
+      var raw = recipe.ratingValue || recipe.bewertung || recipe.score || recipe.rating || '';
+      var m = String(raw).match(/(\d+(?:[.,]\d+)?)/);
+      if (!m) return null;
+      var val = parseFloat(m[1].replace(',', '.'));
+      return isNaN(val) ? null : Math.max(0, Math.min(5, val));
+    }
+
+    function renderRatingStars(value) {
+      if (!value) return '';
+      var full = Math.round(value);
+      var stars = '';
+      for (var s = 1; s <= 5; s++) stars += s <= full ? '\u2605' : '\u2606';
+      return stars;
+    }
+
+    function isHomeNewRecipe(recipe, maxId) {
+      return recipe && Number(recipe.id) >= maxId - HOME_NEW_RECIPE_ID_WINDOW;
+    }
+
+    function renderHomeRecipeCardHTML(recipe, opt) {
+      opt = opt || {};
+      var title = getRecipeField(recipe, 'name') || recipe.name;
+      var cat = getRecipeField(recipe, 'category') || '';
+      var href = recipeUrlPath(recipe);
+      var time = recipeTimingLabel(recipe);
+      var rating = getRating(recipe.id) || recipePublicRatingValue(recipe);
+      var stars = rating ? renderRatingStars(rating) : '';
+      var badge = opt.showNew && opt.isNew
+        ? '<span class="home-recipe-card-badge">' + esc(t('home_new_badge')) + '</span>'
+        : '';
+      var starsBlock = (!opt.hideStars && stars)
+        ? '<div class="home-recipe-card-stars" aria-hidden="true">' + stars + '</div>'
+        : '';
+      var timeHtml = time
+        ? '<div class="home-recipe-card-meta"><span class="home-recipe-card-time">' + esc(time) + '</span></div>'
+        : '';
+      return (
+        '<article class="home-recipe-card" role="listitem" data-recipe-id="' + esc(String(recipe.id)) + '">' +
+          '<div class="home-recipe-card-media">' +
+            badge +
+            '<div class="recipe-img" role="img" aria-label="' + esc(title) + '"></div>' +
+            '<a href="' + esc(href) + '" class="home-recipe-card-link" data-recipe-id="' + esc(String(recipe.id)) + '" aria-label="' + esc(t('detail_related_open', { name: title })) + '"></a>' +
+          '</div>' +
+          '<div class="home-recipe-card-body">' +
+            starsBlock +
+            '<h3 class="home-recipe-card-title">' + esc(title) + '</h3>' +
+            timeHtml +
+          '</div>' +
+        '</article>'
+      );
+    }
+
+    function mountHomeRecipeCards(gridEl, recipes, opt) {
+      if (!gridEl) return;
+      var list = recipes || [];
+      var maxId = 0;
+      list.forEach(function (r) { if (Number(r.id) > maxId) maxId = Number(r.id); });
+      gridEl.innerHTML = list.map(function (r) {
+        return renderHomeRecipeCardHTML(r, {
+          showNew: !!(opt && opt.showNew),
+          isNew: isHomeNewRecipe(r, maxId),
+          hideStars: !!(opt && opt.hideStars)
+        });
+      }).join('');
+      [].slice.call(gridEl.querySelectorAll('.home-recipe-card')).forEach(function (card, i) {
+        var imgDiv = card.querySelector('.recipe-img');
+        var r = list[i];
+        if (imgDiv && r) applyCardImage(imgDiv, recipeCardImagePath(r));
+      });
+      observeLazyCardImages(gridEl);
+    }
+
+    function updateHomeTrustBadge() {
+      var countEl = document.getElementById('homeTrustCount');
+      var starsEl = document.getElementById('homeTrustStars');
+      var freeEl = document.getElementById('homeTrustFree');
+      var count = parsedRecipes ? parsedRecipes.length : 0;
+      if (countEl) countEl.textContent = t('home_trust_recipes', { count: count });
+      if (freeEl) freeEl.textContent = t('home_trust_free');
+      if (starsEl && parsedRecipes && parsedRecipes.length) {
+        var sum = 0;
+        var n = 0;
+        parsedRecipes.forEach(function (r) {
+          var v = recipePublicRatingValue(r);
+          if (v != null) { sum += v; n++; }
+        });
+        if (n > 0) starsEl.textContent = renderRatingStars(sum / n);
+        else starsEl.textContent = '★★★★★';
+      }
+    }
+
+    function buildHomeCategoryShowcase() {
+      var wrap = document.getElementById('homeCategoryShowcase');
+      if (!wrap) return;
+      wrap.innerHTML = HOME_SHOWCASE_CATEGORIES.map(function (cat) {
+        return (
+          '<button type="button" class="home-category-chip" data-filter="' + esc(cat.filter) + '"' +
+            (cat.search ? ' data-search="' + esc(cat.search) + '"' : '') +
+            ' aria-label="' + esc(t(cat.labelKey)) + '">' +
+            '<svg viewBox="0 0 24 24" aria-hidden="true">' + cat.icon + '</svg>' +
+            '<span class="home-category-chip-label" data-i18n="' + esc(cat.labelKey) + '">' + esc(t(cat.labelKey)) + '</span>' +
+          '</button>'
+        );
+      }).join('');
+      [].slice.call(wrap.querySelectorAll('.home-category-chip')).forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          handleHomeCategoryChipClick(chip);
+        });
+      });
+    }
+
+    function applyHomeDynamicTexts() {
+      var count = parsedRecipes ? parsedRecipes.length : 0;
+      var countLabel = count || '…';
+      var footerBlurb = document.querySelector('[data-i18n="home_footer_blurb"]');
+      if (footerBlurb) footerBlurb.textContent = t('home_footer_blurb', { count: countLabel });
+      var trustCount = document.getElementById('homeTrustCount');
+      if (trustCount) trustCount.textContent = t('home_trust_recipes', { count: countLabel });
+      var heroLead = document.getElementById('heroLead');
+      if (heroLead) heroLead.textContent = t('home_hero_subtitle', { count: countLabel });
+    }
+
+    function formatHomeHeroTitleHTML() {
+      return String(t('home_hero_title') || '').replace(/\\n/g, '\n').split('\n').map(function (line, idx) {
+        if (idx === 1) return '<span class="home-hero-accent">' + esc(line) + '</span>';
+        return esc(line);
+      }).join('<br>');
+    }
+
+    function renderHomeRedesignSections() {
+      if (!parsedRecipes || !parsedRecipes.length) return;
+      updateHomeTrustBadge();
+      var popular = buildHighlightPicks(parsedRecipes);
+      mountHomeRecipeCards(document.getElementById('homePopularGrid'), popular.slice(0, 6));
+      var latest = parsedRecipes.slice().sort(function (a, b) { return Number(b.id) - Number(a.id); }).slice(0, 6);
+      mountHomeRecipeCards(document.getElementById('homeNewGrid'), latest, { showNew: true, hideStars: true });
+      buildHomeCategoryShowcase();
+      applyDataI18n(document.getElementById('homeView'));
+      applyHomeDynamicTexts();
+      var heroTitleEl = document.getElementById('heroTitle');
+      if (heroTitleEl) heroTitleEl.innerHTML = formatHomeHeroTitleHTML();
+    }
+
+    function initHomeRedesignEvents() {
+      if (document.body.dataset.homeRedesignBound === '1') return;
+      document.body.dataset.homeRedesignBound = '1';
+
+      function bindFilterButton(el) {
+        if (!el) return;
+        el.addEventListener('click', function () {
+          var key = el.getAttribute('data-filter');
+          if (key) navigateHomeRecipeArchive(key, { scrollToResults: true });
+        });
+      }
+
+      bindFilterButton(document.getElementById('homeHeroBtnGrill'));
+      bindFilterButton(document.getElementById('homeHeroBtnAirfryer'));
+      bindFilterButton(document.getElementById('homeHeroBtnNew'));
+
+      var navGrill = document.getElementById('homeNavGrill');
+      var navAir = document.getElementById('homeNavAirfryer');
+      if (navGrill) navGrill.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigateHomeRecipeArchive('grill-bbq', { scrollToResults: true });
+      });
+      if (navAir) navAir.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigateHomeRecipeArchive('airfryer', { scrollToResults: true });
+      });
+
+      var navRecipes = document.getElementById('homeNavRecipes');
+      if (navRecipes) navRecipes.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigateHomeRecipeArchive('alle', { scrollToResults: true });
+      });
+
+      var navCategories = document.getElementById('homeNavCategories');
+      if (navCategories) navCategories.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigateHomeCategories();
+      });
+
+      var navWorld = document.getElementById('homeNavWorld');
+      if (navWorld) navWorld.addEventListener('click', function (e) {
+        e.preventDefault();
+        openHomeWorldCuisine();
+      });
+
+      var navSearch = document.getElementById('homeNavSearchBtn');
+      if (navSearch) navSearch.addEventListener('click', function () {
+        var input = document.getElementById('recipeSearchInput');
+        if (input) {
+          input.focus();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+
+      var newViewAll = document.getElementById('homeNewViewAll');
+      if (newViewAll) newViewAll.addEventListener('click', function () {
+        navigateHomeRecipeArchive('latest', { scrollToResults: true });
+      });
+
+      var popularViewAll = document.getElementById('homePopularViewAll');
+      if (popularViewAll) popularViewAll.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigateHomeRecipeArchive('alle', { scrollToResults: true });
+      });
+
+      document.querySelectorAll('a[href="#rezepte"], a[href="/#rezepte"]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          if (link.hasAttribute('data-filter-link')) return;
+          e.preventDefault();
+          navigateHomeRecipeArchive('alle', { scrollToResults: true });
+        });
+      });
+
+      document.querySelectorAll('[data-filter-link]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var key = link.getAttribute('data-filter-link');
+          if (key) navigateHomeRecipeArchive(key, { scrollToResults: true });
+        });
+      });
+
+      var topbar = document.querySelector('.site-topbar');
+      if (topbar) {
+        window.addEventListener('scroll', function () {
+          topbar.classList.toggle('is-compact', window.scrollY > 24);
+        }, { passive: true });
+      }
+    }
+
     function applyCardImage(div, src) {
       div.classList.add('recipe-img--fallback');
       div.style.backgroundImage = '';
@@ -9386,15 +10127,7 @@
     }
 
     function scrollToHomeRecipeResults() {
-      var target = document.querySelector('#recipe-results') || document.querySelector('#home-highlights');
-      if (!target || !window.matchMedia('(max-width: 900px)').matches) return;
-      requestAnimationFrame(function () {
-        try {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } catch (err) {
-          target.scrollIntoView();
-        }
-      });
+      scrollToRecipeArchiveSection();
     }
 
     function syncHomeCategoryTilesActive() {
@@ -9414,10 +10147,12 @@
     function applyRecipeFilter(key, opt) {
       opt = opt || {};
       if (!FILTER_HEADINGS.hasOwnProperty(key)) key = 'alle';
+      setHomeRecipeArchiveVisible(true);
       if (key === 'all') {
         resetAllRecipeFilters(opt);
         return;
       }
+      document.body.classList.remove('is-world-overview-active');
       if (isRecipeCategoryFilterKey(key)) {
         resetWorldCategoryFilter();
       }
@@ -9428,7 +10163,7 @@
         var search = document.getElementById('recipeSearchInput');
         if (search) search.value = '';
       }
-      updateRecipeListView({ scrollToResults: !!opt.scrollToResults });
+      updateRecipeListView({ scrollToResults: !!opt.scrollToResults, skipHideDetail: !!opt.skipHideDetail });
       syncHomeCategoryTilesActive();
       syncWorldCategoryFilterButtons();
     }
@@ -9515,7 +10250,7 @@
         var summerTotal = getSummerDrinkRecipes().length + getSummerDrinkAperitifRecipes().length;
         status.hidden = false;
         status.classList.remove('error');
-        status.textContent = summerTotal ? t('ui_found', { count: summerTotal }) : t('ui_no_matches');
+        status.textContent = summerTotal ? tCount('ui_found', summerTotal) : t('ui_no_matches');
         if (opt.scrollToResults) scrollToHomeRecipeResults();
         return;
       }
@@ -9528,7 +10263,7 @@
         var lmTotal = getSommerdrinksLmRecipes().length;
         status.hidden = false;
         status.classList.remove('error');
-        status.textContent = lmTotal ? t('ui_found', { count: lmTotal }) : t('ui_no_matches');
+        status.textContent = lmTotal ? tCount('ui_found', lmTotal) : t('ui_no_matches');
         if (opt.scrollToResults) scrollToHomeRecipeResults();
         return;
       }
@@ -9542,7 +10277,7 @@
         var drinksTotal = getDrinkChapterBaseRecipeCount();
         status.hidden = false;
         status.classList.remove('error');
-        status.textContent = drinksTotal ? t('ui_found', { count: drinksTotal }) : t('ui_no_matches');
+        status.textContent = drinksTotal ? tCount('ui_found', drinksTotal) : t('ui_no_matches');
         if (opt.scrollToResults) scrollToHomeRecipeResults();
         return;
       }
@@ -9570,7 +10305,7 @@
 
         status.hidden = false;
         status.classList.remove('error');
-        status.textContent = t('ui_found', { count: matches.length });
+        status.textContent = tCount('ui_found', matches.length);
         grid.hidden = false;
 
         if (currentRecipeFilterKey === 'alle') {
@@ -9625,11 +10360,11 @@
       } else {
         status.textContent = (currentRecipeFilterKey === 'all'
           ? (currentWorldCategoryFilter !== 'world-all'
-            ? t('status_matching', { count: full.length })
-            : t('status_all', { count: full.length }))
+            ? tCount('status_matching', full.length)
+            : tCount('status_all', full.length))
           : (String(currentRecipeFilterKey).indexOf('rated') === 0
             ? (t('status_personal_ratings') + ' ' + full.length + ' Treffer.')
-            : t('status_matching', { count: full.length })
+            : tCount('status_matching', full.length)
           )
         );
       }
@@ -9679,11 +10414,11 @@
         });
       })
       .then(function (payload) {
-        var mainList = attachRecipeSlugPaths(parseRecipes(payload.main));
+        var mainList = attachRecipeCategoryKeys(attachRecipeSlugPaths(parseRecipes(payload.main)));
         var seedList = [];
         try {
-          var horchataSeed = attachRecipeSlugPaths(parseRecipes(payload.seedHorchatas, { selector: 'drinkCollection > recipe', optional: true }));
-          var lmSeed = attachRecipeSlugPaths(parseRecipes(payload.seedLm, { selector: 'drinkCollection > recipe', optional: true }));
+          var horchataSeed = attachRecipeCategoryKeys(attachRecipeSlugPaths(parseRecipes(payload.seedHorchatas, { selector: 'drinkCollection > recipe', optional: true })));
+          var lmSeed = attachRecipeCategoryKeys(attachRecipeSlugPaths(parseRecipes(payload.seedLm, { selector: 'drinkCollection > recipe', optional: true })));
           seedList = horchataSeed.concat(lmSeed);
         } catch (seedErr) {
           console.warn('Getränke-Seed konnte nicht geladen werden:', seedErr);
@@ -9713,6 +10448,8 @@
         updateSurpriseMeButtonState();
         updateRecipeListView({ skipHideDetail: true });
         populateHomeSidebarNewRecipes();
+        renderHomeRedesignSections();
+        initHomeRedesignEvents();
         applyFilterFromQuery();
         applyRouteFromLocation();
         var merkVAfter = document.getElementById('merklisteView');
@@ -9765,10 +10502,18 @@
       try {
         fromQuery = new URLSearchParams(window.location.search || '').get('lang');
       } catch (e) {}
-      var initial = (fromQuery && I18N[fromQuery]) ? fromQuery : ((stored && I18N[stored]) ? stored : 'de');
+      var initial = (fromQuery && isSupportedLang(fromQuery)) ? fromQuery
+        : ((stored && isSupportedLang(stored)) ? stored : 'de');
       setLanguage(initial);
-      var wrap = document.querySelector('.lang-switcher');
-      if (wrap && wrap.dataset.bound !== '1') {
+      var langSelect = document.getElementById('homeLangSelect');
+      if (langSelect && langSelect.dataset.bound !== '1') {
+        langSelect.dataset.bound = '1';
+        langSelect.addEventListener('change', function () {
+          setLanguage(langSelect.value);
+        });
+      }
+      document.querySelectorAll('.lang-switcher').forEach(function (wrap) {
+        if (wrap.dataset.bound === '1') return;
         wrap.dataset.bound = '1';
         wrap.addEventListener('click', function (e) {
           var b = e.target.closest('button.lang-btn[data-lang]');
@@ -9776,7 +10521,7 @@
           e.preventDefault();
           setLanguage(b.getAttribute('data-lang'));
         });
-      }
+      });
     })();
 
     function attachRecipeDetailBack() {

@@ -415,3 +415,56 @@ ol {
     padding: 28px 18px 34px;
   }
 }
+
+.about-main {
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+
+.about-page-card {
+  padding: 44px 48px 52px;
+}
+
+.about-page-card h1 {
+  margin-bottom: 24px;
+}
+
+.about-page-card p + p {
+  margin-top: 0;
+}
+
+.about-focus-list {
+  list-style: disc;
+  padding-left: 1.35em;
+  margin: 4px 0 20px;
+}
+
+.about-focus-list li {
+  list-style: disc;
+  display: list-item;
+  margin: 0 0 8px;
+  color: #374151;
+  line-height: 1.72;
+  font-size: 16px;
+}
+
+.about-closing {
+  margin-top: 2rem !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.about-signature {
+  margin-bottom: 0 !important;
+  color: var(--text);
+}
+
+@media (max-width: 760px) {
+  .about-main {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  .about-page-card {
+    padding: 26px 22px 32px;
+  }
+}
